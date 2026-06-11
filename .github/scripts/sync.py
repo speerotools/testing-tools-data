@@ -63,6 +63,7 @@ F = {
     "status":         "fldc3unFlsIJgEVcq",
     "ucf":            "fldzBCpS6hbGF3Se4",
     "ai":             "fld0EUOcnmfRcURYm",
+    "mcp_type":       "fldv2diDTNPtVWPXX",
     "mcp_server_url": "fldEgRFMwP2kJad1u",
     "mcp_hosted":     "fldw6HE3s1EP1OxcR",
     "mcp_docs":       "fldEOG9f8iDoGVlfp",
@@ -184,15 +185,11 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
 
     summary_text = f.get(F["summary"]) or ""
 
-    # MCP type: product if a product-level server URL exists; platform when the
-    # capability is delivered at the parent platform level; otherwise none.
+    # MCP type comes from the Airtable "MCP Type" single-select field.
+    # Expected option values: Product, Platform, None.
     mcp_server_url = f.get(F["mcp_server_url"])
-    if mcp_server_url:
-        mcp_type = "product"
-    elif "agentforce" in summary_text.lower() or "platform-level mcp" in summary_text.lower():
-        mcp_type = "platform"
-    else:
-        mcp_type = "none"
+    mcp_type_raw = (single_select_value(f.get(F["mcp_type"])) or "none").lower()
+    mcp_type = mcp_type_raw if mcp_type_raw in ("product", "platform", "none") else "none"
 
     vendor: dict = {
         "slug":         slug,
