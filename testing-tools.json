@@ -1,0 +1,1753 @@
+{
+  "version": "2026-06-11T11:13:38Z",
+  "commit": "0ed212cb741db123fb71508362e459b52184fe92",
+  "vendors": [
+    {
+      "slug": "ablyft",
+      "name": "ABlyft",
+      "status": "active",
+      "h1": "We keep Enterprise A/B-Testing affordable",
+      "h2": "The A/B testing platform that meets your privacy requirements, is rocket fast, and provides the best capabilities for implementing your experiments.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript"
+      ],
+      "integrations": [
+        "Google Analytics 4"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "GDPR"
+      ],
+      "url": "https://ablyft.com/",
+      "summary": "ABlyft positions itself as an enterprise-grade A/B testing platform built for developers and experienced marketers — 'affordable enterprise A/B testing' for organizations with many test developers. Privacy-first and GDPR-compliant. Free plan available with no credit card; full-feature Enterprise plan priced on request with unlimited experiments, customization, and priority support. Client-side JavaScript API (GET calls, experiment retrieval) is the documented developer integration; no SDK list for other languages. GA4 integration with detailed guide for connecting via GTM and querying ABlyft variation IDs in GA4 explorations. No documented Adobe Analytics, Segment, or data warehouse integrations. No MCP server. No AI/agentic features documented. GDPR is the only compliance certification publicly disclosed. Operating in 2026 with active site and docs."
+    },
+    {
+      "slug": "eppo-by-datadog",
+      "name": "Eppo by Datadog",
+      "status": "acquired",
+      "h1": "Eppo is now Datadog Experiments",
+      "h2": "We've spent the last year building a new generation of experimentation platform: trustworthy, self-service experimentation and feature flagging for every team. Now on Datadog.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Warehouse-native",
+        "Server-side / feature-flag-first",
+        "Enterprise (governance, multi-team)"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Contextual bandits / AI traffic allocation",
+        "AI audience builder",
+        "Anomaly detection (AI)",
+        "Insight summarization (AI)"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "React Native",
+        "Flutter",
+        "Node.js",
+        "Python",
+        "Java",
+        "Go",
+        "Ruby",
+        "PHP",
+        "Rust",
+        ".NET / C#",
+        "Elixir"
+      ],
+      "integrations": [
+        "Segment",
+        "Slack",
+        "RudderStack"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks"
+      ],
+      "compliance": [
+        "SOC 2 Type II"
+      ],
+      "url": "https://www.geteppo.com/",
+      "summary": "Contextual Bandits deliver real-time AI personalization with full warehouse-native execution. Auto-Generate Explore Charts automatically surface statistically significant slices in experiment results. Automated Slack alerts flag traffic imbalances, anomalous metric drops, instrumentation gaps, and data pipeline errors. AI Personalization positioning aligns with the warehouse-native bandit approach. Note: Eppo was acquired by Datadog in 2025 and is being merged into Datadog Experiments.",
+      "acquiredBy": "Datadog"
+    },
+    {
+      "slug": "evolv-ai",
+      "name": "Evolv AI",
+      "status": "active",
+      "h1": "Stop guessing. Start growing.",
+      "h2": "Evolv AI instantly identifies your high-impact conversion blockers and delivers the precise, AI-generated UX improvements you need to deploy today.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Contextual bandits / AI traffic allocation",
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Swift (iOS)",
+        "Kotlin (Android)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Segment"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "EU-U.S. / UK / Swiss Data Privacy Framework"
+      ],
+      "url": "https://evolv.ai/",
+      "summary": "Evolv AI positions itself as an autonomous AI optimization engine that continuously learns from user interactions to improve digital experiences. Core differentiator: 'active learning' that refines each iteration automatically — implying contextual bandits and reinforcement-learning-style adaptation, though specific algorithms (multi-armed bandits, evolutionary algorithms) are not enumerated in official docs. Real-time testing and personalization with continuous optimization. AI-generated UX improvements identify conversion blockers and propose deployable fixes. SDKs: JavaScript (vanilla ES6), React/Next.js, iOS (Swift), Android (Kotlin/Java). All SDK repositories show active maintenance through 2024. Integrations: GA4, Google Analytics (Universal), Adobe Analytics, Segment. No MCP server documented. Pricing not publicly disclosed — sales-led enterprise model. Compliance limited to EU-U.S./UK/Swiss Data Privacy Framework; no SOC 2, HIPAA, ISO 27001, or SSO/SAML publicly stated. Target market inferred as e-commerce, media, and subscription businesses with high-traffic web/mobile experiences needing rapid experimentation. Operating in 2026."
+    },
+    {
+      "slug": "omniconvert",
+      "name": "Omniconvert",
+      "status": "active",
+      "h1": "Customer Value Optimization platform for SaaS & ecommerce",
+      "h2": "Identify your best customers and run experiments that move the metrics that matter — from acquisition to retention.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)"
+      ],
+      "sdk": [
+        "PHP",
+        "JavaScript / TypeScript",
+        "Node.js",
+        "Java",
+        "Kotlin (Android)",
+        "Swift (iOS)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Klaviyo",
+        "Shopify",
+        "Segment"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "GDPR"
+      ],
+      "url": "https://www.omniconvert.com/",
+      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented."
+    },
+    {
+      "slug": "sitecore",
+      "name": "Sitecore",
+      "status": "active",
+      "h1": "Conversion optimization for real-time personalization and testing",
+      "h2": "SitecoreAI helps you make each one count with real-time personalization powered by live audience insights. Deliver tailored experiences using real-time metrics from Audience and Insights.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        ".NET / C#"
+      ],
+      "integrations": [
+        "Salesforce",
+        "Adobe Analytics"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "HIPAA",
+        "SSO / SAML"
+      ],
+      "url": "https://www.sitecore.com/products/personalize",
+      "summary": "SitecoreAI is the AI layer powering Personalize, with real-time personalization driven by live audience insights. AI Code Assistant turns natural-language prompts into JavaScript for custom conditions, programmable traits, and session traits. Decision Canvas is a drag-and-drop interface combining business rules, ML predictions, and external systems for real-time decisioning. Sitecore Stream adds generative-AI services across the suite (Content Hub, Experience Platform, CDP, Personalize, Search) — AI agents draft briefs, route approvals, and chase work forward. Marketer MCP server connects AI agents to Sitecore via the Agent API for AI-driven marketing tool access (deployment model not publicly documented). A/B/n experimentation engine integrated with personalization decisioning, with conversion optimization included in every SitecoreAI plan. Formerly Boxever (acquired 2021), now part of Sitecore's composable DXP."
+    },
+    {
+      "slug": "shoplift",
+      "name": "Shoplift",
+      "status": "active",
+      "h1": "Your store's CRO Copilot",
+      "h2": "Launch high-impact split tests, unlock insights, and take the guesswork out of optimization.",
+      "ucf": [
+        "Shopify-native",
+        "DTC ecommerce",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Variant generation (AI)"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Subscription (per MAU or seat)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript"
+      ],
+      "integrations": [
+        "Shopify",
+        "Google Analytics 4"
+      ],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://www.shoplift.ai/",
+      "summary": "Shoplift is positioned as 'Your store's CRO Copilot' for high-growth Shopify brands. Lift Assist™ is an AI-driven recommendation engine that generates new test feature ideas in real-time, leveraging the brand's data and test ideas from hundreds of top brands. Bayesian Predictive Analysis predicts test duration in real-time and provides statistically robust significance estimates. Real-time statistical significance with automated insight dashboards surface actionable recommendations after a test completes. Shopify Plus Certified. Plans: Core $74-$99/mo (50K-100K visitors), Advanced $299/mo (100K visitors, adds Lift Assist + GA4 + JS API), Pro $699/mo (250K visitors, dedicated account manager). 14-day free trial. No MCP server documented; no compliance certifications publicly listed."
+    },
+    {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "status": "active",
+      "h1": "Move at AI speed. Stay in control.",
+      "h2": "LaunchDarkly helps teams safely manage code and AI agents in production with feature flags, progressive delivery, automated rollback, and runtime control.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Server-side / feature-flag-first",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "Anomaly detection (AI)",
+        "Insight summarization (AI)",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)",
+        "Usage-based",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "React Native",
+        "Python",
+        "Ruby",
+        "Go",
+        "Java",
+        "Node.js",
+        "PHP",
+        "Rust",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "Flutter",
+        ".NET / C#",
+        "C++",
+        "Edge (Cloudflare / Vercel / Fastly)",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Amplitude",
+        "Slack",
+        "Datadog"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Databricks",
+        "Redshift",
+        "Snowflake",
+        "S3 / Parquet"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "SSO / SAML",
+        "FedRAMP",
+        "EU data residency"
+      ],
+      "url": "https://launchdarkly.com/",
+      "summary": "AI Configs and AgentControl provide dynamic runtime configuration for LLM prompts, model parameters, and agent behavior — decoupling AI behavior from code deployments and supporting OpenAI, Anthropic, AWS Bedrock, open-source, and custom models. Multi-armed bandits (Thompson Sampling) dynamically reallocate experiment traffic. Anomaly detection alerts trigger on meaningful metric deviations without manual thresholds. AI Experiments compare prompts and configs and feed metrics back to optimize cost, latency, and quality. Three hosted MCP servers (feature management, AgentControl, observability) plus a local self-hosted option."
+    },
+    {
+      "slug": "symplify",
+      "name": "Symplify",
+      "status": "active",
+      "h1": "CRM? No, we do much more than that…",
+      "h2": "Future proof whatever you choose to call it. Your competitors are… CRM. Marketing Automation. AI. Conversion Testing. Consumer Data Insights. That's a lot of name calling when you could simply say Symplify.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "PHP"
+      ],
+      "integrations": [
+        "Google Analytics 4"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "GDPR"
+      ],
+      "url": "https://symplify.com/conversion-experimentation/",
+      "summary": "Symplify is a Swedish Customer Engagement Platform positioned beyond pure CRO — spanning CRM, Marketing Automation, AI/Predictive Marketing, Message Automation, Ultra User Personalisation, and Testing & Experimentation as four core pillars. The experimentation module combines A/B testing, visitor recordings, heatmaps, and frustration click measurement. OpenAI integration generates text and images directly within the Symplify editor, claimed to reduce content-creation time by up to 60%. Symplify AI provides machine-learning-based predictive features: Lifetime Value scoring, churn likelihood, VIP identification, and first-visit personalization. PHP SDK only for server-side testing. Native GA4 event integration (detects gtag/GTM automatically). GDPR-compliant under Swedish/EU data-protection law with SSL encryption and 2FA. Strong vertical focus on iGaming (multiple gambling partnerships including GiG), Fintech, Retail, NGO & Education, and Hospitality. Operating in 2026 with active press releases. No MCP server; no SOC 2, HIPAA, or ISO 27001 publicly disclosed."
+    },
+    {
+      "slug": "vwo",
+      "name": "VWO",
+      "status": "active",
+      "h1": "Digital Experience Optimization",
+      "h2": "VWO is the market-leading digital experience optimization solution that fast-growing companies use for experimentation & conversion rate optimization.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Node.js",
+        "Python",
+        "Java",
+        ".NET / C#",
+        "PHP",
+        "Go",
+        "Ruby",
+        "Swift (iOS)",
+        "Kotlin (Android)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Amplitude",
+        "Mixpanel",
+        "Segment",
+        "Tealium",
+        "Shopify"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "GDPR",
+        "ISO 27001",
+        "PCI DSS"
+      ],
+      "url": "https://vwo.com/",
+      "summary": "VWO Copilot is an AI assistant suite spanning experimentation workflows. Editor Copilot generates design variations from text prompts. AI-Generated Ideas scans a webpage and produces hypothesis suggestions auto-added to the Hypotheses backlog. AI-powered segment targeting and report segmentation are available in early access. The FME MCP Server connects external AI tools (ChatGPT, Cursor, Claude) to query live campaign data with permission-scoped access (Browse, Design, Publish). Note: VWO and AB Tasty merged in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform."
+    },
+    {
+      "slug": "optimizely",
+      "name": "Optimizely",
+      "status": "active",
+      "h1": "AI-powered digital experiences that turn heads",
+      "h2": "Create content fast. Personalize with ease. Test, analyze, and repeat. Then scale it all with AI and see what your team is capable of.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Python",
+        "Ruby",
+        "Go",
+        "Java",
+        "PHP",
+        "Node.js",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Flutter",
+        ".NET / C#",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Amplitude",
+        "Mixpanel",
+        "Heap",
+        "Segment",
+        "Slack",
+        "Salesforce",
+        "HubSpot"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery"
+      ],
+      "compliance": [
+        "GDPR",
+        "CCPA",
+        "HIPAA",
+        "SSO / SAML"
+      ],
+      "url": "https://www.optimizely.com/",
+      "summary": "Optimizely Opal is a suite of specialized AI agents working across the platform: AI Variation Generator (processes up to 8,000 tokens of text-based content), AI-driven test idea suggestions, AI Variation Summaries that auto-explain experiment changes, and the agent-driven Opal Chat. Contextual Multi-Armed Bandits (CMABs) personalize via reinforcement learning. Opal integrates with Microsoft Copilot (closed beta). The Experimentation MCP Server is in closed beta with both Remote (vendor-hosted, OAuth via Opal) and local (self-hosted) deployment options."
+    },
+    {
+      "slug": "adobe-target",
+      "name": "Adobe Target",
+      "status": "active",
+      "h1": "A/B Testing Software",
+      "h2": "Discover Adobe Target, the leading AB testing software that empowers you to optimize user experiences and drive conversions with personalized, data-driven insights.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "DTC ecommerce",
+        "Client-side marketing/CRO",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Node.js",
+        "Python",
+        "Java",
+        ".NET / C#",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "React Native"
+      ],
+      "integrations": [
+        "Adobe Analytics",
+        "HubSpot",
+        "Salesforce"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "HIPAA",
+        "FedRAMP",
+        "SSO / SAML"
+      ],
+      "url": "https://business.adobe.com/products/target/adobe-target",
+      "summary": "Adobe Sensei AI underpins all AI-driven Target features. Auto-Allocate dynamically shifts traffic toward the best-performing variation using multi-armed bandit logic. Auto-Target (Premium tier) is a real-time ML-based decision engine that selects the most promising experience per individual visitor based on behavior and context. Automated Personalization (Premium) creates unique content combinations per visitor without predefined segments. Adobe Experience Platform AI Assistant provides a conversational interface for natural-language queries across Target. Adobe announced a redesigned UI with generative AI features for personalization at scale in 2025. No Model Context Protocol (MCP) server is publicly documented; integration with external AI clients (Claude, ChatGPT, Cursor) is not publicly supported. Two-tier model: Standard (A/B, multivariate, rules-based targeting, auto-allocate) and Premium (adds Auto-Target, Automated Personalization, Recommendations)."
+    },
+    {
+      "slug": "conductrics",
+      "name": "Conductrics",
+      "status": "active",
+      "h1": "A unified engine for experimentation, adaptive optimization, and customer research",
+      "h2": "Unlock the power of intentional learning. Conductrics brings behavioral testing and qualitative feedback together in a single, flexible platform, so you can turn insights into immediate value for your customers.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Contextual bandits / AI traffic allocation",
+        "Insight summarization (AI)"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Node.js",
+        "Java",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "React Native"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "HIPAA",
+        "GDPR"
+      ],
+      "url": "https://www.conductrics.com/",
+      "summary": "Conductrics positions itself as a unified engine for experimentation, adaptive optimization, and customer research — combining behavioral A/B testing with qualitative feedback in one platform. Core differentiator: adaptive optimization with interpretable machine learning that automatically allocates traffic to higher-performing variants (conceptually a contextual bandit approach, though Conductrics avoids that label). Trusted by Spotify, Experian, and Pfizer. HIPAA-compliant design for regulated environments — distinctive for an experimentation platform. SOC 2 Type 2 certified. Algorithmic transparency emphasized as a design principle. Custom enterprise pricing only — no public tier table. Native analytics integrations: Google Analytics (including GA4) and Adobe Analytics across client-side, server-side, and native mobile. No MCP server, no data warehouse connectors, no public ISO 27001 statement. Remains independent and operating as of 2026."
+    },
+    {
+      "slug": "absmartly",
+      "name": "ABsmartly",
+      "status": "active",
+      "h1": "The most developer-friendly A/B testing platform",
+      "h2": "Advanced experimentation and feature flagging platform designed to help teams validate ideas quickly, measure impact reliably and roll out changes safely.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Server-side / feature-flag-first",
+        "Warehouse-native"
+      ],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Python",
+        "Go",
+        "Angular"
+      ],
+      "integrations": [
+        "Segment",
+        "Slack"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Snowflake",
+        "ClickHouse",
+        "Redshift",
+        "Databricks"
+      ],
+      "compliance": [
+        "SSO / SAML"
+      ],
+      "url": "https://www.absmartly.com/",
+      "summary": "ABsmartly is intentionally not AI-marketed — positioning is 'built by developers for developers' for trustworthy A/B testing. The Health Check Panel is positioned as an 'experimentation copilot' for real-time anomaly detection (Sample Ratio Mismatch, Audience Mismatch, Variable Conflicts) but is rule-based monitoring rather than generative AI. Group Sequential Testing engine accelerates test cycles by 20-80% vs fixed horizon, twice as fast as standard sequential testing. Warehouse Native mode runs analysis inside customer's data warehouse (BigQuery, Snowflake, ClickHouse, Redshift, Databricks). Hybrid deployment mode planned. An MCP Server GitHub repository exists (absmartly/mcp-server) but is not yet documented in product docs. LaunchPad browser extension enables non-technical users to launch tests. Pricing: event-based, starts at €60,000/year for 50M events/month with unlimited seats/experiments/goals."
+    },
+    {
+      "slug": "intelligems",
+      "name": "Intelligems",
+      "status": "active",
+      "h1": "AI that understands the realities of your business",
+      "h2": "You don't want best practices — you want to know what's going to work for you.",
+      "ucf": [
+        "Shopify-native",
+        "DTC ecommerce",
+        "Client-side marketing/CRO",
+        "Agency-friendly (multi-tenant)"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Subscription (per MAU or seat)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript"
+      ],
+      "integrations": [
+        "Shopify",
+        "Google Analytics 4",
+        "Klaviyo",
+        "Google Tag Manager"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks",
+        "S3 / Parquet"
+      ],
+      "compliance": [],
+      "url": "https://www.intelligems.io/",
+      "summary": "Intelligems is positioned as 'AI that understands the realities of your business' for Shopify merchants. AI Visual Builder (beta) lets users describe on-site changes in natural language and the AI builds brand-matched modifications. AI-driven experiment recommendations suggest which profit levers (price, discount, shipping) to test based on historical performance. Automated pricing suggestions analyze site-wide analytics to recommend optimal price points. Intelligems MCP Server exposes store-level data (experiments, catalog, analytics, audiences, custom events) to AI assistants (Claude, ChatGPT, Gemini) via standardized OAuth-authenticated API — enables conversational decision-making with profit-per-visitor breakdowns. Plans: Core $79/mo (< 3K orders), Plus $499/mo, Blue $999/mo. 14-day free trial. Data Sharing add-on supports Snowflake, BigQuery, Redshift, Databricks, and cloud storage."
+    },
+    {
+      "slug": "webtrends-optimize",
+      "name": "Webtrends Optimize",
+      "status": "active",
+      "h1": "Webtrends Optimize: Next Generation",
+      "h2": "Webtrends Optimize is a simple to use, yet extremely powerful testing and personalisation platform using Conversion Rate Optimisation (CRO) tools to drive better visitor experiences on your website and increase ROI.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "AI QA / preflight checks",
+        "Insight summarization (AI)",
+        "Prompt-based editor",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Java",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Segment"
+      ],
+      "warehouse": [
+        "Snowflake"
+      ],
+      "compliance": [
+        "GDPR",
+        "CCPA"
+      ],
+      "url": "https://www.webtrends-optimize.com/",
+      "summary": "Webtrends Optimize is a UK-based enterprise A/B testing and personalization platform positioning itself as a market-leader for high-traffic consumer-facing sites in e-commerce, media, travel, and financial services. Comprehensive AI suite under 'AI with Purpose' branding: AI Predictive Heatmaps (attention maps for experiment design), Synthetic User Testing (simulated user interactions for research), AI Coding Copilot (in-UI assistance for building/debugging tests), Visually Similar Product Recommendations (AI extracts category/style/color/texture from product images), AI Auto Insights (automated experiment analysis), and AI for Analysis (open-beta May 2026). Pricing based on annual sessions with enterprise-custom contracts — specific tiers not publicly disclosed. Cross-platform SDKs: JavaScript tag, Android (Java/Kotlin AAR), iOS (Swift/Obj-C). Push integrations to GA4, Adobe Analytics, Segment. Snowflake pull integration imports user profiles for segmentation. GDPR and CCPA compliance. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no documented BigQuery/Redshift connectors. Hybrid or Managed Service offering targets large brands with dedicated CRO teams. Operating in 2026."
+    },
+    {
+      "slug": "posthog",
+      "name": "PostHog",
+      "status": "active",
+      "h1": "Dev tools for product engineers",
+      "h2": "PostHog is an all-in-one developer platform for building successful products. We offer product analytics, web analytics, session replay, error tracking, feature flags, experimentation, surveys, data warehouse, a CDP, and an AI product assistant.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Server-side / feature-flag-first",
+        "Warehouse-native",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Anomaly detection (AI)",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Usage-based",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)",
+        "Open Source"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js",
+        "Python",
+        "Ruby",
+        "Go",
+        "PHP",
+        "Java",
+        ".NET / C#",
+        "Rust",
+        "Elixir",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "Flutter",
+        "React Native",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Amplitude",
+        "Mixpanel",
+        "Segment",
+        "Slack",
+        "Datadog",
+        "Sentry",
+        "Shopify",
+        "HubSpot",
+        "Salesforce",
+        "Webflow"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Snowflake",
+        "Redshift",
+        "ClickHouse",
+        "S3 / Parquet"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "HIPAA",
+        "GDPR",
+        "SSO / SAML",
+        "EU data residency"
+      ],
+      "url": "https://posthog.com/",
+      "summary": "PostHog AI is an in-app AI agent that creates insights, builds dashboards, summarizes session replays, and writes/fixes/validates SQL queries. Documented AI tools include create_feature_flag, create_experiment, and session_summarization. PostHog AI Observability tracks LLM token usage, latency, and cost. The PostHog MCP server is GA and free, giving AI coding agents direct access to PostHog analytics, feature flags, experiments, and errors from Claude Code, Cursor, VS Code, Zed, and other MCP-compatible tools. AI wizard adds PostHog to a codebase with a single CLI command. Open-core model: full platform self-hostable."
+    },
+    {
+      "slug": "split",
+      "name": "Split",
+      "status": "acquired",
+      "h1": "Split is now part of Harness",
+      "h2": "We help you scale and succeed by being a partner, not just a platform.",
+      "ucf": [],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [],
+      "sdk": [],
+      "integrations": [],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://www.split.io/",
+      "summary": "Split was acquired by Harness in May 2024 and merged into Harness Feature Management & Experimentation (FME). Split.io homepage still operates as a brand entry point but its banner now reads 'SPLIT IS NOW PART OF HARNESS.' For current product details — MCP server, SDKs, pricing tiers, AI features — see the Harness FME record in this database. Legacy Split capabilities (feature flag SDKs, advanced experimentation with sequential testing and dimensional analysis) are still active within Harness FME under the Harness brand.",
+      "acquiredBy": "Harness"
+    },
+    {
+      "slug": "monetate",
+      "name": "Monetate",
+      "status": "active",
+      "h1": "The Experience Optimization Platform",
+      "h2": "Monetate is the Experience Optimization Platform—helping the world's leading brands design, test, and deliver digital experiences that are relevant, trustworthy, and valuable.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "React Native",
+        "Swift (iOS)",
+        "Kotlin (Android)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Tealium",
+        "Shopify"
+      ],
+      "warehouse": [
+        "Snowflake"
+      ],
+      "compliance": [
+        "HIPAA",
+        "GDPR",
+        "CCPA",
+        "PCI DSS"
+      ],
+      "url": "https://monetate.com/",
+      "summary": "MONET is Monetate's AI engine providing real-time adaptive intelligence across personalization, recommendations, and experimentation — marketed as agentic AI that 'continuously learns, acts, and improves outcomes.' Customer-facing GenAI assistant offers on-demand best practices and tailored guidance. Intelligent Personalization is the AI-powered decisioning engine for 1:1 personalization with sub-20ms decisioning latency. Action Variables (custom context variables via JS API or Engine API) enable rule-based or AI-informed triggers. Acquired SiteSpect in June 2025, merging zero-flicker server-side testing with AI-native personalization. Repositioned in September 2025 as the 'Experience Optimization Platform' with unified personalization + experimentation + discovery suites. Owned by Kibo Software. No Model Context Protocol (MCP) server for external AI assistants documented."
+    },
+    {
+      "slug": "ab-tasty",
+      "name": "AB Tasty",
+      "status": "active",
+      "h1": "One platform for all your progress",
+      "h2": "We're the experience optimization partners pushing brave ideas from the inside out. The only digital experience platform you need.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Freemium",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Angular",
+        "React Native",
+        "Flutter",
+        "Java",
+        "PHP",
+        ".NET / C#",
+        "Python",
+        "Go",
+        "Swift (iOS)",
+        "Kotlin (Android)"
+      ],
+      "integrations": [
+        "Segment",
+        "Google Analytics 4"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Snowflake",
+        "Redshift"
+      ],
+      "compliance": [
+        "ISO 27001",
+        "GDPR",
+        "CCPA"
+      ],
+      "url": "https://www.abtasty.com/",
+      "summary": "Stack of AI Copilots powers experimentation workflows: Visual Editor Copilot (variant generation from prompts), Report Copilot (highlights winning variations), Hypothesis Copilot, Feedback Analysis Copilot. EmotionsAI profiles visitors by emotional and content interest segments for personalization targeting. AI agent 'EVI' for agentic experimentation workflows. AI-driven content personalization predicts visitor intent in real time. Note: AB Tasty merged with VWO in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform. An MCP server exists as an unofficial npm package (@abtasty/mcp-server) but is not yet in official AB Tasty docs."
+    },
+    {
+      "slug": "convert",
+      "name": "Convert",
+      "status": "active",
+      "h1": "Proven A/B Testing Tool",
+      "h2": "Convert.com's A/B testing tool has split testing, personalization, advanced goals, fast support, and monthly payments.",
+      "ucf": [
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Agency-friendly (multi-tenant)",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Amplitude",
+        "Mixpanel",
+        "Segment",
+        "RudderStack",
+        "Shopify"
+      ],
+      "warehouse": [
+        "Snowflake"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "HIPAA",
+        "GDPR",
+        "CCPA",
+        "PCI DSS",
+        "EU data residency"
+      ],
+      "url": "https://www.convert.com/",
+      "summary": "AI Wizard in the Visual Editor suggests headlines, supporting text, and variant copy/design (beta). Smart Traffic Allocation via Multi-Arm Bandits dynamically optimizes traffic. Dynamic Triggers and BYOID (Bring Your Own ID) for stable bucketing. Self-hostable MCP server lets AI assistants (Claude Code referenced in official blog) create and update experiences programmatically — positioned as 'A/B testing without UI.' AI features are privacy-focused: Editor Wizard trained on synthetic and de-identified data. Servers hosted in Frankfurt, Germany for EU data residency."
+    },
+    {
+      "slug": "zoho-pagesense",
+      "name": "Zoho Pagesense",
+      "status": "active",
+      "h1": "All-in-one platform for conversion rate optimization",
+      "h2": "Track, analyze, optimize, personalize, and engage visitors to turn traffic into conversions.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Agency-friendly (multi-tenant)"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)"
+      ],
+      "sdk": [
+        ".NET / C#",
+        "Java",
+        "Kotlin (Android)",
+        "Swift (iOS)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Mixpanel",
+        "Google Tag Manager",
+        "HubSpot",
+        "Salesforce"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "ISO 27001",
+        "HIPAA",
+        "GDPR",
+        "SSO / SAML"
+      ],
+      "url": "https://www.zoho.com/pagesense/",
+      "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite — can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level)."
+    },
+    {
+      "slug": "harness-fme",
+      "name": "Harness FME",
+      "status": "active",
+      "h1": "Feature Management & Experimentation",
+      "h2": "Release faster with feature flags connected to critical impact data and always know whether your software changes are making things better or worse.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Server-side / feature-flag-first",
+        "Enterprise (governance, multi-team)",
+        "Warehouse-native"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Anomaly detection (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "AI QA / preflight checks",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Angular",
+        "React Native",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Flutter",
+        "Java",
+        "Go",
+        ".NET / C#",
+        "Node.js",
+        "Python",
+        "Ruby",
+        "PHP",
+        "Elixir"
+      ],
+      "integrations": [
+        "Slack",
+        "Datadog",
+        "Sentry"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "SSO / SAML"
+      ],
+      "url": "https://www.harness.io/products/feature-management-experimentation",
+      "summary": "Harness acquired Split.io in May 2024 and merged it into Harness Feature Management & Experimentation (FME), now the post-Split.io combined offering. AIDA (Harness AI) is a generative AI assistant spanning the SDLC: feature flag management, automated rollouts, automated security vulnerability fixes, natural-language cloud-cost policy creation, AI-driven troubleshooting. Harness Release Agent explains experiment results and highlights metric impacts in natural language. Dimensional analysis surfaces root-cause insights across user-defined dimensions. Sequential (adaptive) testing supports early-stop criteria and adaptive sample sizing. Harness MCP server is locally-hosted, runs as a Docker container exposing JSON-RPC at /mcp — supports Claude Code, Claude Desktop, Windsurf, Cursor, and VS Code. Toolsets include list_fme_workspaces, list_fme_feature_flags, get_fme_feature_flag_definition. Split.io still operates under split.io with redirect; the technology is integrated into Harness FME.",
+      "mcpDetail": {
+        "url": "https://github.com/harness/mcp-server",
+        "hosted": "Self-hosted",
+        "docs": "https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code"
+      }
+    },
+    {
+      "slug": "salesforce-marketing-cloud-personalization",
+      "name": "Salesforce Marketing Cloud Personalization",
+      "status": "active",
+      "h1": "Engage customers with relevance — anytime, anywhere",
+      "h2": "Personalise every interaction a customer has with your brand with real-time recommendations in Agentforce, Marketing, and Service Clouds.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Anomaly detection (AI)",
+        "AI audience builder",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Java",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Salesforce",
+        "Segment"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "HIPAA",
+        "GDPR",
+        "SSO / SAML"
+      ],
+      "url": "https://www.salesforce.com/marketing/personalization",
+      "summary": "Salesforce Marketing Cloud Personalization (formerly Interaction Studio, previously Evergage) delivers real-time 1:1 personalization, A/B testing, and decisioning across web, email, mobile, and Agentforce — all powered by Einstein AI and the Agentforce agentic layer. Intelligent AI decisioning engine evaluates customer intent, business goals, and constraints in milliseconds. MCP support is delivered at the Agentforce platform level: AI agents can request data, tools, or prompts through a standardized handshake; available to customers on Agentforce-enabled editions (Personalization+ or Enterprise). 'Gear' extensions are custom JavaScript plug-ins that augment AI decisioning logic. SDKs: Web (Salesforce Interactions SDK / JavaScript), iOS (Swift), Android (Java/Kotlin), and Event API (REST). Native integration with Salesforce ecosystem: Marketing Cloud, Data Cloud (CDP), Service Cloud, Sales Cloud, Loyalty Cloud. MuleSoft provides bi-directional connectors. Pricing: Standard (100K MUVs / Named Profiles), Advanced (custom-quoted), Enterprise (custom, includes full Agentforce). Compliance via Salesforce Hyperforce: SOC 2 Type II, ISO 27001, HIPAA BAA, GDPR, SAML SSO. FedRAMP not currently in scope. Operating in 2026.",
+      "mcpDetail": {
+        "url": "https://www.salesforce.com/agentforce/mcp-support",
+        "hosted": "Vendor-hosted",
+        "docs": "https://www.salesforce.com/agentforce/mcp-support"
+      }
+    },
+    {
+      "slug": "ninetailed-by-contentful",
+      "name": "Ninetailed by Contentful",
+      "status": "acquired",
+      "h1": "Personalization at scale for composable architectures",
+      "h2": "Drive higher engagement with your customer journeys. Test, analyze, and refine the performance of your experiences — now part of Contentful Personalization.",
+      "ucf": [],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [],
+      "sdk": [],
+      "integrations": [],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://www.contentful.com/personalization",
+      "summary": "Ninetailed was acquired by Contentful in August 2024 and lightly rebranded to 'Ninetailed by Contentful' / 'Contentful Personalization.' The original ninetailed.io domain now redirects to Contentful's Personalization product page. Combined offering integrates Ninetailed's AI-driven personalization and experimentation directly into Contentful's composable content platform — marketers can create, manage, and optimize personalized experiences from within Contentful in a no-code environment. Capabilities: AI-powered A/B testing optimization, custom segmentation, in-depth analytics, audience targeting across composable architectures. Documented customer outcomes: 78% conversion lift (Kraft-Heinz), 87% higher CTRs (Ace & Tate), <30 min implementation (Ruggable). Available as a Twilio Segment destination. For current product details (pricing, MCP, SDKs, compliance), refer to Contentful's documentation rather than the legacy Ninetailed materials.",
+      "acquiredBy": "Contentful"
+    },
+    {
+      "slug": "varify",
+      "name": "Varify.io",
+      "status": "active",
+      "h1": "The Google Optimize Alternative That's Simple, Affordable & GDPR-Ready",
+      "h2": "Transparent prices. Unlimited traffic. The A/B testing platform built for marketing teams.",
+      "ucf": [
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Agency-friendly (multi-tenant)"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Variant generation (AI)",
+        "Insight summarization (AI)",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4"
+      ],
+      "warehouse": [
+        "BigQuery"
+      ],
+      "compliance": [
+        "GDPR"
+      ],
+      "url": "https://varify.io/en/",
+      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions — the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026."
+    },
+    {
+      "slug": "croct",
+      "name": "Croct",
+      "status": "active",
+      "h1": "Optimize your website for each user",
+      "h2": "Personalize your content, experiment with different journeys for different users, and drive more conversions without over-relying on your developers.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "AI audience builder",
+        "Insight summarization (AI)"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Shopify",
+        "HubSpot",
+        "Amplitude",
+        "Webflow"
+      ],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://croct.com/",
+      "summary": "Croct is a headless personalization, A/B testing, and feature-flag platform built for developer-centric product teams. Positioned around 'component-based headless CMS with built-in AB testing and personalization' for engineering and growth teams in SaaS, e-commerce, and digital products. AI-powered website segmentation automatically discovers high-value visitor segments in real time. Event-based expressions allow audiences to react to past behavior via the Croct Query Language (CQL) — functions like a 'memory' for segmentation. JavaScript-only SDK stack: core JS SDK, Next.js SDK, React SDK. One-click Vercel integration with automatic API-key provisioning. Free tier available with no credit card; custom enterprise pricing for advanced features. G2 Leader in Headless CMS, Personalization, AB Testing, and Component CMS categories (Winter/Spring 2026). No MCP server documented. No compliance certifications (SOC 2, HIPAA, GDPR, ISO 27001) publicly stated. Operating in 2026."
+    },
+    {
+      "slug": "mutiny",
+      "name": "Mutiny",
+      "status": "active",
+      "h1": "Your AI agent for creating anything customer-facing",
+      "h2": "Be the one buyers remember. Join the frontier of how the best GTM teams operate.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Ruby",
+        "Rust"
+      ],
+      "integrations": [
+        "Salesforce",
+        "HubSpot",
+        "Segment",
+        "Google Analytics 4",
+        "Adobe Analytics"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "GDPR",
+        "CCPA",
+        "SSO / SAML"
+      ],
+      "url": "https://www.mutinyhq.com/",
+      "summary": "Mutiny is positioned as an AI agent that creates customer-facing content (1:1 landing pages, deal rooms, pitch decks, business cases, meeting recaps, case studies, pricing proposals) from natural-language prompts. Mutiny's AI pulls in CRM data, call transcripts, and account research to personalize at scale. The Mutiny MCP server (HTTP + OAuth) connects Claude, ChatGPT, IDEs, and any MCP-compatible client to generate Mutiny assets within conversational AI tools. Visitor Intelligence integrations with Outreach and Salesloft surface buyer signals. Originally a B2B website personalization tool, Mutiny pivoted to an agent-first content generation product. Pricing: Free, Business at $50/seat/month, Enterprise starting $30,000/year."
+    },
+    {
+      "slug": "growthbook",
+      "name": "GrowthBook",
+      "status": "active",
+      "h1": "Build Smarter. Ship Faster.",
+      "h2": "The warehouse-native platform used by modern product teams for experimentation, feature flags, and product analytics.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Warehouse-native",
+        "Server-side / feature-flag-first",
+        "Enterprise (governance, multi-team)"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Variant generation (AI)",
+        "Insight summarization (AI)",
+        "Contextual bandits / AI traffic allocation"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Open Source",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Python",
+        "Ruby",
+        "Go",
+        "Java",
+        "PHP",
+        "Node.js",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "Flutter",
+        ".NET / C#",
+        "Elixir",
+        "Rust",
+        "REST / HTTP API",
+        "Edge (Cloudflare / Vercel / Fastly)"
+      ],
+      "integrations": [
+        "Mixpanel",
+        "Amplitude",
+        "Segment",
+        "Slack",
+        "Google Analytics 4"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Databricks",
+        "Redshift",
+        "Postgres",
+        "ClickHouse",
+        "Motherduck",
+        "AWS Athena",
+        "Trino"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "CCPA",
+        "SSO / SAML"
+      ],
+      "url": "https://www.growthbook.io/",
+      "summary": "WebLens AI Hypothesis Generator scrapes a website, prompts an LLM, and produces hypothesis suggestions with DOM mutation output for direct variant creation. AI-generated experiment result summaries and Similar Experiment Detection power insight workflows. Bayesian and frequentist statistics engines, plus multi-armed bandits (Thompson sampling) with sticky bucketing. Open-source MCP server (growthbook-mcp, Node.js) enables Cursor, Claude Code, and VS Code to create features, start experiments, and clean up stale flags. Open-core model lets teams self-host the full platform."
+    },
+    {
+      "slug": "kameleoon",
+      "name": "Kameleoon",
+      "status": "active",
+      "h1": "Build experiments in minutes by chatting with AI",
+      "h2": "Kameleoon's AI platform allows you to build, test, and roll out impactful experiments in one place. From the first test to final release, you're in control.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Client-side marketing/CRO",
+        "Mobile app native",
+        "Server-side / feature-flag-first"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Anomaly detection (AI)",
+        "AI audience builder",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "React Native",
+        "Node.js",
+        "Java",
+        ".NET / C#",
+        "PHP",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Flutter",
+        "Ruby",
+        "Python",
+        "Go",
+        "Rust",
+        "Edge (Cloudflare / Vercel / Fastly)"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Amplitude",
+        "Mixpanel",
+        "Segment",
+        "Tealium",
+        "Shopify"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Snowflake",
+        "Redshift"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "CCPA",
+        "HIPAA"
+      ],
+      "url": "https://www.kameleoon.com/",
+      "summary": "Kameleoon Predict (AI Predictive Targeting) scores each visitor's probability to convert and assigns five categories for real-time activation. Prompt-Based Experimentation (PBX) generates production-grade UI variations from natural language. AI Copilot provides AI Assist for ideation and result interpretation. AI anomaly detection alerts on KPI deviations during live experiments. Contextual bandits dynamically reallocate traffic. Official MCP Server connects AI coding assistants (Claude, Cursor) to Kameleoon for agentic feature management and experiment workflows. Hybrid mode supports both Web SDK and JavaScript application file simultaneously."
+    },
+    {
+      "slug": "statsig",
+      "name": "Statsig",
+      "status": "active",
+      "h1": "Measure what ships. Ship what matters.",
+      "h2": "Test how each release - from features to AI-powered experiences - lands with customers, so you can protect trust and optimize at the speed of AI",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Warehouse-native",
+        "Server-side / feature-flag-first",
+        "Mobile app native",
+        "DTC ecommerce",
+        "Enterprise (governance, multi-team)"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Variant generation (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "AI QA / preflight checks",
+        "Insight summarization (AI)",
+        "Hypothesis generation (AI)"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)",
+        "Usage-based",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Python",
+        "Ruby",
+        "Go",
+        "Java",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "React Native",
+        "Flutter",
+        "PHP",
+        ".NET / C#",
+        "Node.js",
+        "Rust",
+        "REST / HTTP API",
+        "Unity",
+        "Roku",
+        "C++",
+        "Angular"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Amplitude",
+        "Segment",
+        "Mixpanel",
+        "mParticle",
+        "RudderStack",
+        "Slack",
+        "Datadog",
+        "Fivetran",
+        "Hightouch",
+        "Webflow",
+        "Framer",
+        "Shopify"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "Databricks",
+        "AWS Athena",
+        "Trino",
+        "Microsoft Fabric",
+        "ClickHouse"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "GDPR",
+        "SSO / SAML",
+        "EU-U.S. / UK / Swiss Data Privacy Framework"
+      ],
+      "url": "https://www.statsig.com/experimentation",
+      "summary": "Autotune is Statsig's Bayesian multi-armed bandit for automatic traffic allocation toward the best-performing variant. Autotune AI extends this with contextual bandits, scoring treatments per user based on attributes for lightweight reinforcement-learning-style personalization. Knowledge Graph connects codebase, feature gates, experiments, users, and metrics to give AI agents structured context. The native MCP server lets Cursor, Claude Desktop, ChatGPT, and Codex create gates, run experiments, and analyze results inside the development workflow.",
+      "mcpDetail": {
+        "url": "https://api.statsig.com/v1/mcp",
+        "hosted": "Vendor-hosted",
+        "docs": "https://docs.statsig.com/integrations/mcp"
+      }
+    },
+    {
+      "slug": "sitespect",
+      "name": "SiteSpect (now part of Monetate)",
+      "status": "acquired",
+      "h1": "SiteSpect is now part of Monetate",
+      "h2": "The enterprise-grade optimization and experimentation engine, now part of Monetate — the industry's most comprehensive AI personalization and testing platform.",
+      "ucf": [],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [],
+      "sdk": [],
+      "integrations": [],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://www.sitespect.com/",
+      "summary": "SiteSpect was acquired by Monetate in June 2025 (~$75M deal). SiteSpect's LinkedIn confirms 'now part of Monetate.' The SiteSpect brand and product platform remain active, but the company is being merged into Monetate's broader AI-native personalization and testing platform. SiteSpect's distinctive technology was zero-flicker server-side A/B testing for enterprise e-commerce — a meaningful complement to Monetate's AI personalization. For current product details (pricing, MCP, SDKs, AI features, compliance), refer to the Monetate record in this database. Legacy SiteSpect capabilities (server-side testing, reverse-proxy architecture, zero-flicker rendering) are being integrated into the combined Monetate platform.",
+      "acquiredBy": "Monetate"
+    },
+    {
+      "slug": "webflow-optimize",
+      "name": "Webflow Optimize",
+      "status": "active",
+      "h1": "Learn what performs. Deliver it at scale.",
+      "h2": "Run experiments, personalize for every visitor, and let AI deliver the winning experience — whether your site is built on Webflow or not.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "DTC ecommerce",
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO",
+        "Agency-friendly (multi-tenant)"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Python",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Webflow",
+        "Google Analytics 4",
+        "HubSpot",
+        "Klaviyo"
+      ],
+      "warehouse": [
+        "BigQuery",
+        "Redshift"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "SSO / SAML"
+      ],
+      "url": "https://webflow.com/feature/optimize",
+      "summary": "Webflow Optimize is Webflow's native A/B testing and personalization add-on, combining three approaches in one platform: traditional A/B testing, rules-based personalization, and AI-powered optimization that learns what content works best for each visitor down to a 1:1 level. Critically, works on sites NOT built on Webflow — not just Webflow-hosted sites. Webflow AI Assistant proposes variant suggestions, generates copy for headlines/CTAs/body, and provides predictive audience insights. AI Optimize is a real-time decision engine that selects the best variant per visitor using machine learning. Webflow operates an open-source MCP server (github.com/webflow/mcp-server) that translates natural-language prompts from LLM agents (Cursor, Claude) into Webflow Data API calls — self-hosted or Webflow-hosted with OAuth authentication. Operations include list collections, create items, update styles, publish site. SDKs: JavaScript/TypeScript (js-webflow-api), Python (webflow-python), with OAuth or site-specific tokens. Browser API auto-injected on Optimize-enabled sites (wf.onVariationRecorded, wf.setAttributes). Pricing: $299/mo add-on for up to 500K page-views with 5 concurrent optimizations; Enterprise custom-quoted for higher volume. Native warehouse exports: BigQuery (real-time streaming via webhooks) and Redshift (direct destination connector). Integrations: GA4, HubSpot, Klaviyo. Compliance: SOC 2 Type II, ISO 27001, ISO 27017, ISO 27018, SAML SSO. HIPAA not confirmed. Customers include Ideo, Monday.com, BBDO, The New York Times, TED.",
+      "mcpDetail": {
+        "url": "https://github.com/webflow/mcp-server",
+        "hosted": "Both",
+        "docs": "https://developers.webflow.com/mcp/reference/how-it-works"
+      }
+    },
+    {
+      "slug": "figpii",
+      "name": "FigPii",
+      "status": "active",
+      "h1": "More Conversions. Higher Revenue. Better Customer Experiences.",
+      "h2": "Get a full picture of user interactions, eliminate customer frustrations, launch tests and unlock your website's untapped revenue potential.",
+      "ucf": [
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Shopify-native",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Free",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Shopify"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "CCPA",
+        "EU data residency"
+      ],
+      "url": "https://www.figpii.com/",
+      "summary": "FigPii is an all-in-one CRO platform combining A/B testing, heatmaps, session recordings, and polls with the same unlimited features across all paid tiers — differentiated only by visitor capacity and support level. AI features: personalized AI-driven testing recommendations suggest which page elements to test and propose specific changes based on aggregated visitor behavior data; automated session analysis surfaces friction points with actionable insights. Pricing visitor-based: Free Tester (15K visitors, $0), Starter $74.99/mo (10K), Small $149.99/mo (30K), Medium $299.99/mo (60K), Large $449.99/mo (100K, scaling to $2,899.99/mo for 1M visitors), Enterprise custom. Native integrations: Shopify (with ecommerce event tracking via webhooks for 100% accurate revenue), GA4 (creates GA4 Audiences for each experiment), BigCommerce, WordPress. JavaScript tracking snippet only — no SDK list for other languages. EU or US data residency selectable. No MCP server documented. No data warehouse connectors. Surprisingly strong compliance footprint for the tier: SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, GDPR, CCPA. SSO mentioned but lacks SAML detail — likely beta. Targets mid-market e-commerce and SaaS firms (10K-200K monthly visitors)."
+    },
+    {
+      "slug": "compose",
+      "name": "Compose",
+      "status": "active",
+      "h1": "The only pay as you go A/B testing platform on the market",
+      "h2": "Unleash the power of next-gen experimentation while only paying for what you need with our unique pay-as-you-go pricing.",
+      "ucf": [
+        "Shopify-native",
+        "DTC ecommerce",
+        "Agency-friendly (multi-tenant)",
+        "Client-side marketing/CRO"
+      ],
+      "mcp": "none",
+      "ai": [],
+      "pricing": [
+        "Usage-based"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript"
+      ],
+      "integrations": [
+        "Shopify",
+        "Google Analytics 4"
+      ],
+      "warehouse": [],
+      "compliance": [],
+      "url": "https://www.compose.co",
+      "summary": "Compose is a no-code, Shopify-native A/B testing app positioned as an affordable alternative to Convert, AB Tasty, VWO, and Optimizely. Only pay-as-you-go pricing on the market: free to install plus $0.0012 per tested user (unique visitor in an active experiment). Supports theme/template testing, product page tests, collection tests, JavaScript variants in a code editor for advanced custom logic. Visual editor integrates directly with Shopify storefront. Native checkout integration. No AI/agentic features documented in marketing materials. No MCP server documented. No compliance certifications publicly listed. Targets small-to-medium Shopify merchants seeking flexibility and low-cost experimentation."
+    },
+    {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "status": "active",
+      "h1": "AI Analytics Platform for Modern Digital Analytics",
+      "h2": "Build better products by turning your user data into meaningful insights, using Amplitude's digital analytics platform and experimentation tools.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "B2B SaaS / Product-led",
+        "Warehouse-native",
+        "Client-side marketing/CRO",
+        "Server-side / feature-flag-first",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Anomaly detection (AI)",
+        "AI audience builder",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Usage-based",
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js",
+        "Python",
+        "Ruby",
+        "Go",
+        "PHP",
+        "Java",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "Flutter",
+        "React Native",
+        "Unity",
+        ".NET / C#"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Segment",
+        "Slack",
+        "Salesforce",
+        "HubSpot",
+        "Shopify"
+      ],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Databricks",
+        "Redshift"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "EU-U.S. / UK / Swiss Data Privacy Framework",
+        "HIPAA",
+        "SSO / SAML"
+      ],
+      "url": "https://amplitude.com/web-experimentation",
+      "summary": "Amplitude AI Agents include Dashboard Monitoring Agent, Session Replay Agent, Web Experimentation Agent (designs and launches experiments, analyzes results, makes rollout decisions with human in the loop), and AI Feedback Agent. Amplitude MCP exposes behavioral context to external AI tools and workflows, connecting AI clients to Amplitude data and functionality. Conversational AI lets users type natural-language questions and get visualized answers. Experiment SDKs support remote (vendor-hosted) and local evaluation for low latency. Web Experimentation uses a visual editor delivered as a dynamic layer over the customer's website. Privacy-focused: external LLM invocations enforce contractual no-training controls; customers can opt out."
+    },
+    {
+      "slug": "dynamic-yield",
+      "name": "Dynamic Yield",
+      "status": "active",
+      "h1": "Personalization & Experimentation Pioneers",
+      "h2": "Dynamic Yield's Experience OS delivers digital experiences that are personalized, optimized, and synchronized.",
+      "ucf": [
+        "Enterprise (governance, multi-team)",
+        "DTC ecommerce",
+        "B2B SaaS / Product-led",
+        "Client-side marketing/CRO",
+        "Mobile app native"
+      ],
+      "mcp": "none",
+      "ai": [
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "AI audience builder",
+        "Contextual bandits / AI traffic allocation",
+        "Prompt-based editor"
+      ],
+      "pricing": [
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Java",
+        "Python",
+        "Node.js",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Tealium",
+        "Shopify",
+        "Segment",
+        "Salesforce"
+      ],
+      "warehouse": [
+        "Snowflake"
+      ],
+      "compliance": [
+        "SOC 2 Type II",
+        "ISO 27001",
+        "GDPR",
+        "CCPA",
+        "SSO / SAML"
+      ],
+      "url": "https://www.dynamicyield.com/",
+      "summary": "AdaptML is the core AI engine providing real-time affinity profiles, next-best-item predictions, and multi-purchase cadence modeling. Recommendations engine uses deep learning, visual similarity, and reinforcement learning for product catalogs with millions of SKUs. Predictive Targeting scores audiences for uplift potential. Copywriter + Stability.ai integration enables automated copy and visual generation. NextML NLP models predict next-best-item. Shopping Muse is a generative AI commerce advisor (users describe needs, e.g., 'outfit for a beach wedding in Bali'). Acquired by Mastercard in 2022, the platform now incorporates Mastercard Element spend signals. Snowflake connector via Improvado for warehouse export; raw event data via Daily Activity Stream. No Model Context Protocol (MCP) server for external AI assistants documented."
+    }
+  ]
+}
