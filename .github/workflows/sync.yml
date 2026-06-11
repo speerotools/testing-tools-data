@@ -21,7 +21,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install pyairtable httpx
+        run: pip install "pyairtable>=3,<4"
 
       - name: Run sync
         env:

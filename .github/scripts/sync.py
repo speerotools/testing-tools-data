@@ -136,7 +136,7 @@ def fetch_records() -> tuple[list[dict], dict[str, str]]:
 
     print("  Fetching Master Variables...")
     master = base.table(MASTER_ID)
-    master_records = master.all(return_fields_by_field_id=True)
+    master_records = master.all(use_field_ids=True)
     cache: dict[str, str] = {}
     for r in master_records:
         name = r["fields"].get(MASTER_NAME_FIELD, "")
@@ -146,7 +146,7 @@ def fetch_records() -> tuple[list[dict], dict[str, str]]:
 
     print("  Fetching Database records...")
     db = base.table(TABLE_ID)
-    records = db.all(return_fields_by_field_id=True)
+    records = db.all(use_field_ids=True)
     print(f"  {len(records)} records fetched")
     return records, cache
 
