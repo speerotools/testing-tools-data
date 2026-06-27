@@ -1,6 +1,6 @@
 {
-  "version": "2026-06-27T08:26:02Z",
-  "commit": "59eaef89f51c6a2feaab38aee2cc88fccb0148b1",
+  "version": "2026-06-27T13:09:32Z",
+  "commit": "fd477db608bfb2598b5586f4266b559c9f2d6826",
   "vendors": [
     {
       "slug": "ablyft",
@@ -173,6 +173,67 @@
       ],
       "url": "https://www.omniconvert.com/",
       "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented."
+    },
+    {
+      "slug": "spotify-confidence",
+      "name": "Confidence (Spotify)",
+      "status": "active",
+      "h1": "Experiment like Spotify",
+      "h2": "We fail fast and we learn fast, with Confidence. Now you can too.",
+      "ucf": [
+        "B2B SaaS / Product-led",
+        "Warehouse-native",
+        "Server-side / feature-flag-first",
+        "Enterprise (governance and multi-team)"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Insight summarization (AI)"
+      ],
+      "pricing": [
+        "Free",
+        "Freemium",
+        "Subscription (per MAU or seat)",
+        "Usage-based",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript/TypeScript",
+        "React/Next.js",
+        "Node.js",
+        "Python",
+        "Go",
+        "Java",
+        "Ruby",
+        ".NET/C#",
+        "PHP",
+        "Rust",
+        "Swift (iOS)",
+        "Kotlin (Android)",
+        "Flutter",
+        "Unity",
+        "Edge (Cloudflare/Vercel/Fastly)",
+        "REST/HTTP API"
+      ],
+      "integrations": [],
+      "warehouse": [
+        "Snowflake",
+        "BigQuery",
+        "Databricks",
+        "Redshift"
+      ],
+      "compliance": [
+        "GDPR",
+        "EU data residency",
+        "SSO/SAML"
+      ],
+      "url": "https://confidence.spotify.com/",
+      "summary": "Spotify's internal experimentation platform, now sold standalone. Confidence combines feature flags, A/B tests, rollouts, and warehouse-native metric analysis in one platform, running experiments directly on your own data warehouse (Snowflake, BigQuery, Databricks, Redshift) instead of duplicating event data. SDKs are OpenFeature-compliant (CNCF) across server, client, and edge runtimes, built on an open-source Rust flag resolver. Statistics include sequential testing with valid early stopping, CUPED variance reduction, and multiple-comparison adjustment. Credit-based pricing (one credit equals one unique user per month) with a generous free tier that includes Google SSO, warehouse-native access, and EU or US hosting. Spotify publishes an official AI plugin for Claude Code and Cursor with two vendor-hosted MCP servers, confidence-flags for feature-flag management and confidence-docs, authenticated over OAuth, plus migration skills for moving flags from tools like PostHog, Statsig, Optimizely, and Eppo. SOC 2 Type II is in progress, with the first examination targeted for December 2026, so it is not yet a held certification.",
+      "mcpDetail": {
+        "url": "https://mcp.confidence.spotify.com/mcp/flags",
+        "hosted": "Vendor-hosted",
+        "docs": "https://confidence.spotify.com/docs/mcp-servers"
+      }
     },
     {
       "slug": "sitecore",
