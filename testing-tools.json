@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-03T08:48:49Z",
-  "commit": "6e127fa9b0b7357f0168ae5adb34d105f251a8c3",
+  "version": "2026-07-03T13:42:25Z",
+  "commit": "d60a1c39e91935aaa314a418d1008819a681890e",
   "vendors": [
     {
       "slug": "ablyft",
@@ -562,7 +562,7 @@
         "Client-side marketing/CRO",
         "Mobile app native"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
@@ -599,7 +599,12 @@
         "SSO / SAML"
       ],
       "url": "https://business.adobe.com/products/target/adobe-target",
-      "summary": "Adobe Sensei AI underpins all AI-driven Target features. Auto-Allocate dynamically shifts traffic toward the best-performing variation using multi-armed bandit logic. Auto-Target (Premium tier) is a real-time ML-based decision engine that selects the most promising experience per individual visitor based on behavior and context. Automated Personalization (Premium) creates unique content combinations per visitor without predefined segments. Adobe Experience Platform AI Assistant provides a conversational interface for natural-language queries across Target. Adobe announced a redesigned UI with generative AI features for personalization at scale in 2025. No Model Context Protocol (MCP) server is publicly documented; integration with external AI clients (Claude, ChatGPT, Cursor) is not publicly supported. Two-tier model: Standard (A/B, multivariate, rules-based targeting, auto-allocate) and Premium (adds Auto-Target, Automated Personalization, Recommendations)."
+      "summary": "Adobe Sensei AI underpins all AI-driven Target features. Auto-Allocate dynamically shifts traffic toward the best-performing variation using multi-armed bandit logic. Auto-Target (Premium tier) is a real-time ML-based decision engine that selects the most promising experience per individual visitor based on behavior and context. Automated Personalization (Premium) creates unique content combinations per visitor without predefined segments. Adobe Experience Platform AI Assistant provides a conversational interface for natural-language queries across Target. Adobe announced a redesigned UI with generative AI features for personalization at scale in 2025. No Model Context Protocol (MCP) server is publicly documented; integration with external AI clients (Claude, ChatGPT, Cursor) is not publicly supported. Two-tier model: Standard (A/B, multivariate, rules-based targeting, auto-allocate) and Premium (adds Auto-Target, Automated Personalization, Recommendations).",
+      "mcpDetail": {
+        "url": "https://targetmcp.adobe.io/mcp",
+        "hosted": "Vendor-hosted",
+        "docs": "https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp"
+      }
     },
     {
       "slug": "conductrics",
@@ -1522,7 +1527,7 @@
         "DTC ecommerce",
         "Enterprise (governance, multi-team)"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Variant generation (AI)",
         "Contextual bandits / AI traffic allocation",
@@ -1587,10 +1592,16 @@
         "SOC 2 Type II",
         "GDPR",
         "SSO / SAML",
-        "EU-U.S. / UK / Swiss Data Privacy Framework"
+        "EU-U.S. / UK / Swiss Data Privacy Framework",
+        "HIPAA"
       ],
       "url": "https://www.statsig.com/experimentation",
-      "summary": "Autotune is Statsig's Bayesian multi-armed bandit for automatic traffic allocation toward the best-performing variant. Autotune AI extends this with contextual bandits, scoring treatments per user based on attributes for lightweight reinforcement-learning-style personalization. Knowledge Graph connects codebase, feature gates, experiments, users, and metrics to give AI agents structured context. The native MCP server lets Cursor, Claude Desktop, ChatGPT, and Codex create gates, run experiments, and analyze results inside the development workflow."
+      "summary": "Autotune is Statsig's Bayesian multi-armed bandit for automatic traffic allocation toward the best-performing variant. Autotune AI extends this with contextual bandits, scoring treatments per user based on attributes for lightweight reinforcement-learning-style personalization. Knowledge Graph connects codebase, feature gates, experiments, users, and metrics to give AI agents structured context. The native MCP server lets Cursor, Claude Desktop, ChatGPT, and Codex create gates, run experiments, and analyze results inside the development workflow.",
+      "mcpDetail": {
+        "url": "https://api.statsig.com/v1/mcp",
+        "hosted": "Vendor-hosted",
+        "docs": "https://docs.statsig.com/integrations/mcp"
+      }
     },
     {
       "slug": "sitespect",
