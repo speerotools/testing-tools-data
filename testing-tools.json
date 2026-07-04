@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-03T19:01:26Z",
-  "commit": "ffe82702de191f7d457044820f2fa173ecb1e7bc",
+  "version": "2026-07-04T01:55:59Z",
+  "commit": "7b15f8c1bb75842fd975526bfa044108128c56f8",
   "vendors": [
     {
       "slug": "ablyft",
@@ -184,7 +184,7 @@
         "B2B SaaS / Product-led",
         "Warehouse-native",
         "Server-side / feature-flag-first",
-        "Enterprise (governance and multi-team)"
+        "Enterprise (governance, multi-team)"
       ],
       "mcp": "product",
       "ai": [
@@ -545,7 +545,7 @@
       "url": "https://www.optimizely.com/",
       "summary": "Optimizely Opal is a suite of specialized AI agents working across the platform: AI Variation Generator (processes up to 8,000 tokens of text-based content), AI-driven test idea suggestions, AI Variation Summaries that auto-explain experiment changes, and the agent-driven Opal Chat. Contextual Multi-Armed Bandits (CMABs) personalize via reinforcement learning. Opal integrates with Microsoft Copilot (closed beta). The Experimentation MCP Server is in closed beta with both Remote (vendor-hosted, OAuth via Opal) and local (self-hosted) deployment options.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://exp.mcp.opal.optimizely.com/mcp",
         "hosted": "Both",
         "docs": "https://support.optimizely.com/hc/en-us/articles/45320607594893-Optimizely-Experimentation-MCP-server-overview"
       }
@@ -731,7 +731,7 @@
       "url": "https://www.intelligems.io/",
       "summary": "Intelligems is positioned as 'AI that understands the realities of your business' for Shopify merchants. AI Visual Builder (beta) lets users describe on-site changes in natural language and the AI builds brand-matched modifications. AI-driven experiment recommendations suggest which profit levers (price, discount, shipping) to test based on historical performance. Automated pricing suggestions analyze site-wide analytics to recommend optimal price points. Intelligems MCP Server exposes store-level data (experiments, catalog, analytics, audiences, custom events) to AI assistants (Claude, ChatGPT, Gemini) via standardized OAuth-authenticated API — enables conversational decision-making with profit-per-visitor breakdowns. Plans: Core $79/mo (< 3K orders), Plus $499/mo, Blue $999/mo. 14-day free trial. Data Sharing add-on supports Snowflake, BigQuery, Redshift, Databricks, and cloud storage.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://ai.intelligems.io/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://docs.intelligems.io/developer-resources/mcp-server"
       }
@@ -856,7 +856,7 @@
       "url": "https://posthog.com/",
       "summary": "PostHog AI is an in-app AI agent that creates insights, builds dashboards, summarizes session replays, and writes/fixes/validates SQL queries. Documented AI tools include create_feature_flag, create_experiment, and session_summarization. PostHog AI Observability tracks LLM token usage, latency, and cost. The PostHog MCP server is GA and free, giving AI coding agents direct access to PostHog analytics, feature flags, experiments, and errors from Claude Code, Cursor, VS Code, Zed, and other MCP-compatible tools. AI wizard adds PostHog to a codebase with a single CLI command. Open-core model: full platform self-hostable.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.posthog.com/mcp",
         "hosted": "Both",
         "docs": "https://posthog.com/docs/model-context-protocol"
       }
@@ -1091,7 +1091,7 @@
       "mcpDetail": {
         "url": "",
         "hosted": "",
-        "docs": ""
+        "docs": "https://www.zoho.com/mcp"
       }
     },
     {
@@ -1670,7 +1670,7 @@
       "url": "https://webflow.com/feature/optimize",
       "summary": "Webflow Optimize is Webflow's native A/B testing and personalization add-on, combining three approaches in one platform: traditional A/B testing, rules-based personalization, and AI-powered optimization that learns what content works best for each visitor down to a 1:1 level. Critically, works on sites NOT built on Webflow — not just Webflow-hosted sites. Webflow AI Assistant proposes variant suggestions, generates copy for headlines/CTAs/body, and provides predictive audience insights. AI Optimize is a real-time decision engine that selects the best variant per visitor using machine learning. Webflow operates an open-source MCP server (github.com/webflow/mcp-server) that translates natural-language prompts from LLM agents (Cursor, Claude) into Webflow Data API calls — self-hosted or Webflow-hosted with OAuth authentication. Operations include list collections, create items, update styles, publish site. SDKs: JavaScript/TypeScript (js-webflow-api), Python (webflow-python), with OAuth or site-specific tokens. Browser API auto-injected on Optimize-enabled sites (wf.onVariationRecorded, wf.setAttributes). Pricing: $299/mo add-on for up to 500K page-views with 5 concurrent optimizations; Enterprise custom-quoted for higher volume. Native warehouse exports: BigQuery (real-time streaming via webhooks) and Redshift (direct destination connector). Integrations: GA4, HubSpot, Klaviyo. Compliance: SOC 2 Type II, ISO 27001, ISO 27017, ISO 27018, SAML SSO. HIPAA not confirmed. Customers include Ideo, Monday.com, BBDO, The New York Times, TED.",
       "mcpDetail": {
-        "url": "https://github.com/webflow/mcp-server",
+        "url": "https://mcp.webflow.com/mcp",
         "hosted": "Both",
         "docs": "https://developers.webflow.com/mcp/reference/how-it-works"
       }
