@@ -1,6 +1,6 @@
 {
-  "version": "2026-07-11T01:44:40Z",
-  "commit": "40094a77f211497fd82435e34734322c13824d86",
+  "version": "2026-07-11T07:39:56Z",
+  "commit": "674e0208b0fd91d778619604e866515cb8c10af0",
   "vendors": [
     {
       "slug": "ablyft",
@@ -859,6 +859,58 @@
         "url": "https://mcp.posthog.com/mcp",
         "hosted": "Both",
         "docs": "https://posthog.com/docs/model-context-protocol"
+      }
+    },
+    {
+      "slug": "uniform",
+      "name": "Uniform",
+      "status": "active",
+      "h1": "Connect. Orchestrate. Ship. Optimize.",
+      "h2": "The agentic DXP that adapts to your needs. Get powerful CMS, orchestration, personalization, and agentic AI out-of-the-box, plus seamless integration with any existing tools.",
+      "ucf": [
+        "Client-side marketing/CRO",
+        "Enterprise (governance, multi-team)"
+      ],
+      "mcp": "product",
+      "ai": [
+        "Prompt-based editor",
+        "Variant generation (AI)",
+        "AI audience builder"
+      ],
+      "pricing": [
+        "Subscription (flat)",
+        "Enterprise (custom)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js",
+        "Edge (Cloudflare / Vercel / Fastly)",
+        "REST / HTTP API"
+      ],
+      "integrations": [
+        "Google Analytics 4",
+        "Adobe Analytics",
+        "Segment",
+        "mParticle",
+        "RudderStack",
+        "Hightouch",
+        "Shopify",
+        "Salesforce"
+      ],
+      "warehouse": [],
+      "compliance": [
+        "GDPR",
+        "CCPA",
+        "EU data residency",
+        "SSO / SAML"
+      ],
+      "url": "https://www.uniform.dev/",
+      "summary": "Scout, Uniform's native AI agent, creates pages and components from natural-language commands, suggests audience segments, sets up A/B tests and personalization, auto-tags content, and translates compositions. GenAI features cover content creation, translation, and SEO/CRO optimization. Siphon is an AI-driven front-end migration tool that rebuilds existing sites on a modern stack. Scout can also consume external MCP servers (Linear, Notion, GitHub) from inside Uniform. AI operations are metered by AI credits. Note: no native statistics engine. Experiment measurement is delegated to connected analytics (GA4 by default) and winners are declared manually.",
+      "mcpDetail": {
+        "url": "https://ai.uniform.global/projects/project-id/mcp",
+        "hosted": "Both",
+        "docs": "https://docs.uniform.app/docs/guides/ai/mcp-server"
       }
     },
     {
