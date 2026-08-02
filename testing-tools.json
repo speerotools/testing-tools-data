@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-02T12:58:05Z",
-  "commit": "75d36d83bd1585dad1e4c195b47dea654879b0cf",
+  "version": "2026-08-02T18:54:33Z",
+  "commit": "07a71c90a38fd3b53d512dcedd0de7b2a3417326",
   "vendors": [
     {
       "slug": "ablyft",
@@ -89,47 +89,6 @@
       "url": "https://www.geteppo.com/",
       "summary": "Contextual Bandits deliver real-time AI personalization with full warehouse-native execution. Auto-Generate Explore Charts automatically surface statistically significant slices in experiment results. Automated Slack alerts flag traffic imbalances, anomalous metric drops, instrumentation gaps, and data pipeline errors. AI Personalization positioning aligns with the warehouse-native bandit approach. Note: Eppo was acquired by Datadog in 2025 and is being merged into Datadog Experiments.",
       "acquiredBy": "Datadog"
-    },
-    {
-      "slug": "evolv-ai",
-      "name": "Evolv AI",
-      "status": "active",
-      "h1": "Stop guessing. Start growing.",
-      "h2": "Evolv AI instantly identifies your high-impact conversion blockers and delivers the precise, AI-generated UX improvements you need to deploy today.",
-      "ucf": [
-        "B2B SaaS / Product-led",
-        "DTC ecommerce",
-        "Enterprise (governance, multi-team)",
-        "Client-side marketing/CRO"
-      ],
-      "mcp": "none",
-      "ai": [
-        "Contextual bandits / AI traffic allocation",
-        "Variant generation (AI)",
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
-        "AI audience builder"
-      ],
-      "pricing": [
-        "Enterprise (custom)"
-      ],
-      "sdk": [
-        "JavaScript / TypeScript",
-        "React / Next.js",
-        "Swift (iOS)",
-        "Kotlin (Android)"
-      ],
-      "integrations": [
-        "Google Analytics 4",
-        "Adobe Analytics",
-        "Segment"
-      ],
-      "warehouse": [],
-      "compliance": [
-        "EU-U.S. / UK / Swiss Data Privacy Framework"
-      ],
-      "url": "https://evolv.ai/",
-      "summary": "Evolv AI positions itself as an autonomous AI optimization engine that continuously learns from user interactions to improve digital experiences. Core differentiator: 'active learning' that refines each iteration automatically — implying contextual bandits and reinforcement-learning-style adaptation, though specific algorithms (multi-armed bandits, evolutionary algorithms) are not enumerated in official docs. Real-time testing and personalization with continuous optimization. AI-generated UX improvements identify conversion blockers and propose deployable fixes. SDKs: JavaScript (vanilla ES6), React/Next.js, iOS (Swift), Android (Kotlin/Java). All SDK repositories show active maintenance through 2024. Integrations: GA4, Google Analytics (Universal), Adobe Analytics, Segment. No MCP server documented. Pricing not publicly disclosed — sales-led enterprise model. Compliance limited to EU-U.S./UK/Swiss Data Privacy Framework; no SOC 2, HIPAA, ISO 27001, or SSO/SAML publicly stated. Target market inferred as e-commerce, media, and subscription businesses with high-traffic web/mobile experiences needing rapid experimentation. Operating in 2026."
     },
     {
       "slug": "omniconvert",
