@@ -1,0 +1,67 @@
+name: Enrichment monitor (monthly)
+
+# Separate from the 6-hour data sync (sync.yml). This job re-fetches every
+# active vendor URL, compares content hashes to the stored baseline, and emits
+# a diff of changed pages that routes into targeted re-verification.
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'      # 06:00 UTC on the 1st of each month
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'Run mode'
+        type: choice
+        default: monitor
+        options: [monitor, baseline]
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # to commit the changed-pages diff
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install "pyairtable>=3,<4"
+
+      - name: Run enrichment monitor
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+        run: |
+          if [ "${{ github.event.inputs.mode }}" = "baseline" ]; then
+            python .github/scripts/enrich.py --baseline
+          else
+            python .github/scripts/enrich.py
+          fi
+
+      - name: Upload changed-pages diff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: changed-pages
+          path: changed-pages.md
+          if-no-files-found: ignore
+
+      - name: Commit diff
+        if: always()
+        run: |
+          git config user.name  "speero-sync-bot"
+          git config user.email "sync@speero.com"
+          if [ -f changed-pages.md ]; then
+            git add changed-pages.md
+            if git diff --cached --quiet; then
+              echo "No diff changes"
+            else
+              git commit -m "Enrichment monitor diff [$(date -u +%Y-%m-%d)]"
+              git push
+            fi
+          fi
