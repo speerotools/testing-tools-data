@@ -74,15 +74,15 @@ USER_AGENT = "SpeeroToolMonitor/1.0 (+https://speero.com; content-change check)"
 
 # Registry field IDs (from the dev handoff doc).
 F = {
-    "url":       "fldDpTQraitVt4yHB",
-    "vendor":    "fldZpeoHlScaEp2yh",
-    "active":    "fldFqvuPSinBYvrvk",
-    "source":    "fldIaxgENIkgmOA63",
-    "url_type":  "fldwUVSYu5QYi3N0k",
-    "notes":     "fldLvNFcAsuacgV3W",
-    # TODO: fill these two from `python enrich.py --dump-schema`.
-    "hash":         "fldCONTENTHASHXXX",
-    "last_scrape":  "fldLASTSCRAPEXXX",
+    "url":        "fldDpTQraitVt4yHB",
+    "vendor":     "fldZpeoHlScaEp2yh",
+    "active":     "fldFqvuPSinBYvrvk",
+    "discovered": "fldIaxgENIkgmOA63",
+    "url_type":   "fldwUVSYu5QYi3N0k",
+    "notes":      "fldLvNFcAsuacgV3W",
+    "hash":         "fldom4YFOBDz4LKUV",   # Last Content Hash
+    "last_scrape":  "fld7cxhRHwQ6bzFAs",   # Last Fetched
+    "status_code":  "fldi7kXOkskXR0BO8",   # Last Status Code (available, not yet written)
 }
 
 BATCH = 25  # Airtable hard limit; do NOT raise (50 silently writes nothing).
