@@ -40,3 +40,11 @@ jobs:
             git commit -m "Sync from Airtable [$TIMESTAMP]"
             git push
           fi
+
+      - name: Reconcile Webflow CMS and purge CDN
+        env:
+          WEBFLOW_TOKEN:   ${{ secrets.WEBFLOW_TOKEN }}
+          # Keep publishing OFF until the Webflow template page carries the
+          # island.js embed. Once it does, set this repo variable to "true".
+          WEBFLOW_PUBLISH: ${{ vars.WEBFLOW_PUBLISH }}
+        run: python .github/scripts/webflow_sync.py
