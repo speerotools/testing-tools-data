@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-06T13:40:55Z",
-  "commit": "d81c0b2b080457088f34c2a8b4075638c6b782f9",
+  "version": "2026-08-06T23:49:17Z",
+  "commit": "d7e10cb8c6b33f2787445161e8736a1452207c56",
   "vendors": [
     {
       "slug": "ablyft",
@@ -53,8 +53,8 @@
     },
     {
       "slug": "eppo-by-datadog",
-      "name": "Eppo by Datadog",
-      "status": "acquired",
+      "name": "Datadog",
+      "status": "active",
       "h1": "Eppo is now Datadog Experiments",
       "h2": "We've spent the last year building a new generation of experimentation platform: trustworthy, self-service experimentation and feature flagging for every team. Now on Datadog.",
       "ucf": [
@@ -63,12 +63,15 @@
         "Server-side / feature-flag-first",
         "Enterprise (governance, multi-team)"
       ],
-      "mcp": "none",
+      "mcp": "platform",
       "ai": [
         "Contextual bandits / AI traffic allocation",
         "AI audience builder",
         "Anomaly detection (AI)",
-        "Insight summarization (AI)"
+        "Insight summarization (AI)",
+        "mcp-native agent surface",
+        "agentic experimentation",
+        "Warehouse-native AI"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -105,7 +108,11 @@
       ],
       "url": "https://www.geteppo.com/",
       "summary": "Contextual Bandits deliver real-time AI personalization with full warehouse-native execution. Auto-Generate Explore Charts automatically surface statistically significant slices in experiment results. Automated Slack alerts flag traffic imbalances, anomalous metric drops, instrumentation gaps, and data pipeline errors. AI Personalization positioning aligns with the warehouse-native bandit approach. Note: Eppo was acquired by Datadog in 2025 and is being merged into Datadog Experiments.",
-      "acquiredBy": "Datadog"
+      "mcpDetail": {
+        "url": "",
+        "hosted": "Both",
+        "docs": "https://docs.datadoghq.com/experiments/mcp_tools/"
+      }
     },
     {
       "slug": "omniconvert",
@@ -118,7 +125,7 @@
         "DTC ecommerce",
         "Client-side marketing/CRO"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
@@ -148,7 +155,12 @@
         "GDPR"
       ],
       "url": "https://www.omniconvert.com/",
-      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented."
+      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented.",
+      "mcpDetail": {
+        "url": "https://web.omniconvert.com/mcp",
+        "hosted": "Vendor-hosted",
+        "docs": "https://help.omniconvert.com/kba/api-key-clients-cursor-claude-code-claude-desktop/"
+      }
     },
     {
       "slug": "spotify-confidence",
@@ -278,7 +290,8 @@
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
-        "Variant generation (AI)"
+        "Variant generation (AI)",
+        "AI audience builder"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -377,7 +390,7 @@
     {
       "slug": "symplify",
       "name": "Symplify",
-      "status": "active",
+      "status": "acquired",
       "h1": "CRM? No, we do much more than that…",
       "h2": "Future proof whatever you choose to call it. Your competitors are… CRM. Marketing Automation. AI. Conversion Testing. Consumer Data Insights. That's a lot of name calling when you could simply say Symplify.",
       "ucf": [
@@ -385,10 +398,7 @@
         "Client-side marketing/CRO"
       ],
       "mcp": "none",
-      "ai": [
-        "Variant generation (AI)",
-        "Prompt-based editor"
-      ],
+      "ai": [],
       "pricing": [
         "Enterprise (custom)"
       ],
@@ -424,7 +434,8 @@
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Contextual bandits / AI traffic allocation"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -613,7 +624,8 @@
       "mcp": "none",
       "ai": [
         "Contextual bandits / AI traffic allocation",
-        "Insight summarization (AI)"
+        "Insight summarization (AI)",
+        "AI audience builder"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -772,7 +784,11 @@
         "AI QA / preflight checks",
         "Insight summarization (AI)",
         "Prompt-based editor",
-        "AI audience builder"
+        "AI audience builder",
+        "code assistant",
+        "Hypothesis generation (AI)",
+        "Variant generation (AI)",
+        "semantic search"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -904,7 +920,8 @@
         "code assistant",
         "Prompt-based editor",
         "semantic search",
-        "agentic experimentation"
+        "agentic experimentation",
+        "AI audience builder"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -962,7 +979,8 @@
         "Insight summarization (AI)",
         "AI audience builder",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -1004,13 +1022,15 @@
         "B2B SaaS / Product-led",
         "Client-side marketing/CRO"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "agentic experimentation",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Freemium",
@@ -1046,7 +1066,12 @@
         "CCPA"
       ],
       "url": "https://www.abtasty.com/",
-      "summary": "Stack of AI Copilots powers experimentation workflows: Visual Editor Copilot (variant generation from prompts), Report Copilot (highlights winning variations), Hypothesis Copilot, Feedback Analysis Copilot. EmotionsAI profiles visitors by emotional and content interest segments for personalization targeting. AI agent 'EVI' for agentic experimentation workflows. AI-driven content personalization predicts visitor intent in real time. Note: AB Tasty merged with VWO in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform. An MCP server exists as an unofficial npm package (@abtasty/mcp-server) but is not yet in official AB Tasty docs."
+      "summary": "Stack of AI Copilots powers experimentation workflows: Visual Editor Copilot (variant generation from prompts), Report Copilot (highlights winning variations), Hypothesis Copilot, Feedback Analysis Copilot. EmotionsAI profiles visitors by emotional and content interest segments for personalization targeting. AI agent 'EVI' for agentic experimentation workflows. AI-driven content personalization predicts visitor intent in real time. Note: AB Tasty merged with VWO in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform. An MCP server exists as an unofficial npm package (@abtasty/mcp-server) but is not yet in official AB Tasty docs.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "Both",
+        "docs": "https://github.com/flagship-io/mcp-server"
+      }
     },
     {
       "slug": "convert",
@@ -1295,7 +1320,8 @@
         "AI audience builder",
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
-        "Contextual bandits / AI traffic allocation"
+        "Contextual bandits / AI traffic allocation",
+        "semantic search"
       ],
       "pricing": [
         "Enterprise (custom)",
@@ -1333,9 +1359,9 @@
       "summary": "Ninetailed was acquired by Contentful in August 2024 and lightly rebranded to 'Ninetailed by Contentful' / 'Contentful Personalization.' The original ninetailed.io domain now redirects to Contentful's Personalization product page. Combined offering integrates Ninetailed's AI-driven personalization and experimentation directly into Contentful's composable content platform — marketers can create, manage, and optimize personalized experiences from within Contentful in a no-code environment. Capabilities: AI-powered A/B testing optimization, custom segmentation, in-depth analytics, audience targeting across composable architectures. Documented customer outcomes: 78% conversion lift (Kraft-Heinz), 87% higher CTRs (Ace & Tate), <30 min implementation (Ruggable). Available as a Twilio Segment destination. For current product details (pricing, MCP, SDKs, compliance), refer to Contentful's documentation rather than the legacy Ninetailed materials.",
       "acquiredBy": "Contentful",
       "mcpDetail": {
-        "url": "",
-        "hosted": "",
-        "docs": ""
+        "url": "https://mcp.contentful.com/mcp",
+        "hosted": "Both",
+        "docs": "https://www.contentful.com/developers/docs/tools/mcp-server/"
       }
     },
     {
@@ -1350,12 +1376,14 @@
         "Client-side marketing/CRO",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Hypothesis generation (AI)",
         "Variant generation (AI)",
         "Insight summarization (AI)",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "mcp-native agent surface",
+        "agentic experimentation"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -1375,7 +1403,12 @@
         "GDPR"
       ],
       "url": "https://varify.io/en/",
-      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions — the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026."
+      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions — the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": "https://varify.io/en/mcp-ab-testing-tool/"
+      }
     },
     {
       "slug": "croct",
@@ -1389,10 +1422,7 @@
         "Server-side / feature-flag-first"
       ],
       "mcp": "none",
-      "ai": [
-        "AI audience builder",
-        "Insight summarization (AI)"
-      ],
+      "ai": [],
       "pricing": [
         "Free",
         "Freemium",
@@ -1437,7 +1467,8 @@
       "pricing": [
         "Free",
         "Subscription (per MAU or seat)",
-        "Enterprise (custom)"
+        "Enterprise (custom)",
+        "Freemium"
       ],
       "sdk": [
         "JavaScript / TypeScript",
@@ -1770,47 +1801,6 @@
       }
     },
     {
-      "slug": "figpii",
-      "name": "FigPii",
-      "status": "active",
-      "h1": "More Conversions. Higher Revenue. Better Customer Experiences.",
-      "h2": "Get a full picture of user interactions, eliminate customer frustrations, launch tests and unlock your website's untapped revenue potential.",
-      "ucf": [
-        "DTC ecommerce",
-        "B2B SaaS / Product-led",
-        "Shopify-native",
-        "Client-side marketing/CRO"
-      ],
-      "mcp": "none",
-      "ai": [
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
-        "AI audience builder"
-      ],
-      "pricing": [
-        "Free",
-        "Subscription (per MAU or seat)",
-        "Enterprise (custom)"
-      ],
-      "sdk": [
-        "JavaScript / TypeScript"
-      ],
-      "integrations": [
-        "Google Analytics 4",
-        "Shopify"
-      ],
-      "warehouse": [],
-      "compliance": [
-        "SOC 2 Type II",
-        "ISO 27001",
-        "GDPR",
-        "CCPA",
-        "EU data residency"
-      ],
-      "url": "https://www.figpii.com/",
-      "summary": "FigPii is an all-in-one CRO platform combining A/B testing, heatmaps, session recordings, and polls with the same unlimited features across all paid tiers — differentiated only by visitor capacity and support level. AI features: personalized AI-driven testing recommendations suggest which page elements to test and propose specific changes based on aggregated visitor behavior data; automated session analysis surfaces friction points with actionable insights. Pricing visitor-based: Free Tester (15K visitors, $0), Starter $74.99/mo (10K), Small $149.99/mo (30K), Medium $299.99/mo (60K), Large $449.99/mo (100K, scaling to $2,899.99/mo for 1M visitors), Enterprise custom. Native integrations: Shopify (with ecommerce event tracking via webhooks for 100% accurate revenue), GA4 (creates GA4 Audiences for each experiment), BigCommerce, WordPress. JavaScript tracking snippet only — no SDK list for other languages. EU or US data residency selectable. No MCP server documented. No data warehouse connectors. Surprisingly strong compliance footprint for the tier: SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, GDPR, CCPA. SSO mentioned but lacks SAML detail — likely beta. Targets mid-market e-commerce and SaaS firms (10K-200K monthly visitors)."
-    },
-    {
       "slug": "compose",
       "name": "Compose",
       "status": "active",
@@ -1941,7 +1931,9 @@
         "Insight summarization (AI)",
         "AI audience builder",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "semantic search",
+        "Image generation"
       ],
       "pricing": [
         "Enterprise (custom)"
