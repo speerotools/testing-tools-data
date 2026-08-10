@@ -1,47 +1,47 @@
 #!/usr/bin/env python3
 """
-enrich.py — content-hash monitor for the vendor URL registry.
+enrich.py — Job 1 of the monthly vendor freshness loop: fetch + hash + triage.
 
-Fetches every Active URL with the standard library (no Firecrawl, no scraping
-dependency), reduces the HTML to stable visible text, hashes it, and compares
-against the stored hash to detect changed pages.
+Fetches every Active URL in the Vendor URLs registry with the standard library
+(no Firecrawl), reduces the HTML to stable visible text, hashes it, and diffs
+against the stored hash. Changed URLs are triaged by severity and reported;
+nothing about the vendor Database table is written or proposed here. Approval
+and any Database writes happen out of band (the "apply" half of the loop).
 
-Two modes, one script:
+Modes:
+  --baseline   Establish the hash baseline: write Last Content Hash, Last
+               Fetched, Last Status Code for every Active URL. No diff/triage.
+  (default)    Monitor run. Fetch again, apply the hash-diff contract, triage
+               what changed, and write changed-pages.md + scan-summary.json.
 
-  --baseline   Fetch every Active URL, hash it, write the hash and the scrape
-               date back to Airtable. Run once to establish the baseline.
+Hash-diff contract (per docs/handoffs/monthly-freshness-loop.md §3):
+  on change  -> Last Content Hash -> Previous Content Hash, stamp Hash Changed
+               At = today, bump Change Streak.
+  no change  -> Change Streak reset to 0.
+  every run  -> Last Fetched + Last Status Code written; hash left untouched on
+               a failed fetch so a 404 never blanks a good hash.
 
-  (default)    Monitor run. Fetch again, compare each hash to the stored one,
-               write the new hash + date back, and emit a diff of the URLs
-               whose content changed, grouped by vendor. That diff routes into
-               targeted re-verification.
-
-Only the registry's hash and scrape-date fields are ever written. Rows are
-never deleted or blanked. Dead URLs are flagged for a human, not removed.
-
-Why normalize the HTML: a raw-bytes hash flips on every rotating CSRF token,
-analytics nonce, or timestamp embedded in markup, producing false "changed"
-signals. We strip <script>/<style>/comments and collapse whitespace so the
-hash tracks visible content, not per-request noise.
-
-Hard rules from the dev handoff:
-  - Airtable PATCH batches are capped at 25 (the API silently no-ops at 50).
-  - Never trust the HTTP success response; the run prints a written-count so
-    you can spot-check the table afterwards.
-  - uniform.dev/trust is robots-blocked; skipped by design, not retried.
-  - A failed fetch leaves the row untouched.
+Invariants (brief §8):
+  - Airtable PATCH limit is 10 records per request.
+  - This script NEVER stamps Last Vendor Scrape (that is the apply step's job)
+    and never touches the Database table or any voiced field.
+  - A failed fetch leaves the hash untouched; rows are never deleted.
+  - uniform.dev/trust is robots-blocked; skipped by design.
 
 Environment variables:
   AIRTABLE_TOKEN        required — PAT with data.records:read + data.records:write
   AIRTABLE_BASE_ID      default: appRX3rtuXifUnvD4
   AIRTABLE_REGISTRY_TBL default: tblT1Hqk2bEC9xVcR
-  ENRICH_LIMIT          optional — cap URLs processed (for a quick test run)
-  FETCH_DELAY           default: 0.5 — seconds to pause between fetches (be polite)
+  AIRTABLE_DATABASE_TBL default: tblOx4tapKq2a0sBR  (vendor-name lookup only)
+  ENRICH_LIMIT          optional — cap URLs processed (quick test run)
+  FETCH_DELAY           default: 0.5 — seconds between fetches
   DIFF_OUT              default: changed-pages.md
+  SUMMARY_OUT           default: scan-summary.json
 """
 
 from __future__ import annotations
 import hashlib
+import json
 import os
 import re
 import sys
@@ -64,30 +64,27 @@ except ImportError:
 
 BASE_ID      = os.environ.get("AIRTABLE_BASE_ID", "appRX3rtuXifUnvD4")
 REGISTRY_TBL = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
+DATABASE_TBL = os.environ.get("AIRTABLE_DATABASE_TBL", "tblOx4tapKq2a0sBR")
 DIFF_OUT     = os.environ.get("DIFF_OUT", "changed-pages.md")
+SUMMARY_OUT  = os.environ.get("SUMMARY_OUT", "scan-summary.json")
 LIMIT        = int(os.environ.get("ENRICH_LIMIT", "0")) or None
 FETCH_DELAY  = float(os.environ.get("FETCH_DELAY", "0.5"))
 
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
-
 USER_AGENT = "SpeeroToolMonitor/1.0 (+https://speero.com; content-change check)"
 
-# Registry field IDs (from the dev handoff doc).
-F = {
-    "url":        "fldDpTQraitVt4yHB",
-    "vendor":     "fldZpeoHlScaEp2yh",
-    "active":     "fldFqvuPSinBYvrvk",
-    "discovered": "fldIaxgENIkgmOA63",
-    "url_type":   "fldwUVSYu5QYi3N0k",
-    "notes":      "fldLvNFcAsuacgV3W",
-    "hash":         "fldom4YFOBDz4LKUV",   # Last Content Hash
-    "last_scrape":  "fld7cxhRHwQ6bzFAs",   # Last Fetched
-    "status_code":  "fldi7kXOkskXR0BO8",   # Last Status Code (available, not yet written)
+# Registry read/written by FIELD NAME (use_field_ids=False) so that URL Type
+# resolves to its option label, which the triage below keys on.
+FN = {
+    "url": "URL", "vendor": "Vendor", "active": "Active", "url_type": "URL Type",
+    "notes": "Notes", "hash": "Last Content Hash", "fetched": "Last Fetched",
+    "status": "Last Status Code", "prev_hash": "Previous Content Hash",
+    "changed_at": "Hash Changed At", "streak": "Change Streak",
 }
 
-BATCH = 25  # Airtable hard limit; do NOT raise (50 silently writes nothing).
-
+BATCH = 10  # Airtable PATCH hard limit; the API silently no-ops above this.
 SKIP_URLS = {"uniform.dev/trust"}
+NOISY_STREAK = 3
 
 
 # ---------------------------------------------------------------------------
@@ -95,7 +92,6 @@ SKIP_URLS = {"uniform.dev/trust"}
 # ---------------------------------------------------------------------------
 
 class _TextExtractor(HTMLParser):
-    """Collect visible text, dropping <script>/<style> contents."""
     _DROP = {"script", "style", "noscript", "template", "svg"}
 
     def __init__(self) -> None:
@@ -119,40 +115,39 @@ class _TextExtractor(HTMLParser):
 
 
 def normalize_html(html: str) -> str:
-    """Reduce HTML to collapsed visible text for a stable hash."""
     try:
         p = _TextExtractor()
         p.feed(html)
         text = " ".join(p.parts)
     except Exception:
-        # Fall back to a crude tag strip if the parser chokes.
         text = re.sub(r"<[^>]+>", " ", html)
+    # strip rotating noise: ISO timestamps, long hex nonces, cache-buster digits
+    text = re.sub(r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}[:\d]*", " ", text)
+    text = re.sub(r"\b[0-9a-f]{16,}\b", " ", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
-def fetch_url(url: str) -> str | None:
-    """Fetch a URL with the standard library. Returns normalized text or None."""
+def fetch_url(url: str):
+    """Return (normalized_text_or_None, status_code_or_None)."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=45) as resp:
+                code = getattr(resp, "status", 200) or 200
                 ctype = resp.headers.get("Content-Type", "")
                 if "html" not in ctype and "xml" not in ctype and ctype:
-                    # Non-HTML (PDF, image, JSON): hash raw bytes instead.
-                    return hashlib.sha256(resp.read()).hexdigest()
+                    return hashlib.sha256(resp.read()).hexdigest(), code
                 charset = resp.headers.get_content_charset() or "utf-8"
                 raw = resp.read().decode(charset, "ignore")
-            return normalize_html(raw)
+            return normalize_html(raw), code
         except urllib.error.HTTPError as e:
-            if e.code in (429, 500, 502, 503, 504):
-                time.sleep(2 ** attempt)
-                continue
-            print(f"  fetch {e.code} for {url}", file=sys.stderr)
-            return None
+            if e.code in (429, 500, 502, 503, 504) and attempt < 2:
+                time.sleep(2 ** attempt); continue
+            return None, e.code
         except Exception as e:
             print(f"  fetch error for {url}: {e}", file=sys.stderr)
-            return None
-    return None
+            return None, None
+    return None, None
 
 
 def content_hash(text: str) -> str:
@@ -163,35 +158,60 @@ def content_hash(text: str) -> str:
 # AIRTABLE
 # ---------------------------------------------------------------------------
 
-def registry_table():
-    return Api(AIRTABLE_TOKEN).base(BASE_ID).table(REGISTRY_TBL)
+def api():
+    return Api(AIRTABLE_TOKEN)
 
 
-def fetch_active_rows(table) -> list[dict]:
-    rows = table.all(use_field_ids=True)
-    active = [r for r in rows if r["fields"].get(F["active"])]
-    if LIMIT:
-        active = active[:LIMIT]
-    return active
+def vendor_names() -> dict[str, str]:
+    """record id -> vendor Name, for readable grouping."""
+    try:
+        rows = api().base(BASE_ID).table(DATABASE_TBL).all(fields=["Name"])
+        return {r["id"]: r["fields"].get("Name", r["id"]) for r in rows}
+    except Exception as e:
+        print(f"  WARN vendor-name lookup failed: {e}", file=sys.stderr)
+        return {}
+
+
+def active_rows(table) -> list[dict]:
+    rows = table.all()  # by name
+    active = [r for r in rows if r["fields"].get(FN["active"])]
+    return active[:LIMIT] if LIMIT else active
 
 
 def write_batches(table, updates: list[dict]) -> int:
     written = 0
     for i in range(0, len(updates), BATCH):
-        chunk = updates[i:i + BATCH]
-        table.batch_update(chunk, use_field_ids=True)
-        written += len(chunk)
+        table.batch_update(updates[i:i + BATCH])
+        written += len(updates[i:i + BATCH])
     return written
+
+
+# ---------------------------------------------------------------------------
+# TRIAGE (brief §4)
+# ---------------------------------------------------------------------------
+
+def severity(url_type: str, status, streak: int) -> str:
+    if status is not None and (status >= 400 or 300 <= status < 400):
+        return "error"
+    if streak and streak >= NOISY_STREAK:
+        return "noisy"
+    t = (url_type or "").lower()
+    if "pricing" in t:
+        return "high"
+    if any(k in t for k in ("marketing", "home", "landing")):
+        return "low"
+    return "normal"  # docs / changelog / feature / api / other
 
 
 # ---------------------------------------------------------------------------
 # MAIN
 # ---------------------------------------------------------------------------
 
-def vendor_label(fields: dict) -> str:
-    v = fields.get(F["vendor"])
+def vlabel(fields: dict, names: dict) -> str:
+    v = fields.get(FN["vendor"])
     if isinstance(v, list) and v:
-        return v[0] if isinstance(v[0], str) else (v[0].get("name") or "Unknown")
+        rid = v[0] if isinstance(v[0], str) else v[0].get("id", "")
+        return names.get(rid, rid or "Unknown")
     return "Unknown"
 
 
@@ -199,67 +219,110 @@ def main(baseline: bool) -> None:
     if not AIRTABLE_TOKEN:
         print("ERROR: AIRTABLE_TOKEN is required", file=sys.stderr)
         sys.exit(1)
-    if "XXX" in F["hash"] or "XXX" in F["last_scrape"]:
-        print("ERROR: hash / last_scrape field IDs are still placeholders. "
-              "Run `python enrich.py --dump-schema` and set them in F.", file=sys.stderr)
-        sys.exit(1)
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    table = registry_table()
-    rows = fetch_active_rows(table)
-    print(f"{len(rows)} active URLs to process ({'baseline' if baseline else 'monitor'} mode).")
+    table = api().base(BASE_ID).table(REGISTRY_TBL)
+    names = {} if baseline else vendor_names()
+    rows = active_rows(table)
+    print(f"{len(rows)} active URLs ({'baseline' if baseline else 'monitor'} mode).")
 
     updates: list[dict] = []
-    changed: dict[str, list[str]] = defaultdict(list)
-    failures: list[str] = []
+    buckets: dict[str, list[dict]] = defaultdict(list)  # severity -> [{vendor,url,type,status,streak}]
+    failures = 0
     skipped = 0
 
     for r in rows:
         f = r["fields"]
-        url = f.get(F["url"])
+        url = f.get(FN["url"])
         if not url:
             continue
         if any(s in url for s in SKIP_URLS):
             skipped += 1
             continue
 
-        content = fetch_url(url)
+        payload, status = fetch_url(url)
         if FETCH_DELAY:
             time.sleep(FETCH_DELAY)
-        if content is None:
-            failures.append(url)
+
+        fields = {FN["fetched"]: today}
+        if status is not None:
+            fields[FN["status"]] = status
+
+        if payload is None:
+            failures += 1
+            # Record the fetch + status so triage sees the error; keep the hash.
+            updates.append({"id": r["id"], "fields": fields})
+            if not baseline:
+                buckets["error"].append({"vendor": vlabel(f, names), "url": url,
+                                         "type": f.get(FN["url_type"]) or "", "status": status,
+                                         "streak": f.get(FN["streak"]) or 0})
             continue
 
-        new_hash = content_hash(content)
-        old_hash = f.get(F["hash"])
-        if not baseline and old_hash and old_hash != new_hash:
-            changed[vendor_label(f)].append(url)
+        new_hash = content_hash(payload)
+        old_hash = f.get(FN["hash"])
+        old_streak = f.get(FN["streak"]) or 0
+        fields[FN["hash"]] = new_hash
 
-        updates.append({"id": r["id"], "fields": {F["hash"]: new_hash, F["last_scrape"]: today}})
+        if baseline:
+            updates.append({"id": r["id"], "fields": fields})
+            continue
+
+        if old_hash and old_hash != new_hash:
+            fields[FN["prev_hash"]] = old_hash
+            fields[FN["changed_at"]] = today
+            fields[FN["streak"]] = int(old_streak) + 1
+            sev = severity(f.get(FN["url_type"]), status, int(old_streak) + 1)
+            buckets[sev].append({"vendor": vlabel(f, names), "url": url,
+                                 "type": f.get(FN["url_type"]) or "", "status": status,
+                                 "streak": int(old_streak) + 1})
+        elif old_hash:
+            if old_streak:
+                fields[FN["streak"]] = 0
+        updates.append({"id": r["id"], "fields": fields})
 
     written = write_batches(table, updates)
-    print(f"Wrote {written} rows. Skipped {skipped}. Failures: {len(failures)}.")
-    if failures:
-        print("Failed URLs (left untouched):", file=sys.stderr)
-        for u in failures:
-            print("  " + u, file=sys.stderr)
+    print(f"Wrote {written} rows. Skipped {skipped}. Fetch failures: {failures}.")
+    print("Spot-check: confirm hash + Last Fetched populated on a few rows before trusting this run.")
 
-    print("\nSpot-check reminder: open the registry table and confirm hash + "
-          "scrape date are visibly populated on a handful of rows before trusting this run.")
+    if baseline:
+        print("Baseline done.")
+        return
 
-    if not baseline:
-        total_changed = sum(len(v) for v in changed.values())
-        lines = [f"# Changed pages — {today}", "",
-                 f"{total_changed} URL(s) across {len(changed)} vendor(s) changed since last run.", ""]
-        for vendor in sorted(changed):
-            lines.append(f"## {vendor}")
-            for u in changed[vendor]:
-                lines.append(f"- {u}")
-            lines.append("")
-        with open(DIFF_OUT, "w") as fh:
-            fh.write("\n".join(lines))
-        print(f"\nDiff written to {DIFF_OUT}: {total_changed} changed URL(s).")
+    # ---- report (brief §5) ----
+    order = ["high", "normal", "low", "error", "noisy"]
+    label = {"high": "HIGH — pricing changed", "normal": "CHANGED — needs review",
+             "low": "LOW — marketing copy churn", "error": "ERRORS", "noisy": "NOISY (likely hash noise)"}
+    changed_vendors = {b["vendor"] for s in ("high", "normal", "low") for b in buckets[s]}
+    lines = [f"# Vendor scan — {today}", "",
+             f"Scanned {len(rows)} URLs. {len(changed_vendors)} vendor(s) with real changes, "
+             f"{len(buckets['error'])} error(s), {len(buckets['noisy'])} noisy.", ""]
+    for sev in order:
+        if not buckets[sev]:
+            continue
+        lines.append(f"## {label[sev]} ({len(buckets[sev])})")
+        by_v = defaultdict(list)
+        for b in buckets[sev]:
+            by_v[b["vendor"]].append(b)
+        for vendor in sorted(by_v):
+            for b in by_v[vendor]:
+                extra = f" [{b['type']}]" if b["type"] else ""
+                st = f" status {b['status']}" if b["status"] and b["status"] >= 300 else ""
+                streak = f" streak {b['streak']}" if b["streak"] >= NOISY_STREAK else ""
+                lines.append(f"- {vendor} — {b['url']}{extra}{st}{streak}")
+        lines.append("")
+    with open(DIFF_OUT, "w") as fh:
+        fh.write("\n".join(lines))
 
+    summary = {
+        "date": today, "scanned": len(rows),
+        "counts": {s: len(buckets[s]) for s in order},
+        "changed_vendors": sorted(changed_vendors),
+        "buckets": {s: buckets[s] for s in order},
+    }
+    with open(SUMMARY_OUT, "w") as fh:
+        json.dump(summary, fh, indent=2)
+    print(f"Wrote {DIFF_OUT} and {SUMMARY_OUT}. "
+          f"changed={len(changed_vendors)} errors={len(buckets['error'])} noisy={len(buckets['noisy'])}")
     print("Done.")
 
 
@@ -268,8 +331,7 @@ if __name__ == "__main__":
         if not AIRTABLE_TOKEN:
             print("ERROR: AIRTABLE_TOKEN required", file=sys.stderr)
             sys.exit(1)
-        fields = Api(AIRTABLE_TOKEN).base(BASE_ID).table(REGISTRY_TBL).schema().fields
-        for field in fields:
+        for field in api().base(BASE_ID).table(REGISTRY_TBL).schema().fields:
             print(f"  {field.id}  {field.name}")
         sys.exit(0)
     main(baseline="--baseline" in sys.argv)

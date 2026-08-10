@@ -43,12 +43,21 @@ jobs:
             python .github/scripts/enrich.py
           fi
 
-      - name: Upload changed-pages diff
+      - name: Post scan summary to Slack
+        if: always() && github.event.inputs.mode != 'baseline'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python .github/scripts/notify_slack.py
+
+      - name: Upload scan artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: changed-pages
-          path: changed-pages.md
+          name: vendor-scan
+          path: |
+            changed-pages.md
+            scan-summary.json
           if-no-files-found: ignore
 
       - name: Commit diff
