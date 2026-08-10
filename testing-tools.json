@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-10T12:43:32Z",
-  "commit": "c5e51e8b6976c97d22fd90b033890e71d6e54623",
+  "version": "2026-08-10T18:42:12Z",
+  "commit": "1fe941e35e8f1000cf2b9d98b6b95c0b3f6a9e2a",
   "vendors": [
     {
       "slug": "ablyft",
@@ -433,12 +433,17 @@
         "Client-side marketing/CRO"
       ],
       "mcp": "none",
-      "ai": [],
+      "ai": [
+        "Image generation",
+        "Prompt-based editor"
+      ],
       "pricing": [
         "Enterprise (custom)"
       ],
       "sdk": [
-        "PHP"
+        "PHP",
+        "Node.js",
+        ".NET / C#"
       ],
       "integrations": [
         "Google Analytics 4"
@@ -892,9 +897,7 @@
       "ax": 22.7,
       "ay": 57.2,
       "axc": 22.7,
-      "ayc": 57.2,
-      "mxo": 20.0,
-      "myo": 42.0
+      "ayc": 57.2
     },
     {
       "slug": "posthog",
@@ -2106,7 +2109,7 @@
         "Client-side marketing/CRO",
         "Mobile app native"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
@@ -2115,7 +2118,10 @@
         "Contextual bandits / AI traffic allocation",
         "Prompt-based editor",
         "semantic search",
-        "Image generation"
+        "Image generation",
+        "in-app ai chat/agent",
+        "code assistant",
+        "mcp-native agent surface"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -2149,6 +2155,11 @@
       ],
       "url": "https://www.dynamicyield.com/",
       "summary": "AdaptML is the core AI engine providing real-time affinity profiles, next-best-item predictions, and multi-purchase cadence modeling. Recommendations engine uses deep learning, visual similarity, and reinforcement learning for product catalogs with millions of SKUs. Predictive Targeting scores audiences for uplift potential. Copywriter + Stability.ai integration enables automated copy and visual generation. NextML NLP models predict next-best-item. Shopping Muse is a generative AI commerce advisor (users describe needs, e.g., 'outfit for a beach wedding in Bali'). Acquired by Mastercard in 2022, the platform now incorporates Mastercard Element spend signals. Snowflake connector via Improvado for warehouse export; raw event data via Daily Activity Stream. No Model Context Protocol (MCP) server for external AI assistants documented.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": ""
+      },
       "ax": 28.4,
       "ay": 57.2,
       "axc": 28.4,
