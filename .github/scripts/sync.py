@@ -72,7 +72,19 @@ F = {
     "integrations":   "flddtHBBRMo3crCgq",
     "warehouse":      "fldhkZMh3r4lfnZIk",
     "compliance":     "fldFjURaYhZWlwHmm",
-    "acquired_by":    "fldAcquiredByXXXX",  # update once field is created
+    "acquired_by":    "fldLrwKE4NqkVYlu0",
+    # Quadrant map positions (Number fields). Agentic X/Y Final is the position
+    # the embed plots (Airtable already encodes override-beats-computed there);
+    # Computed + Override ride along so the page can show drift. Market overrides
+    # win over the JS-computed market position for those vendors.
+    "ax":  "fldgy3uob0gVIyLP8",  # Agentic Map X Final
+    "ay":  "flde9uayklPmxqNny",  # Agentic Map Y Final
+    "axc": "fldMR1dUGg6yRJRYe",  # Agentic Map X Computed
+    "ayc": "fldCG6yjX27k881w4",  # Agentic Map Y Computed
+    "axo": "fldOFGtBuyoj9JI9F",  # Agentic Map X Override
+    "ayo": "fldNamypy2pKrRbzD",  # Agentic Map Y Override
+    "mxo": "fldW3nEUbQRmmjXSm",  # Market Map X Override
+    "myo": "fldOGU3c1vDoMH8ml",  # Market Map Y Override
 }
 
 # Master Variables table field that holds the option name
@@ -226,6 +238,17 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
             "hosted": single_select_value(f.get(F["mcp_hosted"])) or "",
             "docs":   f.get(F["mcp_docs"]) or "",
         }
+
+    # Quadrant map positions. Only emit keys that have a value so the embed can
+    # tell "no position yet" (plots at centre + warns) from a real 0.
+    def num(field_key):
+        v = f.get(F[field_key])
+        return round(float(v), 1) if isinstance(v, (int, float)) else None
+
+    for key in ("ax", "ay", "axc", "ayc", "axo", "ayo", "mxo", "myo"):
+        val = num(key)
+        if val is not None:
+            vendor[key] = val
 
     return vendor
 
