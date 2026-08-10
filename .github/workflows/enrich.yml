@@ -14,6 +14,10 @@ on:
         type: choice
         default: monitor
         options: [monitor, baseline]
+      limit:
+        description: 'Cap URLs processed (blank = all; use a small number to test)'
+        type: string
+        required: false
 
 jobs:
   enrich:
@@ -36,6 +40,7 @@ jobs:
       - name: Run enrichment monitor
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          ENRICH_LIMIT: ${{ github.event.inputs.limit }}
         run: |
           if [ "${{ github.event.inputs.mode }}" = "baseline" ]; then
             python .github/scripts/enrich.py --baseline

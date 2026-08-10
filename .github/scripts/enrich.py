@@ -67,7 +67,8 @@ REGISTRY_TBL = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
 DATABASE_TBL = os.environ.get("AIRTABLE_DATABASE_TBL", "tblOx4tapKq2a0sBR")
 DIFF_OUT     = os.environ.get("DIFF_OUT", "changed-pages.md")
 SUMMARY_OUT  = os.environ.get("SUMMARY_OUT", "scan-summary.json")
-LIMIT        = int(os.environ.get("ENRICH_LIMIT", "0")) or None
+_lim         = os.environ.get("ENRICH_LIMIT", "").strip()
+LIMIT        = int(_lim) if _lim.isdigit() and int(_lim) > 0 else None
 FETCH_DELAY  = float(os.environ.get("FETCH_DELAY", "0.5"))
 
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
