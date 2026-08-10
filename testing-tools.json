@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-10T07:09:24Z",
-  "commit": "2154663236964c1d5668099ac1cad3aead1a6544",
+  "version": "2026-08-10T10:55:29Z",
+  "commit": "7db63aec29ec1b6803a73dd7cfca8ee08ef708b2",
   "vendors": [
     {
       "slug": "ablyft",
@@ -49,7 +49,11 @@
         "url": "",
         "hosted": "",
         "docs": ""
-      }
+      },
+      "ax": 69.2,
+      "ay": 45.7,
+      "axc": 69.2,
+      "ayc": 45.7
     },
     {
       "slug": "eppo-by-datadog",
@@ -112,7 +116,11 @@
         "url": "",
         "hosted": "Both",
         "docs": "https://docs.datadoghq.com/experiments/mcp_tools/"
-      }
+      },
+      "ax": 64.0,
+      "ay": 63.0,
+      "axc": 64.0,
+      "ayc": 63.0
     },
     {
       "slug": "omniconvert",
@@ -160,7 +168,11 @@
         "url": "https://web.omniconvert.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://help.omniconvert.com/kba/api-key-clients-cursor-claude-code-claude-desktop/"
-      }
+      },
+      "ax": 45.3,
+      "ay": 31.2,
+      "axc": 45.3,
+      "ayc": 31.2
     },
     {
       "slug": "spotify-confidence",
@@ -223,7 +235,13 @@
         "url": "https://mcp.confidence.dev/mcp/flags",
         "hosted": "Vendor-hosted",
         "docs": "https://confidence.spotify.com/docs/sdks/mcp-servers"
-      }
+      },
+      "ax": 72.0,
+      "ay": 48.0,
+      "axc": 51.8,
+      "ayc": 31.2,
+      "axo": 72.0,
+      "ayo": 48.0
     },
     {
       "slug": "sitecore",
@@ -273,7 +291,13 @@
         "url": "",
         "hosted": "",
         "docs": "https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html"
-      }
+      },
+      "ax": 62.0,
+      "ay": 62.0,
+      "axc": 57.9,
+      "ayc": 65.9,
+      "axo": 62.0,
+      "ayo": 62.0
     },
     {
       "slug": "shoplift",
@@ -307,7 +331,12 @@
       "warehouse": [],
       "compliance": [],
       "url": "https://www.shoplift.ai/",
-      "summary": "Shoplift is positioned as 'Your store's CRO Copilot' for high-growth Shopify brands. Lift Assist™ is an AI-driven recommendation engine that generates new test feature ideas in real-time, leveraging the brand's data and test ideas from hundreds of top brands. Bayesian Predictive Analysis predicts test duration in real-time and provides statistically robust significance estimates. Real-time statistical significance with automated insight dashboards surface actionable recommendations after a test completes. Shopify Plus Certified. Plans: Core $74-$99/mo (50K-100K visitors), Advanced $299/mo (100K visitors, adds Lift Assist + GA4 + JS API), Pro $699/mo (250K visitors, dedicated account manager). 14-day free trial. No MCP server documented; no compliance certifications publicly listed."
+      "summary": "Shoplift is positioned as 'Your store's CRO Copilot' for high-growth Shopify brands. Lift Assist™ is an AI-driven recommendation engine that generates new test feature ideas in real-time, leveraging the brand's data and test ideas from hundreds of top brands. Bayesian Predictive Analysis predicts test duration in real-time and provides statistically robust significance estimates. Real-time statistical significance with automated insight dashboards surface actionable recommendations after a test completes. Shopify Plus Certified. Plans: Core $74-$99/mo (50K-100K visitors), Advanced $299/mo (100K visitors, adds Lift Assist + GA4 + JS API), Pro $699/mo (250K visitors, dedicated account manager). 14-day free trial. No MCP server documented; no compliance certifications publicly listed.",
+      "ax": 16.5,
+      "ay": 37.0,
+      "axc": 16.5,
+      "ayc": 37.0,
+      "myo": 20.0
     },
     {
       "slug": "launchdarkly",
@@ -385,7 +414,13 @@
         "url": "https://mcp.launchdarkly.com/mcp/launchdarkly",
         "hosted": "Both",
         "docs": "https://launchdarkly.com/docs/home/getting-started/mcp"
-      }
+      },
+      "ax": 85.0,
+      "ay": 72.0,
+      "axc": 78.3,
+      "ayc": 77.5,
+      "axo": 85.0,
+      "ayo": 72.0
     },
     {
       "slug": "symplify",
@@ -413,7 +448,12 @@
         "GDPR"
       ],
       "url": "https://symplify.com/conversion-experimentation/",
-      "summary": "Symplify is a Swedish Customer Engagement Platform positioned beyond pure CRO — spanning CRM, Marketing Automation, AI/Predictive Marketing, Message Automation, Ultra User Personalisation, and Testing & Experimentation as four core pillars. The experimentation module combines A/B testing, visitor recordings, heatmaps, and frustration click measurement. OpenAI integration generates text and images directly within the Symplify editor, claimed to reduce content-creation time by up to 60%. Symplify AI provides machine-learning-based predictive features: Lifetime Value scoring, churn likelihood, VIP identification, and first-visit personalization. PHP SDK only for server-side testing. Native GA4 event integration (detects gtag/GTM automatically). GDPR-compliant under Swedish/EU data-protection law with SSL encryption and 2FA. Strong vertical focus on iGaming (multiple gambling partnerships including GiG), Fintech, Retail, NGO & Education, and Hospitality. Operating in 2026 with active press releases. No MCP server; no SOC 2, HIPAA, or ISO 27001 publicly disclosed."
+      "summary": "Symplify is a Swedish Customer Engagement Platform positioned beyond pure CRO — spanning CRM, Marketing Automation, AI/Predictive Marketing, Message Automation, Ultra User Personalisation, and Testing & Experimentation as four core pillars. The experimentation module combines A/B testing, visitor recordings, heatmaps, and frustration click measurement. OpenAI integration generates text and images directly within the Symplify editor, claimed to reduce content-creation time by up to 60%. Symplify AI provides machine-learning-based predictive features: Lifetime Value scoring, churn likelihood, VIP identification, and first-visit personalization. PHP SDK only for server-side testing. Native GA4 event integration (detects gtag/GTM automatically). GDPR-compliant under Swedish/EU data-protection law with SSL encryption and 2FA. Strong vertical focus on iGaming (multiple gambling partnerships including GiG), Fintech, Retail, NGO & Education, and Hospitality. Operating in 2026 with active press releases. No MCP server; no SOC 2, HIPAA, or ISO 27001 publicly disclosed.",
+      "acquiredBy": "Hawk Infinity Software AS",
+      "ax": 15.5,
+      "ay": 13.8,
+      "axc": 15.5,
+      "ayc": 13.8
     },
     {
       "slug": "vwo",
@@ -477,7 +517,15 @@
         "url": "https://mcp.vwo.io/mcp",
         "hosted": "Both",
         "docs": "https://help.vwo.com/hc/en-us/articles/57716550899993-Connect-the-VWO-MCP-Server-with-Gemini-CLI"
-      }
+      },
+      "ax": 76.0,
+      "ay": 52.0,
+      "axc": 77.3,
+      "ayc": 51.4,
+      "axo": 76.0,
+      "ayo": 52.0,
+      "mxo": 50.0,
+      "myo": 50.0
     },
     {
       "slug": "optimizely",
@@ -549,7 +597,13 @@
         "url": "https://exp.mcp.opal.optimizely.com/mcp",
         "hosted": "Both",
         "docs": "https://support.optimizely.com/hc/en-us/articles/45320607594893-Optimizely-Experimentation-MCP-server-overview"
-      }
+      },
+      "ax": 88.0,
+      "ay": 72.0,
+      "axc": 81.2,
+      "ayc": 71.7,
+      "axo": 88.0,
+      "ayo": 72.0
     },
     {
       "slug": "adobe-target",
@@ -607,7 +661,13 @@
         "url": "https://targetmcp.adobe.io/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp"
-      }
+      },
+      "ax": 88.0,
+      "ay": 58.0,
+      "axc": 72.6,
+      "ayc": 68.8,
+      "axo": 88.0,
+      "ayo": 58.0
     },
     {
       "slug": "conductrics",
@@ -649,7 +709,11 @@
         "GDPR"
       ],
       "url": "https://www.conductrics.com/",
-      "summary": "Conductrics positions itself as a unified engine for experimentation, adaptive optimization, and customer research — combining behavioral A/B testing with qualitative feedback in one platform. Core differentiator: adaptive optimization with interpretable machine learning that automatically allocates traffic to higher-performing variants (conceptually a contextual bandit approach, though Conductrics avoids that label). Trusted by Spotify, Experian, and Pfizer. HIPAA-compliant design for regulated environments — distinctive for an experimentation platform. SOC 2 Type 2 certified. Algorithmic transparency emphasized as a design principle. Custom enterprise pricing only — no public tier table. Native analytics integrations: Google Analytics (including GA4) and Adobe Analytics across client-side, server-side, and native mobile. No MCP server, no data warehouse connectors, no public ISO 27001 statement. Remains independent and operating as of 2026."
+      "summary": "Conductrics positions itself as a unified engine for experimentation, adaptive optimization, and customer research — combining behavioral A/B testing with qualitative feedback in one platform. Core differentiator: adaptive optimization with interpretable machine learning that automatically allocates traffic to higher-performing variants (conceptually a contextual bandit approach, though Conductrics avoids that label). Trusted by Spotify, Experian, and Pfizer. HIPAA-compliant design for regulated environments — distinctive for an experimentation platform. SOC 2 Type 2 certified. Algorithmic transparency emphasized as a design principle. Custom enterprise pricing only — no public tier table. Native analytics integrations: Google Analytics (including GA4) and Adobe Analytics across client-side, server-side, and native mobile. No MCP server, no data warehouse connectors, no public ISO 27001 statement. Remains independent and operating as of 2026.",
+      "ax": 17.9,
+      "ay": 34.1,
+      "axc": 17.9,
+      "ayc": 34.1
     },
     {
       "slug": "absmartly",
@@ -716,7 +780,11 @@
         "url": "",
         "hosted": "Both",
         "docs": "https://github.com/absmartly"
-      }
+      },
+      "ax": 83.0,
+      "ay": 31.2,
+      "axc": 83.0,
+      "ayc": 31.2
     },
     {
       "slug": "intelligems",
@@ -766,7 +834,14 @@
         "url": "https://ai.intelligems.io/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://docs.intelligems.io/developer-resources/mcp-server"
-      }
+      },
+      "ax": 76.0,
+      "ay": 48.0,
+      "axc": 67.6,
+      "ayc": 48.6,
+      "axo": 76.0,
+      "ayo": 48.0,
+      "myo": 52.0
     },
     {
       "slug": "webtrends-optimize",
@@ -813,7 +888,13 @@
         "CCPA"
       ],
       "url": "https://www.webtrends-optimize.com/",
-      "summary": "Webtrends Optimize is a UK-based enterprise A/B testing and personalization platform positioning itself as a market-leader for high-traffic consumer-facing sites in e-commerce, media, travel, and financial services. Comprehensive AI suite under 'AI with Purpose' branding: AI Predictive Heatmaps (attention maps for experiment design), Synthetic User Testing (simulated user interactions for research), AI Coding Copilot (in-UI assistance for building/debugging tests), Visually Similar Product Recommendations (AI extracts category/style/color/texture from product images), AI Auto Insights (automated experiment analysis), and AI for Analysis (open-beta May 2026). Pricing based on annual sessions with enterprise-custom contracts — specific tiers not publicly disclosed. Cross-platform SDKs: JavaScript tag, Android (Java/Kotlin AAR), iOS (Swift/Obj-C). Push integrations to GA4, Adobe Analytics, Segment. Snowflake pull integration imports user profiles for segmentation. GDPR and CCPA compliance. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no documented BigQuery/Redshift connectors. Hybrid or Managed Service offering targets large brands with dedicated CRO teams. Operating in 2026."
+      "summary": "Webtrends Optimize is a UK-based enterprise A/B testing and personalization platform positioning itself as a market-leader for high-traffic consumer-facing sites in e-commerce, media, travel, and financial services. Comprehensive AI suite under 'AI with Purpose' branding: AI Predictive Heatmaps (attention maps for experiment design), Synthetic User Testing (simulated user interactions for research), AI Coding Copilot (in-UI assistance for building/debugging tests), Visually Similar Product Recommendations (AI extracts category/style/color/texture from product images), AI Auto Insights (automated experiment analysis), and AI for Analysis (open-beta May 2026). Pricing based on annual sessions with enterprise-custom contracts — specific tiers not publicly disclosed. Cross-platform SDKs: JavaScript tag, Android (Java/Kotlin AAR), iOS (Swift/Obj-C). Push integrations to GA4, Adobe Analytics, Segment. Snowflake pull integration imports user profiles for segmentation. GDPR and CCPA compliance. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no documented BigQuery/Redshift connectors. Hybrid or Managed Service offering targets large brands with dedicated CRO teams. Operating in 2026.",
+      "ax": 22.7,
+      "ay": 57.2,
+      "axc": 22.7,
+      "ayc": 57.2,
+      "mxo": 20.0,
+      "myo": 42.0
     },
     {
       "slug": "posthog",
@@ -901,7 +982,13 @@
         "url": "https://mcp.posthog.com/mcp",
         "hosted": "Both",
         "docs": "https://posthog.com/docs/model-context-protocol"
-      }
+      },
+      "ax": 92.0,
+      "ay": 90.0,
+      "axc": 81.4,
+      "ayc": 86.2,
+      "axo": 92.0,
+      "ayo": 90.0
     },
     {
       "slug": "uniform",
@@ -957,7 +1044,14 @@
         "url": "https://ai.uniform.global/projects/<project-id>/mcp",
         "hosted": "Both",
         "docs": "https://docs.uniform.app/docs/guides/ai/mcp-server"
-      }
+      },
+      "ax": 82.0,
+      "ay": 58.0,
+      "axc": 58.3,
+      "ayc": 57.2,
+      "axo": 82.0,
+      "ayo": 58.0,
+      "myo": 80.0
     },
     {
       "slug": "monetate",
@@ -1008,7 +1102,11 @@
         "PCI DSS"
       ],
       "url": "https://monetate.com/",
-      "summary": "MONET is Monetate's AI engine providing real-time adaptive intelligence across personalization, recommendations, and experimentation — marketed as agentic AI that 'continuously learns, acts, and improves outcomes.' Customer-facing GenAI assistant offers on-demand best practices and tailored guidance. Intelligent Personalization is the AI-powered decisioning engine for 1:1 personalization with sub-20ms decisioning latency. Action Variables (custom context variables via JS API or Engine API) enable rule-based or AI-informed triggers. Acquired SiteSpect in June 2025, merging zero-flicker server-side testing with AI-native personalization. Repositioned in September 2025 as the 'Experience Optimization Platform' with unified personalization + experimentation + discovery suites. Owned by Kibo Software. No Model Context Protocol (MCP) server for external AI assistants documented."
+      "summary": "MONET is Monetate's AI engine providing real-time adaptive intelligence across personalization, recommendations, and experimentation — marketed as agentic AI that 'continuously learns, acts, and improves outcomes.' Customer-facing GenAI assistant offers on-demand best practices and tailored guidance. Intelligent Personalization is the AI-powered decisioning engine for 1:1 personalization with sub-20ms decisioning latency. Action Variables (custom context variables via JS API or Engine API) enable rule-based or AI-informed triggers. Acquired SiteSpect in June 2025, merging zero-flicker server-side testing with AI-native personalization. Repositioned in September 2025 as the 'Experience Optimization Platform' with unified personalization + experimentation + discovery suites. Owned by Kibo Software. No Model Context Protocol (MCP) server for external AI assistants documented.",
+      "ax": 18.3,
+      "ay": 57.2,
+      "axc": 18.3,
+      "ayc": 57.2
     },
     {
       "slug": "ab-tasty",
@@ -1071,7 +1169,11 @@
         "url": "",
         "hosted": "Both",
         "docs": "https://github.com/flagship-io/mcp-server"
-      }
+      },
+      "ax": 62.6,
+      "ay": 57.2,
+      "axc": 62.6,
+      "ayc": 57.2
     },
     {
       "slug": "convert",
@@ -1130,7 +1232,14 @@
         "url": "",
         "hosted": "Self-hosted",
         "docs": "https://www.npmjs.com/package/@convertcom/mcp-server"
-      }
+      },
+      "ax": 74.0,
+      "ay": 45.0,
+      "axc": 69.9,
+      "ayc": 34.1,
+      "axo": 74.0,
+      "ayo": 45.0,
+      "myo": 42.0
     },
     {
       "slug": "zoho-pagesense",
@@ -1175,7 +1284,14 @@
         "SSO / SAML"
       ],
       "url": "https://www.zoho.com/pagesense/",
-      "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite — can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level)."
+      "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite — can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level).",
+      "ax": 25.0,
+      "ay": 32.0,
+      "axc": 17.7,
+      "ayc": 31.2,
+      "axo": 25.0,
+      "ayo": 32.0,
+      "myo": 30.0
     },
     {
       "slug": "harness-fme",
@@ -1248,7 +1364,13 @@
         "url": "https://github.com/harness/mcp-server",
         "hosted": "Self-hosted",
         "docs": "https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/"
-      }
+      },
+      "ax": 78.0,
+      "ay": 58.0,
+      "axc": 75.6,
+      "ayc": 80.4,
+      "axo": 78.0,
+      "ayo": 58.0
     },
     {
       "slug": "salesforce-marketing-cloud-personalization",
@@ -1301,7 +1423,13 @@
         "url": "https://api.salesforce.com/platform/mcp/v1/",
         "hosted": "Vendor-hosted",
         "docs": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
-      }
+      },
+      "ax": 30.0,
+      "ay": 52.0,
+      "axc": 27.1,
+      "ayc": 57.2,
+      "axo": 30.0,
+      "ayo": 52.0
     },
     {
       "slug": "ninetailed-by-contentful",
@@ -1357,12 +1485,16 @@
       ],
       "url": "https://www.contentful.com/personalization",
       "summary": "Ninetailed was acquired by Contentful in August 2024 and lightly rebranded to 'Ninetailed by Contentful' / 'Contentful Personalization.' The original ninetailed.io domain now redirects to Contentful's Personalization product page. Combined offering integrates Ninetailed's AI-driven personalization and experimentation directly into Contentful's composable content platform — marketers can create, manage, and optimize personalized experiences from within Contentful in a no-code environment. Capabilities: AI-powered A/B testing optimization, custom segmentation, in-depth analytics, audience targeting across composable architectures. Documented customer outcomes: 78% conversion lift (Kraft-Heinz), 87% higher CTRs (Ace & Tate), <30 min implementation (Ruggable). Available as a Twilio Segment destination. For current product details (pricing, MCP, SDKs, compliance), refer to Contentful's documentation rather than the legacy Ninetailed materials.",
-      "acquiredBy": "Contentful",
+      "acquiredBy": "Contentful (August 2024)",
       "mcpDetail": {
         "url": "https://mcp.contentful.com/mcp",
         "hosted": "Both",
         "docs": "https://www.contentful.com/developers/docs/tools/mcp-server/"
-      }
+      },
+      "ax": 40.6,
+      "ay": 42.8,
+      "axc": 40.6,
+      "ayc": 42.8
     },
     {
       "slug": "varify",
@@ -1408,7 +1540,11 @@
         "url": "",
         "hosted": "",
         "docs": "https://varify.io/en/mcp-ab-testing-tool/"
-      }
+      },
+      "ax": 63.2,
+      "ay": 54.3,
+      "axc": 63.2,
+      "ayc": 54.3
     },
     {
       "slug": "croct",
@@ -1442,7 +1578,11 @@
       "warehouse": [],
       "compliance": [],
       "url": "https://croct.com/",
-      "summary": "Croct is a headless personalization, A/B testing, and feature-flag platform built for developer-centric product teams. Positioned around 'component-based headless CMS with built-in AB testing and personalization' for engineering and growth teams in SaaS, e-commerce, and digital products. AI-powered website segmentation automatically discovers high-value visitor segments in real time. Event-based expressions allow audiences to react to past behavior via the Croct Query Language (CQL) — functions like a 'memory' for segmentation. JavaScript-only SDK stack: core JS SDK, Next.js SDK, React SDK. One-click Vercel integration with automatic API-key provisioning. Free tier available with no credit card; custom enterprise pricing for advanced features. G2 Leader in Headless CMS, Personalization, AB Testing, and Component CMS categories (Winter/Spring 2026). No MCP server documented. No compliance certifications (SOC 2, HIPAA, GDPR, ISO 27001) publicly stated. Operating in 2026."
+      "summary": "Croct is a headless personalization, A/B testing, and feature-flag platform built for developer-centric product teams. Positioned around 'component-based headless CMS with built-in AB testing and personalization' for engineering and growth teams in SaaS, e-commerce, and digital products. AI-powered website segmentation automatically discovers high-value visitor segments in real time. Event-based expressions allow audiences to react to past behavior via the Croct Query Language (CQL) — functions like a 'memory' for segmentation. JavaScript-only SDK stack: core JS SDK, Next.js SDK, React SDK. One-click Vercel integration with automatic API-key provisioning. Free tier available with no credit card; custom enterprise pricing for advanced features. G2 Leader in Headless CMS, Personalization, AB Testing, and Component CMS categories (Winter/Spring 2026). No MCP server documented. No compliance certifications (SOC 2, HIPAA, GDPR, ISO 27001) publicly stated. Operating in 2026.",
+      "ax": 16.4,
+      "ay": 13.8,
+      "axc": 16.4,
+      "ayc": 13.8
     },
     {
       "slug": "mutiny",
@@ -1495,7 +1635,13 @@
         "url": "https://mcp.mutinyhq.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp"
-      }
+      },
+      "ax": 78.0,
+      "ay": 62.0,
+      "axc": 56.4,
+      "ayc": 51.4,
+      "axo": 78.0,
+      "ayo": 62.0
     },
     {
       "slug": "growthbook",
@@ -1574,7 +1720,13 @@
         "url": "",
         "hosted": "Self-hosted",
         "docs": "https://docs.growthbook.io/integrations/mcp"
-      }
+      },
+      "ax": 84.0,
+      "ay": 58.0,
+      "axc": 86.2,
+      "ayc": 51.4,
+      "axo": 84.0,
+      "ayo": 58.0
     },
     {
       "slug": "kameleoon",
@@ -1650,7 +1802,13 @@
         "url": "https://mcp.kameleoon.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://developers.kameleoon.com/developer-tools/mcp-server"
-      }
+      },
+      "ax": 82.0,
+      "ay": 65.0,
+      "axc": 78.0,
+      "ayc": 71.7,
+      "axo": 82.0,
+      "ayo": 65.0
     },
     {
       "slug": "statsig",
@@ -1743,7 +1901,13 @@
         "url": "",
         "hosted": "Vendor-hosted",
         "docs": "https://docs.statsig.com/integrations/mcp"
-      }
+      },
+      "ax": 80.0,
+      "ay": 52.0,
+      "axc": 86.1,
+      "ayc": 63.0,
+      "axo": 80.0,
+      "ayo": 52.0
     },
     {
       "slug": "webflow-optimize",
@@ -1798,7 +1962,15 @@
         "url": "https://mcp.webflow.com/mcp",
         "hosted": "Both",
         "docs": "https://developers.webflow.com/mcp/reference/how-it-works"
-      }
+      },
+      "ax": 45.0,
+      "ay": 52.0,
+      "axc": 47.2,
+      "ayc": 54.3,
+      "axo": 45.0,
+      "ayo": 52.0,
+      "mxo": 20.0,
+      "myo": 28.0
     },
     {
       "slug": "compose",
@@ -1831,7 +2003,11 @@
         "GDPR"
       ],
       "url": "https://www.compose.co",
-      "summary": "Compose is a no-code, Shopify-native A/B testing app positioned as an affordable alternative to Convert, AB Tasty, VWO, and Optimizely. Only pay-as-you-go pricing on the market: free to install plus $0.0012 per tested user (unique visitor in an active experiment). Supports theme/template testing, product page tests, collection tests, JavaScript variants in a code editor for advanced custom logic. Visual editor integrates directly with Shopify storefront. Native checkout integration. No AI/agentic features documented in marketing materials. No MCP server documented. No compliance certifications publicly listed. Targets small-to-medium Shopify merchants seeking flexibility and low-cost experimentation."
+      "summary": "Compose is a no-code, Shopify-native A/B testing app positioned as an affordable alternative to Convert, AB Tasty, VWO, and Optimizely. Only pay-as-you-go pricing on the market: free to install plus $0.0012 per tested user (unique visitor in an active experiment). Supports theme/template testing, product page tests, collection tests, JavaScript variants in a code editor for advanced custom logic. Visual editor integrates directly with Shopify storefront. Native checkout integration. No AI/agentic features documented in marketing materials. No MCP server documented. No compliance certifications publicly listed. Targets small-to-medium Shopify merchants seeking flexibility and low-cost experimentation.",
+      "ax": 15.2,
+      "ay": 13.8,
+      "axc": 15.2,
+      "ayc": 13.8
     },
     {
       "slug": "amplitude",
@@ -1909,7 +2085,13 @@
         "url": "https://mcp.amplitude.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp"
-      }
+      },
+      "ax": 88.0,
+      "ay": 68.0,
+      "axc": 84.1,
+      "ayc": 63.0,
+      "axo": 88.0,
+      "ayo": 68.0
     },
     {
       "slug": "dynamic-yield",
@@ -1966,7 +2148,11 @@
         "SSO / SAML"
       ],
       "url": "https://www.dynamicyield.com/",
-      "summary": "AdaptML is the core AI engine providing real-time affinity profiles, next-best-item predictions, and multi-purchase cadence modeling. Recommendations engine uses deep learning, visual similarity, and reinforcement learning for product catalogs with millions of SKUs. Predictive Targeting scores audiences for uplift potential. Copywriter + Stability.ai integration enables automated copy and visual generation. NextML NLP models predict next-best-item. Shopping Muse is a generative AI commerce advisor (users describe needs, e.g., 'outfit for a beach wedding in Bali'). Acquired by Mastercard in 2022, the platform now incorporates Mastercard Element spend signals. Snowflake connector via Improvado for warehouse export; raw event data via Daily Activity Stream. No Model Context Protocol (MCP) server for external AI assistants documented."
+      "summary": "AdaptML is the core AI engine providing real-time affinity profiles, next-best-item predictions, and multi-purchase cadence modeling. Recommendations engine uses deep learning, visual similarity, and reinforcement learning for product catalogs with millions of SKUs. Predictive Targeting scores audiences for uplift potential. Copywriter + Stability.ai integration enables automated copy and visual generation. NextML NLP models predict next-best-item. Shopping Muse is a generative AI commerce advisor (users describe needs, e.g., 'outfit for a beach wedding in Bali'). Acquired by Mastercard in 2022, the platform now incorporates Mastercard Element spend signals. Snowflake connector via Improvado for warehouse export; raw event data via Daily Activity Stream. No Model Context Protocol (MCP) server for external AI assistants documented.",
+      "ax": 28.4,
+      "ay": 57.2,
+      "axc": 28.4,
+      "ayc": 57.2
     }
   ]
 }
