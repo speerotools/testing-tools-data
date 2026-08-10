@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-04T08:27:05Z",
-  "commit": "d5b0fe415883841648d6caeddbe061f49656f910",
+  "version": "2026-08-10T07:09:24Z",
+  "commit": "2154663236964c1d5668099ac1cad3aead1a6544",
   "vendors": [
     {
       "slug": "ablyft",
@@ -12,32 +12,49 @@
         "B2B SaaS / Product-led",
         "Enterprise (governance, multi-team)",
         "Client-side marketing/CRO",
-        "Server-side / feature-flag-first"
+        "Server-side / feature-flag-first",
+        "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "none",
-      "ai": [],
+      "mcp": "product",
+      "ai": [
+        "Hypothesis generation (AI)",
+        "Insight summarization (AI)",
+        "Variant generation (AI)",
+        "in-app ai chat/agent",
+        "mcp-native agent surface"
+      ],
       "pricing": [
         "Free",
         "Freemium",
         "Enterprise (custom)"
       ],
       "sdk": [
-        "JavaScript / TypeScript"
+        "JavaScript / TypeScript",
+        "REST / HTTP API"
       ],
       "integrations": [
-        "Google Analytics 4"
+        "Google Analytics 4",
+        "Google Tag Manager",
+        "Shopify",
+        "Slack"
       ],
       "warehouse": [],
       "compliance": [
-        "GDPR"
+        "GDPR",
+        "EU data residency"
       ],
       "url": "https://ablyft.com/",
-      "summary": "ABlyft positions itself as an enterprise-grade A/B testing platform built for developers and experienced marketers — 'affordable enterprise A/B testing' for organizations with many test developers. Privacy-first and GDPR-compliant. Free plan available with no credit card; full-feature Enterprise plan priced on request with unlimited experiments, customization, and priority support. Client-side JavaScript API (GET calls, experiment retrieval) is the documented developer integration; no SDK list for other languages. GA4 integration with detailed guide for connecting via GTM and querying ABlyft variation IDs in GA4 explorations. No documented Adobe Analytics, Segment, or data warehouse integrations. No MCP server. No AI/agentic features documented. GDPR is the only compliance certification publicly disclosed. Operating in 2026 with active site and docs."
+      "summary": "ABlyft positions itself as an enterprise-grade A/B testing platform built for developers and experienced marketers — 'affordable enterprise A/B testing' for organizations with many test developers. Privacy-first and GDPR-compliant. Free plan available with no credit card; full-feature Enterprise plan priced on request with unlimited experiments, customization, and priority support. Client-side JavaScript API (GET calls, experiment retrieval) is the documented developer integration; no SDK list for other languages. GA4 integration with detailed guide for connecting via GTM and querying ABlyft variation IDs in GA4 explorations. No documented Adobe Analytics, Segment, or data warehouse integrations. No MCP server. No AI/agentic features documented. GDPR is the only compliance certification publicly disclosed. Operating in 2026 with active site and docs.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": ""
+      }
     },
     {
       "slug": "eppo-by-datadog",
-      "name": "Eppo by Datadog",
-      "status": "acquired",
+      "name": "Datadog",
+      "status": "active",
       "h1": "Eppo is now Datadog Experiments",
       "h2": "We've spent the last year building a new generation of experimentation platform: trustworthy, self-service experimentation and feature flagging for every team. Now on Datadog.",
       "ucf": [
@@ -46,12 +63,15 @@
         "Server-side / feature-flag-first",
         "Enterprise (governance, multi-team)"
       ],
-      "mcp": "none",
+      "mcp": "platform",
       "ai": [
         "Contextual bandits / AI traffic allocation",
         "AI audience builder",
         "Anomaly detection (AI)",
-        "Insight summarization (AI)"
+        "Insight summarization (AI)",
+        "mcp-native agent surface",
+        "agentic experimentation",
+        "Warehouse-native AI"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -88,7 +108,11 @@
       ],
       "url": "https://www.geteppo.com/",
       "summary": "Contextual Bandits deliver real-time AI personalization with full warehouse-native execution. Auto-Generate Explore Charts automatically surface statistically significant slices in experiment results. Automated Slack alerts flag traffic imbalances, anomalous metric drops, instrumentation gaps, and data pipeline errors. AI Personalization positioning aligns with the warehouse-native bandit approach. Note: Eppo was acquired by Datadog in 2025 and is being merged into Datadog Experiments.",
-      "acquiredBy": "Datadog"
+      "mcpDetail": {
+        "url": "",
+        "hosted": "Both",
+        "docs": "https://docs.datadoghq.com/experiments/mcp_tools/"
+      }
     },
     {
       "slug": "omniconvert",
@@ -101,7 +125,7 @@
         "DTC ecommerce",
         "Client-side marketing/CRO"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
@@ -131,7 +155,12 @@
         "GDPR"
       ],
       "url": "https://www.omniconvert.com/",
-      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented."
+      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization — surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced — visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026 — actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented.",
+      "mcpDetail": {
+        "url": "https://web.omniconvert.com/mcp",
+        "hosted": "Vendor-hosted",
+        "docs": "https://help.omniconvert.com/kba/api-key-clients-cursor-claude-code-claude-desktop/"
+      }
     },
     {
       "slug": "spotify-confidence",
@@ -147,7 +176,9 @@
       ],
       "mcp": "product",
       "ai": [
-        "Insight summarization (AI)"
+        "Insight summarization (AI)",
+        "mcp-native agent surface",
+        "semantic search"
       ],
       "pricing": [
         "Free",
@@ -187,11 +218,11 @@
         "SSO/SAML"
       ],
       "url": "https://confidence.spotify.com/",
-      "summary": "Spotify's internal experimentation platform, now sold standalone. Confidence combines feature flags, A/B tests, rollouts, and warehouse-native metric analysis in one platform, running experiments directly on your own data warehouse (Snowflake, BigQuery, Databricks, Redshift) instead of duplicating event data. SDKs are OpenFeature-compliant (CNCF) across server, client, and edge runtimes, built on an open-source Rust flag resolver. Statistics include sequential testing with valid early stopping, CUPED variance reduction, and multiple-comparison adjustment. Credit-based pricing (one credit equals one unique user per month) with a generous free tier that includes Google SSO, warehouse-native access, and EU or US hosting. Spotify publishes an official AI plugin for Claude Code and Cursor with two vendor-hosted MCP servers, confidence-flags for feature-flag management and confidence-docs, authenticated over OAuth, plus migration skills for moving flags from tools like PostHog, Statsig, Optimizely, and Eppo. SOC 2 Type II is in progress, with the first examination targeted for December 2026, so it is not yet a held certification.",
+      "summary": "Confidence is warehouse-native experimentation from Spotify whose AI surface is expressed primarily through MCP rather than in-product assistants. It runs two vendor-hosted streamable-HTTP MCP servers: a Documentation MCP at https://mcp.confidence.dev/mcp/docs requiring no authentication, exposing semantic search with maximum-marginal-relevance ranking, regex search, full-source retrieval and SDK integration guidance; and an authenticated Flag Management MCP at https://mcp.confidence.dev/mcp/flags exposing nine tools to list, read, create and modify flags, add variants, update schemas, create override rules, test flag resolution with an explanation of why a variant was selected, and analyze flag usage to find unused or fully rolled-out flags. Flags carry structured schemas with named variants resolved against evaluation context, and applied-flag events are written to the data warehouse for later experiment analysis. Confidence's public positioning is that AI-accelerated code production increases, rather than reduces, the need for experimentation and guardrails. No generative-variant, bandit or autotune capability is documented on Confidence's own pages.",
       "mcpDetail": {
-        "url": "https://mcp.confidence.spotify.com/mcp/flags",
+        "url": "https://mcp.confidence.dev/mcp/flags",
         "hosted": "Vendor-hosted",
-        "docs": "https://confidence.spotify.com/docs/mcp-servers"
+        "docs": "https://confidence.spotify.com/docs/sdks/mcp-servers"
       }
     },
     {
@@ -209,10 +240,13 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
+        "mcp-native agent surface",
+        "Contextual bandits / AI traffic allocation",
         "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Insight summarization (AI)",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -234,10 +268,10 @@
         "SSO / SAML"
       ],
       "url": "https://www.sitecore.com/products/personalize",
-      "summary": "SitecoreAI is the AI layer powering Personalize, with real-time personalization driven by live audience insights. AI Code Assistant turns natural-language prompts into JavaScript for custom conditions, programmable traits, and session traits. Decision Canvas is a drag-and-drop interface combining business rules, ML predictions, and external systems for real-time decisioning. Sitecore Stream adds generative-AI services across the suite (Content Hub, Experience Platform, CDP, Personalize, Search) — AI agents draft briefs, route approvals, and chase work forward. Marketer MCP server connects AI agents to Sitecore via the Agent API for AI-driven marketing tool access (deployment model not publicly documented). A/B/n experimentation engine integrated with personalization decisioning, with conversion optimization included in every SitecoreAI plan. Formerly Boxever (acquired 2021), now part of Sitecore's composable DXP.",
+      "summary": "SitecoreAI splits its AI into assistants and agents: assistants handle quick interactive work - improving content in real time, personalizing pages, supporting A/B testing and optimization, creating deliverables and smart briefs, providing brand guidance, and translating a page or an entire site - while Agentic studio agents coordinate multi-step marketing processes, with brand kits applied across generation, optimization and translation. Documented AI features include running an A/B/n test with an AI-optimized variant and personalizing pages with AI. For external agents, Sitecore ships the Marketer MCP server plus a REST Agent API: MCP exposes Agent API endpoints as tools (for example a create_page tool), and every action still passes through Sitecore security, permissions and approval workflows. Sitecore markets Marketer MCP as a way to launch pages, run SEO audits, manage content, personalize and optimize from a single AI chat in Claude or Copilot Studio, and to pull other tools' MCPs into one governed workflow. Beyond first-party MCP, Sitecore has opened interoperability to partner agentic platforms, with Gradial as the first such integration; base page-builder personalization remains rule-based, extensible with Sitecore Personalize and CDP.",
       "mcpDetail": {
         "url": "",
-        "hosted": "Vendor-hosted",
+        "hosted": "",
         "docs": "https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html"
       }
     },
@@ -256,7 +290,8 @@
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
-        "Variant generation (AI)"
+        "Variant generation (AI)",
+        "AI audience builder"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -289,10 +324,15 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
-        "Contextual bandits / AI traffic allocation",
         "Anomaly detection (AI)",
         "Insight summarization (AI)",
-        "Prompt-based editor"
+        "agentic experimentation",
+        "mcp-native agent surface",
+        "Contextual bandits / AI traffic allocation",
+        "LLM-as-judge evaluation",
+        "code assistant",
+        "Prompt-based editor",
+        "AI cost/latency monitoring"
       ],
       "pricing": [
         "Free",
@@ -340,9 +380,9 @@
         "EU data residency"
       ],
       "url": "https://launchdarkly.com/",
-      "summary": "AI Configs and AgentControl provide dynamic runtime configuration for LLM prompts, model parameters, and agent behavior — decoupling AI behavior from code deployments and supporting OpenAI, Anthropic, AWS Bedrock, open-source, and custom models. Multi-armed bandits (Thompson Sampling) dynamically reallocate experiment traffic. Anomaly detection alerts trigger on meaningful metric deviations without manual thresholds. AI Experiments compare prompts and configs and feed metrics back to optimize cost, latency, and quality. Three hosted MCP servers (feature management, AgentControl, observability) plus a local self-hosted option.",
+      "summary": "LaunchDarkly's AI surface is AgentControl: configs that externalize prompts, instructions and model settings from application code, in completion or agent mode, with variations, targeting, monitoring, experimentation and attachable judges for online evaluation. In July 2026 LaunchDarkly added Agent Optimization in public beta, which runs systematic optimization passes across models, prompts and configurations, scores them with a judge model, and deploys the winner from LaunchDarkly. AgentControl monitoring can now be filtered and grouped by context kind, attributing AI cost, latency, tokens and satisfaction to individual tenants or users. For agent-driven operations, LaunchDarkly runs a hosted OAuth MCP server at https://mcp.launchdarkly.com/mcp/launchdarkly spanning feature management, AgentControl and observability, with a local npx server for federal and EU instances. LaunchDarkly also publishes installable agent skills that drive multi-step workflows such as flag cleanup through to a pull request.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.launchdarkly.com/mcp/launchdarkly",
         "hosted": "Both",
         "docs": "https://launchdarkly.com/docs/home/getting-started/mcp"
       }
@@ -350,7 +390,7 @@
     {
       "slug": "symplify",
       "name": "Symplify",
-      "status": "active",
+      "status": "acquired",
       "h1": "CRM? No, we do much more than that…",
       "h2": "Future proof whatever you choose to call it. Your competitors are… CRM. Marketing Automation. AI. Conversion Testing. Consumer Data Insights. That's a lot of name calling when you could simply say Symplify.",
       "ucf": [
@@ -358,10 +398,7 @@
         "Client-side marketing/CRO"
       ],
       "mcp": "none",
-      "ai": [
-        "Variant generation (AI)",
-        "Prompt-based editor"
-      ],
+      "ai": [],
       "pricing": [
         "Enterprise (custom)"
       ],
@@ -397,7 +434,8 @@
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Contextual bandits / AI traffic allocation"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -434,11 +472,11 @@
         "PCI DSS"
       ],
       "url": "https://vwo.com/",
-      "summary": "VWO Copilot is an AI assistant suite spanning experimentation workflows. Editor Copilot generates design variations from text prompts. AI-Generated Ideas scans a webpage and produces hypothesis suggestions auto-added to the Hypotheses backlog. AI-powered segment targeting and report segmentation are available in early access. The FME MCP Server connects external AI tools (ChatGPT, Cursor, Claude) to query live campaign data with permission-scoped access (Browse, Design, Publish). Note: VWO and AB Tasty merged in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform.",
+      "summary": "VWO Copilot is an AI assistant layer spanning the experimentation workflow: Editor Copilot generates design variations from text prompts, AI-Generated Ideas scans pages and adds hypotheses to the backlog, and Copilots also assist with heatmap and session-recording analysis, page selection and segment generation. Campaigns can be created directly through Copilot from natural language. VWO now runs two MCP surfaces: a vendor-hosted OAuth server at https://mcp.vwo.io/mcp (with EU and Asia endpoints) whose access is gated by Browse, Design and Publish-Admin scopes and which exposes campaign overview and A/B campaign creation tools, and a self-hosted FME MCP server (npx vwo-fme-mcp@latest, account ID + API key) for feature-flag create/update/delete and environment toggles from the IDE. Together these make VWO addressable by external agents for both marketing-side campaign work and developer-side flag management.",
       "mcpDetail": {
-        "url": "",
-        "hosted": "Vendor-hosted",
-        "docs": "https://developers.vwo.com/v2/docs/fme-mcp-server"
+        "url": "https://mcp.vwo.io/mcp",
+        "hosted": "Both",
+        "docs": "https://help.vwo.com/hc/en-us/articles/57716550899993-Connect-the-VWO-MCP-Server-with-Gemini-CLI"
       }
     },
     {
@@ -456,10 +494,14 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
-        "Hypothesis generation (AI)",
         "Insight summarization (AI)",
+        "agentic experimentation",
+        "mcp-native agent surface",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Image generation",
+        "Hypothesis generation (AI)",
+        "Prompt-based editor",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Subscription (per MAU or seat)",
@@ -502,7 +544,7 @@
         "SSO / SAML"
       ],
       "url": "https://www.optimizely.com/",
-      "summary": "Optimizely Opal is a suite of specialized AI agents working across the platform: AI Variation Generator (processes up to 8,000 tokens of text-based content), AI-driven test idea suggestions, AI Variation Summaries that auto-explain experiment changes, and the agent-driven Opal Chat. Contextual Multi-Armed Bandits (CMABs) personalize via reinforcement learning. Opal integrates with Microsoft Copilot (closed beta). The Experimentation MCP Server is in closed beta with both Remote (vendor-hosted, OAuth via Opal) and local (self-hosted) deployment options.",
+      "summary": "Optimizely's AI layer is Opal, an agent-orchestration platform spanning Optimizely One with 50+ pre-built agents, no-code agent building, workflow orchestration, knowledge integration, quality evaluation and human-in-the-loop review. Inside experimentation, Opal supplies AI variation generation, AI test-idea suggestions, AI variation summaries and Opal Chat, and Optimizely reports 58.74% of all Opal agent usage is experimentation across 47,000 interactions at 900 companies. Q3 2026 additions include image generation and editing, Voice Mode, Brand and Channel Packs, Virtual Teammates and native human-in-the-loop approval checkpoints. Optimizely now exposes two of its own MCP servers - Experimentation (exp_* tools for query, manage and SDK implementation) and Analytics (oa_* tools for discovery, exploration building and scorecard analysis) - both OAuth-authenticated through Opti ID/Opal. Contextual bandits remain the per-user personalization mechanism, optimizing the primary metric using user attributes rather than one global winner.",
       "mcpDetail": {
         "url": "https://exp.mcp.opal.optimizely.com/mcp",
         "hosted": "Both",
@@ -525,10 +567,12 @@
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "AI audience builder",
+        "agentic experimentation",
+        "Prompt-based editor",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Insight summarization (AI)",
+        "mcp-native agent surface"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -558,7 +602,7 @@
         "SSO / SAML"
       ],
       "url": "https://business.adobe.com/products/target/adobe-target",
-      "summary": "Adobe Sensei AI underpins all AI-driven Target features. Auto-Allocate dynamically shifts traffic toward the best-performing variation using multi-armed bandit logic. Auto-Target (Premium tier) is a real-time ML-based decision engine that selects the most promising experience per individual visitor based on behavior and context. Automated Personalization (Premium) creates unique content combinations per visitor without predefined segments. Adobe Experience Platform AI Assistant provides a conversational interface for natural-language queries across Target. Adobe announced a redesigned UI with generative AI features for personalization at scale in 2025. No Model Context Protocol (MCP) server is publicly documented; integration with external AI clients (Claude, ChatGPT, Cursor) is not publicly supported. Two-tier model: Standard (A/B, multivariate, rules-based targeting, auto-allocate) and Premium (adds Auto-Target, Automated Personalization, Recommendations).",
+      "summary": "Adobe Target's most significant recent AI/agentic development is its own MCP server, in public beta and hosted by Adobe at https://targetmcp.adobe.io/mcp, which lets AI assistants inspect, analyze and manage A/B tests and personalization activities in natural language. It exposes 41 tools across 10 categories covering activity inspection and audit, performance/revenue/A4T reporting for A/B, XT, AP and Auto-Target activities, creation and update of A/B and Experience Targeting activities, traffic-split and variant management, activity state control, audience and HTML/JSON offer management, and implementation audit of at.js settings and response tokens. Access is OAuth 2.0 through Adobe Experience Cloud with no static credentials, and tool availability is gated by Target role: Observer for read, Editor for write, Approver for activation. Adobe attaches an explicit 'as is' risk disclaimer to MCP integrations and recommends sandbox testing first. Target's own AI-driven activity types, Automated Personalization and Auto-Target, remain first-class and are reportable through the MCP.",
       "mcpDetail": {
         "url": "https://targetmcp.adobe.io/mcp",
         "hosted": "Vendor-hosted",
@@ -580,7 +624,8 @@
       "mcp": "none",
       "ai": [
         "Contextual bandits / AI traffic allocation",
-        "Insight summarization (AI)"
+        "Insight summarization (AI)",
+        "AI audience builder"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -618,20 +663,38 @@
         "Server-side / feature-flag-first",
         "Warehouse-native"
       ],
-      "mcp": "none",
-      "ai": [],
+      "mcp": "product",
+      "ai": [
+        "mcp-native agent surface",
+        "agentic experimentation"
+      ],
       "pricing": [
-        "Enterprise (custom)"
+        "Enterprise (custom)",
+        "Subscription (flat)"
       ],
       "sdk": [
         "JavaScript / TypeScript",
         "Python",
         "Go",
-        "Angular"
+        "Angular",
+        "React / Next.js",
+        "Swift (iOS)",
+        "Java",
+        ".NET / C#",
+        "PHP",
+        "Ruby",
+        "Flutter",
+        "Node.js",
+        "Kotlin (Android)",
+        "Rust",
+        "C++",
+        "REST / HTTP API"
       ],
       "integrations": [
         "Segment",
-        "Slack"
+        "Slack",
+        "Salesforce",
+        "HubSpot"
       ],
       "warehouse": [
         "BigQuery",
@@ -641,10 +704,19 @@
         "Databricks"
       ],
       "compliance": [
-        "SSO / SAML"
+        "SSO / SAML",
+        "GDPR",
+        "HIPAA",
+        "ISO 27001",
+        "On-premise deployment"
       ],
       "url": "https://www.absmartly.com/",
-      "summary": "ABsmartly is intentionally not AI-marketed — positioning is 'built by developers for developers' for trustworthy A/B testing. The Health Check Panel is positioned as an 'experimentation copilot' for real-time anomaly detection (Sample Ratio Mismatch, Audience Mismatch, Variable Conflicts) but is rule-based monitoring rather than generative AI. Group Sequential Testing engine accelerates test cycles by 20-80% vs fixed horizon, twice as fast as standard sequential testing. Warehouse Native mode runs analysis inside customer's data warehouse (BigQuery, Snowflake, ClickHouse, Redshift, Databricks). Hybrid deployment mode planned. An MCP Server GitHub repository exists (absmartly/mcp-server) but is not yet documented in product docs. LaunchPad browser extension enables non-technical users to launch tests. Pricing: event-based, starts at €60,000/year for 50M events/month with unlimited seats/experiments/goals."
+      "summary": "ABsmartly is intentionally not AI-marketed — positioning is 'built by developers for developers' for trustworthy A/B testing. The Health Check Panel is positioned as an 'experimentation copilot' for real-time anomaly detection (Sample Ratio Mismatch, Audience Mismatch, Variable Conflicts) but is rule-based monitoring rather than generative AI. Group Sequential Testing engine accelerates test cycles by 20-80% vs fixed horizon, twice as fast as standard sequential testing. Warehouse Native mode runs analysis inside customer's data warehouse (BigQuery, Snowflake, ClickHouse, Redshift, Databricks). Hybrid deployment mode planned. An MCP Server GitHub repository exists (absmartly/mcp-server) but is not yet documented in product docs. LaunchPad browser extension enables non-technical users to launch tests. Pricing: event-based, starts at €60,000/year for 50M events/month with unlimited seats/experiments/goals.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "Both",
+        "docs": "https://github.com/absmartly"
+      }
     },
     {
       "slug": "intelligems",
@@ -662,9 +734,10 @@
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Insight summarization (AI)",
+        "AI QA / preflight checks"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -711,7 +784,11 @@
         "AI QA / preflight checks",
         "Insight summarization (AI)",
         "Prompt-based editor",
-        "AI audience builder"
+        "AI audience builder",
+        "code assistant",
+        "Hypothesis generation (AI)",
+        "Variant generation (AI)",
+        "semantic search"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -752,12 +829,18 @@
       ],
       "mcp": "product",
       "ai": [
+        "Warehouse-native AI",
         "Variant generation (AI)",
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
-        "AI audience builder",
         "Anomaly detection (AI)",
-        "Prompt-based editor"
+        "Insight summarization (AI)",
+        "agentic experimentation",
+        "AI audience builder",
+        "semantic search",
+        "mcp-native agent surface",
+        "Hypothesis generation (AI)",
+        "code assistant",
+        "Prompt-based editor",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -813,7 +896,7 @@
         "EU data residency"
       ],
       "url": "https://posthog.com/",
-      "summary": "PostHog AI is an in-app AI agent that creates insights, builds dashboards, summarizes session replays, and writes/fixes/validates SQL queries. Documented AI tools include create_feature_flag, create_experiment, and session_summarization. PostHog AI Observability tracks LLM token usage, latency, and cost. The PostHog MCP server is GA and free, giving AI coding agents direct access to PostHog analytics, feature flags, experiments, and errors from Claude Code, Cursor, VS Code, Zed, and other MCP-compatible tools. AI wizard adds PostHog to a codebase with a single CLI command. Open-core model: full platform self-hostable.",
+      "summary": "PostHog AI is an in-product AI analyst that answers plain-English questions against the project's own events, persons and warehouse schema, writes the SQL, builds insights, and also acts - creating dashboards, surveys, alerts and feature flags, editing filters in the UI, and persisting project memory across conversations. It is reachable in the web app, inline throughout the UI, and via Slack in beta, and can hand code changes to a connected repository and return a pull request. Self-driving PostHog goes further: background agents cluster signals from errors, session replays, support tickets and external tools into reports and open PRs in a sandbox, with a human required to merge. Agent access is first-class - a free hosted MCP endpoint at https://mcp.posthog.com/mcp exposes function-calling tools across every PostHog product, including full experiment lifecycle control and governed semantic-layer metrics. Some MCP tools call LLMs internally and are only available when AI data processing is enabled.",
       "mcpDetail": {
         "url": "https://mcp.posthog.com/mcp",
         "hosted": "Both",
@@ -832,8 +915,12 @@
       ],
       "mcp": "product",
       "ai": [
-        "Prompt-based editor",
         "Variant generation (AI)",
+        "mcp-native agent surface",
+        "code assistant",
+        "Prompt-based editor",
+        "semantic search",
+        "agentic experimentation",
         "AI audience builder"
       ],
       "pricing": [
@@ -865,30 +952,12 @@
         "SSO / SAML"
       ],
       "url": "https://www.uniform.dev/",
-      "summary": "Scout, Uniform's native AI agent, creates pages and components from natural-language commands, suggests audience segments, sets up A/B tests and personalization, auto-tags content, and translates compositions. GenAI features cover content creation, translation, and SEO/CRO optimization. Siphon is an AI-driven front-end migration tool that rebuilds existing sites on a modern stack. Scout can also consume external MCP servers (Linear, Notion, GitHub) from inside Uniform. AI operations are metered by AI credits. Note: no native statistics engine. Experiment measurement is delegated to connected analytics (GA4 by default) and winners are declared manually.",
+      "summary": "Uniform's AI is anchored on Scout, an agentic assistant that executes rather than suggests: it creates pages and content from natural-language briefs, optimizes existing pages for SEO, accessibility and performance, suggests audience segments and builds personalized variations and A/B tests, auto-tags content, and translates compositions and entries into target locales. Agent access runs in both directions: the Uniform MCP server exposes 30+ tools across content, assets, structure, releases, classification, optimization and utilities so external clients like Cursor, Claude Code and Copilot can manage a Uniform project, while external MCP servers can be connected into Scout. The MCP server is reached over HTTP at https://ai.uniform.global/projects/<project-id>/mcp with an x-api-key service-account or personal access token holding the Developer role. LLM-backed MCP tools consume Uniform AI credits and apply changes immediately, without Scout's pending-edit review step. Uniform recommends pairing the MCP server with its AI rules so assistants have the conceptual model needed to use the tools well.",
       "mcpDetail": {
-        "url": "https://ai.uniform.global/projects/project-id/mcp",
+        "url": "https://ai.uniform.global/projects/<project-id>/mcp",
         "hosted": "Both",
         "docs": "https://docs.uniform.app/docs/guides/ai/mcp-server"
       }
-    },
-    {
-      "slug": "split",
-      "name": "Split",
-      "status": "acquired",
-      "h1": "Split is now part of Harness",
-      "h2": "We help you scale and succeed by being a partner, not just a platform.",
-      "ucf": [],
-      "mcp": "none",
-      "ai": [],
-      "pricing": [],
-      "sdk": [],
-      "integrations": [],
-      "warehouse": [],
-      "compliance": [],
-      "url": "https://www.split.io/",
-      "summary": "Split was acquired by Harness in May 2024 and merged into Harness Feature Management & Experimentation (FME). Split.io homepage still operates as a brand entry point but its banner now reads 'SPLIT IS NOW PART OF HARNESS.' For current product details — MCP server, SDKs, pricing tiers, AI features — see the Harness FME record in this database. Legacy Split capabilities (feature flag SDKs, advanced experimentation with sequential testing and dimensional analysis) are still active within Harness FME under the Harness brand.",
-      "acquiredBy": "Harness"
     },
     {
       "slug": "monetate",
@@ -910,7 +979,8 @@
         "Insight summarization (AI)",
         "AI audience builder",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Enterprise (custom)"
@@ -952,13 +1022,15 @@
         "B2B SaaS / Product-led",
         "Client-side marketing/CRO"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "agentic experimentation",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Freemium",
@@ -994,7 +1066,12 @@
         "CCPA"
       ],
       "url": "https://www.abtasty.com/",
-      "summary": "Stack of AI Copilots powers experimentation workflows: Visual Editor Copilot (variant generation from prompts), Report Copilot (highlights winning variations), Hypothesis Copilot, Feedback Analysis Copilot. EmotionsAI profiles visitors by emotional and content interest segments for personalization targeting. AI agent 'EVI' for agentic experimentation workflows. AI-driven content personalization predicts visitor intent in real time. Note: AB Tasty merged with VWO in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform. An MCP server exists as an unofficial npm package (@abtasty/mcp-server) but is not yet in official AB Tasty docs."
+      "summary": "Stack of AI Copilots powers experimentation workflows: Visual Editor Copilot (variant generation from prompts), Report Copilot (highlights winning variations), Hypothesis Copilot, Feedback Analysis Copilot. EmotionsAI profiles visitors by emotional and content interest segments for personalization targeting. AI agent 'EVI' for agentic experimentation workflows. AI-driven content personalization predicts visitor intent in real time. Note: AB Tasty merged with VWO in January 2026 under Wingify (Everstone Capital), creating a combined experimentation platform. An MCP server exists as an unofficial npm package (@abtasty/mcp-server) but is not yet in official AB Tasty docs.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "Both",
+        "docs": "https://github.com/flagship-io/mcp-server"
+      }
     },
     {
       "slug": "convert",
@@ -1052,7 +1129,7 @@
       "mcpDetail": {
         "url": "",
         "hosted": "Self-hosted",
-        "docs": "https://convert.com/blog/ai/ab-testing-without-ui-convert-mcp-claude-code"
+        "docs": "https://www.npmjs.com/package/@convertcom/mcp-server"
       }
     },
     {
@@ -1066,7 +1143,7 @@
         "Client-side marketing/CRO",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "platform",
+      "mcp": "none",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
@@ -1098,12 +1175,7 @@
         "SSO / SAML"
       ],
       "url": "https://www.zoho.com/pagesense/",
-      "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite — can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level).",
-      "mcpDetail": {
-        "url": "",
-        "hosted": "",
-        "docs": "https://www.zoho.com/mcp"
-      }
+      "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite — can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level)."
     },
     {
       "slug": "harness-fme",
@@ -1120,12 +1192,15 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "Anomaly detection (AI)",
+        "mcp-native agent surface",
         "Contextual bandits / AI traffic allocation",
         "AI QA / preflight checks",
-        "Prompt-based editor"
+        "Hypothesis generation (AI)",
+        "Prompt-based editor",
+        "agentic experimentation",
+        "Insight summarization (AI)",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -1168,11 +1243,11 @@
         "SSO / SAML"
       ],
       "url": "https://www.harness.io/products/feature-management-experimentation",
-      "summary": "Harness acquired Split.io in May 2024 and merged it into Harness Feature Management & Experimentation (FME), now the post-Split.io combined offering. AIDA (Harness AI) is a generative AI assistant spanning the SDLC: feature flag management, automated rollouts, automated security vulnerability fixes, natural-language cloud-cost policy creation, AI-driven troubleshooting. Harness Release Agent explains experiment results and highlights metric impacts in natural language. Dimensional analysis surfaces root-cause insights across user-defined dimensions. Sequential (adaptive) testing supports early-stop criteria and adaptive sample sizing. Harness MCP server is locally-hosted, runs as a Docker container exposing JSON-RPC at /mcp — supports Claude Code, Claude Desktop, Windsurf, Cursor, and VS Code. Toolsets include list_fme_workspaces, list_fme_feature_flags, get_fme_feature_flag_definition. Split.io still operates under split.io with redirect; the technology is integrated into Harness FME.",
+      "summary": "Inside FME, Harness ships Release Agent, an in-app multilingual AI chatbot grounded in Harness documentation and blogs that answers SDK, flag, targeting, experiment-interpretation and cleanup questions without leaving the UI, plus AI Summarize, which summarizes feature-flag metric tiles, individual experiment metrics and overall experiment results; both are admin-toggleable under FME Settings > AI settings. Platform-wide, Harness launched Autonomous Worker Agents in June 2026 - agents that run as governed pipeline steps on customer-controlled Delegates, produce auditable outputs, and draw memory from the Harness Knowledge Graph while drawing capability from the Harness MCP. The MCP server itself is open source and self-hosted (npx harness-mcp-v2, Docker, or from source) and routes 11 consolidated tools to 139 resource types across 30 toolsets, including Feature Management and Experimentation, with 27 pre-built prompt templates. Authentication is via a Harness personal access token, with an enterprise SSO path documented for MCP. For FME specifically, agents can discover projects, list and inspect flags, compare a flag across environments and identify fully rolled-out flags safe to remove.",
       "mcpDetail": {
         "url": "https://github.com/harness/mcp-server",
         "hosted": "Self-hosted",
-        "docs": "https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code"
+        "docs": "https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/"
       }
     },
     {
@@ -1221,30 +1296,73 @@
         "SSO / SAML"
       ],
       "url": "https://www.salesforce.com/marketing/personalization",
-      "summary": "Salesforce Marketing Cloud Personalization (formerly Interaction Studio, previously Evergage) delivers real-time 1:1 personalization, A/B testing, and decisioning across web, email, mobile, and Agentforce — all powered by Einstein AI and the Agentforce agentic layer. Intelligent AI decisioning engine evaluates customer intent, business goals, and constraints in milliseconds. MCP support is delivered at the Agentforce platform level: AI agents can request data, tools, or prompts through a standardized handshake; available to customers on Agentforce-enabled editions (Personalization+ or Enterprise). 'Gear' extensions are custom JavaScript plug-ins that augment AI decisioning logic. SDKs: Web (Salesforce Interactions SDK / JavaScript), iOS (Swift), Android (Java/Kotlin), and Event API (REST). Native integration with Salesforce ecosystem: Marketing Cloud, Data Cloud (CDP), Service Cloud, Sales Cloud, Loyalty Cloud. MuleSoft provides bi-directional connectors. Pricing: Standard (100K MUVs / Named Profiles), Advanced (custom-quoted), Enterprise (custom, includes full Agentforce). Compliance via Salesforce Hyperforce: SOC 2 Type II, ISO 27001, HIPAA BAA, GDPR, SAML SSO. FedRAMP not currently in scope. Operating in 2026.",
+      "summary": "Salesforce Marketing Cloud Personalization (formerly Interaction Studio/Evergage) delivers real-time 1:1 personalization, recommendations and decisioning across web, email and mobile, now with native web experimentation: marketers create experiments against a traffic subset, define custom primary and secondary metrics, and review lift, chance-to-beat-control and chance-to-beat-all analytics, with experiment data drillable in Data Cloud and exportable to BI tools. Custom engagement signal metrics, compound metrics and first/last-touch attribution models feed recommenders and decisioning. Agentforce integration runs both directions: Personalization context actions preface Agent topics so agents decide with visitor context, while Agentforce Actions translate live conversation intent into structured signals for the decisioning engine. Agent access is governed at the Salesforce platform level through Hosted MCP Servers using per-user OAuth 2.0 with PKCE; those servers cover SObjects, Data 360, Tableau Next and customer-exposed Apex/Flow tools, but no Personalization-specific MCP server is documented. Pricing now itemises Agentforce Personalization Decisioning, AI objective-based recommendations and AI-driven next-best offer.",
       "mcpDetail": {
-        "url": "https://www.salesforce.com/agentforce/mcp-support",
+        "url": "https://api.salesforce.com/platform/mcp/v1/",
         "hosted": "Vendor-hosted",
-        "docs": "https://www.salesforce.com/agentforce/mcp-support"
+        "docs": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
       }
     },
     {
       "slug": "ninetailed-by-contentful",
-      "name": "Ninetailed by Contentful",
+      "name": "Contentful Personalization (formerly Ninetailed)",
       "status": "acquired",
       "h1": "Personalization at scale for composable architectures",
       "h2": "Drive higher engagement with your customer journeys. Test, analyze, and refine the performance of your experiences — now part of Contentful Personalization.",
-      "ucf": [],
-      "mcp": "none",
-      "ai": [],
-      "pricing": [],
-      "sdk": [],
-      "integrations": [],
+      "ucf": [
+        "Client-side marketing/CRO",
+        "Enterprise (governance, multi-team)",
+        "Mobile app native",
+        "DTC ecommerce"
+      ],
+      "mcp": "platform",
+      "ai": [
+        "AI audience builder",
+        "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Contextual bandits / AI traffic allocation",
+        "semantic search"
+      ],
+      "pricing": [
+        "Enterprise (custom)",
+        "Subscription (per MAU or seat)"
+      ],
+      "sdk": [
+        "JavaScript / TypeScript",
+        "React / Next.js",
+        "Node.js",
+        "React Native",
+        "Kotlin (Android)",
+        "Swift (iOS)",
+        "REST / HTTP API",
+        "Edge (Cloudflare / Vercel / Fastly)"
+      ],
+      "integrations": [
+        "Segment",
+        "Google Tag Manager",
+        "RudderStack",
+        "Salesforce",
+        "Shopify",
+        "Klaviyo"
+      ],
       "warehouse": [],
-      "compliance": [],
+      "compliance": [
+        "ISO 27001",
+        "SOC 2 Type II",
+        "PCI DSS",
+        "EU data residency",
+        "SSO / SAML",
+        "EU-U.S. / UK / Swiss Data Privacy Framework",
+        "GDPR"
+      ],
       "url": "https://www.contentful.com/personalization",
       "summary": "Ninetailed was acquired by Contentful in August 2024 and lightly rebranded to 'Ninetailed by Contentful' / 'Contentful Personalization.' The original ninetailed.io domain now redirects to Contentful's Personalization product page. Combined offering integrates Ninetailed's AI-driven personalization and experimentation directly into Contentful's composable content platform — marketers can create, manage, and optimize personalized experiences from within Contentful in a no-code environment. Capabilities: AI-powered A/B testing optimization, custom segmentation, in-depth analytics, audience targeting across composable architectures. Documented customer outcomes: 78% conversion lift (Kraft-Heinz), 87% higher CTRs (Ace & Tate), <30 min implementation (Ruggable). Available as a Twilio Segment destination. For current product details (pricing, MCP, SDKs, compliance), refer to Contentful's documentation rather than the legacy Ninetailed materials.",
-      "acquiredBy": "Contentful"
+      "acquiredBy": "Contentful",
+      "mcpDetail": {
+        "url": "https://mcp.contentful.com/mcp",
+        "hosted": "Both",
+        "docs": "https://www.contentful.com/developers/docs/tools/mcp-server/"
+      }
     },
     {
       "slug": "varify",
@@ -1258,12 +1376,14 @@
         "Client-side marketing/CRO",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Hypothesis generation (AI)",
         "Variant generation (AI)",
         "Insight summarization (AI)",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "mcp-native agent surface",
+        "agentic experimentation"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -1283,7 +1403,12 @@
         "GDPR"
       ],
       "url": "https://varify.io/en/",
-      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions — the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026."
+      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions — the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": "https://varify.io/en/mcp-ab-testing-tool/"
+      }
     },
     {
       "slug": "croct",
@@ -1297,10 +1422,7 @@
         "Server-side / feature-flag-first"
       ],
       "mcp": "none",
-      "ai": [
-        "AI audience builder",
-        "Insight summarization (AI)"
-      ],
+      "ai": [],
       "pricing": [
         "Free",
         "Freemium",
@@ -1337,14 +1459,16 @@
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Insight summarization (AI)",
+        "mcp-native agent surface"
       ],
       "pricing": [
         "Free",
         "Subscription (per MAU or seat)",
-        "Enterprise (custom)"
+        "Enterprise (custom)",
+        "Freemium"
       ],
       "sdk": [
         "JavaScript / TypeScript",
@@ -1368,7 +1492,7 @@
       "url": "https://www.mutinyhq.com/",
       "summary": "Mutiny is positioned as an AI agent that creates customer-facing content (1:1 landing pages, deal rooms, pitch decks, business cases, meeting recaps, case studies, pricing proposals) from natural-language prompts. Mutiny's AI pulls in CRM data, call transcripts, and account research to personalize at scale. The Mutiny MCP server (HTTP + OAuth) connects Claude, ChatGPT, IDEs, and any MCP-compatible client to generate Mutiny assets within conversational AI tools. Visitor Intelligence integrations with Outreach and Salesloft surface buyer signals. Originally a B2B website personalization tool, Mutiny pivoted to an agent-first content generation product. Pricing: Free, Business at $50/seat/month, Enterprise starting $30,000/year.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.mutinyhq.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp"
       }
@@ -1387,10 +1511,12 @@
       ],
       "mcp": "product",
       "ai": [
-        "Hypothesis generation (AI)",
         "Variant generation (AI)",
+        "Hypothesis generation (AI)",
+        "Prompt-based editor",
+        "Contextual bandits / AI traffic allocation",
         "Insight summarization (AI)",
-        "Contextual bandits / AI traffic allocation"
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -1443,7 +1569,7 @@
         "SSO / SAML"
       ],
       "url": "https://www.growthbook.io/",
-      "summary": "WebLens AI Hypothesis Generator scrapes a website, prompts an LLM, and produces hypothesis suggestions with DOM mutation output for direct variant creation. AI-generated experiment result summaries and Similar Experiment Detection power insight workflows. Bayesian and frequentist statistics engines, plus multi-armed bandits (Thompson sampling) with sticky bucketing. Open-source MCP server (growthbook-mcp, Node.js) enables Cursor, Claude Code, and VS Code to create features, start experiments, and clean up stale flags. Open-core model lets teams self-host the full platform.",
+      "summary": "GrowthBook is now explicitly agent-operable: version 5.0 (July 2026) shipped 25 open-source agent skills, an in-app AI Assistant, and a CLI covering 100% of the REST API, so agents can create flags, configure ramps, launch experiments, query analytics, conclude winners and clean up stale flags, with agent actions routed through the same approval workflows, role-based permissions and audit logs as human changes. A rebuilt AI Visual Editor (Chrome extension, Pro/Enterprise) turns plain-language prompts into fully configured A/B tests and can generate and test images without a designer. Inside the app, AI generates experiment result summaries, SQL for the Explorer, metric descriptions and hypothesis feedback, and detects similar past experiments using vector embeddings; self-hosted deployments can enable these with their own OpenAI key. The self-hosted MCP server (@growthbook/mcp, API key plus email) exposes 16 tools across flags, experiments, metrics, environments, projects, SDK connections and docs search. Earlier AI work — the WebLens hypothesis generator and multi-armed bandits — remains part of the platform.",
       "mcpDetail": {
         "url": "",
         "hosted": "Self-hosted",
@@ -1467,12 +1593,14 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "Anomaly detection (AI)",
-        "AI audience builder",
+        "mcp-native agent surface",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Hypothesis generation (AI)",
+        "AI audience builder",
+        "Prompt-based editor",
+        "Insight summarization (AI)",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -1517,9 +1645,9 @@
         "HIPAA"
       ],
       "url": "https://www.kameleoon.com/",
-      "summary": "Kameleoon Predict (AI Predictive Targeting) scores each visitor's probability to convert and assigns five categories for real-time activation. Prompt-Based Experimentation (PBX) generates production-grade UI variations from natural language. AI Copilot provides AI Assist for ideation and result interpretation. AI anomaly detection alerts on KPI deviations during live experiments. Contextual bandits dynamically reallocate traffic. Official MCP Server connects AI coding assistants (Claude, Cursor) to Kameleoon for agentic feature management and experiment workflows. Hybrid mode supports both Web SDK and JavaScript application file simultaneously.",
+      "summary": "Kameleoon's AI stack centres on Prompt-Based Experimentation (PBX), which generates production-grade UI variations on the live site from natural language, with Master Prompts, Figma import and a browser extension; PBX Ideate (invite-only) analyses a site and returns prioritised, evidence-based hypotheses converted into PBX prompts. KAI, the in-app AI assistant, answers questions from documentation and experiment data and takes direct action on the account — creating experiments and feature flags — through Kameleoon's own MCP server, with no installation required. That MCP server (https://mcp.kameleoon.com/mcp, OAuth) also exposes seven tools to external IDE agents for listing and creating flags, listing experiments, pulling results and extracting raw variation code, and is available to non-developers as a Claude custom connector. AI Predictive Targeting scores each visitor's conversion probability for real-time activation, and AI-generated Takeaways consolidate insights across stopped experiments.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.kameleoon.com/mcp",
         "hosted": "Vendor-hosted",
         "docs": "https://developers.kameleoon.com/developer-tools/mcp-server"
       }
@@ -1541,10 +1669,13 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
+        "mcp-native agent surface",
         "Contextual bandits / AI traffic allocation",
         "AI QA / preflight checks",
+        "Hypothesis generation (AI)",
+        "semantic search",
         "Insight summarization (AI)",
-        "Hypothesis generation (AI)"
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -1607,30 +1738,12 @@
         "HIPAA"
       ],
       "url": "https://www.statsig.com/experimentation",
-      "summary": "Autotune is Statsig's Bayesian multi-armed bandit for automatic traffic allocation toward the best-performing variant. Autotune AI extends this with contextual bandits, scoring treatments per user based on attributes for lightweight reinforcement-learning-style personalization. Knowledge Graph connects codebase, feature gates, experiments, users, and metrics to give AI agents structured context. The native MCP server lets Cursor, Claude Desktop, ChatGPT, and Codex create gates, run experiments, and analyze results inside the development workflow.",
+      "summary": "Statsig's optimization core remains Autotune, a Bayesian multi-armed bandit that shifts traffic toward the best-performing variant, extended by contextual bandits that rank variants per user from attributes. Since December 2025 Statsig has layered AI across the experiment workflow: AI-powered experiment summaries that make an explicit ship recommendation, a hypothesis advisor that critiques hypotheses during setup, contextual AI descriptions, AI knowledge-bank search and AI stale-gate cleanup. Agent surfaces have expanded fastest: an OAuth-authenticated MCP server usable from Codex, Cursor and Claude Code, a Statsig ChatGPT app, and an agent-skills repository. MCP coverage now spans metrics tools, segments and layers, parameter store, autotune creation, version history and read-only access modes. Statsig also ships an AI Evals product for offline and online LLM evaluation alongside the experimentation platform.",
       "mcpDetail": {
-        "url": "https://api.statsig.com/v1/mcp",
+        "url": "",
         "hosted": "Vendor-hosted",
         "docs": "https://docs.statsig.com/integrations/mcp"
       }
-    },
-    {
-      "slug": "sitespect",
-      "name": "SiteSpect (now part of Monetate)",
-      "status": "acquired",
-      "h1": "SiteSpect is now part of Monetate",
-      "h2": "The enterprise-grade optimization and experimentation engine, now part of Monetate — the industry's most comprehensive AI personalization and testing platform.",
-      "ucf": [],
-      "mcp": "none",
-      "ai": [],
-      "pricing": [],
-      "sdk": [],
-      "integrations": [],
-      "warehouse": [],
-      "compliance": [],
-      "url": "https://www.sitespect.com/",
-      "summary": "SiteSpect was acquired by Monetate in June 2025 (~$75M deal). SiteSpect's LinkedIn confirms 'now part of Monetate.' The SiteSpect brand and product platform remain active, but the company is being merged into Monetate's broader AI-native personalization and testing platform. SiteSpect's distinctive technology was zero-flicker server-side A/B testing for enterprise e-commerce — a meaningful complement to Monetate's AI personalization. For current product details (pricing, MCP, SDKs, AI features, compliance), refer to the Monetate record in this database. Legacy SiteSpect capabilities (server-side testing, reverse-proxy architecture, zero-flicker rendering) are being integrated into the combined Monetate platform.",
-      "acquiredBy": "Monetate"
     },
     {
       "slug": "webflow-optimize",
@@ -1649,9 +1762,10 @@
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
+        "Prompt-based editor",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Insight summarization (AI)",
+        "mcp-native agent surface"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -1687,47 +1801,6 @@
       }
     },
     {
-      "slug": "figpii",
-      "name": "FigPii",
-      "status": "active",
-      "h1": "More Conversions. Higher Revenue. Better Customer Experiences.",
-      "h2": "Get a full picture of user interactions, eliminate customer frustrations, launch tests and unlock your website's untapped revenue potential.",
-      "ucf": [
-        "DTC ecommerce",
-        "B2B SaaS / Product-led",
-        "Shopify-native",
-        "Client-side marketing/CRO"
-      ],
-      "mcp": "none",
-      "ai": [
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
-        "AI audience builder"
-      ],
-      "pricing": [
-        "Free",
-        "Subscription (per MAU or seat)",
-        "Enterprise (custom)"
-      ],
-      "sdk": [
-        "JavaScript / TypeScript"
-      ],
-      "integrations": [
-        "Google Analytics 4",
-        "Shopify"
-      ],
-      "warehouse": [],
-      "compliance": [
-        "SOC 2 Type II",
-        "ISO 27001",
-        "GDPR",
-        "CCPA",
-        "EU data residency"
-      ],
-      "url": "https://www.figpii.com/",
-      "summary": "FigPii is an all-in-one CRO platform combining A/B testing, heatmaps, session recordings, and polls with the same unlimited features across all paid tiers — differentiated only by visitor capacity and support level. AI features: personalized AI-driven testing recommendations suggest which page elements to test and propose specific changes based on aggregated visitor behavior data; automated session analysis surfaces friction points with actionable insights. Pricing visitor-based: Free Tester (15K visitors, $0), Starter $74.99/mo (10K), Small $149.99/mo (30K), Medium $299.99/mo (60K), Large $449.99/mo (100K, scaling to $2,899.99/mo for 1M visitors), Enterprise custom. Native integrations: Shopify (with ecommerce event tracking via webhooks for 100% accurate revenue), GA4 (creates GA4 Audiences for each experiment), BigCommerce, WordPress. JavaScript tracking snippet only — no SDK list for other languages. EU or US data residency selectable. No MCP server documented. No data warehouse connectors. Surprisingly strong compliance footprint for the tier: SOC 2 Type 2, ISO 27001, ISO 27017, ISO 27018, GDPR, CCPA. SSO mentioned but lacks SAML detail — likely beta. Targets mid-market e-commerce and SaaS firms (10K-200K monthly visitors)."
-    },
-    {
       "slug": "compose",
       "name": "Compose",
       "status": "active",
@@ -1751,8 +1824,12 @@
         "Shopify",
         "Google Analytics 4"
       ],
-      "warehouse": [],
-      "compliance": [],
+      "warehouse": [
+        "BigQuery"
+      ],
+      "compliance": [
+        "GDPR"
+      ],
       "url": "https://www.compose.co",
       "summary": "Compose is a no-code, Shopify-native A/B testing app positioned as an affordable alternative to Convert, AB Tasty, VWO, and Optimizely. Only pay-as-you-go pricing on the market: free to install plus $0.0012 per tested user (unique visitor in an active experiment). Supports theme/template testing, product page tests, collection tests, JavaScript variants in a code editor for advanced custom logic. Visual editor integrates directly with Shopify storefront. Native checkout integration. No AI/agentic features documented in marketing materials. No MCP server documented. No compliance certifications publicly listed. Targets small-to-medium Shopify merchants seeking flexibility and low-cost experimentation."
     },
@@ -1773,11 +1850,13 @@
       "mcp": "product",
       "ai": [
         "Variant generation (AI)",
-        "Hypothesis generation (AI)",
-        "Insight summarization (AI)",
         "Anomaly detection (AI)",
+        "mcp-native agent surface",
+        "Hypothesis generation (AI)",
         "AI audience builder",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "Insight summarization (AI)",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -1825,11 +1904,11 @@
         "SSO / SAML"
       ],
       "url": "https://amplitude.com/web-experimentation",
-      "summary": "Amplitude AI Agents include Dashboard Monitoring Agent, Session Replay Agent, Web Experimentation Agent (designs and launches experiments, analyzes results, makes rollout decisions with human in the loop), and AI Feedback Agent. Amplitude MCP exposes behavioral context to external AI tools and workflows, connecting AI clients to Amplitude data and functionality. Conversational AI lets users type natural-language questions and get visualized answers. Experiment SDKs support remote (vendor-hosted) and local evaluation for low latency. Web Experimentation uses a visual editor delivered as a dynamic layer over the customer's website. Privacy-focused: external LLM invocations enforce contractual no-training controls; customers can opt out.",
+      "summary": "Amplitude's AI layer now centers on agentic surfaces: Custom Agents and Agent Connectors shipped in June 2026, Session Replay Agent v2 reached GA, and AI Feedback Auto Analysis landed at the end of June. The Amplitude MCP server is the primary machine interface - a vendor-hosted, OAuth-authenticated endpoint at https://mcp.amplitude.com/mcp (EU: https://mcp.eu.amplitude.com/mcp) that lets AI clients search and read charts, dashboards, notebooks, experiments and cohorts, run segmentation, funnel and retention queries, analyze experiment results, manage tracking-plan taxonomy, and create or edit charts, dashboards, experiments, cohorts, feature flags and metrics. MCP access respects existing Amplitude permissions and gained role-based access controls and a Slackbot surface in June 2026. A progressive tool-discovery mode reduces token cost by exposing discovery tools first and loading categories on demand. A separate read-only Docs MCP server serves Amplitude's public documentation without authentication.",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.amplitude.com/mcp",
         "hosted": "Vendor-hosted",
-        "docs": "https://amplitude.com/releases/amplitude-mcp"
+        "docs": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp"
       }
     },
     {
@@ -1852,7 +1931,9 @@
         "Insight summarization (AI)",
         "AI audience builder",
         "Contextual bandits / AI traffic allocation",
-        "Prompt-based editor"
+        "Prompt-based editor",
+        "semantic search",
+        "Image generation"
       ],
       "pricing": [
         "Enterprise (custom)"
