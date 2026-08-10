@@ -1,3 +1,320 @@
-# Changed pages — 2026-08-04
+# Vendor scan — 2026-08-10
 
-0 URL(s) across 0 vendor(s) changed since last run.
+Scanned 653 URLs. 34 vendor(s) with real changes, 70 error(s), 0 noisy.
+
+## HIGH — pricing changed (14)
+- Amplitude — https://amplitude.com/pricing [Pricing]
+- Confidence (Spotify) — https://confidence.spotify.com/pricing [Pricing]
+- Convert — https://www.convert.com/pricing/ [Pricing]
+- Croct — https://croct.com/pricing [Pricing]
+- GrowthBook — https://www.growthbook.io/pricing [Pricing]
+- Harness FME — https://developer.harness.io/docs/feature-flags/subscribe-ff/available-plans-for-feature-flags [Pricing]
+- LaunchDarkly — https://launchdarkly.com/pricing [Pricing]
+- LaunchDarkly — https://launchdarkly.com/docs/home/account/plans [Pricing]
+- PostHog — https://posthog.com/pricing [Pricing]
+- Shoplift — https://www.shoplift.ai/pricing [Pricing]
+- Symplify — https://symplify.com/conversion-experimentation/plans/ [Pricing]
+- Uniform — https://www.uniform.dev/pricing [Pricing]
+- VWO — https://vwo.com/pricing/ [Pricing]
+- Webflow Optimize — https://webflow.com/pricing [Pricing]
+
+## CHANGED — needs review (211)
+- AB Tasty — https://docs.abtasty.com/integrations [Integrations]
+- AB Tasty — https://docs.abtasty.com/integrations/other-integrations/data-warehouse/data-warehouse-integrations-general-information [Integrations]
+- AB Tasty — https://docs.abtasty.com/server-side/sdks [SDK Docs]
+- AB Tasty — https://docs.abtasty.com/client-side/data-apis/public-api [API Reference]
+- ABsmartly — https://github.com/absmartly [SDK Docs]
+- ABsmartly — https://github.com/absmartly/mcp [MCP Docs]
+- Amplitude — https://amplitude.com/docs/data/destination-catalog/google-bigquery [Integrations]
+- Amplitude — https://amplitude.com/docs/data/source-catalog/databricks [Integrations]
+- Amplitude — https://amplitude.com/docs [Docs Root]
+- Amplitude — https://amplitude.com/docs/sdks [SDK Docs]
+- Amplitude — https://amplitude.com/docs/apis [API Reference]
+- Amplitude — https://amplitude.com/docs/admin/single-sign-on/sso [Compliance]
+- Amplitude — https://amplitude.com/docs/amplitude-ai/amplitude-mcp [MCP Docs]
+- Amplitude — https://amplitude.com/docs/data/warehouse-native/overview [Methodology]
+- Amplitude — https://amplitude.com/docs/feature-experiment/overview [Product/Features]
+- Amplitude — https://amplitude.com/docs/data/source-catalog/snowflake [Integrations]
+- Compose — https://apps.shopify.com/compose-app [Solutions/Customers]
+- Conductrics — https://support.conductrics.com/changelog [Changelog]
+- Confidence (Spotify) — https://github.com/spotify/confidence-ai-plugins [Product/Features]
+- Confidence (Spotify) — https://github.com/spotify/confidence-resolver [API Reference]
+- Contentful Personalization (formerly Ninetailed) — https://trust.contentful.com/ [Trust/Security]
+- Convert — https://convert.com/features/full-stack [Product/Features]
+- Convert — https://www.convert.com/integrations/ [Integrations]
+- Convert — https://www.convert.com/sitemap.xml [Sitemap]
+- Convert — https://www.convert.com/developer [API Reference]
+- Convert — https://www.convert.com/blog/ [Blog/Announcements]
+- Convert — https://convert.com/blog/ai/ab-testing-without-ui-convert-mcp-claude-code [MCP Docs]
+- Convert — https://convert.com/features [Product/Features]
+- Convert — https://www.convert.com/case-studies [Solutions/Customers]
+- Convert — https://convert.com/security [Trust/Security]
+- Convert — https://github.com/convertcom/javascript-sdk [SDK Docs]
+- Convert — https://support.convert.com/hc/en-us [Docs Root]
+- Convert — https://convert.com/gdpr/dpa [Compliance]
+- Croct — https://croct.com/sitemap.xml [Sitemap]
+- Croct — https://croct.com/personalization [Product/Features]
+- Croct — https://blog.croct.com [Blog/Announcements]
+- Croct — https://docs.croct.com/reference/sdk/javascript/integration [SDK Docs]
+- Croct — https://croct.com/features [Product/Features]
+- Croct — https://github.com/croct-tech/plug-next [SDK Docs]
+- Croct — https://croct.com/segmentation [Product/Features]
+- Croct — https://docs.croct.com/ [Docs Root]
+- Croct — https://croct.com/case-studies [Solutions/Customers]
+- Evolv AI — https://github.com/evolv-ai/react-sdks [SDK Docs]
+- Evolv AI — https://github.com/evolv-ai/javascript-sdk [SDK Docs]
+- Evolv AI — https://github.com/evolv-ai/ios-sdk [SDK Docs]
+- Evolv AI — https://github.com/evolv-ai/android-sdk [SDK Docs]
+- FigPii — https://kb.figpii.com/article/301-offline-tracking-api [SDK Docs]
+- FigPii — https://www.figpii.com/sitemap.xml [Sitemap]
+- FigPii — https://apps.shopify.com/figpii [Solutions/Customers]
+- FigPii — https://kb.figpii.com/category/198-integrations [Integrations]
+- GrowthBook — https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator [Blog/Announcements]
+- GrowthBook — https://www.growthbook.io/platform/security [Trust/Security]
+- GrowthBook — https://www.growthbook.io/sitemap.xml [Sitemap]
+- GrowthBook — https://www.growthbook.io/platform/ai-native-development [Product/Features]
+- GrowthBook — https://github.com/growthbook/growthbook/releases [Changelog]
+- GrowthBook — https://www.growthbook.io/platform/warehouse-native [Product/Features]
+- GrowthBook — https://www.growthbook.io/blog [Blog/Announcements]
+- Harness FME — https://www.harness.io/products/feature-management-experimentation/feature-management [Product/Features]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/api [API Reference]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/experimentation/experiment-results/analyzing-experiment-results/dimensional-analysis [Methodology]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation [Docs Root]
+- Harness FME — https://www.harness.io/products/feature-management-experimentation/release-monitoring [Product/Features]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure [SDK Docs]
+- Intelligems — https://www.intelligems.io/resources/customer-stories [Solutions/Customers]
+- Intelligems — https://docs.intelligems.io/developer-resources/mcp-server [MCP Docs]
+- Intelligems — https://www.intelligems.io/sitemap.xml [Sitemap]
+- Intelligems — https://docs.intelligems.io/ [Docs Root]
+- Intelligems — https://apps.shopify.com/intelligems [Solutions/Customers]
+- Kameleoon — https://developers.kameleoon.com/ [Docs Root]
+- Kameleoon — https://www.kameleoon.com/blog/what-is-an-mcp-server [Blog/Announcements]
+- Kameleoon — https://www.kameleoon.com/sitemap.xml [Sitemap]
+- Kameleoon — https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again [Blog/Announcements]
+- Kameleoon — https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention [Blog/Announcements]
+- Kameleoon — https://developers.kameleoon.com/feature-management-and-experimentation/versions/ [SDK Docs]
+- Kameleoon — https://kameleoon.com/blog/how-ai-really-influencing-experimentation [Blog/Announcements]
+- Kameleoon — https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance [Blog/Announcements]
+- Kameleoon — https://developers.kameleoon.com/developer-tools/mcp-server [MCP Docs]
+- Kameleoon — https://developers.kameleoon.com/feature-management-and-experimentation/overview [Docs Root]
+- LaunchDarkly — https://launchdarkly.com/docs/guides/statistical-methodology/methodology-bayesian [Methodology]
+- LaunchDarkly — https://launchdarkly.com/docs/home/multi-armed-bandits [Methodology]
+- LaunchDarkly — https://launchdarkly.com/solutions/release-ai-built-code [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/solutions/run-experiments [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/docs/sdk [SDK Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/home/ai-configs [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/docs/guides/statistical-methodology/methodology-frequentist [Methodology]
+- LaunchDarkly — https://launchdarkly.com/docs/home/infrastructure/eu [Compliance]
+- LaunchDarkly — https://launchdarkly.com/docs/home/experimentation/health-checks [Methodology]
+- LaunchDarkly — https://launchdarkly.com/docs/home/infrastructure/federal [Compliance]
+- LaunchDarkly — https://launchdarkly.com/customer-stories [Solutions/Customers]
+- LaunchDarkly — https://launchdarkly.com/docs/home/getting-started/mcp [MCP Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/home/agentcontrol [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/changelog/ [Changelog]
+- LaunchDarkly — https://docs.launchdarkly.com/ [Docs Root]
+- LaunchDarkly — https://launchdarkly.com/docs/home/warehouse-native/snowflake [Integrations]
+- LaunchDarkly — https://launchdarkly.com/integrations [Integrations]
+- LaunchDarkly — https://launchdarkly.com/changelog/alerts-anomaly-detection [Blog/Announcements]
+- LaunchDarkly — https://launchdarkly.com/security [Trust/Security]
+- Monetate — https://monetate.com/sitemap.xml [Sitemap]
+- Mutiny — https://github.com/MutinyHQ [SDK Docs]
+- Mutiny — https://www.mutinyhq.com/sitemap.xml [Sitemap]
+- Mutiny — https://help.mutinyhq.com/ [Docs Root]
+- Omniconvert — https://www.omniconvert.com/sitemap.xml [Sitemap]
+- Optimizely — https://docs.developers.optimizely.com/feature-experimentation/docs/introduction [Docs Root]
+- Optimizely — https://www.optimizely.com/products/web-experimentation/ [Product/Features]
+- Optimizely — https://docs.developers.optimizely.com/feature-experimentation/changelog [Changelog]
+- Optimizely — https://www.optimizely.com/trust-center/compliance [Compliance]
+- Optimizely — https://www.optimizely.com/products/ai [Product/Features]
+- Optimizely — https://www.optimizely.com/product-updates/ai [Blog/Announcements]
+- Optimizely — https://www.optimizely.com/field-notes/articles/ai-experimentation [Blog/Announcements]
+- Optimizely — https://www.optimizely.com/connectors/ [Integrations]
+- Optimizely — https://www.optimizely.com/trust-center/ai-ethics-policy [Trust/Security]
+- Optimizely — https://www.optimizely.com/trust-center/ [Trust/Security]
+- PostHog — https://posthog.com/blog/posthog-cloud-eu [Blog/Announcements]
+- PostHog — https://posthog.com/docs/api [API Reference]
+- PostHog — https://posthog.com/self-driving [Product/Features]
+- PostHog — https://posthog.com/changelog [Changelog]
+- PostHog — https://posthog.com/docs/privacy/hipaa-compliance [Compliance]
+- PostHog — https://posthog.com/docs/posthog-ai [Product/Features]
+- PostHog — https://posthog.com/docs/model-context-protocol [MCP Docs]
+- PostHog — https://posthog.com/docs/cdp/sources/snowflake [Integrations]
+- PostHog — https://posthog.com/docs/cdp/sources/redshift [Integrations]
+- PostHog — https://posthog.com/docs/data-warehouse/sources [Methodology]
+- PostHog — https://posthog.com/docs/privacy/soc2 [Trust/Security]
+- PostHog — https://posthog.com/docs/privacy/gdpr-compliance [Compliance]
+- PostHog — https://posthog.com/handbook/who-we-build-for [Solutions/Customers]
+- PostHog — https://posthog.com/docs/cdp/sources/bigquery [Integrations]
+- PostHog — https://posthog.com/sitemap/sitemap-0.xml [Sitemap]
+- PostHog — https://github.com/posthog/posthog [SDK Docs]
+- PostHog — https://posthog.com/docs/settings/sso [Compliance]
+- PostHog — https://posthog.com/docs/libraries [SDK Docs]
+- Salesforce Marketing Cloud Personalization — https://www.salesforce.com/sitemap.xml [Sitemap]
+- Shoplift — https://www.shoplift.ai/features/price-testing [Product/Features]
+- Shoplift — https://www.shoplift.ai/case-studies [Solutions/Customers]
+- Shoplift — https://www.shoplift.ai/features/campaigns [Product/Features]
+- Shoplift — https://www.shoplift.ai/features/subscription-testing [Product/Features]
+- Shoplift — https://www.shoplift.ai/sitemap.xml [Sitemap]
+- Shoplift — https://docs.shoplift.ai/ [Docs Root]
+- SiteSpect (now part of Monetate) — https://www.sitespect.com/sitemap.xml [Sitemap]
+- Sitecore — https://www.sitecore.com/sitemap.xml [Sitemap]
+- Sitecore — https://www.sitecore.com/resources/insights/security-privacy/hipaa-readiness [Compliance]
+- Sitecore — https://www.sitecore.com/platform/ai-search [Product/Features]
+- Sitecore — https://www.sitecore.com/platform/ai-innovation-lab [Product/Features]
+- Sitecore — https://www.sitecore.com/platform/conversion-optimization [Product/Features]
+- Sitecore — https://www.sitecore.com/legal/compliance-certs [Trust/Security]
+- Split — https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features]
+- Split — https://docs.split.io/llms.txt [Sitemap]
+- Split — https://www.harness.io/products/feature-management-experimentation/feature-management [Product/Features]
+- Statsig — https://docs.statsig.com/console-api/introduction [API Reference]
+- Statsig — https://docs.statsig.com/ [Docs Root]
+- Statsig — https://docs.statsig.com/integrations/introduction [Integrations]
+- Statsig — https://docs.statsig.com/stats-engine/methodologies/srm-checks [Methodology]
+- Statsig — https://docs.statsig.com/compliance/ai_governance_security_privacy [Compliance]
+- Statsig — https://docs.statsig.com/experiments/advanced-setup/bayesian [Methodology]
+- Statsig — https://www.statsig.com/trust/security [Trust/Security]
+- Statsig — https://docs.statsig.com/integrations/mcp [MCP Docs]
+- Statsig — https://docs.statsig.com/experiments/exploring-results/interaction-detection [Methodology]
+- Statsig — https://docs.statsig.com/experiments/advanced-setup/sequential-testing [Methodology]
+- Statsig — https://www.statsig.com/sitemap.xml [Sitemap]
+- Statsig — https://docs.statsig.com/sdks/getting-started [SDK Docs]
+- Statsig — https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped [Methodology]
+- Statsig — https://docs.statsig.com/llms.txt [Sitemap]
+- Symplify — https://symplify.com/integrations/ [Integrations]
+- Symplify — https://symplify.com/ai-predictive-marketing [Product/Features]
+- Symplify — https://symplify.com/sitemap.xml [Sitemap]
+- Symplify — https://packagist.org/packages/symplify-conversion/sst-sdk-php [SDK Docs]
+- Symplify — https://symplify.com/privacy-policy [Compliance]
+- Symplify — https://symplify.com/customer-stories [Solutions/Customers]
+- Symplify — https://symplify.com/communication/security-policy [Trust/Security]
+- Uniform — https://www.uniform.dev/features/personalization [Product/Features]
+- Uniform — https://docs.uniform.app/docs/guides/ai/scout [Product/Features]
+- Uniform — https://docs.uniform.app/docs/api [API Reference]
+- Uniform — https://www.uniform.dev/privacy-policy [Compliance]
+- Uniform — https://docs.uniform.app/docs/guides/ab-testing [Methodology]
+- Uniform — https://docs.uniform.app/docs/guides/ai/mcp-server [MCP Docs]
+- Uniform — https://www.uniform.dev/visual-workspace [Product/Features]
+- Uniform — https://docs.uniform.app/docs/guides/regions [Compliance]
+- Uniform — https://docs.uniform.app/docs/integrations/data/google-analytics [Integrations]
+- Uniform — https://www.uniform.dev/dpa [Compliance]
+- Uniform — https://www.uniform.dev/customers [Solutions/Customers]
+- Uniform — https://www.uniform.dev/features/ai-agents [Product/Features]
+- Uniform — https://www.uniform.dev/blogs [Blog/Announcements]
+- Uniform — https://docs.uniform.app/docs/integrations/sso [Trust/Security]
+- Uniform — https://docs.uniform.app/docs/guides/personalization/edge-side-personalization [Methodology]
+- Uniform — https://www.uniform.dev/features/ab-testing [Product/Features]
+- Uniform — https://www.uniform.dev/msa [Compliance]
+- Uniform — https://www.uniform.dev/integrations [Integrations]
+- VWO — https://vwo.com/integrations/snowflake [Integrations]
+- VWO — https://vwo.com/integrations [Integrations]
+- VWO — https://vwo.com/compliance [Trust/Security]
+- VWO — https://vwo.com/compliance/gdpr [Compliance]
+- VWO — https://vwo.com/customers [Solutions/Customers]
+- VWO — https://vwo.com/product-updates/vwo-copilot-ai-powered-optimization [Blog/Announcements]
+- VWO — https://vwo.com/compliance/soc-2-type-ii [Compliance]
+- VWO — https://vwo.com/feature-experimentation/ai-powered-product-teams [Product/Features]
+- VWO — https://help.vwo.com/hc/en-us/categories/51614730907545-VWO-Copilot-and-AI [Product/Features]
+- VWO — https://vwo.com/integrations/bigquery [Integrations]
+- Varify.io — https://varify.io/en/userdocumentation/server-side-a-b-testing [SDK Docs]
+- Varify.io — https://varify.io/en/userdocumentation/ [Docs Root]
+- Varify.io — https://varify.io/en/userdocumentation/iso-27001 [Compliance]
+- Webflow Optimize — https://github.com/webflow/mcp-server [MCP Docs]
+- Webflow Optimize — https://webflow.com/blog/the-agentic-web-is-here [Blog/Announcements]
+- Webflow Optimize — https://trust.webflow.com [Trust/Security]
+- Webflow Optimize — https://webflow.com/apps/compliance [Compliance]
+- Webflow Optimize — https://github.com/webflow/js-webflow-api [SDK Docs]
+- Webtrends Optimize — https://onpremises.webtrends.help/docs/webtrends-android-sdk-330 [SDK Docs]
+- Webtrends Optimize — https://docs.webtrends-optimize.com/en/articles/10697353-integrations-snowflake-pull [Integrations]
+- Webtrends Optimize — https://www.webtrends-optimize.com/sitemap.xml [Sitemap]
+- Webtrends Optimize — https://docs.webtrends-optimize.com/en/articles/9271819-ots-api-guide-for-server-side-testing [API Reference]
+- Zoho Pagesense — https://www.zoho.com/sitemap.xml [Sitemap]
+- Zoho Pagesense — https://www.zoho.com/compliance.html [Trust/Security]
+
+## LOW — marketing copy churn (14)
+- Convert — https://www.convert.com/ [Homepage]
+- Croct — https://croct.com/ [Homepage]
+- GrowthBook — https://www.growthbook.io/ [Homepage]
+- Harness FME — https://www.harness.io/products/feature-management-experimentation [Homepage]
+- LaunchDarkly — https://launchdarkly.com/ [Homepage]
+- Mutiny — https://www.mutinyhq.com/ [Homepage]
+- Optimizely — https://www.optimizely.com/ [Homepage]
+- PostHog — https://posthog.com/ [Homepage]
+- Shoplift — https://www.shoplift.ai/ [Homepage]
+- Sitecore — https://www.sitecore.com/products/personalize [Homepage]
+- Symplify — https://symplify.com/conversion-experimentation/ [Homepage]
+- Uniform — https://www.uniform.dev/ [Homepage]
+- VWO — https://vwo.com/ [Homepage]
+- Varify.io — https://varify.io/en/ [Homepage]
+
+## ERRORS (70)
+- AB Tasty — https://abtasty.com/blog/ai-features-transforming-experimentation [Blog/Announcements] status 403
+- AB Tasty — https://www.abtasty.com/pricing [Pricing] status 403
+- AB Tasty — https://abtasty.com/gdpr-compliant [Compliance] status 403
+- AB Tasty — https://www.abtasty.com/resource-categories/case-studies [Solutions/Customers] status 403
+- AB Tasty — https://www.abtasty.com/ [Homepage] status 403
+- AB Tasty — https://docs.abtasty.com/changelog [Changelog] status 404
+- AB Tasty — https://abtasty.com/blog/iso-27001-certification [Blog/Announcements] status 403
+- AB Tasty — https://abtasty.com/emotions-ai [Product/Features] status 403
+- AB Tasty — https://www.abtasty.com/evi [Product/Features] status 403
+- AB Tasty — https://www.abtasty.com/sitemap.xml [Sitemap] status 403
+- ABsmartly — https://absmartly.framer.website/pricing [Pricing] status 404
+- Adobe Target — https://business.adobe.com/products/target/adobe-target [Homepage]
+- Adobe Target — https://business.adobe.com/products/target/experimentation-optimization.html [Product/Features]
+- Adobe Target — https://business.adobe.com/blog/adobe-target-announces-redesigned-user-interface-with-generative-ai-features [Blog/Announcements]
+- Adobe Target — https://business.adobe.com/sitemap.xml [Sitemap]
+- Adobe Target — https://business.adobe.com/products/target/personalized-interactions.html [Product/Features]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target-dev/developer/ [Docs Root] status 404
+- Adobe Target — https://helpx.adobe.com/legal/product-descriptions/adobe-target.html [Pricing]
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/optimization-sdk/overview [SDK Docs] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/insights/ [API Reference] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/marketplace/app/ninetailed-personalization [Integrations] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/remote-mcp-now-generally-available [Blog/Announcements] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/sitemap.xml [Sitemap] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/introducing-contentful-personalization [Blog/Announcements] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/pricing/ [Pricing] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/solutions/personalization [Solutions/Customers] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/ [Docs Root] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/products/personalization [Product/Features] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/welcoming-ninetailed-contentful [Blog/Announcements] status 429
+- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/personalization [Homepage] status 429
+- Convert — https://www.npmjs.com/package/@convertcom/mcp-server [MCP Docs] status 403
+- Dynamic Yield — https://www.dynamicyield.com/sitemap.xml [Sitemap] status 404
+- Dynamic Yield — https://www.dynamicyield.com/clients [Solutions/Customers] status 403
+- Dynamic Yield — https://www.dynamicyield.com/security [Trust/Security] status 403
+- Dynamic Yield — https://www.dynamicyield.com/experience-apis [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/adaptml [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/experience-os [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/shopping-muse [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/blog/shopping-muse-announcement [Blog/Announcements] status 403
+- Dynamic Yield — https://www.dynamicyield.com/partners [Integrations] status 403
+- Dynamic Yield — https://www.dynamicyield.com/ [Homepage] status 403
+- Dynamic Yield — https://www.dynamicyield.com/blog/transform-search-with-experience-search-ai [Blog/Announcements] status 403
+- Dynamic Yield — https://support.dynamicyield.com/hc/en-us/articles/360014076018-Single-Sign-On-SSO-Integration [Compliance] status 403
+- Dynamic Yield — https://support.dynamicyield.com/ [Docs Root] status 403
+- Dynamic Yield — https://www.dynamicyield.com/recommendations [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/element [Product/Features] status 403
+- Dynamic Yield — https://www.dynamicyield.com/compliance [Trust/Security] status 403
+- Dynamic Yield — https://support.dynamicyield.com/hc/en-us/articles/29314031599389-Dynamic-Yield-Mobile-SDKs [SDK Docs] status 403
+- Evolv AI — https://support.evolv.ai/hc/en-us/articles/4403709383955-Integrating-with-Google-Analytics [Integrations]
+- Evolv AI — https://evolv.ai/sitemap.xml [Sitemap] status 406
+- Evolv AI — https://support.evolv.ai/hc/en-us [Docs Root]
+- Evolv AI — https://support.evolv.ai/hc/en-us/articles/4403940019347-Adobe-Analytics-Integration-and-Data-Accuracy [Integrations]
+- Evolv AI — https://evolv.ai/ [Homepage] status 401
+- Evolv AI — https://evolv.ai/privacy-policy [Compliance] status 401
+- GrowthBook — https://docs.growthbook.io/warehouses/bigquery [Integrations] status 404
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html [MCP Docs] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/guide/ [Docs Root] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html [MCP Docs] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html [MCP Docs] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.html [API Reference] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-ios-sdk/integration.html [SDK Docs] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/overview [Docs Root] status 403
+- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-android-sdk/integration.html [SDK Docs] status 403
+- Split — https://www.split.io/security [Trust/Security] status 404
+- Split — https://docs.split.io/reference/changelog [Changelog] status 404
+- Symplify — https://help.symplify.com/ [Docs Root] status 403
+- Uniform — https://app.drata.com/trust/9cb89480-0c38-11ee-865f-029d78a187d9 [Trust/Security] status 403
+- Uniform — https://app.drata.com/trust/9cb89480-0c38-11ee-865f-029d78a187d9 status 403
+- Varify.io — https://varify.io/en/sitemap.xml [Sitemap] status 404
+- Webflow Optimize — https://help.webflow.com/hc/en-us/articles/33609390628243-Intro-to-Webflow-Optimize [Docs Root] status 403
