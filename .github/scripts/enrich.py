@@ -72,7 +72,16 @@ LIMIT        = int(_lim) if _lim.isdigit() and int(_lim) > 0 else None
 FETCH_DELAY  = float(os.environ.get("FETCH_DELAY", "0.5"))
 
 AIRTABLE_TOKEN = os.environ.get("AIRTABLE_TOKEN")
-USER_AGENT = "SpeeroToolMonitor/1.0 (+https://speero.com; content-change check)"
+# Browser-like UA + headers reduce WAF 403s on vendor marketing sites. Some
+# WAFs still require JS and will 403/429 regardless (a stdlib-fetch limit).
+USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+              "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36")
+BROWSER_HEADERS = {
+    "User-Agent": USER_AGENT,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "identity",
+}
 
 # Registry read/written by FIELD NAME (use_field_ids=False) so that URL Type
 # resolves to its option label, which the triage below keys on.
@@ -130,7 +139,7 @@ def normalize_html(html: str) -> str:
 
 def fetch_url(url: str):
     """Return (normalized_text_or_None, status_code_or_None)."""
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
+    req = urllib.request.Request(url, headers=BROWSER_HEADERS)
     for attempt in range(3):
         try:
             with urllib.request.urlopen(req, timeout=45) as resp:
