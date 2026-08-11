@@ -154,7 +154,28 @@ def main() -> None:
 
     print(f"Created {len(to_create)}, deleted {len(to_delete)}.")
 
-    if PUBLISH and (to_create or to_delete):
+    # Populate the head-binding SEO fields. sync.py only emits seoTitle/seoDesc
+    # when SEO Reviewed is ticked, so unreviewed drafts never reach the CMS.
+    seo_vendors = {v["slug"]: v for v in vendors if v.get("seoTitle") or v.get("seoDesc") or v.get("ogImage")}
+    updated = 0
+    if seo_vendors:
+        items = list_all_items()  # refresh to include newly created items
+        for slug, v in seo_vendors.items():
+            iid = items.get(slug)
+            if not iid:
+                continue
+            fd = {}
+            if v.get("seoTitle"): fd["meta-title"] = v["seoTitle"]
+            if v.get("seoDesc"):  fd["meta-description"] = v["seoDesc"]
+            if v.get("ogImage"):  fd["og-image"] = {"url": v["ogImage"]}
+            if not fd:
+                continue
+            path = f"items/{iid}/live" if PUBLISH else f"items/{iid}"
+            req("PATCH", f"{API}/collections/{COLLECTION_ID}/{path}", {"fieldData": fd})
+            updated += 1
+    print(f"SEO fields updated on {updated} items.")
+
+    if PUBLISH and (to_create or to_delete or updated):
         print("Publishing site so page changes go live...")
         publish_site()
 
