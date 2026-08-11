@@ -85,6 +85,17 @@ F = {
     "ayo": "fldNamypy2pKrRbzD",  # Agentic Map Y Override
     "mxo": "fldW3nEUbQRmmjXSm",  # Market Map X Override
     "myo": "fldOGU3c1vDoMH8ml",  # Market Map Y Override
+    # SEO (Phase E). Last Vendor Scrape drives the visible "last verified" date
+    # and JSON-LD datePublished. Meta Title / Description / H1 are only emitted
+    # when SEO Reviewed is ticked (the publish gate), so unreviewed drafts never
+    # reach the live page. OG Image falls back to Logo in the template.
+    "scraped":   "fld1x7M0E6FaSLGVe",  # Last Vendor Scrape
+    "seo_title": "fldHXgrEfyTRgbntm",  # Meta Title
+    "seo_desc":  "fldVFJD3A5j4kdyfS",  # Meta Description
+    "seo_h1":    "fldlrbEQ5nVSlCina",  # SEO H1
+    "seo_ok":    "fld9egm24j1kirG80",  # SEO Reviewed (publish gate)
+    "og_image":  "fldM0WRHyUqT1h7BX",  # OG Image (multipleAttachments)
+    "logo":      "fldrvnMFBLEtwom6T",  # Logo (fallback for OG image)
 }
 
 # Master Variables table field that holds the option name
@@ -249,6 +260,30 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
         val = num(key)
         if val is not None:
             vendor[key] = val
+
+    # SEO fields. Last Vendor Scrape → "last verified"; the Meta/OG fields ride
+    # along once created (and only when SEO Reviewed is ticked, the publish gate).
+    scraped = f.get(F["scraped"])
+    if scraped:
+        vendor["scraped"] = str(scraped)[:10]
+    if f.get(F["seo_ok"]):  # SEO Reviewed publish gate
+        for key, out in (("seo_title", "seoTitle"), ("seo_desc", "seoDesc"), ("seo_h1", "seoH1")):
+            val = f.get(F[key])
+            if val:
+                vendor[out] = val
+
+    # OG image: prefer the dedicated field, fall back to Logo. Attachment fields
+    # come back as a list of {url,...}; take the first. (Logo URLs can expire —
+    # a padded 1200x630 asset in OG Image is the durable fix.)
+    def first_attachment(field_key):
+        v = f.get(F[field_key])
+        if isinstance(v, list) and v and isinstance(v[0], dict):
+            return v[0].get("url")
+        return None
+
+    og = first_attachment("og_image") or first_attachment("logo")
+    if og:
+        vendor["ogImage"] = og
 
     return vendor
 
