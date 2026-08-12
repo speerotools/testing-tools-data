@@ -337,7 +337,14 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
         vendor["ogImage"] = og
 
     # Sources and method: the live Vendor URLs list + enrichment status pill.
-    vendor["sources"] = SOURCES_BY_VENDOR.get(record["id"], [])
+    srcs = SOURCES_BY_VENDOR.get(record["id"], [])
+    vendor["sources"] = srcs
+    # "Last swept" is when these URLs were last fetched (max Last Fetched across
+    # the vendor's sources), NOT Last Vendor Scrape, which is a different clock
+    # (stamped by the apply step, not by the fetch).
+    swept = max((s["fetched"] for s in srcs if s.get("fetched")), default="")
+    if swept:
+        vendor["swept"] = swept
     enrichment = single_select_value(f.get(F["enrichment"]))
     if enrichment:
         vendor["enrichment"] = enrichment
