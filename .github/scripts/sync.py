@@ -96,16 +96,29 @@ F = {
     "seo_ok":    "fld9egm24j1kirG80",  # SEO Reviewed (publish gate)
     "og_image":  "fldM0WRHyUqT1h7BX",  # OG Image (multipleAttachments)
     "logo":      "fldrvnMFBLEtwom6T",  # Logo (fallback for OG image)
+    "enrichment": "fldQGRQlzeZBeRxGP",  # Enrichment Status (status pill on the page)
 }
 
 # Master Variables table field that holds the option name
 MASTER_NAME_FIELD = "fld1EI9BDHrdOF92I"
+
+# Vendor URLs registry — the per-vendor source list shown in "Sources and method".
+REGISTRY_ID = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
+RF = {
+    "url":          "fldDpTQraitVt4yHB",
+    "url_type":     "fldwUVSYu5QYi3N0k",
+    "fetched":      "fld7cxhRHwQ6bzFAs",  # Last Fetched
+    "hash_changed": "fldjJgczTqipE2Kvn",  # Hash Changed At (drives the Updated badge)
+    "active":       "fldFqvuPSinBYvrvk",
+    "vendor":       "fldZpeoHlScaEp2yh",  # linked record -> Database record id
+}
 
 # ---------------------------------------------------------------------------
 # GLOBALS
 # ---------------------------------------------------------------------------
 
 LINKED_NAME_CACHE: dict[str, str] = {}
+SOURCES_BY_VENDOR: dict[str, list[dict]] = {}
 
 
 # ---------------------------------------------------------------------------
@@ -173,6 +186,44 @@ def fetch_records() -> tuple[list[dict], dict[str, str]]:
     records = db.all(use_field_ids=True)
     print(f"  {len(records)} records fetched")
     return records, cache
+
+
+def fetch_sources() -> dict[str, list[dict]]:
+    """Vendor record id -> sorted source list from the Vendor URLs registry.
+
+    Active URLs only. Each source is {type, url, fetched, updated?}. `updated` is
+    set only when the row's Hash Changed At falls on the most recent sweep date
+    (the newest Last Fetched across the registry), i.e. the pages the last scan
+    actually flagged for review. Content hashes are never emitted.
+    """
+    api = Api(TOKEN)
+    rows = api.base(BASE_ID).table(REGISTRY_ID).all(use_field_ids=True)
+    active = [r for r in rows if r["fields"].get(RF["active"])]
+
+    def d(v):  # date portion of a datetime/date value
+        return str(v)[:10] if v else ""
+
+    latest_sweep = max((d(r["fields"].get(RF["fetched"])) for r in active), default="")
+    by_vendor: dict[str, list[dict]] = {}
+    for r in active:
+        f = r["fields"]
+        url = f.get(RF["url"])
+        if not url:
+            continue
+        src = {
+            "type": single_select_value(f.get(RF["url_type"])) or "",
+            "url": url,
+            "fetched": d(f.get(RF["fetched"])),
+        }
+        if latest_sweep and d(f.get(RF["hash_changed"])) == latest_sweep:
+            src["updated"] = True
+        for vid in (f.get(RF["vendor"]) or []):
+            by_vendor.setdefault(vid, []).append(src)
+
+    for vid, lst in by_vendor.items():
+        lst.sort(key=lambda s: (s["type"], s["url"]))
+    print(f"  {len(active)} active source URLs across {len(by_vendor)} vendors (sweep {latest_sweep or 'n/a'})")
+    return by_vendor
 
 
 # ---------------------------------------------------------------------------
@@ -285,6 +336,12 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
     if og:
         vendor["ogImage"] = og
 
+    # Sources and method: the live Vendor URLs list + enrichment status pill.
+    vendor["sources"] = SOURCES_BY_VENDOR.get(record["id"], [])
+    enrichment = single_select_value(f.get(F["enrichment"]))
+    if enrichment:
+        vendor["enrichment"] = enrichment
+
     return vendor
 
 
@@ -293,8 +350,11 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    global SOURCES_BY_VENDOR
     print("Fetching from Airtable...")
     records, cache = fetch_records()
+    print("  Fetching Vendor URLs registry...")
+    SOURCES_BY_VENDOR = fetch_sources()
 
     print("Transforming records...")
     vendors: list[dict] = []
