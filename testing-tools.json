@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-12T07:07:44Z",
-  "commit": "1a06edb69169f092328afad2fa6ae7e79bed18c5",
+  "version": "2026-08-12T11:02:14Z",
+  "commit": "2cff3ca9d396f0db6a55929e006b0608b77dc7fc",
   "vendors": [
     {
       "slug": "ablyft",
@@ -55,7 +55,55 @@
       "axc": 69.2,
       "ayc": 45.7,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/BS5MAu9st09GtsG4LaqIjw/2FxlAR6iewHOzKfHwBr44NmsuQHWzVIwPHoMWpvts9oZvAeieriL-_n3Xjqimbmp5Xr-2RlycHwTabuAUt8Tgx7FfWcPkIgZ9XMavYM1c8QGFMD-ofvRfIO0mTFuo-zDqCtPyHyIztICd7dFqiOuUQ/gXBj3k0RvnNpzAVGPNj1U-VuXRq4aEBkNwwLy3D3qsk"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/_KZNdTT9y5ejgXnQHXgpPw/6C_BJCxJy-rnMYBwfLe-oihcNIXVG-vcbswTgapCD5hnVliaaWGvqJ_1lAew3IfJVaHnq_IfMO7UzBLm6az4b8tV_1GwFHR4ynQtCtTURJzRQgY-wktFz0K73sQLKFq67-QxDMQJbvAAEY1_t8QZ1Q/dnNPiWveEFR7QX3N1_dHlDkDQZYATruooUpMUjGOfk4",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.ablyft.com/client-side-js-api/get-calls",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://ablyft.com/en/privacy-notice",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.ablyft.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://ablyft.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.ablyft.com/integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://ablyft.com/en/features/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://ablyft.com/en/features/productivity",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.ablyft.com/client-side-js-api/get-calls",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://ablyft.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "eppo-by-datadog",
@@ -124,7 +172,86 @@
       "axc": 64.0,
       "ayc": 63.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/oJjbcmw7_-hWT43-MCCXoA/pFgn_f_QyVCqM83mlW6QAIREmUjnQLqdt5KuQq3v4_gbdemDTYz3mWw_UpuaDsRZogjFs-I2SroBMtCYHLIhY8BZXZ239bQJvNPpPQyJ54hW9OLXj_YFJ-RKmo-KIxtHLWU3wVbzApsLN8Vr19p-UQm9MquneHTLXWATBAAr4lk/zytTlSHG9E4PtBOCCGRt0Z001bnXhNkri_dXJ_mhbbU"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/vzpERwK8yHVQjoD5WbuFnw/-AkEjTBmconlMxBXgxvdARzImxNccvb8Tmw6LUHrMAAXi_kD4yRrVXstQ5oddI4YoWdCwHj5mVnTx3eAzRHkg1JD-hQCnQf-DeeiEyYKk3SNhBBOhPnF7GOzH8humuy3EjuxxU2g3XW7bc743FeJ2aWtwEIYl06d2Sk0hDg6Q6E/dvtm4CUuDyjU4-BdfhCRwvLdYLreS52hDzrwkBU1WyM",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.geteppo.com/blog/eppo-announces-integration-with-databricks",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.geteppo.com/blog/eppo-is-now-part-of-datadog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.geteppo.com/terms-and-conditions",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.geteppo.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.geteppo.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.geteppo.com/data-management/connecting-dwh/bigquery",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.geteppo.com/data-management/connecting-dwh/snowflake",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.geteppo.com/contextual-bandits",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.geteppo.com/artificial-intelligence",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.geteppo.com/personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.geteppo.com/sdks",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.geteppo.com/sdks/datadog/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.geteppo.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.geteppo.com/customers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.geteppo.com/security",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "omniconvert",
@@ -178,7 +305,58 @@
       "axc": 45.3,
       "ayc": 31.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/KMzk0J40guKC1EC3H0cuUg/7PTlceXlRA1bAdZOWIAg_s37Okm9M7U__m8bglVOfhg_Sqpoqz8ZkoN2QB5Pd0o2KJpOTaO75tvZUAoX8jQpRauQxrXNsZ3QKzkB-dtFCJ4hzZKm1Bq2j_3THIKU5AZypstsgKkfSSz8s_z49ou6dtTgdBiPBhJ83MjBqJ_oRcY/KrGiU3o32owK-sMykO9CpS_4cO8faIckHq4uN3ZHlv4"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/KmIV-NF4ttWuAKchqIaMYA/S4cH-LciOXt9MVFhp1gNbw5mZuagOexbWLFHaopBJF1CjZ1gC2uxR87og0fOpRtchS2HKoZSJVe0fxdUjO8Me3M4j-UCe_dPPK-S0haOuwjwfWD8KI1BpiouUTm-T10-t3m4SfEtXYjd-PWyxErfkEKjRfBgmOYKCnTMTdTuMb8/k1y6EOe5fA0o_O7Bs0yZdt9VTghuC9VSf1zoBMT330U",
+      "sources": [
+        {
+          "type": "Homepage",
+          "url": "https://www.omniconvert.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.omniconvert.com/pricing/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.omniconvert.com/explore/ab-testing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.omniconvert.com/nexus",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.omniconvert.com/pulse",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://help.omniconvert.com/kba/server-side-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.omniconvert.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.omniconvert.com/case-studies",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.omniconvert.com/privacy-security",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "spotify-confidence",
@@ -248,7 +426,93 @@
       "ayc": 31.2,
       "axo": 72.0,
       "ayo": 48.0,
-      "scraped": "2026-08-05"
+      "scraped": "2026-08-05",
+      "sources": [
+        {
+          "type": "",
+          "url": "https://confidence.spotify.com/docs/sdks/mcp-servers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "API Reference",
+          "url": "https://github.com/spotify/confidence-resolver",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://confidence.spotify.com/blog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://confidence.spotify.com/blog/when-ai-writes-the-code",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://confidence.spotify.com/dpa",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://confidence.spotify.com/docs",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://confidence.spotify.com/docs/flags/introduction",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://confidence.spotify.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://backstage.spotify.com/docs/portal/core-features-and-plugins/confidence-flags",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://confidence.spotify.com/docs/sdks/mcp-servers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://confidence.spotify.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://cursor.com/marketplace/mcp/confidence-flags",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://github.com/spotify/confidence-ai-plugins",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://confidence.spotify.com/docs/sdks/introduction",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://confidence.spotify.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://confidence.spotify.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "sitecore",
@@ -306,7 +570,123 @@
       "axo": 62.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/vN3GM8m64uRSTV5sPj-8AQ/LOlXj1I_NtxBfYLG-wbqFwZamTA-P5QeccGkMBCHOk2fHq5oOSjs6nk6rtCg8cqpPWqFXz0i_KxpIY_VF3U5SplaZfd-iBml1Bcy1P-b6S0Ko8LyR25OBcTOE7Prpl0Q-9QZ4hpZY0OKhh1ngr7-zg/ET_TgW5WZE1x21J-31sbqxyZE-WUZl3eg7FC3V4TNN4"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/Gewc_ExjVqPORGt37HYP1w/e9_clCngDOS5VzvQMmCqOoEuPpcLm6XEmGDkYtsA4Q1FQduSpCYSFwsJqVIYoCHQx4QLloxruRpokuZqm6qPQQhdibyKHG3s6w10sLvDqJol1OHfxSX21UzIDt4evJU1Wzekz6SDDgOQiBLobLpyfQ/jtDsFXwrEdULFmel2qDdzo6o-TD4HYnToJs_TFWfucY",
+      "sources": [
+        {
+          "type": "",
+          "url": "https://doc.sitecore.com/cdp/en/developers/api/index.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "API Reference",
+          "url": "https://doc.sitecore.com/cdp/en/developers/api/index.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.sitecore.com/resources/insights/security-privacy/hipaa-readiness",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://doc.sitecore.com/personalize",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://doc.sitecore.com/personalize/en/users/sitecore-personalize/introduction-to-sitecore-personalize.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/personalize.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.sitecore.com/products/personalize",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/integrating-sitecore-with-agentic-platforms.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://www.sitecore.com/resources/glossary/m/marketer-mcp-model-context-protocol",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/ai-capabilities-in-sitecoreai.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://doc.sitecore.com/stream/en/users/sitecore-stream/sitecore-stream-ai-capabilities.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.sitecore.com/platform/ai-innovation-lab",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.sitecore.com/platform/ai-search",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.sitecore.com/platform/conversion-optimization",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.sitecore.com/platform/use-cases/connect-ai-assistants-with-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://doc.sitecore.com/sdk/en/developers/006/cloud-sdk/sitecore-cloud-sdk-for-javascript.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://doc.sitecore.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.sitecore.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.sitecore.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.sitecore.com/legal/compliance-certs",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "shoplift",
@@ -347,7 +727,74 @@
       "ayc": 37.0,
       "myo": 20.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/tkQjg7uBjCGttrplaFMqfA/FwI6znlK6EyxD_UmgPvrGN2S23EQuQxtHpPstkuRr13t9b3-gunrRwCeZDXFpRitOa2zyuwOp9LRCvH5928qq6F0MutiwpTgcx0KqE5HSFooKcCJWtQl-Vqp9_NOOUoUSRBwJKoRM9hjBR_7k_xSOHKGj8ObpmeO48rYVN0DkUw/xA9hbE1QA4ARVmrkHpwItFSgQYxGnyojQ2e4G4UgZHQ"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/wjO19HtkXHMvk8khY2pcrw/gz04SbQY-dki_V1_Uu2r0hNAQ5tk3FzKad8j9fE-Q2eRWs7wfTw5Pkt5NQ8T59ALM1WWP9wQhl93eMX16PB5O-BE9V6MymHYANNbgeSd7FLFsYjlHTLBAum5R1l5VtO22r8LYr-ukS1SaYvQ2kZpl7QIluvlWoZ6I_0Mefliago/mh3xHm42D0Nk1B_SQNCZuhzZ8cwM5ngyCmRcSWjONfg",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.shoplift.ai/test/javascript-api",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.shoplift.ai/account/plans-and-billing/updates-to-our-pricing-9-25",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.shoplift.ai/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.shoplift.ai/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.shoplift.ai/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.shoplift.ai/features/campaigns",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.shoplift.ai/features/price-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.shoplift.ai/features/subscription-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.shoplift.ai/test/javascript-api",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.shoplift.ai/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.shoplift.ai/case-studies",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "launchdarkly",
@@ -433,7 +880,167 @@
       "axo": 85.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/Ehsnl41RRfUttEoT99YnQw/Ux3L3FwhfLIz_Zo6tkS5SvYpUowpaEmdm7IX90MNZJMGxORyLiHWk6vjruflXqoY5DWAJ2cftiVUHGZcdfjSZEhhMe8azz0hhMx1B6CFe7HkVBdvawadhBbtgKZKzV2ingqUtRyeRHFoKa16339NsJ-FiCchasI5i-QhzIM0dD0/u-pHzu8gLqd8Z_ndQrRoLZGVAWJI809akqCLgX27WQ0"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/xoFN6vF592g3pXj2YLxlvA/uY4oHBdba_RSsJbaCwpu4fVpPyw7s5yAt_-qNBh6fvv0cC87Yqro_coPE71esqoEBlXnTQ71VsCuCunKVHPztRC0rhonipMiImK67zKfx4WBqLiU9fAvpd1k48lLIj998noBf0ABms2BSzzy5zUNwuslBS501NgwOHHRe8kfFwM/m5A2B-lpCENVCE8ItWglmI78c9zcd4UgkCh4RPrQWUI",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://launchdarkly.com/changelog/alerts-anomaly-detection",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://launchdarkly.com/changelog/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://launchdarkly.com/docs/home/infrastructure/eu",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://launchdarkly.com/docs/home/infrastructure/federal",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.launchdarkly.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://launchdarkly.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://launchdarkly.com/docs/home/warehouse-native/snowflake",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://launchdarkly.com/integrations",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://launchdarkly.com/docs/home/getting-started/mcp",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://launchdarkly.com/docs/home/getting-started/mcp-hosted",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://launchdarkly.com/docs/home/getting-started/mcp-local",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://launchdarkly.com/docs/guides/statistical-methodology/methodology-bayesian",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://launchdarkly.com/docs/guides/statistical-methodology/methodology-frequentist",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://launchdarkly.com/docs/home/experimentation/health-checks",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://launchdarkly.com/docs/home/multi-armed-bandits",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://launchdarkly.com/docs/home/account/plans",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://launchdarkly.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://launchdarkly.com/docs/home/agentcontrol",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://launchdarkly.com/docs/home/ai-configs",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://launchdarkly.com/solutions/release-ai-built-code",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://launchdarkly.com/solutions/run-experiments",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://launchdarkly.com/docs/sdk",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://launchdarkly.com/docs/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://launchdarkly.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://launchdarkly.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://launchdarkly.com/customer-stories",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://launchdarkly.com/security",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "symplify",
@@ -473,7 +1080,76 @@
       "axc": 15.5,
       "ayc": 13.8,
       "scraped": "2026-08-10",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/3NxGWpzO-LjEt_mH3A1-lQ/9o-YXpdjmSlAKpyW7RQHDK91-TWckrClfRsxHHVOuBi2EXX0Zw3guKa2usxsV_c31XX_-8VVzK5kCCH4aComZ6uu15e4W1hSIlR8knC_7eUAB6IthCQmr9wb9SUvwOEGOimzxTPD1i7NT-HWQ1pnOw/BMLGVL4u_da7YOs-zffpr5qqLjMK53hATxu0ilmE6xM"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/fdA1ccWxO3rSWAmBZAaXcg/qaIhrlAgNa45ikzYVRHHbJyy9ePuOvRdhfES1gUKmzcxeAYQIx3ewxVV6I9UHbP8PMjSKdNzaZTjAqoOFU4CpYIEweGin5vJrtKZwIi6jxjEqRNN6c1QBI12FaPZPPyyEOHh3wn2-BnSpW-2umg9Sw/UDPdSJXn6M354xFKyFQkfL9purE8Bd6NM7y8xcvw2Sk",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://symplify.com/press-room/open-ai-integration",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://symplify.com/privacy-policy",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://help.symplify.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://symplify.com/conversion-experimentation/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://symplify.com/integrations/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://symplify.com/conversion-experimentation/plans/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://symplify.com/ai-predictive-marketing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://packagist.org/packages/symplify-conversion/sst-sdk-php",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://symplify.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://symplify.com/customer-stories",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://symplify.com/communication/security-policy",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "vwo",
@@ -547,7 +1223,143 @@
       "mxo": 50.0,
       "myo": 50.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/_TWlxuI6wEshlWMe1ucs0g/bkaUBf81z1yxIjeuFTNMLrhZbn4EQ-ixTgUl0Yv1fRU30mMK5HZsmK5uLEBecsz21IHMpKAnt1aWKexBqcnp1R6boIsJ8j2apk6CzjQTe0p9cb6Ge3JM89UAhkb_1qsEM7kePnWbudI6FIi21zoZ3A/gz52XOx0pcx-YBSzq7Q_aT_hs4j4YsqiluxWYeuwa_w"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/rCoW4zRzOZ7uITIVR7HgOA/nzWoTkQnogyoiJLW6IPCuOhFgh4GfT4-UFUbLq-D7BCe4i7ShqIfmUH_xzZYKPXnUVVA_I0A9z-9Lj7MDOE4jpWO4aBLAWvRd7hBuhS6SXzd7X_BFPX-iDcCkCj69U8hgJwY-zVWRxm4FiRPTxB34w/lvh8X7sCr3CgNPApCbwriYCXbhCV-B02UChOCSB7CAQ",
+      "sources": [
+        {
+          "type": "",
+          "url": "https://help.vwo.com/hc/en-us/articles/57716550899993-Connect-the-VWO-MCP-Server-with-Gemini-CLI",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "",
+          "url": "https://vwo.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "API Reference",
+          "url": "https://developers.vwo.com/v2/docs/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://vwo.com/product-updates/vwo-copilot-ai-powered-optimization",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://vwo.com/product-updates/vwo-fme-mcp-server/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://developers.vwo.com/changelog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://vwo.com/compliance/gdpr",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://vwo.com/compliance/soc-2-type-ii",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developers.vwo.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://help.vwo.com/hc/en-us/sections/51614905932313-Ideation-and-Setup",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://vwo.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://vwo.com/integrations",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://vwo.com/integrations/bigquery",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://vwo.com/integrations/snowflake",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://github.com/wingify/vwo-fme-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://help.vwo.com/hc/en-us/articles/57716550899993-Connect-the-VWO-MCP-Server-with-Gemini-CLI",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://help.vwo.com/hc/en-us/articles/50734295118873-Create-Campaigns-using-VWO-Copilot",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://vwo.com/pricing/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://help.vwo.com/hc/en-us/categories/51614730907545-VWO-Copilot-and-AI",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://vwo.com/feature-experimentation/ai-powered-product-teams",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developers.vwo.com/changelog/fme-sdks-changelog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://vwo.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://vwo.com/customers",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://vwo.com/compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "optimizely",
@@ -627,7 +1439,137 @@
       "axo": 88.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/e6dfL-yVpwqw12O9lTmxNQ/4I3MswhUK369hX7hqnI8ydAGzU19f61cmmtthEVviwDlqZISBXZtHvugphNs3_2HgoLMOuRIyXfwefMxKujSjlBaEMHDoFQBoUn8Q2W9i79BCYyJQbOykBfHSdVLPXReSiCQXfis9pBuUWvdy_Gr5dhLKHy4XdlKv1UQGEAUDS8/0Y5Y5a4LMOb3zPvOw8v4Ue0PlMg3-zogtOfQY2J16bg"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/6olwZQN5Q8ILNspeSXkMKA/vJ7ZyOcDXE3SNn1nEHgTpxlF0Iml9fMgBahrGkC2eLyD0kvFdPHzvXhGsQbRtyrOH-1F8LGWSM6q3cVSIjGoxa85rAd0g3InakTtNZAyyXgIgW5US_SjiFSVS2EcNWhIs4q9MbtdhznOOtILHW1U0Q5YsJlAVgirivA106wEn0w/YSATiuZ0Mfz8OfS2myooy5pYre-wM-OOEcuK5IETFXg",
+      "sources": [
+        {
+          "type": "",
+          "url": "https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.optimizely.com/field-notes/articles/ai-experimentation",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.optimizely.com/field-notes/articles/experimentation-mcp-server",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.optimizely.com/product-updates/ai",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.developers.optimizely.com/feature-experimentation/changelog",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.optimizely.com/trust-center/compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.developers.optimizely.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.developers.optimizely.com/feature-experimentation/docs/introduction",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.optimizely.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.optimizely.com/connectors/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://support.optimizely.com/hc/en-us/articles/45320607594893-Optimizely-Experimentation-MCP-server-overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://support.optimizely.com/hc/en-us/articles/45321466744205-Install-Optimizely-Experimentation-MCP-server",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://support.optimizely.com/hc/en-us/articles/45740092135693-Optimizely-Analytics-MCP-server-overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://support.optimizely.com/hc/en-us/articles/19633740334477-AI-variation-generator-for-text-based-elements",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://support.optimizely.com/hc/en-us/articles/29328842964109-Contextual-bandits",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://support.optimizely.com/hc/en-us/articles/36354416686477-Optimizely-Opal-overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.optimizely.com/products/ai",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.optimizely.com/products/web-experimentation/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.optimizely.com/en/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.optimizely.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.optimizely.com/trust-center/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.optimizely.com/trust-center/ai-ethics-policy",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "adobe-target",
@@ -693,7 +1635,85 @@
       "axo": 88.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/b1ksB9nchdmG_iBQlk6VCA/s_2d0NVTjtx5z6ymjvxvHx9_QC8O8uUZG3ADnHy32C8uBsRXtiJNweFxlE-ZoJYQjkRYS6aIC4SHB4mOfP7S29M8RtxSF5NhSHH9YACnLCRc1lhW6Wngip1aMfua1MCZJG9gvo8z1fWDwDNZ6SfcpouRGFTxloZrslWhzJnJIdo/l-8FpStv6ojtsLSYhYfYZIO7SIFzHje4gbGku08vovw"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/D53GQDOayb5Of8jr_yvDYg/D_4MTwpeooiamZdP-Gf6yfu9FMPX_sGeYmXokveyyp8dTf9Pu4LT2wjbT1c_Os4u0OYCb5QjQIkwhoHZr0CiGiVDeUNsqiO1S_ITgUuvEz8FiXBLtn1zUbehf0h0eRaCsBsgylAB9ywJ4se1vW3dXKwjoAUgcmOn3k7gesy0jGI/gC3EXrZol9pK8qHMiMqoP-9VtU7ztzHSohbbDz17OAk",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://business.adobe.com/blog/adobe-target-announces-redesigned-user-interface-with-generative-ai-features",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://experienceleague.adobe.com/en/docs/events/adobe-customer-success-webinar-recordings/2025/target2025/ai-adobe-target",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/introduction/how-target-works",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/introduction/intro",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://business.adobe.com/products/target/adobe-target",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.adobe.com/analytics-mcp/docs/servers/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-get-started",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-tools-reference",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://helpx.adobe.com/legal/product-descriptions/adobe-target.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://business.adobe.com/products/target/experimentation-optimization.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://business.adobe.com/products/target/personalized-interactions.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://business.adobe.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.adobe.com/trust/compliance/compliance-list.html",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "conductrics",
@@ -741,7 +1761,62 @@
       "axc": 17.9,
       "ayc": 34.1,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/aNyfhpNdRuV4ntjEtL4DGw/BsDvDT-IvsipEszcIvBFZH9hStwrSWqd_eqRTUk7fDQA2aLO11F1xrkOJjEXil4gKSWTgiJwF3N9wnMx2iFzMAd6fL2CXrtza0RKDadRpSDY_WeGH-MKsXdd_1xulUln0kffNyCeVSnY2K9Gqsyzx9VXG-oGOSAsMNI8ICGyHjY/MLuSV_QNxyq9vh8elQdNMHKkFNaS48_M2YhGBH_-ado"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/hUi-DIUEkQWnPj6hKt3MtA/DAQtVkaEhAVARmFcbLG0CgQyuvxwDP7QZgXbRgz82v0RCdXVM5c2yh1UTz6lh4yAamDdknPw1zwC5bgVYL2O-Q10EaMrLRqnzlnub4HswKqnG4-muBfk7m0jXPXCQ4h10yEm_turfu30OTvZ8ALGAODCxcLsEpAr09iGtezyjYo/mnlAMthKebYef-Dy52vdJfL2e-PVpgAXqwzrOyb3bRE",
+      "sources": [
+        {
+          "type": "Changelog",
+          "url": "https://support.conductrics.com/changelog",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.conductrics.com/privacy-policy",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://support.conductrics.com/docs/docs-overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.conductrics.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.conductrics.com/architecture-integrations/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.conductrics.com/ai-bandits",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.conductrics.com/platform",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://support.conductrics.com/docs/android-native-support",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.conductrics.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.conductrics.com/security-and-compliance",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "absmartly",
@@ -814,7 +1889,67 @@
       "axc": 83.0,
       "ayc": 31.2,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/Pl571w1ELIu8z4kSCO5RMA/VsbiykAfDKphG_ni--hp4Trt8WKNtpKfEqxD4qpZl6JCybvowe32geFtjOiRLnuPXqhrDRbiRRlm8KiQxO-2TqWzu197Adgwq9bY7LV54mbBll1wEYMq0JQtlYP80ZGSevclMe-whxof2B1tPIwg_Y_F14R-EevWDuYkoJg-WRY/EjQzfHSoIzzundHMPWptT4qcjUGrhppsiVTOQHqoes8"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/b5fRUBQeIjGdC9LZhnJHOw/xVoC-nGWiTcoLR-T9O6GjsHlMV89ZctgdnEZn1QalShBZ4icuQ6vLLNrme-PTSzXYUX8nx92fKWyLuH0icuBr8yCxeNnQGZZaHBnrVKVGNgcp-2PqtxeW9Mc-Oa-8zaYUwZdYYtgaUjaFHEq5ceM-iO6hIKqJSoYSnoZiL34Y0s/jfwSGXnkN9oNYAprqtUq6qfnurTx1CZWBFrCqcqDpr0",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.absmartly.com/docs/apis-and-sdks/overview/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://absmartly.com/blog/automate-experimentation-ai-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.absmartly.com/docs/platform-release-notes/2026/03",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://absmartly.com/gdpr-and-hipaa-compliance-policy",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.absmartly.com/docs/get-started/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.absmartly.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://github.com/absmartly/mcp",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.absmartly.com/docs/web-console-docs/warehouse-native/overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/absmartly",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.absmartly.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://absmartly.com/security",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "intelligems",
@@ -873,7 +2008,105 @@
       "ayo": 48.0,
       "myo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/y-4GlYS95Fzm3zQBtcOwYw/TWOCaKWUjEeWNJcD3TA5F2IGFgh0eKOisTmpIAK3wyc1J-snJCyRIXHdtZFjZ2eP_bGuASSOaBolBtpaEDTe7Wg88gYxacFh8J0RwytlPH0YYyD5TfD_je-mTbaWr7RIfL3Vs196uhbCRmlmqwaJv4d_8aS12xwoX2rAeEG9s-s/p6DPyGqBo_EKoTr6BOIJKPt88l1zy6oL3wZdRQxw40o"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/vw-LWIaetzdXVusxleEK4Q/T6EuxVHwmr6piV2HRHuumcEpq9QlcHPgXKeEKhNzWxlC6UyTp-7X1qIXUCIWzeQ7o8w1sJ461boLO7JJwfleQUBaizmjBw3KWllApuYubRFJ0ZXt1nD67E6WUX65ATX-zhgSj0LiK-usAt5C_DZ1Z5t6ATmga2hHcGPNkNN8vAI/d5WZ_4odltQ3doe6_BmYMB004_ZrmNHiBFGurJFaEQc",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.intelligems.io/developer-resources/javascript-api",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.intelligems.io/resources/blog/using-ai-with-intelligems-use-cases-that-are-possible-right-now",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://www.intelligems.io/resources/product-updates",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.intelligems.io/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.intelligems.io/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.intelligems.io/features/integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.intelligems.io/developer-resources/mcp-server",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.intelligems.io/developer-resources/mcp-server/available-tools.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.intelligems.io/developer-resources/mcp-server/claude.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.intelligems.io/developer-resources/mcp-server/examples-and-best-practices",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.intelligems.io/pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.intelligems.io/general-features/visual-builder/ai-visual-builder.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.intelligems.io/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.intelligems.io/developer-resources/javascript-api",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://docs.intelligems.io/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.intelligems.io/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://apps.shopify.com/intelligems",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.intelligems.io/resources/customer-stories",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "webtrends-optimize",
@@ -926,7 +2159,65 @@
       "axc": 22.7,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/zpksJsx1EM67qGuf9oXRDA/sTGmXKUXvdpIuhnHNZx_j0AWStL-hOS3hGm7k5O5nxXEl4943vNfluam3vYJ2HOiLZqLD4ZDx2NhOAiu6LNRFdNlHyUmCqro05yx2lXvws6WgbZkB2PnF54YPjF_YZHG3UKz-EOzmNzj-yl8kaO0ZiX0IVgvcFiG72vYCaE3CzI/514WciZNaJ--yiR4LaULS9C4p5JSmGBVdHdFBYZVXQc"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/SrTVhwJeoKBi94AiXa-mzQ/Fe9xVrizBlkMxvW70q78MmWkb-7JpH8FZleTTEDXRC5pmXSJ3YZ7VmgtEVQo9T9FMCxUx022bC1j009SzRNvRf8_2V4y8NclGBWJNFNkJ_4JuiaxLcMvNOwuYvDGhD1wu9JpJ7nwlnnjdV_FnX5wK4CZcCujN0XD3RsmCbCn3-Q/CGSO_Pu8PHGGzqop1dQe6lEQtHlO3K0Jf8zWtqZgYqk",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.webtrends-optimize.com/en/articles/9271819-ots-api-guide-for-server-side-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.webtrends-optimize.com/privacy",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.webtrends-optimize.com/en",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.webtrends-optimize.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.webtrends-optimize.com/en/articles/10697353-integrations-snowflake-pull",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.webtrends-optimize.com/resources/pricing/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.webtrends-optimize.com/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.webtrends-optimize.com/solutions/feature-list",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://onpremises.webtrends.help/docs/webtrends-android-sdk-330",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.webtrends-optimize.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "posthog",
@@ -1022,7 +2313,174 @@
       "axo": 92.0,
       "ayo": 90.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/D-vpRJIz1jZkklJ58KURcQ/q6AIRXez5LBleVN9ha-Umj2XZ1tLCrvC0WXejkCca4V50nyKWkSEGGDM_wKBYcmK6mmiiiLfNMlpXm7A8lnvK3Lgr2-MSM1a5Jphv5cRBsHD7cmtYWqPio6L-yXxBQAUx9NwiwZBUdf58edNdzt7OQ/hNsy3vHEUYeO8qlfavrswCH7Ioi6rzs2jFoe1--asYs"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/3JSTKnAiIlyyeJIOmopJWw/vMADk_3vbbxJruy_OQ7FQs2Us8QsyMclOd6xFxS5Bwb7pZrZ_y8bVZuZ0xfukY37gIdYhqaD0yaUa7T94gkoT-xm0ZIQ80-HvOKGz0Xc5HBE-gtXbhkJLWbujoMNtrvu8yOt9CSbUe3UZ4TVEle0SA/D0GSKN7J6o7CE23GIoPAwbV9DRZLkCms73U3kC8oOzQ",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://posthog.com/docs/api",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://posthog.com/blog/posthog-cloud-eu",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://posthog.com/changelog",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://posthog.com/docs/privacy/gdpr-compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://posthog.com/docs/privacy/hipaa-compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://posthog.com/docs/settings/sso",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://posthog.com/docs",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://posthog.com/docs/cli",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://posthog.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://posthog.com/docs/cdp/sources/bigquery",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://posthog.com/docs/cdp/sources/redshift",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://posthog.com/docs/cdp/sources/snowflake",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://posthog.com/docs/experiments/surfaces/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://posthog.com/docs/feature-flags/surfaces/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://posthog.com/docs/model-context-protocol",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://posthog.com/docs/model-context-protocol/faq",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://posthog.com/docs/model-context-protocol/tools",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://posthog.com/docs/data-warehouse/sources",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://posthog.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://posthog.com/context-warehouse",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://posthog.com/docs/mcp-analytics",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://posthog.com/docs/posthog-ai",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://posthog.com/self-driving",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://posthog.com/docs/libraries",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://posthog.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://posthog.com/sitemap/sitemap-0.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://posthog.com/customers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://posthog.com/handbook/who-we-build-for",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://posthog.com/docs/privacy/soc2",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "uniform",
@@ -1086,7 +2544,186 @@
       "axo": 82.0,
       "ayo": 58.0,
       "myo": 80.0,
-      "scraped": "2026-08-06"
+      "scraped": "2026-08-06",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.uniform.app/docs/api",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.uniform.dev/blogs",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.uniform.app/docs/changelog/shipped",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.uniform.app/docs/changelog/shipped/uniform-mcp-enhancements",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://docs.uniform.app/docs/guides/regions",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.uniform.dev/dpa",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.uniform.dev/msa",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.uniform.dev/privacy-policy",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.uniform.app",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.uniform.app/docs/guides/ai/ai-rules",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.uniform.dev/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.uniform.app/docs/integrations/data/google-analytics",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.uniform.dev/integrations",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.uniform.app/docs/changelog/shipped/uniform-mcp-server-in-developer-preview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.uniform.app/docs/guides/ai/mcp-server",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.uniform.app/docs/guides/ai/scout/connect-mcp-servers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.uniform.app/docs/guides/ab-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.uniform.app/docs/guides/personalization/edge-side-personalization",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://docs.uniform.app/docs/guides/ai/ai-credits",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.uniform.dev/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.uniform.app/docs/guides/ai/scout",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.uniform.app/docs/guides/ai/scout/skills",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.uniform.app/docs/guides/ai/scout/use-cases-and-capabilities",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.uniform.dev/features/ab-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.uniform.dev/features/ai-agents",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.uniform.dev/features/personalization",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.uniform.dev/visual-workspace",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://sdk.uniform.app/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://docs.uniform.app/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.uniform.dev/customers",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://docs.uniform.app/docs/integrations/sso",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "monetate",
@@ -1143,7 +2780,77 @@
       "axc": 18.3,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/AkJUoS9y304ZBR5iAfIxrA/Dt9Y926xNCB_lufQMY86sguwZa37AVSz8DpwsZOST69FDQ-U3a6cp8L0MtKSPeg_eJNbjXbex-mtu6nYwN17neVO5r693ahNMTK4rg8zsh9cSf1D0ukZYC_Le7k6gHO5bxFDWjKQdxDjSLEdPGOG5A/2PfVH9IaQW4qn9l_O5edqU4vKrUs9kOIl9LrKwoQE6w"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/rSd3Sa5xt_m_0XoSbQ-YMg/qwbxHXGxYlGZPIBkmZ8ePBvOe3ZKvjJKKpvXMWA3B2O4qDPxawVBL3O5XQJc2EnobVWBT8HOvjbyf9fxgfAhaGjtVP8SW1F_q4L9YLx_HyDt3cS04u6BCIMvG4OgvBoSLVjtxt3p_FYOYvDGdjF5fw/2bgWHlU7VhXLjo3rixetGLSLby1ZCSamUhb3YobOuWI",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://developer.monetate.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://monetate.com/resource/monetate-unveils-experience-optimization-platform-merging-ai-powered-personalization-and-experimentation-for-enterprises/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://monetate.com/resource/simon-ai-acquired-by-monetate/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.monetate.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://monetate.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.monetate.com/docs/integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://monetate.com/feature-experimentation/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://monetate.com/monet-ai/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://monetate.com/personalization-platform/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://monetate.com/product-recommendations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developer.monetate.com/sdks",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://monetate.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://monetate.com/success-stories/",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "ab-tasty",
@@ -1215,7 +2922,90 @@
       "seoTitle": "AB Tasty Review 2026: Features, Pricing & Alternatives",
       "seoDesc": "AB Tasty is a proven enterprise choice for marketing-led experimentation and personalization. Compare pricing, AI and MCP capability, and alternatives.",
       "seoH1": "AB Tasty review: features, pricing, and alternatives",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/wy1TsFpWZaxU96akzowKxg/y1EU6Nr5pQeXNbOk_WKzpFJCxvb--rQEzdI3AFTR7YZWBmt2YRNo4sTQM-ehCqTZC0zaCCoScRedhOBlFAju_7Olg7rmyv-LmWWR5hp1bU0niDGIWAdLefkozh-giTU66ldGm6XxCEnDnwP4si5Inw/_Pz89FfeX6DCI5aFstPi2NCLSXepXBnjLuBSoY6gHrc"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/CyrP0ZmKHzId-UJ54xRWsw/edRPj7Y2DhLwjBoJeD2Cj1bJPeZK1csUdYMr5M0YVmNUqWYAt26B_veUIspHdgLTGa-JIiXs7G2Y5FJTntDciO1PN5M7iY3Wj_fWYfVkQ21pNBhN-t1jxRudbGj-syEGHp9wejGUaM0hgcS8O913bQ/9I8lovEcMICFdbH9lx2iFd4AwVnaKZp6dWhidn18fRo",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.abtasty.com/client-side/data-apis/public-api",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://abtasty.com/blog/ai-features-transforming-experimentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://abtasty.com/blog/iso-27001-certification",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://docs.abtasty.com/release-notes",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://abtasty.com/gdpr-compliant",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.abtasty.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.abtasty.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.abtasty.com/integrations",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.abtasty.com/integrations/other-integrations/data-warehouse/data-warehouse-integrations-general-information",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.abtasty.com/pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://abtasty.com/emotions-ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.abtasty.com/evi",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.abtasty.com/server-side/sdks",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.abtasty.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.abtasty.com/resource-categories/case-studies",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "convert",
@@ -1283,7 +3073,109 @@
       "ayo": 45.0,
       "myo": 42.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/wPd3SrduaNBbP2dMF9pE3A/CPDxz89CPXdZQ4mkpVtlbw58lUep56Nfg6-6CzJAJfhU7wPLV1rYxNLU0YlaM9egjedbJ1lV00yxei-2c4jAkmUKiOb9g4SajoMD7z5qv378y6YFlOKIVhofVa8YdmTCJ8SsDhgmlBrib3kCj61d6A/mBTJTknw5T6lst2mSaYUa7YD_b5pPudvQLEqnJm3pG0"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/sR_83TyNJ7bJWGa-KBVYUA/RYI48gzHXdLj4wEe6xjPzPOGtbqfFK5AV9puDpFgmBmikSBN2R612wD8BW7UGGetHpRBMBcCA7-8riYQaZTiAYBWo6bLwtyMFxGrfYfCYBNT0RceFHZBZKig9f1LZMeBTODl68I-LcFGsi3IVYUtnw/DkUnMSqYcy-PzUILvVrXtxzbNffaMzPBfNK5-SLgtNg",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://www.convert.com/developer",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.convert.com/blog/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.convert.com/blog/ai/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://support.convert.com/hc/en-us/articles/whats-new-april-2026",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://convert.com/gdpr/dpa",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://support.convert.com/hc/en-us",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.convert.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.convert.com/integrations/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://convert.com/blog/ai/ab-testing-without-ui-convert-mcp-claude-code",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.convert.com/pricing/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://convert.com/features",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://convert.com/features/full-stack",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://convert.com/llm-info",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/convertcom/javascript-sdk",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.convert.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.convert.com/case-studies",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://convert.com/security",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "zoho-pagesense",
@@ -1337,7 +3229,97 @@
       "ayo": 32.0,
       "myo": 30.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/LO-eSvVJQ4Y0yeD7OYs-aw/ae-E0Mee6YFt4fuVsDBQ15-xAWM5bpeAevDhn7g1dFuI0Zu-nZvOtLENw0jx2i9iyIiUIn8zFyXwE-NVV5LZftlhaL9BuIf07z7-oirss9eTJfrWN7UG6pd5ZlrxZlw1AxySmaIsqDD4wPQOWLY6RkJu-thOTdXbLIl0KExOEX4/TF266CiN5biqgJDZS1INKLsrKd8cwAWlcQFLsC_Ch0o"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/AKR7Px0z-tMfLkyq4Zspxw/rfvVxHz5277xhZcTM-t0OLxBZpvlELtEAXNdYGtfjGvr9B4Bu986N4_LT3jauUmtJID6VagitoGCXYkpNvrbGKTdA7pp7koVNm7ryFrnPhn58MSgCPobkGJfu6NDa24cMGnXSYf5bRHcJJvykXV9bFziydhMnLSXJb3sWGc8YQY/AGnTv4VydXMgqmLLbfCyYo_njkUy9Kwyio_BQcSZZbc",
+      "sources": [
+        {
+          "type": "Changelog",
+          "url": "https://www.zoho.com/pagesense/resources/whats-new.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://help.zoho.com/portal/en/kb/pagesense/advanced-settings/articles/enable-hipaa-compliance-for-your-account",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.zoho.com/pagesense/gdpr.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://help.zoho.com/portal/en/kb/pagesense",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.zoho.com/pagesense/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.zoho.com/pagesense/integrations.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://help.zoho.com/portal/en/kb/mcp/getting-started/articles/zoho-mcp-help-documentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://www.zoho.com/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.zoho.com/pagesense/pricing.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.zoho.com/pagesense/features.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.zoho.com/pagesense/full-stack.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.zoho.com/pagesense/personalization.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://help.zoho.com/portal/en/kb/pagesense/server-side-testing/net/articles/installation-of-c-net-sdk",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.zoho.com/pagesense/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.zoho.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.zoho.com/pagesense/solutions/marketers.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.zoho.com/compliance.html",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "harness-fme",
@@ -1417,7 +3399,124 @@
       "ayc": 80.4,
       "axo": 78.0,
       "ayo": 58.0,
-      "scraped": "2026-08-05"
+      "scraped": "2026-08-05",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://developer.harness.io/docs/feature-management-experimentation/api",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.harness.io/blog/harness-to-acquire-split",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.harness.io/blog/introducing-autonomous-worker-agents",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.harness.io/blog/introducing-harness-ai-devops-agent-for-ai-infused-software-delivery",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.harness.io/blog/mcp-announcement",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developer.harness.io/docs/feature-management-experimentation",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.harness.io/products/feature-management-experimentation",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.harness.io/docs/platform/authentication/single-sign-on-for-harness-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://developer.harness.io/docs/feature-management-experimentation/experimentation/experiment-results/analyzing-experiment-results/dimensional-analysis",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://developer.harness.io/docs/feature-flags/subscribe-ff/available-plans-for-feature-flags",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://developer.harness.io/docs/feature-management-experimentation/release-agent",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://developer.harness.io/docs/platform/harness-ai/harness-agents/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.harness.io/products/feature-management-experimentation/feature-management",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.harness.io/products/feature-management-experimentation/release-monitoring",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://developer.harness.io/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.harness.io/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.harness.io/security",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "salesforce-marketing-cloud-personalization",
@@ -1478,7 +3577,91 @@
       "axo": 30.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/7WURJA6WzGpHN5MU8T2bZg/i_t1i6VNesAD_MCNXlLXMbPCInzUdor6pPQ8nv35tDi6ZJ5qCLwPF9MQEYH94HocljnvDrZcmWyKgZ284FsGp1IdV1Ka3WDpMtFDy8KnudvGu4C4WruHARjlo2gidriq9LwOcVucyylXsEThWJuSzYRiqwoS5Wsn8WHZZP3BrCr9ysfRG25421QyJfTK00-5/Q5sTWAAT67RtGjHESj534h6GxVYE9BtTu7HC3PrpLYY"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/nKokmp2Xl81BDyQiI1OCbQ/k9sg0QlvnOkwnJlM_2PJQjcRS1r4cIOqkxUNYMfU7WKwcCx9cU3PLmWk5Uj9rujS7sROTaefmGlrT8aYB3tSt1U7JzTgLA4oVhpf1E2us32FaDJjTm9p0VqK2QRnp1Hox396nxh_DdGyKwDrAkCkkekmEcrWAfWYBSaqgGc8O8FWN73hvk3NAiSWpZxJdoVL/XVDhwiG9pyjXfLmPkqUH8vb2vkGe7X0CBjiAFt0wMBY",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://help.salesforce.com/s/articleView?id=release-notes.rn_personalization.htm&language=en_US&release=256&type=5",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developer.salesforce.com/docs/marketing/personalization/guide/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developer.salesforce.com/docs/marketing/personalization/overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.salesforce.com/marketing/personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://www.salesforce.com/agentforce/mcp-support",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.salesforce.com/marketing/personalization/pricing/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.salesforce.com/marketing/personalization/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.salesforce.com/marketing/personalization/real-time",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developer.salesforce.com/docs/marketing/personalization/references/personalization-android-sdk/integration.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developer.salesforce.com/docs/marketing/personalization/references/personalization-ios-sdk/integration.html",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.salesforce.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://compliance.salesforce.com/services/marketing-cloud-personalization",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "ninetailed-by-contentful",
@@ -1545,7 +3728,77 @@
       "axc": 40.6,
       "ayc": 42.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/rFAchEvsxv1VlTtc8Iemmw/Za4bl7Mg7y0gC1G9RqfURo560oB2T_ADRDfgehFZM-WZHXv0vpPb9sKrCuO233bvpWuZ-wX4sKNV1HoA4wXesYAMqtInY7fxYn4sVVCoAz2k8pPpmDXseGhSU2Wuwgzvdvx_im6mB9wtwqVGsTZy6y0U6oo5b1l81KpNC2KSUNU/YZbqlMDrx65X7BM6If7c7eHUVgOBdPkw9D7osjNbczU"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/mXLzrtMFN_dQ13oxoRzgmg/qqSIwDtXNB9XQqfeEo7ZpzuhcpYupRRyTpBk1LxF4j1rPb7GZAkEsMA3RCo7N0DOssFIaxO5y7rMFiBv9onTp0v50DlcDNByDECm8Y4n5rOgpmqOZ-bfQm112SuwkN9PV0XEPIQCZ1cCY_VHiTIBW6I8Jr-Q-F689i3qjtqY6GM/D49dtGpuj55io762Zx8auOeDwgAo1Zy7EVGWUfxiHSI",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://www.contentful.com/developers/docs/personalization/insights/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.contentful.com/blog/introducing-contentful-personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.contentful.com/blog/remote-mcp-now-generally-available",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.contentful.com/blog/welcoming-ninetailed-contentful",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://www.contentful.com/developers/docs/personalization/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.contentful.com/personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.contentful.com/marketplace/app/ninetailed-personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.contentful.com/pricing/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.contentful.com/products/personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://www.contentful.com/developers/docs/personalization/optimization-sdk/overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.contentful.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.contentful.com/solutions/personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://trust.contentful.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "varify",
@@ -1597,7 +3850,65 @@
       "axc": 63.2,
       "ayc": 54.3,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/iT5qIVkUiPnFhBDMeZ3mUw/D8wA3u1sbsrbewe-mCsi8SYJI9oGN0654CY4sKGrAuN8vTUiJeDFLPlNcxLf4OVcDco-9VS1m2kJWqHXbiZNR3WdPmUnTZR8Zm-utqSXy82LrfioRdd2xWUdHDff73gKGDRgLPbk1zKkvOZ6B-sUVA7oFpbVw302pr5OfI9mUxQ/nCfZSR173cAmfoihhSFOlMWm7nckm7dVOyNaTCUi0vU"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/Jh_tsE_3kDFNF5Y99qLvBw/aBmA0u46Q8rEadmE0KSUDq8rD7T6R4DN3TmMkCrbN1gZjCu2KC3JeN3YFLiTzv4FdfGAm6GtY-3WLZXbzoqCaK_K5hJh1bR-cZILxeotPWFFuNXqYpL4iL3NGpadziTfm5Ccjd7ECB-IeaQL5C1ktJr5u4Xdp67pqSHjQrPTUI8/Goy5flW74GiatO1aRS7YzaRce5BRVhYFIUhQnn9dZSc",
+      "sources": [
+        {
+          "type": "Compliance",
+          "url": "https://varify.io/en/userdocumentation/iso-27001",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://varify.io/en/userdocumentation/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://varify.io/en/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://varify.io/en/integrations/google-analytics-4",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://varify.io/en/plans/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://varify.io/en/ab-testing-flat-rate-pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://varify.io/en/ai-powered-ab-testing-platforms",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://varify.io/en/functions",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://varify.io/en/userdocumentation/server-side-a-b-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://varify.io/sitemap_index.xml",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "croct",
@@ -1637,7 +3948,77 @@
       "axc": 16.4,
       "ayc": 13.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/lGdvc2gJnIBg3zvhtlZTFw/PA_sFfZ4M0wOPov3JHg1Gtc4EVYkoDK1W8g9hJKYsTnI8WCUISg3lTijw1VcIhUCAl0KANQ984jrtcLb4WDV6qyEm_9WXBv6vqYS-KFZrraIZBvGhV5bbYD0J_o74eZr90ibGJmYqePfExYwmKaGZ0NYuKp9XbPowEmAx7_S6FU/vLksZcDbLmgNu0s8A5ghmeNso6Auyrv1QmusP1KuMhU"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/DEuO_8KS7A1X8CZ9UNplRg/9QEa4IFqBEiLP-BSKwyNlQrgoArpDF3mHGT-RiU7cYuGHTd9TzIrDKCg97Xr5Rv_OpIXZSF0fwBaVb2HH3fP-l9DyE66sABQNjWsNepbofum45_YAZ0iOn8YUc1dw-DhC4aiARk-WguA5z0zWLh6sPTf-Qkz-7EkKHbQHZKe6Y4/eaKUQ6PfsfiCwoNDG-TRV9Et9wJLKs4HBKyMNcnFlt8",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://blog.croct.com",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.croct.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://croct.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://croct.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://croct.com/features",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://croct.com/personalization",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://croct.com/segmentation",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.croct.com/reference/sdk/javascript/integration",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/croct-tech/plug-next",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://croct.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://croct.com/case-studies",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "mutiny",
@@ -1698,7 +4079,105 @@
       "axo": 78.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/P2__TxxnSgn7OacACq9zjg/dZDNL8knZLvyi0OxzIQV875kJkwQ_xhup2WCZTcnjvbhM7AyH2nhI8msNUQTWKapy58qqFo5AFxnhwntpPylbxzIO_2YG8YFASotM35D_FxfJuxZaXjVGCnpGTCskySrEzcR4HBoxqsn0zVKtHfYEA/5VEKlU2h3hYAD-o3XTiWimmR8-EOpbAOLbvnxZ1IN30"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/i5OFGKF5Bi11Z0qN5rhK0Q/BJ3P_mk1N0hTc3aWHPJt-1BP9CNaFgBmbseNz5oyB94brIt4qJiOc8Pt1mF88VB6f88SssjbOL2ndGbVJnTw2tGonzHuj5efRRUY2SX_f_Co2kLgkra1FtpniZguhlmB6I4l1VtL4X1ZBHHFsB_zkQ/nQvX7ao3dK2Kd6vy4uDYPqbQzBUSxDC_exkjrbnCDtE",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://mutinyhq.com/blog/from-research-to-ready-to-send-collateral-in-one-conversation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://mutinyhq.com/blog/introducing-microsites",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://mutinyhq.com/blog/mutiny-6sense-integration",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.mutinyhq.com/blog/how-mutiny-gives-every-seller-a-full-creative-team-with-claude",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.mutinyhq.com/blog/how-we-built-an-agent-for-on-brand-asset-creation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.mutinyhq.com/blog/intellipse-ai-acquisition",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://help.mutinyhq.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.mutinyhq.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.mutinyhq.com/products/integration",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.mutinyhq.com/pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.mutinyhq.com/product/website-personalization",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.mutinyhq.com/products/beautiful-assets",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.mutinyhq.com/products/reliable-automation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/MutinyHQ",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.mutinyhq.com/llm-info",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.mutinyhq.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.mutinyhq.com/customers",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     },
     {
       "slug": "growthbook",
@@ -1785,7 +4264,144 @@
       "axo": 84.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/Ltod9a_G7re-hIL3M-3ANg/UP1Dhz6qXpvUcmUh9__LFwDgct5Ld_ZIkSxOh2FGPUmYzcpKMGgP4pvjEAHSV_nRRx-c-kkA62xV4qYtXS6rm-hXU0JuRJ5cB2M9fEXxwpEKx8j59TcXiQjFefYtO1rkn6rL32N7jcTRduiYeMc43oxLAopVCTlN4nR1veWal2s/_Rh5GnCDwpdQPz08UKhl81429wSX8Wi3HVIg2KW5tOY"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/RKWvBEMPy5AZ1MUIuYatEQ/yR05O8cJUkp3jaL0X7jTzIPovh7L_6mQ7BTtHF46x4BlRe-ZsTI6OrBa32Gu6wmTAsJnXI8cUECH6pJPqhJkWKqCRMibSZW8BTlZQRKLqosCYfpE-7pMtDa1QPCz7SVHyOYJMCljQCvS5cNdyVSb-jIOU8RUiQowizu59YufSEs/gQm2FsU5qi_DwHliUmnfkDuoCh6RvvUtHLLCsza_5S4",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.growthbook.io/blog",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.growthbook.io/blog/agent-experience",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.growthbook.io/blog/ai-visual-editor-from-idea-to-live-experiment-in-minutes",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://github.com/growthbook/growthbook/releases",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://www.growthbook.io/blog/growthbook-version-5-0",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.growthbook.io/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.growthbook.io/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/guide/bigquery",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/warehouses/clickhouse",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/warehouses/databricks",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/warehouses/postgres",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/warehouses/redshift",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.growthbook.io/warehouses/snowflake",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.growthbook.io/integrations/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.growthbook.io/bandits/overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.growthbook.io/integrations/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.growthbook.io/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.growthbook.io/platform/ai-native-development",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.growthbook.io/platform/warehouse-native",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.growthbook.io/lib/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/growthbook/skills",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://docs.growthbook.io/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.growthbook.io/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.growthbook.io/platform/security",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "kameleoon",
@@ -1869,7 +4485,155 @@
       "axo": 82.0,
       "ayo": 65.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/2V5KPH-4PGwBCqZLYsSTIQ/UYFBWIXpcQXrBmNEdwtZf_W0ztT3CD-C13fsl0k0C8BSeJFbK9y6ErP92jNFTA1zrO61S72cy3eZhVKWxfXa3eSl9EgEVkZ1BaqtAd_dElGcITe2AFVafDL87q1-iUBZFLPnq_kuwlq9PgCPKQ-fBumF1xwo0B9oaQUP4suN7oU/JuXnpdhUlOCEdvN7diMR8_i3rh0a-DoSbY_CAcA6Y3k"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/3TScDalcHHia6HRiPvjmQg/IAkU-rmje9d__AlfB9LfaV89D1yOgBIjPIirCwzdld9PmmlCd9SwW8x15KDnIzxipZAMeVPHRtT3-UdATGsZq0dJBCOj2DBcfWS82kVTWXAh50qys6sNmUfwRS6dlW8n29c2P0Nob48Dq9Nz3BjgxlF7Fnn4yLEFuyJVK6LVUog/pw2-5mOmEuStv12epAIzZh9eaxxmySXlAwUEnjqcEPs",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://developers.kameleoon.com/apis/automation-api-rest/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://kameleoon.com/blog/how-ai-really-influencing-experimentation",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://kameleoon.com/blog/kameleoon-ai-copilot-changes-how-teams-experiment",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.kameleoon.com/blog/what-is-an-mcp-server",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://www.kameleoon.com/product-roadmap",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.kameleoon.com/eol-policy",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developers.kameleoon.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://developers.kameleoon.com/feature-management-and-experimentation/overview",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.kameleoon.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://help.kameleoon.com/integrations/data-warehouses/bigquery/use-bigquery-as-a-destination",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://help.kameleoon.com/integrations/data-warehouses/snowflake/use-snowflake-as-a-destination",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developers.kameleoon.com/developer-tools/mcp-server",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.kameleoon.com/mcp/claude-connector.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.kameleoon.com/mcp/use-docs-with-ai.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://kameleoon.com/plans",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.kameleoon.com/user-manual/ai-assist.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://kameleoon.com/prompt-based-experimentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.kameleoon.com/pbx-ideate",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://developers.kameleoon.com/feature-management-and-experimentation/versions/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://docs.kameleoon.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.kameleoon.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.kameleoon.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.kameleoon.com/customers",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://kameleoon.com/platform/privacy-security",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "statsig",
@@ -1970,7 +4734,159 @@
       "axo": 80.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/I9NRwqCFwmWIkhdEGbPu4A/BpCEVIw_7e1UL1U61N_JLNWX4xcVb9VrNtQAjPK7PFJZEhp0rqEeKrkpO69mQEvz_YBNQCS-Gl1z6kAHY_K8q5Qd7GIrdn1yWHQOLz-DALGRDOd8d5X8aMx6MpCWE1ZplPclzA9QNsSNKPXEUaKxcAgv2Vnxyt1wTOEhSxUw0z4/m-tWk_9QaKAT38E8tq82oMo7wXq7Y6xKl3zIVTC6EbY"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/PaNNcdSFsGjmld36XZuvDw/00masCBYbI7F1CxYRBdgeD04gVDzLavXWLgfHmZagcmGs4aNJ39hWgU35cYFmBQITDbSfB9xsV84-nT9qGOzIw01fPhHoGIioGAfRz80du_WUkqAzQG1IZZJvvaK1NVktXKZS3Hl3HQbrSz2XJamj_TPUjb1CmYtPTu0nBa_dn8/lnlhFE1zMLKbS7pP_rpb4QB67TS7zrOcO0YXC8Dq4sI",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://docs.statsig.com/api-reference/autotune/get-ranked-list-for-contextual-bandit",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "API Reference",
+          "url": "https://docs.statsig.com/console-api/introduction",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.statsig.com/blog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.statsig.com/blog/statsig-ai-features",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.statsig.com/blog/statsig-mcp-server-guide",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://www.statsig.com/updates",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://docs.statsig.com/compliance/ai_governance_security_privacy",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://docs.statsig.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.statsig.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://docs.statsig.com/integrations/introduction",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.statsig.com/integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.statsig.com/warehousepartner",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.statsig.com/integrations/mcp",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.statsig.com/integrations/mcp/cursor",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.statsig.com/integrations/mcp/manual-setup",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://www.statsig.com/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.statsig.com/experiments/advanced-setup/bayesian",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.statsig.com/experiments/advanced-setup/sequential-testing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.statsig.com/experiments/exploring-results/interaction-detection",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.statsig.com/stats-engine/methodologies/srm-checks",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.statsig.com/pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://docs.statsig.com/ai-evals/overview",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://docs.statsig.com/sdks/getting-started",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://docs.statsig.com/llms.txt",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.statsig.com/sitemap.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.statsig.com/trust/security",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "webflow-optimize",
@@ -2035,7 +4951,105 @@
       "mxo": 20.0,
       "myo": 28.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/hr2tv2V94i8Aopv5AgumXg/uBvBW-MLKOl3mkjXg_sx7zqrNVZ7X_mUy-EriRK8RN7sX2LMXDKUN25RlJ63OJajo0ioy8_mK4XWmZppjFYh7JpIldHboOxr9MYohXDcb8o1_gnGyCget9JxXmsy38hzJuBzys0zXSvI6ZInPtn1zFb4fc8dH3g4_zQXJ5x-oHEysfpshQfWwnbSXIKAh0-X/2G2d6hO_tbFbZcQNqNA3u76FFoo1Q5_kip153QyujDY"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/kWJIdkl3jgo_RxWPHJZ7LA/pwli3MgFCoQfW6IU7n8Ssu7g54mjIQFY6cessZMw0KEj1hNoslK5xEkASQzL2u4Cz0h4cLr4hDFBqHcDxMhcf1__abDMkE2pT4Zae9vCPp2pE0PQtKfckWpYOAG6ent0mGqceuHQ81z2mSHPPvJsYlVFmlcYBb0sCQcR7fuvvvXNM_cmF8BEXVGzcIP6bmL_/TnOUAmNm6vQQH4PLZSLNO0C-YTqnYdGHdI66JiEU-MI",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://webflow.com/blog/the-agentic-web-is-here",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://webflow.com/updates/optimize-integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://webflow.com/apps/compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://help.webflow.com/hc/en-us/articles/33609390628243-Intro-to-Webflow-Optimize",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://webflow.com/feature/optimize",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://university.webflow.com/integrations",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developers.webflow.com/mcp/faqs",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developers.webflow.com/mcp/reference/how-it-works",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developers.webflow.com/mcp/tools/data-tools.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://developers.webflow.com/mcp/tools/designer-tools.md",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://github.com/webflow/mcp-server",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://webflow.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://webflow.com/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://webflow.com/ai-site-builder",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://github.com/webflow/js-webflow-api",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://developers.webflow.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://developers.webflow.com/mcp/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://webflow.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "compose",
@@ -2074,7 +5088,66 @@
       "axc": 15.2,
       "ayc": 13.8,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/dUNxw96UsShbt0lh1MQOBQ/wdDf-YPu-YXXCWILJ32idpfVe-8Sw_v2MjI9oksvgd13RKzBccP8mMpy1NTUFqd_UQ6KL9VqMbRS-QoquN_8VURniJWutgdpbyg26bbZwcWCAWL6lRF5wMdHsU0Yg9vpes0A2WjtDMnxckkszMM3fhPsfZug_Bn5Ia4SXU2FoYU/KFs983Qkrsaj8NQmTgQGd26C7329uYxhcNylp-35T1A"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/jYPGzWjay9WVw-AOab4-1Q/NcvXLkGzHlv4rDkxrRzGuvN4fj-VrsSmFnM018FGjtsueNB13ROSUZ2don99NsJbJFeoAs5oT788gRDadnbrlTIbZQAwCK88c1WqumSQ3GUE396UesjMXk_J7aVlV68quvFoxjBr-pQxopqP8sKYK0pvzU35-gZf8zNTPpigSfU/aMujrArab8PZcX5FKNbC4kqG0tQC9PUktwhEwdi_9fk",
+      "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.compose.co/blog/product-image-testing-on-shopify",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.compose.co/blog/the-most-affordable-ab-testing-software-for-maximizing-roi",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.compose.co/gdpr",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.compose.co",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.compose.co/shopify",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.compose.co/pricing",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.compose.co/strategic-planning",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.compose.co/web-experimentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://www.compose.co/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://apps.shopify.com/compose-app",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.compose.co/agencies",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "amplitude",
@@ -2160,7 +5233,177 @@
       "axo": 88.0,
       "ayo": 68.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/daqwKySsHwAtslChS41NqA/cS-Iqk7P-phDT5Q2akpEDokc7n6AIsCOGLhjHRnvgAnPWUGpVrN72zWzpA2vGM_F00xK8MT8rGL0DZn8vbg98sWvlFaq0ZUXhHjTHqWYTLlj5B-wvYwMbO0mgMRMimqmKXzkK2diRrcpWGZ_kUIhlp3pvQTPbGH6FFtfELu_FR8/WF952KkGTURJUS-O4NWD3dcAVKzdu4bS7wupPj9p3G0"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/irvurJhd4s7Rpn2uJys7Iw/dpsQenZO_653PwuvqSsqwVk8f1fBjS3sS7u2tSINaL3VnvS1oEfwYYJIt8w-0rj5Axi36akkyhHfSFemAv7Iiea3sNihANZqCJiBdIXhCbuHdN6J_h6T1Zp_PBBJuXdRXjO0T-GI1mQAnoskG2yZkzFshuQ9BcYu7LXvi5vkirA/q80LTjBww_5AJjayvgZ-QKcSZxjsmiR0nl5hkMUMuGU",
+      "sources": [
+        {
+          "type": "",
+          "url": "https://amplitude.com/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "API Reference",
+          "url": "https://amplitude.com/docs/apis",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://amplitude.com/blog/ai-agents",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://amplitude.com/blog/amplitude-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://amplitude.com/roadmap",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://amplitude.com/releases",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Changelog",
+          "url": "https://amplitude.com/releases/feed.xml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Compliance",
+          "url": "https://amplitude.com/docs/admin/single-sign-on/sso",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://amplitude.com/docs",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Homepage",
+          "url": "https://amplitude.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://amplitude.com/web-experimentation",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Integrations",
+          "url": "https://amplitude.com/docs/data/destination-catalog/google-bigquery",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://amplitude.com/docs/data/source-catalog/databricks",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://amplitude.com/docs/data/source-catalog/snowflake",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://amplitude.com/mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://amplitude.com/mcp-server",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://amplitude.com/releases/amplitude-mcp",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Methodology",
+          "url": "https://amplitude.com/docs/data/warehouse-native/overview",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Pricing",
+          "url": "https://amplitude.com/pricing",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/agent-analytics",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/ai",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/ai-agents",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/ai-feedback",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/ai-visibility",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://amplitude.com/docs/feature-experiment/overview",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://amplitude.com/docs/sdks",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://amplitude.com/docs/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://amplitude.com/llms.txt",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Sitemap",
+          "url": "https://amplitude.com/sitemap.xml",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://amplitude.com/security-and-privacy",
+          "fetched": "2026-08-10"
+        }
+      ],
+      "swept": "2026-08-10"
     },
     {
       "slug": "dynamic-yield",
@@ -2231,7 +5474,114 @@
       "axc": 28.4,
       "ayc": 57.2,
       "scraped": "2026-08-10",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786528800000/KQq4lftQLYqdo-zuiQ_2lw/6ZBEW4woPM18018WCDIjcYAw6tkw_Hqr-TON_NRsUExcjSat88KtC-nTbDOzPjzNkTZCx893kjpPS49wcrWTGjH9m-2WfOjkRtExRcLXBocg9XgGl3JYPogzZsPl-o7euDnsNliU2uCL-040RfY3ezqR_DP927GaPm37vLjbM58/cv23CaOKJZgn2odkLmihJGxBMARYOR-mo8EAQJ31DOc"
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1786543200000/K71rQ2H9RV0hSwKFwvFXBQ/7tA8_R8qhZBeP1JXZ6f6Ss_KC4MkpF4KHcGfxy6pTDFZ9vM1THz-jH4RWPBtkzsmrTvE5JT-Fk1iXgl0czijzyV-X6sIledx21UYzu9AbiLhYOE2eoNT_FlicBaXd96CeCiv2NXE4WthZFaS0YIUFWBkwQcchFmd3D-8ZJgBzgM/U9tAXfwS79qDkRjsxfaOL10ZooKXfuCmRQnmS8HEXIo",
+      "sources": [
+        {
+          "type": "API Reference",
+          "url": "https://dy.dev/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.dynamicyield.com/blog/shopping-muse-announcement",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.dynamicyield.com/blog/transform-search-with-experience-search-ai",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Changelog",
+          "url": "https://dy.dev/changelog",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Compliance",
+          "url": "https://support.dynamicyield.com/hc/en-us/articles/360014076018-Single-Sign-On-SSO-Integration",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Docs Root",
+          "url": "https://support.dynamicyield.com/",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.dynamicyield.com/",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Integrations",
+          "url": "https://www.dynamicyield.com/partners",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/adaptml",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/element",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/experience-apis",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/experience-os",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/recommendations",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Product/Features",
+          "url": "https://www.dynamicyield.com/shopping-muse",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "SDK Docs",
+          "url": "https://support.dynamicyield.com/hc/en-us/articles/29314031599389-Dynamic-Yield-Mobile-SDKs",
+          "fetched": "2026-08-10"
+        },
+        {
+          "type": "Solutions/Customers",
+          "url": "https://www.dynamicyield.com/clients",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.dynamicyield.com/compliance",
+          "fetched": "2026-08-10",
+          "updated": true
+        },
+        {
+          "type": "Trust/Security",
+          "url": "https://www.dynamicyield.com/security",
+          "fetched": "2026-08-10",
+          "updated": true
+        }
+      ],
+      "swept": "2026-08-10",
+      "enrichment": "Fresh"
     }
   ]
 }
