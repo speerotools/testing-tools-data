@@ -1,0 +1,709 @@
+# https://www.statsig.com/pricing
+Statsig | The modern product development platform
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+Products
+Solutions
+Resources
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Scalable tools to drive product growth
+Build with the industry's
+most affordable
+offering for each of our 5+ products. Cut your current spend or start for free (like 90% of our customers)
+Developer
+Growth tools for individual builders
+Free
+(no credit card required)
+2M events
+per month
+Unlimited
+flag & config checks
+50,000
+session replays per month
+Start for Free
+Get started with:
+A/B tests & experimentation
+Feature flags & config management
+Product and web analytics
+1-year analytics retention
+Session replays
+Unlimited seats
+Pro
+A complete platform for growing teams
+$150
+/mo
+5M events
+included, then $0.05 per 1K events
+Unlimited
+flag & config checks
+100,000
+session replays per month
+Get Started
+Everything in Developer, plus:
+Advanced experimentation
+Advanced product analytics
+Unlimited analytics retention
+Change reviews & approvals
+API controls
+Enterprise
+Scalable solutions for large organizations
+Custom
+Event
+or
+Experiment
+based contracts
+Large
+volume discounts
+Warehouse native
+deployment
+Contact Us
+Everything in Pro, plus:
+Warehouse native deployment
+Outgoing data integrations
+Data warehouse imports
+SSO, role-based access controls, & teams
+Priority support
+HIPAA-eligibility (BAA required)
+Included with the Statsig platform
+Warehouse Native
+Run Statsig in your data warehouse for improved security, reliability, and data governance
+30+ SDKs
+Build with high-performance, open-source SDKs in (almost) every language
+Enterprise-grade infra
+Ship with infrastructure that is built to handle trillions of events and billions of users
+Native integrations
+Access a variety of integrations with CDPs, observability tools, and other providers
+Compare Plans
+Developer
+Free
+Pro
+$150
+/mo
+Enterprise
+Custom
+Experimentation
+Core experimentation
+Multi-variate experiments
+Multi-variate experiments
+A/B/n Tests
+Bayesian & frequentist
+Bayesian & frequentist
+Support for both Bayesian and Frequentist methods
+Experiment templates & summaries
+Experiment templates & summaries
+Save experiment templates and export formatted reports
+No-code experiments
+No-code experiments
+Create experiments with a visual web editor
+Advanced experimentation features
+Custom queries
+Custom queries
+Run ad-hoc queries on experiment results to analyze new metrics or filter by specific cohorts
+Holdouts
+Holdouts
+Withhold features to measure cumulative impact
+Multi-arm bandit experiments
+Multi-arm bandit experiments
+Let Statsig pick the winning treatment using the multi-arm bandit algorithm
+Insights for metrics
+Insights for metrics
+Breakdown the impact of all experiments and features on a specific metric
+Advanced statistical techniques
+CUPED
+CUPED
+Method to reduce experiment runtime and increase accuracy with historical data
+Bonferroni Correction
+Bonferroni Correction
+Adjust for multiple comparisons
+Winsorization
+Winsorization
+Reduce the influence of outliers
+Benjamini-Hochberg procedure
+Benjamini-Hochberg procedure
+Control the false discovery rate in multiple hypothesis tests
+Automated heterogenous effect detection
+Automated heterogenous effect detection
+Identify classes of users that are differentially impacted
+Interaction effect detection
+Interaction effect detection
+Detect effects of overlapping experiments
+Stratified sampling
+Stratified sampling
+Balance heterogenous subjects across experiment groups
+Advanced test types
+Sequential testing
+Sequential testing
+Prevent early-peeking on A/B test results
+Switchback tests
+Switchback tests
+Run tests when traditional randomization isn't feasible
+Non-inferiority tests
+Non-inferiority tests
+Tests to show a treatment is not worse than a control
+Feature Management
+Core feature management features
+Feature flags
+Feature flags
+Decouple code deployment from feature release
+Dynamic configs
+Dynamic configs
+Store JSON values in a flexible, hosted config
+Parameter stores
+Parameter stores
+Store text parameters, then call them in your mobile application or web application for ease of use, localization, and more
+Rollout management
+Percentage-based rollouts
+Percentage-based rollouts
+Roll out features to any percentage of your users
+Automated, scheduled rollouts
+Automated, scheduled rollouts
+Set pre-defined stages and timelines for rollouts
+Targeting
+Attribute-based targeting
+Attribute-based targeting
+Target features based on a user's specific attributes (including dozens that are automatically generated)
+Segment-based targeting
+Segment-based targeting
+Target features to pre-defined user segments (which are shared across experimentation & analytics
+Environment-based targeting
+Environment-based targeting
+Target features to a specific environment
+Custom targeting
+Custom targeting
+Target feature to based on any custom attributes
+Impact measurement & monitoring
+Monitoring metrics
+Monitoring metrics
+Set monitoring metrics to measure the impact of a release, and prevent regressions
+Flag impact analysis
+Flag impact analysis
+Turn every release into an A/B test
+Automated alerts
+Automated alerts
+Set custom alerts to closely monitor performance regressions, bugs, errors, and more
+Flag management tooling
+Flag dashboard
+Flag dashboard
+See all your feature flags in one place, with tagging by app & environment, automated health checks, and data on number of exposures
+Stale gate management
+Stale gate management
+Get automated alerts on the presence of stale gates, plus nudges on how to clean them up
+Code references
+Code references
+See references to feature flags in your code
+Analytics
+Data
+Data Retention
+Data Retention
+Length of time we retain raw event data for you to leverage for analysis
+1 year
+Unlimited
+Unlimited (Customizable)
+Core Analytics
+Metric Drilldown
+Metric Drilldown
+Plot events and metrics over time. Drilldown for targeted analysis
+Funnels
+Funnels
+Visualize the conversion journey of users through a sequence of steps
+Retention
+Retention
+Track user engagement over time to understand how many users return to your product or feature
+User Journeys
+User Journeys
+Visualize the many paths users take through your product
+Dashboards
+Dashboards
+Save multiple charts, experiment and feature gate summaries in one place for the whole team to reference
+Group Analytics
+Group Analytics
+Measure your metrics or perform analysis at a company, account, or group level. Useful for B2B products
+Ad-Hoc Data Transformations
+Formulas
+Formulas
+Transform and combine metrics with formulas
+Statistical Operators
+Statistical Operators
+Plot averages, sums, medians, and percentiles of properties
+Distribution Analysis
+Distribution Analysis
+Analyze users by how frequently they perform an event to understand the distribution
+Custom Metrics
+Custom Metrics
+Define new metrics by combining multiple events, defining how an event is aggregated
+Organization
+Tags
+Tags
+Organize entities by associating them with custom labels
+Dashboard Tag Organization
+Dashboard Tag Organization
+Automatically create new dashboards from the tag on metrics, charts, experiments and feature gates
+Advanced Analytics
+Session Analytics
+Session Analytics
+Analyze session behavior and duration directly in Metric Explorer
+User Profiles
+User Profiles
+Store user attributes once and join them with any event during analysis
+Conversion Drivers
+Conversion Drivers
+Automatically idenfity factors impacting funnel conversion
+Behavioral Cohorts
+Behavioral Cohorts
+Define and analyze custom user segment. Base those definitions on both in product behaviors and user properties
+Experiment Based Segmentation Analysis
+Experiment Based Segmentation Analysis
+Integrate analytics with experimentation. Perform segmentation analysis on different experiment groups
+Feature Gate based Segmentation Analysis
+Feature Gate based Segmentation Analysis
+Integrate analytics with feature gates. Perform segmentation analysis on groups with different feature gate rule assignments
+Session Replays
+Web session replays
+Web session replays
+Watch recordings of user web sessions
+Mobile session replays
+Mobile session replays
+Watch recordings of mobile app sessions
+Attribute-based filtering
+Attribute-based filtering
+Filter sessions to users with specific attributes
+Behavioral filtering
+Behavioral filtering
+Filter sessions based on user behavior or events
+Entity-based filtering
+Entity-based filtering
+Watch users who are in specific treatment groups of an experiment or feature gate
+Session replay retention
+Session replay retention
+How long Statsig will store your session replays
+30 days
+30 days
+Custom
+Blocklisting & allowlisting
+Blocklisting & allowlisting
+Securely block or allow specific elements and fields to protect user privacy
+Governance
+Access Control
+Directory-based Authentication
+Directory-based Authentication
+SSO, SAML, OAUTH
+Role Based Access Control
+Role Based Access Control
+Manage access to features and experiments based on roles
+SCIM User Provisioning
+SCIM User Provisioning
+Sync users, roles and projects with Okta
+Domain Assignment
+Domain Assignment
+Enable authentication flows based on your email domain
+Projects and Teams
+Organization & Project Management
+Organization & Project Management
+Centrally manage all projects across your organization
+Multiple Projects
+Multiple Projects
+Access all features across multiple projects shared under one account
+Team-level Permissions
+Team-level Permissions
+Enforce team-level permissions for reviews and approval flows
+Change logs
+Change reverts
+Change reverts
+Enforce team-level permissions for reviews and approval flows
+Change review & approval workflow
+Platform & Integrations
+Platform
+30+ Client & Server SDKs
+30+ Client & Server SDKs
+Use our 30+ SDKs, used by tens of thousands of developers
+Massively scalable infra
+Massively scalable infra
+Leverage our enterprise-grade infra for logging, config management and more
+Support and SLAs
+Support response
+Slack Community
+Slack Community
+4 business hours
+99.95% Service SLA
+Premium support
+Premium support
+Access to a private Slack channel with a Statsig account team
+Accelerated onboarding session
+Accelerated onboarding session
+In-depth technical support for rapid onboarding
+Warehouse Native
+Warehouse-native implementation
+Warehouse-native implementation
+Deploy Statsig in your data warehouse, including Snowflake, Databricks, BigQuery, Redshift, Athena, and Fabric
+EU hosting
+EU hosting
+Support for hosting in the EU
+Managed real-time logging
+Managed real-time logging
+Managed real-time logging from SDKs directly to your warehouse
+Integrations
+Incoming data integrations
+Incoming data integrations
+Ingest data from a CDP, analytics platform, or similar tool
+Warehouse ingestion
+Warehouse ingestion
+Ingest data from a data warehouse to Statsig cloud
+Data export API
+Data export API
+Export exposure, event, and result data
+★★★★★
+Mauricio A.
+Enterprise (> 1000 emp.)
+Great product, super-responsive team
+They provide an easy to use experimentation platform that allows developers to add testing in many parts of our website, while our analysts set up the tests and take decision along with product managers based on the outcome.
+We were using a market leader but it was too rigid when we asked for new features. Statsig team was open for changes from the begining, if they were reasonable.
+★★★★★
+Leif F.
+Small Business (< 50 emp.)
+Statsig is the best experimentation tool on the planet
+Rock solid experimentation tool. Simple, yet high-powered. I use it every day. Critical tool in the day-to-day operation and development of my online software business.
+★★★★★
+Matteo H.
+Small Business (< 50 emp.)
+Everything that my startup needed for experiments and metrics
+Statsig provides out of the box all the important metrics a company need by just installing the SDK.
+With all the metrics in one easy-to-find place, Statsig then provides all the instruments to meaningfully move those metrics through experiments, making it incredibly easy to create, analyze, and rollout
+★★★★★
+Lluis U.
+Mid Market (51-1000 emp.)
+Easy to use experimentation tool
+I love Statsig UX. Setting up experiments is straightforward. The advanced options are powerful, and we defined experiments with custom exclusion criteria and mutually exclusive tests.
+The results view sums up everything essential to decide the best variant to ship. The real-time debugging panel is a friendly tool for ensuring everything is set up correctly.
+More reviews
+Testimonials
+Additional pricing resources
+How much does a feature flagging platform cost?
+A detailed cost comparison of modern feature flagging platforms, with a model you can copy.
+Learn more
+How much does an experimentation platform cost?
+We created a detailed pricing model simulator that breaks down costs across the most popular experimentation platforms.
+Learn more
+Statsig vs. Optimizely TLDR
+For teams with non-web based use cases (product, infra, etc), a website optimization platform like Optimizely may not suit their needs.
+Compare
+Compare Statsig against LaunchDarkly
+LaunchDarkly has led the feature flag industry for a decade. Those looking to do more than flip toggles may want to upgrade to a more modern platform.
+Compare
+Compare Statsig against Adobe Target
+Statsig provides a more comprehensive and usable platform for technical teams and non-engineers alike.
+Compare
+Compare Statsig against PostHog
+PostHog makes it easy to get started, but it doesn't scale with your success the way Statsig does.
+Compare
+Compare Statsig against VWO
+Statsig offers a modern, all-in-one platform for experimentation and analytics, outpacing VWO's legacy tools in scalability and advanced features.
+Compare
+Statsig vs. Eppo TLDR
+Find out why users prefer the power and support of a flexible Cloud and Warehouse Native Experimentation platform that the entire team can use.
+Compare
+Statsig vs. Split TLDR
+Split is a legacy feature flagging solution, but many users are looking for an advanced platform with modern experimentation, analytics, and more.
+Compare
+Frequently Asked Questions
+How do I get started with Statsig?
+When you first sign up for Statsig, you automatically start on Statsig’s Developer Tier, which gives you free access to gates, configs, experimentation and analytics. On this plan, you get 2 million Metered Events (see definition below) every calendar month at no charge.
+If you need more features or additional Metered Events, you can upgrade to our Pro or Enterprise tiers at any time. If you are using Statsig at scale, you can take advantage of the volume discounts offered as a part of Statsig’s Enterprise Tier.
+What is Statsig’s pricing philosophy?
+At Statsig, our pricing philosophy is to charge for features that 1) cost us money and 2) create value for our customers. Accordingly, we’ve chosen a usage-based pricing model, where users are charged for the events and exposures their applications sends to Statsig.
+A good example of this pricing philosophy is how Statsig charges for Feature Flags. We provide users with the ability to toggle the calculation for Metric Lifts associated with their rollout on or off. By default we don’t charge customers for any exposures associated with 0 or 100% roll-outs. We would only charge a customer when they’ve togggled Metric Lifts on
+and
+when the gate is a partial roll-out (meaning there are valid Metric Lift computations).
+What are metered events?
+Statsig bills customers based on the number of Metered Events they use. Metered Events are a subset of events which power analytics or metrics workflows. These workflows are compute & storage intensive.
+The following types of events/ metrics are defined as “Metered Events":
+Exposure:
+When an application calls the Statsig SDK to check whether a user should be exposed to an experiment or a feature flag with Metric Lifts enabled.
+Log event:
+When an application calls the Statsig SDK to log an event or when an event is imported to Statsig from a 3rd party source (e.g. Segment)
+Ingested metric:
+When a pre-computed metric is ingested to Statsig from from a data warehouse
+Custom metric:
+When existing events or metrics are used to create a Custom Metric
+Statsig dedupes exposure events for the same user and feature/experiment on our client SDKs (60m window; proxy for session duration) and server SDKs (1m window; proxy for user request handling).
+Experiment checks that result in no allocation (e.g. the experiment hasn’t started, or has finished) or Feature Flags that have been disabled (fully shipped or abandoned with no rule evaluation) do not generate Metered Events.
+By default, customers are able to include one event dimension (via Value field) with each log event for free. Customers are charged an additional log event for each additional dimension added.
+What happens if I exceed my free events limit?
+If you exceed the 2 million Developer Tier events limit, you’ll be shown a prompt to enter a credit card to upgrade to Statsig’s Pro tier.
+If you want to stay on the Developer tier, gate and config targeting will continue to work, but Metric Lift computations will stop. You will be sent multiple warning notifications before Metric Lifts are no longer calculated.
+What happens if I’m on the Pro Tier, and use more than 5M events per month?
+Statsig’s Pro Tier includes 5 million Metered Events per month. Once you exceed this amount, you’ll be charged $0.05 per additional 1K events used within the month billing period. This overage fee will be included in your monthly bill, which will be charged to the credit card on file.
+If you want to lower your bill, you can switch to an Enterprise plan at any point. We offer significant volume discounts to Enterprise customers, dramatically reducing costs at scale.
+Reach out to our sales team
+to learn more.
+When will Statsig charge me?
+On Statsig’s Pro tier, you will be charged a baseline fee of $150 per month at the start of each billing period. If you incur overages during a given billing period, those overages will be included in your bill for the next billing period.
+For example, if your subscription begins on January 1, you will pay a $150 fee on January 1, and on the first day of each subsequent month. If you incur overages during the month of January, the overages will be included in your February 1 bill.
+Enterprise customers are eligible for custom billing and payment terms.
+How do I monitor my usage?
+To monitor your usage, navigate to Project Settings and click on the “Usage & Billing” tab within your
+Statsig console
+. See our documentation for more details.
+How many projects can I have with a Pro subscription?
+Each pro subscription applies to one project only. You can create multiple projects but would need to upgrade them independently.
+Enterprise customers can have mutiple projects,
+contact us
+to learn more!
+How does Statsig Product Analytics integrate with the rest of the platform?
+Statsig provides full featured product analytics that can be used as stand alone solution. However, we aim to solve problems that span the product development lifecycle. A few examples that product analytics enables:
+Debug your experiments and feature gate rollouts.
+Perform segment analysis of experiment groups or feature gate rules.
+View session replays and user event streams in the context that they matter to understand the
+why
+behind user actions and experiment results.
+Monitor the long term effects of your experiments and feature rollouts.
+Correlate metric movements with feature releases
+Do I have to purchase product analytics separately?
+All tiers of Statsig includes core product analytics capabilities. On the free tier that includes our Core Product Analytics features and 1 year of data retention for analysis. On the pro-tier, Full-Featured Statsig product analytics is included at no extra cost. This includes access to all product analytics features and unlimited data retention for analysis. On the enterprise tier, we want to provide the flexibility to pick what makes the most sense for your business.
+Can I purchase Statsig Product Analytics as a standalone?
+Yes, on the enterprise tier. At Statsig our vision is to be an end-to-end data platform to help businesses build better products. On our free and pro tiers, we want to make that simple and offer a competitively priced solution that spans our product offerings. At the enterprise tier, we want to give businesses the flexibility to pick what makes sense for their specific needs, and that includes a Product Analytics only package.
+Can I move my data from other product analytics solutions?
+Today this is only available for enterprise users. We’re in the process of building out APIs that enable easy transfer of historical data into Statsig.
+Still Have Questions?
+Loved by customers at every stage of growth
+See what our users have to say about building with Statsig
+Testimonials
+"Statsig's experimentation capabilities stand apart from other platforms we've evaluated. The ease of use, simplicity of integration help us efficiently get insight from every experiment we run. Statsig's infrastructure and experimentation workflows have also been crucial in helping us scale to hundreds of experiments across hundreds of millions of users."
+Paul Ellwood
+Head of Data Engineering
+"We evaluated Optimizely, LaunchDarkly, Split, and Eppo, but
+ultimately selected Statsig due to its comprehensive end-to-end integration
+. We wanted a complete solution rather than a partial one, including everything from the stats engine to data ingestion."
+Don Browning
+SVP, Data & Platform Engineering
+"Excited to bring Statsig to Whatnot! We finally found a product that moves just as fast as we do and have been super impressed with how closely our teams collaborate."
+Rami Khalaf
+Product Engineering Manager
+"Statsig has enabled us to quickly understand the impact of the features we ship."
+Shannon Priem
+Lead PM
+"I know that we are able to impact our key business metrics in a positive way with Statsig. We are definitely heading in the right direction with Statsig."
+Partha Sarathi
+Director of Engineering
+"Working with the Statsig team feels like we're working with a team within our own company."
+Jeff To
+Engineering Manager
+"[Statsig] enables shipping software 10x faster, each feature can be in production from day 0 and no big bang releases are needed."
+Matteo Hertel
+Founder
+"Statsig has been an amazing collaborator as we've scaled. Our product and engineering team have worked on everything from advanced release management to custom workflows to new experimentation features. The Statsig team is fast and incredibly focused on customer needs - mirroring OpenAI so much that they feel like an extension of our team."
+Chris Beaumont
+Data Scientist
+"The ability to easily slice test results by different dimensions has enabled Product Managers to self-serve and uncover valuable insights."
+Preethi Ramani
+Chief Product Officer
+"We decreased our average time to decision made for A/B tests by 7 days compared to our in-house platform."
+Berengere Pohr
+Team Lead - Experimentation
+"Statsig is a powerful tool for experimentation that helped us go from 0 to 1."
+Brooks Taylor
+Data Science Lead
+"We've processed over a billion events in the past year and gained amazing insights about our users using Statsig's analytics."
+Ahmed Muneeb
+Co-founder & CTO
+"Leveraging experimentation with Statsig helped us reach profitability for the first time in our 16-year history."
+Zachary Zaranka
+Director of Product
+"Statsig enabled us to test our ideas rather than rely on guesswork. This unlocked new learnings and wins for the team."
+David Sepulveda
+Head of Data
+"Brex's mission is to help businesses move fast.
+Statsig is now helping our engineers move fast
+. It has been a game changer to automate the manual lift typical to running experiments and has helped product teams ship the right features to their users quickly."
+Karandeep Anand
+President
+"We only had so many analysts. Statsig provided the necessary tools to remove the bottleneck. I know that we are able to impact our key business metrics in a positive way with Statsig.
+We are definitely heading in the right direction with Statsig
+."
+Partha Sarathi
+Director of Engineering
+"Statsig has been a game changer for how we combine product development and A/B testing. It's made it a breeze to implement experiments with complex targeting logic and feel confident that we're getting back trusted results. It's the first commercially available A/B testing tool that feels like it was built by people who really get product experimentation."
+Joel Witten
+Head of Data
+"We realized that Statsig was investing in the right areas that will benefit us in the long-term."
+Omar Guenena
+Engineering Manager
+"Having a dedicated Slack channel and support was really helpful for ramping up quickly."
+Michael Sheldon
+Head of Data
+"Statsig takes away all the pre-work of doing experiments. It's really easy to setup, also it does all the analysis."
+Elaine Tiburske
+Data Scientist
+"We thought we didn't have the resources for an A/B testing framework, but Statsig made it achievable for a small team."
+Paul Frazee
+CTO
+"We use Statsig's analytics to bring rigor to the decision-making process across every team at Wizehire."
+Nick Carneiro
+CTO
+"We've successfully launched over 600 features behind Statsig feature flags, enabling us to ship at an impressive pace with confidence."
+Wendy Jiao
+Staff Software Engineer
+"We chose Statsig because it offers a complete solution, from basic gradual rollouts to advanced experimentation techniques."
+Carlos Augusto Zorrilla
+Product Analytics Lead
+"We have around 25 dashboards that have been built in Statsig, with about a third being built by non-technical stakeholders."
+Alessio Maffeis
+Engineering Manager
+"Statsig beats any other tool in the market. Experimentation serves as the gateway to gaining a deeper understanding of our customers."
+Toney Wen
+Co-founder & CTO
+"We finally had a tool we could rely on, and which enabled us to gather data intelligently."
+Michael Koch
+Engineering Manager
+"At Notion, we're continuously learning what our users value and want every team to run experiments to learn more. It's also critical to maintain speed as a habit.
+Statsig's experimentation platform enables both this speed and learning for us
+."
+Mengying Li
+Data Science Manager
+"At OpenAI, we want to iterate as fast as possible.
+Statsig enables us to grow, scale, and learn efficiently
+. Integrating experimentation with product analytics and feature flagging has been crucial for quickly understanding and addressing our users' top priorities."
+Dave Cummings
+Engineering Manager, ChatGPT
+"Statsig has helped accelerate the speed at which we release new features. It enables us to launch new features quickly & turn every release into an A/B test."
+Andy Glover
+Engineer
+"We knew upon seeing Statsig's user interface that it was something a lot of teams could use."
+Laura Spencer
+Chief of Staff
+"The beauty is that Statsig allows us to both run experiments, but also track the impact of feature releases."
+Evelina Achilli
+Product Growth Manager
+"Statsig is my most recommended product for PMs."
+Erez Naveh
+VP of Product
+"Statsig helps us identify where we can have the most impact and quickly iterate on those areas."
+John Lahr
+Growth Product Manager
+"With Warehouse Native, we add things on the fly, so if you mess up something during set up, there aren't any consequences."
+Jared Bauman
+Engineering Manager - Core ML
+"In my decades of experience working with vendors, Statsig is one of the best."
+Laura Spencer
+Technical Program Manager
+"Statsig is a one-stop shop for product, engineering, and data teams to come together."
+Duncan Wang
+Manager - Data Analytics & Experimentation
+"Engineers started to realize: I can measure the magnitude of change in user behavior that happened because of something I did!"
+Todd Rudak
+Director, Data Science & Product Analytics
+"For every feature we launch, Statsig saves us about 3-5 days of extra work."
+Rafael Blay
+Data Scientist
+"I appreciate how easy it is to set up experiments and have all our business metrics in one place."
+Paulo Mann
+Senior Product Manager
+We use cookies to ensure you get the best experience on our website.
+Privacy Policy
+Got it!
+Platform
+Feature Management
+Experimentation
+Data Warehouse
+Product Analytics
+Session Replay
+Marketing Experiments
+Web Analytics
+Test Drive Now
+Why Statsig
+Product Observability
+How It Works
+Build vs Buy
+Pricing
+Customer Stories
+Testimonials
+Resources
+Docs
+Code
+Blog
+Product Updates
+A/B Test Calculator
+Integrations
+Join Community
+Events
+Feedback
+Status
+Company
+About Us
+Careers
+Pets
+Terms
+Privacy Policy
+Contact Us
+© 2026 Statsig, LLC
+Hello from Bellevue, WA

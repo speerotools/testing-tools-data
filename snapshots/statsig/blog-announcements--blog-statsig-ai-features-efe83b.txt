@@ -1,0 +1,208 @@
+# https://www.statsig.com/blog/statsig-ai-features
+How we’re making Statsig smarter with AI
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+Products
+Solutions
+Resources
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Back to Blog home
+Shubham Singhal
+Product Manager, Statsig
+Kaz Haruna
+Product Manager, Statsig
+Sid Kumar
+Product Marketing, Statsig
+AI
+How we’re making Statsig smarter with AI
+Wed Jan 21 2026
+We’ve been steadily incorporating AI into key workflows in Statsig, with a simple goal: enable teams to learn and optimize even faster.
+Building a data-driven culture focused on learning and iteration takes more than a powerful stats engine. It requires bringing the entire organization along and making it easy for everyone to use experimentation tooling in a way that supports speed.
+With that in mind, we see a strong opportunity to use AI to:
+Reduce busywork and manual steps, so teams can spend less time on repetitive tasks and more time on learning and high-leverage decision-making
+Help teams adopt best practices more consistently and scale a culture of experimentation
+Democratize insights across the organization
+Below are a few key areas where we’ve already seen customers see real value:
+Better experimentation workflows, end to end
+We’re focusing on areas where a data scientist might traditionally need to review work or provide hands-on guidance to teams. Instead, we’re embedding that intelligence directly into experimentation setup and analysis workflows.
+This helps new experimenters get up to speed faster, while allowing Data teams to spend more time on high-impact work, like building strong partnerships with stakeholders and influencing key business outcomes, rather than reviewing every experiment detail.
+Experiment hypothesis advisor
+As you write a hypothesis during experiment setup, you’ll get instant feedback based on criteria like target audience, trade-offs, and expected impact. This is designed to catch common mistakes early and guide experimenters toward clearer, more testable hypotheses.
+These criteria are fully customizable, so teams can tailor guidance to their own standards and experimentation philosophy. Below is an example of the instant feedback that helps improve a hypothesis during experiment setup:
+Experiment summaries
+Statsig already generates a robust experiment summary that captures key details and can be exported as a PDF for reporting. Now, our AI automatically turns experiment results into a clear, human-readable summary that helps teams quickly share learnings with stakeholders and drive key product decisions.
+The AI summary is designed to understand the purpose of the experiment, make a ship recommendation, and highlight the most relevant metric observations. This makes it easy for anyone to quickly grasp the key findings at a glance.
+When you navigate to the Summary tab of an experiment, you’ll see the AI-generated summary option. From there, you can continue adding sections and charts to capture additional context as needed.
+Experiment search
+While the knowledge base has always supported text search to surface tribal knowledge, you can now search your experiment repository using natural language, not just free-text queries. (t
+his feature is currently available in Beta for Warehouse Native customers)
+You can questions like “find me experiments that impacted retention the most” or “have we tested using AI for support”. The new search feature will then return three of the best-matching experiments to your question.
+Cleaning up stale feature gates
+We’re also seeing AI drive real gains in developer productivity and efficiency.
+We recently introduced a
+GitHub integration
+that gives Statsig deeper context about your codebase.
+One powerful use case is identifying stale feature gates and generating a PR with a single click to clean them up—directly from the Statsig console. Cleaning up old feature gates is often deprioritized by engineers over net new features. Over time, this quietly accumulate technical debt.
+By automating stale gate detection and writing code to remove unwanted feature branches, developers can save time, maintain cleaner code, and improve application performance.
+Your browser does not support the video tag.
+Knowledge graph and the road ahead
+So far, our AI has mostly unlocked value using context from the Statsig console and our documentation. Next, we’re working on expanding that context to include your codebase to enable more powerful agentic workflows.
+Our goal is to strengthen the connection between your codebase and key Statsig entities, including feature gates, experiments, and metrics. By closing the loop between where code lives (GitHub) and where its impact is measured (Statsig), there will be richer context around the events being logged, features exposed to users, and the intent behind each gate and experiment.
+We’re excited to explore more use cases in this space. Reach out to us if you have ideas for new use cases or see opportunities to improve workflows in Statsig with AI.
+Permalink:
+https://www.statsig.com/blog/statsig-ai-features
+Interested in learning more? Subscribe to our blogs.
+Blogs of interest *
+Experimentation
+Engineering
+Please select at least one blog to continue.
+Subscribe
+Recent Posts
+EXPERIMENTATION
+PM roundtable: How do you prioritize experiments?
+Paul Morrill
+Tue Aug 11 2026
+What should you test next? Three Statsig + Amplitude PMs share the risks, impact, and statistics they weigh when picking which product experiments to run.
+EXPERIMENTATION
+Running faster tests: The basics (Part 1)
+Akhil Prakash
+Fri Jul 31 2026
+Sample size calculator says your test will take 3 months? In the 1st part of our 4-part series, here's how to run faster tests by adjusting your constraints.
+FEATURED
+STATSIG
+Rooting in customer requests | Color commentary, May–Jul 2026
+Eric Metelka
+Tue Jul 21 2026
+The story behind our recent releases follows two narratives: a governance story and an ease-of-access story. Here's why we shipped what we did.
+ENGINEERING
+Statsig MCP: Heading toward headless workflows
+Harman Kaur
+Wed Jul 15 2026
+You've been asking for more headless. Here's how it now works to take a feature gate through its full lifecycle without opening a browser tab.
+STATSIG
+Engineering roundtable: Larry Xu, Shelley Wang, Lew Gordon
+Paul Morrill
+Tue Jul 07 2026
+Meet three new Statsig + Amplitude engineering leaders and find out their takes on the future of shipping fast and safely.
+EXPERIMENTATION
+What’s the point of hypothesizing?
+Paul Morrill
+Thu Jul 02 2026
+Your experiment needs a hypothesis, and not just because the word “hypothesis” is drilled into you from day one of elementary science class. Here's why.
+We use cookies to ensure you get the best experience on our website.
+Privacy Policy
+Got it!
+Platform
+Feature Management
+Experimentation
+Data Warehouse
+Product Analytics
+Session Replay
+Marketing Experiments
+Web Analytics
+Test Drive Now
+Why Statsig
+Product Observability
+How It Works
+Build vs Buy
+Pricing
+Customer Stories
+Testimonials
+Resources
+Docs
+Code
+Blog
+Perspectives
+Comparisons
+Product Updates
+A/B Test Calculator
+Bayesian Calculator
+Power Calculator
+Integrations
+Glossary
+Developer Dictionary
+FAQs
+Join Community
+Events
+Feedback
+Status
+Company
+About Us
+Careers
+Pets
+Terms
+Privacy Policy
+Contact Us
+© 2026 Statsig, LLC
+Hello from Bellevue, WA

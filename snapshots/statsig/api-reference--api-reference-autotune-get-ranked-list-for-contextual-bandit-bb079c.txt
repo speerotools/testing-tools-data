@@ -1,0 +1,266 @@
+# https://docs.statsig.com/api-reference/autotune/get-ranked-list-for-contextual-bandit
+Get Ranked List for Contextual Bandit | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+SDK Quickstarts
+Statsig SDK Quickstart Guide
+Identify Users
+Create your first feature flag
+Run your first A/B test
+Log your first custom event
+SDK Concepts
+SDK Getting Started
+User (StatsigUser) Object
+Initializing SDKs
+How Evaluation Works
+SDK Debugging
+Client vs Server SDKs
+Data Privacy for Mobile
+Client SDKs
+Javascript (Web)
+HTML Snippet
+React
+Next.js
+Android
+iOS
+More Client SDKs
+Server SDKs
+Server Core Overview
+Node
+Python
+Java
+Go Core
+Early Access
+Ruby
+.NET
+More Server SDKs
+Legacy Server SDKs
+AI SDKs
+Early Access
+Node SDK
+Python SDK
+More SDK Methods
+Client Persistent Assignment
+Server Persistent Assignment
+Local Eval Adapter
+Server Data Stores / Data Adapter
+Target Apps
+Deprecation Notices
+SDK Support Policy
+Console API Reference
+Overview
+Alerts
+Audit Logs
+Autotunes
+Change Validation
+Company
+Configs
+Dashboards
+Dynamic Configs
+Environments
+Events
+Experiments
+Experiments (Warehouse Native)
+Gates
+Holdouts
+Ingestions
+Keys
+Layers
+Logs
+Metrics
+Metrics (Warehouse Native)
+Overrides
+Param Store
+Project
+Prompts
+Release Pipelines
+Reports
+Roles
+Segments
+Settings
+Tags
+Target App
+Unit ID Types
+Usage
+Users
+Warehouse Connections
+Statsig CLI
+Overview
+Commands
+Example: Gate Management
+HTTP API Reference
+HTTP API
+Autotune
+Get Ranked List for Contextual Bandit
+Dynamic Configs
+Events
+Experiments
+Feature Gates
+Layers
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+SDKs & APIs
+/
+Get Ranked List for Contextual Bandit
+Get Ranked List for Contextual Bandit
+Returns a ranked list of variants for a contextual multi-armed bandit (autotune) experiment. The ranking is based on predicted performance.
+Returns a ranked list of variants for a contextual multi-armed bandit (autotune) experiment. The ranking is based on predicted performance.
+post
+https://api.statsig.com
+/v1/get_ranked_list
+Try it
+Authorizations
+statsig-api-key
+string
+required
+SDK API key (Server Secret or Client SDK Key)
+Body
+application/json
+configName
+string
+required
+Name of the contextual bandit (autotune) experiment
+Constraints
+:
+min length: 2
+max length: 100
+pattern: ^[a-zA-Z0-9_\- ]+$
+user
+object
+User object containing identification and attributes for evaluation. At minimum, provide at least one identifier.
+Show child attributes
+userID
+string
+Primary user identifier
+Example
+:
+user-123
+email
+string
+User email address
+Example
+:
+user@example.com
+Constraints
+:
+format: email
+ip
+string
+User IP address for geo-targeting
+Example
+:
+192.168.1.1
+userAgent
+string
+User agent string for device/browser targeting
+Example
+:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+country
+string
+2-letter country code (ISO 3166-1 alpha-2)
+Example
+:
+US
+locale
+string
+Locale/language code
+Example
+:
+en_US
+appVersion
+string
+Application version
+Example
+:
+1.2.3
+custom
+object
+Custom user attributes for targeting (string, number, boolean, or array of strings)
+Example
+:
+{"subscription_plan":"premium","account_age_days":45,"is_beta_tester":true}
+privateAttributes
+object
+Private attributes used for evaluation but not logged to analytics
+Example
+:
+{"internal_user_id":"12345"}
+customIDs
+object
+Additional custom identifier mappings
+Example
+:
+{"companyID":"company-456","deviceID":"device-789"}
+statsigEnvironment
+object
+Environment tier for targeting
+tier
+string
+Environment tier
+Allowed values:
+production
+staging
+development
+statsigMetadata
+object
+SDK metadata for tracking SDK type, version, and other diagnostic information
+Example
+:
+{"sdkType":"js-client","sdkVersion":"4.20.0","exposureLoggingDisabled":false}
+Show child attributes
+sdkType
+string
+SDK type sending the request (e.g., js-client)
+sdkVersion
+string
+SDK version
+exposureLoggingDisabled
+boolean
+When true, prevents the HTTP API from automatically logging exposures. Use this only if you will handle exposure logging yourself.
+Response
+application/json
+200
+·
+Ranked list of variants
+value
+object[]
+Array of variants ranked by predicted performance
+Request
+Response
+Copy
+cURL
+Get Ranked List for Contextual Bandit
+curl
+-X
+POST
+"https://api.statsig.com/v1/get_ranked_list"
+\
+-H
+"Content-Type: application/json"
+\
+-H
+"statsig-api-key: YOUR_API_KEY"
+\
+-d
+'{
+"configName": "product_recommendation_bandit",
+"user": {
+"userID": "user-123"
+}
+}'
+Was this helpful?

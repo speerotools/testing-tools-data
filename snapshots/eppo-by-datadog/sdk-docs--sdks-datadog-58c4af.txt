@@ -1,0 +1,306 @@
+# https://docs.geteppo.com/sdks/datadog/
+Datadog integration | The Eppo Docs
+Skip to main content
+Webinar: How Delivery Hero Uses Switchbacks to Drive Marketplace Innovation
+Watch the recording
+here →
+Login
+Get a Demo
+Search
+Getting Started
+About Eppo
+Analysis quickstart
+SDK quickstart
+Contextual Bandit quickstart
+Switchback quickstart
+Core Concepts
+Flag and Experiment Configuration
+Data Management
+Experiment Analysis
+Contextual Bandits
+SDKs
+Introduction
+Architecture
+Concepts
+SDK keys and environments
+Event Logging
+Client SDKs
+JavaScript
+Android
+Dart & Flutter
+iOS
+React Native
+Server SDKs
+Node
+.NET
+PHP
+Python
+Java
+Go
+Rust
+Ruby
+Elixir
+Datadog integration
+Best Practices
+Eppo Developer Tools - Chrome Extension
+Using Eppo SDK with pre-forking servers
+Guides
+Introduction
+Marketing Integrations
+Engineering Tutorials
+Metadata
+Advanced Experimentation Topics
+Migrations
+Debugging Metrics
+Reference
+Statistics
+Administration
+Architecture and Security
+REST API
+Webhooks
+SDKs
+Datadog integration
+On this page
+Datadog integration
+Overview
+​
+This guide will walk through how to send Eppo feature flag assignments as RUM data to Datadog. This functionality enhances your ability to monitor user experience and performance by enabling you to identify which users are exposed to a particular feature and assess whether any introduced change impacts the user experience or degrades performance.
+Enhancing your real-user monitoring data with feature flag information allows you to verify that new features are launched smoothly, without inadvertently introducing bugs or performance regressions. This added level of visibility enables you to establish connections between feature releases and performance metrics, rapidly identify issues tied to specific releases, and expedite troubleshooting efforts.
+info
+This example assumes there is a
+feature flag
+set up in Eppo and the
+Datadog RUM SDK
+set up.
+Setup
+​
+Javascript
+iOS
+Android
+React Native
+Initialize Eppo's SDK and create an assignment logger that additionally reports feature flag evaluations to Datadog using the snippet of code shown below.
+For more information about initializing Eppo's SDK, see
+Eppo's JavaScript SDK documentation
+const
+assignmentLogger
+:
+IAssignmentLogger
+=
+{
+logAssignment
+(
+assignment
+)
+{
+datadogRum
+.
+addFeatureFlagEvaluation
+(
+assignment
+.
+featureFlag
+,
+assignment
+.
+variation
+)
+;
+}
+,
+}
+;
+await
+eppoInit
+(
+{
+apiKey
+:
+"<API_KEY>"
+,
+assignmentLogger
+,
+}
+)
+;
+Initialize Eppo's SDK and create an assignment logger that additionally reports feature flag evaluations to Datadog using the snippet of code shown below.
+For more information about initializing Eppo's SDK, see
+Eppo's iOS SDK documentation
+func
+IAssignmentLogger
+(
+assignment
+:
+Assignment
+)
+{
+RUMMonitor
+.
+shared
+(
+)
+.
+addFeatureFlagEvaluation
+(
+featureFlag
+:
+assignment
+.
+featureFlag
+,
+variation
+:
+assignment
+.
+variation
+)
+}
+let
+eppoClient
+=
+EppoClient
+(
+apiKey
+:
+"mock-api-key"
+,
+assignmentLogger
+:
+IAssignmentLogger
+)
+Initialize Eppo's SDK and create an assignment logger that additionally reports feature flag evaluations to Datadog using the snippet of code shown below.
+For more information about initializing Eppo's SDK, see
+Eppo's Android SDK documentation
+AssignmentLogger
+logger
+=
+new
+AssignmentLogger
+(
+)
+{
+@Override
+public
+void
+logAssignment
+(
+Assignment
+assignment
+)
+{
+GlobalRumMonitor
+.
+get
+(
+)
+.
+addFeatureFlagEvaluation
+(
+assignment
+.
+getFeatureFlag
+(
+)
+,
+assignment
+.
+getVariation
+(
+)
+)
+;
+}
+}
+;
+EppoClient
+eppoClient
+=
+new
+EppoClient
+.
+Builder
+(
+)
+.
+apiKey
+(
+"YOUR_API_KEY"
+)
+.
+assignmentLogger
+(
+logger
+)
+.
+application
+(
+application
+)
+.
+buildAndInit
+(
+)
+;
+Initialize Eppo's SDK and create an assignment logger that additionally reports feature flag evaluations to Datadog using the snippet of code shown below.
+For more information about initializing Eppo's SDK, see
+Eppo's React native SDK documentation
+const
+assignmentLogger
+:
+IAssignmentLogger
+=
+{
+logAssignment
+(
+assignment
+)
+{
+DdRum
+.
+addFeatureFlagEvaluation
+(
+assignment
+.
+featureFlag
+,
+assignment
+.
+variation
+)
+;
+}
+,
+}
+;
+await
+eppoInit
+(
+{
+apiKey
+:
+"<API_KEY>"
+,
+assignmentLogger
+,
+}
+)
+;
+For more information, read Datadog's
+Getting Started with Feature Flag Data in RUM documentation.
+You can
+install Eppo's Datadog integration here
+Edit this page
+Previous
+Assignments
+Next
+Where to assign
+Overview
+Setup
+Links
+Eppo
+Blog
+Eppo application
+Product updates
+Reference
+API reference
+Security
+Copyright © 2026 Eppo, Inc.

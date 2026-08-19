@@ -1,0 +1,637 @@
+# https://github.com/absmartly
+A/B Smartly · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+A/B Smartly
+A/B Smartly - Your A/B Testing Platform
+23
+followers
+https://www.absmartly.com
+@absmartly
+sdk@absmartly.com
+Overview
+Repositories
+Projects
+Packages
+People
+More
+Overview
+Repositories
+Projects
+Packages
+People
+README.md
+ABsmartly
+🚀 The Most Developer-Friendly A/B Testing Platform
+🎯 What is ABsmartly?
+ABsmartly is a powerful, developer-centric A/B testing and feature flagging platform that enables teams to run experiments at scale. Built by developers for developers, it provides the tools and infrastructure needed to make data-driven decisions with confidence.
+✨ Key Features
+🔬 Advanced Experimentation
+Run complex multivariate tests with statistical rigor
+⚡ Real-Time Results
+See experiment results update in real-time
+🛡️ Feature Flags
+Deploy features safely with powerful targeting
+📊 Statistical Engine
+Bayesian statistics for accurate results
+🔌 Easy Integration
+SDKs for all major languages and frameworks
+🎨 Visual Editor
+No-code experiment creation for marketers
+🛠️ Open Source Projects
+Core SDKs
+SDK
+Description
+Stars
+Android SDK
+Native Android SDK
+Angular SDK
+Angular integration
+C++ SDK
+Native C++ SDK
+.NET SDK
+C# and .NET SDK
+Elixir SDK
+Elixir SDK
+Flutter SDK
+Flutter / Dart SDK
+Go SDK
+Official Go SDK
+Java SDK
+Official Java SDK for ABsmartly
+JavaScript SDK
+Browser and Node.js SDK
+Kotlin SDK
+Kotlin SDK
+Liquid SDK
+Liquid templating SDK
+PHP SDK
+PHP SDK for server-side experiments
+Python SDK
+Python SDK for ABsmartly
+React SDK
+React hooks and components
+Ruby SDK
+Official Ruby SDK
+Rust SDK
+Rust SDK for A/B testing and feature flagging
+Scala SDK
+Official Scala SDK
+Swift SDK
+iOS and macOS SDK
+TypeScript SDK
+Typed SDK for JavaScript/TypeScript
+Vue 2 SDK
+Vue 2 SDK with plugin support
+Vue 3 SDK
+Vue 3 SDK
+Developer Tools
+Tool
+Description
+Stars
+CLI
+TypeScript command-line interface for ABsmartly
+MCP Server
+Model Context Protocol server for AI agents
+Browser Extension
+Visual experiment creation & debugging
+SDK Plugins
+Shared plugins for ABsmartly SDKs
+DOM Tracker
+Standalone DOM analytics tracking library
+Integrations
+Integration
+Description
+Stars
+Segment
+ABsmartly ↔ Segment integration
+Managed Component
+WebCM / Managed Component for ABsmartly
+🚀 Quick Start
+1. Install an SDK
+#
+JavaScript/TypeScript
+npm install @absmartly/javascript-sdk
+#
+Python
+pip install absmartly
+#
+Go
+go get github.com/absmartly/go-sdk
+2. Initialize the SDK
+import
+{
+ABsmartly
+}
+from
+'@absmartly/javascript-sdk'
+;
+const
+absmartly
+=
+new
+ABsmartly
+(
+{
+endpoint
+:
+'https://your-instance.absmartly.io/v1'
+,
+apiKey
+:
+'YOUR_API_KEY'
+,
+application
+:
+'your-app'
+,
+environment
+:
+'production'
+}
+)
+;
+3. Create an Experiment
+const
+context
+=
+absmartly
+.
+createContext
+(
+{
+units
+:
+{
+userId
+:
+'user-123'
+,
+sessionId
+:
+'session-456'
+}
+}
+)
+;
+const
+treatment
+=
+context
+.
+getTreatment
+(
+'homepage-hero-test'
+)
+;
+if
+(
+treatment
+===
+1
+)
+{
+// Show variant A
+}
+else
+{
+// Show variant B
+}
+📈 Why Choose ABsmartly?
+For Developers 👨‍💻
+Type-safe SDKs
+with excellent IDE support
+Flexible targeting
+with custom attributes
+Webhook integrations
+for CI/CD pipelines
+REST API
+for complete control
+For Product Teams 📊
+Visual experiment builder
+- no code required
+Real-time analytics
+with confidence intervals
+Audience segmentation
+and targeting
+Collaborative workflows
+with approval processes
+For Data Scientists 🔬
+Bayesian statistics
+for accurate decision-making
+Sequential testing
+to reduce sample sizes
+Custom metrics
+and goal tracking
+Raw data exports
+for advanced analysis
+🤝 Contributing
+We welcome contributions to all our open-source projects! Check out our
+Contributing Guidelines
+to get started.
+Ways to Contribute
+🐛 Report bugs and issues
+💡 Suggest new features
+📖 Improve documentation
+🔧 Submit pull requests
+📚 Resources
+📖
+Documentation
+- Complete guides and API references
+📝
+Blog
+- Best practices and case studies
+🎥
+Video Tutorials
+- Step-by-step guides
+🏢 About ABsmartly
+ABsmartly is trusted by leading companies worldwide to power their experimentation programs. Our platform handles billions of events monthly, enabling teams to make confident, data-driven decisions.
+Ready to accelerate your experimentation?
+Website
+•
+Documentation
+•
+Blog
+•
+Twitter
+•
+LinkedIn
+© 2024 ABsmartly. Built with ❤️ for developers and data teams.
+Popular repositories
+Loading
+javascript-sdk
+javascript-sdk
+Public
+A/B Smartly Javascript SDK
+JavaScript
+7
+6
+Tmux-Orchestrator
+Tmux-Orchestrator
+Public
+AI-powered tmux session orchestrator for managing multiple Claude agents across development projects
+Shell
+4
+3
+vue2-sdk
+vue2-sdk
+Public
+A/B Smartly Vue 2 SDK
+JavaScript
+3
+java-sdk
+java-sdk
+Public
+AB Smartly Java SDK
+Java
+3
+1
+react-sdk
+react-sdk
+Public
+TypeScript
+3
+4
+php-sdk
+php-sdk
+Public
+A/B Smartly php-sdk
+PHP
+2
+1
+Repositories
+Loading
+Type
+Select type
+All
+Public
+Sources
+Forks
+Archived
+Mirrors
+Templates
+Language
+Select language
+All
+C#
+Dart
+Elixir
+Go
+HTML
+Java
+JavaScript
+Kotlin
+PHP
+Python
+Ruby
+Rust
+Scala
+Shell
+Swift
+TypeScript
+Sort
+Select order
+Last updated
+Name
+Stars
+Showing 10 of 41 repositories
+docs
+Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/docs's past year of commit activity
+JavaScript
+1
+0
+0
+19
+Updated
+Aug 18, 2026
+mcp
+Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/mcp's past year of commit activity
+TypeScript
+0
+1
+0
+15
+Updated
+Aug 18, 2026
+cli
+Public
+ABsmartly CLI tool for managing experiments and feature flags
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/cli's past year of commit activity
+TypeScript
+0
+MIT
+0
+0
+1
+Updated
+Aug 14, 2026
+ab-testing-simulations
+Public
+Reproducible simulations of Bayesian A/B testing claims
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/ab-testing-simulations's past year of commit activity
+JavaScript
+0
+0
+0
+0
+Updated
+Jul 28, 2026
+absmartly-managed-component
+Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/absmartly-managed-component's past year of commit activity
+TypeScript
+0
+0
+0
+3
+Updated
+Jul 28, 2026
+cross-sdk-tests
+Public
+Cross-SDK integration test framework for ABsmartly SDKs
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/cross-sdk-tests's past year of commit activity
+Python
+0
+0
+0
+4
+Updated
+Jul 22, 2026
+java-sdk
+Public
+AB Smartly Java SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/java-sdk's past year of commit activity
+Java
+3
+Apache-2.0
+1
+0
+4
+Updated
+Jul 16, 2026
+rust-sdk
+Public
+ABsmartly SDK for Rust - A/B testing and feature flagging
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/rust-sdk's past year of commit activity
+Rust
+0
+0
+0
+5
+Updated
+Jul 15, 2026
+python3-sdk
+Public
+A/B Smartly Python3 SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/python3-sdk's past year of commit activity
+Python
+1
+MIT
+1
+0
+4
+Updated
+Jul 14, 2026
+kotlin-sdk
+Public
+ABsmartly Kotlin SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/kotlin-sdk's past year of commit activity
+Kotlin
+0
+0
+0
+2
+Updated
+Jul 14, 2026
+View all repositories
+People
+Top languages
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Most used topics
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

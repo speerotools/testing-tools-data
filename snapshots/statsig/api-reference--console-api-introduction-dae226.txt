@@ -1,0 +1,154 @@
+# https://docs.statsig.com/console-api/introduction
+Console API Overview | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+SDK Quickstarts
+Statsig SDK Quickstart Guide
+Identify Users
+Create your first feature flag
+Run your first A/B test
+Log your first custom event
+SDK Concepts
+SDK Getting Started
+User (StatsigUser) Object
+Initializing SDKs
+How Evaluation Works
+SDK Debugging
+Client vs Server SDKs
+Data Privacy for Mobile
+Client SDKs
+Javascript (Web)
+HTML Snippet
+React
+Next.js
+Android
+iOS
+More Client SDKs
+Server SDKs
+Server Core Overview
+Node
+Python
+Java
+Go Core
+Early Access
+Ruby
+.NET
+More Server SDKs
+Legacy Server SDKs
+AI SDKs
+Early Access
+Node SDK
+Python SDK
+More SDK Methods
+Client Persistent Assignment
+Server Persistent Assignment
+Local Eval Adapter
+Server Data Stores / Data Adapter
+Target Apps
+Deprecation Notices
+SDK Support Policy
+Console API Reference
+Overview
+Alerts
+Audit Logs
+Autotunes
+Change Validation
+Company
+Configs
+Dashboards
+Dynamic Configs
+Environments
+Events
+Experiments
+Experiments (Warehouse Native)
+Gates
+Holdouts
+Ingestions
+Keys
+Layers
+Logs
+Metrics
+Metrics (Warehouse Native)
+Overrides
+Param Store
+Project
+Prompts
+Release Pipelines
+Reports
+Roles
+Segments
+Settings
+Tags
+Target App
+Unit ID Types
+Usage
+Users
+Warehouse Connections
+Statsig CLI
+Overview
+Commands
+Example: Gate Management
+HTTP API Reference
+HTTP API
+Autotune
+Dynamic Configs
+Events
+Experiments
+Feature Gates
+Layers
+On this page
+Base URL
+Authorization
+Rate limiting
+API version
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+SDKs & APIs
+/
+Console API Overview
+Console API Overview
+Introduction to the Statsig Console API for programmatically managing feature gates, experiments, dynamic configs, metrics, and project settings.
+The Console API is the CRUD API for performing the actions available on console.statsig.com without using the web UI.
+If you have feature requests, post them in the
+Slack channel
+.
+Base URL
+https://statsigapi.net
+Authorization
+All requests must include the
+STATSIG-API-KEY
+field in the header. The value should be a
+Console API Key
+, which you can create in the Project Settings on
+console.statsig.com/api_keys
+Rate limiting
+Mutation requests (POST/PATCH/PUT/DELETE) to the Console API are limited to ~ 100 requests / 10 seconds and ~ 900 requests / 15 minutes, per project.
+API version
+Statsig versions the Console API. Statsig guarantees that each version won't break existing usage; each new version introduces breaking changes. There is only one version:
+20240601
+. Statsig keeps the
+OpenAPI spec
+for this API version up-to-date.
+Pass the version in the
+STATSIG-API-VERSION
+field in the header. This field is optional but becomes required in the future.
+Was this helpful?
+On this page
+Base URL
+Authorization
+Rate limiting
+API version

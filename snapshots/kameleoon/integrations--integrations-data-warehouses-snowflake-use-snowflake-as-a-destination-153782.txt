@@ -1,0 +1,220 @@
+# https://help.kameleoon.com/integrations/data-warehouses/snowflake/use-snowflake-as-a-destination
+Using Snowflake as a destination - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Snowflake
+Using Snowflake as a destination
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Integrations
+Integrations overview
+As a destination
+As a source
+CMS e-commerce
+Data warehouses
+Amazon Redshift
+Bigquery
+Databricks
+Snowflake
+Setting up Snowflake
+Using Snowflake as a destination
+Use Snowflake as a source — audience targeting
+Using Snowflake as a source — pulling events for reporting
+Target your imported audiences
+English
+On this page
+Activate Snowflake as a destination
+What “Use Snowflake as a destination” does
+Snowflake
+Using Snowflake as a destination
+Copy page
+Copy page
+Send Kameleoon experiment exposure events to Snowflake to centralize campaign results and analyze them alongside your existing data.
+Copy page
+Copy page
+Provide the credentials using the
+Key-Pair
+authentication option, not the
+Password
+option.
+​
+Activate Snowflake as a destination
+Once you have
+enabled the Snowflake integration for your project
+, you can activate
+Use Snowflake as a destination
+to send the results of your Kameleoon campaigns to Snowflake.
+To do so, follow these steps:
+Within the selected project’s configuration, you’ll find a section labeled
+Use Snowflake as a destination
+. Click this section.
+Provide the Snowflake project ID associated with your Google Snowflake project
+Click
+Validate
+to save and apply your configuration settings.
+​
+What “Use Snowflake as a destination” does
+Enabling
+Use Snowflake as a destination
+sends Kameleoon’s selected events to Snowflake.
+Kameleoon saves the events in the
+KAMELEOON_EVENTS
+schema of the
+KAMELEOON
+database you created, with write access for the user you created for Kameleoon during setup. Snowflake supports three event types, each stored in its own table.
+Kameleoon stores experiment exposure events in
+kameleoon_experiment_event
+:
+CREATE
+TABLE
+kameleoon_experiment_event
+(
+nonce
+BIGINT
+PRIMARY KEY
+,
+-- unique identifier of the event
+timestamp
+BIGINT
+,
+-- timestamp in millis of the event
+visitor_code
+VARCHAR
+(
+255
+),
+-- Kameleoon visitor identifier
+custom_visitor_id
+VARCHAR
+(
+255
+),
+-- visitor identifier used by your company
+experiment_id
+BIGINT
+,
+-- Kameleoon id of the experiment
+variation_id
+BIGINT
+-- Kameleoon id of the variation
+);
+Kameleoon stores conversion events in
+kameleoon_conversion_event
+:
+CREATE
+TABLE
+kameleoon_conversion_event
+(
+nonce
+BIGINT
+PRIMARY KEY
+,
+-- unique identifier of the event
+timestamp
+BIGINT
+,
+-- timestamp in millis of the event
+visitor_code
+VARCHAR
+,
+-- Kameleoon visitor identifier
+custom_visitor_id
+VARCHAR
+,
+-- visitor identifier used by your company
+goal_id
+BIGINT
+,
+-- Kameleoon id of the goal
+revenue
+FLOAT
+,
+-- revenue associated with the conversion
+negative
+BOOLEAN
+,
+-- negative set to true means that this event cancels a previous conversion
+metadata_id_to_values
+OBJECT
+-- map of goal metadata IDs to the set of values taken by that metadata
+);
+Kameleoon stores custom data events in
+kameleoon_custom_data_event
+:
+CREATE
+TABLE
+kameleoon_custom_data_event
+(
+nonce
+BIGINT
+PRIMARY KEY
+,
+-- unique identifier of the event
+timestamp
+BIGINT
+,
+-- timestamp in millis of the event
+visitor_code
+VARCHAR
+(
+255
+),
+-- Kameleoon visitor identifier
+custom_visitor_id
+VARCHAR
+(
+255
+),
+-- visitor identifier used by your company
+index
+BIGINT
+,
+-- index of the custom data
+count_by_value
+OBJECT
+,
+-- map of values taken by this custom data to their occurrence counts
+overwrite
+BOOLEAN
+,
+-- whether the value overwrites previous data within the session
+mapping_identifier
+BOOLEAN
+-- whether the index uses a mapping identifier
+);
+Kameleoon populates the
+custom_visitor_id
+field from the Cross Device Reconciliation custom data, if you set it.
+Kameleoon enables experiment exposure events by default. Conversion and custom data event collection are a new feature subject to change. They aren’t configurable via the UI. To activate them, contact the Kameleoon support team.
+Was this page helpful?
+Yes
+No
+Setting up Snowflake
+Previous
+Use Snowflake as a source — audience targeting
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

@@ -1,0 +1,380 @@
+# https://docs.uniform.app/docs/guides/ai/mcp-server
+Uniform MCP server | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Uniform MCP server
+The Uniform MCP server exposes tools that let an external
+MCP client
+— Cursor, Claude Code, GitHub Copilot, Windsurf, Claude Desktop, and others — manage your Uniform project. If you are new to MCP, see the
+Model Context Protocol introduction
+.
+Uniform MCP server vs external MCP servers
+These are two different things that work in opposite directions:
+The
+Uniform MCP server
+(this page) exposes
+tools to manage Uniform from your AI assistant
+(Cursor, Claude Code, etc.).
+External MCP servers
+bring third-party tools (Linear, Notion, GitHub, ...)
+into Scout
+, inside Uniform.
+If you want Cursor to talk to Uniform, you want the Uniform MCP server. If you want Scout to talk to Linear, you want an external MCP server.
+AI credits required
+Tools that call an LLM — such as searching, creating, editing, and duplicating compositions, entries, patterns, components, and content types, or running translations — require
+AI credits
+in your Uniform team. Pure read tools do not consume credits.
+If you have already used all your existing credits you can
+request additional credits
+.
+Pair the MCP server with Uniform AI rules
+The Uniform MCP server exposes tools — it doesn't explain what Uniform is, what its entities are, or how they relate. To get good results, pair it with the
+Uniform AI rules
+so your assistant has the conceptual context it needs to use the tools well.
+What you can do
+#
+Once connected, your AI assistant can do things like:
+"Create a hero component with a title and a rich-text description field."
+"Find every composition that references the
+Hero
+pattern."
+"Duplicate this entry, rename it, and translate it to
+fr-FR
+."
+"What's pending in the next release?"
+"Re-read the latest content type definitions before we make changes."
+"List the locales configured in this project."
+"Import
+https://example.com/hero.png
+into the asset library, generate a title and description, and label it."
+"Create a
+Product type
+asset label group with
+apparel
+,
+footwear
+, and
+accessories
+labels, then apply the right one to each of these product images."
+Supported tools
+#
+The Uniform MCP server exposes 30+ tools across these categories:
+Content
+— compositions, entries, and translations
+Assets
+— assets and asset labels
+Structure
+— patterns, component and content type definitions, and the project map
+Releases
+— release contents and scheduling
+Classification
+— signals, quirks, aggregates, and enrichments
+Optimization
+— optimization and personalization data
+Utilities
+— locales, environment lookup, docs Q&A, and UUIDs
+MCP changes apply immediately
+Unlike
+Scout
+, which can stage asset and label changes as pending edits for review, the Uniform MCP server applies changes directly. Review results in your Uniform project afterward.
+How to get started
+#
+You will need a team admin access level to your Uniform project to get started.
+CLI installation (recommended)
+#
+The easiest way to set up the Uniform MCP server is to use the Uniform CLI. The CLI supports
+cursor
+,
+claude
+,
+copilot
+, and
+other
+(writes a generic
+mcp.json
+you can paste into any client):
+npx @uniformdev/cli@latest ai mcp install
+Copy
+Copied!
+This command will automatically configure the MCP server for your project. Follow the prompts to enter your Uniform project details and pick the agent you want to install for.
+Manual setup
+#
+If you prefer to set up the MCP server manually or need a custom configuration, follow the instructions below.
+1. Get your MCP server details
+#
+Go to your team's
+Security > Service Accounts
+section (or
+Security > Personal Access Tokens
+to use a
+personal access token
+).
+Create a new service account or personal access token with the
+Developer
+role assigned to your project.
+Click on the chevron icon next to
+"Copy as .env"
+and select "Copy as mcp json" option.
+Create MCP json
+Treat your `mcp.json` like a secret
+The
+Developer
+role key has write access to the project. Do not commit
+mcp.json
+(or any file containing the key) to source control — add it to your
+.gitignore
+. If a key is leaked,
+revoke it
+and issue a new one.
+2. Configure your MCP client
+#
+Create a
+mcp.json
+file with the configuration for your chosen transport method. The location of this file depends on your MCP client. For example, in Cursor, create a
+mcp.json
+in the
+.cursor
+folder within the root of your project.
+The endpoint URL depends on your team's region — see
+Regions and data residency
+. The snippets below render the right URL for your selected region.
+HTTP transport (recommended)
+#
+The HTTP transport connects directly to the official Uniform MCP server. This is the recommended approach because it:
+Requires no local dependencies or installation.
+Is always running the latest version of the Uniform MCP server.
+Works with web-based MCP hosts like
+v0.dev
+and
+n8n
+that cannot run local processes.
+{ "mcpServers": { "Uniform": { "url": "https://ai.uniform.global/projects/<project-id>/mcp", "headers": { "x-api-key": "<api-key>" } } } }
+Copy
+Copied!
+Replace
+<project-id>
+with your Uniform project ID and
+<api-key>
+with the API key you created in the previous step.
+Paste the JSON you copied in the previous step into the
+mcp.json
+file.
+Afterwards, Cursor will prompt you to add the MCP server to your project:
+Add MCP server
+3. Verify the Uniform MCP server is running
+#
+This also depends on your MCP client. In Cursor, open Cursor Settings, go to
+Tools & Integrations
+, and see the Uniform MCP server.
+The icon should be green if the MCP server is running.
+MCP server in Cursor settings
+For Claude Code, you can add
+mcp.json
+to the root of your project or add it via the Claude command line (see
+docs
+for more). Check the official documentation of your MCP client for more details.
+To confirm the server is talking to the right project, ask your AI client:
+Use getUniformEnvironment to tell me which Uniform project I'm connected to.
+Copy
+Copied!
+4. Use your MCP server
+#
+Now you can test the MCP server by running the following command in your MCP client prompt:
+create a hero component with title and description field (rich text).
+Copy
+Copied!
+Voila! You should see something similar to this reply:
+MCP server in Cursor
+This indicates that Cursor called
+mutateComponent
+and inspected the payload as well as the response:
+MCP server response in Cursor
+Now, if you open your Uniform project's component library, you should see the new component you just created:
+New component created.
+5. Remove or revoke access
+#
+To stop using the Uniform MCP server, do both of the following:
+Remove the
+Uniform
+entry from
+mcp.json
+(or delete the file if it only contains that entry) and restart your MCP client so it drops the tools.
+Revoke the service account or personal access token under your team's
+Security
+section. This is the only way to make sure the key cannot be used again, even if a copy of
+mcp.json
+was leaked.
+Troubleshooting
+#
+Symptom
+Likely cause and fix
+Tools don't appear in your client.
+Restart the client after editing
+mcp.json
+. In Cursor, open
+Cursor Settings → Tools & Integrations
+and check the server status; the icon should be green.
+401 Unauthorized
+or "invalid API key".
+The key is wrong, was revoked, or belongs to a different region. Re-copy the key from your team's
+Security
+section and confirm the URL matches your team's
+region
+.
+403 Forbidden
+on a write tool.
+The credential's role does not have access to the project, or lacks permissions for that entity. Use a key with the
+Developer
+role assigned to the right project.
+404 Not Found
+from the MCP endpoint.
+The
+<project-id>
+in the URL is wrong, or the URL points at the wrong region. Double-check both.
+Tool call returns "out of AI credits".
+Your team's monthly credits are exhausted. Wait for the next monthly allocation or
+request additional credits
+.
+Stale data after dashboard edits.
+Your client is caching tool results. Ask your AI to re-read the entity (
+readContent
+,
+getDefinition
+, ...) before making more changes.
+Best practices using the MCP server
+#
+Follow these best practices to achieve reliable, high-quality results when working with the MCP server:
+Add AI rules to enhance your dev experience
+#
+By default, LLM's knowledge of Uniform will be limited to what was indexed by LLM using the public internet and subject to the cutoff date.
+It is highly recommended that you feed uniform-specific AI rules into your LLM context to enhance your prompting with the latest knowledge of Uniform.
+You can head over to the
+AI rules
+guide to learn how to use AI rules to enhance your dev experience.
+Regularly sync and commit to version control
+#
+After making structural changes through the MCP server, use the
+sync command
+to ensure your local project files stay up to date. Our
+AI rules
+provide instructions on maintaining regular synchronization.
+Once you have synced your project, you should regularly commit your exported Uniform files to Git. This will give you a clear history of updates over time and make it easy to roll back changes if needed.
+Reload Uniform entities in the MCP before making changes
+#
+If you have made updates to Uniform entities such as components or content types directly in the Uniform dashboard, make sure to ask the MCP to reload the latest version before proceeding with any additional changes. This will keep the AI's context up to date and help prevent overwriting recent updates.
+Use precise prompts and break down complex tasks
+#
+Provide clear, specific prompts instead of broad, ambiguous requests. For complex workflows, break them down into smaller, focused tasks that the AI can handle more accurately. Many AI-assisted editors include planning features that help decompose large tasks into manageable steps. Use these tools to create a structured approach before making changes through the MCP server. Keep chats concise and focused on the current task. Start new chats to clear context when starting a new task.
+Always review results in Uniform
+#
+After the AI creates or modifies components, content types, or other entities through the MCP server, review the results in your Uniform project. AI assistants can misinterpret instructions or make mistakes, so it's important to verify that the generated structures match your expectations before using them in production.
+Combine different MCP servers for more complex tasks
+#
+You can use multiple MCP servers together to handle specialized tasks in your workflow.
+For example:
+Figma MCP
+: generate React components from Figma designs
+Context7 MCP
+: query up-to-date documentation for code libraries
+Storybook MCP
+: retrieve information about components in your design system
+Manage your active MCP tools
+AI editors support only a limited number of MCP tools at the same time, so you may need to enable or disable specific MCP servers based on what you're trying to accomplish.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+AI quick edits
+Next
+AI rules
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+What you can do
+Supported tools
+How to get started
+CLI installation (recommended)
+Manual setup
+1. Get your MCP server details
+2. Configure your MCP client
+HTTP transport (recommended)
+3. Verify the Uniform MCP server is running
+4. Use your MCP server
+5. Remove or revoke access
+Troubleshooting
+Best practices using the MCP server
+Add AI rules to enhance your dev experience
+Regularly sync and commit to version control
+Reload Uniform entities in the MCP before making changes
+Use precise prompts and break down complex tasks
+Always review results in Uniform
+Combine different MCP servers for more complex tasks

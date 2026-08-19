@@ -1,0 +1,727 @@
+# https://www.growthbook.io/pricing
+Predictable Pricing – Free Tiers, Enterprise Plans | GrowthBook
+Webinar - Aug 20 | How The Philadelphia Inquirer Scales Experimentation →
+Join us live
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+Why migrate from Statsig to GrowthBook
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Releases
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+Learn faster with predictable pricing
+Compare GrowthBook pricing plans from free to enterprise on cloud or self-hosted.
+Cloud
+Self-Hosted
+Starter
+For individuals or small teams to launch features and experiment quickly.
+Free
+No credit card required
+Up to 3 users
+1 project
+Unlimited feature flags
+Unlimited experiments
+Unlimited traffic
+Start for Free
+Get Started with:
+Bring your own warehouse
+Managed warehouse option
+Default environments
+Community support
+Pro
+For small and mid-sized teams with advanced statistics and analytics.
+$40
+/ seat / month
+Up to 50 users
+3 projects
+Unlimited feature flags
+Unlimited experiments
+Unlimited traffic
+Become a Pro
+Starter, plus:
+Visual editor
+Multi-arm bandits
+Safe rollouts
+Customizable dashboards
+Advanced permissioning
+Power calculator
+Premium support
+Enterprise
+For teams running experimentation and releasing features at scale.
+Custom
+‍
+Pricing tailored to your scale and licensing requirements
+Contact Us
+Pro, plus:
+Custom environments
+Ramp schedules
+Approval workflows
+Advanced access control
+SSO & SCIM provisioning
+Exportable audit logs
+99.99% uptime SLAs
+Optimizations for large datasets
+Dedicated support & training
+GrowthBook Managed Warehouse
+Skip the setup. Start learning.
+No need to connect your data warehouse.
+Get Started
+Compare Cloud Plans
+Unleash a culture of experimentation across your organization
+Starter
+Free
+Create an Account
+Pro
+$40 / seat / month
+Create an Account
+Enterprise
+Custom
+Contact Us
+Data
+Bring Your Own Warehouse
+Managed Warehouse
+Event Forwarder
+-
+AI
+GrowthBook AI
+Limited Included Usage
+5x Usage Limits
+Custom Limits
+Bring Your Own LLM Provider
+-
+-
+Experimentation
+Base Experimentation
+Experiments (A/B Tests)
+Unlimited
+Unlimited
+Unlimited
+Feature Flag Experiment
+AI Visual Editor
+-
+Split URL Tests
+-
+Advanced Experimentation & Statistical Methods
+Multi-arm Bandits
+-
+Sticky Bucketing
+-
+Custom Experiment Fields & Metadata
+-
+-
+Sample Ratio Mismatch Detection
+Bayesian
+Frequentist
+Sequential Testing
+-
+CUPED / Variance Reduction
+-
+Post-stratification
+-
+-
+Multiple Testing Corrections
+Experiment Lifecycle Management
+Shareable Reports
+Experiment Presentation
+Experiment History & Audit Log
+Decision Framework
+-
+Power Calculator
+-
+Experiment Templates
+-
+-
+Holdouts
+-
+-
+Custom Pre-launch Checklists
+-
+-
+Custom Experiment Dashboards
+-
+-
+Insights Dashboard
+Insights Learnings
+Scaled Impact
+-
+-
+Feature Management
+Base Feature Management
+Feature Flags
+Unlimited
+Unlimited
+Unlimited
+Remote Configuration
+Rollout Management
+Percentage Rollout
+Instant Kill Switch
+Advanced Targeting
+Scheduled Feature Flags
+-
+Safe Rollout (w/ Auto-rollback)
+-
+Ramp Schedule
+-
+-
+Prerequisite Targeting (Top-level)
+-
+Prerequisite Targeting (Advanced)
+-
+-
+Flag Lifecycle Management
+Stale Flag Management
+Flag Archiving
+Flag Change History & Audit Log
+Code References
+-
+Feature Value Simulation
+-
+-
+Flag Approval Workflows
+-
+-
+JSON Schema & Validation
+-
+-
+Product Analytics
+Base Analytics
+Metric Explorer
+Fact Table Explorer
+Data Source Explorer
+Custom SQL Explorer
+Advanced Analytics & Reporting
+AI Data Analyst (beta)
+Custom Private Dashboards
+-
+Custom Shared Dashboards
+-
+-
+Funnel Builder
+-
+Metrics
+Metrics
+Proportion Metrics
+Mean Metrics
+Ratio Metrics
+-
+Funnel Metrics
+-
+Retention Metrics
+-
+Quantile Metrics
+-
+Metric Groups
+-
+-
+Metric Slices
+-
+-
+Platform & Infrastructure
+Caching & Delivery
+CDN Requests
+1M/mo
+2M/mo (then $10/M)
+Custom
+CDN Bandwidth
+5GB/mo
+20GB/mo (then $1/GB)
+Custom
+GrowthBook Proxy Server
+Self-hosted CDN / Cache Layer
+SDK Streaming Updates (Real-time)
+Performance & Reliability
+Local Evaluation
+Remote Evaluation
+-
+Pipeline Mode
+-
+-
+Integrations & API
+24+ SDKs
+Slack Integration
+Native Integrations
+MCP Server
+Agent Skills
+REST API
+Webhooks
+Governance & Security
+Audit & Compliance
+SOC 2 Type II, GDPR, COPPA, CCPA
+Encrypted SDK Endpoints
+-
+BAA
+-
+-
+Available
+Exportable Audit Logs
+-
+-
+Access Control
+SSO
+Google Only
+Google Only
+Custom OIDC
+Advanced Permissioning
+-
+Custom Roles
+-
+-
+"No Access" Roles
+-
+-
+Team Permissioning
+-
+-
+SCIM Provisioning
+-
+-
+Support & SLAs
+Support
+Community Support
+Live In-App (Premium Support)
+-
+Email (Premium Support)
+-
+Dedicated Team Support Channel
+-
+-
+Onboarding & Training
+-
+-
+Roadmap Acceleration
+-
+-
+Available
+SLAs
+99.99% Uptime SLA
+First Response Time (Outage)
+-
+1 business day
+1 hour
+First Response Time (Degraded)
+-
+1 business day
+2 hours
+Open Source
+Launch feature flags and experiments easily.
+Free
+No credit card required
+1 project
+Unlimited feature flags
+Unlimited experiments
+Unlimited traffic
+Quick Start Guide
+Get Started with:
+Bring your own warehouse
+Default environments
+Community support
+Enterprise
+For teams running experimentation and releasing features at scale.
+Custom
+‍
+Pricing tailored to your scale and licensing requirements
+Talk to Sales
+Open Source, plus:
+Custom environments
+Advanced access control
+SSO & SCIM provisioning
+Advanced permissioning workflows
+Data pipelines
+Visual editor
+Multi-arm bandits
+Safe rollouts
+Ramp schedules
+Approval workflows
+Sticky bucketing
+Holdouts
+Dedicated support & training
+Compare Self-Hosted Plans
+Unleash a culture of experimentation across your organization
+Open Source
+Download Now
+Enterprise
+Contact Us
+Data
+Bring Your Own Warehouse
+Managed Warehouse
+-
+-
+Event Forwarder
+-
+-
+AI
+GrowthBook AI
+Bring Your Own LLM Provider
+-
+Experimentation
+Base Experimentation
+Experiments (A/B Tests)
+Unlimited
+Unlimited
+Feature Flag Experiment
+AI Visual Editor
+-
+Split URL Tests
+-
+Advanced Experimentation & Statistical Methods
+Multi-arm bandits
+-
+Sticky Bucketing
+-
+Custom Experiment Fields & Metadata
+-
+Sample Ratio Mismatch Detection
+Bayesian
+Frequentist
+Sequential Testing
+-
+CUPED / Variance Reduction
+-
+Post-stratification
+-
+Multiple Testing Corrections
+Experiment Lifecycle Management
+Shareable Reports
+Experiment Presentation
+Experiment History & Audit Log
+Decision Framework
+-
+Power Calculator
+-
+Experiment Templates
+-
+Holdouts
+-
+Custom Pre-launch Checklists
+-
+Custom Experiment Dashboards
+-
+Insights Dashboard
+Insights Learnings
+Scaled Impact
+-
+Feature Management
+Base Feature Management
+Feature Flags
+Unlimited
+Unlimited
+Remote Configuration
+Rollout Management
+Percentage Rollout
+Instant Kill Switch
+Advanced Targeting
+Scheduled Feature Flags
+-
+Safe Rollout (w/ Auto-rollback)
+-
+Ramp Schedule
+-
+Prerequisite Targeting (Top-level)
+-
+Prerequisite Targeting (Advanced)
+-
+Flag Lifecycle Management
+Stale Flag Management
+Flag Archiving
+Flag Change History & Audit Log
+Code References
+-
+Feature Value Simulation
+-
+Flag Approval Workflows
+-
+JSON Schema & Validation
+-
+Custom Validation Hooks
+-
+Product Analytics
+Base Analytics
+Metric Explorer
+Fact Table Explorer
+Data Source Explorer
+Custom SQL Explorer
+Advanced Analytics & Reporting
+AI Data Analyst (beta)
+Custom Private Dashboards
+-
+Custom Shared Dashboards
+-
+Funnel Builder
+-
+Metrics
+Metrics
+Proportion Metrics
+Mean Metrics
+Ratio Metrics
+-
+Funnel Metrics
+-
+Retention Metrics
+-
+Quantile Metrics
+-
+Metric Groups
+-
+Metric Slices
+-
+Platform & Infrastructure
+Caching & Delivery
+API Requests
+Unlimited
+Unlimited
+GrowthBook Proxy Server
+Self-hosted CDN / Cache Layer
+SDK Streaming Updates (Real-time)
+-
+Performance & Reliability
+Local Evaluation
+Remote Evaluation
+-
+Pipeline Mode
+-
+Integrations & API
+24+ SDKs
+Slack Integration
+Native Integrations
+MCP Server
+Agent Skills
+REST API
+Webhooks
+Governance & Security
+Audit & Compliance
+SOC 2 Type II, GDPR, COPPA, CCPA
+HIPAA
+Encrypted SDK Endpoints
+-
+BAA
+-
+Available
+Exportable Audit Logs
+-
+Access Control
+SSO
+-
+Custom OIDC
+Advanced Permissioning
+-
+Custom Roles
+-
+"No Access" Roles
+-
+Team Permissioning
+-
+SCIM Provisioning
+-
+Multi-tenant Mode
+-
+Support & SLAs
+Support
+Community Support
+Email (Premium Support)
+-
+Dedicated Team Support Channel
+-
+Onboarding & Training
+-
+Roadmap Acceleration
+-
+Available
+SLAs
+99.99% Uptime SLA
+First Response Time (Outage)
+-
+1 hour
+First Response Time (Degraded)
+-
+2 hours
+Compare GrowthBook
+See All Comparisons
+GrowthBook vs Statsig
+GrowthBook is the open source leader in feature flagging and experimentation. Companies choose GrowthBook over Statsig for platform flexibility, world-class feature flags, and cost-effective pricing at scale.
+Compare to Statsig
+GrowthBook vs Optimizely
+Product teams choose GrowthBook over Optimizely when they want to reduce complexity and cost with a warehouse-native experimentation, feature flags, and product analytics platform.
+Compare to Optimizely
+GrowthBook vs LaunchDarkly
+Product teams move from LaunchDarkly to GrowthBook when they want to cut their feature flag costs by 5X while adding industry-leading experimentation.
+Compare to LaunchDarkly
+Switch for Free
+Uplevel to GrowthBook now.
+We won't charge you until the renewal date of your current feature flag or experimentation platform — up to 1 year.
+Free Consultation
+Trusted by 3,000+ companies worldwide
+Testimonials
+“GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
+Alex Kalish
+Engineering Manager, Dropbox
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+“People only see the wins, but there’s actually greater value in avoiding losses. We’ve stopped changes that could have cost millions.”
+Merritt Aho
+Digital Analytics Lead at Breeze Airways
+“GrowthBook has changed the way we think about experiments... It allowed us to uplevel our code, speed up decision-making, and focus on what we do best.”
+Diego Accame
+Director of Engineering, Upstart
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
+Kameron Jenkins
+Head of Growth Engineering, Fyxer
+“Experimentation showed what customers actually do rather than what we assume they’ll do.”
+Marek Maciusowicz
+Head of Engineering, Treatwell
+“Being able to turn a feature on and off with a flip of a switch is fantastic... That’s so much easier than having to do a deploy or a roll-back.”
+John Resig
+Chief Software Architect, Khan Academy
+“We don’t need any code changes, we don’t need an app release. We just configure the new tests and launch right away.”
+Filipa Batista
+Product Manager, Lingokids
+"We are always experimenting now. It’s a natural part of product development. This is due to GrowthBook and the ease of usage both in the UX and in the seamless integration with Snowflake/DWH."
+Fredrik Jørgensen
+Head of Insight, Retail Platform, Oda
+"GrowthBook's results speak for themselves. Every time we do a test, we see benefits for our audiences and our partners. These posters are our one shot, and we wouldn't want to fly blind."
+Senior Director
+Head of Insight, TodayTix
+“GrowthBook lets us build experiments exactly how we want. The ability to target based on culture and geography, as granular as needed, is a major win for us.”
+Eslam Samy
+Data Scientist, Floward
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
+Kameron Jenkins
+Head of Growth Engineering, Fyxer
+FAQs
+Plans and Billing
+Product Capabilities
+Security & Enterprise
+Does GrowthBook really have a free plan?
+Yes. The Starter plan is free for up to three users and includes unlimited feature flags and experiments on GrowthBook's cloud platform, making it easy for small teams to create feature flags and set up experiments for free. The free self-hosted plan has unlimited users.
+What is the definition of a seat in GrowthBook?
+A seat equals a user. All users of the GrowthBook platform must have their own login/password. Our pricing is per user, which makes it more predictable, and this allows you to run an unlimited number of feature flags and experiments.
+How is GrowthBook's pricing different from usage-based platforms?
+GrowthBook uses a seat-based model rather than charging per monthly active user or API event. Teams pay for the people who run experiments and manage flags, not for the end users who see them—keeping costs predictable as products scale.
+What's included in the Pro plan?
+The Pro tier adds more seats (up to 50 users) and advanced experimentation features such as sequential testing, CUPED variance reduction, sticky bucketing, URL split tests, and built-in product analytics. It is designed for product and engineering teams for more comprehensive release management and continuous learning from experiments.
+Who typically chooses the Enterprise plan?
+The Enterprise option is aimed at large teams with apps and websites that can serve millions of users and billions of events. Regulated industries choose enterprise for advanced governance, and custom security integrations (SSO, SCIM). Enterprise is ideal for organizations that require data-warehouse cost controls and formal support agreements.
+What happens if I exceed my plan's limits?
+You will see a "CDN usage exceeded" warning in the UI. GrowthBook will work with you to find a solution that meets your needs, including increasing your limits, optimizing your usage, or moving to a custom plan. Overages apply only after you exceed included usage: CDN Requests at $10 per additional million requests, CDN Bandwidth at $1 per additional GB, and Managed Warehouse at $0.03 per 1K events after the first 2M free.
+What's included in GrowthBook pricing?
+GrowthBook offers flexible pricing to fit companies of all sizes, whether you're just evaluating feature flag platforms or running advanced experimentation at scale. Choose between cloud-hosted and self-hosted deployment, each with multiple plan options.
+Can GrowthBook manage both feature flags and A/B tests?
+Yes. GrowthBook combines feature management and experimentation in one platform with product analytics, allowing teams to toggle features safely and measure their impact with the same dataset and SDKs.
+Does the Pro plan include advanced experiment methods?
+Pro customers have access to the core statistical methods used in modern experimentation programs—CUPED, sequential tests, multi-arm bandits, and sticky bucketing—enabling faster and more accurate results without extra fees.
+What additional experimentation controls come with Enterprise?
+Enterprise adds program-level features such as guardrail metrics, holdouts, incremental data refresh, custom experiment fields and launch checklists, and centralized insights dashboards for multi-team visibility.
+Can GrowthBook connect to our data warehouse?
+GrowthBook is warehouse-native and connects directly to Snowflake, BigQuery, Redshift, Databricks, Clickhouse, and other systems. Enterprise plans offer fact-table optimization and incremental updates to reduce query costs and latency. A managed warehouse is available for our Starter and Pro plans so you can get up and running quickly.
+Does GrowthBook support SSO and SCIM?
+Yes. Enterprise plans include SAML-based single sign-on and SCIM user provisioning to integrate with identity providers like Okta and Azure AD for automated access management.
+How does GrowthBook prevent unauthorized changes to flags or experiments?
+Enterprise customers can enforce required approvals, maintain exportable audit logs, and set environment-specific permissions so that production changes require review and are fully traceable.
+Can sensitive feature-flag data be kept off the client side?
+Yes. Using server-side or remote evaluation for feature flags keeps sensitive data from reaching the client. All sensitive logic and data remain secure on your servers. Hashed attributes and encrypted payloads provide additional protection when client-side evaluation is necessary.
+What kind of enterprise support is available?
+Enterprise agreements include priority SLA coverage, dedicated support channels, onboarding sessions, training, and optional business-associate agreements for HIPAA compliance.
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 3,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

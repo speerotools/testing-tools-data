@@ -1,0 +1,161 @@
+# https://www.optimizely.com/field-notes/articles/experimentation-mcp-server
+Remote MCP Server is here: Bring Optimizely into your AI tools
+Remote MCP Server is here: Bring Optimizely into your AI tools
+Josh Holt
+Apr 29, 2026
+Optimizely Experimentation MCP Server helps you manage your feature flags and experiment lifecycle entirely from your Integrated Development Environment (IDE).
+At Optimizely, we're always looking for ways to make experimentation more seamless, intuitive, and integrated into your daily workflow. When we introduced the Optimizely MCP Server, we brought experimentation into the developer's Integrated Development Environment (IDE). Today, we're opening it up to the rest of your team with the
+Optimizely Remote MCP Server for Experimentation
+.
+It's a shift in how your whole team interacts with experimentation. Imagine managing feature flags, querying experiment results, and reporting on your program's health, directly from the AI tools you already use. And chances are, you already use them.
+Many teams are already using tools like ChatGPT, Claude, or Cursor in their day-to-day work. Now, you can use Optimizely directly from those tools. With the Remote MCP Server, you can query experimentation data, create and update flags, and manage experiments using natural language, without switching tools or writing scripts.
+What is MCP?
+You might be wondering, "What's MCP?" MCP stands for
+Model Context Protocol.
+It's an open standard that lets AI products talk to external tools and services. Think of it as a universal translator between your AI tool and the platforms you use every day. Instead of building custom integrations for every AI client, MCP gives us a common language. Any compatible AI assistant can communicate with any MCP-enabled service.
+Our Remote MCP Server uses this protocol to give AI products native access to our experimentation platform. So, your AI assistant doesn't just help you write code or draft a plan, it can create feature flags, configure experiments, and analyze your program as naturally as it helps you debug a function or summarize a doc. It's about making AI a true experimentation collaborator.
+Key capabilities: Experimentation in the tools your team already uses
+The Optimizely Remote MCP Server brings the full power of Web Experimentation and Feature Experimentation into your AI tool of choice.
+Here's a peek at what you can do:
+Play
+play_arrow
+play_arrow
+settings
+crop_free
+play_arrow
+play_arrow
+0:00
+/
+0:00
+volume_up
+closed_caption
+settings
+crop_free
+1. Manage experimentation without leaving your AI tool
+Create and configure feature flags and experiments by asking for what you need in plain language:
+“Create a feature flag called pricing_redesign with control and treatment variations”
+"Set up an A/B test for the checkout flow with 3 variations, tracking conversion on purchase_completed"
+"Enable the new_onboarding flag for 20% of users in staging"
+What used to take multiple API calls, creating flags, setting up variables, configuring environments, establishing audiences, and setting rollout rules, now happens with a single command. The MCP Server handles all the orchestration, making sure everything is created in the right order with proper dependencies.
+2. Ask for answers in seconds
+Get experiment results, flag status, active experiments, and audience details in plain language:
+"What audiences are being used in running experiments?"
+"What experiment contains the custom JavaScript that's throwing 'undefined is not a function' errors?"
+"Show me the targeting conditions for the checkout_flow experiment"
+Get immediate insights into flag evaluation, targeting rules, and configuration issues without digging through multiple screens. It's about getting you back to building, or back to your analysis, faster.
+3. Manage the full flag lifecycle from your IDE
+Developers can get onboarded to Optimizely's SDKs, implement feature flags in the codebase, and clean up stale flags without leaving their editor:
+"Which flags in my codebase haven't been updated in a while?"
+"Show me unused flags in the authentication service codebase"
+"Generate a cleanup plan for stale flags in production"
+The server cross-references your codebase with Optimizely and gives you actionable recommendations for keeping your experimentation setup clean and tidy.
+4. Generate SDK integration code
+Stop copying boilerplate code from documentation. Get production-ready code instantly:
+"Generate React SDK integration for the recommendation_engine flag"
+"Implement event tracking for when a user submits the form"
+"Show me how to implement the checkout_flow flag with proper error handling"
+The generated code includes error handling, fallback values, and follows best practices for your specific framework.
+5. Open experimentation beyond developers
+PMs, program managers, and experimentation teams can now interact with Optimizely directly through the AI tools they already use. Because the server is hosted, browser-based tools like ChatGPT and Claude.ai work out of the box. No code editor, no terminal, no API knowledge required. Someone who's never touched an API script can ask for experiment results, pull audience details, or draft a new test, all in natural language.
+How it works: Smart, secure, seamless
+The Optimizely Remote MCP Server is hosted by Optimizely and connects your AI tool directly to our experimentation APIs. Here's what that means in practice:
+Simple setup with OAuth:
+Authenticate with your existing Optimizely login. No API keys to manage, no packages to install, no local server to run. The same credentials you already use.
+Broad client compatibility:
+Works with any MCP-compatible client, including ChatGPT, Claude, Cursor, VS Code with Copilot, Claude Code, Windsurf, and other IDE-based tools.
+Tool coverage:
+It supports both Web Experimentation and Feature Experimentation, with querying, creating, and updating entities across core API operations.
+Inherited permissions:
+The server respects the same user permissions as the Optimizely platform. People can only do through MCP what they can already do in the UI.
+Context-aware:
+It understands your project structure and can make intelligent suggestions based on your codebase.
+What’s next: The future of AI-driven experimentation
+As MCP adoption grows across the development ecosystem, we’re excited about the possibilities ahead. We’re envisioning a future where AI agents can:
+Orchestrate complex marketing workflows:
+Imagine autonomous campaign management agents creating dozens of interconnected personalization campaigns, managing cascading audiences, and updating priorities across your entire program.
+Suggest proactive optimizations:
+AI agents could analyze your code and suggest where feature flags could reduce risk, before you even think to ask.
+Deliver intelligent experiment analysis:
+Get natural language queries about experiment performance and automated insights, helping you make data-driven decisions faster.
+Connect your entire martech stack:
+An extensible plugin architecture will let you extend the MCP Server’s capabilities, syncing audience segments from Optimizely Data Platform and automatically creating targeted experiments.
+Beyond experimentation: MCP across the full Optimizely platform
+The Experimentation Remote MCP Server is live today, but as we've already hinted to: we're not stopping there.
+Remote MCP support for Optimizely CMS and Optimizely Analytics
+is on the way.
+That means your AI tools can already query experiment results, pull performance insights, and surface behavioral data — and CMS content management is on the way. Every part of your stack, accessible and actionable through AI, from a single natural language interface, without switching platforms or writing a line of code.
+Analytics MCP: your data, in the AI tools you already use
+The Optimizely Analytics Remote MCP is available now. It connects your data warehouse to ChatGPT, Claude, Cursor, VS Code with Copilot, and any MCP-compatible tool your team already works in, so anyone can query behavioral data, read experiment results, and explore funnels, retention, and attribution trends in plain English.
+No local setup. No API keys. No waiting on an analyst.
+Connect via OAuth — the same Optimizely login you already use and start asking:
+"Where are users dropping off in our onboarding funnel?"
+"Summarize the results of our Checkout Refresh experiment."
+"Which ad channels drove the highest LTV users last quarter?"
+Every answer pulls directly from your data warehouse, not a sampled or cached layer. Results are accurate, statistically grounded, and scoped to your existing permissions.
+The full analytics surface, including experiments, funnels, retention, attribution, and time series, is now available to every person on your team, from wherever they work. Developers get answers without leaving their IDE. PMs stop waiting on analysts. Business users self-serve for the first time.
+Reach out to your CSM to get access today.
+Play
+play_arrow
+play_arrow
+settings
+crop_free
+play_arrow
+play_arrow
+0:00
+/
+0:00
+volume_up
+closed_caption
+settings
+crop_free
+“
+“
+This is what it looks like for Optimizely to be fully set up for the agentic future: every part of your stack accessible, orchestratable, and actionable through AI. MCP is how we get there.
+Stay tuned for updates on CMS MCP availability, and in the meantime, get strarted with the Experimentation Remote MCP Server today. 👇
+Be part of the future
+The Optimizely MCP Server for Experimentation is available to all Optimizely Experimentation customers, for both Web and Feature Experimentation. No separate sign-up, no waitlist.
+To get started:
+Connect the MCP Server to your AI client of choice
+Point it at your Optimizely account
+Start building, querying, and updating experiments from wherever you work
+We can't wait to see what you build with it.
+Get started with
+Optimizely MCP server overview
+Products
+Solutions
+Resources
+Plans
+Developers
+Partners
+Login
+Get started
+Products
+All products
+Plans & pricing
+Roadmap
+Integrations
+Partners
+Services
+Resources
+All resources
+Blog
+Developers
+Support
+Education
+Company
+About us
+Life at Optimizely
+Optimizers
+Press
+The MVP club is calling.
+ANZ webinar: claim your spot
+chevron_right
+Search
+EN
+© 2026 Optimizely
+Website terms of use
+Privacy
+Trust Center
+ESG
+Do not sell or share my personal information
+Cookie Settings

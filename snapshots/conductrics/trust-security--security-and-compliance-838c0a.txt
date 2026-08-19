@@ -1,0 +1,87 @@
+# https://www.conductrics.com/security-and-compliance
+Security & Privacy Compliance | Conductrics
+Skip to content
+Platform
+All features
+Experimentation
+Adaptive Optimization
+Active Research
+Personalization
+Architecture & Integrations
+Resources
+Company
+About us
+Security and compliance
+Contact us
+Documentation
+Book a demo
+Secure by design. Private by default.
+Deliver great experiences without compromising privacy. Conductrics is architected to minimize data collection, offer flexible deployment, and meet your strictest compliance standards.
+Enterprise-grade compliance
+Conductrics provides the certifications and frameworks required by global IT, legal, and procurement teams.
+SOC 2 Type 2 certified
+Validated by independent auditors for security, availability, and confidentiality.
+GDPR–ready
+Built to support strict global privacy requirements through explicit data minimization.
+HIPAA–compliant
+Architected to handle experimentation safely within healthcare and other highly regulated environments.
+Algorithmic transparency
+No black boxes. Our predictive models and contextual bandits are fully interpretable, enabling you to audit and explain automated decisions in compliance with profiling regulations.
+Engineered for data minimization
+We take a “Privacy by Design” approach. Our architecture is purposefully built to minimize and aggregate data at the point of collection, ensuring we process only what is strictly necessary to run your experiments.
+K-Anonymity & aggregated reporting
+We calculate statistical validity by grouping users into distinct equivalence classes. Whether you are running live tests or ingesting offline conversion metrics, you get precise reporting without retaining visitor-level data on our servers.
+Minimal data footprint
+We only collect the bare minimum amount of data needed to drive our predictive engine. We do not log or store personally identifiable information (PII), IP addresses, or details about the visitor’s browser and operating system.
+Strict data lifecycles
+You maintain absolute ownership of your data. We enforce automated retention limits for session state and guarantee complete data deletion upon request or contract termination.
+"As a charity and public sector organization, there are extra regulations we have to navigate, and the regulatory environment around online marketing in the UK is quite strict. We try hard not to be invasive or intrusive with how we collect data about our students. The privacy situation is kind of unique with Conductrics; it just works in a different way that respects our students' data."
+Michael Bartlett
+Digital Analytics & Optimization Manager at The Open University
+Read the case study
+Access control and change management
+Protect your experimentation program from unauthorized access and accidental changes with robust identity and deployment controls.
+Corporate identity enforcement
+Secure your account using standard Single Sign-On (SSO) via SAML 2.0 Identity Providers (IdP) such as Okta, Auth0, and OneLogin.
+Granular role separation
+Keep your organization secure using team-based roles. You can grant specific access levels, allowing all users to view reports while restricting who can set up tests or push changes to production.
+Two-Factor Authentication (2FA)
+Secure user logins and prevent rogue rollouts. Mandate TOTP-based 2FA for account access, and optionally require an additional 2FA verification before authorized users can deploy changes to a live environment.
+Flexible deployment and data residency
+We offer deployment options tailored to your internal governance, data residency, and performance requirements, backed by enterprise SLAs.
+Global cloud hosting
+Choose a shared or dedicated environment in any AWS data center to comply with your regional data residency requirements. All data is encrypted in transit and at rest, and remains at rest in your selected location.
+Bring Your Own Cloud (BYOC)
+Maintain absolute data sovereignty. By self-hosting our REST API or JS files on your infrastructure, your visitor data never has to leave your environment.
+The Conductrics Privacy Server
+Deploy our open-source privacy server on-premise or in your own cloud account. It acts as a strict gatekeeper, automatically stripping IP addresses and redacting sensitive traits before data reaches Conductrics.
+Secure your experimentation program
+See how Conductrics helps enterprise teams build powerful, privacy-first experiences that meet the most rigorous security standards.
+Talk to our team
+Read the documentation
+Unlocking The Power of Intentional Learning
+Platform
+Experimentation
+Adaptive Optimization
+Active Research
+Personalization
+Architecture & Integrations
+Company
+About Conductrics
+Security and compliance
+Meet the team
+Contact us
+Book a demo
+Resources
+Case studies
+Experimentation & Testing
+Predictive AI & Bandits
+Customer research & Intent
+Support
+Getting started
+Conductrics API
+Mobile SDKs
+© 2010-
+Conductrics, Inc.
+All rights reserved |
+Privacy Policy

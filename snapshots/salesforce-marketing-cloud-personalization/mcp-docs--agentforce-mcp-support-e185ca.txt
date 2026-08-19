@@ -1,0 +1,58 @@
+# https://www.salesforce.com/agentforce/mcp-support
+Agentforce MCP Support | Salesforce
+Skip to content
+Agentforce MCP Support
+Connect Agentforce to new tools and resources with secure, open interoperability through verified MCP server support from AgentExchange partners.
+Explore solutions
+Unlock siloed data and agents with Agentforce.
+Agentforce will provide secure, enterprise-grade agentic interoperability by leveraging Model Context Protocol (MCP). Connect your agents across systems, unlock and unify data, and drive trusted, differentiated customer experiences. It will be the trusted bridge for orchestrating digital labor across your entire business ecosystem.
+This paragraph should be hidden.
+Model Context Protocol (MCP)
+Model Context Protocol (MCP) is an open standard that will allow AI agents to obtain resources, tools, and prompts from internal and external sources through a single, well-defined handshake. Think of it as USB-C for AI.
+Resources
+Resources include data and information agents can access to inform decisions and actions. For example, a customer service agent may need location data from a shipping and logistics provider’s MCP server so they can provide an accurate delivery window to a customer.
+Tools
+Tools are functions or actions AI agents can take, like directions given or received from 3rd party MCP servers to perform a task. Through Agentforce’s enterprise-grade trust and security, you have complete control over what your agents can and cannot do.
+Prompts
+Prompts include predefined templates designed to accomplish recurring or common tasks. MCP partners can share common useful prompts with AI agents to ensure they quickly get the information they need to help customers.
+What is an AI agent gateway?
+Agentforce will deliver enterprise-grade agentic interoperability through secure connectivity and governance for AI agents. The AI agent gateway enables customers to confidently extend their Agentforce investments and activate “trapped agents” across their business with trusted authentication and controls.
+Centralized MCP Server Registry
+Gain full control with a unified system of record for all MCP servers, including cross-org, to ensure only that authorized capabilities are discovered and utilized by Agentforce.
+Comprehensive Security & Governance
+Ensure trusted agent operations with robust authentication, granular access controls, and policy enforcement. Each of these leverage Salesforce’s proven security framework to safeguard data and prevent misuse across all interactions.
+Optimized Resource Management
+Maintain system stability and prevent overload through intelligent rate limiting. This will ensure the efficient use of resources across your agent ecosystem.
+Ready to take the next step with Agentforce?
+Build agents fast.
+Take a closer look at how agent building works in our library.
+Watch demos
+Get expert guidance.
+Launch Agentforce with speed, confidence, and ROI you can measure.
+See how
+Talk to a rep.
+Tell us about your business needs, and we’ll help you find answers.
+Contact us
+Agentforce Frequently Asked Questions
+What is Model Context Protocol (MCP)?
+Model Context Protocol is an open standard originally developed by Anthropic that dictates how AI models can connect with external tools, systems, and data.
+What are the benefits of MCP?
+Model Context Protocol significantly reduces integration effort and complexity by creating a universal integration standard while enforcing consistent enterprise-grade trust, security, and compliance across all agent interactions. This means your agent's responses can be grounded in your business context, no matter where you store your data.
+How do I connect my AI Agents to MCP servers?
+You can discover new, trusted MCP servers through the expanded
+AgentExchange
+. AgentExchange offers a curated catalog of vetted services that are ready for deployment without extensive integration overhead. Once you’ve selected your desired MCP server, you can deploy using
+AgentBuilder
+with no code required.
+What MCP partners does Agentforce support?
+Agentforce has a rapidly growing list of Agentforce MCP Partners that you can find the complete list on
+AgentExchange
+.
+What is Agentforce Interoperability?
+Agentforce Interoperability refers to the systems and tools that Agentforce can connect with and utilize - improving the functionality and results of your
+AI agents
+.
+How does AI agent interoperability work?
+AI agents can interoperate in a variety of ways - from dedicated integrations, to APIs, to MCP. Typically, each new functionality added to an AI agent required a bespoke integration.
+What are the benefits of interoperability?
+Interoperability allows AI agents to take advantage of external tools, systems, and data to improve the performance and reliability of that agent. Interoperability also means less work for development teams to configure bespoke integrations between agents and other systems.

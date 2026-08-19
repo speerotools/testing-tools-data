@@ -1,0 +1,59 @@
+# https://developer.monetate.com/sdks
+Get Started with Monetate SDKs - Monetate SDKs
+Knowledge Base
+Support
+Monetate Platform Login
+Home
+Get to Know Monetate
+JavaScript API
+Engine API
+SDKs
+Personalized Search API
+Auth API
+Data API
+Metadata API
+Data Privacy APIs
+Navigate through spaces
+K
+Getting Started with Monetate SDKs
+SDK Version updates
+Install the Monetate SDKs
+SDK Objects
+Context Layer Implementation Guide
+Engine Endpoint Configuration
+SDK Methods
+Report Methods
+GetActions
+Context Events Parameters
+SDK Event and Action Types
+SDK Event Details
+Event Code Samples
+React Web Event Code Samples
+React Native Event Code Samples
+iOS Event Code Samples
+Android Event Code Samples
+Actions
+Create a Banner Message Action
+Create an Image-Based Badging Action
+Create a Recommendations Action
+Create Social Proof Actions
+Create a Data Collection Action
+Create a No Action Handler
+Docs powered by
+Archbee
+Getting Started with Monetate SDKs
+the monetate sdk allows you to easily utilize the capabilities of the engine api docid\ gxb o1cjhu7jty l prd8 using methods that simplify the api calls, you can create and run your experience quickly and with minimal effort the sdk can be used for any channel, including web, mobile apps, and single page applications in a traditional monetate tag–based implementation docid\ zfxs45ymf6aicwwkkgxcc , monetate is running in the browser and can directly manipulate the site by inserting, editing, or removing content via reusable actions monetate tag–based integrations are easy to deploy but can't be implemented in some channels such as mobile apps the engine api is a restful api that serves as a direct entry point to monetate's decision engine it can be used to access the decision engine in any channel passing and collecting data requires specific api calls and might be complicated for some applications the monetate sdk simplifies the api calls by acting as a translation layer to the monetate decision engine the sdk provides easy to use methods that send event data directly to the decision engine and receive the experience to serve sdk implementations can be used in the same channels as engine api implementations
+Updated
+29 Apr 2026
+NEXT
+SDK Version updates
+Docs powered by
+Archbee
+Docs powered by
+Archbee
+Copyright © 2025 Monetate. All Rights Reserved |
+Terms & Conditions
+|
+Website Privacy Policy
+|
+Release Notes

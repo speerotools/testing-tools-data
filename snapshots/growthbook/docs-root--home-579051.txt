@@ -1,0 +1,89 @@
+# https://docs.growthbook.io/
+GrowthBook Documentation | GrowthBook Docs
+Skip to main content
+Docs
+SDKs
+API
+Home
+Log in
+GitHub
+Support
+Join our Slack
+Open an issue
+Search
+Overview
+How it works
+Quickstart
+SDKs
+Feature Flags
+Data & Metrics
+Experimentation
+Insights
+Product Analytics
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Overview
+Introduction
+GrowthBook is the most popular open-source platform for feature flagging and experimentation. It's designed to help teams deliver better software faster by making it easy to test and roll out new features.
+Got questions?
+We would love to help you get started with GrowthBook. You can
+meet with us
+or
+join our Slack
+Quick Links
+​
+How it works
+Learn about what GrowthBook does and how it works
+Quick Start
+Get GrowthBook running in 10 minutes
+Get our open source guide to successful experimentation
+This guide outlines everything you need to know as you scale up experimentation at your company. It covers everything from foundational knowledge (“What is an experiment?”) to advanced topics and common mistakes.
+Our Goals
+​
+The top 1% of companies spend thousands of hours building their own feature flagging and experimentation platforms in-house.
+We want to give all companies the flexibility and power of these in-house platforms without needing to build it themselves.
+We believe that
+feature flagging
+is the best way to release code, and
+experimentation
+is the best way to measure its impact on your users.
+We believe experimentation should sit on top of your
+existing data and metrics
+, wherever they live and however they are defined.
+We believe in
+data transparency
+. See the SQL behind every query, export results as a Jupyter notebook, and view our
+stats engines on GitHub
+.
+We are fanatical about
+performance
+. Our
+SDKs
+are crazy fast, lightweight, and evaluate everything locally with no network requests.
+We believe in
+open source
+. GrowthBook is open source and free to use. The exact same code that powers our Cloud platform is available for you to run entirely on your own infrastructure.
+We believe in
+privacy & security
+. We don't collect any data about your users, and you can run GrowthBook on your own infrastructure entirely behind a firewall.
+Documentation
+​
+Use the menu or the
+Previous
+/
+Next
+links to navigate these docs.
+Join us on Slack
+if you need help, want to chat, or are thinking of a new feature. We're here to help — and to make GrowthBook even better.
+Edit this page
+Was this helpful?
+Give Feedback
+Next
+How it works

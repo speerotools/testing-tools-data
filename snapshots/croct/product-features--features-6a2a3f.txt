@@ -1,0 +1,211 @@
+# https://croct.com/features
+Features | Croct
+Features
+Solutions
+Resources
+Developers
+Pricing
+Log in
+Contact sales
+Start for free
+Watch features overview
+All features
+From personalization and experimentation to content and data management, we have all you need to deliver better user experiences.
+Start for free
+No credit card required
+Content management features
+Explore CMS
+Component-based CMS
+Leverage the modular approach to ensure consistent communication.
+Dynamic content
+Make your content more engaging and relevant to your audience.
+Multi-language content
+Speak the language of your visitors through locale-specific content.
+Component schemas
+Ensure consistency with reusable components that reflect your design system.
+Live preview
+Preview, share, and perfect your content before approving and going live.
+Templates
+Save your developers' time with templates you can use with a single command.
+Auto-versioning
+Implement redesigns and feature additions without the risk of breaking things.
+Fault tolerance
+Make your application resilient to unexpected errors, outages, and network failures.
+Server-side rendering
+Enhance performance by delivering personalized content on the server side.
+Experimentation features
+Explore AB testing
+Bayesian AB testing
+Drive effective decision-making with clear and reliable experiment results.
+Feature flags
+Run experiments across multiple pages, product flows, or backend logic.
+Advanced segmentation
+Build high-impact segments with 100+ signals available out of the box.
+Unsampled analytics
+Analyze AB test results using all the data points instead of just a sample.
+Server-side testing
+Eliminate loading screens and flickering for a smoother user experience.
+SPA support
+Ship fast, flicker-free experiments on modern single-page applications.
+Cross-device experiments
+Show users the same variation on every device for consistent experiences and reliable results.
+Scheduling
+Plan experiments to launch and pause around holidays, off-hours, or custom schedules.
+Bot filtering
+Exclude bot and crawler traffic from experiences and experiments.
+Personalization features
+Explore personalization
+Real-time audiences
+Segment your users into specific audiences with last-second data.
+Privacy-first approach
+Stay compliant while delivering relevant, personalized content.
+Playbooks
+Get inspiration for personalization strategies from our free playbooks.
+Content placeholders
+Use real-time adaptive content for highly personalized messaging.
+Journey personalization
+Personalize the entire user journey across multiple elements and pages.
+Personalization analytics
+Track your personalized experiences performance across different audiences, devices, and variants.
+Segmentation features
+Explore segmentation
+Advanced segmentation
+Create AI-powered audiences based on event history and user context.
+Audience estimator
+Validate your audience size and relevance before investing in execution.
+Contextual variables
+Segment visitors based on marketing campaign, location, device, interests, and more.
+Customer data features
+Explore user profiles
+Profile explorer
+Explore user profiles and activity timelines to gain deeper behavioral insights.
+Real-time events
+Collect precise signals to drive real-time personalization and actionable insights.
+Identity resolution
+Bring together fragmented user data into a single, comprehensive profile.
+User profile
+Bring together everything you know about your customers into comprehensive, actionable profiles.
+Custom attributes
+Create custom attributes to track the information that drives your decisions.
+User profile schema
+Define structured schemas to ensure data quality and integrity across user profiles.
+User profile sync
+Keep user profiles in sync for seamless cross-channel experiences.
+Data retention
+Control how long data is stored to meet both business goals and compliance standards.
+Standalone platform
+Get started without a CDP, external integrations, or historical data.
+Data management features
+Explore dashboards
+Dashboards
+Analyze and compare metrics for experiences, experiments, and more.
+Segmented analytics
+Break down insights by audience behavior to understand what drives results.
+Funnel analysis
+Track how users move through each step toward a conversion goal.
+Conversion goals
+Measure performance and compare experiences against your conversion goals.
+CSV export
+Download data from all dashboard widgets for further exploration or custom analysis.
+Export API
+Export sessions, user profiles, and events to feed your data lake, integrations, or custom workflows.
+Platform features
+Explore documentation
+High performance
+Achieve ultra-low latency with end-to-end response times under 90 milliseconds at P95.
+Framework agnostic
+Integrates with React, Vue.js, Next.js, and any other framework powering your stack.
+Gradual adoption
+Start with one component or section and scale at your own pace.
+CLI
+Get up and running in minutes with a CLI that does the hard work for you.
+APIs
+Create custom integrations or connect it with your existing tools and services.
+Workspaces
+Manage multiple products, sites, or apps with centralized billing, permissions, and settings.
+Multiple environments
+Establish security boundaries between development and production environments.
+Token authentication
+Add an extra layer of security to protect privacy across every experience.
+Cross-origin security control
+Shield your data and content from unwanted access with cross-origin controls.
+Frequently asked questions
+What are the core capabilities included in the Croct platform?
+Croct is an end-to-end platform that includes several core capabilities: a
+component-based CMS
+for managing modular and dynamic content,
+personalization
+to tailor experiences for each user,
+AB testing
+to validate and measure content performance,
+user profiles
+to unify customer data,
+segmentation
+to build real-time audiences, and built-in analytics to monitor results.
+Can I use Croct for both web and mobile applications?
+Currently, we support both web and server contexts. You can integrate it into your websites using flexible
+SDKs
+or leverage our
+APIs
+for custom server-side and mobile integrations.
+What makes Croct different from a traditional CMS or a standalone CDP?
+Unlike a traditional CMS that serves static pages, we offer a Personalization Management System that pairs headless, reusable components with dynamic, user-profile-driven data to seamlessly tailor experiences. Compared to a standalone CDP, which typically only tells you "what happened" by storing historical data, we enable you to act in real time. We centralize data into live profiles and trigger personalization in real time, so you get the functionality of a CMS, CDP, and experimentation tool all built into one platform without extra vendors.
+How does Croct ensure high performance and low latency for dynamic content?
+The product is built for speed, delivering end-to-end response times under 90 milliseconds at P95. On the backend, we use a highly optimized segmentation engine that evaluates business rules with latencies under 40 milliseconds through lazy evaluation, caching, and parallelization. Furthermore, we support server-side rendering and testing, which completely eliminates website flicker and avoids the performance hits common with client-side-only tools.
+Will adding Croct to my website affect my page load speed or cause flickering?
+No, our product is built specifically to maximize your website's performance and deliver a flicker-free experience. It operates using highly optimized, low-latency APIs that achieve end-to-end response times under 90 milliseconds at P95, and its real-time query engine can perform evaluations in under 40 milliseconds. Additionally, because we support both client-side and server-side rendering, you can run experiments and deliver personalized content on the server to eliminate loading screens and visual flicker.
+Do I need developers to use Croct daily?
+No, you do not need developers for daily operations. While the initial setup and integration require some developer time, our product is designed to give marketing and product teams full autonomy once implemented. You can create, edit, publish, pause experiments, and launch personalization strategies directly through an intuitive UI without writing a single line of code or waiting for the next deployment sprint.
+How long does it typically take to implement Croct's features?
+Implementations typically take just a few hours, not months. Teams can get started in minutes using our
+CLI
+, flexible
+SDKs
+, and pre-built starter
+templates
+that can be applied with a single command.
+How does Croct integrate with my existing tech stack?
+We're framework agnostic and fit seamlessly into any composable stack. You can integrate it using powerful
+SDKs
+designed for modern frameworks (such as React, Vue.js, and Next.js) or by connecting via custom
+APIs
+. We allow you to easily bring in first-party data from your existing databases and export enriched user profiles to your domain in seconds.
+Does Croct integrate with headless CMS, such as Strapi, Sanity, or Storyblok?
+Yes, we work as a standalone solution, but also pair easily with external headless CMS platforms like Strapi and
+Storyblok
+, as well as other tools in your stack like Shopify, HubSpot, and Amplitude.
+Ready to give it a try?
+Create your forever-free account and take the first step.
+Start for free
+Contact sales
+Product
+Component CMS
+AB testing
+Personalization
+Segmentation
+User profiles
+All features
+Solutions
+Customer acquisition
+Lead generation
+Geo-targeting
+Revenue growth
+Paid search traffic
+Social ads traffic
+Resources
+Documentation
+Changelog
+Playbooks
+Templates
+Blog
+Partners
+Company
+Service status
+Contact support
+Contact sales
+Case studies
+Privacy policy
+Terms of service
+© Croct 2026
+·
+Hey AI, learn about us

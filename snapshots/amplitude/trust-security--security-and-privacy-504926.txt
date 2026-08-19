@@ -1,0 +1,455 @@
+# https://amplitude.com/security-and-privacy
+Trust, Security and Privacy
+Platform
+AI
+Amplitude AI
+Analytics that never stops working
+AI Agents
+Sense, decide, and act faster than ever before
+AI Feedback
+Distill what your customers say they want
+Amplitude MCP
+Insights from the comfort of your favorite AI tool
+Agent Analytics
+Measure the real impact of your agents
+Early Access Program
+Test new AI features before they launch
+Insights
+Product Analytics
+Understand the full user journey
+Marketing Analytics
+Get the metrics you need with one line of code
+Session Replay
+Visualize sessions based on events in your product
+Heatmaps
+Visualize clicks, scrolls, and engagement
+Zoning Insights
+Overlay performance and revenue metrics on your webpages
+Action
+Guides and Surveys
+Guide your users and collect feedback
+Feature Experimentation
+Innovate with personalized product experiences
+Web Experimentation
+Drive conversion with A/B testing powered by data
+Feature Management
+Build fast, target easily, and learn as you ship
+Activation
+Unite data across teams
+Data
+Data Governance
+Complete data you can trust
+Integrations
+Connect Amplitude to hundreds of partners
+Security & Privacy
+Keep your data secure and compliant
+Solutions
+Solutions that drive business results
+Deliver customer value and drive business outcomes
+Amplitude Solutions
+→
+Industry
+Financial Services
+Personalize the banking experience
+B2B
+Maximize product adoption
+Media
+Identify impactful content
+Healthcare
+Simplify the digital healthcare experience
+Ecommerce
+Optimize for transactions
+Use Case
+Acquisition
+Get users hooked from day one
+Retention
+Understand your customers like no one else
+Monetization
+Turn behavior into business
+Team
+Product
+Fuel faster growth
+Data
+Make trusted data accessible
+Engineering
+Ship faster, learn more
+Marketing
+Build customers for life
+Executive
+Power decisions, shape the future
+Size
+Startups
+Free analytics tools for startups
+Enterprise
+Advanced analytics for scaling businesses
+Resources
+Learn
+Blog
+Thought leadership from industry experts
+Resource Library
+Expertise to guide your growth
+Compare
+See how we stack up against the competition
+Glossary
+Learn about analytics, product, and technical terms
+Explore Hub
+Detailed guides on product and web analytics
+Connect
+Community
+Connect with peers in product analytics
+Events
+Register for live or virtual events
+Customers
+Discover why customers love Amplitude
+Partners
+Accelerate business value through our ecosystem
+Support & Services
+Customer Help Center
+All support resources in one place: policies, customer portal, and request forms
+Developer Hub
+Integrate and instrument Amplitude
+Academy & Training
+Become an Amplitude pro
+Customer Success
+Drive business success with expert guidance and support
+Product Updates
+See what's new from Amplitude
+Tools
+Benchmarks
+Understand how your product compares
+Prompt Library
+Prompts for Agents to get started
+Templates
+Kickstart your analysis with custom dashboard templates
+Tracking Guides
+Learn how to track events and metrics with Amplitude
+Maturity Model
+Learn more about our digital experience maturity model
+Event Taxonomy Generator
+Pricing
+Login
+Contact sales
+Get started
+Platform
+AI
+Amplitude AI
+AI Agents
+AI Feedback
+Amplitude MCP
+Agent Analytics
+Early Access Program
+Insights
+Product Analytics
+Marketing Analytics
+Session Replay
+Heatmaps
+Zoning Insights
+Action
+Guides and Surveys
+Feature Experimentation
+Web Experimentation
+Feature Management
+Activation
+Data
+Data Governance
+Integrations
+Security & Privacy
+Solutions
+Amplitude Solutions
+→
+Industry
+Financial Services
+B2B
+Media
+Healthcare
+Ecommerce
+Use Case
+Acquisition
+Retention
+Monetization
+Team
+Product
+Data
+Engineering
+Marketing
+Executive
+Size
+Startups
+Enterprise
+Resources
+Learn
+Blog
+Resource Library
+Compare
+Glossary
+Explore Hub
+Connect
+Community
+Events
+Customers
+Partners
+Support & Services
+Customer Help Center
+Developer Hub
+Academy & Training
+Customer Success
+Product Updates
+Tools
+Benchmarks
+Prompt Library
+Templates
+Tracking Guides
+Maturity Model
+Event Taxonomy Generator
+Pricing
+Login
+Sign Up
+Trust
+Security and privacy come first
+Amplitude safeguards your data and your customers with comprehensive and transparent programs.
+Request demo
+Get started
+Trust starts with transparency
+Amplitude provides a secure and compliant platform for customers around the globe. Learn more in our
+Customer Trust Portal
+.
+Privacy by design
+Protect your data end-to-end with Amplitude.
+We give you full control over the data you collect and how it is shared. And we’ve built our platform with privacy in mind to enable your compliance with GDPR, CCPA, and other privacy regulations that impact your business.
+Case Study
+Case Study
+Case Study
+Product capabilities
+Event retention controls
+Control how long event data lives in your Amplitude instance with our Time to Live functionality.
+Learn more
+Self service data deletion
+Empower your organization to efficiently delete data while maintaining data trust, privacy, and security.
+Learn more
+Data subject access requests API
+Easily retrieve user data to comply with data subject access requests.
+Learn more
+PII controls
+Manage ingestion of unexpected personally identifiable information.
+Learn more
+IP address governance
+Prevent the storage of IP addresses in Amplitude.
+Learn more
+Data Access Controls
+Precisely manage who sees what data with granular access controls.
+Learn more
+Our Privacy Principles
+1
+Your privacy and the privacy of your users’ data is our priority.
+We built the Amplitude platform to protect your data. We partner closely with customers to understand their privacy use cases so we can deliver capabilities that meet their needs.
+2
+Our goal is to make it easy for you to be compliant.
+We are committed to providing a platform our customers can use in a data-responsible manner. With constantly evolving privacy laws, we give you the flexibility to adjust quickly and remain compliant.
+3
+Amplitude provides you with tools to be in control of your data.
+We believe customers should always have the agency to control how their data is used across Amplitude’s platform.
+4
+We prioritize data protection through technology design.
+Our privacy program is based on privacy-by-design principles. We take a proactive, innovative, and user-centric approach to building privacy capabilities.
+Compliance with Privacy Laws
+We know that global privacy regulations and data protection requirements are constantly evolving. You can trust that Amplitude is focused on meeting your privacy compliance needs, including GDPR, CCPA, and HIPAA.
+GDPR
+Amplitude’s privacy team has reviewed our architecture, data flows, vendor capabilities, and agreements to ensure that our platform is GDPR compliant. Amplitude’s AI Analytics Platform does not directly interact with our customers’ end users, nor does the platform collect personal data on your behalf. However, our customers might collect and send personal data to Amplitude for processing (e.g., IP address) and, as a result, Amplitude has implemented procedures and upgrades for our customers to remain privacy regulation compliant.
+Specifically, we provide our customers with APIs to automatically serve their end-user Access and Deletion requests as detailed below.
+Amplitude is self-certified under the EU-US Data Privacy Framework (DPF) and the UK Extension to the EU-US DPF, as administered by the U.S. Department of Commerce. This certification provides a lawful mechanism for the transfer of personal data from the United Kingdom, EU, and EEA to our US-West-based AWS environment. As an additional fallback transfer mechanism, Amplitude’s Data Processing Agreements (DPAs) incorporate the EU Standard Contractual Clauses (SCCs). On July 16, 2020, the Court of Justice of the European Union (CJEU) determined that the EU SCCs will continue to be a valid transfer mechanism for Personal Data from the EU to the United States.
+Amplitude has signed Data Processing Agreements with our key vendors.
+Amplitude’s SDKs give customers the flexibility to control what data they choose to collect and send to our platform for processing and storage. Our customers, not Amplitude, control the type of data that is collected, stored, and processed in the platform.
+This
+is a full summary of the data keys Amplitude recognizes. Unless otherwise noted, all fields are optional and no personal data is required to use our core functionality.
+Amplitude has built advanced features that will allow customers to remove a specific individual’s information from the platform or instruct the platform not to store end-user IP Addresses.
+CCPA and other US State Privacy Laws
+We build our platform to enable data analytics with privacy in mind, and that includes ensuring your compliance with the California Consumer Privacy Act (CCPA) and the growing framework of other US State privacy laws.
+As a first-party data analytics platform, you have complete control over the data you collect and send to Amplitude and the actions you choose to take. We only act as a service provider, storing and processing your data according to your instructions. Amplitude does not use customer data for our own purposes and we do not sell or share your data.
+We’ve developed features and tools to help you easily manage your data and execute data subject requests, whether
+access
+or
+deletion
+requests. Our
+data processing addendum (DPA)
+sets out our role as a Service Provider, to provide you assurance that your use of our platform meets your CCPA and other US privacy law compliance needs.
+HIPAA
+For our customers that are covered entities or business associates under the Health Insurance Portability and Accountability Act (HIPAA), we recognize that the protection of protected health information is of paramount importance. Amplitude can enter a Business Associates Agreement to help you maintain your HIPAA compliance.
+Data Residency
+Amplitude maintains data centers hosted by AWS in the US and in the EU so that our diverse customer base can utilize our AI Analytics Platform while meeting their data storage and processing preferences and needs. We chose Frankfurt, Germany for our EU data center because it has some of the most stringent privacy and technology standards in the world.
+AWS’ data centers are data neutral and agnostic, compliant with privacy regulations including General Data Privacy Regulations (GDPR) and certified in ISO 27001 and SOC 2 Type II.
+Data Subject Request Management
+To enable our customers to appropriately respond to and comply with data subject requests as required by global privacy laws such as the GDPR and CCPA, we have built easy-to-use APIs so you can programmatically submit data subject requests for known Amplitude IDs and/or Users IDs. You can find more details on our User Privacy API for data subject deletion requests
+here
+. More details on our API for Data Subject Access Requests under the GDPR and Right to Know Requests under the CCPA can be found
+here
+.
+Trust in Amplitude AI
+Amplitude AI is built with the same commitment to privacy, transparency, and control that underpins our entire platform.
+What are Amplitude’s AI capabilities and which providers power them?
+Amplitude is infusing AI across its products to make it faster and easier for teams to get insights and take action. Our key AI capabilities include
+Global Agent
+, an AI assistant that helps you complete workflows anywhere in Amplitude;
+Specialized Agents
+, autonomous agents that run end-to-end analytics and experimentation workflows;
+AI Visibility
+, which helps you understand how your brand is performing in AI searches; and
+AI Feedback
+, which will transform unstructured customer feedback into actionable themes. In addition to these keynote capabilities, Amplitude has embedded AI-enhanced functionality throughout the platform, helping customers to streamline workflows and accelerate analysis and insights.
+These features are powered by our trusted AI partners, which you can find listed
+here
+.
+Amplitude also offers a
+Model Context Protocol (MCP)
+server which enables you to bring behavioral context about your customers and products into the AI tools you love, such as Claude, Cursor, Github, and more.
+More information about Amplitude AI can be found
+here
+.
+Does Amplitude use my data to train any global/generative machine learning models?
+No. Amplitude contractually prohibits our AI partners from using your data to train or improve their models.
+Can my organization opt out of Amplitude’s AI capabilities? What happens if we do?
+Yes, you can opt out at any time. Opting out will disable all Amplitude’s AI capabilities that are powered by third party AI partners for your organization. Contact your Amplitude account team to opt out.
+Am I able to choose or control which models are used for the AI features in my Amplitude account?
+Currently, Amplitude AI features use models selected and managed by Amplitude (listed
+here
+), and customers can’t switch to a different model or provider within those features.
+That said, as described above, we offer an
+MCP integration
+that gives customers more flexibility. With MCP, you can connect your own MCP-compatible application (such as Claude, Cursor, Github, and more) directly to Amplitude. Once connected, your chosen model can work with your Amplitude data to power private, in-context workflows, all running on infrastructure you control.
+What are the potential inputs and outputs for Amplitude’s AI features?
+Amplitude has embedded AI-enhanced functionality throughout the platform to help customers streamline workflows and accelerate analysis. Because these AI capabilities operate across the product, any data that a customer has submitted to its Amplitude account could potentially be included as input to, or output from, an AI feature, depending on how the customer chooses to use the feature.
+However, it is important to note that Amplitude’s AI partners never use customer data to train their models, and no customer data is retained by any AI partner outside of Amplitude’s secure AWS environment. Moreover, subject to the restrictions on sensitive data set forth in Amplitude’s terms, customers are in full control of determining what data they choose to submit to the Amplitude services, and most customers choose to only send anonymous / pseudonymous data to Amplitude.
+How does Amplitude protect and govern data used by Amplitude’s AI features?
+Amplitude applies the same enterprise-grade security, privacy, and governance controls to Amplitude’s AI features that we use across the rest of the platform. All our AI partners sign enterprise-level agreements with Amplitude and must meet security measures at least as protective as our own.
+For features powered by AWS Bedrock, your customer data does not leave our secure AWS environment, and the model providers themselves do not access or receive your data. Your data remains within AWS and under AWS’s security controls.
+For workflows that leverage OpenAI, we use OpenAI’s Zero Data Retention endpoints for applicable use cases, ensuring OpenAI does not retain your data after processing.
+For workflows that leverage Google's generative AI, we use Google's Zero Data Retention features whenever possible, and in no circumstance will your data retained by Google for longer than forty-eight hours.
+Under no circumstance will any AI partner use your data to train or improve their models.
+Do Amplitude's AI features respect the existing permissions and access controls set up in my account?
+Yes, Amplitude's AI features respect the existing permissions and access controls set up in your account. No new data access is granted to a user when using an AI feature.
+If I use Amplitude’s EU data center, is my data ever sent to the U.S. when I use Amplitude’s AI capabilities?
+No. If your organization is provisioned in Amplitude’s EU data center, your data never leaves the EU when using Amplitude’s AI capabilities. When you use Amplitude’s AI capabilities, the data is processed entirely within the EU and is not transferred to any AI partners in the United States.
+How do you mitigate any bias or discrimination in Amplitude’s AI features?
+As mentioned above, Amplitude’s AI features use third-party models (listed
+here
+), all of which have built-in processes to test and reduce bias, such as evaluation frameworks, fairness testing, and safety filters. In addition, Amplitude continuously monitors model performance and applies guardrails and policies to help ensure outputs are appropriate, fair, and aligned with our customers’ expectations.
+Moreover, we believe that the potential for bias or discrimination in connection with Amplitude’s AI features is very limited because the intended use cases are focused on product analytics and experimentation rather than high risk decision-making processes like credit scoring, hiring, or medical diagnosis. Furthermore, these features are typically used by customers for internal business purposes, and rely on aggregated, non-sensitive data, thus inherently mitigating individual impact.
+How do you monitor and evaluate the performance / accuracy of Amplitude’s AI features?
+As mentioned above, Amplitude’s AI features use third-party models (listed
+here
+), all of which regularly evaluate their models using metrics such as accuracy, reliability, robustness, and safety. These providers use a mix of automated testing, human evaluation, and guardrails to track how models perform. In addition, Amplitude continuously monitors the quality of responses within our AI features to ensure they meet customer needs and adjusts models or configurations when needed. However, customers are still responsible for reviewing their own outputs and Amplitude does not guarantee that all outputs will be error-free.
+Are Amplitude’s AI features considered “high risk” under the EU AI Act or other emerging AI laws?
+No, none of Amplitude’s AI features are classified as "high risk" under the EU AI Act or other emerging AI laws. Amplitude’s AI features are designed for business intelligence and product optimization. They are not intended for (and should not be used for) any purpose that would pose a significant risk of harm to the health, safety or fundamental rights of natural persons.
+Our company has a Business Associate Agreement (“BAA”) with Amplitude. Can we still use your AI features?
+Yes, all of Amplitude’s AI features are covered under our BAAs, and Amplitude has corresponding BAAs with all of our third-party AI subprocessors. For more information on how healthcare customers can safely and securely use Amplitude’s AI features, please see this
+article
+.
+What guardrails does Amplitude have in place for its agentic AI features?
+Amplitude's agentic AI features are built around three core principles: transparency, human oversight, and respect for your existing access controls.
+First, none of Amplitude's agents can take any action that impacts your end users or products without explicit human approval. Every consequential agent action requires a deliberate human decision before it is executed: the agent recommends and prepares, but a person always confirms.
+Second, Amplitude provides visibility into agent activity across the platform. Administrators can view and audit user inputs and agent outputs, giving your team a record of what was asked, what the agent recommended, and what actions were taken.
+Third, Amplitude's existing permissions and data access controls (DAC) apply to all agentic features. An agent operating on behalf of a user can only access the data and perform the actions that the user themselves is authorized to perform. Agents cannot circumvent or escalate beyond a user's existing Amplitude permissions.
+More information on Amplitude's AI controls, including how to configure and manage AI features across your organization, is available at
+https://amplitude.com/docs/amplitude-ai/ai-controls
+.
+Transparency
+Amplitude believes that privacy is a fundamental right and that it is our responsibility to be clear and transparent about how we process your data. We are committed to being transparent with you about our privacy policies and practices, including with respect to our development of
+AI technologies
+. Our Data Processing Agreement (DPA) outlines our strong commitment to securely and responsibly processing your data. We will continue to invest in resources that protect your privacy and build trust.
+Privacy Notice
+Amplitude’s Privacy Notice
+describes our practices for processing information in relation to visitors of our amplitude.com website, Community Forum and Amplitude Academy; Amplitude’s marketing activities; and Customers accessing and using our products and services.
+Data Processing Addendum
+A Data Processing Addendum (DPA) is a legal agreement that sets out the legal framework under which Amplitude processes personal data submitted to our platform by a customer and applies to all of our services. Our DPA is incorporated by reference into our
+Terms of Service
+and
+Main Services Agreement
+, so no further action by our customers is needed, regardless of which Amplitude services are used.
+Subprocessors
+Amplitude uses third-party sub processors in the US and EU, according to our customers’ data center choices, in order to provide our services. We impose contractual obligations on our sub processors to implement appropriate safeguards to ensure that the subprocessing of personal data is protected to the standards required by applicable data protection laws. A list of our sub processors is disclosed in Schedule B of your applicable
+DPA
+. Our customers may subscribe to notifications of subprocessor changes by emailing subprocessor.notifications@amplitude.com.
+Data Privacy Framework
+On July 10, 2023, the European Commission formally adopted its new adequacy decision for the EU-US Data Privacy Framework. The adoption of this adequacy decision follows years of intense negotiations between the EU and the US after the invalidation of the EU-US Privacy Shield. The adequacy decision provides our customers with additional certainty that any EU personal data submitted to the Amplitude platform can legally be transferred to the United States.
+In addition to certifying to the Data Privacy Framework, our DPA will also continue to incorporate other data transfer mechanisms, such as the Standard Contractual Clauses and the UK Addendum.
+Our perspective
+Creating an AI-Ready Data Foundation
+To get the most out of AI tools, you need a solid data foundation that’s reliable, clean, trustworthy, and ready. Learn how with this guide.
+Get the guide
+Understanding the Impact of European Privacy Regulation on Analytics
+Discover how Amplitude helps businesses navigate privacy regulations while unlocking valuable insights from customer data.
+Read the blog
+Guide to Global Customer Data Privacy
+Navigate the intricate world of data privacy with our comprehensive guide to the secrets of data compliance and customer trust.
+Read more
+Platform
+AI Agents
+Agent Analytics
+AI Feedback
+Amplitude MCP
+AI Assistant
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+AI Early Access Program
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+LinkedIn
+Twitter
+G2
+GitHub
+Reddit
+View markdown
+Copy markdown
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
+Español (LATAM)
+Español (Spain)
+Português (Brasil)
+Português (Portugal)
+Français
+Deutsch
+© 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.

@@ -1,0 +1,146 @@
+# https://developer.harness.io/docs/feature-management-experimentation
+Feature Management & Experimentation Documentation | Harness Developer Hub
+Skip to main content
+Harness Developer Hub
+Ask AI
+Search
+Contact us
+Sign in
+Sign up
+Home
+Documentation
+▾
+API Reference
+Roadmap
+Release Notes
+University
+Glossary
+Feature Management & Experimentation
+Feature Management & Experimentation
+New to FME?
+Start FME in Harness
+Key Concepts
+Get Started
+SDKs and Customer-Deployed Components
+Use FME
+Feature Management
+Release Monitoring
+Cloud Experimentation
+Warehouse Native Experimentation
+Release Agent
+Management & Administration
+API Keys
+Audit Logs
+Automated Feature Flag Cleanup
+Environments
+Groups
+Integrations
+My Work
+Owners
+Permissions
+Pipelines
+Policies
+Projects
+Tags
+Traffic Types
+Users
+Usage Data
+Admin Best Practices
+API Best Practices
+Troubleshooting & Resources
+What's Supported
+Harness FME's approach to statistics
+Split to Harness Migration
+Harness Support
+Release Notes
+Roadmap
+API Reference
+Certifications & Training
+Show All Docs
+Feature Management & Experimentation
+Feature Management & Experimentation
+Harness Feature Management & Experimentation (FME) is a feature management platform that helps you manage feature releases, monitor performance, and run experiments for data-driven development.
+Getting started
+What's supported
+Explore the various platforms and technologies supported in Harness FME.
+Key concepts
+Learn about key concepts in Harness FME, including feature flags, experiments, and more.
+Overview
+Set up Harness FME and start managing your first features.
+SDKs and customer-deployed components
+Integrate Harness FME with your preferred languages and platforms, and configure your environments and infrastructure for seamless feature management.
+Use Harness FME
+Feature Management
+Control feature rollouts with flags, variations, and canary releases.
+Release Monitoring
+Track performance, measure KPIs, and receive alerts on feature impact.
+Cloud Experimentation
+Run experiments and analyze results for data-driven development.
+Warehouse Native Experimentation
+Run experiments and analyze results for data-driven development in your data warehouse.
+Release Agent
+Use the Release Agent in Harness FME to manage feature flags and experiments.
+Management & Administration
+Permissions
+Manage approval workflows and governance for environment-level changes in Harness FME.
+RBAC
+Control who can view and edit FME resources across projects and environments.
+Integrations
+Connect Harness FME to messaging, monitoring, issue management, customer data platforms, and analytics tools.
+API
+Access Harness FME programmatically with API references and examples.
+Pipelines
+Define and manage your deployment pipelines using Harness FME steps.
+Troubleshooting & Resources
+Migrate from Split to Harness FME
+Step-by-step guidance to migrate your account from Split to Harness FME.
+Harness Support
+Find help and support for Harness FME.
+Last updated
+on
+Feb 26, 2025
+Next
+Start FME in Harness
+Harness Software Delivery Platform
+Overview
+Code Repository
+Continuous Integration
+Continuous Delivery & GitOps
+Infrastructure as Code Management
+Feature Flags
+Feature Management & Experimentation
+Cloud & AI Cost Management
+AI Security
+API & Application Discovery
+Application & API Runtime Protection
+Application & API Security Testing
+Security Testing Orchestration
+Supply Chain Security
+SAST and SCA
+Chaos Engineering
+AI SRE
+Service Reliability Management
+Internal Developer Portal
+AI DLC Insights
+AI Test Automation
+Resources
+Sign up
+Harness Community
+API Reference
+YouTube
+Developer Hub GitHub
+Release Notes
+Roadmap
+Feature Requests
+Feature Availability
+Glossary
+University
+Instructor-Led Training
+Partners
+Style Guide
+Legal
+Terms of Use
+Privacy Policy
+Accessibility
+Do not sell or share my personal information
+Copyright © 2026 Harness Inc.

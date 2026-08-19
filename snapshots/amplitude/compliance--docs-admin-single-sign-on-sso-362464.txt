@@ -1,0 +1,154 @@
+# https://amplitude.com/docs/admin/single-sign-on/sso
+Single sign-on (SSO) in Amplitude | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Overview
+Billing and Use
+Account Management
+Single Sign-On
+Single sign-on (SSO) in Amplitude
+Auth0 SSO
+Set up single sign-on (SSO) for Amplitude using AWS IAM Identity Center
+G Suite SSO
+Microsoft Azure AD SSO
+Okta SSO
+OneLogin SSO
+Set up single sign-on (SSO) for Amplitude using another service
+Audit log
+On this page
+SSO basics
+What your identity provider must send
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Admin
+/
+Single sign-on (SSO) in Amplitude
+Single sign-on (SSO) in Amplitude
+Single sign-on
+(SSO) is an authentication scheme that lets users use a single ID and password combination to log into multiple platforms, services, or systems. Amplitude supports SSO and is compatible with any SAML 2.0-compliant SSO provider, including:
+Auth0
+AWS IAM Identity Center
+G Suite
+Microsoft Azure Active Directory
+Okta
+OneLogin
+Other
+providers not specifically named.
+Follow the provider-specific guide for setup and configuration details.
+SSO basics
+Before you enable SSO:
+You can
+require
+members of your organization to sign in with SSO. Requiring SSO prevents users from signing in with their email and password, so make sure your SSO system works before you turn it on in Amplitude.
+You can also
+automatically
+grant new users access to your organization through just-in-time provisioning. Amplitude only requires a new user to successfully authenticate with your identity provider. After Amplitude receives authentication, Amplitude adds the user to your organization. You can then configure roles for each new user to reflect their needs and the organization's needs.
+Enterprise customers with access to project
+permissions
+can also choose the default project(s) that JIT-provisioned users will have access to.
+What your identity provider must send
+When a user signs in through SSO, Amplitude looks for their email in the SAML assertion in this order:
+The assertion subject.
+An email claim attribute (
+http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress
+).
+An
+emailaddress
+attribute (case insensitive).
+An
+email
+attribute (case insensitive).
+If Amplitude can't find a valid email, the user can't sign in.
+Most identity providers send the email by default. If yours doesn't, follow the provider-specific guide linked above to map the user's email into the assertion.
+Was this helpful?
+On this page
+SSO basics
+What your identity provider must send
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

@@ -1,0 +1,619 @@
+# https://doc.sitespect.com/knowledge/cloud-release-notes-2025
+Cloud Release Notes - 2025
+Skip to content
+English
+Show submenu for translations
+A/B Testing
+Personalization
+Recommendations
+Open main navigation
+Close main navigation
+A/B Testing
+Personalization
+Recommendations
+English
+Show submenu for translations
+How can we help you?
+There are no suggestions because the search field is empty.
+Knowledge Base
+Releases
+Cloud Release Notes - 2025
+November 6, 2025 (10.64.1)
+Bugs/Tasks
+DEV-28712
+Global triggers/page categories cannot be updated
+DEV-28711
+Domain IP's toggled from EU to NON EU POP's silently
+DEV-28710
+name based hosting domain using haproxy will pick the wrong Apache origin in a very specific case
+October 23, 2025 (10.64.0)
+New Features and Improvements
+DEV-26760
+Evaluate PassThroughPathsAndURLs before proxying
+DEV-28625
+Add additional defaults to the passthrough url list
+DEV-28619
+Campaign history when adding/updating/removing an audience
+DEV-28545
+Global change templates should consider the "nonce" site setting
+Bugs/Tasks
+DEV-28662
+SiteSpect Cloud - Slow origin email says 0th time
+DEV-28661
+SiteSpect Cloud - Akamai links from control panel are broken
+DEV-28635
+Add restart_engine to the start apachectl_ssengine.pl test
+DEV-28633
+Factor history: DefaultUrlForPreview changes are called 'Link to Factor'
+DEV-28628
+Performance Matrix - Updating Saved View adds multiple blank spaces to naming
+DEV-28475
+Geo Audience - Countries with only one region don't save Regions or Cities properly
+DEV-28665
+SiteSpect Cloud - Ability to set Hostname (and Host header) in "Header Control (Advanced)"
+DEV-28663
+Upgrade OpenSSL from 3.5.1 to 3.5.3
+DEV-28609
+Cloud Stack Upgrade - Production Rollout
+DEV-28478
+September GeoIP Update
+DEV-28248
+[haproxy] Enable the use of Name Based Hosting domains with HAProxy for Virtual POP
+DEV-28704
+[haproxy] Clusters without namebased domains get the incorrect listen ports
+DEV-28496
+Bulk edit for audiences - API endpoint and Tesla page
+September 10, 2025 (10.63.0)
+Improvements
+DEV-28563
+Prevent MU from deleting users
+DEV-28504
+Expand user API to support full management of users via admin API
+DEV-28507
+Allow wildcard match in VisualEditorWhitelist whitelisting
+DEV-28611
+GA Add pagecategory compatibility for origin-redirect variations.
+DEV-28448
+GA Release: Rename and move Page Category in trigger dropdown in campaign builder
+DEV-28127
+Update To Global Change "Apply Template" Buttons
+DEV-28575
+Report pages: updates to support viewing analytics reports in SpF with iframe
+DEV-28602
+Add new database field and update API to support new "Add JS" transformation method (SpF support)
+DEV-28343
+PCI - Stack Upgrades - OpenSSL, Apache & HAProxy - Prepare packages
+Bugs/Tasks
+DEV-28387
+Domain hidden from List Page if not created correctly
+DEV-28538
+Toggling AI Assistant to OFF isn't removing the Assistant ID
+DEV-28594
+SPF - Dashboard Pipeline links broken when "Superfresh Experimental Features - Internal Use Only" lab is on
+DEV-28393
+SPF - presence of "Changes saved" snackbar interferes with orange "Just saved by" snackbar
+DEV-27774
+SpF: Auditor user level should be allowed to preview metrics and global triggers
+DEV-28624
+Page Category/Global Trigger missing from Metrics Triggers options
+DEV-28621
+A/B Builder "Unknown param 'options'" error if select Global Trigger, then another trigger
+DEV-28467
+Single Tenant - Tool to validate mariadb schema
+DEV-28019
+Load_snapshot should check for replication errors and bail out earlier
+DEV-27967
+GA Release: Update Schema for fields that used TEXT or MEDIUMTEXT fields
+DEV-28477
+August GeoIP Update
+DEV-28595
+M-S-Recs3: Create Factor - Creating factor via basic nbf ux -- tooltip
+DEV-28604
+NAT based load balancer does not correctly bring down VIPs when an engine is not accessible
+DEV-28592
+sync_datasets job should decrement SyncCount when a virtualpop skips a dataset
+DEV-27108
+Inconsistencies Audiences in the API between what GET returns and POST/PUT expects
+August 08, 2025 (10.62.0)
+Improvements
+DEV-28449
+Add Global Triggers as trigger option to Global Variations and Factors
+DEV-28550
+User Account History doesn't show initial access to site
+DEV-28345
+Preview Settings Not Present for Specific Campaign
+DEV-28195
+Allow Engine API only domains to support file storage and the new EAPI 2.0 Endpoint
+DEV-28459
+Update default browser audiences
+DEV-28472
+New default segment for user traffic from AI
+DEV-28394
+Add tags to datasets
+DEV-27579
+Add Updated to all API end points
+DEV-28525
+with_all campaign endpoint not returning correct factor types
+DEV-28473
+Update cases for CompatibleTriggerType/IncompatibleTriggerType on page category
+DEV-28457
+API Duplicates Origin Variation Data in Multiple Fields
+DEV-27805
+Update the "campaigns" api end point to be a little faster
+Superfresh Improvements & Bugs
+DEV-27439
+Default cookie trigger match type to "contains"
+DEV-28506
+SPF - Prevent save for empty Custom Event Listener event name
+DEV-28219
+Update React to use the new Page Category API returning incompatible trigger types
+DEV-28180
+Reduce size of tooltip icon
+DEV-28509
+SpF: Global trigger history tab error
+DEV-28508
+SpF Metric page: global change link goes nowhere
+DEV-28505
+Metric and Trigger list pages: Update column types
+DEV-28500
+Geo trigger edit icon overlaps text & fix failing test (react/components/Triggers/TypeSelect/logic.test.tsx)
+DEV-28487
+SPF - Chrome browser console error when Discarding Unsaved Changes
+DEV-28484
+SuperFresh - Don't display IP_Whitelist link for on-premise environments
+DEV-28025
+Global Changes tab: View mode with 1+ global changes
+Bugs/Tasks
+DEV-28465
+Incorrect Username Displayed in “Username Already Exists” Error Message
+DEV-28389
+Error message missing when attempting to Import Campaign Variation using "Update" action
+DEV-28243
+Slow origin emails have the wrong "What's next" section when a per-servergroup bypass has already happened.
+DEV-28503
+Disable Robot Detection Header overriding X-PassThrough header
+DEV-28481
+Perf Matrix - Creating New Segment from within "Exclude" widget places segment in "Include"
+DEV-28366
+Previewing Global Variation "As if assigned to: campaign" inconsistencies
+DEV-28476
+July GeoIP Update
+DEV-28511
+Lets Encrypt: certificate request validation expiration incorrectly says 10 days from creation; this is causing problems
+DEV-27897
+Collect timing of all objects regardless of pass/fail evaluation in disablement details
+DEV-28446
+Upgrade "lodash" JS library
+DEV-28501
+SiteSpect Cloud - Issue with "High Connection Count Bypass" checkbox on Domain page
+DEV-28386
+Domains - toggling to Self-Signed cert fails to save properly
+DEV-28352
+[mysql] [site] [activeuservisit] `Site.TimeoutForUserVisit` too small to accommodate `$SiteSpect::Admin::Const::MaxValue_UserSessionTimeout`
+DEV-28124
+Saving Whitelist/Blacklist Headers Control with spaces results in incorrectly mutated value
+DEV-28521
+Review manual steps needed to get NAT load balancing to work upon VM reboots
+DEV-28583
+Fix engine/dr_mph.pl failing test
+Virtual POPs
+DEV-28469
+SiteSpect Cloud - Ability to use our load balancer in NAT mode
+DEV-28539
+SS_ENGINE_OUT rules do not work currently with virtual pop engines
+DEV-28537
+SS_ENGINE_IN and SS_ENGINE_OUT iptables rules keep getting repeated
+DEV-28529
+Jobs changes for Virtual POP engines
+July 10, 2025 (10.61.0)
+AI Assistant (Beta release)
+DEV-28048
+AIA2: Add JS for all pages to inject AIA
+DEV-28510
+AIA: Update pickaxe to use our button and call button.click on their button when ours is clicked.
+DEV-28453
+Fix z-index issue on Trend report with AI Bot modal
+Improvements
+DEV-28344
+Leverage Saved Views from Performance Matrix on Data Export page
+DEV-27317
+Import/export support for new Alternative Origin feature
+DEV-28376
+Add global triggers/datasets/recs templates to search results
+Bugs/Tasks
+DEV-28439
+SpF - Get Valid trigger types for global triggers
+DEV-28277
+SpF - Add message to detect outlier option when the maximum number of outlier metrics is reached
+DEV-28445
+Site search not finding A/B Builder Variation when searching by ID
+DEV-28294
+June GeoIP Update
+DEV-28309
+Speed up API/Model/Factors.pm
+DEV-28463
+Fix harness/t/api/response_points_is_live.pl
+HAProxy & Virtual POPs
+DEV-28517
+adding sort to haproxy log-format creation based on hash keys
+DEV-28516
+Fix haproxy config to use correct cert and key name for name based default cert
+DEV-28148
+VirtualPOPs should only set up VirtualHosts that are configured for it
+DEV-28147
+Add a VirtualPOP field to ServerGroup table
+May 14, 2025 (10.60.0)
+Superfresh
+DEV-28443
+SpF Navigation: Change "Draft" to "Review"
+DEV-28441
+Superfresh UX makes report links to calculations from reports go to new metric page
+DEV-28116
+SPF - Recently viewed character encoding issue for Legacy views
+DEV-27867
+Recommendation Templates are not saved in recent view
+DEV-28417
+Superfresh Search bar doesn't allow users to search for labels #1234
+DEV-28329
+"Invalid request" CSRF error when using multiple tabs and toggling user in and out of SPF
+Admin API new features and improvements
+DEV-28227
+Metrics - Associated Campaigns - Doesn't show personalization triggers
+DEV-28299
+Speed up API/Model/DataSets.pm
+DEV-28297
+Speed up API/Model/SiteVariations.pm
+DEV-28283
+Speed up responsepoints api
+DEV-28437
+Fix data set history api call (broken in DEV-28299)
+DEV-28385
+Campaign API call with with_all doesn't fill in tags for audiences
+DEV-28364
+KP Admin API - Unable make PUT calls on campaign with Calculation as KPI
+HAProxy
+DEV-28436
+Add monitoring of haproxy process
+DEV-28428
+Harness lab options for haproxy and hosting type
+DEV-28426
+Tweaks to haproxy log shipping
+DEV-28425
+HAProxy logs are getting rotated 30 minutes late
+Improvements and Bugs
+DEV-28447
+Requests bypassing whitelist by hitting the wrong domain
+DEV-28372
+Ability to restrict the max amount of time for one log download request
+DEV-28374
+Site Variation Preview includes live origin site variation even if "With all active Site Variations:" is unchecked
+DEV-28326
+Perf Matrix - Uncaught Invalid n: $n jquery console error when only one VG displayed
+DEV-28381
+SiteSpect needs to accept Elliptic Curve SSL keys and certificates
+DEV-27242
+SiteSpect Cloud - Have restart_engine retry "start" on failure
+April 16, 2025 (10.59.0)
+Superfresh
+The new Metric and Global Trigger pages are now
+live in the Superfresh UX user lab,
+part of our ongoing Superfresh UX enhancements. These updates are designed to make it easier to define, manage, and reuse campaign components.
+Learn more
+DEV-28151
+Move metric and trigger pages to SpF public lab
+DEV-27565
+UI for client-side "custom" trigger
+DEV-28315
+Update SpF Lab tooltips
+DEV-28354
+Update label for SpF Experimental lab
+DEV-28321
+Visitor Behavior - Add message when there are no Personalization Metrics to select
+DEV-28375
+SpF Metric/Trigger - "Just saved by..." message based upon user's relation to UTC
+DEV-27530
+Remove deleted resources from recent menu
+DEV-28308
+Recent view - Problem updating link from old to new
+DEV-28350
+String Capture Metrics have Default KPI checkbox grayed out
+New Features
+DEV-28126
+Disablement for Request Payload
+DEV-28261
+HAProxy for Cloud - Limited Availability
+Improvements
+DEV-28320
+Metric has no data re-rollout phase 2: Turn ON the site setting for all sites (cloud only)
+DEV-27766
+AngularJs "Update" Lab Step 5: Remove AngularJS "Update" lab
+DEV-27770
+Moment Lab Step 5: Remove Moment.js lab
+DEV-28291
+Admin API - Speed up API/Model/PageCategories.pm
+Bugs/Tasks
+DEV-28373
+SRM Detection Bug w/ Use Multiple
+DEV-28232
+User permissions / Labs are reset when incorrect pw entered when changing
+DEV-28276
+Dashboard - Campaign names bleed over in Recently Ended Winners & Underperformers
+DEV-28271
+Admin API - Campaign API call with_full returns duplicate variations
+DEV-28359
+HAProxy - Fully disable name based hosting from haproxy
+DEV-28340
+SiteSpect Cloud - Keep a consistent ordering for SS_ORIGIN iptables rules
+DEV-28341
+SiteSpect Cloud - Keep a consistent ordering for vhosts in apache (and haproxy)
+DEV-28250
+Change DiskSpaceFreeKB regex to work with tmpfs filesystems
+DEV-28365
+ModSecurity - Ignore requests coming from AlertLogic & requests with an ipv4 address for the host header
+DEV-28296
+April GeoIP Update
+March 20, 2025 (10.58.0)
+Improvements
+DEV-28191
+Soften and expand messaging in F&R disablement email
+DEV-28249
+Metrics not firing for mobile app campaign
+DEV-27958
+HttpOnly flag impacts origin cookies set in variation
+DEV-28157
+SpF - update legacy (tt2) search results with new links for metrics and global triggers
+DEV-27715
+SpF - Add Request Payload value capture to metric - react UI
+DEV-28007
+SpF - HTTP header trigger: rename "custom" to "custom header" & move to top
+DEV-28193
+SpF - Metric & global trigger live tag: Add tooltip and change tag name
+DEV-28194
+SpF - Triggers list page: Add columns
+DEV-28192
+"Restore" button doesn't restore default error template
+DEV-27994
+Update Labs Tesla page - specify list of user IDs
+DEV-27429
+Don't allow circular dependencies between Page Category and Metrics
+DEV-28072
+Campaign Delete should delete "New Build Flow" factors/variations
+DEV-28073
+Variation Group Delete should delete "NewBuildFlowCampaign" variations associated with the vg
+DEV-28221
+March GeoIP Update
+Bugs/Tasks
+DEV-28284
+SRM Detection Errors
+DEV-27592
+Campaign save puts html in empty "Replace with this" field
+DEV-28156
+Personalization Metric count displaying wrong number
+DEV-28268
+Sequential group testing displaying Checkpoint data to SAs only
+DEV-28125
+Can add client side page category to event track metric in legacy metric page
+DEV-28245
+Let's Encrypt manual validation fails by changing the target value
+DEV-28190
+SPF "Experimental" lab stays on when non-SA user turns off main SPF lab
+DEV-28142
+SpF - "Enable Outlier Filtering" feature blocks Save Panel from closing
+DEV-28214
+SpF - Create object while already on new object of that type doesn't work
+DEV-28235
+SpF - Visitor behavior > string capture: wrong metrics
+DEV-28281
+SpF - Fields modify their type (string/number/boolean) after changing the option
+DEV-28115
+SpF - Global Trigger Preview issues
+DEV-28200
+SpF - Personalization metrics totals are wrong in react
+DEV-28290
+SpF - Global Triggers Page: Creating new triggers doesn't work
+DEV-28298
+SpF - HTTP header triggers (non-custom subtypes) break the page
+DEV-28319
+SpF - Metric page: Default KPI option prevents the save panel from hiding
+DEV-28303
+SpF - Metrics list: Invalid DateTime in Created column
+DEV-28305
+SpF - "contains" must be selected before selecting the "matches regex" option
+DEV-28306
+SpF - Metrics list: tooltip propagates the click to other elements
+DEV-28307
+SpF - Metric page: Global trigger tooltip shows "Updated: 99999999"
+DEV-28327
+SpF - Metric does not change to non-KPI after assigning a new KPI metric
+DEV-28189
+SpF - Should be able to save client side metric with only a client side page category trigger
+DEV-28143
+IPv6CalcCompatible missing from multirequest
+DEV-28288
+SiteSpect Cloud - "--run_queue" incorrectly tries to run Jobs if none are in the queue
+DEV-28282
+SiteSpect Cloud - manage_engine_nodes.pl should Error out any Processing jobs with the same PID
+DEV-28286
+SiteSpect Cloud - getLetsEncryptTokens creates too many connections to the database during a restart_engine job
+DEV-27707
+2.13. QID: 150084 Unencoded characters
+DEV-27711
+2.16. QID: 150246 Path-relative stylesheet import (PRSSI) vulnerability
+DEV-27713
+EVA - 2.1. Vulnerable JavaScript dependency
+DEV-28330
+[haproxy] Update logrotate for sitespect-haproxy
+DEV-27945
+Enable the iab update cron
+DEV-28152
+PCI - Ability to enable ModSecurity
+DEV-28269
+Hubspot CSP error - cta-service-cms2.hubspot.com
+February 20, 2025 (10.57.0)
+New Features
+DEV-28061
+Sample Ratio Mismatch (SRM) detection
+DEV-27231
+Add the client-side "custom" trigger type to metrics
+DEV-27983
+Request Payload for Audience
+DEV-26262
+Rate limit report calls from a single user
+Improvements
+DEV-28043
+Delay assignment until the identifier (OC cookie) is exposed
+DEV-27981
+MU user unable to see users that don't have any permission set.
+DEV-28021
+Performance matrix not using custom control name
+DEV-27961
+Let's Encrypt automation is not terminating requests for SiteSpect-hosted validation files
+DEV-27990
+Sequential testing: Improvements to the checkpoints report
+DEV-27991
+Sequential testing: Improvements to the trend/results report
+DEV-27992
+Sequential testing: Improvements to the alerts
+DEV-27993
+Sequential testing: Improvements to the checkpoint emails
+DEV-27735
+Metric has no data re-rollout: Turn OFF the alert on all metrics and the site setting for all sites
+DEV-27736
+Metric has no data re-rollout: Set disable_no_visits_metrics SSCONF variable to 0
+DEV-26924
+Optimization to Preview
+DEV-28039
+Only "remove visits older than X months" when a campaign is active
+DEV-27948
+SiteSpect-Metric-Info header - include "Value" when strings get captured in Custom Variables
+DEV-27580
+PageCategory API: Return incompatible trigger types
+DEV-27137
+Site Lab: Remove "Concurrent Assignment Variation Group" lab
+DEV-27128
+Site Lab: Remove "Metrics with Custom Value don't require Totals/Uniques" lab
+DEV-28050
+AIA0: Add a user beta for pickaxe
+DEV-28051
+AIA0: Update CSP to allow SiteSpect AI Assistant to work by connecting to pickaxeproject.com, cdn.jsdelivr.net and fonts.googleapis.com
+DEV-28040
+UserAsmtCriteria status makes a difference on the engine
+DEV-27874
+Add Omnichannelcrc32 and omnichanneltagging cookie name attributes to /site api
+DEV-28226
+Update 20250108-DEV-27735/runme.pl to be rerunable
+Superfresh
+DEV-27293
+Restrict numeric capture and string capture to server-side triggers only
+DEV-27723
+Change "[Saved] trigger" name to "Global trigger"
+DEV-27879
+Remove Switch to onChange Validation After Save
+DEV-27979
+SPF: Add "case insensitive" checkbox when "matches JS Regex" dropdown option selected
+DEV-28079
+SPF - Custom Var - Totals or Uniques required when should not
+DEV-27605
+Snackbar on top of logged out screen
+DEV-28093
+Using a Client-Side Global Trigger on SPF Metric detail doesn't save it
+DEV-28144
+SpF Metric page: red border doesn’t hide when meeting the validation.
+DEV-28090
+SPF - Trigger page - "Learn more" link takes user to wrong help page
+DEV-28113
+SpF - Empty Triggers List Page Missing Left Side
+DEV-28149
+SpF Metric page: inconsistency in the error message display.
+DEV-28139
+SpF nav: Remove "Suggest Feature"
+DEV-28205
+Revert SpF nav: Remove "Suggest Feature"
+Bugs/Tasks
+DEV-28106
+VE can improperly update "Report-Only" CSP headers
+DEV-28184
+VE changes sticking between variation groups when HttpOnly is enabled
+DEV-28037
+Reduce table scans
+DEV-26810
+Bad regex in URL trigger
+DEV-28027
+VE: searchtext: Not a valid regular expression when creating a Click Track element
+DEV-28038
+sequential: report cache issues
+DEV-26248
+Turning on Disablement details by default
+DEV-28092
+ipv6 addresses are appearing in Logzio for a client with gdpr enabled
+DEV-27932
+January GeoIP Update
+DEV-28060
+Properly encode more geolocation database fields in Lib::GeoIP
+DEV-27945
+Enable the iab update cron
+February 5, 2025 (10.56.0)
+New Feature
+DEV-27001
+Ability to customize the slow origin restore periods
+Bug Fixes
+DEV-28218
+Engine API 2.0 Endpoint not getting assignments when "Skip Assignment When First Hit Is Internal Content" is enabled
+DEV-28225
+Alt-Origin Not forwarding CGI Query Params.
+January 16, 2025 (10.55.0)
+New Feature
+DEV-28080
+Make "Skip Assignment When First Hit Is Internal Content" compatible with custom endpoint.
+Get Started
+SiteSpect Support
+Overview Information
+Intro to SiteSpect
+Account Setup
+Artificial Intelligence
+Dashboard
+Build
+Setting Up a Campaign
+Create a Client-Side Campaign
+Create a Server-Side Campaign
+Metrics
+Audiences
+Triggers
+Variations
+Traffic Management
+Preview
+Factors
+Advanced Settings
+Omnichannel
+Regular Expressions (Regex)
+WATTS
+Recommendations
+Monitor
+Analyze
+Data Export and Integration
+SiteSpect Reports
+Site
+Tools
+Configuration
+Developers
+API Reference
+Code Samples
+Tips & Tricks
+Mobile
+Implementation, Deployment, and Security
+How does SiteSpect work with CDNs?
+Single Tenant Implementations
+Security Features
+Deployment and Implementation Overview
+SiteSpect Engine & Admin API
+Third-Party Integration
+Google
+Zuko
+Troubleshooting
+Releases
+Superfresh
+Feedback
+A/B Testing
+Personalization
+Recommendations
+Copyright © 2026, Monetate

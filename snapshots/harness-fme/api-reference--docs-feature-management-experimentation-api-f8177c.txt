@@ -1,0 +1,609 @@
+# https://developer.harness.io/docs/feature-management-experimentation/api
+Admin API | Harness Developer Hub
+Skip to main content
+Harness Developer Hub
+Ask AI
+Search
+Contact us
+Sign in
+Sign up
+Home
+Documentation
+▾
+API Reference
+Roadmap
+Release Notes
+University
+Glossary
+Feature Management & Experimentation
+Feature Management & Experimentation
+New to FME?
+Start FME in Harness
+Key Concepts
+Get Started
+SDKs and Customer-Deployed Components
+Use FME
+Feature Management
+Release Monitoring
+Cloud Experimentation
+Warehouse Native Experimentation
+Release Agent
+Management & Administration
+API Keys
+Audit Logs
+Automated Feature Flag Cleanup
+Environments
+Groups
+Integrations
+My Work
+Owners
+Permissions
+Pipelines
+Policies
+Projects
+Tags
+Traffic Types
+Users
+Usage Data
+Admin Best Practices
+API Best Practices
+Creating, Editing, and Deleting Feature Flags
+Managing User and Groups
+Managing Segments
+Approval Flows and Change Requests
+Sending Event Data
+Creating Unit Tests
+Using Test Automation in QA
+Examples
+Admin API
+Webhooks
+Wrappers
+Troubleshooting & Resources
+What's Supported
+Harness FME's approach to statistics
+Split to Harness Migration
+Harness Support
+Release Notes
+Roadmap
+API Reference
+Certifications & Training
+Show All Docs
+Feature Management & Experimentation
+API Best Practices
+On this page
+Admin API
+Last updated
+on
+Jul 14, 2026
+Download as PDF
+Overview
+​
+You can use the
+Harness FME Admin API
+to:
+Push data into Harness FME
+Get data out of Harness FME
+Build custom integrations
+Build on top of Harness FME
+Identify users
+​
+Not used for
+targeting
+and
+getTreatment
+Customer attributes stored using the methods discussed here aren't used for targeting your roll out definitions or as part of the standard usage of
+getTreatment
+. In order to target, you must pass the attribute with the
+getTreatment
+call.
+Learn more about
+targeting based on custom attributes
+.
+You can use the
+Identities REST API
+to identify your keys in Harness FME, making them available when writing targeting rules in the user interface and enriching autocomplete functionality throughout the user interface. Identifying your keys is useful if you want to pre-populate the user interface for your team and provide customer data when setting up your rollouts and analyzing
+impression data
+.
+Harness FME provides an Identities API for sending identity attributes associated with your keys. You can also use the
+identity upload helper utility tool
+to bulk upload identity data using this API.
+To manage your accounts's attributes:
+From the FME navigation menu, navigate to
+FME Settings
+>
+Projects
+.
+Click
+View
+on the project you want to configure and navigate to the
+Traffic types
+tab.
+Click
+View/Edit attributes
+for the traffic type you want to configure.
+Optionally, edit the display name, description, and attribute type.
+Click
+Save
+. The attribute has been updated.
+You can view a customer's attribute data on the third tab of the customer dashboard which is populated from the attribute data you send using the Harness FME API. To navigate to this dashboard, click on a unique key when you view impression data or use the search bar on the left navigation panel.
+Fetching feature flag definitions without using the Admin API key
+​
+In addition to using the Admin API, you can fetch feature flag definitions for a specific environment using the SDK API key. This is done using the SDK HTTP endpoint rather than the Admin API.
+warning
+This endpoint is not publicly documented, and its response structure may change without notice.
+Use the following request to fetch all feature flag definitions for the environment associated with the SDK API key:
+curl
+-H
+"Authorization: Bearer [SDK_API_KEY]"
+\
+-H
+"Accept-Encoding: gzip, deflate, br"
+\
+-H
+"Accept: application/json"
+\
+https://sdk.split.io/api/splitChanges?since
+=
+-1
+|
+gunzip
+The request returns a JSON payload (
+gzipped
+) containing all feature flag definitions for the environment.
+{
+"splits"
+:
+[
+{
+"trafficTypeName"
+:
+"account"
+,
+"name"
+:
+"sample_feature"
+,
+"trafficAllocation"
+:
+100
+,
+"trafficAllocationSeed"
+:
+-554128485
+,
+"seed"
+:
+1569859022
+,
+"status"
+:
+"ACTIVE"
+,
+"killed"
+:
+false
+,
+"defaultTreatment"
+:
+"off"
+,
+"changeNumber"
+:
+1580851834698
+,
+"algo"
+:
+2
+,
+"configurations"
+:
+{
+"off"
+:
+"{\"off_key\":\"off_value\"}"
+,
+"on"
+:
+"{\"On_key1\":\"on_value1\",\"On_Key2\":\"on_value2\"}"
+}
+,
+"conditions"
+:
+[
+{
+"conditionType"
+:
+"WHITELIST"
+,
+"matcherGroup"
+:
+{
+"combiner"
+:
+"AND"
+,
+"matchers"
+:
+[
+{
+"keySelector"
+:
+null
+,
+"matcherType"
+:
+"WHITELIST"
+,
+"negate"
+:
+false
+,
+"userDefinedSegmentMatcherData"
+:
+null
+,
+"whitelistMatcherData"
+:
+{
+"whitelist"
+:
+[
+"bob"
+]
+}
+,
+"unaryNumericMatcherData"
+:
+null
+,
+"betweenMatcherData"
+:
+null
+,
+"booleanMatcherData"
+:
+null
+,
+"dependencyMatcherData"
+:
+null
+,
+"stringMatcherData"
+:
+null
+}
+]
+}
+,
+"partitions"
+:
+[
+{
+"treatment"
+:
+"on"
+,
+"size"
+:
+100
+}
+]
+,
+"label"
+:
+"whitelisted"
+}
+,
+{
+"conditionType"
+:
+"ROLLOUT"
+,
+"matcherGroup"
+:
+{
+"combiner"
+:
+"AND"
+,
+"matchers"
+:
+[
+{
+"keySelector"
+:
+{
+"trafficType"
+:
+"account"
+,
+"attribute"
+:
+"country"
+}
+,
+"matcherType"
+:
+"WHITELIST"
+,
+"negate"
+:
+false
+,
+"userDefinedSegmentMatcherData"
+:
+null
+,
+"whitelistMatcherData"
+:
+{
+"whitelist"
+:
+[
+"US"
+]
+}
+,
+"unaryNumericMatcherData"
+:
+null
+,
+"betweenMatcherData"
+:
+null
+,
+"booleanMatcherData"
+:
+null
+,
+"dependencyMatcherData"
+:
+null
+,
+"stringMatcherData"
+:
+null
+}
+]
+}
+,
+"partitions"
+:
+[
+{
+"treatment"
+:
+"on"
+,
+"size"
+:
+100
+}
+,
+{
+"treatment"
+:
+"off"
+,
+"size"
+:
+0
+}
+]
+,
+"label"
+:
+"country in list [US]"
+}
+,
+{
+"conditionType"
+:
+"ROLLOUT"
+,
+"matcherGroup"
+:
+{
+"combiner"
+:
+"AND"
+,
+"matchers"
+:
+[
+{
+"keySelector"
+:
+{
+"trafficType"
+:
+"account"
+,
+"attribute"
+:
+null
+}
+,
+"matcherType"
+:
+"ALL_KEYS"
+,
+"negate"
+:
+false
+,
+"userDefinedSegmentMatcherData"
+:
+null
+,
+"whitelistMatcherData"
+:
+null
+,
+"unaryNumericMatcherData"
+:
+null
+,
+"betweenMatcherData"
+:
+null
+,
+"booleanMatcherData"
+:
+null
+,
+"dependencyMatcherData"
+:
+null
+,
+"stringMatcherData"
+:
+null
+}
+]
+}
+,
+"partitions"
+:
+[
+{
+"treatment"
+:
+"on"
+,
+"size"
+:
+0
+}
+,
+{
+"treatment"
+:
+"off"
+,
+"size"
+:
+100
+}
+]
+,
+"label"
+:
+"default rule"
+}
+]
+}
+,
+]
+,
+"since"
+:
+1572295747543
+,
+"till"
+:
+1580851834698
+}
+Admin API specifications
+​
+The
+Harness FME Admin API documentation
+provides specifications for all public API endpoints, along with details on
+authentication
+and
+rate limiting
+. You can also access the
+Postman collection
+containing all Harness FME Admin API endpoints.
+Admin API wrappers
+​
+You can interact with the Admin API using the Python PyPi Library or the Command-Line Interface (CLI). Learn more in the
+Admin API wrappers documentation
+.
+Admin API examples
+​
+Explore working examples that call the Harness FME Admin API to accomplish typical tasks in the
+Admin API examples documentation
+.
+Admin API webhooks
+​
+Webhook integrations are available to send real-time event payloads to Harness FME. Each integration allows you to automate workflows and capture important event data externally.
+Audit Logs
+allow you to stream audit log events from your Harness FME organization.
+Admin Audit Logs
+allow you to send admin-level audit log events to your endpoint.
+Impressions
+allow you to send impression data for treatments served to users.
+Metric Alerts
+allow you to send metric alert and significance events to your endpoint.
+The standard webhook integration automatically compresses the POST body request using
+gzip
+when sending data to the target application server.
+Troubleshooting
+​
+When using Azure Logic Apps as the target, there is a compatibility issue between the way Harness FME uses the
+gzip
+library and how Azure Logic Apps decodes the payload.
+To resolve this, disable
+gzip
+by appending the following parameter to the end of the Azure Logic App Webhook URL:
+&gzip=false
+.
+Last updated
+on
+Jul 14, 2026
+Previous
+What happens when I downgrade to the Free Edition?
+Next
+Creating, Editing, and Deleting Feature Flags
+Overview
+Identify users
+Fetching feature flag definitions without using the Admin API key
+Admin API specifications
+Admin API wrappers
+Admin API examples
+Admin API webhooks
+Troubleshooting
+Harness Software Delivery Platform
+Overview
+Code Repository
+Continuous Integration
+Continuous Delivery & GitOps
+Infrastructure as Code Management
+Feature Flags
+Feature Management & Experimentation
+Cloud & AI Cost Management
+AI Security
+API & Application Discovery
+Application & API Runtime Protection
+Application & API Security Testing
+Security Testing Orchestration
+Supply Chain Security
+SAST and SCA
+Chaos Engineering
+AI SRE
+Service Reliability Management
+Internal Developer Portal
+AI DLC Insights
+AI Test Automation
+Resources
+Sign up
+Harness Community
+API Reference
+YouTube
+Developer Hub GitHub
+Release Notes
+Roadmap
+Feature Requests
+Feature Availability
+Glossary
+University
+Instructor-Led Training
+Partners
+Style Guide
+Legal
+Terms of Use
+Privacy Policy
+Accessibility
+Do not sell or share my personal information
+Copyright © 2026 Harness Inc.

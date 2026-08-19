@@ -1,0 +1,76 @@
+# https://experienceleague.adobe.com/en/docs/target/using/introduction/intro
+What is Target? | Adobe Target
+Documentation
+Target
+Target Guide
+Introduction to Target
+Last update: May 12, 2026
+Topics:
+Overview
+Adobe Target, part of the Adobe Experience Cloud, offers comprehensive tools to personalize customer experiences across web, mobile sites, apps, social media, and other digital channels.
+Target helps maximize revenue and can be licensed as Target Standard or Target Premium.
+Target Standard
+section_ACD5EFF17AAB4E979CBEFA0145CCD905
+Target Standard is the front end to Adobe Target, enabling visual creation and management of A/B tests and rules-based targeting activities. Target supports custom code insertion within and outside the
+Visual Experience Composer
+(VEC) workflow. Target Standard offers a simplified implementation strategy for your digital properties, with a single line of code on each page managing all communication between your site and Target.
+Industry best practices are integrated into Target Standard, making it suitable for both new and experienced users. You can easily share data, results, and collaborate with team members using the Adobe Experience Cloud.
+Target Premium
+premium
+[Premium]{class="badge positive"}
+Target Premium is an advanced offering that requires a license to add premium features to Target Standard. All Target Premium articles in Target guides include the Premium badge at the top of each page or inline near the affected text. The Premium badge is clickable and links to this section.
+Target Premium includes the following features:
+Automated Personalization
+Automated Personalization
+(AP) uses advanced machine learning algorithms to deliver personalized experiences and improve conversion rates for digital interactions.
+AP records visitor activity, building profiles to target content to similar visitors. AP tracks responses to content for individuals and the population, using sophisticated modeling to automatically target each visitor based on everything known about them.
+AP is fully automated, continuously learning with minimal human analysis. It builds models to determine which products a visitor is likely to be interested in, collecting and storing information in visitor profiles. Multiple algorithms ensure the best model for your system.
+Auto-Target
+Auto-Target
+uses advanced machine learning to identify high-performing marketer-defined experiences. It then delivers the most tailored experience to each visitor based on individual customer profiles and the behavior of previous visitors with similar profiles. Auto-Target helps personalize content and drive conversions.
+Recommendations
+Recommendations
+activities automatically display products or content that might interest your customers based on previous user activity. Recommendations help direct customers to relevant items they might otherwise not know about.
+A recommendation determines how a product is suggested to a customer, depending on that customer’s activities on the site. For example:
+Encourage people who purchase a backpack to consider buying hiking shoes and trekking poles.
+Create a recommendation that shows items that are often purchased together, using the “People who bought this also bought that” criteria.
+Increase the time visitors spend on your media site by recommending similar video content to what they are currently watching.
+Create a recommendation that suggests other videos, using the “People who viewed this viewed that” criteria.
+Suggest that customers who viewed information about savings plans at your bank also read about IRA accounts.
+Show other products people purchased after viewing one product without showing the first product in the recommendations, using the “people who viewed this also bought” criteria.
+Recommendations as an offer
+Recommendations as an offer
+lets you include recommendations inside A/B Test, Auto-Allocate, Auto-Target, and Experience Targeting (XT) activities.
+This functionality opens up entirely new capabilities, such as:
+Test and target recommendations and non-recommendations content within the same activity.
+Easily experiment with placement of recommendations on the page, including the order of multiple recommendations.
+Automatically push traffic to the best-performing recommendations experience using Auto-Allocate.
+Dynamically assign visitors to tailored recommendations experiences based on individual profiles using Auto-Target.
+Enterprise User Permissions
+Enterprise User Permissions
+functionality lets you create different projects (called “Product Profiles” in the Adobe Admin Console for Enterprise). Enterprise User Permissions let you assign different permissions for a single user that dictate that user’s access rights for each project. These distinct projects can be compared to the way that report suites work in Adobe Analytics. Each project can have specific users with specific roles that apply to a set of properties. The result is that customers are able to restrict the view, edit, approval, and publish access to their users. You can restrict users based on region, environment (dev/stage/prod), channel, or other custom criteria.
+Beta features
+beta
+[Beta]{class="badge informative"}
+The Adobe Target team often enables new features for select customers for testing and feedback purposes. After the testing period completes, these features are enabled for all customers in future Target Standard/Premium releases and announced in release notes.
+Articles in Target guides describing Beta features include the Beta badge at the top of each page or inline near the affected text. The Beta badge is clickable and includes a link to this section.
+Recommendations Classic
+section_9554068100054D2DBDB298CBE5A0E413
+IMPORTANT
+Recommendations Classic is a legacy product and is no longer licensed to new customers. For the best Recommendations experience, upgrade to Recommendations activities available in Adobe Target Premium, described above.
+Recommendations Classic automatically displays products or content that might interest your customers based on previous user activity on your website. Recommendations help direct customers to items they might otherwise not know about, improving sales generated on your website.
+For more information, see the
+Recommendations Classic documentation
+.
+Experience League: The Adobe Target Welcome Kit
+kit
+Build your optimization and personalization program on Adobe Target with this Welcome Kit. The Welcome Kit includes key information, tools, and resources to help you prepare for and launch your first Target activity. The kit includes ideas for short-term quick wins and long-term optimization strategies.
+The Adobe Target Welcome Kit
+Training video: Activity Types (9:03)
+The following video explains the activity types available in Target Standard/Premium and how the Target three-step guided workflow can help you achieve your site goals.
+Describe the types of activities included in Adobe Target
+Select the appropriate activity type to achieve your goals
+Describe the three-step guided workflow that applies to all activity types
+https://video.tv.adobe.com/v/17386?learn=on
+recommendation-more-help
+target-help-main

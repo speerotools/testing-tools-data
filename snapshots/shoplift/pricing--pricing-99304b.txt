@@ -1,0 +1,286 @@
+# https://www.shoplift.ai/pricing
+Shoplift | Pricing
+Big news:
+We're the first testing app to be Shopify Plus Certified!
+Read the press release
+Pricing
+Partner Program
+Resources
+Docs
+Get the most out of Shoplift
+Blog
+Latest & greatest from our team
+Case Studies
+Shopify brand success stories
+Press Kit
+Brand assets & media resources
+Featured Article
+Shoplift joins the Shopify Plus Certified App Program
+See all articles
+Start free trial
+Unlock Your Store's
+Potential
+Start with a 14-day free trial with any plan
+Your monthly store visitors
+Visitor counts are based on total monthly website visitors, not tested visitors.
+Up to 50k monthly store visitors
+Up to 50k monthly store visitors
+50k-100k monthly store visitors
+100k-250k monthly store visitors
+250k-500k monthly store visitors
+500k-1M monthly store visitors
+Unlimited monthly store visitors
+Option text
+Monthly
+Annual
+(Save 25%)
+Core
+Optimization
+essentials
+$99
+/mo.
+Save 25% on an annual plan
+Up to 100k monthly store visitors
+Try it free
+Free for 14 days. Cancel any time.
+Includes
+Shopify template testing
+Shopify theme testing
+URL split testing
+Bayesian predictive analysis
+Predicts the duration of your test in real-time
+Conversion and engagement goals
+Revenue per visitor, Add to cart, click rate, bounce rate, and more
+Device segmentation and reporting
+Support for local currencies and timezones
+Email and chat support
+Order level export
+Daily or aggregate
+One-click apply test winners
+Available for merchants with <100K monthly visitors
+Advanced
+Most Popular
+Advanced targeting
+and segmentation
+$299
+/mo.
+Save 25% on an annual plan
+Up to 100k monthly store visitors
+Try it free
+Free for 14 days. Cancel any time.
+Includes
+Everything in
+Core
+Advanced audience segmentation
+Segment users by referring domain, channels, UTM parameters, and more
+Country and region segmentation
+Simultaneously segment experiences with geolocation
+Lift Assist™
+Leverages your brand and test ideas from hundreds of top brands to generate new features for your store in real-time
+GA4 integration
+Analyze your test data in GA4
+JS API for custom tests
+Live conversion consultation
+Price Testing
+Campaigns
+New
+Subscription Testing
+New
+Available for merchants with <1M monthly visitors
+Pro
+Managed Account
+Automation, intelligence,
+and a dedicated team
+Annual Plan Only
+Up to 100k monthly store visitors
+Switch to Annual
+Includes
+Everything in
+Advanced
+Dedicated Account Manager
+Twice monthly strategy sessions
+Storefront audit and testing roadmap
+Live guided onboarding
+Quarterly business reviews
+Dedicated Slack Channel
+Core
+Optimization
+essentials
+$74
+/mo.
+(Charged annually)
+Up to
+50k
+monthly store visitors
+Try it free
+Free for 14 days. Cancel any time.
+Includes
+Shopify template testing
+Shopify theme testing
+URL split testing
+Bayesian predictive analysis
+Predicts the duration of your test in real-time
+Conversion and engagement goals
+Revenue per visitor, Add to cart, click rate, bounce rate, and more
+Device segmentation and reporting
+Support for local currencies and timezones
+Email and chat support
+Order level export
+Daily or aggregate
+One-click apply test winners
+Available for merchants with <100K monthly visitors
+Advanced
+Most Popular
+Advanced targeting
+and segmentation
+$299
+/mo.
+(Charged annually)
+Up to
+100k
+monthly store visitors
+Try it free
+Free for 14 days. Cancel any time.
+Includes
+Everything in
+Core
+Advanced audience segmentation
+Segment users by referring domain, channels, UTM parameters, and more
+Country and region segmentation
+Simultaneously segment experiences with geolocation
+Lift Assist™
+Leverages your brand and test ideas from hundreds of top brands to generate new features for your store in real-time
+GA4 integration
+Analyze your test data in GA4
+JS API for custom tests
+Live conversion consultation
+Price Testing
+Campaigns
+New
+Subscription Testing
+New
+Available for merchants with <1M monthly visitors
+Pro
+Managed Account
+Automation, intelligence,
+and a dedicated team
+$699
+/mo.
+(Charged annually)
+Up to
+250k
+monthly store visitors
+Talk to sales
+Includes
+Everything in
+Advanced
+Dedicated Account Manager
+Twice monthly strategy sessions
+Storefront audit and testing roadmap
+Live guided onboarding
+Quarterly business reviews
+Dedicated Slack Channel
+SUPPORT 5+ STORES?
+Special pricing available. Talk to sales to learn more.
+Talk to sales
+Trusted by 2,000+ Shopify Plus Brands
+Haus Labs, Kitsch, and Dreamland Baby run their CRO programs in Shoplift.
+View Case Studies
+Read the case study
+Read the case study
+Read the case study
+“Ninepine's tests with Shoplift have been paying off and the results speak for themselves. With just one successful test, you've already paid the yearly fee 20x”
+Kousha Torabi
+Co-Founder of Ninepine
+Works with all of
+your favorite
+shopify apps
+Page Builders
+Subscriptions
+Analytics
+Agency? Let’s talk.
+The Shoplift Partner Program is built to give agencies and developers access to features, dedicated support, and a revenue participation plan.
+Request a partner demo
+How do I install Shoplift?
+Installing Shoplift on your store can be done in just a few clicks by installing the Shoplift app from the Shopify App Store.
+What can I test with Shoplift?
+Shoplift natively integrates with your Shopify store and enables seamless testing of Shopify themes and templates. This means that you can test individual pages, groups of similar pages (like product pages for a grouping of products), or entirely different themes to improve global elements like your navigation menu or cart. For more information on our full testing capabilities, see
+How Testing Works
+.
+What themes are supported by Shoplift?
+Shoplift supports all Shopify themes, whether custom or from the Shopify Theme Store. Depending on your theme architecture certain editing capabilities in the Shopify Theme Editor may be limited, for example, if you are using a legacy (Online Store 1.0) theme.
+Do I need to manually install any scripts on my theme?
+You do not need to manually install any scripts on your theme to use Shoplift. Shoplift tests are conducted via a small tracking script that we dynamically add to your theme, and reference just after the opening
+<head>
+tag in your
+theme.liquid
+file.
+Do Shoplift tests have any "flicker" or page blinking?
+Shoplift tests do not have any "flicker", which is common to many A/B testing platforms. Whenever a test is launched, Shoplift dynamically updates the tracking script on your theme to include an "anti-flicker" component which ensures that tested visitors will never see both experiences you are testing. If you have used Google Optimize in the past, the Shoplift anti-flicker script is very similar to the experience you could expect from Google Optimize. Please note that the Shoplift anti-flicker script has been known to adversely interact with the Google Optimize anti-flicker script. See
+Compatibility with Google Optimize
+for more info.
+Does Shoplift have any performance impact on my store?
+Shoplift has a minimal performance impact on your store (about a 2-4 point reduction in page speed when measured with Google's page performance tool). When tests are live, our anti-flicker script momentarily blanks out your pages to ensure shoppers don't see new experiences, but this is typically resolved within 150 milliseconds (and as low as 90 milliseconds) and is imperceivable to shoppers.
+What happens if I exceed the limit for my pricing plan?
+If you exceed the visitor allotment for your plan, your tests will be temporarily paused until you upgrade your plan, or your current plan rolls over to the next billing cycle and the usage resets. Shoplift will also suspend the collection of visitor data, which impacts New vs. Returning visitor analytics. Once your plan usage is no longer overaged your tests can be resumed and visitor data will automatically begin collecting again.
+Close Cookie Popup
+Cookie Preferences
+By clicking “Accept All”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage and assist in our marketing efforts as outlined in our
+privacy policy
+.
+Strictly Necessary (Always Active)
+Cookies required to enable basic website functionality.
+Analytics
+Cookies helping us understand how this website performs, how visitors interact with the site, and whether there may be technical issues.
+Marketing
+Cookies used to deliver advertising that is more relevant to you and your interests.
+Personalization
+Cookies allowing the website to remember choices you make (such as your user name, language, or the region you are in).
+Customize
+Save
+Decline All
+Accept All
+What's Working in CRO
+No filler. Test results, teardowns, and tactics from real stores.
+Send it to me
+You're in! Look out for the next issue.
+Oops! Something went wrong while submitting the form.
+Navigation
+Home
+Pricing
+Partner program
+Start free trial
+Request a demo
+Product
+Price Testing
+Subscription Testing
+Campaigns
+CRO For:
+Activewear
+Supplements
+Skincare
+Resources
+Case Studies
+The Bees Knees x Nimstrata
+Lineage Provisions x Novel
+Dreamland Baby x Novel
+Sip Tequila x SavedBy
+Rylee + Cru x FenixCommerce
+Resources
+Shoplift vs. Intelligems
+Shoplift vs. Visually
+Shoplift vs. Elevate
+Shoplift vs. VWO
+Shoplift vs. Optimizely
+Shoplift vs. A/B Tasty
+Top 10 A/B Testing Tools
+Top 10 UGC Apps
+Resources
+Docs
+Blog
+Press Kit
+Legal
+Terms of Service
+Privacy Policy
+DPA
+© 2026 Plurality Digital Inc., DBA Shoplift

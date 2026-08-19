@@ -1,0 +1,172 @@
+# https://docs.absmartly.com/docs/apis-and-sdks/overview/
+Overview | The ABsmartly Docs
+Skip to main content
+ABsmartly Docs
+Product Documentation
+Developer Tools
+Blog
+GitHub
+Search
+Get Started
+Product Documentation
+Developer Tools
+Overview
+SDK Guide
+MCP Server
+CLI Documentation
+SDK-API
+Web-Console-API
+Integrations
+Release Notes
+Glossary
+Developer Tools
+Overview
+On this page
+Overview
+The
+Developer Tools
+section is the technical home of ABsmartly. It covers every way you can integrate, automate, extend or operate the platform from code or AI tools — from running your first experiment in a web app to driving the entire system from a Claude or Cursor chat.
+If you are an engineer integrating ABsmartly, a platform team maintaining experiment infrastructure, or a PM/analyst automating workflows, this section is for you.
+What's in this section
+​
+SDK Guide
+​
+The
+SDK Guide
+is the starting point for any product integration. It explains how to install the client SDK, create a context, expose users to experiments and track goals — in all officially supported languages and frameworks.
+Topics covered:
+Getting started
+— install the SDK and create your first context
+Running your first experiment
+— assign variants and use variant variables
+Targeting and audiences
+— restrict experiments by attribute
+Managing the context lifecycle
+— initialise, publish, refresh and finalise
+Pre-fetching context data
+— speed up first paint with server-side prefetch
+Checking variants without exposures
+— inspect treatments without logging an exposure
+Using variables as code
+— push HTML, CSS or JS from the Web Console
+Using custom fields
+— read custom experiment metadata from your code
+Full end-to-end examples — covering JavaScript, React, Vue, Vue 3, Python, Java, Go, PHP, Ruby, Swift, .NET and Flutter — are embedded as language tabs in
+Running your first experiment
+.
+SDK API
+​
+The
+SDK API
+reference documents the
+ABsmartly Collector API
+— the HTTP endpoints the SDKs talk to. Use this when you are building a custom integration in a language that doesn't have an official SDK, or when you need to inspect the raw protocol the SDKs use to fetch contexts and publish exposures.
+It includes endpoints for context creation, exposure publishing (single and batch), experiment lookup and collector health checks.
+Platform API
+​
+The
+Platform API
+is the full HTTP API behind the ABsmartly Web Console. Anything you can do in the UI you can do through the API: list and create experiments, manage metrics and goals, control teams and permissions, manage applications and unit types, post annotations and comments, fetch experiment results, and configure webhooks.
+This is the right surface for:
+CI/CD automation (e.g. create experiments from a deploy pipeline)
+Custom dashboards and internal tooling
+Bulk imports/exports
+Programmatic governance — auditing experiments, metrics or permissions
+See the
+API examples
+for end-to-end integrations such as a custom Slack notifier.
+MCP Server
+​
+The
+MCP Server
+gives AI assistants — Claude, Cursor, VS Code Copilot, Windsurf, Gemini, ChatGPT — full access to the ABsmartly platform through a single connector. Drive experiments, metrics, goals and teams conversationally instead of by writing API calls.
+Common starting points:
+Quick Start
+— connect Claude Desktop with OAuth in under five minutes
+Setup
+— every supported MCP client
+Usage Examples
+— natural-language prompts that work today
+Tools Reference
+— the full surface: 230+ commands across 33 groups
+CLI
+​
+The
+CLI
+is a command-line interface for AI agents and humans to manage experiments, feature flags and A/B tests on the ABsmartly platform. It wraps the same Platform API used by the web console, so anything you can do in the dashboard, you can automate from a terminal or a script.
+Common starting points:
+CLI Overview
+— installation and quick start
+Authentication
+— the full login flow
+Experiments & Feature Flags
+— the primary command reference
+Programmatic Usage
+— call the CLI's core layer directly from TypeScript/JavaScript
+Which one should I use?
+​
+If you want to…
+Use
+Assign variants and track goals in your application code
+SDK Guide
+Integrate ABsmartly in a language with no official SDK
+SDK API
+Create, manage or query experiments programmatically
+Platform API
+Build automation, internal tools, or CI/CD integrations
+Platform API
+Drive ABsmartly from Claude, Cursor or another AI assistant
+MCP Server
+Manage experiments from a terminal or CI/CD script
+CLI
+Visually edit pages for an A/B test without writing code
+LaunchPad browser extension
+Run experiments and configure the workspace from the UI
+Product Documentation
+The SDK and the APIs solve different problems and are commonly used together in the same product: the
+SDK
+does the user-facing work (assignment, exposure, goal tracking) while the
+Platform API
+is used by your internal tools and automation to configure and inspect experiments. The
+MCP Server
+sits on top of the Platform API — it's a conversational interface to the same operations.
+New to ABsmartly?
+​
+If you are integrating the platform for the first time, the recommended path is:
+Read
+Get Started
+to understand the core concepts
+Follow
+Running your first experiment
+in the language of your choice
+Skim the
+Platform API introduction
+so you know what's available when you need it
+Try the
+MCP Server Quick Start
+if you'd like to drive ABsmartly from your AI assistant
+Edit this page
+Previous
+Get Started with Warehouse Native
+Next
+SDK Guide
+What's in this section
+SDK Guide
+SDK API
+Platform API
+MCP Server
+CLI
+Which one should I use?
+New to ABsmartly?
+Documentation
+Product Docs
+SDK Docs
+API Docs
+MCP Server
+More
+Homepage
+Blog
+GitHub
+Social Media
+LinkedIn
+© Copyright 2026 ABsmartly B.V.

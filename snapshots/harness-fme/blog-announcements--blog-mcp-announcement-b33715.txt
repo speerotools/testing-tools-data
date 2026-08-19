@@ -1,0 +1,355 @@
+# https://www.harness.io/blog/mcp-announcement
+Meet Harness' MCP Server: A Smarter DevOps Way
+Product
+AI Across the SDLC
+AI for DevOps & Automation
+Accelerate innovation velocity with a modern DevOps toolchain.
+Continuous Delivery & GitOps
+new
+Continuous Integration
+new
+Internal Developer Portal
+new
+Infrastructure as Code Management
+new
+Database DevOps
+new
+Artifact Registry
+new
+AI for Testing & Resilience
+Build and deploy reliable applications that scale with confidence.
+Feature Management & Experimentation
+new
+Resilience Testing
+new
+AI Test Automation
+new
+AI SRE
+new
+AI Evals
+new
+AI for Security & Compliance
+Governance and security at every stage of the SDLC - from design to runtime.
+Application Security Testing
+Web Application & API Protection
+AI Security
+AI for Cost & Optimization
+Optimize cloud spend, resource utilization, and developer productivity.
+Cloud & AI Cost Management
+AI DLC Insights
+Customers
+Open Source
+Pricing
+Learn
+Developer
+Documentation
+API Reference Docs
+Developer Hub
+Commitment to Open Source
+Engineering Blog
+Community
+Training
+Certifications
+RESOURCES
+Ebooks
+Blog
+Case Studies
+Comparison Guide
+DevOps Academy
+Harness Support
+Professional Services
+Webinars
+Research Reports
+Events
+Upcoming Events
+On-Demand
+Harness Summits
+Company
+About us
+Careers
+Security
+Press & News
+Legal
+Partners
+Contact us
+View all
+Contact us
+Get started
+Sign up
+Sign in
+Get a demo
+Trending searches
+Products:
+Continuous Integration
+Continuous Delivery & GitOps
+Resilience Testing
+Supply Chain Security
+Internal Developer Portal
+Explore Business Values:
+DevOps & Automation
+Security & Compliance
+Cost & Optimization
+Testing & Resilience
+Contact us
+Get started
+Sign up
+Sign in
+Get a demo
+Chapters
+Try It For Free
+Harness
+/
+Blog
+/
+Technical
+May 29, 2025
+Meet Harness' MCP Server: A Smarter DevOps Way
+| Harness Blog
+Table of Contents
+Rohan Gupta
+All this author’s posts
+Now your AI agents have a more intelligent, safer way to communicate with Harness.
+At Harness, we’ve always believed software delivery should be intelligent, efficient, and secure. That’s why AI has been part of our DNA since day one. We first brought AI into software delivery when we
+introduced
+Continuous Verification in 2017.
+That same vision is behind our latest innovation: Harness MCP Server.
+This isn’t just another integration tool. It’s a new way for AI agents – whether it’s Claude Desktop, Windsurf, Cursor, or something you’ve built yourself – to securely connect with your Harness workflows. No brittle glue code. No custom APIs. Just smart, consistent connections between your agents and the tools that power your software delivery lifecycle.
+What is the Harness MCP Server?
+Let’s break it down. The
+Harness MCP Server
+runs in your environment and acts as a translator between your AI tools and our platform. It’s a lightweight local gateway that implements the
+Model Context Protocol (MCP)
+– an open standard designed to help AI agents securely access external developer services through a consistent, structured interface.
+Our customers have repeatedly told us they’re excited to start getting real value from their AI investments, but having secure access to their own data remains a major roadblock. They want to build their own agents, but lack a simple, reliable way to connect them to workflows. Our MCP Server unlocks exactly that.
+“Our customers are building agents, but they don’t need another plugin – they need AI with context. That means access to delivery data from pipelines, environments, and logs. The Harness MCP Server gives them a clean, reliable way to pull that data into their own tools, without fragile integrations. It’s a simple protocol, but it unlocks a lot. And it reflects a broader shift – from AI as a standalone layer to AI as part of the software delivery workflow. We believe that shift is foundational to where DevOps is headed."
+—
+Sanjay Nagraj, SVP Engineering at Harness
+Bring the Power of Harness to your AI Workflows
+Our MCP Server makes it easy for your AI agents to do more than just observe. They can take action! By exposing a growing set of structured, secure tool sets—including pipelines, repositories, logs, and artifact registries—MCP gives agents consistent access to the same systems your teams already use to build, test, and deploy software. MCP turns Harness into a plug-and-play backend for your AI. Here’s how it works.
+✅
+One Protocol for Everything
+Adapters and glue code slow teams down. But with our MCP server, you don’t need to worry about juggling different adapters or writing custom logic for each Harness service. A single standardized protocol gives agents access to pipelines, pull requests, logs, repositories, artifact registries, and more – all through one consistent interface.
+Let’s say a customer success engineer needs to check whether a recent release went out for a specific client. Using their AI agent, the MCP Server will fetch the release data instantly, so they don’t need to waste time pinging their dev team or digging through dashboards.
+🔌
+Plug-and-Play for Any Agent
+We didn’t just build the MCP Server for our own platform – we built it for yours. The same MCP server that powers Harness’ AI agents is available to our customers, making it easy to reuse the same patterns across multiple AI agents and environments. That consistency reduces drift, simplifies maintenance, and cuts down overhead.
+A platform engineer, for example, can build a Slack bot that alerts teams to failed builds and surfaces logs. With MCP, it connects in minutes – no custom APIs, no complex auth flows – just the same server we use internally.
+🔁
+Built for Scalability
+Innovation never stands still – but your code shouldn’t break just to keep up with it. With our MCP Server, you can add new tool sets and endpoints without changing your agent code. Simply update your server. And because it's open and forkable, teams can extend functionality to support additional services, internal tools, or custom workflows.
+Consider a development team integrating a data source from a product they rely on into VS Code to suggest which pipeline to trigger based on file changes. As their processes evolve, they can keep expanding the agent’s capabilities without ever touching the core agent logic.
+🔐
+Secure by Design
+Security teams need confidence that AI integrations won’t compromise their standards. That’s why our MCP Server is built with enterprise-grade controls from the start. It uses JSON-RPC 2.0 for structured, efficient communication and integrates with Harness’s granular RBAC model so that teams can manage access with precision and prevent unauthorized access. API keys are handled directly in the platform, and no sensitive data is ever sent to the LLM. It’s built to reflect the same security posture customers already trust in Harness.
+Take a security team that needs to restrict an agent’s access. With MCP, they can configure the server so the agent is limited to deployment logs – giving support teams the insights they need without opening up the broader system.
+🎥 See It in Action
+AI is changing how software gets built – but today’s agents are only as helpful as the systems they can safely access. For DevOps and platform teams, this marks a shift from siloed automation to coordinated, AI-driven execution. Instead of building and maintaining custom connectors, teams can now focus on enabling agents to interact with their delivery stack safely, consistently, and at scale.
+With the Harness MCP Server, we’re giving developers what they’ve asked for: a more innovative way to connect AI to the software delivery process, without compromising security or speed.
+Curious how it all works? Watch our
+walkthrough video
+to see the MCP Server in action and learn how AI agents can securely interact with your Harness workflows.
+‍
+🧠 Visit the
+Harness Developer Hub
+to get started.
+Rohan Gupta
+All this author’s posts
+Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
+Previous
+Next
+What is a Kubernetes Container?
+Spinnaker to Harness: A Conversion Story - Part 1
+Shifting Down With Harness Cloud Cost Management
+Modern Log Layers
+GraphQL: Harness Your Way
+CI/CD Pipeline: Everything You Need to Know
+A Home for ECS Developers
+CI/CD Testing: The Complete Guide for Modern Software Delivery
+Your First Harness CI Installation, Build, and Publish
+Spinnaker vs Harness - Filming My Journey
+IT Audits - How Continuous Delivery can Help
+Deploying With Harness & AppDynamics
+Blue-Green Deployments With Kubernetes and Harness
+Your First Kubernetes Cluster Deployment
+Canary Deployments and Operations in Kubernetes
+Lessons from the Harness Cloud Cost Management
+Optimizing cloud logging to save over $140k in costs
+6 Actionable GitOps Best Practices to Help You Get Started
+An Introduction to Artificial Intelligence and Machine Learning
+Applying AI/ML to CI/CD Pipelines
+Metrics to Improve Continuous Integration Performance
+Comparing Helm vs Kustomize
+Continuous Integration Testing: Types, Best Practices, and Tools
+Eliminates Delivery Toil
+Introducing Recommendations API: Find Potential Cost Savings Programmatically
+Accelerates AWS Cloud Migration
+Selected Harness over Spinnaker for CI/CD
+Replaced Spinnaker & Saved $275,000
+Scaled Kubernetes Continuous Delivery with GitOps
+Migrates to Kubernetes with One Developer and Harness
+What is O11Y? Observability Demystified with Chris Riley from Splunk
+Travis CI Alternatives To Consider
+Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
+What is Cloud Cost Intelligence?
+ShipTalk Podcast - A Time Before, During, and After Kubernetes
+Tutorial: How to Use the New Vault Agent Integration Method With Harness
+Pipeline Patterns for CI/CD Pipelines
+Feature Flags: Should I Build or Buy?
+Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
+4 Best CI/CD Tools for DevOps
+Migrating to Harness Feature Flags: Our Technical Journey
+Tutorial: Turning a GitHub Repo Into a Helm Chart Repo
+Change Management in the World of Continuous Delivery
+Laying the Groundwork for an Effective FinOps Organization
+How to set up cross-account access for S3 bucket policies
+Harness the Power of AWS EKS-Anywhere
+Test Intelligence™: Move Fast, Don’t Break Things
+Tutorial: [GraphQL] How to Interact With the Harness API Using Python
+What Are Audit Trails & Why You Need Them in CD
+5 Feature Flag Use Cases You May Not Have Thought Of
+Announcing Support for Python in Harness Feature Flags
+The Benefits of Feature Flags in Software Delivery
+Announcing Support for .NET in Harness Feature Flags
+How to Write Your First Plugin for CI
+Migrating From Jenkins to Harness CIE: A Journey
+Feature Flags With Python
+Intelligent & Automated Feature Flags With Harness
+Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
+Cloud Center of Excellence: What It Is, Best Practices, & More
+What Is Testing in Production & How to Avoid The Risks
+Simplifying Kubernetes Cost Management With Harness
+Cloud Cost Workload Recommendations
+GitHub Actions Support in Harness CI
+How Feature Flags Help With Trunk-Based Development
+AutoStopping Rules for Kubernetes Clusters
+Dashboarding, Or Data Visualization
+Feature Flags Best Practices also known as Feature Toggles
+Micro-Frontend Architecture in the Harness Software Delivery Platform
+Lessonly by Seismic Says Goodbye to Jenkins and Toil With Harness CI Enterprise
+What Is Split.io? A Look at Features and Use Cases
+Harness CI Enterprise for UI Builds
+Feature Flags Overview For PMs: Getting Qualitative Feedback and Managing Releases
+Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
+In-Depth: Harness Feature Flags Relay Proxy
+Announcing: Public APIs for Feature Flags
+Announcing Support for Xamarin in Harness Feature Flags
+The Git Sync Experience in Harness
+Git Branching in Harness
+Source Code Management in DevOps
+Harness Service Reliability Management (SRM) - Key Capabilities
+Harness Security Testing Orchestration (STO) - Key Capabilities
+Quality vs Reliability
+Build System vs CI System: What's the Difference and Why Does it Matter?
+3 Reasons to Correlate Cloud Costs to Engineering Releases
+The Best Open Source CI Tools
+Harness Infrastructure Provisioners and ARM Templates - Part 2
+Benefits of GitOps & Why GitOps Is Important
+The Importance of Continuous Integration and Its Benefits
+What Are GitOps Principles?
+GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
+Deploy Your Simple Node.js Application Using Local Docker Images in Minikube
+Kubernetes Services Explained
+Harness CI and Harness CD - Your First True CI/CD Pipeline
+Continuous Delivery vs. Continuous Deployment: What’s the Difference?
+Move Fast and Fix Faster with Harness 24/7 Service Guard
+Value Stream Mapping for Software Delivery
+How to Maintain Istio Service Mesh with Harness
+Rancher Rio vs Harness - Filming my Journey
+Using Github Actions with Harness
+Solving Standardization in Continuous Delivery
+Next
+1 / 8
+SHARE -
+Rohan Gupta
+Read more from this author
+Read
+Next-generation CI/CD For Dummies
+Stop struggling with tools—master modern CI/CD and turn deployment headaches into smooth, automated workflows.
+Read the ebook
+Link
+Book a Demo
+Continuous Integration
+Continuous Delivery & GitOps
+Try it for Free
+Continuous Integration
+Continuous Delivery & GitOps
+Similar Blogs
+No items found.
+®
+Sign up for Harness Updates
+Subscribe to our newsletter to receive the latest Harness updates in your inbox
+Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
+By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
+the State of
+Engineering
+Excellence 2026
+View the full report
+Harness AI
+Harness AI
+Platform
+Continuous Delivery & GitOps
+Continuous Integration
+Feature Management & Experimentation
+Infrastructure as Code Management
+Resilience Testing
+AI SRE
+NEW
+Database DevOps
+NEW
+Artifact Registry
+Internal Developer Portal
+AI DLC Insights
+Application Security Testing
+Web Application & API Protection
+AI Security
+Cloud & AI Cost Management
+AI Test Automation
+Pricing
+View plans
+For Developers
+Documentation
+Developer Hub
+Open Source
+Commitment to Open Source
+Community
+API Reference Docs
+Engineering Blog
+Harness University
+Training
+Resources
+Blog
+Comparison Guide
+Collateral
+Customers
+DevOps Academy
+Ebooks
+Engineering Maturity Assessment
+On-demand Videos
+Webinars
+Support
+Professional Services
+Company
+About Us
+Press & News
+Partners
+Careers
+Contact Us
+Trademark Policy
+Security
+Legal
+Press Kit
+© 2026 Harness Inc.
+Subscription Terms
+Website Terms of Use
+Privacy Statement
+Opt Out
+Cookie Settings
+© 2026 Harness Inc.
+DevOps & Automation
+DevOps & Automation
+DevOps & Automation
+Continuous Integration
+Continuous Delivery & GitOps
+Technical
+Continuous Integration
+Continuous Delivery & GitOps

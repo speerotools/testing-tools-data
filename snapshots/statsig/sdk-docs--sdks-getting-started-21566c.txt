@@ -1,0 +1,225 @@
+# https://docs.statsig.com/sdks/getting-started
+SDK Getting Started | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+SDK Quickstarts
+Statsig SDK Quickstart Guide
+Identify Users
+Create your first feature flag
+Run your first A/B test
+Log your first custom event
+SDK Concepts
+SDK Getting Started
+User (StatsigUser) Object
+Initializing SDKs
+How Evaluation Works
+SDK Debugging
+Client vs Server SDKs
+Data Privacy for Mobile
+Client SDKs
+Javascript (Web)
+HTML Snippet
+React
+Next.js
+Android
+iOS
+More Client SDKs
+Server SDKs
+Server Core Overview
+Node
+Python
+Java
+Go Core
+Early Access
+Ruby
+.NET
+More Server SDKs
+Legacy Server SDKs
+AI SDKs
+Early Access
+Node SDK
+Python SDK
+More SDK Methods
+Client Persistent Assignment
+Server Persistent Assignment
+Local Eval Adapter
+Server Data Stores / Data Adapter
+Target Apps
+Deprecation Notices
+SDK Support Policy
+Console API Reference
+Overview
+Alerts
+Audit Logs
+Autotunes
+Change Validation
+Company
+Configs
+Dashboards
+Dynamic Configs
+Environments
+Events
+Experiments
+Experiments (Warehouse Native)
+Gates
+Holdouts
+Ingestions
+Keys
+Layers
+Logs
+Metrics
+Metrics (Warehouse Native)
+Overrides
+Param Store
+Project
+Prompts
+Release Pipelines
+Reports
+Roles
+Segments
+Settings
+Tags
+Target App
+Unit ID Types
+Usage
+Users
+Warehouse Connections
+Statsig CLI
+Overview
+Commands
+Example: Gate Management
+HTTP API Reference
+HTTP API
+Autotune
+Dynamic Configs
+Events
+Experiments
+Feature Gates
+Layers
+On this page
+When to use Statsig SDKs
+1. Targeting and assignment
+2. Logging events
+Choose between client and server SDKs
+Available SDKs
+Client-side SDKs
+Server-side SDKs
+How to install your SDK
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+SDKs & APIs
+/
+SDK Getting Started
+SDK Getting Started
+Get started with a Statsig SDK by choosing your platform, installing the package, initializing with your API key, and evaluating your first gate.
+This guide describes how to fully implement your Statsig instance with SDKs. If you want a faster implementation, read the
+SDK Quickstart
+guide.
+Statsig's SDKs are the in-code tool you'll use to show experiment variants, flag features, and log key business metrics. Statsig's SDKs:
+Abstract the complexity:
+Statsig handles caching, retry mechanisms, and networking.
+Encourage best practices:
+Built around parameters and language-specific best practices.
+Broad deployment support:
+30+ SDKs across clients, servers, the edge, and more.
+When to use Statsig SDKs
+1. Targeting and assignment
+Decide who sees new features and experiment variants. Target based on any user attributes (for example, location or device type) or environment-level attributes to control rollouts and experiment enrollment. Statsig assigns each user deterministically, so the same user gets a consistent experience across sessions and devices as long as you pass a stable identifier. You can also layer multiple targeting rules and set overrides to force specific users into a variant for testing or QA.
+2. Logging events
+Log key business metrics to power experiment and product analytics. Events flow into Statsig automatically. For web-based platforms (for example, JavaScript, React), Statsig also supports
+Autocaptured events
+. Attach a value and custom metadata to each event so you can build precise metrics and segment results later. Because metrics are defined in the Statsig console, you can create new metrics from events you already log without shipping additional code.
+Choose between client and server SDKs
+Statsig offers both client-side and server-side SDKs, each suited to different use cases:
+Client-side SDKs
+: Designed for user-facing applications where you log events directly from the browser or mobile app. These SDKs operate in real time and provide instant feedback on user behavior.
+Server-side SDKs
+: Designed for backend services. Use server-side SDKs to control experiments, feature flags, and log server-side events. Server-side SDKs provide more control for use cases involving system-level actions or business logic.
+For a detailed comparison, go to the
+Client vs Server SDK Overview
+.
+For frameworks like
+Next.js
+that bridge client and server-side logic, go to the
+Next.js SDK
+guide.
+Available SDKs
+Statsig offers SDKs for a wide variety of platforms:
+Client-side SDKs
+JavaScript
+Browser JavaScript
+React
+Client-Side React
+React Native
+Bare React Native SDK
+Next.js
+Next.js SSR, SSG & Client-Side
+Angular
+Angular bindings for Javascript SDK
+Swift
+iOS, MacOS, tvOS SDK
+Android
+Android Kotlin/Java SDK
+.NET Client
+Client SDK for .NET framework
+Roku
+Roku Brightscript SDK
+Unity
+Unity game engine SDK
+Dart/Flutter
+Flutter/Dart Mobile App SDK
+C++ Client
+C++ client-side SDK
+Server-side SDKs
+Node.js
+Node.js server SDK
+Java
+Java server SDK
+Python
+Python server SDK
+Go
+Go server SDK
+Ruby
+Ruby server SDK
+.NET Server
+.NET server SDK
+PHP
+PHP server SDK
+Rust
+Rust server SDK
+C++ Server
+C++ server SDK
+How to install your SDK
+Select your SDK
+: Choose the client or server SDK that fits your platform from the lists above.
+Follow the installation guide
+: Each SDK has an installation guide that walks you through setup.
+Start experimenting
+: After you integrate the SDK, set up feature flags, run experiments, and log events for analysis.
+If you have questions or need help with installation, reach out in the
+Slack community
+.
+Was this helpful?
+On this page
+When to use Statsig SDKs
+1. Targeting and assignment
+2. Logging events
+Choose between client and server SDKs
+Available SDKs
+Client-side SDKs
+Server-side SDKs
+How to install your SDK

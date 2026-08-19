@@ -1,0 +1,1021 @@
+# https://posthog.com/docs/cdp/sources/bigquery
+Linking BigQuery as a source - Docs - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Data pipelines
+Overview
+Get started
+Start here
+Surfaces
+PostHog Web
+PostHog MCP
+PostHog Desktop
+API
+Sources
+Link sources
+Incoming webhooks
+Overview
+Sources
+1Password
+Ably
+ActiveCampaign
+Adjust
+Adobe Analytics
+Adobe Commerce (Magento)
+AdRoll
+Adyen
+AfterShip
+AgileCRM
+Aha!
+Aha! Ideas
+Airbrake
+Aircall
+AirOps
+Airtable
+Aiven
+Algolia
+Alguna
+Alpha Vantage
+Amazon Ads
+Amazon SES
+Amplitude
+Anthropic
+Apify Dataset
+Apitally
+Apollo
+Appfigures
+AppFollow
+Apple (App Store Connect)
+AppLovin
+AppsFlyer
+AppSignal
+Appstack
+Argo CD
+Asana
+Ashby
+AskNicely
+AssemblyAI
+Atlassian Bitbucket Cloud
+Attentive
+Attio
+Automox
+Autumn
+Aviationstack
+Aviator
+Awin
+AWS Cost Explorer
+Azure DevOps
+Babelforce
+BambooHR
+Baserow
+Baton
+Beamer
+beehiiv
+Better Stack
+Bettermode
+BigCommerce
+BigMailer
+BigQuery
+BILL (formerly Bill.com)
+Bing Ads
+Bing Webmaster Tools
+Bitrise
+Bland AI
+Blogger
+BlueTally
+BoldSign
+Braintree
+Braze
+BreezoMeter
+Brevo
+Brex
+Browser Use
+Browserbase
+BugHerd
+Bugsnag
+BuildBetter
+Buildkite
+Bunny.net
+Buttondown
+Buzzsprout
+Cal.com
+Calendly
+CallRail
+Campaign Monitor
+Campayn
+Campfire
+Canny
+Capsule CRM
+Care Quality Commission
+CAST AI
+Census (Fivetran)
+Chameleon
+Chargebee
+Chargedesk
+Chargify
+ChartHop
+ChartMogul
+Chatwoot
+Checkmarx (Checkmarx One)
+Checkout.com
+Churnkey
+CIMIS
+CircleCI
+CircleCI Insights
+Cisco Duo
+Clari
+Clerk
+ClickHouse
+ClickHouse Cloud (ClickHouse, Inc.)
+ClickUp
+Clockify
+Clockodo
+Close
+Cloudbeds
+Cloudflare
+Cloudsmith
+CloudZero
+Coassemble
+Coda
+Codacy
+Codecov (Sentry)
+Codefresh
+Codemagic
+CodeScene
+Cody
+Cohere
+CoinAPI
+CoinGecko
+CoinMarketCap
+commercetools
+Companies House (UK government)
+Concord
+Conekta
+ConfigCat
+Confluence
+Confluent Cloud
+ConvertKit
+Convex
+Copper
+Coralogix
+Cortex
+Coupa
+Courier
+Coveralls
+crates.io
+Cronitor
+Crunchbase
+Culture Amp
+Cursor
+Custom REST source
+Customer.io
+Customerly
+Dagster+ (Dagster Cloud)
+Databricks
+Datadog
+DataForSEO
+DataHub
+dbt
+DebugBear
+Decagon
+Deel
+Deepgram
+DeepSource
+Deno Deploy
+Descope
+Devin AI
+DigitalOcean
+DingConnect
+Discourse
+Dixa
+Docker Hub
+DocuSeal
+DocuSign
+Dodo Payments
+DoIt
+Doppler
+Dovetail
+Drata
+Drip
+Dropbox Sign
+Dub
+DynamoDB
+Dynatrace
+e-conomic
+E2B
+EasyPost
+Easypromos
+Elastic Email
+Elasticsearch
+ElevenLabs
+EmailOctopus
+env0
+Eppo (Datadog)
+Etsy
+Eventbrite
+Eventee
+Eventzilla
+Everhour
+Exchange Rates API
+EZOfficeInventory
+Factorial
+Fastly
+Featurebase
+Fillout
+Finage
+Financial Modeling Prep
+Finnhub
+Finnworlds
+Firebase
+Firecrawl
+FireHydrant
+Fireworks AI
+FirstPromoter
+Flagsmith
+Fleetio
+Flexmail
+Float
+Flowlu
+Flutterwave
+Fly.io
+Formbricks
+Fourthwall
+Framer
+FRED
+Freshcaller
+Freshchat
+Freshdesk
+Freshsales
+Freshservice
+Frill
+Front
+Fulcrum
+Fullstory
+FusionAuth
+Gainsight PX
+Gerrit
+Giphy
+GitBook
+Gitea
+GitGuardian
+GitHub
+GitLab
+Gladly
+GlassFrog
+GNews
+GoCardless
+Goldcast
+Gong
+Google Ads
+Google Analytics
+Google PageSpeed Insights
+Google Play Console
+Google Search Console
+Google Sheets
+Google Webfonts
+Gorgias
+Grafana
+Grafana Cloud k6
+Granola
+Greenhouse
+Gridly
+Groq
+Gumroad
+Guru
+Gusto
+Harvest
+Harvey
+HashiCorp (HCP Terraform / Terraform Cloud)
+Hatchet
+Healthchecks.io
+Height
+Helicone
+Heroku
+Hetzner Cloud
+Hex
+HiBob
+Hightouch
+Honeybadger
+Honeycomb
+Hookdeck
+HoorayHR
+Hub Planner
+Hubspot
+Hugging Face
+Humanitix
+Huntr
+Hyperspell
+IBM Instana Observability
+impact.com
+impact.com Partner
+incident.io
+Infisical
+Inflowinventory
+Inngest
+Insightly
+Instagram
+Instantly
+Instatus
+Intercom
+Intruder
+Invoice Ninja
+Invoiced
+IP2WHOIS
+Iterable
+Jamf Pro
+Jellyfish
+Jenkins
+JetBrains TeamCity
+JFrog (Artifactory / JFrog Platform)
+Jira
+JobNimbus
+Jotform
+Judge.me Reviews
+JumpCloud
+JustCall
+JustSift
+Kandji (Iru Endpoint Management)
+Katana
+Kernel
+Klaus
+Klaviyo
+Knock
+KnowBe4
+Kommo
+Kong Inc. (Kong Konnect)
+Koyeb
+Kubecost (IBM / Apptio)
+Kustomer
+Lacework FortiCNAPP (Fortinet)
+Lago
+Lambda
+Langfuse
+LangSmith
+Lattice
+LaunchDarkly
+Leadfeeder
+Leexi
+Lemlist
+Lemon Squeezy
+Less Annoying CRM
+Lever
+Lightdash
+Lightfield
+Lightspeed Retail
+Linear
+LinearB
+Lingo.dev
+LinkedIn Ads
+Linkrunner
+Linode
+LlamaCloud
+Lob
+Logz.io
+Loop Returns
+Loops
+Luma
+Mailchimp
+MailerLite
+MailerSend
+Mailgun
+Mailjet
+Mailosaur
+Mailtrap
+Marketo
+Marketstack
+Matomo
+Maxio
+Mem0
+Mention
+Mercury
+Meta Ads
+Metabase
+Metaplane by Datadog
+Metorial
+Microsoft Azure Cost Management
+Microsoft Clarity
+Microsoft Dynamics 365
+Microsoft SQL Server
+Mistral AI
+Mixmax
+Mixpanel
+Mollie
+monday.com
+MongoDB
+Monte Carlo
+MotherDuck
+Mux
+My Hours
+MySQL
+n8n
+Nebius AI
+Neon
+Netlify
+New Relic
+New York Times
+NewsAPI
+NewsData.io
+noCRM.io
+Northflank
+Northpass LMS
+Notion
+npm registry
+NuGet
+Octolens
+Octopus Deploy
+Okendo
+Okta
+Omni Analytics
+Omnisend
+OnceHub
+OnePageCRM
+Onfleet
+Open Exchange Rates
+Open-Meteo
+OpenAI
+OpenAI Ads
+OpenAlex
+OpenAQ
+openFDA
+OpenRouter
+OpenWeather
+Opinion Stage
+Opsgenie
+Optimizely
+OPUSWatch
+Orb
+Orca Security
+Ortto
+Oura
+Outbrain
+Pabbly Subscription Billing
+Packagist
+Paddle
+PagerDuty
+PandaDoc
+Paperform
+Papersign
+Pardot
+Partnerize
+PartnerStack
+PayFit
+Paystack
+Pendo
+Perigon
+PersistIq
+Persona
+Personio
+Pexels
+pganalyze
+Phyllo
+Picqer
+Pingdom
+Pinterest Ads
+Pipedrive
+Pipeliner
+Plaid
+Plain
+PlanetScale MySQL
+PlanetScale Postgres
+Planhat
+Platform.sh
+Plausible
+Plivo
+Plunk
+Polar
+Postgres
+Postmark
+Postscript
+Power BI admin
+Prefect Cloud
+Pretix
+Printify
+Productboard
+Pulumi
+Pylon
+PyPI
+Qualaroo
+Qualtrics
+Qualys VMDR
+Railway
+Ramp
+Rapid7 InsightVM
+Raygun
+Razorpay
+Recharge
+Recreation.gov
+Recruitee
+Recurly
+Reddit Ads
+Redshift
+Render
+RentCast
+Replicate
+Reply.io
+Resend
+Retently
+RevenueCat
+Rippling
+RKI COVID-19
+Roark
+Rocketlane
+Rollbar
+Rootly
+RSS.com
+RubyGems.org
+Ruddr
+RunPod
+SafetyCulture
+Sage HR
+Salesflare
+Salesforce
+Salesloft
+SavvyCal
+Scale AI
+Scaleway
+Secoda
+Secureframe
+Segment
+Semgrep
+SendGrid
+Sendowl
+SentinelOne
+Sentry
+ServiceNow
+SFTP
+Shippo
+ShipStation
+Shopify
+ShopWired
+Shortcut
+Shortio
+Shutterstock
+SigNoz
+SimFin
+Similarweb
+SimpleCast
+Simplesat
+Skyvern
+Slack
+Sleekplan
+Smaily
+SmartEngage
+Smartreach
+Smartsheet
+Smartwaiver
+Snapchat Ads
+Snowflake
+Snowplow Analytics
+Snyk
+SolarWinds Service Desk
+Sonar (SonarSource) - SonarQube Server
+Sonar Cloud
+Sonatype (Nexus Repository)
+Sourcegraph
+Spacelift
+SparkPost
+Split.io
+Splunk AppDynamics (Cisco)
+Splunk Observability Cloud
+Spot by Flexera (Spotinst)
+Spotler CRM
+Sprig
+Squadcast (SolarWinds Incident Response)
+Square
+Squarespace
+Stack Overflow (Prosus/Stack Exchange)
+StatusCake
+Statuspage
+Stigg
+StockData.org
+StreamElements
+Stripe
+Stytch
+Sumo Logic
+Supabase
+SurveyMonkey
+SurveySparrow
+Svix
+Swarmia
+Taboola
+Tailscale
+Tally
+Tavus
+tawk.to
+Teachable
+Teamtailor
+Teamwork
+Telnyx
+Tempo
+Temporal.io
+Tenable Vulnerability Management
+TestRail
+The Guardian
+Thinkific
+Thinkific Courses
+Ticket Tailor
+TikTok Ads
+tinyEmail
+TMDb
+Todoist
+Together AI
+Torii
+Transistor.fm
+Travis CI (Idera)
+Trello
+Tremendous
+Trigger.dev
+Trunk.io (Trunk Technologies, Inc.)
+Trustpilot
+TVmaze
+Twelve Data
+Twelve Labs
+Twenty
+Twilio
+Tyntec SMS
+Typeform
+Ubidots
+Unleash
+Unstructured
+UpPromote
+Upstash
+UptimeRobot
+US Census
+Usersnap
+UserVoice
+Vantage
+Vapi
+Veeqo
+Vellum
+Veracode
+Vercel
+Vitally
+Vultr
+Wasabi
+Watchmode
+Webflow
+Weights & Biases
+Whop
+Wikipedia Pageviews
+Windmill
+WooCommerce
+WordPress
+Workable
+Workday
+WorkOS
+World Bank Open Data
+Wrike
+Writesonic
+Wufoo
+Xendit
+xMatters (Everbridge)
+Yoco
+Yousign
+YouTube Analytics
+Zapier (Storage by Zapier)
+ZapSign
+Zendesk
+Zendesk Sell
+Zendesk Sunshine
+Zenduty
+Zenloop
+Zep
+Zoho CRM
+Zonka Feedback
+Zoom
+Zuora
+Zylo
+Self-managed
+Azure Blob
+Cloudflare R2
+File upload
+Google Cloud Storage
+S3
+Destinations
+Realtime destinations
+Batch exports
+Transformations
+Transformations
+Resources
+Using Fivetran, Airbyte or other ETL tools with PostHog
+Troubleshooting
+Changelog
+Copy page
+Linking BigQuery as a source
+Let AI connect your sources for you
+Skip the manual setup — run this in your project and the wizard auto-detects your databases and APIs and connects them to PostHog.
+npx @posthog/wizard warehouse
+Learn more
+Let AI connect your sources for you
+Contents
+Requirements
+Configuring BigQuery
+Configuring PostHog
+Configuration
+Supported tables
+Selecting columns
+How it works
+Costs
+Troubleshooting
+Invalid Project ID or Dataset ID
+Missing required fields in key file
+Corrupted or invalid private key
+Service account credentials rejected
+Dataset not found or wrong region
+Permission denied
+You can connect your BigQuery tables to PostHog by configuring it as a source. You must grant a limited set of permissions so the connector can create, query, and delete temporary tables without exposing your entire BigQuery environment.
+Requirements
+A Google Cloud Service Account
+with the permissions described below
+Google Cloud JSON Key file for that account's Dataset ID
+(Optional) A Dataset ID for temporary tables
+Configuring BigQuery
+To securely connect your BigQuery account to PostHog, create a dedicated service account with the minimum required permissions:
+Create a service account:
+Go to the
+Google Cloud Console.
+Navigate to
+IAM & Admin > Service Accounts.
+Click
+Create Service Account.
+Provide a descriptive name (e.g.,
+bigquery-posthog-service-account
+) and a brief description.
+Assign required permissions:
+For simplicity, you can assign the
+BigQuery Data Editor
+,
+BigQuery Job User
+, and
+BigQuery Read Session User
+roles if it meets your security requirements.
+Alternatively, create a custom role that includes only these permissions:
+PostHog AI
+bigquery.readsessions.create
+bigquery.readsessions.getData
+bigquery.datasets.get
+bigquery.jobs.create
+bigquery.tables.get
+bigquery.tables.list
+bigquery.tables.getData
+bigquery.tables.create
+bigquery.tables.update
+bigquery.tables.updateData
+bigquery.tables.delete
+Generate and download the service account key:
+Once the service account is created, click on it and select the
+Keys
+tab.
+Click
+Add Key > Create new key
+, choose
+JSON
+, and download the key file.
+Important:
+Store the JSON key securely, as it contains sensitive credentials.
+Configuring PostHog
+In PostHog, go to the
+Data pipelines
+tab, then choose
+sources
+Click
+New source
+and select BigQuery
+Drag and drop the
+Google Cloud JSON Key file
+to upload
+Enter the
+Dataset ID
+you want to import
+(Optional) If you're limiting permissions to the service account provided, enter a Dataset ID for temporary tables
+(Optional) Add a prefix for the table name
+In some rare instances BigQuery is unable to auto-locate your dataset unless you specify a region. If you see an error message that looks something like:
+Dataset xxx:xxx was not found in region
+then you may need to toggle the switch for manually specifying your region. Regions typically look like
+us-east1
+or similar.
+Configuration
+Option
+Description
+Google Cloud JSON key file
+Type:
+file-upload
+Required:
+True
+Manually specify your dataset region?
+Type:
+switch-group
+Required:
+False
+In most cases, BigQuery is able to automatically determine the region your dataset is located in. For the rare instances that BigQuery fails to do so, you can manually specify your dataset region here.
+Dataset ID
+Type:
+text
+Required:
+True
+Use a different dataset for the temporary tables?
+Type:
+switch-group
+Required:
+False
+We have to create and delete temporary tables when querying your data, this is a requirement of querying large BigQuery tables. We can use a different dataset if you'd like to limit the permissions available to the service account provided.
+Use a different project for the dataset than your service account project?
+Type:
+switch-group
+Required:
+False
+If the dataset you're wanting to sync exists in a different project than that of your service account, use this to provide the project ID of the BigQuery dataset.
+Supported tables
+The tables available from this source are discovered from your account when you connect it, so the exact list depends on your data. Once connected, you can pick which tables to sync from the
+sources tab
+.
+Selecting columns
+By default, PostHog syncs all columns from each table. To sync only specific columns:
+During source setup, click
+Columns
+next to any table in the table picker.
+Uncheck columns you don't want to sync.
+Primary key columns and the incremental sync field (if configured) are always synced and cannot be disabled.
+You can also change column selection after setup:
+Go to the
+sources tab
+and click your BigQuery source.
+Click
+Configure
+next to any schema.
+Under
+Columns
+, select which columns to sync.
+Adding columns to existing syncs:
+When you add columns to a schema using incremental or append sync, PostHog prompts you to choose:
+Sync forward only
+- New columns are populated only for future data. Existing rows show
+NULL
+for the new columns.
+Full resync
+- Triggers a complete resync to backfill the new columns for all rows.
+How it works
+PostHog creates and deletes
+temporary tables
+when querying your data. This is necessary for handling large BigQuery tables. Temporary tables help break down large data processing tasks into manageable chunks. However, they incur storage and query costs in BigQuery while they exist. We delete them as soon as the job is done.
+PostHog requires a unique primary key when importing data and will look for it in this order:
+PostHog will use the
+id
+column as the primary key if it exists
+If the
+id
+column does not exist, PostHog will use any primary key constraints in the table
+After selecting the primary key, PostHog will query the table to see if the column is unique. If it is not, PostHog will fail the import with a
+DuplicatePrimaryKeysException
+. If you have no
+id
+column and no primary key constraints, future incremental imports will fail.
+Costs
+We minimize BigQuery costs by keeping queries to a minimum and deleting temporary tables immediately after use. Although the connector automates temporary table management, check
+BigQuery’s pricing
+for details on storage and query costs.
+Troubleshooting
+Invalid Project ID or Dataset ID
+If you see an error like:
+Your BigQuery Project ID or Dataset ID contains characters BigQuery doesn't allow.
+This means the Project ID or Dataset ID you entered contains characters that BigQuery doesn't accept. BigQuery has strict naming rules:
+Project IDs
+can only contain lowercase letters, digits, and hyphens.
+Dataset IDs
+can only contain letters, digits, and underscores (no hyphens).
+A common mistake is copying identifiers with extra characters like parentheses or spaces. Verify your Project ID and Dataset ID in the
+Google Cloud Console
+and update your source configuration in PostHog.
+Missing required fields in key file
+If you see an error like:
+Your Google Cloud JSON key file is missing required fields.
+This means the uploaded JSON key file doesn't contain all the fields PostHog needs. The key file must include
+project_id
+,
+private_key
+,
+private_key_id
+,
+client_email
+, and
+token_uri
+.
+To fix this, download the full service account key from the
+Google Cloud Console
+under
+IAM & Admin > Service Accounts >
+[Your Account]
+> Keys
+and re-upload it.
+Corrupted or invalid private key
+If you see an error like:
+We couldn't read the private key in your Google Cloud JSON key file — it appears truncated or corrupted.
+This means the
+private_key
+field in your JSON key file is damaged, truncated, or was modified incorrectly. This can happen if the key file was partially copied or edited.
+To fix this, download a fresh service account key from the
+Google Cloud Console
+under
+IAM & Admin > Service Accounts >
+[Your Account]
+> Keys
+and re-upload the complete JSON file.
+Service account credentials rejected
+If you see an error like:
+Your BigQuery service account credentials were rejected by Google.
+This means Google's authentication endpoint rejected your service account credentials. This happens when:
+The private key was rotated or revoked
+— Someone generated a new key for this service account, invalidating the old one.
+The service account was deleted
+— The service account no longer exists in Google Cloud.
+To fix this, generate a new JSON key file in the
+Google Cloud Console
+under
+IAM & Admin > Service Accounts
+and upload it to PostHog.
+Dataset not found or wrong region
+If you see an error like:
+BigQuery couldn't find the configured dataset or table.
+This means the dataset or table you specified doesn't exist or isn't accessible from the region PostHog is querying. This can happen when:
+The dataset was deleted or renamed
+— Verify the dataset exists in your
+BigQuery console
+.
+The dataset is in a non-US region
+— Toggle
+Manually specify your dataset region
+in your source settings and enter the correct region (e.g.,
+us-east1
+,
+europe-west1
+).
+Typo in dataset or table name
+— Double-check the spelling in your source configuration.
+Permission denied
+If you see an error like:
+BigQuery denied access to the configured dataset or tables.
+This means your service account doesn't have the necessary permissions to read the dataset. To fix this:
+In the
+Google Cloud Console
+, go to
+IAM & Admin > IAM
+.
+Find your service account and ensure it has at least the
+BigQuery Data Viewer
+role on the dataset you're syncing.
+Alternatively, grant the specific
+bigquery.tables.getData
+permission at the dataset level.
+See the
+Configuring BigQuery
+section for the full list of required permissions.
+Was this page useful?
+Helpful
+Could be better
+Jump to:
+Requirements
+Configuring BigQuery
+Configuring PostHog
+Configuration
+Supported tables
+Selecting columns
+How it works
+Costs
+Troubleshooting
+Invalid Project ID or Dataset ID
+Missing required fields in key file
+Corrupted or invalid private key
+Service account credentials rejected
+Dataset not found or wrong region
+Permission denied

@@ -1,0 +1,485 @@
+# https://webflow.com/blog/the-agentic-web-is-here
+The agentic web is here. Webflow is built for it. | Webflow Blog
+Skip to Main Content
+Platform
+→
+Platform
+←
+Back
+Build
+Design
+Edit content
+Interactions
+Collaboration
+Page building
+Manage
+CMS
+Hosting
+Localize
+Security
+Shared Libraries
+Optimize
+Analyze
+Optimize
+SEO
+AEO
+new
+Extend
+Apps
+Figma to Webflow
+Webflow Cloud
+DevLink
+MCP
+new
+Platform Overview
+Explore the power of the Webflow platform
+Learn more about Platform
+Webflow AI
+Elevate web experiences with the power of AI
+Learn more about Ai
+I'm a
+Marketer
+Marketer
+Designer
+Developer
+Agency
+Appearance
+Light mode
+Dark mode
+Auto (OS)
+Solutions
+→
+Solutions
+←
+Back
+Marketing
+Brand
+Performance
+Digital Experience
+Ops
+Engineering
+Engineering leaders
+Developers
+Service Providers
+Agencies
+Freelancers
+Global Alliances
+Enterprise
+Advanced collaboration workflows and enterprise-grade scalability.
+Learn more about Enterprise
+AEO
+Show up in AI-driven search with the power of Webflow.
+Learn more about AEO
+I'm a
+Marketer
+Marketer
+Designer
+Developer
+Agency
+Appearance
+Light mode
+Dark mode
+Auto (OS)
+Resources
+→
+Resources
+←
+Back
+Get started
+Templates
+Made in Webflow
+Hire a Certified Partner
+Developers
+Learn
+Webflow University
+Blog
+Webinars & ebooks
+The Webflow Way
+Discover
+Customer stories
+Our Community
+Partner with Webflow
+AEO Assessment
+Get help
+Support
+Join the Community
+I'm a
+Marketer
+Marketer
+Designer
+Developer
+Agency
+Appearance
+Light mode
+Dark mode
+Auto (OS)
+Enterprise
+Pricing
+Site Settings
+Site Settings
+←
+Back
+I'm a
+Marketer
+Marketer
+Designer
+Developer
+Agency
+Appearance
+Light mode
+Dark mode
+Auto (OS)
+I'm a
+Marketer
+Marketer
+Designer
+Developer
+Agency
+Appearance
+Light mode
+Dark mode
+Auto (OS)
+Get started
+Login
+Login
+Log in
+Contact Sales
+Contact Sales
+Start for free
+Start for free
+Start for free
+Contact Sales
+Trusted by teams at
+Blog
+Inside Webflow
+The agentic web is here. Webflow is built for it.
+Webflow MCP 2.0 gives your agents the context, control, and governance they need for high-impact work in production.
+Emma Genesen
+Senior Product Marketing Manager
+View author profile
+Emma Genesen
+Senior Product Marketing Manager
+View author profile
+View author profile
+View author profile
+Table of contents
+Share
+Facebook
+LinkedIn
+Unlock exclusive Webflow content
+Subscribe now for best practices, research reports, and more.
+You are now subscribed.
+The way we work is changing. Our design tools, CMS, and analytics platforms haven't gone anywhere — but more and more of our work is happening inside a chat window.
+Agentic workflows have made it faster than ever to go from idea to production. But the stakes on the web are high. When an agent makes a change to your website, it's immediately visible to every customer, prospect, and AI search engine that discovers you.
+Unfortunately, most tools make you pick between speed, control, and governance. Over time, this results in a build up of design drift, unmaintainable code, security vulnerabilities, and tool sprawl. According to
+IBM’s Institute for Business Value
+“86% of executives say technical debt is already constraining AI success”.
+The teams that win in the agentic era will be the ones on a platform that balances AI speed with the control, governance, and analytics required to trust agents with high impact work at scale. At Webflow, that’s what we’re committed to building.
+Introducing Webflow MCP 2.0
+Webflow’s MCP
+makes it easy to connect Webflow to tools like
+Claude
+,
+ChatGPT
+, and
+Cursor
+so you can design, build, and manage your sites inside your existing AI workflows.
+We launched the first version of our MCP server last year, with strong support for managing site metadata and CMS content. Today, we’re dramatically expanding what’s possible for agents on Webflow with deeper support for design and build workflows, analytics, and governance.
+"Our workflows with Figma, Claude Code, and Webflow's MCP have been an absolute game changer. I really see this as our future workflow."
+— Alex Mejias, Head of Global Design Technology and Interactive Experience, Amazon Brand Innovation Lab
+Your design system is now agent-ready
+With MCP 2.0, you and your agents can build with the full context of your design system and CMS data – ensuring AI speed doesn’t come at the cost of control, brand consistency, or long term maintainability.
+It’s now possible to:
+Build with your existing design system:
+Leverage the full power of Webflow styles, elements, and components – including props, slots, and variants – so you can create on-brand content that’s structured for efficient long-term maintenance.
+Create and manage dynamic content:
+Connect elements and components to CMS data so every update made in the CMS is instantly reflected everywhere your content appears.
+Work in parallel with agents:
+Build across multiple pages or sites simultaneously so you and your agents can move faster. For those of you who’ve been with Webflow a while, this also means the bridge app is no longer required for most use cases.
+Put it all together, and the workflows start to compound. If you give Claude a folder of customer case studies, it can build a CMS Collection page using your existing design system, then generate and publish each page for you. Hours of work, done in minutes.
+A single source of context for your agents
+Getting output that's fast, on-brand,
+and
+production ready requires lots of context, like how to apply your design system, what your brand sounds like, and what legal policies must be followed. For most teams, this context exists, but it’s fragmented across multiple tools and resources.
+That's why we introduced
+Agent Instructions
+, giving agents a unified source of context that helps them produce work that more consistently feels like yours.
+Agent Instructions make it easy to:
+Centralize important context:
+Point agents at Webflow resources like your design system or CMS content, or add resources like legal docs and voice and tone guidelines so agents have all the context they need.
+Define how your agents should work:
+Create skills and rules that instruct agents on how to complete tasks and leverage provided resources to get production-ready outputs faster.
+Use instructions wherever you need them:
+Agent instructions can be used both by Webflow AI, and third-party agents via the MCP.
+When your agents have the full picture, you can confidently hand off bigger tasks, like building hundreds of customized ABM landing pages without risking your design or message.
+“Agent instructions turn my build-time rules into the site's own operating system — the same voice, brand, and compliance guardrails I use through the MCP ship with the site. Not only can I manage the site more easily — my client can too.”
+- Michael Wells, Managing Director, Sygnal
+Site performance insights, inside your AI workflows
+Building fast and staying on-brand matters. But knowing which parts of your site are actually moving the needle is what helps your business grow. This release makes your Webflow Analyze site data accessible via the MCP, so you can:
+Analyze site data conversationally:
+Ask AI agents about traffic trends, top performing pages, engagement events, time on page, and traffic sources to get real-time insights without ever leaving your chat.
+Share analyze data with other tools:
+Share site performance data with other MCP connectors in an agentic workflow, like Amplitude, Slack, Asana, and more.
+For example, you could ask ChatGPT how your site performed this week, flag pages with dropping traffic, post a summary to your team's Slack channel, and create tasks in Asana for your team to investigate — all in one conversation.
+Collaborate safely at scale
+Now as more and more of your team adopts agentic development, it’s important to have guardrails to protect your live site. MCP 2.0 gives your team the control and governance required to move fast without breaking things:
+Build on branches:
+Agents can now iterate on changes in a secure, isolated environment before pushing updates to your live site.
+Enforce strict access control:
+Webflow’s MCP fully enforces your account roles and permissions, including custom roles, and granular access per site, CMS collection, page, and locale.
+Track MCP actions in site activity logs:
+Know exactly when a change was made via MCP, who triggered it, and what was affected. You can also query the activity log directly via MCP for faster, more scalable site auditing.
+MCP 2.0 is available today on all Webflow site plans at no additional cost. Feature access follows your existing plan allowances, roles, and permissions, so your whole team can start building agentically right away.
+Already using the Webflow MCP? Check out the
+full changelog
+for a detailed breakdown of what's new. New to Webflow MCP? Start
+here
+.
+The platform for what comes next
+Over time, AI clients will become the primary interface for more and more of your team. And agents will take on more of the work of building and growing your web presence. The teams that win will be the ones whose web platform was built for it.
+Webflow is no longer a place to build websites that agents can sometimes touch. It's a platform where you and your agents can work together with your brand, your guardrails, and your goals driving every output. And we're not stopping here. Our roadmap is pointed at full parity: everything you can do in Webflow, your agents will be able to do too.
+That's the platform we're building. If you're ready to start building on it,
+get started with MCP 2.0 today
+.
+If you want to see where we're taking it next, join us at Webflow Conf.
+Register for Webflow Conf
+→
+↗
+►
+↓
+←
+↑
+Read now
+Last Updated
+August 4, 2026
+Category
+Inside Webflow
+Related articles
+→
+↗
+►
+↓
+←
+↑
+→
+↗
+►
+↓
+←
+↑
+10x
+In cost savings annually
+Read story
+→
+↗
+►
+↓
+←
+↑
+67%
+decrease in dev ticketing
+Read story
+→
+↗
+►
+↓
+←
+↑
+$6M
+in cost savings annually
+Read story
+→
+↗
+►
+↓
+←
+↑
+56%
+increase in form fills
+Read story
+→
+↗
+►
+↓
+←
+↑
+1,170%
+increase in traffic YoY
+Read story
+→
+↗
+►
+↓
+←
+↑
+$200M
+in new pipeline generated post-site launch
+Read story
+→
+↗
+►
+↓
+←
+↑
++20%
+increase in site-wide conversion
+Read story
+→
+↗
+►
+↓
+←
+↑
+10x
+In cost savings annually
+Read story
+→
+↗
+►
+↓
+←
+↑
+67%
+decrease in dev ticketing
+Read story
+→
+↗
+►
+↓
+←
+↑
+$6M
+in cost savings annually
+Read story
+→
+↗
+►
+↓
+←
+↑
+56%
+increase in form fills
+Read story
+→
+↗
+►
+↓
+←
+↑
+1,170%
+increase in traffic YoY
+Read story
+→
+↗
+►
+↓
+←
+↑
+$200M
+in new pipeline generated post-site launch
+Read story
+→
+↗
+►
+↓
+←
+↑
++20%
+increase in site-wide conversion
+Read story
+→
+↗
+►
+↓
+←
+↑
+Get started for free
+Try Webflow for as long as you like with our free Starter plan. Purchase a paid Site plan to publish, host, and unlock additional features.
+Get started — it’s free
+Get started — it’s free
+Watch demo
+Watch demo
+Try Webflow for as long as you like with our free Starter plan. Purchase a paid Site plan to publish, host, and unlock additional features.
+Product
+Platform
+Design
+Edit content
+Interactions
+GSAP
+Page building
+Shared Libraries
+Collaboration
+CMS
+Hosting
+Localize
+Security
+Ecommerce
+Analyze
+Optimize
+SEO
+MCP
+new
+AEO
+new
+Webflow Cloud
+DevLink
+Labs
+Figma to Webflow
+Labs
+Accessibility
+AI
+Solutions
+Enterprise
+Global alliances
+Agencies
+Freelancers
+Resources
+University
+Blog
+Customer stories
+Webinars & ebooks
+Apps
+Libraries
+Templates
+Developers
+Made in Webflow
+Glossary
+Livestreams
+The Webflow Way
+Business Value Calculator
+Company
+About
+Careers
+We're hiring
+Press
+Webflow Ventures
+Webflow Shop
+Terms of Service
+Privacy policy
+Cookie policy
+Accessibility statement
+Compare
+Contentful
+Framer
+Sitecore
+Wix
+WordPress
+Community
+Discover the community
+Partner with Webflow
+Certified Partners
+Become a template designer
+Become an affiliate
+Become a Global Leader
+Find a meetup near you
+Get help
+Support
+Pricing
+Status
+Community Homebase
+Wishlist
+©
+2026
+Webflow, Inc. All rights reserved
+Webflow's homepage
+Made in Webflow

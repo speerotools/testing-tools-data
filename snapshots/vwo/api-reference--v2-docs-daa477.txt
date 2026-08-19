@@ -1,0 +1,344 @@
+# https://developers.vwo.com/v2/docs/
+Overview
+For AI agents: visit https://developers.wingify.com/v2/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.
+Jump to Content
+Documentation
+API Reference
+Support
+Documentation
+API Reference
+Changelog
+v1.0
+v2
+v3
+Documentation
+API Reference
+Support
+Sign In
+Documentation
+Search
+Sign In
+v2
+Documentation
+API Reference
+Changelog
+Overview
+Feature Experimentation
+Overview
+Quick Start Guide
+SDK Reference
+List of FE SDKs
+Architecture and Flow
+Recipes
+Server-side SDKs
+Node.js
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Java
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+PHP
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Proxy URL (bypassing Firewall)
+Python
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+.NET/C#
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Shutdown
+Ruby
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Go
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Client-side SDKs
+Android(Kotlin/Java)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+Impact Analysis
+Flutter/Dart
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+iOS(Swift)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+Impact Analysis
+React Native
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+JavaScript(web)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Cache Settings
+Proxy URL / Prevent Ad-blockers
+React(web)
+Installing the SDK
+Initialization
+User Context
+Hooks
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Cache Settings
+Proxy URL / Prevent Ad-blockers
+Testing SDK Hooks and Provider
+Next.js
+Expo(React-Native)
+Capacitor(JavaScript)
+Ionic(JavaScript)
+Cordova(Javascript)
+Edge Support
+Gateway Service
+OpenFeature Providers
+.NET Provider
+Java Provider
+Node Provider
+PHP Provider
+Python Provider
+Go Provider
+Unified Experimentation
+Overview
+Cross-System Identity Synchronization
+Conversion Tracking Across Platforms
+Integration with Wingify Web & Mobile Insights
+Concepts
+Identifying Users (User ID)
+How User Bucketing Works
+Salting
+Polling
+Configuring Webhooks
+SDK Retry Mechanism
+Segment Evaluation in Client-Side vs Server-Side SDKs
+Using Variables to Drive Logic
+Explicit SDK Settings Configuration
+Testing Email/SMS via Server-Side Experimentation
+User Aliasing
+Preventing Bot Traffic from Impacting Your Experiments
+Deep-Dive Debugging Guide
+KNOWLEDGE BASE & SET UP GUIDE
+Introduction
+Getting Started with Feature Experimentation
+Set Up Feature Flags
+Set Up Rules
+Set Up Approval Flow for Rules in Feature Flags
+Configure Environment-Level Permissions (Open Access)
+Overview of Segmentation
+Configure Segmentation
+Auto-Deploy Winning Variations from A/B Tests
+Set Up Multivariate Rules
+Advanced Debugging
+Wingify Testing vs Wingify Feature Experimentation
+Transitioning from Fullstack to Feature Experimentation
+Best Practices
+SDK Keys in Client-Side Environments
+Caching Layer
+Performance and Benchmarking
+Integrations
+Overview
+Data Export
+Sending Wingify Data
+Google Analytics
+Firebase Analytics
+Mixpanel
+Segment
+Heap
+Amplitude
+Import Events into Wingify
+Google Tag Manager (GTM)
+Trigger Wingify Events Using GTM
+Streaming Events From GTM to Wingify
+Amplitude
+Mixpanel
+Heap
+Segment
+Analytics & Experimentation
+Wingify Insights Mobile
+CI/CD & DevOps
+Github Action
+AI
+MCP Server
+Developer Tools / IDE
+Tech Debt Client
+VS Code Extension
+Collaboration Tools
+Slack
+Content Management System(CMS)
+Contentful
+Observability
+Datadog Triggers
+Sentry Triggers
+New Relic Triggers
+Splunk Triggers
+Shopify Headless
+RESTful APIs
+Overview
+REST APIs
+Example Apps
+Overview
+FAQs
+List of Questions
+CHANGELOG
+History of changes that went live
+Powered by
+Feature Experimentation
+Overview
+This version of the documentation (v2) is for the new
+Feature Experimentation(FE)
+product of Wingify.
+Feature Experimentation
+is a full-stack solution that integrates Wingify's SDK into your server or mobile codebase, allowing you to run feature tests, rollouts, personalisation, and experimentation campaigns.
+🚧
+Please note that this differs from the
+ServerSide
+/
+FullStack
+Testing product that Wingify already offers.
+Wingify FE lets you do the enterprise-grade testing of your product by deploying code behind features, experimenting with A/B tests, and rolling out or rolling back features immediately. With Wingify FE, you can literally test anything - be it the search algorithms or recommendation engine for your e-commerce store or subscription workflows for your SaaS business. Wingify FE is built to help you execute even the most complex tests. It enables you to test on any platform and is not limited to devices that have a browser. Think native apps, beacons, and connected devices.
+With Wingify FE, you can perform the testing wherein the variations of a particular test are rendered directly from the web server and are then sent to the visitors’ devices. Implementing directly on the server allows you to run more sophisticated tests that might otherwise hamper the user experience if implemented on the client side. In addition to that, server-side testing is also opted for in cases when it is simply unfeasible to experiment on the client-side. For example, testing two different product recommendation algorithms for an e-commerce website.
+Typical use cases of Wingify FE are:
+Manage Features' Lifecycle With Feature Flag Management
+Deliver Features Confidently with Staged Feature Rollouts
+You can test multiple variations of the feature with a different set of variables
+A/B Test deep within your stack
+Wingify FE enables you to test much deeper. Rather than being limited to testing images or buttons on your website, you can test algorithms, architectures, and rebrands. But for complex applications, client-side testing may not be the best option: Layering more JavaScript on top of an already bulky application means an even slower load time and an even more cumbersome user experience.
+Consider the following situation. An e-commerce store owner, to optimize for better conversions, wants to test two different checkout flows on both his/her website and mobile app at the same time. To do so, they need an advanced testing methodology, which is more inherent to the process and integrates with the website to ensure a seamless user experience. Neither of these is possible by running a simple A/B test on the client-side, and that is why server-side testing is required.
+FE currently supports the following programming languages:
+Server-side SDKs
+Node.js
+Java
+Python
+Ruby
+.NET
+Go
+PHP
+Client-side SDKs
+Android
+iOS
+React-Native
+Flutter(Dart)
+JavaScript(web)
+React(web)
+For any other languages or frameworks you want to use FE with or for a demo of the product, please reach out to us at
+[email protected]
+.
+The Wingify SDKs code is available in various languages on GitHub. All different SDKs published under Wingify Organization on GitHub are licensed under Apache 2.0 License (c) Wingify Software Pvt. Ltd. 2024-2025.
+Updated
+2 months ago
+Quick Start Guide
+Did this page help you?
+Yes
+No
+Copy Page
+FE currently supports the following programming languages:
+Server-side SDKs
+Client-side SDKs

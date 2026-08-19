@@ -1,0 +1,119 @@
+# https://www.geteppo.com/security
+Security
+Product
+Products
+Experimentation
+Product Experimentation
+Web Experimentation
+Lifecycle Experimentation
+Program Management
+Lifecycle Experimentation
+Feature Flagging
+Release Management
+Automated Rollouts
+Config Flags
+Release Management
+AI Personalization
+Contextual Bandits
+Contextual Bandits
+Why Eppo
+WHY EPPO
+By Role
+Data Scientists
+Engineers
+Marketers
+Product Managers
+Product Managers
+Resources
+Customers
+Outperform
+Updates
+White Papers
+White Papers
+FEATURED CASE STUDY
+Coinbase Saves Millions, Reduces Experiment Analysis Time by 40%, and Restores Trust in Experimentation with Eppo
+Learn more
+Blog
+About
+Docs
+Get a demo
+Login
+Product
+Experimentation
+Product Experimentation
+Web Experimentation
+Lifecycle Experimentation
+Program Management
+Lifecycle Experimentation
+Feature Flagging
+Release Management
+Automated Rollouts
+Config Flags
+Release Management
+AI Personalization
+Contextual Bandits
+Contextual Bandits
+Why Eppo
+By Role
+Data Scientists
+Engineers
+Marketers
+Product Managers
+Resources
+Customers
+Outperform
+Updates
+White Papers
+Blog
+About
+Docs
+Login
+Get a demo
+Security
+We take security seriously. If you have any questions, or encounter any issues, please contact us.
+Security
+Data Protection
+Compliance
+Report an Issue
+Product Security
+Product security is of paramount importance at Eppo Data. Eppo Data uses a software development lifecycle in line with general Agile principles. When security effort is applied throughout the Agile release cycle, security oriented software defects are able to be discovered and addressed more rapidly than in longer release cycle development methodologies. Software patches are released as part of our continuous integration process. Patches that can impact end users will be applied as soon as possible but may necessitate end user notification and scheduling a service window.
+Eppo performs continuous integration. In this way we are able to respond rapidly to both functional and security issues. Well defined change management policies and procedures determine when and how changes occur. This philosophy is central to DevOps security and the development methodologies that have driven Eppo Data adoption. In this way, Eppo Data is able to achieve extremely short mean time to resolution for security vulnerabilities and functional issues alike. Eppo is continuously improving our DevOps practice in an iterative fashion.
+Physical Security
+The Eppo Data production infrastructure is hosted in Cloud Service Provider (CSP) environments. Physical and environmental security related controls for Eppo Data production servers, which includes buildings, locks or keys used on doors, are managed by these CSP’s. “Physical access is strictly controlled both at the perimeter and at building ingress points by professional security staff. Authorized staff must pass two-factor authentication a minimum of two times to access data center floors.”
+Corporate Security
+Eppo Data leverages internal services that require transport level security for network access and individually authenticate users by way of a central identity provider and leveraging two factor authentication wherever possible.
+All Eppo Data personnel undergo regular security and privacy awareness training that weaves security into technical and non-technical roles; all employees are encouraged to participate in helping secure our customer data and company assets. Security training materials are developed for individual roles to ensure employees are equipped to handle the specific security oriented challenges of their roles.
+Authentication and Access Management
+End users may log in to Eppo Data via the “Sign-in with Google” OpenID service. These services will authenticate an individual’s identity and may provide the option to share certain personally identifying information with Eppo Data, such as your name and email address to pre-populate our sign up form. All requests to the Eppo Data API must be authenticated.
+Protection of Customer Data
+Data submitted to the Eppo Data service by authorized users is considered confidential. This data is protected in transit across public networks and encrypted at rest. Customer Data is not authorized to exit the Eppo Data production service environment, except in limited circumstances such as in support of a customer request.
+All data transmitted between Eppo Data and Eppo Data users is protected using Transport Layer Security (TLS) and HTTP Strict Transport Security (HSTS). If encrypted communication is interrupted the Eppo Data application is inaccessible.
+Eppo Data maintains a single data center in the United States. Customer submitted service data is not transferred or shared between data centers. Eppo Data utilizes encryption at various points to protect Customer Data and Eppo Data secrets, including encryption at rest (e.g. AES-256), asymmetric encryption (e.g. PGP) for system backups, KMS-based protections for the protection of secrets (passwords, access tokens, API keys, etc.), and GPG encryption​.Access to Customer Data is limited to functions with a business requirement to do so. Eppo Data has implemented multiple layers of access controls for administrative roles and privileges. Access to environments that contain Customer Data requires a series of authentication and authorization controls, including Multi-Factor Authentication (MFA). Eppo Data enforces the principles of least privilege and need-to-know for access to Customer Data, and access to those environments is monitored and logged for security purposes. Eppo Data has implemented controls to ensure the integrity and confidentiality of administrative credentials and access mechanisms, and enforces full-disk encryption and unique credentials for workstations.
+Eppo Data monitors critical infrastructure for security related events by using a custom implementation of open source and commercial technologies. Activity data such as API calls and operating system level calls are logged to a central point where the information is passed through a series of custom rules designed to identify malicious or unapproved behavior. The results of these rules are fed into an orchestration platform that triggers automated actions, which may include directly alerting the security team or triggering additional authentication requirements.
+‍
+Laws and Regulations
+Eppo Data solution is compliant with various data protection laws and regulations applicable to the services we provide.
+Vendor Management
+Eppo Data leverages a number of third party applications and services in support of the delivery of our products to our customers. The Eppo Data Security Team recognizes that the company’s information assets and vendor dependencies are critical to our continuing operations and delivery of services. As such, Eppo Data’s Security and Privacy teams have established a vendor management program that sets forth the requirements to be established and agreed upon when Eppo Data engages with third parties or external vendors. These engagements are designed to assess the technical, physical, and administrative controls in place and to ensure they are commensurate with the expectations of Eppo Data and its customers.
+Disclosure
+If you believe you’ve discovered a bug in Eppo Data security, please get in touch at
+security@geteppo.com
+and we will get back to you within 24 hours, and usually earlier. We request that you not publicly disclose the issue until we have had a chance to address it.
+Interested in hearing about what we’re building?
+Follow along on
+the Datadog blog
+.
+Experimentation
+Artificial Intelligence
+Warehouse Native
+Feature Flagging
+Outperform
+Docs
+Updates
+About
+Careers
+Customers
+Copyright © 2026 Datadog.
+Privacy
+Terms & Conditions
+Security

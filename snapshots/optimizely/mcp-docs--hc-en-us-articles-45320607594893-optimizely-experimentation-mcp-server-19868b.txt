@@ -1,0 +1,138 @@
+# https://support.optimizely.com/hc/en-us/articles/45320607594893-Optimizely-Experimentation-MCP-server-overview
+Optimizely Experimentation MCP server overview – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Experimentation strategy
+Tools and utilities
+Experimentation MCP server
+Optimizely Experimentation MCP server overview
+Updated
+May 15, 2026 19:34
+Optimizely Web Experimentation
+Optimizely Personalization
+Optimizely Feature Experimentation
+Optimizely Performance Edge
+The
+Model Context Protocol (MCP)
+is an open standard that lets agents connect to external tools and data sources. Instead of copying data into prompts or writing API scripts, MCP gives your AI client structured access to live systems.
+The Optimizely Experimentation MCP server is a hosted service that connects your agent to Optimizely Experimentation. Use it to query projects, flags, and experiment results in the AI tools you already use. Generate SDK implementation code and create and manage experiments, flags, and audiences through natural language.
+Benefits
+The MCP server brings Optimizely into the tools you already work in. Ask questions like
+What experiments are running in my project?
+or
+Show me the results for the checkout redesign test
+directly in your IDE, terminal, or browser-based AI client instead of navigating dashboards or writing API calls.
+Log in with your Optimizely account. The server sees exactly what your account has access to: the same projects, experiments, and data as the Optimizely UI.
+Prerequisites
+To use the Experimentation MCP server, you need the following:
+An Opti ID account.
+An Optimizely account with Opal enabled, connected to at least one Feature Experimentation or Web Experimentation instance.
+Access to both the Opal and Experimentation instances.
+An AI client that supports remote MCP.
+During authentication, you connect to your Opal instance, and the MCP server automatically has access to any experimentation instances linked to it.
+About Opti ID
+Opti ID
+is Optimizely's unified identity system. It is the single set of credentials you use to log in across Optimizely products. If you already have an Optimizely account, you have an Opti ID. It is the same login.
+About Opal
+Optimizely Opal
+is an agent orchestration platform that helps you work smarter across Optimizely One. The MCP server authenticates through your Opal instance, which connects it to your Experimentation data. See
+Product connections
+. During configuration, you are asked to select your Opal instance as part of the Open Authorization (OAuth) flow.
+What you can do
+The MCP server provides tools in three categories:
+Query
+– List projects, flags, experiments, and environments. Retrieve experiment results. Compare configurations across environments.
+Manage
+– Create and update flags, experiments, and audiences. Configure targeting rules and rollouts.
+Implement
+– Search Feature Experimentation SDK documentation. Get implementation guidance for your language and framework. Generate SDK integration code.
+Creating or updating flags, experiments, and audiences modifies live Optimizely data. The agent always confirms the target project, environment, and details before committing any changes. Review the agent's confirmation carefully before approving.
+Available tools
+Tool
+Category
+Description
+exp_get_schemas
+Query
+Retrieve the data schema for experimentation entities (projects, flags, experiments, and so on).
+exp_execute_query
+Query
+Run structured queries against your experimentation data.
+exp_summarize_test_result
+Query
+Retrieve and analyze results for individual experiments.
+exp_program_reporting_top_experiments
+Query
+Surface top-performing experiments across your program. Returns
+reporting data for paused and concluded experiments.
+exp_search_fx_sdk_docs
+Implement
+Search
+Feature Experimentation SDK documentation
+across supported languages (JavaScript, Python, Java, Ruby, Go, Swift, Android, Flutter, C#, PHP, React, React Native, Next.js, Angular).
+exp_manage_entity_lifecycle
+Manage
+Create, update, and archive flags, experiments, audiences, and more.
+exp_get_entity_templates
+Manage
+Retrieve templates and required fields for creating or updating entities.
+Most tools return live data. The
+exp_program_reporting_top_experiments
+tool returns data from the reporting tool, which is most relevant for paused and concluded experiments rather than active ones.
+Who this is for
+Developers working in AI-powered editors
+If you use
+Cursor
+,
+Claude Code
+,
+Codex
+, or
+Visual Studio Code with Copilot
+, the MCP server lets you query your experiment and flag configurations, look up SDK docs, and check experiment results without leaving your editor.
+Technical PMs using browser-based AI
+If you use
+Claude Desktop
+,
+Claude.ai
+,
+Codex CLI
+, or
+ChatGPT
+, you can query your experimentation program, pull results, and ask questions about experiment performance in natural language.
+Experimentation leads scaling programs
+If you manage a large number of flags and experiments, the MCP server gives you a faster way to get answers, such as
+Which experiments ended last week?
+or
+Show me all flags in the payments project.
+For Web Experimentation, you can query experiments, create experiments, campaigns, audiences, and other entities in projects. Variation-level code changes (custom HTML, CSS, and JavaScript) are not supported through MCP. Instead, use the
+Visual Editor
+.
+Supported AI clients
+The MCP server works with any AI client that supports remote MCP. See
+Optimizely Experimentation MCP server quickstart
+for the fastest path to your first query, or
+Install Optimizely Experimentation MCP server
+for step-by-step setup for the most common clients.
+Article is closed for comments.
+Articles in this section
+Optimizely Experimentation MCP server overview
+Optimizely Experimentation MCP server quickstart
+Install Optimizely Experimentation MCP server
+Optimizely Experimentation MCP server example prompts
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

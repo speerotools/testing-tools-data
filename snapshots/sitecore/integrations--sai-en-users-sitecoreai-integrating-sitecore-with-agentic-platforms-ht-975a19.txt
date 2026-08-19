@@ -1,0 +1,122 @@
+# https://doc.sitecore.com/sai/en/users/sitecoreai/integrating-sitecore-with-agentic-platforms.html
+Integrating Sitecore with agentic platforms | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Users
+Developers
+Cloud Portal
+Open search
+en
+Search in the table of contents...
+SitecoreAI documentation for business users
+WELCOME
+SitecoreAI
+AUDIENCES & INSIGHTS
+Audience and insights
+CAMPAIGNS
+Plan campaign strategy
+DESIGNS
+Design components
+SITES & PAGES
+Build digital experiences
+Create and manage sites
+Build pages
+PERFORMANCE
+Conversion optimization
+Personalize
+Component personalization
+A/B/n testing
+Get performance insights
+PUBLISH
+Publish content
+CONTENT
+Manage content
+MEDIA
+Manage media
+AI FEATURES
+Agentic studio
+Marketer MCP
+Marketer MCP tool reference and other information
+Marketer MCP and Agent API overview
+Integrating Sitecore with agentic platforms
+AI capabilities in SitecoreAI
+RESOURCES
+Glossary
+Toggle Sidebar
+Marketer MCP
+SitecoreAI documentation for business users
+Marketer MCP
+Toggle full width
+Change font size
+Toggle focus mode
+Integrating Sitecore with agentic platforms
+Sitecore is designed to work across multiple ecosystems, supporting both established and emerging technologies. One emerging area is the use of
+agentic platforms
+. These platforms rely on one or more AI agents to act independently to carry out tasks and run workflows on behalf of users.
+Connecting Sitecore with agentic and generative AI platforms enables more automated and connected digital experiences. The following section explains how this works through Sitecore interoperability.
+Sitecore interoperability
+Interoperability
+means Sitecore can connect and work together with other systems without needing custom rebuilds.
+Sitecore interoperability includes:
+Partner integrations
+- solutions from partners such as Altudo, Horizontal Digital, Icreon, EPAM, and Deloitte that extend Sitecore into wider ecosystems.
+APIs and developer tools
+- APIs and integration guidance for consistent connectivity.
+Future-ready approach
+- frameworks designed to support new and emerging technologies, including agentic and generative AI platforms.
+Gradial integration
+Gradial
+is the first partner to provide an integration based on this interoperability approach. The integration connects the Gradial agentic platform with Sitecore APIs and enables Gradial agents to perform tasks in Sitecore products:
+SitecoreAI
+- create and update pages, manage content items, and apply bulk changes through the Sitecore GraphQL and REST APIs.
+Content Hub
+- generate and manage assets, synchronize content, and orchestrate campaigns within content workflows.
+For instructions on how to integrate Sitecore and Gradial, see the
+Gradial documentation
+.
+Agent API
+To extend the interoperability beyond partner integrations, Sitecore introduced a dedicated
+Agent API
+. This REST API supports:
+Automating workflows across Sitecore and agentic platforms.
+Delivering contextual, real-time content.
+Orchestrating more complex digital experience scenarios.
+Enabling AI agents to perform actions in Sitecore through the
+Marketer MCP
+. For more information, see
+Marketer MCP and Agent API overview
+.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Copy link
+Open in
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

@@ -1,0 +1,629 @@
+# https://github.com/spotify/confidence-ai-plugins
+GitHub - spotify/confidence-ai-plugins · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+spotify
+/
+confidence-ai-plugins
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+7
+Star
+8
+Code
+Issues
+0
+Pull requests
+1
+Actions
+Security and quality
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Security and quality
+Insights
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+71 Commits
+71 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.claude-plugin
+.claude-plugin
+.codex-plugin
+.codex-plugin
+.cursor-plugin
+.cursor-plugin
+.github/
+workflows
+.github/
+workflows
+assets
+assets
+commands
+commands
+evals
+evals
+skills
+skills
+.env.example
+.env.example
+.gitignore
+.gitignore
+.mcp.json
+.mcp.json
+.release-please-manifest.json
+.release-please-manifest.json
+CHANGELOG.md
+CHANGELOG.md
+CLAUDE.md
+CLAUDE.md
+GEMINI.md
+GEMINI.md
+LICENSE
+LICENSE
+README.md
+README.md
+gemini-extension.json
+gemini-extension.json
+package-lock.json
+package-lock.json
+package.json
+package.json
+release-please-config.json
+release-please-config.json
+tsconfig.json
+tsconfig.json
+View all files
+Repository files navigation
+README
+Code of conduct
+Apache-2.0 license
+More
+items
+Confidence AI Plugin
+Official Confidence plugin for AI coding tools. Manage feature flags, experiments, onboarding, and migrations right from your agent.
+✨ Highlights
+Manage feature flags without leaving your editor
+: create, list, update, target, resolve, and archive flags from Claude Code, Cursor, Codex, or Gemini CLI
+One-command migrations
+from PostHog, Eppo, Statsig, or Optimizely (flags
+and
+SDK code; Optimizely also migrates
+users, teams, roles, policies, and Flag clients
+)
+Guided onboarding
+: spin up a Confidence account, invite teammates, create SDK clients, and connect a warehouse without reading a setup doc
+Docs on tap
+: search Confidence documentation and SDK integration guides inline while you code
+Works with every major AI coding assistant through the same MCP servers
+ℹ️ Overview
+Confidence
+is Spotify's feature flagging and experimentation platform, built on the
+OpenFeature
+standard. This plugin exposes Confidence's flag management, documentation, and migration tooling as MCP servers and slash commands, so you can create a flag, plan a migration off another platform, or onboard a new workspace directly from your AI coding assistant's chat.
+⬇️ Installation
+Claude Code
+claude plugin install confidence
+Cursor
+From the Marketplace:
+open
+Cursor Settings
+→
+Plugins
+, search for
+Confidence
+, and click
+Install
+.
+Manual setup
+: add the MCP servers to
+.cursor/mcp.json
+in your project (or
+~/.cursor/mcp.json
+globally):
+{
+"mcpServers"
+: {
+"confidence-flags"
+: {
+"url"
+:
+"
+https://mcp.confidence.dev/mcp/flags
+"
+},
+"confidence-docs"
+: {
+"url"
+:
+"
+https://mcp.confidence.dev/mcp/docs
+"
+} } }
+Codex
+codex plugin marketplace add spotify/confidence-ai-plugins codex /plugins
+#
+Select Confidence and install
+Gemini CLI
+gemini extensions install https://github.com/spotify/confidence-ai-plugins
+Local Development
+git clone https://github.com/spotify/confidence-ai-plugins.git claude --plugin-dir ./confidence-ai-plugins
+Cursor:
+File → Open Folder
+on this repository (the
+confidence-ai-plugins
+directory itself — not
+Desktop
+or your home folder). Skills load from
+./skills/
+via
+.cursor-plugin/plugin.json
+and from
+.cursor/skills/
+(symlinks) for project-level discovery. Commands load from
+./commands/
+(including
+/migrate-optimizely plan access
+,
+plan flags
+,
+execute code
+, etc.) and from
+.cursor/commands/
+(symlink to
+../commands
+). Dedicated
+/migrate-optimizely-*
+menu shortcuts also exist in Cursor. A parent folder as the workspace will not auto-load them.
+Skills only, any agent
+The migration and onboarding
+skills
+can also be installed individually via the
+skills CLI
+, which supports Claude Code, Cursor, Codex, Gemini CLI, and 70+ other agents:
+npx skills add spotify/confidence-ai-plugins
+This installs only the skill logic (auto-triggering guidance for migrations and onboarding). It does
+not
+configure the
+confidence-flags
+/
+confidence-docs
+MCP servers or the
+/confidence:*
+slash commands, even when targeting one of the four clients above. Since several skills call into those MCP servers to manage flags, use one of the full installs above for complete functionality; use this only if you want the skill guidance on an agent the full installs don't support.
+🚀 Usage
+Once installed, just ask your assistant:
+> List my feature flags > Create a flag called new-checkout with a boolean schema > /confidence:onboard-confidence create-account > /confidence:migrate-posthog plan flag > /confidence:migrate-posthog plan code > /confidence:migrate-eppo plan flag > /confidence:migrate-eppo plan code > /confidence:migrate-statsig plan flag > /confidence:migrate-statsig plan code > /confidence:migrate-optimizely plan access > /confidence:migrate-optimizely adjust access > /confidence:migrate-optimizely execute access > /confidence:migrate-optimizely plan flags > /confidence:migrate-optimizely adjust flags > /confidence:migrate-optimizely execute flags > /confidence:migrate-optimizely plan code > /confidence:migrate-optimizely adjust code > /confidence:migrate-optimizely execute code > /confidence:analyze-project
+Features
+This plugin provides access to Confidence tools across these categories:
+Feature flags
+: Create, list, update, archive, resolve, and target feature flags
+Onboarding
+: Create accounts, invite users, set up SDK clients, configure warehouses, and learn experimentation concepts
+Documentation
+: Search Confidence docs and SDK integration guides
+Migration
+: Migrate feature flags from PostHog, Eppo, Statsig, or Optimizely to Confidence. Optimizely Phase 0 also maps
+access
+(users, groups, roles, policies, Flag clients) — see
+Optimizely access
+Project analysis
+: Scan a project and propose meaningful feature flag opportunities tailored to the codebase
+Slash Commands
+/confidence:onboard-confidence <create-account | invite-user | create-client | setup-wizard | setup-warehouse | learn | status>
+: Create accounts, onboard users, set up SDK clients, configure warehouses, and learn experimentation concepts
+/confidence:migrate-posthog <plan flag | plan code | execute <plan-file>>
+:
+Migrate feature flags from PostHog to Confidence
+/confidence:migrate-eppo <plan flag | plan code | execute <plan-file>>
+:
+Migrate feature flags from Eppo to Confidence
+/confidence:migrate-statsig <plan flag | plan code | execute <plan-file>>
+:
+Migrate feature flags from Statsig to Confidence
+/confidence:migrate-optimizely <plan access | adjust access | execute access | plan flags | adjust flags | execute flags | plan code | adjust code | execute code | execute <plan-file>>
+:
+Migrate Optimizely Feature Experimentation to Confidence
+— see
+Optimizely access
+(Flag clients are handled in
+plan access
+Step 4; Cursor also exposes dedicated
+/
+menu shortcuts)
+/confidence:analyze-project [project-dir]
+: Analyze a project and propose meaningful feature flag changes using Confidence
+Optimizely → Confidence
+PostHog, Eppo, and Statsig migrate
+flags
+then
+code
+. Optimizely also migrates
+access
+(Phase 0) before those. Agent contract:
+skills/migrate-optimizely/SKILL.md
+(including
+Adjust Access / Flags / Code: Steps
+) and IAM mapping in
+skills/migrate-optimizely/access.md
+.
+Phase 0 — Access (users, groups, roles, policies, clients)
+Writes a plan first. Nothing is invited or created in Confidence until you tick consent and run execute.
+Command
+What it does
+Writes to Confidence?
+plan access
+/
+-plan-access
+(also bare
+/migrate-optimizely
+)
+Map Optimizely collaborators and teams to Confidence invites, groups, intended shares, and Flag-client
+candidates
+(Step 4). File:
+.claude/plans/optimizely-access-migration-<date>.md
+. When the plan is complete, the agent
+must ask
+what next (adjust / tick consent / execute / done) — there is no automatic path into adjust. If SDK keys arrive later, re-run
+plan access
+No
+adjust access
+/
+-adjust-access
+Fine-edit that plan in chat:
+users
+,
+groups
+,
+roles
+,
+policies
+,
+clients
+(e.g. “skip all
+@example.com
+”, “Checkout should be Editor”). You do not have to hand-edit the markdown. Also offered from the plan-access exit ask
+No
+execute access
+/
+-execute-access
+After you tick
+[x] Invite
+/
+[x] Create
+: create groups + Reader policies, send invites, create ticked Flag clients, then provision each person as they accept (group, policy, client, flag shares)
+Yes
+(IAM)
+What
+adjust access
+can change
+Kind
+Examples
+Users
+Invite or skip (one email, a team, a domain, or all); move between groups; add an email you provide
+Groups
+Create or skip; rename; merge/split; change members
+Roles
+Viewer / Editor / Owner shares per group or user; override default mapping (e.g. Publisher → Viewer)
+Policies
+Group policy roles (default Reader); yes/no on tightening
+default-policy
+Clients
+Create or skip; names; split/merge; which groups see which clients
+What it will not do:
+invent people or Flag clients; flatten teams into per-user shares; map Project Owner to workspace Admin; put Flags Editor/Reader on a
+workspace policy
+; change
+admin-policy
+except to add known Administrators; invite or create resources during plan/adjust; delete a live group/user because a row is now Skip.
+Silence is not consent. Tick every user and group (and listed Flag clients) before execute. Invites last 7 days. Flag clients need environment SDK keys — if the export has none, that step is skipped until keys exist.
+Phase 1 — Flags
+Same plan → exit ask → optional adjust → execute pattern as access. Running experiments and partial-% rollouts stay out by default (different bucketing).
+Command
+What it does
+Writes to Confidence?
+plan flags
+/
+-plan-flags
+Scan Optimizely flags and write
+.claude/plans/optimizely-flag-migration-<date>.md
+. Lists flags with
+no Optimizely rules
+as
+auto everyone catch-all
+.
+Must
+run a
+Rules operator audit
+and mark
+exists
+/
+substring
+/
+regex
+as
+BLOCKED
+(Confidence unsupported). When complete, the agent
+must ask
+what next (adjust / tick / execute / done)
+No
+adjust flags
+/
+-adjust-flags
+Fine-edit that plan:
+scope
+,
+Migrate/Skip ticks
+,
+client
+,
+bucketing
+,
+schema
+,
+rules
+. Also offered from the plan-flags exit ask
+No
+execute flags
+/
+-execute-flags
+(1) create flag shells
+→
+(2) suggest rules import
+→
+(3) suggest resolve-verify ALL flags (segment match) — this validates Phase 1
+→ then
+plan code
+. Auto everyone catch-all if a flag still has zero enabled rules. Never call Phase 1 done after rules alone
+Yes
+(flags)
+Phase 2 — Code
+Command
+What it does
+Writes to Confidence / repo?
+plan code
+/
+-plan-code
+Scan Optimizely SDK usage and write
+.claude/plans/optimizely-code-migration-<date>.md
+. When complete, the agent
+must ask
+what next (adjust / execute / done)
+No
+adjust code
+/
+-adjust-code
+Fine-edit that plan:
+style
+,
+resolve mode
+,
+transforms
+,
+files/flags
+. Also offered from the plan-code exit ask
+No
+execute code
+/
+-execute-code
+Transform code / open PRs from the plan (typically one PR per flag)
+Yes
+(repo)
+MCP Servers
+Server
+Endpoint
+Description
+confidence-flags
+https://mcp.confidence.dev/mcp/flags
+Feature flag management
+confidence-docs
+https://mcp.confidence.dev/mcp/docs
+Confidence documentation
+Supported Clients
+Client
+Config
+Marketplace
+Claude Code
+.claude-plugin/
+Official plugin
+Cursor
+.cursor-plugin/
+Cursor Marketplace
+Codex
+.codex-plugin/
+Via marketplace command
+Gemini CLI
+gemini-extension.json
+Direct from repo
+Documentation
+Confidence documentation
+Migration guides: migrate to Confidence from PostHog, Eppo, Statsig, or Optimizely
+OpenFeature SDK integration
+This repo — Optimizely migration:
+SKILL.md
+(Phase 0–2 plan /
+adjust
+/ execute),
+access.md
+(IAM mapping),
+test fixtures
+💭 Community & Support
+Found a bug or have a feature request?
+Open an issue
+. Changes are tracked in the
+changelog
+.
+License
+Apache License 2.0
+About
+No description, website, or topics provided.
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Activity
+Custom properties
+Stars
+8
+stars
+Watchers
+1
+watching
+Forks
+7
+forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

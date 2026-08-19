@@ -1,0 +1,185 @@
+# https://experienceleague.adobe.com/en/docs/target/using/introduction/how-target-works
+How Does Target Work? | Adobe Target
+Documentation
+Target
+Target Guide
+How Adobe Target works
+Last update: May 12, 2026
+Topics:
+Overview
+Learn how Adobe Target works, including details on the JavaScript libraries (Adobe Experience Platform Web SDK and at.js). This article also covers the various activity types that you can create, Target usage-counting strategies, the Target Edge Network, SEO, and bot detection.
+Key points include:
+JavaScript Libraries
+: Learn information about the Target JavaScript libraries: Adobe Experience Platform Web SDK and at.js.
+Server-call usage strategies
+: Understand how Target counts various server calls, including endpoints, single mbox, batch mbox, execute, prefetch, and notification calls.
+Edge Network
+: Discover how Target interacts with the Adobe Experience Platform Edge Network.
+Protected user experience
+: Learn how Adobe ensures the availability and performance of its targeting infrastructure.
+SEO Guidelines
+: Follow best practices for aligning Target activities with SEO guidelines.
+Bot Traffic
+: Learn how Target handles bot traffic to avoid skewing tests and personalization algorithms.
+Adobe Target JavaScript libraries
+libraries
+Target integrates with websites using the Experience Platform Web SDK or at.js:
+Adobe Experience Platform Web SDK
+: This client-side JavaScript library allows Adobe Experience Cloud customers to interact with various services through the Experience Platform Edge Network. Adobe recommends that new Target customers implement the Experience Platform Web SDK.
+at.js
+: This implementation library for Target improves page-load times for web implementations and offers better options for single-page applications. Frequently updated with new capabilities, Adobe recommends all
+at.js users update to the latest version
+.
+NOTE
+The mbox.js library is a legacy implementation for Target and is no longer supported after March 31, 2021. Upgrade to the Experience Platform Web SDK (preferred) or the latest version of at.js.
+Reference the Experience Platform Web SDK or at.js on every page of your site. For example, add one of these libraries to your global header. Alternatively, use
+tags in Adobe Experience Platform
+to implement Target.
+The following resources contain detailed information to help you implement the Experience Platform Web SDK or at.js:
+Adobe Experience Platform Web SDK extension
+Implement Target using Adobe Experience Platform
+Each time a visitor requests a page optimized for Target, a real-time request is sent to the targeting system to determine the content to serve. This request is made and fulfilled every time a page loads, governed by marketer-controlled activities and experiences. Content is targeted to individual site visitors, maximizing response rates, acquisition rates, and revenue. Personalized content helps ensure that visitors respond, interact, or make purchases.
+In Target, each element on the page is part of a single experience, which can include multiple elements.
+The displayed content depends on the type of activity that you create:
+A/B Test
+In a basic A/B test, content is randomly chosen from the assigned experiences. You can set traffic allocation percentages for each experience. Initially, traffic may be unevenly distributed due to random splitting, but it equalizes as traffic increases. For example, with two experiences, the starting experience is chosen randomly. Low traffic can skew visitor percentages toward one experience, but this situation balances out with more traffic.
+Specify percentage targets for each experience. A random number is generated to select the experience to display. While the resulting percentages might not exactly match the targets, higher traffic leads to a closer split to the target goals.
+A customer requests a page from your server, which displays in their browser.
+A first-party cookie is set in the customer’s browser to store their behavior.
+The page calls the targeting system.
+Content is displayed based on the activity rules.
+See
+Create an A/B Test
+for more information.
+Auto-Allocate
+Auto-Allocate identifies the winning experience among two or more options. It then automatically reallocates more traffic to the winner, increasing conversions as the test continues to run and learn.
+See
+Auto-Allocate
+for more information.
+Auto-Target (AT)
+Auto-Target leverages advanced machine learning to choose from multiple high-performing, marketer-defined experiences. Auto-Target delivers the most tailored experience to each visitor based on individual customer profiles and the behavior of previous visitors with similar profiles. Use Auto-Target to personalize content and drive conversions.
+See
+Auto-Target
+for more information.
+Automated Personalization (AP)
+Automated Personalization (AP) combines offers or messages and uses advanced machine learning to match different variations to each visitor. AP personalizes content based on individual customer profiles to drive lift.
+See
+Automated Personalization
+for more information.
+Experience Targeting (XT)
+Experience Targeting (XT) delivers content to specific audiences based on marketer-defined rules and criteria. Including geotargeting, XT is valuable for defining rules that target specific experiences or content to particular audiences. Multiple rules can be set in an activity to deliver different content variations to different audiences. When visitors view your site, XT evaluates them to determine if they meet the criteria. If they qualify, they enter the activity and see the experience designed for them. You can create experiences for multiple audiences within a single activity.
+See
+Experience Targeting
+for more information.
+Multivariate Test (MVT)
+Multivariate Testing (MVT) compares combinations of offers in page elements to determine which combination performs best for a specific audience. MVT helps identify which element most impacts the activity’s success.
+See
+Multivariate Test
+for more information.
+Recommendations
+Recommendations activities automatically display products or content that might interest customers based on their previous activity or other algorithms. Recommendations help direct customers to relevant items that they might not otherwise discover.
+See
+Recommendations
+for more information.
+The edge network
+concept_0AE2ED8E9DE64288A8B30FCBF1040934
+An ‘Edge’ is a geographically distributed serving architecture that ensures optimal response times for visitors requesting content, regardless of their location.
+To improve response times, Target Edges host only activity logic, cached profiles, and offer information.
+Activity and content databases, Analytics data, APIs, and marketer user interfaces are housed in Adobe Central Clusters. Updates are sent to the Target Edges, which are automatically synced with the Central Clusters to continually update cached activity data. All 1:1 modeling is also stored on each edge, allowing complex requests to be processed locally.
+Each Edge Cluster contains all necessary information to respond to visitor content requests and track analytics data. Visitor requests are routed to the nearest Edge Cluster.
+For more information, see the
+Adobe Target Security Overview
+white paper.
+Target is hosted on Adobe-owned and Adobe-leased data centers worldwide.
+Central Cluster locations house both data collection and data processing centers. Edge Cluster locations contain only data collection centers. Each report suite is assigned to a specific data processing center.
+Customer site activity data is collected by the nearest of seven Edge Clusters. This data is then directed to a pre-determined Central Cluster destination (Oregon, Dublin, or Singapore) for processing. Visitor profile data is stored on the Edge Cluster closest to the site visitor. Edge Cluster locations include the Central Cluster locations, as well as Virginia, Mumbai, Sydney, and Tokyo.
+Instead of processing all targeting requests from a single location, requests are handled by the Edge Cluster nearest to the visitor. This approach mitigates the impact of network and Internet travel time.
+Target Central Clusters, hosted on Amazon Web Services (AWS), include:
+Oregon, USA
+Dublin, Ireland
+Republic of Singapore
+Target Edge Clusters, hosted on AWS, include:
+Mumbai, India
+Tokyo, Japan
+Virginia, USA
+Oregon, USA
+Sydney, Australia
+Dublin, Ireland
+Republic of Singapore
+The Target Recommendations service is hosted in an Adobe data center in Oregon.
+IMPORTANT
+Target currently lacks an Edge Cluster in China, limiting visitor performance for Target customers in the region. The firewall and absence of Edge Clusters can affect site experiences, causing slow rendering and page load times. Additionally, marketers can experience latency when using the Target authoring UI.
+You can allowlist Target Edge Clusters, if desired. For more information, see
+allowlist Target edge nodes
+.
+Protected user experience
+concept_40A5E781D90A41E4955F80EA9E5F8F96
+Adobe ensures the availability and performance of its targeting infrastructure is as reliable as possible. However, communication breakdowns between a visitor’s browser and Adobe servers can interrupt content delivery.
+To safeguard against service interruptions and connectivity issues, all locations are set up to include default content (defined by the client). This default content is displayed if the visitor’s browser cannot connect to Target.
+No changes are made to the page if the visitor’s browser cannot connect within a defined timeout period (default: 15 seconds). If this timeout threshold is reached, default location content is displayed.
+Adobe protects the user experience by optimizing and safeguarding performance.
+Adobe ensures performance benchmarks based on industry standards, guaranteed by the Adobe Service Level Agreement.
+The Edge Network ensures timely data delivery.
+Adobe employs a multi-tiered approach to secure its applications, providing the highest level of availability and reliability for customers.
+Target Consulting offers implementation assistance and ongoing product support.
+Search Engine Optimization (SEO) friendly testing
+concept_C0C865663CAB4251B66A1F250FD25E6A
+Adobe Target aligns with search engine guidelines for testing. Google encourages user testing and states that A/B and Multivariate Testing do not harm organic search engine rankings if certain guidelines are followed.
+Adobe Target aligns with search engine guidelines for testing.
+For more information, see the following Google resources:
+Website testing and Google Search
+Experiments and Cloaking
+Guidelines were presented in a
+Google Webmaster Central Blog
+post. Although the post dates back to 2012, it remains Google’s most recent statement on the matter, and the guidelines are still relevant.
+No cloaking
+: Cloaking involves showing one set of content to users and a different set to search engine bots by specifically identifying bots and feeding them different content.
+Target is configured to treat search engine bots the same as any user. Consequently, bots can be included in activities if they are randomly selected and “see” the test variations.
+Use rel=“canonical”
+: Sometimes an A/B test requires different URLs for variations. In these cases, all variations should include a rel=“canonical” tag referencing the original (control) URL. For example, if Adobe is testing its home page with different URLs for each variation, the following canonical tag for the home page should be placed in the
+<head>
+tag of each variation:
+<link rel="canonical" href="https://www.adobe.com" />
+Use 302 (temporary) redirects
+: When separate URLs are used for variation pages in a test, Google recommends using a 302 redirect to direct traffic to the test variations. The 302 redirect informs search engines that the redirect is temporary and active only while the test is running.
+A 302 redirect is a server-side redirect, while Target and most optimization providers use client-side capabilities. Therefore, Target is not fully compliant with Google’s recommendations for redirects. However, this impacts only a small fraction of tests. The standard approach for running tests through Target involves changing content within a single URL, eliminating the need for redirects. In cases where multiple URLs are required for test variations, Target uses the JavaScript
+window.location
+command, which does not specify whether the redirect is a 301 or 302.
+Adobe is actively seeking solutions to fully comply with search engine guidelines. For clients needing separate URLs for testing, Adobe believes that correctly implementing canonical tags mitigate associated risks.
+Run experiments only as long as necessary
+: Adobe defines “as long as necessary” as the time required to reach statistical significance. Target offers best practices and the Adobe Target
+Sample Size Calculator
+to determine when your test has reached this point. Adobe recommends incorporating the hardcoded implementation of winning tests into your testing workflow and allocating the appropriate resources.
+Using Target to “publish” winning tests is not recommended as a permanent solution. If the winning test is published for 100% of users all the time, this approach can be used temporarily while hard-coding the winning test.
+Consider what your test has changed. Minor updates, such as button colors, do not impact organic rankings. However, text changes should be hardcoded.
+Also, consider the accessibility of the page you’re testing. If the page is not accessible to search engines and was never intended to rank in organic search, these considerations do not apply. An example is a dedicated landing page for an email campaign.
+Google states that following these guidelines “should result in your tests having little or no impact on your site in search results.”
+In addition to these guidelines, Google also provides one more guideline in the documentation to their Content Experiments tool:
+“Your variation pages should maintain the spirit of the content on your original pages. Those variations shouldn’t change the meaning of or your user’s general perception of that original content.”
+Google states as an example that “if a site’s original page is loaded with keywords that don’t relate to the combinations being shown to users, we may remove that site from our index.”
+Adobe feels that it would be difficult to unintentionally change the meaning of the original content within test variations. However, Adobe recommends being aware of the keyword themes on a page and maintaining those themes. Changes to page content, especially adding or deleting relevant keywords, can result in ranking changes for the URL in organic search. Adobe recommends that you engage with your SEO partner as part of your testing protocol.
+Bots
+bots
+Target uses the
+DeviceAtlas
+metric “isRobot” to detect known bots based on the User Agent String passed in the Request Header.
+NOTE
+For Server-Side requests, the value passed in the
+Request’s “Context” node
+is given precedence over the User Agent String for bot detection.
+Traffic identified as bot-generated is still served content. Bots are treated like regular users to ensure that Target aligns with SEO guidelines. However, bot traffic can skew A/B tests or personalization algorithms if treated like normal users. Therefore, known bot traffic in your Target activity is treated differently. Removing bot traffic provides a more accurate measurement of user activity.
+For known bot traffic, Target does not:
+Create or retrieve a visitor profile
+Log profile attributes or execute profile scripts
+Look up Adobe Audience Manager (AAM) segments (if applicable)
+Use bot traffic in modeling or serving personalized content for Recommendations, Auto-Target, Automated Personalization, or Auto-Allocate activities
+Log an activity visit for reporting
+Log data to be sent to the Adobe Experience Cloud platform
+For known bot traffic, when using Analytics for Target (A4T), Target does not:
+Send events to Analytics
+For known bot traffic when using
+client_side
+logging, Target does not return:
+tnta payload
+recommendation-more-help
+target-help-main

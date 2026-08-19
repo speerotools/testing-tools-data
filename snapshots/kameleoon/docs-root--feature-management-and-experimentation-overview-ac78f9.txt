@@ -1,0 +1,403 @@
+# https://developers.kameleoon.com/feature-management-and-experimentation/overview
+Overview - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Get started
+Overview
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+Developer docs overview
+Web Experimentation
+Overview
+Get started
+Implementation and deployment
+Self-hosting
+Technical concepts
+Best practices
+Troubleshooting
+Feature Experimentation
+Get started
+Overview
+Demo: Feature Experimentation
+Hybrid experimentation
+SDK execution flow
+SDK setup and feature flag tutorial
+Cross-platform SDKs
+Implementation and deployment
+Integrations
+Targeting and segmentation
+Technical reference
+Core concepts
+Cross-device experimentation
+Custom data
+Privacy and compliance
+Consent management
+Data collection (client-side)
+Data collection (backend)
+Developer tools
+VS Code extension
+Kameleoon Debug Assistant extension
+FAQ
+English
+On this page
+Supported platforms
+Server-side SDKs
+Client-side or mobile SDKs
+Serverless edge compute platforms
+OpenFeature providers
+Web Server Modules
+API
+Selecting a JavaScript SDK
+Get started
+Overview
+Copy page
+Copy page
+Explore Kameleoon’s server-side feature management and experimentation support across web, mobile, TV, and gaming platforms using SDKs.
+Copy page
+Copy page
+In addition to the client-side capabilities, Kameleoon has extensive support for server-side feature management and experimentation on web apps, mobile apps, TV and gaming apps, or any other apps connected to the internet.
+Here are a few additional features available using Kameleoon SDKs:
+Use
+feature flags and feature experiments
+with advanced rollout and targeted delivery rules.
+Combine server-side experiments with client-side native capabilities using
+Hybrid experimentation
+.
+Join the
+Slack Community
+to ask questions about product features and get access to the latest updates.
+​
+Supported platforms
+Kameleoon continually adds support for new languages and enhances existing SDKs with new features and methods. The minimum version required for specific SDK features varies depending on the language. The SDK compatibility table shows which features are available in each language and the minimum SDK version required for implementation. For comprehensive version history, see the changelog file in the
+SDK Github repository
+. Subscribing to receive email notifications is recommended.
+​
+Server-side SDKs
+SDK
+Java
+C#
+PHP
+NodeJS
+Ruby
+Python
+Go
+Real-time streaming
+2.0.6
+2.2.0
+-
+1.0.0
+2.1.0
+2.0.0
+2.1.0
+Feature experiments
+3.0.0
+3.0.0
+3.0.0
+1.0.0
+2.0.0
+2.1.0
+2.0.0
+Multi-environment feature flags
+2.0.4
+2.1.4
+2.0.9
+1.0.0
+1.0.10
+1.0.2
+1.0.5
+Feature flag variables
+2.0.4
+2.1.7
+2.0.9
+1.0.0
+1.0.10
+1.0.2
+1.0.5
+Predefined targeting conditions
+2.0.6
+2.2.0
+2.1.3
+1.0.0
+2.0.0
+2.0.0
+2.0.0
+Retrieve all targeted feature flags
+2.0.6
+2.1.7
+3.0.0
+1.0.0
+2.0.0
+2.0.0
+2.0.0
+Retrieve all feature flags variables
+3.0.0
+2.1.9
+3.0.0
+1.0.0
+2.0.0
+2.0.0
+2.0.0
+Retrieve data for a user key (Data API Map endpoint)
+2.0.5
+2.1.5
+2.1.0
+1.0.0
+1.1.0
+1.0.3
+1.0.6
+Retrieve browsing data for a user (Data API Visitor endpoint)
+3.2.0
+3.3.0
+3.3.0
+2.2.0
+2.2.0
+2.4.0
+2.3.0
+Analytics integration
+3.1.0
+3.1.0
+3.1.0
+2.1.0
+2.1.0
+2.2.0
+2.1.0
+Legal consent management
+4.0.0
+4.0.0
+4.0.0
+3.1.0
+3.0.0
+3.0.0
+3.0.0
+Data warehouse integration
+4.1.0
+4.3.0
+4.1.0
+2.8.0
+3.1.0
+3.1.0
+3.1.0
+Cross-device experimentation
+4.1.0
+4.3.0
+4.1.0
+2.8.0
+3.1.0
+3.1.0
+3.1.0
+​
+Client-side or mobile SDKs
+SDK
+Android (Kotlin/Java)
+iOS (Swift)
+JavaScript/TypeScript
+Flutter
+React/React Native
+Real-time streaming
+2.1.0
+2.1.0
+1.0.0
+2.0.0
+6.0.0
+Feature experiments
+3.0.0
+3.0.0
+1.0.0
+2.0.0
+6.0.0
+Multi-environment feature flags
+2.0.12
+2.0.14
+1.0.0
+1.0.3
+6.0.0
+Feature flag variables
+2.0.12
+2.0.14
+1.0.0
+1.0.3
+1.0.0
+Predefined targeting conditions
+2.1.1
+2.1.2
+1.0.0
+2.0.0
+4.0.0
+Retrieve all targeted feature flags
+2.1.1
+2.1.2
+1.0.0
+2.0.0
+6.0.0
+Retrieve all feature flags variables
+2.1.1
+2.1.3
+1.0.0
+2.0.0
+1.0.0
+Retrieve data for a user key (Data API Map endpoint)
+2.0.13
+2.0.15
+1.0.0
+1.0.3
+2.1.0
+Retrieve browsing data for a user (Data API Visitor endpoint)
+3.2.0
+4.1.0
+1.4.0
+7.2.2
+N/A
+Legal consent management
+4.0.0
+4.0.0
+2.1.0
+3.0.0
+8.1.0
+Data warehouse integration
+3.3.0
+3.1.0
+1.8.0
+3.0.0
+7.6.0
+Cross-device experimentation
+3.3.0
+3.1.0
+1.8.0
+3.0.0
+7.6.0
+All Kameleoon SDKs are zero-latency SDKs, which means client-side code performs all campaign allocations. Because the allocations are not completed using a remote server call, the impact on website performance is under a millisecond compared to ~50 ms on average for API-based technologies.
+​
+Serverless edge compute platforms
+Kameleoon also supports feature management and experimentation at the edge by providing a set of starter kits to implement feature flags and experiments using
+serverless edge compute platforms
+offered by modern Content Delivery Networks (CDNs), such as
+Akamai EdgeWorkers
+,
+AWS Lambda@Edge
+,
+Cloudflare Workers
+,
+Fastly Compute@Edge
+and
+Vercel Edge Functions
+.
+Module
+Current Version
+Release Date
+Fastly starter kit
+0.2.2
+September 2023
+Cloudflare Workers
+1.0.2
+October 2024
+Akamai EdgeWorkers
+0.2.0
+December 2024
+AWS Lambda@Edge
+2.1.1
+July 2024
+Vercel Edge Functions
+0.1.0
+April 2023
+​
+OpenFeature providers
+Kameleoon supports OpenFeature, an open-source standard for feature flag management backed by the CNCF. OpenFeature ensures seamless compatibility across tools and custom solutions.
+Kameleoon provides OpenFeature support for several SDKs. The full list is available in the
+dedicated article
+.
+​
+Web Server Modules
+Module
+Current Version
+Release Date
+Nginx web server module
+1.0.24
+September 2022
+The web server module for Nginx currently only supports experiments.
+​
+API
+If Kameleoon SDKs do not support the language used in the application, build a service using one of the existing SDKs or implement a custom integration with the API.
+When low latency is a priority for updating targeting conditions and feature flag configurations in real time, opting for an API implementation instead of an SDK may result in increased latency. Use the SDKs whenever possible, as they provide better performance, automatic error handling, and ensure a more seamless integration with the codebase.
+Kameleoon supports all modern JavaScript frameworks, such as Angular, Vue.js, and Next.js, so you can always use a
+JavaScript-based SDK
+for front-end development instead of relying on the API approach.
+Visit the
+API documentation
+to learn more about the available methods.
+​
+Selecting a JavaScript SDK
+In addition to the JavaScript/TypeScript SDK, Kameleoon also provides other JavaScript-based SDKs: the React SDK, React Native SDK, and NodeJS SDK. Most JavaScript frameworks work with the JavaScript/TypeScript SDK, but some are better suited to one of the other SDKs depending on the implementation. For example, apps that use server-side rendering (SSR) or
+Edge integrations
+should use the NodeJS SDK. Here are the recommended SDKs based on JavaScript frameworks.
+Framework
+Recommended SDK
+Edge integrations (any framework)
+NodeJS SDK
+Angular/AngularJS
+JavaScript/TypeScript SDK
+Express
+NodeJS SDK
+Deno
+NodeJS SDK
+Ionic
+JavaScript/TypeScript SDK
+JQuery
+JavaScript/TypeScript SDK
+NestJS
+NodeJS SDK
+NextJS (with SSR)
+NodeJS SDK
+NextJS (without SSR)
+React SDK or JavaScript/TypeScript SDK
+NodeJS
+NodeJS SDK
+Plain JavaScript
+JavaScript/TypeScript SDK
+React Native
+React Native SDK
+React
+React SDK or JavaScript/TypeScript SDK
+Svelte (with SSR)
+NodeJS SDK
+Svelte (without SSR)
+JavaScript/TypeScript SDK
+Vue (with SSR)
+NodeJS SDK
+Vue (without SSR )
+JavaScript/TypeScript SDK
+For working examples of the NodeJS SDK integrated with Next.js, see the
+Next.js starter kits repository
+.
+Was this page helpful?
+Yes
+No
+Impact of Kameleoon on your website's performance
+Previous
+Demo: Feature Experimentation
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

@@ -1,0 +1,176 @@
+# https://docs.abtasty.com/integrations/other-integrations/data-warehouse/data-warehouse-integrations-general-information
+Data Warehouse integrations: General information | AB Tasty Documentation
+⌘
+Ctrl
+k
+Ask
+Platforms
+Pricing
+Resources
+More
+Use AB Tasty solutions
+Get started
+Join the user community
+Find quick Answers & Fixes
+Explore dev doc
+Release Notes
+Flagship - Deprecated
+GitBook Assistant
+Good afternoon
+I'm here to help you with the docs.
+What is this page about?
+What should I read next?
+Can you give an example?
+⌘
+Ctrl
+i
+AI
+Based on your context
+Send
+Welcome to AB Tasty documentation
+Commerce
+Getting started
+Recommendations
+Merchandising
+Search
+Catalog
+Rules
+Browse controls
+Widget implementation
+Monitoring deployment health
+Dashboard
+Web Experimentation and Personalization
+Feature Experimentation & Rollout
+Emotions AI
+Library
+Integrations
+Integrations general information
+Send data to your 3rd Party
+Import Audiences to AB Tasty
+Other integrations
+Productivity
+Data Warehouse
+Data Warehouse integrations: General information
+Big Query - Daily exports from AB Tasty to Big Query
+Snowflake - Daily exports from AB Tasty to Snowflake
+Redshift - Daily exports from AB Tasty to Redshift
+Contentful: General info & key terms
+Didomi
+Microsoft Dynamics Commerce
+Custom integrations
+Reporting & Performances
+Account settings
+Learnings
+Ideas backlog
+AdaptiveCX
+AdaptiveCX
+Getting started
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Ask
+On this page
+Use AB Tasty solutions
+Integrations
+Other integrations
+Data Warehouse
+Data Warehouse integrations: General information
+This feature is currently available in Early Adoption. Please contact your CSM to enroll into the Early Adopter program.
+The Data Warehouse integration feature allows you to design a report from data that has been collected by AB Tasty, and export them to your external Data Warehouse. Daily exports are available to keep your external Data Warehouses up to date.
+To manage your Data Warehouse integrations, go to the
+Integration Hub
+> Data Warehouse category.
+An export is generated once an integration is configured and will execute daily at the configured time.
+Connectors and exports
+You need to set up a connector and an export for the Data Warehouse integration to work.
+The Connector
+manages the connection between AB Tasty and your Data Warehouse. Please refer to the following user guides to set it up:
+BigQuery connector
+Snowflake connector
+Redshift connector
+The Export
+manages data export. It defines the following elements:
+The data to export
+Where to export it
+The export frequency
+You can create an export once a connector is configured.
+Payloads
+All collected data can be exported through our Data explorer API. You will be asked a payload to extract data from the Data Explorer form. The payload corresponds to a data query.
+We recommend testing the Data Explorer API and validating the output data report before setting up an export.
+For more information, please refer to the Developer portal’s article about the
+Data Explorer API and how to query it.
+Generating your payload
+To generate your payload, use the new version of the
+data explorer
+from the Data Explorer category of the main navigation.
+Please follow the following steps to generate a payload:
+In the Data Explorer:
+Define a date start and an end date
+Choose dimension
+campaignId
+Fill the value: the campaignId of the campaign(s) you want to extract data from
+Leave the “limit” field empty
+Click “Test query data consumption”
+You can apply a filter by campaignId to limit the payload to one campaign extraction. You can add more filters and dimensions to your payload.
+You must define at least of metric to export
+Once you click on “Test query data consumption”, the Payload will be generated as follows:
+Creating an export
+Step 1: Set up your export
+At this stage, you’ve created the following:
+your connector between your AB Tasty account and your external Data Warehouse
+the payload to generate the data export
+In this example, we will use BigQuery as provider. The process is the same for Snowflake and Redshift.
+In the Integration Hub library, select your provider: here BigQuery.
+Select the
+connector
+you’ve previously created to link your AB Tasty account to your BigQuery account
+Name your export. For example, you can use the name/id of your campaign, to easily identify the data in your Data Warehouse. Ex: “A/B Test CTA Product page - id 123123”
+Name the table that will be generated in BigQuery
+Use the payload you’ve previously generated with the data explorer form
+Ab Tasty automatically checks the payload for syntax errors and displays an error message if an error is encountered.
+Save and Create export
+This will create a full export of the existing campaign data: from the 1st minute since the campaign is running, to now. It will test the connection and create a daily report, ready to be activated at the next step.
+When you click on “Save and create export”, AB Tasty checks the following:
+If the Payload contains the filter campaignID
+If the campaignID is well filled in
+If the campaignID is linked to the current account (if the campaign has been built in the current account)
+If one of the above conditions is not met, the API returns an error message.
+Step 2: Activate your daily export
+Now that you have created and tested your export, you can activate it. This will make it run daily at the specified time.
+Every day, AB Tasty will send:
+All the collected data for the campaignID that has been declared, from the last export done while the campaign is live, and the daily export active.
+You can run as many exports as you want on a daily basis.
+Quota
+The Data Warehouse integration usage and extracts falls is limited by data explorer v2.
+Your requests to Data Explorer (either by integration or direct) will be limited by a monthly quota. Your export quota is set every first of the month. The usage depends on the volume of data fetched.
+AB Tasty provides tools to assist you estimate the cost of your request and know your remaining quota.
+You can find more information on quota management
+here
+.
+Previous
+Data Warehouse
+Next
+Big Query - Daily exports from AB Tasty to Big Query
+Last updated
+1 year ago
+Was this helpful?
+AB Tasty Website
+Home page AB Tasty
+Blog
+Sample size calculator
+Release note
+AB Tasty Plateform
+Login
+© Copyright 2025 AB Tasty, Inc, All rights reserved
+Connectors and exports
+Payloads
+Generating your payload
+Creating an export
+Step 1: Set up your export
+Step 2: Activate your daily export
+Quota
+Was this helpful?

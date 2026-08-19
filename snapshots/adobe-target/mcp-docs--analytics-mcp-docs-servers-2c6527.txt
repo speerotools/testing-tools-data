@@ -1,0 +1,14 @@
+# https://developer.adobe.com/analytics-mcp/docs/servers/
+Adobe MCP gateway servers
+Adobe MCP gateway servers
+Adobe provides the following MCP servers that you can connect to MCP clients:
+data-slots=icon, heading, text, buttons
+data-repeat=2
+Adobe Analytics
+Run Adobe Analytics reporting queries through MCP and return results aligned with Analysis Workspace reporting. Use it to fetch metrics, dimensions, segments, and time-based breakdowns for analysis and automation in your LLM workflow.
+Learn more
+View available tools
+Customer Journey Analytics
+Run Customer Journey Analytics reporting queries through MCP and return results aligned with Analysis Workspace reporting on unified, cross-channel customer journey data. Use it to retrieve metrics, dimensions, components based on derived fields, and segment-based breakdowns for analysis and automation in your LLM workflow.
+Learn more
+View available tools

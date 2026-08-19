@@ -1,0 +1,363 @@
+# https://developers.kameleoon.com/apis/automation-api-rest/
+Get started - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Automation API REST
+Get started
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+APIs
+Overview
+Activation API JS
+Automation API REST
+Get started
+Kameleoon application file integrity
+API reference
+Tutorials
+Versioning
+Changelog
+Data API REST
+Product recommendation API REST
+English
+On this page
+Tutorials
+Create an experiment
+Retrieve experiment results
+Authentication
+Client credentials flow
+1. Obtain an access token
+2. Access the API
+Authorization code flow
+1. Redirect the user for authorization
+2. Obtain access and refresh tokens
+3. Refresh an expired token
+Rate limiting
+HTTP status codes
+Query parameters
+Pagination
+Filtering
+Sorting
+Automation API REST
+Get started
+Copy page
+Copy page
+Learn how to authenticate and start using the Kameleoon Automation API.
+Copy page
+Copy page
+The
+Automation API
+is a REST-compliant service that lets you programmatically perform most actions available in the Kameleoon web interface. Use the Automation API to build custom software that interacts with the Kameleoon platform and its core features.
+For example, you can use the Automation API to:
+Connect Kameleoon with Git repositories to manage variation code.
+Design custom dashboards populated with real-time experiment results.
+Automate the creation of goals and segments across multiple projects.
+Kameleoon might change endpoints and parameters in new versions of the Automation API. Subscribe to updates on the
+Kameleoon changelog
+for notifications about planned changes.
+The Automation API doesn’t support high request volumes. Limit calls to
+12 times per minute
+per account or user. Don’t use the Automation API for high-frequency tracking of every website visitor. For larger request volumes, use the
+Data API
+.
+Contact the Kameleoon team to request an enhancement to the Automation API. Kameleoon appreciates your feedback and can quickly add existing UI features to the API.
+​
+Tutorials
+​
+Create an experiment
+This tutorial provides step-by-step instructions for performing key tasks on the Kameleoon platform. You will learn how to:
+Create a new experiment
+Push and modify JavaScript code in a variation
+Create a new segment
+Create a new goal
+Update and launch an experiment
+​
+Retrieve experiment results
+After you launch an experiment, it generates results that provide insights into performance. Learn how to request results and identify the winning variation in the
+Retrieving Experiments Results
+tutorial.
+​
+Authentication
+The Automation API uses the OAuth 2.0 framework for authorization. Kameleoon supports two primary flows depending on your use case:
+Client credentials flow
+: Use this flow if you are a Kameleoon customer using the API for internal purposes. This flow allows you to programmatically manage your own account and web properties.
+Authorization code flow
+: Use this flow if you are a technology partner integrating an app with Kameleoon. This flow allows you to securely access data on behalf of other Kameleoon users.
+​
+Client credentials flow
+The Client credentials flow uses the fewest steps of the two authentication methods. To use this flow, exchange your client credentials for an access token.
+You can find your
+client_id
+and
+client_secret
+on the Kameleoon platform. Navigate to
+Account > My profile
+and click
+See my API credentials
+.
+​
+1. Obtain an access token
+Send a POST request to the token endpoint with your credentials.
+curl
+curl
+-X
+POST
+"https://api.kameleoon.com/oauth/token"
+\
+-H
+"Content-Type: application/x-www-form-urlencoded"
+\
+-d
+"grant_type=client_credentials"
+\
+-d
+"client_id=YOUR_CLIENT_ID"
+\
+-d
+"client_secret=YOUR_CLIENT_SECRET"
+The authorization server responds with a JSON object containing the
+access_token
+:
+{
+"access_token"
+:
+"eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9..."
+}
+​
+2. Access the API
+Include the access token as a Bearer token in the
+Authorization
+HTTP header of your requests.
+curl
+curl
+-H
+"Authorization: Bearer <ACCESS_TOKEN>"
+\
+-H
+"Content-Type: application/json"
+\
+"https://api.kameleoon.com/experiments"
+Access tokens remain valid for
+2 hours
+by default.
+The Client credentials flow doesn’t use refresh tokens.
+You must use
+HTTPS
+for all API requests. Requests made over plain HTTP will fail.
+​
+Authorization code flow
+The Authorization Code flow allows third-party developers to integrate their apps with Kameleoon data. You must obtain explicit permission from a user to access their account resources.
+Contact your Kameleoon Technical Account Manager to request an OAuth app. You must provide a redirect URL for your app. Kameleoon will then provide a
+client_id
+and
+client_secret
+.
+​
+1. Redirect the user for authorization
+Redirect users from your app to the authorization URL:
+https://api.kameleoon.com/oauth/authorize?client_id=my-application-name&response_type=code&redirect_uri=https://application.company.com/
+After the user grants permission, Kameleoon redirects the user to your app URL with an authorization code:
+https://application.company.com/?code=AUTHORIZATION_CODE
+​
+2. Obtain access and refresh tokens
+Exchange the authorization code for tokens. Base64 encode the
+client_id:client_secret
+string and include it in the
+Authorization: Basic
+header.
+curl
+curl
+-X
+POST
+"https://api.kameleoon.com/oauth/token"
+\
+-H
+"Content-Type: application/x-www-form-urlencoded"
+\
+-H
+"Authorization: Basic <BASE64_ENCODED_CREDENTIALS>"
+\
+-d
+"grant_type=authorization_code"
+\
+-d
+"code=AUTHORIZATION_CODE"
+\
+-d
+"redirect_uri=https://application.company.com/"
+The response contains both access and refresh tokens:
+{
+"access_token"
+:
+"..."
+,
+"refresh_token"
+:
+"..."
+}
+​
+3. Refresh an expired token
+To obtain a new access token without re-authorizing the user:
+curl
+curl
+-X
+POST
+"https://api.kameleoon.com/oauth/token"
+\
+-H
+"Content-Type: application/x-www-form-urlencoded"
+\
+-H
+"Authorization: Basic <BASE64_ENCODED_CREDENTIALS>"
+\
+-d
+"grant_type=refresh_token"
+\
+-d
+"refresh_token=YOUR_REFRESH_TOKEN"
+​
+Rate limiting
+Rate limiting for the Automation API occurs per user access token. Kameleoon uses two rate-limiting windows:
+10-second interval
+: Up to 50 requests.
+1-hour interval
+: Up to 1,000 requests.
+If you exceed these limits, the API returns an
+HTTP 429 Too Many Requests
+error. To minimize rate limiting:
+Implement caching
+: Store API responses locally and avoid calling the API on every page load.
+Use the Data API
+: If your app requires real-time tracking at scale, use the
+Data API
+.
+​
+HTTP status codes
+Code
+Status
+Description
+200
+OK
+The request was successful.
+201
+Created
+The resource was successfully created.
+400
+Bad Request
+The request body is invalid. Ensure the
+Content-Type: application/json
+header is present.
+401
+Unauthorized
+The API token is missing or malformed.
+403
+Forbidden
+You lack required permissions, or Kameleoon has revoked the token.
+429
+Too Many Requests
+You exceeded the rate limit.
+5xx
+Server Error
+An internal error occurred. Contact Kameleoon support if the issue persists.
+​
+Query parameters
+For endpoints that retrieve multiple objects, use query parameters to paginate, filter, or sort data.
+​
+Pagination
+Queries return
+20 items per page
+by default (maximum 200). Use
+perPage=-1
+to retrieve the maximum limit.
+Parameter
+Type
+Description
+page
+integer
+The page number to retrieve.
+perPage
+integer
+Items per page (default 20, max 200).
+filter
+array
+Filtering parameters.
+sort
+array
+Sorting parameters.
+​
+Filtering
+You must percent-encode filters when sending them in a URL.
+Example
+:
+filter=[{"field":"name","operator":"EQUAL","parameters":["Test"]}]
+Field
+Type
+Description
+field
+string
+The field to filter by.
+operator
+enum
+Options include
+EQUAL
+,
+NOT_EQUAL
+,
+LESS
+,
+GREATER
+,
+LIKE
+,
+IN
+,
+IS_NULL
+, and other comparison operators.
+parameters
+array
+The specific values to match.
+​
+Sorting
+Field
+Type
+Description
+field
+string
+The field to sort by.
+direction
+enum
+ASC
+(ascending) or
+DESC
+(descending).
+Was this page helpful?
+Yes
+No
+Managing a variation's allocation according to a user ID
+Previous
+Kameleoon application file integrity
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

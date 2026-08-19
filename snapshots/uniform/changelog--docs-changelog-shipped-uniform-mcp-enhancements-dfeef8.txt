@@ -1,0 +1,92 @@
+# https://docs.uniform.app/docs/changelog/shipped/uniform-mcp-enhancements
+Uniform MCP Enhancements | Uniform DXP documentation
+Changelog
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Shipped
+/
+Uniform MCP Enhancements
+July 23, 2025
+Uniform MCP Enhancements
+All
+MCP
+enhancements require both upgrading your
+uniform-mcp
+npm package to the latest version, as well as updating your
+Uniform AI Rules
+Expanded Editing Capabilities
+:
+Can now create and edit
+compositions
+,
+entries
+, and their respective
+patterns
+.
+Can insert, move, and duplicate
+pattern instances
+in slots on compositions and patterns.
+Can rename
+compositions
+,
+entries
+, and
+patterns
+.
+Can change the
+slug
+of entries.
+Can update the
+description
+of patterns.
+Supports editing and resetting
+overrides
+on pattern instances
+Smarter handling of
+localized property values
+Locale Management
+:
+List locales registered with Uniform.
+Can
+enable/disable locales
+on compositions, entries, and patterns.
+Search Enhancements
+:
+More accurate and intelligent search across patterns, compositions, and entries using prose as search expressions, for example
+find compositions updated this week
+or
+which products cost more than 25
+or
+find unpublished hero patterns
+Metadata
+:
+MCP can now report the connected Uniform
+team, project, and user
+.
+Improvements
+Copy link
+Was this page helpful?
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator

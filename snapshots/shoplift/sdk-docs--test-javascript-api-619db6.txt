@@ -1,0 +1,101 @@
+# https://docs.shoplift.ai/test/javascript-api
+JavaScript API Testing | Docs
+Docs
+⌘
+Ctrl
+k
+Documentation
+API Reference
+Docs
+Get Started
+Welcome to Shoplift
+Quickstart
+FAQ
+Learn
+What to Test
+Guides
+TEST
+Template Testing
+Theme Testing
+URL Redirect Testing
+Price Testing
+JavaScript API Testing
+Overview
+Use Cases
+Create an API Test
+Previewing an API Test
+Ending an API Test
+Campaigns
+Test Planning
+Test Management
+Lift Assist™
+Audiences & Targeting
+Preview Mode
+QA Checklist
+Scheduling Tests
+Running Multiple Tests
+Pausing & Resuming Tests
+Test Compatibility
+Implementing Winning Tests
+Exporting Test Data
+ANALYZE
+Reports
+Tracking
+Reporting & Data Discrepancies
+How Shoplift Calculates Conversion Rate
+Does A/B testing affect my ads?
+integrate
+GA4
+Subscription Apps
+Page Builder Apps
+Heatmap Integration
+Analytics Platforms
+Account
+Plans and Billing
+Users and Permissions
+Account Preferences
+PARTNERS & DEVELOPERS
+Testing on Development Stores
+Privacy and Compliance
+Performance
+Shoplift Partner Program
+Support
+Get Help
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Documentation
+TEST
+JavaScript API Testing
+Shoplift's JavaScript API enables you to create sophisticated A/B tests directly in your theme code, giving you complete control over test logic and visitor experiences.
+API tests require developer involvement. Most merchants will need their developer or agency to write the JavaScript and (for manual API tests) implement the trigger logic.
+To learn more about API testing, explore the documentation below.
+This guide covers basic usage of the JavaScript API for API testing purposes. For a full API reference, see
+Reference
+.
+Overview
+Use Cases
+Create an API Test
+Previewing an API Test
+Ending an API Test
+Previous
+Subscription Price Testing
+Next
+Overview
+Last updated
+3 months ago
+Was this helpful?
+Contact Us
+Get help
+Give feedback
+Request a feature
+Helpful Links
+Shoplift
+Shopify App Store
+Was this helpful?

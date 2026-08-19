@@ -1,0 +1,267 @@
+# https://docs.split.io/reference/introduction
+Introduction
+For AI agents: visit https://docs.split.io/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.
+Jump to Content
+Guides
+API Documentation
+Log In
+API Documentation
+Log In
+API Documentation
+Introduction
+JUMP TO
+API Overview
+Introduction
+Authentication
+Error Codes
+Rate Limiting
+Postman
+API Keys
+API Keys Overview
+Create an API key
+post
+Delete an API key
+del
+Attributes
+Attributes Overview
+Get Attributes
+get
+Save Attribute
+post
+Bulk Upload Attribute via CSV
+post
+Bulk Upload Attribute via JSON
+post
+Update Attribute
+patch
+Delete Attribute
+del
+Change Requests
+Change Requests Overview
+List Change Requests
+get
+Get Change Request
+get
+Submit Change Request
+post
+Update Change Request Status
+put
+Environments
+Environments Overview
+Get Environments
+get
+Create Environments
+post
+Update Environments
+patch
+Delete Environments
+del
+Events
+Events Overview
+Create an Event
+post
+Create Events
+post
+feature flags
+Feature Flag Overview
+Feature flag
+Feature flag definition
+Treatment
+Rule
+Condition
+Bucket
+Matcher
+Matcher type
+Default rule
+Create feature flag
+post
+Update feature flag
+patch
+Update feature flag description
+put
+Create feature flag definition in environment
+post
+Partial update feature flag definition in environment
+patch
+Full update feature flag definition in environment
+put
+Get feature flag
+get
+List feature flags
+get
+List feature flag definitions in environment
+get
+Get feature flag definition in environment
+get
+Kill feature flag in environment
+put
+Kill feature flag in environment (alternate)
+post
+Restore feature flag in environment
+put
+Reallocate traffic (Reseed bucketing)
+post
+Remove feature flag definition from environment
+del
+Delete a feature flag
+del
+Archive a feature flag
+put
+Unarchive a feature flag
+put
+Flag Sets
+Create flag set
+post
+Get flag set
+get
+List flag sets
+get
+Delete flag set
+del
+Groups
+Groups Overview
+List groups
+get
+Get group
+get
+Create group
+post
+Update group
+put
+Delete group
+del
+Identities
+Identities Overview
+Save Identities
+post
+Save Identity
+put
+Update Identity
+patch
+Delete Identity
+del
+Projects (was Workspaces)
+Projects Overview (Workspaces)
+Get Projects (Workspaces)
+get
+Create Projects (Workspaces)
+post
+Update Projects (Workspaces)
+patch
+Delete Projects (Workspaces)
+del
+Restrictions
+Restrictions Overview
+List restrictions
+get
+Update restrictions
+put
+Rollout Statuses
+Rollout statuses overview
+Get rollout statuses
+get
+Segments
+Segments Overview
+Segment
+Create Segment
+post
+Enable Segment in Environment
+post
+List Segments
+get
+Get Segment Keys in Environment
+get
+List Segments in Environment
+get
+Update Segment Keys in Environment via CSV
+put
+Update Segment Keys in Environment via JSON
+put
+Remove Segment Keys from Environment
+put
+Deactivate Segment in Environment
+del
+Delete Segment
+del
+Large Segments
+Create Large Segment
+post
+Create Large Segment Definition for Environment
+post
+Get Large Segment in Project (Workspace) By Name
+get
+List Large Segments
+get
+List Large Segments in Environment
+get
+Update Large Segment Keys in Environment via CSV
+Delete Large Segment in Environment
+del
+Delete Large Segment in Project (Workspace)
+del
+Rule-based Segments
+Rule-based Segments Overview
+Create Change Request for Rule-based Segment
+post
+Create Rule-based Segment
+post
+Enable Rule-based Segment in Environment
+post
+Get Rule-based Segment by Name
+get
+List Rule-based Segments
+get
+List Rule-based Segments in Environment
+get
+Update Rule-based Segment Definition
+put
+Delete Rule-based Segment in Environment
+del
+Delete Rule-based Segment
+del
+Traffic Types
+Traffic Types Overview
+Get Traffic Types
+get
+Create Traffic Types
+post
+Delete Trafic Types
+del
+Tags
+Tags Overview
+Associate Tags
+post
+Users
+Users Overview
+List users
+get
+Get user
+get
+Invite a new user
+post
+Update user
+put
+Update user's groups
+patch
+Delete a pending user
+del
+Introduction
+Copy Page
+This section details Split API. Split API uses resource-oriented URLs, uses status codes to indicate the success or failure of requests and returns JSON from all requests.
+You can use Split API to push data into Split, get data out of Split, build custom integrations, or build on top of the Split platform.
+🚧
+Getting Started?
+If you're just getting started with Split, we encourage your to visit our
+Developer Hub
+site. You'll learn how to set up our SDKs and release a feature without re-deploying your application.
+📘
+Working API examples
+In addition to these API endpoints, we have an extensive
+library of API examples
+at your disposal in the Harness Developer Hub.
+Updated
+10 months ago
+Authentication
+Updated
+10 months ago
+Authentication

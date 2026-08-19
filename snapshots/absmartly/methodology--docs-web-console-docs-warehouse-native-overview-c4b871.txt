@@ -1,0 +1,129 @@
+# https://docs.absmartly.com/docs/web-console-docs/warehouse-native/overview
+Warehouse Native Overview | The ABsmartly Docs
+Skip to main content
+ABsmartly Docs
+Product Documentation
+Developer Tools
+Blog
+GitHub
+Search
+Get Started
+Product Documentation
+Overview
+Experiments
+Feature Flags
+Goals & Metrics
+Users, Teams & Permissions
+Events
+Configuration
+LaunchPad Browser Extension
+Warehouse Native
+Warehouse Native Overview
+Warehouse Native Modes
+Connect Your Warehouse
+Get Started with Warehouse Native
+Developer Tools
+Integrations
+Release Notes
+Glossary
+Product Documentation
+Warehouse Native
+Warehouse Native Overview
+On this page
+Warehouse Native
+ABsmartly's Warehouse Native mode lets you run experiment analysis directly inside your own data warehouse. Instead of sending event data to ABsmartly's cloud for processing, you point ABsmartly at your existing warehouse tables and it computes results where your data already lives.
+Why Warehouse Native?
+​
+Most experimentation platforms follow a cloud-first model: events are sent to the platform, metrics are computed there, and results are served back. This works well — it's fast to set up, provides real-time monitoring, and has no dependency on your data infrastructure.
+But as experimentation programs mature, new requirements emerge:
+Single source of truth
+— Experiment metrics should match what finance and BI teams report. When experimentation data lives in a separate system, numbers can diverge, eroding trust in results.
+Data residency & compliance
+— Regulations like GDPR, SOC2, and HIPAA may require that user-level data stays within your own infrastructure. Warehouse Native means no user-level information leaves your environment.
+Auditability
+— When results are computed inside your warehouse, you have a full audit trail using your existing governance tools — who accessed what, when, and how metrics were defined at the time.
+How it works
+​
+With Warehouse Native, ABsmartly handles experiment assignment, management, statistical analysis, and metric governance. But the underlying data — exposures, goals, and attributes — stays in your warehouse.
+You configure a
+data source
+that connects ABsmartly to your warehouse, map your tables to ABsmartly's expected schema, and set a refresh schedule. ABsmartly then queries your warehouse on that schedule to compute experiment results.
+Two modes: Hybrid and Fully
+​
+Warehouse Native comes in two flavors, depending on how much of your data you want to keep in your own warehouse:
+Hybrid Warehouse Native
+- ABsmartly manages assignment and exposures, while your
+goals and metrics
+can be computed against your own warehouse. It's set per goal, so you can mix goals managed by ABsmartly with goals sourced from your warehouse. Goals sourced from your warehouse can also be filtered and enriched with your own attributes.
+Fully Warehouse Native
+-
+everything
+lives in your warehouse: exposures, goals, and attributes. No user-level data ever leaves your infrastructure, and you can filter or enrich exposures for every goal.
+Which mode you're in is determined by which data source is your
+default
+. See
+Warehouse Native Modes
+for a full comparison and guidance on choosing.
+Supported warehouses
+​
+Warehouse
+Status
+BigQuery
+✅ Available
+Snowflake
+✅ Available
+ClickHouse
+✅ Available
+Redshift
+✅ Available
+Databricks
+✅ Available
+Cloud vs. Warehouse Native
+​
+Cloud
+Warehouse Native
+Setup
+Quick — no data infrastructure needed
+Requires existing warehouse and ETL pipelines
+Data speed
+Real-time monitoring
+Batch-processed (minutes to hours, depending on your refresh schedule)
+Metric alignment
+Separate from BI/finance data
+Same source of truth as the rest of your business
+Data residency
+Data processed in ABsmartly's cloud
+Data never leaves your warehouse
+Cost model
+Included in subscription
+You control (and pay for) warehouse compute
+Next steps
+​
+New to Warehouse Native? Start by understanding the
+two modes
+— Hybrid and Fully — and which one fits your needs. When you're ready to set it up, head to the
+Get Started guide
+to connect your warehouse, map your tables, and configure data freshness.
+Edit this page
+Previous
+Creating an experiment using the ABsmartly LaunchPad
+Next
+Warehouse Native Modes
+Why Warehouse Native?
+How it works
+Two modes: Hybrid and Fully
+Supported warehouses
+Cloud vs. Warehouse Native
+Next steps
+Documentation
+Product Docs
+SDK Docs
+API Docs
+MCP Server
+More
+Homepage
+Blog
+GitHub
+Social Media
+LinkedIn
+© Copyright 2026 ABsmartly B.V.

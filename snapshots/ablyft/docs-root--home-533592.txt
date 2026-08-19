@@ -1,0 +1,76 @@
+# https://docs.ablyft.com/
+docs.ablyft.com
+ABlyft - Knowledge Base
+Documentation and Help for the A/B-Testing Platform for Developers
+Set Up ABlyft
+Implement the Snippet
+Implement the Snippet via Google Tag Manager
+Settings related to the Cookie Consent Manager
+Projects
+Snippet Settings
+Prerequisites Rules
+Single Page Application (SPA) Testing
+Snippet´s Sequence
+Exclusion Groups (Mutually Exclusive Experiments)
+Experiments
+Redirect Experiments
+Multi-Page (Funnel) Experiments
+ablyftTools / Helper Functions
+Rerun Condition Check (SPA)
+Preview Mode / Perform Quality Assurance
+Force Variation
+Get and Set Bucketing
+Variations
+The Visual Editor
+Environments
+Overview
+Targeting Pages
+URL Targeting
+Target on URL Parameters
+Targeting Audiences
+Target on Visits
+Target on User Attributes
+Target on Cookies
+Goals
+Tracking in Shopify - Overview
+Tracking in Shopify (Webhook)
+Tracking in Shopify (Customer Event)
+Apply Click Goals programmatically
+Troubleshooting
+Integrations
+Google Tag Manager + GA4
+Google Analytics 4 Data
+How to build a Custom Integration
+JavaScript Events
+Publication Webhook
+Usercentrics CMP Testing
+Results and Statistics
+Statistic Settings
+Detailed Charts
+Reset Results
+API Access
+Personal Settings
+Notification Settings
+MCP Settings
+Team Settings
+Manage Team Members
+Visitor´s Perspective
+Opt-Out
+Cookies and localStorage
+Client Privacy Statement (GER)
+Client Side (JavaScript) API
+PUSH Calls
+GET Calls
+Feature Experimentation API
+Get started
+Implementation Guide
+The Basics & Best Practices
+Retrieving Variations (Decide)
+Sending Events/Goals (Track)
+Hybrid Experimentation
+Docs
+Status
+A/B-Testing Platform
+Privacy Notice
+Legal Notice
+©2026 ABlyft® - Conversion Expert GmbH

@@ -1,0 +1,137 @@
+# https://docs.statsig.com/integrations/mcp
+Overview | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+MCP
+Overview
+Docs MCP server
+Statsig MCP with Codex
+Statsig ChatGPT App
+Statsig MCP with Cursor
+Statsig MCP with Claude Code
+Statsig MCP with Other MCP-Compatible Clients
+Agent Skills Repository
+AI Development with Statsig
+Github AI Integration
+Early Access
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+MCP configuration guides
+Current MCP capabilities
+Use cases
+Example prompt for stale gate cleanup
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+Overview
+Overview
+The Statsig MCP (Model Context Protocol) server brings the power of Statsig into tools like Codex, Cursor, and Claude Code. With this setup, you can ask questions, explore experiments, and access your Statsig data using AI.
+MCP configuration guides
+Codex
+Set up Statsig MCP using Codex Desktop App, CLI, or IDE extension.
+ChatGPT Connector
+Talk to your Statsig projects from within ChatGPT.
+Cursor
+Configure Statsig MCP in Cursor IDE.
+Claude Code
+Set up Statsig MCP in Claude Code.
+Manual setup
+Manual configuration for any MCP-compatible tool.
+Current MCP capabilities
+Audit Logs
+Dynamic Configs
+Experiments (A/B Tests)
+Autotunes
+Gates (Feature Flags)
+Layers
+Metrics and Metric Sources
+Parameter Stores
+Segments
+Reviews
+Logs and Observability
+Need other functions? Statsig considers additions by request. Reach out in Slack.
+Use cases
+The Statsig MCP server supports both
+GET
+and
+POST
+requests. Read-only users can connect and use all read tools. Write tools require an API key with write permissions. The Statsig MCP server is especially useful for:
+Repetitive tasks like cleaning up stale gates
+Summarizing console information in your IDE workflows
+Bulk creating or deleting gates, and making the necessary changes in your code
+Example prompt for stale gate cleanup
+plaintext
+Copy
+You are an expert, diligent Software engineer with the sole goal of reducing the amount of tech debt in the code base. This code base, making use of best practices, leverages feature gates liberally using Statsig. As gates complete their lifecycle in Statsig, they may end up "stale" which means that they're enabled, but no longer checked. Your job is to find these gates, and refactor the codebase to no longer check the gate (instead, changing the check to a constant value).
+You should follow coding best practices:
+- You should not simply replace gate calls with "True" or "False" but instead carefully trace the logic through to where it is used and change the behavior that way - adjusting the code in minor ways to make the default behavior what the value is that the gate was returning
+- You should always strive to write minimal code - readable but terse, never longer than it needs to be
+- You should never write comments or debug statements.
+You should use the statsig-local MCP to list feature gates, then look for gates that are marked as stale. You should then grep the codebase for that feature flag name, and do a minimal rewrite of the code to no longer use Statsig, removing the checkGate call or similar. When you use the MCP use the get /console/v1/gates endpoint and parameters type="STALE" and limit =10. You should select only one gate to do this with, before stopping. If you cannot find the gate after a grep, try the next one you found using the MCP. Once you successfully remove a gate, return.
+Was this helpful?
+On this page
+MCP configuration guides
+Current MCP capabilities
+Use cases
+Example prompt for stale gate cleanup

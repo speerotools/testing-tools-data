@@ -1,0 +1,338 @@
+# https://amplitude.com/mcp
+Amplitude MCP
+Platform
+AI
+Amplitude AI
+Analytics that never stops working
+AI Agents
+Sense, decide, and act faster than ever before
+AI Feedback
+Distill what your customers say they want
+Amplitude MCP
+Insights from the comfort of your favorite AI tool
+Agent Analytics
+Measure the real impact of your agents
+Early Access Program
+Test new AI features before they launch
+Insights
+Product Analytics
+Understand the full user journey
+Marketing Analytics
+Get the metrics you need with one line of code
+Session Replay
+Visualize sessions based on events in your product
+Heatmaps
+Visualize clicks, scrolls, and engagement
+Zoning Insights
+Overlay performance and revenue metrics on your webpages
+Action
+Guides and Surveys
+Guide your users and collect feedback
+Feature Experimentation
+Innovate with personalized product experiences
+Web Experimentation
+Drive conversion with A/B testing powered by data
+Feature Management
+Build fast, target easily, and learn as you ship
+Activation
+Unite data across teams
+Data
+Data Governance
+Complete data you can trust
+Integrations
+Connect Amplitude to hundreds of partners
+Security & Privacy
+Keep your data secure and compliant
+Solutions
+Solutions that drive business results
+Deliver customer value and drive business outcomes
+Amplitude Solutions
+→
+Industry
+Financial Services
+Personalize the banking experience
+B2B
+Maximize product adoption
+Media
+Identify impactful content
+Healthcare
+Simplify the digital healthcare experience
+Ecommerce
+Optimize for transactions
+Use Case
+Acquisition
+Get users hooked from day one
+Retention
+Understand your customers like no one else
+Monetization
+Turn behavior into business
+Team
+Product
+Fuel faster growth
+Data
+Make trusted data accessible
+Engineering
+Ship faster, learn more
+Marketing
+Build customers for life
+Executive
+Power decisions, shape the future
+Size
+Startups
+Free analytics tools for startups
+Enterprise
+Advanced analytics for scaling businesses
+Resources
+Learn
+Blog
+Thought leadership from industry experts
+Resource Library
+Expertise to guide your growth
+Compare
+See how we stack up against the competition
+Glossary
+Learn about analytics, product, and technical terms
+Explore Hub
+Detailed guides on product and web analytics
+Connect
+Community
+Connect with peers in product analytics
+Events
+Register for live or virtual events
+Customers
+Discover why customers love Amplitude
+Partners
+Accelerate business value through our ecosystem
+Support & Services
+Customer Help Center
+All support resources in one place: policies, customer portal, and request forms
+Developer Hub
+Integrate and instrument Amplitude
+Academy & Training
+Become an Amplitude pro
+Customer Success
+Drive business success with expert guidance and support
+Product Updates
+See what's new from Amplitude
+Tools
+Benchmarks
+Understand how your product compares
+Prompt Library
+Prompts for Agents to get started
+Templates
+Kickstart your analysis with custom dashboard templates
+Tracking Guides
+Learn how to track events and metrics with Amplitude
+Maturity Model
+Learn more about our digital experience maturity model
+Event Taxonomy Generator
+Pricing
+Login
+Contact sales
+Get started
+Platform
+AI
+Amplitude AI
+AI Agents
+AI Feedback
+Amplitude MCP
+Agent Analytics
+Early Access Program
+Insights
+Product Analytics
+Marketing Analytics
+Session Replay
+Heatmaps
+Zoning Insights
+Action
+Guides and Surveys
+Feature Experimentation
+Web Experimentation
+Feature Management
+Activation
+Data
+Data Governance
+Integrations
+Security & Privacy
+Solutions
+Amplitude Solutions
+→
+Industry
+Financial Services
+B2B
+Media
+Healthcare
+Ecommerce
+Use Case
+Acquisition
+Retention
+Monetization
+Team
+Product
+Data
+Engineering
+Marketing
+Executive
+Size
+Startups
+Enterprise
+Resources
+Learn
+Blog
+Resource Library
+Compare
+Glossary
+Explore Hub
+Connect
+Community
+Events
+Customers
+Partners
+Support & Services
+Customer Help Center
+Developer Hub
+Academy & Training
+Customer Success
+Product Updates
+Tools
+Benchmarks
+Prompt Library
+Templates
+Tracking Guides
+Maturity Model
+Event Taxonomy Generator
+Pricing
+Login
+Sign Up
+MCP Server
+Prompt new insights
+Bring Amplitude’s behavioral context directly into your AI tools—Claude, Cursor, OpenAI, Lovable, Figma, and more—to get answers where you work.
+Learn how
+See connectors
+Talk to data
+Unlock insights anywhere
+Start a conversation about your users or product and get expert-level answers in seconds that you can share with your whole org. No SQL, configuring dashboards, or waiting on the data team.
+Read more
+Connect context
+For any team in any tool
+No matter where you sit or how technical you are, bring user data to the heart of your workflows. Inform design decisions, discover what works for different cohorts, and collaborate seamlessly.
+Try Amplitude
+Find your way
+Take action in AI workflows
+You’ve vibe-coded an app—now what? Understand what’s working and how to do more of it by asking questions, creating charts, and running tests from where you’re already building.
+See connectors
+"We’ve been able to embed our domain knowledge directly into our LLM workflows. Now insights that used to require specialized analytics expertise are accessible to everyone."
+Moss Pauly
+Technical Product Manager, Data & AI, Zip
+Start the conversation
+Get prompting in seconds with one of our native connectors, or learn how to connect to any MCP-compatible client.
+Connect
+Connect
+Connect
+Connect
+Connect
+Connect
+Connect
+Connect
+[Coming soon]
+Connect
+Build your own
+Got data?
+AI analysis is only as good as the data you feed it.
+Get real-time, structured user data you can trust with Amplitude.
+Start for free
+Get a demo
+Frequently asked questions
+What does MCP stand for?
+MCP stands for Model Context Protocol. It’s an open-source standard for connecting AI applications to external systems, kind of like a USB-C plug for all your AI tools. You can read more about it
+here
+.
+Is access to Amplitude MCP free?
+Amplitude MCP is available to all Amplitude customers, so even if you're on the
+Free plan
+, you can connect to it. You will separately need to have access to the AI application you want to connect with, and that may involve creating a paid account.
+Does Amplitude MCP connect to other AI applications not listed on this page?
+The links above are just the applications that we have native connectors built with today. You can also build your own connector to any AI tool you want as long as it supports MCP servers.
+Learn how with our documentation
+!
+How does Amplitude MCP work?
+First connect and authenticate your preferred AI tool to Amplitude’s MCP server. Your AI tool can then query data from your Amplitude account when responding to prompts. Our server acts as an interface for connecting Amplitude’s structured context to LLM-based AI systems like Claude, Cursor, and Gemini. It provides a comprehensive set of tools that enable LLMs to:
+Search or create dashboards, charts, notebooks, cohorts, and experiments
+Query and analyze user data, such as acquisition, conversion, retention engagement, and user feedback
+Retrieve feature flags and experiment results
+Access project context, events, and user properties
+We’ll continue adding new capabilities in the near future based on learnings and customer feedback.
+How is customer and end-user data handled by Amplitude’s MCP server?
+The MCP server uses your existing Amplitude user permissions and access controls. OAuth authentication ensures a secure connection between the MCP server and your Amplitude account. You can only access Amplitude projects and data that you already have permission to view in your regular Amplitude account. You receive no additional data access beyond your current Amplitude account privileges.
+Platform
+AI Agents
+Agent Analytics
+AI Feedback
+Amplitude MCP
+AI Assistant
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+AI Early Access Program
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+LinkedIn
+Twitter
+G2
+GitHub
+Reddit
+View markdown
+Copy markdown
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
+Español (LATAM)
+Español (Spain)
+Português (Brasil)
+Português (Portugal)
+Français
+Deutsch
+© 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.

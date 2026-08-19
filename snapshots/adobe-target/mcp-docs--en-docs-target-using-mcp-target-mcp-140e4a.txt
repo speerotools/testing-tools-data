@@ -1,0 +1,114 @@
+# https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp
+Adobe Target MCP server overview | Adobe Target
+Documentation
+Target
+Target Guide
+[Beta]{class="badge informative"}
+Adobe Target MCP server
+target-mcp
+Last update: May 12, 2026
+Topics:
+Integrations
+CREATED FOR:
+Beginner
+Intermediate
+User
+Developer
+The Adobe Target MCP integration lets you inspect, analyze, and manage A/B tests and personalization activities directly from your AI assistant. Turn Target’s experimentation and personalization data into plain-language workflows — audit your experiment portfolio, review performance reports, explore audiences and offers, create activities, and make updates without navigating the UI or writing API calls.
+AVAILABILITY
+The Adobe Target MCP server is available to all customers in
+Public Beta
+. It is currently supported in
+Claude Web
+,
+Claude Desktop
+,
+Claude Code
+,
+Cursor
+, and
+ChatGPT
+. Support for additional MCP-compatible applications will be added in future releases.
+What is the Model Context Protocol?
+mcp-overview
+Marketing and optimization teams increasingly rely on chat-based applications and developer tools — such as Anthropic Claude, OpenAI ChatGPT, Cursor, and Microsoft Copilot Studio — to streamline their day-to-day work. These applications support the
+Model Context Protocol (MCP)
+, an open standard that lets applications expose back-end tools to large language models (LLMs) in a uniform way.
+Adobe Target now provides an MCP server that surfaces experimentation and personalization operations directly inside any MCP-compatible application. Adobe Target acts as the decisioning and execution layer while the AI assistant handles reasoning and explanation — giving teams faster access to optimization insights without navigating multiple product screens or writing queries against the Adobe Target REST API.
+IMPORTANT
+The Model Context Protocol (MCP) is an emerging open-source standard and may present security or reliability risks. Adobe MCP server integrations and related documentation are provided “as is,” without warranties of any kind.
+Connecting MCP clients or servers to Adobe products is a customer-elected configuration, and customers are responsible for evaluating the security and suitability of any MCP integration. Adobe is not responsible for issues arising from misconfiguration, misuse of the MCP, vulnerabilities in third-party implementations, or unintended actions performed through MCP-enabled workflows.
+To reduce risk, Adobe encourages testing integrations in a sandbox environment prior to productive use and carefully reviewing and validating all MCP-initiated actions and responses before confirming or relying on them.
+Key capabilities
+mcp-capabilities
+The Adobe Target MCP server provides both read and write access to activities, audiences, offers, and implementation configuration. With the integration, you can:
+Inspect and audit experiments
+- Get status, performance, change history, and QA preview links for any activity without navigating the UI.
+Analyze results
+- Retrieve performance, revenue, and A4T reports for A/B, XT, AP, and Auto-Target activities.
+Explore activities
+- List, inspect, and analyze A/B and XT activities.
+Create and update activities
+- Create new A/B and Experience Targeting activities, update configurations, manage traffic splits, add or remove variants, and control activity state (activate, pause, deactivate).
+Explore and manage audiences and offers
+- List, inspect, create, and update audiences, HTML offers, and JSON offers.
+Audit implementation
+- Review at.js settings, response tokens, and per-entity revision history.
+The Adobe Target MCP server exposes 41 tools across 10 categories — from activity creation and reporting to audience management and QA previews. For the complete parameter reference, see
+MCP server tools reference
+.
+To explore what you can do with the Adobe Target MCP server — including step-by-step prompt walkthroughs — see
+Use cases and walkthroughs
+.
+To connect the Adobe Target MCP server to your AI assistant — including prerequisites, client-specific configuration, and troubleshooting — see
+Get started
+.
+Frequently asked questions
+mcp-faq
+Which MCP clients are supported?
+The Adobe Target MCP server is currently available for
+Claude Web
+,
+Claude Desktop
+,
+Claude Code
+,
+Cursor
+, and
+ChatGPT
+. Support for additional MCP-compatible applications may be added in future releases.
+What Adobe Target objects can I access via MCP?
+You can access and manage activities (A/B, XT, AP), audiences, offers, properties, mboxes, response tokens, at.js configuration, A4T reports, and entity revision history. The MCP server exposes 41 tools covering both read and write operations.
+Can the MCP server create or modify activities?
+Yes. The MCP server supports write operations including creating A/B and Experience Targeting activities, updating activity configurations, managing traffic splits, adding or removing variants, activating, pausing, and deactivating activities. Editor role or higher is required for write operations; Approver role is required for activation and deactivation.
+Do I need developer access to use the MCP server?
+No. The MCP server is designed for both marketing and technical personas. Marketers can interact with it using natural language prompts in any supported MCP client, while developers can use it in tools like Claude Code or Cursor.
+Is my Adobe Target data sent to the MCP client provider?
+When you submit a prompt, the MCP client may send relevant context (including Adobe Target data returned by the MCP server) to its model for processing. Review the privacy and data-handling policies of your MCP client provider before connecting to production data. Adobe’s data handling is governed by the
+Adobe Privacy Policy
+and
+Data Protection Terms
+.
+Can write operations cause unintended changes to live activities?
+Write tools include safety annotations and confirmation gates so that no state-changing action is executed without explicit user confirmation. Adobe recommends testing integrations in a sandbox environment before using write tools in production, and carefully reviewing all MCP-initiated actions before confirming them.
+What permissions do I need in Adobe Target?
+Observer
+role or higher grants access to all read-only tools.
+Editor
+role or higher is required for write tools (create, update).
+Approver
+role is required for state-change tools (activate, deactivate). Contact your Adobe Target administrator if you are unsure about your current access level.
+Can I use the MCP server across multiple Target organizations or properties?
+The MCP server scopes operations to the organization associated with your authenticated Adobe IMS credentials. If you have access to multiple properties within that organization, you can query by property using the
+list_target_properties
+tool and filter subsequent requests accordingly.
+Related resources
+mcp-related
+Get started
+Use cases and walkthroughs
+MCP server tools reference
+Model Context Protocol documentation
+Adobe Target Admin API reference
+Cursor documentation
+recommendation-more-help
+target-help-main

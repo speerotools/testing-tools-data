@@ -1,0 +1,1387 @@
+# https://amplitude.com/releases/feed.xml
+Amplitude Changelog
+https://amplitude.com/releases
+Every feature we've shipped to Amplitude, with release notes.
+en-us
+Wed, 19 Aug 2026 12:57:22 GMT
+Image Upload in Web Experiment
+https://amplitude.com/releases/image-upload-in-web-experiment
+Customers in any paid tier can now upload images to change/insert images in the web experiment visual editor.
+Kevin Liou
+Experiment
+https://amplitude.com/releases/image-upload-in-web-experiment
+Mon, 10 Aug 2026 20:27:48 GMT
+Resource Center: search term highlighting and autoscroll in articles
+https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
+When a user opens an article from a Resource Center search result, matched search terms are now highlighted inside the article and the view automatically scrolls to the relevant passage.
+Thomas Kainrad
+https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
+Fri, 24 Jul 2026 12:10:33 GMT
+Resource Center: open directly to a specific article via the SDK
+https://amplitude.com/releases/resource-center-open-directly-to-a-specific-article-via-the-sdk
+The Guides and Surveys SDK now supports opening the Resource Center directly on a specific article.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/resource-center-open-directly-to-a-specific-article-via-the-sdk
+Fri, 24 Jul 2026 12:05:16 GMT
+Metric Explorer Chart
+https://amplitude.com/releases/metric-explorer-chart-type
+Metric Explorer is moving out of beta
+Brian Cooper
+Analytics
+https://amplitude.com/releases/metric-explorer-chart-type
+Wed, 22 Jul 2026 18:26:26 GMT
+Last Non-Direct Attribution in Data Tables
+https://amplitude.com/releases/last-non-direct-attribution-data-tables
+The Data Tables attribution model picker now includes Last Non-Direct Touch - all credit for a metric goes to the most recent touchpoint that isn't Direct.
+Dan Carmel
+Data
+https://amplitude.com/releases/last-non-direct-attribution-data-tables
+Tue, 21 Jul 2026 18:00:33 GMT
+Attribution parameters as event properties - now on by default in the Browser SDK + GTM
+https://amplitude.com/releases/attribution-parameters-as-event-properties-browser-sdk-gtm
+The Browser SDK now captures marketing attribution (UTMs, click IDs, referrer) as event properties by default, alongside the user properties it always set. The GTM template was updated with the same behavior so GTM-based implementations get it automatically, no custom variables needed.
+Dan Carmel
+Activation
+https://amplitude.com/releases/attribution-parameters-as-event-properties-browser-sdk-gtm
+Fri, 17 Jul 2026 18:55:05 GMT
+Clickable image links
+https://amplitude.com/releases/clickable-image-links
+Turn any image in a Guide or Survey into a clickable link, so users can jump to a page, doc, or in-app destination without needing a separate button.
+Nino Villaflor
+Guides and Surveys
+https://amplitude.com/releases/clickable-image-links
+Thu, 16 Jul 2026 08:18:44 GMT
+Web Experiment: Cross-subdomain experimentation
+https://amplitude.com/releases/web-experiment-cross-subdomain-experimentation
+Web experiments can now target multiple subdomains
+Tim Yiu
+Experiment
+https://amplitude.com/releases/web-experiment-cross-subdomain-experimentation
+Wed, 15 Jul 2026 20:56:33 GMT
+Event group property improvements
+https://amplitude.com/event-group-property-improvements
+You can now add a property group to an event or add a property to a group — even when one of those properties is already planned directly on the event.
+Andrew Lan
+Data
+https://amplitude.com/event-group-property-improvements
+Wed, 15 Jul 2026 00:00:00 GMT
+Web Experiment Bucketing ID Shared Across Subdomains
+https://amplitude.com/releases/web-experiment-bucketing-id-shared-across-subdomains
+Web experiments now use a bucketing ID stored in a cookie, allowing sharing across subdomains, improving consistency in bucketing.
+Tim Yiu
+Experiment
+https://amplitude.com/releases/web-experiment-bucketing-id-shared-across-subdomains
+Mon, 13 Jul 2026 00:00:00 GMT
+Web Experiment: Undo/Redo + Auto-apply
+https://amplitude.com/releases/web-experiment-undo-redo-auto-apply
+The web experiment visual editor now supports undo/redo, accessed by the buttons on the navigation bar or keyboard shortcuts (Cmd+Z / Cmd+Shift+Z). Changes made in the visual editor are also now automatically applied, and the apply button has been removed.
+Anson Chen
+Experiment
+https://amplitude.com/releases/web-experiment-undo-redo-auto-apply
+Wed, 01 Jul 2026 00:31:22 GMT
+AI Feedback Auto Analysis
+https://amplitude.com/releases/ai-feedback-auto-analysis
+AI Feedback is now easier to organize and much easier to monitor in near "real-time". You can set each source to be auto-analyzed every 15 minutes, hourly, or daily, add custom labels to automatically tag incoming feedback, insights, and trends, browse all feedback in one unified feed, and build anomaly detection charts on top of feedback data that alerts you when specific types of feedback spike.
+Frank Lee
+AI
+https://amplitude.com/releases/ai-feedback-auto-analysis
+Tue, 30 Jun 2026 00:13:07 GMT
+Introducing: Custom Agents
+https://amplitude.com/releases/custom-agents
+Custom Agents are now live and generally available across all customers.
+Jacob Newman
+AI
+https://amplitude.com/releases/custom-agents
+Tue, 23 Jun 2026 22:12:45 GMT
+Amplitude MCP is now in Slackbot
+https://amplitude.com/releases/amplitude-mcp-is-now-in-slackbot
+You can now connect Amplitude's MCP server to Slackbot and ask questions there — Slackbot will call Amplitude's tools on your behalf and return the answer inline, without leaving the interface.
+Jonathan Yin
+Platform
+https://amplitude.com/releases/amplitude-mcp-is-now-in-slackbot
+Thu, 18 Jun 2026 20:38:31 GMT
+Event Streaming Live Log
+https://amplitude.com/releases/event-streaming-live-log
+Live Log is a new tab on the Event Streaming sync detail page that shows a live, real-time stream of events as they're processed by a sync, allowing inspection of raw events, dispatched payloads, and destination responses side by side.
+DB Nguyen
+Data
+https://amplitude.com/releases/event-streaming-live-log
+Tue, 16 Jun 2026 18:37:10 GMT
+Cohort Sync via MCP: sync_cohort
+https://amplitude.com/releases/cohort-sync-via-mcp-sync_cohort
+Agents can now trigger a one-time cohort sync to a destination (Braze, Iterable, S3, webhook, and more) straight from MCP. It previews, confirms, then fires the export.
+DB Nguyen
+Activation
+https://amplitude.com/releases/cohort-sync-via-mcp-sync_cohort
+Thu, 11 Jun 2026 23:24:57 GMT
+New External Guides and Surveys MCP tools
+https://amplitude.com/releases/new-external-guides-and-surveys-mcp-tools
+Enhancements to the external MCP server now allow AI to properly understand a guide's published state, prioritization, and all other Guides and Surveys concepts for better retrieval on non-Amplitude surfaces.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/new-external-guides-and-surveys-mcp-tools
+Thu, 11 Jun 2026 10:43:13 GMT
+React Native Session Replay — Privacy Masking
+https://amplitude.com/releases/react-native-session-replay-privacy-masking
+RN Session Replay now correctly respects `maskLevel` (light / medium / conservative) on iOS and Android — no more silent downgrade to medium. iOS light masking now auto-masks phone/email keyboard inputs, matching Android and web.
+Aliaksandr Kazarez
+Session Replay
+https://amplitude.com/releases/react-native-session-replay-privacy-masking
+Mon, 08 Jun 2026 19:40:58 GMT
+Taxonomy MCP: Branch management and Create tools
+https://amplitude.com/releases/taxonomy-mcp-branch-management-create-tools
+The Amplitude MCP server now includes branch management and create tools for taxonomy. Customers can now create events, custom events, properties, and use a full suite of branch tools through AI assistants.
+Chantal Yuen
+Platform
+https://amplitude.com/releases/taxonomy-mcp-branch-management-create-tools
+Fri, 05 Jun 2026 20:04:54 GMT
+Web Experiment: Mutex groups, Holdout groups, and Experiment dependencies [Beta]
+https://amplitude.com/web-experiment-groups-dependencies
+Web Experiment
+https://amplitude.com/web-experiment-groups-dependencies
+Fri, 05 Jun 2026 00:00:00 GMT
+Agent Connectors
+https://amplitude.com/releases/agent-connectors
+Agent Connectors are now GA. Global Agent (and soon, Custom Agents) can pull context from — and take action in — the tools your team already uses. Connecting to the apps you love is as simple as a single click, and because these connectors support both read and write tools, our agents can now do more than fetch context: they can write docs, manage tickets, and act across your stack.
+Jacob Newman
+AI
+https://amplitude.com/releases/agent-connectors
+Thu, 04 Jun 2026 18:57:21 GMT
+MCP Server: Role-Based Access Controls
+https://amplitude.com/releases/mcp-server-mcp-rbac-actions
+Introducing finer-grained control over MCP AI agents with new RBAC actions to scope permissions on a project basis.
+Chanaka Perera
+AI
+https://amplitude.com/releases/mcp-server-mcp-rbac-actions
+Wed, 03 Jun 2026 15:34:31 GMT
+Session Replay Agent v2 is now GA
+https://amplitude.com/releases/session-replay-agent-v2
+Session Replay Agent v2 improves replay analysis by using video analysis to generate structured insights and combining it with autocapture and analytics for clearer, evidence-backed insights.
+Eric Carlson
+Session Replay
+https://amplitude.com/releases/session-replay-agent-v2
+Tue, 02 Jun 2026 00:36:28 GMT
+Granola AI Feedback Source GA
+https://amplitude.com/releases/granola-ai-feedback-source-ga
+Granola is now generally available for all customers as an AI Feedback source.
+Spencer Pauly
+AI
+https://amplitude.com/releases/granola-ai-feedback-source-ga
+Thu, 28 May 2026 20:25:00 GMT
+Frustration Analytics — Debugger on User Profile Timeline
+https://amplitude.com/releases/frustration-analytics-debugger-on-user-profile-timeline
+The User Profile Timeline now surfaces frustration signals directly alongside behavioral events, providing a chronological view of exactly what a specific user experienced.
+Madelyn Tarr
+Analytics
+https://amplitude.com/releases/frustration-analytics-debugger-on-user-profile-timeline
+Wed, 27 May 2026 23:12:09 GMT
+Zoning Insights
+https://amplitude.com/releases/zoning-insights
+Zoning Insights is a powerful tool that quickly identifies which elements on a site are converting visitors or losing them, providing actionable performance data in minutes.
+Chad Swenson
+Analytics
+https://amplitude.com/releases/zoning-insights
+Wed, 27 May 2026 21:18:07 GMT
+Persisted properties
+https://amplitude.com/releases/persisted-properties
+Persisted Properties let teams preserve important behavioral context across a user journey so properties like campaign, entry page, search term, or discovery method stay attached to downstream events like purchases, conversions, and revenue.
+Enzo Avigo
+Data
+https://amplitude.com/releases/persisted-properties
+Wed, 27 May 2026 12:59:49 GMT
+E-commerce hubs
+https://amplitude.com/releases/e-commerce-hubs
+E-commerce hubs give merchandising and growth teams a curated starting point for analyzing product performance and product discovery in Amplitude with preconfigured commerce workflows.
+Enzo Avigo
+Analytics
+https://amplitude.com/releases/e-commerce-hubs
+Wed, 27 May 2026 10:06:53 GMT
+Web Vitals Stacked Chart Ratings View
+https://amplitude.com/releases/web-vitals-stacked-chart
+Added a new visualization to Web Vitals hub that displays Web Vitals grouped by rating category (good, needs improvement, poor).
+Dan Graham
+Analytics
+https://amplitude.com/releases/web-vitals-stacked-chart
+Thu, 21 May 2026 18:53:36 GMT
+Create and edit Guides & Surveys themes with Global Chat
+https://amplitude.com/releases/create-and-edit-gs-themes-via-global-chat
+Create and edit G&S themes just by sharing a screenshot of your website/figma files or by describing your dream theme with a short text description. Follow up with quick edits like 'make the button height a tad smaller' or 'give the typography a bold look'. Bonus: Use 'Fix with AI' to fix any and all theme validation errors.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/create-and-edit-gs-themes-via-global-chat
+Thu, 21 May 2026 18:43:38 GMT
+Trigger Delay for Guides and Surveys
+https://amplitude.com/releases/trigger-delay
+Guides and Surveys offers different trigger types like "On event tracked". Now you can delay the appearance of the guide after the event happens by using the new "Delay" option.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/trigger-delay
+Wed, 20 May 2026 18:37:54 GMT
+Search volume for AI Visibility [Beta]
+https://amplitude.com/releases/search-volume-for-ai-visibility
+We added Search Volume to AI Visibility so customers can prioritize topics and prompts based on real demand, not just visibility.
+Enzo Avigo
+AI
+https://amplitude.com/releases/search-volume-for-ai-visibility
+Tue, 19 May 2026 18:44:01 GMT
+Ask Amplitude AI button in Slack Previews
+https://amplitude.com/releases/ask-amplitude-ai-button-in-slack-previews
+Introducing the Ask Amplitude AI button in Slack previews to enhance user interaction with Amplitude AI features directly from Slack.
+Boogie Cigdemoglu
+AI
+https://amplitude.com/releases/ask-amplitude-ai-button-in-slack-previews
+Wed, 13 May 2026 23:12:10 GMT
+Channel Classifier API: manage channel classifiers programmatically
+https://amplitude.com/releases/channel-classifier-api-manage-channel-classifiers-programmatically
+Teams can now manage channel classifiers through a public REST API to list, fetch, create, and update classifiers programmatically.
+Dan Carmel
+Analytics
+https://amplitude.com/releases/channel-classifier-api-manage-channel-classifiers-programmatically
+Tue, 12 May 2026 15:53:29 GMT
+Real-Time Behavior Targeting for Web Experiment [Beta]
+https://amplitude.com/releases/instant-real-time-behavior-targeting-for-web-experiment
+Real-time behavior targeting is now available for Web Experiment, enabling instant audience targeting based on user behavior.
+Nithya Rajendran
+Experiment
+https://amplitude.com/releases/instant-real-time-behavior-targeting-for-web-experiment
+Mon, 11 May 2026 23:38:03 GMT
+Starred Projects
+https://amplitude.com/releases/starred-projects
+Starred projects are a way for users to be able to favorite the projects they most frequently access in Amplitude so that they can be more easily found in project dropdowns.
+Brady Shi
+Analytics
+https://amplitude.com/releases/starred-projects
+Mon, 11 May 2026 19:04:36 GMT
+Session Replay: "Hide Inactivity" toggle is now remembered
+https://amplitude.com/releases/session-replay-hide-inactivity-toggle-is-now-remembered
+The "Hide Inactivity" toggle in the Session Replay player now persists across replays and sessions. Once a user sets their preference (on or off), it sticks — no more flipping the toggle every time they open a new replay.
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/session-replay-hide-inactivity-toggle-is-now-remembered
+Thu, 07 May 2026 17:00:34 GMT
+Taxonomy API now available on all plans
+https://amplitude.com/releases/taxonomy-api-now-available-on-all-plans
+The Taxonomy API is now available to every Amplitude customer, regardless of plan. Starter, Plus, Growth, and Enterprise orgs all have full read and write access via the API with no feature flag or plan gate.
+Karan Johar
+Data
+https://amplitude.com/releases/taxonomy-api-now-available-on-all-plans
+Thu, 07 May 2026 00:00:00 GMT
+Session Replay Debug Modal
+https://amplitude.com/releases/session-replay-debug-modal
+The Amplitude Instrumentation Explorer Chrome extension now includes a Session Replay debug modal you can turn on for pages with Session Replay activity.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/session-replay-debug-modal
+Wed, 06 May 2026 16:27:17 GMT
+Web Experiment Chrome Debugger — Targeting Visibility
+https://amplitude.com/releases/web-experiment-chrome-debugger-targeting-visibility
+The Amplitude Instrumentation Explorer Chrome extension now shows granular targeting debug details for Web Experiments, making it faster to diagnose why an experiment isn't firing.
+Stephen Choi
+Experiment
+https://amplitude.com/releases/web-experiment-chrome-debugger-targeting-visibility
+Wed, 06 May 2026 16:00:23 GMT
+Experiment alerts are now in Microsoft Teams
+https://amplitude.com/releases/experiment-alerts-are-now-in-microsoft-teams
+Experiment alerts can now be set up directly in Microsoft Teams for your experiment feature flag changes.
+Jonathan Yin
+Experiment
+https://amplitude.com/releases/experiment-alerts-are-now-in-microsoft-teams
+Mon, 04 May 2026 20:57:48 GMT
+Error Clicks and Thrashed Cursor
+https://amplitude.com/releases/error-clicks-and-thrashed-cursor
+Our browser analytics SDK version 2.40.0 captures two new frustration interactions: error clicks and thrashed cursor, helping surface user frustration signals to better understand friction points.
+Dan Graham
+Analytics
+https://amplitude.com/releases/error-clicks-and-thrashed-cursor
+Mon, 04 May 2026 16:35:38 GMT
+Bulk Unpublishing Guides and Surveys
+https://amplitude.com/releases/bulk-unpublishing-guides-and-surveys
+You can now unpublish guides and surveys from the list page by selecting them and then clicking "Unpublish".
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/bulk-unpublishing-guides-and-surveys
+Mon, 04 May 2026 10:30:12 GMT
+Archive and Restore Guides and Surveys Themes
+https://amplitude.com/releases/archiving-and-restoring-of-guides-and-surveys-themes
+Unlike guides and surveys themselves, themes could not be restored after deleting them. Now, themes work the same as the guide and survey primitives and can be restored after they have been archived.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/archiving-and-restoring-of-guides-and-surveys-themes
+Mon, 04 May 2026 08:06:28 GMT
+Introducing: Amplitude AI Plugin
+https://amplitude.com/releases/amplitude-ai-plugin-release
+We are excited to announce the launch of the Amplitude AI Plugin, enhancing analytics capabilities with AI-powered insights.
+Paul Morrill
+AI
+https://amplitude.com/releases/amplitude-ai-plugin-release
+Fri, 01 May 2026 17:00:29 GMT
+AI Visibility 2.0: Sentiment, Recommendations, Event Data, & MCP
+https://amplitude.com/releases/ai-visibility-2-0-sentiment-recommendations-ai-viz-data-mcp-premium-plan
+AI Visibility 2.0 goes beyond basic “are we showing up?” checks and tells you how AI actually talks about your product, what to fix, and how those fixes perform. Sentiment, recommendations, data export, and MCP all work together so you can measure perception, act on it, and close the loop in Amplitude.
+Enzo Avigo
+AI
+https://amplitude.com/releases/ai-visibility-2-0-sentiment-recommendations-ai-viz-data-mcp-premium-plan
+Wed, 29 Apr 2026 00:00:00 GMT
+Heatmaps Improvements
+https://amplitude.com/releases/heatmaps-revamp
+A revamp of Heatmaps to make it simpler, more reliable, and easier to use.
+Chad Swenson
+Session Replay
+https://amplitude.com/releases/heatmaps-revamp
+Tue, 28 Apr 2026 22:53:06 GMT
+Data Tables: Global filters now filter all metrics, including session metrics
+https://amplitude.com/releases/data-tables-global-filters-now-filter-all-metrics-including-session-metrics
+Data Tables global filters now apply to session metrics as well as event columns, enabling consistent filtering across all table columns.
+Dan Carmel
+Data
+https://amplitude.com/releases/data-tables-global-filters-now-filter-all-metrics-including-session-metrics
+Sun, 26 Apr 2026 13:00:52 GMT
+Global Agent chat sidebar opens by default on large screens
+https://amplitude.com/releases/global-agent-chat-sidebar-opens-by-default-on-large-screens
+On screens 1600px and wider, the Global Agent chat sidebar now opens by default with automatic reopening under certain conditions, improving user messaging and conversion rates.
+Henry Arbolaez
+Activation
+https://amplitude.com/releases/global-agent-chat-sidebar-opens-by-default-on-large-screens
+Fri, 24 Apr 2026 23:06:26 GMT
+Page-Level URL Masking for Session Replay
+https://amplitude.com/releases/page-level-url-masking-for-session-replay
+Session Replay now supports per-URL masking rules. You can override the default masking level for specific pages using glob patterns — e.g. apply Conservative masking to `/checkout/**` while keeping Light masking everywhere else — without changing global settings.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/page-level-url-masking-for-session-replay
+Fri, 24 Apr 2026 13:21:26 GMT
+Multi Instance Support in the Guides and Surveys SDK
+https://amplitude.com/releases/multi-instance-support-in-the-guides-and-surveys-sdk
+Some customers have a micro-frontend setup or similar where they are using multiple Amplitude projects in parallel. While the Analytics Browser SDK supports this, Guides and Surveys did not. Now it does and you can show guides and surveys from multiple projects at the same time.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/multi-instance-support-in-the-guides-and-surveys-sdk
+Fri, 24 Apr 2026 07:16:57 GMT
+Amplitude Wizard CLI: Agentic Onboarding for Builders
+https://amplitude.com/releases/amplitude-wizard-cli-agentic-onboarding
+The Amplitude Wizard CLI is an AI-powered command-line tool that guides developers through setting up their codebase and tracking events with Amplitude, removing the friction of manual SDK setup and instrumentation decisions.
+Kaia Rae Peacock
+Activation
+https://amplitude.com/releases/amplitude-wizard-cli-agentic-onboarding
+Tue, 21 Apr 2026 20:21:08 GMT
+Property Category
+https://amplitude.com/releases/property-category
+Andrew Lan
+Data
+https://amplitude.com/releases/property-category
+Fri, 17 Apr 2026 18:26:02 GMT
+Feature Flag and Experiment targeting based on First Seen Timestamp
+https://amplitude.com/releases/feature-flag-and-experiment-targeting-based-on-first-seen-timestamp
+Eric Metelka
+Activation
+https://amplitude.com/releases/feature-flag-and-experiment-targeting-based-on-first-seen-timestamp
+Thu, 16 Apr 2026 22:00:14 GMT
+Replay Insights
+https://amplitude.com/releases/replay-insights
+Replay Insights uses AI to scan your replays at scale and surface a bird's-eye view of what's happening across your entire product
+Chad Swenson
+Session Replay
+https://amplitude.com/releases/replay-insights
+Wed, 15 Apr 2026 20:21:09 GMT
+Bookmarkable Session Replays
+https://amplitude.com/releases/bookmarkable-session-replays
+Christian Cho
+Session Replay
+https://amplitude.com/releases/bookmarkable-session-replays
+Tue, 14 Apr 2026 17:48:03 GMT
+Web Experiment: Mobile Simulator
+https://amplitude.com/releases/web-experiment-mobile-simulator-beta
+Preview web experiments in mobile aspect ratios
+Anson Chen
+Experiment
+https://amplitude.com/releases/web-experiment-mobile-simulator-beta
+Fri, 10 Apr 2026 17:26:33 GMT
+Session Replay Sentiment Filter
+https://amplitude.com/releases/session-replay-sentiment-filter
+Find frustrating or positive sessions in seconds. Sentiment filtering is now built directly into the Session Replay list.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/session-replay-sentiment-filter
+Thu, 09 Apr 2026 16:43:24 GMT
+Event Time now available in Derived Properties
+https://amplitude.com/releases/event-time-now-available-in-derived-properties
+Customers can now use `Event Time` as a selectable property when building Derived Properties. This means you can create derived properties like `registration date - Event Time` to compute things like "days since registration".
+Chamila Amithirigala
+Data
+https://amplitude.com/releases/event-time-now-available-in-derived-properties
+Wed, 08 Apr 2026 22:50:06 GMT
+Snapchat Ads Cohort Sync Integration released in EU
+https://amplitude.com/releases/snapchat-ads-cohort-sync-integration-released-in-eu
+Cynthia Li
+Data
+https://amplitude.com/releases/snapchat-ads-cohort-sync-integration-released-in-eu
+Mon, 06 Apr 2026 22:03:39 GMT
+AI Feedback Ingestion API
+https://amplitude.com/releases/ai-feedback-ingestion-api-bring-your-own-feedback-sources-into-ai-feedback
+Send feedback from NPS tools, surveys, review sites, and custom queues into AI Feedback for analysis alongside everything else.
+Spencer Pauly
+AI
+https://amplitude.com/releases/ai-feedback-ingestion-api-bring-your-own-feedback-sources-into-ai-feedback
+Fri, 03 Apr 2026 18:33:24 GMT
+Guides and Surveys showing up in cohort page's _Used by_ tab
+https://amplitude.com/releases/guides-and-surveys-showing-up-in-cohort-page-used-by-tab
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/guides-and-surveys-showing-up-in-cohort-page-used-by-tab
+Fri, 03 Apr 2026 07:47:28 GMT
+Advanced Channel Classifier Template
+https://amplitude.com/releases/advanced-channel-classifier-template
+Every new Amplitude org and project now gets a GA4-aligned default channel classifier automatically — no manual setup required.
+Dan Carmel
+Data
+https://amplitude.com/releases/advanced-channel-classifier-template
+Tue, 31 Mar 2026 19:00:14 GMT
+Edit guide and survey positions without leaving Preview mode
+https://amplitude.com/releases/edit-guide-and-survey-positions-without-leaving-preview-mode
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/edit-guide-and-survey-positions-without-leaving-preview-mode
+Mon, 30 Mar 2026 14:29:28 GMT
+Mutual Exclusivity
+https://amplitude.com/releases/mutual-exclusivity
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/mutual-exclusivity
+Thu, 26 Mar 2026 08:11:52 GMT
+New Filters for List Session Replays
+https://amplitude.com/releases/new-filters-for-list-session-replays
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/new-filters-for-list-session-replays
+Wed, 25 Mar 2026 16:53:43 GMT
+Improvements to Distributions
+https://amplitude.com/releases/improvements-to-distributions
+All distributions should be able to be normalized with added normalization, PDF, and CDF features to make amplitude histograms comparable and more data advanced.
+Akhil Prakash
+Analytics
+https://amplitude.com/releases/improvements-to-distributions
+Wed, 25 Mar 2026 16:00:21 GMT
+Even More External MCP Tools, Agent Skills, and the MCP App!!
+https://amplitude.com/releases/even-more-external-mcp-tools-agent-skills-and-the-mcp-app
+We've shipped a ton of new tools, skills, and the app over the last few weeks in MCP. There are new MCP tools for Session Replays, Agent Analytics, Feature Flags, and Web Vitals (via Autocapture data) that massively expand the set of analysis possible; an open-source skills repository with fine-tuned agent skills; and an MCP App that renders Amplitude charts natively in AI clients.
+Frank Lee
+AI
+https://amplitude.com/releases/even-more-external-mcp-tools-agent-skills-and-the-mcp-app
+Wed, 25 Mar 2026 00:00:00 GMT
+Multi-action CTA's for Guides & Surveys
+https://amplitude.com/releases/multi-action-ctas-for-guides-and-surveys
+Guide and survey buttons can now execute multiple actions in sequence, allowing users to chain actions together like navigating to a URL, clicking an element on that page, and then advancing to the next step.
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/multi-action-ctas-for-guides-and-surveys
+Tue, 24 Mar 2026 23:03:04 GMT
+Global Agent Audit Tab
+https://amplitude.com/releases/global-agent-audit-tab
+See all Global Agent activity across your organization in one table, directly in AI Controls.
+Avery Chan
+Analytics
+https://amplitude.com/releases/global-agent-audit-tab
+Fri, 20 Mar 2026 17:12:26 GMT
+Persisting Table Filter in URL & Persisting Collapsed Card State in Experiment/Flags UI
+https://amplitude.com/releases/persisting-table-filter-in-url-persisting-collapsed-card-state-in-experiment-flags-ui
+Persisting experiment table filters in the URL and persisting collapsed/expanded state in Experiment/Flag views' cards.
+Eric Butler
+Experiment
+https://amplitude.com/releases/persisting-table-filter-in-url-persisting-collapsed-card-state-in-experiment-flags-ui
+Mon, 16 Mar 2026 19:30:26 GMT
+Bing Ads Source Ingestion
+https://amplitude.com/releases/bing-ads-source-ingestion
+Marketers can now import Bing ads campaign data into Amplitude to analyze spend and performance alongside product behavior.
+Xuan Wang
+Data
+https://amplitude.com/releases/bing-ads-source-ingestion
+Mon, 16 Mar 2026 17:26:33 GMT
+Targeting based on First Seen Timestamp
+https://amplitude.com/releases/targeting-based-on-first-seen-timestamp
+Guides and Surveys now supports targeting new users based on their 'First Seen' timestamp, improving accuracy for new user sessions.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/targeting-based-on-first-seen-timestamp
+Mon, 16 Mar 2026 11:56:00 GMT
+Strongly Typed Payloads
+https://amplitude.com/releases/strongly-typed-payloads
+Eric Butler
+Experiment
+https://amplitude.com/releases/strongly-typed-payloads
+Fri, 13 Mar 2026 21:32:59 GMT
+Transformed Properties Targeting in Experiment, Feature Flags, and Guides & Surveys
+https://amplitude.com/releases/transformed-properties-targeting-in-experiment-feature-flags-and-guides-surveys
+You can now use transformed properties (defined in Govern / Taxonomy) directly in Experiment / Feature Flag and Guides & Surveys targeting, ensuring consistent definitions across Analytics and targeting.
+Sandeep Madugula
+Experiment
+https://amplitude.com/releases/transformed-properties-targeting-in-experiment-feature-flags-and-guides-surveys
+Fri, 13 Mar 2026 00:00:00 GMT
+Session Replay JSON Path Event Query
+https://amplitude.com/releases/session-replay-json-path-event-query
+Improvements to Session Replay allowing querying events using JSON path.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/session-replay-json-path-event-query
+Thu, 12 Mar 2026 19:29:01 GMT
+Browser & Swift Unified SDK
+https://amplitude.com/releases/browser-swift-unified-sdk
+The Unified SDK provides a single entry point for all Amplitude features — including Analytics, Experiment, Session Replay, and Guides & Surveys (Browser Unified SDK only) — in one package, reducing instrumentation complexity and overhead for developers.
+Xinyi Ye
+Activation
+https://amplitude.com/releases/browser-swift-unified-sdk
+Thu, 12 Mar 2026 18:31:35 GMT
+Job Details Drawer (For BigQuery)
+https://amplitude.com/releases/job-details-drawer-for-bigquery
+The Job Details Drawer gives customers detailed visibility into the progress and status of their BigQuery data warehouse import jobs, including pipeline stage visualization, detailed record count breakdowns, job duration information, and error log downloads.
+Zach Marto
+Data
+https://amplitude.com/releases/job-details-drawer-for-bigquery
+Mon, 09 Mar 2026 20:52:27 GMT
+Guides and Surveys - Slack Alerts
+https://amplitude.com/releases/guides-and-surveys-get-notified-on-survey-responses-directly-in-slack-with-alerts
+Set up survey alerts to send survey responses directly to Slack channels
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/guides-and-surveys-get-notified-on-survey-responses-directly-in-slack-with-alerts
+Fri, 06 Mar 2026 19:03:57 GMT
+Session Replay MegaModal layout controls + DevTools-style Network tab
+https://amplitude.com/releases/session-replay-megamodal-layout-controls-devtools-style-network-tab
+Resizable panels in the Session Replay MegaModal and a new Chrome DevTools-style network details view to improve usability and debugging in Session Replay.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/session-replay-megamodal-layout-controls-devtools-style-network-tab
+Fri, 06 Mar 2026 17:00:15 GMT
+Audit Logs
+https://amplitude.com/releases/audit-logs-v1
+Amplitude now provides a dedicated Audit Logs experience in Organization Settings, giving admins visibility into security-relevant activity across their account.
+Ilankir Matungulu
+https://amplitude.com/releases/audit-logs-v1
+Wed, 04 Mar 2026 23:47:15 GMT
+Organization and Project-level AI Context in External MCP Calls
+https://amplitude.com/releases/organization-and-project-level-ai-context-in-external-mcp-calls
+Organization and project-level AI context is now available in external MCP calls, allowing agents to fetch context set in the Amplitude AI Control Settings.
+Frank Lee
+AI
+https://amplitude.com/releases/organization-and-project-level-ai-context-in-external-mcp-calls
+Mon, 02 Mar 2026 21:06:38 GMT
+Experiment Change Alerts Improvements
+https://amplitude.com/releases/experiment-change-alerts-improvements
+Support Email as a destination. Only send slack messages when important changes happen that affect flag evaluation and not things like adding links. Include a description of what changed in the flag.
+Akhil Prakash
+Experiment
+https://amplitude.com/releases/experiment-change-alerts-improvements
+Mon, 02 Mar 2026 21:00:10 GMT
+Edit Dashboard and Notebook Tools for Global Agent and MCP
+https://amplitude.com/releases/edit-dashboard-and-notebook-tools-for-global-agent-and-mcp
+Edit existing dashboards and notebooks
+Brian Giori
+Analytics
+https://amplitude.com/releases/edit-dashboard-and-notebook-tools-for-global-agent-and-mcp
+Thu, 26 Feb 2026 23:22:03 GMT
+Experiment Evaluation Proxy 1.0.0
+https://amplitude.com/releases/experiment-evaluation-proxy-1-0-0
+Evaluation Proxy enables local evaluation across any platform with ultra-low latency. It supports universal local evaluation, exposure tracking, and improved scalability.
+Vaibhav Jain
+Experiment
+https://amplitude.com/releases/experiment-evaluation-proxy-1-0-0
+Thu, 26 Feb 2026 17:52:06 GMT
+N-Day LTV in Retention (Custom Revenue + Change Over Time)
+https://amplitude.com/releases/n-day-ltv-in-retention-custom-revenue-change-over-time
+Ilankir Matungulu
+Analytics
+https://amplitude.com/releases/n-day-ltv-in-retention-custom-revenue-change-over-time
+Fri, 20 Feb 2026 21:45:07 GMT
+AI Feedback now integrates with Slack
+https://amplitude.com/releases/ai-feedback-now-integrates-with-slack-for-all-customers
+You can now connect any Slack channel as a feedback source in AI Feedback.
+Spencer Pauly
+AI
+https://amplitude.com/releases/ai-feedback-now-integrates-with-slack-for-all-customers
+Wed, 18 Feb 2026 16:48:54 GMT
+URL Preview Feature Requirement Update
+https://amplitude.com/releases/url-preview-feature-requirement-update
+Customers must send data using the correct SDK versions to see the URL preview feature.
+Aracely Payan
+https://amplitude.com/releases/url-preview-feature-requirement-update
+Tue, 17 Feb 2026 20:30:13 GMT
+AI Analytics Platform Launch
+https://amplitude.com/releases/ai-analytics-platform-launch
+Our platform is going AI-native with the launch of 3 incredible innovations: Global Agent, Specialized Agents, and MCP, transforming how users interact with product analytics.
+Jacob Newman
+Analytics
+https://amplitude.com/releases/ai-analytics-platform-launch
+Mon, 16 Feb 2026 23:51:39 GMT
+Feedback Agent
+https://amplitude.com/releases/feedback-agent
+A new agent that automatically surfaces top customer requests, bugs, complaints, and praises from feedback surveys, support tickets, and sales calls from your AI Feedback sources and pushes you async reports!
+Frank Lee
+AI
+https://amplitude.com/releases/feedback-agent
+Mon, 16 Feb 2026 23:45:08 GMT
+Cross Project Snowflake Credentials Use & Management
+https://amplitude.com/releases/cross-project-snowflake-credentials-use-management
+Users now have significantly more flexibility when connecting their Nth new Snowflake Data Warehouse Imports and Exports within their org by reusing and managing credentials across projects.
+AJ Horst
+Data
+https://amplitude.com/releases/cross-project-snowflake-credentials-use-management
+Thu, 12 Feb 2026 20:39:38 GMT
+GA Versions for the G&S iOS, Android, and React Native SDKs
+https://amplitude.com/releases/ga-versions-for-the-gs-ios-android-and-react-native-sdks
+Released GA versions (v3.0.0) for the G&S iOS, Android, and React Native SDKs with a new safety feature and improved stability.
+Lucas Howard
+Guides and Surveys
+https://amplitude.com/releases/ga-versions-for-the-gs-ios-android-and-react-native-sdks
+Thu, 12 Feb 2026 18:38:55 GMT
+Gyrfalcon - BigQuery Import Migration to Temporal
+https://amplitude.com/releases/gyrfalcon-bigquery-import-migration-to-temporal
+BigQuery Import has been fully migrated from Falcon's custom orchestration to Temporal workflows via Gyrfalcon - a new architecture delivering faster ingestion, lower costs, better observability, and an improved customer experience.
+Leon Brechko
+Data
+https://amplitude.com/releases/gyrfalcon-bigquery-import-migration-to-temporal
+Thu, 12 Feb 2026 17:03:13 GMT
+Duplicate Guides and Surveys across Platforms
+https://amplitude.com/releases/duplicate-guides-and-surveys-across-platforms
+Capability to copy a guide or survey to a different platform (app) using the existing 'Duplicate' buttons which now trigger a platform selection modal.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/duplicate-guides-and-surveys-across-platforms
+Thu, 12 Feb 2026 13:54:36 GMT
+Stale Flag Management
+https://amplitude.com/releases/stale-flag-management
+Feature flags and experiments are now automatically evaluated for staleness. Flags that have been fully rolled out or rolled back for 30 days are marked as stale, surfaced in the UI, and notify owners to take next steps. Stale dates can be updated, removed, or marked as permanent for long-lived flags.
+Kevin Pagtakhan
+Activation
+https://amplitude.com/releases/stale-flag-management
+Wed, 11 Feb 2026 17:00:18 GMT
+Web Experiment: Inline editing + CSS unit selector
+https://amplitude.com/releases/web-experiment-inline-editing-css-unit-selector
+A couple QoL improvements to the visual editor for web experiment, it now supports inline text editing and a CSS unit selector dropdown for certain attributes.
+Anson Chen
+Experiment
+https://amplitude.com/releases/web-experiment-inline-editing-css-unit-selector
+Tue, 10 Feb 2026 23:01:51 GMT
+G&S - Adjust pin/embeds/tooltip position and offset options directly in your app
+https://amplitude.com/releases/gs-adjust-pin-embeds-tooltip-position-and-offset-options-directly-in-your-app
+It's tough for customers to quickly customize positions, size or offsets of anchored/embedded guides and surveys from the preview on amplitude.com. Now they'll be able to easily edit, preview, and 'save' these options from the preview inside their app.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/gs-adjust-pin-embeds-tooltip-position-and-offset-options-directly-in-your-app
+Tue, 10 Feb 2026 15:02:23 GMT
+Syncs Table Improvements
+https://amplitude.com/releases/syncs-table-improvements
+Previously, you could only sort on the table columns in the syncs table, limiting your visibility of the status of your syncs. Now, with several new filters and an added column, you can get easy glances at the status of your syncs.
+Cynthia Li
+Activation
+https://amplitude.com/releases/syncs-table-improvements
+Mon, 09 Feb 2026 17:00:20 GMT
+SR iOS Quality & Upload Config
+https://amplitude.com/releases/sr-ios-quality-upload-config
+Added iOS Session Replay SDK controls to tune recording quality (trade visual fidelity for performance) and disable uploads over cellular.
+Chris Leonavicius
+Session Replay
+https://amplitude.com/releases/sr-ios-quality-upload-config
+Thu, 05 Feb 2026 21:19:19 GMT
+Dashboard Agent Enhancements
+https://amplitude.com/releases/dashboard-agent-enhancements
+New features added to the Dashboard Agent including two separate deep dives, improved week-over-week difference analysis, and refined outbound notifications.
+Frank Lee
+AI
+https://amplitude.com/releases/dashboard-agent-enhancements
+Thu, 05 Feb 2026 18:17:50 GMT
+Dashboard Agent Update
+https://amplitude.com/releases/dashboard-agent-update
+We released a new and improved version of the Dashboard Agent with a comparison report that highlights how the current week’s takeaways have changed compared to the prior week, making metric trends easier to understand at a glance.
+Peyton Rose
+AI
+https://amplitude.com/releases/dashboard-agent-update
+Thu, 05 Feb 2026 14:45:18 GMT
+Session Replay Quick Duration Filter
+https://amplitude.com/releases/session-replay-quick-duration-filter
+A new duration filter that appears in the filter controls on both the Session Replay list page and the User Profile page, improving result relevance by hiding very short sessions.
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/session-replay-quick-duration-filter
+Wed, 04 Feb 2026 22:03:54 GMT
+AI Visibility report generation stability improvements
+https://amplitude.com/releases/ai-visibility-report-generation-stability-improvements
+Improvements to AI Visibility report generation leading to close to 100% completion rate and better handling of missing data.
+Leo Jiang
+AI
+https://amplitude.com/releases/ai-visibility-report-generation-stability-improvements
+Wed, 04 Feb 2026 19:43:27 GMT
+Shareable Agents
+https://amplitude.com/releases/shareable-agents
+Users can now set existing agents as discoverable across the org so that others can see the insights and reports being generated.
+Frank Lee
+https://amplitude.com/releases/shareable-agents
+Tue, 03 Feb 2026 17:45:33 GMT
+Guides and Surveys - Adjustable column widths for guides and surveys tables
+https://amplitude.com/releases/gs-adjustable-column-widths-for-guides-and-surveys-tables
+Tables used to be fixed width causing columns to be squished and hard to read as features were added. This is a quick, quality of life update for users so that tables can scale with our rapid feature development.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/gs-adjustable-column-widths-for-guides-and-surveys-tables
+Fri, 30 Jan 2026 20:17:53 GMT
+API Key Management GA Release
+https://amplitude.com/releases/api-key-management-ga-release
+API Key Management is now GA to all customers, regardless of plan, with a new Rotate function for legacy API key rotation.
+Wei Cao
+Platform
+https://amplitude.com/releases/api-key-management-ga-release
+Fri, 30 Jan 2026 00:04:35 GMT
+Out-of-the-box Widgets
+https://amplitude.com/releases/out-of-the-box-widgets
+Out-of-the-box Widgets let you add prebuilt elements like banners, CTAs, and messages directly from the Visual Editor
+Stephen Choi
+Experiment
+https://amplitude.com/releases/out-of-the-box-widgets
+Thu, 29 Jan 2026 21:40:10 GMT
+Experiment Report (powered by Amplitude AI)
+https://amplitude.com/releases/experiment-report-powered-by-amplitude-ai
+Experiment Reports automatically generate a structured, AI-powered writeup of your experiment directly inside an Amplitude Notebook with a single click from the new Reports tab on an experiment.
+Kevin Pagtakhan
+Experiment
+https://amplitude.com/releases/experiment-report-powered-by-amplitude-ai
+Wed, 28 Jan 2026 16:30:11 GMT
+Centralized Role Based Access Controls (RBAC) with Custom Roles
+https://amplitude.com/releases/centralized-role-based-access-controls-rbac-with-custom-roles
+As we continue to scale with large enterprise customers, we’re excited to announce GA for RBAC, giving admins more clarity, flexibility, and control over feature access across Amplitude.
+Ilankir Matungulu
+https://amplitude.com/releases/centralized-role-based-access-controls-rbac-with-custom-roles
+Tue, 27 Jan 2026 21:16:49 GMT
+Inline Validation for Required CTAs
+https://amplitude.com/releases/inline-validation-for-required-ctas
+We replaced the single CTA 'required' tooltip with per-input error messages and borders, so forms with multiple survey inputs now clearly show which specific fields are required. This makes validation much clearer and harder to miss.
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/inline-validation-for-required-ctas
+Mon, 26 Jan 2026 23:46:46 GMT
+Two cookie problem resolution in latest analytics-browser SDK
+https://amplitude.com/releases/two-cookie-problem-resolution-in-latest-analytics-browser-sdk
+Fix for an edge-case in the analytics browser SDK where user data was written to one cookie and read from another, causing user profile data resets and session issues.
+Dan Graham
+Analytics
+https://amplitude.com/releases/two-cookie-problem-resolution-in-latest-analytics-browser-sdk
+Fri, 23 Jan 2026 18:16:53 GMT
+Nav Graph Dialog Support for Autocapture
+https://amplitude.com/releases/nav-graph-dialog-support-for-autocapture
+Element interactions autocapture now works inside dialogs, capturing interactions in any dialog window that were previously missed.
+Paul Intal
+Activation
+https://amplitude.com/releases/nav-graph-dialog-support-for-autocapture
+Tue, 20 Jan 2026 23:38:00 GMT
+Freeform event + property names for G&S triggers
+https://amplitude.com/releases/freeform-event-property-names-for-gs-triggers
+Freeform event + property names for Guides & Surveys triggers allow triggering guides/surveys based on events or properties that have not yet been tracked or will never be tracked in Amplitude.
+Lucas Howard
+Guides and Surveys
+https://amplitude.com/releases/freeform-event-property-names-for-gs-triggers
+Fri, 16 Jan 2026 20:59:34 GMT
+Preview mode support for MPA's
+https://amplitude.com/releases/preview-mode-support-for-mpas
+Preview mode didn't really work for MPA's (multi-page apps) before. Now it does :) This should make initial activation, continuous iteration, and testing much easier for customers with MPA's.
+Lucas Howard
+Guides and Surveys
+https://amplitude.com/releases/preview-mode-support-for-mpas
+Fri, 16 Jan 2026 20:10:25 GMT
+Multi-Question Steps for Surveys
+https://amplitude.com/releases/multi-question-steps-for-surveys
+Previously surveys were limited to a single input (question) per step - if you wanted to ask multiple questions you had to do so over the course of several steps. Starting early this month customers are now able to ask up to 10 questions in a single step! A new, optional label input also allows customers to easily append info to specific questions.
+Alex Baumhoer
+Guides and Surveys
+https://amplitude.com/releases/multi-question-steps-for-surveys
+Fri, 16 Jan 2026 00:00:00 GMT
+Guides and Surveys Timeline View
+https://amplitude.com/releases/guides-and-surveys-timeline-view
+Customers are excited by Experiment's new Timeline View, and wanted the same for Guides and Surveys as they can also be scheduled.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/guides-and-surveys-timeline-view
+Wed, 14 Jan 2026 21:22:36 GMT
+New External MCP Tools: Creation, Edits, Cohorts, Users, and Feedback
+https://amplitude.com/releases/new-external-mcp-tools-creation-edits-cohorts-users-and-feedback
+We've updated the default tools available in the External MCP server based on recent usage, testing, and tool additions! Users can now edit charts, create dashboards / experiments / cohorts, and fetch user, cohort, and customer feedback data via AI clients like Claude Code and Cursor.
+Frank Lee
+AI
+https://amplitude.com/releases/new-external-mcp-tools-creation-edits-cohorts-users-and-feedback
+Fri, 09 Jan 2026 00:00:00 GMT
+Session Replay Amplitude Session Matching
+https://amplitude.com/releases/session-replay-amplitude-session-matching
+Session Replay now offers multiple session matching options to link device and session information from Session Replay to Amplitude sessions, supporting custom session definitions and providing flexibility while keeping setup lightweight.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/session-replay-amplitude-session-matching
+Thu, 08 Jan 2026 21:24:51 GMT
+Annotations Rest API (v3) and additional improvements
+https://amplitude.com/releases/annotations-rest-api-v3-and-additional-improvements
+New REST API endpoints have been added to manage annotation categories and access new annotation fields like end date, along with several quality of life improvements for annotations.
+Daniel Jih
+Analytics
+https://amplitude.com/releases/annotations-rest-api-v3-and-additional-improvements
+Mon, 29 Dec 2025 21:25:34 GMT
+Streaming transformation (special property) improvements
+https://amplitude.com/releases/streaming-transformation-special-property-improvements
+Improvements and clarifications have been made to streaming transformation related to special properties to enhance customer experience and reduce support load.
+Tom Zhang
+Data
+https://amplitude.com/releases/streaming-transformation-special-property-improvements
+Tue, 23 Dec 2025 21:04:52 GMT
+General destinations page and event streaming improvements
+https://amplitude.com/releases/general-destinations-page-and-event-streaming-improvements
+We've made several improvements to event streaming and the destinations page based on customer feedback and usage insights to enhance setup experience and usability.
+Cynthia Li
+Data
+https://amplitude.com/releases/general-destinations-page-and-event-streaming-improvements
+Tue, 23 Dec 2025 17:00:19 GMT
+New Duration Estimator
+https://amplitude.com/releases/new-duration-estimator
+The new Duration Estimator transforms how you plan web and feature experiments by automating busywork and making trade-offs transparent for realistic test timelines.
+Anson Chen
+Experiment
+https://amplitude.com/releases/new-duration-estimator
+Fri, 19 Dec 2025 21:26:29 GMT
+Web Vitals Metrics Hub
+https://amplitude.com/releases/web-vitals-metrics-hub
+Visualize web vitals with our dedicated Web Vitals marketing hub. Enable Web Vitals on your browser SDK to start collecting data, and then visit our new Marketing Hub to be able to visualize and interact with the data.
+Dan Graham
+Analytics
+https://amplitude.com/releases/web-vitals-metrics-hub
+Thu, 18 Dec 2025 18:33:09 GMT
+AI Controls + Org-Level AI Context
+https://amplitude.com/releases/ai-controls-v1-org-level-ai-context
+A new tab, AI Controls, in org settings is now the home for Amplitude AI configs, context management, and future enterprise AI controls. The first feature is AI Context input for providing org-level context to Ask AI and Agents to improve relevance and accuracy.
+Frank Lee
+AI
+https://amplitude.com/releases/ai-controls-v1-org-level-ai-context
+Mon, 15 Dec 2025 21:27:32 GMT
+Capture Session Replays via the Chrome Extension
+https://amplitude.com/releases/capture-session-replays-via-the-chrome-extension
+You can now capture Session Replays directly from the Amplitude Chrome extension, no code changes required.
+Lew Gordon
+Session Replay
+https://amplitude.com/releases/capture-session-replays-via-the-chrome-extension
+Mon, 15 Dec 2025 15:29:15 GMT
+Improved SR querying - users can view all (or at least way more) of their replays
+https://amplitude.com/releases/improved-sr-querying-users-can-view-all-or-at-least-way-more-of-their-replays
+Customers are now able to view anywhere from 1.1-10000x more replays than they could before without any additional effort.
+Lucas Howard
+Session Replay
+https://amplitude.com/releases/improved-sr-querying-users-can-view-all-or-at-least-way-more-of-their-replays
+Sat, 13 Dec 2025 08:06:54 GMT
+Default Threshold for Session Replay List
+https://amplitude.com/releases/default-threshold-for-session-replay-list
+Implemented a default threshold of 10 seconds for the session replay list to improve quality of life for organizations that collect very short replays.
+Lucas Howard
+Session Replay
+https://amplitude.com/releases/default-threshold-for-session-replay-list
+Fri, 12 Dec 2025 19:24:11 GMT
+SESSIONTOTALS now works in Event Segmentation
+https://amplitude.com/releases/sessiontotals-now-works-in-event-segmentation
+You can now use `SESSIONTOTALS(event)` to count how many sessions include a given event or in a metric. Small update, big quality-of-life win.
+Ashkan Aghdai
+Analytics
+https://amplitude.com/releases/sessiontotals-now-works-in-event-segmentation
+Tue, 09 Dec 2025 21:29:03 GMT
+Labeled Events in Custom Events
+https://amplitude.com/releases/labeled-events-in-custom-events
+Labeled events can now be used in custom events as well as inline custom events on charts
+Brady Shi
+Analytics
+https://amplitude.com/releases/labeled-events-in-custom-events
+Mon, 08 Dec 2025 21:30:39 GMT
+TRC General Availability
+https://amplitude.com/releases/trc-general-availability
+The TRC feature has been generally available for all applicable organizations.
+Lucas Howard
+https://amplitude.com/releases/trc-general-availability
+Tue, 25 Nov 2025 22:14:46 GMT
+Debug Guides and Surveys with the Amp Chrome Extension
+https://amplitude.com/releases/debug-guides-and-surveys-with-the-amp-chrome-extension
+Quick access to verify SDK Setup, troubleshoot guides and surveys, preview directly, view user properties, and manage events.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/debug-guides-and-surveys-with-the-amp-chrome-extension
+Mon, 24 Nov 2025 21:31:25 GMT
+Network Request and Frustration Interaction Tracking
+https://amplitude.com/releases/network-request-and-frustration-interaction-tracking
+Enable tracking of network request events and frustration interactions such as rage clicks and dead clicks in the Amplitude Browser SDK.
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/network-request-and-frustration-interaction-tracking
+Fri, 21 Nov 2025 20:54:24 GMT
+Data Assistant: Automated Tasks
+https://amplitude.com/releases/data-assistant-automated-tasks
+Automated tasks are now available to all of our enterprise customers to help build workflows that monitor and maintain cleaner data.
+Alan Okada
+Data
+https://amplitude.com/releases/data-assistant-automated-tasks
+Tue, 18 Nov 2025 21:32:31 GMT
+AI Feedback
+https://amplitude.com/releases/ai-feedback
+Amplitude’s AI Feedback uses AI to analyze reviews, surveys, and user feedback at scale, turning unstructured language into clear insights about customer needs and product opportunities.
+Shauna Prussin
+AI
+https://amplitude.com/releases/ai-feedback
+Wed, 12 Nov 2025 17:00:23 GMT
+Conditional Logic V2 (now with user properties)
+https://amplitude.com/releases/conditional-logic-v2-now-with-user-properties
+Personalize guides and surveys with conditional actions or branching paths based on user properties.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/conditional-logic-v2-now-with-user-properties
+Mon, 10 Nov 2025 19:54:52 GMT
+Autocapture: Page Properties
+https://amplitude.com/releases/autocapture-page-properties
+Autocapture will now include new page properties consistently across both all Autocapture events and precisely-tracked events, adding more ways to filter analyses just by using the latest Browser SDK.
+Chantal Yuen
+Analytics
+https://amplitude.com/releases/autocapture-page-properties
+Mon, 03 Nov 2025 21:07:30 GMT
+Improved Notifications for Data Warehouse Activity
+https://amplitude.com/releases/improved-notifications-for-data-warehouse-activity
+More connection lifecycle events now trigger emails to be sent out to customers, and existing emails have more detail to help customers troubleshoot issues if they arise.
+AJ Horst
+Data
+https://amplitude.com/releases/improved-notifications-for-data-warehouse-activity
+Fri, 31 Oct 2025 20:50:19 GMT
+New Popover positions
+https://amplitude.com/releases/guides-new-popover-positions
+Corner positions blocking important UI? Try any of top-center, right-center, bottom-center, or left-center instead!
+Matthew Beaty
+Analytics
+https://amplitude.com/releases/guides-new-popover-positions
+Fri, 31 Oct 2025 20:39:47 GMT
+Currency Conversion OOTB derived properties in event streaming
+https://amplitude.com/releases/currency-conversion-ootb-derived-properties-in-event-streaming
+Event streaming pipeline is now able to forward currency converted revenue and currency converted price to final destination. The target currency for property calculation can be set in org settings page, defaulting to USD if not set.
+Xuan Wang
+Data
+https://amplitude.com/releases/currency-conversion-ootb-derived-properties-in-event-streaming
+Fri, 31 Oct 2025 18:35:42 GMT
+TikTok, LinkedIn and X Ad sources
+https://amplitude.com/releases/tiktok-linkedin-and-x-ad-sources
+Incorporated customer feedback and improved overall usability of TikTok, LinkedIn, and X Ad sources.
+Wenwen Xiao
+Activation
+https://amplitude.com/releases/tiktok-linkedin-and-x-ad-sources
+Thu, 23 Oct 2025 20:39:25 GMT
+Usability win: Duplicate Charts from Dashboards
+https://amplitude.com/releases/duplicate-charts-from-dashboards
+A small, but mighty usability win for power users who make a lot of charts. Isn't it annoying to need to open a chart to duplicate it? not anymore! Available for all plans and in EU as of this morning.
+Will Newton
+https://amplitude.com/releases/duplicate-charts-from-dashboards
+Thu, 23 Oct 2025 17:42:06 GMT
+SDK remote config server url for proxy
+https://amplitude.com/releases/1761238563.263249
+This change allows users to specify a custom server URL for remote configuration requests, enabling them to proxy these requests through their own servers to bypass ad blockers or implement custom routing.
+Xinyi Ye
+Activation
+https://amplitude.com/releases/1761238563.263249
+Thu, 23 Oct 2025 16:56:08 GMT
+Web Vitals Metrics Collection
+https://amplitude.com/releases/web-vitals-metrics-collection
+Collect web vitals metrics (INP, FCP, LCP, CLS) as Amplitude events to gain insights into your site's performance and SEO ranking.
+Dan Graham
+Analytics
+https://amplitude.com/releases/web-vitals-metrics-collection
+Tue, 21 Oct 2025 22:02:51 GMT
+G&S Themes — Custom CSS
+https://amplitude.com/releases/1761081647.104099
+Users have the ability to write custom CSS directly on the theme to customize to their heart's content.
+Lucas Howard
+Guides and Surveys
+https://amplitude.com/releases/1761081647.104099
+Tue, 21 Oct 2025 21:20:53 GMT
+Amplitude MCP
+https://amplitude.com/releases/amplitude-mcp
+Amplitude MCP connects external AI clients to Amplitude so that customers and agents can interact directly with our data and functionality, wherever they want to work.
+Frank Lee
+AI
+https://amplitude.com/releases/amplitude-mcp
+Tue, 21 Oct 2025 17:45:44 GMT
+Purchase Hub for Ecommerce Checkout Analysis
+https://amplitude.com/releases/1760692055.223799
+A hub designed to educate ecommerce users on how to effectively use Amplitude to track and analyze complex checkout experiences.
+Enzo Avigo
+Analytics
+https://amplitude.com/releases/1760692055.223799
+Fri, 17 Oct 2025 09:07:41 GMT
+Automated Insights
+https://amplitude.com/releases/automated-insights
+Leverage AI to do "deep research" on your chart to identify hidden trends, patterns, and root-causes by doing complex analytical workflows in minutes that would take hours by a human user!
+Jacob Newman
+Analytics
+https://amplitude.com/releases/automated-insights
+Thu, 16 Oct 2025 17:49:24 GMT
+Funnels Available from Microscope Menu
+https://amplitude.com/releases/1759951038.748179
+Funnels are available now from the Microscope menu when clicking a node.
+Skylar Givens
+Analytics
+https://amplitude.com/releases/1759951038.748179
+Wed, 08 Oct 2025 19:17:22 GMT
+Streaming out Lookup Properties
+https://amplitude.com/releases/streaming-out-lookup-properties
+Streaming Lookup Properties expands our Event Streaming functionality by enabling customers to not only enrich events with lookup values but also stream those enriched properties to their connected destinations.
+Sean Kilcullen
+Data
+https://amplitude.com/releases/streaming-out-lookup-properties
+Tue, 30 Sep 2025 17:53:50 GMT
+Journeys Sunburst Visualization — New Chart Type
+https://amplitude.com/releases/journeys-sunburst-visualization-new-chart-type
+Sunburst adds a compact, radial view of top user paths in Journeys with intuitive drill-down. It simplifies exploration of complex flows and improves storytelling.
+Skylar Givens
+Analytics
+https://amplitude.com/releases/journeys-sunburst-visualization-new-chart-type
+Mon, 29 Sep 2025 20:48:38 GMT
+Chart Chat
+https://amplitude.com/releases/chart-chat
+Chart Chat is now GA-ready and available to all non-Enterprise customers.
+Jacob Newman
+AI
+https://amplitude.com/releases/chart-chat
+Fri, 26 Sep 2025 17:50:14 GMT
+Autocapture Masking & Data Protection
+https://amplitude.com/releases/autocapture-masking-data-protection
+New Autocapture masking and data protection enables users to mask additional sensitive data with the use of specific tags, regex patterns and exclude URL lists.
+Alan Okada
+Data
+https://amplitude.com/releases/autocapture-masking-data-protection
+Fri, 26 Sep 2025 16:07:18 GMT
+Flag and Experiment Approvals Workflow
+https://amplitude.com/releases/flag-and-experiment-approvals-workflow
+After a successful closed beta, approvals is going GA. Customers can now require peer approvals or approval by a limited number of users for their projects to start or schedule flags and experiments and apply changes to critical fields.
+Shelly Wang
+Experiment
+https://amplitude.com/releases/flag-and-experiment-approvals-workflow
+Mon, 22 Sep 2025 18:01:19 GMT
+Redesigned Invite Modal
+https://amplitude.com/releases/redesigned-invite-modal
+We’re releasing a redesigned Invite Modal to make it easier and faster for users to bring teammates into Amplitude. This update unifies & streamlines the invite flow, adds support for Google Contacts, and introduces a more flexible UI that can adapt based on plan type and org settings.
+Zac Bennet
+Activation
+https://amplitude.com/releases/redesigned-invite-modal
+Mon, 22 Sep 2025 00:00:00 GMT
+Improved Themes Preview UX for Guides and Surveys
+https://amplitude.com/releases/improved-themes-preview-ux-for-guides-and-surveys
+When building guides and surveys, the web preview will now show their published theme instead of their draft theme. Additionally, users can preview specific guides or surveys while editing a theme.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/improved-themes-preview-ux-for-guides-and-surveys
+Fri, 19 Sep 2025 17:53:50 GMT
+Content alignment for Guides and Surveys
+https://amplitude.com/releases/content-alignment-for-guides-and-surveys
+Easily align your guide or survey step title + body to the left, center, or right. Also works seamlessly with right-to-left languages like Arabic!
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/content-alignment-for-guides-and-surveys
+Fri, 05 Sep 2025 14:39:45 GMT
+Testing Status for Guides & Surveys
+https://amplitude.com/releases/testing-status-for-guides-and-surveys
+Introduces a new "Testing" status that bridges the gap between Draft and Published for guides and surveys. This allows admins to test their content with specific users and cohorts without fully publishing, similar to the testing workflow for Feature Flags.
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/testing-status-for-guides-and-surveys
+Thu, 04 Sep 2025 11:05:20 GMT
+Version History for Guides & Surveys
+https://amplitude.com/releases/version-history-for-guides-surveys
+Guides & Surveys users will now be able to see what changes have been made as well as when the changes were made and who made them.
+Alex Baumhoer
+Guides and Surveys
+https://amplitude.com/releases/version-history-for-guides-surveys
+Wed, 03 Sep 2025 11:04:14 GMT
+Group Cohort Targeting for Guides and Surveys
+https://amplitude.com/releases/group-cohorting-targeting-guides-and-surveys
+Guides and Surveys user targeting now supports group cohorts, aligned with the Experiment feature.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/group-cohorting-targeting-guides-and-surveys
+Wed, 03 Sep 2025 08:06:41 GMT
+Element Selection Strategy
+https://amplitude.com/releases/element-selection-strategy
+Added three new element selection strategies for targeting pin and tooltip target elements to prevent accidental appearances.
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/element-selection-strategy
+Wed, 27 Aug 2025 17:56:59 GMT
+Desktop Apps for Guides & Surveys
+https://amplitude.com/releases/desktop-apps-for-guides-and-surveys
+Adds the ability to create a Desktop app (e.g. an Electron app) within the G&S project settings. This enables us to support desktop-specific workflows for Guides and Surveys
+Alex Baumhoer
+Guides and Surveys
+https://amplitude.com/releases/desktop-apps-for-guides-and-surveys
+Wed, 27 Aug 2025 10:48:01 GMT
+Session Replay Cursor + Click Indicator
+https://amplitude.com/releases/session-replay-cursor-and-click-indicator
+We've added a cursor that displays feedback when users interact with pages to our Session Replay player.
+Jesse Wang
+Session Replay
+https://amplitude.com/releases/session-replay-cursor-and-click-indicator
+Thu, 21 Aug 2025 10:50:46 GMT
+Time-between and tag-based throttles
+https://amplitude.com/releases/time-between-and-tag-based-throttles
+Previously, you could have a single global limit for how many guides or surveys could be shown to a user per day/week/month/session. Now, you can also configure how much time has to pass before a new guide is shown. Additionally, you can add tag-based throttles that limit the number of guides or surveys with a specific tag that can be displayed within a specified period.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/time-between-and-tag-based-throttles
+Tue, 19 Aug 2025 10:53:00 GMT
+Web Experiment Enhancements in the Chrome Extension
+https://amplitude.com/releases/web-experiment-chrome-extension
+Enable debugging experiments in Chrome extension. Enable injecting Web Experiment SDK onto customer site without script installation to use visual editor.
+Peter Zhu
+Experiment
+https://amplitude.com/releases/web-experiment-chrome-extension
+Fri, 15 Aug 2025 22:26:52 GMT
+Self-serve Integration Portal
+https://amplitude.com/releases/65bbc325-0035-44e8-9fc6-dc2e3249f729
+The integration portal is a place where users can create their own integrations (like event streaming or cohort syncing) and have it accessed by other organizations. This feature makes it faster to connect Amplitude to other platforms in your data ecosystem, driving greater adoption and usage.
+DB Nguyen
+Data
+https://amplitude.com/releases/65bbc325-0035-44e8-9fc6-dc2e3249f729
+Fri, 15 Aug 2025 17:56:35 GMT
+Experiment debugger in Chrome Extension
+https://amplitude.com/releases/experiment-debugger-in-chrome-extension
+Enable debugging experiments in Chrome extension. Enable injecting Web Experiment SDK onto customer site without script installation to use visual editor.
+Peter Zhu
+Experiment
+https://amplitude.com/releases/experiment-debugger-in-chrome-extension
+Fri, 15 Aug 2025 10:55:04 GMT
+Unexpected/unplanned event properties inheriting shared property metadata
+https://amplitude.com/releases/unexpected-unplanned-event-properties-inheriting-shared-metadata
+Customers editing their shared event property metadata will now see that metadata (descriptions, visibility, etc.) reflected across all events that use that property (excluding event-level property overrides), even if they were unplanned on the event.
+Brady Shi
+Analytics
+https://amplitude.com/releases/unexpected-unplanned-event-properties-inheriting-shared-metadata
+Thu, 14 Aug 2025 10:57:56 GMT
+Session Replay Saved Filters
+https://amplitude.com/releases/session-replay-saved-filters
+You can now save and share filters in Session Replay! Configure your favorite set of filters once and then reuse or share them with your team!
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/session-replay-saved-filters
+Thu, 14 Aug 2025 10:56:44 GMT
+Custom Icon Sizes for Tooltip and Pin markers
+https://amplitude.com/releases/custon-icon-sizes-for-tooltip-pin-markers
+Easily customize the size of icons and images for a pin
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/custon-icon-sizes-for-tooltip-pin-markers
+Wed, 13 Aug 2025 10:59:01 GMT
+Currency Conversion for Revenue Analysis
+https://amplitude.com/releases/currency-conversion
+Currency Conversion is now part of the E-Commerce package along with Derived Properties, expanding availability beyond Enterprise customers to Growth, and Scholarship customers.
+Pranjal Joshi
+Analytics
+https://amplitude.com/releases/currency-conversion
+Thu, 07 Aug 2025 23:51:56 GMT
+Group Cohort Targeting for Remote Evaluation
+https://amplitude.com/releases/group-cohort-targeting-remote-evaluation
+We now support targeting Group Cohorts in Feature Flags and Experiments with Remote Evaluation, providing highly performant cohort syncs.
+Sandeep Madugula
+Experiment
+https://amplitude.com/releases/group-cohort-targeting-remote-evaluation
+Thu, 07 Aug 2025 22:49:29 GMT
+Web Experiment - Rearrange Elements in Visual Editor
+https://amplitude.com/releases/web-experiment-rearrange-elements
+Visual editor now supports moving elements to different parts of the page through a click-to-move interface with live preview and drop zone highlighting.
+Stephen Choi
+Experiment
+https://amplitude.com/releases/web-experiment-rearrange-elements
+Thu, 07 Aug 2025 00:00:00 GMT
+Flag Change Alerts
+https://amplitude.com/releases/flag-change-alerts
+Customers want to have an audit log of all the change made to flags in one place, so they can correlate spikes in metrics to changes in flag rollouts. For example, was this P0 caused because we rolled out the flag to 100%?
+Akhil Prakash
+Experiment
+https://amplitude.com/releases/flag-change-alerts
+Wed, 30 Jul 2025 20:53:31 GMT
+Adjustments to Device Categorization Logic
+https://amplitude.com/releases/device-categorization-logic
+Device Category is a new out-of-the-box (OOTB) derived property that automatically classifies user traffic by Desktop, Mobile, Tablet, TV/Console, and Other. This unlocks powerful data to help your team optimize product experiences and meet your users on their device of choice.
+Alan Okada
+Analytics
+https://amplitude.com/releases/device-categorization-logic
+Tue, 29 Jul 2025 01:59:28 GMT
+Event Level Property Deletion
+https://amplitude.com/releases/event-level-property-deletion
+Event-level property deletion now allows users to remove properties from specific events while keeping them active on others.
+Rahul Muthyam
+Data
+https://amplitude.com/releases/event-level-property-deletion
+Fri, 25 Jul 2025 21:59:13 GMT
+Improved Guides and Surveys loading time by not loading archived entities by default
+https://amplitude.com/releases/improved-guides-and-surveys-load-time
+On every page load, we now automatically add a filter to the Guides and Surveys table that filters out archived guides and surveys, making the dashboard load much faster.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/improved-guides-and-surveys-load-time
+Thu, 24 Jul 2025 19:32:36 GMT
+Admin-Created Templates
+https://amplitude.com/releases/admin-created-templates
+Create custom, high-quality templates of guides and surveys for your team to reuse. This can include custom designs and/or unique trigger and targeting rules. Bonus: Preview templates directly in the create flow modal!
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/admin-created-templates
+Thu, 24 Jul 2025 19:30:41 GMT
+AI Summaries for Survey Responses
+https://amplitude.com/releases/ai-summaries-for-survey-responses
+AI summaries for survey responses are here! These are essentially what they sound like: get quick insights into your long-answer survey responses by seeing an LLM-generated overview of what users are saying.
+Alex Baumhoer
+Guides and Surveys
+https://amplitude.com/releases/ai-summaries-for-survey-responses
+Thu, 24 Jul 2025 19:27:38 GMT
+Hide guides and surveys on non-matching pages by default
+https://amplitude.com/releases/hide-guides-and-surveys-by-default
+Guides and surveys now disappear on all pages that don't match the page targeting by default.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/hide-guides-and-surveys-by-default
+Thu, 24 Jul 2025 17:59:17 GMT
+Heatmap Thumbnails
+https://amplitude.com/releases/heatmap-thumbnails
+We've redesigned the heatmaps list page with a new gallery layout that shows off colorful previews of your heatmaps! For those without previews, we've added delightful placeholder images.
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/heatmap-thumbnails
+Mon, 21 Jul 2025 22:02:05 GMT
+Automated Guides and Surveys Localization using AI
+https://amplitude.com/releases/automated-localization-ai
+You can now press a button in the UI, and it will automatically translate your guide into all the supported languages using AI.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/automated-localization-ai
+Wed, 02 Jul 2025 22:03:30 GMT
+Guides and Surveys Resource Center
+https://amplitude.com/releases/resource-center
+The Resource Center is a new embedded launcher and widget with search, personalized recommendations, and useful links.
+Paul Hultgren
+Guides and Surveys
+https://amplitude.com/releases/resource-center
+Mon, 30 Jun 2025 22:04:07 GMT
+Web Experiment: Control Variant Editing
+https://amplitude.com/releases/control-variant-editing
+Small update to Web Experimentation to support control variant editing. This lets users iterate quickly on their web experiments on the same surface without needing to deploy the changes to production before running their next test.
+Anson Chen
+Experiment
+https://amplitude.com/releases/control-variant-editing
+Fri, 27 Jun 2025 22:05:38 GMT
+Remote Configuration for Autocapture (Browser SDK)
+https://amplitude.com/releases/remote-config-for-autocapture-browser-sdk
+Added fine grained controls for each setting in Autocapture in the Browser SDK, allowing much more control over how Autocapture functions on websites.
+Alvin Wang
+Data
+https://amplitude.com/releases/remote-config-for-autocapture-browser-sdk
+Tue, 24 Jun 2025 00:23:37 GMT
+Pages for Web Experiments
+https://amplitude.com/releases/pages-web-experimentation
+You can now scope your experiments to specific URLs using Pages—a new way to define and reuse targeted page contexts. Pages improve targeting precision, reduce test spillover, and support SPAs and dynamic websites. You can also assign custom code and URL redirects to individual Pages.
+Stephen Choi
+Experiment
+https://amplitude.com/releases/pages-web-experimentation
+Wed, 18 Jun 2025 00:00:00 GMT
+Cart Properties in Custom Events
+https://amplitude.com/releases/cart-properties-in-custom-events
+You can now include cart properties as filters when creating custom events, making it easier to define custom event logic based on what's in the user’s cart such as product IDs, quantities, prices, or categories.
+Brian Cooper
+Analytics
+https://amplitude.com/releases/cart-properties-in-custom-events
+Mon, 09 Jun 2025 00:24:17 GMT
+Improved Filtering for Guides and Surveys
+https://amplitude.com/releases/improved-filtering-for-guides-and-surveys
+Filter on any columns (like `created by`!), use complex operators, and filters now persist across web sessions!
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/improved-filtering-for-guides-and-surveys
+Thu, 05 Jun 2025 00:24:32 GMT
+Organize Your Guides and Surveys by Custom Tags
+https://amplitude.com/releases/organize-guides-and-surveys-by-tags
+Create and add custom tags to make organizing guides and surveys easy!
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/organize-guides-and-surveys-by-tags
+Wed, 04 Jun 2025 00:24:59 GMT
+Guides and Surveys Cooldown Period Quantifiers
+https://amplitude.com/releases/guides-and-surveys-cooldown-period-quantifiers
+Instead of just being able to specify how many times a guide or survey should trigger per day/week/month, you can now quantify the period as well. It's a small change for us but it is very effective. Bonus: There is a `year` option now as well.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/guides-and-surveys-cooldown-period-quantifiers
+Wed, 04 Jun 2025 00:24:52 GMT
+Survey Insights as Charts and CSV Export
+https://amplitude.com/releases/survey-insights-as-charts-and-csv-export
+The ability to view survey insights as charts directly in-product, and the ability to export raw survey responses to CSV.
+Leo Hanon
+Guides and Surveys
+https://amplitude.com/releases/survey-insights-as-charts-and-csv-export
+Tue, 03 Jun 2025 00:25:13 GMT
+Cart Analysis: Platform Support, Derived Properties, Lookup Tables, and Transformations
+https://amplitude.com/releases/cart-analytics-platform-support
+All beta enhancements for cart properties are now generally available, making nested cart data more powerful, usable, and trustworthy across Amplitude.
+Curtis Xuan
+Platform
+https://amplitude.com/releases/cart-analytics-platform-support
+Fri, 30 May 2025 00:25:32 GMT
+Evaluation Flags API Endpoint
+https://amplitude.com/releases/evaluation-flags-api
+An official public endpoint for downloading local evaluation model flag and experiment objects.
+Brian Giori
+Experiment
+https://amplitude.com/releases/evaluation-flags-api
+Fri, 23 May 2025 00:26:00 GMT
+Personalize Guides and Surveys with User Properties
+https://amplitude.com/releases/personalize-guides-and-surveys-with-user-props
+Customize content in guides and surveys by dynamically displaying user properties (must be available client-side). Includes UI for enhanced visibility and ease of configuration.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/personalize-guides-and-surveys-with-user-props
+Fri, 23 May 2025 00:25:48 GMT
+Data Setup Resources Sidebar
+https://amplitude.com/releases/data-setup-resources-sidebar
+Provide clearer paths for support and demos during onboarding phase.
+Marvin Liu
+Activation
+https://amplitude.com/releases/data-setup-resources-sidebar
+Thu, 22 May 2025 00:26:13 GMT
+Guides and Surveys updateLanguage SDK method
+https://amplitude.com/releases/guides-and-surveys-update-language
+Guides and Surveys can be localized by setting the language during initialization. With this addition, you can now update the language mid-session.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/guides-and-surveys-update-language
+Wed, 21 May 2025 00:00:00 GMT
+Web Experimentation: Test and Preview at Any Time
+https://amplitude.com/releases/web-experiment-test-and-preview
+Before, test and preview was only available when in draft or test instrumentation mode. Our customers want to be able to preview variants while a test is running or after it's completed. Now, test & preview anytime, anywhere, in just two clicks.
+Brian Giori
+Experiment
+https://amplitude.com/releases/web-experiment-test-and-preview
+Tue, 20 May 2025 00:27:05 GMT
+Cohort Used by Tab and Archive Modal with Usage Data
+https://amplitude.com/releases/cohort-used-by-and-archive
+Redesign of usage tab on cohort details page and cohort archive modal to better show how cohorts are used across the platform.
+Daniel Beer
+Activation
+https://amplitude.com/releases/cohort-used-by-and-archive
+Tue, 20 May 2025 00:27:04 GMT
+Unpublish Survey After Reaching X Number of Responses
+https://amplitude.com/releases/unpublish-survey-after-x-responses
+Simply set a custom response cap to have your survey automatically unpublish after reaching the desired number of responses.
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/unpublish-survey-after-x-responses
+Wed, 14 May 2025 00:27:13 GMT
+Callbacks for Guides and Surveys
+https://amplitude.com/releases/run-callback-for-guides-and-surveys
+Trigger a callback function defined in your Guides and Surveys instrumentation with a button action.
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/run-callback-for-guides-and-surveys
+Mon, 12 May 2025 00:27:32 GMT
+Web Experimentation: CSS Visual Editor Updates
+https://amplitude.com/releases/web-experiment-css-visual-editor-updates
+We’ve redesigned the overlay editing experience with a toolbar for quick actions and a drawer for detailed editing.
+Anson Chen
+Experiment
+https://amplitude.com/releases/web-experiment-css-visual-editor-updates
+Fri, 09 May 2025 00:28:00 GMT

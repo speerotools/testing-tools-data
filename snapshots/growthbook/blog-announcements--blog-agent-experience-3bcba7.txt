@@ -1,0 +1,180 @@
+# https://www.growthbook.io/blog/agent-experience
+GrowthBook 5.0: AI Agents Now Operate Flags & Experiments | Growthbook Blog
+Webinar - Aug 20 | How The Philadelphia Inquirer Scales Experimentation →
+Join us live
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+Why migrate from Statsig to GrowthBook
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Releases
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+Back to Blog
+5.0
+AI
+Product Updates
+Featured
+Your agents can operate GrowthBook now
+Jeremy Dorn
+Jul 20, 2026
+0
+min read
+The
+Fyxer team ran 541 experiments
+last year with a small team. They didn’t just get faster at using their tools. They put agents in the loop to run the workflow itself.
+This is the workflow they shared with us: someone fills out a form with a hypothesis and target metrics. This triggers an agent to create a flag and experiment in GrowthBook and publish to a company-wide experiment index. Someone starts the experiment with a “launch” message in Slack. Only 25% of their experiments won, but that fast iteration and learning loop helped drive ARR growth from $1M to $35M.
+Fyxer wired that together themselves.
+GrowthBook 5.0
+makes this
+agentic experience
+first-class and accessible for more users and teams natively. Now, agents can operate GrowthBook: create flags, set targeting rules, brainstorm and create and launch experiments, with a consistent experience across interfaces.
+How agents operate GrowthBook
+Agents can now run GrowthBook from the places you work. Picture one experiment over the course of a week.
+You start a morning in Claude Desktop brainstorming your next experiment. The GrowthBook skills ground your ideas in your own history: what you’ve run, what succeeded, and how metrics moved.
+You pick a direction, switch to Cursor and build it. Your agent creates the feature flag, sets up the variations, and configures the experiment alongside the code changes. Our skills carry guardrails, so the experiment lands as a draft for a teammate to review rather than a live test. Review, launch, and ship it.
+Create an experiment with GrowthBook Skills in Claude
+Later in the week, you’ve got results. You open the GrowthBook app and ask the new AI Assistant how the test did and whether you should ship. You want to dig deeper into how feature usage differs across segments, so you work with the AI analyst to build out a dashboard to share with the team.
+You change tools, but the platform and the experience stay the same.
+We built this consistency by building reusable foundation elements:
+25 open-source skills
+that teach an agent how to use GrowthBook effectively across flags, experiments, and product analytics.
+A
+CLI
+rebuilt with Speakeasy
+that covers 100% of our REST API and regenerates automatically from our OpenAPI spec. It won’t drift, and it returns typed output with errors an agent can use effectively.
+A comprehensive
+REST API
+underneath
+that fuels the skills and the CLI. If you’d rather see it than read about it,
+watch here
+.
+This foundation powers new ways you and your agents can run GrowthBook: the in-app AI Assistant, a reworked MCP server that integrates the skills, and a native Slack app (coming soon!).
+How to trust your agents
+When agents are part of your team, they should follow your team’s standards and processes, just like anyone else shipping flags or experiments. Agents can make mistakes, but we’ve built our skills and Assistant so that agent-driven changes land as drafts and a person reviews before anything publishes. The same approval policies, audit trails, and guardrails to catch bad flags before they ship apply to both humans and agents. Your team maintains judgment and governance.
+We’ll dive more into the improvements we’ve made to governance, especially for features flags, on Thursday.
+One platform for humans and agents
+Whether you and your agents are in the terminal, the editor, or the app, you’re working on the same GrowthBook platform, with your flags, experiments, and warehouse data. We’ll keep evolving interfaces; you should never feel like you’ve outgrown the platform.
+Connect your agent and
+run your first skill
+.
+‍
+Sign up
+and join us for a live Office Hours Thursday, July 30, at 9am PT and tell us what to build next.
+‍
+Tomorrow
+: the new AI Visual Editor, rebuilt from scratch to make experimentation easier in the browser.
+Table of Contents
+Example H2
+Subscribe to the Uplift
+Monthly newsletter to stay ahead on testing and AI-native development
+Share
+Related articles
+See All Articles
+5.0
+Experiments
+Product Updates
+Experimentation friction changes as you grow. GrowthBook keeps pace.
+Feature Flags
+Featured
+Product Updates
+5.0
+Feature flag governance — GrowthBook 5.0
+5.0
+Analytics
+Releases
+GrowthBook 5.0: Product Analytics is now generally available
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 3,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

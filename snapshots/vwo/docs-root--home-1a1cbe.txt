@@ -1,0 +1,400 @@
+# https://developers.vwo.com/
+Introduction to Wingify REST API
+For AI agents: visit https://developers.wingify.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.
+Jump to Content
+Documentation
+API Reference
+Support
+Documentation
+Recipes
+API Reference
+Changelog
+v1.0
+v2
+v3
+Documentation
+API Reference
+Support
+Sign In
+API Reference
+Search
+Sign In
+v1.0
+Documentation
+Recipes
+API Reference
+Changelog
+Introduction to Wingify REST API
+JUMP TO
+API
+Introduction to Wingify REST API
+Request Types
+Response Codes
+API Rate Limits
+Authentication and Authorization
+Authentication for personal use of API
+Authentication for third-party applications
+Workspaces
+Retrieve all workspaces
+get
+Retrieve specific workspace
+get
+Create a workspace
+post
+Update workspace
+patch
+Retrieve timeline feeds of a workspace
+get
+Drafts
+Get all drafts campaigns
+get
+Get specific draft campaign
+get
+Update draft campaigns
+patch
+Delete draft campaigns
+del
+Campaigns
+Campaign resource representation
+Get all campaigns in a workspace
+get
+Get details of a specific campaign
+get
+Get share link for a specific campaign
+get
+Create a campaign
+post
+Update a campaign
+patch
+Update campaign status
+patch
+Goals
+Goal resource representation
+Get all goals of a campaign
+get
+Get details of a specific goal in a campaign
+get
+Create a campaign goal
+post
+Update a campaign goal
+patch
+Delete a campaign goal
+del
+Variations
+Variation resource representation
+Get all variations of a campaign
+get
+Get details of a specific campaign variation
+get
+Create a campaign variation
+post
+Update a campaign variation
+patch
+Delete a campaign variation
+del
+Sections
+Section resource representation
+Get all sections of a campaign
+get
+Get details of a specific campaign section
+get
+Create a campaign section
+post
+Update a campaign section
+patch
+Delete a campaign section
+del
+Metric Reports
+Get details of a specific Metric Report
+get
+Get all metric reports
+get
+Custom Widgets
+Create a custom widget
+post
+Get all custom widgets
+get
+Get details of a specific custom widget
+get
+Get list of linked campaigns of a custom widget
+get
+Update a custom widget
+patch
+Delete a custom widget
+del
+Create bulk custom widgets
+post
+Update bulk custom widgets
+get
+Projects(Deprecated)
+Project resource representation
+Get all projects in an account / sub-account
+get
+Get details of a specific project
+get
+Create a Project
+post
+Update a Project
+patch
+Delete a project
+del
+Features(Deprecated)
+Feature resource representation
+Get all features in a workspace
+get
+Get details of a specific feature
+get
+Create a Feature
+post
+Update a feature
+patch
+Delete a feature
+del
+Feature Flags(FE)
+Feature Flag Resource Representation
+Get all Feature Flags of a Workspace
+get
+Get details of a specific Feature Flag
+get
+Create a Feature Flag
+post
+Update a Feature Flag
+patch
+Delete a Feature Flag
+del
+Feature Flag Rules(FE)
+Feature Flag Rule Resource Representation
+Get FE Projects and Environments
+get
+Get all feature flags rules
+get
+Get details of a specific feature flag rule
+get
+Create a Feature Flag Rule
+post
+Update a Feature Flag Rule
+patch
+Toggle Feature Flag Rule Status
+patch
+Toggle Feature Flag Status For an Environment
+patch
+Delete a Feature Flag Rule
+del
+Websites
+Website resource representation
+Get all websites with their attributes
+get
+Get details of a specific website
+get
+Get configuration details of a specific website
+get
+Update configuration of a specific website
+patch
+Get SmartCode for a specific website
+get
+Users
+Get all users
+get
+Get user details
+get
+Create a user
+post
+Update user details
+patch
+Delete users
+del
+Tracking code
+Get Wingify SmartCode of workspace
+get
+Workspace Thresholds
+Get workspace thresholds
+get
+Update workspace thresholds
+patch
+Third-party Integrations
+Get Integrations of a Workspace
+get
+Delete Integration Connection for a Specific Account Integration
+del
+Billing
+Get billing details of accounts
+get
+Get billing cycle details of accounts
+get
+Get account invoices
+get
+Labels
+Get labels
+get
+Get labels of a specific campaign
+get
+Add labels to a campaign
+post
+Delete a campaign label
+del
+Campaign labels
+Partners
+Get partner details
+get
+Page Overview
+Get Page Overview Details
+get
+Attributes List
+Create a attributes list
+post
+Update a attributes list
+get
+Android - Mobile App Testing(Deprecated)
+Overview
+Quick Start Guide
+App and Variable
+Adding an App
+Adding a Variable
+Mobile A/B Test
+Creating an A/B Test
+Code Blocks
+Variable in an A/B Test
+SDK Reference
+SDK Installation
+Launching the SDK
+Launch Configuration
+Trigger Goals
+Push Custom Dimension
+Preview Mode
+Targeting Visitor Groups
+User ID
+Integrations
+Logging
+Opt Out
+Offline Conversions
+Demo App
+FAQs
+Impact Analysis
+iOS - Mobile App testing(Deprecated)
+Overview
+Quick Start Guide
+App and Variable
+Adding the Mobile App to Test
+Defining the Variables You Want to Test
+Mobile A/B Test
+Creating A/B Tests
+Code Blocks
+Variables in an A/B Test
+SDK Reference
+SDK Installation
+Launching the SDK
+Launch Configuration
+Trigger Goals
+Push Custom Dimension
+Preview Mode
+Targeting Visitor Groups
+User ID
+Integrations
+Logging
+Opt Out
+Offline Conversions
+Demo App
+FAQs
+Impact Analysis
+React-Native - Mobile App Testing(Deprecated)
+Overview
+React Native Guide
+Demo App
+Cordova - Mobile App Testing(Deprecated)
+Overview
+Cordova Guide
+Flutter - Mobile App Testing(Deprecated)
+Overview
+Flutter Guide
+Demo App
+FullStack(Deprecated)
+Overview
+Wingify Insights - Mobile app
+Introduction
+Session Recordings
+Android SDK Reference
+Installation
+Initialization
+Start/Stop Recording
+Custom Attributes
+Custom Events
+Set Tag
+Hide Views
+Manual Screen Set
+Impact Analysis
+Switch User
+IOS SDK Reference
+Installation
+Initialization
+Start/Stop Recording
+Custom Attributes
+Custom Events
+Set Tag
+Hide Views
+Impact Analysis
+Switch User
+Flutter SDK Reference
+Installation
+Android Integration
+IOS Integration
+Dart(Flutter) Integration
+Set Navigator Observer
+Start/Stop Recording
+Pause/Resume Recording
+Masking using VwoWrapper
+Custom Events
+Custom Attributes
+Switch User
+React Native SDK Reference
+Installation
+Android Integration
+IOS Integration
+React Native Integration
+Initialization
+Set Navigator Observer
+Start/Stop Recording
+Custom Events
+Custom Attributes
+Switch User
+Integrating with Wingify FE SDK
+FAQs
+Wingify TESTING - WEB
+Variation Applied
+Opt-out
+Enforce variation
+Wingify Loaded
+Trigger virtual page load
+Stop execution/session
+Event Hooks
+Lifecycle Events
+Set Browser Language
+Wingify INSIGHTS - WEB
+Survey
+Survey shown
+Survey answer submitted
+Survey completed
+Survey set thank you page timeout
+Wingify PULSE - MOBILE
+Wingify Pulse - Mobile Surveys
+Powered by
+API
+Introduction to Wingify REST API
+Copy Page
+About the Document
+This document will help you understand the basics of Wingify APIs. Wingify API is organized around REST and encodes data in JSON. Understanding Wingify API will allow developers to create and manage Wingify accounts, campaigns, and variations.
+Target Audience
+This document assumes technical proficiency. If you wish to develop a new app or plugin for a new target or have any questions, reach out to us at
+[email protected]
+.
+Updated
+2 months ago
+Request Types
+Did this page help you?
+Yes
+No
+Updated
+2 months ago
+Request Types
+Did this page help you?
+Yes
+No

@@ -1,0 +1,58 @@
+# https://www.zoho.com/pagesense/gdpr.html
+GDPR Ready with Zoho PageSense
+GDPR Ready with PageSense
+Here's how Zoho PageSense can help you comply with the GDPR while collecting and handling visitor data.
+Introduction
+The General Data Protection Regulation (GDPR) addresses data protection and privacy for all individuals within the European Union. It also talks about the export of personal data outside the EU.
+With 130+ on-premise and cloud applications used by
+60
++ million users across 190 countries, Zoho understands its obligation to help customers be GDPR compliant. We already have strong Data Processing Agreements, and we are revising them to meet the requirements of the GDPR.
+Read more about Zoho's GDPR readiness
+.
+With GDPR ushering in some major changes to processing and handling user data, here are a few points to help you better embrace these changes with the help of PageSense.
+Be GDPR Ready with PageSense
+PageSense's activities, like tracking visitor behavior on websites and targeting specific visitors for A/B tests, generate data that's considered private under GDPR. All of this tracked data is stored with anonymized IP addresses, so you can safely capture, process, and use it without infringing on visitors' data privacy.
+Here's everything you need to know about how PageSense helps you with being GDPR compliant:
+Collecting and Processing Visitor Data
+PageSense doesn't collect personal data from any website visitor who participates in any experiment. The cookie data used to map experiments isn't associated with any IP address.
+Additionally, you can filter specific IPs at the project level using the
+IP Filter
+option. With it, once you specify the list of IPs to be excluded, they will be excluded from all the experiments in the project. This way, the visitors who access your test from the IP addresses you've excluded will not be tracked as hits in the report.
+Access to PageSense Reports and Configuration
+You are free to invite any user to any space or project. Any user you invite to be a part of a project or a space will have access to the experiments' reports and configurations, but their degree of access will depend on the type of role you've assigned to them.
+Erase Experiment Data
+PageSense offers the option of deleting a user's space. When a user selects
+Delete Space
+, all the projects, experiment configurations, experiment reports, and other information in the user's part of the space will be deleted.
+Share Experiment Data
+PageSense also allows you to share experiment reports with users of your choosing. You're free to revoke access at any time.
+Data Retention Policy
+All the experiment configurations and reports in a deleted space or project can be restored within 15 days. After the 15-day mark, all the data will be deleted permanently.
+Expired trials:
+PageSense retains all experiment reports for 90 days after a user's trial expires. On the 91st day, all the tracked data is deleted. The experiment configuration will still be accessible by the user.
+Subscribed Users:
+Any PageSense user who has paid for any subscription plan at least once is treated as a subscribed user for data retention.
+Analyze and Engage plan:
+All tracked data will be retained for
+six months
+from the date when it was tracked.
+Optimize:
+All tracked data will be retained for
+one year
+from the date when it was tracked.
+Bundle:
+All tracked data will be retained for
+one year
+from the date when it was tracked.
+Session Recording:
+Flagged recordings will be available as per the retention period of your plan. For Analyze and Engage plan users retention is
+six months
+, while for Optimize plan users the retention will be
+one year
+. Un-flagged recordings will be auto-deleted after
+three months
+(90 days).
+Third Party Integration
+If you are integrating with any other third-party tools, please take a look at how they are responding to GDPR to make sure you are taking the right steps to be GDPR compliant.
+Disclaimer:
+The information presented herein should not be taken as legal advice. We recommend that you seek legal advise on what you need to do to comply with the requirements of GDPR.

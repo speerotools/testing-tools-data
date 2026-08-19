@@ -1,0 +1,220 @@
+# https://amplitude.com/docs/feature-experiment/overview
+Overview | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Overview
+Get Started
+Overview
+Experiment Quick Start
+Feature vs Web use cases
+Functional comparison
+Key terms
+Creating Experiments
+Testing Experiments
+Analyzing Experiments
+Troubleshooting
+Instrument Experiment
+Experiment Integrations
+Experiment Advanced Concepts
+Statistics Method
+On this page
+How feature flags and the Web editor differ
+Functional availability
+Creating an experiment
+Create a hypothesis
+Pick a metric
+Create a variant
+Decide who receives the variant
+Allocate users
+Activate your experiment
+Analyze your results
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Feature Experiment
+/
+Overview
+Overview
+Amplitude Academy
+Getting Started with Amplitude Experiment
+Earn a badge when you learn the Amplitude Experiment workflow and understand how get set up for experiments that produce trustworthy results.
+Get started
+Amplitude Experiment runs feature flag rollouts, A/B tests, and web experiments so you can validate product changes before shipping them to all users. Configure variants, allocate a percentage of traffic, pick the metrics to evaluate, and let Experiment measure the impact using either a sequential testing model or a T-test.
+Amplitude Experiment supports three use cases:
+Product experimentation
+: Improve key KPIs by running experiments and A/B tests to onboard new users, reduce friction for checkout experiences, roll out new features, and more.
+Progressive feature delivery:
+Pre-plan and stage new features for beta testers, a percentage of your users, or specific target audiences.
+Dynamic in-product experiences:
+Deploy and adapt custom experiences at scale.
+Experiment offers two categories:
+Feature Experiments
+: Use feature flags to display or hide functionality or A/B options from your customers.
+Web Experiments
+: Use a Web editor to make direct changes to your website.
+How feature flags and the Web editor differ
+Feature experimentation uses feature flags to create your experimental variants. Flags are switches that let you modify your product's experience without changing code. Use flags to set up experiments in your product or to stage and roll out new features to your users. Your code uses the
+Amplitude Experiment SDK
+or
+REST API
+to communicate with Amplitude Experiment. For more information on feature flags, go to
+Feature Flags
+.
+Amplitude Experiment defaults to a sequential testing statistical model in all experiments, but you can opt for a
+T-test
+instead.
+Web experimentation uses a visual editor to create your experimental variants. The editor works best for A/B or multi-armed bandit experimentation. With the visual editor, you can select and alter web elements, including content and element properties. Web Experiment lets less technical users, or users with fewer permissions in your system, create experiments without engineering resources.
+Web experiments use pages to control where your experiment's variants apply on your website. Pages let you scope experiments to specific URLs without affecting unrelated parts of your site.
+Functional availability
+For in-depth information about what functionality is available for Feature, Web, or both types of experimentation, go to
+Differences Between Feature and Web Experimentation
+.
+Creating an experiment
+Many experimentation programs fail in the first step because nobody can articulate the problem that experimentation might solve. If you can't explain in clear, simple language why you're running an experiment, you can't realistically hope to learn anything useful from it.
+Before doing anything else, spend some time creating a strong mission statement for your experiment. The statement answers two questions: What's the problem, and how can running an experiment help you solve it? The effort you put in at this stage pays off later.
+After you create the mission statement, you're ready to configure your experiment. Create a new deployment (or choose one you created earlier) for the experiment, and install the SDK you plan to use.
+Create a hypothesis
+Next, focus on the mission statement you created for your experiment. The mission statement serves as the foundation for your experiment's hypothesis. A hypothesis is a prediction of how your experiment is likely to be the correct choice. The hypothesis tells you whether your experiment succeeds or fails.
+The problem statement is only the first part of a hypothesis. A hypothesis has two other parts: a proposed solution and a predicted result.
+A proposed solution is a description of the changes you want to make to fix your problem. For example: "Consolidate two steps of the onboarding process into one." A predicted result is your expected outcome from the experiment. For example: "Decrease onboarding churn by 20%."
+An example of a hypothesis statement:
+"User churn in our onboarding funnel is significantly higher than industry average. Product data suggests our funnel may be too confusing; we believe consolidating steps two and three in the funnel can fix the problem. As a result of this change, we expect onboarding churn to decrease by 20%."
+Every hypothesis statement is unique to your needs, particularly around the problem definition stage. For example, your question may be more exploratory in nature:
+"Why are so many users dropping out of our onboarding funnel?"
+Or, you may be more interested in testing different solutions to a problem you already understand, such as
+"We've come up with several potential UI changes to rectify a known user pain point. Which one works best?"
+Use this basic template as a starting point for most hypotheses, especially if you're new to experimentation.
+Pick a metric
+Focus on the last sentence in the hypothesis statement. The sentence includes a specific measurement of how you expect user behavior to change: onboarding churn decreases by 20%. The measurement determines whether your experiment is a success: either you hit this number, or you don't.
+To know whether you hit the number, you need a way to measure the decrease in churn. You need a metric. In Experiment, any event you log can serve as an experiment metric. For the example experiment above, use the event your product uses to track drop-off in your funnels as your metric.
+Create a variant
+You could roll out the new onboarding process to all your users and observe the result. If you do that, you can't know whether the product changes you made caused any improvement in your onboarding churn rate. And if that rate drops after you roll out the new funnel, the cause could be poor design choices, random chance, or some external influence you didn't consider. You have no way to find the specific cause.
+For this reason, you need to create at least one treatment variant for your experiment. A treatment variant is a different user experience that you display to a percentage of your users. In the onboarding example, the variant is the new, streamlined version of the onboarding process. Some of your users experience the new version, while others continue with the current process (known as the control). The differences in how your users respond to each variant determine the experiment's success.
+When creating variants, minimize the number of changes in each variant. Ideally, each variant contains a single change. A single change lets you understand which changes produce positive results. Also, make sure the variants differ noticeably from each other. Distinct variants confirm that users in each segment experience different experiences and that your changes drive any differences in behavior between the segments.
+Decide who receives the variant
+Next, define a bucketing unit, which determines what group of people sees the same variant. The most common bucketing unit is "user." However, if you're a B2B business or you use the collaboration feature, you might want to use a bucketing unit such as "organization" or
+company_id
+, so every user within the same organization experiences the same variant. Consistent bucketing helps reduce product-related confusion caused by disparate user interfaces if people are sitting next to their coworkers. Another reason to bucket by
+company_id
+is to reduce load on your customer support team. The support team can more easily track which accounts have which features enabled. Either way, make sure the Stable Unit Treatment Value Assumption (
+SUTVA
+) holds for whatever bucketing unit you choose to best ensure inference.
+If your organization has purchased the
+Accounts add-on,
+you may perform bucketing and analysis on groups rather than users.
+Allocate users
+After you create your variants, decide how many of your users receive them. You can roll your experiment out to your entire user base, or to a fraction of them. Specify how many users in your experiment receive the control experience and how many receive your variants. You can define specific user segments to include or exclude from your experiment, and you can even choose a specific experience for individual user or device IDs.
+Activate your experiment
+You're ready to roll out your experiment to your users. Select
+Start Experiment
+, and your experiment goes live.
+Analyze your results
+After your experiment goes live, you can generate and view your results at any time. Experiment tells you when your experiment reaches statistical significance, which is when the experiment has enough results and data that you can trust the information you're gathering is accurate. Experiment provides all the data it collects so that you can analyze and interpret your results.
+To learn more about how to design, roll out, and learn from experiments, refer to these
+articles on the experimentation workflow
+.
+Consider using experiment briefs to better communicate and streamline your experimentation processes among your team. Experiment briefs help create transparency and align experimentation goals.
+Read more about experiment briefs and how to use them in this blog
+.
+The
+Website Conversion Agent
+can help you identify high-impact pages, generate experiment strategies, and create draft experiments, all through a guided AI workflow.
+Was this helpful?
+On this page
+How feature flags and the Web editor differ
+Functional availability
+Creating an experiment
+Create a hypothesis
+Pick a metric
+Create a variant
+Decide who receives the variant
+Allocate users
+Activate your experiment
+Analyze your results
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

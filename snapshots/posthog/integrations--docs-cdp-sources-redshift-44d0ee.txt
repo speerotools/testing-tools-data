@@ -1,0 +1,848 @@
+# https://posthog.com/docs/cdp/sources/redshift
+Linking Redshift as a source - Docs - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Data pipelines
+Overview
+Get started
+Start here
+Surfaces
+PostHog Web
+PostHog MCP
+PostHog Desktop
+API
+Sources
+Link sources
+Incoming webhooks
+Overview
+Sources
+1Password
+Ably
+ActiveCampaign
+Adjust
+Adobe Analytics
+Adobe Commerce (Magento)
+AdRoll
+Adyen
+AfterShip
+AgileCRM
+Aha!
+Aha! Ideas
+Airbrake
+Aircall
+AirOps
+Airtable
+Aiven
+Algolia
+Alguna
+Alpha Vantage
+Amazon Ads
+Amazon SES
+Amplitude
+Anthropic
+Apify Dataset
+Apitally
+Apollo
+Appfigures
+AppFollow
+Apple (App Store Connect)
+AppLovin
+AppsFlyer
+AppSignal
+Appstack
+Argo CD
+Asana
+Ashby
+AskNicely
+AssemblyAI
+Atlassian Bitbucket Cloud
+Attentive
+Attio
+Automox
+Autumn
+Aviationstack
+Aviator
+Awin
+AWS Cost Explorer
+Azure DevOps
+Babelforce
+BambooHR
+Baserow
+Baton
+Beamer
+beehiiv
+Better Stack
+Bettermode
+BigCommerce
+BigMailer
+BigQuery
+BILL (formerly Bill.com)
+Bing Ads
+Bing Webmaster Tools
+Bitrise
+Bland AI
+Blogger
+BlueTally
+BoldSign
+Braintree
+Braze
+BreezoMeter
+Brevo
+Brex
+Browser Use
+Browserbase
+BugHerd
+Bugsnag
+BuildBetter
+Buildkite
+Bunny.net
+Buttondown
+Buzzsprout
+Cal.com
+Calendly
+CallRail
+Campaign Monitor
+Campayn
+Campfire
+Canny
+Capsule CRM
+Care Quality Commission
+CAST AI
+Census (Fivetran)
+Chameleon
+Chargebee
+Chargedesk
+Chargify
+ChartHop
+ChartMogul
+Chatwoot
+Checkmarx (Checkmarx One)
+Checkout.com
+Churnkey
+CIMIS
+CircleCI
+CircleCI Insights
+Cisco Duo
+Clari
+Clerk
+ClickHouse
+ClickHouse Cloud (ClickHouse, Inc.)
+ClickUp
+Clockify
+Clockodo
+Close
+Cloudbeds
+Cloudflare
+Cloudsmith
+CloudZero
+Coassemble
+Coda
+Codacy
+Codecov (Sentry)
+Codefresh
+Codemagic
+CodeScene
+Cody
+Cohere
+CoinAPI
+CoinGecko
+CoinMarketCap
+commercetools
+Companies House (UK government)
+Concord
+Conekta
+ConfigCat
+Confluence
+Confluent Cloud
+ConvertKit
+Convex
+Copper
+Coralogix
+Cortex
+Coupa
+Courier
+Coveralls
+crates.io
+Cronitor
+Crunchbase
+Culture Amp
+Cursor
+Custom REST source
+Customer.io
+Customerly
+Dagster+ (Dagster Cloud)
+Databricks
+Datadog
+DataForSEO
+DataHub
+dbt
+DebugBear
+Decagon
+Deel
+Deepgram
+DeepSource
+Deno Deploy
+Descope
+Devin AI
+DigitalOcean
+DingConnect
+Discourse
+Dixa
+Docker Hub
+DocuSeal
+DocuSign
+Dodo Payments
+DoIt
+Doppler
+Dovetail
+Drata
+Drip
+Dropbox Sign
+Dub
+DynamoDB
+Dynatrace
+e-conomic
+E2B
+EasyPost
+Easypromos
+Elastic Email
+Elasticsearch
+ElevenLabs
+EmailOctopus
+env0
+Eppo (Datadog)
+Etsy
+Eventbrite
+Eventee
+Eventzilla
+Everhour
+Exchange Rates API
+EZOfficeInventory
+Factorial
+Fastly
+Featurebase
+Fillout
+Finage
+Financial Modeling Prep
+Finnhub
+Finnworlds
+Firebase
+Firecrawl
+FireHydrant
+Fireworks AI
+FirstPromoter
+Flagsmith
+Fleetio
+Flexmail
+Float
+Flowlu
+Flutterwave
+Fly.io
+Formbricks
+Fourthwall
+Framer
+FRED
+Freshcaller
+Freshchat
+Freshdesk
+Freshsales
+Freshservice
+Frill
+Front
+Fulcrum
+Fullstory
+FusionAuth
+Gainsight PX
+Gerrit
+Giphy
+GitBook
+Gitea
+GitGuardian
+GitHub
+GitLab
+Gladly
+GlassFrog
+GNews
+GoCardless
+Goldcast
+Gong
+Google Ads
+Google Analytics
+Google PageSpeed Insights
+Google Play Console
+Google Search Console
+Google Sheets
+Google Webfonts
+Gorgias
+Grafana
+Grafana Cloud k6
+Granola
+Greenhouse
+Gridly
+Groq
+Gumroad
+Guru
+Gusto
+Harvest
+Harvey
+HashiCorp (HCP Terraform / Terraform Cloud)
+Hatchet
+Healthchecks.io
+Height
+Helicone
+Heroku
+Hetzner Cloud
+Hex
+HiBob
+Hightouch
+Honeybadger
+Honeycomb
+Hookdeck
+HoorayHR
+Hub Planner
+Hubspot
+Hugging Face
+Humanitix
+Huntr
+Hyperspell
+IBM Instana Observability
+impact.com
+impact.com Partner
+incident.io
+Infisical
+Inflowinventory
+Inngest
+Insightly
+Instagram
+Instantly
+Instatus
+Intercom
+Intruder
+Invoice Ninja
+Invoiced
+IP2WHOIS
+Iterable
+Jamf Pro
+Jellyfish
+Jenkins
+JetBrains TeamCity
+JFrog (Artifactory / JFrog Platform)
+Jira
+JobNimbus
+Jotform
+Judge.me Reviews
+JumpCloud
+JustCall
+JustSift
+Kandji (Iru Endpoint Management)
+Katana
+Kernel
+Klaus
+Klaviyo
+Knock
+KnowBe4
+Kommo
+Kong Inc. (Kong Konnect)
+Koyeb
+Kubecost (IBM / Apptio)
+Kustomer
+Lacework FortiCNAPP (Fortinet)
+Lago
+Lambda
+Langfuse
+LangSmith
+Lattice
+LaunchDarkly
+Leadfeeder
+Leexi
+Lemlist
+Lemon Squeezy
+Less Annoying CRM
+Lever
+Lightdash
+Lightfield
+Lightspeed Retail
+Linear
+LinearB
+Lingo.dev
+LinkedIn Ads
+Linkrunner
+Linode
+LlamaCloud
+Lob
+Logz.io
+Loop Returns
+Loops
+Luma
+Mailchimp
+MailerLite
+MailerSend
+Mailgun
+Mailjet
+Mailosaur
+Mailtrap
+Marketo
+Marketstack
+Matomo
+Maxio
+Mem0
+Mention
+Mercury
+Meta Ads
+Metabase
+Metaplane by Datadog
+Metorial
+Microsoft Azure Cost Management
+Microsoft Clarity
+Microsoft Dynamics 365
+Microsoft SQL Server
+Mistral AI
+Mixmax
+Mixpanel
+Mollie
+monday.com
+MongoDB
+Monte Carlo
+MotherDuck
+Mux
+My Hours
+MySQL
+n8n
+Nebius AI
+Neon
+Netlify
+New Relic
+New York Times
+NewsAPI
+NewsData.io
+noCRM.io
+Northflank
+Northpass LMS
+Notion
+npm registry
+NuGet
+Octolens
+Octopus Deploy
+Okendo
+Okta
+Omni Analytics
+Omnisend
+OnceHub
+OnePageCRM
+Onfleet
+Open Exchange Rates
+Open-Meteo
+OpenAI
+OpenAI Ads
+OpenAlex
+OpenAQ
+openFDA
+OpenRouter
+OpenWeather
+Opinion Stage
+Opsgenie
+Optimizely
+OPUSWatch
+Orb
+Orca Security
+Ortto
+Oura
+Outbrain
+Pabbly Subscription Billing
+Packagist
+Paddle
+PagerDuty
+PandaDoc
+Paperform
+Papersign
+Pardot
+Partnerize
+PartnerStack
+PayFit
+Paystack
+Pendo
+Perigon
+PersistIq
+Persona
+Personio
+Pexels
+pganalyze
+Phyllo
+Picqer
+Pingdom
+Pinterest Ads
+Pipedrive
+Pipeliner
+Plaid
+Plain
+PlanetScale MySQL
+PlanetScale Postgres
+Planhat
+Platform.sh
+Plausible
+Plivo
+Plunk
+Polar
+Postgres
+Postmark
+Postscript
+Power BI admin
+Prefect Cloud
+Pretix
+Printify
+Productboard
+Pulumi
+Pylon
+PyPI
+Qualaroo
+Qualtrics
+Qualys VMDR
+Railway
+Ramp
+Rapid7 InsightVM
+Raygun
+Razorpay
+Recharge
+Recreation.gov
+Recruitee
+Recurly
+Reddit Ads
+Redshift
+Render
+RentCast
+Replicate
+Reply.io
+Resend
+Retently
+RevenueCat
+Rippling
+RKI COVID-19
+Roark
+Rocketlane
+Rollbar
+Rootly
+RSS.com
+RubyGems.org
+Ruddr
+RunPod
+SafetyCulture
+Sage HR
+Salesflare
+Salesforce
+Salesloft
+SavvyCal
+Scale AI
+Scaleway
+Secoda
+Secureframe
+Segment
+Semgrep
+SendGrid
+Sendowl
+SentinelOne
+Sentry
+ServiceNow
+SFTP
+Shippo
+ShipStation
+Shopify
+ShopWired
+Shortcut
+Shortio
+Shutterstock
+SigNoz
+SimFin
+Similarweb
+SimpleCast
+Simplesat
+Skyvern
+Slack
+Sleekplan
+Smaily
+SmartEngage
+Smartreach
+Smartsheet
+Smartwaiver
+Snapchat Ads
+Snowflake
+Snowplow Analytics
+Snyk
+SolarWinds Service Desk
+Sonar (SonarSource) - SonarQube Server
+Sonar Cloud
+Sonatype (Nexus Repository)
+Sourcegraph
+Spacelift
+SparkPost
+Split.io
+Splunk AppDynamics (Cisco)
+Splunk Observability Cloud
+Spot by Flexera (Spotinst)
+Spotler CRM
+Sprig
+Squadcast (SolarWinds Incident Response)
+Square
+Squarespace
+Stack Overflow (Prosus/Stack Exchange)
+StatusCake
+Statuspage
+Stigg
+StockData.org
+StreamElements
+Stripe
+Stytch
+Sumo Logic
+Supabase
+SurveyMonkey
+SurveySparrow
+Svix
+Swarmia
+Taboola
+Tailscale
+Tally
+Tavus
+tawk.to
+Teachable
+Teamtailor
+Teamwork
+Telnyx
+Tempo
+Temporal.io
+Tenable Vulnerability Management
+TestRail
+The Guardian
+Thinkific
+Thinkific Courses
+Ticket Tailor
+TikTok Ads
+tinyEmail
+TMDb
+Todoist
+Together AI
+Torii
+Transistor.fm
+Travis CI (Idera)
+Trello
+Tremendous
+Trigger.dev
+Trunk.io (Trunk Technologies, Inc.)
+Trustpilot
+TVmaze
+Twelve Data
+Twelve Labs
+Twenty
+Twilio
+Tyntec SMS
+Typeform
+Ubidots
+Unleash
+Unstructured
+UpPromote
+Upstash
+UptimeRobot
+US Census
+Usersnap
+UserVoice
+Vantage
+Vapi
+Veeqo
+Vellum
+Veracode
+Vercel
+Vitally
+Vultr
+Wasabi
+Watchmode
+Webflow
+Weights & Biases
+Whop
+Wikipedia Pageviews
+Windmill
+WooCommerce
+WordPress
+Workable
+Workday
+WorkOS
+World Bank Open Data
+Wrike
+Writesonic
+Wufoo
+Xendit
+xMatters (Everbridge)
+Yoco
+Yousign
+YouTube Analytics
+Zapier (Storage by Zapier)
+ZapSign
+Zendesk
+Zendesk Sell
+Zendesk Sunshine
+Zenduty
+Zenloop
+Zep
+Zoho CRM
+Zonka Feedback
+Zoom
+Zuora
+Zylo
+Self-managed
+Azure Blob
+Cloudflare R2
+File upload
+Google Cloud Storage
+S3
+Destinations
+Realtime destinations
+Batch exports
+Transformations
+Transformations
+Resources
+Using Fivetran, Airbyte or other ETL tools with PostHog
+Troubleshooting
+Changelog
+Copy page
+Linking Redshift as a source
+Let AI connect your sources for you
+Skip the manual setup — run this in your project and the wizard auto-detects your databases and APIs and connects them to PostHog.
+npx @posthog/wizard warehouse
+Learn more
+Let AI connect your sources for you
+Contents
+Configuration
+Selecting columns
+The Redshift connector can link your database tables to PostHog.
+To link Redshift:
+Go to the
+Data pipeline page
+and the sources tab in PostHog
+Click
+New source
+and select Redshift
+Enter your database connection details:
+Host:
+The hostname or IP of your Redshift cluster like
+my-cluster.abc123.us-east-1.redshift.amazonaws.com
+.
+Port:
+The port your Redshift cluster is listening on. The default is
+5439
+.
+Database:
+The name of the database you want like
+analytics_db
+.
+User:
+The username with the necessary permissions to access the database.
+Password:
+The password for the user.
+Schema:
+(Optional) The schema for your database. Leave blank to browse and sync tables from all schemas, or specify one to limit the selection. The default is
+public
+.
+Click
+Next
+The data warehouse then starts syncing your Redshift data. You can see details and progress in the
+sources tab
+.
+Permissions:
+The Redshift source only requires read permissions on the schemas and tables you intend to sync.
+Configuration
+Option
+Type
+Required
+Connection string (optional)
+text
+No
+Host
+text
+Yes
+Port
+number
+Yes
+Database
+text
+Yes
+User
+text
+Yes
+Password
+password
+Yes
+Schema
+text
+No
+Use SSH tunnel?
+ssh-tunnel
+No
+Selecting columns
+By default, PostHog syncs all columns from each table. To sync only specific columns:
+During source setup, click
+Columns
+next to any table in the table picker.
+Uncheck columns you don't want to sync.
+Primary key columns and the incremental sync field (if configured) are always synced and cannot be disabled.
+You can also change column selection after setup:
+Go to the
+sources tab
+and click your Redshift source.
+Click
+Configure
+next to any schema.
+Under
+Columns
+, select which columns to sync.
+Adding columns to existing syncs
+When you add columns to a schema using incremental or append sync, PostHog prompts you to choose:
+Sync forward only
+- New columns are populated only for future data. Existing rows show
+NULL
+for the new columns.
+Full resync
+- Triggers a complete resync to backfill the new columns for all rows.
+Inbound IP addresses
+We use a set of IP addresses to access your instance. To ensure this connector works, add these IPs to your inbound security rules:
+US
+EU
+44.205.89.55
+3.75.65.221
+52.4.194.122
+18.197.246.42
+44.208.188.173
+3.120.223.253
+Was this page useful?
+Helpful
+Could be better
+Jump to:
+Configuration
+Selecting columns

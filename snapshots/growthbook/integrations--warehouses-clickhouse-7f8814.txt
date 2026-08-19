@@ -1,0 +1,67 @@
+# https://docs.growthbook.io/warehouses/clickhouse
+Setting up Clickhouse as a data source | GrowthBook Docs
+Skip to main content
+Docs
+SDKs
+API
+Home
+Log in
+GitHub
+Support
+Join our Slack
+Open an issue
+Search
+Overview
+How it works
+Quickstart
+SDKs
+Feature Flags
+Data & Metrics
+Choose Your Data Path
+Managed Warehouse
+Connecting to Your Data Warehouse
+Athena
+BigQuery
+Clickhouse
+Databricks
+Mixpanel
+MS SQL or SQL Server
+MySQL or MariaDB
+Postgres
+Vertica
+Prestodb or Trino
+Redshift
+Snowflake
+Data Source Configuration
+Metrics and Fact Tables
+Query Optimization
+SQL Templates
+Data Pipeline
+Event Forwarder
+Official Resources
+Experimentation
+Insights
+Product Analytics
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Data & Metrics
+Connecting to Your Data Warehouse
+Clickhouse
+Setting up Clickhouse as a data source
+Connecting to Clickhouse is very straightforward. You just need to provide the connection string and credentials. If you are using something like Clickhouse Cloud, you can find the connection string in the UI.
+If you are making connection credentials just for GrowthBook, you can give it read-only access to the database.
+If you are using GrowthBook Cloud (app.growthbook.io), make sure to whitelist the ip address 52.70.79.40 if applicable.
+Edit this page
+Was this helpful?
+Give Feedback
+Previous
+BigQuery
+Next
+Databricks

@@ -1,0 +1,386 @@
+# https://docs.uniform.app/docs/guides/ai/scout/use-cases-and-capabilities
+Scout capabilities and limitations | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+Using Scout
+Capabilities and limitations
+Skills
+Connect MCP servers
+Best practices
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Capabilities and limitations
+This page is a catalog of what Scout can do today and where they intentionally stop. Scout is built for safe, in-project iteration: every edit lands as a draft, nothing is published, and nothing leaves your project until you take action.
+Capabilities and limits change frequently — check the release notes for the latest.
+How Scout works with your context
+#
+Scout picks up a few things from your environment automatically, so you can talk in shorthand and they still know what you mean:
+The currently open entity
+: the composition, entry, or pattern you're viewing is the default target when you don't name one. Saying "translate this to German" or "add an SEO description" operates on what's in front of you. To target something else, name it explicitly — for example, "edit the homepage instead."
+The current locale
+: Scout follows the locale you have selected in the editor and operates there unless you ask for another.
+The active release context
+: if you're working inside a release, Scout edits in that release and links results to the right pending items. To edit a different release, open it first so it becomes the active context.
+Inputs you can give Scout
+#
+Attachments
+: images,
+.txt
+,
+.md
+(see
+Attachments
+). Scout can turn an attached image into an asset — see
+Assets and asset labels
+.
+URL fetching
+: paste a URL into the prompt box and Scout reads the page (see
+URL attachments
+).
+Skills
+: your team's reusable instructions, loaded automatically or on demand (see
+Skills
+).
+AI guidance
+: context and constraints on components, content types, parameters, and fields (see
+AI guidance
+).
+External MCP servers
+: third-party tools you have connected (see
+Connect MCP servers
+).
+What Scout can do
+#
+Scout's capabilities span content modeling, day-to-day editing, batch work, search, releases, localization, optimization, SEO, AEO, GEO, and platform guidance.
+Content modeling
+#
+Create and update
+component definitions
+: introduce new components, edit parameters, and group fields.
+Create and update
+content types
+. When creating a content type, Scout can auto-generate its data types so it's usable end-to-end.
+Create and update
+block types
+, and edit block fields and parameters.
+Suggest improvements
+to naming, structure, reusability, and field grouping.
+Explain field and parameter types
+and recommend best practices.
+Compositions, entries, and patterns
+#
+Create compositions
+and attach them to project map nodes.
+Create new project map nodes
+when you need a route for a new composition.
+Create entries
+from content types or entry patterns.
+Edit compositions, entries, and patterns
+: fields, parameters, slots, and blocks.
+Add component instances
+to compositions from natural language.
+Duplicate or move component instances
+within a composition.
+Add, remove, or reorder components
+in slots.
+Explain which components are allowed
+in a given slot so you know what can go where.
+Set data resources to draft content
+while you iterate.
+Find entries by meaning
+when picking a value for a reference field.
+Edit pattern instances
+: override pattern parameters and data resources, with reliable deep links to entry patterns.
+Edit pattern definitions
+: manage slot sections, and configure data resources on the pattern itself (not just on individual pattern instances).
+Edit content inside an existing edition
+, with locale filtering.
+Assets and asset labels
+#
+Add assets to the library
+: upload an image from a chat attachment, or import a file from a public external URL (for example, a link you paste or a "custom URL" value on an asset parameter).
+Generate metadata from image content
+: for supported images, Scout analyzes the image and suggests a title, description, labels, and focal point, following your
+asset guidance
+.
+Edit asset metadata
+: update an asset's title, description, name, and focal point.
+Replace an asset's file
+while keeping the same asset record and URL.
+Assign labels to assets
+: add, remove, or replace the labels on one or many assets.
+Manage asset labels
+: create, rename, recolor, and delete
+asset labels
+, organize them into label groups, and move labels in and out of groups.
+Link an asset to an asset parameter
+on a composition, entry, or pattern.
+Asset and label changes follow the same
+Review changes
+flow as other Scout edits, so you can inspect them as
+pending edits
+before applying.
+Deletion is permanent
+Scout can delete asset records and asset labels when you ask it to, subject to your
+Delete
+permissions
+. Asset deletion is immediate and irreversible. Review deletions carefully before applying them.
+Working at scale
+#
+Batch edits across many entities
+in a single prompt: ask Scout to "translate all blog entries to German" or "add an SEO description to every product page" and they will work through the set in a single pass. For multi-entity changes,
+Review changes
+mode and the
+Pending edits dialog
+let you inspect each entity before applying.
+Search and discovery
+#
+Semantic search across compositions, entries, assets, and patterns
+: ask in natural language — for example, "entries about coffee machines" or "images about food" — and Scout ranks results by meaning.
+Find specific text inside compositions, entries, and patterns
+: useful for things like "find every entry mentioning our old product name" or "which compositions reference this URL?".
+Reference other content in prompts
+: for example, ask Scout to create a new landing page based on an existing one.
+Search assets by label and metadata
+: assets are indexed, so Scout can find images and files by what they depict, and you can narrow results by metadata such as file name, type, dimensions, author, and dates.
+Browse and search asset labels and groups
+: list label groups and their labels so you can reason about how assets are organized.
+Use structured metadata filters
+as you always have.
+Releases
+#
+Search across, list, and inspect releases
+: open, locked, queued, launching, launched.
+Edit content inside the active release
+, with results linked to the right pending items. See
+How Scout works with your context
+for how the active release is determined.
+Localization and translation
+#
+List and explain locales
+in your project, and enable or disable them on a composition, entry, or pattern.
+Switch the editor's current locale
+so you can work in the language you want.
+Translate localizable content
+into one or more target locales at once.
+Personalization and A/B testing
+#
+Configure personalizations
+with audience-based variants on any component.
+Set up A/B tests
+: variants, traffic splits, default variant.
+View A/B test and personalization performance on demand
+: ask Scout for current statistics on a running test, a personalization's variants, or aggregated optimization data, and they will pull the numbers.
+Declare winners
+when a test is ready.
+Manage enrichments
+on compositions or individual enrichment fields.
+Full CRUD on optimization entities
+— signals, quirks, intents, audiences, aggregates, and enrichments. Common cases such as query-string signals can be created end-to-end without follow-up questions.
+SEO, AEO, GEO, social, and analytics
+#
+Run SEO analysis, fix issues, and set or update meta tags.
+Generate Open Graph previews
+, surfaced near the top of the results so you don't have to dig for them.
+Suggest accessibility and performance improvements.
+Suggest SEO-friendly parameter values
+, and reconcile competing title sources (for example, page title versus SEO title) so you don't end up with two titles fighting each other.
+Model AEO/GEO building blocks
+: add fields like
+tldr
+and
+author
+, use
+Block
+fields for entry-owned structured content (such as an
+faqs
+block field), and create dedicated content types (such as an
+Author
+type) that other entries can reference. See
+AEO and GEO optimization
+for the recommended modeling pattern, and
+Content modeling
+for Scout's general modeling capability.
+Generate AEO-friendly FAQ entries or components
+and rewrite headings as questions so AI search engines can extract direct answers.
+Scaffold and refresh TL;DR and summary fields
+that AI overviews can quote.
+Populate modeled structured-data fields
+(
+Article
+,
+FAQPage
+,
+HowTo
+,
+Product
+). Scout fills the fields you have defined rather than inventing JSON-LD markup.
+Rewrite copy in a citation-friendly style
+with concrete data points and authoritative phrasing for GEO.
+Refresh AEO and GEO fields across a scoped set of pages, products, or blog entries
+as a
+batch edit
+.
+Provide guidance on URL structure
+, including metadata and slugs.
+View page traffic and conversion data
+when the
+Uniform Insights
+integration is set up.
+Platform guidance
+#
+Answer questions
+about Uniform concepts, features, and best practices.
+Link to relevant documentation.
+Help you navigate
+listing pages, the visual editor, structure panel, preview, and property panels.
+Limitations
+#
+All Scout edits land as drafts. Nothing is published, no workflows are advanced, and nothing leaves your project until you take action. Beyond that default, Scout is intentionally constrained in a few places. The limitations fall into three groups:
+Security and human control
+: actions that affect what's live, how users reach pages, who has access, or how the project is configured stay manual. This includes publishing, administration tasks, and project configuration.
+Outside Scout's scope today
+: some configurations need human supervision, or aren't yet a good fit for an AI assistant.
+Legacy features
+: deprecated parameter and field types, and legacy AI prompts, aren't supported.
+Security and human control
+#
+Actions that publish content, change URL routing, manage workflows or releases, grant access, administer the team, or change project configuration stay with a human:
+Cannot publish content; all work stays in draft until you publish it yourself.
+Cannot edit the
+project map
+beyond creating new nodes. Changes there can immediately break live URLs, so they're left to a human.
+Cannot manage
+workflows
+or transition content between workflow stages.
+Cannot change
+release
+settings such as locking or scheduling. Scout can edit content inside the release you currently have active, but will not write into a different release than that active context.
+Cannot manage
+integrations
+.
+Cannot manage project settings,
+team settings
+, user permissions, or
+roles
+.
+Cannot handle billing, licensing, or sales questions.
+Outside Scout's scope today
+#
+Some features need a person in the loop, or aren't yet a good fit for an AI assistant due to complexity:
+Cannot generate metadata from non-image assets; automatic image analysis is limited to JPEG, PNG, GIF, and WebP files.
+Cannot edit the criteria that decide when a
+conditional value
+applies. Scout can still edit the conditional value itself, and can enable
+allowConditionalValues
+on a field or parameter definition.
+Cannot set
+visibility rules
+on component instances.
+Cannot create or manage
+Loop component
+instances.
+Cannot configure
+external data connections
+from
+data sources and data types
+.
+Cannot create or manage
+data resources or work with dynamic tokens
+.
+Cannot convert an existing component or composition into a pattern, or unlink a component pattern to make a local copy. Both operations are left to a human.
+Cannot create new editions of compositions or entries. Scout can edit content within an existing edition, but the edition itself must be created by a person.
+Cannot monitor results after creating an A/B test or a personalization. Use the analytics surfaces in Uniform to track performance over time, and come back to Scout when you're ready to declare a winner.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+Using Scout
+Next
+Skills
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+How Scout works with your context
+Inputs you can give Scout
+What Scout can do
+Content modeling
+Compositions, entries, and patterns
+Assets and asset labels
+Working at scale
+Search and discovery
+Releases
+Localization and translation
+Personalization and A/B testing
+SEO, AEO, GEO, social, and analytics
+Platform guidance
+Limitations
+Security and human control
+Outside Scout's scope today

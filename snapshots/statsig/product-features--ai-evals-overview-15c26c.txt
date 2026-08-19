@@ -1,0 +1,98 @@
+# https://docs.statsig.com/ai-evals/overview
+AI Evals Overview | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+What are AI evals
+Gates, Experiments, and Analytics
+LLM as a judge
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+AI Evals Overview
+AI Evals Overview
+Overview of Statsig AI Evals for evaluating prompts and models with offline and online graders, available in Early Access for AI applications.
+Early Access
+This feature is in Early Access. During this time, aspects of the functionality may still be developed, and this documentation may not always be up to date. If you have any questions, contact
+Statsig Support
+.
+Statsig AI Evals evaluates the prompts and models behind your LLM applications, both offline against fixed test sets and online against live production traffic. It gives you three parts: prompts to version and serve LLM configs, offline evals to catch regressions before release, and online evals to grade real-world outputs in production. Use it to iterate on prompts and ship LLM changes with measurable quality.
+What are AI evals
+Statsig AI Evals has three core components for iterating on and serving LLM apps in production.
+Prompts
+: Prompts represent an LLM prompt and its associated config (model provider, model, temperature, and similar settings). A prompt typically represents a task for the LLM (for example, "Classify this ticket to a triage queue" or "Summarize this text"). You can version prompts, choose which version is live in Statsig, and retrieve prompts in production using the Statsig server SDKs. You can use prompts as the control plane for your LLM apps without using the rest of the Evals product suite.
+Offline Evals
+: Offline evals provide quick, automated grading of model outputs on a fixed test set. They catch wins and regressions before you expose changes to any real users. For example, compare a new support bot's replies to human-curated answers to decide if the bot is ready to ship. You can grade output even without a reference dataset (for example, when using an LLM to validate English-to-French translation).
+Online Evals
+: Online evals let you grade model output in production on real-world use cases. You can run the "live" version of a prompt and also shadow-run "candidate" versions without exposing users to them. Grading works directly on the model output and doesn't require a ground truth to compare against.
+Gates, Experiments, and Analytics
+You can also use the standard Statsig product capabilities with AI Evals. For example, you can target an LLM feature at users who meet specific criteria using a Feature Gate, or roll out a new prompt version as an Experiment to understand its impact on metrics.
+LLM as a judge
+Some grading can use heuristics (for example, checking if the AI-generated output matches the ideal answer when the output is as simple as High, Medium, or Low). Other grading can't use heuristics: for example, deciding whether "Your ticket has been escalated" and "This ticket has been escalated" mean the same thing. LLM-as-a-judge lets you evaluate AI outputs at scale without requiring many human reviewers. It mimics how a human assesses quality: not perfect, but fast, consistent, and useful for comparing different versions of your model or prompt. In the example above, you could write an LLM-as-a-judge prompt such as "Score how close this answer is to the ideal one on a scale of 0 to 1.0".
+Was this helpful?
+On this page
+What are AI evals
+Gates, Experiments, and Analytics
+LLM as a judge

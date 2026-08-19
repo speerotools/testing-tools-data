@@ -1,0 +1,144 @@
+# https://docs.uniform.app/docs/guides/ai/ai-rules
+AI rules for AI-assisted development | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+AI rules for AI-assisted development
+By default, LLM's knowledge of Uniform will be limited to what was indexed by LLM using public internet and subject to the cutoff date.
+To enhance your prompting with the latest knowledge of Uniform, it is highly recommended to feed Uniform-specific AI rules into your LLM context.
+AI rules library
+#
+That's why we are maintaining the library of Uniform-specific rules to help your LLM tools work with better accuracy.
+Feeding these rules to your LLM will help it understand the context of the project and the specific requirements of Uniform.
+You can find the library of rules
+here
+.
+Must-have rules
+#
+rules/uniform.mdc
+- describes the core principles and concepts of Uniform
+rules/uniform-sdk.mdc
+- describes the Uniform SDK and its capabilities
+Framework-specific rules
+#
+rules/uniform-next-page-router.mdc
+- for Next.js Page Router
+rules/uniform-next-app-router.mdc
+- for Next.js App Router
+Optional rules
+#
+The rules files under
+rules/optional-personal-preferences
+contain non-essential rules that contain alternative defaults, highly recommended to review those and adjust to your liking.
+How to use AI rules
+#
+To use AI rules, you need to add them to your LLM context. This varies per AI tool.
+CLI Installation (Recommended)
+#
+The easiest way to install AI rules is using the Uniform CLI. This method supports both Cursor and Claude Code:
+npx @uniformdev/cli@latest ai rules install
+Copy
+Copied!
+This command will automatically download and configure the AI rules for your project, placing them in the appropriate location for your AI tool.
+Manual Setup
+#
+If you prefer to set up the rules manually or need custom configuration, you can follow the instructions below.
+Setup with Cursor
+#
+Download the rules from the
+GitHub repository
+and place them in the
+.cursor
+folder in your project root.
+Open a new chat window and add the desired rules into your context when working with Uniform.
+Add AI rules to your context
+Claude Code and other tools
+#
+Point Claude Code to the folder with the rules to augment its understanding of Uniform specifics.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+MCP Server
+Next
+AI credits
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+AI rules library
+Must-have rules
+Framework-specific rules
+Optional rules
+How to use AI rules
+CLI Installation (Recommended)
+Manual Setup
+Setup with Cursor
+Claude Code and other tools

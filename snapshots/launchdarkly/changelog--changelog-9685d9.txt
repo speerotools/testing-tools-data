@@ -1,0 +1,223 @@
+# https://launchdarkly.com/changelog/
+Product Updates | LaunchDarkly
+[Virtual event] 6 new features for more control | Aug 26, 10 AM PT
+-
+Register
+.
+Skip to:
+Home
+Content
+Footer navigation
+Get a demo
+Platform
+CodeControl
+Ship confidently, with automated control built in.
+AgentControl
+One place to keep your agent behavior under control.
+Book a demo
+How it works
+Platform overview
+Feature flags
+Observability
+Experimentation
+Agent integrations
+Integrations
+Architecture
+Solutions
+By Use Case
+Release AI-built code
+Control AI agents
+Optimize AI performance & cost
+Self-heal systems
+Run experiments
+By Team
+AI engineers
+Developers
+DevOps & SRE
+Product managers
+Data scientists
+Resources
+Learn
+Blog
+Guides & ebooks
+Events & webinars
+Videos
+Success
+Academy
+Customer stories
+Professional services
+Partners
+Get Help
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Developers
+Docs
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Resources
+Product Updates
+Power analysis calculator
+Flagship engineering blog
+Community
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Pricing
+Sign in
+Book a demo
+Book a demo
+Product
+Updates
+[ What's launched
+at LaunchDarkly ]
+Loading...
+Explore the docs
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Explore the blog
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Join our community
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Get product updates straight to your inbox once a month.
+Ready to take control in prod?
+Get a demo
+Free trial
+CodeControl
+AgentControl
+Inboxes love LaunchDarkly.
+Get the latest on controlling code and agents in production, with tips, insights, and updates you can actually use.
+Company
+About Us
+Careers
+Media & Analysts
+Partner Program
+Terms & Policies
+Contact Us
+Community
+Support
+Support home
+Professional Services
+Documentation
+Status
+Do not Sell or Share my Personal Information
+Why Us
+Economic Impact of LaunchDarkly
+How LaunchDarkly works
+Trust & Security
+Trust Center
+LaunchDarkly vs. Competitors
+LaunchDarkly on AWS
+Terms & Conditions
+Privacy Policy
+©
+2026
+Catamorphic Co.
+Academy
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Flagship engineering blog
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Sign in
+Filter by topic
+Feature Flags
+AI Engineering
+Experimentation
+Guarded Release
+Product Analytics
+Filter by date
+August 2026
+July 2026
+June 2026
+May 2026
+April 2026
+March 2026
+February 2026
+January 2026
+December 2025
+November 2025
+October 2025
+September 2025
+August 2025
+July 2025
+June 2025
+May 2025
+Subscribe for updates
+August 17, 2026
+Seth Payne
+New: Access Token Expiration
+Access Token Expiration
+A series of improvements to access tokens and the Authorization page have been released. Starting today, we are replacing the existing access token reset with a token expiry field that can be set and updated via the existing access token APIs and the new Authorization page UI. As part of this change, we are also marking the legacy reset API for future deprecation and transitioning it into end-of-life mode.
+This release also adds access token expiry notifications sent according to your notification settings via Slack, email, or the in-app inbox. Notifications about upcoming token expiry will be sent 30, 7, and 1 day before the token expires to the token creator and account owner for PATs, and to the account owner for service tokens.
+Why It Matters
+Previous access token reset obscured the existing token and its expiry date. This release gives you more transparency and granularity in your access token lifecycle management.
+Share link copied!
+August 3, 2026
+Feature Flags
+Michael Knighten
+A Redesigned Flag List
+We've rebuilt the flag list page to make it faster to scan and easier to action:
+Responsive table layout with a pinned name column that stays in place as you scroll horizontally
+Flag properties now have dedicated columns when space allows for it
+Full maintainer name on every row, not just avatars
+Environment visibility is prioritized; as the viewport shrinks, other flag data reflows into the name column
+These changes will roll out to customers in phases over the next week (Aug 11-14 2026).
+Share link copied!
+July 29, 2026
+AI Engineering
+Paul Loeb
+Agent Optimization is now in public beta
+Agent Optimization is now available in public beta, giving teams a systematic way to improve their AI agents by running iterative optimization passes across models, configurations, and prompts - and deploying the best-performing result directly from LaunchDarkly.
+Agent Optimization lets teams run structured optimization experiments against their AI agents to find the best-performing configuration. Rather than manually tweaking prompts and models and guessing at what works, teams can configure an optimization run that systematically tests variations across models and prompt strategies, evaluates each result using a judge model, and surfaces the winner so it can be deployed immediately.
+Agent Optimization works with the LaunchDarkly Python AI SDK and integrates with popular agent frameworks. Configurations can be managed entirely in the AgentControl UI and pulled at runtime, or defined inline in code without any UI setup required.
+To get started,
+read the Agent Optimization documentation
+.
+Our team is happy to walk you through using Agent Optimization. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+July 23, 2026
+AI Engineering
+Paul Loeb
+Break down AgentControl monitoring by context
+Know exactly which customer is driving your AI cost, latency, and usage. You can now filter and group AgentControl monitoring by context kinds, so you can see tokens, cost, latency, generations, and satisfaction for a single tenant, a single user, or any slice of your traffic, instead of only the global average.
+Global averages hide what individual customers experience. One power user can drive far more token spend than a typical user, and that difference disappears in the aggregate. Now you can attribute cost and latency to the customer causing them, debug one tenant's behavior in minutes, and understand how usage differs across your customer base without writing custom queries against raw data.
+What you can do:
+Compare customers side by side. Group the dashboard by user, organization, or an attribute like plan tier to see how different customers use your AI features.
+Zoom in on one customer. Filter to a tenant, a department, or a specific user and every chart and table follows. Search works even with thousands of customers.
+Take the data with you. CSV export matches whatever you have filtered or grouped on screen.
+To get started, open a config's Monitoring tab and use the filter and Group by controls.
+Learn more about monitoring config performance
+.
+Share link copied!
+July 21, 2026
+Seth Payne
+Terraform provider v3 is now generally available
+LaunchDarkly Terraform provider v3 is now generally available. This release is a major rebuild on the newer Terraform Plugin Framework, replacing the older v2 SDK foundation and setting the provider up to support new LaunchDarkly capabilities more quickly.
+With v3, teams can manage more of their LaunchDarkly configuration in Terraform, including eight new resources: Context Kinds, Release Policies, Metric Groups, Announcements, Big Segment Stores, OAuth Clients, Integration Delivery, and Flag Import.
+This release also improves plan-time validation, helping teams catch some configuration issues earlier in the workflow instead of discovering them only at apply time.
+For customers using approval workflows and role mappings, v3 adds support for segment approval settings on environments and scoped role attributes on team role mappings.
+Because v3 includes breaking syntax changes, existing v2 configurations will need updates before they plan cleanly against v3. To help with that transition, v3 includes a migrate-tf-syntax command to rewrite Terraform configuration from v2 syntax to v3 syntax, and provider state upgrades are handled automatically on first apply without requiring destroy-and-recreate workflows.
+Why it matters
+Faster access to new LaunchDarkly resources in Terraform
+Better validation before apply
+Broader support for approvals, role mapping, and newer platform capabilities
+More information on migrating from v2 to v3 can be found
+here
+.
+Share link copied!
+Load more updates
+Explore the docs
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Free trial

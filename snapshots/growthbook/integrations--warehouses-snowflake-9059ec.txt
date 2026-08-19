@@ -1,0 +1,86 @@
+# https://docs.growthbook.io/warehouses/snowflake
+Setting up Snowflake as a data source | GrowthBook Docs
+Skip to main content
+Docs
+SDKs
+API
+Home
+Log in
+GitHub
+Support
+Join our Slack
+Open an issue
+Search
+Overview
+How it works
+Quickstart
+SDKs
+Feature Flags
+Data & Metrics
+Choose Your Data Path
+Managed Warehouse
+Connecting to Your Data Warehouse
+Athena
+BigQuery
+Clickhouse
+Databricks
+Mixpanel
+MS SQL or SQL Server
+MySQL or MariaDB
+Postgres
+Vertica
+Prestodb or Trino
+Redshift
+Snowflake
+Data Source Configuration
+Metrics and Fact Tables
+Query Optimization
+SQL Templates
+Data Pipeline
+Event Forwarder
+Official Resources
+Experimentation
+Insights
+Product Analytics
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Data & Metrics
+Connecting to Your Data Warehouse
+Snowflake
+On this page
+Setting up Snowflake as a data source
+We support multiple
+account identifier
+formats when connecting to Snowflake. An example account identifier is
+xy12345.us-east-2.aws
+.
+Self-Hosting
+​
+If you are self-hosting GrowthBook, you can send queries to Snowflake through an Authenticated Proxy.
+To enable this, set a
+SNOWFLAKE_PROXY
+environment variable in your GrowthBook container. Here is an example:
+SNOWFLAKE_PROXY=http://username:password@proxyserver.company.com:80
+Enabling Data Pipeline Mode
+​
+Enterprise
+Pipeline Mode
+is available on Enterprise plans.
+Pipeline mode can reduce query costs if you grant the GrowthBook service account write permissions in your data warehouse.
+More details can be found here.
+Edit this page
+Was this helpful?
+Give Feedback
+Previous
+Redshift
+Next
+Data Source Configuration
+Self-Hosting
+Enabling Data Pipeline Mode

@@ -1,0 +1,282 @@
+# https://support.conductrics.com/docs/docs-overview
+Overview
+Jump to Content
+Docs
+Announcements
+Go to Conductrics.com →
+Docs
+Search
+Go to Conductrics.com →
+Docs
+Announcements
+Overview
+Documentation
+Overview
+Getting Started
+Contacting Conductrics
+Using Conductrics Express
+Creating an Express Agent
+Variation Setup > WYSIWYG
+Variation Setup > Custom JS
+CSS Selector Primer
+The Agent List Page
+The Agent Home Page
+Goals / Conversions
+QA with Express Previews
+Starting an Express Test
+Triggering View-States
+Multi Page Changes
+Using Redirect Agents
+One-Way Redirect Agents
+Two-Way Redirect Agents
+"Recording" Page Changes
+Using Express Macros
+Sending Goals via REST API for Express/JS Agents
+Sending REST API Goals via Express
+Agent Concepts
+Custom Visitor Traits
+Starting / Stopping Agents
+Selection Policies
+Mutually Exclusive Agents
+Mutually Exclusive Agent: Filtering
+Multivariate (MVT) Agents
+Visitor Data & Privacy
+Targeting with Conductrics
+Visitor Lookup Tables
+Weights and Percentages
+Stabilizing "Random" Selections With Your Visitor Identifier
+Predictive Agents
+How Predictive Agents Work
+Predictive Agent Guidelines
+Reporting
+Activity Report
+A/B Testing Report
+Audience Report
+MVT Report
+Notifications
+Bots and Crawlers
+Test Interaction Reporting
+Mobile Support
+Options for Mobile
+Swift/iOS via REST Helper
+Java/Android via REST Helper
+iOS On-Device API
+Android On-Device API
+React Native Support
+Main Runtime API
+Runtime API Overview
+Using the REST API
+Using the Local JS API
+Runtime API Reference
+Creating API Agents in the Admin
+Using List Agents
+Using Custom Flowlets
+Custom Input Params
+Guide for Server-Side Usage
+Using Provisional Selections
+The API Testbed
+QA Sessions for REST API
+Bypass Mode for REST API
+Session Identifier Placeholders
+Self-Storage Mode for REST API
+Managing API Keys
+Conductrics Surveys
+Surveys Overview
+Creating a Survey
+Survey Question Types
+Survey Options
+Survey Themes
+Survey Reporting
+Surveys: Under the Hood
+Survey FAQ
+Survey Responses in the Data Layer
+Survey Reporting API
+Integrations
+Analytics Integration Overview
+Data Layer Support
+Tealium-Style Data Layers
+Suggested Flowlet Usage for Content-Based Apps
+Simple Data Layer
+Simple Data Layer for REST API
+Google Analytics 4 Integration
+Google Analytics Integration (Legacy)
+Analytics Connectors
+Setting up a Snowplow Connector (Beta)
+Snowplow Schema Information
+Sending Survey Data to Adobe Analytics
+Passing an External Visitor Identifier
+Other Analytics Services
+Google Cloud Data Integration
+Demandbase Integration
+Conductrics Privacy Server
+First-Party Event Reporting
+Using Conductrics Markup
+Conductrics Markup
+Markup Configuration
+Standalone Usage
+Administrative APIs
+Admin APIs Overview
+Reporting API
+Agent Management API
+Managing Express Agents via Admin APIs
+Goal Management API
+Custom Visitor Traits API
+Deployments
+Deployment Options
+Script Tag Installation
+Two-Factor Deploys
+Enabling Debug Messages
+Visitor Data Storage Options
+Content Security Policies (CSPs)
+Conductrics and ITP
+Self-Hosting the Conductrics Script
+Deploy Webhooks
+Webhook Example
+Limiting Express
+Event Logging
+Your Account
+Teams
+Admin Users / Access
+SSO via SAML
+Okta SSO
+Migrating from Prior Versions
+New Admin & 2021 Recap
+V2 / V3 API Compatibility
+Using a "Substitute" JS file
+Using an Alternate Deploy Target
+Conductrics Edge
+Conductrics Edge Overview
+Conductrics Edge Setup
+Conductrics Edge Setup for Akamai
+Using Conductrics Edge
+Edge-Side JavaScript
+Edge FAQ
+FAQ And Troubleshooting
+FAQ and Troubleshooting
+Agent Checklist Before Running
+Powered by
+Documentation
+Overview
+In this general overview, we will take a look at how Conductrics helps you utilize data to inform your business decisions.
+By employing
+A/B testing
+and
+interpretable machine learning
+, Conductrics lets you experiment on
+variations
+of websites, web pages, headlines, buttons, checkout flows, server-side processes, colors, fonts, or really anything that can be described in terms of distinguishing factors.
+In short, Conductrics helps you answer the question: “Which of these variations lead(s) to best results?”.
+1. Agents
+In Conductrics’ vernacular,
+Agents
+are used to encode the problem or atomic task that you are looking to solve. When working with an A/B test, the Agent represents the
+test runner
+.
+The Agent creates and curates the group of visitors you want included in the test, and it serves this group the variations that have been selected for each individual visitor. The Agent also receives and processes information about goals these users complete, so that it can inform you on which group of visitors visiting which one of the variations has the highest probability of performing the best.
+Agent name, description, and variations.
+📘
+Example
+Jeanine wants to know if changing the headline of her call-to-action to something more marketable would improve the click-through-rate as well as increase the number of subscriptions. This is the underlying business problem she is trying to solve. To help her find a statistically solid answer, she builds an
+Express Agent
+which gives her a frictionless start to setting up the experiment.
+2. Variations
+When creating or editing an Agent, you need to establish
+variations
+for the test. Each variation represents different facets of the thing you intend to test. You typically have a default variant, which represents the current state, and then you would have one or more variations to represent the changes whose impact you want to measure.
+Conductrics provides you with a visual editor that lets you modify the changes each variation implements directly on the site itself, and you can also run custom JavaScript code when a variation is selected for a user (if you want to dynamically modify items in the global namespace of the page, for example).
+You can also create more bare-boned API Agents, which simply return the variation identifier when an API request is made. This way you can decide exactly what happens when a variation is selected for a user.
+Changing the headline in the visual editor tool of Conductrics Express.
+📘
+Example
+By using the visual editor, Jeanine creates a variation
+B
+(in addition to the original state of the call-to-action in variation
+A
+). In this modified variation, she edits the headline text directly on the page to include a more direct message on what the benefits are for subscribing to her service. After she’s made the changes, she saves them into the variation code, ensuring that whenever a user is selected to see this variation B, they will be served the modified headline text in the call-to-action box.
+3. Selections
+An Agent makes
+selections
+. A selection is made when your website, app, or server contacts Conductrics and requests a variation for a user. Sometimes no selection is made, for example if the user doesn’t validate against the conditions you have established as prerequisites for the test. If a variation has already been selected for the user, that same selection will be applied to the user for as long as the test runs.
+You can assign selections totally at random (approximating an even split between the variations), using
+Predictive Analytics
+, or by setting fixed targeting rules because you have prior knowledge or intuition that a certain variation will produce positive results for a specific user group.
+Create a selection condition utilizing a Custom Visitor Trait ("Status").
+📘
+Example
+Jeanine only wants to include in the test those users who are not already subscribers, so she creates a
+Custom Visitor Trait
+to check a browser cookie for whether the user is already a subscriber. Furthermore, she uses another Custom Visitor Trait to always show the more marketable headline to visitors who land on the page from her social media campaigns. The rest of the visitors will receive a selection from the Agent using Predictive Analytics, which is a built-in option in Conductrics for selecting variations for users with algorithms fuelled by machine learning.
+4. Rewards
+To determine which variation performs best, you will signal Conductrics whenever the user completes a goal or converts. In Conductrics’ terminology, you are sending a
+reward
+to the platform, indicating that the user in question has performed something that you consider valuable in determining the success criteria for the test.
+Creating a goal which accepts rewards through the Runtime API.
+📘
+Example
+Jeanine has configured the Agent to include two types of
+rewards
+: clicks on the subscription button to measure the immediate (potential) impact of the headline change, and actual subscriptions to her service to measure whether the headline had a more long-lasting impact on the user acquisition funnel. Thus, whenever a user clicks the call-to-action, Jeanine sends a reward to Conductrics so that this information is registered by the Agent. When a user completes the subscription sign-up, Jeanine uses the
+Runtime API
+to have her CRM send the reward for a new subscription to Conductrics.
+5. Deploy Targets
+Agents must be
+deployed
+so that they can send and receive information to and from your site, app, server, etc. Each
+Deploy Target
+predicates the technology stack you’ll be using to communicate with Conductrics. It functions as a
+wrapper
+for the Agent code, and with this architecture Conductrics can extend the range of supported environments and technology stacks with ease.
+Deploy Targets can also be used for
+version and access control
+, because you can specify how changes to Agents are updated into the experiment code and which users have the rights to make changes to the deployments.
+You can update each Deploy Target
+manually
+whenever an Agent changes, or you can choose to have Conductrics update it
+automatically
+for you (where applicable). Types of Deploy Targets you can create include a
+Conductrics-hosted JavaScript API
+which you load onto your site from Conductrics’ CDN, a
+self-hosted JavaScript library
+where you hold the reins, a
+server-side API
+which basically lets you make RESTful requests to Conductrics, and also
+React Native
+and
+Node.js
+Deploy Targets.
+Different deploy targets listed.
+📘
+Example
+For testing the changes on the site, Jeanine has chosen the
+Conductrics-hosted
+,
+automatically
+Deploy Target. She’s added the required script element to the HTML template of her site, ensuring that the experiment code is loaded from Conductrics’ servers whenever necessary. She’s also created a
+server-side API
+Deploy Target, which she’ll use to send information from her CRM to Conductrics whenever a user subscribes to her service.
+6. Results
+In the end, Conductrics will help you identify which variation is most
+probable
+to produce the most consistent and best
+rewards
+for the users included in the test. You can use this information to deploy the variation to your site, app, or server, generalizing that what worked for the test group should work for a larger public, too.
+📘
+Example
+After running the Agent for the full 14 days she configured it to run (with the help of Conductrics’ test duration calculator), Jeanine concludes the test. She sees that her experiment variation for the more marketable headline showed a
+Predicted Lift of 2.1%
+with a
+statistical confidence of 99%
+for acquiring new subscriptions. She is thus convinced that implementing the more marketable headline has a high probability of improving the acquisition rate of the subscription form when generalized to all the site visitors. Being cautious about these things, Jeanine next runs the Agent again, this time targeting all the visitors (prior subscribers included) using random selection. She’ll use this information together with the previous test result to validate her hypothesis.
+Updated
+over 1 year ago
+What’s Next
+Getting Started
+Did this page help you?
+Yes
+No
+1. Agents
+2. Variations
+3. Selections
+4. Rewards
+5. Deploy Targets
+6. Results

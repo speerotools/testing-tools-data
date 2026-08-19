@@ -1,0 +1,524 @@
+# https://github.com/wingify/vwo-fme-mcp
+GitHub - wingify/wingify-fme-mcp: MCP Server for Feature Management & Experimentation · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+wingify
+/
+wingify-fme-mcp
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+1
+Star
+3
+Code
+Issues
+0
+Pull requests
+0
+Actions
+Projects
+Security and quality
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+32 Commits
+32 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.husky
+.husky
+.yarn
+.yarn
+assets/
+gifs
+assets/
+gifs
+dist
+dist
+ide-rules
+ide-rules
+lib
+lib
+scripts
+scripts
+skills/
+wingify-fe-mcp
+skills/
+wingify-fe-mcp
+.gitignore
+.gitignore
+.prettierrc
+.prettierrc
+.yarnrc.yml
+.yarnrc.yml
+CHANGELOG.md
+CHANGELOG.md
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+NOTICE
+NOTICE
+README.md
+README.md
+commitlint.config.js
+commitlint.config.js
+package-lock.json
+package-lock.json
+package.json
+package.json
+tsconfig.json
+tsconfig.json
+yarn.lock
+yarn.lock
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+Apache-2.0 license
+More
+items
+MCP Server for Wingify Feature Experimentation (FE)
+Overview
+The Wingify FE (Feature Experimentation) MCP Server empowers developers to manage feature flags effortlessly within their AI coding environment. By integrating Wingify’s robust feature management platform with AI development tools, it enables seamless creation, modification, and control of feature flags—streamlining workflows and accelerating feature delivery.
+For product and SDK documentation, see the
+Wingify Feature Experimentation overview
+.
+You can add the Wingify FE (Feature Experimentation) MCP Server by clicking the button below. Make sure to update the
+WINGIFY_ACCOUNT_ID
+and
+WINGIFY_API_KEY
+environment variables before you start using it.
+Key Features
+Seamless AI Assistant Integration
+: Compatible with Cursor, VS Code, and Claude
+Comprehensive Feature Flag Management
+: Easily create, view, list, update, and delete feature flags
+Environment-Specific Controls
+: Toggle features on or off across different environments
+Cursor Rule Setup
+: Bootstrapping simplifies the configuration of Cursor rules to deliver contextual results and integrate with the SDK
+This tool helps developers save time by managing feature flags right where they code, without switching between different tools.
+Required Configuration
+To use the MCP server, you need to configure two mandatory environment variables:
+WINGIFY_ACCOUNT_ID
+: Your Wingify Account ID.
+WINGIFY_API_KEY
+: Your Wingify API Key (Developers Token) for interacting with RESTful APIs
+These credentials are required to authenticate and connect with the Wingify feature management system.
+Legacy env vars:
+VWO_ACCOUNT_ID
+,
+VWO_API_KEY
+, and
+VWO_API_BASE_URL
+are still read as fallbacks if the
+WINGIFY_*
+variables are unset.
+How to Connect the MCP Server to Your Client
+You can use the Wingify FE MCP server with any client that supports the MCP protocol. Below are step-by-step guides for popular tools. Be sure to replace
+WINGIFY_ACCOUNT_ID
+and
+WINGIFY_API_KEY
+with your actual Wingify account ID and API key.
+Cursor
+Go to
+Cursor Settings
+and select the
+MCP
+section.
+Click on
+Add new global MCP server
+.
+When prompted, enter the following configuration (make sure to use your real credentials):
+{
+"mcpServers"
+: {
+"wingify-fme"
+: {
+"command"
+:
+"
+npx
+"
+,
+"args"
+: [
+"
+-y
+"
+,
+"
+wingify-fme-mcp@latest
+"
+],
+"env"
+: {
+"WINGIFY_ACCOUNT_ID"
+:
+"
+WINGIFY_ACCOUNT_ID
+"
+,
+"WINGIFY_API_KEY"
+:
+"
+WINGIFY_API_KEY
+"
+} } } }
+Save your changes. If everything is set up correctly, you should see a green status indicator showing the server is active.
+VS Code
+Open your
+User Settings (JSON)
+in VS Code.
+Add or update the MCP server configuration as shown below:
+"mcp"
+: {
+"servers"
+: {
+"wingify-fme"
+: {
+"command"
+:
+"
+npx
+"
+,
+"args"
+: [
+"
+-y
+"
+,
+"
+wingify-fme-mcp@latest
+"
+],
+"env"
+: {
+"WINGIFY_ACCOUNT_ID"
+:
+"
+WINGIFY_ACCOUNT_ID
+"
+,
+"WINGIFY_API_KEY"
+:
+"
+WINGIFY_API_KEY
+"
+} } } }
+Save the settings file. The MCP server should now be available in VS Code.
+Claude Desktop
+Open the
+Settings
+menu and go to the
+Developer
+section.
+Click
+Edit Config
+to open your
+claude_desktop_config.json
+file.
+Add the following block to your configuration (replace the placeholders with your actual credentials):
+{
+"mcpServers"
+: {
+"wingify-fme"
+: {
+"command"
+:
+"
+npx
+"
+,
+"args"
+: [
+"
+-y
+"
+,
+"
+wingify-fme-mcp@latest
+"
+],
+"env"
+: {
+"WINGIFY_ACCOUNT_ID"
+:
+"
+WINGIFY_ACCOUNT_ID
+"
+,
+"WINGIFY_API_KEY"
+:
+"
+WINGIFY_API_KEY
+"
+} } } }
+Save the file and restart Claude Desktop. Once connected, you should see a hammer icon in the chat window, confirming the MCP server is active.
+If you use a different client, refer to its documentation for how to add a custom MCP server. The configuration pattern will be similar to the examples above.
+Available Tools
+Here's what you can do with our feature flag management tools:
+IDE Configuration with Wingify
+Add Wingify FE Rules
+- Retrieve IDE rules and configuration settings to seamlessly manage feature flags within your project. This enables smooth integration with your SDK and leverages Wingify's feature management capabilities.
+📝
+Note
+: Supports both Cursor IDE and VS Code. The tool automatically detects your IDE or you can specify it manually. Needs to be called once after setting up the Wingify FE MCP server.
+Cursor IDE
+: Creates rules in
+.cursor/rules/wingify-feature-flag-rule.mdc
+VS Code
+: Creates instructions in
+.github/instructions/wingify-fe.instructions.md
+Feature Flags
+Create Feature Flag With Defaults
+- Create a complete feature flag with variables, variations, associated metric, rules, and automatic enablement. This tool handles the entire setup process.
+Create Feature Flag
+- Create a new feature flag into your Wingify account with mandatory requirements like variables, variations and metrics.
+Delete Feature Flag
+- Safely remove any feature flag from your account when it's no longer needed.
+Get Feature Flag
+- Dive into the details of any feature flag to see its current configuration and status.
+List Feature Flags
+- Get a bird's-eye view of all your feature flags in one place.
+Update Feature Flag
+- Fine-tune your feature flags by modifying their properties, metrics, and variations.
+Toggle Feature Flag
+- Instantly enable or disable feature flags in different environments with a single click.
+Find Stale Feature Flags
+- Identify unused or stale feature flags in your codebase by scanning your source code and comparing against active feature flags. This helps maintain clean code by finding feature flags that are no longer referenced in your project.
+Integrate SDK
+- Get comprehensive SDK integration documentation and code examples for seamless feature flag implementation in your project. This tool provides language-specific integration guides without requiring Cursor rule files.
+Feature Flag Rules
+List Feature Flag Rules
+- View all rules associated with your feature flags.
+Create Rollout and Personalize Rule
+- Set up rules for gradual rollout or personalization of your features.
+Create Testing and MVT Rule
+- Configure rules for A/B testing or multivariate testing.
+Get Feature Flag Rule
+- Examine the details of a specific feature flag rule.
+Toggle Feature Flag Rule
+- Enable or disable specific rules for your feature flags.
+Update Feature Flag Rules
+- Modify existing feature flag rules to change their configuration or targeting.
+Delete Feature Flag Rule
+- Remove unwanted rules from your feature flags.
+Projects and Environments
+List Projects and Environments
+- See all your projects and their associated environments.
+Metrics
+Get Metrics
+- Access metrics for your feature flags and experiments.
+Requirements
+Node.js v12 or later
+Version History
+The version history tracks changes, improvements, and bug fixes in each version. For a full history, see the
+CHANGELOG.md
+.
+Development and Testing
+Install Dependencies and Bootstrap Git Hooks
+npm install
+#
+or
+yarn install
+Compile TypeScript to JavaScript
+npm run build
+#
+or
+yarn run build
+Contributing
+We welcome contributions to improve this SDK! Please read our
+contributing guidelines
+before submitting a PR.
+Code of Conduct
+Our
+Code of Conduct
+outlines expectations for all contributors and maintainers.
+License
+Apache License, Version 2.0
+Copyright 2025-2026 Wingify Software Pvt. Ltd.
+About
+MCP Server for Feature Management & Experimentation
+developers.vwo.com/v2/docs/fme-mcp-server
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Activity
+Custom properties
+Stars
+3
+stars
+Watchers
+0
+watching
+Forks
+1
+fork
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

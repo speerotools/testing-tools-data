@@ -1,0 +1,96 @@
+# https://doc.sitecore.com/personalize/en/users/sitecore-personalize/introduction-to-sitecore-personalize.html
+Introduction to Sitecore Personalize | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Users
+Developers
+Cloud Portal
+Open search
+en
+Search in the table of contents...
+Sitecore Personalize
+Introduction to Sitecore Personalize
+View site analytics
+Using IDs in Sitecore Personalize
+Managing accounts and system settings
+Identifying guests
+Introduction to experiments
+Introduction to experiences
+Decisioning
+View dashboards
+Developer Center
+Connecting to an external system
+Using client-side JavaScript
+Using server-side JavaScript
+AI in Personalize
+Glossary
+Toggle Sidebar
+Sitecore Personalize
+Sitecore Personalize
+Introduction to Sitecore Personalize
+Toggle full width
+Change font size
+Toggle focus mode
+Introduction to Sitecore Personalize
+Sitecore Personalize enables organizations to create seamless, consistent experiences across websites, mobile apps, email, and SMS. By using real-time customer data, it ensures the right content, offers, and messages reach people at the right moment, leading to more engaging interactions and better results for your business.
+Main capabilities
+Personalized experiences
+- deliver tailored content and offers using real-time behavior, predictive insights, and customer profiles. React instantly to signals with dynamic content to keep every interaction timely and relevant. Supports
+web
+,
+interactive
+(server-side), or
+triggered
+(for email/SMS) experiences.
+Smart decisions
+- automate
+decisioning
+with an easy-to-use drag-and-drop decision canvas. Combine business rules, analytical models, external systems, and machine learning to scale decision-making in real time.
+Testing and optimization
+-
+run A/B/n tests
+and identify what works best, based on actual customer behavior.
+Performance analytics
+- track how customers interact with your experiences and measure campaign results. Use these
+insights
+to refine and improve personalization strategies.
+AI-driven assistance
+- turn natural language prompts into JavaScript with the built-in
+Code Assistant
+. Quickly create custom conditions, programmables, and session traits for personalization scenarios.
+Note
+For information on Sitecore Personalize APIs and for integration guides, see the
+developer documentation
+.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

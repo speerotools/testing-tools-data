@@ -1,0 +1,143 @@
+# https://support.dynamicyield.com/hc/en-us/articles/360014076018-Single-Sign-On-SSO-Integration
+Single Sign-On (SSO) Integration – Dynamic Yield Knowledge Base
+Knowledge Base
+Developer Docs
+Community
+Academy
+Submit a request
+Open a Ticket
+Sign in
+English (United States)
+Français
+Italiano
+Português do Brasil
+Dynamic Yield Knowledge Base
+Infrastructure, Performance, & Security
+Security
+Single Sign-On (SSO) Integration
+Print and Export to PDF
+Follow
+You can implement Single Sign-On (SSO) for your teammates to access Experience OS. This lets you apply the same authentication policies as you do with your other enterprise applications when signing in to the Experience OS console. You can implement SSO through
+OIDC
+or
+SAML 2.0
+, which are supported by most major identity providers (IDP), such as Okta and Azure Active Directory.
+Some steps in the setup are done on your side, and some are done by Dynamic Yield, with information you provide to your Dynamic Yield technical account manager. This is a one-time process, and it is important to ensure that each step is done correctly for the integration to work.
+Step 1: Add a new application to your Identity Provider
+This step includes the following actions:
+In your IDP management, navigate to your applications.
+Create a new application for Dynamic Yield. This application is then set up to "call" Dynamic Yield.
+Set up the new application with the following:
+Upload the metadata file to your IDP. Select the file based on the integration type (SAML or OIDC) and the URL of your Experience OS console (.com or .eu).
+SAML 2.0 metadata file
+SAML 2.0 XML file:
+.com
+SAML 2.0 XML file:
+.eu
+OIDC metadata file
+OpenID Endpoint Configuration:
+.com
+OpenID Endpoint Configuration:
+.eu
+If your IDP does not support this type of upload, you can do the setup manually. We provide a
+step-by-step guide for SAML 2.0 integration with Okta
+, but other IDP processes might vary.
+Enter the relevant URI. Select the URI based on the URL of your Experience OS console (.com or .eu).
+https://ssobroker.dynamicyield
+.com
+/auth/realms/admin/broker/
+[account_ID]
+/endpoint
+https://ssobroker.dynamicyield
+.eu
+/auth/realms/admin/broker/
+[account_ID]
+/endpoint
+If you don't know your account ID (part of the URI), you can find it in the footer of the Experience OS console:
+Give all relevant internal users access to this application. Otherwise, they cannot sign in to Experience OS by SSO.
+Step 2: Provide information to Dynamic Yield
+Your technical account manager needs this information to set up the integration on the Experience OS system:
+For SAML 2.0 integration:
+Identity provider name (Active Directory, Okta, or other)
+SAML metadata URL
+For OIDC integration:
+Identity provider name (Active Directory, Okta, and so on)
+URI (Uniform Resource Identifier)
+Client ID
+Client Secret
+Test user:
+Create an internal test user, and provide the credentials to your technical account manager. We use it
+to validate the integration success
+. Make sure the test user has access to the Dynamic Yield app in the IDP.
+Step 3: Implement the integration
+Dynamic Yield uses the information provided to connect your SSO to the Experience OS console.
+As soon as your technical account manager informs you that the integration is set up and tested by Dynamic Yield, you should test the integration yourself with several users.
+Note:
+After the integration is implemented, users can log in
+only with SSO
+.
+SSO login flow
+On the Experience OS sign-in page, enter your email address and click
+Continue
+.
+You
+r email address is authenticated by your IDP, and then your company SSO sign-in page appears (this can look different for each SSO provider).
+Enter your IDP credentials, and click
+Sign In
+.
+FAQ
+Can I sign in using my regular email and password?
+No. After SSO is enabled, you can sign in only through your identity provider.
+Can I invite teammates who are not listed under my identity provider?
+No. Teammates not listed under your identity provider are not able to sign in.
+Can I set a teammate’s permissions on my identity provider?
+No. Permissions are managed within the Experience OS console. In your IDP, you can only set that the teammate is allowed or not allowed to log in to Dynamic Yield.
+Can I connect my account to more than one identity provider?
+No. We currently support connecting only one IDP.
+Can I change my password or phone number?
+Not in the Experience OS console. After SSO is enabled, your credentials can only be edited and managed by your identity provider.
+How do I disable the two-factor authentication in an SSO account?
+After SSO is enabled, two-factor authentication can only be disabled and managed by your identity provider.
+How do I add a new teammate?
+Make sure your teammate is listed within your identity provider with access to the Dynamic Yield app. Then, you can invite the teammate from the
+manage teammates
+screen in the Experience OS console.
+How do I revoke a teammate's access?
+This can be done by either removing the teammate's access in your identity provider or deleting the teammate in the Experience OS console.
+Can I provide access to the platform to users who are not part of my organization?
+No. When SSO is enabled, only users with access to your identity provider can log in to the Experience OS console.
+Attached guide for SAML 2.0 integration with Okta
+Setting up Dynamic Yield on Okta (SAML 2.0) (1).pdf
+300 KB
+Download
+Was this article helpful?
+0 out of 0 found this helpful
+Have more questions?
+Submit a request
+Return to top
+Need Help? Call Us:
+Germany: +49 69 943 23150
+Israel: +972 3 376 8650
+New Zealand: +64 800 700 098
+Singapore: +65 3138 4681
+United Kingdom: +44 808 196 6288
+United States: +1 888 906 1880
+Resources
+The Dynamic Yield Blog
+Articles
+Learning Paths
+Personalization Examples
+Guides
+Webinars
+Encyclopedia
+Support
+Knowledge Base
+Community
+Academy
+English (United States)
+Français
+Italiano
+Português do Brasil
+© All rights reserved.
+Mastercard Dynamic Yield
+.

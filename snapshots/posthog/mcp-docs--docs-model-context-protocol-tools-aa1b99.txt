@@ -1,0 +1,2263 @@
+# https://posthog.com/docs/model-context-protocol/tools
+PostHog MCP tools reference - Docs - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+AI engineering
+Overview
+AI wizard
+Sign up with the wizard
+Model Context Protocol (MCP)
+Overview
+Use cases
+MCP tools reference
+FAQ and advanced setup
+Enterprise auth (ID-JAG)
+Code editors
+Claude Code
+Claude Desktop
+Codex
+Cursor
+VS Code
+Windsurf
+Zed
+Platforms
+Lovable
+Replit
+v0
+AI Observability
+Markdown and llms.txt
+Copy page
+PostHog MCP tools reference
+Contents
+Available MCP tools
+Keep exploring
+The PostHog MCP server exposes function-calling MCP tools across every PostHog product – from feature flags and experiments to error tracking, logs, surveys, and SQL. Your agent picks the right MCP tool based on the goals and context already in the conversation.
+MCP tool names are stable and can be used with the
+tools
+query parameter
+to scope a session to a specific subset.
+Tip:
+Browse the
+example prompts
+to see what each MCP tool is good for in practice.
+Available MCP tools
+Click any category to expand the full list of MCP tools it contains.
+Actions
+(
+5
+MCP
+tools
+)
+action-create
+Create action
+action-delete
+Delete action
+action-get
+Get action
+action-update
+Update action
+actions-get-all
+Get all actions
+AI observability
+(
+81
+MCP
+tools
+)
+get-llm-total-costs-for-project
+Fetches the total LLM daily costs for each model for a project over a given number of days.
+llma-clustering-config-get
+Get clustering config
+llma-clustering-config-set-event-filters
+Set clustering config filters
+llma-clustering-job-create
+Create clustering job
+llma-clustering-job-delete
+Delete clustering job
+llma-clustering-job-get
+Get clustering job
+llma-clustering-job-list
+List clustering jobs
+llma-clustering-job-update
+Update clustering job
+llma-dataset-archive
+Archive dataset
+llma-dataset-create
+Create dataset
+llma-dataset-get
+Get dataset
+llma-dataset-item-archive
+Archive dataset item
+llma-dataset-item-create
+Create dataset item
+llma-dataset-item-get
+Get dataset item
+llma-dataset-item-list
+List dataset items
+llma-dataset-item-restore
+Restore dataset item
+llma-dataset-item-update
+Update dataset item
+llma-dataset-item-version-list
+List dataset item versions
+llma-dataset-list
+List datasets
+llma-dataset-restore
+Restore dataset
+llma-dataset-revision-list
+List dataset revisions
+llma-dataset-update
+Update dataset
+llma-evaluation-config-get
+Get evaluation config
+llma-evaluation-config-set-active-key
+Set active evaluation provider key
+llma-evaluation-create
+Create evaluation
+llma-evaluation-delete
+Delete evaluation
+llma-evaluation-directory-create
+Create evaluation directory
+llma-evaluation-directory-delete
+Delete evaluation directory
+llma-evaluation-directory-get
+Get evaluation directory
+llma-evaluation-directory-list
+List evaluation directories
+llma-evaluation-directory-update
+Update evaluation directory
+llma-evaluation-get
+Get evaluation
+llma-evaluation-judge-models
+List supported llm_judge models
+llma-evaluation-list
+List evaluations
+llma-evaluation-report-create
+Create evaluation report config
+llma-evaluation-report-generate
+Trigger evaluation report generation
+llma-evaluation-report-get
+Get evaluation report config
+llma-evaluation-report-list
+List evaluation report configs
+llma-evaluation-report-run-list
+List evaluation report runs
+llma-evaluation-report-update
+Update evaluation report config
+llma-evaluation-run
+Run evaluation
+llma-evaluation-test-hog
+Test Hog evaluation code
+llma-evaluation-update
+Update evaluation
+llma-parser-recipe-create
+Compiles, validates, and saves a custom parser recipe for an LLM analytics trace event.
+llma-parser-recipe-reference
+Returns the parser recipe DSL syntax and worked examples.
+llma-personal-spend
+Get my LLM spend analysis
+llma-prompt-create
+Create prompt
+llma-prompt-duplicate
+Duplicate prompt
+llma-prompt-get
+Get prompt
+llma-prompt-label-delete
+Delete prompt label
+llma-prompt-label-set
+Set prompt label
+llma-prompt-list
+List prompts
+llma-prompt-update
+Update prompt
+llma-provider-key-get
+Get LLM provider key
+llma-provider-key-list
+List LLM provider keys
+llma-review-queue-create
+Create review queue
+llma-review-queue-delete
+Delete review queue
+llma-review-queue-get
+Get review queue
+llma-review-queue-item-create
+Create review queue item
+llma-review-queue-item-delete
+Delete review queue item
+llma-review-queue-item-get
+Get review queue item
+llma-review-queue-item-list
+List review queue items
+llma-review-queue-item-update
+Update review queue item
+llma-review-queue-list
+List review queues
+llma-review-queue-update
+Update review queue
+llma-score-definition-create
+Create scorer
+llma-score-definition-get
+Get scorer
+llma-score-definition-list
+List scorers
+llma-score-definition-new-version
+Bump scorer to a new version
+llma-score-definition-update
+Update scorer metadata
+llma-summarization-create
+Summarize trace or generation
+llma-tagger-create
+Create tagger
+llma-tagger-list
+List taggers
+llma-tagger-test-hog
+Test Hog tagger code
+llma-trace-review-create
+Create trace review
+llma-trace-review-delete
+Delete trace review
+llma-trace-review-get
+Get trace review
+llma-trace-review-list
+List trace reviews
+llma-trace-review-update
+Update trace review
+query-llm-trace
+Get LLM trace
+query-llm-traces-list
+List LLM traces
+Alerts
+(
+6
+MCP
+tools
+)
+alert-create
+Create alert
+alert-delete
+Delete alert
+alert-get
+Get alert
+alert-simulate
+Simulate detector on insight
+alert-update
+Update alert
+alerts-list
+List alerts
+Annotations
+(
+5
+MCP
+tools
+)
+annotation-create
+Create annotation
+annotation-delete
+Delete annotation
+annotation-retrieve
+Retrieve annotation
+annotations-list
+List annotations
+annotations-partial-update
+Update annotation
+Billing alerts
+(
+2
+MCP
+tools
+)
+billing-alert-create
+Create billing alert
+billing-alert-update
+Update billing alert
+Business knowledge
+(
+7
+MCP
+tools
+)
+business-knowledge-document-window-retrieve
+Read business knowledge document context
+business-knowledge-documents-search
+Search business knowledge
+business-knowledge-sources-list
+List business knowledge sources
+business-knowledge-sources-partial-update
+Update business knowledge source
+business-knowledge-sources-retrieve
+Get business knowledge source
+business-knowledge-sources-text-create
+Create text business knowledge source
+business-knowledge-sources-url-create
+Create URL business knowledge source
+Canvas
+(
+14
+MCP
+tools
+)
+canvas-builds-retrieve
+Read canvas build status
+canvas-create
+Create canvas
+canvas-draft-create
+Stage a canvas draft build
+canvas-drafts-retrieve
+List canvas drafts
+canvas-edit-create
+Edit canvas source files
+canvas-layout-get
+Read grid canvas layout
+canvas-layout-patch
+Patch grid canvas layout
+canvas-layout-publish
+Publish grid canvas layout
+canvas-list
+List canvases
+canvas-promote-create
+Promote a canvas draft to live
+canvas-publish-create
+Publish canvas source project
+canvas-publish-current-version
+Publish current canvas version
+canvas-source-retrieve
+Read canvas source project
+canvas-validate-create
+Validate canvas source project
+Cohorts
+(
+6
+MCP
+tools
+)
+cohorts-add-persons-to-static-cohort-partial-update
+Add persons to static cohort
+cohorts-create
+Create cohort
+cohorts-list
+List all cohorts
+cohorts-partial-update
+Update cohort
+cohorts-retrieve
+Get cohort
+cohorts-rm-person-from-static-cohort-partial-update
+Remove person from static cohort
+Conversations
+(
+8
+MCP
+tools
+)
+conversations-tickets-list
+List support tickets
+conversations-tickets-messages-retrieve
+Read support ticket messages
+conversations-tickets-notes-destroy
+Delete private note
+conversations-tickets-notes-partial-update
+Update private note
+conversations-tickets-reply-create
+Reply to support ticket
+conversations-tickets-retrieve
+Get support ticket
+conversations-tickets-update
+Update support ticket
+conversations-views-list
+List saved ticket views
+Core
+(
+4
+MCP
+tools
+)
+project-get
+Get project
+project-settings-update
+Update project settings
+user-get
+Get user
+user-settings-update
+Update user settings
+Customer analytics
+(
+50
+MCP
+tools
+)
+account-relationship-definitions-create
+Create account relationship definition
+account-relationship-definitions-destroy
+Delete account relationship definition
+account-relationship-definitions-list
+List account relationship definitions
+account-relationship-definitions-partial-update
+Update account relationship definition
+account-relationship-definitions-retrieve
+Get account relationship definition
+accounts-create
+Create account
+accounts-custom-property-values-create
+Set account custom property value
+accounts-custom-property-values-list
+List account custom property values
+accounts-destroy
+Delete account
+accounts-list
+List accounts
+accounts-notebooks-create
+Create account notebook
+accounts-notebooks-destroy
+Delete account notebook
+accounts-notebooks-list
+List account notebooks
+accounts-notebooks-retrieve
+Get account notebook
+accounts-partial-update
+Update account
+accounts-relationships-create
+Assign account relationship
+accounts-relationships-end-create
+End account relationship
+accounts-relationships-list
+List account relationships
+accounts-retrieve
+Get account
+accounts-summaries-list
+List account channel summaries
+announcements-channels-list
+List announcement channels
+announcements-create-execute
+Send announcement (execute)
+announcements-create-prepare
+Send announcement (prepare)
+announcements-list
+List announcements
+announcements-retrieve
+Get announcement
+custom-property-definitions-create
+Create custom property definition
+custom-property-definitions-destroy
+Delete custom property definition
+custom-property-definitions-list
+List custom property definitions
+custom-property-definitions-partial-update
+Update custom property definition
+custom-property-definitions-retrieve
+Get custom property definition
+custom-property-sources-backfill
+Backfill a warehouse person- or group-property source
+custom-property-sources-create
+Create custom property source
+custom-property-sources-destroy
+Delete custom property source
+custom-property-sources-list
+List custom property sources
+custom-property-sources-partial-update
+Update custom property source
+custom-property-sources-retrieve
+Get custom property source
+custom-property-sources-runs-list
+List person- or group-property source runs
+custom-property-sources-sync
+Sync a warehouse person- or group-property source now
+event-streams-add-account
+Add account to my event stream
+event-streams-create
+Create my event stream
+event-streams-destroy
+Delete my event stream
+event-streams-list
+Get my event stream
+event-streams-partial-update
+Update my event stream
+event-streams-remove-account
+Remove account from my event stream
+event-streams-send-test-message
+Send event stream test message
+usage-metrics-create
+Create usage metric
+usage-metrics-destroy
+Delete usage metric
+usage-metrics-list
+List usage metrics
+usage-metrics-partial-update
+Update usage metric
+usage-metrics-retrieve
+Get usage metric
+Dashboards
+(
+18
+MCP
+tools
+)
+dashboard-create
+Create dashboard
+dashboard-create-text-tile
+Create dashboard text tile
+dashboard-delete
+Delete dashboard
+dashboard-delete-tile
+Delete dashboard tile
+dashboard-get
+Get dashboard
+dashboard-insights-run
+Run dashboard insights
+dashboard-reorder-tiles
+Reorder dashboard tiles
+dashboard-templates-list
+List dashboard templates
+dashboard-templates-retrieve
+Get dashboard template
+dashboard-tile-copy
+Copy dashboard tile
+dashboard-update
+Update dashboard
+dashboard-update-text-tile
+Update dashboard text tile
+dashboard-widget-catalog-list
+List dashboard widget catalog
+dashboard-widgets-batch-add
+Add dashboard widgets
+dashboard-widgets-batch-update
+Update dashboard widget settings
+dashboard-widgets-run
+Run dashboard widgets
+dashboards-get-all
+Get all dashboards
+dashboards-move-tile-partial-update
+Move dashboard tile
+Data catalog
+(
+16
+MCP
+tools
+)
+data-catalog-certification-certify-execute
+Certify a table/view (execute)
+data-catalog-certification-certify-prepare
+Certify a table/view (prepare)
+data-catalog-certification-deprecate-execute
+Deprecate a table/view (execute)
+data-catalog-certification-deprecate-prepare
+Deprecate a table/view (prepare)
+data-catalog-certification-propose
+Propose a table/view certification
+data-catalog-metric-approve-execute
+Approve a catalog metric (execute)
+data-catalog-metric-approve-prepare
+Approve a catalog metric (prepare)
+data-catalog-metric-create
+Create or refine a catalog metric
+data-catalog-metric-run
+Run a governed metric (semantic layer)
+data-catalog-metric-update
+Update a catalog metric
+data-catalog-metrics-refresh-from-insight-create
+Refresh a metric from its insight
+data-catalog-relationship-accept-execute
+Accept a relationship proposal (execute)
+data-catalog-relationship-accept-prepare
+Accept a relationship proposal (prepare)
+data-catalog-relationship-propose
+Propose a table relationship
+data-catalog-relationship-reject-execute
+Reject a relationship proposal (execute)
+data-catalog-relationship-reject-prepare
+Reject a relationship proposal (prepare)
+Data pipelines
+(
+8
+MCP
+tools
+)
+batch-export-create
+Create batch export
+batch-export-delete
+Delete batch export
+batch-export-get
+Get batch export
+batch-export-update
+Update batch export
+batch-exports-list
+List batch exports
+file-download-batch-exports-cancel-create
+Cancel a running file download export
+file-download-batch-exports-create
+Start file download export
+file-download-batch-exports-retrieve
+Get file download export status
+Data quality
+(
+11
+MCP
+tools
+)
+data-quality-check-create-on-table
+Create a data quality check on a table
+data-quality-check-create-on-view
+Create a data quality check on a view
+data-quality-check-delete-on-table
+Delete a data quality check on a table
+data-quality-check-delete-on-view
+Delete a data quality check on a view
+data-quality-check-results-on-table
+Recent results of a data quality check on a table
+data-quality-check-results-on-view
+Recent results of a data quality check on a view
+data-quality-check-run-on-table
+Run a data quality check on a table
+data-quality-check-run-on-view
+Run a data quality check on a view
+data-quality-check-types
+List data quality check types
+data-quality-check-update-on-table
+Update a data quality check on a table
+data-quality-check-update-on-view
+Update a data quality check on a view
+Data schema
+(
+1
+MCP
+tool
+)
+read-data-schema
+Explore the user's events, actions, properties, and property values.
+Data warehouse
+(
+24
+MCP
+tools
+)
+external-data-sources-db-schema
+Discover tables and sync methods for a source
+external-data-sources-jobs
+List sync job history for a source with optional date and schema filters.
+external-data-sources-preview-resource
+Preview sample rows for a Custom REST source resource
+external-data-sync-logs
+Get sync job logs for a data warehouse table.
+managed-warehouse-metric-history-get
+Get managed warehouse metric history
+managed-warehouse-monitoring-get
+Get managed warehouse monitoring
+saved-query-column-annotations-create
+Add a view column description
+saved-query-column-annotations-list
+List view column descriptions
+sql-variables-create
+Create SQL variable
+sql-variables-delete
+Delete SQL variable
+sql-variables-update
+Update SQL variable
+view-create
+Create saved query
+view-delete
+Delete saved query
+view-get
+Get saved query
+view-list
+List saved queries
+view-materialize
+Materialize saved query
+view-run
+Run saved query
+view-run-history
+Get run history
+view-unmaterialize
+Revert materialization
+view-update
+Update saved query
+warehouse-column-annotations-create
+Add a warehouse column description
+warehouse-column-annotations-list
+List warehouse column descriptions
+warehouse-column-annotations-partial-update
+Edit a warehouse column description
+warehouse-tables-refresh-schema-create
+Refresh table schema from source
+Debug
+(
+1
+MCP
+tool
+)
+debug-mcp-ui-apps
+Debug tool for testing MCP Apps SDK.
+Docs
+(
+1
+MCP
+tool
+)
+docs-search
+Search documentation
+Early access features
+(
+5
+MCP
+tools
+)
+early-access-feature-create
+Create early access feature
+early-access-feature-destroy
+Delete early access feature
+early-access-feature-list
+List early access features
+early-access-feature-partial-update
+Update early access feature
+early-access-feature-retrieve
+Get early access feature
+Endpoints
+(
+14
+MCP
+tools
+)
+endpoint-create
+Create endpoint
+endpoint-delete
+Delete endpoint
+endpoint-get
+Get endpoint
+endpoint-logs
+Get endpoint logs
+endpoint-materialization-conditions
+Get materialization conditions
+endpoint-materialization-status
+Get materialization status
+endpoint-materialization-suggestion
+Suggest materialization fix
+endpoint-openapi-spec
+Get endpoint OpenAPI spec
+endpoint-run
+Run endpoint
+endpoint-update
+Update endpoint
+endpoint-versions
+Get endpoint versions
+endpoints-get-all
+Get all endpoints
+endpoints-last-execution-times
+Get endpoints last execution times
+endpoints-materialization-preview
+Preview endpoint materialization
+Engineering analytics
+(
+12
+MCP
+tools
+)
+engineering-analytics-broken-tests
+Broken tests triage
+engineering-analytics-ci-failure-logs
+CI failure logs for a PR
+engineering-analytics-flaky-tests
+Active test health queue
+engineering-analytics-pr-cost
+Estimated CI cost of a PR
+engineering-analytics-run-failure-logs
+CI failure logs for a run
+engineering-analytics-sources
+List connected GitHub sources
+engineering-analytics-team-ci-health
+Team CI health roster
+engineering-analytics-workflow-jobs
+Jobs of a workflow run
+engineering-analytics-workflow-runner-costs
+Workflow cost by runner tier
+pr-lifecycle
+PR lifecycle timeline
+pull-requests
+List pull requests with CI status
+workflow-health
+Per-workflow CI health
+Error tracking
+(
+24
+MCP
+tools
+)
+error-tracking-assignment-rules-create
+Create error tracking assignment rule
+error-tracking-assignment-rules-list
+List error tracking assignment rules
+error-tracking-bypass-rules-create
+Create error tracking bypass rule
+error-tracking-bypass-rules-list
+List error tracking bypass rules
+error-tracking-bypass-rules-update
+Update error tracking bypass rule
+error-tracking-external-references-create
+Create error tracking external reference
+error-tracking-grouping-rules-create
+Create error tracking grouping rule
+error-tracking-grouping-rules-list
+List error tracking grouping rules
+error-tracking-grouping-rules-update
+Update error tracking grouping rule
+error-tracking-issues-merge-create
+Merge error tracking issues
+error-tracking-issues-partial-update
+Update error tracking issue
+error-tracking-issues-split-create
+Split error tracking issue fingerprints
+error-tracking-recommendations-list
+List error tracking recommendations
+error-tracking-settings-get
+Get error tracking settings
+error-tracking-settings-update
+Update error tracking settings
+error-tracking-suppression-rules-create
+Create error tracking suppression rule
+error-tracking-suppression-rules-list
+List error tracking suppression rules
+error-tracking-suppression-rules-update
+Update error tracking suppression rule
+error-tracking-symbol-sets-download-retrieve
+Download error tracking symbol set
+error-tracking-symbol-sets-list
+List error tracking symbol sets
+error-tracking-symbol-sets-retrieve
+Get error tracking symbol set
+query-error-tracking-issue
+Query error tracking issue
+query-error-tracking-issue-events
+Query error tracking issue events
+query-error-tracking-issues-list
+Query error tracking issues list
+Error tracking alerts
+(
+4
+MCP
+tools
+)
+error-tracking-alerts-create
+Create error tracking alert
+error-tracking-alerts-delete
+Delete error tracking alert
+error-tracking-alerts-list
+List error tracking alerts
+error-tracking-alerts-partial-update
+Update error tracking alert
+Events & properties
+(
+2
+MCP
+tools
+)
+event-definition-update
+Update an event definition's metadata.
+property-definition-update
+Update a property definition's metadata.
+Experiments
+(
+39
+MCP
+tools
+)
+experiment-activity
+Get experiment change history
+experiment-archive
+Archive experiment
+experiment-calculate-running-time
+Calculate experiment running time
+experiment-copy-to-project
+Copy experiment to another project
+experiment-create
+Create experiment
+experiment-create-from-prompt
+Create experiment from LLM prompt
+experiment-delete
+Delete experiment
+experiment-duplicate
+Duplicate experiment
+experiment-end
+End experiment
+experiment-freeze-exposure
+Freeze experiment exposure
+experiment-get
+Get experiment details
+experiment-get-all
+Deprecated alias for experiment-list.
+experiment-holdouts-create
+Create experiment holdout
+experiment-holdouts-destroy
+Delete experiment holdout
+experiment-holdouts-list
+List experiment holdouts
+experiment-holdouts-partial-update
+Update experiment holdout
+experiment-holdouts-retrieve
+Get experiment holdout details
+experiment-launch
+Launch experiment
+experiment-list
+Get all experiments
+experiment-metrics-recalculation-create
+Recalculate experiment metrics
+experiment-metrics-recalculation-latest-retrieve
+Get experiment results
+experiment-metrics-recalculation-retrieve
+Get experiment recalculation run
+experiment-pause
+Pause experiment
+experiment-prompt-templates
+List LLM prompt metric templates
+experiment-reset
+Reset experiment
+experiment-results-get
+Get experiment metric and exposure results with self-describing per-metric metadata.
+experiment-resume
+Resume experiment
+experiment-saved-metrics-create
+Create shared experiment metric
+experiment-saved-metrics-destroy
+Delete shared experiment metric
+experiment-saved-metrics-list
+List shared experiment metrics
+experiment-saved-metrics-partial-update
+Update shared experiment metric
+experiment-saved-metrics-retrieve
+Get shared experiment metric
+experiment-ship-variant
+Ship experiment variant
+experiment-stats
+Get experiment velocity stats
+experiment-timeseries-results
+Get experiment metric results over time
+experiment-unarchive
+Unarchive experiment
+experiment-unfreeze-exposure
+Unfreeze experiment exposure
+experiment-update
+Update experiment
+experiments-session-event-deltas-create
+Find recordings worth watching per variant
+Feature flags
+(
+22
+MCP
+tools
+)
+create-feature-flag
+Create feature flag
+delete-feature-flag
+Delete feature flag
+feature-flag-get-all
+Get all feature flags
+feature-flag-get-definition
+Get feature flag definition
+feature-flag-get-definition-by-key
+Get a feature flag by its key.
+feature-flags-activity-retrieve
+Get feature flag activity log
+feature-flags-bulk-delete-create
+Bulk delete feature flags
+feature-flags-bulk-keys-retrieve
+Look up feature flag keys by ID
+feature-flags-bulk-update-tags-create
+Bulk update tags on feature flags
+feature-flags-copy-flags-create
+Copy feature flag across projects
+feature-flags-dependent-flags-retrieve
+Get dependent feature flags
+feature-flags-evaluation-reasons-retrieve
+Get feature flag evaluation reasons
+feature-flags-my-flags-retrieve
+Get my evaluated feature flags
+feature-flags-status-retrieve
+Get feature flag status
+feature-flags-test-evaluation-create
+Test feature flag evaluation
+feature-flags-user-blast-radius-create
+Get user blast radius
+scheduled-changes-create
+Create a scheduled change
+scheduled-changes-delete
+Delete a scheduled change
+scheduled-changes-get
+Get a scheduled change
+scheduled-changes-list
+List scheduled changes for feature flags
+scheduled-changes-update
+Update a scheduled change
+update-feature-flag
+Update feature flag
+Feedback
+(
+1
+MCP
+tool
+)
+agent-feedback
+Send feedback about any PostHog product, this MCP, or the docs.
+Field notes
+(
+3
+MCP
+tools
+)
+field-notes-get
+Get field note
+field-notes-list
+List field notes
+field-notes-partial-update
+Update field note
+Function templates
+(
+2
+MCP
+tools
+)
+cdp-function-templates-list
+List function templates
+cdp-function-templates-retrieve
+Get function template
+Functions
+(
+14
+MCP
+tools
+)
+cdp-functions-create
+Create function
+cdp-functions-delete
+Delete function
+cdp-functions-discard-draft
+Discard staged changes
+cdp-functions-get-revision
+Get function revision
+cdp-functions-invocations-create
+Test-invoke function
+cdp-functions-list
+List functions
+cdp-functions-list-revisions
+List function revisions
+cdp-functions-logs-retrieve
+Get function logs
+cdp-functions-metrics-retrieve
+Get function metrics
+cdp-functions-partial-update
+Update function
+cdp-functions-publish
+Publish staged changes
+cdp-functions-rearrange-partial-update
+Reorder transformation execution
+cdp-functions-restore-revision
+Restore function revision
+cdp-functions-retrieve
+Get function
+Health
+(
+3
+MCP
+tools
+)
+health-issues-get
+Get a health issue
+health-issues-list
+List health issues
+health-issues-summary
+Summarize health issues
+Insights & analytics
+(
+1
+MCP
+tool
+)
+insight-query
+Run a saved insight's query and return results.
+Integrations
+(
+9
+MCP
+tools
+)
+integration-delete
+Delete integration
+integration-get
+Get integration
+integrations-channels-retrieve
+List integration channels
+integrations-github-repos-retrieve
+List GitHub integration repositories
+integrations-jira-projects-retrieve
+List Jira projects
+integrations-linear-teams-retrieve
+List Linear teams
+integrations-list
+List integrations
+posthog-connection-call
+Run a PostHog tool in another account, organization or region.
+posthog-connection-forward
+Send a raw API request to a connected PostHog project
+Logs
+(
+20
+MCP
+tools
+)
+logs-alerts-create
+Create log alert
+logs-alerts-destinations-create
+Attach alert destination
+logs-alerts-destinations-delete-create
+Detach alert destination
+logs-alerts-destroy
+Delete log alert
+logs-alerts-events-list
+List alert events
+logs-alerts-list
+List log alerts
+logs-alerts-partial-update
+Update log alert
+logs-alerts-retrieve
+Get log alert
+logs-alerts-simulate-create
+Simulate log alert
+logs-anomalies-scan
+Scan a service's logs for volume anomalies
+logs-attribute-values-list
+List log attribute values
+logs-attributes-list
+List log attributes
+logs-count
+Count logs
+logs-count-ranges
+Count logs by time bucket
+logs-facet-values-create
+Facet log counts
+logs-patterns
+Mine log patterns
+logs-patterns-diff
+Diff log patterns between two windows
+logs-services-create
+List services with stats
+logs-sparkline-query
+Query logs sparkline
+query-logs
+Query logs
+Managed migrations
+(
+2
+MCP
+tools
+)
+managed-migrations-support-get
+Get one batch import job with raw worker state (PostHog staff only)
+managed-migrations-support-list
+List batch import jobs across all teams (PostHog staff only)
+Marketing analytics
+(
+10
+MCP
+tools
+)
+marketing-analytics-conversion-goals
+List conversion goals
+marketing-analytics-create-conversion-goal
+Create conversion goal
+marketing-analytics-data-sources
+List marketing data sources health
+marketing-analytics-delete-conversion-goal
+Delete conversion goal
+marketing-analytics-diagnose
+Diagnose marketing analytics setup
+marketing-analytics-explain-conversion-goal
+Explain a conversion goal
+marketing-analytics-suggest-conversion-goals
+Suggest conversion goal candidates
+marketing-analytics-suggest-utm-mappings
+Suggest utm_source → integration mappings
+marketing-analytics-update-conversion-goal
+Update conversion goal
+marketing-analytics-utm-audit
+Audit UTM tagging quality
+MCP analytics
+(
+16
+MCP
+tools
+)
+mcp-analytics-intent-clusters-recompute
+Recompute intent clusters
+mcp-analytics-intent-clusters-retrieve
+Get intent cluster snapshot
+mcp-analytics-sessions-generate-intent
+Generate session intent summary
+mcp-analytics-sessions-list
+List MCP sessions
+mcp-analytics-sessions-tool-calls
+List session tool calls
+mcp-feedback-submit
+Submit MCP feedback
+mcp-missing-capability-report
+Report missing capability
+query-mcp-harness-breakdown
+Break down MCP tool calls by harness
+query-mcp-tool-daily-stats
+Daily trend for one MCP tool
+query-mcp-tool-descriptions
+Descriptions seen for one MCP tool
+query-mcp-tool-failure-occurrences
+Individual errored calls in one failure bucket
+query-mcp-tool-failures
+Top errors for one MCP tool
+query-mcp-tool-neighbors
+Tools called alongside one MCP tool
+query-mcp-tool-sample-intents
+Sample intents for one MCP tool
+query-mcp-tool-stats
+Summarise one MCP tool
+query-mcp-tool-top-users
+Top callers of one MCP tool
+MCP Store
+(
+2
+MCP
+tools
+)
+mcp-connection-tools-list
+List a connection's tools
+mcp-connections-list
+List MCP connections
+Messaging
+(
+3
+MCP
+tools
+)
+opt-outs-add
+Add recipients to the opt-out list
+opt-outs-list
+List opt-outs
+opt-outs-remove
+Remove a recipient from the opt-out list
+Metrics
+(
+3
+MCP
+tools
+)
+characterize-metric-anomaly
+Characterize metric anomaly
+metric-names-list
+List metric names
+query-metrics
+Query metrics
+Notebooks
+(
+15
+MCP
+tools
+)
+notebook-edit
+Edit part of a notebook's content.
+notebooks-add-cell
+Add a cell to a notebook; SQL/Python cells run immediately.
+notebooks-configure-compute
+Configure notebook compute
+notebooks-create
+Create notebook
+notebooks-create-markdown
+Create a markdown notebook for executable cells.
+notebooks-delete-cell
+Delete a notebook cell.
+notebooks-destroy
+Delete notebook
+notebooks-get
+Get notebook
+notebooks-list
+List notebooks
+notebooks-list-frames
+List notebook dataframes
+notebooks-partial-update
+Update notebook
+notebooks-retrieve
+Get notebook
+notebooks-run-cell-interrupt
+Interrupt notebook cell run
+notebooks-run-cell-result
+Get notebook cell run result
+notebooks-update-cell
+Update a cell's code and re-run it.
+Organization & project management
+(
+4
+MCP
+tools
+)
+organizations-get
+Fetches the organizations that the user has access to.
+projects-get
+Fetches projects that the user has access to in the current organization.
+switch-organization
+Switch the active PostHog organization for subsequent tool calls.
+switch-project
+Switch the active PostHog project for subsequent tool calls.
+Persons
+(
+7
+MCP
+tools
+)
+persons-bulk-delete
+Bulk delete persons
+persons-cohorts-retrieve
+Get person cohorts
+persons-list
+List persons
+persons-property-delete
+Delete person property
+persons-property-set
+Set person property
+persons-retrieve
+Get person
+persons-values-retrieve
+Get person property values
+Platform Features
+(
+25
+MCP
+tools
+)
+advanced-activity-logs-filters
+Get available activity log filter options.
+advanced-activity-logs-list
+List activity in the project.
+approval-policies-list
+List approval policies for the project.
+approval-policy-get
+Get a specific approval policy.
+change-request-get
+Get details of a specific approval request.
+change-requests-approve-execute
+Approve a pending change request (execute)
+change-requests-approve-prepare
+Approve a pending change request (prepare)
+change-requests-list
+List change requests and see what needs your approval.
+change-requests-reject-execute
+Reject a pending change request (execute)
+change-requests-reject-prepare
+Reject a pending change request (prepare)
+comment-count
+Get comment counts.
+comment-get
+Get a specific comment.
+comment-thread
+Get all replies in a comment thread.
+comments-list
+List comments and discussion threads.
+org-member-get-github-login
+Get an organization member's GitHub username.
+org-members-list
+List organization members.
+organization-enforce-2fa-execute
+Enforce two-factor authentication org-wide (execute)
+organization-enforce-2fa-prepare
+Enforce two-factor authentication org-wide (prepare)
+organization-get
+Get organization details.
+organizations-list
+List organizations.
+role-get
+Get a specific role.
+role-members-list
+List members of a role.
+roles-list
+List organization roles.
+user-home-settings-get
+Get pinned tabs and homepage.
+user-home-settings-update
+Update pinned tabs and homepage.
+Product analytics
+(
+9
+MCP
+tools
+)
+elements-stats-retrieve
+Get element click stats
+insight-create
+Create insight
+insight-delete
+Delete insight
+insight-get
+Get insight
+insight-update
+Update insight
+insights-activity-retrieve
+Get insight activity log
+insights-all-activity-retrieve
+Get recent insight activity across the project
+insights-list
+Get all insights
+insights-trending-retrieve
+Get most-viewed insights
+Query wrappers
+(
+12
+MCP
+tools
+)
+query-funnel
+Run a funnel query
+query-funnel-actors
+List persons who converted or dropped off at a funnel step
+query-lifecycle
+Run a lifecycle query
+query-lifecycle-actors
+List persons in a lifecycle bucket
+query-paths
+Run a paths query
+query-paths-actors
+List persons on a paths insight
+query-retention
+Run a retention query
+query-retention-actors
+List persons in a retention cohort
+query-stickiness
+Run a stickiness query
+query-stickiness-actors
+List persons behind a stickiness bar
+query-trends
+Run a trends query
+query-trends-actors
+List persons behind a trends data point
+Reminders
+(
+5
+MCP
+tools
+)
+reminder-create
+Create reminder
+reminder-delete
+Delete reminder
+reminder-get
+Get reminder
+reminder-update
+Update reminder
+reminders-list
+List reminders
+Replay vision
+(
+29
+MCP
+tools
+)
+vision-actions-create
+Create vision action
+vision-actions-delete
+Delete vision action
+vision-actions-list
+List vision actions
+vision-actions-retrieve
+Get a vision action
+vision-actions-runs-list
+List a vision action's runs
+vision-actions-runs-retrieve
+Get a vision action run's full group summary
+vision-actions-update
+Update vision action
+vision-observations-label-create
+Rate a scanner observation
+vision-observations-label-destroy
+Remove a scanner observation rating
+vision-observations-list
+List a session's replay vision observations
+vision-observations-retrieve
+Get a session's replay vision observation
+vision-quota-retrieve
+Get replay vision quota
+vision-scanners-affected-cohort-create
+Save a scanner's affected users as a cohort
+vision-scanners-create
+Create replay vision scanner
+vision-scanners-delete
+Delete replay vision scanner
+vision-scanners-estimate-create
+Estimate replay vision scanner volume
+vision-scanners-get
+Get replay vision scanner
+vision-scanners-impact-retrieve
+Get a scanner's impact counts
+vision-scanners-inline-scan-create
+Scan sessions against a prompt
+vision-scanners-list
+List replay vision scanners
+vision-scanners-observations-get
+Get scanner observation
+vision-scanners-observations-list
+List scanner observations
+vision-scanners-observations-stats
+Get scanner observation stats
+vision-scanners-prompt-suggestions-apply
+Apply prompt suggestion
+vision-scanners-prompt-suggestions-current
+Get current prompt suggestion
+vision-scanners-prompt-suggestions-dismiss
+Dismiss prompt suggestion
+vision-scanners-prompt-suggestions-generate
+Generate prompt suggestion from ratings
+vision-scanners-scan-session
+Run scanner against a session now
+vision-scanners-update
+Update replay vision scanner
+Reverse proxy
+(
+6
+MCP
+tools
+)
+proxy-create
+Create reverse proxy
+proxy-delete
+Delete reverse proxy
+proxy-diagnose
+Diagnose reverse proxy
+proxy-get
+Get reverse proxy details
+proxy-list
+List reverse proxies
+proxy-retry
+Retry reverse proxy provisioning
+ReviewHog
+(
+3
+MCP
+tools
+)
+review-hog-reviews-get
+Get a ReviewHog review
+review-hog-reviews-list
+List ReviewHog reviews
+review-hog-reviews-trigger
+Trigger a ReviewHog review
+Session replays
+(
+8
+MCP
+tools
+)
+query-session-recordings-list
+List session recordings
+session-recording-bulk-delete
+Bulk delete session recordings
+session-recording-delete
+Delete session recording
+session-recording-get
+Get session recording
+session-recording-playlist-create
+Create session recording playlist
+session-recording-playlist-get
+Get session recording playlist
+session-recording-playlist-update
+Update session recording playlist
+session-recording-playlists-list
+List session recording playlists
+Signals
+(
+60
+MCP
+tools
+)
+inbox-report-artefacts-create
+Append an artefact to a report
+inbox-report-artefacts-delete
+Delete an artefact
+inbox-report-artefacts-list
+List a report's artefacts
+inbox-report-artefacts-retrieve
+Get a single artefact
+inbox-report-artefacts-update
+Replace an artefact's content
+inbox-reports-bulk-set-state
+Dismiss or snooze signal reports in bulk
+inbox-reports-list
+List signal reports
+inbox-reports-retrieve
+Get signal report
+inbox-reports-set-state
+Dismiss or snooze a signal report
+inbox-reports-update
+Edit a signal report's title or summary
+inbox-source-configs-create
+Create signal source config
+inbox-source-configs-list
+List signal source configs
+inbox-source-configs-partial-update
+Update signal source config
+inbox-source-configs-retrieve
+Get signal source config
+inbox-source-configs-update
+Replace signal source config
+scout-config-create
+Create a scout config
+scout-config-delete
+Delete a scout config
+scout-config-list
+List scout configs
+scout-config-sync
+Sync scout configs
+scout-config-update
+Update a scout config
+scout-create-execute
+Create a scout (execute)
+scout-create-prepare
+Create a scout (prepare)
+scout-edit-report
+Edit an existing report for a run
+scout-emit-report
+Author a full report for a run
+scout-emit-signal
+Emit a finding for a run
+scout-members-list
+List project members for reviewer routing
+scout-metadata-get
+Get scout enrollment, banner, and run limits
+scout-notes-create
+Leave a note for the scouts
+scout-notes-delete
+Delete a scout note
+scout-notes-list
+List scout notes
+scout-project-profile-get
+Get the project profile
+scout-record-output
+Record structured output for a run
+scout-run-now
+Run a scout now
+scout-runs-emission-reports
+List the inbox reports a scout run's findings linked to
+scout-runs-emissions-list
+List a scout run's emitted findings
+scout-runs-list
+List recent scout runs
+scout-runs-recent-emissions
+List recent emitted findings across all scout runs
+scout-runs-retrieve
+Get a scout run by ID
+scout-scratchpad-forget
+Forget a scratchpad entry by key
+scout-scratchpad-remember
+Remember a scratchpad entry
+scout-scratchpad-search
+Search the scout scratchpad
+signals-scout-config-create
+Create a scout config (deprecated)
+signals-scout-config-delete
+Delete a scout config (deprecated)
+signals-scout-config-list
+List scout configs (deprecated)
+signals-scout-config-sync
+Sync scout configs (deprecated)
+signals-scout-config-update
+Update a scout config (deprecated)
+signals-scout-edit-report
+Edit an existing report for a run (deprecated)
+signals-scout-emit-report
+Author a full report for a run (deprecated)
+signals-scout-emit-signal
+Emit a finding for a run (deprecated)
+signals-scout-members-list
+List project members for reviewer routing (deprecated)
+signals-scout-project-profile-get
+Get the project profile (deprecated)
+signals-scout-run-now
+Run a scout now (deprecated)
+signals-scout-runs-emission-reports
+List the inbox reports a scout run's findings linked to (deprecated)
+signals-scout-runs-emissions-list
+List a scout run's emitted findings (deprecated)
+signals-scout-runs-list
+List recent scout runs (deprecated)
+signals-scout-runs-recent-emissions
+List recent emitted findings across all scout runs (deprecated)
+signals-scout-runs-retrieve
+Get a scout run by ID (deprecated)
+signals-scout-scratchpad-forget
+Forget a scratchpad entry by key (deprecated)
+signals-scout-scratchpad-remember
+Remember a scratchpad entry (deprecated)
+signals-scout-scratchpad-search
+Search the scout scratchpad (deprecated)
+Skills
+(
+21
+MCP
+tools
+)
+llma-skill-archive
+Deprecated alias for skill-archive.
+llma-skill-create
+Deprecated alias for skill-create.
+llma-skill-duplicate
+Deprecated alias for skill-duplicate.
+llma-skill-file-create
+Deprecated alias for skill-file-create.
+llma-skill-file-delete
+Deprecated alias for skill-file-delete.
+llma-skill-file-get
+Deprecated alias for skill-file-get.
+llma-skill-file-rename
+Deprecated alias for skill-file-rename.
+llma-skill-get
+Deprecated alias for skill-get.
+llma-skill-list
+Deprecated alias for skill-list.
+llma-skill-update
+Deprecated alias for skill-update.
+skill-archive
+Archive skill
+skill-create
+Create skill
+skill-duplicate
+Duplicate skill
+skill-file-create
+Create skill file
+skill-file-delete
+Delete skill file
+skill-file-get
+Get skill file
+skill-file-rename
+Rename skill file
+skill-get
+Get skill
+skill-list
+List skills
+skill-store-install-command
+Get skill store install command
+skill-update
+Update skill
+SQL
+(
+1
+MCP
+tool
+)
+execute-sql
+Execute an SQL query.
+Stamphog
+(
+11
+MCP
+tools
+)
+stamphog-digest-channels-create
+Create stamphog digest channel
+stamphog-digest-channels-delete
+Delete stamphog digest channel
+stamphog-digest-channels-list
+List stamphog digest channels
+stamphog-digest-runs-list
+List stamphog digest runs
+stamphog-pull-requests-get
+Get stamphog pull request
+stamphog-pull-requests-list
+List stamphog pull requests
+stamphog-repo-configs-delete
+Delete stamphog repo config
+stamphog-repo-configs-get
+Get stamphog repo config
+stamphog-repo-configs-list
+List stamphog repo configs
+stamphog-review-runs-get
+Get stamphog review run
+stamphog-review-runs-list
+List stamphog review runs
+Streamlit apps
+(
+10
+MCP
+tools
+)
+streamlit-apps-create
+Create Streamlit app
+streamlit-apps-delete
+Delete Streamlit app
+streamlit-apps-get
+Get Streamlit app
+streamlit-apps-list
+List Streamlit apps
+streamlit-apps-set-source
+Set Streamlit app source
+streamlit-apps-start
+Start Streamlit app
+streamlit-apps-status
+Get Streamlit app status
+streamlit-apps-stop
+Stop Streamlit app
+streamlit-apps-update
+Update Streamlit app
+streamlit-apps-versions
+List Streamlit app versions
+Subscriptions
+(
+8
+MCP
+tools
+)
+subscriptions-create
+Create subscription
+subscriptions-delete
+Delete subscription
+subscriptions-deliveries-list
+List subscription deliveries
+subscriptions-deliveries-retrieve
+Get subscription delivery
+subscriptions-list
+List subscriptions
+subscriptions-partial-update
+Update subscription
+subscriptions-retrieve
+Get subscription
+subscriptions-test-delivery-create
+Send test delivery
+Surveys
+(
+11
+MCP
+tools
+)
+survey-create
+Creates a new survey in the project.
+survey-delete
+Delete a survey by ID.
+survey-get
+Get a specific survey by ID.
+survey-launch
+Launch a survey now.
+survey-stats
+Get response statistics for a specific survey.
+survey-stop
+Stop a survey now.
+survey-update
+Update an existing survey by ID.
+surveys-get-all
+List surveys in the project (server-side search + filters).
+surveys-global-stats
+Get aggregated response statistics across all surveys.
+surveys-responses-list
+List individual survey responses with resolved question text.
+surveys-summarize-responses-create
+Summarize survey responses (per question, or survey-wide headline).
+Tasks
+(
+24
+MCP
+tools
+)
+channel-create
+Resolve or create a channel
+channel-instructions-retrieve
+Read channel instructions
+channel-instructions-update
+Update channel instructions
+channel-list
+List channels
+channel-retrieve
+Get a channel
+loops-create-execute
+Create loop (execute)
+loops-create-prepare
+Create loop (prepare)
+loops-destroy
+Delete loop
+loops-list
+List loops
+loops-partial-update
+Update loop
+loops-preview-create
+Preview a loop fire
+loops-retrieve
+Get loop
+loops-review
+Review a loop with the user before creating it.
+loops-run-create
+Manually run a loop
+loops-runs-retrieve
+List loop runs
+tasks-artifacts-list
+List artifacts for the current task.
+tasks-comments-list
+List comments for the current task.
+tasks-comments-retrieve
+Retrieve one comment conversation from the current task.
+tasks-create
+Create task
+tasks-list
+Search and list tasks
+tasks-retrieve
+Get task
+tasks-runs-list
+List task runs
+tasks-runs-retrieve
+Get task run
+tasks-runs-session-logs-retrieve
+Get task run session logs
+Tracing
+(
+12
+MCP
+tools
+)
+apm-attribute-breakdown
+Break down spans by attribute value
+apm-attribute-values-list
+List tracing attribute values
+apm-attributes-list
+List tracing span attributes
+apm-services-list
+List tracing service names
+apm-spans-aggregate
+Aggregate span statistics
+apm-spans-count
+Count spans
+apm-spans-duration-histogram
+Trace duration distribution (histogram)
+apm-spans-latency-heatmap
+Latency over time (heatmap)
+apm-spans-sparkline
+Span counts over time (sparkline)
+apm-spans-tree
+Aggregate span call tree
+apm-trace-get
+Retrieve trace spans
+query-apm-spans
+Query tracing spans
+User interview topics
+(
+19
+MCP
+tools
+)
+user-interview-topics-add-interviewee
+Add an interviewee to a topic
+user-interview-topics-create
+Create user interview topic
+user-interview-topics-generate-links
+Generate public interview links for a topic
+user-interview-topics-interviewees-bulk-create
+Create many per-interviewee context rows at once
+user-interview-topics-interviewees-create
+Add per-interviewee context to a topic
+user-interview-topics-interviewees-destroy
+Delete a per-interviewee context row
+user-interview-topics-interviewees-list
+List per-interviewee contexts for a topic
+user-interview-topics-interviewees-partial-update
+Update a per-interviewee context row
+user-interview-topics-links-csv
+Export interview links for a topic as CSV
+user-interview-topics-list
+List user interview topics
+user-interview-topics-partial-update
+Update a user interview topic
+user-interview-topics-preview-invite
+Preview the invite email for a targeted interviewee
+user-interview-topics-remove-interviewee
+Remove an interviewee from a topic
+user-interview-topics-retrieve
+Get user interview topic
+user-interview-topics-send-invites
+Email interview invites to every targeted interviewee
+user-interviews-list
+List user interview responses
+user-interviews-partial-update
+Set classifications on an interview response
+user-interviews-retrieve
+Retrieve a user interview response
+user-interviews-search
+Semantic search across interview responses
+Utilities
+(
+1
+MCP
+tool
+)
+generate-app-url
+Build a correct PostHog app URL for a page or entity.
+Visual review
+(
+11
+MCP
+tools
+)
+visual-review-repos-list
+List visual review repos
+visual-review-repos-retrieve
+Get visual review repo
+visual-review-runs-approve-create
+Mark visual review snapshots reviewed
+visual-review-runs-counts-retrieve
+Visual review run counts
+visual-review-runs-finalize-create
+Finalize a visual review run
+visual-review-runs-list
+List visual review runs
+visual-review-runs-retrieve
+Get visual review run
+visual-review-runs-snapshot-history-list
+Snapshot change history
+visual-review-runs-snapshots-list
+List run snapshots
+visual-review-runs-tolerate-create
+Tolerate visual review snapshot
+visual-review-runs-tolerated-hashes-list
+List tolerated hashes
+Warehouse sources
+(
+26
+MCP
+tools
+)
+data-warehouse-source-connect-link
+Get a secure connect link for a source
+data-warehouse-source-setup
+Set up a data warehouse source (one step)
+data-warehouse-stored-credentials-list
+List stored source credentials awaiting setup
+external-data-schemas-cancel
+Cancel running sync
+external-data-schemas-delete-data
+Delete synced table data
+external-data-schemas-incremental-fields-create
+Refresh candidate incremental fields for a schema
+external-data-schemas-list
+List data warehouse table schemas (imported tables)
+external-data-schemas-partial-update
+Update data warehouse table schema sync config
+external-data-schemas-reload
+Trigger sync for a table schema
+external-data-schemas-resync
+Resync table schema from scratch
+external-data-schemas-retrieve
+Get data warehouse table schema
+external-data-sources-check-cdc-prerequisites-create
+Check Postgres CDC prerequisites
+external-data-sources-connections-list
+List direct-query connections
+external-data-sources-create
+Create data warehouse source (advanced; prefer source setup)
+external-data-sources-create-webhook-create
+Create and register a webhook for a source
+external-data-sources-delete-webhook-create
+Delete a source's webhook
+external-data-sources-destroy
+Delete data warehouse source
+external-data-sources-list
+List data warehouse sources
+external-data-sources-partial-update
+Update data warehouse source
+external-data-sources-refresh-schemas
+Discover new tables in source
+external-data-sources-reload
+Trigger sync for a source
+external-data-sources-repair-cdc-create
+Repair CDC on a source
+external-data-sources-retrieve
+Get data warehouse source
+external-data-sources-update-webhook-inputs-create
+Update webhook inputs (signing secret, etc.)
+external-data-sources-webhook-info-retrieve
+Get webhook status for a source
+external-data-sources-wizard
+List data warehouse source types you can import
+Web analytics
+(
+14
+MCP
+tools
+)
+heatmaps-events
+Get sessions behind heatmap coordinates
+heatmaps-list
+List heatmap interactions for a page
+heatmaps-saved-create
+Create a saved heatmap
+heatmaps-saved-get
+Get a saved heatmap
+heatmaps-saved-list
+List saved heatmaps
+heatmaps-saved-regenerate
+Regenerate a saved heatmap screenshot
+heatmaps-saved-update
+Update a saved heatmap
+path-cleaning-rules-update
+Edit path cleaning rules with granular ops, a preview step, and safe read-modify-write.
+query-web-overview
+Run a web analytics overview query
+query-web-stats
+Run a web analytics breakdown table query
+query-web-vitals
+Run a web vitals path breakdown query
+web-analytics-path-cleaning-suggestions-apply
+Apply a path-cleaning suggestion
+web-analytics-path-cleaning-suggestions-generate
+Generate path-cleaning suggestions
+web-analytics-weekly-digest
+Summarize web analytics
+Workflows
+(
+30
+MCP
+tools
+)
+workflows-archive
+Archive workflow
+workflows-blast-radius
+Size workflow audience
+workflows-create
+Create workflow
+workflows-create-email-template
+Create email template
+workflows-discard-draft
+Discard workflow draft
+workflows-enable
+Enable workflow
+workflows-get
+Get workflow
+workflows-get-email-template
+Get email template
+workflows-get-invocation
+Get workflow invocation
+workflows-get-revision
+Get workflow revision
+workflows-global-stats
+Workflow stats overview
+workflows-list
+List workflows
+workflows-list-batch-jobs
+List workflow batch runs
+workflows-list-email-templates
+List email templates
+workflows-list-invocations
+List workflow invocations
+workflows-list-revisions
+List workflow revisions
+workflows-logs
+Get workflow logs
+workflows-patch-action-email
+Patch a workflow step's email
+workflows-patch-email-template
+Patch email template design
+workflows-patch-graph
+Patch workflow graph
+workflows-publish
+Publish workflow draft
+workflows-restore-revision
+Restore workflow revision
+workflows-run-batch
+Run batch workflow
+workflows-schedule-create
+Schedule workflow runs
+workflows-show-email-template
+Show email template
+workflows-stats
+Get workflow stats
+workflows-test-run
+Test-run workflow
+workflows-update
+Update workflow
+workflows-update-email-template
+Update email template
+workflows-update-schedule
+Update workflow schedule
+Note:
+Some MCP tools are in alpha behind a feature flag and don't appear here yet – like the
+semantic layer MCP tools
+for governed metrics, table certifications, and relationships.
+CLI mode commands
+In
+CLI mode
+, the default for most clients, the MCP server registers a single
+exec
+tool instead of one tool per endpoint. Agents pass it CLI-style command strings to list, search, inspect, and call the tools above on demand, which keeps context usage small.
+learn <topic...> - load one or more learning topics tools — list available tool names search <regex_pattern> — search tools by JavaScript regex (matches name, title, description) info [--json] <tool_name> — show tool name, description, and input schema (summarized if too large). Pass `--json` for raw JSON output. schema <tool_name> [field_path] — drill into a specific field schema (supports dot-notation, e.g. series, breakdownFilter.breakdowns) call [--json] [--confirm] <tool_name> <json_input> — call a tool with JSON input (--json returns JSON instead of optimized output in supported tools. Informational responses remain tagged and escaped in both MCP and the agent CLI. --confirm is required by the CLI for destructive tools.)
+Namespaced references (
+posthog:<tool-name>
+):
+strip the
+posthog:
+prefix and route through
+exec
+. Run
+info <name>
+to inspect, then
+call <name> <json>
+. E.g.
+posthog:insights-list
+→
+posthog:exec({ "command": "info insights-list" })
+then
+posthog:exec({ "command": "call insights-list {}" })
+. If the bare name isn't found, fall back to
+search <pattern>
+— it may have been renamed.
+The
+learn
+command is only registered on hosts that use the guided help catalog (currently Claude web and desktop). On hosts that support MCP apps, CLI mode also registers a separate
+render-ui
+tool for rendering interactive visualizations.
+How agents use these commands
+# 1. Find unknown tools posthog:exec({ "command": "search <regex>" }) posthog:exec({ "command": "tools" }) # fallback: list all # 2. Inspect once if the schema is missing posthog:exec({ "command": "info <tool_name>" }) # 3. Drill into complex fields — REQUIRED for any field with a `hint` posthog:exec({ "command": "schema <tool_name> <field_path>" }) # 4. Call; reuse the schema posthog:exec({ "command": "call <tool_name> <json_input>" }) posthog:exec({ "command": "call --json <tool_name> <json_input>" })
+Tips
+Run
+info <tool_name>
+once when a schema isn't already in context, then reuse it. Running it before every call wastes context, and guessing a schema instead fails the call.
+When
+info
+returns fields carrying a
+hint
+, drill into each one with
+schema <tool_name> <field_path>
+before building that field's value.
+search
+matches tool names, titles, and descriptions, not input schemas. Search for the tool, then inspect its schema.
+Keep exploring
+Use cases
+– example prompts and multi-step recipes
+FAQ and advanced setup
+– auth, scoping, and filtering
+Overview
+– back to the MCP overview and install instructions
+Was this page useful?
+Helpful
+Could be better
+Jump to:
+Available MCP tools
+Keep exploring

@@ -1,0 +1,446 @@
+# https://help.vwo.com/hc/en-us/articles/57716550899993-Connect-the-VWO-MCP-Server-with-Gemini-CLI
+Connect Wingify MCP Server with Gemini CLI – Wingify
+Knowledge Base
+Start Free trial
+Wingify
+Wandz
+MCP Integrations
+Articles in this section
+Connect Wingify with AI Tools using Wingify’s MCP Server
+Connect Wingify MCP Server with Gemini CLI
+Configure a Custom Wingify Connector in Claude
+Connect Wingify MCP Server with Gemini CLI
+Jash Unadkat
+Updated
+August 13, 2026 11:54
+Share:
+Facebook
+Twitter
+LinkedIn
+close this to read article
+This article covers the following:
+Overview
+Configure the Wingify MCP Server with Gemini CLI
+Step 1: Install and Authenticate Gemini CLI
+Step 2: Add the Wingify MCP Server in Gemini CLI
+Step 3: Authenticate with Wingify
+Step 4: Verify the Wingify MCP Connection
+Connect Wingify MCP Server with Gemini Enterprise
+Add Wingify MCP Server in Gemini Enterprise
+Enable Wingify MCP Actions
+Use Wingify MCP in Gemini Enterprise Chat
+Verify the MCP connection with Gemini Enterprise
+Troubleshooting
+FAQs
+Overview
+The
+Wingify Model Context Protocol (MCP) server
+allows you to connect Wingify’s experimentation and insights data directly to Gemini Command Line Interface (CLI). By establishing this connection, you can query the campaign data in your Wingify account directly from your terminal using natural language in Gemini CLI.
+This integration connection bridges the gap between AI-driven analysis and your optimization workflow. Instead of navigating through the Wingify dashboard to find specific campaign details, you can ask Gemini to retrieve reports, check the status of feature flags, or summarize recent experiment results with the terminal.
+For example, a developer working in the command-line terminal can quickly query:
+Give me
+the last paused campaign in my Wingify account
+. Gemini CLI fetches this data through Wingify’S MCP server in real-time and displays a structured report without the user ever leaving their coding environment.
+Key Benefits:
+Contextual Efficiency:
+Access Wingify data directly within your developer tools and terminal.
+Natural Language Interaction:
+Query complex campaign data using simple English commands.
+Unified Workflow:
+Seamlessly switch between code execution and experimentation analysis.
+Rapid Troubleshooting:
+Quickly identify the state of campaigns or feature flags during development.
+The next section explains a step-by-step procedure to integrate the Wingify MCP server with Gemini CLI.
+Configure the Wingify MCP Server with Gemini CLI
+Follow these steps to integrate the Wingify MCP server with Gemini CLI:
+Step 1 - Install and Authenticate Gemini CLI
+To connect Wingify’s MCP server with Gemini, you must have the Gemini CLI installed and authenticated in your command line terminal. For more information, refer to Gemini CLI’s
+installation
+and
+authentication
+steps.
+Step 2: Connect the Wingify MCP Server in Gemini CLI
+Open a new terminal session on your system.
+Based on your geographic location, run the following command to establish a connection with the Wingify MCP server:
+Region
+Command
+Global
+gemini mcp add --transport http wingify https://mcp.wingify.ai/mcp
+Europe
+gemini mcp add --transport http wingify https://mcp-eu.wingify.ai/mcp
+Asia
+gemini mcp add --transport http wingify https://mcp-as.wingify.ai/mcp
+A confirmation message
+MCP server "wingify" added to project settings
+appears upon successful connection.
+Step 3: Authenticate with Wingify
+Start Gemini CLI by running gemini command in your terminal.
+Enter the command /mcp auth wingify. Your browser opens the Wingify authorization screen.
+Select your Wingify account and choose the permission level (Browse, Design, or Publish/Admin). You can select from the following permissions to manage how end users interact with Wingify data through the MCP server.
+Permission
+Description
+Browse
+Read-only access to Wingify data, session recordings, heatmaps, A/B tests, Split URL, and Multivariate tests. Cannot create or edit.
+Design
+Enables creation of new A/B or Split URL tests via the MCP.
+Publish / Admin
+Provides full control to create, edit, start, pause, or delete A/B tests and Split URL tests.
+Click
+Approve
+.
+Note:
+OAuth authentication requires a browser on your local machine. It will not work in headless environments, remote SSH sessions without X11 forwarding, or containerized environments without browser support.
+The next section explains how to verify if the Wingify MCP connection is working correctly in Gemini CLI.
+Step 4: Verify the Wingify MCP Connection in Gemini CLI
+To ensure Gemini CLI can successfully communicate with your Wingify account, follow these steps:
+In the terminal, enter the command -
+gemini
+to enter Gemini CLI
+Run the command
+/mcp
+to list all configured servers. Verify that
+wingify
+appears in the list of active MCP servers along with its available tools, such as
+mcp_wingify_get_campaigns_overview_tool
+and
+mcp
+_
+create_ab_campaign.
+Alternatively, you can verify the connection by running a sample prompt in the terminal. For example,
+Give me the last paused campaign in my Wingify account
+. Gemini will fetch the data and display a table containing the
+Campaign ID, Name, Status, and Creation Date
+directly in the terminal.
+Now, let us understand how to connect the Wingify MCP server to Gemini Enterprise.
+Connect Wingify MCP Server with Gemini Enterprise
+To connect the Wingify MCP server to Gemini Enterprise, you must retrieve the MCP connection credentials from your Wingify Developer Dashboard and paste them into the Gemini Enterprise console.
+To retrieve credentials from your Wingify account:
+Log in to your Wingify account.
+Scroll down to the bottom of the Wingify dashboard page. In the bottom-left corner, click
+Developer Resources
+.
+On the
+Developer Dashboard
+page, navigate to the
+Wingify MCP Server
+tab.
+Click the link labeled
+click here
+to view the credentials for connecting Wingify MCP with Gemini Enterprise.
+A modal window opens, displaying your unique credentials for connecting to Gemini Enterprise:
+MCP Server URL
+Authorization URL
+Token URL
+Client ID
+Client Secret
+Scopes
+Keep this modal open to copy the details during the next setup phase.
+Add Wingify MCP Server in Gemini Enterprise
+To add the Wingify MCP server in your Gemini enterprise account, follow these steps:
+Open a new browser tab and log in to the Gemini Enterprise console.
+In the left navigation sidebar, click
+Connected data stores
+.
+Click
++ New data store
+.
+In the
+MCP servers
+section, click
+Add MCP server
+under
+the Custom MCP Server
+tile.
+From the Wingify credentials modal, paste the following credentials into their respective fields:
+MCP Server URL
+Authorization URL
+Token URL
+Client ID
+Client Secret
+Scopes
+Click
+Verify OAuth
+.
+A Wingify
+Authorization request
+window appears.
+In the authorization window, perform the following:
+Click the
+Select an account
+dropdown menu and select your Wingify account.
+Click the
+Permission level
+dropdown menu and select
+Publish
+.
+To complete the authorization process, select the consent checkbox that reads,
+I understand the permissions being
+requested and trust this application to access my account
+.
+Click
+Approve
+.
+The connection is established, and a
+Successfully logged in
+notification appears in Gemini Enterprise.
+On the
+Create data store
+page, click
+Continue
+under
+Authentication settings.
+In the
+MCP Server Description
+text box on the
+MCP Server configuration
+page, enter a brief functional summary of the server, and click
+Continue
+.
+In the
+Your data connector name
+field, enter a recognizable name such as Wingify MCP.
+Click
+Create
+. The MCP server connection is established.
+The next step is to enable all the MCP actions that a user can perform while using the Wingify MCP server.
+Enable Wingify MCP Actions
+After the MCP server connection is established, you must authorize and enable all the actions that Gemini Enterprise uses to communicate with Wingify.
+To enable all the actions:
+From the left navigation menu, click the
+Actions
+tab.
+Click
+Reload custom actions
+.
+An
+Authorization request
+dialog box opens.
+In the
+Authorization Request
+dialog box, do the following:
+Select your Wingify account.
+Set the
+Permission level
+to
+Publish
+.
+Check the authorization consent box.
+Click
+Approve
+.
+The page updates to display a list of all imported custom actions, which are initially marked as
+Disabled
+.
+Select the checkbox at the top-left of the Actions table to select all actions.
+Once you select all the actions, the
+Enable actions
+button appears at the top in the toolbar.
+Click
+Enable actions.
+The value in the
+Status
+column for all selected resources changes to
+Enabled
+, and a confirmation message indicates that the data connector actions are updated successfully.
+Use Wingify MCP in Gemini Enterprise Chat
+Once you configure and enable the actions, you can activate the data connector inside your Gemini Enterprise chat.
+Navigate to the main chat interface or select
+New chat
+in Gemini Enterprise.
+In the input text box, click the
+Connector
+icon
+.
+Select
+Wingify MCP
+from the available connectors list.
+Click
+Authorize
+next to the tool name.
+An authorization request window appears.
+In the authorization dialog box, do the following:
+Select your Wingify account.
+Set the
+Permission level
+to
+Publish.
+Check the authorization consent box, and click
+Approve
+.
+Turn on the toggle next to
+Wingify MCP
+.
+Enter a prompt in the chat input bar and press
+Enter
+.
+Example prompt:
+Can you check my Wingify Connector, and tell me about my last campaign?
+Gemini Enterprise responds in a structured format. Here’s a sample response:
+Verify the MCP Connection in Gemini Enterprise
+To ensure your Wingify MCP connection is working correctly, verify the following:
+Active Status:
+Go to
+Connected data stores
+from the left navigation menu in the Gemini Enterprise dashboard and confirm that the
+Wingify MCP server
+line item
+displays an
+Active
+flag in the
+Status
+column.
+Enabled Operations:
+From the left navigation menu in the Gemini Enterprise dashboard, click
+Actions
+and verify that the
+Status
+column shows
+Enabled
+for all actions in your connector configuration.
+Live Chat Responses:
+Prompt the model with a question about your campaigns and confirm the response includes a table listing your connected domain, SmartCode detection status, and campaign details such as campaign ID, split type, traffic allocation, and target goals.
+Troubleshooting
+Issue
+Possible Cause
+Recommended Solution
+MCP server connection fails.
+Incorrect URL or expired token.
+Verify if the MCP URL and token you entered in the command are accurate while connecting to the MCP server as explained in
+Step 2
+. Ensure the --transport http flag is included.
+Wingify MCP tools are not appearing in the Gemini CLI.
+Connection timeout or network restrictions.
+Check your internet connection and ensure your firewall allows outgoing requests to the Wingify MCP endpoint.
+FAQs
+Do I need to add the Wingify MCP server every time I open the terminal?
+No. Once added, the configuration is saved in your Gemini local settings. You only need to run the
+gemini
+command to start interacting with the server.
+What should I do if the MCP server stops responding?
+You can try removing and re-adding the Wingify MCP server using the
+gemini mcp remove wingify
+and
+gemini mcp add commands
+, respectively.
+Need more help?
+For further assistance or more information, contact
+Wingify Support
+.
+Was this article helpful?
+0 out of 0 found this helpful
+Return to top
+Related articles
+Configure a Custom Wingify Connector in Claude
+Connect Wingify with AI Tools using Wingify’s MCP Server
+Get AI-Generated A/B Testing Ideas for Your Pages or Goals
+Warnings in Wingify
+Configure Custom Visitor Identifiers in Wingify
+×
+We're sorry to know about your experience. Please let us know what can we do to make this article more useful.
+A value for this field is required.
+Email
+A value for this field must be valid email.
+This allows us to keep you informed on the status of your feedback. When collecting this information, we adhere to the Privacy Policy outlined
+here
+.
+Submit
+No thanks
+Thank you for your feedback.
+There is some technical error. Please try after some time or contact us at
+support@vwo.com
+Footer Navigation
+Popular
+In-depth
+Guides
+A/B Testing
+Cart Abandonment
+Conversion Rate Optimization
+Customer Data Platform
+Customer Engagement
+Customer Experience Optimization
+Customer Retention
+Feature Rollout
+Grow Website Traffic
+Landing Page Optimization
+Mobile App A/B Testing
+Multivariate Testing
+Push Notifications
+Server-Side Testing
+Session Recording
+Usability Testing
+Visitor Behavior Analysis
+Web Form Analytics
+Website Heatmaps
+Website Optimization
+Website Personalization
+Website Redesign
+Website Surveys
+Products
+VWO Testing
+VWO Insights
+VWO Data360
+VWO Personalize
+VWO Plan
+VWO Web Rollouts
+Compare
+VWO vs. Optimizely
+VWO vs. Google Optimize
+Google Optimize vs. Optimizely
+Google Optimize 360 vs. Optimizely
+Adobe Target vs. Google Optimize
+Google Optimize vs. Optimize 360
+Google Optimize vs. Kameleoon
+Optimizely vs. Kameleoon
+Kameleoon vs. AB Tasty
+Kameleoon vs. Optimize 360
+AB Tasty vs. Optimize 360
+Resources
+Blog
+Product Updates
+Success Stories
+eBooks
+Webinars
+Events
+Glossary
+Inside VWO
+Masters of Conversion
+Popular In-Depth Guides
+Get Help
+Knowledge Base
+Free Tools
+A/B Test Significance Calculator
+A/B Test Sample Size Calculator
+A/B Test Duration Calculator
+Web Push ROI Calculator
+Cart Abandonment Calculator
+AI-Powered Heatmap Generator
+CRO Experimentation Checklist
+About Us
+Our Company
+Careers
+Media Kit
+VWO Partners
+Affiliate Program
+Contact Us
+©
+Copyright
+Wingify
+. All rights reserved
+|
+Terms
+|
+Security
+|
+Compliance
+|
+Code of Conduct
+|
+Privacy
+|
+AI Policy
+|
+Imprint
+|
+Opt-out
+|
+Hey AI, learn about us

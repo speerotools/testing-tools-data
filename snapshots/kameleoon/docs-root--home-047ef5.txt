@@ -1,0 +1,174 @@
+# https://developers.kameleoon.com/
+Developer docs overview - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Home
+Developer docs overview
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+Developer docs overview
+Web Experimentation
+Overview
+Get started
+Implementation and deployment
+Self-hosting
+Technical concepts
+Best practices
+Troubleshooting
+Feature Experimentation
+Get started
+Implementation and deployment
+Integrations
+Targeting and segmentation
+Technical reference
+Core concepts
+Cross-device experimentation
+Custom data
+Privacy and compliance
+Consent management
+Data collection (client-side)
+Data collection (backend)
+Developer tools
+VS Code extension
+Kameleoon Debug Assistant extension
+FAQ
+English
+On this page
+Web Experimentation
+Feature Management and Experimentation
+Web SDKs
+Mobile SDKs
+Serverless edge compute starter kits
+Additional resources
+APIs
+Additional Tools
+Support
+Home
+Developer docs overview
+Copy page
+Copy page
+Navigate Kameleoon’s developer documentation for web experimentation, feature management, SDKs, APIs, and privacy tools.
+Copy page
+Copy page
+For help creating, configuring, and analyzing experiments in Kameleoon, refer to the
+user manual
+instead.
+Kameleoon provides a unified platform that combines experimentation capabilities for both web and full-stack applications. The platform includes two main solutions:
+Web Experimentation
+includes the tools you need to run experiments on websites and web apps, such as prompt-based experimentation (PBX). This solution uses a Kameleoon JavaScript application file to deliver experiment changes and track events related to experiments and visitor behavior.
+Feature Management and Experimentation
+supports product and engineering teams that deploy and run experiments in backend systems or mobile applications. You can also use it to incorporate feature management and experimentation into your product development and release process. This solution uses Kameleoon SDKs or APIs.
+You can use both Web and Feature solutions simultaneously in an approach called
+hybrid experimentation
+. This approach lets you run backend experiments while leveraging the Kameleoon JavaScript application file to automatically capture visitor behavior and conversions.
+Kameleoon offers APIs and additional tools for integrating with your ecosystem, automating tasks, and ensuring flicker-free A/B experiments.
+​
+Web Experimentation
+Execute tests—including those utilizing AI-powered PBX—on copy, design, or full pages on your website, including single-page applications, all without affecting performance.
+Start your PBX free trial
+to begin optimizing your web experience today.
+Overview
+Learn about Kameleoon’s script, A/B testing, and Web Experimentation features.
+Advanced settings
+Use advanced Kameleoon features, such as cross-device history reconciliation and ITP management.
+Consent management
+Use consent management features to adhere to regulatory requirements while responsibly managing data.
+​
+Feature Management and Experimentation
+Roll out new features with confidence, in real time, everywhere in your tech stack. Kameleoon provides more than a dozen SDKs.
+Try a free demo
+to see feature management in action.
+​
+Web SDKs
+C# SDK
+Go SDK
+Java SDK
+JS/TS SDK
+NodeJS SDK
+PHP SDK
+Python SDK
+React SDK
+Ruby SDK
+Rust SDK
+Elixir SDK
+​
+Mobile SDKs
+Android SDK
+Flutter SDK
+iOS SDK
+React Native SDK
+​
+Serverless edge compute starter kits
+AWS Lambda
+Cloudflare Workers
+Fastly
+Vercel Edge
+​
+Additional resources
+Overview
+Learn the basics of Feature Experimentation in Kameleoon SDKs and supported features and integrations.
+Tech considerations
+Understand the fundamental technical concepts you need for a successful implementation.
+Web server modules
+If your web server implements caching, use Kameleoon’s web server modules to ensure your A/B testing’s reliability.
+​
+APIs
+Discover APIs to supercharge your experimentation.
+Get started with APIs
+Activation API
+Use the Activation API (JavaScript) to implement A/B testing variations without flickering.
+Automation API
+Use the Automation API (REST) to programmatically configure and manage your experiments.
+Data API
+Use the Data API (REST) to store, retrieve, and manage data on Kameleoon’s remote servers.
+Recommendation API
+Use the Product Recommendation API (REST) to make AI-driven product recommendations to your visitors.
+​
+Additional Tools
+Learn about Kameleoon’s powerful analytics and data collection tools.
+Analytics
+Integrate with your analytics solution (for example, Mixpanel, Amplitude, Snowplow, GA4, Segment).
+MCP Server
+Connect AI coding assistants to Kameleoon to automate implementation and feature management.
+Docs with AI
+Open any page in Claude, ChatGPT, or Cursor, or configure a persistent docs MCP server for your development environment.
+Data collection
+Understand what client-side and SDK data is collected for use in your experiments.
+​
+Support
+Join Kameleoon’s
+Slack Community
+or contact
+support@kameleoon.com
+for questions about Kameleoon’s features and the platform’s latest updates.
+Was this page helpful?
+Yes
+No
+Overview
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

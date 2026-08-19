@@ -1,0 +1,223 @@
+# https://docs.uniform.app/docs/integrations/data/google-analytics
+Google Analytics | Uniform DXP documentation
+Integrations
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Content Management (CMS)
+Digital Asset Management (DAM)
+Commerce & PIM
+Edge / CDN / Deployment
+Analytics & Customer Data
+Google Analytics
+Visualize Uniform data in GA4
+Configure Google Tag Manager
+mParticle
+Twilio Segment
+Search & Discovery
+Generative AI
+Translation Management
+Single Sign-on
+Customization
+Extending Uniform
+Create a custom Mesh integration
+Custom edgehancers
+Mesh locations
+Install location
+Settings location
+Data Source location
+Data Type location
+Data Resource location
+Data Resource Selector location
+Parameter Type location
+Parameter Type Configuration location
+Editor tools location
+Personalization selection algorithms location
+Asset Library location
+Asset Parameter location
+Project Tools location
+Dashboard tools location
+Editor state API
+Identity delegation
+On this page
+Google Analytics
+Uniform enables you to add personalization and testing capabilities
+to your applications. Google Analytics is a popular product for
+capturing and reporting on activity in your application. Uniform
+is able to push personalization and testing data to Google Analytics,
+improving the reach of your analytics.
+info
+This analytics integration in Uniform is for
+GA4
+.
+The previous generation product,
+Universal Analytics
+,
+was deprecated on
+1st July 2023
+.
+Tracking
+#
+This section describes how to activate tracking personalization
+and testing from Uniform in GA4. This will result in Uniform
+writing the following data to custom dimensions in GA4:
+Dimension
+Personalization event
+A/B test event
+Event name
+Analytics tracking name parameter from the Personalization component.
+Uniform test name
+Event category
+Uniform Personalization
+Uniform AB Testing
+Event label
+ID of the personalization variation that was displayed to the visitor.
+ID of the test variation that was displayed to the visitor.
+Is control group
+1
+if the visitor is a member of the control group, otherwise
+0
+.
+This dimension does not apply to this event type.
+Configure GA event
+#
+In GA4, Event title and Event Category are deprecated in favor
+of parameters. To provide backward compatibility on tracking
+variations for personalization and tests on Uniform without
+title and category, you are required to manually create these
+custom dimensions for events in your Google Analytics dashboard.
+Log into Google Analytics.
+Navigate to your GA4 property.
+Navigate to
+Property settings > Data display > Custom definitions
+.
+Add the following custom dimensions:
+Dimension name
+Scope
+Event parameter
+Notes
+Event Category
+Event
+event_category
+Event Label
+Event
+event_label
+Is Control Group
+Event
+is_control_group
+Learn more about
+control groups
+for Uniform.
+Activate GA plugin
+#
+The Uniform tracker can dispatch event data to Google
+Analytics using a plugin. You must add this plugin to
+your front-end application.
+If your application doesn't already use the Google
+Analytics global site tag (gtag.js), you must
+add the script
+.
+About this step
+In a web application, the global site tag must be
+added immediately after the head tag is closed,
+meaning it must be the first thing after
+</Head>
+.
+Add the following npm packages to your front-end application:
+@uniformdev/context-gtag
+Copy
+Copied!
+About this step
+Make sure the package you add is version is 16.3 or greater.
+Add the Google Analytics plugin to the Uniform Context object.
+import { enableGoogleGtagAnalytics } from '@uniformdev/context-gtag'; ... const gaPlugin = enableGoogleGtagAnalytics({ emitAll: true }); const context = new Context({ ... plugins: [gaPlugin] }); ...
+Copy
+Copied!
+About this step
+The Uniform Context object is passed to the tracker. The
+precise code used to add the tracker to your application
+depends on your front-end. For more information about
+the tracker, see the guide on how to
+add the Uniform tracker
+.
+The plugin causes the tracker to fire GA4 events when Uniform
+renders personalized components or variations for A/B tests on
+your application.
+Custom tracking
+#
+There are cases where you might want to write different data to GA4. This requires creating a custom plugin. This example demonstrates how you can do the following:
+For personalization events, populate another custom dimension to store the hostname the visitor is interacting with.
+For A/B test events, set the event category to "Uniform Test" (instead of "Uniform AB Testing").
+Write custom plugin
+#
+A
+custom plugin
+registers (and unregisters) event listeners on the Uniform Context object. Add the following file to your front-end application.
+lib/plugins.js
+function onPersonalization(e) { if (typeof window === 'undefined' || !window?.gtag) return; const { control, name, variantIds } = e; variantIds.forEach((variant) => { const data = { event_category: 'Uniform Personalization', event_label: variant.id, is_control_group: control || variant.control ? 1 : 0, hostname: window.location.hostname ?? "", } window.gtag('event', name, data); }) } function onTest(e) { if (typeof window === 'undefined' || !window?.gtag) return; const { name, variantId } = e; window.gtag('event', name, { event_category: 'Uniform Test', event_label: variantId ?? '', }); } export function enableCustomGoogleGtagAnalytics() { return { init: (context => { context.events.on("personalizationResult", onPersonalization); context.events.on("testResult", onTest); return () => { context.events.off("personalizationResult", onPersonalization); context.events.off("testResult", onTest); } }) } }
+Copy
+Copied!
+Activate custom plugin
+#
+The Uniform tracker can dispatch event data to Google Analytics using your custom plugin. You must add this plugin to your front-end application.
+If the GA plugin is active in your application, you must remove it in order to avoid duplicate events being sent to GA4.
+If your application doesn't already use the Google
+Analytics global site tag (gtag.js), you must
+add the script
+.
+About this step
+In a web application, the global site tag must be
+added immediately after the head tag is closed,
+meaning it must be the first thing after
+</Head>
+.
+Add your custom plugin to the Uniform Context object.
+import { enableCustomGoogleGtagAnalytics } from "./plugins"; ... const customPlugin = enableCustomGoogleGtagAnalytics(); const context = new Context({ ... plugins: [customPlugin] }); ...
+Copy
+Copied!
+About this step
+The Uniform Context object is passed to the tracker. The
+precise code used to add the tracker to your application
+depends on your front-end. For more information about
+the tracker, see the guide on how to
+add the Uniform tracker
+.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+Analytics & Customer Data
+Next
+Visualize Uniform data in GA4
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+Tracking
+Configure GA event
+Activate GA plugin
+Custom tracking
+Write custom plugin
+Activate custom plugin

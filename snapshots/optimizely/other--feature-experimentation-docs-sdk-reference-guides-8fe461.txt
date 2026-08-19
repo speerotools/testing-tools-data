@@ -1,0 +1,599 @@
+# https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides
+SDK reference guides - Optimizely Feature Experimentation
+The availability of features may depend on your plan type. Contact your Customer Success Manager if you have any questions.
+For AI agents: visit https://docs.developers.optimizely.com/feature-experimentation/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.
+Jump to Content
+Dev guide
+API Reference
+Recipes
+Changelog
+User Guide
+Dev guide
+Recipes
+API Reference
+Changelog
+Commerce Connect
+Configured Commerce
+Content Management System
+Content Marketing Platform
+Cross-platform products
+Digital Experience Platform
+Experimentation Data
+Feature Experimentation
+Optimizely Connect Platform
+Optimizely Data Platform
+Performance Edge
+Recommendations
+Web Experimentation
+Campaign
+Deprecated Products
+Dev guide
+API Reference
+Recipes
+Changelog
+User Guide
+GitHub
+Dev Community
+Optimizely Academy
+Submit a ticket
+Log In
+Dev guide
+GitHub
+Dev Community
+Optimizely Academy
+Submit a ticket
+Log In
+Feature Experimentation
+Dev guide
+Index
+Index
+Optimizely Feature Experimentation
+Introduction
+Release notes
+Optimizely Feature Experimentation - application and migration
+Feature Experimentation migration timeline
+Key concepts and differences in Optimizely Feature Experimentation
+Simplified data model
+Updated Feature Experimentation application UI
+Updated methods in Feature Experimentation
+Impressions after migration
+Quickstarts
+Android SDK quickstart
+C# SDK quickstart
+Flutter SDK quickstart
+Go SDK quickstart
+Java SDK quickstart
+JavaScript SDK v6+ quickstart
+JavaScript (Browser) SDK quickstart prior to v6
+JavaScript (Node) SDK quickstart prior to v6
+PHP SDK quickstart
+Python SDK quickstart
+React SDK quickstart
+React SDK quickstart (prior to v4)
+React Native SDK quickstart
+Ruby SDK quickstart
+Swift SDK quickstart
+Core concepts
+A/B tests overview
+Flag delivery overview
+Flag variations and flag variables overview
+How bucketing works
+What are impressions and decisions
+Interactions between flag rules
+Feature Experimentation FAQs
+Create flags
+Create feature flags
+Create flag variables
+Flag variable example with an image carousel
+Create flag variations
+Handle user IDs
+Ensure consistent user bucketing using a user profile service
+Assign variations with bucketing ids
+Manage user IDs in browser-based SDKs
+Target audiences
+Define attributes
+Create advanced audience combinations
+Track user events
+Create events
+Filter out bots
+Run flag rules
+Run A/B tests
+Run flag deliveries (targeted delivery)
+Run a beta
+Run a multi-armed bandit optimization
+Analyze results
+Choose metrics
+Tag events
+Cross-project events
+Export events
+QA and troubleshoot
+QA checklist
+Choose QA tests
+Allowlist
+Use a QA audience
+Use forced bucketing
+Troubleshoot
+Change history
+Use mutual exclusion
+Run Contextual Multi-Armed Bandit optimizations
+Configure
+Manage config (datafile)
+Example datafile
+Get the datafile
+Create webhooks
+Manage flags
+Manage rules
+Scheduled changes
+Notification listeners
+Decision notification listener
+Log event notification listener
+Track notification listener
+OptimizelyConfigUpdate notification listener
+Collaborators
+Granular roles and permissions
+Configure teams
+Interactions between environment and flag roles
+Manage environment roles
+Manage flag roles
+Manage audience roles
+Manage projects
+Manage environments
+Flag dependency
+Change approvals
+Change approval webhooks
+Best Practice
+Implementation checklist
+Event tracking
+IDE plug-ins
+Visual Studio Code extension
+IntelliJ plugin
+Microservices
+Multiple SDK implementations
+Mutually exclusive experiments
+Two- and three-stage testing
+Fetch datafiles
+Self-service global holdout
+Native global holdouts
+Integrate Optimizely Products
+Integrate real-time audiences for Feature Experimentation
+Implement Real-Time Audiences for Feature Experimentation for client-side SDKs
+Implement Real-Time Audiences for Feature Experimentation for server-side SDKs
+Configure the Optimizely CMS (SaaS) integration
+Integrate other platforms
+Configure analytics platforms
+Configure Amplitude
+Configure Contentful
+Configure Datadog
+Configure Google Analytics 4 (GA4)
+Create segments for Google Analytics 4 (GA4)
+forward-google-analytics-4-ga4-events-to-feature-experimentation
+Configure Localytics
+Configure Mixpanel
+Configure mParticle
+Configure Segment
+Configure Tealium
+Next.js starter kit
+Solid.js starter kit
+Vue.js starter kit
+Optimizely Feature Experimentation at the edge
+Content Delivery Networks and Optimizely Feature Experimentation
+Get started experimenting at the edge
+Akamai EdgeWorkers
+AWS Lambda@Edge
+Cloudflare Workers
+Fastly Compute@Edge
+Vercel Functions
+Feature Experimentation edge workers and agents
+Deploy as a Microservice
+Optimizely Agent
+Quickstart for Agent
+Install Optimizely Agent
+Use Optimizely Agent
+Evaluate Agent REST APIs
+Agent admin API
+Real-Time Audiences for Feature Experimentation for Agent
+Configure Optimizely Agent
+Authorization for Agent
+Centralized datafile service options
+Webhooks for Agent
+Agent notifications
+Agent advanced configuration
+Agent plugins
+Configure the CMAB cache for Agent
+Agent API Reference
+Agent GitHub Repository
+Optimizely Edge Agent
+Introduction
+Architecture and operational guide
+Configuration settings
+Cookie options
+Edge mode flag variable configuration
+Deployment guide for Cloudflare Workers
+Cloudflare Workers KV store configuration (optional)
+REST API
+Feature Experimentation API Reference
+SDK Reference Guides
+Index
+SDK compatibility matrix
+Android SDK
+Install the Android SDK
+Initialize the Android SDK
+Android SDK release notes
+Example usage of the Android SDK
+Create a user context using the Android SDK
+Decide methods for the Android SDK
+Track event method for the Android SDK
+OptimizelyConfig for the Android SDK
+OptimizelyDecision for the Android SDK
+OptimizelyJSON for the Android SDK
+Implement a user profile service for the Android SDK
+Configure event dispatcher for the Android SDK
+Event batching for the Android SDK
+Customize the Android SDK logger
+Customize the Android SDK error handler
+Pass in audience attributes using the Android SDK
+Configure a notification listener using the Android SDK
+Update Android API usage from older versions
+OptimizelyUserContext for the Android SDK
+Forced Decision methods for the Android SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-android
+send-odp-data-with-real-time-audiences-for-feature-experimentation-android
+Configure CMAB for the Android SDK
+C# SDK
+Install the C# SDK
+Initialize the C# SDK
+C# SDK release notes
+Example usage of the C# SDK
+Create a user context using the C# SDK
+Decide methods for the C# SDK
+Track event method for the C# SDK
+OptimizelyConfig for the C# SDK
+OptimizelyJSON for the C# SDK
+OptimizelyDecision for the C# SDK
+Implement a user profile service for the C# SDK
+Event batching for the C# SDK
+Customize the C# SDK logger
+Customize the C# SDK error handler
+Configure a notification listener using the C# SDK
+Configure the C# SDK event dispatcher
+Update from older versions of the C# SDK
+OptimizelyUserContext for the C# SDK
+Forced Decision methods for the C# SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-csharp
+send-odp-data-with-real-time-audiences-for-feature-experimentation-csharp
+Configure the CMAB cache for the C# SDK
+Flutter SDK
+Install the Flutter SDK
+Initialize Flutter SDK
+Flutter SDK release notes
+Example usage of the Flutter SDK
+Create a user context using the Flutter SDK
+Decide methods for the Flutter SDK
+Track event method for the Flutter SDK
+OptimizelyConfig for the Flutter SDK
+OptimizelyDecision for the Flutter SDK
+Configure event dispatcher for the Flutter SDK
+Event batching for the Flutter SDK
+Configure a notification listener using the Flutter SDK
+OptimizelyUserContext for the Flutter SDK
+Forced Decision methods for the Flutter SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-flutter
+send-odp-data-with-real-time-audiences-for-feature-experimentation-flutter
+Configure the CMAB cache for the Flutter SDK
+Go SDK
+Install the Go SDK
+Initialize the Go SDK
+Go SDK release notes
+Example usage of the Go SDK
+Create a user context using the Go SDK
+Decide methods for the Go SDK
+Track event method for the Go SDK
+OptimizelyConfig for the Go SDK
+OptimizelyDecision for the Go SDK
+OptimizelyJSON for the Go SDK
+Implement a user profile service for the Go SDK
+Configure the Go SDK event dispatcher
+Customize the Go SDK logger
+Event batching for the Go SDK
+Configure a notification listener using the Go SDK
+Update from older versions of the Go SDK
+OptimizelyUserContext for the Go SDK
+Forced Decision methods for the Go SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-go
+Send Optimizely Data Platform data with Real-Time Audiences for Feature Experimentation for the Go SDK
+Configure the CMAB cache for the Go SDK
+Java SDK
+Install the Java SDK
+Initialize the Java SDK
+Java SDK release notes
+Example usage of the Java SDK
+Create a user context using the Java SDK
+Decide methods for the Java SDK
+Track event method for the Java SDK
+OptimizelyConfig for the Java SDK
+OptimizelyDecision for the Java SDK
+OptimizelyJSON for the Java SDK
+Implement a user profile service for the Java SDK
+Configure the Java SDK event dispatcher
+Customize the Java SDK logger
+Event batching for the Java SDK
+Customize the Java SDK error handler
+Configure a notification listener using the Java SDK
+Update from older versions of the Java SDK
+OptimizelyUserContext for the Java SDK
+Forced Decision methods for the Java SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-java
+send-odp-data-with-real-time-audiences-for-feature-experimentation-java
+Configure the CMAB cache for the Java SDK
+JavaScript SDK v6+
+Install the JavaScript SDK v6+
+Initialize the JavaScript SDK v6+
+JavaScript SDK release notes
+Client-side implementation tips for the JavaScript SDK v6+
+Example usage of the JavaScript SDK v6+
+Create user context for the JavaScript SDK v6+
+Decide methods for the JavaScript SDK v6+
+Track Event for the JavaScript SDK v6+
+OptimizelyConfig for the JavaScript SDK v6+
+OptimizelyDecision for the JavaScript SDK v6+
+Implement a user profile service for the JavaScript SDK v6+
+Configure the JavaScript SDK event dispatcher v6+
+Update from legacy Full Stack APIs to JavaScript SDK v6+
+Event batching for the JavaScript SDK v6+
+Customize the JavaScript SDK v6+ logger
+Customize error handler for the JavaScript SDK v6+
+Configure a notification listener using the JavaScript SDK v6+
+Forced decision methods for the JavaScript SDK v6+
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-for-the-javascript-sdk
+send-optimizely-data-platform-data-with-real-time-audiences-for-feature-experimentation-for-the-javascript-sdk
+Upgrade the JavaScript SDK from v5 to v6
+Configure the CMAB cache for the JavaScript SDK
+JavaScript (Browser) SDK prior to v6
+Install the JavaScript (Browser) SDK prior to v6
+Initialize the JavaScript (Browser) SDK prior to v6
+Client-side implementation tips for the JavaScript (Browser) SDK prior to v6
+Example usage of the JavaScript (Browser) SDK prior to v6
+Create a user context using the JavaScript (Browser) SDK prior to v6
+Decide methods for the JavaScript (Browser) SDK prior to v6
+Track Event for the JavaScript (Browser) SDK prior to v6
+OptimizelyConfig for the JavaScript (Browser) SDK prior to v6
+OptimizelyDecision for the JavaScript (Browser) SDK prior to v6
+Implement a user profile service for the JavaScript (Browser) SDK prior to v6
+Configure the JavaScript (Browser) SDK event dispatcher prior to v6
+Event batching for the JavaScript (Browser) SDK prior to v6
+Customize the JavaScript (Browser) SDK prior to v6 logger
+Customize error handler for the JavaScript (Browser) SDK prior to v6
+set-up-notification-listener-javascript-prior-to-v6
+Update from older versions of the JavaScript (Browser) SDK prior to v6
+OptimizelyUserContext for the JavaScript (Browser) SDK prior to v6
+Forced Decision methods for the JavaScript (Browser) SDK prior to v6
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-javascript-prior-to-v6
+send-odp-data-with-real-time-audiences-for-feature-experimentation-javascript-prior-to-v6
+JavaScript (Node) SDK prior to v6
+Install the JavaScript (Node) SDK prior to v6
+Initialize the JavaScript (Node) SDK prior to v6
+Example usage of the JavaScript (Node) SDK prior to v6
+Create a user context using the JavaScript (Node) SDK prior to v6
+Decide methods for the JavaScript (Node) SDK prior to v6
+Track Event for the JavaScript (Node) SDK prior to v6
+OptimizelyConfig for the JavaScript (Node) SDK prior to v6
+OptimizelyDecision for the JavaScript (Node) SDK prior to v6
+Implement a user profile service for the JavaScript (Node) SDK
+Configure event dispatcher for the JavaScript (Node) SDK prior to v6
+Event batching for the JavaScript (Node) SDK prior to v6
+Customize the JavaScript (Node) SDK prior to v6 logger
+Customize the JavaScript (Node) error handler prior to v6
+Configure a notification listener using the JavaScript (Node) SDK prior to v6
+Update usage from older versions of the JavaScript (Node) SDK prior to v6
+OptimizelyUserContext for the JavaScript (Node) SDK prior to v6
+Forced Decision methods for the JavaScript (Node) SDK prior to v6
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-javascript-node-prior-to-v6
+send-odp-data-with-real-time-audiences-for-feature-experimentation-javascript-node-prior-to-v6
+PHP SDK
+Install the PHP SDK
+Initialize the PHP SDK
+PHP SDK release notes
+Example usage of the PHP SDK
+Create a user context using the PHP SDK
+Decide methods for the PHP SDK
+Track Event for the PHP SDK
+OptimizelyConfig for the PHP SDK
+OptimizelyDecision for the PHP SDK
+Implement a user profile service for the PHP SDK
+Configure the PHP SDK event dispatcher
+Customize PHP SDK logger
+Customize the PHP SDK error handler
+Configure a notification listener using the PHP SDK
+Update usage from older versions of the PHP SDK
+OptimizelyUserContext for the PHP SDK
+Forced Decision methods for the PHP SDK
+Python SDK
+Install the Python SDK
+Initialize the Python SDK
+Python SDK release notes
+Example usage of the Python SDK
+Create a user context using the Python SDK
+Decide methods for the Python SDK
+Track Event for the Python SDK
+OptimizelyConfig for the Python SDK
+OptimizelyDecision for the Python SDK
+Implement a user profile service for the Python SDK
+Configure the Python SDK event dispatcher
+Event batching for the Python SDK
+Customize the Python SDK logger
+Customize Python SDK error handler
+Configure a notification listener using the Python SDK
+Update from older versions of the Python SDK
+OptimizelyUserContext for the Python SDK
+Forced decision methods for the Python SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-python
+send-odp-data-with-real-time-audiences-for-feature-experimentation-python
+Configure the CMAB cache for the Python SDK
+React SDK v4+
+Install the React SDK
+Initialize the React SDK
+React SDK release notes
+Next.js integration for the React SDK v4+
+Example usage of the React SDK v4+
+OptimizelyProvider for the React SDK v4+
+Decide hooks for the React SDK v4+
+useOptimizelyClient for the React SDK v4+
+useOptimizelyUserContext for the React SDK v4+
+Track Event for the React SDK v4+
+OptimizelyConfig for the React SDK
+OptimizelyDecision for the React SDK
+Implement a user profile service for the React SDK
+Configure the React SDK event dispatcher
+Event batching for the React SDK v4+
+Customize the React SDK logger
+Customize the React SDK error handler
+Configure a notification listener using the React SDK
+Forced Decision methods for the React SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-for-the-react-sdk
+send-odp-data-with-real-time-audiences-for-feature-experimentation-for-the-react-sdk
+Upgrade the React SDK from v3 to v4
+React SDK prior to v4
+Install the React SDK
+Initialize the React SDK
+Next.js integration for the React SDK
+React SDK release notes
+Example usage of the React SDK
+withOptimizely for the React SDK
+OptimizelyProvider for the React SDK
+useDecision hook for the React SDK
+Track event for the React SDK
+OptimizelyConfig for the React SDK
+OptimizelyDecision for the React SDK
+Implement a user profile service for the React SDK
+Configure the React SDK event dispatcher
+Event batching for the React SDK
+Customize the React SDK logger
+Customize the React SDK error handler
+Configure a notification listener using the React SDK
+ReactSDKClient for the React SDK
+Update from older versions of the React SDK
+Forced Decision methods for the React SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-react-prior-to-v4
+send-odp-data-with-real-time-audiences-for-feature-experimentation-react-prior-to-v4
+React Native SDK v4+
+Install the React Native SDK
+Initialize the React Native SDK
+React Native SDK release notes
+Example usage of the React Native SDK v4+
+OptimizelyProvider for the React Native SDK v4+
+Decide hooks for the React Native SDK v4+
+useOptimizelyClient for the React Native SDK v4+
+useOptimizelyUserContext for the React Native SDK v4+
+Track Event for the React Native SDK v4+
+OptimizelyConfig for the React Native SDK
+OptimizelyDecision for the React Native SDK
+Implement a user profile service for the React Native SDK
+Configure the React Native SDK event dispatcher
+Event batching for the React Native SDK v4+
+Customize the React Native SDK logger
+Customize the React Native SDK error handler
+Configure a notification listener using the React Native SDK
+Forced Decision methods for the React Native SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-for-the-react-native-sdk
+send-odp-data-with-real-time-audiences-for-feature-experimentation-for-the-react-native-sdk
+Upgrade the React Native SDK from v3 to v4
+React Native SDK prior to v4
+Install the React Native SDK
+Initialize the React Native SDK
+React Native SDK release notes
+Example usage of the React Native SDK
+withOptimizely for the React Native SDK
+OptimizelyProvider for the React Native SDK
+useDecision hook for the React Native SDK
+Track event for the React Native SDK
+OptimizelyConfig for the React Native SDK
+OptimizelyDecision for the React Native SDK
+Implement a user profile service for the React Native SDK
+Configure the React Native SDK event dispatcher
+Event batching for the React Native SDK
+Customize the React Native SDK logger
+Customize the React Native error handler
+Configure a notification listener using the React Native SDK
+ReactSDKClient for the React Native SDK
+Update usage from older versions of the React Native SDK
+Forced Decision methods for the React Native SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-reactnative-prior-to-v4
+send-odp-data-with-real-time-audiences-for-feature-experimentation-reactnative-prior-to-v4
+Ruby SDK
+Install the Ruby SDK
+Initialize the Ruby SDK
+Ruby SDK release notes
+Example usage of the Ruby SDK
+Create a user context using the Ruby SDK.
+Decide methods for the Ruby SDK
+Track Event for the Ruby SDK
+OptimizelyConfig for the Ruby SDK
+OptimizelyDecision for the Ruby SDK
+Implement a user profile service using the Ruby SDK
+Configure the Ruby SDK event dispatcher
+Event batching for the Ruby SDK
+Customize the Ruby SDK logger
+Customize the Ruby SDK error handler
+Configure a notification listener using the Ruby SDK
+Update from older versions of the Ruby SDK
+OptimizelyUserContext for the Ruby SDK
+Forced Decision methods for the Ruby SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-ruby
+send-odp-data-with-real-time-audiences-for-feature-experimentation-ruby
+Configure the CMAB cache for the Ruby SDK
+Swift SDK
+Install the Swift SDK
+Initialize the Swift SDK
+Swift SDK release notes
+Example usage of the Swift SDK
+Create a user context using the Swift SDK
+Decide methods for the Swift SDK
+Track Event for the Swift SDK
+OptimizelyConfig for the Swift SDK
+OptimizelyDecision for the Swift SDK
+OptimizelyJSON for the Swift SDK
+Implement a user profile service using the Swift SDK
+Configure the Swift SDK event dispatcher
+Customize the Swift SDK logger
+Customize the Swift SDK error handler
+Configure a notification listener using the Swift SDK
+Update from older versions of the Swift SDK
+OptimizelyUserContext for the Swift SDK
+Forced Decision methods for the Swift SDK
+real-time-audiences-for-feature-experimentation-segment-qualification-methods-swift
+send-odp-data-with-real-time-audiences-for-feature-experimentation-swift
+Configure the CMAB cache for the Swift SDK
+Index
+This topic lists all of the available Optimizely Feature Experimentation SDKs and links to their documentation.
+The reference guides describe how to install, initialize, and use the Optimizely Feature Experimentation SDKs by language. Choose a language to learn more.
+Android
+C#
+Go
+Flutter
+Java
+JavaScript SDK v6+
+JavaScript (Browser)
+– SDK versions 5.3.5 and below
+JavaScript (Node)
+– SDK versions 5.3.5 and below
+PHP
+Python
+React
+React Native
+Ruby
+Swift
+Updated
+27 days ago
+Cloudflare Workers KV store configuration (optional)
+SDK compatibility matrix
+Did this page help you?
+Yes
+No
+Copy Page
+System Status
+Privacy Notice
+Website Terms of Use
+Cookie Settings
+Trust Center
+Third-Party Addons & Platforms
+API, SDK, & MCP Terms

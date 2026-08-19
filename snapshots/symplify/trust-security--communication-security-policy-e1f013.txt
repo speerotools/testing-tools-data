@@ -1,0 +1,273 @@
+# https://symplify.com/communication/security-policy
+Security Policy - Symplify.com
+Skip to content
+Toggle Navigation
+Features
+AI & Predictive Marketing
+Data & Funnel Insights
+Omni-Channel Marketing Automation
+Journey
+SMS
+Email
+Social Audience
+Instant Message
+Voice
+Web Push
+App Push
+Dynamic web
+Geolocation
+Print
+Conversion & Experimentation
+A/B testing
+Heatmaps
+Visitor Recordings
+Personalization
+Popups
+Surveys
+Personalisation & Customisation
+on-page-ai
+Integrations
+Solutions
+NGO & Education
+Gaming
+Retail
+Fintech
+Hospitality
+Resources
+Customer stories
+Blog
+Guides
+Webinars
+Contact
+Sign In
+Communication
+Conversion
+Demo
+Communication
+Features
+Channels
+Email Channel
+Print Channel
+Web Push Channel
+Your SMS Channel | Symplify.com
+Voice Channel
+Push notifications platform
+Dynamic Web Channel
+Request your demo
+Login
+Symplify for iGaming
+Onpage Ai
+Symplify for NGO’s
+Symplify for Retail & E-commerce
+Symplify for Banking & Fintech
+Security Policy
+administrator
++00:00
+Security Policy
+1.0 SYMPLIFY DATA SECURITY
+1.1
+This statement describes all the measures taken by Symplify to maintain the security of the Platform and to protect Customer Data.
+1.2
+The Symplify Platform and Services consists of multiple underlying services; web site, customer accounts, content and data storage, authentication servers etc. Each of those underlying services uses the following logical services: load balancing, firewalling, database, data storage and data backup.
+1.3
+Each logical service runs on a minimum of 2 physical servers. The servers are located in different hosting facilities. The data links between different hosting facilities use private VLAN (Virtual Local Area Network), or in some cases, SSL encrypted tunnels over the public internet.
+1.4
+File transfers to and from the Platform, are always encrypted to the highest possible industry standard available. This ensures secure transit between the servers and the customer systems. Symplify supports the following secure transfer and encryption protocols; SSH, SFTP and SCP file encryption.
+1.5
+Logical services, physical servers and network components (routers and switches) are monitored in real time by remote supervision servers and Symplify’s hosting support partner. Please note that Symplify services are operated by the Symplify’s Operations team. If the current statement does not provide an answer to your security-related questions, please use the following email to submit an enquiry: security@symplify.com.
+2 HIGH AVAILABILITY MECHANISMS AND RESILIENCE OF LOGICAL SERVICES
+2.1
+Firewalling
+The firewalling architecture for each system and each web server is based on the inherent mechanisms of the firewall system used. This architecture prevents the existence of a single point of failure and a potential bottleneck in the system.
+2.2
+Web services
+This logical web service receives and treats requests from user web browsers, and therefore supports all logical application requests: HTML page publishing and responses to AJAX requests. Web services will access the logical database service, stored data and may use specific data backup services. This service is stateless and runs on multiple physical servers distributed over multiple physical facilities. The redundancy is based on the existence of physically distinct hosting facilities.
+2.3
+Database services
+The logical database service treats all requests from Web services and returns the relevant Customer Data. This service runs on dedicated physical servers which handle 100% of incoming requests. To ensure full integrity of the data present, all background synchronization batch processes are executed on the server. The server also uses a logical data backup service should a roll-back procedure be required. Data segregation and isolation is done at the logical account level. This has been thoroughly tested and audited. It is logically impossible for data from one account to be shared with another.
+2.4
+Storage service
+The storage service is used to store files when uploaded to or downloaded from Symplify and is automatically deleted according to specific preferences depending on the customer’s requirement.
+2.5
+Image hosting
+Images (photos, logos, headers etc.) that are uploaded in Symplify, as part of the content in the send outs, are hosted through Amazon S3.
+2.6
+Data backup service
+The data backup service is controlled by the storage service and/or Symplify’s background batch processes for the database service. The Storage service can be located either on Symplify’s physical services or secured third-party cloud-based services.
+3 HOSTING & ENVIRONMENTAL COMPONENTS
+3.1
+Physical servers
+All our physical servers are state-of-the art and support full power feed redundancy and LAN access redundancy. All disks use RAID mirroring technology to ensure security and redundancy. Data stored in our dedicated servers are physically protected in locked cages only accessible by our authorized administrators.
+3.2
+Operating systems & other software components
+Software components used by Symplify are managed by the Symplify operations team. Security patches are systematically applied after thorough testing.
+3.3
+Data Center Hosting Facilities
+Symplify uses multiple hosting facilities for its different server farms based in Europe, see separate “Hosting Center Documentation”. Access to our hosting facilities is highly secured with advanced badge and biometric-controlled room access control mechanisms. All access to the facility is logged.
+3.4
+Electric feeds
+Our hosting data centers are state of the art and have full double floor protection against fire with neutral gas and related security measures with triple air conditioning based on a mix of air and water. Dual electric feeds are provided by two (2) separate electric power plants or more, on different physical links, and backed up by local electric inverters. Spare batteries support a minimum of half an hour feed capacity (separate from the inverter system) which is then subsequently followed by the local emergency power systems taking over.
+3.5
+Internet and IP transit
+The global bandwidth to Symplify hosting sites uses operator class infrastructure. They are distributed over a minimum of three (3) physical links using separate paths. The IP transit is provided by multiple providers with a backup, and failover mechanism for announced internet routes, in case of a loss of one of the IP transit providers. All physical links and underlying routers and switches support full redundancy.
+3.6
+Third-party suppliers
+Symplify has carefully selected its third-party providers based on their ability to provide highly secured and available systems. Our partners are regularly audited by performance monitoring firms. Symplify also carries out its own audits and measurement campaigns. Symplify suppliers consist of, but are not limited to, providing rack space, cloud-based systems (for backup), SMS gateways, app push gateways and hardware equipment systems.
+4 COMMUNICATIONS AND DATA SECURITY
+Symplify uses advanced technology for internet security. When you access Symplify using industry standard Secure Socket Layer (SSL) technology, your information is protected using both server authentication and data encryption, ensuring that your data is safe, secure, and available only to registered users in your organization.
+4.1
+User password security
+Symplify provides each user in your organization with a unique username and password that must be entered each time a user logs on. All passwords are hashed and stored on secured databases. In case of intrusion, login and password association is not possible. Symplify issues a session “cookie” only to record encrypted authentication information for the duration of a specific session. The session “cookie” does not include either the username or password of the user. Symplify does not use “cookies” to store other confidential user and session information, but instead implements more advanced security methods based on dynamic data and encoded session IDs.
+4.2
+Two factor authentication with OTP
+You can add extra security to your account with a two-factor authentication using One-Time Password (OTP). That will give an increased security layer on the account, thus ensuring that only the right user can access the account. When a user wants to sign in on their account, they will need to provide two pieces of information – their password and the six-digit verification code that is automatically sent as a SMS or email to the user logging in. By entering the code, you are verifying that you are the authorized user.
+4.3
+Browser communications
+Traffic between browsers on the user’s desktop and the Symplify platform is encrypted with SSL 256-bit keys. This encryption level is used in all common online banking services.
+4.4
+Communications and traffic with third-party suppliers
+Traffic exchanged between our providers are encrypted using SSL particularly for regulatory traffic (for instance access to SMS gateways or sending app push messages). Should Symplify be required to store confidential Customer Data on third-party suppliers for instance for backup storage purposes, beyond SSL encryption (for transport layer), the Customer Data will be encrypted before transmission to the backup storage service. The encryption used is of RSA/DSA level with 2048-bit keys.
+4.5
+Internal traffic
+Internal data traffic between Symplify systems, within the same physical cluster, use private links and VLAN.
+4.6
+Email traffic
+Email traffic from the Platform to ESP’s that allow encryption will be encrypted.
+4.7
+Access by operations staff
+The Symplify operations team access the platform using strong authentication based on a pre- established list of SSH keys. Connections are logged and stored for regular analysis in case of suspicious interventions. All members of the Symplify operations team are required to comply with the Symplify Privacy Policy and are legally required to fully comply with all terms of the policy. Further details regulating access to Customer Data is handled in a separate policy.
+4.8
+Data integrity
+Data can only be accessed by authorized users. All access to the data is logged on the account and system level. Integrity is verified on a regular basis by the Symplify operations team. If a customer requires auditing of the data access on a regular or ad-hoc basis, this service can be provided by the Symplify Professional Services team at an additional cost. Symplify provides access logs detailing what users do in the system. Important access, such as data export logs, are available to administrative level users on the account.
+4.9
+24/7 supervision
+Symplify supports a double level of supervision based on two separate supervision sites for all physical equipment and logical services. Alarm systems are provided to the Symplify operation team on a 24 hour, 7 days a week basis. Symplify invests heavily in fault analysis and detection systems for its applications. In case of an application malfunction, the Symplify operations team can activate application logging system for a given customer account, in order to thoroughly analyze all events on a given account. Our operations logging information do not provide any information on the Customer Data but provide a logical and detailed description on the events logged in an account.
+4.10
+Electric or Internet Failure
+This fault is highly unlikely but may occur in the case of a major electric feed failure or IP data access failure. In this case the Symplify service would be fully restored on secondary services located on a different hosting facility.
+4.11
+Loss of data or corrupt database information
+In the case of a data corruption by the database service, Symplify may be required to use a recent archive to restore the service. This operation may cause the loss of recent updates in a customer account.
+4.12
+Data deletion and retention policy
+A data retention policy can be set at the account level depending on the customer’s data retention policy. Once data is deleted from the system and deletion has replicated to the backup archive, the data will be lost forever and no longer be recoverable. Customer Data can also be wiped/deleted upon customer’s request. There is no way to recover the data once it has been deleted. If a customer has a strict data deletion process to respect for legal or legislative reasons and requires formal auditing, this can be provided by Symplify’s Professional services on a case per case basis.
+4.13
+Full and complete loss of a hosting facility or cluster
+This scenario has a very low probability and concerns events such as war or natural catastrophes. In that particular case, Symplify will rely on its back-up storage service to transfer customer accounts on another cluster located in a different geographical region (assuming that the Symplify team survives such an event).
+5 VULNERABILITY REPORTING POLICY
+5.1
+The Symplify Security team acknowledges the valuable role that independent security researchers play in internet security. Keeping our customers’ data secure is our number-one priority, and we encourage responsible reporting of any vulnerability that may be found in our site or application.
+5.2
+Symplify is committed to working with the security community to verify and respond to any potential vulnerability that is reported to us. Details of any suspected vulnerability may be privately shared with Symplify by sending an email to security@symplify.com. In order for the Symplify Security team to validate and reproduce the issue, please submit full details of the suspected vulnerability.
+5.3
+To all security researchers who follow the Symplify Vulnerability Reporting Policy, the Symplify AB Security team commits to the following:
+• To respond in a timely manner, acknowledging receipt of your report
+• To provide an estimated time frame for addressing the vulnerability
+• To notify the reporting individual when the vulnerability has been fixed
+5.4
+Symplify does not permit the following types of security research:
+• Causing, or attempting to cause, a Denial of Service (DoS) condition.
+• Accessing, or attempting to access, data or information that does not belong to you.
+• Destroying or corrupting, or attempting to destroy or corrupt, data or information that does not belong to you.
+5.5
+Symplify does not compensate security researchers for reporting a security vulnerability, and any requests for such compensation will be considered a violation of the conditions above. In such an event, Symplify reserves all of its legal rights.
+6 CUSTOMER DATA MANAGEMENT POLICY
+6.1
+Symplify has a strict policy to ensure Customer Data and, in addition to technical security, Symplify works as follows to ensure data security for Customer Data:
+• Only authorized employees, who are members of the project group appointed to perform consultancy work at the customer’s request, should access the customer’s account.
+• The number of people given system administration access should be clearly limited. All access of user level data is logged.
+• Once the account is created and in operation, the customer owns the responsibility to administer access to the account and to provide relevant permissions to their users.
+• Access to physical hardware is limited to only two employees in the company.
+• Passwords created by users at the customer is encrypted and not visible to Symplify’s employees.
+• Employees at Symplify do not own the right to administer data in the customer’s account without prior consent from the customer.
+• Employees shall not share information with anyone else without making sure that that person is authorized to access the information.
+• Remote access to hardware is locked to IP addresses from Symplify’s office and crosses the encrypted VPN tunnel.
+• Employees should handle and store user identity and password with caution and use passwords that are not related to or otherwise can be easily enforced.
+• Passwords for all systems are changed regularly.
+• The staff must log out of their respective customer computers when not in use and they will be automatically locked when left unmanned, for example, via a screen saver with a password.
+• Employees shall not have computers/screens placed so that unauthorized people can read the information, nor print sensitive information on a printer that has unauthorized access.
+• Employees with access to Customer Data receive regular reviews of Symplify’s security regulations.
+In addition, Symplify ensures that all employees are in agreement with the guidelines covered by the GDPR and also the rules developed by Symplify to ensure that Customers Data is kept safe.
+FEATURES
+AI & Predictive Marketing
+Conversion & Experimentation
+Omni-Channel Marketing Automation
+Data & Funnel Insights
+Personalisation & Customisation
+RESOURCES
+Customer stories
+Blog
+Guides
+Webinars
+Events
+Press room
+Glossary
+SYMPLIFY
+About
+Career
+Contact
+Book a demo
+Privacy Policy
+LinkedIn
+© COPYRIGHT 2025 SYMPLIFY TECHNOLOGIES. ALL RIGHTS RESERVED. |
+PRIVACY POLICY
+Page load link
+Manage Cookie Consent
+We use cookies to optimize our website and our service.
+Functional
+Functional
+Always active
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept cookies
+Deny
+View preferences
+Save preferences
+View preferences
+{title}
+{title}
+{title}
+Manage Cookie Consent
+We use cookies to optimize our website and our service.
+Functional
+Functional
+Always active
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept
+Deny
+View preferences
+Save preferences
+View preferences
+{title}
+{title}
+{title}
+Manage consent
+Manage consent
+Go to Top

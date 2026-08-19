@@ -1,0 +1,162 @@
+# https://docs.statsig.com/integrations/mcp/cursor
+Statsig MCP with Cursor | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+MCP
+Overview
+Docs MCP server
+Statsig MCP with Codex
+Statsig ChatGPT App
+Statsig MCP with Cursor
+Statsig MCP with Claude Code
+Statsig MCP with Other MCP-Compatible Clients
+Agent Skills Repository
+AI Development with Statsig
+Github AI Integration
+Early Access
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+Installation and authentication with OAuth
+Option 1: Quick install (recommended)
+Option 2: Manual configuration
+Using Statsig MCP with Cursor
+Troubleshooting
+Next steps
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+Statsig MCP with Cursor
+Statsig MCP with Cursor
+Learn how to set up the Statsig MCP server in Cursor IDE.
+Installation and authentication with OAuth
+MCP OAuth only supports Personal Console API Keys. Ensure your Statsig org
+owner has enabled Personal Console API Keys creation for your role in
+organization settings
+{" "}
+You can add the Statsig MCP with OAuth to Cursor in two ways:
+Option 1: Quick install (recommended)
+Use the
+install link
+to automatically add the Statsig MCP to Cursor.
+Option 2: Manual configuration
+Open Cursor settings
+Navigate to
+Settings → Cursor Settings → Tools & Integrations
+Find the MCP servers section
+Add the following configuration to
+~/.cursor/mcp.json
+:
+json
+Copy
+{
+"mcpServers"
+: {
+"statsig"
+: {
+"url"
+:
+"https://api.statsig.com/v1/mcp"
+}
+}
+}
+Cursor automatically handles OAuth authentication when you first use the Statsig MCP. Cursor prompts you to:
+Sign in to your Statsig account
+Authorize the MCP server to access your Statsig project
+Restart Cursor to apply the changes
+Verify the connection by navigating to
+Settings → Cursor Settings → Tools & Integrations
+, where the Statsig MCP server should appear and be active
+Cursor saves the authentication for future sessions.
+Using API key instead of OAuth
+Using Statsig MCP with Cursor
+After configuration, you can use Statsig MCP commands in Cursor's chat interface:
+Query Experiments
+: "What experiments are currently running?"
+Manage Gates
+: "List all my feature flags"
+Get Details
+: "Show me the configuration for gate 'new-feature'"
+Create Entities
+: "Create a new experiment called 'checkout-test'"
+Troubleshooting
+If the MCP server doesn't appear:
+Make sure you've restarted Cursor after adding the configuration
+Check that the
+mcp.json
+file is in the correct location:
+~/.cursor/mcp.json
+Verify your Statsig account has the necessary permissions
+Next steps
+MCP capabilities
+Use cases
+for Statsig MCP
+Stale gate cleanup example
+Was this helpful?
+On this page
+Installation and authentication with OAuth
+Option 1: Quick install (recommended)
+Option 2: Manual configuration
+Using Statsig MCP with Cursor
+Troubleshooting
+Next steps

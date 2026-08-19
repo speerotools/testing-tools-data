@@ -1,0 +1,182 @@
+# https://posthog.com/docs/model-context-protocol
+Model Context Protocol (MCP) - Docs - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Overview
+Beta
+Get started
+Set up self-driving
+Products
+Slack
+Web app
+MCP
+CLI
+Desktop
+Concepts
+The self-improving loop
+Anatomy of a pull request
+Context
+Scouts
+Signals
+Reports
+Inbox
+Resources
+Pocket guides
+New
+Pricing
+FAQ
+Copy page
+Model Context Protocol (MCP)
+Contents
+Get started in 30 seconds
+What can you do with the PostHog MCP?
+Go deeper
+Next steps
+The PostHog
+Model Context Protocol (MCP)
+server is a free, hosted endpoint that lets your AI agent use PostHog – with just plain text questions your agents can ship a feature flag from a prompt, dig into a stack trace without leaving your editor, run a HogQL query through Claude, triage a support ticket, set up a CDP destination, and much more.
+It works with any MCP-compatible client, including
+PostHog Desktop
+, Claude Code, Claude Desktop, Cursor, Codex, VS Code, Windsurf, and Zed.
+Connecting to the MCP server and calling its MCP tools is free, but some MCP tools use LLMs internally and may be billed as PostHog AI spend. These AI-powered MCP tools are only available when
+AI data processing is enabled
+in your organization settings.
+Get started in 30 seconds
+The fastest way to setup the MCP is the
+PostHog Wizard
+, which installs the MCP server directly into
+PostHog Desktop
+,
+Cursor
+,
+Claude Code
+,
+Claude Desktop
+,
+Codex
+,
+VS Code
+, and
+Zed
+:
+Install the PostHog MCP
+Learn more
+npx @posthog/wizard mcp add
+Supports
+Next.js, React, Python
+, and
+22
+more
+Claude
+Cursor
+VS Code
+Windsurf
+Codex
+Zed
+Lovable
+Replit
+v0
+Using something else? Pick your client to set it up manually:
+Code editors
+PostHog Desktop
+Claude Code
+Claude Desktop
+Codex
+Cursor
+VS Code
+Windsurf
+Zed
+Platforms
+Lovable
+Replit
+v0
+The server URL is
+https://mcp.posthog.com/mcp
+. The PostHog authentication server automatically routes you to the correct data region (US or EU) based on the account you log in with.
+What can you do with the PostHog MCP?
+Using Claude Code to debug and fix errors via the PostHog MCP server
+Once connected, your agent can read and write across PostHog's products. Here's a taste – triaging errors from inside your editor instead of context-switching to a browser:
+"
+What are the top 5 errors in my project this week?
+"
+–
+Returns error groups ranked by occurrence with affected user counts.
+"
+Show me the full stack trace for the most recent crash, then propose a fix.
+"
+–
+Pulls the stack trace, error message, and metadata so the agent can suggest code changes.
+"
+Mark this issue as resolved and assign all future TypeErrors to the backend team.
+"
+–
+Updates issue status and creates an assignment rule in one go.
+There's a lot more – analytics queries, feature flag and experiment management, SQL, CDP destinations, support ticket triage, and multi-step recipes that chain it all together. You can also run governed metrics from your
+semantic layer
+(alpha), so every agent session answers "what's our MRR?" with the same canonical definition.
+Browse all use cases →
+Go deeper
+Use cases
+– 20+ example prompts and multi-step recipes for the most useful MCP workflows
+MCP tools reference
+– every MCP tool the server exposes, grouped by category
+FAQ and advanced setup
+– auth, scoping, filtering, safety, and other operational details
+Next steps
+PostHog CLI
+: Use PostHog from your terminal, coding agents, scripts, and CI/CD pipelines
+PostHog AI plugin
+: Install PostHog as a plugin for Claude Code, Codex, Cursor, and Gemini CLI
+Lovable integration
+: Set up PostHog in your Lovable project
+Replit integration
+: Set up PostHog with Replit Agent
+v0 integration
+: Set up PostHog with v0 and the Vercel Flags SDK
+PostHog MCP server on GitHub
+: The source for the MCP server
+PostHog VS Code extension
+: Inline analytics, flag management, and session replay links in your editor
+Model Context Protocol
+: Learn more about the MCP specification
+MCP: machine/copy paste
+: What exactly is MCP again?
+Was this page useful?
+Helpful
+Could be better
+Jump to:
+Get started in 30 seconds
+What can you do with the PostHog MCP?
+Go deeper
+Next steps

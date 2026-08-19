@@ -1,0 +1,98 @@
+# https://www.zoho.com/pagesense/full-stack.html
+Test smarter with page sense full stack
+FullStack
+Test Smarter with PageSense FullStack
+No page reloads. No flicker. Complete control over your application logic. PageSense FullStack helps developers run powerful server-side A/B tests with zero client-side dependencies. Test pricing strategies, personalize user experiences, and deploy features with confidence—all from your backend.
+START MY FREE TRIAL
+BOOK A DEMO
+Our SDKs provide
+Swift experimentation
+Secured experimentation
+Scalable experimentation
+Build, test, and ship with confidence using our lightweight SDKs
+PageSense SDKs give you the flexibility to define experiments and measure results—all without client-side scripts, without exposing test logic in the browser.
+Built for flexibility
+Whether you're testing a recommendation engine, tweaking a checkout API, or exploring the performance of features in your new app, our SDKs provide the structure you need to control all of the logic, traffic, and goal tracking.
+Private by design
+All experiment logic stays on your server. No client-side scripts, no exposed test variations, and complete control over user data and privacy compliance.
+Fast to onboard
+Get started in minutes with our intuitive SDK integration. Simple APIs, comprehensive documentation, and ready-to-use code samples for all major languages.
+Why choose PageSense for your server-side experiments
+Easy Setup
+Unlimited Variations
+Flexible Targeting
+Tracking & Analytics
+Real-time Reports
+Adaptive Workflow
+Stateless SDKs
+Simplified A/B
+Easy setup and adjustable configuration
+Easily configure and manage isolated environments with unique SDK keys for each project
+Provide streamline configurations for testing environments, and maintain clean, independent setups
+Ensure consistency and control at every stage of rollout
+Unlimited variations of your backend logic
+Create and manage unlimited variations across both frontend and backend layer
+Easily edit variation names and descriptions anytime
+Gain the flexibility to test and optimize every layer from experimenting with new UI layouts to refining backend functionality
+Flexible traffic allocation & audience targeting
+Define precise traffic proportions, target specific audience segments, and manage experiment distribution effortlessly
+Control traffic distribution between variations to fine-tune exposure and optimize testing accuracy
+Target specific user segments using your own custom-defined audience parameters
+Ensure consistent variation allocation for all users using MurmurHash-based assignment
+Goal tracking & analytics
+Measure performance accurately and make data-driven decisions with real-time insights.
+Define multiple goals for each experiment and set a primary goal to focus your optimization
+Track conversions directly from your server for reliable and precise data collection
+Access real-time analytics to evaluate variation performance and measure progress instantly
+Real-time updates & instant reporting
+Stay in sync and make faster decisions with seamless, real-time data flow between your SDK and PageSense.
+Get SDK updated instantly through webhook polling when settings or statuses change
+Maintain consistent, cookie-free variations for both new and returning users.
+Access real-time reports and analytics where user actions and conversions instantly reflect
+Experimentation that fits your workflow
+Run cohesive experiments across your stack. Whether conversions happen on your website, mobile, or backend services - track visitors and conversions across systems. Thus, making your releases test-safe and audit-friendly.
+Consolidate experiment data in one place, and access unified reports and analytics
+Coordinate testing across services without disrupting existing workflows
+Stateless customizable SDK
+Our SDKs don't rely on local storage or sessions, making them ideal for containerized and serverless architectures.
+Flexible options for custom logging, verbosity, and storage
+Enhance visibility, and ensure seamless integration within your application architecture.
+A/B test experimentation, simplified
+Deliver a seamless user experience without the complexity of client-side testing - absolutely no UI-layer bloat, performance hits, or enforced workflows.
+Prevent flicker and performance delays caused by client-side rendering
+Maintain complete authority over experiment logic, deployment, and performance
+Experiment across teams.
+Deploy with control.
+Developers
+Developers
+Code, commit, and deploy with confidence. Our SDKs integrate seamlessly into your workflow, enabling you to test features without breaking production.
+Test in isolated environments without impacting live users. Roll back changes instantly if needed, ensuring zero downtime.
+Product Managers
+Product Managers
+Drive product decisions with data. Launch experiments without engineering dependencies and validate hypotheses before full rollout.
+Monitor experiment performance in real-time and make informed decisions based on actual user behavior.
+Marketers
+Marketers
+Access comprehensive experiment data with statistical significance calculations. Export results for deeper analysis in your preferred tools.
+Build custom reports and dashboards to track key metrics across all running experiments.
+What type of tests are you planning to run?
+Backend Algorithms
+Backend Algorithms
+Pricing Tests
+Layout Logic
+Content Personalization
+API Response Variations
+Backend Algorithms
+Test different recommendation engines, sorting algorithms, and business logic variations on the server side. Optimize your backend processes without any client-side exposure.
+Pricing Tests
+Compare different pricing strategies to maximize conversion and revenue without exposing test logic in the client. Run secure backend experiments on pricing models, discounts, and subscription tiers.
+Layout Logic
+Experiment with different page layouts, component arrangements, and UI structures controlled from the backend. Deliver personalized layouts based on user segments.
+Content Personalization
+Serve different content variations to different user segments. Test headlines, descriptions, and messaging to find what resonates best with your audience.
+API Response Variations
+Test different API response structures, data formats, and payload configurations. Optimize your API performance and user experience through controlled experiments.
+Build what you want. Test what matters.
+Experimentation should work like your stack does: fast, flexible, and fully in your control.
+START MY FREE TRIAL
+BOOK A DEMO

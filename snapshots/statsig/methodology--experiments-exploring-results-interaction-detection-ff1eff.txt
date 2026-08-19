@@ -1,0 +1,819 @@
+# https://docs.statsig.com/experiments/exploring-results/interaction-detection
+Interaction Detection | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+End An Experiment
+Read Results
+Read Results
+User Properties
+Metric Drill-Down
+Export
+Best Practices
+Reconciling Results Between Experimentation Platforms
+Pulse FAQs
+Participating Units
+Further Analysis
+Custom "Explore" Queries
+Aggregated Impact
+Topline Impact
+Meta-Analysis
+Differential Impact Detection
+Interaction Detection
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+What is interaction detection
+Should I worry about it
+How to use interaction detection
+Methodology
+Intuition
+Directionality
+Magnitude
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+Interaction Detection
+Interaction Detection
+Learn how to detect interactions between overlapping experiments and understand their impact.
+What is interaction detection
+When you run overlapping experiments, the experiments can interfere with each other. Interaction Detection lets you pick two experiments and evaluate them for interaction. Interaction Detection helps you understand whether users exposed to both experiments behave differently from users exposed to only one. The core question is:
+Does being in both experiments change the effect on a metric in a way that differs from summing the individual effects?
+Should I worry about it
+The general guidance is to run overlapping experiments. Users viewing your landing page may experience multiple experiments at the same time. Running overlapping experiments is
+supported by industry experience
+and
+published research
+. Teams expecting to run conflicting experiments can avoid conflicts by making experiments mutually exclusive using
+Layers
+(also called Universes).
+How to use interaction detection
+To start an Interaction Detection analysis, go to
+Experiment > Results > Explore > Interaction Effect Detection
+.
+Select a second experiment and the metrics to analyze. Statsig then shows a summary with three sections:
+By Groups
+: unit counts based on the collective slice of group assignment
+Metric Summary Results
+: estimated intervals of difference in metric lift
+Overlapping Unique Users
+: an overview of the general traffic intersection of the two experiments
+Refer to this
+article
+for additional examples.
+Methodology
+Assume you have two experiments A and B, each with two groups: control and test. The interaction effect calculates the overlapping impact on users exposed in both experiment A and experiment B.
+Δ
+treatment effect
+=
+(
+X
+t
+e
+s
+t
+A
+⋅
+t
+e
+s
+t
+B
+‾
+−
+X
+t
+e
+s
+t
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+‾
+)
+−
+(
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+t
+e
+s
+t
+B
+‾
+−
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+‾
+)
+\Delta_{\text{treatment effect}} = (\overline{X_{testA \cdot testB}} - \overline{X_{testA \cdot controlB}}) - (\overline{X_{controlA \cdot testB}} - \overline{X_{controlA \cdot controlB}})
+Δ
+treatment effect
+​
+=
+(
+X
+t
+es
+t
+A
+⋅
+t
+es
+tB
+​
+​
+−
+X
+t
+es
+t
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+​
+)
+−
+(
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+t
+es
+tB
+​
+​
+−
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+​
+)
+Δ
+treatment effect
+%
+=
+Δ
+treatment effect
+(
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+t
+e
+s
+t
+B
+‾
+−
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+‾
+)
+\Delta_{\text{treatment effect}}{\%} = \frac{\Delta_{\text{treatment effect}}}{(\overline{X_{controlA \cdot testB}} - \overline{X_{controlA \cdot controlB}})}
+Δ
+treatment effect
+​
+%
+=
+(
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+t
+es
+tB
+​
+​
+−
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+​
+)
+Δ
+treatment effect
+​
+​
+v
+a
+r
+i
+a
+n
+c
+e
+=
+V
+a
+r
+(
+X
+t
+e
+s
+t
+A
+⋅
+t
+e
+s
+t
+B
+)
+n
+t
+e
+s
+t
+A
+⋅
+t
+e
+s
+t
+B
++
+V
+a
+r
+(
+X
+t
+e
+s
+t
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+)
+n
+t
+e
+s
+t
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
++
+V
+a
+r
+(
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+t
+e
+s
+t
+B
+)
+n
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+t
+e
+s
+t
+B
++
+V
+a
+r
+(
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+)
+n
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+variance = \frac{Var(X_{testA \cdot testB})}{n_{testA \cdot testB}} + \frac{Var(X_{testA \cdot controlB})}{n_{testA \cdot controlB}} + \frac{Var(X_{controlA \cdot testB})}{n_{controlA \cdot testB}} + \frac{Var(X_{controlA \cdot controlB})}{n_{controlA \cdot controlB}}
+v
+a
+r
+ian
+ce
+=
+n
+t
+es
+t
+A
+⋅
+t
+es
+tB
+​
+V
+a
+r
+(
+X
+t
+es
+t
+A
+⋅
+t
+es
+tB
+​
+)
+​
++
+n
+t
+es
+t
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+V
+a
+r
+(
+X
+t
+es
+t
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+)
+​
++
+n
+co
+n
+t
+r
+o
+l
+A
+⋅
+t
+es
+tB
+​
+V
+a
+r
+(
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+t
+es
+tB
+​
+)
+​
++
+n
+co
+n
+t
+r
+o
+l
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+V
+a
+r
+(
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+)
+​
+Intuition
+The part
+X
+t
+e
+s
+t
+A
+⋅
+t
+e
+s
+t
+B
+‾
+−
+X
+t
+e
+s
+t
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+‾
+\overline{X_{testA \cdot testB}} - \overline{X_{testA \cdot controlB}}
+X
+t
+es
+t
+A
+⋅
+t
+es
+tB
+​
+​
+−
+X
+t
+es
+t
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+​
+answers: “If someone is in A’s test, how much does changing B from control to test change the metric?”
+The part
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+t
+e
+s
+t
+B
+‾
+−
+X
+c
+o
+n
+t
+r
+o
+l
+A
+⋅
+c
+o
+n
+t
+r
+o
+l
+B
+‾
+\overline{X_{controlA \cdot testB}} - \overline{X_{controlA \cdot controlB}}
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+t
+es
+tB
+​
+​
+−
+X
+co
+n
+t
+r
+o
+l
+A
+⋅
+co
+n
+t
+r
+o
+l
+B
+​
+​
+answers: “If someone is in A’s control, how much does changing B from control to test change the metric?”
+Subtracting those two values shows whether the effect of B differs depending on whether the user is in A’s test or control group. That difference is the interaction effect.
+If the result isn’t statistically significant, the effect of B is the same regardless of which group the user is in for A (no significant interaction). If it’s statistically significant, the effect of B depends on A’s assignment (significant interaction).
+Directionality
+The direction (positive or negative) of the interaction effect indicates whether the combination of the two treatments amplifies or dampens each other’s effects.
+Statsig defines the interaction effect as:
+Interaction Effect = (Effect of B when A = Test) − (Effect of B when A = Control)
+Statistically positive interaction
+: B’s effect is stronger when A is also active.
+Statistically negative interaction
+: B’s effect is weaker (or reversed) when A is active.
+Magnitude
+The magnitude (absolute size) of the interaction effect indicates how much the combined impact deviates from simple additivity.
+For example:
+Experiment A produces a
++5%
+lift on your metric of interest
+Experiment B produces a
++5%
+lift on your metric
+The interaction effect between A and B is
+–3%
+The –3% interaction effect means that rolling out both experiments together produces an overall impact about 3% lower than the sum of their individual effects. The features interfere with each other.
+To obtain the most accurate estimate of the true combined impact, run a new experiment that includes both features together. Experiments A and B may not have run over exactly the same time period or under identical conditions. These differences in timing and seasonality can slightly influence the measured interaction magnitude.
+When an experiment includes more than two groups, Statsig evaluates interaction effects
+pairwise between groups
+. You can view the interaction effect for specific group combinations by selecting the groups you want in the
+”Select Comparison”
+dropdown, as the UI above shows.
+Was this helpful?
+On this page
+What is interaction detection
+Should I worry about it
+How to use interaction detection
+Methodology
+Intuition
+Directionality
+Magnitude

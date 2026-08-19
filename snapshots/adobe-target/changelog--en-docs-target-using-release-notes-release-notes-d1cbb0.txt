@@ -1,0 +1,77 @@
+# https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes
+What Is Included in the Current Release? | Adobe Target
+Documentation
+Target
+Target Guide
+Target release notes (current)
+Last update: August 17, 2026
+Topics:
+Implementation
+Explore the latest features, enhancements, and fixes in Adobe Target. These release notes also cover updates to Target APIs, SDKs, the Adobe Experience Platform Web SDK, at.js, and other platform components when applicable.
+(The issue numbers in parentheses are for internal Adobe use.)
+Target Standard/Premium 26.8.3 (August 13, 2026)
+Activities and audiences
+See details
+Edit enabled for API/MCP-created activities and audiences.
+Activities and audiences created via the Adobe Target Admin API and Target MCP can now be edited in the Target UI.
+Target Standard/Premium 26.8.2 (August 11, 2026)
+Audiences
+See details
+Unable to copy and save a custom code modification in an activity using an activity-only audience.
+Fixed an issue where copying an activity that used an activity-only audience failed to save with an “Invalid audience ids” error after you added a custom code modification. (TGT-55785)
+Localization
+See details
+Corrupted multi-byte characters in activity URL.
+Fixed an issue where multi-byte characters in the activity URL appeared corrupted in the Visual Experience Composer and on the
+Collisions
+tab. (TGT-55708)
+Unlocalized error message when opening a deleted design.
+Fixed an issue where the
+Requested resource was not found
+error message was not localized when you tried to open a design that had been deleted by another user. (TGT-50902)
+Target Standard/Premium 26.8.1 (August 4, 2026)
+Visual Experience Composer (VEC)
+See details
+Truncated icons in Experience Audiences panel.
+Fixed an issue where the
+Add
+and expand/collapse icons were hidden or truncated in the
+Experience Audiences
+panel during activity creation. (TGT-55372)
+Time-sensitive updates you need to know
+time-sensitive
+[Important]{class="badge informative"}
+For time-sensitive updates related to Adobe Target and your implementation, Adobe provides detailed release notes and documentation through Experience League. Here are some keys highlights relevant to your implementation:
+Target UI version toggle deprecation
+For more information, see
+Target UI update FAQs
+.
+Additional release notes and version details
+Resource
+Details
+Release notes: Adobe Target Platform Experience Web SDK
+Details about changes in each version of the Platform Web SDK.
+at.js version details
+Details about changes in each version of the Adobe Target at.js JavaScript library.
+Documentation Changes, Past Release Notes, and Experience Cloud Release Notes
+In addition to the notes for each release, the following resources provide additional information:
+Resource
+Details
+Documentation Changes
+View detailed information about updates to this guide that are not included in these release notes.
+Release notes for previous releases
+.
+View information about new features and enhancements in previous releases of Target Standard and Target Premium.
+Adobe Experience Cloud Release Notes
+View the latest release notes for the Adobe Experience Cloud solutions.
+Prerelease Information
+section_5D588F0415A2435B851A4D0113ACA3A0
+The following resources let you see what’s coming in the next Target release.
+Resource
+Details
+Adobe Priority Product Update
+Receive advance notifications about upcoming product enhancements to Target and other Adobe Experience Cloud solutions.
+Target Release Notes - Prerelease
+Information about the current month’s Target releases, including prerelease information.
+recommendation-more-help
+target-help-main

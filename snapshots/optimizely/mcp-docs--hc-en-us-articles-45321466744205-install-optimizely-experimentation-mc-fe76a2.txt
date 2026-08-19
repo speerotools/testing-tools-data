@@ -1,0 +1,260 @@
+# https://support.optimizely.com/hc/en-us/articles/45321466744205-Install-Optimizely-Experimentation-MCP-server
+Install Optimizely Experimentation MCP server – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Experimentation strategy
+Tools and utilities
+Experimentation MCP server
+Install Optimizely Experimentation MCP server
+Updated
+May 26, 2026 15:08
+Optimizely Web Experimentation
+Optimizely Personalization
+Optimizely Feature Experimentation
+Optimizely Performance Edge
+This page walks you through connecting your AI client to the Optimizely Experimentation remote MCP server. Configuration takes about two minutes on any supported platform. See
+Optimizely Experimentation MCP server quickstart
+for the fastest configuration path.
+Prerequisites
+Before you start, make sure you have the following:
+An Opti ID account.
+An Optimizely account with Opal enabled, connected to at least one Feature Experimentation or Web Experimentation instance.
+Use of the Experimentation MCP server does not consume
+Opal credits
+.
+An AI client that supports remote MCP.
+The MCP server is hosted by Optimizely. Authentication runs through OAuth 2.0 in your browser the first time you use an Optimizely tool.
+Claude Desktop (macOS or Windows)
+Open MCP configuration
+In Claude Desktop, go to
+Settings > Developer > Edit Config
+.
+This opens the
+claude_desktop_config.json
+file in your default text editor. You can also open it directly at the following locations:
+macOS
+–
+~/Library/Application Support/Claude/claude_desktop_config.json
+Windows
+–
+%APPDATA%\Claude\claude_desktop_config.json
+Add the Optimizely server
+Add the following to your configuration file. If you already have other MCP servers configured, add the
+"optimizely"
+entry inside the existing
+"mcpServers"
+object.
+{ "mcpServers": { "optimizely": { "url": "https://exp.mcp.opal.optimizely.com/mcp" } } }
+Restart Claude Desktop
+Save the file and fully restart Claude Desktop. The Optimizely server displays in your list of connected MCP servers.
+Authenticate
+The first time you use an Optimizely tool, Claude Desktop prompts you to authenticate. Click
+Sign in
+, connect to your Opal instance, and complete the OAuth flow in your browser using your Optimizely credentials.
+Verify
+Ask Claude,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Cursor
+Open MCP settings
+In Cursor, go to
+Cursor Settings > Tools & MCPs > Add a Custom MCP Server
+.
+You can also edit the configuration file directly at
+.cursor/mcp.json
+in your project's root directory.
+Add the Optimizely server
+Add the following configuration. If you already have other MCP servers, add the
+"optimizely"
+entry inside the existing
+"mcpServers"
+object.
+{ "mcpServers": { "optimizely": { "url": "https://exp.mcp.opal.optimizely.com/mcp" } } }
+Authenticate
+Cursor prompts you to complete the OAuth flow in your browser the first time you invoke an Optimizely tool. Connect to your Opal instance and log in with your Optimizely credentials.
+Verify
+In Composer or Chat, ask
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Claude Code (CLI)
+Add the server
+Use one of the following two options to add the MCP server:
+Run the following command in your terminal:
+claude mcp add --transport http optimizely-exp https://exp.mcp.opal.optimizely.com/mcp
+Create or edit
+.mcp.json
+in your project root (for project-scoped access) or
+~/.claude/.mcp.json
+(for global access) and add the following:
+{ "mcpServers": { "optimizely-exp": { "type": "http", "url": "https://exp.mcp.opal.optimizely.com/mcp" } } }
+Authenticate
+The first time you use an Optimizely tool, Claude Code opens a browser window for OAuth. Connect to your Opal instance and log in with your Optimizely credentials to authorize access.
+Verify
+Ask Claude,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Claude.ai (Web)
+Open integrations
+In Claude.ai, go to
+Settings > Connectors
+.
+Add the Optimizely server
+Click
+Add custom connector
+and enter the MCP server URL.
+https://exp.mcp.opal.optimizely.com/mcp
+Authenticate
+Complete the OAuth flow when prompted. Connect to your Opal instance and log in with your Optimizely credentials.
+Verify
+Start a new conversation and ask,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Codex (app or CLI)
+Open MCP settings
+In Codex, go to
+Settings > MCP servers > Add server
+.
+Add the Optimizely server
+Select
+Streamable HTTP
+as the server type and enter the MCP server URL.
+https://exp.mcp.opal.optimizely.com/mcp
+Leave
+Bearer token env var
+,
+Headers
+, and
+Headers from environment variables
+blank. Click
+Save
+.
+Authenticate
+The first time you use an Optimizely tool, Codex prompts you to authenticate. Connect to your Opal instance and log in with your Optimizely credentials to complete the OAuth flow in your browser.
+Verify
+Ask Codex,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Visual Studio Code and GitHub Copilot
+Open MCP settings
+In Visual Studio Code, open
+Settings
+and search for "MCP" under the GitHub Copilot section, or edit your
+settings.json
+directly.
+Add the Optimizely server
+Add the following to your Visual Studio Code
+settings.json
+:
+{ "github.copilot.chat.mcpServers": { "optimizely-exp": { "type": "http", "url": "https://exp.mcp.opal.optimizely.com/mcp" } } }
+Authenticate
+When you first use an Optimizely tool in Copilot Chat, Visual Studio Code opens a browser window for OAuth. Connect to your Opal instance and log in.
+Verify
+In Copilot Chat, ask,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Windsurf
+Open MCP configuration
+In Windsurf, go to
+Settings > MCP Servers
+or edit
+.windsurf/mcp.json
+in your project root.
+Add the Optimizely server
+Add the following configuration to the file:
+{ "mcpServers": { "optimizely-exp": { "url": "https://exp.mcp.opal.optimizely.com/mcp" } } }
+Authenticate
+Complete the OAuth flow when prompted. Connect to your Opal instance and log in with your Optimizely credentials.
+Verify
+Ask Windsurf,
+List my Optimizely projects.
+If you see your projects listed, configuration is complete.
+Other clients
+Any AI client that supports remote MCP can connect using the same server URL and OAuth flow. For clients not listed above (ChatGPT, OpenAI Codex, JetBrains IDEs, and others), follow your client's documentation for adding a custom remote MCP server and use:
+https://exp.mcp.opal.optimizely.com/mcp
+Remove the MCP server
+To disconnect the Experimentation MCP server from your AI client, remove the entry you added during configuration.
+Claude Code
+– Run
+claude mcp remove optimizely-exp
+in your terminal.
+Claude Desktop
+– Open
+claude_desktop_config.json
+and delete the
+"optimizely"
+block from
+"mcpServers"
+, then restart Claude Desktop.
+Claude.ai
+– Go to
+Settings > Connectors
+and remove the Optimizely connector.
+Cursor
+– Open
+.cursor/mcp.json
+and delete the
+"optimizely"
+block.
+Visual Studio Code
+– Open
+settings.json
+and delete the
+"optimizely-exp"
+block from
+"github.copilot.chat.mcpServers"
+.
+Windsurf
+– Open
+.windsurf/mcp.json
+and delete the
+"optimizely-exp"
+block.
+Common configuration notes
+Same server, every platform
+– All platforms connect to the same MCP server URL (
+https://exp.mcp.opal.optimizely.com/mcp
+) and use the same OAuth 2.0 authentication flow. You can connect from multiple platforms simultaneously.
+Your permissions carry over
+– The MCP server uses your Optimizely identity. You see the same projects, experiments, and data that you have access to in the Optimizely UI. No additional permissions are required.
+Network access
+– If you are behind a corporate proxy or VPN, ensure that
+exp.mcp.opal.optimizely.com
+is accessible from your machine. Contact your network administrator if you encounter connection issues.
+Troubleshoot
+The Optimizely server does not display after setup
+Check that your configuration file contains valid JSON. A missing comma or bracket is a common cause of the server not loading. Paste the file contents into a JSON validator to check for errors. After fixing, fully restart your AI client (do not just reload the window).
+The OAuth browser window does not open
+Some clients require you to invoke an Optimizely tool before the OAuth flow starts. Try asking
+List my Optimizely projects
+to trigger authentication. If a browser window still does not open, check that your default browser is set correctly in your operating system settings.
+Tools prefixed with
+exp_
+do not display
+This usually means authentication did not complete. Try invoking any Optimizely query to re-trigger the OAuth flow. If you have already authenticated but tools are still missing, remove and re-add the server, then authenticate again.
+Queries return no results or an access error
+Confirm that your Optimizely account has access to at least one Feature Experimentation or Web Experimentation project. The MCP server only returns data for projects your account can access in the Optimizely UI. If your access is correct and queries still fail, contact
+Optimizely Support
+.
+Article is closed for comments.
+Articles in this section
+Optimizely Experimentation MCP server overview
+Optimizely Experimentation MCP server quickstart
+Install Optimizely Experimentation MCP server
+Optimizely Experimentation MCP server example prompts
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

@@ -1,0 +1,163 @@
+# https://varify.io/en/ab-testing-flat-rate-pricing
+A/B Testing with Flat-Rate Pricing — No Traffic Limits, No Surprises — Varify.io
+Functions
+Pricing
+For agencies
+Company
+Login
+Try for free
+Get a demo
+EN
+Menu
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Live
+Success Stories
+Card Set
+EN
+Functions
+Pricing
+For agencies
+Company
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Success Stories
+Card Set
+Try for free
+Get a demo
+A/B Testing with Flat-Rate Pricing — Unlimited Traffic, One Fixed Price
+Niko Kerter
+·
+Updated May 2026
+€199/month flat
+Unlimited traffic
+Unlimited experiments
+No annual contracts
+Table of contents
+Key Takeaways
+Most A/B testing tools charge by
+Monthly Tracked Users (MTU)
+— costs scale with traffic, often unpredictably
+Varify.io
+uses flat-rate pricing: €199/month for unlimited experiments, unlimited traffic, no MTU surprises
+A traffic spike from a campaign doesn't change your testing bill — costs are completely decoupled from traffic
+Monthly billing, no annual contracts — scale up or down without lock-in
+Most A/B testing tools tie their pricing to your traffic. VWO charges by Monthly Tracked Users. Convert charges by tested visitors. Optimizely charges by impressions. The result: as your website grows, your testing costs grow with it — often unpredictably. A successful marketing campaign that doubles your traffic also doubles your A/B testing bill.
+Varify.io
+uses
+flat-rate pricing
+: €199/month for the Growth plan with unlimited experiments and unlimited traffic. Whether you have 10,000 or 1,000,000 monthly visitors, the price stays the same. No MTU calculations, no tier upgrades, no surprise invoices. For the full comparison, see our
+European SMB tools guide
+.
+The problem with traffic-based A/B testing pricing
+Costs scale when they shouldn't
+Your A/B testing tool costs should scale with the value you get, not with your raw traffic. A site with 500K visitors running 3 tests doesn't need 5× the infrastructure of a site with 100K visitors running 3 tests. Yet traffic-based pricing charges 5× more.
+Unpredictable monthly bills
+Traffic fluctuates. Seasonal peaks, viral content, advertising campaigns — all create traffic spikes that translate directly to higher testing costs with MTU-based pricing. Budgeting becomes guesswork.
+Growth penalty
+The irony: successful companies get penalized. As your marketing improves and traffic grows, your testing costs increase. This creates perverse incentives to limit testing scope or avoid testing during high-traffic periods — exactly when testing matters most.
+Opaque pricing tiers
+Many tools don't publish pricing at all (Kameleoon, AB Tasty pre-merger). Others have complex tier systems where crossing a threshold (50K MTU → 100K MTU) triggers a significant price jump. Flat-rate eliminates this entirely.
+Pricing models compared
+Tool
+Pricing model
+Typical SMB cost
+Cost at 500K visitors
+Annual contract
+Varify.io
+Flat-rate
+€199/mo
+€199/mo
+No
+VWO
+MTU-based
+$299-500/mo
+$500-800+/mo
+Yes (typically)
+Convert
+Traffic-based
+$99-299/mo
+$399+/mo
+Yes
+Optimizely
+Impression-based
+$1,298+/mo
+$1,298+/mo
+Yes (annual)
+Crazy Egg
+Pageview-based
+$99-249/mo
+$249+/mo
+No
+Source: Claude Research, May 1, 2026
+At 500K monthly visitors, Varify costs 60-80% less than VWO or Convert for the same A/B testing functionality. The gap widens further as traffic grows.
+Varify's pricing plans
+Varify offers two plans — both with flat-rate pricing, unlimited traffic, and unlimited experiments:
+Growth (€199/month):
+Visual editor, code editor, GA4 integration, Matomo integration, audience targeting, scheduling, CSV export. Everything most teams need.
+Pro (€249/month):
+Everything in Growth plus BigQuery integration, Piwik Pro integration, PostHog integration, advanced segmentation, and priority support.
+Both plans: monthly billing, cancel anytime, no annual lock-in. Free 30-day trial on both. See
+detailed pricing
+.
+€199/month. Same price at 10,000 or 1,000,000 visitors.
+No MTU charges. No traffic tiers. No annual contracts. Just flat-rate A/B testing.
+Start your free trial
+Free 30-day trial
+When traffic-based pricing makes sense
+Fair is fair — flat-rate isn't always the cheapest option:
+Very low traffic sites (under 10K visitors/month):
+Some tools like Convert start at $99/month for small traffic tiers, which is cheaper than Varify's €199. But this advantage disappears quickly as traffic grows.
+Free/open-source tools:
+GrowthBook is free (self-hosted) for any traffic level. If you have developer resources for setup and maintenance, it's the cheapest option regardless of pricing model.
+Enterprise with negotiated contracts:
+Large enterprises may negotiate custom rates with VWO or Optimizely that include favorable traffic terms.
+For most growing SMBs, flat-rate pricing becomes the better deal within the first few months of growth.
+Niko Kerter
+CRO Expert at Varify.io
+Share article!
+Frequently asked questions about A/B testing pricing
+What happens if my traffic exceeds expectations with Varify?
+Nothing. Your price stays at €199/month (Growth) or €249/month (Pro) regardless of traffic volume. There are no overage charges, no tier upgrades, no surprise bills. This is the core promise of flat-rate pricing.
+How does Varify afford unlimited traffic at flat-rate?
+Varify doesn't build its own tracking infrastructure — it uses your existing analytics (GA4, BigQuery, Matomo). This means Varify's server costs don't scale linearly with your traffic. The snippet delivery is lightweight (11.5 KB cached), and the computation happens in your analytics tool, not on Varify's servers.
+Is Varify's flat-rate pricing really cheaper than VWO?
+For most sites, yes. VWO's entry point is $299/month for limited MTU. At 200K+ monthly visitors, VWO typically costs $500-800/month. Varify is €199/month regardless of traffic. The only scenario where VWO is cheaper: if you need heatmaps + recordings + testing in one tool and don't already have Hotjar/Clarity.
+Can I switch from annual contracts at other tools to Varify's monthly billing?
+Yes. Varify offers monthly billing with no annual commitment. You can start a free 30-day trial, migrate your tests, and cancel your annual contract at the other tool at the end of its term. Many teams run both tools in parallel during the transition.
+Platform
+Registration
+Login
+Pricing
+For agencies
+Functions
+Roadmap
+BigQuery
+Knowledge
+Blog
+Knowledge
+A/B Testing Guide
+Compare
+Varify vs. VWO
+Varify vs. Convert
+Support
+Contact
+Tutorials
+User documentation
+Demo Call
+Information on data protection
+Company
+About us
+Affiliate
+More about us
+OMR
+Imprint
+Terms of Service
+Privacy
+Privacy settings

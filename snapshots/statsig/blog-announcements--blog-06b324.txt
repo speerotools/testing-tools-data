@@ -1,0 +1,349 @@
+# https://www.statsig.com/blog
+Statsig Blog | The authoritative source for data-driven insights
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+Products
+Solutions
+Resources
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Statsig Blog
+FEATURED
+STATSIG
+Rooting in customer requests | Color commentary, May–Jul 2026
+Eric Metelka
+Tue Jul 21 2026
+The story behind our recent releases follows two narratives: a governance story and an ease-of-access story. Here's why we shipped what we did.
+All Articles
+Engineering
+Experimentation
+Statsig
+Other
+EXPERIMENTATION
+PM roundtable: How do you prioritize experiments?
+Paul Morrill
+Tue Aug 11 2026
+What should you test next? Three Statsig + Amplitude PMs share the risks, impact, and statistics they weigh when picking which product experiments to run.
+EXPERIMENTATION
+Running faster tests: The basics (Part 1)
+Akhil Prakash
+Fri Jul 31 2026
+Sample size calculator says your test will take 3 months? In the 1st part of our 4-part series, here's how to run faster tests by adjusting your constraints.
+FEATURED
+STATSIG
+Rooting in customer requests | Color commentary, May–Jul 2026
+Eric Metelka
+Tue Jul 21 2026
+The story behind our recent releases follows two narratives: a governance story and an ease-of-access story. Here's why we shipped what we did.
+ENGINEERING
+Statsig MCP: Heading toward headless workflows
+Harman Kaur
+Wed Jul 15 2026
+You've been asking for more headless. Here's how it now works to take a feature gate through its full lifecycle without opening a browser tab.
+STATSIG
+Engineering roundtable: Larry Xu, Shelley Wang, Lew Gordon
+Paul Morrill
+Tue Jul 07 2026
+Meet three new Statsig + Amplitude engineering leaders and find out their takes on the future of shipping fast and safely.
+EXPERIMENTATION
+What’s the point of hypothesizing?
+Paul Morrill
+Thu Jul 02 2026
+Your experiment needs a hypothesis, and not just because the word “hypothesis” is drilled into you from day one of elementary science class. Here's why.
+FEATURED
+Statsig + Amplitude: The drop on Phase 1
+Chris Yu
+Wed Jun 17 2026
+Statsig and Amplitude’s announcement in May was a record-scratch moment for experimentation. The next track starts today.
+ENGINEERING
+Fighting shadow AI with light(er) MCP governance
+Harman Kaur
+Thu Jun 11 2026
+Statsig’s MCP uses the access controls we already have, with a few lightweight knobs on top. Here’s why we went that lighter route, and where we’re taking it next.
+AI
+Statsig's Knowledge Graph: Connecting code, experiments, and metrics
+Pablo Beltran, Emily Hallet
+Wed Jan 28 2026
+Statsig’s Knowledge Graph connects codebase, feature gates, experiments, users and metrics to give teams richer context and faster insights.
+AI
+How we’re making Statsig smarter with AI
+Shubham Singhal, Kaz Haruna, Sid Kumar
+Wed Jan 21 2026
+Statsig’s AI-powered, copilot-like features enhance key product workflows and help teams learn and iterate faster!
+STATSIG
+Guide to onboarding with Statsig
+Ben Weymiller
+Tue Jan 13 2026
+New to Statsig and not sure where to begin? Follow this 3-step guide to onboarding with Statsig.
+AI
+Automating Safe AI Config Rollouts with Custom Benchmarks and Statsig
+Anna Yoon
+Tue Jan 06 2026
+Automate benchmark testing for AI configuration changes and block unsafe rollouts using Statsig Release Pipelines and webhooks.
+AI
+How we optimized Statbot using Statsig
+Xin Huang
+Thu Dec 18 2025
+Building Statbot showed us the power of pairing rigorous offline validation with real customer insights.
+ENGINEERING
+Guide to using Statsig's MCP Server
+Katie Braden, Helen Lu
+Thu Dec 18 2025
+A guide to using Statsig's MCP Server covering setup, prompt examples, and best practices.
+STATSIG
+FEATURED
+Statsig's 2025 year in review
+Margaret-Ann Seger
+Tue Dec 16 2025
+2025 was a big year for Statsig. Here’s a look back at our journey, our scale, our learnings, and the road ahead.
+Older Posts
+Show All
+Loved by customers at every stage of growth
+See what our users have to say about building with Statsig
+Testimonials
+"Statsig's experimentation capabilities stand apart from other platforms we've evaluated. The ease of use, simplicity of integration help us efficiently get insight from every experiment we run. Statsig's infrastructure and experimentation workflows have also been crucial in helping us scale to hundreds of experiments across hundreds of millions of users."
+Paul Ellwood
+Head of Data Engineering
+"We evaluated Optimizely, LaunchDarkly, Split, and Eppo, but
+ultimately selected Statsig due to its comprehensive end-to-end integration
+. We wanted a complete solution rather than a partial one, including everything from the stats engine to data ingestion."
+Don Browning
+SVP, Data & Platform Engineering
+"Excited to bring Statsig to Whatnot! We finally found a product that moves just as fast as we do and have been super impressed with how closely our teams collaborate."
+Rami Khalaf
+Product Engineering Manager
+"Statsig has enabled us to quickly understand the impact of the features we ship."
+Shannon Priem
+Lead PM
+"I know that we are able to impact our key business metrics in a positive way with Statsig. We are definitely heading in the right direction with Statsig."
+Partha Sarathi
+Director of Engineering
+"Working with the Statsig team feels like we're working with a team within our own company."
+Jeff To
+Engineering Manager
+"[Statsig] enables shipping software 10x faster, each feature can be in production from day 0 and no big bang releases are needed."
+Matteo Hertel
+Founder
+"Statsig has been an amazing collaborator as we've scaled. Our product and engineering team have worked on everything from advanced release management to custom workflows to new experimentation features. The Statsig team is fast and incredibly focused on customer needs - mirroring OpenAI so much that they feel like an extension of our team."
+Chris Beaumont
+Data Scientist
+"The ability to easily slice test results by different dimensions has enabled Product Managers to self-serve and uncover valuable insights."
+Preethi Ramani
+Chief Product Officer
+"We decreased our average time to decision made for A/B tests by 7 days compared to our in-house platform."
+Berengere Pohr
+Team Lead - Experimentation
+"Statsig is a powerful tool for experimentation that helped us go from 0 to 1."
+Brooks Taylor
+Data Science Lead
+"We've processed over a billion events in the past year and gained amazing insights about our users using Statsig's analytics."
+Ahmed Muneeb
+Co-founder & CTO
+"Leveraging experimentation with Statsig helped us reach profitability for the first time in our 16-year history."
+Zachary Zaranka
+Director of Product
+"Statsig enabled us to test our ideas rather than rely on guesswork. This unlocked new learnings and wins for the team."
+David Sepulveda
+Head of Data
+"Brex's mission is to help businesses move fast.
+Statsig is now helping our engineers move fast
+. It has been a game changer to automate the manual lift typical to running experiments and has helped product teams ship the right features to their users quickly."
+Karandeep Anand
+President
+"We only had so many analysts. Statsig provided the necessary tools to remove the bottleneck. I know that we are able to impact our key business metrics in a positive way with Statsig.
+We are definitely heading in the right direction with Statsig
+."
+Partha Sarathi
+Director of Engineering
+"Statsig has been a game changer for how we combine product development and A/B testing. It's made it a breeze to implement experiments with complex targeting logic and feel confident that we're getting back trusted results. It's the first commercially available A/B testing tool that feels like it was built by people who really get product experimentation."
+Joel Witten
+Head of Data
+"We realized that Statsig was investing in the right areas that will benefit us in the long-term."
+Omar Guenena
+Engineering Manager
+"Having a dedicated Slack channel and support was really helpful for ramping up quickly."
+Michael Sheldon
+Head of Data
+"Statsig takes away all the pre-work of doing experiments. It's really easy to setup, also it does all the analysis."
+Elaine Tiburske
+Data Scientist
+"We thought we didn't have the resources for an A/B testing framework, but Statsig made it achievable for a small team."
+Paul Frazee
+CTO
+"We use Statsig's analytics to bring rigor to the decision-making process across every team at Wizehire."
+Nick Carneiro
+CTO
+"We've successfully launched over 600 features behind Statsig feature flags, enabling us to ship at an impressive pace with confidence."
+Wendy Jiao
+Staff Software Engineer
+"We chose Statsig because it offers a complete solution, from basic gradual rollouts to advanced experimentation techniques."
+Carlos Augusto Zorrilla
+Product Analytics Lead
+"We have around 25 dashboards that have been built in Statsig, with about a third being built by non-technical stakeholders."
+Alessio Maffeis
+Engineering Manager
+"Statsig beats any other tool in the market. Experimentation serves as the gateway to gaining a deeper understanding of our customers."
+Toney Wen
+Co-founder & CTO
+"We finally had a tool we could rely on, and which enabled us to gather data intelligently."
+Michael Koch
+Engineering Manager
+"At Notion, we're continuously learning what our users value and want every team to run experiments to learn more. It's also critical to maintain speed as a habit.
+Statsig's experimentation platform enables both this speed and learning for us
+."
+Mengying Li
+Data Science Manager
+"At OpenAI, we want to iterate as fast as possible.
+Statsig enables us to grow, scale, and learn efficiently
+. Integrating experimentation with product analytics and feature flagging has been crucial for quickly understanding and addressing our users' top priorities."
+Dave Cummings
+Engineering Manager, ChatGPT
+"Statsig has helped accelerate the speed at which we release new features. It enables us to launch new features quickly & turn every release into an A/B test."
+Andy Glover
+Engineer
+"We knew upon seeing Statsig's user interface that it was something a lot of teams could use."
+Laura Spencer
+Chief of Staff
+"The beauty is that Statsig allows us to both run experiments, but also track the impact of feature releases."
+Evelina Achilli
+Product Growth Manager
+"Statsig is my most recommended product for PMs."
+Erez Naveh
+VP of Product
+"Statsig helps us identify where we can have the most impact and quickly iterate on those areas."
+John Lahr
+Growth Product Manager
+"With Warehouse Native, we add things on the fly, so if you mess up something during set up, there aren't any consequences."
+Jared Bauman
+Engineering Manager - Core ML
+"In my decades of experience working with vendors, Statsig is one of the best."
+Laura Spencer
+Technical Program Manager
+"Statsig is a one-stop shop for product, engineering, and data teams to come together."
+Duncan Wang
+Manager - Data Analytics & Experimentation
+"Engineers started to realize: I can measure the magnitude of change in user behavior that happened because of something I did!"
+Todd Rudak
+Director, Data Science & Product Analytics
+"For every feature we launch, Statsig saves us about 3-5 days of extra work."
+Rafael Blay
+Data Scientist
+"I appreciate how easy it is to set up experiments and have all our business metrics in one place."
+Paulo Mann
+Senior Product Manager
+We use cookies to ensure you get the best experience on our website.
+Privacy Policy
+Got it!
+Platform
+Feature Management
+Experimentation
+Data Warehouse
+Product Analytics
+Session Replay
+Marketing Experiments
+Web Analytics
+Test Drive Now
+Why Statsig
+Product Observability
+How It Works
+Build vs Buy
+Pricing
+Customer Stories
+Testimonials
+Resources
+Docs
+Code
+Blog
+Perspectives
+Comparisons
+Product Updates
+A/B Test Calculator
+Bayesian Calculator
+Power Calculator
+Integrations
+Glossary
+Developer Dictionary
+FAQs
+Join Community
+Events
+Feedback
+Status
+Company
+About Us
+Careers
+Pets
+Terms
+Privacy Policy
+Contact Us
+© 2026 Statsig, LLC
+Hello from Bellevue, WA

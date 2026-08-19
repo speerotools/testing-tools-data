@@ -1,0 +1,55 @@
+# https://kb.figpii.com/article/280-security-at-figpii
+Security at FigPii - FigPii Support
+Toggle Navigation
+Home
+Getting Started
+APIs
+Account Settings
+A/B Testing
+Polls
+Heatmaps
+Video Recording
+Contact
+Contact
+Security at FigPii
+PRIORITIZING USER PRIVACY
+Security is pivotal in honoring our commitment to our users, a reality we fully acknowledge at FigPii. We incorporate certified protocols, procedures, and audits systematically to ensure the safe and secure utilization of our services for all parties involved, including our users and visitors.
+Our growth at FigPii is credited to our loyal customers, making trust-building our principal objective. We comprehend the importance of data in the ever-progressing digital world and its significance to our clients' operations; therefore, maintaining its confidentiality and compliance is critical.
+Over 3700 customers have vested their trust in the FigPii Platform with their data, a responsibility we profoundly value. Security ranks highest in our priorities and forms the backbone of our product, policy, and process development, aiming for elevated resiliency. Consequently, we adhere to security-by-design principles to safeguard information systems and customer data.
+Security of Infrastructure
+By default, all traffic is blocked at a network level, and specific ports are only opened when necessary for the delivery of FigPii service. Elevated access to infrastructure necessitates a VPN with 2-factor authentication. Unauthorized access attempts are recorded and escalated to our DevOps team. Host-based intrusion detection systems are implemented and maintained on a regular basis.
+Data Encryption
+Data transmitted to and from FigPii's servers undergoes encryption during transit.
+Failover and Disaster Recovery
+Our production infrastructure is designed with redundant systems in high-availability configurations spanning across three different AWS region availability zones.
+Identity and Access Management
+Passwords are securely stored in a hashed format. VPN access with a requirement of 2-factor authentication is mandatory to access any internal resources. Access to client data is restricted to authorized employees and requires user approval. Access to sensitive production data is exclusively limited to the DevOps team.
+Monitoring and Logging
+We monitor infrastructure and application performance extensively, which typically allows us to identify problems before many customers are affected. Automated alerts have been configured with an on-call schedule for escalations. If an issue is not acknowledged within 10 minutes, it's escalated to the remaining DevOps team members.
+Incident Management
+FigPii has protocols in place for addressing security incidents and other operational concerns, which include escalation procedures, immediate mitigation, and post-mortems. Updates on potential issues can be accessed on our status page, where automatic updates subscription is also available.
+Security Compliance with GDPR and CCPA
+FigPii is fully GDPR and CCPA compliant. Please refer to the resources below for more details about our commitment and the compliance measures we have instituted.
+Our Commitment To GDPR
+FigPii Terms
+Certifications
+Our infrastructure is hosted on AWS, a service certified by ISO27001 and SOC2.
+For any security-related inquiries or issues, please reach out to us at
+support@figpii.com
+.
+Still need help?
+Contact Us
+Contact Us
+Last updated on May 26, 2023
+Toggle Search
+Categories
+GA4
+General
+Home Page Dashboard
+Integrations
+No results found
+©
+FigPii
+2026.
+Powered by
+Help Scout

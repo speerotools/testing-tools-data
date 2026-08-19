@@ -1,0 +1,147 @@
+# https://posthog.com/context-warehouse
+Context warehouse - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+PostHog context warehouse
+Overview
+Is PostHog warehouse native?
+Data tools
+Managed DuckDB warehouse
+PostHog AI
+Data sources & import (ELT)
+CDP
+Data modeling
+SQL editor
+Business intelligence (BI)
+Reverse ETL & export
+Integrations
+Integration library
+Give your agents the
+full context
+Your
+context warehouse
+combines data storage and tooling with no pipelines to maintain, optimized for agents to use.
+Store product and business data
+Transform, query, and model
+Data-driven self-driving development
+Get started
+Built for data engineers, loved by product teams
+Data engineers
+Build complex models and transformations that need your expertise, not plumbing.
+Set up CDC pipelines from Postgres, MySQL, and other sources
+Define and version core metrics so every team is working from the same numbers
+Build and manage reverse ETL syncs to keep downstream tools up to date
+Write transformation logic that enriches events with data from other systems
+Query billions of rows without managing a cluster
+Flexibility to use PostHog's full context warehouse or bring your own tools
+Product engineers
+Your data is already in PostHog. Query it, use it in experiments, and ship against it without waiting on the data team.
+Sync external data sources and query them alongside your product events
+Build experiment cohorts from warehouse data without creating a custom pipeline
+Use PostHog AI to write SQL when you don't want to
+Better data in, better AI out
+Data you trust
+Ask @PostHog
+Self-drive
+Better together
+Start with
+data you trust
+AI products don't fail because the model is bad. They fail because the data feeding them is incomplete, inconsistent, or stuck in a tool it can't reach.
+PostHog's context warehouse gives your AI features a foundation that works: clean event data, business context from your other tools, and full data ownership.
+The stack that grows with you, not one you grow out of
+The data you need on day one looks nothing like the data you need at scale. Start with what a small team needs and add capability as you grow into it.
+Just launched
+Getting traction
+Scaling up
+Data in
+Send Events from your product
+Sync Stripe and your CRM
+Custom sources and transformation logic
+Storage
+Data stored by PostHog
+Managed Warehouse, basic queries
+Managed Warehouse, advanced modeling
+Data out
+Use PostHog Product Analytics
+Create Cohorts from combined data
+Reverse ETL to your whole stack
+AI
+Ask PostHog MCP to set up your tools
+Use PostHog AI to query your data
+Get PostHog Code to self-drive your development
+No migration, re-instrumentation, or switching tools because you scaled out of them. If you really want to, we give you the credentials to directly access your data store to bring your own tools or export your data.
+What's in your context warehouse
+Use PostHog as the full context layer for your product, or mix and match with your own tools.
+Data Sources
+Sources & Import (ELT)
+Regularly sync or bulk import data into your warehouse from databases, ad platforms, SaaS tools, and more.
+Managed Warehouse
+Store, query, and join your product and business data in one place without maintaining any infrastructure.
+CDP
+Ingest, transform, and route data between PostHog and the rest of your stack in real time.
+Batch Exports
+Send PostHog data to your existing warehouse or data lake on a schedule you control.
+Data Modeling
+Models
+Define your metrics to keep them consistent across PostHog products, update them on a schedule.
+Endpoints
+Take any insight or SQL query and expose it as a stable API endpoint.
+Data Tools
+PostHog AI
+Ask questions about your data in plain English. Generates SQL, builds dashboards, and surfaces insights.
+SQL Editor
+Write and run HogQL or standard SQL directly against your data. For when you know exactly what you want and just need to ask for it properly.
+Notebooks
+Combine insights, replays, flags, experiment results, and SQL into a single document. For when your analysis has a story and a dashboard isn't the right way to tell it.
+Reverse ETL
+Send data back to the tools that need it. Keep your CRM, support tools, and marketing platforms in sync.
+Business Intelligence
+Visualize your data with interactive dashboards and ad-hoc analyses right in PostHog.
+Get started
+Your first data source is free to connect. So is your second. By the time you've connected your third, you'll stop thinking about your stack entirely, which is the whole point.
+Get Started
+Not using PostHog?
+Sign up
+FAQ
+Can I use PostHog's context warehouse with my existing warehouse?
+What if I'm already using Segment or Rudderstack?
+How does pricing work?
+Is my data leaving PostHog's infrastructure?
+How does this connect to the rest of PostHog?
+Do I need to know SQL to use the context warehouse?
+Can I set this up myself, or do I need a data engineer?
+How fresh is the data, can I use it in flags and experiments right away?
+Can I join my external data to product events without building a pipeline?
+How do agents access the warehouse?
+How do I control what agents and PostHog AI can see?

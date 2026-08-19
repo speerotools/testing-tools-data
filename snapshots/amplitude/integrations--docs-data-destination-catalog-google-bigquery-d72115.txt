@@ -1,0 +1,434 @@
+# https://amplitude.com/docs/data/destination-catalog/google-bigquery
+Google BigQuery | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Destination catalog
+Ad Networks
+Attribution
+CDP
+Collaboration
+Customer Engagement
+Data warehouse/data lake
+Amazon Kinesis (Cohort)
+Amazon Kinesis Data Stream
+Amazon Kinesis Firehose
+Amazon RedShift
+Databricks
+Google BigQuery
+Snowflake
+ETL
+Experimentation
+Marketing Analytics
+Marketing Automation
+Messaging
+Other
+Qualitative Feedback
+Sales
+Storage
+On this page
+Considerations
+Prerequisites
+Set up the integration
+Event table schema
+Merged User table schema
+BigQuery deduplication table
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Data
+/
+Destination catalog
+/
+Google BigQuery
+Google BigQuery
+Set up recurring syncs of your Amplitude event data to BigQuery through the Amplitude UI, or manually start a sync of your historical data. This article describes connecting your Amplitude and BigQuery accounts, then syncing your data.
+Considerations
+To help save query costs, Amplitude partitions the events table by the date of
+event_time
+. Refer to the
+BigQuery docs
+for more information about table partitioning.
+Amplitude runs a daily integrity check for your exports. Each day, Amplitude checks the number of events exported over the last few days. If the count doesn't match the expected count, Amplitude automatically runs a backfill for that date.
+Duplicate event exports can occur, especially during a backfill of already-exported data. To help with this, Amplitude creates a table function in the provided dataset named
+deduplicated_<appid>
+. This table function provides a deduplicated view of the data.
+Deduplicate table function example
+sql
+Copy
+SELECT
+*
+FROM
+`testProject.testDataset.deduplicated_EVENTS_12345`
+(
+' '
+,
+' '
+);
+Depending on your company's network policy, you may need to add the following IP addresses to your allowlist to allow Amplitude's servers to access your BigQuery instance:
+Amplitude US IP addresses:
+52.33.3.219
+35.162.216.242
+52.27.10.221
+Amplitude EU IP addresses:
+3.124.22.25
+18.157.59.125
+18.192.47.195
+Prerequisites
+To get started with exporting to BigQuery, you need the following:
+A
+BigQuery project with the BigQuery Transfer service enabled
+.
+A
+service account
+for Amplitude. This lets Amplitude export your data to your Google Cloud project. Your service account needs these roles enabled:
+BigQuery User
+BigQuery Data Editor
+A
+custom role
+that has the following permissions enabled:
+bigquery.transfers.get
+bigquery.transfers.update
+bigquery.datasets.update
+After you create a service account, generate and download the service account key file and upload it to Amplitude.
+Export Amplitude's account key in JSON format
+.
+Set up the integration
+Creating a recurring data export is a three-step process. Each sync completes within ten minutes, and all jobs appear in Amplitude.
+To set up a recurring export of your Amplitude data to BigQuery, follow these steps:
+In Amplitude Data, click
+Catalog
+and select the
+Destinations
+tab.
+In the Warehouse Destination section, click
+Big Query
+.
+On the
+Getting Started
+tab, select the data you want to export and the export's cadence. You can
+Export events ingested today and moving forward
+,
+Export all merged Amplitude IDs
+, or both. For events, you can also specify filtering conditions to export only events that meet certain criteria.
+Review the schemas for the
+Event
+table and the
+Merge IDs
+table and click
+Next
+.
+Specify the BigQuery dataset to receive your Amplitude data, and upload the service account key file. This file must be in JSON format.
+Click
+Next
+. Amplitude attempts a test upload to test the credentials. If the upload succeeds, click
+Finish
+to complete the BigQuery destination configuration and activation.
+Amplitude sends future events and merged users to BigQuery automatically. Amplitude exports files to your BigQuery account on a best-effort basis. Exports typically run hourly and contain one hour of data, but may run less frequently and contain multiple hours of data.
+Event table schema
+The
+Event
+table schema includes the following columns:
+Column
+Type
+Description
+Adid
+STRING
+(Android) Google Play Services advertising ID (ADID). Example: AEBE52E7-03EE-455A-B3C4-E57283966239
+amplitude_id
+BIGNUMERIC
+The original Amplitude ID for the user. Use this field to automatically handle merged users. Example: 2234540891
+app
+INTEGER
+Project ID found in your project's Settings page. Example: 123456
+city
+STRING
+City. Example: "San Francisco"
+client_event_time
+TIMESTAMP
+Local timestamp (UTC) of when the device logged the event. Example:
+.000000
+client_upload_time
+TIMESTAMP
+The local timestamp (UTC) of when the device uploaded the event. Example:
+.000000
+country
+STRING
+Country. Example: "United States"
+data
+JSON
+Dictionary where certain fields such as
+first_event
+and
+merged_amplitude_id
+are stored
+device_carrier
+STRING
+Device Carrier. Example: Verizon
+device_family
+STRING
+Device family. Example: Apple iPhone
+device_id
+STRING
+The device specific identifier. Example: C8F9E604-F01A-4BD9-95C6-8E5357DF265D
+device_type
+STRING
+Device type. Example: Apple iPhone 5s
+dma
+STRING
+Designated marketing area (DMA). Example; San Francisco-Oakland-San Jose, CA
+event_id
+INTEGER
+A counter that distinguishes events. Example: 1
+event_properties
+JSON
+event_time
+TIMESTAMP
+Amplitude timestamp (UTC) which is the
+client_event_time
+adjusted by the difference between
+server_received_time
+and
+client_upload_time
+, specifically:
+event_time
+=
+client_event_time
++ (
+server_received_time
+-
+client_upload_time
+) Amplitude uses this timestamp is used to organize events on Amplitude charts. NOTE: If the difference between server_received_time and client_upload_time is less than 60 seconds, the
+event_time
+isn't adjusted and equals the
+client_event_time
+. Example:
+.000000
+followed_an_identify
+BOOLEAN
+True if there was an identify event between this current SDK event and the last SDK event seen. Example:
+True
+group_properties
+JSON
+groups
+JSON
+Group types. Refer to the Accounts documentation for more information.
+idfa
+STRING
+(iOS) Identifier for Advertiser. Example: AEBE52E7-03EE-455A-B3C4-E57283966239
+ip_address
+STRING
+IP address. Example: "123.11.111.11"
+is_attribution_event
+BOOLEAN
+language
+STRING
+library
+STRING
+location_lat
+FLOAT
+Latitude. Example: 12.3456789
+location_lng
+FLOAT
+Longitude. Example: -123.4567890
+os_name
+STRING
+OS name. Example:
+ios
+os_version
+STRING
+OS version.
+paying
+STRING
+True if the user has ever logged any revenue, otherwise (none). Note: You can modify the property value through the Identify API. Example: true
+platform
+STRING
+processed_time
+TIMESTAMP
+region
+STRING
+Region. Example: California
+sample_rate
+BIGNUMERIC
+server_received_time
+TIMESTAMP
+server_upload_time
+TIMESTAMP
+Amplitude timestamp (UTC) of when Amplitude servers received the event. Example:
+.000000
+session_id
+BIGNUMERIC
+The session start time in milliseconds since epoch. Example: 1396381378123
+start_version
+STRING
+App version the user was first tracked on. Example: 1.0.0
+user_id
+STRING
+A readable ID specified by you. Use something that doesn't change; for that reason, using the user's email address isn't recommended.
+user_properties
+JSON
+uuid
+STRING
+A unique identifier per row (event sent). Example: bf0b9b2a-304d-11e6-934f-22000b56058f
+version_name
+STRING
+The app version. Example: 1.0.0
+Merged User table schema
+The Merged User table schema contains the following:
+Column
+Type
+Description
+amplitude_id
+NUMBER(38,0)
+The Amplitude ID being merged into a user's original Amplitude ID.
+merge_event_time
+TIMESTAMP
+The time of the event a user's new Amplitude ID was associated with their original Amplitude ID.
+merge_server_time
+TIMESTAMP
+The server time of the event when a user's new Amplitude ID was associated with their original Amplitude ID.
+merged_amplitude_id
+NUMBER(38,0)
+The originally assigned Amplitude ID when the user is first created.
+BigQuery deduplication table
+To create a deduplication table in BigQuery:
+sql
+Copy
+CREATE OR REPLACE
+TABLE
+FUNCTION
+`amplitude_bq_ingestion`
+.deduplicated_EVENTS(
+start_date
+DATE
+, end_date
+DATE
+)
+AS
+SELECT
+*
+FROM
+(
+SELECT
+*,
+ROW_NUMBER
+()
+OVER
+(
+PARTITION
+BY
+uuid
+) rn
+FROM
+`amplitude_bq_ingestion`
+.
+`EVENTS`
+WHERE
+DATE
+(event_time)
+>=
+start_date
+and
+DATE
+(event_time)
+<=
+end_date) t
+WHERE
+rn
+=
+1
+;
+Was this helpful?
+On this page
+Considerations
+Prerequisites
+Set up the integration
+Event table schema
+Merged User table schema
+BigQuery deduplication table
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

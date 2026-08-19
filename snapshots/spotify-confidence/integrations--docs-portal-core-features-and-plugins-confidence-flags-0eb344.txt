@@ -1,0 +1,115 @@
+# https://backstage.spotify.com/docs/portal/core-features-and-plugins/confidence-flags
+Confidence Flags - Spotify for Backstage
+Documentation Index
+Fetch the complete documentation index at:
+/docs/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Spotify for Backstage
+home page
+Search...
+⌘
+K
+Ask Assistant
+Try Spotify Portal
+Log in
+Log in
+Search...
+Navigation
+Portal Features & Plugins
+Confidence Flags
+Portal
+Plugins
+Xirp
+Contact us
+Spotify Portal for Backstage
+Getting Started
+Portal Features & Plugins
+Catalog
+Scaffolder
+TechDocs
+Soundcheck
+Fleetshift
+AI Gateway
+DevEx Metrics
+Search
+Home
+Insights
+Skill Exchange
+RBAC
+AiKA
+AI Explorer
+Confidence Flags
+Entity Overlays
+Data Experience
+MCP
+Portal CLI
+Audit Logs
+Recommended Plugins
+Portal Connect
+Developing Portal plugins
+Managing Plugins
+Guides
+Security
+Troubleshooting
+Changelog
+Videos
+On this page
+Overview
+What is it?
+Features of Confidence Flags
+Portal Features & Plugins
+Confidence Flags
+Copy page
+Copy page
+Use Confidence Flags for feature flagging with multi-platform SDKs, sophisticated targeting, gradual rollouts, and remote configuration in Portal.
+Copy page
+Copy page
+​
+Overview
+​
+What is it?
+Confidence Flags is a Spotify-managed feature flagging solution, built directly into Portal.
+Feature flags lets you remotely control the behavior in your application, website or backend service. Implement it in your application using one of Confidence Flags SDK’s and get started in an hour.
+At Spotify, we use feature flags to release new features gradually, test new features on a subset of users and test different variants of a feature before making it available to anyone.
+​
+Features of Confidence Flags
+Remotely control the visibility or behavior of a feature, or the behavior of a service in your application — without deploying new code
+SDK’s for resolving feature flags in iOS (Swift), Android (Kotlin), Java, Go, JavaScript (Web & Node.js), Python, Flutter, Rust, PHP, Ruby.
+Sophisticated targeting to cover both B2B and B2C use cases.
+Gradually roll out a feature to 10% of your users or remotely configure AI prompts for different user segments
+Instantly turn a feature off if it’s causing problems for your users
+User friendly interface to allow developers and non-technical stakeholders work together on feature releases
+To learn more and to get started building software like Spotify, see the
+quickstart
+Soundcheck Integration
+Entity Overlays
+⌘
+I
+Spotify for Backstage
+home page
+linkedin
+x
+youtube
+instagram
+facebook
+Learn More
+Go to backstage.spotify.com
+Explore the demo
+Partner interest form
+News & Updates
+Read our blog
+Subscribe to newsletter
+Portal system status
+Community
+Join the community
+Get Backstage Certified
+Legal
+Security
+Privacy Policy
+Cookies
+Terms of Service
+Trademark Usage
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

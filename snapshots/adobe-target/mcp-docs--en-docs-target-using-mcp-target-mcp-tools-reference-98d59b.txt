@@ -1,0 +1,1389 @@
+# https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-tools-reference
+Adobe Target MCP server tools reference | Adobe Target
+Documentation
+Target
+Target Guide
+[Beta]{class="badge informative"}
+Adobe Target MCP server tools reference
+target-mcp-tools-reference
+Last update: May 12, 2026
+Topics:
+Integrations
+CREATED FOR:
+Intermediate
+Experienced
+Developer
+User
+AVAILABILITY
+The Adobe Target MCP server is available to all customers in
+Public Beta
+. It is currently supported in
+Claude Web
+,
+Claude Desktop
+,
+Claude Code
+,
+Cursor
+, and
+ChatGPT
+.
+This page is a complete reference for all tools exposed by the Adobe Target MCP server. For each tool you’ll find a description, parameter details, return value, and an example natural-language prompt. For setup instructions and use cases, see
+Get started
+and
+Use cases and walkthroughs
+.
+IMPORTANT
+The Model Context Protocol (MCP) is an emerging open-source standard and may present security or reliability risks. Adobe MCP server integrations and related documentation are provided “as is,” without warranties of any kind.
+Connecting MCP clients or servers to Adobe products is a customer-elected configuration, and customers are responsible for evaluating the security and suitability of any MCP integration. Adobe is not responsible for issues arising from misconfiguration, misuse of the MCP, vulnerabilities in third-party implementations, or unintended actions performed through MCP-enabled workflows.
+To reduce risk, Adobe encourages testing integrations in a sandbox environment prior to productive use and carefully reviewing and validating all MCP-initiated actions and responses before confirming or relying on them.
+Prerequisites
+tools-prerequisites
+Your Adobe Target role determines which tools are available to you:
+Observer
+role or higher: access to all read-only tools
+Editor
+role or higher: access to read tools plus write tools (create, update)
+Approver
+role: access to all tools including activation and deactivation
+For full setup instructions, see
+Get started
+.
+Activity tools
+tools-activities
+NOTE
+Read and write operations have different scope.
+get_activity
+retrieves activities of all types (A/B Test, Experience Targeting, Automated Personalization, Auto-Allocate, Multivariate Test, Recommendations).
+update_activity
+supports A/B Test, Experience Targeting, and Automated Personalization; Auto-Allocate, Multivariate Test, and Recommendations activities are read-only through the MCP server.
+Capability
+A/B Test
+Experience Targeting
+Automated Personalization
+Auto-Allocate
+Multivariate Test
+Recommendations
+get_activity
+✓
+✓
+✓
+✓
+✓
+✓
+list_target_activities
+✓
+✓
+✓
+✓
+✓
+✓
+get_activity_performance_report
+✓
+✓
+✓
+✓
+✓
+✓
+get_activity_orders_report
+✓
+✓
+✓
+✓
+✓
+✓
+update_activity
+✓
+✓
+✓
+—
+—
+—
+Lifecycle edits (state, priority, name, schedule)
+✓
+✓
+✓
+✓
+✓
+✓
+Variant and traffic edits
+✓
+✓
+✓
+—
+—
+—
+Create
+✓
+✓
+—
+—
+—
+—
+List activities
+Tool:
+list_target_activities
+List Adobe Target activities with server-side filtering and sorting.
+Retrieves a paginated list of activities. All filters are applied server-side by the Target Admin API. The server returns at most 200 activities per page.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4 9-row-4 10-row-4 11-row-4 12-row-4 13-row-4 14-row-4 15-row-4 16-row-4 17-row-4 18-row-4
+Parameter
+Type
+Required
+Description
+limit
+integer
+No
+Maximum number of activities to return (server max: 200)
+offset
+integer
+No
+Number of activities to skip for pagination
+sort_by
+string
+No
+Field to sort by. Prefix with
+-
+for descending order (e.g.,
+-modifiedAt
+). Options:
+id
+,
+name
+,
+state
+,
+priority
+,
+startsAt
+,
+endsAt
+,
+lifetimeStart
+,
+lifetimeEnd
+,
+createdAt
+,
+createdBy
+,
+modifiedAt
+,
+modifiedBy
+,
+type
+,
+thirdPartyId
+state
+string
+No
+Filter by activity state:
+approved
+(live/active),
+deactivated
+(inactive),
+paused
+,
+saved
+(draft)
+activity_type
+string
+No
+Filter by type:
+ab
+(A/B Test),
+xt
+(Experience Targeting),
+abt
+(Automated Personalization),
+auto_allocate
+(Auto-Allocate),
+mvt
+(Multivariate Test),
+recs
+(Recommendations)
+name_contains
+string
+No
+Filter activities whose name contains this string (case-insensitive)
+starts_after
+string
+No
+ISO 8601 date — activities starting after this date
+starts_before
+string
+No
+ISO 8601 date — activities starting before this date
+modified_after
+string
+No
+ISO 8601 date — activities modified after this date
+ends_after
+string
+No
+ISO 8601 date — activities ending after this date
+ends_before
+string
+No
+ISO 8601 date — activities ending before this date
+workspace
+string
+No
+Filter by workspace ID
+segment_id
+string
+No
+Filter by audience segment ID
+profile_attribute_id
+string
+No
+Filter by profile attribute ID
+priority
+integer
+No
+Filter by exact priority value (0–999)
+mbox
+string
+No
+Filter by mbox/location name
+offer_id
+string
+No
+Filter by offer ID
+view_id
+string
+No
+Filter by SPA view ID
+Returns:
+JSON object with
+activities
+(list of objects including
+id
+,
+name
+,
+state
+,
+type
+,
+priority
+,
+modifiedAt
+,
+startsAt
+,
+endsAt
+) and
+total
+(total count, may exceed the returned page size).
+Example prompt:
+“List all active A/B tests sorted by most recently modified.”
+Get an activity
+Tool:
+get_activity
+Get detailed information about an activity of any type.
+Retrieves the full configuration of a specific activity, automatically detecting the activity type. Supports A/B Test, Experience Targeting, Automated Personalization, Auto-Allocate, Multivariate Test, and Recommendations activities.
+table 0-row-4 1-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+Returns:
+Full activity details including metadata (name, state, priority, dates), experiences, locations and offers, goals and metrics, and targeting rules.
+Example prompt:
+“Get details for activity 12345.”
+Create an A/B activity
+Tool:
+create_ab_activity
+Create a new A/B test activity.
+Creates a new A/B test with the specified configuration including experiences, offers, and targeting.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4 9-row-4 10-row-4
+Parameter
+Type
+Required
+Description
+name
+string
+Yes
+Name of the activity
+state
+string
+No
+Initial state:
+approved
+,
+deactivated
+, or
+saved
+(default:
+saved
+)
+priority
+integer
+No
+Activity priority (0–999, default: 0)
+starts_at
+string
+No
+Activity start date (ISO 8601)
+ends_at
+string
+No
+Activity end date (ISO 8601)
+experiences
+array
+Yes
+List of experience configurations
+locations
+array
+Yes
+List of location/mbox configurations
+goals
+object
+No
+Primary and secondary goal metrics
+audiences
+array
+No
+Target audience configurations
+workspace_id
+string
+No
+Workspace ID for the activity
+Returns:
+The created activity object with its assigned ID.
+Example prompt:
+“Create an A/B test called ‘Homepage Hero Test’ with two experiences testing different hero images on the homepage-hero mbox.”
+Create an Experience Targeting activity
+Tool:
+create_xt_activity
+Create a new Experience Targeting (XT) activity.
+Creates an XT activity that delivers different experiences to different audiences based on targeting rules.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4 9-row-4
+Parameter
+Type
+Required
+Description
+name
+string
+Yes
+Name of the activity
+state
+string
+No
+Initial state:
+approved
+,
+deactivated
+, or
+saved
+(default:
+saved
+)
+priority
+integer
+No
+Activity priority (0–999, default: 0)
+starts_at
+string
+No
+Activity start date (ISO 8601)
+ends_at
+string
+No
+Activity end date (ISO 8601)
+experiences
+array
+Yes
+List of experience configurations with audience mappings
+locations
+array
+Yes
+List of location/mbox configurations
+goals
+object
+No
+Primary and secondary goal metrics
+workspace_id
+string
+No
+Workspace ID for the activity
+Returns:
+The created activity object with its assigned ID.
+Example prompt:
+“Create an Experience Targeting activity called ‘Geo Personalization’ that shows different content to visitors from different regions.”
+Update an activity
+Tool:
+update_activity
+Update an existing A/B Test, Experience Targeting, or Automated Personalization activity.
+Uses a read-modify-write pattern: fetches the current state, merges your changes, validates, and sends the update. Supports A/B Test, Experience Targeting, and Automated Personalization activities; Auto-Allocate, Multivariate Test, and Recommendations activities are read-only. The structured
+goal
+,
+audience_ids
+, and
+additional_metrics
+parameters are supported for A/B Test and Experience Targeting only; Automated Personalization activities accept plain field-merge updates.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity to update
+activity
+object
+Yes
+Fields to update (name, priority, experiences, locations, goals, etc.)
+Returns:
+The updated activity object.
+Example prompt:
+“Update activity 12345 to change the traffic allocation to 70/30.”
+Update activity schedule
+Tool:
+update_activity_schedule
+Update activity start and end dates.
+Updates the schedule for an activity without modifying other settings.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+starts_at
+string
+No
+New start date (ISO 8601)
+ends_at
+string
+No
+New end date (ISO 8601)
+Returns:
+Confirmation of the schedule update.
+Example prompt:
+“Update the schedule for A/B activity 12345 to run from May 1st to May 31st.”
+Change activity state
+Tool:
+update_activity_state
+Change activity state (activate, deactivate, or pause).
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+state
+string
+Yes
+New state:
+approved
+(live/active),
+deactivated
+(inactive),
+paused
+, or
+saved
+(draft)
+Returns:
+The updated activity state.
+Example prompt:
+“Activate activity 12345” or “Pause the Homepage Hero Test.”
+Rename an activity
+Tool:
+update_activity_name
+Rename an activity.
+Updates only the name without modifying the full configuration.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+name
+string
+Yes
+New activity name
+Returns:
+The updated activity object.
+Example prompt:
+“Rename activity 12345 to ‘Summer Campaign Hero Test’.”
+Change activity priority
+Tool:
+update_activity_priority
+Change activity priority.
+Higher-priority activities take precedence when multiple activities target the same location.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+priority
+integer
+Yes
+New priority value (0–999; higher = higher priority)
+Returns:
+The updated activity object.
+Example prompt:
+“Set the priority of activity 12345 to 100.”
+Add a variant to an activity
+Tool:
+add_activity_variant
+Add a new experience/variant to an activity.
+Handles all structural coordination including creating options, mapping to locations, and rebalancing traffic.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The ID of the activity to modify
+activity_type
+string
+Yes
+Activity type:
+ab
+,
+xt
+, or
+abt
+variant_name
+string
+Yes
+Name for the new experience/variant
+offer_id
+integer
+No
+(Form-based) Existing offer ID to use
+offer_content
+string
+No
+(Form-based) HTML content for a new inline offer
+traffic_percentage
+integer
+No
+Traffic % for the new variant (1–99). If omitted, traffic is rebalanced evenly
+audience_id
+integer
+No
+Audience ID for the variant (XT activities)
+modifications
+array
+No
+(VEC) List of CSS selector-based modifications
+Returns:
+The updated activity object.
+Example prompt:
+“Add a new variant called ‘Holiday Theme’ to A/B activity 12345 using offer 67890.”
+Update traffic split
+Tool:
+update_traffic_split
+Update traffic allocation across variants.
+The percentages must sum to exactly 100.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The ID of the activity to modify
+activity_type
+string
+Yes
+Activity type:
+ab
+or
+abt
+(XT not supported — audience-targeted)
+splits
+object
+Yes
+Dictionary mapping experience name to percentage. Must include all experiences and sum to 100
+Returns:
+The updated activity object.
+Example prompt:
+“Change the traffic split for activity 12345 to 70% Control and 30% Variant A.”
+Change a variant's offer
+Tool:
+update_variant_offer
+Change the offer for a specific variant.
+Works for both form-based activities (using
+offer_id
+) and VEC activities (using
+modifications
+).
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The ID of the activity to modify
+activity_type
+string
+Yes
+Activity type:
+ab
+,
+xt
+, or
+abt
+variant_name
+string
+Yes
+Name of the experience/variant to update
+offer_id
+integer
+No
+(Form-based) New offer ID
+offer_content
+string
+No
+(Form-based) HTML content for a new inline offer
+modifications
+array
+No
+(VEC) New list of CSS selector-based modifications
+Returns:
+The updated activity object.
+Example prompt:
+“Update the ‘Variant A’ experience in activity 12345 to use offer 99999.”
+Remove a variant from an activity
+Tool:
+remove_activity_variant
+Remove an experience/variant from an activity.
+Removes the experience, cleans up orphaned options, and rebalances traffic evenly across remaining variants.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The ID of the activity to modify
+activity_type
+string
+Yes
+Activity type:
+ab
+,
+xt
+, or
+abt
+variant_name
+string
+Yes
+Name of the experience/variant to remove
+Returns:
+The updated activity object.
+Example prompt:
+“Remove the ‘Test Variant’ experience from A/B activity 12345.”
+Offer tools
+tools-offers
+List offers
+Tool:
+list_target_offers
+List all offers in your Target tenant.
+Retrieves a paginated list of content offers with optional filtering.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4
+Parameter
+Type
+Required
+Description
+limit
+integer
+No
+Maximum number of offers to return
+offset
+integer
+No
+Number of offers to skip for pagination
+type
+string
+No
+Filter by offer type:
+content
+(HTML),
+json
+, or
+redirect
+name
+string
+No
+Filter by offer name (partial match)
+Returns:
+JSON object with
+offers
+(list of objects including
+id
+,
+name
+,
+type
+,
+content
+,
+modifiedAt
+) and
+total
+.
+Example prompt:
+“List all JSON offers.”
+Get an offer
+Tool:
+get_target_offer
+Get detailed information about a specific offer.
+table 0-row-4 1-row-4
+Parameter
+Type
+Required
+Description
+offer_id
+integer
+Yes
+The unique identifier of the offer
+Returns:
+Full offer details including
+id
+,
+name
+,
+type
+,
+content
+,
+workspace
+, and
+modifiedAt
+.
+Example prompt:
+“Get details for offer 67890.”
+Create an HTML offer
+Tool:
+create_target_offer
+Create a new HTML content offer.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+name
+string
+Yes
+Name of the offer
+content
+string
+Yes
+HTML or text content for the offer
+workspace_id
+string
+No
+Workspace ID for the offer
+Returns:
+The created offer with its assigned ID.
+Example prompt:
+“Create an HTML offer called ‘Summer Sale Banner’ with a promotional banner.”
+Create a JSON offer
+Tool:
+create_target_json_offer
+Create a new JSON offer for delivering structured data.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+name
+string
+Yes
+Name of the offer
+content
+object
+Yes
+JSON content for the offer
+workspace_id
+string
+No
+Workspace ID for the offer
+Returns:
+The created offer with its assigned ID.
+Example prompt:
+“Create a JSON offer called ‘Feature Flags Config’ with feature toggle settings.”
+Update an offer
+Tool:
+update_target_offer
+Update an existing offer.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+offer_id
+integer
+Yes
+The unique identifier of the offer to update
+name
+string
+No
+Updated offer name
+content
+string or object
+No
+Updated offer content
+Returns:
+The updated offer object.
+Example prompt:
+“Update offer 67890 with new promotional content.”
+Audience tools
+tools-audiences
+List audiences
+Tool:
+list_target_audiences
+List all audiences in your Target tenant.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+limit
+integer
+No
+Maximum number of audiences to return
+offset
+integer
+No
+Number of audiences to skip for pagination
+Returns:
+JSON object with
+audiences
+(list of objects including
+id
+,
+name
+,
+description
+,
+origin
+,
+modifiedAt
+) and
+total
+.
+Example prompt:
+“List all audiences.”
+Get an audience
+Tool:
+get_target_audience
+Get audience details including targeting rules.
+Retrieves the full configuration of a specific audience, including its targeting rules and conditions.
+table 0-row-4 1-row-4
+Parameter
+Type
+Required
+Description
+audience_id
+integer
+Yes
+The unique identifier of the audience
+Returns:
+Full audience details including
+id
+,
+name
+,
+description
+,
+origin
+, targeting rules, and associated activity count.
+Example prompt:
+“Get details for audience 12345 and show me its targeting rules.”
+Create an audience
+Tool:
+create_target_audience
+Create a new audience with targeting rules.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4
+Parameter
+Type
+Required
+Description
+name
+string
+Yes
+Name of the audience
+description
+string
+No
+Description of the audience
+targetRule
+object
+No
+Targeting rules (geo, browser, custom attributes, etc.)
+workspace_id
+string
+No
+Workspace ID for the audience
+Returns:
+The created audience with its assigned ID.
+Example prompt:
+“Create an audience called ‘Mobile Visitors from California’ targeting mobile users in CA.”
+Mbox tools
+tools-mboxes
+List mboxes
+Tool:
+list_target_mboxes
+List all mboxes in your Target tenant.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4
+Parameter
+Type
+Required
+Description
+limit
+integer
+No
+Maximum number of mboxes to return
+offset
+integer
+No
+Number of mboxes to skip for pagination
+name
+string
+No
+Filter by mbox name (partial match)
+status
+string
+No
+Filter by status
+Returns:
+JSON object with
+mboxes
+(list of objects including
+name
+,
+status
+,
+lastRequestTime
+) and
+total
+.
+Example prompt:
+“List all mboxes containing ‘homepage’.”
+Get an mbox
+Tool:
+get_target_mbox
+Get detailed information about a specific mbox.
+table 0-row-4 1-row-4
+Parameter
+Type
+Required
+Description
+mbox_name
+string
+Yes
+The name of the mbox
+Returns:
+Mbox details including
+name
+,
+status
+, and list of activities using the mbox.
+Example prompt:
+“Get details for mbox ‘homepage-hero’.”
+List mbox profile attributes
+Tool:
+list_target_mbox_profile_attributes
+List all mbox profile attributes available for targeting.
+No parameters required.
+Returns:
+JSON array of profile attribute objects.
+Example prompt:
+“What profile attributes are available for targeting?”
+Property tools
+tools-properties
+List properties
+Tool:
+list_target_properties
+List all properties in your Target tenant.
+Properties organize activities and control access.
+No parameters required.
+Returns:
+List of property objects including
+id
+,
+name
+,
+description
+, and
+channel
+.
+Example prompt:
+“List all Target properties.”
+Reporting tools
+tools-reporting
+Get an activity performance report
+Tool:
+get_activity_performance_report
+Get a performance report for an activity of any type.
+Retrieves conversion rates, lift, and confidence levels. Supports A/B Test, Experience Targeting, Automated Personalization, Auto-Allocate, Multivariate Test, and Recommendations activities.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+report_interval
+string
+No
+Time period for the report (e.g.,
+last7days
+,
+last30days
+, or a custom date range)
+Returns:
+Experience-level metrics (visitors, conversions, conversion rate), lift calculations, statistical confidence levels, and revenue metrics (if configured).
+Example prompt:
+“Show me the performance report for activity 12345 over the last 30 days.”
+Get an activity orders report
+Tool:
+get_activity_orders_report
+Get an orders/revenue report for an activity of any type.
+Supports A/B Test, Experience Targeting, Automated Personalization, Auto-Allocate, Multivariate Test, and Recommendations activities.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the activity
+report_interval
+string
+No
+Time period for the report
+Returns:
+Order counts, revenue, and average order value by experience.
+Example prompt:
+“Get the orders report for activity 12345.”
+Get a performance report by activity name
+Tool:
+get_activity_report_by_name
+Search for an activity by name and get its performance report.
+Useful when you know the activity name but not its ID.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_name
+string
+Yes
+Name of the activity to search for
+report_interval
+string
+No
+Time period for the report
+Returns:
+Activity details and performance metrics.
+Example prompt:
+“Get the performance report for my ‘Homepage Hero Test’ activity.”
+Get an Analytics for Target (A4T) report
+Tool:
+get_a4t_report
+Fetch an Analytics for Target (A4T) report for a Target activity.
+Validates the A4T configuration for the activity, then executes GraphQL queries against Adobe Analytics to retrieve Analytics-side metrics. Only available for activities that have A4T reporting configured.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The unique identifier of the Target activity
+report_interval
+string
+No
+Time period for the report (e.g.,
+last7days
+,
+last30days
+, or a custom date range)
+Returns:
+Analytics-side metrics for the activity including visitor counts, conversions, revenue, and lift by experience, sourced directly from Adobe Analytics.
+Example prompt:
+“Pull the A4T report for my checkout optimization test and summarize the Analytics-side conversion data.”
+Preview tools
+tools-preview
+Preview an activity
+Tool:
+preview_activity
+Generate browser QA preview URLs for a Target activity.
+Creates clickable preview links that force specific experiences to display, bypassing audience targeting rules. Works for A/B, XT, and Automated Personalization activities.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+activity_id
+integer
+Yes
+The Target activity ID to preview
+experience_index
+integer
+No
+0-based experience index. If omitted, returns URLs for all experiences
+url
+string
+No
+Page URL for preview. Required for form-based activities. For VEC activities, overrides the authored location if provided
+Returns:
+Activity information (name, type, state), preview URLs for each experience, and experience names and indexes.
+Example prompt:
+“Generate preview URLs for activity 12345 so I can test each experience in my browser.”
+Response token tools
+tools-response-tokens
+List response tokens
+Tool:
+list_target_response_tokens
+List all response tokens in your Target tenant.
+Retrieves all configured response tokens, both built-in and custom.
+No parameters required.
+Returns:
+JSON array of response token objects with
+name
+,
+type
+, and
+enabled
+status.
+Example prompt:
+“List all response tokens.”
+Create a response token
+Tool:
+create_target_response_token
+Create a new custom response token for collecting additional data in Target responses.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+token_name
+string
+Yes
+Name of the response token
+token_type
+string
+Yes
+Type of token:
+SCRIPT
+,
+ACTIVITY
+,
+MBOX
+,
+GEO
+, or
+CRS
+Returns:
+The created response token object.
+Example prompt:
+“Create a custom response token called ‘campaign_id’ of type ACTIVITY.”
+Revision tools
+tools-revisions
+Get the audit log
+Tool:
+get_target_revisions
+Get the audit log for a resource type.
+Retrieves changes made to Target resources with optional filtering by author.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4
+Parameter
+Type
+Required
+Description
+revision_resource_type
+string
+Yes
+Type of resource:
+activity
+,
+offer
+, or
+audience
+modified_by
+string
+No
+Filter by user who made changes
+limit
+integer
+No
+Maximum number of revisions to return
+offset
+integer
+No
+Number of revisions to skip for pagination
+Returns:
+Revision history with timestamps, users, and change descriptions.
+Example prompt:
+“Show me the audit log for activity changes.”
+Get revisions for a specific entity
+Tool:
+get_target_entity_revisions
+Get all revisions of a specific entity by ID.
+table 0-row-4 1-row-4 2-row-4
+Parameter
+Type
+Required
+Description
+revision_resource_type
+string
+Yes
+Type of resource:
+activity
+,
+offer
+, or
+audience
+entity_id
+integer
+Yes
+The unique identifier of the entity
+Returns:
+JSON array of all revisions for the specified entity.
+Example prompt:
+“Show me all changes made to activity 12345.”
+Template tools
+tools-templates
+List available templates
+Tool:
+list_target_templates
+List available MCP resources and templates for creating activities and offers.
+No parameters required.
+Returns:
+JSON object listing available templates and resources.
+Example prompt:
+“What templates are available for creating activities?”
+Tools summary
+tools-summary
+Category
+Count
+Tools
+Activity
+13
+list_target_activities
+,
+get_activity
+,
+create_ab_activity
+,
+create_xt_activity
+,
+update_activity
+,
+update_activity_schedule
+,
+update_activity_state
+,
+update_activity_name
+,
+update_activity_priority
+,
+add_activity_variant
+,
+update_traffic_split
+,
+update_variant_offer
+,
+remove_activity_variant
+Offer
+5
+list_target_offers
+,
+get_target_offer
+,
+create_target_offer
+,
+create_target_json_offer
+,
+update_target_offer
+Audience
+4
+list_target_audiences
+,
+get_target_audience
+,
+create_target_audience
+,
+update_target_audience
+Mbox
+3
+list_target_mboxes
+,
+get_target_mbox
+,
+list_target_mbox_profile_attributes
+Property
+1
+list_target_properties
+Reporting
+4
+get_activity_performance_report
+,
+get_activity_orders_report
+,
+get_activity_report_by_name
+,
+get_a4t_report
+Preview
+1
+preview_activity
+Response token
+2
+list_target_response_tokens
+,
+create_target_response_token
+Revision
+2
+get_target_revisions
+,
+get_target_entity_revisions
+AT.js
+2
+get_atjs_settings
+,
+get_atjs_versions
+Template
+1
+list_target_templates
+Total
+38
+Related resources
+tools-related
+Work with MCP clients
+Adobe Target Admin API reference
+recommendation-more-help
+target-help-main

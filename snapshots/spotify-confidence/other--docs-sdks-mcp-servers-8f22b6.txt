@@ -1,0 +1,465 @@
+# https://confidence.spotify.com/docs/sdks/mcp-servers
+MCP Servers - Confidence Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Sign up and get started with Confidence today!
+Create your account
+Confidence Documentation
+home page
+Search...
+⌘
+K
+Blog
+Bootcamp
+Support
+Status
+Confidence App
+Sign up and get started with Confidence today!
+Create your account
+Confidence Documentation
+home page
+Search...
+⌘
+K
+Ask Assistant
+Support
+Status
+Confidence App
+Confidence App
+Search...
+Navigation
+Get Started
+MCP Servers
+Get Started
+MCP Servers
+Copy page
+Copy page
+Confidence MCP servers give AI assistants access to documentation, feature flag management, and experiment analysis tools.
+Copy page
+Copy page
+Confidence has three MCP servers:
+Documentation MCP
+: Search and retrieve Confidence documentation
+Flags MCP
+: Create and manage feature flags
+Experiments MCP
+: Explore and analyze experiments and their results
+​
+Documentation MCP Server
+The Documentation MCP provides AI assistants with access to Confidence documentation through semantic search, regular expression search, and SDK integration guides.
+​
+Integration Setup
+No authentication required
+for the Documentation MCP server. The server uses streamable HTTP as the transport and the URL is
+https://mcp.confidence.dev/mcp/docs
+.
+Claude Code
+Cursor
+VS Code
+claude
+mcp
+add
+--transport
+http
+confidence-docs
+https://mcp.confidence.dev/mcp/docs
+1
+Open the Command Palette
+Use
+Command + Shift + P
+(
+Ctrl + Shift + P
+on Windows) and search for
+Open MCP settings
+.
+2
+Add the server
+Select
+New MCP Server
+and add the following to the
+mcpServers
+JSON:
+"confidence-docs"
+:
+"https://mcp.confidence.dev/mcp/docs"
+1
+Create the .vscode directory
+Create a
+.vscode
+directory in your workspace root if it doesn’t exist.
+2
+Create mcp.json
+Create a file named
+mcp.json
+in the
+.vscode
+directory.
+3
+Add the server configuration
+Add the
+confidence-docs
+server to your configuration:
+{
+"servers"
+: {
+"confidence-docs"
+: {
+"url"
+:
+"https://mcp.confidence.dev/mcp/docs"
+}
+}
+}
+4
+Start the server
+Click
+Start
+next to the MCP server name in the JSON file to start it.
+​
+Available Tools
+​
+searchDocumentation
+Searches the Confidence documentation using semantic search to learn about experiments, A/B tests, rollouts, feature flags, metrics, surfaces, insights, and other experiment-related topics. Returns the 10 most relevant chunks using Maximum Marginal Relevance (MMR) to balance relevance and diversity.
+​
+getFullSource
+Retrieves the full text content from a specific Confidence documentation source URL.
+​
+grepDocumentation
+Searches the Confidence documentation content using regular expressions. Returns a list of documentation pages that contain matches for the given regular expression pattern.
+​
+getCodeSnippetAndSdkIntegrationTips
+Gets complete integration guides with code examples and README documentation for integrating Confidence feature flags. Returns full integration examples including OpenFeature provider setup, best practices, and configuration for the specified SDK.
+​
+Example Usage
+Once integrated, ask your AI assistant to:
+“Search Confidence documentation for information about A/B testing”
+“Show how to integrate Confidence with Python”
+“Summarize the A/B test quickstart”
+​
+Flag Management MCP Server
+The Flag Management MCP provides AI assistants with tools to manage Confidence feature flags, including creation, modification, targeting rules, and testing.
+​
+Integration Setup
+The Confidence Flags MCP
+requires authentication
+. Allow access from your IDE or developer tool where you use the MCP server. The server uses streamable HTTP as the transport and the URL is
+https://mcp.confidence.dev/mcp/flags
+.
+Claude Code
+Cursor
+VS Code
+claude
+mcp
+add
+--transport
+http
+confidence-flags
+https://mcp.confidence.dev/mcp/flags
+After adding, open Claude Code, run
+/mcp
+and select
+confidence-flags
+to authenticate.
+1
+Open the Command Palette
+Use
+Command + Shift + P
+(
+Ctrl + Shift + P
+on Windows) and search for
+Open MCP settings
+.
+2
+Add the server
+Select
+New MCP Server
+and add the following to the
+mcpServers
+JSON:
+"confidence-flags"
+:
+"https://mcp.confidence.dev/mcp/flags"
+3
+Authenticate
+Click
+Connect
+to authenticate.
+1
+Create the .vscode directory
+Create a
+.vscode
+directory in your workspace root if it doesn’t exist.
+2
+Create mcp.json
+Create a file named
+mcp.json
+in the
+.vscode
+directory.
+3
+Add the server configuration
+Add the
+confidence-flags
+server to your configuration:
+{
+"servers"
+: {
+"confidence-flags"
+: {
+"url"
+:
+"https://mcp.confidence.dev/mcp/flags"
+}
+}
+}
+4
+Start and authenticate
+Click
+Start
+next to the MCP server name in the JSON file and authenticate when prompted.
+​
+Available Tools
+​
+listClients
+Lists all available Confidence clients for flag operations.
+​
+listFlags
+Lists all active feature flags with summary information including names, schemas, and variants.
+​
+getFlag
+Retrieves detailed information about a specific feature flag, including its complete schema, variants, and targeting rules.
+​
+createFlag
+Creates a new feature flag with schema and variant definitions.
+​
+addFlagVariant
+Adds a new variant to an existing feature flag.
+​
+updateFlagSchema
+Updates the schema definition of an existing feature flag.
+​
+createOverrideRule
+Creates targeting rules to override flag behavior for specific entities.
+​
+testResolveFlag
+Tests flag resolution for specific clients and entities and explains why the system selects a particular variant.
+​
+analyzeFlagUsage
+Finds unused Confidence feature flags or flags fully rolled out, helping you clean up feature flag code.
+​
+Example Usage
+Once integrated, ask your AI assistant to:
+“List all feature flags in Confidence”
+“Create a new flag called ‘new-checkout-flow’ with a boolean schema”
+“Add a variant to the ‘new-checkout-flow’ flag”
+“Create an individual targeting rule for user ‘test-user’ to see the ‘variant-b’ of ‘experiment-flag’”
+“Test flag resolution for ‘new-checkout-flow’ with user ‘
+john@example.com
+’”
+“Analyze what flags you can clean up in this codebase”
+​
+Experiments MCP Server
+The Experiments MCP provides AI assistants with tools to explore and analyze Confidence experiments, including A/B tests and rollouts.
+​
+Integration Setup
+The Confidence Experiments MCP
+requires authentication
+. Allow access from your IDE or developer tool where you use the MCP server. The server uses streamable HTTP as the transport and the URL is
+https://mcp.confidence.dev/mcp/experiments
+.
+Claude Code
+Cursor
+VS Code
+claude
+mcp
+add
+--transport
+http
+confidence-experiments
+https://mcp.confidence.dev/mcp/experiments
+After adding, open Claude Code, run
+/mcp
+and select
+confidence-experiments
+to authenticate.
+1
+Open the Command Palette
+Use
+Command + Shift + P
+(
+Ctrl + Shift + P
+on Windows) and search for
+Open MCP settings
+.
+2
+Add the server
+Select
+New MCP Server
+and add the following to the
+mcpServers
+JSON:
+"confidence-experiments"
+:
+"https://mcp.confidence.dev/mcp/experiments"
+3
+Authenticate
+Click
+Connect
+to authenticate.
+1
+Create the .vscode directory
+Create a
+.vscode
+directory in your workspace root if it doesn’t exist.
+2
+Create mcp.json
+Create a file named
+mcp.json
+in the
+.vscode
+directory.
+3
+Add the server configuration
+Add the
+confidence-experiments
+server to your configuration:
+{
+"servers"
+: {
+"confidence-experiments"
+: {
+"url"
+:
+"https://mcp.confidence.dev/mcp/experiments"
+}
+}
+}
+4
+Start and authenticate
+Click
+Start
+next to the MCP server name in the JSON file and authenticate when prompted.
+​
+Available Tools
+​
+list_experiments
+Lists Confidence experiments (A/B tests and rollouts). Returns experiment names, display names, states, owners, and creation times. Supports two modes:
+List mode
+(default): Use the
+filter
+parameter with
+Lucene
+query syntax (for example,
+state:live
+for running experiments) and
+orderBy
+to sort results.
+Search mode
+: Provide a
+query
+parameter for full-text search. In search mode, results order by relevance and the
+filter
+and
+orderBy
+parameters have no effect.
+You can infer the experiment type from the resource name (for example,
+workflows/abtest/...
+or
+workflows/rollout/...
+).
+​
+get_experiment
+Retrieves detailed information about a specific experiment. By default, returns a compact summary with key fields:
+Name, state, owner, and creation time
+Metrics with types, minimum detectable effect (MDE), and non-inferiority margin (NIM)
+Decision outcome (for ended A/B tests)
+Available analysis result names
+Set
+summary=false
+for full details including configuration, checks, stats, and state history.
+​
+get_results
+Retrieves statistical analysis results for an experiment. By default, returns a summary with:
+Relative effect estimates and confidence intervals
+Significance status and status messages
+Sample sizes per treatment
+Shipping recommendations per treatment
+Accepts either an experiment instance name (for example,
+workflows/abtest/instances/{id}
+) or a specific analysis result name. When given an instance name, the tool automatically resolves the primary analysis result.
+Set
+summary=false
+for the full detailed output.
+​
+get_resource
+Looks up details of Confidence resources referenced in experiment data. Supports:
+metrics/*
+- Metric definitions
+entities/*
+- Entity definitions
+surfaces/*
+- Surface configurations
+segments/*
+- Segment definitions
+factTables/*
+- Fact table definitions
+flags/*
+- Feature flag configurations
+identities/*
+- User identities
+assignmentTables/*
+- Assignment table definitions
+clients/*
+- Client configurations
+​
+Example Usage
+Once integrated, ask your AI assistant to:
+“List all running experiments”
+“Search for experiments related to checkout”
+“Show me details about the homepage-redesign experiment”
+“Get the results for the checkout-flow A/B test”
+“What’s the status of the metrics in my onboarding rollout?”
+Was this page helpful?
+Yes
+No
+⌘
+I
+twitter
+github
+linkedin
+On this page
+Documentation MCP Server
+Integration Setup
+Available Tools
+searchDocumentation
+getFullSource
+grepDocumentation
+getCodeSnippetAndSdkIntegrationTips
+Example Usage
+Flag Management MCP Server
+Integration Setup
+Available Tools
+listClients
+listFlags
+getFlag
+createFlag
+addFlagVariant
+updateFlagSchema
+createOverrideRule
+testResolveFlag
+analyzeFlagUsage
+Example Usage
+Experiments MCP Server
+Integration Setup
+Available Tools
+list_experiments
+get_experiment
+get_results
+get_resource
+Example Usage
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

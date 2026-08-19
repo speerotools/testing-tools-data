@@ -1,0 +1,70 @@
+# https://support.optimizely.com/hc/en-us/articles/19633740334477-AI-variation-generator-for-text-based-elements
+AI variation generator for text-based elements – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Web Experimentation
+Build experiments
+AI tools
+AI variation generator for text-based elements
+Updated
+March 31, 2026 20:11
+Optimizely Web Experimentation
+Optimizely Performance Edge
+Optimizely Personalization
+Optimizely Opal lets you generate AI-powered suggested content in the Visual Editor for any existing copy on a page. This feature applies to any text-based element to test recommended alternatives. To increase conversions, you can fine-tune your web page's brand positioning, product descriptions, or CTAs.
+View a demo
+and learn how to use this feature.
+This feature is supported in multiple languages and can process text of up to 8,000 tokens (approximately 6,000 words).
+Generate text suggestions with AI
+Before generating text,
+Configure Web Experimentation for Opal
+.
+Go to an experiment or campaign.
+Select a variation.
+Select a text-based element.
+Click
+Generate Copy
+. Five suggestions display.
+Hover over a suggestion to preview it on the page.
+Click
+Use this copy
+to use the suggestion in the current variation, or click
+Create new variation
+to use the copy in a new variation. If adding a new variation, name the variation (if desired) and click
+Save & View New Variation
+or
+Save
+.
+Click
+Generate Again
+if you want to see other suggestions.
+Click
+Save
+.
+Because the content is powered by AI, some suggestions may be inaccurate. If you find any suggestion inappropriate, eliminate it by clicking
+Thumbs Down
+upon hovering over the suggestion. Additionally, you can
+submit feedback in the portal.
+If you use Opti ID, administrators can turn off generative AI in the Opti ID Admin Center. See
+Turn generative AI off across Optimizely applications
+.
+Article is closed for comments.
+Articles in this section
+AI variation generator for text-based elements
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

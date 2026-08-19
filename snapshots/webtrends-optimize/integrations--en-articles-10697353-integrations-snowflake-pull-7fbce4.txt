@@ -1,0 +1,187 @@
+# https://docs.webtrends-optimize.com/en/articles/10697353-integrations-snowflake-pull
+Integrations - Snowflake (pull) | Webtrends Optimize Help Center
+Copyright (c) 2023, Intercom, Inc. (
+[email protected]
+) with Reserved Font Name "Montserrat". This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Copyright (c) 2023, Intercom, Inc. (
+[email protected]
+) with Reserved Font Name "Montserrat". This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Skip to main content
+Raise a support ticket
+Raise a support ticket
+Search for articles...
+All Collections
+Third Party Integrations
+Pull integrations
+Integrations - Snowflake (pull)
+Integrations - Snowflake (pull)
+Send data from your Snowflake warehouse into Optimize for targeting and personalisation
+O
+Written by
+Optimize Team
+April 5, 2025
+Table of contents
+Estimated time to complete: 15 mins (with required knowledge).
+Overview video
+Note: This article covers the process in detail. For those who do not need the detail and are familiar with concepts within Snowflake and Optimize, the process should take no longer than 15 minutes, plus time for the Optimize team to verify data is working, ETL it and make it available for segmentation. Our required time will vary depending on the complexity of the data.
+As all pull integrations suggest, Webtrends Optimize can pull user profiles into the Optimize platform for segmentation, targeting and personalisation, as well as any other data you wish.
+This will be a
+storage integration
+in Snowflake, with
+Azure blob storage
+as an external
+stage
+. Snowflake
+Tasks
+will schedule the transfer of this data, in
+CSV format
+. Webtrends Optimize will then run ETL, and make this available for targeting.
+The steps required for achieving this are detailed below.
+Importing Snowflake data into Webtrends Optimize
+1. Capturing Azure Blob Storage details
+Optimize lives on Microsoft Azure, and Blob Storage is the service we use that you will be able to ship data to.
+We have ETL actions on the back of incoming data to Extract, Transform and Load the data into the Optimize platform for targeting.
+To retrieve your details, please contact
+[email protected]
+- we will need details of your region to ensure that data is kept geographically close to your Snowflake instance for minimal latency.
+We will respond with credentials, which will contain:
+AZURE_STORAGE_ACCOUNT: azure://myaccount.blob.core.windows.net/mycontainer
+AZURE_SAS_TOKEN: ?sv= &ss=bfqt&srt=sco&sp=rlx&se= Z&st= Z&spr=https&sig=...
+2. Create an external stage
+Now, create the
+external stage
+that references the blob storage account and your container.
+CREATE STAGE wto_customerprofile_stage
+URL = 'azure://my_acconut_name.blob.core.windows.net/my_container_name'
+CREDENTIALS = (
+AZURE_SAS_TOKEN = '?my_sas_token'
+)
+FILE_FORMAT=(TYPE = CSV);
+You should expect to see the confirmation message per the below screenshot:
+​
+3. Trial data sending
+A useful next step is to trial sending data into Optimize, by configuring and running your query. An example query you should expect to use is:
+COPY INTO @wto_customerprofile_stage/profiles_
+FROM (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER)
+FILE_FORMAT = (
+TYPE = CSV
+FIELD_DELIMITER = ','
+FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+ESCAPE_UNENCLOSED_FIELD = None
+)
+HEADER = TRUE
+OVERWRITE = TRUE;
+While the query runs, you should expect to see:
+Once the query has run, you should expect to see:
+Once you run this query, please check your data browser if you have one, or reach out to
+[email protected]
+or your CSM if you need us to confirm the data has shared successfully. It is important that we collectively validate the data before you schedule regular queries.
+Please note:
+Send only the fields you need, refining the
+SELECT * FROM
+query to include the relevant columns.
+Apply a prefix that you wish to use. There are no hard restrictions around this from our side.
+4. Schedule send via. Tasks
+You will need to run each of these queries individually:
+4.1 - Create a new task warehouse (if you want to)
+// Create a new task warehouse
+CREATE WAREHOUSE IF NOT EXISTS wto_task_wh
+WITH WAREHOUSE_SIZE = XSMALL
+AUTO_SUSPEND = 60
+AUTO_RESUME = TRUE;
+4.2 - Create the task into the warehouse
+// Create the task
+CREATE OR REPLACE TASK wto_scheduled_export
+WAREHOUSE = wto_task_wh
+SCHEDULE = 'USING CRON 0 * * * * UTC' -- daily at midnight UTC
+AS
+COPY INTO @wto_customerprofile_stage/profiles_
+FROM (SELECT * FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER)
+FILE_FORMAT = (
+TYPE = CSV
+FIELD_DELIMITER = ','
+FIELD_OPTIONALLY_ENCLOSED_BY = '"'
+)
+HEADER = TRUE
+OVERWRITE = TRUE;
+4.3 - Enable the task
+// Enable the task
+ALTER TASK wto_scheduled_export RESUME;
+Once set up and the task runs, you can check past executions:
+SELECT *
+FROM TABLE(INFORMATION_SCHEMA.TASK_HISTORY(
+TASK_NAME => 'wto_scheduled_export',
+RESULT_LIMIT => 10
+));
+5. Checking execution history
+You'll get a full breakdown of our job in Task History:
+From this dashboard, you will see past and most recent executions, failures, etc.
+6. ETL in Optimize
+The Optimize team will then need to write an ETL job for your data. Please bear with us while we do this.
+We will take any structure of data you send us, and find the right shape/format to store this in for our querying. Often, we will find ways to compress your data allowing for sub-50ms lookups.
+This process will take some time - when you are ready, file a ticket through the service portal and we will provide estimates and keep you updated along the way.
+7. Segmentation in Optimize
+Segmentation in Optimize based on your imported values works through the Segment builder in the product.
+Look for Advanced > Data Object Attribute.
+Value lookups will appear as above - [columnname] [operator] [value]
+E.g. "C_MKTSEGMENT" is in list "household" OR "furniture"
+We may also have "presence in segment" type checks, where any non-null value in a column is considered "valid". Those are handled with "is equal to 1" checks.
+Our handover documentation will make clear how to target the values we hold.
+Tips & FAQs & Best Practices
+Send only the data you need
+​
+It's often tempting to
+select * from table
+and ship all data. Doing so fails on two core principles for handling data.
+​
+First is to only transmit user data that is needed, keeping us in line with modern data privacy guidance.
+​
+Second is speed - by sending less, the systems will work faster and fail to process less often. The internet is not infallible, but failures happen less often when using OOTB functions as we are here, and when dealing with smaller data over larger data.
+​
+SAS Tokens expire
+​
+All SAS tokens including those provided by the Optimize team will expire. They have a long duration, but it's worth cycling through tokens every 12 months to ensure you ever encounter a disription of service from an expired token.
+​
+Request a new token whenever you need one and we will happily and quickly provide you with a new one.
+​
+What is a Storage Integration?
+​
+A
+storage integration
+in Snowflake is essentially a secure configuration object that encapsulates how Snowflake should
+authenticate
+and
+connect
+to your cloud storage (Azure, AWS, or GCP). It stores (in a secure, encrypted manner) the credentials or tokens that allow Snowflake to read or write data to the external system without you having to supply those credentials on every command.
+​
+What is an External Stage?
+​
+A
+stage
+in Snowflake is an object that tells Snowflake
+where
+(which location in external storage) to put data (for exports) or where to retrieve data from (for imports).
+​
+There are two main types of stages in Snowflake:
+Internal Stages
+: Managed fully by Snowflake within your Snowflake account. (Data is stored in internal Snowflake-managed storage.)
+​
+External Stages
+: Point to your cloud storage location (e.g., Azure Blob, AWS S3) outside of Snowflake.
+​
+An external stage basically says:
+“Snowflake, here is the Azure Blob container you’ll read from or write to, and here is how you authenticate (the storage integration) and handle files.”
+Related Articles
+Integrations - Planning Inc. Bigquery segments (pull)
+Integrations - Salesforce CRM (pull)
+Integrations - Snowflake (pull) v2 - Shared views
+Integrations - Databricks (pull)
+Integrations - Databricks (push)
+Did this answer your question?
+😞
+😐
+😃
+Table of contents
+Webtrends Optimize Help Center
+Help desk
+WTO Console

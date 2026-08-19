@@ -1,0 +1,161 @@
+# https://docs.croct.com/reference/sdk/javascript/integration
+Integration | Croct Documentation
+docs
+/
+Is Croct right for you?
+Explore Croct
+Introduction
+Home
+Overview
+Getting started
+Explanation
+Organization
+Workspace
+Application
+User profiles
+Audience
+Component
+Slot
+Experience
+Experiment
+Content
+Immersion
+Tutorials
+Guides
+Playbooks
+Integrations
+Reference
+Content
+User
+Events
+Analytics
+CQL
+SDKs
+JavaScript
+Integration
+Manual installation
+Content rendering
+Query evaluation
+Data collection
+Event tracking
+Testing
+Troubleshooting
+API reference
+React
+Next.js
+Hydrogen
+Vue
+Nuxt
+PHP
+Symfony
+Laravel
+Drupal
+Storyblok
+CLI
+APIs
+Reference
+SDKs
+JavaScript
+Integration
+Learn how to integrate Croct into your JavaScript project.
+The fastest way to get started is through our
+CLI
+. If you prefer to set it up manually, check out the
+step-by-step instructions
+.
+Run the command
+The recommended way to install the SDK is to use the Croct CLI.
+Command to initialize your project
+npm
+npx
+croct@latest
+init
+Run
+Initialize the provider
+To initialize the SDK, use the following code snippet:
+app.js
+JavaScript
+1
+2
+3
+4
+5
+import
+croct
+from
+'@croct/plug'
+;
+croct
+.
+plug
+(
+{
+appId
+:
+'APPLICATION_ID'
+}
+)
+;
+You can find the Application ID on the
+Integration page
+of your application. For a list of all available options, refer to the
+plug
+documentation.
+Check your integration
+If you open your application now, it should start sending events.
+To check if your integration is working, go to the
+Integration page
+of your application.
+When working correctly, you should see a green bullet next to the
+Status
+label saying
+“Received traffic in the past 24 hours”
+. If you still do not see this message after a few minutes, see the
+Troubleshooting
+reference.
+Explore
+JavaScript SDK
+Explore and contribute to the SDK development on GitHub.
+Troubleshooting
+Identify and resolve issues with your integration.
+Previous
+Context
+Next
+Content rendering
+On this page
+Run the command
+Initialize the provider
+Check your integration
+Product
+Component CMS
+AB testing
+Personalization
+Segmentation
+User profiles
+All features
+Solutions
+Customer acquisition
+Lead generation
+Geo-targeting
+Revenue growth
+Paid search traffic
+Social ads traffic
+Resources
+Documentation
+Changelog
+Playbooks
+Templates
+Blog
+Partners
+Company
+Service status
+Contact support
+Contact sales
+Case studies
+Privacy policy
+Terms of service
+Language
+English
+© Croct 2026
+·
+Hey AI, learn about us

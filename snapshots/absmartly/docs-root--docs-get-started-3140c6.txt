@@ -1,0 +1,102 @@
+# https://docs.absmartly.com/docs/get-started/
+Get Started | The ABsmartly Docs
+Skip to main content
+ABsmartly Docs
+Product Documentation
+Developer Tools
+Blog
+GitHub
+Search
+Get Started
+Product Documentation
+Developer Tools
+Integrations
+Release Notes
+Glossary
+Get Started
+On this page
+Get Started
+Welcome to the ABsmartly Documentation.
+ABsmartly is an advanced experimentation and feature flagging platform designed to help teams validate ideas quickly, measure impact reliably and roll out changes safely. The platform provides everything you need to design experiments, expose users consistently, measure impact with robust metrics and make evidence based product decisions.
+This documentation will guide you through how to use the platform, integrate it into your product and understand the core concepts behind trustworthy experimentation.
+Documentation structure
+​
+The documentation is divided into a few main sections to help you find what you need easily.
+Product Documentation
+​
+This
+section
+explains how to use the ABsmartly Web Console to run experiment and feature flags.
+You will find guides on:
+creating
+and managing experiments
+defining
+goals
+and
+metrics
+using
+feature flags
+tracking
+events
+managing
+users, teams and permissions
+configuring workspaces and settings
+using the
+LaunchPad browser extension
+If you use ABsmartly day to day to run experiments or feature flags, this is where you will spend most of your time.
+Developer Tools
+​
+This
+section
+contains all technical resources for implementing, automating and extending ABsmartly.
+You will find:
+SDK documentation
+for client side, server side and mobile
+SDK API
+reference for the ABsmartly Collector API used by the SDKs
+The full
+Platform API
+reference for programmatic access to everything in the Web Console
+The
+MCP Server
+for driving ABsmartly from AI assistants like Claude, Cursor and Copilot
+Developers and engineers will spend most of their time here.
+Integrations
+​
+Using the platform API, ABsmartly can integrate with any tools you already use for analytics, communication and authentication.
+This section includes from sample integration:
+Slack integration
+Segment integration
+Zuko integration
+SSO setup
+Each guide explains how to connect ABsmartly with your existing systems.
+What to do next
+​
+If you are new to ABsmartly, we recommend starting with:
+Product Documentation → Getting Started
+Developer Tools
+(choose the SDK you need to integrate first)
+Experiments
+to learn how to create, run and analyse your first test
+You can explore the rest of the documentation as you become more familiar with the platform.
+Welcome to ABsmartly.
+Edit this page
+Next
+Overview
+Documentation structure
+Product Documentation
+Developer Tools
+Integrations
+What to do next
+Documentation
+Product Docs
+SDK Docs
+API Docs
+MCP Server
+More
+Homepage
+Blog
+GitHub
+Social Media
+LinkedIn
+© Copyright 2026 ABsmartly B.V.

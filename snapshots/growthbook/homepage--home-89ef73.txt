@@ -1,0 +1,484 @@
+# https://www.growthbook.io/
+GrowthBook | Experimentation, Feature Flags & Product Analytics Platform
+Webinar - Aug 20 | How The Philadelphia Inquirer Scales Experimentation →
+Join us live
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+Why migrate from Statsig to GrowthBook
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Releases
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+Build smarter. Ship safely.
+Grow at the speed of AI.
+The warehouse-native platform used by modern product teams for experimentation, feature flags, and product analytics.
+Book a Demo
+Start for Free
+Experimentation
+Feature Flags
+Product Analytics
+Trusted by 3,000+ companies worldwide
+One platform for your team
+and your agents
+Experimentation
+Faster results, bigger impact
+Trusted by the world's leading data science teams, GrowthBook is built for your teams and agents to run rigorous tests at scale and learn faster.
+Explore Experimentation
+Feature Flag Management
+Ship fast with a safety net
+AI coding tools let your team (and agents) ship faster than ever. With auto-rollbacks and ramp schedules with guardrails, GrowthBook ensures you can still sleep at night.
+Explore Feature Flags
+Product Analytics
+Turn data into insights for growth
+GrowthBook connects to all your product data, so your team can understand user behavior, track trends, and identify opportunities. Ask our AI Analyst or explore your data with your agents.
+Explore Product Analytics
+Teams shipping today at the speed of AI
+Read Customer Stories
+Dropbox uses GrowthBook to safely drive AI product development
+3 billion
+feature evaluations daily
+Read the Story
+Breeze Airways scales testing, avoids mistakes, and unlocks millions
+$1MM+
+incremental monthly revenue
+Read the Story
+TodayTix Scales Poster Experimentation and Lifts Show Page Views Up to 24%
+24%
+Page view lift
+Read the Story
+Khan Academy uses GrowthBook to improve AI tutoring
++6.1%
+correctness
+Read the Story
+Oda Built a Faster, Smarter Experimentation Practice
+400+
+experiments run
+Read the Story
+Lingokids advances monetization experimentation
+3.5M+
+customers benefiting from tests
+Read the Story
+How Fyxer used AI-powered experimentation to grow from $1M to $35M ARR
+5% to 35%
+paid conversion
+Read the Story
+How Toom increased user learning with GrowthBook
+95% uplift
+loyalty card signups
+Read the Story
+How Floward drove double-digit revenue growth
+YoY sales
+revenue double-digit growth
+Read the Story
+1T+
+Feature flag lookups per day
+5x
+More experiments
+1/2
+The cost of other solutions
+GrowthBook Cloud
+Instant updates, low maintenance, and warehouse-native.
+Start for Free
+Self-Hosted GrowthBook
+Same features, same product, 100% on your cloud or on prem.
+Download Now
+Seamlessly integrates with your stack
+Built by engineers for engineers to adapt to any workflow or tech stack.
+View All Integrations
+Why product teams prefer GrowthBook
+Why GrowthBook
+For
+Engineers
+For
+Data Teams
+For
+Product Managers
+Built for AI-native development
+Warehouse-native architecture
+Open source and transparent
+Self-hosted option for total control
+Powerful & flexible statistical model
+Easy to integrate with ultra lightweight SDKs
+Automatically add flags to new features
+Real-time debugging and more dev tools
+Developer-friendly and collaborative
+MCP Server and REST API for any AI agent
+Adapt GrowthBook for any tool or workflow
+Define metrics in SQL on your data warehouse
+Set guardrails for consistency & scale
+Scale to thousands of experiments per year
+Powerful and flexible statistical model
+Enable self-serve data explorations
+Run thousands of experiments
+Control feature rollouts without engineering
+Uncover opportunities with product analytics
+Share real-time experiment dashboards
+Use AI Data Analyst to ask questions
+Speed and scale at half the cost
+GrowthBook low-latency feature flags, high-velocity experimentation, and warehouse-native analytics scale with every team, every agent, every release.
+Plans & Pricing
+The latest uplift
+Releases
+GrowthBook 5.0: Build, ship, and improve at scale
+Agents in your workflow, analytics on your warehouse, and experimentation for your whole team
+Experiments
+Why summing your experiment wins overstates impact
+The Edge Podcast
+Twitch: false negatives are killing your best product ideas
+Framework compatible SDKs
+24+ SDKs designed for modern apps and websites with 50% smaller SDKs, zero network calls, plus server, client, mobile, and edge compatibility. JavaScript, Python, React, iOS.
+Start for Free
+View Docs
+HTML
+JavaScript
+React
+Vue
+Kotlin
+Flutter
+Swift
+React Native
+Roku
+Node.js
+Next.js / Vercel
+PHP
+Ruby
+Python
+Java
+Kotlin (JVM)
+C# / .NET
+Go
+Rust
+Elixir
+Cloudflare Workers
+Fastly Compute
+Lambda@Edge
+Angular
+OpenFeature Python
+OpenFeature Go
+OpenFeature .Net
+OpenFeature Java
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+HTML Script Tag
+<script
+async
+data-client-key=
+"YOUR_CLIENT_KEY_HERE"
+src=
+"https://cdn.jsdelivr.net/npm/@growthbook/growthbook/dist/bundles/auto.min.js"
+></script>
+Read the Docs
+JavaScript
+npm install --save @growthbook/growthbook
+Read the Docs
+React
+npm install --save @growthbook/growthbook-react
+Read the Docs
+Vue
+npm install @growthbook/growthbook
+Read the Docs
+‍
+Kotlin (Android)
+Add to `build.gradle` (Kotlin DSL):
+dependencies {
+implementation(
+"io.growthbook.sdk:GrowthBook:6.1.1"
+)
+implementation(
+"io.growthbook.sdk:NetworkDispatcherKtor:1.0.6"
+)
+// or NetworkDispatcherOkHttp:1.0.2
+}
+Read the Docs
+‍
+Flutter
+Add to `pubspec.yaml`:
+dependencies:
+growthbook_sdk_flutter:
+^4.0.0
+Read the Docs
+Swift (iOS)
+CocoaPods
+- add to `Podfile`:
+pod
+'GrowthBook-IOS'
+Swift Package Manager
+- add to `Package.swift`:
+.package(url:
+"https://github.com/growthbook/growthbook-swift.git"
+)
+Read the Docs
+React Native
+npm install --save @growthbook/growthbook-react
+Read the Docs
+Roku
+ropm install growthbook-roku
+Or manually copy `GrowthBook.brs` from the [GitHub repo](https://github.com/growthbook/growthbook-roku) into your `source/` directory.
+Read the Docs
+Node.js
+npm install --save @growthbook/growthbook
+Read the Docs
+Next.js / Vercel (Flags SDK)
+npm install --save @flags-sdk/growthbook
+For front-end-only Next.js, use the React SDK instead.
+Read the Docs
+PHP
+composer
+require
+growthbook/growthbook
+Read the Docs
+Ruby
+gem install growthbook
+Or add to your Gemfile:
+gem
+'growthbook'
+Read the Docs
+Python
+pip install growthbook
+Read the Docs
+‍
+Java
+Maven:
+Add JitPack to your repositories, then:
+<
+dependency
+>
+<
+groupId
+>
+com.github.growthbook
+</
+groupId
+>
+<
+artifactId
+>
+growthbook-sdk-java
+</
+artifactId
+>
+<
+version
+>
+0.10.6
+</
+version
+>
+</
+dependency
+>
+Gradle (Groovy DSL):
+implementation
+'com.github.growthbook:growthbook-sdk-java:0.10.6'
+Read the Docs
+Kotlin (JVM)
+Add to `build.gradle` (Kotlin DSL):
+dependencies {
+implementation(
+"io.growthbook.sdk:GrowthBook:6.1.1"
+)
+implementation(
+"io.growthbook.sdk:NetworkDispatcherKtor:1.0.6"
+)
+// or NetworkDispatcherOkHttp:1.0.2
+}
+Same package as the Android Kotlin SDK.
+Read the Docs
+C# / .NET
+dotnet add package growthbook-c-sharp
+Read the Docs
+‍
+Go
+go get github.com/growthbook/growthbook-golang
+Read the Docs
+Rust
+cargo add growthbook-rust
+Or add to `Cargo.toml`:
+[
+dependencies
+]
+growthbook-rust
+=
+"0.0.4"
+Read the Docs
+Elixir
+Add to `mix.exs`:
+{
+:growthbook
+,
+"~> 0.3"
+}
+Read the Docs
+Cloudflare Workers
+npm install --save @growthbook/growthbook @growthbook/edge-cloudflare
+Read the Docs
+Fastly Compute
+npm install --save @growthbook/growthbook @growthbook/edge-fastly
+Read the Docs
+Lambda@Edge
+npm install --save @growthbook/growthbook
+Currently in beta.
+Read the Docs
+‍
+Angular (Community SDK)
+npm install ngx-growthbook
+This is an open-source community SDK — not officially maintained by GrowthBook.
+OpenFeature Provider Python
+pip install growthbook-openfeature-provider
+Repo
+‍
+OpenFeature Provider Go
+go get github.com/growthbook/growthbook-openfeature-provider-go
+Repo
+‍
+OpenFeature Provider .NET
+dotnet add package GrowthBook.OpenFeature
+Repo
+‍
+OpenFeature Provider Java
+com.github.growthbook:growthbook-openfeature-provider-java:
+0.0
+.1
+JitPack
+Repo
+‍
+“GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
+Alex Kalish
+Engineering Manager, Dropbox
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+“People only see the wins, but there’s actually greater value in avoiding losses. We’ve stopped changes that could have cost millions.”
+Merritt Aho
+Digital Analytics Lead at Breeze Airways
+“GrowthBook has changed the way we think about experiments... It allowed us to uplevel our code, speed up decision-making, and focus on what we do best.”
+Diego Accame
+Director of Engineering, Upstart
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
+Kameron Jenkins
+Head of Growth Engineering, Fyxer
+“Experimentation showed what customers actually do rather than what we assume they’ll do.”
+Marek Maciusowicz
+Head of Engineering, Treatwell
+“Being able to turn a feature on and off with a flip of a switch is fantastic... That’s so much easier than having to do a deploy or a roll-back.”
+John Resig
+Chief Software Architect, Khan Academy
+“We don’t need any code changes, we don’t need an app release. We just configure the new tests and launch right away.”
+Filipa Batista
+Product Manager, Lingokids
+"We are always experimenting now. It’s a natural part of product development. This is due to GrowthBook and the ease of usage both in the UX and in the seamless integration with Snowflake/DWH."
+Fredrik Jørgensen
+Head of Insight, Retail Platform, Oda
+"GrowthBook's results speak for themselves. Every time we do a test, we see benefits for our audiences and our partners. These posters are our one shot, and we wouldn't want to fly blind."
+Senior Director
+Head of Insight, TodayTix
+“GrowthBook lets us build experiments exactly how we want. The ability to target based on culture and geography, as granular as needed, is a major win for us.”
+Eslam Samy
+Data Scientist, Floward
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
+Kameron Jenkins
+Head of Growth Engineering, Fyxer
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 3,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

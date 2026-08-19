@@ -1,0 +1,337 @@
+# https://support.convert.com/hc/en-us/articles/whats-new-april-2026
+What's New - April 2026
+Skip to content
+Go to convert.com
+Features
+Developer Docs
+About Us
+Go to The App
+Open main navigation
+Close main navigation
+Go to convert.com
+Features
+Developer Docs
+About Us
+Go to The App
+How can we help you?
+There are no suggestions because the search field is empty.
+Help Center
+What's New
+Recent updates
+July 26, 2026
+What's New - April 2026
+Monthly Release Notes - April 2026
+THIS ARTICLE WILL HELP YOU:
+Monthly Release Notes - April 2026
+Referrals Now Available in Convert
+We released the
+Referrals
+feature in Convert to support the Convert Ambassadors initiative.
+This new functionality helps incentivize collaborators to recommend Convert, creating more opportunities to expand awareness and support growth through referrals.
+New “Exists” and “Does Not Exist” Conditions in Audience Rules
+We added
+Exists
+and
+Does Not Exist
+conditions to the
+Audience Rules
+for visitor cookies.
+This improves targeting flexibility by giving teams more control when building audiences based on whether a cookie is present or missing.
+OAuth Clients Released for Secure App Connections
+We released
+OAuth Clients
+in the app, allowing users to register and manage external applications that connect securely to Convert using OAuth authentication.
+This makes it easier to support secure integrations and gives users more control over how third-party applications access the system.
+Microsoft Clarity Integration Now Much Easier to Use
+While the
+Microsoft Clarity
+integration was not newly released in April, it was significantly improved.
+We removed much of the manual setup process and made the integration far more automatic, making it easier than ever to connect Convert with Microsoft Clarity.
+Cloudflare SDK for Edge Experimentation
+We introduced the
+Cloudflare SDK
+, enabling teams to run A/B tests and personalization directly on
+Cloudflare Workers at the edge
+.
+The SDK handles visitor identification, experiment assignment, caching, and response modification closer to the user. This enables faster server-side experimentation with minimal latency and no flicker, while reducing reliance on slower client-side execution or origin-server logic.
+Improved Tracking Script Performance
+We improved the efficiency of our tracking script so it now loads faster and has less impact on website performance.
+While this update may not be directly visible in day-to-day usage, it reflects our continued focus on optimization and performance. It is also part of our broader push around
+Monthly Performance Improvements
+in the in-app dashboard.
+Configuration
+Exit Popups
+Disable Testing
+Hash Changes
+Server-Side Testing
+Vue.js Integration
+Split URL
+Query Parameters
+Regex Support
+Programmatic Bucketting
+Preview Issues
+Tracking Code Location
+Body Hiding
+Variation Styling
+Async Tracking
+Cloudflare
+Privacy
+Page Content
+Query String Targeting
+Bot Filtering
+Blinking Variations
+CSP Configuration
+SPA Testing
+Experiment Execution
+Performance Optimization
+Selective Installation
+Multipage Split URL
+Split URL Pages
+Organic Traffic
+Full Stack
+Redirects
+URL Parameters
+Tracking Code Execution
+Experiment Scheduling
+Custom Audiences
+Experiment Management
+Analytics Tools
+Geo-Targeting
+Variation Previews
+CSS Selectors
+Query Parameter Handling
+Campaign Tags
+Cross-Domain Tracking
+Dynamic Element Changes
+Data Reset
+Tags
+Conversion Tracking
+Reports
+Cross-Domain Cookies
+Secure Cookies
+Convert Library
+Visual Editor
+Product Testing
+GTM Integration
+GDPR Warnings
+Statistical Confidence
+Opt-Out Script
+AngularJS
+Locations
+Visit-Specific Variations
+Project Setup
+Experiment Editing
+Baseline
+Code Installation
+Embedded Videos
+Simultaneous Experiments
+Bounce Rate Goals
+Full-Site Testing
+Query String Variables
+Holdout Groups
+DataLayer
+Event-Triggered Changes
+Previewing
+Deployments
+Variation Editing
+Troubleshooting
+Targeting
+Experience Scheduling
+Menu Configurations
+Traffic Exclusion
+Traffic Bucketing
+Browser Privacy
+IDs
+Price Targeting
+CDN Update
+Account Management
+Account Settings
+Project Management
+Tax Information
+Security
+Billing
+User Management
+Data Portability
+Getting Started
+Deployments
+Basics
+Full Stack Experiments
+Resources
+Projects and Experiments
+Code Editors
+Locations
+Creating Experiences
+Overview Screens
+Mobile Optimization
+SPA Optimizations
+Visual Editor
+Introduction
+Hypotheses
+Track Goals
+Goal Basics
+Marketo Forms
+Advanced Goals
+Cumulative Revenue
+Google Analytics Goals
+Revenue Tracking via GTM
+Goal Templates
+Bounce Rate Goals
+Page Views
+Social Sharing
+Interaction Goals
+Dynamic Goals
+Feature Analysis
+Adding Revenue Goals
+Lazy Loading
+Form Submissions
+Order Outliers
+Form Tracking
+Cookie Management
+AJAX Forms
+DataLayer Integration
+Multi-Conversions
+iFrame Click Tracking
+Revenue Tracking
+Performance Optimization
+Typeform Integration
+Scroll Depth
+URL Parameters
+JS-Based Goals
+Social Interactions
+Target Visitors
+Data Layer Integration
+Geolocation
+Page Tagging
+Cookie-Based Targeting
+Audience Creation
+Goal-Based Targeting
+Audience Templates
+Weather Targeting
+Experiment Targeting
+IP-Based Exclusion
+Language Targeting
+Interaction Goals
+Cookies
+Device Targeting
+Page Visits
+Manual Activation
+Visitor Management
+Audience Management
+Advanced Audience Creation
+Audience Segmentation
+JavaScript Conditions
+Troubleshooting
+Chrome Debugger Logs
+Support Options
+Google Warnings
+AdWords
+Data Leak Prevention
+Experiment Previews
+Cookie Blocking
+Mobile Debugging
+Bootstrap
+Installation Verification
+Blocked Visual Editor
+SPA Errors
+Visual Editor
+GA4 Revenue
+Monitoring
+HTTPS Content
+Logs
+Checkout JSON Error
+Bot Exclusion
+Visual Editor Browsing
+Cloudflare Issues
+Cloaking Penalties
+Snippet Performance
+Domain Issues
+Goal Editor Issues
+Usage Limits
+Changes Not Saved
+Goal Testing
+Change History
+Variations
+Experiment Issues
+Analyze Results
+Statistical Methods
+Recommendations
+Sample Ratio Mismatch (SRM)
+Reporting Discrepancies
+Reports
+Statistical Testing
+A/A Testing
+Observations
+Data Transfer Validation
+Experiment Control
+Post-Segmentation
+Google Analytics Segments
+Statistical Significance
+MAB
+Heatmaps
+Integrations
+Unbounce
+Google Campaign
+PrestaShop
+Amplitude
+Salesforce CRM
+Checkout Champ
+Kissmetrics
+FullStory
+HubSpot
+Microsoft Clarity
+Inspectlet
+Piano Analytics
+Google Tag Manager
+Adobe Analytics
+Quantum Metric
+Segment
+React
+Magento
+Mouseflow
+Heap Analytics
+Plausible
+Roistat
+Google Analytics
+Snowplow Analytics
+Active Campaign
+Instapage
+Tealium
+LanderApp
+Webflow
+Clicky
+Cookie Consent Platforms
+BigCommerce
+Mixpanel
+Marketo
+Klaviyo
+Crazy Egg
+Smartlook
+GA4 Roles
+WooCommerce
+Drupal
+Poptin
+ClickFunnels
+LogRocket
+AppsFlyer
+Lyssna
+Developers
+Event Tracking
+CSS Styling
+Project Management
+Local Development
+Performance Optimization
+Debugging
+FAQs
+API Integration
+Custom JavaScript
+Segmentation
+Advanced Integration
+JavaScript Library
+What's New
+Recent updates
+Past releases
+Agents
+Shopify
+AI & Automation
+Privacy/Compliance
+Experimentation is Human Nature.

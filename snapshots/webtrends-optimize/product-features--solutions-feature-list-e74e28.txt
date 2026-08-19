@@ -1,0 +1,240 @@
+# https://www.webtrends-optimize.com/solutions/feature-list
+Webtrends Optimize Feature List, Key Tools and Services
+Solutions
+Website Optimisation
+Market-leading Platform
+AI with Purpose
+Discovery Reporting
+Detailed Feature List
+Flexible Services & Support
+Worldwide Partnerships
+Testing & Personalisation Tools
+AB Testing
+Personalisation
+Multivariate Testing
+Social Proof
+Server-side Testing
+Product Recommendations
+Split Testing
+Exit Intent
+Baseline Analysis
+Hello Bars
+Site Search Optimisation
+Onsite Retargeting
+Urgency Messaging
+Funnel Optimisation
+Form Optimisation
+Product Scraping
+Onsite Surveys
+No Code Widgets
+Pricing
+Resources
+Case Studies
+Testimonials
+Blog
+Webinars
+Podcasts
+Optimize Glossary
+AB Testing Calculator
+Optimize Help
+About Us
+About Us
+B Corp
+Sustainability
+Careers
+Contact Us
+Login
+Call us on: 0333 444 5502
+Get in touch
+Free Trial
+Get in touch
+Free Trial
+Webtrends Optimize Features
+Below are the core features of the Webtrends Optimize platform and services.
+Our feature list seeks to help show the breadth of features, functions and services available to customers of Webtrends Optimize. In here, you may find things which are not listed in the comparisons available on our site. The comparisons use feature-sets designed by competitors, in the interest of being as open and fair as we can be for the research provided (we compare well, so it's ok!). Our own feature list is broader, and allows us to showcase the breadth of what we can do, even where it doesn't fit into the framework others measure themselves by (nobody is going to mention the things they don't do in their own comparisons!).
+Our Detailed Feature List
+Updated on 10th August 2021
+Ways to implement us
+With such a broad range of implementation methods, you can use us however and wherever you like.
+Web Pages
+Our most commonly used method - testing on the front-end of Web Pages, using our one-line JavaScript tag.
+Server-side
+Call Optimize directly from your server, to test and personalise core website functionality such as Pricing, Product Listing Order, or by feature-flagging new releases.
+REST & JSONP APIs
+Test and personalise in any connected environment, by communicating directly with our APIs - available over REST (JSON) and JSONP formats.
+URL-Redirect (Stateful)
+Point anything URL-based (images, stylesheets, scripts, etc.) directly to us, and Test or Personalise what gets served to your users. Great for testing the images inside email messages.
+Experiment Types
+All experimentation types available to all users, as standard.
+AB & ABn
+Testing one or many variations of a single factor/change/idea.
+MVT - Full Factorial
+The traditional MVT - testing every combination of many variations of many ideas, to accurately determine the best possible version.
+MVT - Fractional Factorial
+Taking the traditional MVT approach, but using Design of Experiments methodology to test a only subset of the full array - accurate projections with a fraction of the traffic.
+Personalisation / Target
+Identify key segments, and target each of them with a specific experience inside a single experiment.
+Split Testing (URL)
+The traditional redirect test - taking users from page A to page B and measuring the effectiveness of each page.
+Supplementary Features
+Powerful features you can use to supercharge your testing and personalisation.
+Product Recommendation Engine
+Serve product or content recommendations based on browsing and sales data, such as "You may also like", or "People who bought this also bought".
+Social Proof Messaging
+Surface popularity data on your website to encourage users to take action, such as "X people have seen/bought/purchased this in the last 24 hours
+Data-Driven Merchandising
+Use real-time data to drive core functions of your websites & applications, such as the sort-ordering on your PLPs - provided as a server-side service to ensure zero latency.
+No-code Widgets
+Build dynamic or challenging experiences with our pre-coded widget builder
+Hello bars
+A small bar across the top of your page. Useful for announcements, guidance, offers, etc.
+Simple Lightbox
+A simple lightbox with a heading, some text content and a button. Use for disruptive messaging.
+Lower Corner Promo
+A small promotional box in the bottom-left corner of the page. Animates into view.
+Sign up for Push Notifications
+Encourage users to sign up for push notifications with a primer followed by the request.
+GoHighLevel Lightbox
+GoHighLevel forms inserted into our lightbox.
+Custom
+DIY - provide your own widget JSON object and load them up into our UI.
+Experiment Support
+Features that help you to get experiments out of the door.
+Multi-Page Testing
+Run your test, whether Visual Editor or advanced on a single page or multiple ones - defined by URLs or Regular Expressions (RegEx) as you prefer.
+Dynamic Pages/SPA Support
+Run advanced tests on Single-Page Applications, from frameworks such as React JS, Angular JS, Vue JS, etc.
+Mutual Exclusions
+Control a user's exposure to multiple experiments by using mutual exclusion rules.
+JS-Conditional Activation
+Want to run your test based on a custom JavaScript condition? No problem - it's possible in our advanced editor.
+Proxy-less Visual Editor
+Proxies are detrimental to testing on pages which are difficult to access, such as single-page applications, gated pages like checkout funnels, My Account sections, etc. Proxy-less visual editors use client-side rendering, and allow you to access any page you'd normally be able to get to.
+Preview Mode
+Use our built-in staging environment to QA/Preview your experiments. These include our Force Experiment widget, where you pick what tests/variations you'd like to see, or our Share URLs.
+Flicker-free testing
+100% flicker-free testing, if the simple recommended approach is used.
+Audience Selection
+Dozens of ways to find the group of people you'd like to show an experiment to.
+Browser & Device
+Related attributes include User Agent String, Browser Name, Operating System, Device Type
+Traffic Source
+Related attributes include Referrer (URL, host, query string attribute), Current URL, Query String Attribute
+Google Analytics / UTM
+Related attributes include Source, Medium, Term, Content, Campaign
+JS Condition
+Cookie Value
+Meta Tags
+IP Address
+Plus lookups for Domain Controller Company, and an estimation of Home/Business
+New vs. Returning
+Geolocation
+Related attributes include Continent, Country Code, Country Name, City, Region, Area Code, Postal Code, Longitude, Latitude
+Third Party Audiences
+Uploaded Audiences
+You can import data into our Visitor Profile Tables, and use these as the basis for targeting
+Optimize Data Layer
+Pass any attributes into Optimize via. our Data Layer, and target them for Locations or Segments
+Behavioural Targeting
+Capture browsing behaviour in real-time, and use this as the basis for entering an experience. This can include most actions on a page, including areas visited (e.g. Sale pages), categories browsed, favourite categories, price ranges interacted with, brands interest shown in, travel routes searched, etc.
+Third-Party Integrations
+Getting data into Optimize from 3rd-party platforms, and into 3rd-party platform from Optimize.
+Google Analytics
+Send data from Optimize into Google Analytics, to understand how your experiment compares against metrics we may not have access to in Optimize.
+Adobe Analytics
+Bi-directional support for Adobe Analytics. Send data from Optimize into Adobe Analytics, to understand how your experiment compares against metrics we may not have access to in Optimize. Also, import segments from Adobe Analytics into Optimize, to run experiments or personalise the customer experience.
+Hotjar
+Bi-directional support for Hotjar. Send data from Optimize into Hotjar, to see recordings of users who've fallen into our tests. Also, activate Hotjar's triggers from within an Optimize test or target, and Test, Personalise and Measure who sees what.
+Sessioncam
+Send data from Optimize into Sessioncam, to view recordings and find frustration points for people who've seen your experiment.
+FullStory
+Send a comprehensive data set from Optimize into FullStory, including experiment entry and user IDs, to view recordings and find frustration points for people who've seen your experiment. Also, find recording URLs in Optimize, and launch these directly from our UI.
+Contentsquare
+Send data from Optimize into Contentsquare for futher exploration.
+Mouseflow
+Send data from Optimize into Mouseflow for futher exploration.
+Slack
+Schedule test results to be sent to Slack, so you know when you pay attention and when to focus on other things.
+Reporting on your test
+We offer a comprehensive range of reporting, allowing you to understand what happened, when, and what to do next.
+Performance
+A detailed view at performance is available, including views and conversions tracked per experiment, lift, chance to beat control and a calculation of signficance.
+Traffic
+Daily breakdowns and visualisation of traffic that reaches your test.
+Conversion Rate Stabilisation
+A visualisation of conversion rate over time, showing how long variations are outperforming the control and helping to depict when variations are nearing "significance".
+MVTs - Predicted Optimal
+View and explore the best performing combination of all the content you've run in your MVT. Understand the impact both at a granular level, and overall
+MVTs - Factor Influence
+We typically run MVTs because we're not sure which Factor drives the biggest change in conversion. Factor influence tells you exactly this, in an easy-to-understand bar graph.
+Non-binomial Metrics (AOV, UPT etc.)
+Comprehensive reporting including Mean, Median, Avg. revenue per visitor, Chance to beat control, Significance, etc.
+Access to your data
+We make it very easy to give you access to your raw data, allowing you to validate results against your own statistical models.
+Export Raw Event Data
+You can export and download raw, log-level data from Optimize to CSV format, directly from our UI.
+Long data retention period
+We hold onto your data for 12 months by default, ensuring that you can look back at old tests and get the same rich detail as if you'd just run them.
+Extract Enrichment Data
+Not only do you get access to your raw data, but you can also view the enriched data that we supply. This again allows you to confirm, verify and analyse everything that we do for you, wherever you're most comfortable doing it.
+Additional Support & Security
+Our market-leading support model ensures you get genuine throughput, whilst being supported with all of the documentation, contact and training you need to be successful.
+Audit Trail
+Get a historical view of what's happening in your account, when it happened, who triggered the action, the state before and after, etc. Comprehensive traceability and transparency.
+PCI Compliancy
+Agency Model Support
+You can access multiple accounts from a single login, and also combine all of your accounts into a single license.
+Online help documentation
+Help articles, how-tos and training videos can all be found online.
+Online ticket support
+We invite you into our JIRA instance, allowing you to log tickets with the team and keep track on their status.
+Dedicated support analyst
+All clients get a dedicated point of contact, who they can reach by phone or email if they need any support.
+Live chat
+Slack invites are available for customers, allowing live-chat support.
+Allowances
+We have an open, unrestricted platform, allowing every single customer unlimited access to build what you'd like.
+Unlimited Accounts/Projects
+No restriction to how you choose to organise the digital properties you choose to experiment or personalise in.
+Unlimited Experiments and Targets
+No restrictions to how many tests or targets you build, test, put live, or serve as Optimals through our platform.
+Unlimited Users
+Invite as many people from your company into the platform as you like - the more the merrier!
+Unlimited Sub-domains
+No restriction to which sub-site, micro-site or section you decide to want to experiment or personalise in.
+No data sampling
+Unlike some of the other platforms on the market, we don't sample our data. That means your results are a genuine representation of your users' activity, making them statistically robust.
+Get in touch
+If you’ve made it this far, you should really get in touch. Click below to send us a message or call us on
+0333 444 5502.
+Send message
+Solutions
+Website Optimisation
+Market-leading Platform
+Detailed Feature List
+Flexible Services & Support
+Simple Pricing
+Worldwide Partnerships
+Key Tools
+A/B Testing
+Multivariate Testing
+Server-side Testing
+Personalisation
+Social Proof
+Product Recommendations
+Other Stuff
+About Us
+Careers
+Contact Us
+Case Studies
+Blog
+Glossary
+SUBSCRIPTION SERVICE AGREEMENT
+|
+WEBSITE TERMS & CONDITIONS
+|
+PRIVACY & GDPR
+|
+COOKIES
+© 2025 Copyright Accelerate Group Ltd t/a Webtrends Optimize
+All rights reserved. Lawrence House, 45 High Street, Egham, TW20 9DP
