@@ -48,10 +48,24 @@ jobs:
             python .github/scripts/enrich.py
           fi
 
-      - name: Post scan summary to Slack
+      # P2: turn snapshot diffs into proposals. Shadow by default (writes
+      # proposals.json, no Airtable rows). Cost-guarded: one Gemini call per
+      # changed URL, aborts on a flood (MAX_ASSESS). continue-on-error so a
+      # Gemini hiccup never fails the scan itself.
+      - name: Assess changes into proposals
+        if: github.event.inputs.mode != 'baseline'
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          SHADOW: ${{ vars.PROPOSALS_SHADOW || 'true' }}
+        run: python .github/scripts/assess.py
+
+      - name: Post digest to Slack
         if: always() && github.event.inputs.mode != 'baseline'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          QUEUE_URL: ${{ vars.PROPOSALS_QUEUE_URL }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python .github/scripts/notify_slack.py
 
@@ -63,6 +77,7 @@ jobs:
           path: |
             changed-pages.md
             scan-summary.json
+            proposals.json
           if-no-files-found: ignore
 
       - name: Commit diff and snapshots

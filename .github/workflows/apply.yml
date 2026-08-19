@@ -1,0 +1,38 @@
+name: apply-proposals
+
+# P4 of the Proposal Queue: write human-APPROVED proposals back to the Database.
+# Dispatch-only and defaults to a dry-run. Keep it this way until P2/P3 have run
+# in shadow for two scan cycles and the proposals have been spot-checked by hand
+# (brief §10). Enable the schedule + flip the default only then.
+#
+# Sequencing note (brief §11.4): apply must run BEFORE any rescore in the monthly
+# cycle. apply sets Last Vendor Scrape = today, which flips the Agentic Score
+# Stale formula to RESCORE NEEDED; if a rescore ran later the same day first, the
+# date-only comparison would miss it. rescore lives in the canonical repo.
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: 'Write approved proposals (true) or dry-run (false)'
+        type: boolean
+        default: false
+
+concurrency:
+  group: airtable-writes      # never run alongside the scan's Airtable writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install "pyairtable>=3,<4"
+      - name: Apply approved proposals
+        env:
+          AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          APPLY: ${{ github.event.inputs.apply }}
+        run: python .github/scripts/apply.py

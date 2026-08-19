@@ -21,10 +21,53 @@ import urllib.request
 
 WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL")
 SUMMARY_IN = os.environ.get("SUMMARY_IN", "scan-summary.json")
+PROPOSALS_IN = os.environ.get("PROPOSALS_IN", "proposals.json")
 REVIEW_URL = os.environ.get("REVIEW_URL", "")
+QUEUE_URL = os.environ.get("QUEUE_URL", "")   # Airtable Pending Review view
+BEN = "<@U0GP0BBEW>"                            # brief §11.3 — raw token notifies
 
 LABEL = {"high": "HIGH — pricing", "normal": "CHANGED — needs review",
          "low": "LOW — marketing", "error": "ERRORS", "noisy": "NOISY"}
+
+
+def build_proposals_text(props: list) -> str:
+    """Proposal-queue digest, grouped by vendor (brief §6). Lifecycle proposals
+    get a distinct marker so they are never skimmed past."""
+    from collections import defaultdict
+    by_v = defaultdict(list)
+    for p in props:
+        by_v[p.get("vendor", "?")].append(p)
+    low_conf = sum(1 for p in props if (p.get("confidence") or 0) < 0.7)
+    lines = [f"{BEN} *Vendor proposals — {len(props)} pending*"]
+    for vendor in sorted(by_v):
+        items = by_v[vendor]
+        lines.append(f"\n*{vendor}* — {len(items)} proposal(s)")
+        for p in items:
+            lc = "  ⚠️ LIFECYCLE" if p.get("field") == "Status (lifecycle)" else ""
+            lines.append(f"  {p.get('field')}: {p.get('current_value','') or '∅'} → {p.get('proposed_value')}{lc}")
+            lines.append(f"    \"{(p.get('evidence_quote') or '')[:160]}\"")
+            lines.append(f"    {p.get('source_url','')}  ·  {p.get('change_type','')}  ·  conf {p.get('confidence')}")
+    foot = [f"\n{len(props)} pending, {low_conf} below 0.7 confidence."]
+    if QUEUE_URL:
+        foot.append(f"Review + approve: {QUEUE_URL}")
+    return "\n".join(lines + foot)
+
+
+def build_tail(s: dict) -> str:
+    """Errors + noisy summary kept underneath the proposals (brief §6)."""
+    c = s.get("counts", {})
+    out = []
+    for sev in ("error", "noisy"):
+        items = s.get("buckets", {}).get(sev, [])
+        if not items:
+            continue
+        out.append(f"\n*{LABEL[sev]}* ({len(items)})")
+        for b in items[:10]:
+            st = f" ({b['status']})" if b.get("status") and b["status"] >= 300 else ""
+            out.append(f"• {b['vendor']} — {b['url']}{st}")
+        if len(items) > 10:
+            out.append(f"  …and {len(items) - 10} more")
+    return "\n".join(out)
 
 
 def build_text(s: dict) -> str:
@@ -53,9 +96,23 @@ def main() -> None:
     try:
         summary = json.load(open(SUMMARY_IN))
     except FileNotFoundError:
-        print(f"No {SUMMARY_IN}; nothing to post.")
+        summary = {}
+    proposals = []
+    try:
+        proposals = json.load(open(PROPOSALS_IN)) or []
+    except FileNotFoundError:
+        pass
+
+    # Proposal queue on top (with Ben's mention), scan tail underneath. Only
+    # mention Ben when there are proposals — don't train him to ignore the ping.
+    if proposals:
+        text = build_proposals_text(proposals) + "\n" + build_tail(summary)
+    elif summary:
+        text = build_text(summary)
+    else:
+        print("Nothing to post.")
         return
-    text = build_text(summary)
+
     if not WEBHOOK:
         print("SLACK_WEBHOOK_URL unset — would have posted:\n")
         print(text)
