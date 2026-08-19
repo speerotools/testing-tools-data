@@ -65,17 +65,17 @@ jobs:
             scan-summary.json
           if-no-files-found: ignore
 
-      - name: Commit diff
+      - name: Commit diff and snapshots
         if: always()
         run: |
           git config user.name  "speero-sync-bot"
           git config user.email "sync@speero.com"
-          if [ -f changed-pages.md ]; then
-            git add changed-pages.md
-            if git diff --cached --quiet; then
-              echo "No diff changes"
-            else
-              git commit -m "Enrichment monitor diff [$(date -u +%Y-%m-%d)]"
-              git push
-            fi
+          # snapshots/ is the committed change set (P1): git diff on it is what
+          # assess.py (P2) turns into proposals.
+          git add changed-pages.md snapshots 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Enrichment monitor: scan + snapshots [$(date -u +%Y-%m-%d)]"
+            git push
           fi

@@ -47,6 +47,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -67,6 +68,7 @@ REGISTRY_TBL = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
 DATABASE_TBL = os.environ.get("AIRTABLE_DATABASE_TBL", "tblOx4tapKq2a0sBR")
 DIFF_OUT     = os.environ.get("DIFF_OUT", "changed-pages.md")
 SUMMARY_OUT  = os.environ.get("SUMMARY_OUT", "scan-summary.json")
+SNAPSHOT_DIR = os.environ.get("SNAPSHOT_DIR", "snapshots")  # P1: committed page snapshots for git diff
 _lim         = os.environ.get("ENRICH_LIMIT", "").strip()
 LIMIT        = int(_lim) if _lim.isdigit() and int(_lim) > 0 else None
 FETCH_DELAY  = float(os.environ.get("FETCH_DELAY", "0.5"))
@@ -124,21 +126,56 @@ class _TextExtractor(HTMLParser):
                 self.parts.append(t)
 
 
-def normalize_html(html: str) -> str:
+def _strip_volatile(s: str) -> str:
+    # rotating noise: ISO dates/datetimes (incl. date-only sitemap <lastmod>),
+    # long hex nonces, cache-buster digits
+    s = re.sub(r"\d{4}-\d{2}-\d{2}(?:[T ]\d{2}:\d{2}[:\d]*)?", " ", s)
+    s = re.sub(r"\b[0-9a-f]{16,}\b", " ", s)
+    return s
+
+
+def _slug(s: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", (s or "").lower()).strip("-")
+    return s or "x"
+
+
+def url_slug(url: str) -> str:
+    p = urllib.parse.urlparse(url)
+    base = (p.path or "").strip("/") or "home"
+    return _slug(base)[:70]
+
+
+def _extract_parts(html: str) -> list[str]:
     try:
         p = _TextExtractor()
         p.feed(html)
-        text = " ".join(p.parts)
+        return p.parts
     except Exception:
-        text = re.sub(r"<[^>]+>", " ", html)
-    # strip rotating noise: ISO timestamps, long hex nonces, cache-buster digits
-    text = re.sub(r"\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}[:\d]*", " ", text)
-    text = re.sub(r"\b[0-9a-f]{16,}\b", " ", text)
+        return re.sub(r"<[^>]+>", " ", html).split()
+
+
+def normalize_html(html: str) -> str:
+    """Collapsed single-line visible text — used for the change-detection hash.
+    Output is unchanged from before, so existing baselines stay valid."""
+    text = _strip_volatile(" ".join(_extract_parts(html)))
     return re.sub(r"\s+", " ", text).strip()
 
 
+def snapshot_html(html: str) -> str:
+    """Line-broken visible text for the committed snapshot, so `git diff` is
+    granular. Same content as the hash, one text block per line."""
+    lines = []
+    for part in _extract_parts(html):
+        t = re.sub(r"\s+", " ", _strip_volatile(part)).strip()
+        if t:
+            lines.append(t)
+    return "\n".join(lines)
+
+
 def fetch_url(url: str):
-    """Return (normalized_text_or_None, status_code_or_None)."""
+    """Return (hash_text_or_None, snapshot_text, status_code_or_None). The first
+    is the collapsed text used for hashing; the second is the line-broken snapshot
+    ('' for non-HTML). On failure the first two are None/''."""
     req = urllib.request.Request(url, headers=BROWSER_HEADERS)
     for attempt in range(3):
         try:
@@ -146,18 +183,36 @@ def fetch_url(url: str):
                 code = getattr(resp, "status", 200) or 200
                 ctype = resp.headers.get("Content-Type", "")
                 if "html" not in ctype and "xml" not in ctype and ctype:
-                    return hashlib.sha256(resp.read()).hexdigest(), code
+                    return hashlib.sha256(resp.read()).hexdigest(), "", code
                 charset = resp.headers.get_content_charset() or "utf-8"
                 raw = resp.read().decode(charset, "ignore")
-            return normalize_html(raw), code
+            return normalize_html(raw), snapshot_html(raw), code
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503, 504) and attempt < 2:
                 time.sleep(2 ** attempt); continue
-            return None, e.code
+            return None, "", e.code
         except Exception as e:
             print(f"  fetch error for {url}: {e}", file=sys.stderr)
-            return None, None
-    return None, None
+            return None, "", None
+    return None, "", None
+
+
+def snapshot_path(vendor_slug: str, url_type: str, url: str) -> str:
+    """Human-readable, stable path per brief §3: snapshots/<vendor>/<type>--<slug>.txt.
+    A short URL-hash suffix disambiguates two URLs that slugify the same."""
+    vs = _slug(vendor_slug) if vendor_slug else "unknown"
+    ut = _slug(url_type) if url_type else "other"
+    h = hashlib.sha1(url.encode("utf-8")).hexdigest()[:6]
+    return os.path.join(SNAPSHOT_DIR, vs, f"{ut}--{url_slug(url)}-{h}.txt")
+
+
+def write_snapshot(vendor_slug: str, url_type: str, url: str, snap: str) -> None:
+    if not snap:
+        return
+    p = snapshot_path(vendor_slug, url_type, url)
+    os.makedirs(os.path.dirname(p), exist_ok=True)
+    with open(p, "w") as f:
+        f.write("# " + url + "\n" + snap + "\n")
 
 
 def content_hash(text: str) -> str:
@@ -172,14 +227,16 @@ def api():
     return Api(AIRTABLE_TOKEN)
 
 
-def vendor_names() -> dict[str, str]:
-    """record id -> vendor Name, for readable grouping."""
+def vendor_lookup() -> tuple[dict, dict]:
+    """(record id -> Name, record id -> Slug) for grouping + snapshot paths."""
     try:
-        rows = api().base(BASE_ID).table(DATABASE_TBL).all(fields=["Name"])
-        return {r["id"]: r["fields"].get("Name", r["id"]) for r in rows}
+        rows = api().base(BASE_ID).table(DATABASE_TBL).all(fields=["Name", "Slug"])
+        names = {r["id"]: r["fields"].get("Name", r["id"]) for r in rows}
+        slugs = {r["id"]: (r["fields"].get("Slug") or _slug(r["fields"].get("Name", ""))) for r in rows}
+        return names, slugs
     except Exception as e:
-        print(f"  WARN vendor-name lookup failed: {e}", file=sys.stderr)
-        return {}
+        print(f"  WARN vendor lookup failed: {e}", file=sys.stderr)
+        return {}, {}
 
 
 def active_rows(table) -> list[dict]:
@@ -232,7 +289,7 @@ def main(baseline: bool) -> None:
 
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     table = api().base(BASE_ID).table(REGISTRY_TBL)
-    names = {} if baseline else vendor_names()
+    names, slugs = vendor_lookup()  # needed for snapshot paths in both modes
     rows = active_rows(table)
     print(f"{len(rows)} active URLs ({'baseline' if baseline else 'monitor'} mode).")
 
@@ -250,7 +307,7 @@ def main(baseline: bool) -> None:
             skipped += 1
             continue
 
-        payload, status = fetch_url(url)
+        payload, snap, status = fetch_url(url)
         if FETCH_DELAY:
             time.sleep(FETCH_DELAY)
 
@@ -268,6 +325,10 @@ def main(baseline: bool) -> None:
                                          "streak": f.get(FN["streak"]) or 0})
             continue
 
+        # P1: commit the page snapshot so git diff = change set
+        vlink = f.get(FN["vendor"]) or []
+        vrid = (vlink[0] if isinstance(vlink[0], str) else vlink[0].get("id", "")) if vlink else ""
+        write_snapshot(slugs.get(vrid, ""), f.get(FN["url_type"]) or "", url, snap)
         new_hash = content_hash(payload)
         old_hash = f.get(FN["hash"])
         old_streak = f.get(FN["streak"]) or 0
