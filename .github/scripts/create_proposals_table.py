@@ -41,8 +41,10 @@ def choices(names):
 
 
 FIELDS = [
-    {"name": "Proposal", "type": "singleLineText"},                       # primary (text required)
-    {"name": "Proposal ID", "type": "autoNumber"},
+    # Primary must be text-like; also serves as the identifier. (autoNumber and
+    # other computed types can't be created via the metadata API — add an
+    # autonumber column in the UI afterwards if you want one.)
+    {"name": "Proposal", "type": "singleLineText"},
     {"name": "Vendor", "type": "multipleRecordLinks", "options": {"linkedTableId": DB_TBL}},
     {"name": "Target Field", "type": "singleSelect", "options": choices(WHITELIST)},
     {"name": "Current Value", "type": "multilineText"},
