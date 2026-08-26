@@ -73,6 +73,7 @@ ASSESS_LOW = os.environ.get("ASSESS_LOW", "false").lower() == "true"
 MAX_PROPOSALS = int(os.environ.get("MAX_PROPOSALS", "50"))
 PER_VENDOR_CAP = int(os.environ.get("PER_VENDOR_CAP", "8"))
 MIN_EVIDENCE_LEN = int(os.environ.get("MIN_EVIDENCE_LEN", "40"))
+MIN_ADDED = int(os.environ.get("MIN_ADDED", "3"))  # min added content lines to bother assessing
 # URL types that are narrative/marketing/dynamic — facts belong on docs/pricing/
 # product/trust pages, not here. Mining these for capability tags is where the
 # noise comes from (brief appendix, design point 1). Skip them for assessment.
@@ -135,6 +136,21 @@ def git_diff(path: str) -> str:
     except Exception as e:
         print(f"  git diff failed for {path}: {e}", file=sys.stderr)
         return ""
+
+
+def diff_stats(diff: str):
+    """(added_content_lines, removed_lines). Added lines are the signal — a real
+    vendor update adds text. A diff that only deletes (page came back shorter) or
+    barely adds is fetch noise, not a change worth an LLM call."""
+    added = removed = 0
+    for ln in diff.splitlines():
+        if ln.startswith("+++") or ln.startswith("---") or ln.startswith("@@"):
+            continue
+        if ln.startswith("+") and len(ln.strip()) > 3:
+            added += 1
+        elif ln.startswith("-") and len(ln.strip()) > 3:
+            removed += 1
+    return added, removed
 
 
 def commit_url(path: str) -> str:
@@ -296,37 +312,26 @@ def main() -> None:
     if not changed:
         print("No content changes to assess.")
         return
-    # Flood guard: never fan out Gemini calls over a noisy scan. Fail loud (§4.6).
-    if len(changed) > MAX_ASSESS:
-        print(f"ERROR: {len(changed)} changed URLs exceed MAX_ASSESS={MAX_ASSESS}. "
-              f"Likely scan noise, not real change — aborting before any Gemini call. "
-              f"Investigate the scan or raise MAX_ASSESS deliberately.", file=sys.stderr)
-        sys.exit(1)
 
-    if DRY_RUN:
-        print(f"DRY_RUN: {len(changed)} URLs would be assessed (no Gemini calls):")
-        for it in changed:
-            print(f"  {it.get('type','')}  {it.get('url')}")
-        return
-
-    # Drop marketing/dynamic URL types before spending Gemini calls (cost + noise).
+    # Drop marketing/dynamic URL types up front (cost + noise).
     before = len(changed)
     changed = [it for it in changed if (it.get("type") or "").strip().lower() not in ASSESS_SKIP_TYPES]
     if before != len(changed):
-        print(f"Skipped {before - len(changed)} marketing/dynamic URLs (types: {sorted(ASSESS_SKIP_TYPES)}).")
+        print(f"Skipped {before - len(changed)} marketing/dynamic URLs.")
 
-    print(f"Assessing {len(changed)} changed URLs (shadow={SHADOW}, model={GEMINI_MODEL}).")
     base, options, db, reg = load_context()
     names = {rid: f.get("Name", rid) for rid, f in db.items()}
     slugs = {rid: (f.get("Slug") or _slug(f.get("Name", ""))) for rid, f in db.items()}
     opts_txt = options_block(options)
-    # field -> set of canonical option names, for validating linked proposals.
     field_opts = {}
     for field, cat in MASTER_CATEGORIES.items():
         field_opts[field] = {o.lower() for o in (options.get(cat) or options.get(field) or [])}
 
-    dropped = {"evidence": 0, "noncanonical": 0}
-    proposals: list[dict] = []
+    # Diff-gate (git is free): keep only URLs whose snapshot ADDED real content.
+    # Deletion-heavy / tiny diffs are fetch noise (partial responses, bot walls,
+    # the sites' own A/B tests), not vendor changes. This is what stops a noisy
+    # scan from ever reaching Gemini.
+    cands = []
     for item in changed:
         url = item.get("url")
         rid, url_type = reg.get(url, ("", item.get("type") or ""))
@@ -336,6 +341,29 @@ def main() -> None:
         diff = git_diff(path)
         if not diff.strip():
             continue
+        added, removed = diff_stats(diff)
+        if added < MIN_ADDED or added <= removed:   # net-shrink or trivial = noise
+            continue
+        cands.append({"url": url, "rid": rid, "url_type": url_type, "path": path,
+                      "diff": diff, "added": added})
+
+    cands.sort(key=lambda c: -c["added"])
+    if len(cands) > MAX_ASSESS:
+        print(f"{len(cands)} substantive diffs; assessing the top {MAX_ASSESS} by added content, "
+              f"deferring {len(cands) - MAX_ASSESS} to keep the Gemini bill bounded.")
+        cands = cands[:MAX_ASSESS]
+    print(f"Assessing {len(cands)} URLs after diff-gating {before} changed (shadow={SHADOW}, model={GEMINI_MODEL}).")
+
+    if DRY_RUN:
+        for c in cands:
+            print(f"  +{c['added']}  {c['url_type']}  {c['url']}")
+        return
+
+    dropped = {"evidence": 0, "noncanonical": 0}
+    proposals: list[dict] = []
+    for item in cands:
+        url = item["url"]; rid = item["rid"]; url_type = item["url_type"]
+        path = item["path"]; diff = item["diff"]
         prompt = PROMPT.format(
             whitelist=", ".join(WHITELIST), vendor=names.get(rid, "?"),
             url_type=url_type, url=url, current=current_values(db[rid]),
