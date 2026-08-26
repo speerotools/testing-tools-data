@@ -73,7 +73,7 @@ ASSESS_LOW = os.environ.get("ASSESS_LOW", "false").lower() == "true"
 MAX_PROPOSALS = int(os.environ.get("MAX_PROPOSALS", "50"))
 PER_VENDOR_CAP = int(os.environ.get("PER_VENDOR_CAP", "8"))
 MIN_EVIDENCE_LEN = int(os.environ.get("MIN_EVIDENCE_LEN", "40"))
-MIN_ADDED = int(os.environ.get("MIN_ADDED", "3"))  # min added content lines to bother assessing
+MIN_ADDED = int(os.environ.get("MIN_ADDED", "2"))  # min GENUINELY-new content lines to bother assessing
 # URL types that are narrative/marketing/dynamic — facts belong on docs/pricing/
 # product/trust pages, not here. Mining these for capability tags is where the
 # noise comes from (brief appendix, design point 1). Skip them for assessment.
@@ -138,19 +138,25 @@ def git_diff(path: str) -> str:
         return ""
 
 
-def diff_stats(diff: str):
-    """(added_content_lines, removed_lines). Added lines are the signal — a real
-    vendor update adds text. A diff that only deletes (page came back shorter) or
-    barely adds is fetch noise, not a change worth an LLM call."""
-    added = removed = 0
+def diff_new_lines(diff: str) -> int:
+    """Count GENUINELY new content lines: added lines whose text does not also
+    appear on the removed side. Reordered or re-fetched content shows up in both
+    + and - (cancels to zero = fetch noise); a real new capability line appears
+    only in +. This separates real additions from churn even when the page also
+    shrank."""
+    added, removed = [], []
     for ln in diff.splitlines():
-        if ln.startswith("+++") or ln.startswith("---") or ln.startswith("@@"):
+        if ln.startswith(("+++", "---", "@@")):
             continue
-        if ln.startswith("+") and len(ln.strip()) > 3:
-            added += 1
-        elif ln.startswith("-") and len(ln.strip()) > 3:
-            removed += 1
-    return added, removed
+        s = ln[1:].strip()
+        if len(s) <= 3:
+            continue
+        if ln.startswith("+"):
+            added.append(s)
+        elif ln.startswith("-"):
+            removed.append(s)
+    rem = set(removed)
+    return sum(1 for a in added if a not in rem)
 
 
 def commit_url(path: str) -> str:
@@ -341,11 +347,11 @@ def main() -> None:
         diff = git_diff(path)
         if not diff.strip():
             continue
-        added, removed = diff_stats(diff)
-        if added < MIN_ADDED or added <= removed:   # net-shrink or trivial = noise
+        new = diff_new_lines(diff)
+        if new < MIN_ADDED:   # too little genuinely-new content = fetch noise
             continue
         cands.append({"url": url, "rid": rid, "url_type": url_type, "path": path,
-                      "diff": diff, "added": added})
+                      "diff": diff, "added": new})
 
     cands.sort(key=lambda c: -c["added"])
     if len(cands) > MAX_ASSESS:
