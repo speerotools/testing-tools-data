@@ -1,0 +1,196 @@
+# https://docs.growthbook.io/warehouses/redshift
+Setting Up Amazon Redshift as a Data Source in GrowthBook | GrowthBook Docs
+Skip to main content
+Docs
+SDKs
+API
+Home
+Log in
+GitHub
+Support
+Join our Slack
+Open an issue
+Search
+Overview
+How it works
+Quickstart
+SDKs
+Feature Flags
+Data & Metrics
+Choose Your Data Path
+Managed Warehouse
+Connecting to Your Data Warehouse
+Athena
+BigQuery
+Clickhouse
+Databricks
+Mixpanel
+MS SQL or SQL Server
+MySQL or MariaDB
+Postgres
+Vertica
+Prestodb or Trino
+Redshift
+Snowflake
+Data Source Configuration
+Metrics and Fact Tables
+Query Optimization
+SQL Templates
+Data Pipeline
+Event Forwarder
+Official Resources
+Experimentation
+Insights
+Product Analytics
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Data & Metrics
+Connecting to Your Data Warehouse
+Redshift
+On this page
+Setting Up Amazon Redshift as a Data Source in GrowthBook
+Connecting Amazon Redshift to GrowthBook allows you to analyze experiment data and metrics directly from your data warehouse.
+This guide focuses on Redshift Serverless, but the steps are similar for provisioned Redshift instances.
+1: Find Connection Details
+​
+In the
+AWS Management Console
+, navigate to
+Amazon Redshift
+→
+Serverless
+.
+Click on
+Workgroup configuration
+, select your workgroup.
+Under
+General information
+, locate the
+Endpoint
+, which looks like this:
+default-workgroup.1234567890.us-east-1.redshift-serverless.amazonaws.com:5439/dev
+This string comprises the following parts:
+Host:
+default-workgroup.1234567890.us-east-1.redshift-serverless.amazonaws.com
+Port:
+5439
+Database Name:
+dev
+2: Configure Security settings
+​
+Go to
+AWS Console
+→
+Amazon Redshift
+→
+Serverless
+→
+Workgroups
+.
+Click on your Workgroup and scroll to
+Network and Security
+.
+Click
+Edit
+and check
+Turn on Publicly accessible
+.
+Click
+Save Changes
+.
+Click on the
+VPC security group
+link.
+Select the Security Group matching your Workgroup.
+Edit
+Inbound Rules
+:
+Protocol: TCP
+Port: 5439
+Source: 52.70.79.40/32 (GrowthBook’s IP)
+Click
+Save Changes
+.
+Enabling public access makes your database accessible from the internet.
+Ensure your security group settings are restrictive.
+3: Create a Read-Only User
+​
+To prevent unauthorized changes, use a dedicated read-only user for GrowthBook.
+Open AWS Query Editor or your preferred SQL client.
+Run the following:
+CREATE
+USER
+growthbook_user
+WITH
+PASSWORD
+'securepassword'
+;
+GRANT
+SELECT
+ON
+ALL
+TABLES
+IN
+SCHEMA
+public
+TO
+growthbook_user
+;
+ALTER
+DEFAULT
+PRIVILEGES
+IN
+SCHEMA
+public
+GRANT
+SELECT
+ON
+TABLES
+TO
+growthbook_user
+;
+If your data is in a different schema (e.g., analytics), replace public with your schema name.
+Use this user when connecting GrowthBook.
+4: Add Redshift as a Data Source in GrowthBook
+​
+In GrowthBook, go to
+Settings
+→
+Data Sources.
+Click Add Data Source
+and choose
+Redshift
+.
+Enter the details from Step 1:
+Host: (Your Workgroup Endpoint for Serverless or Cluster Endpoint for Provisioned)
+Port:
+5439
+Database: (Your database name, e.g.,
+dev
+)
+User:
+growthbook_user
+Password: (Your secure password)
+Require SSL: Recommended but may depend on your Redshift setup.
+Click
+Next
+to test the connection.
+🚀 Now, GrowthBook can securely query your Redshift database!
+Edit this page
+Was this helpful?
+Give Feedback
+Previous
+Prestodb or Trino
+Next
+Snowflake
+1: Find Connection Details
+2: Configure Security settings
+3: Create a Read-Only User
+4: Add Redshift as a Data Source in GrowthBook

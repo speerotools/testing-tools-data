@@ -1,0 +1,162 @@
+# https://developers.webflow.com/mcp/faqs
+FAQs and troubleshooting | Webflow Developer Documentation
+For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+MCP Server
+MCP Server
+Use Webflow APIs with AI agents
+Search
+/
+Ask AI
+Resources
+Get started
+Guides
+Reference
+Prompt Library
+Changelog
+MCP Server
+MCP Server
+Use Webflow APIs with AI agents
+Guides
+Reference
+Prompt Library
+Changelog
+MCP Server
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Cursor
+Postman
+Slack
+Windsurf
+Beta server
+Documentation server
+How it works
+Skills
+FAQs and troubleshooting
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Cursor
+Postman
+Slack
+Windsurf
+Beta server
+Documentation server
+How it works
+Skills
+Skill Migration
+FAQs and troubleshooting
+Resources
+Get started
+Light
+On this page
+Installation and setup
+Using the MCP server
+Scroll to top
+MCP Server
+FAQs and troubleshooting
+Copy page
+Common questions and solutions for installing, configuring, and using the Webflow MCP server.
+Installation and setup
+Why is my MCP server not appearing in my AI client?
+After installing the MCP server, you may need to restart your AI client to see the new server. Additionally, check that your client (Claude Desktop, Cursor, or Windsurf) is updated to the latest version.
+Troubleshooting steps:
+Restart your AI client completely
+Check for updates to your AI client
+Verify the MCP server configuration is correct in your config file
+Review the
+getting started guide
+for platform-specific instructions
+How do I switch workspaces?
+Each authorization grants access to a single workspace. To switch to a different workspace, re-authenticate the MCP server:
+Connector and app-based clients (such as Claude and ChatGPT):
+Remove the Webflow connector or app, then reinstall it and authorize the workspace you want.
+Other clients:
+Remove the Webflow MCP server from your client’s configuration, then add it again to start a new authorization.
+When the authentication screen appears, choose the workspace you want the MCP server to access.
+The sites I want to authorize are greyed out
+Only site owners and admins can authorize the MCP server and MCP Bridge App. If you’re not a site owner or admin, you won’t be able to authorize those sites.
+To resolve this:
+Request owner or admin access from your site administrator
+Or, have a site owner/admin authorize the MCP server for the site
+Using the MCP server
+The MCP server can't connect to the Webflow Designer
+Some capabilities need a live Designer session — capturing visual snapshots, and reading or changing the current selection, page, mode, branch, canvas, and breakpoints. To use these, open the MCP Bridge App in the Webflow Designer:
+Steps:
+Open your site in the Webflow Designer
+Press the
+E
+key to open the Apps panel
+Launch the “Webflow MCP Bridge App”
+Wait for the app to connect to the MCP server
+The MCP Bridge app must remain open in the Webflow Designer for these capabilities to work. You can minimize it after it connects.
+The MCP server is timing out in the Designer
+If the MCP server times out or disconnects while using the Designer, your browser may be putting inactive tabs to sleep. Configure your browser to keep the Designer tab active:
+Chrome:
+Go to
+chrome://settings/performance
+Scroll to “Always keep these sites active”
+Click “Add” and enter
+webflow.com
+Firefox:
+Type
+about:config
+in the address bar
+Search for
+browser.tabs.unloadOnLowMemory
+Set to
+false
+Or keep the Designer tab pinned to prevent unloading
+Safari:
+Safari doesn’t have a built-in setting for this
+Keep the Designer tab active and pinned
+Or use Chrome/Firefox for better MCP server stability
+Pinning the Webflow Designer tab in any browser can also help prevent timeout issues.
+Can I use all available API endpoints with the MCP server?
+The MCP server currently supports a focused set of Data and Designer API tools. Not all Webflow API endpoints are available through the MCP server.
+Request new tools:
+Open an issue on GitHub
+with your use case
+Can I ask the MCP server about Webflow's developer tools?
+Yes. The MCP server has access to Webflow’s developer documentation, so you can ask questions about anything related to Webflow’s developer tools.
+For example, you can ask:
+How do I create a new CMS collection?
+What’s the best way to migrate CMS items from one collection to another while preserving field mappings?
+I’m getting a 403 error when trying to update collection items. What could be wrong?
+For best results:
+Ask specific questions with details about what you want to know
+If you’re working on a specific task, mention it
+If the initial answer is not complete, ask follow-up questions
+Does Webflow need to be open to use the MCP server?
+Most of the time, no. Creating and editing elements, components, styles, and variables, and managing CMS content, pages, assets, and other site data all work without the Webflow Designer open.
+You need the Webflow Designer open, with the
+Webflow MCP Bridge App
+launched and connected, only for capabilities that depend on a live Designer session:
+Capturing visual snapshots of elements
+Reading or changing the current selection, page, mode, and branch
+Navigating the Designer canvas and reading the site’s breakpoints
+For fully independent agent loops, have the agent publish to a staging domain and verify changes there, without needing snapshots or a live Designer session.
+Why am I getting a ModeForbidden error?
+The agent called a tool that the current mode does not allow.
+To resolve this:
+Switch to the Designer mode that the tool requires; tool descriptions in the MCP server list the modes in which each tool can run
+Ask the agent to retry the action after you switch modes
+For canvas changes, make sure that you are in Build mode and that the Bridge App is connected
+Can I localize content with the MCP server?
+The MCP server has partial support for localization:
+Supported:
+Read and update static page/component content in secondary locales
+Read and update default component properties in secondary locales
+Read and update existing CMS items in secondary locales
+Not supported:
+Creating new localized CMS items
+If you need additional localization features, please open an issue on GitHub.
+Was this page helpful?
+Yes
+No
+Previous
+Built with

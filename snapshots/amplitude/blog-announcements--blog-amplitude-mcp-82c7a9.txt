@@ -1,0 +1,466 @@
+# https://amplitude.com/blog/amplitude-mcp
+Introducing Amplitude MCP: Unlock Behavioral Insights Everywhere You Work
+Platform
+AI
+Amplitude AI
+Analytics that never stops working
+AI Agents
+Sense, decide, and act faster than ever before
+AI Feedback
+Distill what your customers say they want
+Amplitude MCP
+Insights from the comfort of your favorite AI tool
+Agent Analytics
+Measure the real impact of your agents
+Early Access Program
+Test new AI features before they launch
+Insights
+Product Analytics
+Understand the full user journey
+Marketing Analytics
+Get the metrics you need with one line of code
+Session Replay
+Visualize sessions based on events in your product
+Heatmaps
+Visualize clicks, scrolls, and engagement
+Zoning Insights
+Overlay performance and revenue metrics on your webpages
+Action
+Guides and Surveys
+Guide your users and collect feedback
+Feature Experimentation
+Innovate with personalized product experiences
+Web Experimentation
+Drive conversion with A/B testing powered by data
+Feature Management
+Build fast, target easily, and learn as you ship
+Activation
+Unite data across teams
+Data
+Data Governance
+Complete data you can trust
+Integrations
+Connect Amplitude to hundreds of partners
+Security & Privacy
+Keep your data secure and compliant
+Solutions
+Solutions that drive business results
+Deliver customer value and drive business outcomes
+Amplitude Solutions
+→
+Industry
+Financial Services
+Personalize the banking experience
+B2B
+Maximize product adoption
+Media
+Identify impactful content
+Healthcare
+Simplify the digital healthcare experience
+Ecommerce
+Optimize for transactions
+Use Case
+Acquisition
+Get users hooked from day one
+Retention
+Understand your customers like no one else
+Monetization
+Turn behavior into business
+Team
+Product
+Fuel faster growth
+Data
+Make trusted data accessible
+Engineering
+Ship faster, learn more
+Marketing
+Build customers for life
+Executive
+Power decisions, shape the future
+Size
+Startups
+Free analytics tools for startups
+Enterprise
+Advanced analytics for scaling businesses
+Resources
+Learn
+Blog
+Thought leadership from industry experts
+Resource Library
+Expertise to guide your growth
+Compare
+See how we stack up against the competition
+Glossary
+Learn about analytics, product, and technical terms
+Explore Hub
+Detailed guides on product and web analytics
+Connect
+Community
+Connect with peers in product analytics
+Events
+Register for live or virtual events
+Customers
+Discover why customers love Amplitude
+Partners
+Accelerate business value through our ecosystem
+Support & Services
+Customer Help Center
+All support resources in one place: policies, customer portal, and request forms
+Developer Hub
+Integrate and instrument Amplitude
+Academy & Training
+Become an Amplitude pro
+Customer Success
+Drive business success with expert guidance and support
+Product Updates
+See what's new from Amplitude
+Tools
+Benchmarks
+Understand how your product compares
+Prompt Library
+Prompts for Agents to get started
+Templates
+Kickstart your analysis with custom dashboard templates
+Tracking Guides
+Learn how to track events and metrics with Amplitude
+Maturity Model
+Learn more about our digital experience maturity model
+Event Taxonomy Generator
+Pricing
+Login
+Contact sales
+Get started
+Platform
+AI
+Amplitude AI
+AI Agents
+AI Feedback
+Amplitude MCP
+Agent Analytics
+Early Access Program
+Insights
+Product Analytics
+Marketing Analytics
+Session Replay
+Heatmaps
+Zoning Insights
+Action
+Guides and Surveys
+Feature Experimentation
+Web Experimentation
+Feature Management
+Activation
+Data
+Data Governance
+Integrations
+Security & Privacy
+Solutions
+Amplitude Solutions
+→
+Industry
+Financial Services
+B2B
+Media
+Healthcare
+Ecommerce
+Use Case
+Acquisition
+Retention
+Monetization
+Team
+Product
+Data
+Engineering
+Marketing
+Executive
+Size
+Startups
+Enterprise
+Resources
+Learn
+Blog
+Resource Library
+Compare
+Glossary
+Explore Hub
+Connect
+Community
+Events
+Customers
+Partners
+Support & Services
+Customer Help Center
+Developer Hub
+Academy & Training
+Customer Success
+Product Updates
+Tools
+Benchmarks
+Prompt Library
+Templates
+Tracking Guides
+Maturity Model
+Event Taxonomy Generator
+Pricing
+Login
+Sign Up
+Introducing Amplitude MCP: Unlock Behavioral Insights Everywhere You Work
+Bring Amplitude’s behavioral context wherever you work—inside Claude, Cursor, or any MCP-compatible client.
+Product
+Oct 21, 2025
+7 min read
+Karan Johar
+Software Engineering Manager and Technical Lead, Amplitude
+TL;DR
+Amplitude captures and organizes behavioral data across your entire product and customer journey. Our new
+MCP Server
+radically expands access to that data, letting other AI tools seamlessly interact with Amplitude so you can have conversations about your products and take action from the tools you love. Try it today in your favorite client.
+AI systems today are powerful at picking up signals, spotting patterns, and acting on them. They can do this faster and at a greater scale than any human team can. Product, growth, and marketing teams are already using AI to ship features in days instead of weeks, generate and test new campaign ideas in real time, and iterate on A/B variants at unprecedented speed.
+But here’s the catch: AI systems learn using the context you give them. Without the right inputs, even the most sophisticated AI is just making guesses using trained data. When it comes to building products and experiences that customers want, the most critical input is behavioral context—data about what your users do, how your experiments are performing, and which campaigns are driving real results.
+That’s where Amplitude comes in. Our platform captures and organizes behavioral data across your entire product and customer journey. Agents can use that data to detect patterns, identify risks, and surface opportunities.
+Amplitude MCP
+(Model Context Protocol) makes behavioral context directly accessible within the AI tools and workflows your teams already use—transforming AI from a sophisticated brainstorming partner into an expert system based on user behavior data.
+Introducing Amplitude MCP
+Today, we're excited to announce public access to Amplitude MCP. For the first time, anyone on your team, such as product managers, marketers, founders, or engineers, can ask sophisticated questions about user behavior and get expert-level answers in seconds. There’s no writing SQL, configuring dashboards, or waiting on the data team.
+It works exactly how you'd expect AI to work. Simply connect Amplitude to an MCP client—our MCP already has native connections to
+Claude
+,
+Cursor
+, and
+Github
+—and start a conversation about your users or your product:
+"How did our last experiment perform? What are the key findings and performance of each variant?"
+"Show me signup conversion rates by traffic source this month. What are some actionable recommendations to improve conversion?"
+"Analyze my event volume. Can you identify any spikes or drops in event volume that I should investigate?"
+No dashboard expertise required. No data pipeline knowledge needed. Just natural conversation that gets you from question to insight in one flow.
+What used to require a data analyst, tool expertise, and hours of work now happens in minutes right inside your AI workflow. MCP connects to analytics, experiments, session replays, and user journeys, giving anyone, regardless of technical background, a complete picture of customer behavior through natural-language conversation. This unfair advantage that used to be the domain of dedicated analytics teams is now available to everyone.
+"Amplitude MCP has been a game-changer for us. We've been able to embed our domain knowledge—like how specific events drive complex analysis—directly into our LLM workflows. Now insights that used to require specialized analytics expertise are accessible to everyone on the team. It's genuinely democratizing how we work with data across the organization."
+Moss Pauly, Technical Product Manager, Data & AI at Zip
+Behavioral context for every team
+Every team has different questions about their data. Product teams need to understand why engagement is declining, growth teams need to evaluate their A/B test results, data teams need to monitor for quality checks. Amplitude MCP means each team can answer their own questions using the AI tools that are already in their workflow.
+For product and marketing teams
+Product and marketing teams can use Amplitude MCP to explore new ideas even faster through their AI tools. Claude can analyze their product’s health by accessing Amplitude dashboards to get detailed assessments across the entire customer lifecycle. These AI systems instantly access behavioral data to identify acquisition campaigns that translate to engaged users, spot engagement patterns that predict churn risk, and determine which segments drive the strongest retention. Those actionable insights bridge marketing acquisition and product optimization within a single conversation.
+For growth teams
+Growth teams can design, run, and evaluate A/B tests directly through AI-native tools. Amplitude MCP delivers comprehensive experiment analysis through natural-language conversation, instantly accessing experimentation data to identify winning variants, evaluate metric lift, spot unexpected segment behaviors, and provide statistical context. Your AI tools now have the behavioral context needed to recommend whether to ship, iterate, or stop experiments—complete with charts and experiment links.
+For data teams
+Data teams can use Amplitude MCP to monitor data quality and improve taxonomy governance. Investigate taxonomy for spikes or drops indicating broken implementations, organize events into logical categories for governance review, and flag volume anomalies that could impact downstream reporting. Data teams can deliver structured reports with categorized events, anomaly detection, and descriptions that maintain instrumentation quality to catch data integrity problems before they affect business-critical dashboards.
+Build new context-powered workflows
+Amplitude MCP enables entirely new workflows by combining Amplitude’s valuable behavioral data with external sources. You can now build powerful AI workflows that pull together insights, automatically generate reports, and take action based on comprehensive analysis.
+For example, instead of switching between Amplitude for feature performance analysis, Jira for development tracking, and Confluence for documentation, AI-powered workflows can automatically connect information from all three systems. By combining Amplitude and Atlassian MCP tools, you can pull user behavior data to determine which features drive engagement, track development progress and blockers from Jira, and automatically generate Confluence documentation with data-driven insights about feature impact. Product teams can prioritize and make decisions while maintaining documentation that reflects both technical progress and user behavior.
+The power of MCP isn't just in accessing Amplitude. It's in making behavioral context a foundational layer for any AI workflow.
+Unlocking behavioral context for any AI system, agent, or workflow
+AI can sense, detect, and act faster than humans ever could. But without behavioral context, it’s adrift.
+Our vision is to make behavioral context the foundation for AI, and to make it accessible everywhere. Our platform captures the richest dataset on customer behavior (Sense). Our analytics, experiments, and session replays reveal the signals that matter—growth levers, churn risks, engagement drivers (Detect). MCP unlocks access to those insights inside any AI tool, empowering teams to move faster, eliminate guesswork, and build experiences customers adopt and love (Act).
+Amplitude MCP is the first step toward making every AI interaction informed by behavioral context—a future where your insights are universally accessible across any AI system, agent, or workflow.
+Ready to get started?
+Learn how to set up Amplitude MCP
+today.
+Join our upcoming MCP event
+on November 4th to discover how data professionals and growth teams can bring Amplitude's powerful analytics directly into their AI tools—from exploratory analysis to autonomous experimentation.
+Ready to use AI to transform your product?
+Amplitude Agents help you understand your users more easily than ever.
+Get started now
+About the author
+Karan Johar
+Software Engineering Manager and Technical Lead, Amplitude
+More from
+Karan
+Karan Johar is a Software Engineering Manager and Technical Lead at Amplitude, leading the middleware and compute systems that power analytics at scale. He oversees the APIs behind charts, cohorts, and metrics—driving performance, reliability, and platform scalability. Previously, he built high-throughput API platforms and core product infrastructure at Dropbox, supporting hundreds of millions of users and mission-critical internal systems.
+More from
+Karan
+Topics
+AI
+Behavioral Analytics
+MCP
+Recommended Reading
+Read
+Product
+Your AI Chat Box Isn't a Strategy. Where You Put It Is.
+Aug 18, 2026
+11 min read
+Read
+Insights
+The Neobank Squeeze: Why Classic Banks Need to Learn to Move at Challenger Speed
+Aug 17, 2026
+9 min read
+Read
+Insights
+From Context to Intelligence: Building Self-Improving Products in Banking and Insurance
+Aug 17, 2026
+9 min read
+Read
+Insights
+Practical Guide to Evaluating Open Models: Achieving Sonnet-level performance with Kimi
+Aug 14, 2026
+14 min read
+Platform
+AI Agents
+Agent Analytics
+AI Feedback
+Amplitude MCP
+AI Assistant
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+AI Early Access Program
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+LinkedIn
+Twitter
+G2
+GitHub
+Reddit
+View markdown
+Copy markdown
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
+Español (LATAM)
+Español (Spain)
+Português (Brasil)
+Português (Portugal)
+Français
+Deutsch
+© 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.
+Blog
+Insights
+Product
+Company
+Customers
+Topics
+Topics
+101
+AI
+APJ
+Acquisition
+Adobe Analytics
+Agents
+Amplify
+Amplitude AI
+Amplitude Academy
+Amplitude Activation
+Amplitude Agent Analytics
+Amplitude Analytics
+Amplitude Audiences
+Amplitude Community
+Amplitude Feature Experimentation
+Amplitude Full Platform
+Amplitude Guides and Surveys
+Amplitude Heatmaps
+Amplitude Made Easy
+Amplitude Session Replay
+Amplitude Web Experimentation
+Amplitude on Amplitude
+Analytics
+B2B SaaS
+Behavioral Analytics
+Benchmarks
+Churn Analysis
+Cohort Analysis
+Collaboration
+Consolidation
+Conversion
+Customer Experience
+Customer Lifetime Value
+Customer Support
+DEI
+Data
+Data Governance
+Data Management
+Data Tables
+Digital Experience Maturity
+Digital Native
+Digital Transformer
+EMEA
+Ecommerce
+Employee Resource Group
+Engagement
+Engineering
+Event Tracking
+Experimentation
+Feature Adoption
+Financial Services
+Funnel Analysis
+Getting Started
+Global Agent
+Google Analytics
+Growth
+Healthcare
+How I Amplitude
+Implementation
+Integration
+Kimi
+LATAM
+LLM
+Life at Amplitude
+MCP
+Machine Learning
+Marketing Analytics
+Media and Entertainment
+Metrics
+Modern Data Series
+Monetization
+Next Gen Builders
+North Star Metric
+Open-Weight AI Models
+Partnerships
+Personalization
+Pioneer Awards
+Privacy
+Product 50
+Product Analytics
+Product Design
+Product Management
+Product Releases
+Product Strategy
+Product-Led Growth
+Recap
+Retention
+Revenue
+Startup
+Tech Stack
+The Ampys
+Warehouse-native Amplitude

@@ -1,0 +1,329 @@
+# https://github.com/spotify/confidence-resolver
+GitHub - spotify/confidence-resolver: Flag Resolvers for Confidence · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+spotify
+/
+confidence-resolver
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+14
+Star
+14
+Code
+Issues
+8
+Pull requests
+13
+Actions
+Security and quality
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Security and quality
+Insights
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+415 Commits
+415 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.github/
+workflows
+.github/
+workflows
+.vscode
+.vscode
+confidence-cloudflare-resolver
+confidence-cloudflare-resolver
+confidence-resolver
+confidence-resolver
+data
+data
+img
+img
+mock-support-server
+mock-support-server
+openfeature-provider
+openfeature-provider
+wasm-msg
+wasm-msg
+wasm
+wasm
+.dockerignore
+.dockerignore
+.gitignore
+.gitignore
+.release-please-manifest.json
+.release-please-manifest.json
+.rustfmt.toml
+.rustfmt.toml
+AGENTS.md
+AGENTS.md
+CLAUDE.md
+CLAUDE.md
+CONTRIBUTING.md
+CONTRIBUTING.md
+Cargo.lock
+Cargo.lock
+Cargo.toml
+Cargo.toml
+Dockerfile
+Dockerfile
+LICENSE
+LICENSE
+Makefile
+Makefile
+README.md
+README.md
+SECURITY.md
+SECURITY.md
+STICKY_ASSIGNMENTS.md
+STICKY_ASSIGNMENTS.md
+catalog-info.yaml
+catalog-info.yaml
+docker-compose.yml
+docker-compose.yml
+release-please-config.json
+release-please-config.json
+rust-toolchain.toml
+rust-toolchain.toml
+View all files
+Repository files navigation
+README
+Code of conduct
+Contributing
+Apache-2.0 license
+Security
+More
+items
+Confidence Rust Flags Resolver
+The Confidence flag resolver implemented in Rust, local-resolve OpenFeature Providers and edge-compatible resolver runnables.
+Repository layout
+The tools and SDKs published for direct usage:
+confidence-cloudflare-resolver
+: Confidence resolver service as a Cloudflare Worker (readme
+here
+)
+openfeature-provider
+: The OpenFeature providers for flag resolving
+Go
+Java
+JavaScript/TypeScript
+Python
+Rust
+Ruby
+Underlying building blocks:
+confidence-resolver
+: Core resolver crate
+wasm
+and
+wasm-msg
+: WASM resolver with communication contract towards the hosting environment
+data
+: Sample local development data (e.g., resolver state)
+Development - Quick Start
+#
+With Docker (reproducible, no setup needed)
+docker build
+.
+#
+Build, test, lint everything
+Without docker, the building is managed via Makefile:
+make # Same, using Makefile # E2E tests require Confidence credentials passed as Docker secret # Create openfeature-provider/js/.env.test with your credentials, then: docker build \ --secret id=js_e2e_test_env,src=openfeature-provider/js/.env.test \ . # With local tools (fast iteration) make test # Run tests make lint # Run linting make build # Build WASM # Build the Cloudflare-compatible resolver (WASM): make cloudflare
+Benchmarks
+Small local benchmarks exist for Go and Node.js to validate end-to-end wiring. They are a work-in-progress and do not produce meaningful or representative performance numbers yet.
+Run with Docker (streams all logs, cleans up containers afterward):
+#
+Go benchmark
+make go-bench
+#
+Node.js benchmark
+make js-bench
+Notes:
+Each target starts a dedicated mock server container and a one-shot bench container, then tears everything down.
+Use
+docker compose up ... go-bench
+or
+... js-bench
+to run them individually without Make.
+License
+See
+LICENSE
+for details.
+About
+Flag Resolvers for Confidence
+confidence.spotify.com
+Resources
+Readme
+Apache-2.0 license
+Code of conduct
+Code of conduct
+Contributing
+Contributing
+Security policy
+Security policy
+Activity
+Custom properties
+Stars
+14
+stars
+Watchers
+1
+watching
+Forks
+14
+forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

@@ -1,0 +1,120 @@
+# https://doc.sitecore.com/sai/en/users/sitecoreai/personalize.html
+Personalize | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Users
+Developers
+Cloud Portal
+Open search
+en
+Search in the table of contents...
+SitecoreAI documentation for business users
+WELCOME
+SitecoreAI
+AUDIENCES & INSIGHTS
+Audience and insights
+CAMPAIGNS
+Plan campaign strategy
+DESIGNS
+Design components
+SITES & PAGES
+Build digital experiences
+Create and manage sites
+Build pages
+PERFORMANCE
+Conversion optimization
+Personalize
+Create a page variant
+Edit a page variant
+Creating an audience
+Specifying variables for conditions
+Understanding the order of operations in conditions
+Work with condition groups
+Create a custom condition
+Component personalization
+A/B/n testing
+Get performance insights
+PUBLISH
+Publish content
+CONTENT
+Manage content
+MEDIA
+Manage media
+AI FEATURES
+Agentic studio
+Marketer MCP
+AI capabilities in SitecoreAI
+RESOURCES
+Glossary
+Toggle Sidebar
+SitecoreAI documentation for business users
+SitecoreAI documentation for business users
+Personalize
+Toggle full width
+Change font size
+Toggle focus mode
+Personalize
+In a world saturated with digital content, standing out as a company can be challenging. By personalizing the pages of your website, you can provide a more engaging, efficient, and satisfying user experience, leading to improved business outcomes.
+With the Page builder, you can personalize the site experience to target specific audiences, offering tailored content during a browsing session, but also across sessions for returning visitors. This ensures that visitors to your website always see content that meets their expectations and needs, turning ordinary browsing into an original and personal digital experience.
+You can build the target audience using any combination of the following conditions:
+Time
+- specific times of the day when someone visits the page.
+Date
+- specific dates, months, days of the week or of the month when a user visits the page.
+Device
+- the type of device (for example, mobile, desktop, tablet) and operating systems (for example, Android, iOS) used to visit your page.
+Geography
+- the country, region, or state where the visitor is located when visiting the page.
+Visit
+- the pages visited before or during the visit to your webpage, or the number of previous visits to your website by the same user. For example, the New or returning visitor condition can identify that a user has previously been on the site, and show content related to what they were interested in on their last visit.
+User interaction
+- the referrer or UTM that led to the personalized page, or if the user is a new or returning user.
+Point of sale
+– your audience has visited one or more of your websites united under the same site identifier.
+After you have defined your audience, you personalize the page they will see by modifying one or more of its components. For example, you can change the content source of a component and update its content, hide another component, or replace it with another. Within each page variant, the user can choose to personalize any number of components, or keep their original version.
+In addition to personalization, the Page builder gives you real-time site and page analytics, with a performance dashboard per variant. You can also visualize the variant analytics' metrics side by side with the original. This gives you an insight into what is happening on your digital properties, and you can measure the impact of the changes you have made on a personalized page.
+Sitecore uses
+cookies
+to identify site visitors to apply personalization based on their behavior, such as the pages they viewed.
+The Page builder with Sitecore Personalize and CDP
+While the embedded features of Personalize cover most market use cases, you can benefit using it in combination with
+Sitecore Personalize and CDP
+:
+All the custom conditions you build in Sitecore Personalize will be available for use in the Page builder, in addition to the conditions available out of the box.
+You can use the data collected by CDP about your website visitors to create even more targeted audiences. For example, you can build an audience targeting website guests who have been members of your organization for over a year, to send them a special thank you message or offer for their fidelity.
+Note
+Upgrading to Personalize or CDP will not backfill historical data beyond the 30/60‑day retention for the Page builder, or the 40-session/20-order limits of standalone Personalize. Only data captured after licensing CDP is retained in full.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Copy link
+Open in
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

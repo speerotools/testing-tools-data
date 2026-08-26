@@ -1,0 +1,248 @@
+# https://docs.uniform.app/docs/guides/ai/scout/skills
+Skills for Scout | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+Using Scout
+Capabilities and limitations
+Skills
+Connect MCP servers
+Best practices
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Skills
+Skills are reusable, project-level instructions that teach
+Scout
+how your team works. Think of them as playbooks Scout can follow: your team's naming conventions, your SEO checklist, the steps you take whenever you create a landing page.
+You author a skill once. Scout uses it automatically (always or on demand) in every conversation, in every project where the skill is enabled.
+Key concepts
+#
+Skill
+: a set of instructions for Scout, written in Markdown, with a name and a description.
+Visibility mode
+: controls whether Scout always loads the skill, or loads it on demand when its description matches the user's request.
+Active / inactive
+: a per-skill toggle for temporarily disabling a skill without deleting it.
+Skills vs AI guidance
+Skills and
+AI guidance
+are complementary, not alternatives.
+AI guidance
+describes the
+standards
+your AI-generated content should meet, like brand voice, tone, writing style, dos and don'ts, and metadata preferences. Guidance does not affect Scout's response behavior.
+Skills
+describe the
+procedures, conventions, and practices
+your team follows. They are knowledge for Scout's decisions.
+Who can manage skills
+#
+Skills are managed by
+team admins
+under
+Settings → Scout AI → Skills
+.
+Non-admin users see the skills Scout applies indirectly, in the way Scout responds, but they don't see the management page.
+How Scout uses a skill
+#
+Each skill has one of two visibility modes:
+Mode
+What Scout does
+When to use it
+Always included
+Scout adds the skill's content to every conversation in the project.
+Cross-cutting context and guardrails Scout should have on every task: shared business context (company name and purpose, target audiences), business goals, project-wide conventions (product naming or industry specific terms), and how Scout should behave in chat (for example, stay brief or adopt a particular personality).
+On-demand
+Scout reads the skill's
+description
+like a router prompt and pulls in the body only when a request matches.
+Procedure-style skills that are only relevant in specific situations (for example "Translate a landing page", "Run an SEO audit").
+Write on-demand descriptions like router prompts
+For on-demand skills, Scout only sees the
+name and description
+when deciding whether to load the skill — the body stays out of context until the description matches. The description has to carry the trigger on its own.
+Phrase it imperatively:
+Use when the user asks to <thing>
+.
+Include phrasings users might actually type, especially ones that don't name the procedure directly ("set up a campaign" alongside "create a landing page").
+The clearer the trigger, the more reliably Scout loads the skill — and the less likely it fires on unrelated requests.
+For a deeper walkthrough see
+Optimizing skill descriptions
+.
+Limits
+#
+Up to
+10 skills per project
+.
+Up to
+10,000 characters
+per skill, combined across the name, description, and body.
+Author a skill
+#
+Open
+Settings → Scout AI → Skills
+.
+Click
+Add skill
+.
+Fill in the drawer:
+Field
+Description
+Name
+Short, human-friendly name for the skill (shown in the list).
+Description
+One-paragraph summary of what the skill is for. Required for on-demand skills, since Scout uses it as the routing signal to decide when to load the skill.
+Always include this skill
+Toggle. On = always included; off = on-demand.
+Active
+Toggle off to temporarily disable the skill without deleting it.
+Content
+The content of the skill that Scout will see when it has been loaded.
+Click
+Save
+.
+Authoring tips
+#
+A skill is a prompt your team writes for Scout. The same rules of thumb that make a good prompt make a good skill.
+Start from your real work
+#
+The most effective skills come from procedures you've already executed manually. Before writing from scratch, look for:
+Slack threads or tickets where you walked someone through "how we do X here".
+Existing runbooks, style guides, naming conventions, or onboarding docs.
+A conversation with Scout where you had to correct them the same way more than once.
+Promote those into a skill. A skill grounded in something your team has actually done will outperform anything written from generic best practices.
+Structure your skill
+#
+A consistent shape makes skills easier to read and easier for Scout to act on. A useful default:
+## When to use this skill [Short trigger description for on-demand skills, e.g. "Use this skill when the user asks to translate a landing page into a new locale."] ## Steps 1. [First action] 2. [Second action] 3. ... ## Gotchas - [Non-obvious fact Scout needs to know — soft-deleted records, fields with different names across systems, dimensions that must be exact] ## Examples - [Concrete example of the skill being applied] ## Don'ts - [Common pitfall to avoid]
+Copy
+Copied!
+Be specific and outcome-focused
+#
+Tell Scout what success looks like, not just the steps.
+Reference your project's actual components, content types, and patterns by name.
+Where there are existing conventions (slug format, hero copy length, OG image rules), state them.
+Provide defaults, not menus
+#
+If there are multiple ways to do something, pick one as the default and only mention alternatives as fallbacks. A skill that says "use the
+Landing page
+composition pattern" produces consistent output. A skill that lists three patterns and asks Scout to choose produces three different outputs across three runs.
+Calibrate strictness to risk
+#
+Not every step needs the same level of control. Match how prescriptive you are to how fragile each step is:
+Be strict
+for things that are risky, irreversible, or where the exact output matters — naming conventions, slug formats, required SEO fields, asset dimensions. Use imperative language ("Always set the OG image to 1200×630.").
+Leave room for judgment
+where multiple approaches are valid — headline phrasing, which supporting components to use, ordering of optional sections. Explain
+why
+the goal matters and let Scout adapt.
+Most skills mix both. Calibrate each step on its own merits.
+Keep them small and composable
+#
+One skill per procedure. A 10,000-character mega-skill is hard to maintain.
+Cross-reference Uniform docs instead of re-explaining a concept.
+Use "Always included" sparingly
+#
+Every always-included skill goes into every conversation, so keep them focused on things Scout genuinely needs every time. Good fits include:
+Shared business context — who you are, who you serve, what the site is for.
+Project-wide conventions or guardrails that apply across all work.
+Behavioral preferences for Scout in chat, such as keeping responses brief or adopting a specific personality.
+Default to
+on-demand
+for procedure skills so Scout only pulls them in when relevant.
+Iterate after you ship
+#
+Skills get better with use. After a skill is live:
+Watch how Scout actually applies it in chat. If they skip steps, the steps are probably ambiguous. If they do the wrong thing in a related-but-different scenario, the description or "When to use" section needs refining.
+For on-demand skills, try 3–4 different phrasings of the same request. If Scout sometimes loads the skill and sometimes doesn't, broaden or sharpen the description until it triggers consistently.
+Every time you have to correct Scout the same way twice, fold the correction into the skill.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+Capabilities and limitations
+Next
+Connect MCP servers
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+Key concepts
+Who can manage skills
+How Scout uses a skill
+Limits
+Author a skill
+Authoring tips
+Start from your real work
+Structure your skill
+Be specific and outcome-focused
+Provide defaults, not menus
+Calibrate strictness to risk
+Keep them small and composable
+Use "Always included" sparingly
+Iterate after you ship

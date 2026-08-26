@@ -1,0 +1,196 @@
+# https://docs.statsig.com/
+Statsig Overview | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+Quick links
+Key features
+Explore SDKs
+Client-side SDKs
+Server-side SDKs
+Integrations
+Learning resources
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+Statsig Overview
+Statsig Overview
+Ship, measure, & learn with the same tools as the world's largest Tech companies. Run thousands of A/B tests, safely rollout features, & dive deep on user behavior in a single, unified platform.
+Statsig is a unified platform for feature flags, A/B testing, and product analytics.
+Quick links
+Intro to Statsig
+Learn more about core concepts and features of Statsig.
+SDK Quickstart
+Install the Statsig SDK and get started in minutes.
+Warehouse Native
+Read about how to use Statsig with your data warehouse.
+Key features
+Feature Flags
+Control feature rollouts and manage deployments safely with feature flags.
+Experimentation
+Run A/B tests and experiments to optimize your product decisions.
+Product Analytics
+Analyze user behavior and product metrics with powerful analytics tools.
+You can use any of these features on top of your own data warehouse through
+Warehouse Native
+with no extract, transform, and load (ETL). Or, you can host your data in
+Statsig's infrastructure
+.
+Explore SDKs
+Statsig offers SDKs clients, servers, and integrations. These SDKs accommodate most codebase or deployment preferences:
+Client-side SDKs
+JavaScript
+Browser JavaScript
+React
+Client-Side React
+React Native
+Bare React Native SDK
+Next.js
+Next.js SSR, SSG & Client-Side
+Angular
+Angular bindings for Javascript SDK
+Swift
+iOS, MacOS, tvOS SDK
+Android
+Android Kotlin/Java SDK
+.NET Client
+Client SDK for .NET framework
+Roku
+Roku Brightscript SDK
+Unity
+Unity game engine SDK
+Dart/Flutter
+Flutter/Dart Mobile App SDK
+C++ Client
+C++ client-side SDK
+Server-side SDKs
+Node.js
+Node.js server SDK
+Java
+Java server SDK
+Python
+Python server SDK
+Go
+Go server SDK
+Ruby
+Ruby server SDK
+.NET Server
+.NET server SDK
+PHP
+PHP server SDK
+Rust
+Rust server SDK
+C++ Server
+C++ server SDK
+Integrations
+Webflow
+Webflow integration
+Shopify
+Shopify integration
+Segment
+Segment data connector
+Rudderstack
+Rudderstack connector
+Hightouch
+Hightouch integration
+mParticle
+mParticle connector
+Framer
+Framer integration
+Slack
+Slack notifications
+Integrations
+View more integrations
+If you don't see the SDK or framework you need, ask directly in the
+Slack Community
+.
+Learning resources
+Statsig University
+: A comprehensive collection of onboarding and training content, including a video
+Resource Library
+and a schedule of user training
+Webinars
+.
+Community
+: Join the
+Slack Community
+to connect with other users and get help from the Statsig team.
+Blog
+: Stay updated with the latest developments in product experimentation and feature management on the
+Blog
+.
+Use Cases
+: Discover
+Customer Stories
+to learn why customers love Statsig and how they use it to power their product development.
+Was this helpful?
+On this page
+Quick links
+Key features
+Explore SDKs
+Client-side SDKs
+Server-side SDKs
+Integrations
+Learning resources

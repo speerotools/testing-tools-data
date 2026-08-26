@@ -1,0 +1,80 @@
+# https://www.conductrics.com/architecture-integrations/
+Architecture & Integrations | Conductrics
+Skip to content
+Platform
+All features
+Experimentation
+Adaptive Optimization
+Active Research
+Personalization
+Architecture & Integrations
+Resources
+Company
+About us
+Security and compliance
+Contact us
+Documentation
+Book a demo
+Built to connect, designed to protect
+Conductrics sits seamlessly on top of your existing stack, giving you the enterprise–grade control over your data, your teams and your deployments.
+View integration documentation
+API-first, deployment agnostic
+Conductrics is built to integrate natively within your existing architecture and engineering workflows.
+Server-side & native SDKs
+Execute complex logic securely. Integrate via our REST API or official libraries for Node.js, Java, and Swift. Our mobile SDKs (iOS, Android, React Native) evaluate rules locally on the device, ensuring instant, offline-capable decisions.
+Client-side & self-hosted JS
+Get up and running quickly using our Local JS API via a simple script tag. For strict security compliance and version control, you can completely self-host the Conductrics JavaScript files on your own infrastructure.
+Edge computing
+Make your optimizations render faster and more reliably by executing logic directly at the CDN level. Conductrics Edge applies variation content before the page loads, and includes dedicated configurations for networks like Akamai.
+Connect your ecosystem
+We don’t want to be another data silo. Conductrics acts as a decision layer that connects your inputs to your outputs.
+Universal compatibility:
+We integrate natively with the tools you already use. Through our flexible integration options, tools like Contentsquare, Hotjar, Segment, and Mixpanel can automatically “read” your experiments and personalization logic without complex custom integration work.
+Cloud-native:
+Whether you need to ingest offline conversion data from AWS S3 or query Google BigQuery for real-time targeting, we connect directly to your cloud infrastructure.
+Streaming & analytics:
+Push your decision data where it needs to go. Stream events to your data lake via built-in Connectors for GA4, Adobe Analytics/AEP, and Snowplow, or a custom pipeline.
+Governance & workflow
+Move fast without breaking production. We provide the guardrails large teams need to experiment safely.
+Staging & QA:
+Never test in the dark. We support dedicated staging and production environments, allowing you to fully QA experiences and preview variations before they go live to real customers.
+Team control:
+Manage access with granular roles and permissions. We include SSO (SAML) and Multi-Factor Authentication (MFA) at no additional cost to ensure only authorized users can launch or modify tests.
+Automated monitoring:
+The system watches itself. Set up automated alerts for Sample Ratio Mismatch (SRM), unexpected traffic dips or status changes, notified via Slack or email, so you catch issues immediately.
+Security & privacy by design
+We are SOC 2 Type 2 certified, and GDPR– and HIPAA–compliant.
+Data minimization:
+Our architecture is designed to store only the data strictly required for decisioning. For sensitive use cases (like Surveys), we even offer a “Bring Your Own Database” option, so respondent data never rests on our servers.
+Optional Private Gateway:
+For ultra-strict requirements, you can deploy our Privacy Gateway on your own infrastructure. This sits between your users and our platform, stripping IP addresses and redacting sensitive traits before they ever leave your control.
+Read more about security and privacy
+Build an optimization stack you actually trust
+Give your marketing team the power to innovate, and your engineering team the flexibility to build it their way.
+Book a demo
+Unlocking The Power of Intentional Learning
+Platform
+Experimentation
+Adaptive Optimization
+Active Research
+Personalization
+Architecture & Integrations
+Company
+About Conductrics
+Security and compliance
+Meet the team
+Contact us
+Book a demo
+Resources
+Case studies
+Experimentation & Testing
+Predictive AI & Bandits
+Customer research & Intent
+Support
+Getting started
+Conductrics API
+Mobile SDKs
+© 2010-
+Conductrics, Inc.
+All rights reserved |
+Privacy Policy

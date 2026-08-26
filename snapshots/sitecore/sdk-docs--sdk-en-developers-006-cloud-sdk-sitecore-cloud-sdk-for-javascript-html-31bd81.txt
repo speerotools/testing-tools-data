@@ -1,0 +1,115 @@
+# https://doc.sitecore.com/sdk/en/developers/006/cloud-sdk/sitecore-cloud-sdk-for-javascript.html
+Sitecore Cloud SDK for JavaScript | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Developers
+Cloud Portal
+Open search
+0.6
+Search in the table of contents...
+Cloud SDK 0.6
+Sitecore Cloud SDK for JavaScript
+Comparison charts
+Release notes
+Getting started
+Cloud SDK concepts
+Developer guides
+Cloud SDK reference
+Upgrading
+Troubleshooting
+Glossary
+Toggle Sidebar
+Toggle full width
+Change font size
+Toggle focus mode
+Sitecore Cloud SDK for JavaScript
+Version:
+0.6
+The
+open-source Sitecore Cloud SDK
+lets developers easily integrate capabilities from various
+Sitecore digital experience platform (DXP) products
+Sitecore digital experience platform (DXP) products
+into
+Content SDK
+and
+JSS
+applications connected to SitecoreAI.
+The Cloud SDK provides a variety of packages
+available on npm
+.
+Integrate rich Sitecore DXP capabilities
+The Cloud SDK supports integrating the following Sitecore DXP capabilities:
+Real-time, unified tracking
+- track site visitors' behavior by capturing
+events
+events
+on your site in real time. The event with all its data is sent to Sitecore and becomes available in the various Sitecore DXP products your organization has access to: SitecoreAI, Sitecore CDP, Sitecore Personalize, and Sitecore Search. Tracking capabilities are provided by the Cloud SDK
+events
+package.
+Personalization
+- show personalized content to site visitors.
+Personalization
+Personalization
+capabilities are provided by the Cloud SDK
+personalize
+package.
+Search experiences
+- build
+search experiences
+search experiences
+, such as a search results page or a recommendation component, and capture events that occur inside them. Search capabilities are provided by the Cloud SDK
+search
+package.
+Integrate easily
+Although each Sitecore DXP product has fundamentally different capabilities, the Cloud SDK greatly simplifies integrating them into your app: it standardizes integration workflows and creates a consistent, unified developer experience. The Cloud SDK makes integration fast, seamless, and predictable.
+Integrate when you're ready
+The Cloud SDK makes it easy to integrate with different Sitecore DXP products at different times.
+For example, your organization might currently only use SitecoreAI and Sitecore Personalize. In that scenario, you'll use the Cloud SDK to integrate with Sitecore Personalize.
+If your organization later decides to start using Sitecore Search as well, your existing Cloud SDK integration will continue working: you won't need to learn to use other SDKs or REST APIs. You'll only need to make code updates to your existing Cloud SDK code to integrate with Sitecore Search.
+A suite of
+SaaS-enabled Sitecore products
+, each offering rich digital experience capabilities such as tracking, personalization, and search. The Cloud SDK supports the following Sitecore products:
+Sitecore CDP
+Sitecore Personalize
+Sitecore Search
+An action a site visitor performs in your app. For example, viewing a webpage, clicking a button, submitting a
+SitecoreAI form
+, searching for content, or any other interaction you want to track.
+When an event triggers,
+the event with all its data
+is sent to Sitecore and becomes available in the various Sitecore DXP products your organization has access to. This data drives real-time, unified tracking.
+The process of creating multiple variants of pages or components and then displaying those variants to different audiences depending on specific conditions. The Cloud SDK supports the personalization process by displaying the relevant content to your site visitors.
+An interaction that a site visitor has with a Sitecore Search implementation that influences their satisfaction and future behavior.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

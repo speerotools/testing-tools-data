@@ -1,0 +1,711 @@
+# https://amplitude.com/docs/amplitude-ai/amplitude-mcp
+Amplitude MCP Server | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Overview
+Global Agent
+Specialized Agents
+Custom Agents
+Agent Analytics
+Early Access
+Amplitude MCP
+Amplitude MCP Server
+Common tasks
+Guides and Surveys MCP tools
+Data warehouse MCP tools
+Claude Code
+Cursor
+ChatGPT
+Claude
+Gemini CLI
+Replit
+Lovable
+Figma Make
+Kiro
+Codex CLI
+GitHub Agent
+Other clients
+AI Feedback
+AI Visibility
+AI Settings and Controls
+AI Context
+Privacy and Security
+Prepare data for AI
+Docs MCP server
+On this page
+What the MCP is for
+Choose an interface for AI agents
+AI Context and reference files
+Tracking plan changes
+Remote server
+Regions
+Available tools and capabilities
+Progressive tool discovery
+Example progressive discovery flow
+Connect Amplitude MCP to your AI client
+Query examples
+Analytics and charts
+Dashboards and notebooks
+Experiments and feature flags
+Session Replay and debugging
+Feedback and opportunities
+AI agent analytics
+Taxonomy and tracking plan
+Guides and Surveys
+Users, cohorts, and metrics
+Data warehouse
+Typical workflows
+Analysis workflow
+Creation and editing workflow
+Plugins
+Install the plugin
+Available skills
+Security and compliance
+Data access
+Privacy considerations
+Admin controls
+Scope MCP access with roles
+Troubleshooting
+Common issues
+Getting help
+Send feedback
+Technical specifications
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Amplitude AI
+/
+Amplitude MCP Server
+Amplitude MCP Server
+Amplitude MCP exposes Amplitude analytics, taxonomy, and content as tools that an AI client (Cursor, Claude, ChatGPT, Codex, Gemini, and others) can call over OAuth. It reads and writes charts, dashboards, experiments, cohorts, events, and properties from natural-language prompts, so you query and edit product data without SQL or the Amplitude UI. Setup takes about two minutes per client.
+Use Amplitude MCP when you want an AI client to read and modify Amplitude content with your account permissions. For read-only access to Amplitude's public documentation, use the Docs MCP server instead. For production event ingestion, use an Amplitude SDK or the HTTP V2 API. Amplitude MCP isn't an ingestion endpoint.
+Any existing Amplitude customer can use Amplitude MCP from an MCP-capable client such as Cursor, Claude Code, ChatGPT, Lovable, or Kiro.
+The
+official MCP servers registry
+on GitHub lists the Amplitude MCP server. You can also find MCP integration guides and examples in
+Anthropic's Claude documentation
+, the
+MCP quickstart resources
+, and
+Cursor's MCP documentation
+.
+What the MCP is for
+Use the Amplitude MCP for these jobs:
+Search and read Amplitude content: charts, dashboards, notebooks, experiments, cohorts, events, and properties.
+Query analytics, run ad-hoc segmentation, funnels, and retention, and analyze experiment results.
+Manage taxonomy: events, properties, transformations, group types, and tracking-plan branches.
+Create and edit objects: charts, dashboards, notebooks, experiments, cohorts, feature flags, and metrics.
+Check data warehouse and cloud storage connections: list import sources and export destinations, and review import and export job history.
+Don't use the Amplitude MCP for these jobs:
+Sending production or high-volume event data. The MCP isn't an ingestion endpoint. Emit events with an
+Amplitude SDK
+or the
+HTTP V2 API
+. The
+manage_amp_events
+tool registers event definitions in the tracking plan; it doesn't stream event data.
+Reading public documentation in an AI client. Use the read-only
+Docs MCP server
+instead.
+Choose an interface for AI agents
+When you build an AI agent that integrates with Amplitude, match each job to the right interface:
+Job
+Use
+Why
+Emit event data (production or high volume)
+SDK
+or
+HTTP V2 API
+The ingestion path. The MCP doesn't ingest events.
+Validate taxonomy, projects, and queries
+Amplitude MCP
+Read, search, query, and tracking-plan tools.
+Create or edit objects (dashboards, experiments, cohorts, charts)
+Amplitude MCP tools, or
+REST APIs
+in automation
+MCP for conversational workflows, REST APIs for scripted pipelines.
+Read public docs in an AI client
+Docs MCP server
+Read-only and unauthenticated.
+Anything the interfaces above don't cover
+Browser UI
+Use the Amplitude UI for the remaining gaps.
+AI Context and reference files
+When an MCP client calls
+get_amplitude_context
+with a project ID, the response includes your organization and project markdown AI Context text from
+AI Controls
+. Call this tool at the start of a session so the client applies your metric definitions, terminology, and business rules to later queries.
+AI Context has two configuration surfaces:
+Text instructions
+: Markdown you enter in AI Controls. Amplitude MCP returns org and project text when you call
+get_amplitude_context
+with a project ID.
+Uploaded reference files
+: Documents and spreadsheets you upload in AI Controls. These supplement in-product Agents with detailed reference material. Amplitude MCP tools don't return uploaded file contents. Put rules and definitions the client needs in text instructions instead.
+For repo-local instrumentation conventions, add an optional
+.amplitude/instrumentation-agent-context.md
+file at your repository root.
+Amplitude MCP marketplace skills
+such as
+instrument-events
+read this file during instrumentation workflows. This file is separate from AI Controls context.
+Configure AI Context in
+AI Context
+and
+AI Controls
+.
+Tracking plan changes
+Amplitude MCP exposes tools to read and write your project's tracking plan taxonomy. Create and update calls require the
+Use MCP (write)
+RBAC action.
+Read tools
+:
+manage_amp_events
+,
+get_properties
+,
+manage_amp_data_taxonomy
+, and related taxonomy tools in the tool roster below.
+Write tools
+:
+manage_amp_events
+: Create, update, delete, and restore events, custom events, and labeled events, and add ingested unexpected events to the plan.
+create_properties
+: Create event, user, or group properties.
+update_properties
+: Update event, user, or group property metadata.
+manage_amp_data_taxonomy
+: Run the branch workflow to create, update, merge, delete, review, and refresh tracking-plan branches.
+These tools modify tracking plan definitions in Amplitude Data. They don't send production event data. For the UI-based workflow, refer to
+Create a tracking plan
+.
+Remote server
+Regions
+Region
+MCP Server URL
+United States Server (Default)
+https://mcp.amplitude.com/mcp
+EU Residency Server
+https://mcp.eu.amplitude.com/mcp
+Use the Standard Server URL unless your Amplitude data resides in the EU region.
+Available tools and capabilities
+The Amplitude MCP provides comprehensive access to your analytics through these tools:
+Available tools
+Progressive tool discovery
+If you connect to Amplitude MCP manually and want to reduce token spend, add
+?discovery=progressive
+to the MCP URL to enable progressive tool discovery.
+Progressive URLs (copy/paste):
+US:
+https://mcp.amplitude.com/mcp?discovery=progressive
+.
+EU:
+https://mcp.eu.amplitude.com/mcp?discovery=progressive
+.
+In this mode, the initial tool list is intentionally small. The server discovers tools on demand, and all supported tools remain callable after discovery.
+Use this workflow:
+Call
+get_amplitude_context
+to confirm organization and project access.
+Call
+list_tool_categories
+to see available product surfaces.
+Call
+get_category_tools
+with a category name to discover tools in that surface.
+Call
+describe_tool
+for any tool you plan to call so you have the latest schema and required parameters.
+Call the tool directly once you confirm the schema.
+In progressive mode,
+tools/list
+returns discovery tools plus
+get_amplitude_context
+first. Use category discovery and
+describe_tool
+to find schemas before calling specific tools.
+Example progressive discovery flow
+Use this sequence in your MCP client conversation:
+"Run
+get_amplitude_context
+and pick the right project."
+"Run
+list_tool_categories
+and show which categories are available."
+"For the
+analytics
+category, run
+get_category_tools
+."
+"For
+query_amplitude_data
+, run
+describe_tool
+and then call it with valid parameters."
+Connect Amplitude MCP to your AI client
+Select your client to open its setup guide.
+Claude Code
+Terminal-based AI workflow with Claude Code CLI.
+Cursor
+AI panel inside the Cursor editor, with one-click install available.
+ChatGPT
+Browser or desktop ChatGPT with developer mode.
+Claude
+Claude.ai web or desktop app using a custom connector.
+Gemini CLI
+Google Gemini CLI terminal workflow.
+Replit
+Replit workspace AI, with one-click install available.
+Lovable
+Lovable AI chat for product builders.
+Figma Make
+Figma Make connector for design workflows.
+Kiro
+Kiro IDE with user or workspace scope.
+Codex CLI
+OpenAI Codex CLI terminal workflow.
+⌁
+Other clients
+Any MCP-compatible client that supports HTTP and OAuth.
+Query examples
+Analytics and charts
+What were the daily active users over the last 7 days?
+Show signup conversion rates by traffic source this month.
+Create a chart showing weekly active users broken down by platform.
+Why did this metric spike last week? [paste chart URL]
+Dashboards and notebooks
+Build an executive dashboard for our product launch.
+Summarize this dashboard for my exec meeting. [paste dashboard URL]
+Add a retention chart to the KPI dashboard.
+Remove the DAU chart from the overview dashboard.
+Update the title of the KPI notebook to "Q2 Growth Metrics".
+Move the funnel chart to the top of the onboarding dashboard and add a section header above it.
+Experiments and feature flags
+Create an experiment to test the new checkout flow with a 50/50 split.
+Should we ship the new onboarding experiment? Analyze the results.
+Check on all running experiments and flag anything stale or missing metrics.
+Create a feature flag for the redesigned settings page.
+Session Replay and debugging
+Show me session replays where users rage-clicked on the checkout page.
+A user reported a bug on the billing page. Find their session and walk me through what happened.
+Audit the onboarding flow for UX friction using session replays.
+Feedback and opportunities
+What are the top customer complaints this month?
+How has feedback about the mobile app trended over the last 90 days?
+Find me the biggest product opportunities. Where are we losing users?
+AI agent analytics
+How are our AI agents performing? Show quality, cost, and error rates.
+What topics are users asking the AI assistant about?
+Investigate the low-quality AI sessions from yesterday. What went wrong?
+Taxonomy and tracking plan
+What branches exist in my project?
+Create a branch called "q3-cleanup" for tracking plan changes.
+Create an event called "Checkout Started" on the q3-cleanup branch.
+Add unexpected events "app_opened" and "checkout_completed" to the tracking plan.
+Create a user property called "plan_type" for my project.
+Merge the q3-cleanup branch into main.
+Guides and Surveys
+What are the published guides with the highest priority in my project?
+Which guides are live on the pricing page right now?
+Show me the full targeting and trigger configuration for guide 15731.
+Users, cohorts, and metrics
+Create a cohort of power users who completed 10+ sessions in the last 30 days.
+Create a "revenue per user" metric for the checkout experiment.
+Compare user behavior between converters and drop-offs in the onboarding flow.
+Sync my "High-intent buyers" cohort to Iterable.
+Data warehouse
+What warehouse import sources are configured for my project?
+Show me the recent import jobs for my Snowflake source. Which ones failed or completed with errors?
+Where does this project export its data, and when did each destination last succeed?
+Show me the manual backfill export jobs for my Snowflake destination.
+Typical workflows
+Analysis workflow
+Most analysis questions follow this pattern:
+Search
+: Find relevant charts, dashboards, or experiments.
+Retrieve
+: Get full definitions and metadata.
+Query
+: Execute data queries and return results.
+Analyze
+: Ask follow-up questions and dive deeper.
+Example conversation:
+You:
+Why did weekly active users drop last Tuesday?
+AI:
+[Searches for WAU charts, queries the data, identifies the drop]
+AI:
+Looks like WAU dropped 12% on Tuesday. Let me check if any experiments or deployments landed that day.
+AI:
+[Cross-references deployments and experiment launches]
+AI:
+A deployment shipped Monday evening that changed the session timeout. That likely caused the drop.
+You:
+Show me session replays from affected users.
+AI:
+[Finds replays, extracts interaction timelines, summarizes friction patterns]
+Creation and editing workflow
+You can create and edit Amplitude content directly through conversation:
+Create
+: Build new charts, dashboards, notebooks, experiments, cohorts, flags, or metrics.
+Configure
+: Specify parameters and settings conversationally.
+Refine
+: Edit and adjust layouts, metrics, or variants. For dashboards and notebooks, use
+use_amp_dashboards
+or
+use_amp_notebooks
+to add or remove charts, reorder content, and update metadata.
+Deploy
+: Save and use the content in Amplitude.
+Example conversation:
+You:
+Set up an A/B test for the new pricing page.
+AI:
+[Creates a "revenue per user" metric and a "checkout completion" guardrail metric]
+AI:
+[Creates the experiment with control and variant, attaches both metrics]
+You:
+Add the product team as testers so they can preview it.
+AI:
+[Updates the flag with testers for the variant]
+You:
+Build a dashboard so we can monitor results.
+AI:
+[Creates a dashboard with experiment results, conversion funnel, and revenue charts]
+Plugins
+The
+Amplitude MCP Marketplace
+is the official open-source plugin repository for Amplitude MCP. It provides a curated set of reusable skills, agents, and commands that extend what you can do with the Amplitude MCP server in Claude Code, Cursor, Claude, and Codex.
+Install the plugin
+bash
+Copy
+# Add the Amplitude marketplace (one-time)
+/plugin
+marketplace
+add
+amplitude/mcp-marketplace
+# Install the plugin
+/plugin
+install
+amplitude@amplitude
+Available skills
+The skills table uses seven areas: core analytics, product insights, session replay and debugging, AI agent analytics, analytics instrumentation, briefings, and bonus.
+Core analytics
+Skill
+Description
+create-chart
+Create Amplitude charts from natural language, with automatic event discovery, filters, groupings, and visualization.
+create-dashboard
+Build dashboards from requirements or goals, organizing charts into logical sections with appropriate layouts.
+analyze-chart
+Analyze a specific chart in depth to explain trends, anomalies, and likely drivers.
+analyze-dashboard
+Synthesize an entire dashboard into talking points, surface concerns, and connect quantitative data to qualitative insights.
+Product insights
+Skill
+Description
+analyze-experiment
+Design A/B tests, monitor running experiments, and interpret results with statistical rigor.
+monitor-experiments
+Triage all active and recently completed experiments by importance.
+analyze-feedback
+Synthesize customer feedback into grouped themes such as feature requests, bugs, pain points, and praise.
+analyze-account-health
+Summarize B2B account health with usage patterns, risk signals, and expansion opportunities.
+discover-opportunities
+Find product opportunities by cross-referencing analytics, experiments, replays, and feedback.
+compare-user-journeys
+Compare two user groups side-by-side to surface behavioral differences.
+Session Replay and debugging
+Skill
+Description
+debug-replay
+Turn bug reports into numbered reproduction steps by extracting the interaction timeline from Session Replay.
+replay-ux-audit
+Watch multiple session replays for a flow and synthesize a ranked friction map.
+diagnose-errors
+Triage product issues across network failures, JavaScript errors, and error clicks.
+monitor-reliability
+Generate a proactive reliability report from auto-captured error data so issues surface before users report them.
+AI agent analytics
+Skill
+Description
+analyze-ai-topics
+Analyze what users ask AI agents about and how well each topic is answered.
+investigate-ai-session
+Deep-dive specific AI agent sessions or failure patterns for root-cause analysis.
+monitor-ai-quality
+Deliver a proactive health report on AI agents covering quality, cost, performance, and errors.
+review-agent-insights
+Retrieve, synthesize, and prioritize all recent AI agent results across agent types into a unified narrative.
+Analytics instrumentation
+Skill
+Description
+diff-intake
+Read a PR or branch diff and output a structured change brief for analytics planning.
+discover-event-surfaces
+List candidate analytics events from a change brief for PM prioritization.
+discover-analytics-patterns
+Map how analytics is already implemented in the codebase (SDK calls, naming, imports).
+instrument-events
+Build a concrete instrumentation plan and JSON tracking plan from prioritized event candidates.
+add-analytics-instrumentation
+End-to-end workflow: read code, decide what to track, and produce a full instrumentation plan in one pass.
+A typical flow runs
+diff-intake
+→
+discover-event-surfaces
+→
+instrument-events
+, with
+discover-analytics-patterns
+to align new tracking with existing conventions.
+Briefings
+Skill
+Description
+daily-brief
+Morning briefing of the most important changes across your Amplitude instance.
+weekly-brief
+Weekly recap of trends, wins, and risks to share with your team or leadership.
+Bonus
+Skill
+Description
+taxonomy
+Generate, validate, audit, and score event tracking plans, naming conventions, and data governance best practices.
+what-would-lenny-do
+Answer product strategy questions by searching Lenny Rachitsky's archive (requires
+lennysdata
+MCP server).
+Skills activate automatically based on your request. For example, asking "Why did this metric spike last week?" triggers the
+analyze-chart
+skill, and asking "Summarize this dashboard for my exec meeting" triggers
+analyze-dashboard
+.
+Security and compliance
+Data access
+The MCP server uses your existing Amplitude user permissions and access controls.
+You can only access Amplitude projects and data that you already have permission to view in your regular Amplitude account.
+You receive no additional data access beyond your current Amplitude account privileges.
+OAuth authentication ensures secure connection between the MCP server and your Amplitude account.
+Privacy considerations
+The AI service you're using (for example, Claude or Gemini) processes your Amplitude data. Review your organization's policies regarding AI-powered data analysis tools and consider compliance requirements (General Data Protection Regulation, California Consumer Privacy Act).
+Third parties (for example, Anthropic) develop and maintain the AI models used with this MCP server. Amplitude isn't responsible for model outputs, including hallucinations, inaccuracies, or errors resulting from model behavior, even if such outputs use your Amplitude data.
+Admin controls
+Amplitude enables MCP server access
+by default
+for all users in your organization. Organization administrators can opt out or restrict access if needed:
+Navigate to
+Settings > Content Access > MCP
+in your Amplitude organization settings.
+Use the content access controls to allow or block the Amplitude MCP server.
+Access restrictions apply to all MCP clients across all users in your organization.
+MCP access controls are an admin-only setting. Individual users can't override organization-level MCP restrictions.
+Scope MCP access with roles
+For finer-grained control than the org-level toggle, two RBAC actions govern what the MCP server can do on a per-project basis:
+Use MCP (read)
+(
+USE_MCP_READ
+) and
+Use MCP (write)
+(
+USE_MCP_WRITE
+). Assign these actions to a role, then attach the role to users, groups, or service accounts to scope exactly what an agent can read from or write to.
+Project-level control
+: restrict a role to read-only or no access on specific projects. An agent running as that user can't write to, or even read from, projects where the role doesn't grant the action.
+Groups and service accounts
+: the same actions apply to permission groups and to Amplitude MCP service accounts, so team-wide policies and automated agent workflows get the same controls as individual users.
+Mixed access
+: within a single session, a tool call such as
+manage_amp_events
+succeeds for a project where your role grants read access and fails for a project where it doesn't.
+Applies to everyone
+: these actions override admin status. If a role doesn't grant the action, MCP calls fail even for an org administrator.
+Enabled by default
+: existing roles already include these actions. Every role grants read access, and the Member, Manager, and Admin roles also grant write access, so nothing changes until an admin adjusts a role.
+To scope MCP access with a role:
+In
+Org Settings > Role Management
+, create or edit a role.
+In the
+AI Features
+category, enable
+Use MCP (read)
+and
+Use MCP (write)
+.
+Assign the role to a user, group, or service account, scoped to the relevant projects.
+Amplitude enforces these actions on each MCP tool call, project by project. The tool list stays visible to all clients, so a call to a tool the role doesn't permit fails at call time rather than disappearing from the list.
+Troubleshooting
+Common issues
+Authentication and OAuth issues
+Ensure your Amplitude account has proper project access.
+Check that you have logged into the correct Amplitude account.
+Make sure you're only logged into one Amplitude organization during the OAuth flow. Logging into multiple organizations can cause authentication issues.
+Try disconnecting the MCP connection and re-authenticating through the OAuth flow.
+Try logging out of Amplitude, then reconnecting.
+Desktop apps may require restart after configuration changes.
+Authorization page may appear to spin indefinitely (close tab after authentication).
+Missing data
+Verify you have access to the specific Amplitude project.
+Check if the data exists in your Amplitude interface.
+Ensure proper permissions for the requested data.
+Chart query issues
+AI platforms may truncate some large charts.
+Querying charts from dashboards may use default chart settings instead of saved dashboard filters.
+MCP client issues
+Cursor tool call failures
+: If MCP tool calls fail in Cursor, this is often due to expired or corrupted authentication tokens. Open the Command Palette (
+Cmd+Shift+P
+on Mac,
+Ctrl+Shift+P
+on Windows/Linux), type and select "Clear All MCP Tokens," then re-authenticate with your accounts.
+Token limit errors
+: If you receive token limit exceeded errors, try starting a new conversation thread or increase the maximum token limit in your MCP client settings.
+Connection timeouts
+: If queries are timing out, try breaking down complex requests into smaller, more focused questions.
+Tool loading failures
+: If tools aren't loading, restart your MCP client application and re-authenticate.
+Getting help
+If you encounter issues not covered here:
+Verify your setup matches the configuration examples.
+Test with a simple query like "What Amplitude projects are accessible?"
+Check that your Amplitude account has the necessary permissions.
+Contact your Amplitude administrator for organization-specific setup help.
+Send feedback
+Amplitude is constantly improving the Amplitude MCP server and would appreciate hearing from you. Share your feedback, suggestions, or report issues using this
+feedback form
+.
+Technical specifications
+Transport Type:
+Streaming HTTP (Remote).
+Authentication:
+OAuth 2.0 with Amplitude.
+Was this helpful?
+On this page
+What the MCP is for
+Choose an interface for AI agents
+AI Context and reference files
+Tracking plan changes
+Remote server
+Regions
+Available tools and capabilities
+Progressive tool discovery
+Example progressive discovery flow
+Connect Amplitude MCP to your AI client
+Query examples
+Analytics and charts
+Dashboards and notebooks
+Experiments and feature flags
+Session Replay and debugging
+Feedback and opportunities
+AI agent analytics
+Taxonomy and tracking plan
+Guides and Surveys
+Users, cohorts, and metrics
+Data warehouse
+Typical workflows
+Analysis workflow
+Creation and editing workflow
+Plugins
+Install the plugin
+Available skills
+Security and compliance
+Data access
+Privacy considerations
+Admin controls
+Scope MCP access with roles
+Troubleshooting
+Common issues
+Getting help
+Send feedback
+Technical specifications
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

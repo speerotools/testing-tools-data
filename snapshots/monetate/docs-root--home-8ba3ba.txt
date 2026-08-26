@@ -1,0 +1,741 @@
+# https://docs.monetate.com/
+Monetate Knowledge Base
+Release Notes
+Developer Hub
+Support
+Monetate Platform
+Monetate Knowledge Base
+Refine
+Getting Started with Monetate
+Platform Introduction
+Monetate Experiences
+Supplemental Resources
+Search, Discovery, & Merchandising
+Product Recommendations
+Personalized Search
+Dynamic Bundles
+Product Finder
+Social Proof
+Product Badging
+Testing & Personalization
+A/B Testing
+Dynamic Testing
+Automated Personalization
+Platform Capabilities
+Building Actions
+Targeting Customers
+Identifying Audiences
+Content Manager
+Content Builder
+Custom Variables
+Feature Flags
+MONET AI
+Data & Reporting
+Customer Data
+Product Data
+Analytics
+Measuring Events
+Account Maintenance & Support
+Settings
+Support
+Certifications Training
+Platform Foundations Training
+Builders Expert Training
+Merchandiser Training
+Master Monetate in 30 Minutes
+Release Notes
+Archives
+Home
+Glossary
+Getting Started with Monetate
+Platform Introduction
+Types of Implementations
+The Monetate Session
+Navigating the Platform
+Platform Dashboard
+Settings Overview
+Account Analytics
+Web Experiences List Page
+Customer Data Overview
+Datasets List Page
+Actions List Page
+Events List Page
+Platform Organization Best Practices
+Master Monetate with Inspector, UI Secrets, & More
+Monetate Platform FAQ
+Monetate Experiences
+Monetate Experiences Overview
+Experience Statuses
+Configure the WHY of a Web Experience
+Default Metrics for Experiences
+Configure the WHO of a Web Experience
+Action Descriptions
+Action Slotting
+Action Conditions
+Add Variants to a Web Experience
+Configure the WHEN of a Web Experience
+Create a 100% Experience
+Create a Full-Page Test Experience
+Activate an Experience for Preview and Testing
+Preview Mode Limitations
+Experience QA Tips
+Troubleshooting an 'Unknown' Track
+Experience Priority
+Enable Auto-Promotion for Experiences
+View Experience Change History
+Duplicate a Web Experience
+Duplicate an Experience into a Market
+Web Experiences FAQ
+Experience Examples
+Create a Data Collect Experience
+Create an Experience to Target Logged-In Users
+Create a Free-Shipping Threshold Experience
+Target Actions to Fire on Specific Product Detail Pages
+Track Interactions with Sale Items
+Trigger a Lightbox Action for Out-of-Stock Items
+Drive Online Customers to Stores
+Create an Experience with Location-Based Dynamic Content
+Create a Full-Page Test Experience for Redirect with Persistent Parameters
+Marketing Action Templates
+Developer Action Templates
+Omnichannel Experiences
+Create an Omnichannel Experience
+Available Omnichannel Actions
+Best Practices for Omnichannel Experiences
+Supplemental Resources
+Using Regular Expressions in Monetate
+Accessibility Compliance Best Practices
+SEO and Monetate
+Search, Discovery, & Merchandising
+Product Recommendations
+Product Recommendations Overview
+Recommendations Overview Dashboard
+Global Settings
+Recommendation Algorithms
+Filters in Recommendations
+Boost and Bury
+Deep Dive into Product Recommendations
+Product Recommendations FAQ
+Recommendation Strategies
+Recommendation Strategies List Page
+Global and Local Recommendation Strategies
+Create a Recommendation Strategy
+Create a Recommendation Strategy for Market-Level Recommendations
+Create a Recommendation Strategy with a Recommendations Dataset
+Create a Recommendation Strategy with Offline Purchases Data
+Preview a Recommendation Strategy
+Delete a Recommendation Strategy
+Slotted Recommendations
+Slotted Recommendations Overview
+Slotted Recommendations List Page
+Create a Slotted Recommendation
+Delete a Slotted Recommendation
+Recommendations Actions
+Configure a Recommendations Action
+Configure a Recommendations Action with Slotting
+Configure an Omnichannel Recommendations Action
+Configure an Omnichannel Recommendations Action with Slotting
+Recommendations Experience Configuration Guide
+Suggested Recommendations Experiences
+Product Recommendations for Email
+Product Recommendations for Email Overview
+Create a Product Recommendations for Email Experience
+Recommendation Strategies for Recommendations Email Experiences
+Run-Time Context for Recommendations Email Experiences
+Customize the Recommendation Item Template
+Product Recommendations for Email Experience Analytics
+Recommendations Datasets
+Recommendations Datasets Overview
+Create a Recommendations Dataset
+Update a Recommendations Dataset
+Delete a Recommendations Dataset
+Product Recommendations Reporting
+Product Recommendations Reports
+Product Recommendations Reports Terminology
+Legacy Recommendations
+Legacy Recommendations Overview
+Endcap Guide
+Plan an Endcap
+Track Customer Engagement with Recommendations
+Recommendations API
+Legacy Recommendations FAQ
+Personalized Search
+Personalized Search Overview
+Preparing to Implement Personalized Search
+Configure an Omnichannel Personalized Search Action
+Personalized Site Search
+Search Results Customizations
+Boost or Bury Products in Search Results
+Pin Products atop Search Results
+Exclude Products from Search Results
+Create Synonyms
+Create URL Redirects
+Create a Personalized Site Search Experience
+Personalized Site Search Analytics
+Personalized Category Pages
+Manage Facets for Category Pages
+Boost or Bury Products on Category Pages
+Pin Products on Category Pages
+Exclude Products from Category Pages
+Create Scheduled Campaigns
+Import Default Rules and Scheduled Campaigns
+Create a Multi-Site Cluster
+Personalized Category Pages Analytics
+Content Pages Datasets
+Content Pages Datasets Overview
+Create a Content Pages Dataset
+Update a Content Pages Dataset
+Edit Associated Product Catalog Datasets
+Delete a Content Pages Dataset
+Dynamic Bundles
+Dynamic Bundles Overview
+Dynamic Bundles List Page
+Create a Bundle
+Preview a Bundle
+Configure a Dynamic Bundles Action
+Configure an Omnichannel Dynamic Bundles Action
+Create a Dynamic Bundles Email Experience
+Delete a Bundle
+Product Finder
+Product Finder Overview
+Product Finder List Page
+Create a Product Finder Questionnaire
+Configure a Product Finder Action
+Product Finder Style Guide
+Social Proof
+Configure a Social Proof Action
+Configure an Inventory-Based Social Proof Action
+Configure a Recommendation Strategy–Based Social Proof Action
+Configure an Omnichannel Social Proof Action
+Master Social Proof
+Product Badging
+Product Badging Overview
+Types of Badging Actions
+Configure a Product Badging Action
+Configure an Omnichannel Product Badging Action
+Badging Action Troubleshooting
+Testing & Personalization
+A/B Testing
+Create a Standard Test Experience
+Standard Test vs. Dynamic Testing Experiences
+Create a Multivariate Test Experience
+Dynamic Testing
+Create a Dynamic Testing Experience
+Dynamic Testing Experience Methodology
+Dynamic Testing vs Standard Test Experiences
+Dynamic Testing Experience Analytics
+Use Machine Learning to Enhance Testing
+Dynamic Testing Experiences FAQ
+Automated Personalization
+Create an Automated Personalization Experience
+Configure Engine Context
+Holdouts in Automated Personalization Experiences
+Automated Personalization Experience Analytics
+Understanding Automated Personalization Experience Analytics
+Engine Insights
+Automated Personalization Experience Iteration Guide
+Master Automated Personalization Experiences in 30 Minutes
+Automated Personalization Experiences FAQ
+Platform Capabilities
+Building Actions
+Actions to Insert New Content
+Actions to Edit Existing Content
+Countdown Timer Actions
+Lightbox Actions
+Actions to Set Cookies
+Data Collect Action
+Simulate Click/Event Action
+Add Action Conditions
+Master Action Templates in 30 Minutes
+Content Masking
+Manage Flicker
+Flicker Troubleshooting
+Fix Action-Rendering Issues with React Applications
+HTML Action Tips and Tricks
+CSS Tips and Tricks
+Actions FAQ
+Action Builder
+Action Builder Overview
+Build an Action
+Customize an Action
+Test an Action
+Duplicate an Action
+Reuse Actions
+Action Inputs
+Build a Sticky Banner Action
+Build a Product Recommendations Action
+Build a Product Recommendations with Slotting Action
+Build an HTML Countdown Action for a Cart Page
+Build an Exit Intent Lightbox on the Cart Page
+Build a Banner for Mobile Devices
+Build an Action Duplicating a Checkout Button on a Cart Page
+Use JavaScript to Poll for Necessary Resources
+jQuery
+Working with Element Selectors
+Element Selectors
+Action Insert Methods
+Selectors in Actions
+Use Multiple Selectors in Actions
+Targeting Customers
+Target Builder
+Target Builder Overview
+Build Targets for Web Experiences
+Test Targets
+Types of WHO Targets
+Cross-Device Behavioral Targets
+Named Segments
+Travel Targets
+Add Custom Targets to a Web Experience
+Configure a Datasets Target
+Configure a Disjoint Group Target
+Configure an On-Site Search Terms Target
+Create a Behavioral Triggers Extract
+Use Contentsquare Live Signals in a Web Experience
+Identifying Audiences
+Audience Explorer
+Audience Explorer Overview
+Define a New Audience
+Audience Explorer FAQ
+Audience Discovery
+Audience Discovery Overview
+Access Audience Discovery
+Audience Details Page
+Use Audience Data in an Experience
+Audience Discovery FAQ
+AdLink
+AdLink
+Content Manager
+Content Manager Overview
+Upload Fonts
+Upload a Locations List
+Content Builder
+Content Builder Overview
+Create Layered Content
+Add Dynamic Text to Creatives
+Use Location-Based Dynamic Text and Click Zones
+Use Dynamic Creatives in Experiences
+Use Content Builder to Create Multiple Versions of a Creative
+Custom Variables
+Custom Variables Overview
+Define a Custom Context Variable
+Feature Flags
+MONET AI
+MONET Assistant
+Getting the Most Out of the MONET Assistant
+Data & Reporting
+Customer Data
+Onboarding Customer Data
+Customer Dataset Upload Requirements
+Customer Attributes Datasets
+Customer Attributes Dataset Details Page
+Upload a Customer Attributes Dataset
+Update a Customer Attributes Dataset
+Update a Customer Attributes Dataset via SFTP
+Update a Customer Attributes Dataset via the Data API
+Customer Attributes Datasets FAQ
+Customer Datasets
+Customer Dataset Details Page
+Upload a Customer Dataset
+Update or Replace a Customer Dataset
+Update a Customer Dataset via SFTP
+Update Customer Data via the Data API
+Customer Datasets FAQ
+ID Collectors and Customer View
+Configure a Customer View
+ID Synchronization
+Cross-Device Testing
+Client-Side ID Collectors
+Create an ID Collector
+ID Collectors and Customer View FAQ
+Consumer Data Privacy
+Data Privacy Overview
+Data Privacy Regulations
+Use Compliance Tools to Remove Customer Data
+Consumer Data Privacy API
+Consumer Data Access API
+Product Data
+Product Catalog Datasets
+Implement a Product Catalog
+Product Catalog Specification
+Create a Product Catalog Dataset Schema
+Update a Product Catalog Dataset
+Update a Product Catalog Dataset via SFTP
+Update a Product Catalog Dataset via the Data API
+Assign a Default Product Catalog Dataset
+Delete a Product Catalog Dataset
+Common Product Catalog Validation Errors
+Custom List Datasets
+Create a Custom List Dataset
+Update a Custom List Dataset
+Offline Purchases Datasets
+Offline Purchases Datasets Overview
+Create an Offline Purchases Dataset
+Update an Offline Purchases Dataset
+Legacy Product Catalog
+Product Catalog Page
+Legacy Product Feed Specification
+Upload a Product Feed
+Categories
+Merchandiser Sets
+Product Catalog Mapping FAQ
+Analytics
+Statistical Confidence
+Default Metrics
+Analytics FAQ
+Experience Results
+Experience Qualifications and Results
+View Experience Metrics
+Custom Metrics in Experience Results
+Real-Time Counts
+View Tracked Actions in Experience Results
+Export Experience Results Data
+Dynamic Testing Experience Results
+Automated Personalization Experience Results
+Automated Personalization Experience Engine Insights
+Understanding Automated Personalization Experience Results
+Product Recommendations Reports
+Product Recommendations Analytics
+Product Recommendations Analytics Terminology
+Custom Reports
+Custom Reports Overview
+Create a Custom Report
+Journey Analytics
+Journey Analytics Overview
+Sankey Diagram
+Configure a Customer Journey Diagram
+Page Metrics
+Journey Analytics FAQ
+Third-Party Analytics
+Third-Party Analytics Overview
+Integrate with Contentsquare
+Integrate with Google Analytics
+Set Up a Google Analytics 4 Integration Using Google Tag
+Integrate with Google Analytics When Using Google Tag Manager
+Configure a Custom Third-Party Analytics Report
+Code Samples for Third-Party Analytics Integrations
+Third-Party Analytics FAQ
+Monetate Analytics Cloud
+Monetate Analytics Cloud Overview
+Monetate Analytics Cloud Data Dictionary
+Session Stream
+Session Stream Overview
+Making Use of Session Stream Data
+Get Interpretable Values with the Metadata API
+Session Stream FAQ
+Measuring Events
+Event Builder
+Event Builder Overview
+Build an Interaction Event
+Build an Impression Event
+Build a Page URL Event
+Build API Events
+Condition Options for Events
+Preview an Event
+Track Clicks on Sale Items
+Event Builder FAQ
+Default Metrics & Key Performance Indicators
+Add Custom Metrics to an Experience
+Custom Metrics in Experience Analytics
+Account Maintenance & Support
+Settings
+Integrations
+Integration Tools
+Install Monetate Inspector
+Configure Single Sign-On
+Manage First-Party Proxies
+Connect Shopify Checkout Extensibility to Monetate
+Integrate with AgilOne
+Markets
+Markets Overview
+Create a Market
+Delete a Market
+Sites
+Set Time Zones for Sites
+Manage SFTP Users
+Manage Stealth Groups
+Manage API Keys
+Settings Overview
+Manage Users
+Default Metrics for Experiences
+Engine Context
+Email
+Seasonality
+Support
+Contacting Support
+Certifications Training
+Platform Foundations Training
+Section 1: Platform Tour
+Platform Dashboard
+Section 2: Settings & Configuration
+Integration Page
+Manage Stealth Groups
+The Monetate Session
+Section 3: Monetate Experience Types
+Web Experiences Overview
+Build a 100% Experience
+Build a Standard Test Experience
+Build a Dynamic Testing Experience
+Build an Automated Personalization Experience
+Build a Full-Page Test Experience
+Build a Full-Page Test Experience for Redirect with Persistent Parameters
+Build a Multivariate Test Experience
+Experience Design Webinar
+Section 4: Analytics & Reporting
+Real-Time Counts
+Dynamic Testing Experience Results
+Automated Personalization Experience Results
+Custom Reports
+Statistical Confidence in Experiences
+Section 5: Third-Party Analytics Platforms
+Account Analytics
+Integrating Third-Party Analytics
+Google Analytics
+Contentsquare
+Session Stream
+Section 6: Identify Customers Across Devices
+Customer View Overview
+ID Synchronization Overview
+Cross-Device Testing
+Section 7: Images/Fonts/Content
+Content Manager Overview
+Introducing Content Builder
+Section 8: Data I/O
+Customer Data Onboarding Overview
+Section 9: User Management
+Manage Users
+Suggested User Role Assignments
+Section 10: Implementation Basics
+Implementation Overview
+Install the Monetate Inspector Browser Plug-In
+Collect Data Action
+Onboarding Customer Data
+Implementing a Product Catalog
+Integrating Third-Party Analytics
+Section 11: The WHY Part of Your Experience
+Event Builder Overview
+Configure Experience Metrics Tracking
+Section 12: The WHO Part of Your Experience
+Target Builder
+Understand WHO Targeting in Web Experiences
+WHO Target Types
+Travel WHO Targets
+Section 13: The WHAT Part of Your Experience
+Action Builder
+Action Conditions
+Combine Multiple Actions
+Data Collect Experiences
+Section 14: The WHEN Part of Your Experience
+Configure Experience Timing
+Section 15: The HOW Part of Automated Personalization Experiences
+Engine Context
+Section 16: Experience Management
+Experience List Page
+Experience Status
+Experience Priority
+Preview and Test Experiences
+Duplicate a Web Experience
+Experience QA Tips and Tricks
+Section 17: Develop a Monetate Program
+Plan for the Monetate Experience Sentence Structure
+Section 18: Identify Areas of Opportunity
+Define a Goal
+Case Study: Define Your Goals
+Identify Areas of Opportunity
+Case Study: Identify Where Customers Are Bouncing
+Understand the Conversion Funnel
+Section 19: Determine Your Strategy & Tactics
+Align Objectives to the Appropriate Audience
+Select the Experience Type That Best Fits Your Needs
+Agility Experiences
+Optimization Experiences
+Segmentation Experiences
+Personalization Experiences
+Section 20: Execute, Review, Analyze, Iterate
+Prioritize Experiences
+Review and Analyze
+Iterate
+Section 21: Platform Foundations Knowledge Assessment & Certification
+Take the Platform Foundations Knowledge Assessment
+Platform Essentials Practical Assessment Training Video
+Builders Expert Training
+Section 1: HTML Elements
+Commonly Used HTML Tags
+The Anatomy of a URL
+Section 2: CSS Elements
+CSS Basics
+CSS Positioning
+Element Selectors
+Introduction to Media Queries
+Section 3: Regular Expressions
+Regular Expressions (Regex) Basics
+Section 4: jQuery
+Introduction to jQuery
+Sizzle Selectors
+Section 5: The WHY Part of Your Experience
+Configure Experience Metrics
+Section 6: The WHO Part of Your Experience
+Understand WHO Targeting in Web Experiences
+Types of WHO Targets
+Travel Targets
+Section 7: The WHAT Part of Your Experience
+Overview of Action Builder
+Action Conditions
+Use Case: Create a Data Collect Experience
+Section 8: The WHEN Part of Your Experience
+Configure Experience Timing
+Section 9: The HOW Part of Your Experience
+Engine Context
+Section 10: Experience Management
+The Monetate Session
+Experiences List Page
+Experience Status
+Experience Priority
+Duplicate Web Experiences
+Preview and Test an Experience
+Limitations of Preview Mode
+Experience QA Tips
+Section 11: Action Builder 101
+Introducing Action Builder
+The Importance of Element Selectors in Actions
+Build an Action
+Customize an Action
+Test an Action
+Reuse Actions
+Duplicate an Action
+Section 12: Action Builder 201
+Action Insert Methods Explained
+Understand Lightbox Frequency
+Content Masking Overview
+Section 13: Action Builder 301
+How Monetate Impacts Page Load Time
+Third-Party Cookies vs. First-Party Cookies
+Action Slotting
+Combine Multiple Monetate Actions
+Use a Failsafe or Fallback Selector List When Building Actions
+HTML Action Tips and Tricks
+CSS Action Tips and Tricks
+Global CSS Styles
+Use JavaScript to Poll for Necessary Resources
+Monetate and iFrames
+Accessibility Compliance Best Practices
+Section 14: Action Builder Use Cases
+Build a Sticky Banner Action
+Build a Banner for Mobile Devices
+Duplicate a Checkout Button on a Cart Page
+Create a Free-Shipping Threshold Experience
+Target Actions to Fire on Specific Product Detail Pages
+Section 15: Target Builder 101
+Introducing Target Builder
+Create Targets
+Perform QA Testing on Targets
+Understand WHO Targeting in Web Experiences
+Add Custom Targets to a Web Experience
+Use Customer Datasets for Targeting
+Cross-Device Behavioral Targets
+Section 16: Target Builder Use Cases
+Create an Experience That Only Targets Logged-In Users
+Trigger a Lightbox Action for Out-of-Stock Items
+Section 17: Event Builder 101
+Event Builder
+Interaction Events
+Create API Events
+Add Custom Metrics to an Experience
+Custom Metrics in Experience Analytics
+Event Builder FAQ
+Section 18: Event Builder Use Cases
+Track Clicks on Sale Items
+Section 19: Builders Expert Knowledge Assessment & Certification
+Take the Builders Expert Knowledge Assessment
+Reference Materials: SEO Guide
+Monetate and SEO
+Reference Materials: Action Types
+Actions for Inserting New Content
+Actions for Editing Existing Content
+Actions to Display Lightboxes
+Actions to Display Countdown Timers
+Actions for Setting Cookies
+Collect Data Action
+Simulate Click Event Action
+Merchandiser Training
+Section 1: Product Recommendations
+Strategies List Page
+Global and Local Strategies
+Configure a Recommendation Strategy
+Configure a Strategy with a Recommendations Dataset
+Configure a Strategy with Offline Purchases Data
+Preview a Strategy
+Delete a Strategy
+Upload a Recommendations Dataset
+Section 2: Dynamic Bundles
+Introducing Dynamic Bundles
+Bundles List Page
+Create a Dynamic Bundle
+Preview a Dynamic Bundle
+Deploy a Dynamic Bundles Action
+Deploy an Omnichannel Dynamic Bundles Action
+Deploy a Dynamic Bundles Email Experience
+Delete a Dynamic Bundle
+Section 3: Product Recommendations for Email
+Introducing Product Recommendations for Email
+Deploy a Product Recommendations for Email Experience
+Selecting Strategies for Recommendations Email Experiences
+Run-Time Context for Product Recommendations Email
+Customizing the Recommendation Item Template
+Section 4: Social Proof
+Deploy a Social Proof Action
+Deploy an Inventory-Based Social Proof Action
+Deploy a Recommendation Strategy–Based Social Proof Action
+Deploy an Omnichannel Social Proof Action
+Section 5: Product Badging
+Introducing Product Badging
+Product Badging Actions
+Deploy a Product Badging Action
+Deploy an Omnichannel Product Badging Action
+Product Badging Troubleshooting
+Section 6: Merchandiser Knowledge Assessment & Certification
+Take the Merchandiser Training Knowledge Assessment
+Master Monetate in 30 Minutes
+Utilize Machine Learning for Enhanced Testing
+All About Automated Personalization Experiences
+Action Templates: What You Can Do in an Hour
+Go Deeper with Product Recommendations
+The Social Proof Is in the Pudding
+Master Monetate: Inspector, Engine API, UI Secrets, and More
+Release Notes
+2026 Release Notes
+Archives
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+Getting Started with Monetate
+Learn about the Monetate platform & Web experiences
+Search, Discovery, & Merchandising
+Deploy Product Recommendations, Dynamic Bundles, Personalized Search, & other key Monetate products
+Testing & Personalization
+Create a/b testing, Dynamic Testing, & Automated Personalization experiences
+Platform Capabilities
+Identify audiences, target customers, build actions, & more
+Data & Reporting
+Upload customer & product data, view experience analytics
+Account Maintenance & Support
+Configure your Monetate account settings, & learn when to contact Monetate Support
+Certifications Training
+Study these self-paced training modules to earn certifications
+Master Monetate in 30 Minutes
+Expand your skills by watching this webinar series
+Documentation Request Guide
+How to submit actionable documentation requests
+Style Guidelines
+Preferred terminology & styling for features, UI elements, & more
+Employee Login
+Copyright © 2025 Monetate. All Rights Reserved |
+Terms & Conditions
+|
+Website Privacy Policy
+|

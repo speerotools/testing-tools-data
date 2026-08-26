@@ -1,0 +1,142 @@
+# https://launchdarkly.com/changelog/alerts-anomaly-detection
+Alerts: Anomaly detection, custom messages, and inline graphs | LaunchDarkly
+[Virtual event] 6 new features for more control | Aug 26, 10 AM PT
+-
+Register
+.
+Skip to:
+Home
+Content
+Footer navigation
+Get a demo
+Platform
+CodeControl
+Ship confidently, with automated control built in.
+AgentControl
+One place to keep your agent behavior under control.
+Book a demo
+How it works
+Platform overview
+Feature flags
+Observability
+Experimentation
+Agent integrations
+Integrations
+Architecture
+Solutions
+By Use Case
+Release AI-built code
+Control AI agents
+Optimize AI performance & cost
+Self-heal systems
+Run experiments
+By Team
+AI engineers
+Developers
+DevOps & SRE
+Product managers
+Data scientists
+Resources
+Learn
+Blog
+Guides & ebooks
+Events & webinars
+Videos
+Success
+Academy
+Customer stories
+Professional services
+Partners
+Get Help
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Developers
+Docs
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Resources
+Product Updates
+Power analysis calculator
+Flagship engineering blog
+Community
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Pricing
+Sign in
+Book a demo
+Book a demo
+Product
+Updates
+[ What's launched
+at LaunchDarkly ]
+February 24, 2026
+Guarded Release
+Jay Khatri
+Alerts: Anomaly detection, custom messages, and inline graphs
+Alerts in LaunchDarkly Observability now support
+anomaly-based triggering
+,
+custom messages with Markdown and templating
+, and
+inline graphs in notifications
+. You can also use a new
+Test alert
+button to preview notifications before they fire.
+Previously, alerts relied on static thresholds. With anomaly detection, alerts can trigger on meaningful deviations in your metrics without manually tuning thresholds. Custom messages let you include structured context and runbook links, while inline graphs (for example, in Slack) give responders immediate visibility into metric trends.
+Availability
+GA for customers using LaunchDarkly Observability.
+Docs
+« All updates
+Ready to take control in prod?
+Get a demo
+Free trial
+CodeControl
+AgentControl
+Inboxes love LaunchDarkly.
+Get the latest on controlling code and agents in production, with tips, insights, and updates you can actually use.
+Company
+About Us
+Careers
+Media & Analysts
+Partner Program
+Terms & Policies
+Contact Us
+Community
+Support
+Support home
+Professional Services
+Documentation
+Status
+Do not Sell or Share my Personal Information
+Why Us
+Economic Impact of LaunchDarkly
+How LaunchDarkly works
+Trust & Security
+Trust Center
+LaunchDarkly vs. Competitors
+LaunchDarkly on AWS
+Terms & Conditions
+Privacy Policy
+©
+2026
+Catamorphic Co.
+Academy
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Flagship engineering blog
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Sign in
+Free trial

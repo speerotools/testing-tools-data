@@ -1,0 +1,165 @@
+# https://support.optimizely.com/hc/en-us/articles/45740092135693-Optimizely-Analytics-MCP-server-overview
+Optimizely Analytics MCP server overview – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Analytics
+Optimizely Analytics MCP server
+Optimizely Analytics MCP server overview
+Updated
+May 11, 2026 10:11
+The
+Model Context Protocol (MCP)
+is an open standard that lets AI agents connect to external tools and live data sources without copy-pasting data into prompts or writing custom API scripts. The Optimizely Analytics MCP server is a hosted service that exposes Optimizely Analytics to MCP-capable AI clients. From a single conversation, your agent can find events and properties, build Funnel, Retention, and Event Segmentation explorations, create and arrange dashboards, and analyze experiment results, all through natural language.
+Benefits
+The Optimizely Analytics MCP server brings analytics into the surfaces where you already work. You can ask questions like "
+show me a funnel from sign-up to first export over the last 30 days
+" or "
+what does the checkout test show for the last 14 days?
+" directly from your IDE, terminal, or browser-based AI client, without switching to the Optimizely Analytics UI or wiring up the API.
+You sign in with your Optimizely account. The MCP server reads and writes the same apps, events, dashboards, and experiments visible in the Optimizely Analytics UI. Your existing permissions apply.
+Prerequisites
+Before you connect, make sure you have all of the following:
+An
+Opti ID
+account.
+An Optimizely account with
+Optimizely Opal
+enabled and connected to at least one Optimizely Analytics app.
+Access to both the Opal instance and the Optimizely Analytics app you want to query.
+An AI client that supports remote MCP.
+When you authenticate, you connect to your Opal instance. The MCP server then loads any linked Optimizely Analytics apps.
+About Opti ID
+Opti ID is Optimizely's unified identity system. It is the single set of credentials you use to log in across Optimizely products, including Optimizely Analytics. If you already have an Optimizely account, you already have an Opti ID.
+About Opal
+Opal is Optimizely's agent orchestration platform. Optimizely Analytics MCP server authenticates through your Opal instance. The Opal instance links the connection to your data. You select the Opal instance during the OAuth flow the first time you connect.
+What you can do
+Optimizely Analytics MCP server groups its capabilities into three categories:
+Discover
+– Find events, properties, datasets, metrics, saved explorations, dashboards, experiments, and category IDs.
+Build
+– Create Funnel, Retention, and Event Segmentation explorations; create dashboards; add exploration and text tiles; rearrange tile layouts.
+Analyze
+– Interpret experiment scorecards, summarize saved explorations, analyze Explore-tab tiles, and run saved metrics.
+Creating or updating dashboards and explorations modifies live data in your Optimizely Analytics app. Your agent confirms the target app and the changes it is about to make before committing them.
+Available tools
+Tool names start with
+oa_
+.
+Tool
+Category
+Description
+oa_find_events
+Discover
+Find analytics events by natural language query (for example, "user signed up").
+oa_find_entities
+Discover
+Find properties and attributes used for group-by or filters.
+oa_find_column_values
+Discover
+Look up real stored values for a property; used for filter validation.
+oa_find_datasets
+Discover
+Find actor datasets such as "mobile users".
+oa_find_metrics
+Discover
+Find saved reusable metrics.
+oa_find_explores
+Discover
+Find saved explorations.
+oa_find_dashboards
+Discover
+Find existing dashboards.
+oa_find_experiments
+Discover
+Find experiments by name.
+oa_list_categories
+Discover
+List category IDs for filtering searches.
+oa_create_explore
+Build
+Build a Funnel, Retention, or Event Segmentation exploration.
+oa_create_dashboard
+Build
+Create a new empty dashboard.
+oa_add_explore_to_dashboard
+Build
+Add an exploration tile to a dashboard.
+oa_add_text_tile_to_dashboard
+Build
+Add a text or header tile to a dashboard.
+oa_arrange_dashboard_tiles
+Build
+Reposition and resize dashboard tiles.
+oa_analyze_explore
+Analyze
+Fetch and analyze a saved exploration.
+oa_analyze_experiment
+Analyze
+Read and interpret an experiment scorecard.
+oa_experiment_explore_tab
+Analyze
+List explores in an experiment's Explore tab.
+oa_get_metric_data
+Analyze
+Run a saved metric and return the data.
+The server also exposes
+oa_list_apps
+and
+oa_confirm_app
+, which your agent uses automatically during session setup to resolve the active app.
+Who this is for
+Analysts and product managers in AI-powered editors
+Use
+Cursor
+,
+Claude Code
+, or
+Visual Studio Code with Copilot
+to build explorations, pull metric data, and check experiment results from your editor. The agent finds the right events and properties for you.
+Stakeholders using browser-based AI clients
+If you use
+Claude Desktop
+,
+Claude.ai
+, or
+ChatGPT
+, you can query your Optimizely Analytics apps and dashboards, ask follow-up questions about results, and have your agent draft summaries you can share, all in plain English.
+Analytics leads who scale measurement programs
+If you manage many dashboards, explorations, and experiments, the MCP server speeds up your workflow. Find existing content with prompts like find dashboards related to activation. Build new content with prompts like create a growth dashboard with DAU, weekly retention, and the signup funnel. Pull experiment summaries on demand.
+MCP does not expose editing event schema, dataset definitions, or other admin-only objects. Use the Optimizely Analytics UI for those operations.
+Supported AI clients
+Optimizely Analytics MCP server works with any AI client that supports remote MCP. The clients verified at launch are:
+Claude Code (CLI)
+Claude Desktop
+Claude.ai
+Cursor
+Visual Studio Code
+Windsurf
+To get connected, see
+Optimizely Analytics MCP server quickstart
+. For per-client setup steps, see
+Install Optimizely Analytics MCP server
+.
+Article is closed for comments.
+Articles in this section
+Optimizely Analytics MCP server overview
+Optimizely Analytics MCP server quickstart
+Install Optimizely Analytics MCP server
+Optimizely Analytics MCP server example prompts
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

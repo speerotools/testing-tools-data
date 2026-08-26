@@ -1,0 +1,79 @@
+# https://docs.uniform.app
+Uniform DXP documentation
+Home
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+On this page
+What is Uniform?
+Uniform is built from the ground up as the open, composable digital experience platform (DXP) that lets digital teams connect any content, data, and technology to build winning customer experiences faster and more cost-effectively than ever before.
+High-level architecture
+#
+Uniform high-level architecture
+Value of Uniform
+#
+Uniform offers value to everyone within a digital team:
+For marketers and merchandisers
+#
+With Uniform you can enable visual, in-line editing on top of the modern web experiences developers build. This allows non-developers to create and launch new web experiences (landing pages, shopping experiences, mobile screens, emails, etc.) without being overly dependent on developers.
+Uniform Canvas
+is a no-code visual experience builder. The experience optimization tool,
+Uniform Context
+, is fully integrated into a visual experience management, allowing marketers to launch a component-level personalization and A/B testing with a couple of clicks. This means fast delivery of optimized content without compromising Core Web Vitals and leveraging your existing marketing technology investments faster.
+For developers
+#
+Uniform allows web developers to use their front-end tools of choice and provides SDK to enable the functionality to empower marketers: in-line editing, real-time preview, content-driven routing, personalization, and A/B testing and redirect management.
+Uniform Mesh
+provides a couple of dozen integrations with leading CMS (legacy and Headless) and commerce back-ends, handling the page content aggregation and propagation of any external content directly into front-end components as well as fast global content delivery at the edge. This means developers spend less time on integration plumbing, caching, GraphQL aggregation, etc., and can focus on uniquely interesting front-end engineering problems.
+For enterprise architects
+#
+Uniform provides the only open composable approach on the market that's also compatible with the existing investments in enterprise CMS and DXP technologies. This ensures two things are in place from a sustainable architecture perspective:
+Incremental approach towards monolith to composable migration, allowing to move at your own pace, component by component and mix and match legacy and modern content sources/APIs.
+Evolutionary architecture with the ability to hot-swap any content source of the composable architecture when needed - CMS or commerce and evolve the front-end and CDN layer independently thanks to the physical de-coupling of the experience layer.
+For IT teams
+#
+The "Bring Your Own" aspect at every layer of the stack, including front-end, CDN, CMS, and commerce, allows the IT teams to reuse the existing investments in their infrastructure and assemble the composable digital experience stack with Uniform their way without switching CDN providers, or any disruptive changes to the current systems.
+Navigate the docs
+#
+Learn more about the core concepts and capabilities that make up Uniform:
+Uniform unifies generative AI, A/B testing, and personalization features, with access to company-wide content, inside a visual experience cloud. With creation and deployment in the hands of the marketing team, engineering resources are freed from avoidable drains to maintain their focus on innovation. Uniform future-proofs existing technology investments and enables technology replacements and upgrades without interrupting the experience or its creation.
+Uniform consists of these key features to provide the tools marketers and developers need to do their best work.
+Get started
+Step-by-step guides to get developers incorporating Uniform into your applications.
+Learn the basics
+Learn the fundamental concepts and capabilities of Uniform.
+Guides
+Guides that cover how to use Uniform features, tools, and APIs.
+Integrations
+Learn what you can do with Uniform's pre-built connectors, and how to connect them to your application.
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+High-level architecture
+Value of Uniform
+For marketers and merchandisers
+For developers
+For enterprise architects
+For IT teams
+Navigate the docs

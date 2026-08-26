@@ -1,0 +1,125 @@
+# https://docs.uniform.app/docs/guides/ai/scout
+Scout - Uniform's AI agent | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+Using Scout
+Capabilities and limitations
+Skills
+Connect MCP servers
+Best practices
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Scout - Uniform's AI agent
+Scout is Uniform's AI agent. They work alongside you inside the dashboard, understand your project — your content, content models, patterns, releases, and optimization setup — and act on your behalf, from creating and editing content to building content models, optimizing experiences, configuring personalization, and managing releases.
+Scout, Uniform's AI agent
+When Scout makes edits, they are assigned to you as the current user and integrated into your normal workflow. Scout works exclusively with draft content, ensuring you maintain full control over publishing decisions.
+Getting started
+#
+Prerequisites
+#
+Ensure your team has
+AI credits
+available to use Scout.
+Once credits have been allocated, you should see Scout available in the global navigation bar.
+In case your team has no AI credits then reach out to your Account Representative from Uniform.
+You can open Scout from several places:
+Project dashboard "Scout" tab
+: the project dashboard has a dedicated Scout tab with a prompt input, inspiration prompts, and recent threads. In canvas and entry editors, Scout automatically picks up the page's context (selected component, entity, locale) when you open them from the header.
+Header
+: at the right end of the global header, click the Scout avatar to open or close the docked Scout sidebar. In the middle of the header, click the "What are we working on today?" prompt bar to open a popover with a prompt input and your recent Scout threads — submitting a prompt or picking a recent thread continues the conversation in the docked sidebar.
+Component inserter
+: when adding a component to a slot, use the Scout input at the top of the "All Components" view to describe what you want, and Scout will pick the right component and fill it in.
+Component highlighter menu
+: while editing a composition, use the highlighter menu on a component to start an AI-assisted personalization or A/B test based on that component.
+In this guide
+#
+Using Scout
+The chat interface, attachments, threads, activity rows, apply modes, and the pending-edits review workflow.
+Skills
+Teach Scout your team's repeatable procedures with project-level instructions.
+Connect MCP servers
+Let Scout use third-party tools (Linear, Notion, GitHub, partner CMSs, ...) from inside Uniform.
+Use cases and capabilities
+What Scout can help you with today
+Best practices
+How to get the best results from Scout and keep your conversations organized.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+About AI in Uniform
+Next
+Using Scout
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+Getting started
+Prerequisites
+In this guide

@@ -1,0 +1,141 @@
+# https://docs.geteppo.com/contextual-bandits
+Introduction | The Eppo Docs
+Skip to main content
+Webinar: How Delivery Hero Uses Switchbacks to Drive Marketplace Innovation
+Watch the recording
+here →
+Login
+Get a Demo
+Search
+Getting Started
+About Eppo
+Analysis quickstart
+SDK quickstart
+Contextual Bandit quickstart
+Switchback quickstart
+Core Concepts
+Flag and Experiment Configuration
+Data Management
+Experiment Analysis
+Contextual Bandits
+Introduction
+Actions and Contexts
+Creation and Deployment
+Measuring Performance
+SDKs
+Introduction
+Architecture
+Concepts
+SDK keys and environments
+Event Logging
+Client SDKs
+JavaScript
+Android
+Dart & Flutter
+iOS
+React Native
+Server SDKs
+Node
+.NET
+PHP
+Python
+Java
+Go
+Rust
+Ruby
+Elixir
+Datadog integration
+Best Practices
+Eppo Developer Tools - Chrome Extension
+Using Eppo SDK with pre-forking servers
+Guides
+Introduction
+Marketing Integrations
+Engineering Tutorials
+Metadata
+Advanced Experimentation Topics
+Migrations
+Debugging Metrics
+Reference
+Statistics
+Administration
+Architecture and Security
+REST API
+Webhooks
+Core Concepts
+Contextual Bandits
+Introduction
+On this page
+Contextual bandits
+Eppo's Contextual Bandits allows us to automatically optimize
+personalized
+user experiences.
+info
+If you immediately want to get started with Contextual Bandits, check out our
+Getting Started guide
+.
+Example use cases for Contextual Bandits
+​
+Contextual bandits are particularly well suited for
+lightweight and dynamic recommendation problems
+.
+Promotions
+​
+Suppose we have a rotating set of seasonal promotions that we can show to users. We can use Eppo's Contextual Bandit to automatically personalize promotions to particular users based on their past behavior. Because promotions are often short-lived, it is important to efficiently learn which users get the most value out of them.
+Dynamic feature highlighting
+​
+Product-led growth B2B companies use Eppo's Contextual Bandits to automatically personalize the features they show to their users. In this case, past user behavior can indicate which out of an expanding set of pro features are most relevant in encouraging users to upgrade. Or it can personalize landing pages to optimize for lead generation.
+Recommendations
+​
+Recommendations benefit not just from context of what the user searched for, but also who they are. Contextual bandits can augment recommendations by adding additional personalization context. This can dynamically feed into recommendation weights and optimize for click-through.
+Balancing exploration and exploitation
+​
+The main strength of
+multi-armed bandits
+is that they efficiently learn which actions are the most effective. Rather than measuring efficiency with respect to time (how fast we can find the best action), we measure it with respect to how many times a suboptimal action is selected. That is, multi-armed bandits carefully balance exploration (learning about new actions) and exploitation (showing the best action).
+This makes multi-armed bandits particularly suitable for dynamic use cases: where the action space is changing over time.
+Personalize user experiences leveraging context
+​
+Traditional multi-armed bandits focus on finding the single best performing action. That is, there is no personalization. Contextual bandits, on the other hand, incorporate
+context
+into the learning process, so that it learns an optimal action based on the context.
+Context is a generic term that can encompass a wide range of relevant information. For example, the context for a bandit problem finding optimal promotions can be based on:
+Subject context: For example, the subject's past behavior, demographic information, are they on a mobile device, etc.
+Action context: For example, the size of the discount, the type of product, the price, etc.
+Subject-action interaction context: For example, the brand affinity of the user to the product (based on past purchases, user reviews, etc.)
+Measuring impact using experiments
+​
+As with any other feature, we want to ensure that the impact of using contextual bandits is positive. Therefore, Eppo's Contextual Bandits are tightly integrated with our experimentation platform. This makes it easy to measure performance compared to a control group, whether that is a simple fixed action, or an elaborate recommendation system maintained in-house.
+Due to the tight integration with our experimentation platform, the analysis can leverage all of the same tools and metrics that you use in any experiment analysis: CUPED, Sequential and Bayesian analysis, explores and deep dives, guardrail metrics, reports, etc.
+Contextual Bandit Architecture
+​
+The Eppo Contextual Bandit implementation leverages the same architecture as our feature flags and experimentation. In particular, this brings two distinct advantages:
+Data warehouse native
+Low latency
+Data warehouse native
+​
+Eppo's Contextual Bandits implementation is fully data warehouse native. This means that all of the data used to train and test the bandits is stored in your data warehouse, and can be used for any analysis that you want. Furthermore, no sensitive data is sent to Eppo's servers.
+Low latency
+​
+Actions are selected in real-time by the Eppo SDK by evaluating the contextual bandit model locally. This allows for a very low latency, as no network requests are required.
+Edit this page
+Previous
+Switchback experiments
+Next
+Actions and Contexts
+Example use cases for Contextual Bandits
+Balancing exploration and exploitation
+Personalize user experiences leveraging context
+Measuring impact using experiments
+Contextual Bandit Architecture
+Data warehouse native
+Low latency
+Links
+Eppo
+Blog
+Eppo application
+Product updates
+Reference
+API reference
+Security
+Copyright © 2026 Eppo, Inc.

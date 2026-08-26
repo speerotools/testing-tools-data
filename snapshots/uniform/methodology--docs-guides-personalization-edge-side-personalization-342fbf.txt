@@ -1,0 +1,151 @@
+# https://docs.uniform.app/docs/guides/personalization/edge-side-personalization
+Edge-side personalization | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+Canvas personalization
+Edge-side personalization
+Activate personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Edge-side personalization
+Edge-side personalization enables personalization instructions to
+run on a CDN. This offers a number of advantages to personalization
+that runs on the client or a server without requiring any changes
+to the content authoring process.
+Edge-side personalization benefits
+#
+When customers look to achieve fast performance, elastic scale, enhanced security, and infrastructure efficiency of their web properties, they turn to Jamstack and static websites. Where static sites typically fail to deliver is when you need to alter the web experience of each individual visitor. The marketing users want to keep personalization and A/B testing capabilities, so they can continuously optimize the web experience and increase the conversions.
+While there are client-side tools that work on the DOM-level, this approach predates the modern virtual DOM-based front-end libraries and frameworks, like React and Vue. This causes constant conflict for DOM (HTML), which results in flicker, content swaps, poor UX for your visitors in general, as well as a negative impact on Core Web Vitals.
+This is when the digital architects turn back to the server-side rendering. Depending on the specific parameters of the solution, this may set you back in terms of infrastructure overhead and even performance. Going back from the Jamstack paradigm to more traditional server-side rendering can come with some trade-offs.
+This is where the edge-side processing of static sites comes to the rescue. Powered by the edge compute capability of a Content Delivery Network, this functionality allows to continue generating static pages at build-time (Jamstack) but also provides the ability to modify page contents before it reaches the user's browser.
+This allows keeping the best of both worlds: stellar performance, scale, and security characteristics that Jamstack is great for, and run personalization and A/B testing.
+You can see an example of the kind of performance benefit involved. And since this works on a variety of CDNs, you can use the system you prefer. The following is the result of a real test using webpagetest.org where you can see sub-second page-load time without any page flicker.
+Select a tab
+Netlify
+Vercel
+Netlify
+Vercel
+https://uniformedgep13ndemo.netlify.app/?utm_campaign=unfrmconf
+https://uniformedgep13ndemo.vercel.app/?utm_campaign=unfrmconf
+Functionality
+#
+The following functionality is possible with Uniform's edge-side personalization:
+Location-based personalization
+- CDNs that offer edge compute
+capabilities typically provide IP address-based location
+information to applications. Uniform exposes this location data
+as
+quirks
+that can be
+used to create
+signals
+for Uniform personalization.
+Request-based personalization
+- All information available in
+the HTTP request can be used for personalization. This includes
+query-string parameters (such as
+utm_campaign
+) and cookies.
+Visitor context personalization
+- Any information your app
+collects during the visitor's session can be used. This includes
+things like user preferences, profile details, and shopping history.
+CDP-based personalization
+- Visitor information can be loaded
+from a CDP - or any API-based data context provider, for that
+matter. Once loaded, this information can be used as a basis for
+personalization.
+Supported CDNs
+#
+Uniform edge-side personalization and A/B testing can run on any edge worker platform.
+Currently, we officially support the following CDNs. If your preferred CDN has edge compute capabilities but isn't listed above,
+contact us
+.
+Akamai
+using EdgeWorkers.
+Cloudflare
+using Workers.
+Netlify
+using Edge Functions.
+Vercel
+using Edge Middleware.
+Was this page helpful?
+Last modified
+3 minutes ago
+Previous
+←
+Canvas personalization
+Next
+Activate personalization
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+Edge-side personalization benefits
+Functionality
+Supported CDNs

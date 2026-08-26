@@ -1,0 +1,180 @@
+# https://docs.intelligems.io/
+Welcome to Intelligems | Intelligems Docs
+Intelligems Docs
+⌘
+Ctrl
+k
+Intelligems Docs
+Welcome to Intelligems
+Getting Started
+Getting Started
+Adding Intelligems Script to your Theme
+Updating the Intelligems Script
+Common Use Cases
+Best Practices
+General FAQs
+Billing FAQs
+Price Testing
+Price Testing - Getting Started
+Price Testing Integration Guides
+How to Set Up a Price Test
+Price Test QA Checklist
+Starting a Price Test
+Ending a Price Test
+Testing Prices with Subscriptions
+Multi-Currency Testing
+Price Testing FAQs
+Running a Price Test and a Theme Test at the Same Time
+Shipping Testing
+Shipping Testing - Getting Started
+How to Set Up a Shipping Test
+Shipping Test QA Checklist
+Starting a Shipping Test
+Ending a Shipping Test
+Shipping Progress Bar Integration
+Shipping Testing FAQs
+Content Testing
+Content Testing - Getting Started
+Content Test QA Checklist
+Ending a Theme Test
+Content Testing FAQs
+Troubleshooting Low Visitor Counts in a Split URL Test
+Personalizations
+Getting Started with Personalizations
+Personalization Modifications
+Theme Personalization Precautions
+Adding Targeting to a Personalization
+Previewing Personalizations
+Scheduling Personalizations
+Rolling Out Tests
+Offer Personalizations
+Personalizations FAQs
+OFFER PERSONALIZATIONS
+Getting Started with Merchandising Personalizations
+How to Set Up Onsite Upsells
+Integrating Components
+Upgrade Components
+Offer Personalizations Library
+Testing Merchandising
+How to Set Up a Price Test with Quantity Buttons
+Merchandising Experience QA Checklist
+Offers Limits
+Running a Large Number of Offer Personalizations with Shopify Functions
+Merchandising Combinations
+CHECKOUT
+Getting Started with Checkout Personalizations
+How to Set Up a Checkout Personalization or Test
+Testing Checkout Personalizations
+What You Can and Cannot Test in Checkout
+Checkout Test QA Checklist
+Checkout Personalizations Library
+Checkout FAQs
+Post Purchase Upsells
+Getting Started with Post-Purchase Upsells
+How to Set Up a Post-Purchase Upsell Personalization or Test
+Post-Purchase Upsell QA Checklist
+Post-Purchase Upsell FAQs
+General Features
+Targeting
+Onsite Editor
+Visual Experience Builder
+Atlas QA
+Image Onsite Editor
+CSS Styles and JavaScript Injection
+Global Styles
+Analytics
+Overview
+How Orders and Sessions are Attributed
+Order and Revenue Accounting
+Experiment Analytics
+Sitewide Analytics
+Custom Events
+How to Add Profit to Intelligems Analytics
+How to Add Product Groups to Intelligems Analytics
+Black Friday Live Tracker
+Data Sharing
+How to Calculate 90-Day Shopper LTV by Intelligems Test Group
+Analytics FAQs
+Performance Optimization
+Site Performance
+Optimizing Your Price-Test Integration
+Anti-Flicker Modes
+Edgemesh
+Integrations
+Webhook Integration
+Google Analytics 4 Integration
+Amplitude Integration
+Klaviyo Integration
+Heap Integration
+Segment Integration
+Heatmap Integrations
+Navidium Testing
+Corso Testing
+JUST Checkout
+SavedBy Testing
+Slack Integration
+Checkout Reviews Testing
+Checkout Champ Integration
+Shoptin Testing
+Truemed Testing
+Developer Resources
+Javascript API
+External API
+MCP Server
+Intelligems Theme Snippet
+Advanced Settings
+Cart Permalinks
+Custom Add to Cart and Order Completed Events
+Shopify's Universal Commerce Protocol (UCP) Compatibility
+Headless Storefronts
+Shopify Scripts is sunsetting
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Welcome to Intelligems
+What is Intelligems?
+Intelligems is the ultimate profit optimization tool. We provide data-driven solutions and help maximize profits for Shopify merchants wanting to optimize their content, prices, discounts, and shipping rates.
+Our mission is simple: we want to help e-commerce entrepreneurs improve their businesses and make more money, by helping you use data to manage your websites and profitability more effectively. We aim to provide independent e-commerce stores access to the same revenue optimization tools that power the growth and profitability of companies like Amazon and Uber.
+Why Intelligems?
+Our founders and several team members met at Via Transportation, a ridesharing company based in NYC. Over the course of five years, we gradually built out the tools, data, algorithms, and systems to compete with the rapidly evolving rideshare market.
+The most powerful tool we built was a dynamic pricing engine underpinned by robust A/B testing. Any question or hypothesis we had, we could simply run a test to get the (statistically significant) answer.
+Now, as Intelligems, we are bringing our learning, mindset, and toolkit to e-commerce operators, especially Shopify store owners.
+Looking for developer docs? You're in the right place, you can
+get started here
+!
+What can we test with Intelligems?
+Intelligems let’s you test just about anything on your Shopify store. See below for more details on the four different categories of tests Intelligems can help you run. If you don’t see what you’re looking for in one of those options, or aren’t sure of the best way to set up a specific test you have in mind, reach out to our support team
+here
+.
+Pricing
+Intelligems takes the guesswork out of setting your product prices by allowing you to A/B test prices in real time in order to find the “right” product prices to drive profit, revenue, and conversion boosts.
+Price Testing - Getting Started
+Shipping
+Testing your shipping rates and thresholds with Intelligems allows you to find rates that work for you and your customers. The right shipping profile can allow you to boost profits, maximize conversion without sacrificing on margin, or boost AOV.
+Shipping Testing - Getting Started
+Content
+Intelligems can run A/B tests for website imagery and copy, landing pages, Shopify themes or templates, UX, and more. With Google Optimize recently sunsetting, now is the right time to transition.
+Content Testing - Getting Started
+Experiences & Offers
+Experiences
+let you offer code-less content changes, promotions, volume discounts, and free gifts to particular audiences or all site visitors. You can test Offers via Experiences before deploying them to optimize your discount strategy. Integrate with Klaviyo flows, external advertisements, and landing pages to ensure consistent experiences for visitors. This includes things like testing your welcome offer, or gift-with-purchase thresholds to boost AOV.
+Getting Started with Personalizations
+Next
+Getting Started
+Last updated
+8 months ago
+Was this helpful?
+What is Intelligems?
+Why Intelligems?
+What can we test with Intelligems?
+Pricing
+Shipping
+Content
+Experiences & Offers
+Was this helpful?

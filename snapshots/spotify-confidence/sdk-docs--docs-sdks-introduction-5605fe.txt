@@ -1,0 +1,126 @@
+# https://confidence.spotify.com/docs/sdks/introduction
+Confidence SDKs - Confidence Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Sign up and get started with Confidence today!
+Create your account
+Confidence Documentation
+home page
+Search...
+⌘
+K
+Blog
+Bootcamp
+Support
+Status
+Confidence App
+Sign up and get started with Confidence today!
+Create your account
+Confidence Documentation
+home page
+Search...
+⌘
+K
+Ask Assistant
+Support
+Status
+Confidence App
+Confidence App
+Search...
+Navigation
+Get Started
+Confidence SDKs
+Get Started
+Confidence SDKs
+Copy page
+Copy page
+Confidence provides SDKs for multiple languages and platforms, with the goal of managing and simplifying flag resolving.
+Copy page
+Copy page
+All the Confidence SDKs support the
+OpenFeature
+standard, a project from
+Cloud Native Computing Foundation
+(CNCF) that aims to standardize feature flagging. With the OpenFeature integration your application interacts with the OpenFeature API and a
+Provider
+provides the connection to Confidence. This documentation refers to the overall setup as “Confidence SDK” for simplicity.
+​
+Server SDKs
+Confidence offers
+Server SDKs
+built on an open source
+Confidence Resolver
+—a Rust-based flag resolver that can run natively or as WebAssembly. These SDKs evaluate flag rules to flag values entirely on your infrastructure. The resolver syncs flag rules and logging with the Confidence backend periodically, in the background. This enables:
+Ultra-low latency
+: Flag evaluations happen locally in microseconds
+High reliability
+: No network dependency at evaluation time
+Go
+Go SDK
+Java
+Java SDK
+JavaScript/Node.js
+Node.js SDK
+Next.js
+Next.js with App Router
+Rust
+Rust SDK
+Python
+Python SDK
+Ruby
+Ruby SDK
+.NET
+.NET SDK (server)
+PHP
+PHP SDK
+​
+Client SDKs
+Client SDKs are a specialized form of local resolve designed for mobile and web applications. They resolve all flags once according to the evaluation context, and flag values are then read from a local cache. This approach works well when the evaluation context doesn’t change often—for example, a mobile client that sets the context on login or app start and maintains it throughout the session.
+iOS (Swift)
+Swift SDK
+Android (Kotlin)
+Kotlin SDK
+JavaScript (Web)
+JavaScript SDK
+Flutter
+Flutter SDK
+Unity
+Unity SDK
+.NET
+.NET SDK (client)
+​
+Edge Resolve
+The
+WebAssembly based
+resolver is also packaged to run on edge computing platforms. This enables flag evaluation as close to your users as possible, minimizing latency for geographically distributed applications.
+Cloudflare Worker
+Edge resolver for Cloudflare Workers
+Fastly Compute
+Edge resolver for Fastly Compute
+​
+Related Resources
+Context
+Configure evaluation context
+Apply Events
+Track flag assignments
+Flags Introduction
+Overview of feature flags
+Was this page helpful?
+Yes
+No
+⌘
+I
+twitter
+github
+linkedin
+On this page
+Server SDKs
+Client SDKs
+Edge Resolve
+Related Resources
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

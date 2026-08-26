@@ -1,0 +1,261 @@
+# https://www.zoho.com/mcp
+Zoho MCP | Zoho's Model Context Protocol to empower AI Agents
+Apps weren’t built for AI agents
+until now.
+Sign Up for Free
+Just prompt—or don’t prompt—and watch work get done.
+For decades, business apps have made users
+click
+type
+toggle
+and
+chase
+That ends now
+Meet Zoho MCP (Model Context Protocol), which enables developers to instantly transform business apps into intelligent, agent-ready systems—systems that think, act, and respond like a teammate, not just a tool.
+It connects LLMs like GPT or Claude to Zoho’s APIs, data models, and actions, so agents gain the context, access, and control they need to turn natural instructions into real actions across your business apps.
+Work won’t happen in
+tabs
+anymore. It’ll happen through agents.
+Not just another product, Zoho MCP redefines how Al agents integrate with business apps to help you empower your teams to work faster, smarter, and friction-free by letting agents handle what used to take clicks.
+The old way
+Manual clicks.
+Forms. Menus. Tabs.
+Your apps demand you adapt to them.
+The Zoho MCP way
+Natural language prompts.
+Multi-app execution via a single agent.
+API-native, agent-driven workflows.
+Autonomous by design
+Zoho MCP isn’t just for chat-based prompts. It can also be used by autonomous agents. That means you don’t have to prompt explicitly. It enables fully autonomous agents to monitor, reason, and act without human input.
+Some examples:
+Autonomous agent
+Auto-escalating unresolved support tickets overnight
+Monitoring deal progress and reassigning accounts
+Launching reports or alerts when anomalies are detected
+Whether the instruction comes from a user or the agent itself, Zoho MCP translates intent into action across your Zoho apps.
+Run these
+real-world prompts
+Here are some sample prompts for you to try in the playground.
+Sales
+Marketing
+Support
+Finance
+Sales
+Prompt:
+“Mark the Zylker deal as won and schedule a call with John for an onboarding meeting”
+Auto-update deals, trigger follow-ups, and log meetings.
+Marketing
+Prompt:
+“Schedule a campaign called ‘Summer Sale Blast’ for next Tuesday at 11 AM and target all leads from Bangalore.”
+Generate campaign reports, launch workflows, optimize content
+Support
+Prompt:
+“Search the desk for any open tickets. Mark them as in progress and send a reply that we are working on it and will update by end of the day”
+Escalate tickets, summarize threads, and auto-assign queries
+Finance
+Prompt:
+“Generate an invoice for Naveen Kumar from ABC Corp for ₹1200 on consulting services”
+Generate invoices, track payments, log expenses, and create financial reports.
+500+ integrations
+at your fingertips across Asana, Twilio, Zoho, and beyond.
+Zoho Apptics
+ActiveCampaign
+Notion
+Zoho People
+Microsoft To-Do
+Basecamp
+Zoho Mail
+Outlook
+awork
+Zoho Expense
+Freshsales
+OneDrive
+Zoho Desk
+Backlog
+Basin
+Zoho Billing
+Zoho Apptics
+ActiveCampaign
+Notion
+Zoho People
+Microsoft To-Do
+Basecamp
+Zoho Mail
+Outlook
+awork
+Zoho Expense
+Freshsales
+OneDrive
+Zoho Desk
+Backlog
+Basin
+Zoho Billing
+Demio
+Mailchimp
+Zoho CRM
+OnceHub
+PagerDuty
+Zoho Cliq
+GitLab
+Apify
+Zoho Books
+Zoho Survey
+Arattai
+Bigin
+GitHub
+Stripe
+Zoho Creator
+Twilio
+Demio
+Mailchimp
+Zoho CRM
+OnceHub
+PagerDuty
+Zoho Cliq
+GitLab
+Apify
+Zoho Books
+Zoho Survey
+Arattai
+Bigin
+GitHub
+Stripe
+Zoho Creator
+Twilio
+Give your AI agents real-world powers.
+Made for developers. Loved by agents.
+MCP standardizes how AI agents interact with Zoho applications and other third-party services
+Works with all LLMs
+Compatible with Claude, GPT, and other AI agents right out of the box.
+Built-in playground
+Test your integrations without writing code.
+Schema-first design
+Self-describing APIs with clear input/output contracts.
+Unified interface
+Consistent patterns across all Zoho applications.
+Drop-in compatible
+Works immediately with agent frameworks and tools.
+Secure, permission-scoped
+OAuth-based authorization ensures proper access control.
+How it works
+MCP provides a standardized way for AI Agents to interact with Zoho applications and third-party services
+Step 1: Agent prompt
+The AI agent sends a user request.
+Create a lead with an email as emma@zylker.com
+Step 2: Context gathering
+Agents fetch the relevant content.
+{
+"Module": "Leads",
+"instructions": "Create a new lead with email
+address emma@zylker.com. Please set the email
+as the primary contact method."
+}
+Step 3: MCP tool execution
+Agents call the right tool.
+{
+"url": "https://www.zohoapis.com/crm/v2/Leads",
+"body": "{\"data\":[{\"Email\":\"emma@zylker.com\",
+\"Last_Name\":\"\",\"First_Name\":\"Emma\"}]}",
+"method": "POST",
+"instructions": "Create a new lead in Zoho CRM with email address emma@zylker.com. Use the standard layout and include the email as the primary contact method."
+}
+Step 4: MCP tool response
+The tools return a success/failure response.
+{
+"data":
+{
+"status_code":"Success",
+"message":"Lead Created Successfully",
+"lead_id":"10000000000022"
+}
+}
+What our users say
+"Zoho MCP bridged the gap between data sitting in Zoho and decisions that need to happen fast. I connected Books, CRM, and Creator to Claude AI for my CA practice and client engagements. Clients now ask questions in plain English and get real-time answers from their own data. Month-end closures, lead follow-ups, invoice tracking, all reduced from hours to minutes. A game changer for any Zoho partner."
+CA Bhavik Bhanushali
+Founder & CEO
+Bhanushali & Bhanushali
+"Zoho MCP, along with Zoho Books, has transformed the way we handle our accounting workflows. By integrating it with tools like Claude and OpenClaw, we’re able to manage bills, invoices, and routine bookkeeping through simple AI-driven instructions. What once took hours of manual effort is now completed in a fraction of the time, with far less operational overhead. Zoho MCP has fundamentally changed how we approach day-to-day operations."
+Tushar Khattar
+Co-Founder
+Once Upon Me
+"We’ve been using Zoho MCP across multiple Zoho Bigin CRM and Zoho Books instances, and the impact has been significant. Across different brand environments, we now run sales reviews, extract financial insights, and analyze dealer performance, all through simple, natural conversations. At AllHome, this has completely transformed how we interact with our Zoho data — shifting from static dashboards to real-time AI-driven insights."
+Hardik Dedhia
+Co-founder & CTO
+AllHome.in
+"The moment I started using Zoho MCP, my first thought was "why didn’t this exist sooner?" It transformed time-consuming tasks like reporting, data entry, and follow-ups into simple, natural conversations. As a partner, it has completely redefined what we can deliver. One of our clients reduced weekly reporting from two days to just minutes, while another now accesses real-time CRM insights in the middle of client calls. This isn’t just an upgrade, it’s a genuine game-changer."
+Adithya R
+CTO & Co-Founder
+the desk
+"Zoho’s MCP has been a real game changer for our client implementations. As an early adopter, I’ve seen how smoothly it connects workflows, reduces manual effort, and speeds up delivery. For our clients, it is saving close to 40 minutes every day, creating measurable efficiency and a much better user experience."
+Oluwasegun O.O - (Oluwatoyin)
+Chief Evangelist
+IDEAIOUS Limited
+"Zoho MCP has transformed our implementation and data analysis workflows, making it effortless to unlock the full potential of Zoho apps. Connected via Cursor with Zoho Books, we now create customers from GST certificates and generate sales orders from proposal locations—auto-emailed to clients in minutes. We even onboarded 100+ Zoho Expense users in ~2 minutes. A true automation game-changer."
+Pulkit Om Gupta
+Founder
+USHMA
+Build agent-ready workflows across Zoho and third-party services, instantly.
+Sign Up for Free
+FAQ
+Product Understanding
+Technical
+Business Impact
+Access & Security
+Integration & Compatibility
+Product Understanding
+What is Zoho MCP?
+Zoho MCP is a product built around the Model Context Protocol (MCP), a standardized interface that allows AI agents to interact with business software. With Zoho MCP, you can create MCP Servers that expose tools, actions, and contextual data from Zoho apps in a way AI agents can understand and act upon, regardless of which LLM they use.
+While MCP is the open protocol that defines how agents communicate with business systems, Zoho MCP provides the infrastructure, configuration UI, security, and integrations needed to implement it quickly and securely within the Zoho ecosystem (and beyond). In short:
+MCP is the protocol
+Zoho MCP is the product that lets you stand up agent-ready endpoints, making Zoho apps executable by AI agents.
+How is MCP different from chatbot builders or automation tools?
+Zoho MCP isn’t a chatbot builder or an automation tool, it’s the execution layer that enables AI agents to take real action. Traditional chatbot builders focus on conversation flow. Automation tools execute predefined, rule-based workflows. Zoho MCP takes a different approach: it exposes your apps' tools, actions, and business context through a standardized protocol, so AI agents (powered by any LLM) can turn natural language into real outcomes.
+While LLMs handle intent understanding, MCP enables agents to:
+Access structured data (like deals, meetings, or tasks)
+Trigger product-level actions (like sending invoices or creating records)
+Coordinate multi-step workflows without rigid scripts
+Unlike chatbots that reply or automation tools that need manual configuration, Zoho MCP lets agents operate your apps directly, securely, and autonomously.
+Are AI Agents and Zoho MCP the same?
+No, AI agents and Zoho MCP are not the same.
+AI agents are intelligent systems often powered by LLMs like GPT or Claude , that interpret natural language and act on user intent. Zoho MCP is a product built on the Model Context Protocol (MCP), a standard that exposes structured tools, data, and actions from Zoho apps in a way agents can use. It allows developers to create MCP servers that agents connect to via an MCP client
+In this relationship:
+The agent handles the intelligence and interpretation.
+MCP provides the execution interface (what actions are available, how they work, and what’s allowed).
+Think of MCP as the infrastructure layer and agents as the brains and operators.
+Zoho MCP doesn’t make agents smarter, it makes them more capable of acting.
+What kind of AI agents can I build with MCP?
+You can build task-based, goal-based, or autonomous agents. Agents can be reactive or autonomous, depending on your goals.
+Examples include:
+A sales assistant that schedules meetings and sends proposals
+A support agent that triages tickets and notifies teams
+A project bot that tracks tasks and updates timelines
+Technical
+Do I need technical or coding experience to use MCP?
+Not at all. Through its UI, you can configure MCP servers, define tools, and manage authentication with minimal code. It provides a low-code way to expose Zoho app functionality to AI agents.
+What models, such as GPT or Claude, are supported?
+Zoho MCP is completely model-agnostic. It doesn't connect to or depend on any specific LLM. Instead, it exposes a standardized interface that any AI agent, powered by any LLM, can call through an MCP client.
+Whether you’re using GPT, Claude, a fine-tuned model, or an open-source LLM, as long as your agent speaks the MCP protocol, it can securely access tools, actions, and data across your Zoho apps.
+Business Impact
+How will this benefit my team or company?
+Zoho MCP dramatically cuts time spent toggling between apps, performing manual tasks, or managing workflows. Agents streamline execution, so your team focuses on decisions, not distractions. It boosts productivity, speeds up response times, and minimizes errors. It provides the structured tools, APIs, and secure access needed for agents to turn interpreted intent into real actions - across CRM, Calendar, Books, and more.
+While the LLM interprets natural language, MCP is what lets the agent act on it - by exposing data, context, and business logic in a standardized, secure way. So instead of just responding to users, MCP-enabled agents can actually get work done
+What kinds of workflows can MCP automate?
+Everything from lead follow-ups and internal notifications to deal tracking and project updates. If it’s a routine task that lives across Zoho apps—or even third-party tools—MCP agents can handle it with context and precision.
+Common workflows include:
+Lead follow-ups and meeting scheduling
+Sales proposals and contract approvals
+Ticket escalations and support routing
+Internal updates and stakeholder alerts, and more
+Access & Security
+Who can access the MCP playground?
+New users can sign up and start using MCP immediately, while Zoho users, developers, and partners can log in to access the MCP playground.
+Is MCP secure?
+Yes. MCP follows Zoho’s enterprise-grade security protocols. All data access and agent actions are governed by strict access controls, encrypted data handling, and audit trails, ensuring safe, compliant execution.
+How does MCP handle authentication and permissions?
+Agents operate under user-level permissions, so they can only perform actions that the user is authorized to do. Zoho supports OAuth to ensure secure identity management.
+Integration & Compatibility
+Which Zoho apps does MCP work with today?
+MCP integrates with many Zoho apps, including CRM, Mail, Calendar, Desk, Cliq, Projects, and WorkDrive. It leverages existing APIs and standard actions, so your agents can operate across tools natively.
+Does MCP support third-party tools like Asana or Twilio?
+Yes, you can extend agent actions to tools like Asana, Twilio, OneDrive, Notion, and more. MCP is designed to be flexible for multi-app workflows. With MCP, you can connect to 500+ third party apps. For any unsupported apps, please raise a request to
+support@zohomcp.com

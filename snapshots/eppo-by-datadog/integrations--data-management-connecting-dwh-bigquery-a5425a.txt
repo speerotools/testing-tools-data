@@ -1,0 +1,243 @@
+# https://docs.geteppo.com/data-management/connecting-dwh/bigquery
+Connecting BigQuery | The Eppo Docs
+Skip to main content
+Webinar: How Delivery Hero Uses Switchbacks to Drive Marketplace Innovation
+Watch the recording
+here →
+Login
+Get a Demo
+Search
+Getting Started
+About Eppo
+Analysis quickstart
+SDK quickstart
+Contextual Bandit quickstart
+Switchback quickstart
+Core Concepts
+Flag and Experiment Configuration
+Data Management
+Introduction
+Connecting a Data Warehouse
+Connecting BigQuery
+Connecting Databricks
+Connecting Redshift
+Connecting Snowflake
+Data Model
+Metrics Model
+Certified Metrics
+Organizing Metrics
+Warehouse Best Practices
+Data Pipeline
+Experiment Run Log
+Source Diagnostics
+Experiment Analysis
+Contextual Bandits
+SDKs
+Introduction
+Architecture
+Concepts
+SDK keys and environments
+Event Logging
+Client SDKs
+JavaScript
+Android
+Dart & Flutter
+iOS
+React Native
+Server SDKs
+Node
+.NET
+PHP
+Python
+Java
+Go
+Rust
+Ruby
+Elixir
+Datadog integration
+Best Practices
+Eppo Developer Tools - Chrome Extension
+Using Eppo SDK with pre-forking servers
+Guides
+Introduction
+Marketing Integrations
+Engineering Tutorials
+Metadata
+Advanced Experimentation Topics
+Migrations
+Debugging Metrics
+Reference
+Statistics
+Administration
+Architecture and Security
+REST API
+Webhooks
+Core Concepts
+Data Management
+Connecting a Data Warehouse
+Connecting BigQuery
+On this page
+Connecting BigQuery
+Preparing your Warehouse for Eppo
+​
+Before you connect Eppo to your data warehouse, it is recommended that you create a Service Account for Eppo. This Service Account should then be used to connect Eppo to your warehouse.
+Additionally, you will need to create a data environment for Eppo to write intermediary tables to, as well as grant the Service Account read access to tables you'd like Eppo to query SQL definitions from.
+1. Create a Service Account
+​
+Log into your GCP console.
+Open the Navigation menu.
+Hover over
+IAM & Admin
+and select
+Service Accounts
+from the submenu.
+Click
+CREATE SERVICE ACCOUNT
+in the service accounts header.
+Under
+Service account details
+, add an
+account name
+,
+ID
+, and optional
+description
+.
+Click
+CREATE
+.
+Under
+Service account permissions
+, add the following roles:
+BigQuery Job User (roles/bigquery.jobUser)
+Required
+Click
+CONTINUE
+.
+(optional) Under
+Grant users access
+you may choose to grant other users access to your new service account.
+Click
+CREATE KEY
+to create a json
+private key
+. A file will be downloaded to your computer, which you will later use when connecting to Eppo.
+2. Create Sandbox Dataset for Eppo
+​
+In the BigQuery SQL Editor, create a new dataset in the appropriate project:
+CREATE
+SCHEMA
+IF
+NOT
+EXISTS
+`
+<project>.eppo_output
+`
+;
+Grant role
+BigQuery Data Owner
+to the Eppo Service Account on the new dataset:
+GRANT
+`
+roles/bigquery.dataOwner
+`
+ON
+SCHEMA
+`
+<your-project>
+`
+.
+`
+eppo_output
+`
+TO
+"serviceAccount:<service_account_name>@<project>.iam.gserviceaccount.com"
+;
+Grant the Eppo Service Account read-access to your data:
+GRANT
+`
+roles/bigquery.dataViewer
+`
+ON
+SCHEMA
+`
+<your-project>
+`
+.
+`
+eppo_output
+`
+TO
+"serviceAccount:<service_account_name>@<project>.iam.gserviceaccount.com"
+;
+If you would like to provide more granular access, you can provide us with read-only access to specific tables or views by following the instructions
+here
+.
+Connecting your Warehouse to Eppo
+​
+Now that you have a proper Service Account created for Eppo with adequate privileges, you can use it to connect Eppo to your warehouse.
+Initial Configuration of Credentials
+​
+Open the JSON file created in Step 10 under
+Create a Service Account
+Log in to your Eppo account at
+eppo.cloud
+Click the
+Getting Started
+button in the top-right corner. Once on that screen, and within the
+Connect your Warehouse
+tab, click the
+Connect your data warehouse to Eppo
+button in the bottom right-hand corner of the screen.
+Once on the data warehouse connection screen, click the
+BigQuery
+tab. From there, you should be prompted to enter all of the necessary information for doing so. This information includes:
+Service Account JSON
+- From step 10 above
+BigQuery Dataset
+-
+eppo_output
+BigQuery Project
+- Name of the BQ project to which
+eppo_output
+belongs
+BigQuery Region
+- The region in which you created the
+eppo_output
+dataset
+Storage Bucket (Optional)
+- Cloud Storage bucket to use for staging of events logged with Eppo's
+Track API
+before inserting into BigQuery. Files will be automatically deleted from this bucket after insertion into BigQuery.
+Enter the values into the form (which should look like the screenshot below), then click
+Test Connection
+. Once this test succeeds, save your settings by clicking
+Test and Save Connection
+.
+Note
+: Eppo uses
+Google Secret Manager
+to store and manage your credentials. Credentials are never stored in plaintext, and Secret Manager can only be accessed via authorized roles in GCP, where all usage is monitored and logged.
+Updating Credentials
+​
+Credentials can be updated at any time within the Admin panel of the app.
+Edit this page
+Previous
+Connecting Eppo to your data warehouse
+Next
+Connecting Databricks
+Preparing your Warehouse for Eppo
+1. Create a Service Account
+2. Create Sandbox Dataset for Eppo
+Connecting your Warehouse to Eppo
+Initial Configuration of Credentials
+Updating Credentials
+Links
+Eppo
+Blog
+Eppo application
+Product updates
+Reference
+API reference
+Security
+Copyright © 2026 Eppo, Inc.

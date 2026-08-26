@@ -1,0 +1,438 @@
+# https://varify.io/en/userdocumentation/iso-27001
+Why Varify doesn't have ISO 27001 certification - and why that's not a problem - Varify.io - A/B Testing Platform
+Skip to content
+Functions
+Pricing
+For agencies
+Company
+Login
+Try for free
+Get a demo
+EN
+Menu
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Live
+Success Stories
+Card Set
+EN
+Functions
+Pricing
+For agencies
+Company
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Success Stories
+Card Set
+Try for free
+Get a demo
+General
+Competitor comparison
+Editor problems
+Create experiment
+Experiment start and playout
+Experts
+Get started
+Integrations
+User documentation
+Security
+Success Stories
+Targeting
+Tracking and evaluation
+Tracking evaluation
+Troubleshooting
+Visual editor
+Web analytics integrations
+Further contents
+Further integrations
+WordPress
+Search
+Popular keywords
+Support article
+Total
+Results
+No Record Found
+View All Results
+Why Varify does not have ISO 27001 certification - and why this is not a problem
+Table of contents
+Purpose of the article
+This document provides the Varify team with a clear, fact-based line of reasoning when customers or prospects ask why Varify does not have ISO 27001 (or equivalent) certification. It explains the architectural reasons why such a certification would be disproportionate, describes the security measures that Varify actually implements and provides ready-made text modules for sales, customer success and purchasing discussions.
+The short answer
+Varify does not store or process any personal data. ISO 27001 is designed to manage risks relating to information assets - in particular sensitive or personal data. Since Varify deliberately refrains from storing such data architecturally, the risks addressed by ISO 27001 do not apply to Varify. Instead, Varify relies on proportionate, GDPR-compliant measures and privacy-by-design principles that correspond to the actual risk profile.
+How Varify's architecture eliminates data risks
+Varify separates the experiment delivery from the result measurement. This central architectural decision determines Varify's entire data position.
+What Varify does
+Delivers a lightweight JavaScript snippet (11.5 KB) that applies visual or code-based changes to a website
+Assigns experiment variants to visitors via localStorage/sessionStorage (not via cookies)
+Sends experiment participation signals to the customer's own analysis tool (GA4, BigQuery, PostHog, Matomo etc.)
+What Varify does NOT do
+Does not collect, store or process personally identifiable information (PII)
+Does not set cookies and does not use persistent identifiers
+Does not create user profiles and does not track people across sessions
+Does not operate its own analysis database or data warehouse
+Does not receive, store or have access to conversion data, sales data or customer records
+All tracking, measurement and data storage takes place exclusively in the customer's analysis environment. Varify does not see, touch or store this data at any time.
+Why ISO 27001 is disproportionate for Varify
+ISO 27001 is a framework for establishing, implementing and maintaining an information security management system (ISMS). It is aimed at organizations that store, process or transmit sensitive information - in particular personal data, financial data, health data or intellectual property.
+The core controls of ISO 27001 address risks such as:
+Unauthorized access to stored data
+Data breaches and data loss
+Insecure data processing pipelines
+Insufficient access controls to sensitive systems
+Inadequate incident response for data-related incidents
+These risks presuppose that the provider holds data worthy of protection.
+If a provider's architecture is designed in such a way that no personal data is stored or processed, the threat model that ISO 27001 secures is fundamentally reduced.
+This is not an argument for not having any security measures at all - but for taking measures that are proportionate to the actual risk. The GDPR itself enshrines this principle in Article 32, which requires security measures that are „proportionate to the risk”.
+What Varify actually has
+Varify maintains security and compliance measures appropriate to its role as a client-side delivery tool without personal data storage.
+GDPR compliance by design
+Cookie-less architecture - no cookie consent required specifically for Varify
+No personal data stored by Varify
+No personal identifiers for experiment participants
+Privacy-by-design and privacy-by-default as architectural principles
+Data processing agreement (DPA)
+Complete DPA in accordance with Art. 28 GDPR, mandatory for all customers
+Documented technical and organizational measures (TOMs) as an annex to the AVV
+Sub-processor list with advance notification of changes
+Procedure defined to support the rights of data subjects
+Audit rights granted to the person responsible
+Infrastructure security (inherited controls)
+Varify's infrastructure runs on providers who themselves have extensive certifications:
+Provider
+Role
+Certifications
+AWS (Frankfurt, eu-central-1)
+Hosting, compute, storage
+ISO 27001, ISO 27017, ISO 27018, SOC 1/2/3, C5, PCI DSS
+Cloudflare
+CDN, DDoS protection, edge delivery
+ISO 27001, SOC 2 Type II, PCI DSS
+All data processing takes place within the EU (Frankfurt). For core operations, no data is transferred outside the European Economic Area.
+Security at application level
+TLS encryption for all data in transit (HTTPS enforced)
+Role-based access control within the Varify platform
+Secure software development practices
+Regular monitoring of dependencies and vulnerabilities
+Incident response procedure documented in the GCU
+Compliance status
+GDPR-compliant (EU data processing, no PII storage, DPA with TOMs)
+CCPA compatible
+Compatible with HIPAA-regulated environments (no PHI processed)
+Compliant with the Swiss revDSG (EU-compliant hosting)
+The proportionality argument
+The principle of proportionality is central to both the GDPR (Article 32) and the ISO 27001 standard itself (the selection of Annex A controls is risk-based). Requiring ISO 27001 from a provider that does not hold any personal data creates a compliance mismatch:
+Certification would cover risks that do not exist.
+The value of ISO 27001 lies in the protection of information assets. If there are no personal data assets, the certification addresses an empty threat model.
+The data is stored in the customer's analysis tool.
+The customer's GA4, BigQuery or Matomo instance - not Varify - is the system that stores experiment results and user data. Security assessments should focus on these systems.
+ISO 27001 is no guarantee of security.
+Certification confirms the existence of a management system, not the absence of vulnerabilities. A provider with ISO 27001 can still be affected by data breaches. A provider without can still have strong, appropriate security measures.
+Proportionate measures are more honest.
+Instead of aiming for certification, which would largely consist of „not applicable” controls, Varify invests in measures that are actually relevant to its architecture: secure delivery infrastructure, EU hosting, GDPR-compliant order processing contracts and transparent sub-processor management.
+Comparison: Where ISO 27001 makes sense and where it doesn't
+Scenario
+ISO 27001 appropriate?
+Why
+CRM provider with customer data storage
+Yes
+Stores and processes PII on a large scale
+Cloud storage provider
+Yes
+Stores sensitive documents and files
+Payment service provider
+Yes
+Processes financial data
+Analytics platform with its own data warehouse
+Yes
+Stores behavioral data, potentially PII
+Client-side A/B testing tool without data storage
+Disproportionate
+No PII stored, no data warehouse, pure delivery role
+Frequently asked questions (FAQ)
+Q: Will Varify aim for ISO 27001 in the future?
+A: We regularly evaluate our certification planning. Should our architecture evolve to store personal data, certification would become a priority. For our current architecture, we focus on measures that correspond to our actual risk profile.
+Q: Can you complete our security questionnaire without ISO 27001?
+A: Yes. We regularly respond to vendor security assessments and can provide detailed information on our infrastructure, data processing and compliance setup. Many of the ISO 27001-related questions are answered with „not applicable - no personal data stored” or covered by reference to the certifications of our infrastructure providers.
+Q: What about SOC 2?
+A: The same proportionality argument applies. SOC 2 Type II audits are designed for service providers that store and process customer data. Our infrastructure providers (AWS, Cloudflare) have SOC 2 certifications. For Varify's own operations - where no customer data is stored - SOC 2 would audit a data environment that does not exist.
+Q: Our internal policy requires ISO 27001 from all providers, without exception.
+A: We understand that. In practice, many organizations apply risk-based exemptions for providers that do not store personal data. We recommend discussing with your information security team whether Varify's architecture (no data storage, EU hosting, certified infrastructure providers, full AVV with TOMs) qualifies for such an exemption. We are happy to support this discussion with documentation and a technical walkthrough.
+Last updated: April 2026
+Responsible: Varify Software GmbH
+User documentation
+First steps
+How Varify.io works
+Varify Snippet - Implementation
+Set up tracking
+Start an A/A test and check the tracking
+Create experiment
+Chrome browser extension
+Best Practice
+CRO AI Audit
+Tracking & web analytics integrations
+Tracking with Varify
+Manual Google Tag Manager tracking integration
+Automatic GA4 tracking integration
+Create Custom Click Events
+Shopify Custom Pixel Integration via Google Tag Manager
+Shopify Tracking
+BigQuery
+PostHog evaluations
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+Consent - Tracking via Consent
+Advanced Settings
+Tracking with Varify
+Manual Google Tag Manager tracking integration
+Automatic GA4 tracking integration
+Create Custom Click Events
+Shopify Custom Pixel Integration via Google Tag Manager
+Shopify Tracking
+BigQuery
+PostHog evaluations
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+Consent - Tracking via Consent
+Advanced Settings
+Create experiment
+Create experiment
+Prompt Based Experiments (PBX)
+Quality assurance
+Start and stop experiments
+Time-controlled start and stop
+Redirect & Split URL Testing
+Duplicate variation
+Experiment with several variants
+Renaming experiments and variants
+Create multi-page experiment
+Create experiment
+Prompt Based Experiments (PBX)
+Quality assurance
+Start and stop experiments
+Time-controlled start and stop
+Redirect & Split URL Testing
+Duplicate variation
+Experiment with several variants
+Renaming experiments and variants
+Create multi-page experiment
+Targeting
+Audience Targeting
+Mutual exclusion of experiments
+Page targeting
+Audience Targeting
+Mutual exclusion of experiments
+Page targeting
+Reporting & evaluation
+Evaluate experiments in Varify.io
+Segment and filter reports
+Share report
+Audience-based evaluation in GA4
+Segment-based evaluation in GA 4
+BigQuery
+PostHog Tracking
+Exporting the experiment results from Varify
+Matomo - Results analysis
+etracker evaluation
+Calculate significance
+Evaluate custom events in explorative reports
+GA4 - Cross-Domain Tracking
+Evaluate experiments in Varify.io
+Segment and filter reports
+Share report
+Audience-based evaluation in GA4
+Segment-based evaluation in GA 4
+BigQuery
+PostHog Tracking
+Exporting the experiment results from Varify
+Matomo - Results analysis
+etracker evaluation
+Calculate significance
+Evaluate custom events in explorative reports
+GA4 - Cross-Domain Tracking
+Visual editor
+Campaign Booster: Arrow Up
+Campaign Booster: Exit Intent Layer
+Campaign Booster: Information Bar
+Campaign Booster: Notification
+Campaign Booster: USP Bar
+Add Link Target
+Browse Mode
+Custom Selector Picker
+Edit Content
+Edit Text
+Move elements
+Hide Element
+Keyword Insertion
+Redirect & Split URL Testing
+Remove Element
+Replace Image
+Responsive Device Switcher
+Style & Layout Changes
+Campaign Booster: Arrow Up
+Campaign Booster: Exit Intent Layer
+Campaign Booster: Information Bar
+Campaign Booster: Notification
+Campaign Booster: USP Bar
+Add Link Target
+Browse Mode
+Custom Selector Picker
+Edit Content
+Edit Text
+Move elements
+Hide Element
+Keyword Insertion
+Redirect & Split URL Testing
+Remove Element
+Replace Image
+Responsive Device Switcher
+Style & Layout Changes
+Further integrations
+Integrations
+Integrations
+Expert functions
+Add CSS
+Add HTML
+Add JavaScript
+Add JavaScript Reset
+Anti-flicker script
+Code Helpers
+Edit HTML
+Experiment API
+Add CSS
+Add HTML
+Add JavaScript
+Add JavaScript Reset
+Anti-flicker script
+Code Helpers
+Edit HTML
+Experiment API
+Security
+Security functions - overview of all features
+Role & Permission Management
+Multi Factor Authentication (MFA)
+Protection against session hijacking
+Activity Log
+Active Sessions
+Login History
+Security functions - overview of all features
+Role & Permission Management
+Multi Factor Authentication (MFA)
+Protection against session hijacking
+Activity Log
+Active Sessions
+Login History
+Troubleshooting / FAQ
+Troubleshooting (all)
+Problems with tracking and evaluation
+Problems with experiment start/delivery
+Problems with the editor
+Troubleshooting (all)
+Problems with tracking and evaluation
+Problems with experiment start/delivery
+Problems with the editor
+Further useful content
+Payment & Subscription
+Agency Account
+Step-by-step tutorials
+Multi Factor Authentication (MFA)
+Shopify optimization
+Shopify Checkout App
+Shopify Tracking
+Test Shopify Theme with Varify.io
+Shopify - Test PDP templates
+Shopify - Setting up a price test
+Test modules for Shopify Store free of charge
+WordPress optimization
+Test WordPress hidden content via overlay
+WordPress Redirect & Split URL Testing
+For nerds
+varify.debug
+varify_success and varify_error
+CNAME
+Experiment API
+Notice:
+Varify assumes no responsibility for the functionality of the code and information.
+It is the user's responsibility to ensure that the
+Test code thoroughly
+and implement them correctly.
+Platform
+Registration
+Login
+Pricing
+For agencies
+Functions
+Roadmap
+BigQuery
+Knowledge
+Blog
+Knowledge
+A/B Testing Guide
+Compare
+Varify vs. VWO
+Varify vs. Convert
+Support
+Contact
+Tutorials
+User documentation
+Demo Call
+Information on data protection
+Company
+About us
+Affiliate
+More about us
+Linkedin
+Imprint
+Terms of Service
+Privacy
+Privacy settings
+Platform
+Registration
+Login
+Pricing
+For agencies
+Functions
+Roadmap
+BigQuery
+Knowledge
+Blog
+Knowledge
+A/B Testing Guide
+Compare
+Varify vs. VWO
+Varify vs. Convert
+Support
+Contact
+Tutorials
+User documentation
+Demo Call
+Information on data protection
+Company
+About us
+Affiliate
+More about us
+OMR
+Imprint
+Terms of Service
+Privacy
+Privacy settings
+Varify.io® is available in several languages. I want to change to:
+DE
+DE
+EN
+IT
+PT
+TR
+ES
+FR
+Change Language
+Close & do not switch language

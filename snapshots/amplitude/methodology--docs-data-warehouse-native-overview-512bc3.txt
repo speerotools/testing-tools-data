@@ -1,0 +1,202 @@
+# https://amplitude.com/docs/data/warehouse-native/overview
+Warehouse-native Amplitude: Overview | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Overview
+Get Started
+Plan your data
+Organize your data
+Clean your data
+Enrich your data
+Environment settings
+Aggregated Metrics
+Integrations
+Troubleshooting
+On this page
+Create a warehouse-native project
+Connect to Snowflake
+Performance and optimization
+Constraints
+Event segmentation
+Funnel analysis
+Retention
+Cohorts
+Journeys
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Warehouse-native Amplitude: Overview
+Amplitude Academy
+Get Started with Warehouse-Native Amplitude
+Set up a warehouse-native project that lets you directly query your data warehouse, empower users with self-serve analytics, and streamline data management.
+Get started
+Warehouse Native is a legacy feature and isn't available to new customers.
+Warehouse-native Amplitude (WNA) runs custom analyses on data models built directly on data in your data warehouse, without ingesting event and end-user data into Amplitude. Because your data stays in the warehouse, you can unlock more datasets and newer ones, especially time-sensitive ones. WNA delivers insights into user behavior, identifies trends, and supports data-driven decisions, all based on data in your own data warehouse.
+Your data warehouse stores critical data on every aspect of your business. Some of that data never reaches Amplitude, which makes it inaccessible for Amplitude analyses.
+Create a warehouse-native project
+To create a Warehouse-native project in your Amplitude organization:
+In Amplitude, go to
+Settings > Organization settings
+.
+Click
+Projects
+.
+On the
+Projects
+tab, click
+Create Warehouse Native Project
+.
+In the modal that appears, enter a
+Project name
+that describes the project, then click
+Next
+.
+Set the
+Users and roles
+for your project from your organization's users.
+Amplitude creates the project and prompts you to connect your Snowflake instance.
+Connect to Snowflake
+Warehouse-native Amplitude uses a direct connection to Snowflake to generate queries and run them in your data warehouse. You decide the size of the warehouse that runs the Amplitude-generated queries. Create a service account so Amplitude can access the datasets in your Snowflake instance. Amplitude requires read access to these datasets (DB, Schema, and Table). Snowflake charges for the compute costs of queries that Warehouse-native Amplitude generates.
+After you provide the read-only credentials from Snowflake and validate the connection, create your first data model.
+Warehouse-native Amplitude supports a single connection (one set of query credentials) per project. If this is too restrictive for your needs, contact Amplitude Support.
+Performance and optimization
+Amplitude recommends
+clustering keys
+in tables to improve performance and reduce latency. Consider the date column as part of the key, since most queries include it.
+Constraints
+Warehouse-native Amplitude doesn't support the following
+formulas
+:
+HIST.
+PERCENTILE.
+ROLLWINBEFORE.
+CUMSUM.
+ACTIVE.
+ARPAU.
+FREQPERCENTILE.
+PROPCOUNT.
+PROPCOUNTAVG.
+PROPHIST.
+PROPMIN.
+PROPMAX.
+REVENUETOTAL.
+Some Amplitude charts include features that warehouse-native projects don't support. Unsupported features include:
+Event segmentation
+Segmenting by new and active users.
+Measuring events as cumulative.
+Real-time intervals.
+Event dropdown doesn't contain derived events, merged events, drop filters, top global events, any active event, or new user.
+Funnel analysis
+Viewing events in exact order.
+Measuring events as frequency, improvement, significance, A/B test, or time to convert.
+Calculating the sum of X.
+Retention
+Custom retention intervals.
+Usage interval view.
+Microscope.
+Cohorts
+Segmenting by new user or propensity.
+Event dropdown doesn't contain derived events, merged events, drop filters, computed properties, derived properties, prediction scores, top global events, any active event, or new user.
+Journeys
+Expanding events by property.
+Completed within session.
+Filter by paths > Expand by property.
+Microscope.
+Was this helpful?
+On this page
+Create a warehouse-native project
+Connect to Snowflake
+Performance and optimization
+Constraints
+Event segmentation
+Funnel analysis
+Retention
+Cohorts
+Journeys
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

@@ -1,0 +1,84 @@
+# https://doc.sitecore.com/cdp/en/developers/api/index.html
+Sitecore CDP for developers | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Users
+Developers
+Cloud Portal
+Open search
+en
+Search in the table of contents...
+Sitecore CDP Developer Documentation
+Developing with Sitecore CDP
+Data privacy
+Before you start sending data
+Integrating with Sitecore CDP
+Stream API
+Batch API
+REST APIs
+Data lake export service
+Toggle Sidebar
+Toggle full width
+Change font size
+Toggle focus mode
+Sitecore CDP for developers
+Sitecore Customer Data Platform (CDP) lets you collect, connect, and activate customer data across all the digital channels of your organization.
+The
+Stream API
+lets you collect and send real-time behavioral and transactional data about the users of your application to Sitecore CDP. Using the Stream API involves
+integrating your application with Sitecore CDP
+.
+The
+Batch API
+lets you upload large amounts of guest data and offline orders in an efficient manner to Sitecore CDP.
+The
+REST APIs
+let you retrieve, create, update, and delete data that is available in Sitecore CDP.
+The
+data lake export service
+lets you access all your organization's data from Amazon Simple Storage Service (Amazon S3) and download the data locally or copy it to another Amazon S3 bucket.
+Data models
+This documentation describes Sitecore CDP functionality for two different data models: 2.1 data model and 2.0 data model.
+Where applicable, a
+2.1
+and a
+2.0
+button distinguish between the two data models.
+If your organization purchased Sitecore CDP after March 2021, your instance of Sitecore CDP is using the 2.1 data model. To use this documentation, make sure that the
+2.1
+button is selected.
+If your organization purchased Boxever before 2021, your instance of Sitecore CDP is probably using the 2.0 data model. To use this documentation, click the
+2.0
+button in a topic that distinguishes between the two data models.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

@@ -1,0 +1,1753 @@
+# https://docs.abtasty.com/client-side/data-apis/public-api
+Public API | Client side experimentations | AB Tasty Documentation
+⌘
+Ctrl
+k
+Ask
+Platforms
+Pricing
+Resources
+More
+Use AB Tasty solutions
+Get started
+Join the user community
+Find quick Answers & Fixes
+Explore dev doc
+Release Notes
+Flagship - Deprecated
+GitBook Assistant
+Good afternoon
+I'm here to help you with the docs.
+What is this page about?
+What should I read next?
+Can you give an example?
+⌘
+Ctrl
+i
+AI
+Based on your context
+Send
+Welcome to our Client side documentation
+Tag
+Tag general
+Cookies and browser storage
+Campaign History
+Campaign types
+ABTasty object
+Global methods and variables
+Tag API
+JS events
+Debug Module
+Prioritization rules
+Self-hosting the tag
+Audiences
+Troubleshootings
+Data APIs
+Getting started
+Universal collect
+Public API
+Universal data connector API
+Data explorer
+Custom widgets
+Custom widgets
+Transaction tag implementation
+Transaction tag implementation
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Ask
+On this page
+Explore dev doc
+Client side experimentations
+Data APIs
+Public API
+Through your AB Tasty account, you can generate credentials linked to roles for the AB Tasty Public API. If you are a partner and want to build a program with our Public API, please contact us at product@abtasty.com
+What will you be able to do with our Public API?
+Thanks to our Public API and depending of the role of your credentials you will be able to do several thing such as:
+Get the tests information
+Manage status of every tests
+Manage users of your account
+Update the AB Tasty script
+Clear the AB Tasty script
+Get the framework checksum
+Each use case need specific access delivered through your AB Tasty's account settings. Please ask your admin to grant you with the correct access.
+Quick Start
+First of all, an admin of your account have to ask AB Tasty for Public API credentials.
+Authentication
+POST https://api.abtasty.com/oauth/v2/token
+Request
+Response
+https://api.abtasty.com/oauth/v2/token
+Ask
+Copy
+{
+"
+client_id
+"
+:
+"
+XXXXXX
+"
+,
+"
+client_secret
+"
+:
+"
+XXXXXX
+"
+,
+"
+grant_type
+"
+:
+"
+client_credentials
+"
+}
+Ask
+Copy
+{
+"
+access_token
+"
+:
+"
+12345678QZSEDRFGHJK234567SDFGH234567SDF
+"
+,
+"
+expires_in
+"
+:
+43200
+,
+"
+token_type
+"
+:
+"
+bearer
+"
+,
+"
+scope
+"
+:
+"
+XXX
+"
+}
+Arguments
+Parameter
+Type
+Required
+Format
+Description
+client_id
+string
+true
+Example: "2_xe68dghl0ghoo42vay79rytcv"
+The client ID
+client_secret
+string
+true
+Example: "34g7fpjzq2gww08w84owgrghuowk4goog4kkwkk4s0c057f48kksc"
+The client secret
+grant_type
+string
+true
+Value to use: "client_credentials"
+The grant type: client_credentials
+Headers
+Name
+Required
+Value
+Content-Type
+true
+application/json
+Accept
+true
+application/json
+Get my tests information
+With this role you will be able to:
+Get all tests of the account
+Get information of one test
+Get the variation of a test
+Get one specific variation
+Get modifications of a variation
+Get every links of the tests with third party tool
+Get one specific link of the test with a third party tool
+Get events set up in a test
+Get account's tests statistics
+Get all tests of the account
+GET /api/core/accounts/[account_id]/tests
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Filters
+Name
+Datatype
+Description
+Pattern
+Default
+_page
+integer
+Page of the collection
+10
+_max_per_page
+integer
+Limit of items per page
+10
+filter[name]
+string
+Search by name of the test
+filter[name_or_url]
+string
+Search by name and url of the test
+filter[search]
+string
+Search by name/url/id of the test
+filter[parent][]
+integer
+Search by parent id (0 for no parent)
+filter[type][]
+Search by test type
+ab/mastersegment/predictive/segmentation/ tunnel/mvt/multipage/ multivariate/subsegment/mobileapp/heatmap
+filter[folder][]
+integer
+Search by folder id (0 for no folder)
+filter[active]
+0 => pause ; 1 => play
+(0/1)
+filter[is_preprod]
+If is set only preprod test will be returned
+filter[is_schedule]
+0 -> test not schedule ; 1 -> test schedule
+(0/1)
+filter[exclude_tag][]
+string
+exclude specific tag of the collection
+filter[tag][]
+string
+only test with specific tag of the collection
+filter[_order][id]
+Order collecion by id
+(ASC/DESC)
+filter[_order][name]
+Order collection by name
+(ASC/DESC)
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get information of one test
+GET /api/v1/accounts/[account_id]/tests/[test_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Filters
+Name
+Datatype
+Description
+Pattern
+Default
+_max_per_page
+integer
+Limit of items per page
+10
+_page
+integer
+Page of the collection
+10
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get the variations of a test
+GET /api/core/accounts/[account_id]/tests/[test_id]/variations
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get one specific variation
+GET /api/core/accounts/[account_id]/tests/[test_id]/variations/[variation_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get modifications of a variation
+GET /api/core/accounts/[account_id]/tests/[test_id]/variations/[variation_id]/modifications
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+variation_id
+\d+
+integer
+ID of the variation
+Filters
+Name
+Datatype
+Description
+Pattern
+Default
+_max_per_page
+integer
+Limit of items per page
+10
+_page
+integer
+Page of the collection
+10
+filter[Operation]
+string
+Search by operation of the modification
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get a specific modification of a variation
+GET /api/core/accounts/[account_id]/tests/[test_id]/variations/[variation_id]/modifications/[modification_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+variation_id
+\d+
+integer
+ID of the variation
+modification_id
+\d+
+Integer
+ID of the modification
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get every links of the tests with third party tool
+GET /api/core/accounts/[account_id]/tests/[test_id]/toollinks
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Filters
+Name
+Datatype
+Description
+Default
+_page
+integer
+Page of the collection
+1
+_max_per_page
+integer
+Limit of items per page
+10
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get one specific link of the test with a third party tool
+GET /api/core/accounts/[account_id]/tests/[test_id]/toollinks/[toollinks_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+toollinks_id
+\d+
+Integer
+ID of the tool linked
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get events set up in a test
+GET /api/core/accounts/[account_id]/tests/[test_id]/global_modifications
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Filters
+Name
+Datatype
+Description
+Pattern
+Default
+_page
+integer
+Page of the collection
+1
+_max_per_page
+integer
+Limit of items per page
+10
+filter[type]
+string
+Type of the global modification (plugin or actionTracking)
+A valid type
+filter[_order][id]
+Order collection by id
+(ASC/DESC)
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get account's tests statistics
+GET /api/core/accounts/[account_id]/general_statistics
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Manage my tests
+With this role you will be able to update status of any campaign. All known statuses of the campaign:
+draft
+,
+ready_to_launch
+,
+play
+,
+pause
+,
+in_qa
+,
+analysis
+,
+interrupted
+,
+archive
+,
+ended
+. For more information about statuses, please visit
+this page
+PATCH /api/v1/accounts/[account_id]/tests/[test_id]
+Request
+if everything was going well, it will return a success response with a 200.
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+test_id
+\d+
+Integer
+ID of the test
+Allowed transitions
+from
+\
+to
+draft
+ready_to_launch
+play
+pause
+in_qa
+analysis
+archive
+ended
+interrupted
+draft
+❌
+✅
+✅
+❌
+✅
+❌
+✅
+❌
+❌
+ready_to_launch
+✅
+❌
+✅
+✅
+✅
+❌
+✅
+❌
+❌
+play
+❌
+❌
+❌
+✅
+✅
+✅
+✅
+✅
+❌
+pause
+❌
+✅
+✅
+❌
+✅
+✅
+✅
+✅
+❌
+in_qa
+✅
+✅
+✅
+✅
+❌
+❌
+✅
+❌
+❌
+analysis
+❌
+❌
+✅
+❌
+❌
+❌
+✅
+✅
+❌
+archive
+✅
+❌
+❌
+✅
+❌
+❌
+❌
+❌
+❌
+ended
+❌
+❌
+✅
+❌
+❌
+✅
+✅
+❌
+❌
+interrupted
+❌
+❌
+✅
+❌
+✅
+✅
+✅
+✅
+❌
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Manage AB Tasty's users of my account
+With this role you will be able to:
+Get all AB Tasty's users of the account
+Get specific information about an AB Tasty user
+Give access to a user
+Revoke access to a user
+Get all AB Tasty's users of my account
+GET /api/core/accounts/[account_id]/membership
+Request
+Response
+if you correctly have access to the account, it will return a 200.
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Filters
+Name
+Datatype
+Description
+Pattern
+Default
+_max_per_page
+Integer
+Limit of items per page
+10
+_page
+integer
+Page of the collection
+1
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get specific information about an AB Tasty user
+GET /api/core/accounts/[account_id]/membership/[membership_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+membership_id
+\d+
+Integer
+ID of the user
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Give access to an AB Tasty user
+POST /api/core/accounts/[account_id]/membership
+Request
+And the body you need to insert:
+if you correctly have access to the account, it will return a 200.
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Parameters
+Name
+Required
+Description
+Format
+email
+true
+Email of the new user
+email address
+role
+true
+Role of the user
+[admin|user|creator|viewer]
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Change the role of an AB Tasty user
+PATCH /api/core/accounts/[account_id]/membership/[membership_id]
+Request
+And the body you need to insert:
+if you correctly have access to the account, it will return a 204 no content.
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+membership_id
+\d+
+Integer
+ID of the user
+Parameters
+Name
+Required
+Description
+Format
+email
+true
+Email of the new user
+email address
+role
+true
+Role of the user
+[admin|user|creator|viewer]
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Revoke access to a user
+DELETE /api/core/accounts/[account_id]/membership/[membership_id]
+Request
+The request will return a 204 No Content if successful
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+membership_id
+\d+
+Integer
+ID of the user
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Update the AB Tasty Script
+With this role you will be able to:
+Update the AB Tasty Script
+Clear the AB Tasty Script
+Update the AB Tasty Script
+PATCH /backend/accounts/[account_id]/tag-rebuild
+Request
+The request will return a 204 No Content if successful
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Clear the AB Tasty Script
+PATCH /backend/accounts/[account_id]/tag-clear
+Request
+The request will return a 204 No Content if successful
+Be careful, every experiments and customization in your website will not be available anymore. This is useful if you notice errors on your site and suspect AB Tasty. Any update of the script will generate the script again (play, pause, update_script,...).
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Headers
+Name
+Required
+Description
+Content-Type
+true
+Format of the request
+Authorization
+true
+User token (example: Bearer [token]
+Accept-Language
+false
+Language use for the response (user setting can override this)
+Get framework checksum
+With this role you will be able to get the checksum generated for your tag. The route will return the last 10 generated checksums corresponding to the last 10 versions of your tag.
+The checksum is generated in SHA512, binary and Base64. It validates the following command:
+openssl dgst -sha512 -binary | openssl enc -base64 -A
+Get the framework checksum
+GET /api/v1/accounts/[account_id]
+Request
+Response
+Requirements
+Name
+Requirements
+Type
+Description
+account_id
+\d+
+integer
+ID of the account
+Headers
+Name
+Required
+Description
+Content-Type
+true
+application/json
+Authorization
+true
+authorization token (example: Bearer [token]
+Status Code
+Status code
+Description
+[201]
+Returned when resource is create
+[400]
+Returned when one or more parameters are invalid
+[401]
+Returned when authentication is required
+[403]
+Returned when you have not the necessary permissions for the resource
+[404]
+Returned when resource could not be found
+Previous
+Hits list
+Next
+Universal data connector API
+Last updated
+11 months ago
+Was this helpful?
+AB Tasty Website
+Home page AB Tasty
+Blog
+Sample size calculator
+Release note
+AB Tasty Plateform
+Login
+© Copyright 2025 AB Tasty, Inc, All rights reserved
+What will you be able to do with our Public API?
+Quick Start
+Authentication
+Get my tests information
+Get all tests of the account
+Get information of one test
+Get the variations of a test
+Get one specific variation
+Get modifications of a variation
+Get a specific modification of a variation
+Get every links of the tests with third party tool
+Get one specific link of the test with a third party tool
+Get events set up in a test
+Get account's tests statistics
+Manage my tests
+Manage AB Tasty's users of my account
+Get all AB Tasty's users of my account
+Get specific information about an AB Tasty user
+Give access to an AB Tasty user
+Revoke access to a user
+Update the AB Tasty Script
+Update the AB Tasty Script
+Clear the AB Tasty Script
+Get framework checksum
+Get the framework checksum
+Status Code
+Was this helpful?
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests?filter[type][]=ab&filter[type][]=mastersegment&filter[active]=1
+Ask
+Copy
+{
+"page": 1,
+"limit": 10,
+"pages": 1,
+"total": 2,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests?filter%5Btype%5D%5B0%5D=ab&filter%5Btype%5D%5B1%5D=mastersegment&filter%5Bactive%5D=1&_page=1&_max_per_page=10"
+},
+"first": {
+"href": "/api/core/accounts/41902/tests?filter%5Btype%5D%5B0%5D=ab&filter%5Btype%5D%5B1%5D=mastersegment&filter%5Bactive%5D=1&_page=1&_max_per_page=10"
+},
+"last": {
+"href": "/api/core/accounts/41902/tests?filter%5Btype%5D%5B0%5D=ab&filter%5Btype%5D%5B1%5D=mastersegment&filter%5Bactive%5D=1&_page=1&_max_per_page=10"
+}
+},
+"_embedded": {
+"items": [
+{
+"type": "mastersegment",
+"labels": [
+"silviya",
+"Gil"
+],
+"start_datetime": 0,
+"stop_datetime": 0,
+"state": "play",
+"preprod": false,
+"tunnel_parent": 0,
+"test_visitor_count": 9,
+"id": 365111,
+"name": "Gil Test",
+"traffic": 100,
+"active": true,
+"url": "master",
+"ga": 0,
+"omniture": 0,
+"at_internet": 0,
+"report_token": " ",
+"last_pause_timestamp": 0,
+"last_play_timestamp": 1542811579,
+"script_verified": false,
+"global_code": "",
+"autodes_goal": "",
+"autodes_goal_last_visitors": 0,
+"start_stop_timezone": "Europe/Brussels",
+"data_collect_version": 3,
+"creation_date": " +0100",
+"useragent": "",
+"ht_access": "",
+"creator_id": 47121,
+"visitors_count": 0,
+"original_visitors_count": 0,
+"test_rank": 0,
+"history_calc_mode": "new",
+"targeting_event_mode": "fastest",
+"dynamic_alloc_goal_id": null,
+"source_code": null,
+"description": null,
+"dynamic_alloc_modulation": 50,
+"reference_variation_id": null,
+"audience_id": null,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/365111"
+},
+"tool_links": {
+"href": "/api/core/accounts/41902/tests/365111/toollinks"
+},
+"variations": {
+"href": "/api/core/accounts/41902/tests/365111/variations"
+},
+"goals": {
+"href": "/api/core/accounts/41902/tests/365111/goals"
+},
+"nested": {
+"href": "/api/interface/accounts/41902/tests/365111/nested"
+}
+},
+"_embedded": {
+"account": {
+"id": 41902
+},
+"folder": null,
+}
+},
+{
+"type": "ab",
+"labels": [
+"arthur.charbit"
+],
+"start_datetime": 0,
+"stop_datetime": 0,
+"state": "play",
+"preprod": false,
+"tunnel_parent": 0,
+"test_visitor_count": 0,
+"id": 367659,
+"name": "test",
+"traffic": 50,
+"active": true,
+"url": "http://abtastylab.com/ /",
+"ga": 0,
+"omniture": 0,
+"at_internet": 0,
+"report_token": " ",
+"last_pause_timestamp": 0,
+"last_play_timestamp": 1545921356,
+"script_verified": false,
+"global_code": "",
+"autodes_goal": "",
+"autodes_goal_last_visitors": 0,
+"start_stop_timezone": "Europe/Brussels",
+"data_collect_version": 3,
+"creation_date": " +0100",
+"useragent": "",
+"ht_access": "",
+"creator_id": 43571,
+"visitors_count": 0,
+"original_visitors_count": 0,
+"test_rank": 0,
+"history_calc_mode": "new",
+"targeting_event_mode": "fastest",
+"dynamic_alloc_goal_id": null,
+"source_code": null,
+"description": null,
+"dynamic_alloc_modulation": 50,
+"reference_variation_id": null,
+"audience_id": "c82c4865-e2d0-49b9-b0b9-7c74c59a826f",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/367659"
+},
+"tool_links": {
+"href": "/api/core/accounts/41902/tests/367659/toollinks"
+},
+"variations": {
+"href": "/api/core/accounts/41902/tests/367659/variations"
+},
+"goals": {
+"href": "/api/core/accounts/41902/tests/367659/goals"
+},
+"nested": {
+"href": "/api/interface/accounts/41902/tests/367659/nested"
+}
+},
+"_embedded": {
+"account": {
+"id": 41902
+},
+"folder": null,
+}
+}
+]
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/v1/accounts/41902/tests/381296
+Ask
+Copy
+{
+"type": "ab",
+"labels": [
+"arthur.charbit"
+],
+"start_datetime": 0,
+"stop_datetime": 0,
+"state": "pause",
+"preprod": false,
+"tunnel_parent": 0,
+"test_visitor_count": 0,
+"id": 381296,
+"name": "Public API Test",
+"traffic": 50,
+"active": false,
+"url": "http://abtastylab.com/ /",
+"ga": 0,
+"omniture": 0,
+"at_internet": 0,
+"report_token": " ",
+"last_pause_timestamp": 0,
+"last_play_timestamp": null,
+"script_verified": false,
+"global_code": "",
+"autodes_goal": "",
+"autodes_goal_last_visitors": 0,
+"start_stop_timezone": "Europe/Brussels",
+"data_collect_version": 3,
+"creation_date": " +0100",
+"useragent": "",
+"ht_access": "",
+"creator_id": 43571,
+"visitors_count": 0,
+"original_visitors_count": 0,
+"test_rank": 0,
+"history_calc_mode": "new",
+"targeting_event_mode": "fastest",
+"dynamic_alloc_goal_id": null,
+"source_code": null,
+"description": null,
+"dynamic_alloc_modulation": 50,
+"reference_variation_id": null,
+"audience_id": "987a7647-e378-487a-bbb1-6353a4501db1",
+"_links": {
+"self": {
+"href": "/api/v1/accounts/41902/tests/381296"
+},
+"tool_links": {
+"href": "/api/core/accounts/41902/tests/381296/toollinks"
+},
+"variations": {
+"href": "/api/core/accounts/41902/tests/381296/variations"
+},
+"goals": {
+"href": "/api/core/accounts/41902/tests/381296/goals"
+},
+"nested": {
+"href": "/api/interface/accounts/41902/tests/381296/nested"
+}
+},
+"_embedded": {
+"account": {
+"id": 41902
+},
+"folder": null,
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/variations
+Ask
+Copy
+[
+{
+"id": 0,
+"name": "Original",
+"type": "onthefly",
+"traffic": 50
+},
+{
+"id": 491035,
+"name": "Variation 1",
+"traffic": 50,
+"type": "onthefly",
+"description": null
+}
+]
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/variations/491035
+Ask
+Copy
+{
+"id": 491035,
+"name": "Variation 1",
+"description": null,
+"traffic": 50,
+"type": "onthefly",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035"
+}
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/variations/491035/modifications
+Ask
+Copy
+{
+"page": 1,
+"limit": 10,
+"pages": 1,
+"total": 1,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035/modifications?_page=1&_max_per_page=10"
+},
+"first": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035/modifications?_page=1&_max_per_page=10"
+},
+"last": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035/modifications?_page=1&_max_per_page=10"
+}
+},
+"_embedded": {
+"items": [
+{
+"use_modification_engine": true,
+"id": 2064015,
+"selector": "#myCarousel .active IMG",
+"type": "hideCSS",
+"value": "#myCarousel .active IMG {display:none!important;}",
+"name": "",
+"recursive": "no",
+"value_engine": "",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035/modifications/2064015"
+}
+}
+}
+]
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/variations/491035/modifications/2064015
+Ask
+Copy
+{
+"use_modification_engine": true,
+"id": 2064015,
+"selector": "#myCarousel .active IMG",
+"type": "hideCSS",
+"value": "#myCarousel .active IMG {display:none!important;}",
+"name": "",
+"recursive": "no",
+"value_engine": "",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/variations/491035/modifications/2064015"
+}
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/toollinks
+Ask
+Copy
+{
+"page": 1,
+"limit": 10,
+"pages": 1,
+"total": 2,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks?_page=1&_max_per_page=10"
+},
+"first": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks?_page=1&_max_per_page=10"
+},
+"last": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks?_page=1&_max_per_page=10"
+}
+},
+"_embedded": {
+"items": [
+{
+"id": 114112,
+"name": "Universal Analytics",
+"value": "12",
+"from_account": 1,
+"custom_tracker": null,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks/114112"
+}
+}
+},
+{
+"id": 114115,
+"name": "ATInternetSmartTag",
+"value": "10",
+"from_account": 0,
+"custom_tracker": null,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks/114115"
+}
+}
+}
+]
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/toollinks/114115
+Ask
+Copy
+{
+"id": 114115,
+"name": "ATInternetSmartTag",
+"value": "10",
+"from_account": 0,
+"custom_tracker": null,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/toollinks/114115"
+}
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/tests/381301/global_modifications
+Ask
+Copy
+{
+"page": 1,
+"limit": 10,
+"pages": 1,
+"total": 1,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/global_modifications?_page=1&_max_per_page=10"
+},
+"first": {
+"href": "/api/core/accounts/41902/tests/381301/global_modifications?_page=1&_max_per_page=10"
+},
+"last": {
+"href": "/api/core/accounts/41902/tests/381301/global_modifications?_page=1&_max_per_page=10"
+}
+},
+"_embedded": {
+"items": [
+{
+"id": 162007,
+"type": "actionTracking",
+"config": "AT",
+"value": "{\"name\":\"AT \",\"event\":\"mousedown\",\"data\":\"\",\"elementSelector\":\"#main .text-center:nth-child(4) H1\"}",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/tests/381301/global_modifications/162007"
+}
+}
+}
+]
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/general_statistics
+Ask
+Copy
+{
+"campaign_states": {
+"ab": {
+"running": 1,
+"paused": 381
+},
+"multivariate": {
+"running": 0,
+"paused": 16
+},
+"multipage": {
+"running": 0,
+"paused": 68
+},
+"predictive": {
+"running": 0,
+"paused": 22
+},
+"byapi": {
+"running": 0,
+"paused": 0
+},
+"personalization": {
+"running": 0,
+"paused": 97
+}
+},
+"count_collaborators": 35,
+"count_collaborators_connections": 5,
+"started_experiments": [
+{
+"month_year": "1-2018",
+"count_visitors": "2467",
+"count_tests": "1"
+}
+],
+"created_experiments": [
+{
+"month_year": "1-2019",
+"count_visitors": "38",
+"count_tests": "13",
+"avg_visitors": "3"
+},
+{
+"month_year": "12-2018",
+"count_visitors": "50",
+"count_tests": "11",
+"avg_visitors": "5"
+}
+],
+"played_experiments": [
+{
+"month_year": "12-2018",
+"count_visitors": "50",
+"count_tests": "1"
+}
+],
+}
+Ask
+Copy
+https://api.abtasty.com/api/v1/accounts/41902/tests/381301
+Ask
+Copy
+{
+"status":"play"
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/membership?_max_per_page=1
+Ask
+Copy
+{
+"page": 1,
+"limit": 1,
+"pages": 34,
+"total": 34,
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/membership?_page=1&_max_per_page=1"
+},
+"first": {
+"href": "/api/core/accounts/41902/membership?_page=1&_max_per_page=1"
+},
+"last": {
+"href": "/api/core/accounts/41902/membership?_page=34&_max_per_page=1"
+},
+"next": {
+"href": "/api/core/accounts/41902/membership?_page=2&_max_per_page=1"
+}
+},
+"_embedded": {
+"items": [
+{
+"id": 80397,
+"role": "admin",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/membership/80397"
+},
+"account": {
+"href": "/api/core/accounts/41902"
+}
+},
+"_embedded": {
+"user": {
+"id": 2021,
+"email": "user@abtasty.com",
+"lastname": "XXX",
+"firstname": "YYY",
+"creation_date": " +0200",
+"connection_count": 49708,
+"last_login_time": " +0100",
+"_links": {
+"self": {
+"href": "/api/core/users/2021"
+}
+},
+"_embedded": {
+"has_multiple_accounts": true
+}
+}
+}
+}
+]
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/membership/132419
+Ask
+Copy
+{
+"id": 132419,
+"role": "admin",
+"_links": {
+"self": {
+"href": "/api/core/accounts/41902/membership/132419"
+},
+"account": {
+"href": "/api/core/accounts/41902"
+}
+},
+"_embedded": {
+"user": {
+"id": 43571,
+"email": "arthur.charbit@abtasty.com",
+"lastname": "Charbit",
+"firstname": "Arthur",
+"creation_date": " +0200",
+"connection_count": 1161,
+"last_login_time": " +0100",
+"mfa_enabled": true,
+"_links": {
+"self": {
+"href": "/api/core/users/43571"
+}
+},
+"_embedded": {
+"has_multiple_accounts": true
+}
+}
+}
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/membership
+Ask
+Copy
+{
+"email":"test@gmail.com",
+"role":"user"
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/membership/132419
+Ask
+Copy
+{
+"role":"user"
+}
+Ask
+Copy
+https://api.abtasty.com/api/core/accounts/41902/membership/132419
+Ask
+Copy
+https://api.abtasty.com/backend/accounts/41902/tag-rebuild
+Ask
+Copy
+https://api.abtasty.com/backend/accounts/41902/tag-clear
+Ask
+Copy
+https://api.abtasty.com/api/v1/accounts/41902
+Ask
+Copy
+{
+[...]
+"checksum_files": [
+{
+"id": 2558,
+"size": 63367,
+"hash": " ",
+"created_at": {
+"readable_date": " +0100",
+"timestamp": 1606311483,
+"pattern": "Y-m-d\\TH:i:sO"
+}
+},
+{
+"id": 3570,
+"size": 63204,
+"hash": " ",
+"created_at": {
+"readable_date": " +0100",
+"timestamp": 1606321676,
+"pattern": "Y-m-d\\TH:i:sO"
+}
+}
+]
+}

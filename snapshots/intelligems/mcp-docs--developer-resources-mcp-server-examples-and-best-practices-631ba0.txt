@@ -1,0 +1,333 @@
+# https://docs.intelligems.io/developer-resources/mcp-server/examples-and-best-practices
+Examples & Best Practices | Intelligems Docs
+Intelligems Docs
+⌘
+Ctrl
+k
+Intelligems Docs
+Welcome to Intelligems
+Getting Started
+Getting Started
+Adding Intelligems Script to your Theme
+Updating the Intelligems Script
+Common Use Cases
+Best Practices
+General FAQs
+Billing FAQs
+Price Testing
+Price Testing - Getting Started
+Price Testing Integration Guides
+How to Set Up a Price Test
+Price Test QA Checklist
+Starting a Price Test
+Ending a Price Test
+Testing Prices with Subscriptions
+Multi-Currency Testing
+Price Testing FAQs
+Running a Price Test and a Theme Test at the Same Time
+Shipping Testing
+Shipping Testing - Getting Started
+How to Set Up a Shipping Test
+Shipping Test QA Checklist
+Starting a Shipping Test
+Ending a Shipping Test
+Shipping Progress Bar Integration
+Shipping Testing FAQs
+Content Testing
+Content Testing - Getting Started
+Content Test QA Checklist
+Ending a Theme Test
+Content Testing FAQs
+Troubleshooting Low Visitor Counts in a Split URL Test
+Personalizations
+Getting Started with Personalizations
+Personalization Modifications
+Theme Personalization Precautions
+Adding Targeting to a Personalization
+Previewing Personalizations
+Scheduling Personalizations
+Rolling Out Tests
+Offer Personalizations
+Personalizations FAQs
+OFFER PERSONALIZATIONS
+Getting Started with Merchandising Personalizations
+How to Set Up Onsite Upsells
+Integrating Components
+Upgrade Components
+Offer Personalizations Library
+Testing Merchandising
+How to Set Up a Price Test with Quantity Buttons
+Merchandising Experience QA Checklist
+Offers Limits
+Running a Large Number of Offer Personalizations with Shopify Functions
+Merchandising Combinations
+CHECKOUT
+Getting Started with Checkout Personalizations
+How to Set Up a Checkout Personalization or Test
+Testing Checkout Personalizations
+What You Can and Cannot Test in Checkout
+Checkout Test QA Checklist
+Checkout Personalizations Library
+Checkout FAQs
+Post Purchase Upsells
+Getting Started with Post-Purchase Upsells
+How to Set Up a Post-Purchase Upsell Personalization or Test
+Post-Purchase Upsell QA Checklist
+Post-Purchase Upsell FAQs
+General Features
+Targeting
+Onsite Editor
+Visual Experience Builder
+Atlas QA
+Image Onsite Editor
+CSS Styles and JavaScript Injection
+Global Styles
+Analytics
+Overview
+How Orders and Sessions are Attributed
+Order and Revenue Accounting
+Experiment Analytics
+Sitewide Analytics
+Custom Events
+How to Add Profit to Intelligems Analytics
+How to Add Product Groups to Intelligems Analytics
+Black Friday Live Tracker
+Data Sharing
+How to Calculate 90-Day Shopper LTV by Intelligems Test Group
+Analytics FAQs
+Performance Optimization
+Site Performance
+Optimizing Your Price-Test Integration
+Anti-Flicker Modes
+Edgemesh
+Integrations
+Webhook Integration
+Google Analytics 4 Integration
+Amplitude Integration
+Klaviyo Integration
+Heap Integration
+Segment Integration
+Heatmap Integrations
+Navidium Testing
+Corso Testing
+JUST Checkout
+SavedBy Testing
+Slack Integration
+Checkout Reviews Testing
+Checkout Champ Integration
+Shoptin Testing
+Truemed Testing
+Developer Resources
+Javascript API
+External API
+MCP Server
+Claude
+ChatGPT
+Google Gemini
+Available Tools
+Examples & Best Practices
+Creating Live Intelligems Dashboards in Claude
+Troubleshooting
+Claude: Remove Manual Configuration
+Intelligems Theme Snippet
+Advanced Settings
+Cart Permalinks
+Custom Add to Cart and Order Completed Events
+Shopify's Universal Commerce Protocol (UCP) Compatibility
+Headless Storefronts
+Shopify Scripts is sunsetting
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Developer Resources
+MCP Server
+Examples & Best Practices
+Example use cases for agencies and brand operators
+The Intelligems MCP server gives AI assistants access to your test results, personalization data, and Sitewide Analytics — all queryable in plain English.
+The examples below are organized by how you use Intelligems: as a
+brand
+managing your own store, or as an
+agency
+managing tests and performance for clients.
+For Agencies
+1. Monthly Client Performance Review
+Use when preparing for monthly client calls
+Copy
+For [CLIENT NAME], give me a comprehensive analysis of all tests completed this month. Include:
+1. Which tests reached statistical significance and their winners
+2. The estimated revenue impact of implementing winners
+3. Key insights to share with the client
+4. Any tests that should be ended early or extended
+What you'll get:
+List of completed tests with win/loss status, revenue per visitor and gross profit uplift percentages, statistical confidence levels, and actionable recommendations for client discussion.
+2. Cross-Test Pattern Analysis
+Use to find winning strategies that work consistently
+Copy
+Analyze all completed tests for [CLIENT NAME] over the past 3 months.
+What patterns appear across multiple winning tests?
+What concepts (urgency, trust, social proof, simplification, etc.)
+consistently win or lose for this customer base?
+What you'll get:
+Patterns across winning variations, concepts that resonate with the client's audience, and strategic direction for future testing.
+3. Customer Segment Intelligence
+Use to understand how different customer types respond
+What you'll get:
+Conversion rates by device type, performance differences between new vs returning visitors, and recommendations for segment-specific optimization.
+4. Profit Trap Detection
+Use to catch tests where more conversions = less profit
+What you'll get:
+Tests where conversion went up but profit went down, warnings about implementing harmful "winners", and true profit-focused recommendations.
+5. Quarterly Test Roadmap
+Use for strategic planning
+What you'll get:
+Analysis of highest-performing test categories, untested areas, and a prioritized test roadmap for the next quarter.
+6. Cross-client performance scan
+Use to quickly identify which clients need attention
+What you'll get:
+A prioritized list of clients showing performance deterioration, so you can triage proactively rather than waiting for clients to flag issues.
+For Brand Operators
+1. Weekly Test Pulse Check
+Use for quick status instead of reviewing dashboards
+What you'll get:
+Status of all running tests, statistical significance levels, clear winner/loser identification, and recommendations for early stopping or extension.
+2. Profit Opportunity Scan
+Use to find biggest revenue opportunities
+What you'll get:
+Ranked list of winners by revenue impact, un-implemented winners leaving money on the table, and a prioritized implementation list.
+3. My Best Customer Segments
+Use to know where to focus optimization efforts
+What you'll get:
+Performance breakdown by device type, new vs returning comparison, and recommendations for resource allocation.
+4. Testing Strategy Health Check
+Use to evaluate testing program effectiveness
+What you'll get:
+Test completion count, win rate analysis, test type distribution, and recommendations for improving your testing program.
+5. Price Sensitivity Analysis
+Use to understand customer price tolerance
+What you'll get:
+Price sensitivity insights from test data, segment-specific price response differences, and data-backed discount recommendations.
+6. Store health check
+Use for a quick pulse on overall performance
+What you'll get:
+Period-over-period comparison across core KPIs with automatic flagging of notable changes.
+7. Channel quality ranking
+Use to understand which traffic sources are actually driving revenue
+What you'll get:
+Channel-by-channel RPV and CVR breakdown, quality vs. volume analysis, and identification of any channels showing efficiency deterioration.
+8. Mobile vs desktop gap
+Use to diagnose device-level conversion issues
+What you'll get:
+Side-by-side device performance metrics, trend direction for each device, and context on where growth is coming from.
+9. New vs returning customer analysis
+Use to understand retention health relative to acquisition
+What you'll get:
+Segment-level performance metrics, new/returning mix trends, and signals on whether retention is keeping pace with acquisition.
+10. AOV and discount trend
+Use to catch margin compression early
+What you'll get:
+AOV and units-per-order trend data, discount rate changes, and revenue-per-unit movement that can signal margin pressure before it shows up in reports.
+Best Practices
+Organization Context
+Always specify the
+organization
+parameter when working with multiple organizations
+Use
+getOrganizationsList
+first to see available organizations
+Cache organization IDs in your workflow to avoid repeated lookups
+Security
+Never share your access tokens
+Tokens are scoped to all organizations you have access to
+Revoke access immediately if compromised
+Previous
+Available Tools
+Next
+Creating Live Intelligems Dashboards in Claude
+Last updated
+4 months ago
+Was this helpful?
+For Agencies
+For Brand Operators
+Best Practices
+Organization Context
+Security
+Was this helpful?
+Copy
+For [CLIENT NAME], compare how these segments respond across all tests:
+- Mobile vs Desktop visitors
+- New vs Returning customers
+Are there segments consistently outperforming? Should we be running
+segment-specific tests? Where's the biggest opportunity gap?
+Copy
+Review all tests for [CLIENT NAME] and identify any "profit traps" -
+tests where conversion rate improved but revenue per visitor or
+gross profit per visitor decreased.
+Flag any tests where we might be winning the battle but losing the war.
+Copy
+Based on [CLIENT NAME]'s test history:
+1. What test categories have delivered the best ROI?
+2. What areas haven't been tested yet (blind spots)?
+3. Based on winners, what specific follow-up tests should we run?
+4. Prioritize 5 test ideas for next quarter by potential impact.
+Copy
+Across all my clients, which accounts have seen the biggest drop in revenue per visitor
+or conversion rate over the past 30 days? Rank them by urgency so I know where to focus.
+Copy
+Give me a quick status on all my running tests:
+- Which have reached statistical significance?
+- Which are trending positive vs negative?
+- Any that should be ended early (clear winner/loser)?
+- Any that need more time to reach significance?
+Copy
+Looking at my completed tests from the past 6 months:
+1. Which winning variations had the highest revenue per visitor lift?
+2. Which had the highest gross profit per visitor lift?
+3. Are there any winners I haven't implemented yet?
+4. Rank my top 3 profit opportunities by potential monthly revenue impact.
+Copy
+Across my tests, which customer segments perform best?
+Compare response rates by:
+- Device (Mobile vs Desktop)
+- Customer type (New vs Returning)
+- Traffic source (if available)
+Where should I focus my optimization efforts for maximum ROI?
+Copy
+Review my testing history and tell me:
+1. How many tests have I completed in the past 3 months?
+2. What's my win rate (% of tests with significant winners)?
+3. What types of tests am I running most? What am I missing?
+4. Am I building on previous learnings or testing randomly?
+5. What's my testing velocity compared to best practices?
+Copy
+Based on my price tests and offer tests:
+1. What have I learned about my customers' price sensitivity?
+2. Are there products or categories that are more price-sensitive?
+3. Do new vs returning customers respond differently to pricing?
+4. What's the optimal discount threshold based on test data?
+Copy
+How did we perform last month vs the month before?
+Summarize the key changes — visitors, conversion rate, revenue per visitor, and AOV.
+Flag anything that moved meaningfully in either direction.
+Copy
+Which marketing channel is bringing in the most valuable customers right now?
+Rank all active channels by revenue per visitor and conversion rate.
+Flag any channels where traffic is growing but revenue quality is declining.
+Copy
+How does mobile compare to desktop in terms of conversion rate and revenue per visitor?
+Has the gap between the two changed over the past 30 days?
+Which device is driving most of our visitor growth?
+Copy
+Compare new vs returning visitors:
+- Conversion rate and revenue per visitor for each
+- How has the mix shifted over the past 30 days?
+- Are returning visitor sessions growing or declining?
+Copy
+Is our average order value trending up or down over the past 8 weeks?
+How has units per order changed in the same period?
+Are we discounting more than we used to, and is it affecting revenue per unit?

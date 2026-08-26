@@ -1,0 +1,1967 @@
+# https://amplitude.com/agent-analytics
+Amplitude Agent Analytics
+Platform
+AI
+Amplitude AI
+Analytics that never stops working
+AI Agents
+Sense, decide, and act faster than ever before
+AI Feedback
+Distill what your customers say they want
+Amplitude MCP
+Insights from the comfort of your favorite AI tool
+Agent Analytics
+Measure the real impact of your agents
+Early Access Program
+Test new AI features before they launch
+Insights
+Product Analytics
+Understand the full user journey
+Marketing Analytics
+Get the metrics you need with one line of code
+Session Replay
+Visualize sessions based on events in your product
+Heatmaps
+Visualize clicks, scrolls, and engagement
+Zoning Insights
+Overlay performance and revenue metrics on your webpages
+Action
+Guides and Surveys
+Guide your users and collect feedback
+Feature Experimentation
+Innovate with personalized product experiences
+Web Experimentation
+Drive conversion with A/B testing powered by data
+Feature Management
+Build fast, target easily, and learn as you ship
+Activation
+Unite data across teams
+Data
+Data Governance
+Complete data you can trust
+Integrations
+Connect Amplitude to hundreds of partners
+Security & Privacy
+Keep your data secure and compliant
+Solutions
+Solutions that drive business results
+Deliver customer value and drive business outcomes
+Amplitude Solutions
+→
+Industry
+Financial Services
+Personalize the banking experience
+B2B
+Maximize product adoption
+Media
+Identify impactful content
+Healthcare
+Simplify the digital healthcare experience
+Ecommerce
+Optimize for transactions
+Use Case
+Acquisition
+Get users hooked from day one
+Retention
+Understand your customers like no one else
+Monetization
+Turn behavior into business
+Team
+Product
+Fuel faster growth
+Data
+Make trusted data accessible
+Engineering
+Ship faster, learn more
+Marketing
+Build customers for life
+Executive
+Power decisions, shape the future
+Size
+Startups
+Free analytics tools for startups
+Enterprise
+Advanced analytics for scaling businesses
+Resources
+Learn
+Blog
+Thought leadership from industry experts
+Resource Library
+Expertise to guide your growth
+Compare
+See how we stack up against the competition
+Glossary
+Learn about analytics, product, and technical terms
+Explore Hub
+Detailed guides on product and web analytics
+Connect
+Community
+Connect with peers in product analytics
+Events
+Register for live or virtual events
+Customers
+Discover why customers love Amplitude
+Partners
+Accelerate business value through our ecosystem
+Support & Services
+Customer Help Center
+All support resources in one place: policies, customer portal, and request forms
+Developer Hub
+Integrate and instrument Amplitude
+Academy & Training
+Become an Amplitude pro
+Customer Success
+Drive business success with expert guidance and support
+Product Updates
+See what's new from Amplitude
+Tools
+Benchmarks
+Understand how your product compares
+Prompt Library
+Prompts for Agents to get started
+Templates
+Kickstart your analysis with custom dashboard templates
+Tracking Guides
+Learn how to track events and metrics with Amplitude
+Maturity Model
+Learn more about our digital experience maturity model
+Event Taxonomy Generator
+Pricing
+Login
+Contact sales
+Get started
+Platform
+AI
+Amplitude AI
+AI Agents
+AI Feedback
+Amplitude MCP
+Agent Analytics
+Early Access Program
+Insights
+Product Analytics
+Marketing Analytics
+Session Replay
+Heatmaps
+Zoning Insights
+Action
+Guides and Surveys
+Feature Experimentation
+Web Experimentation
+Feature Management
+Activation
+Data
+Data Governance
+Integrations
+Security & Privacy
+Solutions
+Amplitude Solutions
+→
+Industry
+Financial Services
+B2B
+Media
+Healthcare
+Ecommerce
+Use Case
+Acquisition
+Retention
+Monetization
+Team
+Product
+Data
+Engineering
+Marketing
+Executive
+Size
+Startups
+Enterprise
+Resources
+Learn
+Blog
+Resource Library
+Compare
+Glossary
+Explore Hub
+Connect
+Community
+Events
+Customers
+Partners
+Support & Services
+Customer Help Center
+Developer Hub
+Academy & Training
+Customer Success
+Product Updates
+Tools
+Benchmarks
+Prompt Library
+Templates
+Tracking Guides
+Maturity Model
+Event Taxonomy Generator
+Pricing
+Login
+Sign Up
+Agent Analytics
+What’s the real impact of your AI agent?
+Knowing your agent gave a good response is the easy part. Agent Analytics ties traces and evals to conversion, retention, and revenue, so you can connect agent quality to real business impact.
+Sign up for early access
+Watch demo video
+Sessions
+Export
+Update SDK
+Suggested for you
+Which users only engaged with our agent once?
+Sessions per user = 1
+last 30d
+Filter sessions
+→
+What are my agents' most common failure modes?
+Clustered from 9.2k failed sessions
+Filter sessions
+→
+What questions are being answered badly?
+Quality score < 0.4
+last 30d
+Filter sessions
+→
+How and why are users using the create_theme tool?
+create_theme invocations
+last 30d
+Filter sessions
+→
+Last 30 days
+Search sessions…
+Filter
+Session
+User
+Agent
+Tags
+When
+Summarize last week's checkout funnel and flag any unusual drop-offs
+3
+3b449a79-2b00-4809-a331-93e051493497
+Funnel Analyst
+Negative feedback
+Low latency
+5h ago
+Draft a release note for the v4.12 dashboard refresh — friendly tone, under 200 words
+5
+5334003c-0563-478a-a061-866d4f6cfc57
+Release Notes Writer
+Low latency
+4h ago
+Compare YoY active-user growth between our mobile and web tiers, broken down by region
+A
+a9831989-66c7-4627-af4d-d871c601faea
+Growth Insights
+Retention
+5h ago
+Pull every support ticket tagged "billing" from the last 14 days and cluster by root cause
+7
+726850cb-0fbb-400a-986b-59e305a705f8
+Support Triage
+Billing intent
+Power user
+4h ago
+What's the median time-to-first-value for trial accounts that converted in Q4?
+A
+a96072ca-67a6-4553-8a92-d23d5c4e903c
+Trial Intelligence
+Onboarding
+4h ago
+Generate a weekly retention summary email for the growth team — include top movers
+1
+1560cdac-3b1b-4326-86e0-1e7ac40ec317
+Retention Digest
+Low latency
+Retention
+4h ago
+Why did session length drop ~18% for free users after the Tuesday deploy?
+6
+65bedee6-61b7-4a04-86e2-cce6a34f646f
+Anomaly Investigator
+Negative feedback
+4h ago
+List the top 20 feature requests submitted in-app this month, deduped and ranked
+6
+64d74e09-00dc-4a50-9c10-661ec10de4cc
+Feedback Synthesizer
+Routine
+4h ago
+Build a cohort of accounts that activated the AI assistant but haven't returned in 14 days
+E
+e5e17074-b8b7-4bfc-b18f-d01d3dc4b347
+Cohort Builder
+Power user
+4h ago
+Walk me through every error event raised by the payments service in the past hour
+B
+b619b97a-574f-4791-b875-05b9262b5578
+Incident Copilot
+Negative feedback
+High frustration
+4h ago
+Translate this onboarding tour into Spanish, French, and German — keep the friendly voice
+3
+3f7445b9-c919-42a9-8fad-dc35326249cd
+Localization Helper
+Low latency
+Onboarding
+4h ago
+Explain how the new pricing tiers map to existing customer plans, in plain language
+6
+6c12cbef-a286-46c4-aab2-7223829177be
+Pricing Explainer
+Billing intent
+4h ago
+Find every session where the assistant returned an empty response and group by trigger phrase
+4
+45b723a6-c746-468f-86c0-60655ab4ee08
+Quality Auditor
+Routine
+3h ago
+Which onboarding step had the highest abandonment rate among self-serve trials last week?
+5
+5ea7ea0c-19da-445f-9e98-57a7da4dba29
+Onboarding Analyst
+Negative feedback
+Onboarding
+3h ago
+Generate a sales-call brief for Acme Co — include usage trends, expansion signals, and risks
+3
+3901e8d7-7e38-4a7b-b2cd-1952b7fdc07c
+Account Brief Builder
+Low latency
+Billing intent
+3h ago
+Cluster customer feedback from this week's NPS responses into themes and rank by sentiment
+8
+8069156f-b4f2-4340-957e-2a038e6baf2e
+Sentiment Clusterer
+Power user
+3h ago
+Spot the cohort that started using export-to-csv this month — what else are they using?
+8
+8a91c1bd-feda-4b62-b56d-121a999877c1
+Behavior Linker
+Power user
+2h ago
+Summarize today's deploy notes into a one-line Slack post for the eng channel
+2
+250c5e02-5ae1-4f0e-a2fc-37ae94e8f340
+Release Notes Writer
+Low latency
+2h ago
+Why is API p95 latency 2x normal for the EU region since 09:00 UTC?
+0
+095c273f-10bd-4b2f-97d1-db930ceae97e
+Incident Copilot
+Negative feedback
+High frustration
+2h ago
+List all accounts approaching their seat limit with 30+ days remaining on contract
+C
+c2aeceff-64c4-49ec-8414-32b84d4ab0f1
+Expansion Spotter
+Billing intent
+2h ago
+Compare conversion rate for users who saw the new pricing page vs the old one
+F
+f53c9f48-3e60-41c6-ab0e-74d3275b2b2d
+Experiment Reader
+Billing intent
+1h ago
+Pull the 10 most-used tool calls this week and the prompts that triggered them
+3
+39a20421-3599-4a81-b551-b553590a472a
+Tool Usage Analyst
+Routine
+1h ago
+Draft a friendly outreach to trial accounts that stalled after activating one feature
+0
+02636abd-d5b3-4bb0-9f1c-fdb85ac0db42
+Lifecycle Copywriter
+Negative feedback
+High frustration
+1h ago
+What does session quality look like for users on Safari vs Chrome in the last 7 days?
+E
+e7d459ab-4bea-42e6-a7ec-b5d09bd18a0b
+Quality Auditor
+Routine
+45m ago
+Trace why the recommendation engine started returning duplicates after the Wednesday model swap
+B
+bcaefb24-bc57-4414-ae4d-8e7f300f5dde
+Model Debugger
+Negative feedback
+High frustration
+30m ago
+Build a Markdown summary of this week's AI assistant wins for the all-hands deck
+1
+15aa086e-39e7-47b5-baff-09d595f8251a
+Highlights Curator
+Low latency
+20m ago
+Show me every conversation where a user asked about cancellation in the last 72 hours
+0
+01175b49-d7d2-4eb1-aa47-4fe3d70df882
+Churn Watcher
+Billing intent
+Churn risk
+10m ago
+3
+3b449a79-2b00-4809-a331-93e051493497
+5h ago
+User activity
+Find similar sessions
+Add to dataset
+1 of 12
+Why did checkout completion drop ~18% on Wednesday?
+May 27 · 3:22 PM
+Pulled checkout sessions · May 25–28
+One dataset query timed out, but the chart and session pulls gave me enough to isolate it. The drop traces to a single cohort:
+Affected cohort:
+users on Safari 17.4 (iOS)
+Window:
+Wed 09:12 – 17:48 UTC
+Likely cause:
+the v3.8
+payments SDK rollout
+introduced a CORS preflight that failed on Safari iOS
+Reverting the rollout for that platform should recover the rate within an hour. Want me to open a 48h follow-up cohort to confirm?
+$0.42 · 3:22:48 PM
+Yes — ship the Safari fix and set up the 48h follow-up cohort.
+3:23 PM
+Evaluators
+Traces
+Info
+Data Quality
+False
+Has Negative Feedback
+False
+Response Was Helpful
+True
+Task Completed
+True
+User Friction
+False
+Session Resolved
+Response Provided
+Session Safety
+Normal
+User Intent
+Analysis & Synthesis
+Memory Recall
+No
+Action Offers
+No
+Intent Topics
+Chart Creation
+Failure Reasons
+Other
+Add New Evaluator
+9:41
+Trips
+Mira
+Travel assistant
+···
+Today
+Find me hotels in Montreal under $300 a night for my June trip.
+Done. Here are
+3 stays in Montreal
+that fit your budget. Every option is under $300/night.
+All under $300
+Hôtel Saint-Laurent
+Vieux-Montréal
+4.6
+·
+1,204
+reviews
+$189
+/ night
+Maison Plateau
+Le Plateau-Mont-Royal
+4.7
+·
+876
+reviews
+$245
+/ night
+Auberge Mont-Royal
+Mile End
+4.5
+·
+1,530
+reviews
+$279
+/ night
+Message Mira…
+On budget
+9:41
+Trips
+Mira
+Travel assistant
+···
+Today
+Find me hotels in Montreal under $300 a night for my June trip.
+Here are the
+top-rated hotels in Montreal
+for June. Take a look!
+Le Ritz Boutique
+Downtown
+4.8
+·
+2,011
+reviews
+$385
+/ night
+Grand Hôtel Place-des-Arts
+Quartier des Spectacles
+4.7
+·
+1,442
+reviews
+$420
+/ night
+These are all over $300. I need under $300.
+Got it! Here’s another great Montreal option you might like.
+Over your $300 budget
+Message Mira…
+Over budget
+When traditional analytics falls short
+Most analytics tools were built for clicks and page views, not for reasoning and tool calls. Agents can hallucinate, ignore instructions, and confidently go off-track. All users who spend time with your agent look equally engaged. Who actually found it useful and came back?
+Go beyond observability
+Learn the product and revenue impact of your agents.
+AI Quality
+What the agent did
+Product Outcomes
+What the user did next
+01
+Observe
+Inspect traces, prompts, tool calls, responses, latency, and cost. The raw record of what the agent actually did.
+02
+Evaluate
+Score quality, intent, resolution, and failure modes. See where the agent helps, where it gets confused, and where it adds risk.
+03
+Decide
+Tie those quality signals to conversion, retention, and revenue. Did the agent actually move the user forward?
+04
+Deploy
+Tune prompts, run experiments, trigger guides, and personalize the next step from what you learned.
+Trace
+Raw spans
+Turn 1
+claude-sonnet · 8 spans
+System prompt
+User prompt
+llm_completion
+Tool calls
+search
+query_charts
+query_dataset
+llm_completion
+session_end
+Events
+As Amplitude events
+Turn 1
+8 events · claude-sonnet
+Session Started
+[
+Agent
+]
+model claude-sonnet
+Prompt Received
+[
+Agent
+]
+get_started_checklist
+Completion Generated
+[
+Agent
+]
+412.3k tokens · 4.7s
+Search Run
+[
+Tool
+]
+3 results · 230ms
+Charts Queried
+[
+Tool
+]
+200 · 932ms
+Dataset Queried
+[
+Tool
+]
+200 · 1.5s
+Response Sent
+[
+Agent
+]
+25.0s elapsed
+Session Ended
+[
+Session
+]
+cost $0.24 · 33.5s
+Trace turns automatically become Amplitude events
+Each user message, tool call, and agent response is an Amplitude event with the same
+user_id
+as the rest of your product data. Unlike observability tools that stop at the trace, Agent Analytics decomposes these conversations into events, making them directly queryable in the same funnels, cohorts, and retention analyses you already use.
+The questions you can finally answer
+With traces, evals, and product events in one place, the analyses that used to be out of reach become routine.
+Conversion & Revenue
+Retention & Engagement
+Quality & Cost
+01
+Did our model upgrade lift sign-up conversion this week, or hurt it?
+02
+What is the conversion delta when the agent answers correctly versus hallucinates?
+03
+Which agent topics correlate with expansion intent, and which ones with churn risk?
+The Agent Analytics maturity model
+Most observability tools stop at the lower levels of maturity. Agent Analytics takes you to the top by connecting AI quality to the user journey and revenue.
+L4
+Revenue Attribution
+What is the AI worth in dollars?
+L4
+Revenue Attribution
+What is the AI worth in dollars?
+L3
+Behavioral Analytics
+How does AI usage affect the user journey?
+L3
+Behavioral Analytics
+How does AI usage affect the user journey?
+L2
+Semantic Intelligence
+What is the agent actually doing?
+L2
+Semantic Intelligence
+What is the agent actually doing?
+L1
+Evaluations & Assertions
+Did the agent do it correctly?
+L1
+Evaluations & Assertions
+Did the agent do it correctly?
+L0
+Tracing & Telemetry
+Can I see what happened?
+L0
+Tracing & Telemetry
+Can I see what happened?
+Inside Agent Analytics
+Traces
+Production runs surprise teams with questions they never prepared the model for. Read the user prompt, the agent’s response, the tools it called, and the context it pulled, then jump straight to Session Replay to see what went wrong.
+tool calls
+prompt versions
+context retrieval
+jump to replay
+Evaluators
+Move past vibe checks on agent output. Start from standard templates or write your own code-based and LLM-as-a-judge evals, and catch regressions before they turn into systemic problems.
+templates
+code-based
+llm-as-judge
+regression alerts
+Semantic filtering
+Surface sessions by task success, technical failure, tool-call issue, or semantic match. Then narrow to any cohort you already track in Amplitude (like power users) to see how a specific group actually works with your agent.
+task success
+failure type
+tool call issue
+cohort filters
+Performance monitoring
+Weigh a cheaper model against the one you run today and see what you would save on token cost, without giving up latency or outcomes like conversion and retention.
+cost
+latency
+error rate
+model compare
+Human review
+Annotate sessions with labels and notes, classify topics and error categories, share what you find with a colleague, and open a ticket to fix it, all without leaving the session.
+labels
+notes
+topic classes
+per dataset
+Datasets
+A dataset is a defined slice of agent activity instead of every conversation everywhere. Scope it to one model, one product surface, or a filtered set of users, and analyze the same population every time.
+by model
+by surface
+by user segment
+repeatable slice
+Traces
+3
+3b449a79-2b00-4809-a331-93e051493497
+5h ago
+User activity
+Find similar sessions
+Add to dataset
+1 of 12
+Why did checkout completion drop ~18% on Wednesday?
+May 27 · 3:22 PM
+Pulled checkout sessions · May 25–28
+One dataset query timed out, but the chart and session pulls gave me enough to isolate it. The drop traces to a single cohort:
+Affected cohort:
+users on Safari 17.4 (iOS)
+Window:
+Wed 09:12 – 17:48 UTC
+Likely cause:
+the v3.8
+payments SDK rollout
+introduced a CORS preflight that failed on Safari iOS
+Reverting the rollout for that platform should recover the rate within an hour. Want me to open a 48h follow-up cohort to confirm?
+$0.42 · 3:22:48 PM
+Yes — ship the Safari fix and set up the 48h follow-up cohort.
+3:23 PM
+Evaluators
+Traces
+Info
+Turn 1
+412.3k / 1.1k
+$0.24
+33.5s
+System prompt
+412.3k / 1.1k
+~$0.24
+33.5s
+User prompt
+Tool calls
+3
+1 error
+31.2s
+search
+200
+230ms
+query_charts
+200
+932ms
+query_dataset
+500
+30.0s
+Tool call failed — request timed out
+tool_name
+str
+"query_dataset"
+tool_input
+obj 2 fields
+dataset_id
+str
+"ds_checkout_fnl"
+query
+str
+"checkout_completion_by_platform"
+tool_output
+obj 2 fields
+error
+str
+"Dataset query timed out after 30s"
+code
+num
+500
+tool_success
+bool
+false
+component_type
+str
+"tool"
+llm_completion
+412.3k / 1.1k
+~$0.24
+33.5s
+session_end
+Turn 2
+38.1k / 0.4k
+$0.05
+6.2s
+Evaluators
+Evaluators
+BETA
+Give Feedback
+New Evaluator
+Suggested for you
+Detect when responses cite unsupported facts
+Binary
+Ungrounded Claim
+Create evaluator
+→
+Did the agent successfully complete the user's task?
+Categorical
+Task Completion
+Create evaluator
+→
+Rate the quality of the agent's tool selection
+Score
+Tool Selection Quality
+Create evaluator
+→
+Cluster reasons users abandon the checkout flow
+Categorical
+Checkout Abandon Cause
+Create evaluator
+→
+Search Evaluators…
+Status
+Status
+Evaluator
+Version
+Output
+Labels
+Run on
+Agents
+Updated
+Active
+Tool Use Quality
+V1
+Score
+1
+3
+All Sessions
+Sales Copilot
+2h ago
+Active
+Sufficient Evidence (Qual & Quant)
+V1
+Categorical
+Sufficient
+Insufficient
+All Sessions
+Sales Copilot
++1
+8d ago
+Active
+Agent Error Types
+V1
+Categorical
+Underspecified
++29
+All Sessions
+Support Copilot
++6
+22d ago
+Active
+Action Offers
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+33d ago
+Active
+Failure Reasons
+V1
+Categorical
+Integration Error
++6
+All Sessions
+Any Agent
+46d ago
+Active
+Intent Topics
+V1
+Categorical
+Data Analysis
+Chart Creation
++6
+All Sessions
+Any Agent
+46d ago
+Active
+Memory Recall
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+47d ago
+Active
+User Friction
+V2
+Categorical
+Repeated Question
+Confusion
++2
+All Sessions
+Support Copilot
+69d ago
+Draft
+Intent Classifier
+V1
+Categorical
+Data Analysis
+Chart Creation
++2
+All Sessions
+Any Agent
+54m ago
+Draft
+Response Tone
+V1
+Categorical
+Valid Timestamp
+Invalid Timestamp
+All Sessions
+Any Agent
+1h ago
+Draft
+Safety Check
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+1h ago
+Draft
+PII Detection
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+1h ago
+Active
+V1
+×
+Tool Use Quality
+Score
+Sales Copilot
+Description
+Grades every matching session for
+Tool Use Quality
+and writes the verdict back to the session as a property — available in charts, segments, and exports.
+Grading prompt
+Edit
+Rate the assistant on “Tool Use Quality” from 1 (poor) to 5 (excellent).
+5 — fully correct, efficient, and well-justified
+3 — partially correct or with minor issues
+1 — incorrect, unsafe, or off-task
+Weigh tool selection and reasoning, not just the final answer.
+Label distribution · last 30 days
+5
+23.2%
+4
+18.8%
+3
+18.8%
+2
+14.5%
+1
+14.5%
+0
+10.1%
+Configuration
+Output
+Score
+Version
+V1
+Run on
+All Sessions
+Agents
+Sales Copilot
+Schedule
+Hourly
+Last updated
+2h ago
+Edit Evaluator
+Run on Dataset
+Semantic filtering
+Last 30 days
+1
+Search sessions…
+⋮
+Evaluation
+Session
+Member
+Assistant
+Complete
+[tool_call]
+check_in
+4
+426e793e-2516-4cae-b05d-b7e2c1e03863
+FitForge-Assistant
+Complete
+[tool_call]
+book_class
+3
+31fe4d3f-09b5-476a-96ba-4803ad08c568
+FitForge-Assistant
+Complete
+[tool_call]
+get_schedule
+9
+90a2be38-6432-4d34-a375-94ed6ddde0d9
+FitForge-Assistant
+Complete
+[tool_call]
+query_attendance
+C
+c1b6185a-3cf3-4285-a982-a2a3babfe816
+FitForge-Assistant
+Complete
+[tool_call]
+get_member_visits
+1
+1b84ab29-e43d-47c9-a0d7-4645a406a141
+FitForge-Assistant
+Complete
+[tool_call]
+search
+D
+d8f74f9d-6df3-48d3-96a3-61d5f132c381
+FitForge-Assistant
+Complete
+You're an ops manager reviewing member retention, and you want to…
+3
+3d46ff1a-98e0-4341-b0fb-d786798ae202
+Insights
+Complete
+[tool_call]
+book_class
+F
+fb778b8f-aa91-4970-af69-79b4cb5d228b
+FitForge-Assistant
+Complete
+Top classes and locations this week
+D
+d4f81d22-f9cf-4551-a1cd-95a3b8b58b9f
+Member Chat
+Complete
+[tool_call]
+query_attendance
+2
+2d6d9fb0-bc12-47ba-affb-90310e37bbdd
+FitForge-Assistant
+Complete
+Create a report for: weekly check-ins by location for Q2 …
+0
+0c6250db-3203-4cb5-98bf-54024294709f
+Member Chat
+Complete
+[tool_call]
+get_member_visits
+E
+ee254dab-3712-4cd8-bcac-2f50b315b66c
+FitForge-Assistant
+Complete
+Analyze churn patterns for members who cancelled in the last…
+D
+d91d0428-1e5c-4835-ad0e-71b16c6556b9
+Member Chat
+Complete
+let's compare peak-hour check-ins against class capacity at the …
+9
+9079e931-c71c-4370-8082-55a0ee207093
+Member Chat
+Complete
+[tool_call]
+save_class_edits
+3
+30dc9b31-4b76-4a0c-bfab-e1826913fa04
+FitForge-Assistant
+Evaluation Available
+Assistant
+Gym Location
+Membership Tier
+Tool
+Has Tool Errors
+Saved to profile
+Agent failure reasons
+Booking errors
+Member intent topics
+Offers a next step
+Data completeness (…
+Booking accuracy - …
+Member friction
+Data quality issues
+Has negative feedb…
+Response was helpful
+Issue resolved
+Account safety
+Performance monitoring
+Monitor
+Last 30 days
+Chat Agent
+Search…
+Total Agents
+↑ 9.3%
+118
+vs. previous period
+Total Sessions
+↑ 1576.1%
+6,718,842
+vs. previous period
+Avg Response Latency
+↓ 6.1%
+30.2s
+vs. previous period
+Daily Spend
+↑ 12.4%
+$224
+vs. previous period
+Agent Adoption
+Active users for Chat Agent
+76,483
+↑ 95.6%
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Agent Activity
+Conversation volume for Chat Agent
+⋯
+Apr 30
+May 8
+May 16
+May 24
+Chat Agent
+Failure Rate
+Errored sessions for Chat Agent
+2.4%
+↓ 0.8%
+May 4
+May 11
+May 18
+May 25
+Failure rate
+Daily Spend
+Inference cost for Chat Agent
+$224
+↑ 12.4%
+May 4
+May 11
+May 18
+May 25
+Daily spend
+Human review
+FitForge · Member support set
+×
+Back
+Session 1 of 4
+Turn this into a line chart of weekly check-ins per location over the last 30 days.
+Apr 10 · 5:51 PM
+Finished working
+Done. Here’s the median weekly check-ins per location over the last 30 days:
+Location
+Avg check-ins / wk
+Downtown Flagship
+~4,210
+Riverside
+~3,180
+Northgate
+~2,540
+Harbor Point
+~2,015
+Westview
+~1,760
+Tech Campus
+~1,455
+Old Town
+~1,120
+Airport
+~640
+Downtown Flagship
+and
+Riverside
+stand out — they drive 2–3x the check-ins of every other location. Worth a closer look at staffing and class capacity there.
+View chart →
+$0.42 · Apr 10 · 5:52 PM
+Evaluators
+Info
+Trace
+Review
+Response accuracy
+Accurate
+Partially accurate
+Inaccurate
+Member friction
+Repeated question
+Confusion
+Frustration
+No friction
+Resolved the request
+Yes
+No
+Member intent topic
+Membership & Billing
+Class Booking
+Personal Training
+Check-in Issues
+Reporting & Insights
+Other
+Overall quality
+1/3
+2/3
+3/3
+Add Evaluator
+Comments
+Add a note...
+Add Label
+Previous
+Next Session
+Pick the labels that fit this session. Your review saves automatically.
+Datasets
+Hallucination Detector · Calibration
+10 sessions · 30% reviewed · updated 30 minutes ago
+Add sessions
+Human review
+×
+10 sessions
+· 3 reviewed
+Filter
+Session
+Review
+Label
+Is the 4.9% APR promo still active for new accounts?
+5h ago
+Reviewed
+Grounded
+Does my plan cover water damage from a burst pipe?
+6h ago
+Reviewed
+Hallucinated
+What's the early-termination fee on a 12-month lease?
+8h ago
+Reviewed
+Grounded
+Can I transfer my deposit to a different unit?
+9h ago
+Pending
+—
+Are pets allowed if I pay the extra monthly fee?
+11h ago
+Pending
+—
+When does the renewal grace period end for my lease?
+13h ago
+Pending
+—
+Will my rent be prorated if I move in mid-month?
+1d ago
+Pending
+—
+Does breaking my lease affect my rewards balance?
+1d ago
+Pending
+—
+We perfected it for ourselves
+We shipped agents at Amplitude, hit the same issues you have, and built Agent Analytics as a result. Hear the data and stories from the team behind it.
+Product
+Why We Created Agent Analytics, and Why Every Agent Team Needs It
+We built an analytics company. Then we built an agent and couldn’t see anything. Here’s how we fixed it.
+Insights
+The Eval Signal That Predicts 3x Agent Retention
+We used Agent Analytics to understand whether eval signals actually predict whether users come back. The result surprised us.
+Product
+Making Stone Soup: Eval-Driven Development for Analytics With AI
+How dev teams, customers, and LLMs contributed to automate insights in Amplitude.
+View more
+Instrument any LLM provider
+Native wrappers for the providers you actually use. An OpenTelemetry bridge for the rest. Manual capture when you want full control.
+your terminal
+$
+$
+Read docs
+Python and Node, drop-in SDK, live in minutes.
+Content-optional analytics
+Purpose-built to let you control what leaves your environment.
+Tier
+What you send
+What you get
+Metadata Only
+Tokens, cost, latency, behavioral signals
+Cost analytics, retention curves, funnel drop-off. No conversation content leaves your environment.
+Customer Enriched
+Your classification labels
+Full topic and quality analytics. You run your own classifiers and send us the structured labels.
+Full
+Conversation content
+Automatic topic classification, quality scoring, and behavioral pattern detection.
+Full or partial conversations
+Send full conversations, your own labels, or metadata only. Switch modes per agent or per event source.
+Always compliant
+SOC 2 Type 2, HIPAA, GDPR, and ISO 27001, inherited from the Amplitude platform you already run.
+Always yours
+Your conversations never train our models.
+Agent Analytics is in beta
+Stop shipping on vibes
+Find the failure modes that actually cost you users.
+Measure conversion and retention by agent quality.
+Connect any trace to session replay and experiments.
+Sign up for early access
+Sign up for early access
+Frequently asked questions
+What is Agent Analytics?
+The analytics layer between LLM observability and product analytics. Every user message, tool call, agent response, and session end becomes an Amplitude event tagged with topic, quality score, and behavioral pattern, so you can build cohorts, funnels, and retention curves on AI session quality.
+How is Agent Analytics different from a tracing tool?
+Tracing tools answer “What did the agent do?” Agent Analytics answers “Did it work for the user?” You can keep your tracing tool: AmplitudeGenAIExporter adds Amplitude as a second OpenTelemetry destination in one span processor registration.
+Do I have to send raw prompt and response content?
+No. The SDK has three privacy modes: metadata_only (tokens, latency, cost and behavioral signals only), customer_enriched (your own labels, no raw text) and full (managed enrichment). Most teams start in metadata-only and upgrade as trust builds.
+What languages and frameworks do you support?
+Python on PyPI (pip install amplitude-ai) and Node.js / TypeScript on npm (npm install @amplitude/ai). Native wrappers for OpenAI, Anthropic, Gemini, Bedrock, Mistral, and Azure OpenAI. Framework integrations for LangChain, LlamaIndex, OpenAI Agents SDK, CrewAI, and the Claude Agent SDK. Anything emitting OpenTelemetry GenAI spans (OpenLIT, Traceloop, and OpenAI instrumentation) flows in via the bridge.
+How does Session Replay fit in?
+Every agent event carries a
+Session Replay
+ID. From any session in the explorer, View Replay opens at the moment the conversation started, so you watch the agent fail inside the actual product the user was using.
+How does this connect to Amplitude Experiment and Guides?
+Each event carries the experiment variant as a property, so prompt A/B tests attribute correctly across multi-turn conversations. Quality scores and behavioral patterns flow into cohorts that
+Guides
+and
+Activation
+target in real time. Same workspace, same identity graph.
+A new era of analytics
+From a live agent overview to evals and datasets, every view ties what the agent did to what the user did next.
+Overview
+Beta
+Give Feedback
+Create chart
+Agent
+Chat Agent
+Last 30 days
+Total Agents
+↑ 9.3%
+118
+vs. previous period
+Total Sessions
+↑ 1576.1%
+6,718,842
+vs. previous period
+Total Agent Users
+↑ 95.6%
+76,483
+vs. previous period
+Avg Response Latency
+↓ 6.1%
+30.2s
+vs. previous period
+Agent Activity
+Conversation volume for Chat Agent
+Apr 30
+May 2
+May 4
+May 6
+May 8
+May 10
+May 12
+May 14
+May 16
+May 18
+May 20
+May 22
+May 24
+May 26
+May 28
+Chat Agent
+Agent Adoption
+Active users for Chat Agent
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Agent Reliability
+Sessions with technical failures for Chat Agent
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Total LLM Spend
+Daily LLM cost (USD) for Chat Agent
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Response Latency
+AI response time per turn for Chat Agent
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+User Intent
+Chat Agent sessions by conversation intent
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Session Issues
+Chat Agent sessions with detected issues
+May 4
+May 11
+May 18
+May 25
+Chat Agent
+Evaluators
+BETA
+Give Feedback
+New Evaluator
+Suggested for you
+Detect when responses cite unsupported facts
+Binary
+Ungrounded Claim
+Create evaluator
+→
+Did the agent successfully complete the user's task?
+Categorical
+Task Completion
+Create evaluator
+→
+Rate the quality of the agent's tool selection
+Score
+Tool Selection Quality
+Create evaluator
+→
+Cluster reasons users abandon the checkout flow
+Categorical
+Checkout Abandon Cause
+Create evaluator
+→
+Search Evaluators…
+Status
+Status
+Evaluator
+Version
+Output
+Labels
+Run on
+Agents
+Updated
+Active
+Tool Use Quality
+V1
+Score
+1
+3
+All Sessions
+Sales Copilot
+2h ago
+Active
+Sufficient Evidence (Qual & Quant)
+V1
+Categorical
+Sufficient
+Insufficient
+All Sessions
+Sales Copilot
++1
+8d ago
+Active
+Agent Error Types
+V1
+Categorical
+Underspecified
++29
+All Sessions
+Support Copilot
++6
+22d ago
+Active
+Action Offers
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+33d ago
+Active
+Failure Reasons
+V1
+Categorical
+Integration Error
++6
+All Sessions
+Any Agent
+46d ago
+Active
+Intent Topics
+V1
+Categorical
+Data Analysis
+Chart Creation
++6
+All Sessions
+Any Agent
+46d ago
+Active
+Memory Recall
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+47d ago
+Active
+User Friction
+V2
+Categorical
+Repeated Question
+Confusion
++2
+All Sessions
+Support Copilot
+69d ago
+Draft
+Intent Classifier
+V1
+Categorical
+Data Analysis
+Chart Creation
++2
+All Sessions
+Any Agent
+54m ago
+Draft
+Response Tone
+V1
+Categorical
+Valid Timestamp
+Invalid Timestamp
+All Sessions
+Any Agent
+1h ago
+Draft
+Safety Check
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+1h ago
+Draft
+PII Detection
+V1
+Binary
+Yes
+No
+All Sessions
+Any Agent
+1h ago
+Active
+V1
+×
+Tool Use Quality
+Score
+Sales Copilot
+Description
+Grades every matching session for
+Tool Use Quality
+and writes the verdict back to the session as a property — available in charts, segments, and exports.
+Grading prompt
+Edit
+Rate the assistant on “Tool Use Quality” from 1 (poor) to 5 (excellent).
+5 — fully correct, efficient, and well-justified
+3 — partially correct or with minor issues
+1 — incorrect, unsafe, or off-task
+Weigh tool selection and reasoning, not just the final answer.
+Label distribution · last 30 days
+5
+23.2%
+4
+18.8%
+3
+18.8%
+2
+14.5%
+1
+14.5%
+0
+10.1%
+Configuration
+Output
+Score
+Version
+V1
+Run on
+All Sessions
+Agents
+Sales Copilot
+Schedule
+Hourly
+Last updated
+2h ago
+Edit Evaluator
+Run on Dataset
+Datasets
+Beta
+Give Feedback
+New Dataset
+Search Datasets…
+Hallucination Detector · Calibration
+30 minutes ago
+Curated sessions where the agent stated unsupported facts — used to tune the hallucination evaluator.
+Sessions
+10
+Reviewed
+30%
+Agents
+Any
+Add Sessions
+Binary Classifier Benchmark
+1 hour ago
+Balanced yes/no examples for stress-testing binary classifier accuracy and drift.
+Sessions
+10
+Reviewed
+0%
+Agents
+Any
+Add Sessions
+Safety Signals Golden Set
+1 hour ago
+Golden labels for safety and off-topic detection across high-risk conversations.
+Sessions
+10
+Reviewed
+100%
+Agents
+Any
+Add Sessions
+Wrong-Info Detector Calibration
+1 hour ago
+Edge cases of confidently-wrong answers, hand-reviewed for precision tuning.
+Sessions
+20
+Reviewed
+15%
+Agents
+Any
+Add Sessions
+Intent Classifier Benchmark
+19 hours ago
+Representative intents sampled across surfaces to benchmark the intent classifier.
+Sessions
+10
+Reviewed
+10%
+Agents
+Any
+Add Sessions
+Evaluator Accuracy Suite
+19 hours ago
+Held-out set measuring evaluator agreement against human reviewers.
+Sessions
+10
+Reviewed
+0%
+Agents
+Any
+Add Sessions
+Quality Baseline Set
+19 hours ago
+A stable quality baseline to catch regressions release over release.
+Sessions
+10
+Reviewed
+100%
+Agents
+Any
+Add Sessions
+Session Classifier Benchmark
+20 hours ago
+Multi-turn sessions labeled by outcome for the session classifier.
+Sessions
+10
+Reviewed
+10%
+Agents
+Any
+Add Sessions
+Conversation Tagging Set
+20 hours ago
+Conversations tagged by topic and sentiment for taxonomy coverage.
+Sessions
+10
+Reviewed
+100%
+Agents
+Any
+Add Sessions
+Sessions
+Export
+Update SDK
+Suggested for you
+Which users only engaged with our agent once?
+Sessions per user = 1
+last 30d
+Filter sessions
+→
+What are my agents' most common failure modes?
+Clustered from 9.2k failed sessions
+Filter sessions
+→
+What questions are being answered badly?
+Quality score < 0.4
+last 30d
+Filter sessions
+→
+How and why are users using the create_theme tool?
+create_theme invocations
+last 30d
+Filter sessions
+→
+Last 30 days
+Search sessions…
+Filter
+Session
+User
+Agent
+Tags
+When
+Summarize last week's checkout funnel and flag any unusual drop-offs
+3
+3b449a79-2b00-4809-a331-93e051493497
+Funnel Analyst
+Negative feedback
+Low latency
+5h ago
+Draft a release note for the v4.12 dashboard refresh — friendly tone, under 200 words
+5
+5334003c-0563-478a-a061-866d4f6cfc57
+Release Notes Writer
+Low latency
+4h ago
+Compare YoY active-user growth between our mobile and web tiers, broken down by region
+A
+a9831989-66c7-4627-af4d-d871c601faea
+Growth Insights
+Retention
+5h ago
+Pull every support ticket tagged "billing" from the last 14 days and cluster by root cause
+7
+726850cb-0fbb-400a-986b-59e305a705f8
+Support Triage
+Billing intent
+Power user
+4h ago
+What's the median time-to-first-value for trial accounts that converted in Q4?
+A
+a96072ca-67a6-4553-8a92-d23d5c4e903c
+Trial Intelligence
+Onboarding
+4h ago
+Generate a weekly retention summary email for the growth team — include top movers
+1
+1560cdac-3b1b-4326-86e0-1e7ac40ec317
+Retention Digest
+Low latency
+Retention
+4h ago
+Why did session length drop ~18% for free users after the Tuesday deploy?
+6
+65bedee6-61b7-4a04-86e2-cce6a34f646f
+Anomaly Investigator
+Negative feedback
+4h ago
+List the top 20 feature requests submitted in-app this month, deduped and ranked
+6
+64d74e09-00dc-4a50-9c10-661ec10de4cc
+Feedback Synthesizer
+Routine
+4h ago
+Build a cohort of accounts that activated the AI assistant but haven't returned in 14 days
+E
+e5e17074-b8b7-4bfc-b18f-d01d3dc4b347
+Cohort Builder
+Power user
+4h ago
+Walk me through every error event raised by the payments service in the past hour
+B
+b619b97a-574f-4791-b875-05b9262b5578
+Incident Copilot
+Negative feedback
+High frustration
+4h ago
+Translate this onboarding tour into Spanish, French, and German — keep the friendly voice
+3
+3f7445b9-c919-42a9-8fad-dc35326249cd
+Localization Helper
+Low latency
+Onboarding
+4h ago
+Explain how the new pricing tiers map to existing customer plans, in plain language
+6
+6c12cbef-a286-46c4-aab2-7223829177be
+Pricing Explainer
+Billing intent
+4h ago
+Find every session where the assistant returned an empty response and group by trigger phrase
+4
+45b723a6-c746-468f-86c0-60655ab4ee08
+Quality Auditor
+Routine
+3h ago
+Which onboarding step had the highest abandonment rate among self-serve trials last week?
+5
+5ea7ea0c-19da-445f-9e98-57a7da4dba29
+Onboarding Analyst
+Negative feedback
+Onboarding
+3h ago
+Generate a sales-call brief for Acme Co — include usage trends, expansion signals, and risks
+3
+3901e8d7-7e38-4a7b-b2cd-1952b7fdc07c
+Account Brief Builder
+Low latency
+Billing intent
+3h ago
+Cluster customer feedback from this week's NPS responses into themes and rank by sentiment
+8
+8069156f-b4f2-4340-957e-2a038e6baf2e
+Sentiment Clusterer
+Power user
+3h ago
+Spot the cohort that started using export-to-csv this month — what else are they using?
+8
+8a91c1bd-feda-4b62-b56d-121a999877c1
+Behavior Linker
+Power user
+2h ago
+Summarize today's deploy notes into a one-line Slack post for the eng channel
+2
+250c5e02-5ae1-4f0e-a2fc-37ae94e8f340
+Release Notes Writer
+Low latency
+2h ago
+Why is API p95 latency 2x normal for the EU region since 09:00 UTC?
+0
+095c273f-10bd-4b2f-97d1-db930ceae97e
+Incident Copilot
+Negative feedback
+High frustration
+2h ago
+List all accounts approaching their seat limit with 30+ days remaining on contract
+C
+c2aeceff-64c4-49ec-8414-32b84d4ab0f1
+Expansion Spotter
+Billing intent
+2h ago
+Compare conversion rate for users who saw the new pricing page vs the old one
+F
+f53c9f48-3e60-41c6-ab0e-74d3275b2b2d
+Experiment Reader
+Billing intent
+1h ago
+Pull the 10 most-used tool calls this week and the prompts that triggered them
+3
+39a20421-3599-4a81-b551-b553590a472a
+Tool Usage Analyst
+Routine
+1h ago
+Draft a friendly outreach to trial accounts that stalled after activating one feature
+0
+02636abd-d5b3-4bb0-9f1c-fdb85ac0db42
+Lifecycle Copywriter
+Negative feedback
+High frustration
+1h ago
+What does session quality look like for users on Safari vs Chrome in the last 7 days?
+E
+e7d459ab-4bea-42e6-a7ec-b5d09bd18a0b
+Quality Auditor
+Routine
+45m ago
+Trace why the recommendation engine started returning duplicates after the Wednesday model swap
+B
+bcaefb24-bc57-4414-ae4d-8e7f300f5dde
+Model Debugger
+Negative feedback
+High frustration
+30m ago
+Build a Markdown summary of this week's AI assistant wins for the all-hands deck
+1
+15aa086e-39e7-47b5-baff-09d595f8251a
+Highlights Curator
+Low latency
+20m ago
+Show me every conversation where a user asked about cancellation in the last 72 hours
+0
+01175b49-d7d2-4eb1-aa47-4fe3d70df882
+Churn Watcher
+Billing intent
+Churn risk
+10m ago
+Platform
+AI Agents
+Agent Analytics
+AI Feedback
+Amplitude MCP
+AI Assistant
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+AI Early Access Program
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+LinkedIn
+Twitter
+G2
+GitHub
+Reddit
+View markdown
+Copy markdown
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
+Español (LATAM)
+Español (Spain)
+Português (Brasil)
+Português (Portugal)
+Français
+Deutsch
+© 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.

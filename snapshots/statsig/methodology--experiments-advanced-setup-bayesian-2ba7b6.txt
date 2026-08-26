@@ -1,0 +1,558 @@
+# https://docs.statsig.com/experiments/advanced-setup/bayesian
+Bayesian Experiments | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+Experiment Types
+Reducing False Positives
+Health Checks
+Variance Reduction
+How we Calculate:
+Stratified Sampling
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+How Bayesian testing works in Statsig
+Informed Bayesian
+Drawing the correct prior distribution from historical data
+Implementation details
+Bayesian statistics glossary
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+Bayesian Experiments
+Bayesian Experiments
+Learn about Bayesian A/B testing on Statsig, including informative priors and implementation details.
+How Bayesian testing works in Statsig
+Bayesian mode analyzes your experiment with Bayesian statistics. This mode lets you factor in prior beliefs about the treatment effect and report results as a chance to beat control and expected loss. Non-technical audiences often find these terms more intuitive than the p-values that frequentist analysis uses by default. Experiments are frequentist by default; to switch to Bayesian mode, go to Advanced Settings.
+You can't modify the experiment type after the experiment starts.
+Deep-dive analysis reflects Bayesian statistics.
+Informed Bayesian
+Bayesian experiments let you specify a prior belief on the relative average treatment effect. Statsig combines the prior distribution with the observed data to display prior-adjusted results. To enable prior-adjusted results, select the "use informative priors" option.
+Drawing the correct prior distribution from historical data
+When you use Bayesian mode with informative priors, your organization must understand what influence the priors have over your experimental results. Your organization must also establish a reliable prior based on domain knowledge. Use these patterns to derive priors:
+You can use the
+A
+V
+G
+(
+average treatment effect
+)
+AVG(\text{average treatment effect})
+A
+V
+G
+(
+average treatment effect
+)
+of past experiments with a similar setup and population as your prior mean. You can use the standard deviation, or a multiple of it, as the prior standard error.
+You can also use the
+A
+V
+G
+(
+observed standard error
+)
+AVG(\text{observed standard error})
+A
+V
+G
+(
+observed standard error
+)
+as your prior standard error.
+Implementation details
+Denote
+N
+(
+A
+T
+E
+p
+r
+i
+o
+r
+,
+S
+T
+E
+p
+r
+i
+o
+r
+2
+)
+\mathcal{N}(ATE_{prior}, STE_{prior}^2)
+N
+(
+A
+T
+E
+p
+r
+i
+or
+​
+,
+S
+T
+E
+p
+r
+i
+or
+2
+​
+)
+as the prior distribution, where
+A
+T
+E
+p
+r
+i
+o
+r
+ATE_{prior}
+A
+T
+E
+p
+r
+i
+or
+​
+is the average treatment effect and
+S
+T
+E
+p
+r
+i
+o
+r
+STE_{prior}
+S
+T
+E
+p
+r
+i
+or
+​
+is the standard error. Similarly,
+N
+(
+A
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+,
+S
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+2
+)
+\mathcal{N}(ATE_{observed}, STE_{observed}^2)
+N
+(
+A
+T
+E
+o
+b
+ser
+v
+e
+d
+​
+,
+S
+T
+E
+o
+b
+ser
+v
+e
+d
+2
+​
+)
+as the observed distribution.
+Statsig then calculates the posterior distribution as
+A
+T
+E
+p
+o
+s
+t
+=
+A
+T
+E
+p
+r
+i
+o
+r
+S
+T
+E
+p
+r
+i
+o
+r
+2
++
+A
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+S
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+2
+1
+S
+T
+E
+p
+r
+i
+o
+r
+2
++
+1
+S
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+2
+ATE_{post} = \frac{ \frac{ATE_{prior}}{STE_{prior}^2} + \frac{ATE_{observed}}{STE_{observed}^2} }{ \frac{1}{STE_{prior}^2} + \frac{1}{STE_{observed}^2} }
+A
+T
+E
+p
+os
+t
+​
+=
+S
+T
+E
+p
+r
+i
+or
+2
+​
+1
+​
++
+S
+T
+E
+o
+b
+ser
+v
+e
+d
+2
+​
+1
+​
+S
+T
+E
+p
+r
+i
+or
+2
+​
+A
+T
+E
+p
+r
+i
+or
+​
+​
++
+S
+T
+E
+o
+b
+ser
+v
+e
+d
+2
+​
+A
+T
+E
+o
+b
+ser
+v
+e
+d
+​
+​
+​
+S
+T
+E
+p
+o
+s
+t
+2
+=
+1
+1
+S
+T
+E
+p
+r
+i
+o
+r
+2
++
+1
+S
+T
+E
+o
+b
+s
+e
+r
+v
+e
+d
+2
+STE_{post}^2 = \frac{1}{ \frac{1}{STE_{prior}^2} + \frac{1}{STE_{observed}^2} }
+S
+T
+E
+p
+os
+t
+2
+​
+=
+S
+T
+E
+p
+r
+i
+or
+2
+​
+1
+​
++
+S
+T
+E
+o
+b
+ser
+v
+e
+d
+2
+​
+1
+​
+1
+​
+If you don't specify a prior, Statsig represents the
+N
+(
+A
+T
+E
+p
+r
+i
+o
+r
+,
+S
+T
+E
+p
+r
+i
+o
+r
+2
+)
+\mathcal{N}(ATE_{prior}, STE_{prior}^2)
+N
+(
+A
+T
+E
+p
+r
+i
+or
+​
+,
+S
+T
+E
+p
+r
+i
+or
+2
+​
+)
+as
+N
+(
+0
+,
+∞
+)
+\mathcal{N}(0, \infty)
+N
+(
+0
+,
+∞
+)
+.
+Bayesian statistics glossary
+Bayesian A/B tests use different terminology from the frequentist framework. These terms are often more intuitive for communicating results to non-technical audiences.
+Term
+Definition
+Credible Interval
+The interval that contains the true parameter at the given probability
+Chance to Beat
+The probability that the test is better than control
+Expected Loss
+The average potential risk if you ship the test variant
+Was this helpful?
+On this page
+How Bayesian testing works in Statsig
+Informed Bayesian
+Drawing the correct prior distribution from historical data
+Implementation details
+Bayesian statistics glossary

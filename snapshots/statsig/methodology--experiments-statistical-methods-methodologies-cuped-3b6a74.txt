@@ -1,0 +1,962 @@
+# https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped
+CUPED | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+Experiment Types
+Reducing False Positives
+Health Checks
+Variance Reduction
+Variance Reduction
+CUPED
+Winsorization
+How we Calculate:
+Stratified Sampling
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+CUPED - Controlled-experiment Using Pre-Existing Data
+CUPED for simple aggregations
+CUPED for ratio metrics
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+CUPED
+CUPED
+How Statsig uses CUPED variance reduction to improve experiment sensitivity by adjusting for pre-experiment user behavior on metric values.
+CUPED - Controlled-experiment Using Pre-Existing Data
+CUPED (short for Controlled-experiment Using Pre-Existing Data) is a technique that uses user information from before an experiment to reduce variance and increase confidence in experimental metrics. Statsig defines this pre-experiment data as the 7 days before each user's exposure rather than a fixed window before the experiment starts for all users. This approach helps debias experiments that have meaningful pre-exposure bias (for example, groups that were randomly different before you applied any treatment).
+CURE
+extends CUPED for Warehouse Native, so use CURE when you need covariates beyond a metric's own pre-experiment history, such as new-user experiments or metrics that aren't autocorrelated.
+The Cloud product uses a 7-day window for CUPED calculation. For Warehouse Native customers, Statsig recommends a 7-day window, but you can customize it to any length.
+For more details, refer to the
+Variance Reduction
+page.
+For an in-depth look at the methodology, refer to
+CURE by Statsig
+.
+CUPED for simple aggregations
+The original
+Microsoft paper
+describes the methodology for simple aggregations, as does the in-depth
+article
+on the technique.
+The Cloud product uses stratification alongside CUPED to account for users who may not have pre-experiment data. Statsig groups users into strata based on available pre-experimentation information, estimates treatment and control effects within each stratum, then aggregates them to produce an overall result. Statsig then applies the standard difference-in-means and variance estimation. This approach lets Statsig retain users with missing pre-data while still benefiting from variance reduction where applicable.
+CUPED for ratio metrics
+The Microsoft paper also gives details on how to implement CUPED for metrics with a different analysis unit (Appendix B). On Statsig, this methodology extends to ratio metrics, where a numerator and a denominator represent each experiment unit. The variance reduction process finds the variance of experiment data, pre-experiment data, and the covariance between the two.
+Denote the numerator, denominator, pre-experiment numerator, and pre-experiment denominator of a unit as
+Y
+Y
+Y
+,
+N
+N
+N
+,
+X
+X
+X
+, and
+M
+M
+M
+, respectively. Using the CUPED-reduced variance formula,
+V
+a
+r
+(
+Y
+c
+v
+N
+c
+v
+)
+=
+V
+a
+r
+(
+Y
+N
+)
++
+θ
+2
+V
+a
+r
+(
+X
+M
+)
+−
+2
+θ
+C
+o
+v
+(
+Y
+N
+,
+X
+M
+)
+Var(\frac{Y_{cv}}{N_{cv}})=Var(\frac{Y}{N})+\theta^2 Var(\frac{X}{M})-2\theta Cov(\frac{Y}{N}, \frac{X}{M})
+V
+a
+r
+(
+N
+c
+v
+​
+Y
+c
+v
+​
+​
+)
+=
+V
+a
+r
+(
+N
+Y
+​
+)
++
+θ
+2
+V
+a
+r
+(
+M
+X
+​
+)
+−
+2
+θ
+C
+o
+v
+(
+N
+Y
+​
+,
+M
+X
+​
+)
+where Statsig finds optimal
+θ
+\theta
+θ
+as
+C
+o
+v
+(
+Y
+N
+,
+X
+M
+)
+V
+a
+r
+(
+X
+M
+)
+\frac{Cov(\frac{Y}{N}, \frac{X}{M})}{Var(\frac{X}{M})}
+V
+a
+r
+(
+M
+X
+​
+)
+C
+o
+v
+(
+N
+Y
+​
+,
+M
+X
+​
+)
+​
+expanded to
+\
+C
+o
+v
+(
+Y
+μ
+N
+−
+μ
+Y
+N
+μ
+N
+2
+,
+X
+μ
+M
+−
+μ
+X
+M
+μ
+M
+2
+)
+V
+a
+r
+(
+X
+μ
+M
+−
+μ
+X
+M
+μ
+M
+2
+)
+\frac{Cov(\frac{Y}{\mu_N}-\frac{\mu_Y N}{\mu^2_N}, \frac{X}{\mu_M}-\frac{\mu_X M}{\mu^2_M})}{Var(\frac{X}{\mu_M}-\frac{\mu_X M}{\mu^2_M})}
+V
+a
+r
+(
+μ
+M
+​
+X
+​
+−
+μ
+M
+2
+​
+μ
+X
+​
+M
+​
+)
+C
+o
+v
+(
+μ
+N
+​
+Y
+​
+−
+μ
+N
+2
+​
+μ
+Y
+​
+N
+​
+,
+μ
+M
+​
+X
+​
+−
+μ
+M
+2
+​
+μ
+X
+​
+M
+​
+)
+​
+This gives:
+Y
+c
+^
+N
+c
+^
+=
+Y
+c
+N
+c
+−
+θ
+(
+X
+c
+M
+c
+−
+E
+[
+R
+]
+)
+\frac{\hat{Y_{c}}}{\hat{N_{c}}}=\frac{Y_{c}}{N_{c}}-\theta( \frac{X_{c}}{M_{c}} - \mathbb{E}[R])
+N
+c
+​
+^
+​
+Y
+c
+​
+^
+​
+​
+=
+N
+c
+​
+Y
+c
+​
+​
+−
+θ
+(
+M
+c
+​
+X
+c
+​
+​
+−
+E
+[
+R
+])
+Y
+t
+^
+N
+t
+^
+=
+Y
+t
+N
+t
+−
+θ
+(
+X
+t
+M
+t
+−
+E
+[
+R
+]
+)
+\frac{\hat{Y_{t}}}{\hat{N_{t}}}=\frac{Y_{t}}{N_{t}}-\theta( \frac{X_{t}}{M_{t}} - \mathbb{E}[R])
+N
+t
+​
+^
+​
+Y
+t
+​
+^
+​
+​
+=
+N
+t
+​
+Y
+t
+​
+​
+−
+θ
+(
+M
+t
+​
+X
+t
+​
+​
+−
+E
+[
+R
+])
+Because
+E
+[
+R
+]
+\mathbb{E}[R]
+E
+[
+R
+]
+is hard to derive, the expectation term is the same for both groups. Substituting
+E
+[
+R
+]
+\mathbb{E}[R]
+E
+[
+R
+]
+with
+X
+c
+M
+c
+\frac{X_{c}}{M_{c}}
+M
+c
+​
+X
+c
+​
+​
+transforms the formulas above to the following two:
+Y
+c
+v
+(
+c
+o
+n
+t
+r
+o
+l
+)
+N
+c
+v
+(
+c
+o
+n
+t
+r
+o
+l
+)
+=
+Y
+(
+c
+o
+n
+t
+r
+o
+l
+)
+N
+(
+c
+o
+n
+t
+r
+o
+l
+)
+\frac{Y_{cv}(control)}{N_{cv}(control)}=\frac{Y(control)}{N(control)}
+N
+c
+v
+​
+(
+co
+n
+t
+r
+o
+l
+)
+Y
+c
+v
+​
+(
+co
+n
+t
+r
+o
+l
+)
+​
+=
+N
+(
+co
+n
+t
+r
+o
+l
+)
+Y
+(
+co
+n
+t
+r
+o
+l
+)
+​
+Y
+c
+v
+(
+t
+e
+s
+t
+)
+N
+c
+v
+(
+t
+e
+s
+t
+)
+:
+=
+Y
+(
+c
+o
+n
+t
+r
+o
+l
+)
+N
+(
+c
+o
+n
+t
+r
+o
+l
+)
+−
+(
+Y
+(
+c
+o
+n
+t
+r
+o
+l
+)
+N
+(
+c
+o
+n
+t
+r
+o
+l
+)
+−
+θ
+X
+(
+c
+o
+n
+t
+r
+o
+l
+)
+M
+(
+c
+o
+n
+t
+r
+o
+l
+)
+)
++
+(
+Y
+(
+t
+e
+s
+t
+)
+N
+(
+t
+e
+s
+t
+)
+−
+θ
+X
+(
+t
+e
+s
+t
+)
+M
+(
+t
+e
+s
+t
+)
+)
+:
+=
+Y
+(
+t
+e
+s
+t
+)
+N
+(
+t
+e
+s
+t
+)
+−
+θ
+X
+(
+t
+e
+s
+t
+)
+M
+(
+t
+e
+s
+t
+)
++
+θ
+X
+(
+c
+o
+n
+t
+r
+o
+l
+)
+M
+(
+c
+o
+n
+t
+r
+o
+l
+)
+\frac{Y_{cv}(test)}{N_{cv}(test)} :=\frac{Y(control)}{N(control)} - (\frac{Y(control)}{N(control)} - \theta \frac{X(control)}{M(control)}) + (\frac{Y(test)}{N(test)} - \theta\frac{X(test)}{M(test)}) :=\frac{Y(test)}{N(test)} - \theta\frac{X(test)}{M(test)} + \theta \frac{X(control)}{M(control)}
+N
+c
+v
+​
+(
+t
+es
+t
+)
+Y
+c
+v
+​
+(
+t
+es
+t
+)
+​
+:=
+N
+(
+co
+n
+t
+r
+o
+l
+)
+Y
+(
+co
+n
+t
+r
+o
+l
+)
+​
+−
+(
+N
+(
+co
+n
+t
+r
+o
+l
+)
+Y
+(
+co
+n
+t
+r
+o
+l
+)
+​
+−
+θ
+M
+(
+co
+n
+t
+r
+o
+l
+)
+X
+(
+co
+n
+t
+r
+o
+l
+)
+​
+)
++
+(
+N
+(
+t
+es
+t
+)
+Y
+(
+t
+es
+t
+)
+​
+−
+θ
+M
+(
+t
+es
+t
+)
+X
+(
+t
+es
+t
+)
+​
+)
+:=
+N
+(
+t
+es
+t
+)
+Y
+(
+t
+es
+t
+)
+​
+−
+θ
+M
+(
+t
+es
+t
+)
+X
+(
+t
+es
+t
+)
+​
++
+θ
+M
+(
+co
+n
+t
+r
+o
+l
+)
+X
+(
+co
+n
+t
+r
+o
+l
+)
+​
+Using the optimal
+θ
+\theta
+θ
+, Statsig reduces group-level variance by applying the parameter to calculate the adjustment. Across-group
+θ
+\theta
+θ
+doesn't necessarily reduce variance for one group, or the sum of variances of all groups, but in most cases it does. Simulations show that 98.3% of metrics saw a decrease through CUPED.
+Statsig uses CUPED variance when all of the following are true:
+Core assumptions of the CUPED model hold; rounding error or other data artifacts can violate this
+E(X_hat) = E(X)
+The pooled variance of the adjusted population across groups is < the variance of the unadjusted population
+Enough units have pre-experiment values (> 100)
+Enough percentage of units have pre-experiment values (> 5%)
+Was this helpful?
+On this page
+CUPED - Controlled-experiment Using Pre-Existing Data
+CUPED for simple aggregations
+CUPED for ratio metrics

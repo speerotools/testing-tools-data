@@ -1,0 +1,95 @@
+# https://posthog.com/docs/posthog-ai
+PostHog AI - Docs - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+PostHog AI
+Overview
+Get started
+Start here
+Allow access
+Surfaces
+PostHog Web
+PostHog Slack
+Modes and tools
+Tools and capabilities
+Modes
+Plan mode
+Research mode
+Memory and context
+Context and commands
+Edit memory
+Resources
+Pricing
+FAQ
+Changelog
+Copy page
+PostHog AI
+Contents
+Where you can use it
+Where its data comes from
+PostHog AI is an AI product analyst that lives inside PostHog. Ask it a question in plain English and it queries your data, builds the insight, writes the SQL, or finds the session replay – then explains what it found. Because it runs on your project's own events, persons, and schema, its answers are about your product, not a generic dataset.
+It also does the work, not just the analysis. PostHog AI creates dashboards, surveys, alerts, and feature flags, edits filters in the UI alongside you, and remembers what it learns about your product between conversations. Ask it for a change that belongs in code and it starts a
+coding task
+against a repository you've connected, then reports back when there's a pull request to review.
+Get started
+Where you can use it
+PostHog AI lives in the PostHog web app, in a chat sidebar and in inline entry points throughout the UI. You can also talk to it in Slack, and those conversations show up in your chat history back in the web app.
+PostHog Web
+Chat in the sidebar, or trigger PostHog AI inline from the page you're already on.
+Chat in the web app →
+PostHog Slack
+Beta
+Mention or DM
+@PostHog
+to investigate something without leaving the thread you're in.
+Ask in Slack →
+Where its data comes from
+PostHog AI answers from your project's data, the context you attach to a conversation, and what it has saved to memory. It reads through your existing
+access controls
+, so it can only see what you can see.
+Your PostHog data
+Events, persons, sessions, groups, cohorts, your data warehouse schema, and every saved insight and dashboard.
+See what it can read →
+Conversation context
+The page you're on, plus insights, dashboards, events, and notebooks you attach to the chat yourself.
+Add context →
+Project memory
+What your product is, who uses it, and how your team works – saved once and reused in every conversation.
+Edit memory →
+Was this page useful?
+Helpful
+Could be better
+Jump to:
+Where you can use it
+Where its data comes from

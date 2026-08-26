@@ -1,0 +1,141 @@
+# https://confidence.spotify.com/blog/when-ai-writes-the-code
+When AI writes the code, who decides what ships? | Confidence by Spotify
+Skip to content
+Pricing
+Blog
+Bootcamp
+Contact us
+Login
+Start free trial
+Technology
+June 8, 2026
+/
+Johan Rydberg
+When AI writes the code, who decides what ships?
+AI-accelerated code production increases the need for experimentation. The validation bottleneck grows with build speed. The fastest learners will win.
+Want to experiment like Spotify? Sign up for a 30 day free trial.
+Start your free trial
+At Anthropic, more than 80% of merged production code is now
+written by Claude
+. Engineers ship 8x more code per quarter than they did two years ago. The capability of their AI coding agent doubles every four months. Google reports that
+75% of new code
+is AI-generated, up from 25% in early 2024. At Spotify, the internal coding agent Honk now
+merges 1,000 pull requests every 10 days
+, and across the engineering org
+96% of engineers code with AI and pull request frequency is up 60%
+.
+Building has never been faster. But the bottleneck was never building.
+Every feature that AI makes cheaper to build still needs to be validated before it ships. The validation bottleneck grows with build speed, because there are more things to validate and more risk accumulating with every untested change. Speed of learning will separate the winners from the companies that just build faster.
+#
+What happens when code writes itself?
+Anthropic just did something rare. On June 4, 2026, it
+published an article on its own progress toward recursive self-improvement
+, with detailed internal engineering metrics on what happens when an AI lab uses its own models to write its own code.
+Their engineers now produce 8x more code per quarter, as measured by code volume. When surveyed, the 130-person team estimated a more conservative 4x increase in overall productivity. Claude's task capability, measured by the range of engineering work it can handle autonomously, doubles every four months.
+Anthropic's own internal assessment: as Claude writes code exponentially faster, human code review becomes the constraint rather than code writing. Then even review gets automated. The next bottleneck? Direction-setting and prioritization. In Anthropic's framing, "Doing now costs negligible human time; deciding what's worth doing becomes the limiting factor."
+This is
+Amdahl's Law
+applied to product development: when you speed up one part of a pipeline, the bottleneck shifts to the next slowest part. Code generation got 8x faster. So the constraint moved to code review. Automate that, and the constraint moves to deciding what to build and whether what you built was right.
+You can only answer that second question by running experiments.
+#
+The data says the gap is already open
+A study from Faros covering
+22,000 developers across 4,000+ teams
+measured the divergence directly. Comparing teams with high AI tool adoption against teams with low adoption, throughput rose: epics completed per developer up 66%, task throughput up 34%, PR merge rate up 16%.
+The quality indicators went the other direction. Bugs per developer increased 54%. Monthly incidents rose 58%. The incidents-to-PR ratio climbed 243%. Code churn (the ratio of code deleted to code added) increased 861%.
+The review bottleneck widened with everything else. Median time in code review increased 442%. PRs merged without any review at all increased 31%.
+Volume is up and quality is down. The gap is widening as adoption deepens.
+These are engineering-level quality metrics: bugs, incidents, code churn. The product-level gap is harder to measure and slower to surface. Code bugs surface through automated tests and incident alerts within hours. Product-level regressions, like a feature that passes code review but quietly degrades retention, take weeks or months to appear, and only if someone is measuring.
+The throughput ceiling is real even at the largest companies. Mark Zuckerberg put it bluntly in a
+2025 interview
+: "Even if you have three and a half billion people using your products, you still want each test to be
+statistically significant
+. ... There's only so much throughput you can get on testing through that. ... We're already at the point that we can't really test everything that we want." That was before AI coding tools multiplied Meta's hypothesis volume further.
+This is the judgment gap: the growing distance between what teams can build and what they can validate. We
+named it earlier this year
+. Anthropic's numbers are the first time a frontier AI lab has quantified the shift from the inside.
+#
+How does speed compound in the wrong direction?
+When build velocity outpaces learn velocity, three failure modes emerge. Each one is manageable when a team ships 5 features per quarter. At 8x build speed, all three get worse at once.
+Ship-and-pray at scale.
+Without experimentation infrastructure, every AI-generated feature goes straight to production with no measurement of whether it helped or hurt. At Spotify,
+42% of experiments run on Confidence are rolled back
+after guardrail metrics detect regressions. Nearly half of well-intentioned changes don't survive contact with real user behavior. At 8x build velocity, the volume of untested changes reaching users multiplies accordingly. The Faros data confirms the pattern across the industry: incidents up 58%, and a growing share of PRs merged with no review at all.
+Optimize what's easy to measure.
+AI makes it easy to generate features optimized for whatever metric is most visible. But
+proxy metrics break when you optimize them directly
+. A feature that boosts click-through rate while degrading long-term retention looks like a win in the dashboard and a loss in the quarterly numbers. More features in flight means more opportunities to find and exploit these local maxima.
+Learn nothing from what you ship.
+Without structured experimentation, teams still get feedback: support tickets, app store reviews, usage dashboards. But informal feedback can't measure the size of an effect, can't separate one change from another when multiple ship at once, and doesn't accumulate into a reusable knowledge base. At Spotify, the
+win rate for experiments is roughly 12%
+. Most changes don't improve the metrics they target. But the
+learning rate is 64%
+: nearly two-thirds of experiments produce a validated understanding about user behavior, regardless of whether the feature ships.
+Validated learning compounds. Teams with longer experimentation histories generate better hypotheses. Without structured experiments, teams don't improve their judgment at a rate that matches their build velocity. They just generate more guesses.
+#
+What does experimentation infrastructure look like at AI pace?
+Most product organizations already believe in testing. The problem is that current experimentation infrastructure was designed for a world where humans wrote all the code and shipped a handful of features per quarter.
+At AI-accelerated pace, experimentation infrastructure needs four things.
+Throughput to match build velocity.
+If your team can now ship 50 changes a quarter instead of 5, your experimentation platform needs to handle 50 concurrent tests on the same product surface without them interfering with each other. At Spotify,
+58 teams ran 520 experiments on the mobile home screen
+in a single year, averaging 10 new experiments per week. That's what coordination at scale looks like operationally. It requires a platform that manages surface-level collision across concurrent tests.
+Trustworthiness at volume.
+Running more experiments is only valuable if the results are trustworthy. When you scale from 5 tests to 50, the risk of false discoveries, underpowered results, and violated assumptions scales with it. The
+statistical methodology has to be built into the defaults
+.
+Variance reduction
+and
+sequential testing
+protect throughput by detecting smaller effects faster and stopping experiments early when results are conclusive.
+Multiple testing correction
+and sample ratio mismatch detection protect integrity by adjusting for false positive risk and catching data quality problems before they corrupt results. At volume, teams don't have time to audit each experiment. The defaults have to be correct.
+Guardrails that catch what humans can't review.
+When AI generates hundreds of changes per week, human review of every change is impossible.
+Guardrail metrics
+provide the alternative: automated detection of regressions in the metrics that matter, regardless of whether the change was authored by a human or an AI agent.
+A learning loop that compounds.
+The
+real ROI of experimentation
+is the compounding effect of validated learning. Every experiment, whether it ships or not, produces understanding about what your users want and how your product works. At AI pace, where the volume of hypotheses multiplies, the value of each learning cycle multiplies too. Five experiments a quarter means five lessons. Fifty means fifty, but only if the infrastructure captures what you learned, not just whether the metric moved.
+#
+When AI improves AI, experimentation becomes the human checkpoint
+Anthropic's paper describes an organization where AI writes the code, AI reviews the code, and AI suggests what to build next. In blind comparisons, AI-suggested research directions outperformed human-suggested ones 64% of the time by April 2026, up from roughly coin-flip odds six months earlier. As AI takes on more of the "deciding what to build" function, experimentation becomes the last point where human judgment governs what reaches users: did this change actually improve the experience?
+Not because humans review every line of code. They can't, and at Anthropic, they already don't. The checkpoint is downstream, measured against real user behavior.
+Spotify already operates this loop at production scale. Honk generates PRs. Engineers review and merge them. Confidence validates the resulting product changes through experiments against 750 million users. The
+evidence chain
+ensures that experimental results maintain their integrity from hypothesis through shipping decision.
+#
+Build speed is converging. Learn speed is not.
+AI is commoditizing build speed. GitHub Copilot has
+over 20 million users and 90% Fortune 100 adoption
+. Across the industry,
+84% of developers
+report using or planning to adopt AI coding tools. Within a few years, every team's build velocity will converge toward the same ceiling. Speed of building will stop being a differentiator.
+What won't converge is the speed of learning: the rate at which an organization converts product hypotheses into validated understanding. That depends on experimentation infrastructure. On whether you can run enough tests, trust the results, catch the regressions, and feed what you learn back into the next round of decisions.
+Spotify has operated at both speeds for years: AI-accelerated building through Honk, validation at scale through Confidence. 10,000+ experiments per year. 42% rolled back after guardrail metrics detected regressions. 64% producing learning that sharpened the next hypothesis.
+Every company scaling AI coding tools will face this same gap. The ones that close it will pull ahead. Each experiment sharpens the next hypothesis. Each validated decision improves the product. Over time, that compounds into something your competitors can't copy: an understanding of what your users actually want.
+Previous
+What experiments actually teach you
+Next
+What Makes a Good Sample Size Calculator?
+Learn more
+Read our blog
+Take the bootcamp
+See comparisons
+Glossary
+RFP guides
+Listen to us
+Read our docs
+Status page
+Need help
+Contact us
+Legal
+Terms of Service
+Data Protection Agreement
+Privacy Policy
+Cookie Settings
+©
+2026
+Spotify
+The Confidence name and logo are registered trademarks of Spotify.

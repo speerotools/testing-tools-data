@@ -1,0 +1,97 @@
+# https://docs.statsig.com/integrations/introduction
+Integrations Overview | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Workspace Management
+Overview
+API Keys
+Workspace
+Access Management
+WHN Usage-Based Pricing Model
+Integrations
+Overview
+Data Into Statsig
+Data Exports
+Serverless & Edge
+Slack, VS Code & Productivity
+Email & CMS Systems
+No-Code Editors
+Observability & Infra
+Azure AI
+Collaboration
+Templates & Policies
+Discussions in Statsig
+Tags in Statsig
+Setting up Reviews for Team Workflows
+Pre-commit Webhooks
+Config History
+Privacy
+User Data Deletion Requests API
+Private Attributes
+AI Governance, Security & Privacy
+Infrastructure Operations
+Overview
+Open Telemetry
+Cloudflare Logs
+Domains & IP
+API Proxies
+Reliability
+On this page
+Events
+Changelog and alerts
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Management & Integrations
+/
+Integrations Overview
+Integrations Overview
+Overview of Statsig integrations with data warehouses, CDPs, messaging tools, CDNs, and developer tools to fit Statsig into your existing stack.
+For Warehouse Integrations, go to
+Data Warehouse Integrations
+.
+Statsig offers the following data connectors and adds more regularly:
+Warning:
+Statsig only supports a single data connection at a time.
+Events
+Forward any events logged through Statsig APIs or SDKs to the following providers:
+Segment
+Snowflake
+Amplitude
+Bugsnag
+Fivetran
+Google Analytics
+Heap
+Mixpanel
+RevenueCat
+mParticle
+RudderStack
+Webhook
+Google Tag Manager (GTM)
+Braze
+Changelog and alerts
+Notify and update the following places when Feature Gates/Experiments/Dynamic Configs change:
+Datadog
+Discord
+LogDNA
+Microsoft Teams
+PagerDuty
+: page your on-call responders directly from topline alerts
+Slack
+Jira
+: track Statsig gate rollout status and A/B test results from Jira issues
+Was this helpful?
+On this page

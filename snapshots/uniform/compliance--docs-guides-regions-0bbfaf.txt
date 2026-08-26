@@ -1,0 +1,191 @@
+# https://docs.uniform.app/docs/guides/regions
+Regions and data residency | Uniform DXP documentation
+Guides
+Select a tab
+Home
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Get started
+Tutorials
+Guides
+APIs
+SDK
+Integrations
+Knowledge base
+Changelog
+Search
+⌘K
+Data Center Region
+Theme
+Experience guides
+Models
+Composition
+Patterns
+Organize and find content
+Project maps
+Building experiences with AI
+Optimization guides
+Classification
+Personalization
+A/B testing
+Optimize with AI
+AI & AI agents
+About AI in Uniform
+Scout
+AI guidance
+AI quick edits
+MCP Server
+AI rules
+AI credits
+Developer guides
+API access
+APIs
+CLI
+Packages
+Webhooks
+Administration guides
+Regions
+Teams
+Projects
+Users
+Security
+Roles and permissions
+Security audit log
+Migration guides
+Uniform Siphon
+Uniform Transformation
+Sitecore XM/XP Migration
+Installation
+Data download
+Walkthough
+Reference
+Contentful CMS Migration
+On this page
+Regions and data residency
+Uniform's data residency options allow you to control where your data is physically stored and processed. Choosing the right region for your data residency needs helps you:
+Meet compliance requirements
+like GDPR for European data
+Optimize performance
+by managing content closer to your users
+Satisfy data residency and sovereignty policies
+required by your organization
+Your team's region is assigned when your account is created and specified in your Uniform contract. Once assigned, teams cannot migrate between regions. Teams are pinned to a single region. That region applies to all projects and users in the team. If you need to have projects in multiple regions, you can create a Uniform team for each region.
+Uniform is available in the following regions:
+US
+: Virginia, USA (
+us-east-1
+)
+EU
+: Frankfurt, Germany (
+eu-central-1
+)
+Choosing a region for data residency
+#
+When selecting a data residency region for your Uniform team, consider the following:
+Default choice
+: If you don't have strict regulatory or data residency requirements, and your team and/or customers are mostly in the Americas, choose the US data center.
+Recommended for EU compliance
+: If your business would benefit from data residency in a region geographically closer to, or in the EU, or if you have needs for stricter data protection laws, choose the EU data center.
+The EU data center is ideal for customers who need to comply with European data privacy regulations, such as GDPR, or who want to keep their data geographically closer to their European users for latency and performance reasons. Uniform's global edge delivery ensures optimal performance across all regions regardless of your chosen data center.
+Compliance and data processing
+#
+Understanding where your data resides is critical for compliance with data protection regulations. Uniform provides clear data residency options to help you meet your compliance requirements.
+EU data center residency
+#
+If you choose the EU data center for data residency, all your Uniform data will be stored within the EU, including:
+Uniform entities
+Project data
+Account information for team members
+Uniform primarily relies on infrastructure located in Germany, with key sub-processors based in Germany and Ireland. Due to the global nature of Uniform's services however, your data would still be processed on servers outside of the EU, for example when utilizing our global edge delivery.
+Regional URLs
+#
+Service
+US region
+EU region
+Dashboard
+https://uniform.app
+https://eu.uniform.app
+Edge delivery API
+https://uniform.global
+https://eu.uniform.global
+Management API
+https://uniform.app/api
+https://eu.uniform.app/api
+Image delivery API
+https://img.uniform.global
+https://img.eu.uniform.global
+SDK and CLI configuration
+#
+For US region
+: No additional configuration is needed. Uniform SDKs and CLI communicate with the US data center by default.
+For EU region
+: You must configure your SDKs and CLI to communicate with the EU data center using one of the following methods:
+Configure SDKs for EU
+#
+Add the
+apiHost
+parameter when creating the client:
+const client = new CanvasClient({ apiHost: 'https://eu.uniform.app', edgeAPiHost: 'https://eu.uniform.global', apiKey: process.env.UNIFORM_API_KEY, projectId: process.env.UNIFORM_PROJECT_ID, });
+Copy
+Copied!
+Copy environment variables when creating a service account
+When
+creating a service account
+for EU projects, you can copy the complete
+.env
+settings provided during the creation process. These settings include all EU-specific endpoints needed for both SDK and CLI configuration.
+.env
+# Authentication to Uniform UNIFORM_API_KEY=<api-key> UNIFORM_PROJECT_ID=<project-id> # EU region endpoints UNIFORM_CLI_BASE_EDGE_URL=https://eu.uniform.global UNIFORM_CLI_BASE_URL=https://eu.uniform.app
+Copy
+Copied!
+Configure CLI for EU
+#
+Option 1
+: Use the
+-apiHost
+parameter with each command:
+uniform context pull -apiHost https://eu.uniform.app
+Copy
+Copied!
+Option 2
+: Set the
+UNIFORM_CLI_BASE_URL
+environment variable:
+UNIFORM_CLI_BASE_URL=https://eu.uniform.app uniform context pull
+Copy
+Copied!
+Switching regions
+#
+It is not possible to switch regions for an existing team as the data and infrastructure of each region are fully isolated. However, you can migrate your data to a new team in the target region.
+If you need to switch regions:
+Contact Uniform support
+to request a new team in the target region (US or EU).
+Once the new team is created, reinvite all users to the new team.
+Use the Uniform CLI to recreate your projects and their content. See backup and restore steps in the
+CLI guide
+.
+Was this page helpful?
+Last modified
+3 minutes ago
+Next
+Teams
+→
+Learn and build with our community on Discord
+Check out open sourced examples on GitHub
+Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+Choosing a region for data residency
+Compliance and data processing
+EU data center residency
+Regional URLs
+SDK and CLI configuration
+Configure SDKs for EU
+Configure CLI for EU
+Switching regions

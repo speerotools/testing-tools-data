@@ -1,0 +1,86 @@
+# https://docs.statsig.com/compliance/ai_governance_security_privacy
+AI Governance, Security & Privacy | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Workspace Management
+Overview
+API Keys
+Workspace
+Access Management
+WHN Usage-Based Pricing Model
+Integrations
+Overview
+Data Into Statsig
+Data Exports
+Serverless & Edge
+Slack, VS Code & Productivity
+Email & CMS Systems
+No-Code Editors
+Observability & Infra
+Azure AI
+Collaboration
+Templates & Policies
+Discussions in Statsig
+Tags in Statsig
+Setting up Reviews for Team Workflows
+Pre-commit Webhooks
+Config History
+Privacy
+User Data Deletion Requests API
+Private Attributes
+AI Governance, Security & Privacy
+Infrastructure Operations
+Overview
+Open Telemetry
+Cloudflare Logs
+Domains & IP
+API Proxies
+Reliability
+On this page
+Governance
+Security
+Privacy
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Management & Integrations
+/
+AI Governance, Security & Privacy
+AI Governance, Security & Privacy
+Reference for Statsig's AI governance, security, and privacy practices, including data handling, retention, and customer obligations for AI features.
+Trust, security, and privacy are central to Statsig's operations. Your data remains confidential and secure, and you own it across the Statsig platform.
+Governance
+The AI features on the Statsig platform use your data to provide additional insights, analysis, and solutions for your review. Examples of Statsig AI features include Knowledge Graph, hypothesis advisor, and suggested metrics. By design, Statsig keeps your data separate from other customer data in its production environment. Statsig doesn't mix or process data from different customers together.
+Statsig doesn't use your data to build or develop any AI models unless you provide explicit written consent. You own the data you provide and control which internal sources are connected to the Statsig platform. You also control who has access to the Statsig platform within your organization. For information on single sign-on, refer to the
+SSO overview
+.
+Security
+Whether you are sending aggregated metrics, custom attributes, or hashed identifiers, or connecting parts of your codebase, Statsig prioritizes security. Statsig's software development lifecycle builds security into offerings at inception. Statsig follows zero-trust and defense-in-depth approaches across its overall security program, and has implemented layered security controls across endpoints, infrastructure, networks, and applications.
+Statsig uses industry-standard security practices and cryptography to protect your data, including AES-256 encryption at rest and TLS 1.2 or higher in transit. Statsig uses automated alerts and manual investigation processes to address suspicious activity. Systems undergo regular risk assessments and audits, including by independent third parties, to ensure adherence to high security standards. Statsig also maintains a SOC 2 Type II certification. For more information on Statsig's security practices, go to
+Security at Statsig
+.
+Privacy
+Statsig designs its data protection practices to support your compliance with GDPR, CCPA, and other applicable privacy laws across the Statsig platform. For cross border data transfers, Statsig complies with the EU-US Data Privacy Framework, the UK Extension to the EU-US Data Privacy Framework, and the Swiss-US Data Privacy Framework. Statsig also provides a
+Data Processing Addendum
+to support its customers' data handling requirements. These privacy protections also extend to all AI features.
+AI features on the Statsig platform use third-party large language models (LLMs). The underlying third-party model providers don't retain, access, or use data processed through these LLMs. Statsig never shares your data with other customers. Statsig permits its subprocessors to use data only as Statsig directs and in accordance with contractual commitments. You can find a list of Statsig's subprocessors at
+statsig.com/legal/subprocessors
+.
+Was this helpful?
+On this page
+Governance
+Security
+Privacy

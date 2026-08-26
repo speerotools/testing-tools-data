@@ -1,0 +1,217 @@
+# https://www.kameleoon.com/blog/what-is-an-mcp-server
+What is an MCP server? | Kameleoon
+Login
+English
+Select your language
+English
+Français
+Deutsch
+Platform
+PROMPT-BASED EXPERIMENTATION
+Optimize any website by chatting with PBX, Kameleoon’s AI.
+Learn more
+SOLUTIONS
+Experimentation
+Feature Management
+KEY Features & add-ons
+Mobile App Testing
+Recommendations & Search
+Personalization
+specialities
+AI in Experimentation
+Single Page Application
+Data Security & Privacy
+Data Accuracy
+Integrations & API
+Partners Program
+Support
+Product Roadmap
+Solutions
+for all teams
+Marketing
+Product
+Engineering
+Data Scientists
+For INDUSTRIES
+Healthcare
+Travel & Tourism
+Financial Services
+Media & Entertainment
+E-commerce
+B2B
+Automotive
+Samsung gains autonomy and speed in its most advanced tests with PBX
+read the success story
+Plans
+Resources
+Customers
+Book a demo
+Book a demo
+Quick links
+Heading 2
+Book a demo
+Book a demo
+All resources
+What is an MCP server?
+What is an MCP server?
+Andrew Walker
+Published on
+May 27, 2026
+AI
+Article
+For about two years, AI assistants suggested things. “Try this copy;” “deploy this code;” “here are your recommended next steps.” In the last year, however, something has changed. Those same assistants are starting to actually do the work. They pull live data, update records, ship code behind
+feature flags
+, file tickets, and run queries.
+This shift is thanks to a small open protocol called the Model Context Protocol, or MCP. In this article, we’ll discuss what an MCP server is, why it exists, how it works, and what it changes for product, marketing, engineering, and experimentation teams.
+What an MCP server actually is
+The Model Context Protocol (MCP) is an open standard for connecting AI applications to external tools and data. Using MCP “exposes” a specific application, such as a SaaS product, database, or design tool, as a set of capabilities that an AI assistant can easily call on. In other words, it enables conversations between your AI assistant and the tools your team already uses to get work done.
+MCP was introduced by Anthropic in November 2024 and donated to the
+Linux Foundation
+’s
+Agentic AI Foundation
+in December 2025. It is now supported across major AI tools, including Claude, ChatGPT, Gemini, Microsoft Copilot, and Cursor.
+Why does MCP need to exist?
+A conversation between an AI assistant and a tool was possible before Anthropic built MCP through custom integrations. The problem was that custom integrations are, by nature, unique. If your team uses two assistants and eleven tools, you need twenty-two custom integrations.
+If the tool has an MCP server, however, both of your assistants (assuming they are compliant with MCP) can call on it. This makes it drastically easier to adopt new tools, build new assistants, and automate tasks.
+How an MCP server works
+Fortunately, the mechanics of Model Context Protocol are simpler than the name might suggest.
+An MCP server publishes a list of “tools.” You can think of these tools as instructions: “read these results,” “create this record,” “update the status,” “fetch this file.” When the AI assistant connects, it reads the list and uses its conversation with you to determine which tools to call.
+Requests and responses travel over JSON-RPC 2.0; authentication is handled per server, typically through OAuth, allowing the assistant to operate with the same permissions as the user behind it.
+What can you actually do with an MCP server?
+Using an MCP allows you to use your AI assistant to do a lot on your behalf. Specific use cases will depend on the exact tool you’ve connected your AI to, but will include:
+Pulling live data from a SaaS tool directly into a conversation
+Create, update, or close records without leaving the chat window
+Trigger workflows that traditionally require human input
+Gate actions behind feature flags or manual approval
+MCP moves the assistant from the suggestion side of the lineup to the execution side. Using an MCP means the value of an AI assistant is no longer tied to how much time you have to chat with it. This can change your entire workflow.
+For example: nearly every team has a backlog of decisions that have already won but haven’t shipped. Whether it’s approved campaigns waiting on creative, validated experiments waiting on engineering, or queued migrations waiting on a sprint, the work between decision and production is a common bottleneck.
+MCP allows AI assistants to work on that backlog to shorten the handoff between decision and release.
+What this changes for your team
+For
+product teams
+, MCP turns AI assistants into operators who can read the roadmap, query the data warehouse, update specs, file tickets, and monitor rollouts. PMs using MCPs spend more time judging than coordinating.
+For
+marketing and CRO teams
+, assistants can now pull live performance data, propose hypotheses and A/B tests, retrieve winning variations, and hand implementation off to engineering with the work half done. The team spends much less time waiting for another team to finish what they’ve started.
+For
+engineering teams
+, the AI assistant can now help to close out a long tail of small implementation work that no one has the time for, like approved tweaks, small script updates, and winning experiments from small changes. The team can focus on the items they’ve already prioritized while still making progress on their backlog.
+For
+experimentation teams
+, the MCP server closes the loop, making shipping what works the default outcome of running a test, rather than an optional followup.
+What to look for in an MCP server
+If your team is evaluating servers, there are a few things worth keeping an eye out for:
+Authentication should be OAuth
+The scope of its mutations should be controlled and auditable; this prevents assistants from deleting the wrong records
+Every call should leave a trace, the same way a human action would
+The vendor of the tool should be the one who both built and maintains the server
+Most vendors are still early in this work, but the good ones are already shipping their MCP servers as first-class products, with the same care they would give to any public API.
+MCP servers need permissions, audit logs, and human review
+MCP servers are powerful because they let assistants act inside real tools. This makes them very powerful, and that power requires guardrails. For experimentation teams, this is especially important.
+A winning variation should not jump from test code to production without human review. The right MCP workflow makes the handoff faster, but keeps developers in control.
+{{blue-block-1}}
+Kameleoon is one example, but the same shift is happening across design tools, CMS platforms, and support systems. MCP servers are significant for any tool with a backlog of “small things that still need to ship.”
+The future of MCPs
+Where do MCPs go from here? It’s hard to say. But it’s easy to imagine a future, not too far off, where agents are calling on other agents, and become expected the same way public APIs did a decade ago.
+MCP servers represent a closer connection between design, experimentation, and production. As more tools build MCPs and agentic AI becomes more powerful, the boundaries between designing, testing, and shipping will continue to blur.
+{{cta-block}}
+Explore our resources
+The page brands waste the most budget testing
+A/B testing
+Article
+How Fanatics could improve navigation using PBX
+AI
+Article
+Three A/B tests on the wrong problem
+A/B testing
+Article
+before ai
+A live example: shipping a winning experiment from your IDE
+At Kameleoon, the MCP server (called PBX Ship) lets a developer take a winning A/B test all the way to production from inside their integrated developer environment (IDE).
+If a developer is using Claude, they could prompt it to call Kameleoon and do the following:
+Retrieve the list of winning experiments
+Fetch the variation code
+Read existing repo conventions
+Re-implement the variation as native React, Java, PHP, or whatever the project uses
+Create a feature flag, wrapping the new code behind it
+Validate the rollout
+All of that happens from one prompt, leaving review and approval for the last step. What used to take days of coordination between engineers now takes just a few minutes. Best of all, the decision and deployment workflow becomes much shorter.
+Want to see this in action? Read about Kameleoon’s PBX Ship, the MCP server that ships winning experiments from inside the IDE, here.
+Read more here
+Read more here
+Want to see this in action? Read about Kameleoon’s PBX Ship, the MCP server that ships winning experiments from inside the IDE, here.
+Read more here
+Read more here
+Read more here
+Read more here
+Experiment your way
+Get the key to staying ahead in the world of experimentation.
+[Placeholder text - Hubspot will create the error message]
+Submit
+Thanks for submitting the form.
+Newsletter
+Platform
+Experimentation
+Feature Management
+PBX Free-Trial
+Mobile App Testing
+Product Reco & Merch
+Data Accuracy
+Data Privacy & Security
+Single Page Application
+AI Personalization
+Integrations
+guides
+A/B testing
+Prompt-Based Experimentation
+Feature Flagging
+Personalization
+Feature Experimentation
+AI for A/B testing
+Client-Side vs Server-Side
+plans
+Pricing
+MTU vs MAU
+Industries
+Healthcare
+Financial Services
+E-commerce
+Automotive
+Travel & Tourism
+Media & Entertainment
+B2B & SaaS
+TEAMS
+Marketing
+Product
+Developers
+Resources
+Customers Stories
+Academy
+Dev Docs
+Product Roadmap
+Calculator
+Who’s Who
+compare us
+Optimizely
+VWO
+AB Tasty
+partners
+Our Partner Ecosystem
+Become a Partner
+Integrations Directory
+Partners Directory
+company
+About Us
+Careers
+Contact Us
+Support
+legal
+Terms of use and Service
+Privacy Policy
+Legal Notice & CSU
+PCI DSS
+© Kameleoon — 2026 All rights Reserved
+Legal Notice & CSU
+Privacy policy
+PCI DSS
+Platform Status

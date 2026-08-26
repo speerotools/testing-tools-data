@@ -1,0 +1,122 @@
+# https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html
+Marketer MCP and Agent API overview | Sitecore Documentation
+Skip to main content
+Learn
+Documentation
+Community
+Downloads
+Changelog
+Roadmap
+Ask AI
+Resources
+Toggle menu
+Users
+Developers
+Cloud Portal
+Open search
+en
+Search in the table of contents...
+SitecoreAI documentation for business users
+WELCOME
+SitecoreAI
+AUDIENCES & INSIGHTS
+Audience and insights
+CAMPAIGNS
+Plan campaign strategy
+DESIGNS
+Design components
+SITES & PAGES
+Build digital experiences
+Create and manage sites
+Build pages
+PERFORMANCE
+Conversion optimization
+Personalize
+Component personalization
+A/B/n testing
+Get performance insights
+PUBLISH
+Publish content
+CONTENT
+Manage content
+MEDIA
+Manage media
+AI FEATURES
+Agentic studio
+Marketer MCP
+Marketer MCP tool reference and other information
+Marketer MCP and Agent API overview
+Integrating Sitecore with agentic platforms
+AI capabilities in SitecoreAI
+RESOURCES
+Glossary
+Toggle Sidebar
+Marketer MCP
+SitecoreAI documentation for business users
+Marketer MCP
+Toggle full width
+Change font size
+Toggle focus mode
+Marketer MCP and Agent API overview
+The Sitecore Marketer MCP server and the Agent API enable
+interoperability
+between AI agents and SitecoreAI. They enable AI agents to perform actions directly in the platform as part of a connected system. This means common marketing activities within SitecoreAI, such as creating pages, managing assets, and optimizing campaigns, can now be performed through AI agents.
+Here's how they help:
+For marketers
+- they can request actions in natural language instead of navigating interfaces or writing API calls.
+For developers
+- they can extend SitecoreAI and integrate with other systems using open standards and secure endpoints.
+Marketer MCP server
+What is MCP?
+The Model Context Protocol
+(MCP) is an
+open standard
+that allows large language models (LLMs) to connect with external systems and access their tools. Through these tools, AI agents can perform actions such as creating content, retrieving information, or running processes.
+MCP translates natural language requests into executable actions and is becoming a standard for integrating LLMs into enterprise platforms.
+What is the Marketer MCP server?
+The
+Marketer MCP server
+provides AI agents with secure access to marketing tools in SitecoreAI.
+It enables marketers to perform tasks using natural language instead of navigating the interface or making API calls. For example, marketers can ask an AI agent to create a landing page, add a component, or localize a campaign.
+The server works with MCP-compatible clients such as Claude Desktop or Cursor IDE. Through MCP, AI agents understand user intent and use the appropriate SitecoreAI tools to complete tasks.
+For more information, see
+Marketer MCP
+.
+Agent API
+The
+Agent API
+enables AI agents to execute actions in SitecoreAI. The Marketer MCP server exposes API endpoints as tools that agents can call.
+When a user submits a natural language request, the LLM interprets the request and the AI agent selects the appropriate tool. Each tool calls the corresponding Agent API endpoint and the action is executed in SitecoreAI.
+For example, a
+create_page
+tool triggers a tool that calls an Agent API endpoint to create a page in SitecoreAI.
+All actions follow Sitecore security, permissions, and approval workflows, ensuring operations are secure and auditable.
+For more information, see
+Agent API
+.
+If you have suggestions for improving this article,
+let us know!
+Feedback
+Copy link
+Open in
+Documentation Assistant
+MCP
+This assistant uses AI to generate responses based on
+Sitecore documentation
+. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
+How does a developer get started in SitecoreAI?
+How do I create a hierarchy of page elements in SitecoreAI?
+How do I start using the Sitecore Content SDK?
+How do I use AI-assisted visual search in Content Hub?
+Deep Thinking
+Powered by
+k
+kapa.ai
+Protected by reCAPTCHA
+© Copyright
+2026
+, Sitecore A/S or a Sitecore affiliated company.
+All rights reserved.
+Privacy policy
+Sitecore Trust Center
+Terms of use

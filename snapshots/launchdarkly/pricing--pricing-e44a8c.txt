@@ -1,0 +1,443 @@
+# https://launchdarkly.com/pricing
+Pricing | LaunchDarkly
+[Virtual event] 6 new features for more control | Aug 26, 10 AM PT
+-
+Register
+.
+Skip to:
+Home
+Content
+Footer navigation
+Get a demo
+Platform
+CodeControl
+Ship confidently, with automated control built in.
+AgentControl
+One place to keep your agent behavior under control.
+Book a demo
+How it works
+Platform overview
+Feature flags
+Observability
+Experimentation
+Agent integrations
+Integrations
+Architecture
+Solutions
+By Use Case
+Release AI-built code
+Control AI agents
+Optimize AI performance & cost
+Self-heal systems
+Run experiments
+By Team
+AI engineers
+Developers
+DevOps & SRE
+Product managers
+Data scientists
+Resources
+Learn
+Blog
+Guides & ebooks
+Events & webinars
+Videos
+Success
+Academy
+Customer stories
+Professional services
+Partners
+Get Help
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Developers
+Docs
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Resources
+Product Updates
+Power analysis calculator
+Flagship engineering blog
+Community
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Pricing
+Sign in
+Book a demo
+Book a demo
+Flexible pricing for
+every stage
+and team.
+Developer
+One platform for features and agents. Free to start.
+Get started free
+No credit card required
+$0
+/ mo, forever
+Unlimited seats
+No per-seat pricing. Invite your whole team; pricing is based on usage.
+A/B Tests and Experiments
+Includes 100K experimentation MAU per month at no additional charge.
+10M logs and 10M traces /mo
+A log is a single log line and a trace is a single span, each ingested, stored, and searchable for one month.
+CodeControl:
+Unlimited feature flags
+30 idiomatic SDKs
+13 client-side, 13 server-side, and 4 edge SDKs.
+5 service connections and 1K client-side MAU /mo
+A service connection is one server-side SDK connected to one environment for a month. Each unique client-side user or device is one MAU.
+5K session replays and 5K errors /mo
+A session replay is one recorded user session (a single tab instance); an error is one unique error or exception. Each is stored for one month.
+AgentControl:
+Configure, evaluate, roll out, and observe your AI end to end
+5k AI runs/mo included
+An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
+14 days data retention
+How long AgentControl run and eval data stays available.
+Foundation
+Ship features and agents to production. Scale both without hitting a ceiling.
+Pay as you go
+14-day trial, then pay as you go.
+No platform or seat fees.
+Pay as you go
+Break it down
+Billed yearly
+$10
+per Service Connection / mo
+One server-side SDK connected to one environment for a month. Serverless and short-lived processes bill fractionally by connection time.
+$8.33
+per 1k client-side MAU / mo
+Each unique client-side user or device counts as one monthly active user.
+5k
+AI Runs included / mo.
+An AI run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
+$5 per additional 1k runs.
+Special rates for K8s, Serverless, Python, & Ruby
+Because these architectures create a high volume of server-side connections, standard per-connection pricing isn't a fair fit. We'll tailor a package to your environment, so the way you run doesn't inflate your bill.
+Get custom pricing
+Everything in Developer, plus:
+Unlimited projects and environments
+5 service connections included, pay as you go beyond
+Your first 5 service connections each month are included. Additional connections bill at $10 each per month.
+Scalable observability usage
+5K session replays, 5K errors, 10M logs, and 10M traces included each month. Usage beyond that bills as you go.
+AgentControl:
+Usage-based pricing past 5,000 AI runs/mo
+An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
+30 days data retention
+How long AgentControl run and eval data stays available.
+Enterprise
+Full Platform controls and security for engineering teams at scale.
+Get custom pricing
+Get Enterprise trial
+Custom pricing
+Everything in Foundation, plus:
+Advanced user targeting
+Bulk targeting plus large list-based and synced segments.
+Custom roles & teams
+Fine-grained permissions with custom roles, organized into teams.
+Workflows, scheduling, & approvals
+Approval requests, scheduled flag changes, and multi-step release workflows.
+Release automation
+Release Assistant
+SCIM user provisioning
+Automated user provisioning and deprovisioning through your identity provider. SSO and SAML are included on every plan.
+AgentControl:
+Custom number of AI runs
+An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
+100 days data retention
+How long AgentControl run and eval data stays available.
+Guardian
+Paid add-on
+Guardian adds release safety on top of Enterprise: monitoring, guardrail metrics, and automatic rollback. Priced separately.
+Release Monitoring
+Guardrail Metrics
+Metrics watched during every rollout to catch regressions early.
+Proactive Failure Notifications
+Automatic Pause or Rollback
+Advanced Observability
+Exposure Insights
+See which users and segments were exposed to each release and how it affected them.
+Compare all features
+Developer
+Get started free
+Start free
+Foundation
+Pay as you go
+Pay as you go
+Enterprise
+Get custom pricing
+Get custom pricing
+Platform
+AI Runs / month
+5000 / mo
+5000 / mo + overages
+Custom (contracted)
+Data / trace retention
+14 days
+30 days
+100+ days
+Config delivery latency (SLO)
+< 300ms
+< 200ms
+< 150ms (SLA)
+Overage behavior
+Ingestion stops at 5K
+$5 / 1000
+Contracted true-up
+Add-on AI Run blocks
+—
+$5 / 1000
+Volume discounts available
+Service Connections (SCs)
+Limited (free tier)
+SC-based billing
+SC-based billing
+Client-side MAU
+Limited (free tier)
+$10 / mo per 1K MAU
+$10 / mo per 1K MAU
+Projects & environments
+1 project & 3 environments
+Unlimited
+Unlimited
+Agent configuration
+Prompts & model configs
+Prompt Snippets
+Tools Library
+Agent Graphs
+Feature management
+Boolean feature flags
+Unlimited
+Unlimited
+Unlimited
+Multivariate flags
+Unlimited
+Unlimited
+Unlimited
+User / account / device targeting
+Segments & percentage rollouts
+Flag history
+Code references
+—
+—
+Flag scheduling
+—
+—
+Workflows & approval (flag-level)
+—
+—
+Evaluation & quality
+Playground
+Offline Evals (Datasets + Batch)
+Online Evals (LLM-as-judge)
+Custom Judges
+Datasets
+Experimentation
+A/B/n testing (configs)
+A/B/n testing (feature flags)
+Full-stack experimentation
+Bayesian and frequentist analysis
+CUPED variance reduction
+Sequential testing
+Sample ratio mismatch (SRM) detection
+A/A validity testing
+Multi-armed bandits
+Confidence and credible interval reporting
+Flexible metric design: click, pageview, numeric, conversion, custom event, groups
+Warehouse-native integration (Snowflake, Redshift, Databricks, BigQuery and more)
+Metrics import: API, integrations, SDK-level
+Metric measurement window
+Custom SQL metric definitions
+Mutual exclusion and layered experiments
+Holdouts
+Audience definitions and segment targeting
+Results filtering by audience attributes
+Experiment lifecycle stages
+Experiment Approvals
+—
+—
+Observability
+AI Insights dashboard
+LLM Observability (traces)
+Data export (AI traces & metrics)
+—
+Custom
+Session Replays
+5K / mo
+Scalable
+Custom
+Application Logs
+10M / mo
+Scalable
+Custom
+Application Traces
+10M / mo
+Scalable
+Custom
+Error monitoring
+Limited
+Scalable
+Custom
+Automation & release
+Agent Optimization
+Guarded Rollouts
+Adaptive Triggers
+Release Monitoring
+—
+—
+Guardian only
+Guardrail Metrics
+—
+—
+Guardian only
+Automatic Rollback
+—
+—
+Guardian only
+Flag Audiences
+—
+—
+Guardian only
+Safety & guardrails
+AI Guardrails & Blocklists
+Basic
+Enhanced
+Advanced
+PII Redaction
+—
+—
+Integrations
+Model providers
+All providers
+All providers
+All providers
+Agent frameworks
+API Controls
+Slack, Microsoft Teams, & Trello
+Governance
+SSO / SAML
+-- (2FA included)
+-- (2FA included)
+SCIM
+—
+—
+Audit Logging
+—
+—
+Advanced RBAC / Custom roles
+—
+—
+Approvals (governance-level)
+—
+—
+Security & Compliance (SOC2 / ISO / HIPAA)
+—
+—
+AI & agentic access
+MCP Server
+Support
+Support Response
+Discord Community (1 business day outage)
+Discord Community (1 business day outage)
+1 business day (8 hours outage)
+Support Level
+Bronze
+Bronze
+Silver (Gold/Platinum Available)
+Upgrade Available
+—
+—
+Available
+Product Uptime
+—
+—
+Gold/Platinum (99.99%)
+Customer Success Managers
+—
+—
+Professional Services
+—
+Available
+Recommended
+Advisory Sessions
+—
+Available
+LaunchDarkly Academy
+Guided Onboarding Program
+—
+Available
+LaunchDarkly Certifications
+Resources to get started.
+Check out the blog.
+Blog
+Read about LaunchDarkly news, product updates, and more.
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
+Watch on demand.
+Videos
+Check out demos and tutorials to see LaunchDarkly in action.
+Connect at events.
+Events
+Explore ways to connect with us in person and virtually.
+Ready to take control in prod?
+Get a demo
+Free trial
+CodeControl
+AgentControl
+Inboxes love LaunchDarkly.
+Get the latest on controlling code and agents in production, with tips, insights, and updates you can actually use.
+Company
+About Us
+Careers
+Media & Analysts
+Partner Program
+Terms & Policies
+Contact Us
+Community
+Support
+Support home
+Professional Services
+Documentation
+Status
+Do not Sell or Share my Personal Information
+Why Us
+Economic Impact of LaunchDarkly
+How LaunchDarkly works
+Trust & Security
+Trust Center
+LaunchDarkly vs. Competitors
+LaunchDarkly on AWS
+Terms & Conditions
+Privacy Policy
+©
+2026
+Catamorphic Co.
+Academy
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Flagship engineering blog
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Sign in
+Get started free
+Pay as you go
+Get started free
+Pay as you go
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
+Free trial

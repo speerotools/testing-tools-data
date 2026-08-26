@@ -1,0 +1,129 @@
+# https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp
+Mutiny MCP Overview | Mutiny Help Center
+Go to Mutiny
+Submit a Ticket
+All Collections
+›
+Mutiny MCP
+Mutiny MCP Overview
+Last updated 1 month ago
+Mutiny connects to AI assistants through the
+Model Context Protocol (MCP)
+, an open standard that lets AI apps like Claude and ChatGPT call external tools. With MCP, your AI assistant can create, manage, and publish customer-facing assets in your Mutiny workspace on your behalf.
+What is MCP?
+MCP is an open protocol that standardizes how AI assistants connect to external tools. Instead of custom integrations per platform, MCP provides a universal interface — any compatible AI client can discover and call tools from any MCP server.
+How Mutiny Uses MCP
+Mutiny runs a remote MCP server that exposes your workspace's asset creation, content library, and publishing capabilities as tools. When you authorize a connection, the AI assistant receives a scoped OAuth token that determines what it can do in your workspace.
+This means you can research a target account, draft a personalized proposal, upload brand assets, and publish — all from a single conversation, without switching to the Mutiny app.
+Supported Clients
+Mutiny will be listed in the Claude Connectors directory and ChatGPT Apps marketplace soon. Until then, use the custom connector setup instructions below.
+Claude
+Claude web
+(
+claude.ai
+) — via the Connectors directory
+Claude Desktop
+(macOS & Windows) — via Connectors
+Claude Code
+(CLI) — via MCP server configuration
+→ See
+📄 Connecting Mutiny to Claude
+ChatGPT
+ChatGPT web
+(
+chatgpt.com
+) — via the Apps marketplace
+ChatGPT Desktop
+(macOS & Windows) — via Apps
+→ See
+📄 Connecting Mutiny to ChatGPT
+Other Clients
+Mutiny's MCP server works with any client that supports remote MCP servers over HTTP with OAuth authentication, including IDE integrations, custom agents, and other AI tools.
+You can use the Mutiny MCP server URL to set up the Mutiny MCP:
+https://mcp.mutinyhq.com/mcp
+What Can You Do?
+Create landing pages, proposals, pitch decks, case studies, meeting recaps, and more
+Combine account research and CRM data already in your conversation with Mutiny's asset creation
+Browse templates, manage your content library, and publish — all without leaving your AI assistant
+Tools
+The MCP server exposes
+12 tools
+across three categories. All tools include proper
+readOnlyHint
+,
+destructiveHint
+,
+idempotentHint
+, and
+openWorldHint
+annotations. One tool (
+get_task_status
+) is app-only and hidden from external clients. It backs the interactive asset preview widget's polling flow.
+Asset Management (7 tools)
+Tool Name
+Description
+Read/Write
+list_assets
+List existing assets with optional filters for status and creator (defaults to assets created by the current user)
+Read
+get_asset
+Retrieve a specific asset with links, screenshot, and all-time analytics (views/clicks)
+Read
+get_assets_analytics
+Get ranged analytics (views/clicks) for multiple assets over a start/end timestamp window
+Read
+create_asset
+Create an asset from a template, blueprint, or from scratch and queue the initial agent prompt as a workflow run
+Write
+send_agent_message
+Send a refinement message to an existing asset agent and queue a new workflow run for iterative revisions
+Write
+publish_asset
+Publish an asset to generate its live/shareable link
+Write
+get_task_status
+(app-only)
+Returns workflow run status for the interactive asset preview widget's polling flow. Hidden from external clients.
+Read
+Templates (1 tool)
+Tool Name
+Description
+Read/Write
+list_templates
+List the company's approved templates for choosing a starting point before asset creation (supports search query)
+Read
+Content Library Management (4 tools)
+Tool Name
+Description
+Read/Write
+list_library_content
+Search library content with filters (query, tags, type, sort) to gather context sources for asset creation or refinement
+Read
+create_library_content
+Upload content to library from URLs
+Write
+update_library_content
+Update metadata (title, description, tags)
+Write
+delete_library_content
+Remove library content
+Write (destructive)
+Next Articles
+📄 What Can You Do with Mutiny + AI?
+📄 MCP Data Handling & Security
+Need Help?
+If you have questions or need help, the Mutiny Support team is here for you! You can submit a support ticket using the
+Submit a ticket
+button at the top of this page, or reach us at
+support@mutinyhq.com
+.
+Related Articles
+MCP Data Handling & Security
+Connecting Mutiny to ChatGPT
+Connecting Mutiny to Claude
+Generating Analytics Reports with the Mutiny MCP
+Creating Assets with the Mutiny MCP
+Mutiny
+Blog
+Powered by
+Pylon

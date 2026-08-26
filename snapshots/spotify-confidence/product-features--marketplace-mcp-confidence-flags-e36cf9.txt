@@ -1,0 +1,163 @@
+# https://cursor.com/marketplace/mcp/confidence-flags
+Skip to content
+Product
+↓
+Agents
+Code Review
+Cloud
+Mobile
+Composer
+Tab
+CLI
+Enterprise
+Pricing
+Resources
+↓
+Changelog
+Blog
+Docs
+↗
+Community
+Learn
+↗
+Workshops
+Forum
+↗
+Future
+↗
+Marketplace
+Careers
+Product
+→
+Enterprise
+Pricing
+Resources
+→
+Loading…
+Product
+Agents
+Enterprise
+Code Review
+Cloud
+Mobile
+Composer
+Tab
+CLI
+Pricing
+Resources
+Download
+Changelog
+Docs
+Forum
+↗
+Status
+↗
+Future
+↗
+Marketplace
+Company
+Careers
+Blog
+Community
+Students
+Brand
+Anysphere
+↗
+Legal
+Terms of Service
+Privacy Policy
+Data Use
+Security
+Report Abuse
+Connect
+X
+↗
+LinkedIn
+↗
+YouTube
+↗
+©
+2026
+Anysphere, Inc.
+🛡︎
+SOC 2 Certified
+confidence-flags | Cursor MCP Server
+Marketplace
+/
+Data & Analytics
+Created by
+Confidence by Spotify
+View Source
+Marketplace
+/
+Data & Analytics
+Back
+confidence-flags
+Sign In To Add
+Sign In To Add
+Cursor MCP Server
+confidence-flags is a Cursor MCP server included in the Confidence by Spotify plugin by Confidence by Spotify.
+Access Confidence feature flags, experiments, and migration tools directly from Cursor.
+Created by
+Confidence by Spotify
+View Source
+/add-plugin confidence
+MCP
+2
+
+
+confidence-flags
+
+confidence-docs
+Skills
+11
+
+
+migrate-eppo
+Migrate feature flags from Eppo to Confidence SDK. Use when the user says /migrate-eppo, asks to migrate Eppo flags, or transform SDK code to Confidence.
+
+migrate-optimizely
+Migrate feature flags from Optimizely to Confidence SDK. Use when the user says /migrate-optimizely, asks to migrate Optimizely flags/rollouts/experiments, or transform Optimizely SDK code to Confidence.
+
+migrate-posthog
+Migrate feature flags from PostHog to Confidence SDK. Use when the user says /migrate-posthog, asks to migrate PostHog flags, or transform SDK code to Confidence.
+
+migrate-statsig
+Migrate feature flags from Statsig to Confidence SDK. Use when the user says /migrate-statsig, asks to migrate Statsig gates/configs/experiments, or transform SDK code to Confidence.
+
+onboard-confidence
+Create Confidence accounts and onboard users. Use when the user asks to create an account, invite users, onboard to Confidence, or check account status.
+View
+6
+more
+Commands
+5
+
+
+migrate-eppo
+Migrate feature flags from Eppo to Confidence
+
+migrate-optimizely
+Migrate feature flags from Optimizely to Confidence
+
+migrate-posthog
+Migrate feature flags from PostHog to Confidence
+
+migrate-statsig
+Migrate feature flags from Statsig to Confidence
+
+onboard-confidence
+Create Confidence accounts and onboard users
+Related plugins
+Observe by Snowflake
+Agent skills and MCP configuration for deploying and managing Observe's observability infrastructure
+Apify
+Official Apify agent skills for web scraping, data extraction, and automation
+AWS Data Analytics
+Data lake, analytics, and ETL workflows with S3 Tables, AWS Glue, and Athena. Covers managed Iceberg tables on S3 Tables, ingestion from JDBC databases (Oracle, SQL Server, PostgreSQL, MySQL, RDS), Amazon Redshift, Snowflake, BigQuery, and DynamoDB, AWS Glue Data Catalog inventory and asset discovery, federated Athena queries, and vector storage and semantic search on Amazon S3 Vectors.
+Grafana Cloud
+Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required.
+Mixpanel
+Mixpanel skills for Cursor — tracking implementation, metric investigation, and more.
+OpenSearch
+OpenSearch skills to help set up and deploy OpenSearch for a variety of use cases: build search applications with semantic, hybrid, neural sparse, and agentic search strategies; analyze observability data with log analytics (PPL and Query DSL) and distributed traces (OpenTelemetry); deploy to Amazon OpenSearch Service or OpenSearch Serverless with Bedrock integration for embeddings and RAG. Just ask your AI assistant to set up a search app, query logs, investigate traces, or deploy to AWS.

@@ -1,0 +1,173 @@
+# https://absmartly.com/blog/automate-experimentation-ai-mcp
+Automate Your Experimentation Program with ABsmartly’s MCP
+Skip to content
+Why ABsmartly
+For Experimenters
+For Product
+For Engineering
+For Data
+How it Works
+About Us
+Our Story
+Meet the Team
+Contact Us
+Resources
+Blog
+Client Stories
+FAQs
+Docs
+Get a Demo
+Home
+|
+Blog
+How to Automate Your Experimentation Program with ABsmartly’s MCP Server
+Jun 11, 2026
+•
+Erin Weigel
+•
+No Comments
+What's in This Post
+What’s an MCP Server? (And Why It Matters for Experimentation)
+Four AI Workflows You Can Build with ABsmartly’s MCP Server
+Why Hooking Your Experimentation Platform Up to Your AI Via an MCP Matters for Your Velocity (and Impact)
+How to Connect ABsmartly to an LLM via MCP
+Ready to Integrate AI into Your Experimentation Program?
+With technology evolving quickly, keeping up with Model Context Protocol (MCP), large language models (LLMs), and AI, automations can give you the edge you need to succeed.
+So, picking an experimentation platform shifts from being about the features it has today—to how fast it can adapt to tomorrow.
+Most testing tools force you to wait around for native integrations, or have that specific feature you need low on their backlog. Even worse? Some gate core functionality behind high fees or subscription upgrades.
+But at ABsmartly we’ve always believed that your vendor’s roadmap should never slow your innovation.
+ABsmartly is built API-first with an open architecture, which means it’s flexible and future-proof. You don’t have to wait for us. You just build what you want, when you need it. Then, plug it into your existing stack. And right now? That means building and connecting with AI.
+Whether you use Claude, ChatGPT, Cursor, Gemini—or a custom internal setup—you might wonder how to connect your favorite LLM to your experimentation tooling without writing tons of wrapper code. (Or, any code at all for that matter!)
+ABsmartly’s MCP lets you connect securely to your favorite LLMs.
+Enter… the Model Context Protocol (MCP) server.
+ABsmartly’s MCP server is about to seriously level-up your experimentation program. Not sure what exactly what MCP means and why it’s important? Here’s a plain-language guide to tell you what an MCP is, what you can do with it, and how to get started.
+What’s an MCP Server? (And Why It Matters for Experimentation)
+If you’ve ever tried to get an AI assistant to help you with a task in some kind of software, you’ve probably struggled.
+Why? Because using AI inside private software can be a problem without the right permissions and connection.
+For example, maybe you try to log-in with your credentials to connect your AI and do a task automatically. But, often you hit a brick wall because security blocks system entry or access to the information you need. And when you can’t properly connect, you usually end up manually copying and pasting stuff into your AI chat, or downloading CSVs and uploading them just to give your AI context. Is this better than doing everything yourself? Yes. But is it getting the most out of your AI? Nope.
+An MCP (Model Context Protocol) server helps unlock advanced functionality in your AI by connecting it to your software.
+An Analogy to Understand MCP
+In simple terms, an MCP server like a universal adapter between your local AI assistant and your software tools (or even your important websites). Think of it like an open-standard USB port. But instead of connecting your computer with another device—it connects your software tool or website with whatever AI you want.
+With MCP, you don’t need to build a custom “plug” for every single LLM. MCP gives your AI a secure and standard way to “read and write” data directly from your software tools (like ABsmartly).
+Because it’s a “universal open protocol” (a fancy way to say it has standardized specs that everyone adheres to), it runs safely inside your environment. Your sensitive data stays within your secure perimeter rather than being shared with a public cloud. Plus, you can hook an MCP up to your favorite LLM interface (like Claude Desktop or Copilot) in just a few minutes.
+After hook-up, your AI is no longer guessing based on whatever info on the internet and in its training data—it has secure, real-time context about
+your
+experiments and
+your
+business. And that makes it a total game changer.
+But what does an MCP connection to your favorite AI look like in day-to-day experimentation and product development life? Well, you can do
+tons
+of practical stuff with it, but here are four concrete examples to give you an idea of what’s possible…
+Four AI Workflows You Can Build with ABsmartly’s MCP Server
+Because ABsmartly is built API-first, our MCP server exposes the robust functionality of our platform straight to your LLM. You don’t have to navigate a UI—you simply ask your AI assistant to do it for you. For example…
+1. Scale Your Data Team’s Valuable Expertise (Without Spreading Them Thin)
+A huge part of a data team’s day-to-day can easily be spent answering the same questions over and over, or explaining basic concepts specific to your business but that are hard for less data-oriented people to grasp.
+To overcome these tedious and time consuming chats and trainings, your data team can write custom guidelines, internal processes, and give metric definitions and setup instructions directly to your company’s AI. Your coworkers have access to your expertise and guidance through the AI.
+Finally, no more manually reviewing people’s test set-ups or reminding people of processes to help them run reliable tests.
+When you use ABsmartly’s MCP server, anyone on the product team can ask your company LLM what they’d normally ask the data team about. Here’s a chat example of what your product team can ask their AI after you train it for them:
+Example Prompt
+“Are these the right metrics to use if I want to understand the short and long-term impact of my experiment on both the customer experience and the business? And, are they set up right?”
+To answer those questions, the AI will look at the docs and guidance you give it, assess the decision and setup via the MCP server, then flag any issues it finds. It can even fix the issues it finds for you! This approach gives you an easy way to scale your data team’s expertise across the whole business—without adding a million meetings to your calendar.
+2. Uncover Useful Insights from Past Experiments
+ABsmartly keeps all your hypotheses, results, analyses, and past decisions in one structured home. We designed ABsmartly to be your “institutional knowledge database” (a.k.a. where all your company’s experimentation learnings and data is kept centrally so that you never lose what you learn). Your AI can scour and surface findings that otherwise might have long been forgotten.
+For example, you might give your AI context on your new project:
+Example Prompt
+“We’re designing a new checkout flow for our subscription tier. Look for any past tests that involve checkout friction and payment processes. What did we learn, and what pitfalls should we avoid?”
+Instead of valuable lessons getting dusty in forgotten slide decks or 50-page deep dives, the AI brings historical insights from years ago to light. You can start every project smarter with all your company’s insights at your fingertips.
+3. Automate Your Post-Test Analysis and Dive Deep into Experiment Results (Without a Data Scientist)
+When an experiment finishes running, delegate the analysis to your AI teammate. Ask it any questions you have without needing a data scientist to query your data and events tables for the answers. Here’s an example question you might ask your LLM during analysis:
+Example Prompt
+“Look at the results for experiment #402. Were there any interesting behavioral differences between new vs. returning users? If so, what are they, and what impact did they have on the overall experiment result?”
+The LLM pulls your exact experiment data via the MCP server. Then, it writes a clean, accurate summary. Plus, you can ask follow-up questions—beyond whatever short timeframe you may have had with a data scientist with the old way of doing things.
+4. Set Up Experiments Super Fast (And With Confidence!)
+Ready to launch? Let the AI do your admin to get your experiment set up. You can tell it to just do the work for you.
+Example Prompt
+“Create a draft experiment for a new 2-variant A/B test named ‘Q3 Pricing Page Optimization’ for my team. Give it a 50/50 traffic split targeting EU users on all devices with the primary metric set to sales. Set the guardrail metrics to net revenue, cancellations, and customer service contacts.”
+The AI can use the MCP to draft the experiment in ABsmartly, saving you the frustration of figuring out which metrics and targeting rules to select.
+Why Hooking Your Experimentation Platform Up to Your AI Via an MCP Matters for Your Velocity (and Impact)
+Connecting AI to your testing stack solves real workflow bottlenecks. Here’s some examples of what you get with an MCP connection:
+Zero pipeline friction.
+You don’t need to build data pipelines or write custom scripts to sync experiment data with your AI platform. ABsmartly’s open architecture handles it out of the box.
+Faster insights and faster action.
+AI can seriously reduce the time it takes to go from “test done” to “learnings shared” to “decision made.”
+Less human error.
+Let AI double-check your setups, flag unexpected numbers, and draft consistent documentation while your team focuses on connecting with your customers more so they can build better products.
+How to Connect ABsmartly to an LLM via MCP
+Setting all this up doesn’t need an engineering sprint. But if you’re not familiar with API keys, you might need a little dev support. Here’s a high-level overview about how to connect ABsmartly to your AI in three steps:
+1. Grab Your Security Key Details
+First, grab your unique ABsmartly website link and a secure digital passkey (an API token) from your account settings. These two things tell your AI exactly where to look for whatever it needs and proves it has your permission to access the data.
+2. Introduce ABsmartly to Your AI
+Open the settings screen of your AI app and paste in our standard configuration snippet alongside your digital passkey. This the AI how to talk directly to ABsmartly.
+3. Restart and Start Chatting
+Restart your AI app, and it loads a brand-new set of native tools (such as a new toolkit menu at the bottom of the screen ). With the live connection, your AI can now fetch test data, search through your past experiment results, and do stuff for you all through your AI chat interface. Voila.
+Ready to Integrate AI into Your Experimentation Program?
+If you want to automate your experimentation workflows with the power of an open AI ecosystem—we’ve got you covered.
+👉
+Check out the official ABsmartly docs to get started.
+We can’t wait to see the creative ways your team uses this. Drop a comment and let us know what custom AI workflows you’re building!
+Written By
+Erin Weigel
+As an ABsmartly advisor and author of "Design for Impact: Your Guide to Designing Effective Product Experiments", Erin has been living and breathing experimentation for 15+ years.
+Leave a Comment
+Cancel Reply
+Comment
+Name (required)
+Email (will not be published) (required)
+Website
+Save my name, email, and website in this browser for the next time I comment.
+Search
+Recent Posts
+How to Automate Your Experimentation Program with ABsmartly’s MCP Server
+Hire for These Five Traits to Grow an Experimentation Culture Like Booking.com
+Key Differences Between Cloud and Warehouse Native Experimentation
+Why Trust Is the Foundation of a Good Experimentation Platform
+Experimentation Glossary 2025: Terms Every Product Team Should Know
+Get a Demo
+Check out ABsmartly in Action
+If you've outgrown basic experimentation tools and need to ramp things up, fill out this form. We'll contact you to schedule a product demo.
+ABsmartly is a leading experimentation platform built for smart teams by the folks who architected the A/B testing tool at
+Booking.com
+.
+Privacy Policy
+Terms and Conditions
+Security
+GDPR & HIPAA
+Resources
+Blog
+Case Studies
+FAQs
+Documentation
+Key Capabilities
+Group Sequential Testing: peek at results daily
+How ABsmartly Works
+A/B Testing for Data Teams
+A/B Testing for Product Teams
+Contact
+Contact Us
+ABsmartly B.V.
+Keizersgracht 520 H
+1017 EK, Amsterdam
+The Netherlands
+LinkedIn icon
+Made with kindness & integrity in Europe.
+© 2026 ABsmartly B.V. All Rights Reserved.
+Why ABsmartly
+For Experimenters
+For Product
+For Engineering
+For Data
+How it Works
+About Us
+Our Story
+Meet the Team
+Contact Us
+Resources
+Blog
+Client Stories
+FAQs
+Docs
+Get a Demo
+We use cookies on our site. Is that OK with you?
+Yes, accept
+No, reject
+This is our privacy policy.

@@ -1,0 +1,722 @@
+# https://github.com/webflow/js-webflow-api
+GitHub - webflow/js-webflow-api: JS/TS SDK for the Webflow Data API · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+webflow
+/
+js-webflow-api
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+116
+Star
+346
+Code
+Issues
+19
+Pull requests
+11
+Actions
+Projects
+Security and quality
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+master
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+294 Commits
+294 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.fern
+.fern
+.github/
+workflows
+.github/
+workflows
+scripts
+scripts
+src
+src
+tests
+tests
+.fernignore
+.fernignore
+.gitignore
+.gitignore
+.npmignore
+.npmignore
+CONTRIBUTING.md
+CONTRIBUTING.md
+LICENSE
+LICENSE
+MIGRATION.md
+MIGRATION.md
+README.md
+README.md
+biome.json
+biome.json
+jest.config.mjs
+jest.config.mjs
+package.json
+package.json
+reference.md
+reference.md
+tsconfig.json
+tsconfig.json
+yarn.lock
+yarn.lock
+View all files
+Repository files navigation
+README
+Contributing
+MIT license
+More
+items
+Webflow JavaScript/TypeScript SDK
+The Webflow JavaScript SDK provides convenient access to the
+Webflow Data API
+from applications written in JS.
+The SDK contains typings and request builders for the Webflow Data API.
+Documentation
+Explore the
+Data API reference documentation
+.
+Installation
+Add this dependency to your project's package.json file:
+Using npm:
+npm install webflow-api
+Using yarn:
+yarn add webflow-api
+Authentication
+You can use a workspace token to access all of the sites in your Webflow Workspace or a site token to access a single site.
+To get a workspace token, open the
+Webflow Dashboard
+, click
+Apps & Integrations > Manage
+, and under
+Workspace API access
+, click
+Generate API token
+.
+To get a site token, find the site in the
+Webflow Dashboard
+, open its settings, and under
+API access
+, click
+Generate API token
+.
+For more information about tokens, see
+Authentication
+in the Webflow documentation.
+For more complex authentication with OAuth, see
+OAuth
+below.
+Usage
+To use the SDK, import the
+webflow-api
+package, provide your access token, and make calls to the Webflow API, as in this example:
+import
+{
+WebflowClient
+}
+from
+"webflow-api"
+;
+// Workspace or site token
+const
+webflow
+=
+new
+WebflowClient
+(
+{
+accessToken
+:
+process
+.
+env
+.
+WEBFLOW_API_TOKEN
+,
+}
+)
+;
+// Environment variables
+// in string format, such as " "
+const
+site_id
+=
+process
+.
+env
+.
+SITE_ID
+;
+const
+custom_domain_id_1
+=
+process
+.
+env
+.
+CUSTOM_DOMAIN_ID_1
+;
+const
+custom_domain_id_2
+=
+process
+.
+env
+.
+CUSTOM_DOMAIN_ID_2
+;
+// List sites
+const
+sites
+=
+await
+webflow
+.
+sites
+.
+list
+(
+)
+;
+// Get site
+const
+site
+=
+await
+webflow
+.
+sites
+.
+get
+(
+site_id
+)
+;
+// Get custom domains
+const
+customDomains
+=
+await
+webflow
+.
+sites
+.
+getCustomDomain
+(
+site_id
+)
+;
+// Publish site
+const
+publishRequest
+=
+await
+webflow
+.
+sites
+.
+publish
+(
+site_id
+,
+{
+customDomains
+:
+[
+custom_domain_id_1
+,
+custom_domain_id_2
+]
+,
+publishToWebflowSubdomain
+:
+true
+,
+}
+)
+;
+OAuth
+To implement OAuth, you must register a Webflow App in your Workspace with the "Data CLient" building block and get its client ID and secret. See
+https://developers.webflow.com/apps/data/docs/register-an-app
+.
+To get the client ID, edit the App in your workspace, go to the Building Blocks tab, and copy the ID from the
+Client ID
+field.
+For full instructions, see
+https://developers.webflow.com/data/reference/oauth-app
+.
+Step 1: Generate an authorization URL
+The first step in OAuth is to generate an authorization URL. You direct your users to go to this URL, which prompts them to approve the App's access to specific sites or Workspaces.
+This example code generates the authorization URL:
+import
+{
+WebflowClient
+}
+from
+"webflow-api"
+;
+const
+authorizeUrl
+=
+WebflowClient
+.
+authorizeURL
+(
+{
+state
+:
+"your_state"
+,
+scope
+:
+"sites:read"
+,
+clientId
+:
+"your_client_id"
+,
+redirectUri
+:
+"your_redirect_uri"
+,
+}
+)
+;
+console
+.
+log
+(
+authorizeUrl
+)
+;
+Step 2: Retrieve an access token
+The callback from the authorization URL includes the state that you set in the request and an authorization code. You can use this authorization code to generate an access token for the App.
+This example passes the App's client ID and secret and the authorization code to the
+getAccessToken
+function:
+import
+{
+WebflowClient
+}
+from
+"webflow-api"
+;
+const
+accessToken
+=
+WebflowClient
+.
+getAccessToken
+(
+{
+clientId
+:
+"your_client_id"
+,
+clientSecret
+:
+"your_client_secret"
+,
+code
+:
+"your_authorization_code"
+}
+)
+;
+Step 3: Instantiate the client
+Instantiate the client using the access token:
+import
+{
+WebflowClient
+}
+from
+"webflow-api"
+;
+const
+webflow
+=
+new
+WebflowClient
+(
+{
+accessToken
+}
+)
+;
+const
+{
+sites
+}
+=
+await
+webflow
+.
+sites
+.
+list
+(
+)
+;
+console
+.
+log
+(
+sites
+)
+;
+Now the App has access to the sites or Workspaces that the user allowed access to.
+Webflow Types
+All of the types are nested within the
+Webflow
+namespace. Let IntelliSense guide you!
+Exception Handling
+All errors thrown by the SDK will be subclasses of
+WebflowError
+.
+import
+{
+WebflowClient
+,
+Webflow
+}
+from
+'webflow'
+;
+const
+webflow
+=
+new
+WebflowClient
+(
+{
+accessToken
+:
+'your_access_token'
+}
+)
+;
+try
+{
+const
+sites
+=
+await
+webflow
+.
+sites
+.
+get
+(
+...
+)
+;
+}
+catch
+(
+e
+)
+{
+if
+(
+e
+instanceof
+Webflow
+.
+ForbiddenError
+)
+{
+console
+.
+log
+(
+e
+.
+body
+.
+message
+)
+;
+}
+else
+if
+(
+e
+instanceof
+Webflow
+.
+BadRequestError
+)
+{
+console
+.
+log
+(
+e
+.
+body
+.
+message
+)
+;
+}
+else
+{
+throw
+e
+;
+}
+}
+Advanced
+Timeouts
+By default, requests time out after 60 seconds. You can configure the timeout and # of max retries
+import
+{
+WebflowClient
+}
+from
+'webflow'
+;
+const
+sites
+=
+await
+webflow
+.
+sites
+.
+get
+(
+...
+,
+{
+timeoutInSeconds
+:
+30
+// override the timeout
+}
+)
+;
+Retries
+The SDK will automatically retry failures with exponential backoff. You can configure the retries by setting maxRetries.
+import
+{
+WebflowClient
+}
+from
+'webflow'
+;
+const
+sites
+=
+await
+webflow
+.
+sites
+.
+get
+(
+...
+,
+{
+maxRetries
+:
+10
+// override the retries
+}
+)
+;
+Beta Status
+This SDK is in
+Preview
+, and there may be breaking changes between versions without a major version update.
+To ensure a reproducible environment (and minimize risk of breaking changes), we recommend pinning a specific package version.
+Contributing
+While we value open-source contributions to this SDK, this library is generated programmatically. Additions made directly to this library would have to be moved over to our generation code, otherwise they would be overwritten upon the next generated release. Feel free to open a PR as a proof of concept, but know that we will not be able to merge it as-is. We suggest opening an issue first to discuss with us!
+On the other hand, contributions to the README are always very welcome!
+About
+JS/TS SDK for the Webflow Data API
+www.npmjs.com/package/webflow-api
+Topics
+api
+business-critical-yes
+cms
+ecommerce
+membership
+oauth2
+sdk
+webflow
+Resources
+Readme
+MIT license
+Contributing
+Contributing
+Activity
+Custom properties
+Stars
+346
+stars
+Watchers
+84
+watching
+Forks
+116
+forks
+Report repository
+Releases
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

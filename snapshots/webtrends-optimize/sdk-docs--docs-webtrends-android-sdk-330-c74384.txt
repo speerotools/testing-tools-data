@@ -1,0 +1,51 @@
+# https://onpremises.webtrends.help/docs/webtrends-android-sdk-330
+Webtrends Android SDK 3.3.0
+Documentation Index
+Fetch the complete documentation index at:
+https://onpremises.webtrends.help/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Support
+Contact Us
+Schedule Demo
+Auto (System theme)
+Light
+Dark
+Search
+CMD+K
+Press CMD+K to open search
+Powered by
+Webtrends Android SDK 3.3.0
+Published on May 6, 2020
+2 minute(s) read
+Print
+Copy page
+Copy as Markdown for LLMs
+View as Markdown
+View the page as plain text
+Open in ChatGPT
+Ask ChatGPT about this page
+Open in Claude
+Ask Claude about this page
+Prev
+Next
+March 24th, 2017
+This release contains several fixes and feature updates. In particular:
+ENG-16928 – Tests are not being applied correctly on API level 23 and 24 – Tests on Android platforms with API level 23 and 24 were not always being properly rendered. Support for these API levels has been corrected.
+ENG-16775 – Sometimes exceptions are thrown while sending events – An intermittent situation where an error sending data (“Unknown exception while sending events. Bailing out”) can occur on some android platforms has been corrected. These events should no longer occur.
+ENG-7829 – Android SDK Documentation on capturing referrer incorrect – Updated the class name used to retrieve the referrer in the documentation to “
+”.
+ENG-16738 – A null pointer exception is thrown while getting the connection type when airplane mode is on – An exception was being thrown while generating events when airplane mode is set to on for certain Android platforms. This has been corrected, the SDK will now set the wt.ct parameter value as “unknown” in these cases.
+ENG-16929 – An SQL exception is thrown while installing the app after the latest updates in case if the app already existed on the device – An exception can be thrown during the app install if an older version of the app already existed. We have corrected the version detection code and it will no longer throw an exception.
+ENG-16797 – The android test app gets terminated on devices lower than API level 21 – On older versions of Android OS, the bundled test app would self-terminate. This has been corrected and the test app will now run properly on older versions of Android.
+ENG-16594 – Android SDK – Remove Java 8 and Jack Toolchain from SDK – Java 8 requirements have been removed from the SDK. It will now compile and run with Java 7 apps.
+ENG-16079 – Update the Android SDK to apply tests using the mechanism as in iOS SDK – In the previous version of the Android SDK, the same Optimize test had a different effect on the same UI element for iOS and Android. In order to use the same test for both platforms, Android SDK sources needed to be updated, so that it applies the tests exactly the same way as iOS SDK. This has been done.
+ENG-16026 – The Tests are not being applied for Android test app – Switch Test A, Switch Test B, Multivariate Test, and Button Tests were not always correctly being applied to the Android Test app on all Android platforms. The test app has been updated to successfully show these tests.
+ENG-16739 – The “application/start” event is being sent each time launching the test app in case if the automatics is disabled – No matter if the state of automatic event tracking was set to enabled/disabled, the SDK on the test app always sent an application/start event on its launch. This has been corrected to check the state of automatic event tracking and honor the setting on app launch.
+Was this article helpful?
+Yes
+No
+Privacy Statement
+Security Statement
+Terms of Service
+Cookie Policy

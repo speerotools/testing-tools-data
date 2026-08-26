@@ -1,0 +1,182 @@
+# https://www.mutinyhq.com/blog/how-we-built-an-agent-for-on-brand-asset-creation
+How we built an agent for on-brand asset creation
+Product
+Solutions
+Customers
+Pricing
+Company
+Log in
+Start for free
+Start for free
+Product
+Solutions
+Customers
+Pricing
+Log in
+Start for free
+How we built an agent for on-brand asset creation
+Henrik Berggren
+AI Summary:
+At Mutiny, we help go-to-market teams create personalized assets faster. But speed alone is not enough. For these assets to actually get used inside an organization, they need to feel on-brand.
+That is what makes this problem so important.
+Design is a scarce resource at most companies. Sales, marketing, and other GTM teams constantly need pages, slides, and supporting assets, but getting them designed well usually requires coordination. That creates a kind of design tax: extra time, extra handoffs, and extra friction around work that needs to move quickly.
+At the same time, brand quality is not optional. If a tool helps a sales team move faster but produces assets that feel off-brand, marketing will not approve it. In most companies, that is a non-starter. For this category of product to work, on-brand output is a baseline requirement.
+From the beginning, we had two clear goals.
+First, brand setup had to be fast. We could not assume every customer had a polished brand book or a complete design system. Many do not, especially smaller companies, but they still care deeply about how their brand is represented.
+Second, the system had to work across a wide variety of brands. The goal was not to generate generic “good-looking” assets. It was to generate assets that actually felt like each individual company.
+To figure out how to do that, we interviewed a bunch of brand designers. We wanted to understand the language they use, how they interpret a brand, and how they decide whether something is on-brand or not.
+From that work,
+Nikhil Mathew
+and I developed what we jokingly called a Maslow’s hierarchy of brand.
+Article content
+At the foundation were the basics: color, fonts, and typography. Then came component-level details like buttons, links, cards, CTAs, sizing, and shape language. And on top of that sat the hardest layer to encode: the vibe check. That included things like imagery style, spacing, tone of voice, contrast, and the broader feel of the brand.
+That became the basis for our brand representation: a mix of structured brand tokens and richer language-based descriptions. The structured side gives the system clear boundaries. The descriptive side captures the taste and character that are harder to reduce into rules.
+We then use that representation to guide the LLM as it composes.
+One of our biggest unlocks
+One of the biggest lessons was that brand does not live in individual sections. It lives in the composition.
+Early on, we thought mostly about whether each section worked on its own. But that only gets you part of the way there. What really matters is how the sections work together. Great branded assets need rhythm, contrast, and a sense of cohesion.
+Once we shifted from evaluating sections in isolation to evaluating the complete composition, quality improved significantly. That was a major unlock for us.
+What we learned
+First, a lot of a brand is already present on a company’s website. You can often extract colors, typography, tone, and component patterns surprisingly well. The harder part is understanding what is implied rather than stated: the taste, restraint, energy, and visual judgment behind the brand. That layer turned out to matter a lot.
+Second, there is always tension between creativity and brand consistency. Too much constraint makes the output rigid. Too much freedom makes it drift. A big part of the work is finding the balance between those two.
+Third, fast feedback loops matter. If users can quickly rate whether an output feels on-brand or not, you can build a much better dataset for improving the system over time.
+And finally, imagery is hugely important. You can get layout, colors, and typography mostly right, and the asset can still feel off if the imagery is wrong. Product photos, illustration style, and photography treatment carry a huge amount of brand signal.
+Closing thought
+What we are really doing is teaching an agent taste within boundaries. That has been one of the most interesting parts of this work. The challenge is not just generating attractive assets. It is generating assets that a marketing team would approve, a sales team would actually use, and that still feel true to the brand.
+We still have a lot more to do, but it has been exciting to see how far this has come and what our customers are already able to create with it.
+Here are three great examples recently built in Mutiny
+Be the one buyers remember
+Create beautiful, on-brand customer experiences without dependencies.
+Get Started
+Be the one buyers remember
+Create beautiful, on-brand customer experiences without dependencies.
+Get Started
+Be the one buyers remember
+Create beautiful, on-brand customer experiences without dependencies.
+Get Started
+Product
+Beautiful Assets
+Automation
+Integrations
+Use Cases
+Sales
+Account Executive
+Sales leaders
+Marketing
+Account Based Marketing
+Marketing leaders
+Blueprints
+Prospect
+1:1 ABM
+Vertical Landing Page
+Cold Outreach
+Event Invite
+Evaluate
+Meeting Recap
+Demo Pre-Read
+Case Study
+Case Study Round-Up
+Competitive Comparison
+Group Demo Follow Up
+Pitch Deck
+Negotiate
+Pricing Proposal
+Executive Business Case
+Deal Room
+Expand
+Forward Looking Strategy
+Impact Report
+Expansion ABM
+Customers
+Join us
+Blog
+FAQs
+Terms of services
+Privacy policy
+DPA
+Hey AI, learn about us
+Mutiny 2026
+Product
+Beautiful Assets
+Automation
+Integrations
+Use Cases
+Sales
+Account Executive
+Sales leaders
+Marketing
+Account Based Marketing
+Marketing leaders
+Blueprints
+Prospect
+1:1 ABM
+Vertical Landing Page
+Cold Outreach
+Event Invite
+Evaluate
+Meeting Recap
+Demo Pre-Read
+Case Study
+Case Study Round-Up
+Competitive Comparison
+Group Demo Follow Up
+Pitch Deck
+Negotiate
+Pricing Proposal
+Executive Business Case
+Deal Room
+Expand
+Forward Looking Strategy
+Impact Report
+Expansion ABM
+Customers
+Join us
+Blog
+FAQs
+Terms of services
+Privacy policy
+DPA
+Hey AI, learn about us
+Mutiny 2026
+Product
+Beautiful Assets
+Automation
+Integrations
+Use Cases
+Sales
+Account Executive
+Sales leaders
+Marketing
+Account Based Marketing
+Marketing leaders
+Blueprints
+Prospect
+1:1 ABM
+Vertical Landing Page
+Cold Outreach
+Event Invite
+Evaluate
+Meeting Recap
+Demo Pre-Read
+Case Study
+Case Study Round-Up
+Competitive Comparison
+Group Demo Follow Up
+Pitch Deck
+Negotiate
+Pricing Proposal
+Executive Business Case
+Deal Room
+Expand
+Forward Looking Strategy
+Impact Report
+Expansion ABM
+Customers
+Join us
+Blog
+FAQs
+Terms of services
+Privacy policy
+DPA
+Hey AI, learn about us
+Mutiny 2026

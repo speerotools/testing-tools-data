@@ -1,0 +1,575 @@
+# https://docs.webtrends-optimize.com/en/articles/9271819-ots-api-guide-for-server-side-testing
+OTS API Guide for Server Side testing | Webtrends Optimize Help Center
+Copyright (c) 2023, Intercom, Inc. (
+[email protected]
+) with Reserved Font Name "Montserrat". This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Copyright (c) 2023, Intercom, Inc. (
+[email protected]
+) with Reserved Font Name "Montserrat". This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Skip to main content
+Raise a support ticket
+Raise a support ticket
+Search for articles...
+All Collections
+Create Experiences (Server side)
+OTS API Guide for Server Side testing
+OTS API Guide for Server Side testing
+O
+Written by
+Optimize Team
+Updated this week
+Table of contents
+Introduction
+This document provides a practical guide for using our REST API for Server Side experimentation.
+This is useful for users who want to go beyond the aesthetic changes involved with front-end client-side experimentation, and instead look at either component-layer testing in your single-page application, or testing features or other back-end decisions on the server.
+For example, testing page layouts, social proofing or recommendations carousels can happen on the client-side, but testing brand new journeys, different payment methods or pricing strategies is usually handled as a server-side test.
+Summary
+There are two types of calls you can make.
+Control requests
+deal with test decisioning / evaluation.
+Track requests
+deal with capturing metrics.
+You will make a POST request with a body that includes the parameters below, and you'll get back either:
+A list of decisions for control requests
+Acknowledgement for track requests
+Cookies should be stored somewhere meaningful. Either as cookies for web experiences, or some reasonable storage mechanism such as a database.
+A pure approach sees users use the API for both decision and metric capture actions.
+A hybrid approach, which is very common, sees users:
+Use Control Requests to fetch decisions on the server-side
+Cookies get written as normal to the user's browser
+The JS tag can then track user behaviour on the front-end of the website, e.g. page loads and clicks.
+Structure of API calls
+POST [endpoint]/[action]/[domainid]-[projectalias]
+{
+"keyToken": "token_here",
+"url": "https://www.mysite.com",
+"data": {
+// additional data to segment on or capture
+}
+// other attributes here
+}
+This is the shape that calls take.
+Endpoint
+This is a consistent value. All calls made to us should be reaching:
+https://ots.wtopt.io/
+Action
+We have two core actions you can take.
+Control
+requests refer to test delivery and decisioning.
+Track
+requests refer to the capture of metrics.
+Other variables
+All other variables relate to your account and usage, including your account ID (called domainID or domainKey), keyToken (or token), project details, etc.
+See the below section for where to find these details.
+Finding your credentials
+In your account overview, you'll find your Domain ID and Key Token.
+You can get there by going here:
+https://app.webtrends-optimize.com/optimize/account/overview
+Note: It may take a while for this information to load into the interface.
+Fetching a test
+If you are using our APIs for a specific use-case and a single test is all you want to fetch or handle, the
+specific project
+variant of the call is suitable:
+POST [endpoint]/[action]/[domainid]-[projectalias]
+Control requests
+What are control requests
+Control requests are the mechanism through which you evaluate users and get decisions for them.
+Example request - v2.0+
+We released v2.0 in Q2 2025, which better handles _wt.project cookies, as well as having a response body which is easier to parse. This is our new, recommended approach to interfacing with the OTS API.
+​
+POST https://ots.wtopt.io/control/2490593-ta_myserversidetest
+Request body:
+{
+"keyToken": " ",
+"url": "https://www.mysite.com",
+"_wt.encrypted": true,
+"_wt.track": "true",
+"s_mode": "staging",
+"cookies": {},
+"data": {},
+"version": "2.0"
+}
+Request headers:
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+X-Forwarded-For: 123.456.789.0
+Content-Encoding: gzip
+Expected response:
+{
+"decisions":{
+"ta_Project1":{
+"content":"variation",
+"params":{
+"experiment_id":2490704,
+"test_id":2490701,
+"project_id":2490694
+}
+},
+"ta_Project2":{
+"content":"variation",
+"params":{
+"experiment_id":2532489,
+"test_id":2532486,
+"project_id":2532479
+}
+}
+},
+"cookies":{
+"_wt.project-2490593-ta_Project1":"1||2490694-2490701-2490704||true||IN||undefined||1706233439447||1706233437357",
+"_wt.mode-2490593":"WT3hzZXpxu0k0U~",
+"_wt.user-2490593":"WT3sPDtddDXvzKDlJ8ZzyM03j-E-X9xHHRtotK-LGWDdvuOWwfkrAEHI6miLMwccqfLBTlV4jPYbWgVH2eris7pGS0VsjrpqVI23Jn6-TlDpw_OmQndHSSc9Kcmzt7mJXYCpzXYCJp7MpLEDLmzG6aDaeWPIzn8qh182x8J1HSHFTs2FE1x",
+"_wt.project-2490593-ta_Project2":"1||2532479-2532486-2532489||true||IN||undefined||1714651730197||1714651728062"
+},
+"user":{
+"user_id":" ",
+"session_id":" "
+}
+}
+Example request - v1.0-v1.2
+POST https://ots.wtopt.io/control/2490593
+Request body:
+{
+"keyToken": " ",
+"url": "https://www.mysite.com",
+"_wt.encrypted": true,
+"_wt.track": "true",
+"s_mode": "staging",
+"cookies": {},
+"data": {},
+"version": "1.2"
+}
+Request headers:
+Content-Type: application/json
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+X-Forwarded-For: 123.456.789.0
+Content-Encoding: gzip
+Note:
+Cookies and data can be omitted entirely. Empty objects are shown as placeholders to highlight where data will go when you have it.
+Example response (single test, successful entry):
+{
+"body": {
+"cookies": {
+"_wt.control-2490593-ta_Project1": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3DxAqq7tZ398I-Wt-5pgWv_LbYAJSf-OGP1Ct_al6MpZ1fANDEp1xx27AJnbg876CaTAvOCcZGUJXaKuqGs_Pmt5UKDcv9y0hBl0A-qIxRDR9nwkT2xlBPNB9hVLuIUR4T_w1Fa2dcyQFWsnQ5gPN5H7Yufe5ZfL4BXTeeW9L0h1D-FdXefT0Gh7qsIdVXJW6RCkEpmGONkHwpIGJnCq245TmiNE~"
+},
+"_wt.mode-2490593": {
+"timeout": 300000,
+"type": "session",
+"value": "WT3hzZXpxu0k0U~"
+},
+"_wt.user-2490593": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3vVm5itEIc6-JC843k180ib4G4e-J3-f9SDRPlPDB_klFjUWMBKzf-skVHJnDEb0RwBsAKQv864NlhWp-LS5Y3gFKWGQSxxte3o-xr9M2plXWzuLz-fN2n146FzxXsIvnMwEQGEkqZGSWp0b41UOngpE-VZrNgmbVfQvqYvtO2sw~"
+}
+},
+"factors": [
+{
+"name": "[data-wt-id='head'], #wt-page-level-js",
+"operation": 3,
+"value": "control"
+}
+],
+"metadata": "\"2490619=Unknown,2490612=Unknown\""
+},
+"opcode": "process",
+"opstatus": "success",
+"params": {
+"_wt_sessionID": " ",
+"cookieDomain": ".mysite.com",
+"guid": "2490593-ta_Project1-2490701-2490702",
+"r_experimentID": 2490702,
+"r_paused": "false",
+"r_runID": 2490701,
+"r_runState": "TEST",
+"r_testID": 2490694,
+"r_type": "AB",
+"systemUID": " ",
+"testAlias": "ta_Project1",
+"trackingGuid": "1-2490593-2490694-2490701-2490702"
+}
+}
+Example response (if not tests are matched):
+{
+"body": {
+"cookies": {
+"_wt.mode-2490593": {
+"timeout": 300000,
+"type": "session",
+"value": "WT3hzZXpxu0k0U~"
+},
+"_wt.user-2490593": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3vVm5itEIc6-JC843k180ib4G4e-J3-f9SDRPlPDB_klFjUWMBKzf-skVHJnDEb0RwBsAKQv864NlhWp-LS5Y3gFKWGQSxxte3o-xr9M2plXWzuLz-fN2n146FzxXsIvnMwEQGEkqZGSWp0b41UOngpE-VZrNgmbVfQvqYvtO2sw~"
+}
+},
+"message": {
+"errorCode": 303,
+"errorMessage": "No test found for guid 2490593-ta_Project1"
+}
+},
+"guid": "NULL",
+"opstatus": "success",
+"params": {
+"cookieDomain": ".mysite.com",
+}
+}
+Example response (if multiple tests are returned):
+IMPORTANT
+If multiple decisions are returned to you, the shape of the response will be an Array of response objects, instead of a single top-level response object. Your code to handle the response should account for this.
+[
+{
+"body": {
+"cookies": {
+"_wt.control-2490593-ta_Project1": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3XY0N1g9qL0PHC5gq2TlnvZCL-6tHTQBvpV8Yj8OhhJplpk-byaTzzh4o1LV40mBJnZ35sVDnLwFZUEWmQBpbhuPL3LxPlWOZI8YtN8EWpXnUvcPmO7iybgJIXj06zacmxzv-bARrwXA4EozBLrGSLwpBYUtg1cewwHX5aBw3PYXhFQXRY-SvrmQ-WL0DgEgg0pAi-ES9gshEdxU8nvp2qJ6i21U~"
+},
+"_wt.mode-2490593": {
+"timeout": 300000,
+"type": "session",
+"value": "WT3hzZXpxu0k0U~"
+},
+"_wt.user-2490593": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT36aIrC0Gbu-_5OkB-hJUTg1YEEwtlxarYxnAiI_WQ1YQ50W1TcfPILc0RLZ9QFYebtEYy8EXL18Qy1AyLhYCow69huWsVDRHFy8d9ND26p0zYrXonGIONb09SeZ7Vipcy9iDUXueupbK1oAA8_sNGNNIPGTf073Rjof4EUS6_qjwuRh2B"
+}
+},
+"factors": [
+{
+"name": "[data-wt-id='head'], #wt-page-level-js",
+"operation": 3,
+"value": "variation"
+}
+],
+"metadata": "\"2490619=Unknown,2490612=Unknown\""
+},
+"opcode": "process",
+"opstatus": "success",
+"params": {
+"_wt_sessionID": " ",
+"cookieDomain": ".webtrends-optimize.com",
+"cookieInspection": true,
+"guid": "2490593-ta_Project1-2490701-2490704",
+"r_experimentID": 2490704,
+"r_paused": "false",
+"r_runID": 2490701,
+"r_runState": "TEST",
+"r_testID": 2490694,
+"r_type": "AB",
+"systemUID": " ",
+"testAlias": "ta_Project1", // <<--- IMPORTANT VALUE TO MAP YOUR FLAGS. USE THIS AS THE KEY, AND THE FACTOR-VALUE AS THE VALUE.
+"trackingGuid": "1-2490593-2490694-2490701-2490704",
+"use1stPartyCookies": true,
+"use3rdPartyCookies": false
+}
+}, // << ----- END OF FIRST RESPONSE OBJECT
+{ // << ----- START OF SECOND RESPONSE
+"body": {
+"cookies": {
+"_wt.control-2490593-ta_Project1": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3XY0N1g9qL0PHC5gq2TlnvZCL-6tHTQBvpV8Yj8OhhJplpk-byaTzzh4o1LV40mBJnZ35sVDnLwFZUEWmQBpbhuPL3LxPlWOZI8YtN8EWpXnUvcPmO7iybgJIXj06zacmxzv-bARrwXA4EozBLrGSLwpBYUtg1cewwHX5aBw3PYXhFQXRY-SvrmQ-WL0DgEgg0pAi-ES9gshEdxU8nvp2qJ6i21U~"
+},
+"_wt.control-2490593-ta_Project2": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3S08UOC3gUmwEoIH6ID89egMyM_HBdWpIK1JH31BOjnUgxpQ_zDYJRn3k2KeEa7yzYq-W_x0kw-wflO_GdcZcxlHO89EEF8CyvI3LTEmlFBHfMGc4GCZ-Hdt1e0IVxz1k-C7tzOjvWa1u6bdOL8AyE5OrJz_vCQ3UBFCLKRxFVlWfGl5bOJWScMvmw298KTOnWGQo5TY7b73KnDfhT4NKLQsoN8I~"
+},
+"_wt.mode-2490593": {
+"timeout": 300000,
+"type": "session",
+"value": "WT3hzZXpxu0k0U~"
+},
+"_wt.user-2490593": {
+"timeout": 7776000000,
+"type": "persisted",
+"value": "WT3w2cVRdTngJZ77lLnL1iI0eDgsYfJDPABqb4W3OgsrhgpUiGLekJeZJmvi3n83DL0dJXT_Hheo4HUfobeXt3wcpNQD08lM210ZFuLoAlprhKCw8ms1jYMFvbz6rnLDvmSO54KbfabYKFrcVbqCIdprix7hGImsphV-JuXfN51Nl7ZoG-S"
+}
+},
+"factors": [
+{
+"name": "[data-wt-id='head'], #wt-page-level-js",
+"operation": 3,
+"value": "control"
+}
+],
+"metadata": "\"2490619=Unknown,2490612=Unknown\""
+},
+"opcode": "process",
+"opstatus": "success",
+"params": {
+"_wt_sessionID": " ",
+"cookieDomain": ".webtrends-optimize.com",
+"cookieInspection": true,
+"guid": "2490593-ta_Project2-2532486-2532487",
+"r_experimentID": 2532487,
+"r_paused": "false",
+"r_runID": 2532486,
+"r_runState": "TEST",
+"r_testID": 2532479,
+"r_type": "AB",
+"systemUID": " ",
+"testAlias": "ta_Project2", // <<----- NOTE THIS VALUE
+"trackingGuid": "1-2490593-2532479-2532486-2532487",
+"use1stPartyCookies": true,
+"use3rdPartyCookies": false
+}
+}
+]
+Configuration & Variables
+Request body
+Parameter name
+Description & Options
+keyToken
+string, required
+The token for your account. See
+here
+for details of where to find your token.
+url
+string, required
+A URL, or virtual/simulated URL, against which we should do lookups.
+We recommend a value similar to:
+"
+https://www.myapp.com
+"
+This will avoid any conflicts with your web experiments if you're running them out of the same account.
+_wt.encrypted
+boolean, required
+Boolean value for whether to encrypt the cookies that are returned in the response.
+true
+(recommended)
+encrypt the cookies
+false
+don't encrypt the cookies
+_wt.track
+string, required
+This is a string-like boolean value of "true" or "false". This determines whether or not we count users with a "view" as part of this request that you're making.
+"true"
+If you assume users are highly likely to see your changes, sending "true" is reasonable and cuts down on the number of requests you're making.
+"false"
+If it's likely many users will not see your changes, and you want to inform us of views in subsequent calls, you can send "false" instead.
+s_mode
+string, optional
+This is the state that you identify yourself as. As with web tests, you have two options:
+"normal"
+(default)
+You are eligible for normal-mode tests (live, paused, published).
+"staging"
+You are eligible for staging-mode tests only.
+cookies
+​
+JSON object, optional
+This is an object of cookies, including the fields type, timeout and value.
+When passing in cookies to the platform, it is only important to send back the value. If you only send back "value", the object should look similar to:
+"cookies": {
+"cookie1_name": {
+"value": "WT3..."
+}
+}
+e.g.:
+"cookies": {
+"_wt.control-2490593-ta_Project1": {
+"value": "WT3XY0N1g9qL0PHC5gq2TlnvZCL-6tHTQBvpV8Yj8OhhJplpk-byaTzzh4o1LV40mBJnZ35sVDnLwFZUEWmQBpbhuPL3LxPlWOZI8YtN8EWpXnUvcPmO7iybgJIXj06zacmxzv-bARrwXA4EozBLrGSLwpBYUtg1cewwHX5aBw3PYXhFQXRY-SvrmQ-WL0DgEgg0pAi-ES9gshEdxU8nvp2qJ6i21U~"
+},
+"_wt.control-2490593-ta_Project2": {
+"value": "WT3S08UOC3gUmwEoIH6ID89egMyM_HBdWpIK1JH31BOjnUgxpQ_zDYJRn3k2KeEa7yzYq-W_x0kw-wflO_GdcZcxlHO89EEF8CyvI3LTEmlFBHfMGc4GCZ-Hdt1e0IVxz1k-C7tzOjvWa1u6bdOL8AyE5OrJz_vCQ3UBFCLKRxFVlWfGl5bOJWScMvmw298KTOnWGQo5TY7b73KnDfhT4NKLQsoN8I~"
+},
+"_wt.mode-2490593": {
+"value": "WT3hzZXpxu0k0U~"
+},
+"_wt.user-2490593": {
+"value": "WT3w2cVRdTngJZ77lLnL1iI0eDgsYfJDPABqb4W3OgsrhgpUiGLekJeZJmvi3n83DL0dJXT_Hheo4HUfobeXt3wcpNQD08lM210ZFuLoAlprhKCw8ms1jYMFvbz6rnLDvmSO54KbfabYKFrcVbqCIdprix7hGImsphV-JuXfN51Nl7ZoG-S"
+}
+}
+data
+JSON object, optional
+Max 1-layer deep
+If you wish to match either your locations or segments on additional data, such as User Type, Subscription Tier, Page Type, or other data you have to hand, you can pass these into our datalayer object - known as "data" in the request.
+Example:
+{
+"signed_in": "true",
+"loyalty_expires": 20
+}
+debug
+string, optional
+Only include if needed. Any string of 3+ characters, e.g.
+"true"
+If included, you'll find an additional log value in the response object describing the steps taken as part of evaluating the user for each test.
+​
+"log": "[SERVER LOG] : Page: 2490593-2490693, MD5: 25D27C12A34C8EB05EBEB31D4946484B\n[SERVER LOG] : Lookup OTS Package (GUID: 2490593-ta_Project1) ---\n[SERVER LOG] : Found packages in cache. (count: 2)\n[SERVER LOG] : Manage Packages ---\n[SERVER LOG] : Evaluating non-segmented run.\n[SERVER LOG] : Found run in ACTIVE mode.\n[SERVER LOG] : Loading package : (ID: 2490593-2490694-2491114)\n[SERVER LOG] : --- End Manage Packages\n[SERVER LOG] : Returning Run (2490593-2490694-2491114) with MD5: F8B9F4DFF0E30ECDC63B144E817AD653\n",
+This example log describes looking for tests, finding one with no segment, and being issued that test.
+NOTE: Only include this for local debugging. Using this value in production will drastically slow down your response speeds.
+version
+string, optional
+Supported values:
+"2.0" - latest, default.
+"1.2"
+This value changes the API you call, and the shape of the response body that comes back.
+v1.2 - legacy API
+v2.0 - better support for _wt.project cookies, cleaner and more consistent response body.
+Request headers
+Parameter name
+Description & Options
+Content-Type
+string, required
+application/json
+This is the required value, given you will be posting JSON into the POST request.
+User-Agent
+string, optional
+e.g.:
+​
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.143 Safari/537.36
+If you want to use our Segmentation for browser/device, or any filtering in Reporting for these attributes, please relay the user's User-Agent value into the request header to us.
+X-Forwarded-For
+string, optional
+e.g.:
+​
+123.456.789.0
+As above, if you want to use the relevant features, please pass in the values to power it.
+Content-Encoding
+​
+string, optional
+gzip
+​
+This is particularly useful if you expect large volumes of data in the response body.
+Error codes
+Section currently being written. Data below.
+errorCode_0=Unknown
+#site error codes
+errorCode_100=Unknown Site Exception
+errorCode_101=No Sites registered for account %d
+errorCode_102=Unable to decrypt control, invalid request for domain %d
+errorCode_103=Unable to find environment object for url: %s
+errorCode_104=Key token of environment not equal to key token of control ( %s )
+errorCode_105=No keyToken found for use in encrypting response. Domain %s testAlias %s
+#request error codes
+errorCode_200=Unknown Request Exceptions
+errorCode_201=Invalid conversion request, no guid, alias or page found.
+errorCode_202=Invalid request type: %s
+errorCode_203=Invalid capi encoder version [%s]
+errorCode_204=Invalid capi string for %s
+errorCode_205=Invalid federated key [%s] supplied for domain %d
+errorCode_206=Invalid federated domain supplied for federated manual conversion
+errorCode_207=Execution block by untrusted account %d
+#response error codes
+errorCode_300=Unknown Response Exceptions
+errorCode_301=Cannot return control response without guid or alias.
+errorCode_302=No test was found that matched any segments for guid %s
+errorCode_303=No test found for guid %s
+errorCode_304=Invalid test found
+errorCode_305=Invalid experiment id, aborting test
+errorCode_306=Invalid test path, no split pages found in test path
+errorCode_307=Invalid test path types
+errorCode_308=No split page found or default behavior selected
+errorCode_309=Session test path is null or empty
+errorCode_310=Conversion group does not match current test group set [guid: %d-$%s, test group: %s], will not convert for this test guid.
+errorCode_311=Current path does not contain [guid: %d-%s, test group: %s], will not convert for this test guid
+errorCode_312=Conversion cookie already exists, cannot convert again for guid %s
+errorCode_313=No project alias supplied with track request, tracking aborted.
+errorCode_314=No control cookie found for conversion on guid: %s
+errorCode_315=Test with guid %s, is not a valid test any more.
+errorCode_316=General tracking error.
+errorCode_317=No track made, 1st party control cookie[%s] is defined as view only.
+errorCode_318=No track made, test [%s] is paused.
+#cookie error codes
+errorCode_400=Unknown Cookie Exceptions
+errorCode_401=Unable to add control cookie with guid %s
+errorCode_402=Unable to add cookie %s
+errorCode_403=Unable to update control cookie with null/empty alias
+errorCode_404=Unable to add third party cookie %s
+errorCode_417=Throttled out OTS request for guid: %s
+errorCode_418=User has been previously throttled out, no conversion for guid: %s can occur
+#page error codes
+errorCode_420=Unable to read server-side cookie for : %s
+errorCode_421=Unable to write server-side cookie for: %s
+errorCode_500=Unknown Page Exception
+errorCode_501=No page found for url: %s on domain: %d
+errorCode_502=No test found for current page: %s
+#api error codes
+errorCode_601=Unknown API method [%s]
+errorCode_602=No GUID supplied for test
+errorCode_603=Invalid GUID for control call. Must be in format <DOMAINID>-<ALIAS>. %s supplied instead."
+errorCode_604=Invalid domainID supplied (%s). Must be an integer.
+errorCode_701=position of part %d is equal or greater than the total number of parts for the request
+#status error code
+errorCode_801=Illegal site ID (%s) provided.
+errorCode_802=Invalid site ID (%d) provided.
+errorCode_803=Illegal page ID (%s) provided.
+errorCode_804=Invalid page ID (%d) provided.
+errorCode_805=Illegal TestID (%s) or runID (%s) provided.
+errorCode_806=Invalid TestID (%s) or runID (%s) provided.
+#geodb stats error code
+errorCode_901=Local geo DB not available
+#content api error codes
+errorCode_1001=Illegal projectID (%s) provided.
+errorCode_1002=Illegal testID (%s) provided
+errorCode_1003=Illegal contentID (%s) provided.
+errorCode_1004=No content found for key %s.
+errorCode_1005=No test found for guid %s
+Common errors in more detail:
+Error
+Description / Cause
+300
+Unknown response exceptions
+​
+This likely occurs when the data your feeding in is malformed, such as us not being able to decrypt your cookies.
+302
+No test was found that matched any segments for guid %s
+This is less an error than a description of what happened - if the user did not meet the segmentation requirements for that test, you'll see this.
+If you believe you should have entered the test, you can add the debug parameter to your request to see an evaluation log.
+417
+Throttled out OTS request for guide: %s
+You have the ability to run your test on a throttle, e.g. at 10%. If it is, and if you don't fall in, you'll hit this error. Again, it is less an error than an accurate description of why you didn't enter the test.
+Collect requests
+These calls are used to send metrics into Optimize. They send similar data but to a different service.
+You can send data for one test, or multiple tests at the same time.
+{
+"domainId": 2103444,
+"testId": [1, 2],
+"experimentId": [1991, 2991],
+"visitorId": " ",
+"sessionId": "1701234567890",
+"eventName": "pageview",
+"user agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+"dateTime": " ",
+"timeZone": 3600000,
+"customData": {"url": "/"}
+}
+Note:
+You should send arrays for testId and experimentId even if there is a single experience.
+eventName should have the following values/constraints:
+If you are recording the pageview (test entry) event, send an eventName of "pageview"
+If you are sending any other metric, make sure it is lowercase, alphanumeric, without spaces and without special characters (except underscores).
+customData can contain any key/value of additional data you'd like to track alongside that metric, such as revenue/units for purchase events, or onpage attributes for a pageview event.
+customData.url should be kept as the pathname, not the whole URL.
+Interpreting the response
+If successful, the response will show:
+​
+{"status":"received"}
+Building Server Side experiences in the Optimize UI
+In the Optimize UI, the build flow for experiments is almost identical to Web experiments, with one key additional option.
+If you would like to request experiments by testAlias, i.e. with a call similar to:
+POST https://ots.wtopt.io/control/[domainid]-[projectalias]
+You can, in this scenario, use the Server-Side option in the UI. This will remove the option for Project Location, which will be redundant.
+If you would like to request multiple experiments in a single API call, continue to use the Web Page option with a location. This can be a real URL or a fake/virtual one, whichever best keeps your response clean and limited to only the server-side experiments (so you're not artificially increasing pageview counts for your client-side experiments).
+Related Articles
+Available methods in the Web Client API (CAPI)
+Full Stack / Server-Side
+Mobile App Testing - Full Guide
+Server-side Testing in Optimize - An Introduction
+Server Side 1.3
+Did this answer your question?
+😞
+😐
+😃
+Table of contents
+Webtrends Optimize Help Center
+Help desk
+WTO Console

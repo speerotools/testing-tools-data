@@ -1,0 +1,175 @@
+# https://amplitude.com/docs/apis
+APIs | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+Overview
+API Authentication
+Keys and Tokens
+AI Feedback API
+Analytics APIs
+Experiment APIs
+Guides and Surveys APIs
+Session Replay APIs
+Administrative APIs
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+APIs
+APIs
+Use Amplitude APIs to send and receive information and extend Amplitude.
+Analytics APIs
+Attribution API
+Send attribution campaign events (identified by idfa, idfv, or adid) that contain attribution information.
+Batch Event Upload API
+Upload large amounts of event data.
+Behavioral Cohorts API
+List all your cohorts in Amplitude, export a cohort in Amplitude, or upload a cohort.
+Chart Annotations API
+Programmatically annotate important dates and time ranges like feature releases and marketing campaigns on your organization's charts. Organize annotations into categories and use hourly granularity for precise timing.
+Dashboard REST API
+Get data that's displayed on the dashboard graphs in JSON format through the Dashboard REST API.
+Data Subject Access Request API
+The California Consumer Privacy Act (CCPA) requires businesses to provide all data about an end user upon request. This Data Subject Access Request (DSAR) API makes it easy to retrieve all data about a user.
+Event Streaming Metrics Summary API
+Get delivery metrics summary for a configured event stream.
+Export API
+Export your project's event data.
+Group Identify API
+Set or update properties of particular groups.
+HTTP V2 API
+Send data directly from your server to the HTTP V2 endpoint.
+Identify API
+Set the User ID for a particular Device ID or update user properties of a particular user without sending an event.
+Lookup Table API
+Augment your properties with static data.
+Lookup Table API 2
+Lookup tables let you augment user and event properties. Instead of using formulas, you can upload a CSV file that contains property mappings to derive new properties.
+Releases API
+Programmatically create releases in Amplitude using the Releases API.
+Taxonomy API
+Create, get, update, and delete categories, event types, event properties, and user properties.
+User Mapping (Aliasing) API
+If you use the Portfolio add-on, use this API to map and unmap users across projects to a global user ID.
+User Privacy API
+Programmatically submit requests to delete all data for a set of known Amplitude IDs or User IDs.
+User Privacy API v2
+Programmatically submit org-wide deletion requests through privacy.amplitude.com.
+User Profile API
+Fetch a user profile, which include user properties, computed properties, a list of cohort IDs, and recommendations.
+Experiment APIs
+Experiment Evaluation API
+Lets you retrieve variant assignment data for users with remote evaluation.
+Experiment Management API
+Use the Management API to programmatically create and control flags and experiments.
+Experiment Management API Deployment Endpoints
+Fetch a list of deployments that experiments or flags can be assigned to.
+Experiment Management API Experiment Endpoints
+Fetch a list of experiments and their configuration details. Results are ordered with the most recently created items first.
+Experiment Management API Flag Endpoints
+Fetch a list of flags including their configuration details. Results are ordered with the most recently created items first.
+Experiment Management API Holdout Group Endpoints
+Fetch a list of holdout groups with their configuration details.
+Experiment Management API Mutex Group Endpoints
+Returns a list of mutex groups with their configuration details.
+Experiment Management API Version Endpoints
+Fetch a list of versions for all experiments or flags that the management API key can access. The list spans multiple projects when the key scope includes them.
+Guides & Surveys APIs
+Localization API
+Programmatically import and export translation files for your guides and surveys.
+Session Replay APIs
+Session Replay API
+List session replays and retrieve replay event files.
+Administrative APIs
+Audit Logs API
+The Audit Logs API exports audit events for security monitoring, compliance reporting, and operational oversight.
+SCIM API
+Provision and manage users and groups. This API uses the System for Cross-domain Identity Management (SCIM) 2.0 Standard.
+User Management API
+Automate organization users, roles, project role assignments, group membership, and effective access.
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

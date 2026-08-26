@@ -1,0 +1,205 @@
+# https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again
+PBX 2.0 is changing testing (again) | Kameleoon
+Login
+English
+Select your language
+English
+Français
+Deutsch
+Platform
+PROMPT-BASED EXPERIMENTATION
+Optimize any website by chatting with PBX, Kameleoon’s AI.
+Learn more
+SOLUTIONS
+Experimentation
+Feature Management
+KEY Features & add-ons
+Mobile App Testing
+Recommendations & Search
+Personalization
+specialities
+AI in Experimentation
+Single Page Application
+Data Security & Privacy
+Data Accuracy
+Integrations & API
+Partners Program
+Support
+Product Roadmap
+Solutions
+for all teams
+Marketing
+Product
+Engineering
+Data Scientists
+For INDUSTRIES
+Healthcare
+Travel & Tourism
+Financial Services
+Media & Entertainment
+E-commerce
+B2B
+Automotive
+Samsung gains autonomy and speed in its most advanced tests with PBX
+read the success story
+Plans
+Resources
+Customers
+Book a demo
+Book a demo
+Quick links
+Heading 2
+Book a demo
+Book a demo
+All resources
+PBX 2.0 is changing testing (again)
+PBX 2.0 is changing testing (again)
+Collin Tate Crowell
+Published on
+April 16, 2026
+Product Updates
+Article
+Last July,
+Kameleoon combined AI coding with experimentation for the first time
+. Instead of cramming an AI button into a visual editor, teams could chat with AI to build and launch tests on their live sites, code included. Within months,
+Prompt-Based Experimentation (PBX)
+became the default way Kameleoon customers run experiments.
+PBX 2.0 goes further. It introduces a suite of AI agents designed to support every stage of the experimentation process, from finding the right test idea to shipping the winning variation into production.
+Build variations using your entire site context, not just one page
+PBX 1.0 knew the page you were on. It was fast and it worked. But the AI could only see what was in front of it.
+Teams were already pushing past that limit, asking PBX to add a feature from one page to another, or reuse a component from a different part of the site. PBX 2.0's Build agent makes that the default. It browses across your site, understands how your components are used in context, and builds variations that draw from what already exists. No more boundaries.
+PBX 2.0 validates before it builds.
+PBX 2.0 does not stop at one prompt. The Build agent checks in at each step, validating placement, wording, and interactions until the variation matches what you want.
+Figma? Yep.
+If your team works in Figma, that same agent can turn any design directly into a testable variation.
+Share a Figma frame
+and PBX generates the code to match it, with no handoff between design and experimentation.
+Prompt example:
+"Redesign the hero section on this page using the layout from the homepage banner. Use this Figma frame as the reference: [link]."
+{{quote}}
+Ideate: an agent that tells you what to test
+Most teams don't have a shortage of ideas. They have a shortage of confidence in which ideas will actually move the needle.
+The
+PBX Ideate agent
+analyzes your web pages and comes back with ranked test ideas, unprompted. It draws from a database of over 25,000 experiments built over more than a decade by CRO specialists, to surface ideas that are three times more likely to convert than the industry average. From any suggestion, you can create an A/B test or personalization campaign in one click.
+Ideas are organized into a backlog you can manage: favorites, archived, used in a campaign. The scoring is visible so your team can prioritize without debate.
+Ideate Agent example:
+"Your product page is missing social proof above the fold. Tests adding a review count near the CTA have an average uplift of 12% across similar pages. Confidence score: 87. Here’s a rough mockup. Build variant?"
+{{quote1}}
+Configure: chat with AI to build audiences, choose goals, and launch tests
+Configuring an experiment has always been the unsexy part. Define your audience segments. Set your targeting rules. Pick your goals. Done wrong, it undermines the test before traffic even runs.
+The PBX Configure agent handles this through conversation. Describe your target audience and the AI builds the segment. Tell it what you're trying to measure and it creates the goal. Ask it a question and it pushes back with suggestions. The full configuration for launch happens inside the same PBX interface, with no switching between menus and no manual segment builder.
+Prompt example:
+"Target visitors who've viewed this product page at least twice in the last 7 days but haven't added anything to their cart. Set the goal to add-to-cart clicks."
+{{quote4}}
+Ship: move winning tests into production with an MCP
+Running a winning test is only useful if you can act on it. The gap between "this variation won" and "this variation is live for everyone" has always required developer time: pulling the code, integrating it into the codebase, deploying it safely.
+The Kameleoon MCP Server closes that gap. It connects AI coding assistants directly to Kameleoon, so developers can retrieve the winning variation from their IDE, convert it into production-ready code, and deploy it behind a feature flag. What used to take days can happen in minutes.
+Prompt example:
+"Find the winning variation from Test #1 and integrate it into the codebase behind a feature flag so it can be turned on safely."
+{{quote3}}
+See PBX 2.0 in action
+These agents are available now or shipping this quarter. Join us for a live 30-minute webinar to see them work together across a real experimentation workflow, with customers and the Kameleoon CPO showing what is ready now.
+{{cta-block}}
+Explore our resources
+The page brands waste the most budget testing
+A/B testing
+Article
+How Fanatics could improve navigation using PBX
+AI
+Article
+Three A/B tests on the wrong problem
+A/B testing
+Article
+PBX doesn't just save time, it expands what is possible.
+Marie Genet
+E-Store Manager, Samsung
+PBX changed everything about how we test.
+Marcela Guiterrez
+Global Head of Digital Analytics and Optimization, Fossil
+When I saw what PBX Ship could do, I had one reaction: we need to put this in front of every team that has ever waited three days to ship a winning test.
+Makram Mansour
+Head of Marketplace, ID.me
+We're never going back.
+Chris Strobl
+Senior Optimization Engineer, Cedars-Sinai
+before ai
+Join us for a 30-minute webinar to see PBX 2.0 in action
+Sign up here
+Sign up here
+Join us for a 30-minute webinar to see PBX 2.0 in action
+Sign up here
+Sign up here
+Sign up here
+Sign up here
+Experiment your way
+Get the key to staying ahead in the world of experimentation.
+[Placeholder text - Hubspot will create the error message]
+Submit
+Thanks for submitting the form.
+Newsletter
+Platform
+Experimentation
+Feature Management
+PBX Free-Trial
+Mobile App Testing
+Product Reco & Merch
+Data Accuracy
+Data Privacy & Security
+Single Page Application
+AI Personalization
+Integrations
+guides
+A/B testing
+Prompt-Based Experimentation
+Feature Flagging
+Personalization
+Feature Experimentation
+AI for A/B testing
+Client-Side vs Server-Side
+plans
+Pricing
+MTU vs MAU
+Industries
+Healthcare
+Financial Services
+E-commerce
+Automotive
+Travel & Tourism
+Media & Entertainment
+B2B & SaaS
+TEAMS
+Marketing
+Product
+Developers
+Resources
+Customers Stories
+Academy
+Dev Docs
+Product Roadmap
+Calculator
+Who’s Who
+compare us
+Optimizely
+VWO
+AB Tasty
+partners
+Our Partner Ecosystem
+Become a Partner
+Integrations Directory
+Partners Directory
+company
+About Us
+Careers
+Contact Us
+Support
+legal
+Terms of use and Service
+Privacy Policy
+Legal Notice & CSU
+PCI DSS
+© Kameleoon — 2026 All rights Reserved
+Legal Notice & CSU
+Privacy policy
+PCI DSS
+Platform Status

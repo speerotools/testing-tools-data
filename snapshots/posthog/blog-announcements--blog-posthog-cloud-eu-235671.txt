@@ -1,0 +1,141 @@
+# https://posthog.com/blog/posthog-cloud-eu
+Introducing PostHog Cloud EU - PostHog
+Products
+Pricing
+Docs
+Community
+Company
+More
+Get started – free
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Home
+Self-driving product
+Context warehouse
+Pricing
+Docs
+Demo
+Talk to a human
+About us
+Changelog
+Company handbook
+Store
+Careers
+Trash
+Blog
+Copy page
+Introducing PostHog Cloud EU
+Andy Vandervell
+Oct 11, 2022
+Product updates
+Contents
+FAQ
+Where are PostHog Cloud EU's servers based?
+What data is transferred from the EU to the US?
+How do I use PostHog Cloud EU in compliance with GDPR?
+What does PostHog Cloud EU cost?
+I'm an existing PostHog customer, can I migrate to PostHog Cloud EU?
+GDPR compliance checklist
+It's no secret that some popular analytics tools, such as Google Analytics, have fallen foul of GDPR regulations in the EU. That's one reason why we've enabled users to self-host PostHog, or to anonymize user data in a way which complies with GDPR.
+Today, we're making a third option available: hosting PostHog Cloud in Europe so that user data never has to leave the EU. Now, any business which needs to comply with GDPR regulations can get up and running in a few minutes, and without the ongoing upkeep required for a self-hosted deployment.
+Oh, and PostHog Cloud EU also happens to be faster for users located in Europe, which is nice.
+PostHog Cloud EU offers everything you'd expect of PostHog – analytics, session recording, experiments and more. The only difference is that you can now choose to host in a different region, at no extra cost.
+Need analytics hosted in the EU?
+Try PostHog Cloud EU for free
+FAQ
+Where are PostHog Cloud EU's servers based?
+PostHog Cloud EU is hosted in the AWS
+eu-central-1
+region based in Frankfurt, Germany.
+What data is transferred from the EU to the US?
+None. PostHog Cloud EU is an entirely independent instance of PostHog. All event data, user data, and the product itself, is hosted on our EU-based infrastructure.
+How do I use PostHog Cloud EU in compliance with GDPR?
+Just deploying PostHog Cloud EU isn't enough – you still need to
+acquire consent
+from your users and comply with all other provisions of the GDPR, such as the right to be forgotten. Please see our
+GDPR guidance
+for more information.
+What does PostHog Cloud EU cost?
+For now, we're charging
+the same as "regular" PostHog Cloud
+. The first 1 million events/month are free, then we charge monthly per event after that.
+Get started here
+.
+I'm an existing PostHog customer, can I migrate to PostHog Cloud EU?
+It is possible to migrate event data from another PostHog instance to EU Cloud, but it is a time-consuming process likely to take several days or weeks. There is currently no way to migrate other information, including insights, dashboards, user accounts, feature flags or API keys.
+We strongly recommend that users with large volumes of data begin by setting up and connect a new EU cloud instance and only attempt to migrate data later, if needed, by following
+this migration tutorial
+.
+GDPR compliance checklist
+We recommend completing the following steps to ensure GDPR compliance when using PostHog Cloud EU, but please seek out expert advice. Further GDPR advice can be found on the
+official GDPR.eu website
+Deploy PostHog Cloud EU:
+Deploying PostHog Cloud EU is easy – simply follow the steps in the onboarding process. More information is available
+via our docs
+.
+Review what data you're collecting:
+It's important to understand what data you're collecting using PostHog, or any other tools you use. Please read our
+privacy documentation
+and
+privacy policy
+for more information on what data PostHog collects.
+Update your privacy policy and terms:
+You must identify PostHog as a tool in your terms. When using PostHog Cloud EU, PostHog is the Data Processor and you are the Data Controller.
+Acquire consent from users:
+You must give users the option to opt out of cookies. If you don't already do this, we've created a tutorial for
+creating a simple GDPR banner using React
+. It is also possible to run PostHog Cloud EU without cookies – see our
+cookieless tracking guide
+.
+Create "right to be forgotten" process:
+A user must be able to request that their data be removed from PostHog. How you facilitate that request is up to you. Information on how to delete user data is
+available in our docs
+.
+Need analytics hosted in the EU?
+Try PostHog Cloud EU for free
+PostHog is the leading platform for building self-driving products. With a full suite of developer tools –
+AI observability
+,
+product analytics
+,
+session replay
+,
+feature flags
+,
+experiments
+,
+error tracking
+,
+logs
+, and more – PostHog captures all the context agents need to diagnose problems, uncover opportunities, and ship fixes. A
+data warehouse
+and
+CDP
+tie it all together, unifying that context into one source agents can read across. You can steer it all from
+Slack
+,
+the web app
+, the desktop (
+PostHog Desktop
+), or your own editor via
+the MCP
+.
+Jump to:
+FAQ
+Where are PostHog Cloud EU's servers based?
+What data is transferred from the EU to the US?
+How do I use PostHog Cloud EU in compliance with GDPR?
+What does PostHog Cloud EU cost?
+I'm an existing PostHog customer, can I migrate to PostHog Cloud EU?
+GDPR compliance checklist

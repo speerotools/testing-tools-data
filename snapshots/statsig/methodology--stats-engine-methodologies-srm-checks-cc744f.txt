@@ -1,0 +1,103 @@
+# https://docs.statsig.com/stats-engine/methodologies/srm-checks
+SRM Checks | Statsig Docs
+Docs
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Search docs…
+⌘ K
+/
+Full width
+Statsig Console
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Configure Stats Engine
+Experiment Types
+Reducing False Positives
+Health Checks
+SRM Checks
+Pre-Experiment Bias
+Managing SRM
+Variance Reduction
+How we Calculate:
+Stratified Sampling
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
+Layers
+Holdouts
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+AI Evals
+Overview
+Early Access
+Setup
+Early Access
+Prompts & Graders
+Offline Evals
+Online Evals
+Early Access
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ
+On this page
+SRM - sample ratio mismatch
+SRM checks
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Product Docs
+/
+SRM Checks
+SRM Checks
+Understand how Statsig detects sample ratio mismatch (SRM) and how to debug skewed traffic splits.
+SRM - sample ratio mismatch
+Sample ratio mismatch (SRM) occurs when the observed allocation of
+unique
+users between test groups differs from the expected allocation or split of the test. Refer to the
+Statsig blog post on sample ratio mismatch
+for background.
+SRM is a signal that there may be unknown bias in the test. Unknown bias is a significant problem because, without a clear diagnosis of the imbalance, it's difficult to know how much the bias affects your results.
+SRM checks
+Statsig runs SRM checks on all experiments and feature gates as part of Health Checks (refer to
+Health Checks
+). Statsig uses a Chi-squared test to identify whether the split of users between groups indicates a sample ratio mismatch.
+Statsig automatically analyzes data by common dimensions that the Statsig SDK logs to identify potential drivers of SRM. These include sdk_type, sdk_version, reason, is_bot, browser_name, browser_version, os, os_version, and region.
+Was this helpful?
+On this page
+SRM - sample ratio mismatch
+SRM checks

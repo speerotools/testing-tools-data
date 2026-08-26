@@ -1,0 +1,214 @@
+# https://docs.growthbook.io/lib/
+GrowthBookSDKs - Feature Flags & Experimentation | GrowthBook Docs
+Skip to main content
+Docs
+SDKs
+API
+Home
+Log in
+GitHub
+Support
+Join our Slack
+Open an issue
+Search
+SDK Overview
+Quickstart
+Client
+HTML Script Tag
+Javascript
+React
+Vue
+Kotlin (Android)
+Flutter
+Swift (iOS)
+React Native
+Roku
+Server
+Node.js
+Next.js
+PHP
+Ruby
+Python
+Java
+Kotlin (JVM)
+C#
+Go
+Rust
+Elixir
+Edge
+OpenFeature Providers
+Build Your Own
+SDK Overview
+On this page
+SDK Overview
+GrowthBook SDKs are lightweight libraries that let you use feature flags and run experiments in your application. They handle feature evaluation and assignment logic.
+What SDKs Do
+​
+The SDK has two main responsibilities:
+Fetch features from the API
+: The SDK downloads your feature definitions from GrowthBook and caches them for fast access.
+Evaluate features
+: Using attributes you provide (like user ID, country, or subscription plan), the SDK evaluates your targeting rules and returns the appropriate feature values. This evaluation happens wherever the SDK runs—in the browser, on your server, or at the edge.
+Running Experiments
+​
+To measure experiment results, the SDK needs to log which variation was assigned. This is done through a tracking callback—a function you provide that sends assignment data via your event tracking system (like Segment, Mixpanel, or GA4).
+Without a tracking callback, the SDK will still assign variations and your features will work, but you won't be able to analyze experiment results in GrowthBook.
+All SDKs use the same assignment logic, so the same attributes always produce the same variation regardless of which SDK you use. Each SDK has documentation on setting up tracking callbacks, and many offer
+pre-built integrations
+with popular analytics tools.
+Choosing the Right SDK
+​
+The main differences between SDK types are where they run and what problems they solve best.
+Client SDKs
+​
+Where they run:
+In the browser or mobile device
+Best for:
+UI changes, visual experiments, and frontend feature flags
+Trade-offs:
+Easy integration with frontend frameworks
+Feature rules are visible to users (see
+remote evaluation
+if you need to keep rules private)
+Can show a brief flicker while experiments load asynchronously (see our recommended anti-flicker techniques)
+Common use cases:
+Rolling out a new dashboard design, testing button colors, showing features based on user plan
+SDKs:
+JavaScript
+,
+React
+,
+Vue
+,
+Swift
+,
+Kotlin
+,
+Flutter
+,
+React Native
+Server SDKs
+​
+Where they run:
+On your backend infrastructure
+Best for:
+Backend logic, API responses, or when you need to keep targeting rules private
+Trade-offs:
+Keeps feature logic and rules private
+No visual flicker
+Requires infrastructure to run (not just a script tag)
+Need to pass evaluation results to the frontend if UI changes are required
+May need to extract attributes from cookies, headers, or tokens
+Common use cases:
+Testing a new recommendation algorithm, rolling out API changes, experimenting with pricing tiers, ML model rollouts
+SDKs:
+Node.js
+,
+Python
+,
+Ruby
+,
+PHP
+,
+Java
+,
+Go
+,
+C#
+,
+Elixir
+Edge SDKs
+​
+Where they run:
+On edge platforms/CDNs (Cloudflare Workers, Fastly Compute, Lambda@Edge)
+Best for:
+Eliminating flicker for visual experiments or doing redirects before your application server handles the request
+Trade-offs:
+Eliminates flicker for visual experiments and redirects
+Can inject feature data into HTML for the frontend to use
+More complex setup and integration
+Resource constraints (CPU/memory limits)
+Common use cases:
+A/B testing landing pages without flicker, geo-based redirects, paywall experiments
+SDKs:
+Cloudflare Workers
+,
+Fastly Compute
+,
+Lambda@Edge
+Not sure which to choose?
+Most users start with a client SDK
+. They're the easiest to implement and work great for UI changes and experiments.
+Getting Started
+​
+Choose your SDK below to see installation and setup instructions:
+Client
+​
+HTML Script Tag
+Drop-in script for any website or low-code platform
+Javascript
+Vanilla JS and TypeScript projects
+React
+React hooks and providers with SSR support
+Next.js
+App/Pages router examples (with support for SSR)
+Vue
+Vue 3 with composables and Nuxt support
+Kotlin (Android)
+Native Android development
+Flutter
+Cross-platform mobile apps
+Swift (iOS)
+Native iOS development
+React Native
+Cross-platform React Native apps
+Server
+​
+Node.js
+Express, Fastify, and Node.js servers
+PHP
+Laravel, Symfony, and PHP applications
+Ruby
+Rails and Ruby applications
+Python
+Flask, Django, FastAPI, and async support
+Java
+Spring Boot and Java applications
+C#
+.NET Core and ASP.NET applications
+Go
+High-performance Go services
+Elixir
+Phoenix and Elixir applications
+Rust
+Actix, Axum, Rocket, and more
+Vercel
+Vercel Flags SDK with Edge Config
+Edge
+​
+Cloudflare Workers
+Low-latency edge computing on Cloudflare's network
+Fastly Compute
+WebAssembly-powered edge computing
+Lambda@Edge
+AWS Lambda at CloudFront edge locations
+🛠️
+Want to build your own SDK?
+Follow our
+guide to integrate GrowthBook into any platform
+.
+Edit this page
+Was this helpful?
+Give Feedback
+Next
+Quickstart
+What SDKs Do
+Running Experiments
+Choosing the Right SDK
+Client SDKs
+Server SDKs
+Edge SDKs
+Getting Started
+Client
+Server
+Edge

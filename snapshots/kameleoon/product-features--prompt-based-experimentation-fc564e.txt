@@ -1,0 +1,285 @@
+# https://kameleoon.com/prompt-based-experimentation
+What Is Prompt-Based Experimentation? | Kameleoon
+Login
+English
+Select your language
+English
+Français
+Deutsch
+Platform
+PROMPT-BASED EXPERIMENTATION
+Optimize any website by chatting with PBX, Kameleoon’s AI.
+Learn more
+SOLUTIONS
+Experimentation
+Feature Management
+KEY Features & add-ons
+Mobile App Testing
+Recommendations & Search
+Personalization
+specialities
+AI in Experimentation
+Single Page Application
+Data Security & Privacy
+Data Accuracy
+Integrations & API
+Partners Program
+Support
+Product Roadmap
+Solutions
+for all teams
+Marketing
+Product
+Engineering
+Data Scientists
+For INDUSTRIES
+Healthcare
+Travel & Tourism
+Financial Services
+Media & Entertainment
+E-commerce
+B2B
+Automotive
+Samsung gains autonomy and speed in its most advanced tests with PBX
+read the success story
+Plans
+Resources
+Customers
+Book a demo
+Book a demo
+What is Prompt-based Experimentation?
+Quick links
+Heading 2
+Book a demo
+Book a demo
+What is Prompt-based Experimentation?
+Prompt-based experimentation is a new way to ideate, create, configure, and analyze experiments using natural language. When you run a prompt-based experiment, you are creating production-grade, experiment-ready UI variations using generative AI tools that are integrated with your product’s design system and code base.
+Colloquially, you can think of prompt-based experiments as "vibe" experiments, borrowing from "vibe coding." Vibe coding is using natural language to build, refine, and debug code, allowing users to build prototypes, websites, and even functioning apps from scratch.
+The
+main difference
+is that prompt-based experimentation builds
+inside your website or app
+, removing the need to transfer, refine, and integrate builds into your site before you can run a test on them.
+Instead of a visual editor (WYSIWYG) or writing custom code, teams describe what they want to test, who it's for, and how success should be measured.
+The result is a real experiment: targeted, measurable, and statistically structured, built from a single prompt.
+In terms of creation, prompt experimentation does everything that a WYSIWYG can and much more.
+It handles complex layout changes, new element creation, and brand-aligned features that are often impossible with legacy tools.
+It allows users to optimize
+existing
+websites, unlike “vibe coding” or “vibe design,” which only allows for creating new web products.
+With Prompt-based Experimentation, teams can:
+Add dynamic “add to cart” buttons within product listings that follow your site’s fonts and brand guidelines.
+Implement sticky headers or call-to-action bars that remain consistent with your design system.
+Introduce personalized pop-ups and tooltips triggered by user behavior that maintain brand typography and color schemes.
+Replace pagination with infinite scroll on category pages, ensuring the experience works across modern frontend frameworks.
+Generate quizzes, forms, pop-ups, banners, and surveys that stoke and accelerate the customer journey.
+It also creates experiments compatible with most single-page applications (SPAs), as the AI automatically detects the underlying framework and handles edge cases that traditional graphic editors often struggle with.
+How does Prompt-based Experimentation work?
+Kameleoon allows users to run these experiments via our
+Prompt-Based Experimentation (PBX) tool
+.
+It starts with a
+free browser extension that takes seconds to install
+.
+The extension enables users to add the testing tool and its AI locally into their browser.
+With the extension enabled, users
+launch the testing tool and start prompting the AI
+to optimize any web page.
+While optimizing any web page in your browser using the extension is a powerful feature, for the web page to be tested (and it should) the testing tool’s script must be installed on the user’s website.
+With a snippet installed, users can either describe what they want to test in natural language or use the Ideate feature to scan their website and generate prompts based on hypotheses informed by the
+Lever Framework
+.
+The system thencreates a real experiment: it builds the experience, configures targeting, allocates traffic, and tracks KPIs.
+Before launch, teams can simulate the test and adjust details if needed.
+The experimentation tool handles the heavy lifting of optimizing the web product and building the test. Teams can move faster while keeping the rigor that makes experimentation valuable.
+What problems does prompt-based experimentation solve?
+Most legacy web experimentation tools rely on visual editors that haven’t aged well. They were built for a simpler web. But visual editing doesn't scale; it breaks with SPAs, dynamic content, and custom frameworks.
+Instead of solving the underlying problems, many testing platforms have added AI features that fail to address the root issues. That AI, however, is shallow: "Rewrite this headline," "Enhance your CTA tone," "Generate an image." It's cosmetic, designed to look helpful while avoiding the hard problems of experimentation.
+PBX experiments aren't cosmetic. Instead of fighting with a visual editor or calling up for dev resources, teams can genuinely build better web products.
+Users describe the change by chatting with generative AI (genAI). Once done, they specify the targeting conditions, the goals/metrics/KPIs, and the test allocation. The system builds the experiment, from creation to targeting to analysis.
+Teams go from "we should test this" to "we're testing it" without delays, tickets, or compromises. This approach doesn’t speed up a broken process; it replaces it entirely.
+Prompt-based Experimentation is different than agentic AI experimentation
+Prompt-based experimentation and agentic AI experimentation
+represent two fundamentally different approaches to testing.
+Agentic AI experimentation is reactive
+. It scans your data for anomalies, flags a potential issue—like a dip in conversion—and suggests actions in response. But without human context, those suggestions can be shallow, distracting, or even wrong. The system decides what’s important, and teams are left to validate or ignore it.
+Prompt-based testing is proactive
+. While prompt-based experimentation also supports ideation, it starts with a human decision. A product manager, designer, or marketer chooses what to explore. They describe what they want to change or test, and the system builds it. There’s no guessing about goals or hallucinating causes. It’s a controlled, clear process from insight to action.
+Prompt-based testing starts from intent. Agentic systems work backwards from anomalies.
+That distinction matters more as GenAI gets faster and more accessible. When creation is easy, it’s tempting to hand the wheel to automation. But experiments still need human context, data discipline, and business alignment. Prompt-based testing keeps the team in control, making it easier to move fast without losing focus.
+Prompt-based experimentation supports every kind of experiment, including personalization
+Experimentation is not one-size-fits-all. It adapts to what you want to learn or improve. Prompt-based experiments allow teams build and target experiences by describing them in natural language. Just say who should see what, and what to measure.
+Prompt-based experiments also enable prompt personalization
+. You create and target in the same step. No toggling between tools. No manual setup. Just describe your intent and launch.
+For example, Kameleoon's Prompt-Based Experimentation allows you to say:
+Show this experience to all mobile users
+Show only to returning visitors
+Target users who have not completed checkout
+Deliver to new visitors only
+Display to users in California
+Prompt-based experimentation allows for different experimentation goals
+. Here are a few prompt examples:
+Guardrails matter more when anyone can test anything
+PBX opens the door wide. Anyone can build. Anyone can launch. Anyone can test. That is both the breakthrough and the risk.
+Without structure
+, teams could flood users with unproven experiences. Without rigor, they could draw the wrong conclusions from noisy data. This is why
+guardrails aren’t optional
+; they are essential.
+Clear KPIs tied to business outcomes
+Valid targeting and traffic splits with no sample ratio mismatch
+Appropriate levels of statistical rigor
+Multiple types of statistical methodology, not one
+Connected insights across systems
+Prompt-based experimentation doesn’t limit what is possible; it ensures what is possible actually works. As test creation becomes easier, experimentation discipline becomes more important.
+Freedom to test must come with the responsibility to learn.
+Prompt-based experimentation connects to your stack, not just your UI
+Building a new digital experience isn’t a test. It’s just the first step.
+Prompt-based experimentation lets teams build experiences and test them with targeting, traffic allocation, and rigorous measurement.
+To do that well, teams need to connect to their data sources, analytics tools, and insights libraries.
+Prompt-based experimentation makes that possible.
+"Target audiences from our Snowflake warehouse."
+"Send results to FullStory and Snowplow."
+"Log insights to Airtable."
+It’s not just about building. It’s about learning what works.
+It also gives teams the power to test experiences in the context of their real data and analytics.
+No manual integrations. No disconnected tools.
+Just experiments that fit the way your team actually works.
+How prompt-based experimentation empowers your teams
+Experimenting through prompts helps teams build better websites and web products by turning ideas into real, testable experiences
+fast
+.
+Marketers, product managers, growth teams, and developers can create experiments through natural language, without waiting on handoffs or writing code. Here’s what that looks like for each team:
+Prompts for marketers
+“Create a discount banner for cart abandoners on mobile. Match brand styling. Track click-through and conversions.”
+“Build a location-specific popup for California visitors promoting free shipping. Hold out 15% of traffic. Track bounce and engagement.”
+“Launch a newsletter signup form at blog scroll depth of 75%. Style it with brand fonts and CTA colors. Track sign-up rate.”
+Prompts for product managers
+“Deploy a multi-step quiz to onboard freemium users. Use company design system. Track drop-off and trial-to-paid conversions.”
+“Add a dynamic survey on pricing comprehension. Trigger after plan selection. Track feedback and plan changes."
+“Build a floating help widget explaining new features. Target logged-in users only. Measure feature usage before and after.”
+Prompts for growth teams
+“Design and test a promotional banner for users with over $50 in cart. Match product category visuals. Track AOV and checkout rate.”
+“Build a popup quiz recommending products based on preferences. Target return visitors. Track quiz completions and product clicks.”
+“Generate an exit-intent survey on the category page. Ask about shopping experience. Track completions and impact on return visits.”
+Prompt-based experiments for front-end developers
+“Generate a sticky header bar showing active promos. Use system styles. Track user engagement and dismissals.”
+“Build a mobile-only feedback form for cart page. Place it after inactivity. Track submissions and satisfaction ratings.”
+“Create an animated tooltip for new features in the nav bar. Show on hover. Track hover time and clicks.”
+Prompt-based experimentation is a fast-moving space
+Prompt-based experimentation is growing and changing rapidly.
+It relies on GenAI models that are evolving quickly, making prompt-based testing better and more complete every day.
+Teams today are under pressure to move quickly
+. They need to experiment and learn on the fly.
+They have tools that help them dream up ideas, tools that help them build pages, and tools that help them analyze results.
+But those tools live in silos.
+They let teams build, but they don’t let them test in a structured, disciplined way.
+A good idea becomes a change, and that change gets launched, often without targeting, without traffic splits, and without KPIs.
+It’s not an experiment. It’s just a guess in production.
+PBX changes that.
+It’s not just about helping teams build. It’s about helping them build tests that matter, using real audiences, real metrics, and real structure.
+It’s already changing the way teams ideate, create, and analyze, guiding them through the entire test configuration process:
+Who to target
+How to split traffic
+Which KPIs to track
+Where to send the results
+No more guesswork. No more hoping something worked.
+Start your free trial for Prompt-Based Experimentation
+Begin running your own experiments with a
+free trial for Prompt-Based Experimentation by Kameleoon
+. Try it on your own site. Build experiments by chatting with AI. Explore a new way to interact with an experimentation platform.
+FAQ
+Can prompt-based experimentation eliminate the need for developers?
+It heavily reduces the need for developer involvement in each test, but developers should remain essential collaborators for quality, scale, and integration across teams.
+Can prompt-based experimentation replace all other forms of experimentation?
+No. It focuses on frontend digital experiences that optimize UI/UX and messaging. It compliments—but does not replace—feature flagging, server-side testing, or mobile app experimentation.
+Can prompt-based experiments target users based on external, third-party data?
+Yes! Kameleoon's integrations allow you to personalize and target prompt-based experiments using data from your customer data platform or preferred data warehouse. For example, you can connect Kameleoon to your CDP to create segments based on customer subscription level.
+Does prompt-based experimentation decide what to test for you?
+You can ask PBX to generate optimization ideas for you, then choose and implement the ones you prefer or request new suggestions. The more specific you are about your goals, the better the ideas PBX will generate.
+Is PBX vibe experimentation?
+Just like vibe coding lets you create web prototypes instantly by chatting with AI, PBX lets you create new and optimized web product on your existing websites. You get to test what you've created on real users on your actual website. The act of building variants and testing them by chatting with AI is called vibe experimentation.
+Is prompt-based experimentation a replacement for Figma or CMS tools?
+No. PBX helps you create test-ready experiment versions by chatting with AI, but it’s not a replacement for your design or CMS tools. PBX also integrates with Figma, allowing you to use your mockups to inform exactly what you want PBX to build.
+Is prompt-based experimentation finished or complete?
+Not yet. Because it relies on rapidly improving GenAI models, prompt-based testing will continue to evolve and expand in capability every day. It’s a new way to interact with an experimentation platform.
+Is prompt-based experimentation just an upgrade to the graphic editor?
+No. Prompt-based experimentation leapfrogs visual editors entirely. It uses natural language to build, configure, and analyze experiments, making frontend testing more powerful and accessible than ever.
+Is prompt-based experimentation statistically rigorous?
+Yes, but only when used with proper guardrails. You still need valid KPIs, correct traffic splits, targeting, and robust statistical methods to draw meaningful conclusions.
+Is prompt-based testing the same as “testing prompts?"
+No. Prompt-based testing turns a prompt into a testable digital experience. “Testing prompts” means refining the prompts themselves, which is usually done with backend or server-side experimentation.
+What is a “credit” and when does it get consumed?
+Every time your prompt, one credit is consumed. Your free trial includes enough credits to explore all key features. If you have a promo code for more credits, you can enter it under the Organization page on your account. On average, our users builds an experiment by using 3 credits. contact@kameleoon.com for any questions!
+What is Prompt-Based Experimentation (PBX) and how does it work?
+Prompt-Based Experimentation (PBX) is a new way to ideate, build, configure, analyze, and launch experiments. With PBX, you simply describe the web changes you want to test in natural language. AI then generates a variation and launches the experiment, without code or WYSIWYG editors.
+Experiment your way
+Get the key to staying ahead in the world of experimentation.
+[Placeholder text - Hubspot will create the error message]
+Submit
+Thanks for submitting the form.
+Newsletter
+Platform
+Experimentation
+Feature Management
+PBX Free-Trial
+Mobile App Testing
+Product Reco & Merch
+Data Accuracy
+Data Privacy & Security
+Single Page Application
+AI Personalization
+Integrations
+guides
+A/B testing
+Prompt-Based Experimentation
+Feature Flagging
+Personalization
+Feature Experimentation
+AI for A/B testing
+Client-Side vs Server-Side
+plans
+Pricing
+MTU vs MAU
+Industries
+Healthcare
+Financial Services
+E-commerce
+Automotive
+Travel & Tourism
+Media & Entertainment
+B2B & SaaS
+TEAMS
+Marketing
+Product
+Developers
+Resources
+Customers Stories
+Academy
+Dev Docs
+Product Roadmap
+Calculator
+Who’s Who
+compare us
+Optimizely
+VWO
+AB Tasty
+partners
+Our Partner Ecosystem
+Become a Partner
+Integrations Directory
+Partners Directory
+company
+About Us
+Careers
+Contact Us
+Support
+legal
+Terms of use and Service
+Privacy Policy
+Legal Notice & CSU
+PCI DSS
+© Kameleoon — 2026 All rights Reserved
+Legal Notice & CSU
+Privacy policy
+PCI DSS
+Platform Status

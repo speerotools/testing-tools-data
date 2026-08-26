@@ -1,0 +1,161 @@
+# https://support.optimizely.com/hc/en-us/articles/36354416686477-Optimizely-Opal-overview
+Optimizely Opal overview – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Optimizely Opal
+Get started
+Optimizely Opal overview
+Updated
+July 13, 2026 16:04
+Optimizely Opal is an agent orchestration platform that helps you work smarter across Optimizely One. Whether you create content, manage experiments, or analyze data, you can use Opal to automate tasks, surface insights, and guide decision-making. Opal uses a flexible system of AI agents. Agents are software components that understand your intent and help you reach your goal.
+See
+Optimizely Opal Essentials in Optimizely Academy
+for information.
+AI background
+AI refers to software that performs tasks typically requiring human reasoning, such as learning from data, making decisions, or solving problems. These systems identify patterns, generate content, and offer insights. They use large language models (LLMs) and other algorithms trained on vast datasets.
+Advances in computing power, data availability, and model design have changed how people use AI across industries. Optimizely embeds AI into the platform to help you move faster, automate repetitive work, and make more informed decisions.
+AI agents
+AI agents are software systems that act on your behalf. Agents analyze information, interact with the platform or other tools, and adapt their behavior based on feedback. Unlike traditional tools that only respond to direct input, agents manage goals and take steps to accomplish them.
+Optimizely classifies AI agents into the following three broad types:
+Simple assistants
+– Help with straightforward tasks such as generating content, formatting it into a structure, or offering ideas based on a prompt.
+Specialized agents
+– Focus on a domain or tool. These agents use expert-level context to analyze data, predict outcomes, or recommend next steps.
+Workflow and autonomous agents
+– Coordinate and perform multi-step processes, often by integrating with other tools. These agents handle tasks across systems and adapt workflows over time.
+These agents improve productivity by reducing manual work, increasing accuracy, and providing tailored experiences. They also support scalability, helping teams achieve more without growing headcount.
+Optimizely Opal
+Optimizely Opal is your AI assistant across Optimizely One. It responds to natural language questions, generates insights, and lets you complete tasks faster.
+Optimizely Opal uses
+Opal credits
+.
+What you can do with Opal
+Most interactions happen through
+Opal Chat
+, which is available across the Optimizely One platform in the global navigation bar and on
+opal.optimizely.com
+.
+Ask Opal highlighted in the global navigation bar of Web Experimentation
+Whether you are launching a campaign or fine-tuning an experiment, Opal adapts to your role and needs. Use natural language to ask questions, generate content, or request help. Opal responds in real-time and remembers threads so you can pick up where you left off.
+The following are some examples of what Optimizely Opal can help with:
+Use tools
+– Ask Opal to complete tasks using tools, such as creating a campaign, drafting content, analyzing images, or suggesting flag variations. See
+Tools overview
+.
+Analyze files
+– Upload a document, image, or spreadsheet and ask questions about it. See
+Optimizely Opal Chat
+.
+Answer questions
+– Ask Opal about Optimizely features, capabilities, or concepts. Opal explains terms, walks you through configuration steps, and points you to relevant documentation.
+See
+Products with Opal features
+for a list of Opal features.
+How Opal works
+Behind the scenes, Opal follows this sequence each time you send a prompt:
+Your prompt
+– You enter a request in natural language. Your prompt can be a simple question, a complex task, or a creative brief. Opal analyzes your intent, extracting key information to guide its next steps.
+Skills
+– These foundational guidelines define Opal's persona, approach, tool usage, evaluation criteria, and response formatting, influencing every step of its operation.
+Contextual intelligence
+– Opal adds context using content knowledge, Optimizely platform data, and your workspace context. This ensures Opal's responses are informed by your specific environment and goals.
+Strategic tool selection
+– Opal selects the right tools for your task based on your request and the enriched context. Tools let Opal perform a wide range of tasks from data analysis to content generation.
+Agent input generation and validation
+– Opal collects the specific inputs (parameters) it needs to run a tool or agent. For example, a
+search_query
+for a web search, a
+start_date
+and
+end_date
+for a report, or
+recipient_email_addresses
+for an email.
+Opal validates these inputs before continuing:
+If the input is valid
+– Opal proceeds to the LLM interaction.
+If the input is invalid
+– Opal goes directly to step 7 (
+Execute and refine
+) and asks you for clarification. This prevents unnecessary LLM engagement.
+LLM interaction
+– Opal uses advanced AI models to process complex information, generate creative content, and derive actionable insights. This is where raw data transforms into intelligent solutions. Opal uses foundational LLMs through business accounts. Your data is never used to train the model or shared across customers.
+Execute and refine
+– Opal executes the planned actions (calling agents and tools as needed), and iterates. If the initial output is not perfect, Opal re-evaluates. This continuous feedback loop ensures optimal results and measurable impact. If clarification is needed, Opal asks you for more information.
+Tailored response
+– Opal delivers a clear, concise, and actionable response. Opal often presents the response in the Opal Canvas or UI, where you can interact with and manage generated content or executed actions.
+Benefits of Opal and AI agents
+Opal helps you with the following:
+Work faster
+– Eliminate repetitive tasks and reduce manual configuration.
+Scale content and insights
+– Get more done with fewer handoffs.
+Improve personalization
+– Tailor output based on your brand, audience, and goals.
+Make informed decisions
+– Use data-backed recommendations without digging through dashboards.
+Simplify complexity
+– Let Opal manage workflows so you can focus on strategy.
+See
+Optimizely Opal and AI features
+for a list of all available Opal, generative AI, and machine learning features.
+Data residency
+Optimizely hosts Opal in US and EU regions. You select your region on your order form when you contract with Optimizely, and Optimizely provisions your data to the corresponding regional instance.
+The app URL is the same for all customers (
+opal.optimizely.com
+). Optimizely routes you to the correct regional instance behind the scenes, so you do not need to configure anything.
+Where is data stored?
+Customer data — both inputs and outputs — is stored long-term in either North America or the EU (Belgium) on Optimizely-managed infrastructure. Customers choose their preferred region at the time of purchase. EU storage covers the region as a whole; country-level selection is not available.
+How does data processing work?
+When a prompt is submitted, Opal routes it to the underlying LLM — such as Gemini or Claude — for processing. This happens through global endpoints for compute availability and performance, so a prompt may be processed in any region. The LLM does not retain your data. The output is returned directly to your Optimizely-managed infrastructure, in the region you selected.
+See
+Default model provider
+for information on selecting an LLM for your organization.
+Next steps
+Get started with Optimizely Opal for Administrators
+– Manage and configure users, skills, tools, agents, and connected product instances in the Optimizely Opal app.
+Get started with Optimizely Opal for agent builders
+– Create skills, build agents, and access the Agent Directory.
+Get started with Optimizely Opal for users
+– Discover how to access and use Opal.
+Optimizely Opal credits
+– Learn how credits work and how Opal calculates usage.
+Optimizely Opal Chat
+– See how to interact with Opal, upload files, and return to past threads.
+Optimizely Opal and AI features
+– Review a full list of Optimizely Opal and included AI features for specific products.
+If you use Opti ID, administrators can turn off generative AI in the Opti ID Admin Center. See
+Turn generative AI off across Optimizely applications
+.
+Please
+sign in
+to leave a comment.
+Articles in this section
+Optimizely Opal overview
+Optimizely Opal and AI features
+Get started with Optimizely Opal for administrators
+Get started with Optimizely Opal for agent builders
+Get started with Optimizely Opal for users
+Personalize Opal
+Enable Opal for non-Opti ID users
+Optimizely Opal glossary
+Optimizely Opal credits
+Optimizely Reporting for Opal
+See all 11 articles
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

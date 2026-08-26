@@ -1,0 +1,198 @@
+# https://www.growthbook.io/platform/warehouse-native
+Warehouse Native Architecture | Growthbook
+Webinar - Aug 20 | How The Philadelphia Inquirer Scales Experimentation →
+Join us live
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+Why migrate from Statsig to GrowthBook
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Releases
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+Warehouse-Native Architecture
+Your data. Your warehouse. Your results.
+GrowthBook queries data in your data warehouse with visible SQL for the most trusted, secure results at the lowest cost.
+Start for Free
+Request a Demo
+Trusted by 3,000+ companies worldwide
+What is warehouse-native software?
+Warehouse-native software sits on top of your data warehouse (Snowflake, BigQuery, Databricks, Redshift, etc.). No more piping data to a black box for answers you can’t verify. Build smarter with a single source of truth, world-class feature flags, and a powerful statistics engine that works with your existing data warehouse.
+Keep data secure and private
+The largest companies in the world trust our warehouse-native architecture.
+SOC 2, Type II and GDPR compliant
+with full encryption for data at rest and in transit.
+Warehouse-native security
+ensures your sensitive customer data never leaves your environment.
+Self-hosted and air-gapped options
+available for teams requiring complete infrastructure control.
+See Security
+Reproduce results, gain trust
+No more discrepancies between your warehouse and your experimentation tool. A warehouse-native architecture combined with SQL transparency provides complete visibility and control. When you get a surprising result, you can drill into the data to understand why and confirm the calculations. Results you can reproduce are results you can trust.
+See Experimentation
+Measure success your way
+Write your own metrics with SQL. Standardize with a metrics library so everyone analyzes and measures success the same way. The data is already in your warehouse. Just define your metrics. No limitations on joins, aggregations, or business logic.
+For Data Teams
+Control costs
+Warehouse-native architecture means you're not paying twice for the same data. We built GrowthBook to be cheaper and more performant than you could build on your own. Incremental refresh, intelligent fact tables, data partitions, smart refresh and many more optimizations can reduce query costs by 90%.
+More Pricing & Plans
+GrowthBook Cloud Architecture
+Deployment options
+01
+Start analyzing with robust statistics
+24+ lightweight SDKs, only sends 1 new event, using the same pipeline as other events
+02
+Consolidate point solutions for a single source of truth
+Run new experiments and manage your next release with GrowthBook. Reduce complexity and spend on multiple tools, so your teams work from the same data and metrics.
+03
+Simplify, standardize, and automate
+From your first experiment to thousands running simultaneously, from your first feature flag to billions of events tracked. GrowthBook grows with you.
+Getting started with GrowthBook
+GrowthBook works natively with your data warehouse, event trackers, and existing data pipelines. No more data engineering and reconciliation headaches.
+Create an Account
+01
+Integrate our SDK
+24+ lightweight SDKs, only sends 1 new event, using the same pipeline as other events
+02
+Connect to your data warehouse
+Run new experiments and manage your next release with GrowthBook. Reduce complexity and spend on multiple tools, so your teams work from the same data and metrics.
+03
+Define metrics
+From your first experiment to thousands running simultaneously, from your first feature flag to billions of events tracked. GrowthBook grows with you.
+04
+Create a feature flag
+From your first experiment to thousands running simultaneously, from your first feature flag to billions of events tracked. GrowthBook grows with you.
+One warehouse-native platform for modern product development
+Experimentation
+Add rigorous experimentation to any feature flag in minutes.
+See Experimentation
+Feature Flags
+Ship features instantly, ramp safely rollout, scale without lag.
+See Feature Flags
+Product Analytics
+Turn data into insights anyone can explore, act on, and share.
+See Product Analytics
+Testimonials
+“GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
+Alex Kalish
+Engineering Manager, Dropbox
+“GrowthBook has changed the way we think about experiments... It allowed us to uplevel our code, speed up decision-making, and focus on what we do best.”
+Diego Accame
+Director of Engineering, Upstart
+“Being able to turn a feature on and off with a flip of a switch is fantastic... That’s so much easier than having to do a deploy or a roll-back.”
+John Resig
+Chief Software Architect, Khan Academy
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
+Kameron Jenkins
+Head of Growth Engineering, Fyxer
+FAQs
+What is warehouse-native experimentation?
+Warehouse-native means GrowthBook queries your data where it already lives (Snowflake, BigQuery, etc.) instead of copying it into our systems. Benefits: no data duplication costs, complete data ownership, use your existing metrics definitions, and total transparency into how results are calculated.
+Which data warehouses does GrowthBook support?
+GrowthBook works with Snowflake, BigQuery, Databricks, Redshift, ClickHouse, Postgres, MySQL, Athena, Presto, and more. We also support 15+ event trackers, including Segment, Mixpanel, Amplitude, and Google Analytics.
+Do I need a data warehouse to use GrowthBook?
+No. If you don't have a data warehouse, you can use GrowthBook’s Managed Warehouse to start experimenting immediately—no infrastructure required. Migrate to your own warehouse when you're ready.
+Can I add metrics to experiments after they've started?
+Yes. Forgot to track something? Add new metrics to past experiments and capture insights without re-running tests. The data is already in your warehouse. Just add the metric to your experiment and analyze the results.
+How does warehouse-native help with compliance?
+Your data never leaves your data warehouse. For cloud deployments, only aggregate data is shared, no PII ever leaves your data warehouse. For self-hosted deployments, you maintain complete control over all your data to comply with data residency requirements for GDPR, HIPAA, and other regulations.
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 3,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

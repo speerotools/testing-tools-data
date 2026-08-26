@@ -1,0 +1,2288 @@
+# https://github.com/growthbook/growthbook/releases
+Releases · growthbook/growthbook · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+growthbook
+/
+growthbook
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+817
+Star
+8.1k
+Code
+Issues
+641
+Pull requests
+243
+Discussions
+Actions
+Projects
+Security and quality
+1
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Discussions
+Actions
+Projects
+Security and quality
+Insights
+Releases: growthbook/growthbook
+Releases
+Tags
+Releases · growthbook/growthbook
+Release list
+v5.0.0
+v4.4.0
+v4.3.0
+v4.2.0
+v4.1.0
+v4.0.0
+v3.6.0
+v3.5.0
+v3.4.0
+v3.3.0
+Previous
+Next
+Jump to release
+v5.0.0
+v4.4.0
+v4.3.0
+v4.2.0
+v4.1.0
+v4.0.0
+v3.6.0
+v3.5.0
+v3.4.0
+v3.3.0
+Previous
+Next
+v5.0.0
+v5.0.0
+Latest
+Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+20 Jul 02:37
+v5.0.0
+bb626d1
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Despite the major version bump, GrowthBook 5.0 does not have any breaking changes and can be upgraded to safely.
+A year ago when we released version 4.0, the world of product development looked completely different. Claude Code had just launched, agent skills didn't exist yet, engineers were still writing code by hand. The world today is almost unrecognizable. GrowthBook too has changed rapidly in that time and we wanted to signify the massive improvements over the past year with a new major version.
+Agentic Experience
+Everything a human can do in the GrowthBook UI, an Agent should be able to do programatically. We aren’t 100% there yet, but this release pushes us much closer to that goal:
+Official Skills
+for common workflows like starting an experiment, summarizing results, or cleaning up stale flags. Use these in Claude, Cursor, Codex, or wherever else your agents live.
+In-App Assistant
+with access to the same set of Official Skills, plus context about what page you are currently viewing. Use this to quickly automate tasks in the UI or ask questions about your flags or experiments without leaving GrowthBook.
+GrowthBook CLI
+- Brand new, with 100% coverage of our public REST API endpoints and a much better agent (and developer) experience.
+Feature Flag Governance
+Moving at AI speed requires strong guardrails and governance for feature flag changes. GrowthBook already had best-in-class capabilities here, but this release takes it to the next level:
+Custom Hooks V2
+can now be configured for individual features and have improved performance, security, and the ability to differentiate between soft warnings and hard blockers.
+JSON Schema validation for string/number flags
+to enforce min/max values, static enum options, and more.
+Unreachable Rule Detection
+highlights in the UI when a feature rule is fully or partially unreachable due to conflicting rules above it
+JSON Sparse Patching
+lets you do partial updates to JSON feature flag values without copy/pasting the entire value.
+Constants
+let you define a single source of truth for feature values and reference them easily from multiple features and rules.
+Configs
+are a brand new composable and strongly typed way to build complex JSON flags for remote configuration.
+New Draft Review UX
+in a dedicated tab on feature pages help you quickly review proposed draft changes
+Product Analytics
+We launched Product Analytics in beta in GrowthBook 4.2. Since then, we’ve been hard at work fixing bugs, adding new features, and improving the UX. We still have a lot more planned, but we’re excited in this release to remove the “beta” tag and mark Product Analytics as generally available.
+Funnel Analysis
+lets you understand how users flow through your product. Define steps and see the drop-off rates as users progress through, filter to specific segments and date ranges, break out by dimensions, and more.
+Resizable Dashboard Blocks
+let you have full control over the grid in dashboards, including the ability to stack graphs side-by-side.
+Global Date Filters
+in dashboards and a way to easily compare to past date periods
+Meta Analysis Dashboard Blocks
+with data about your experimentation program. View your experiment velocity, win rate, or cumulative metric impact side-by-side with all of your other Product Analytics data.
+Visual Editor
+We built a brand new AI-native Visual Editor from scratch.
+Modern Chrome Extension
+runs in a dedicated side bar so it doesn’t conflict with your site and has a sleek modern design.
+Prompt-based Experiments
+let you explain what you want to test on your page and an agent will implement and configure everything for you. It feels like magic.
+Image Hosting
+on our global CDN to easily test AI-generated image variations on your site.
+Figma Integration
+to automatically implement designs. Go from mock-up to live in minutes.
+Faster, Easier, Safer Experiments
+Our goal is to reduce the cost of running an experiment down to zero. To that end, we’ve been hard at work making experiments easier to set up, faster to run, and safer to do at scale:
+Experiment Creation
+went from 23 (!!!) form fields down to just 5. We also redesigned the experiment draft page to make it easier to see what’s remaining and gain confidence before starting.
+Experiment Scheduling
+to start an experiment automatically at a future date.
+Query Performance
+has improved drastically for huge datasets, resulting in faster queries and lower compute costs. If you are analyzing experiment data at the petabyte scale, reach out to us so we can help you take advantage of all of these recent improvements.
+Experiment Custom Hooks
+let you write custom javascript snippets to validate experiments before save. Use this to enforce company (or project) wide standards and best practices. Currently only enabled for self-hosted Enterprise deployments.
+Contributors
+Thanks to all of our existing contributors:
+@jdorn
+,
+@Kevin-Chant
+,
+@mknowlton89
+,
+@ahdriel
+,
+@gazzdingo
+,
+@lukesonnet
+,
+@msamper
+,
+@bryce-fitzsimons
+,
+@nadapzy
+,
+@olu-an
+,
+@tzjames
+,
+@Auz
+,
+@oelshaikh
+,
+@nhat-growthbook
+,
+@csbailey5t
+,
+@teresayung
+,
+@anna-yn
+,
+@johnham-ant
+,
+@august-growthbook
+,
+@lillialjackson
+,
+@madhuchavva
+,
+@lukebrawleysmith
+and a big thanks to everyone who made their first contribution!
+@akramcodez
+made their first contribution in
+#6048
+@gerami-ant
+made their first contribution in
+#6072
+@alyssamichelle
+made their first contribution in
+#6194
+@ilyausorov
+made their first contribution in
+#6195
+@Sambhram1
+made their first contribution in
+#5822
+@AnkittChauhan
+made their first contribution in
+#5523
+@CedricConday
+made their first contribution in
+#6238
+@dlin-growthbook
+made their first contribution in
+#6377
+Contributors
+Auz, ahdriel, and 28 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+🚀
+1
+ben-add reacted with rocket emoji
+All reactions
+🚀
+1 reaction
+1 person reacted
+v4.4.0
+v4.4.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+27 May 02:25
+v4.4.0
+1d6ad23
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+This is our biggest release yet! Over 400 PRs closed.
+Highlights
+Cmd+K command pallets for universal search
+Product Analytics explorers and AI Data Analyst (beta)
+Multi-environment feature rules
+Overhaul of feature approval flows and revisions
+Feature flag ramp schedules
+Bandits without sticky bucketing
+Pre-Exposure bias checks
+Huge REST API refactor with tons of new endpoints for metric groups, teams, experiments, features, namespaces, and more
+Other Changes
+Holdout scheduling
+Feature revision comparison tool
+Attribute/Identifier type mapping support
+Lookback override option for experiment analysis
+Improved warehouse metadata and tagging for SQL query cost attribution
+Improved stale feature algorithm and UX
+Support for BigQuery reservations
+API keys with arbitrary roles (not just admin or readonly)
+New Saved Group approval flow
+Option to include additional metadata in SDK payloads
+Support for incremental refresh of quantile metrics using KLL sketches
+Ability to disable API keys and track last usage date
+Huge SQL generation refactor (internal, no user-facing changes)
+Better filtering on Insight dashboards
+Namespaces overhaul
+Updated Presentations tool
+Plus tons of UX improvements, bug fixes, dependency updates, security patches, and performance improvements.
+Thanks to all of the existing contributors:
+@Auz
+,
+@Kevin-Chant
+,
+@ahdriel
+,
+@bryce-fitzsimons
+,
+@fsarachu
+,
+@gazzdingo
+,
+@itsgrimetime
+,
+@jdorn
+,
+@jrnold
+,
+@lukebrawleysmith
+,
+@lukesonnet
+,
+@madhuchavva
+,
+@mknowlton89
+,
+@msamper
+,
+@natasha-growthbook
+,
+@nhat-growthbook
+,
+@nodirnasirov
+,
+@oelshaikh
+,
+@royalfig
+,
+@tzjames
+and a big thanks to all of the first time contributors:
+@estrattonbailey
+made their first contribution in
+#5283
+@teresayung
+made their first contribution in
+#5251
+@nadapzy
+made their first contribution in
+#5396
+@dannylin-ant
+made their first contribution in
+#5504
+@HampusPoppius
+made their first contribution in
+#5572
+@saurabhkashyap-ui
+made their first contribution in
+#5564
+@olu-an
+made their first contribution in
+#5604
+@csbailey5t
+made their first contribution in
+#5614
+@discorev
+made their first contribution in
+#5600
+@aiSynergy37
+made their first contribution in
+#5639
+@lillialjackson
+made their first contribution in
+#5721
+@nielskaspers
+made their first contribution in
+#5629
+@johnham-ant
+made their first contribution in
+#5793
+@adittya-upstart
+made their first contribution in
+#5778
+@jakemainwaring22
+made their first contribution in
+#5698
+@anna-yn
+made their first contribution in
+#5920
+Contributors
+csbailey5t, estrattonbailey, and 14 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v4.3.0
+v4.3.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+04 Feb 02:41
+v4.3.0
+03e4366
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Release Highlights
+Experiments
+Post-Stratification
+- uses dimensions to reduce variance and get to statistical significance faster.
+Result Filters
+- quickly narrow which metrics are visible by tag, group, or slice.
+Result Drilldowns
+- view additional info by clicking on any row in the results table
+Daily Participation Metrics
+- a new metric type that's analogous to Daily Active Users (DAU)
+Fact Table Filtering
+- more flexible filtering UI when defining metrics
+Query Performance
+- increased number of metrics that can be combined in a single SQL query, reducing warehouse costs.
+Feature Flags
+Nested Saved Groups
+- more powerful and composable targeting logic
+Case Insensitive Targeting
+- match things like email addresses where case doesn't matter
+OR Targeting Conditions
+- build complex targeting rules without using advanced mode
+Feature Diagnostics
+- warehouse native tool to debug real world flag usage in your application
+New
+Rust
+and
+Roku
+SDKs
+- use GrowthBook inside performance critical back-ends and on millions of TVs
+Performance and UI Improvements
+- faster load times and snappier UX in the GrowthBook app when there are thousands of feature flags and large JSON values.
+Other
+Fix broken browser back button on many pages in the app
+New API endpoints to manage experiment dashboards and custom fields
+New Project Admin role to make it easier to manage a large distributed team
+New Custom Hook option to only validate incremental changes
+Kerberos auth support for Trino/Presto
+Support additional AI models from Anthropic, Gemini, xAI, and Mistral
+Option to auto-update metric slice values
+UI improvements to data source page
+Incremental refresh bug fixes and improvements
+Product Analytics fixes and improvements
+Plus many other bug fixes and performance improvements
+Note:
+Internally, we migrated from
+yarn
+to
+pnpm
+. We included a small shim script for self-hosted users, so any Docker commands (e.g.
+yarn start
+) should continue working without modification unless you are doing something very custom and bespoke.
+New Contributors
+@siarheipashkevich
+made their first contribution in
+#5008
+@vovapyc
+made their first contribution in
+#5050
+@hq6
+made their first contribution in
+#5074
+@oelshaikh
+made their first contribution in
+#5031
+@fsarachu
+made their first contribution in
+#5166
+Plus a ton of returning contributors:
+@jdorn
+@ahdriel
+@royalfig
+@Kevin-Chant
+@mknowlton89
+@lukesonnet
+@tzjames
+@madhuchavva
+@bryce-fitzsimons
+@msamper
+@itsgrimetime
+@august-growthbook
+@Hephaest
+@lukebrawleysmith
+@Auz
+@natasha-growthbook
+Full Changelog
+:
+v4.2.0...v4.3.0
+Contributors
+Auz, hq6, and 19 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v4.2.0
+v4.2.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+11 Nov 19:37
+v4.2.0
+1ef4966
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Release Highlights
+Product Analytics (preview)
+Turn your warehouse data and metrics into actionable product insights. Explore user behavior, share dashboards, and make smarter decisions about what to build next. This release is just the beginning and we have much more planned for Product Analytics in the coming months.
+Metric Slices
+Automatically break down metrics into key “slices”. This can drastically reduce the number of metrics you need to create and can help organize experiment results. For example, if you have an
+Orders
+fact table, you can enable “Auto Slices” on the
+product_category
+and
+device_type
+columns. Now, when you add a Revenue metric to an experiment, it will also include breakdowns for each of these, so you can easily compare mobile vs desktop revenue or revenue from different product categories. You no longer need to maintain 10+ separate metrics that are all slight variants of each other!
+Incremental Refresh
+We revamped our Data Pipeline Mode to drastically reduce data warehouse costs and increase query speeds for long-running experiments and high-traffic apps. We do this by storing intermediate results back into the data warehouse and incrementally refreshing it throughout the experiment. We’re starting with BigQuery, where we’ve seen some users save up to 85% in query costs.
+Statsig Importer and Code Migration Tool
+OpenAI recently acquired Statsig and the future of the platform is uncertain. Everyone is asking “will Statsig shut down?” We built an importer and migration tool so teams can be ready to switch to GrowthBook on a moment’s notice. Our Importer lets you instantly copy over all feature gates, dynamic configs, segments, and more. Our Code Migration tool (built on Claude Code) can seamlessly migrate your app from using the Statsig SDK to the GrowthBook SDK.
+Official Metrics
+Many companies have a core set of metrics that have been validated and battle tested over time. GrowthBook lets you mark these metrics as “Official”, which gives them a special badge in the UI, elevates them in the app, and locks down editing. We’ve had Official metrics for a while, but they had to be managed entirely through the API. In this release, we now let admins manage these metrics directly from the UI, making them more accessible and easy to use.
+Custom Validation Hooks
+GrowthBook has always been extremely customizable, but this release brings it to a new level. Self-hosted users can now write fully custom javascript code snippets that hook into our validation logic. Require feature flags to have tags, block targeting rules that contain PII, enforce custom naming conventions - the possibilities are endless. The validation code runs in a sandbox based on V8 isolates for ultimate security and performance. We only have a couple hooks to start, but we’d love to hear your ideas and use cases for additional ones!
+New SQL Template Variables
+You can now access custom field values and phase data within your metric and experiment SQL! This unlocks 3 important use cases:
+Add highly custom query optimization by taking advantage of non-date partition keys.
+Re-use the same SQL definitions when only minor tweaks are needed per-experiment.
+More accurately join experiment exposure events to experiment phases.
+Edge Remote Eval
+Remote Eval lets client-side SDKs offload feature flag evaluation to a back-end server, which prevents leaking targeting logic to your users. Previously, this required running your own GrowthBook Proxy servers (and dealing with all of the associated infrastructure and maintenance). We now offer a simpler option based on Cloudflare Workers. Deploy a blazing fast and cheap Remote Eval server on Cloudflare’s global infrastructure with zero maintenance required.
+Quality-of-Life Improvements
+Big thanks to all of our users who reported bugs, provided feedback, and worked with us to make GrowthBook better. This release includes many quality-of-life improvements that, while small on their own, add up to make a big impact. Here are a few highlights:
+Brand new search algorithm for features, metrics, and experiments. Results are now much more relevant and search is faster overall, even when there are thousands of potential matches.
+Ability to create feature rules in multiple environments at once
+Better column-type detection for Fact Tables when using BigQuery
+You can now add metric row filters based on boolean columns in your Fact Tables
+We stopped sending
+feature.updated
+webhooks for unpublished draft changes (reducing noise).
+Slack and Discord notifications now include more details about the change in GrowthBook that triggered the notification.
+Custom Pre-launch experiment checklist items can now be scoped to specific projects.
+Much faster database schema browser when there are hundreds or thousands of tables
+New settings option to disallow creating legacy metrics. This can help ease the transition to using fact tables. There is more planned here so stay tuned!
+The experiment results table is now sortable, so you can quickly see the best (or worst) performing metrics based on either significance or lift.
+Complete revamp of the included sample data and experiments to better showcase the GrowthBook platform and all that it can do.
+Plus dozens of bug fixes and smaller improvements.
+New Contributors
+@kosmoz
+made their first contribution in
+#4011
+@aalfalah
+made their first contribution in
+#4518
+Plus a ton of returning contributors:
+@ahdriel
+@gazzdingo
+@mknowlton89
+@bryce-fitzsimons
+@Kevin-Chant
+@madhuchavva
+@royalfig
+@kosmoz
+@tzjames
+@lukesonnet
+@aalfalah
+@msamper
+@Auz
+@jdorn
+@nodirnasirov
+@Bohdan-Kim
+@lukebrawleysmith
+@natasha-growthbook
+Full Changelog
+:
+v4.1.0...v4.2.0
+Contributors
+Auz, ahdriel, and 16 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v4.1.0
+v4.1.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+09 Sep 02:49
+v4.1.0
+fce13fd
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Release Highlights
+Holdouts
+Holdout experiments measure the long-term impact of features by maintaining a control group that doesn't receive new functionality. While most users experience your latest features and improvements, a small percentage remains on the original version, providing a baseline to measure cumulative effects over time.
+Experiment Dashboards
+Experiment Dashboards let you create tailored views of an experiment. Highlight key insights, add context, and share a clear story with your team. Dashboards are available for all Enterprise customers. We have a lot planned for this in the future, so stay tuned!
+Vercel Native Integration
+We're excited to announce that GrowthBook is now available as a native integration in the Experimentation category on the Vercel Marketplace! This integration makes it easier than ever to add feature flagging and A/B testing to your Vercel projects, with streamlined setup, unified billing, and ultra-low latency performance.
+AI Features
+This release deeply integrates AI to help accelerate your workflows within GrowthBook. Auto-summarize experiment results, get help writing SQL, improve hypotheses, and detect similar past experiments, and more. These features are available to everyone, even self-hosted (just supply an OpenAI key).
+Pre-computed Dimensions
+You can now pick a set of key experiment dimensions and pre-compute them along with the main experiment results. This allows for more efficient database queries, and instant dimension breakdowns in the UI.
+FerretDB Support
+FerretDB is a MongoDB-compatible database that is open source and free to use. It serves as a drop-in replacement for MongoDB, converting MongoDB wire protocol queries to SQL and using PostgreSQL as its backend storage engine.
+Sanity CMS Integration
+Sanity is a real-time content backend for all your text and assets. You can now use GrowthBook feature flags to seamlessly test different content variations within Sanity.
+MCP Updates
+We've updated our MCP Server to allow creating experiments directly from your AI tool of choice without needing to context switch to GrowthBook. This change unlocks a bunch of new exciting workflows and we can't wait to see how you use it!
+New Experiment Results Tooltip
+We've completely redesigned the tooltip when mousing over experiment results. The new design provides more context and insights at a glance, making it easier to understand the impact of your experiments.
+SQL Auto-Complete
+We've added context-aware SQL auto-complete suggestions for table and column names to help you write queries faster and with fewer errors.
+Official Segments and Dimensions
+You can now mark specific segments and user dimensions as Official via the GrowthBook API. This will give them a little badge in the UI and lock down editing to prevent unwanted changes. Use this to differentiate important segments and dimensions from ad-hoc or exploratory ones.
+Self-Hosting Improvements
+For anyone self-hosting GrowthBook, we've greatly improved observability and customization. We now support full monitoring and tracing of all background jobs, plus distributed tracing within the Python stats engine. We also added a number of new env vars to more easily split the GrowthBook monolith into microservices for those that need extra scalability.
+SDK Updates
+React - Full React 19 Typescript support
+Golang - SSE streaming fixes
+PHP - sticky bucketing fixes
+Java - new caching and refresh options, memory optimizations
+Flutter - many bug fixes and updates
+C sharp - SSE streaming, attribute targeting fixes
+Swift - sticky bucket fixes, support for bearer auth, logging improvements, and memory optimization
+Kotlin - async-safe sticky bucketing, new streamingHost setting, suspend entry points to avoid blocking
+Flutter - TTL-based fetch option, cache improvements, attribute targeting fixes
+Edge - many new options for advanced integrations
+REST API Updates
+New
+GET /settings
+endpoint to fetch all of your organization's current settings
+Fix
+PUT /metric/:id
+endpoint that was ignoring the
+archived
+setting
+New
+GET /feature/:id/revisions
+endpoint to fetch all revisions for a specific feature with pagination
+New endpoints to create, update, and delete dimensions and segments
+Ability to archive fact tables and fact metrics
+Plus a lot more
+New
+is:watched
+filter on experiment search
+Enable encryption option for back-end SDKs
+Add user-agent header to all HTTP requests (webhooks, etc.)
+Various date and timezone fixes
+Various SQL editing and schema browser fixes
+Properly close MySQL connections
+Ability to remove
+LIMIT 5
+when testing SQL queries
+Use Webhook Secrets by default for new webhooks
+ClickHouse - add support for new JSON data types
+Wrap user-supplied SQL in parentheses to avoid edge cases
+Fix divide-by-zero bug in stats engine
+Jira integration update to support a custom field
+Fix stale feature detection logic
+New Big Number visualization type in the SQL Explorer
+Enable the schema browser for self-hosted orgs that use config.yml
+Improve fact metric query performance by filtering rows earlier
+Fix broken SRM check when one variation has 0 users
+Fix bugs with quantile and percentile capped metric settings
+Audit log entries now show the full date time instead of "X days ago"
+Power calculator fixes
+Allow manual seed selection for feature rollout rules
+Skip feature.updated webhooks until draft changes are actually published
+Improve handling of unit quantiles when "ignore zero" is set
+Persist last viewed tab on the experiment list
+New Contributors
+@nodirnasirov
+made their first contribution in
+#4296
+@kweic
+made their first contribution in
+#4315
+@denisov-vlad made their first contribution in
+#4351
+@Khrol
+made their first contribution in
+#4339
+@benruehl
+made their first contribution in
+#4254
+Plus a ton of returning contributors:
+@jdorn
+@royalfig
+@tzjames
+@ahdriel
+@mknowlton89
+@madhuchavva
+@bryce-fitzsimons
+@natasha-growthbook
+@Auz
+@lukesonnet
+@Kevin-Chant
+@lukebrawleysmith
+@Hephaest
+@gazzdingo
+@ari-party
+@msamper
+@itsgrimetime
+Full Changelog
+:
+v4.0.0...v4.1.0
+Contributors
+Auz, ahdriel, and 20 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v4.0.0
+v4.0.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+09 Jul 02:51
+v4.0.0
+1422a4a
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Release Highlights
+GrowthBook MCP Server
+AI tools like Cursor can now interact with GrowthBook via our new MCP server. Create feature flags, check the status of running experiments, clean up stale code, and more.
+Safer Rollouts
+Building upon our Safe Rollouts release last version, we added gradual traffic ramp up, auto rollback, a smart update schedule, and a time series view of results. All of these combine to add even more safety around your feature releases.
+Decision Criteria
+You can now customize the shipping recommendation logic for experiments. Choose from a “Clear Signals” model, a “Do No Harm” model, or define your own from scratch.
+Search Filters
+We’ve revamped the search experience within GrowthBook to make it easier to find feature flags, metrics, and experiments. Easily filter by project, owner, tag, type, and more.
+Insights Section
+We added a brand new left nav section called “Insights” with a bunch of tools to help you learn from your past experiments.
+The
+Dashboard
+shows velocity, win rate, and scaled metric impact by project.
+Learnings
+is a searchable knowledge base of all of your completed experiments.
+The
+Experiment Timeline
+shows when experiments were running and how they overlapped with each other.
+Metric Effects
+lists the experiments that had the biggest impact on a specific metric.
+Metric Correlations
+let you see how two metrics move in relation to each other.
+SQL Explorer
+We launched a lightweight SQL console and BI tool to explore and visualize your data directly within GrowthBook, without needing to switch to another platform like Looker.
+Managed Warehouse
+GrowthBook Cloud now offers a fully managed ClickHouse database that is deeply integrated with the product. It’s the fastest way to start collecting data and running experiments on GrowthBook. You still get raw SQL access and all the benefits of a warehouse native product, without the setup and maintenance cost.
+Feature Flag Usage
+See analytics about how your feature flags are being evaluated in your app in real time. This is built on top of the new Managed Warehouse on GrowthBook Cloud and is a game changer for debugging and QA.
+Vercel Flags SDK
+GrowthBook now has an official provider for the Vercel Flags SDK. This is now the easiest way to add server-side feature flags to any Next.js project. We have an even deeper Vercel integration coming soon to make this experience even more seamless.
+Official Framer Plugin
+You can now easily run GrowthBook experiments inside of your Framer projects. Assign visitors to different versions of your design (like layouts, headlines, or calls to action), track results, and confidently choose the best experience for your audience.
+Personalized Landing Page
+There’s a new landing page when you first log into GrowthBook. Quickly see any features or experiments that need your attention, pick up where you left off, and learn about advanced GrowthBook functionality to get the most out of the platform.
+Experimentation Left Nav
+There’s a new “Experimentation” section in the left nav. Experiments and Bandits now live within this section, along with our Power Calculator, Experiment Templates, and Namespaces. We’ll be expanding this section soon with Holdouts and more, so stay tuned!
+REST API Updates
+Filter the listFeatures endpoint by clientKey
+Support partial rule updates in the putFeature endpoint
+New Queries endpoint to retrieve raw SQL queries and results from an experiment
+Added Custom Field support to feature and experiment endpoints
+New endpoints for getting feature code refs
+New endpoint to revert a feature to a specific revision
+Performance Improvements
+We’ve drastically improved the CPU and memory usage when self-hosting GrowthBook at scale. On GrowthBook Cloud, we’ve seen a roughly 50% reduction during peak load, leading to lower latency and virtually eliminating container failures in production.
+New Contributors
+@paigeruppel-upstart
+made their first contribution in
+#3992
+@jrnold
+made their first contribution in
+#4056
+@devcodes9
+made their first contribution in
+#4109
+@kabam-blambert
+made their first contribution in
+#4070
+@matttenenbaum-qz
+made their first contribution in
+#4172
+@edisonmoy
+made their first contribution in
+#4266
+Plus a ton of returning contributors:
+@ahdriel
+@gazzdingo
+@Auz
+@lukesonnet
+@tzjames
+@mknowlton89
+@lukebrawleysmith
+@jdorn
+@romain-growthbook
+@natasha-growthbook
+@Kevin-Chant
+@royalfig
+@august-growthbook
+@msamper
+@bryce-fitzsimons
+@Hephaest
+@madhuchavva
+Full Changelog
+:
+v3.6.0...v4.0.0
+Contributors
+Auz, jrnold, and 21 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v3.6.0
+v3.6.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+01 May 03:35
+v3.6.0
+6559b64
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Highlights
+Safe Rollouts by
+@msamper
+@lukebrawleysmith
+@gazzdingo
+@lukesonnet
+@ahdriel
+in
+#3556
+and many more
+Time Series on Experiment Results by
+@ahdriel
+@lukesonnet
+in
+#3779
+and many more
+Official Jira Integration by
+@Kevin-Chant
+in
+#3944
+#3956
+#4012
+Dev Tools for Back-end by
+@bryce-fitzsimons
+in
+#3911
+#3958
+Decision Framework Notifications by
+@lukesonnet
+in
+#3762
+#3909
+Fact Table JSON Columns by
+@jdorn
+in
+#3768
+Other Changes
+JS/React SDK version 1.5.0 by
+@bryce-fitzsimons
+@jdorn
+in
+#4009
+Add metric overrides to reports and bandits by
+@lukesonnet
+in
+#3764
+#3875
+Added Microsoft Clarity Heatmap integration guide by
+@Auz
+in
+#3782
+Make metrics links on overview page by
+@lukesonnet
+in
+#3797
+Enable duplicating metrics from details page by
+@Kevin-Chant
+in
+#3999
+Remove hypothesis check from bandit pre-launch checklist by
+@lukesonnet
+in
+#3796
+[api] Add user filter to fact metric API and add validation by
+@lukesonnet
+in
+#3798
+Add prerequisite targeting as auto checklist item by
+@lukesonnet
+in
+#3811
+REST API: add "withRevisions" option to getFeature endpoint by
+@bryce-fitzsimons
+in
+#3808
+Allow creation of Experiments with no DataSource specified via API by
+@ahdriel
+in
+#3819
+Allow editing variation metadata for running experiments by
+@lukesonnet
+in
+#3832
+Only show reweighted events for bandit SRM graph by
+@lukesonnet
+in
+#3834
+Add heartbeat update when starting query execution by
+@Kevin-Chant
+in
+#3771
+#3881
+Enrich metrics with project names for project search by
+@lukesonnet
+in
+#3853
+Expose more fields in the various REST API experiment endpoints by
+@bryce-fitzsimons
+in
+#3861
+#3864
+Add detail to make changes usage by
+@lukesonnet
+in
+#3866
+Adding more classes to facilitate science work data processing by
+@lukebrawleysmith
+in
+#3546
+adding 'RegressionAdjustedRatioStatistics' to gbstats by
+@lukebrawleysmith
+in
+#3885
+Rework bandit SRM to run in SQL by
+@lukesonnet
+in
+#3845
+Render abs. differences in proportion metrics with pp notation by
+@lukesonnet
+in
+#3891
+Add number field for rollouts (allow fractional percentages) by
+@bryce-fitzsimons
+in
+#3901
+Decision Criteria model and creator by
+@lukesonnet
+in
+#3847
+Update how we calculate readAccess for Metric Groups by
+@mknowlton89
+in
+#3905
+Move visual editor / redirect paywall to publish step by
+@jdorn
+in
+#3898
+Add decision criteria data to getExperiment api endpoint by
+@Kevin-Chant
+in
+#3945
+Give old portals priority over radix portals by
+@bryce-fitzsimons
+in
+#3954
+show feature dependent warnings by
+@bryce-fitzsimons
+in
+#3964
+Ensure p-value adjustment applied to analysisSummary by
+@lukesonnet
+in
+#3972
+Auto closes pre launch checklist when complete by
+@mknowlton89
+in
+#3975
+[stats] changing condition for theta == 0 to theta < 1e-8 by
+@lukebrawleysmith
+in
+#3795
+Advanced feature discoverability by
+@mknowlton89
+in
+#3951
+#3969
+#3920
+Bug Fixes
+Fix: Hide exp data if exp doesn't have enough data by
+@mknowlton89
+in
+#3744
+Fix: Prevent metrics without a data source from being used as North Stars by
+@jdorn
+in
+#3763
+CUPED ratio bug fixes by
+@lukebrawleysmith
+in
+#3767
+UI Updates by
+@Kevin-Chant
+@lukesonnet
+in
+#3897
+#3773
+Force auto-updates for bandits by
+@lukesonnet
+in
+#3807
+Fix next update status by
+@lukesonnet
+in
+#3786
+Fix notification text bug for multiple exposures by
+@lukesonnet
+in
+#3831
+fixing bug in degrees of freedom for bandits srm by
+@lukebrawleysmith
+in
+#3826
+Fix difference type in reports by
+@lukesonnet
+in
+#3854
+fix(BaseModel): Ensure index exists before dropping by
+@ahdriel
+in
+#3868
+Fix date in Health Tab graph being always interpreted as UTC by
+@ahdriel
+in
+#3872
+experiment overview: fix attribute targeting wrapping by
+@bryce-fitzsimons
+in
+#3877
+Fix live sql preview to show >= exposure timestamp by
+@lukesonnet
+in
+#3890
+Fix: Add metrics in metric groups to override by
+@lukesonnet
+in
+#3983
+Fix: ignore CR character for group csv import by
+@bryce-fitzsimons
+in
+#3985
+Fix redirect checkbox state for nodejs sdk connections by
+@bryce-fitzsimons
+in
+#3948
+Docs and Misc
+Linking tooltip for risk thresholds being violated to docs by
+@lukebrawleysmith
+in
+#3746
+Add percentile language to quantile docs by
+@lukesonnet
+in
+#3789
+Lint Some Docs by
+@alai97
+in
+#3800
+Various doc updates by
+@natasha-growthbook
+@august-growthbook
+@royalfig
+in
+#3840
+#3842
+#3957
+#3818
+#3784
+#3793
+#3940
+#3980
+Performance improvements by
+@jdorn
+in
+#3932
+#3930
+Add new Query Optimization docs and updates to "View Docs" link by
+@jdorn
+in
+#3805
+Remove duplicated word "the" in docs/guide/nextjs-app-router.mdx by
+@DanieleGrizzi
+in
+#3939
+Dependency and Security Updates by
+@ahdriel
+@Auz
+@jdorn
+@bryce-fitzsimons
+in
+#3836
+#3827
+#3839
+#3812
+#3791
+#3855
+#3912
+#3998
+Performance and Observability improvements by
+@romain-growthbook
+in
+#3863
+and many more
+Billig updates for GrowthBook Cloud by
+@mknowlton89
+@tzjames
+and others
+Update latest SDK versions and docs by
+@madhuchavva
+@royalfig
+@ahdriel
+in
+#3904
+#3962
+#3803
+#3820
+#3828
+#3833
+#3857
+New Contributors
+@alai97
+made their first contribution in
+#3800
+@choshsh
+made their first contribution in
+#3803
+@DanieleGrizzi
+made their first contribution in
+#3939
+Full Changelog
+:
+v3.5.0...v3.6.0
+Contributors
+Auz, ahdriel, and 17 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v3.5.0
+v3.5.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+04 Mar 04:55
+v3.5.0
+4470a21
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Highlights
+New Dev Tools Browser Extension
+by
+@Kevin-Chant
+@bryce-fitzsimons
+@gazzdingo
+in
+#3618
+#3739
+#3696
+Experiment Decision Framework
+by
+@ahdriel
+@lukebrawleysmith
+in
+#3540
+#3683
+#3557
+Power Calculator
+by
+@lukesonnet
+in
+#3695
+#3638
+#3564
+CUPED for Ratio Metrics
+by
+@lukebrawleysmith
+in
+#3649
+#3698
+#3727
+#3724
+#3733
+#3610
+Major JS, Go, Java, Python, C# SDK Updates
+by
+@madhuchavva
+@mkurkov
+in
+#3566
+#3635
+#3688
+#3662
+#3631
+UX Improvements
+by
+@Auz
+and others across 30+ commits
+Other Changes
+Add API endpoints for Archetypes by
+@Kevin-Chant
+in
+#3577
+Athena enable query reuse by
+@Kevin-Chant
+in
+#3126
+Add support to key-pair authentication for Snowflake data source by
+@ahdriel
+in
+#3729
+Added custom fields to new experiment ref flow by
+@Auz
+in
+#3608
+Add CDN Usage graphs to GrowthBook Cloud by
+@jdorn
+in
+#3636
+Enable 'Edit status' escape hatch for drafts with data by
+@jdorn
+in
+#3756
+Introduce Edit Info Modal for Experiments by
+@mknowlton89
+in
+#3462
+fix(LinkedChanges): Allow changes to be deleted by
+@ahdriel
+in
+#3702
+Added project selector to feature modal by
+@mohammedyunus2002
+in
+#3534
+Feature environment selector improvements by
+@Kevin-Chant
+in
+#3560
+#3590
+#3544
+#3717
+Compare Feature Environments by
+@Kevin-Chant
+in
+#3490
+Start experiments when publishing a feature draft by
+@jdorn
+in
+#3422
+#3687
+#3607
+Only refresh fact table columns when needed by
+@jdorn
+in
+#3757
+Add rule ids to SDK payload by
+@jdorn
+in
+#3665
+Filter /reports by project by
+@mknowlton89
+in
+#3731
+New onboarding flow by
+@tzjames
+in
+#3614
+#3633
+#3626
+Support experiment/bandit sharing in the REST API by
+@bryce-fitzsimons
+in
+#3745
+Added savedgroups syntaxic search for features and experiments by
+@Auz
+in
+#3533
+Update saved group edit flow by
+@Kevin-Chant
+in
+#3547
+Ability to edit visual editor changes directly by
+@Auz
+in
+#3684
+Add Ctrl-F Functionality to CodeTextArea by
+@mknowlton89
+in
+#3736
+Change directory location of enterprise code by
+@jdorn
+in
+#2869
+Bug Fixes
+Fix bandit periods for funnel metrics by
+@lukesonnet
+in
+#3667
+#3669
+Added way to see the change set regardless of the experiment state by
+@Auz
+in
+#3682
+[api] Change datasource validation for update experiment by
+@lukesonnet
+in
+#3651
+Allow undefined project stats engine to inherit org default by
+@lukesonnet
+in
+#3652
+Don't allow deleting the only experiment phase by
+@gazzdingo
+in
+#3714
+Fix experiment creation flow bugs, consistently include metrics page on creation flow by
+@bryce-fitzsimons
+in
+#3569
+Allow empty lists for feature $in and $nin conditions by
+@Kevin-Chant
+in
+#3719
+Fixed issue with duplicate feature and custom fields by
+@Auz
+in
+#3599
+Rename form input to get LastPass/other password managers to ignore it by
+@tzjames
+in
+#3741
+Improve saved group reference checks by
+@Kevin-Chant
+in
+#3528
+Bugfix for mixpanel EAQ selection by
+@lukesonnet
+in
+#3587
+Metric selector reordering bug fix by
+@Auz
+in
+#3603
+[api] Allow update fact metric to go from ratio to non-ratio by
+@lukesonnet
+in
+#3743
+Remove upper bound on pagination offset by
+@Kevin-Chant
+in
+#3615
+Fix delete segment bug showing related ideas that werent related by
+@mknowlton89
+in
+#3732
+Fix remote evaluation by adding missing await (
+#3654
+) by
+@vadzimsharai
+in
+#3655
+sdk: Prevent overly-eager early exit when evaluating prereqs by
+@bryce-fitzsimons
+in
+#3542
+Fixes Add Experiment Template DropdownMenuItem by
+@mknowlton89
+in
+#3567
+Fix presentations page error card margin by
+@ari-party
+in
+#3606
+Fix wrong text color on tooltips by
+@Hephaest
+in
+#3656
+Remove add implementation when no options remain by
+@bryce-fitzsimons
+in
+#3730
+Use correct reference for visual editor status check by
+@bryce-fitzsimons
+in
+#3721
+Docs and Misc
+Feature usage analytics - dogfooding by
+@tzjames
+in
+#3711
+#3453
+Updates archetype docs by
+@mknowlton89
+in
+#3700
+Add docs on cluster experiments by
+@lukesonnet
+in
+#3568
+Fix formatting by
+@royalfig
+in
+#3663
+Fix grammar user-permissions.mdx by
+@tzjames
+in
+#3671
+Move Impact on Dashboard (pseudo a/a test) by
+@lukesonnet
+in
+#3584
+Upgrade from actions/cache from v2 to v4 by
+@mknowlton89
+in
+#3621
+Docs/image-update by
+@royalfig
+in
+#3675
+#3617
+Add env var customization for default log event properties by
+@Kevin-Chant
+in
+#3694
+Add SDK resources box to docs by
+@royalfig
+in
+#3647
+Add definition of one-sided rule by
+@august-growthbook
+in
+#3632
+Update gitBranch logo by
+@royalfig
+in
+#3699
+Update node.mdx by
+@joostfroon
+in
+#3573
+add markdown location, organize guides, add yt video to strapi by
+@royalfig
+in
+#3553
+update json & docs for edge versions 0.2.1 by
+@bryce-fitzsimons
+in
+#3602
+updating docs so links go to specific troubleshooting sections by
+@lukebrawleysmith
+in
+#3538
+add feedback widget to docs by
+@royalfig
+in
+#3629
+Improved GTM instructions by
+@royalfig
+@Auz
+in
+#3748
+#3582
+#3497
+#3583
+New Contributors
+@mohammedyunus2002
+made their first contribution in
+#3534
+@joostfroon
+made their first contribution in
+#3573
+@ari-party
+made their first contribution in
+#3606
+@vadzimsharai
+made their first contribution in
+#3655
+Full Changelog
+:
+v3.4.0...v3.5.0
+Contributors
+mkurkov, Auz, and 17 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+🎉
+3
+ahdriel, egelhaus, and TonyRoussel reacted with hooray emoji
+All reactions
+🎉
+3 reactions
+3 people reacted
+v3.4.0
+v3.4.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+15 Jan 04:50
+v3.4.0
+98265dc
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Highlights
+Experiment Templates by
+@msamper
+in
+#3442
+Custom Fields by
+@Auz
+in
+#557
+Shareable Experiments by
+@bryce-fitzsimons
+in
+#3445
+#3351
+New metric types: Retention, Count Distinct, and Max by
+@lukesonnet
+in
+#3384
+#3415
+Environment Forking by
+@Kevin-Chant
+in
+#3322
+Contentful and Strapi Integrations by
+@tzjames
+and
+@royalfig
+in
+#3271
+#3444
+Major updates to Node.js and Edge SDKs by
+@jdorn
+and
+@bryce-fitzsimons
+in
+#3328
+#3357
+#3500
+Simulate Features Page by
+@Auz
+in
+#2952
+Other Changes
+Various UI improvements by
+@ahdriel
+and others
+Add has:tempRollout advanced search for experiments by
+@jdorn
+in
+#3292
+Ability to export data in experiment monthly graphs by
+@Auz
+in
+#3092
+Don't automatically refresh import experiment list when updating queries by
+@lukesonnet
+in
+#3409
+Project-scope segments by
+@mknowlton89
+in
+#3344
+Make experiment owners editable by
+@Auz
+in
+#3398
+Allow conversion window/delay to go down to minute granularity by
+@lukesonnet
+in
+#3439
+Add Delete Feature Rest API Endpoint by
+@mknowlton89
+in
+#3383
+Bug Fixes
+Increase non-test snowflake timeout by
+@lukesonnet
+in
+#3282
+Fix currency in metric analysis cards by
+@lukesonnet
+in
+#3306
+Fix bug with simulate features and scheduled rules by
+@Auz
+in
+#3299
+Make schema browser robust to switching databases by
+@lukesonnet
+in
+#3330
+Improve API endpoint validation by
+@mknowlton89
+in
+#3354
+#339
+#3423
+#3359
+Support legacy "inline experiment" rule editing by
+@bryce-fitzsimons
+in
+#3355
+Fix cumulative ratio + quantile date cohort graph by
+@lukesonnet
+in
+#3386
+Fix user filters missing field by
+@jdorn
+in
+#3434
+Re-allow activation metric to be joined to query by
+@lukesonnet
+in
+#3417
+Change user agent for webhooks by
+@msamper
+in
+#3441
+Get actual list of envs affected by experiment by
+@mknowlton89
+in
+#2835
+Fix bug with metric tag filter and pagination by
+@lukesonnet
+in
+#3479
+Fix setting stats engine in new reports by
+@lukesonnet
+in
+#3520
+Fix empty saved groups when generating SDK payloads by
+@Kevin-Chant
+in
+#3499
+Docs and Misc
+Various doc updates by
+@lukesonnet
+,
+@royalfig
+and others
+Deno Hono tutorial by
+@royalfig
+in
+#3284
+Tutorial for Express.js by
+@jdorn
+in
+#3390
+Bump TS version by
+@romain-growthbook
+in
+#3148
+Update DataDog instructions by
+@ahdriel
+in
+#3319
+#3455
+Work for upcoming built-in warehouse by
+@tzjames
+PR Preview environment by
+@ahdriel
+in
+#3378
+#3379
+Mid-experiment power core science code by
+@lukebrawleysmith
+in
+#3414
+Change demo exp to single goal metric by
+@lukesonnet
+in
+#3518
+Full Changelog
+:
+v3.3.0...v3.4.0
+Contributors
+Auz, ahdriel, and 10 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v3.3.0
+v3.3.0
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+12 Nov 00:20
+v3.3.0
+4c83203
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Highlights
+Multi-Arm Bandits by
+@bryce-fitzsimons
+@lukebrawleysmith
+@lukesonnet
+in
+#2807
+and many other commits
+Metric Groups by
+@Auz
+@bryce-fitzsimons
+in
+#3028
+#3263
+Inline and User Filters for Fact Metrics by
+@jdorn
+in
+#3127
+#3038
+Migrate to New Design System (ongoing work) by
+@msamper
+@ahdriel
+@gazzdingo
+and many others
+Other Changes
+API endpoints to kick off experiment snapshot and check status by
+@lukesonnet
+in
+#2980
+"Generate Fact Tables" will now also create metrics for GA4, Segment, and Rudderstack by
+@jdorn
+in
+#3062
+Add pagination to metric list and team members page by
+@jdorn
+in
+#3233
+Add fact metric support to North Star configuration by
+@lukesonnet
+in
+#3100
+Feature kill switch confirmation is now enabled by default for new orgs by
+@jdorn
+in
+#3208
+Fact Metrics default projects now come from fact table instead of data source by
+@jdorn
+in
+#3209
+Snowflake improvements when using a proxy by
+@lukesonnet
+in
+#3094
+Enable OpenTelemetry logs in addition to traces/metrics by
+@romain-growthbook
+in
+#3052
+New toggle for experiments to disable sticky bucketing by
+@bryce-fitzsimons
+in
+#3200
+Improved UI for enum attributes and list operators by
+@Kevin-Chant
+in
+#3184
+Bug Fixes
+Add null typeguard for window history by
+@Kevin-Chant
+in
+#3192
+Assume a webhook is raw (legacy) when no payload types are specified. by
+@romain-growthbook
+in
+#3172
+Typo bug fixes by
+@romain-growthbook
+in
+#3235
+Fix ClickHouse NULL date in Metric Analysis query by
+@lukesonnet
+in
+#3196
+Fix analysis settings bar flicker by
+@lukesonnet
+in
+#3239
+Fix copy/paste metrics in the Analysis settings screen by
+@ahdriel
+in
+#3247
+Fix loading flicker on features, metrics, and other pages by
+@jdorn
+in
+#3269
+Fix race condition when DISABLE_TELEMETRY is set by
+@jdorn
+in
+#3077
+Fix saved group bug by
+@jdorn
+in
+#3037
+Fix savedGroups sometimes hashing non-securestring attributes by
+@Kevin-Chant
+in
+#3143
+Fix typos by
+@august-growthbook
+in
+#3194
+Fix typos in openapi definition by
+@Kevin-Chant
+in
+#3182
+Fix useFeaturesList changing object pointers every rerender by
+@Kevin-Chant
+in
+#3141
+Fix webhook link. by
+@romain-growthbook
+in
+#3042
+Improve sticky bucket service by
+@bryce-fitzsimons
+in
+#3040
+Make sure targeting is copied when duplicating an experiment by
+@bryce-fitzsimons
+in
+#3234
+More graceful handling of fact table failure by
+@lukesonnet
+in
+#3240
+Prevent empty experiment names by
+@romain-growthbook
+in
+#3112
+Remove unsupported query changes by
+@msamper
+in
+#3171
+Update dependencies for SDKs (1.2.1) by
+@bryce-fitzsimons
+in
+#3087
+fix for sdk count by
+@gazzdingo
+in
+#3254
+fixed saved group deleting by
+@gazzdingo
+in
+#3251
+user lookup mem perf improvement by
+@tzjames
+in
+#3095
+Add snapshot type and configure notifications by
+@lukesonnet
+in
+#3065
+Block dimension analyses from firing significance events by
+@lukesonnet
+in
+#3061
+Fix result group for dimension results by
+@lukesonnet
+in
+#3080
+Docs and Misc
+Telemetry data fixes by
+@jdorn
+@lukesonnet
+@bryce-fitzsimons
+in
+#3193
+#3149
+#3134
+#3151
+#3174
+#3173
+Update caniuse-lite version by
+@ahdriel
+in
+#3227
+bump edge sdk versions by
+@bryce-fitzsimons
+in
+#3262
+fixing typo around quotes by
+@lukebrawleysmith
+in
+#3256
+Add bullet to no traffic debugging kb doc by
+@lukesonnet
+in
+#3147
+Add saved groups yt vid to docs by
+@royalfig
+in
+#3059
+Docs updates [override rules, multiple comparisons] by
+@lukesonnet
+in
+#3189
+Documentation for self-hosted CDNs by
+@jdorn
+in
+#3070
+Improve Fact Metric and Experiment API documentation by
+@lukesonnet
+in
+#3197
+Rewrite AA test KB article by
+@lukesonnet
+in
+#3078
+Better sentry stack traces by
+@romain-growthbook
+in
+#3103
+#3099
+#3106
+#3027
+#3032
+#3101
+#3104
+#3105
+Remove unused file by
+@lukesonnet
+in
+#3084
+Update mysql2 dependency by
+@jdorn
+in
+#3068
+Enable source maps when running as dev by
+@itsgrimetime
+in
+#2060
+Fix yarn dev by
+@jdorn
+in
+#3044
+New Contributors
+@ahdriel
+made their first contribution in
+#3204
+Full Changelog
+:
+v3.2.0...v3.3.0
+Contributors
+Auz, ahdriel, and 12 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+👍
+1
+ErcinDedeoglu reacted with thumbs up emoji
+🎉
+2
+ErcinDedeoglu and 0xfeeddeadbeef reacted with hooray emoji
+🚀
+1
+ErcinDedeoglu reacted with rocket emoji
+All reactions
+👍
+1 reaction
+🎉
+2 reactions
+🚀
+1 reaction
+2 people reacted
+Previous
+1
+2
+3
+4
+5
+6
+Next
+Previous
+Next
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

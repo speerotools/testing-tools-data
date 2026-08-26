@@ -1,0 +1,585 @@
+# https://packagist.org/packages/symplify-conversion/sst-sdk-php
+symplify-conversion/sst-sdk-php - Packagist.org
+Toggle navigation
+Packagist
+The PHP Package Repository
+Browse
+Submit
+Create account
+Sign in
+Remember me
+Use Github
+Log in
+No account yet? Create one now!
+Active filters
+Search by
+symplify-conversion
+/
+sst-sdk-php
+SDK for Symplify Conversion Server-Side Testing
+Maintainers
+Package info
+github.com/SymplifyConversion/sst-sdk-php
+pkg:composer/symplify-conversion/sst-sdk-php
+Transparency log
+Statistics
+Installs
+:
+11 197
+Dependents
+:
+0
+Suggesters
+:
+0
+Stars
+:
+0
+Security
+Advisories
+:
+0
+Aikido package health analysis
+v1.1.0
+UTC
+Requires
+php: >=8.1
+ext-curl: *
+ext-json
+: *
+psr/http-client
+: ^1.0.1
+psr/http-factory
+: ^1.0.1
+psr/log
+: ^3.0.2
+Requires (Dev)
+cache/array-adapter
+: 1.2.0
+nyholm/psr7
+: 1.5.0
+php-http/mock-client
+: 1.5.0
+phpstan/phpstan
+: 1.5.3
+phpunit/phpunit
+: 9.5.19
+psr/cache
+: 1.0.1
+slevomat/coding-standard
+: 7.1
+squizlabs/php_codesniffer
+: ^3.13
+suin/phpcs-psr4-sniff
+: 3.0.0
+vimeo/psalm
+: 4.22.0
+Suggests
+None
+Provides
+None
+Conflicts
+None
+Replaces
+None
+MIT
+Symplify Technologies
+<conversion
+.woop
+@symplify.com>
+Fabian Bergström
+Daniel Westerling
+Published on Packagist.org on UTC
+dev-main
+v1.1.0
+v1.0.1
+v1.0.0
+v0.5.0
+v0.4.3
+v0.4.2
+v0.4.1
+v0.4.0
+v0.2.0
+v0.1.1
+v0.1.0
+dev-test-branch-please-ignore
+This package is auto-updated.
+Last update: UTC
+README
+This is the PHP implementation of the
+Symplify Server-Side Testing SDK
+.
+Due to the PHP concurrency model, the SDK is not keeping its own local cache for the config, there simply is no great way to organize the invalidation logic when the purpose of the caching is to keep the hot path fast.
+Instead, we recommend you configure the HTTP client (can be injected to the SDK) to do HTTP caching. See
+Usage
+below.
+Changes
+See
+CHANGELOG.md
+Requirements
+PHP
+7.4 or later
+Composer
+Installing
+Add the dependency through composer:
+composer require "symplify-conversion/sst-sdk-php"
+Usage
+use
+SymplifyConversion
+\
+SSTSDK
+\
+Client
+as
+SymplifyClient
+;
+// 1. configure the SDK and create an instance
+$
+websiteID
+=
+getenv
+(
+'
+SYMPLIFY_WEBSITE_ID
+'
+);
+$
+sdk
+= SymplifyClient::
+withDefaults
+(
+$
+websiteID
+);
+// 2. Start off with the "default" values for everyone outside the test
+// and in the original variation.
+// assuming $sku is from the request, and you have a $catalog service to look up prices in
+$
+price
+=
+$
+catalog
+->
+getCurrentPrice
+(
+$
+sku
+);
+$
+discounts
+= [];
+// 3. Implement your test variation code. (This i in a test project called "discount")
+// `findVariation` will ensure the visitor ID is in cookies, and that the same
+// visitor gets the same variation every request you test.
+switch
+(
+$
+sdk
+->
+findVariation
+(
+'
+discount
+'
+)) {
+case
+'
+huge
+'
+:
+$
+discounts
+[] =
+0.1
+;
+// perhaps a contrived example with this fallthrough
+case
+'
+small
+'
+:
+$
+discounts
+[] =
+0.1
+; }
+// assuming renderProductPage is how you present products
+renderProductPage
+(
+$
+sku
+,
+$
+price
+,
+$
+discounts
+);
+Note that with the curl HTTP client you get no local caching, and thus depend on our CDN for each request. You can use any HTTP client compatible with PSR-17 and PSR-18 instead of curl, and leverage their caching features. This is of course a bit more involved:
+use
+GuzzleHttp
+\
+Client
+as
+HttpClient
+;
+use
+GuzzleHttp
+\
+Psr7
+\
+HttpFactory
+;
+use
+GuzzleHttp
+\
+HandlerStack
+;
+use
+Kevinrob
+\
+GuzzleCache
+\
+Strategy
+\
+PublicCacheStrategy
+;
+use
+Kevinrob
+\
+GuzzleCache
+\
+Storage
+\
+Psr16CacheStorage
+;
+use
+Kevinrob
+\
+GuzzleCache
+\
+CacheMiddleware
+;
+use
+Kodus
+\
+Cache
+\
+FileCache
+;
+use
+SymplifyConversion
+\
+SSTSDK
+\
+Client
+as
+SymplifyClient
+;
+use
+SymplifyConversion
+\
+SSTSDK
+\
+Config
+\
+ClientConfig
+as
+SymplifyClientConfig
+;
+// 1. configure the SDK and create an instance
+$
+websiteID
+=
+getenv
+(
+'
+SSTSDK_WEBSITE_ID
+'
+);
+$
+cache
+=
+new
+Psr16CacheStorage
+(
+new
+FileCache
+(
+'
+/tmp/sstsdk-examples-httpcache
+'
+,
+500
+));
+$
+cacheMiddleware
+=
+new
+CacheMiddleware
+(
+new
+PublicCacheStrategy
+(
+$
+cache
+));
+$
+stack
+= HandlerStack::
+create
+();
+$
+stack
+->
+push
+(
+$
+cacheMiddleware
+,
+'
+cache
+'
+);
+$
+clientConfig
+= (
+new
+SymplifyClientConfig
+(
+$
+websiteID
+)) ->
+withHttpClient
+(
+new
+HttpClient
+([
+'
+handler
+'
+=>
+$
+stack
+])) ->
+withHttpRequests
+(
+new
+HttpFactory
+());
+$
+sdk
+=
+new
+SymplifyClient
+(
+$
+clientConfig
+);
+// the constructor does not load config automatically
+$
+sdk
+->
+loadConfig
+();
+// steps 2 and 3 are the same as in the previous example
+See more examples of code using the SDK in
+examples
+.
+Cookies
+To ensure visitors get the same variation consistently, the SDK needs to read and write cookies. See
+SST-documentation
+repository for general cookie setup information and
+examples
+folder for code examples.
+If you do not have a CookieJar class already, it is advised to use the SymplifyConversion\SSTSDK\Cookies\DefaultCookieJar class.
+<?php
+use
+SymplifyConversion
+\
+SSTSDK
+\
+Client
+as
+SymplifyClient
+;
+use
+SymplifyConversion
+\
+SSTSDK
+\
+Cookies
+\
+DefaultCookieJar
+;
+$
+websiteID
+=
+"
+4711
+"
+;
+$
+cookieDomain
+=
+getenv
+(
+'
+SSTSDK_COOKIE_DOMAIN
+'
+);
+$
+client
+= SymplifyClient::
+withDefaults
+(
+$
+websiteID
+);
+$
+cookieJar
+=
+new
+DefaultCookieJar
+(
+$
+cookieDomain
+);
+foreach
+(
+$
+client
+->
+listProjects
+()
+as
+$
+projectName
+) {
+echo
+"
+*
+$
+projectName
+"
+.
+PHP_EOL
+;
+$
+variationName
+=
+$
+client
+->
+findVariation
+(
+$
+projectName
+, [],
+$
+cookieJar
+);
+echo
+"
+- assigned variation:
+"
+.
+$
+variationName
+.
+PHP_EOL
+; }
+Custom audience
+It's possible to limit for which requests/visitors a certain test project should apply by using "audience" rules. See
+Audiences.md
+for details.
+The audience is evaluated when your server calls
+findVariation
+, and if the rules you have setup in the audience references "custom attributes" your server must provide the values of these attributes for each request.
+For example, you might want a test project to only apply for visitors from a certain country. The audience can be configured in your project, using a custom attribute "country", and then your server provides it when finding the variation on each request:
+// fictional helper function to get discounts for each request we serve
+function
+getDiscounts
+(
+$
+sdk
+) {
+// This code assumes you have a `lookupGeoIP` helper function in your project.
+$
+customAttributes
+=
+array
+(
+'
+country
+'
+=>
+lookupGeoIp
+(
+$
+usersIPAddress
+)->
+getCountry
+());
+// Custom attributes are passed as an array of key/value pairs, in this case we set 'country'
+// and assume the audience is configured with the "string-attribute" rule to look for specific countries.
+$
+gotVariation
+=
+$
+sdk
+->
+findVariation
+(
+'
+Discounts, May 2022
+'
+,
+$
+customAttributes
+);
+switch
+(
+$
+gotVariation
+) {
+case
+'
+huge
+'
+:
+return
+[
+0.25
+];
+case
+'
+small
+'
+:
+return
+[
+0.1
+]; }
+// `findVariation` returns null if the project audience does not match for
+// a given request. We handle that by a fallthrough return here.
+return
+[]; }
+SDK Development
+See
+CONTRIBUTING.md
+or
+RELEASING.md
+.
+About Packagist.org
+Atom/RSS Feeds
+Statistics
+Browse Packages
+API
+Mirrors
+Status
+Dashboard
+provides maintenance and hosting
+provides bandwidth and CDN
+provides malware detection
+Sponsor Packagist & Composer

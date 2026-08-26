@@ -1,0 +1,139 @@
+# https://doc.sitespect.com/knowledge/sitespect-security
+SiteSpect Security
+Skip to content
+English
+Show submenu for translations
+A/B Testing
+Personalization
+Recommendations
+Open main navigation
+Close main navigation
+A/B Testing
+Personalization
+Recommendations
+English
+Show submenu for translations
+How can we help you?
+There are no suggestions because the search field is empty.
+Knowledge Base
+Implementation, Deployment, and Security
+SiteSpect Security
+FAQs
+Once you detect them, how do you manage security incidents?
+Tell us more about your security and compliance policy.
+How does SiteSpect handle IP-based access control?
+How do you secure our data?
+Do you respect role-based permissions?
+How do you handle HTTPs traffic?
+What is your support model, including 24/7 emergency support?
+Once you detect them, how do you manage security incidents?
+SiteSpect takes security seriously. SiteSpect actively monitors logs and employs penetration testing and log analysis services to identify potential breaches. SiteSpect has an established and rigorous incident management process for managing security incidents. In the event of an incident, affected systems are isolated and shut down while engineers capture the necessary forensic information for root cause analysis. The affected systems are then wiped clean. With the forensic data we have collected, we perform impact analysis and follow our protocol for communication. SiteSpect has PCI Forensic Investigators on retainer should escalation be appropriate.
+Back to top
+Tell us more about your security and compliance policy.
+Full PCI compliance with an annual audit by a third-party Qualified Security Assessor (QSA). SiteSpect's most current Self-Assessment Questionnaire D and Attestation of Compliance for Service Providers is available on request.
+Full support for testing on http or https pages.
+Ability to maintain secure traffic that is always encrypted.
+Isolated report data is not grouped with or shared with others in any way.
+Workflow controls that restrict access to live traffic, configurations, and reports. We support workflow and version control to restrict who has permission to affect live traffic, edit test configurations, and access Campaigns results and reports.
+Audit tracking of all changes to test configurations.
+Two-Factor Authentication allows customers to enforce a second means of authentication using a mobile app.
+Access Control List (ACL) allows customers to restrict who gets to their admin by IP.
+Traffic whitelists allows customers to restrict what traffic gets to their engine by IP.
+Privacy of all customer data. No test data is exposed.
+Back to top
+How does SiteSpect handle IP-based access control?
+SiteSpect uses whitelists and blacklists to control which traffic is allowed or disallowed based on source IP address.
+If you are using a whitelist, only traffic included on the whitelist is allowed. All other traffic receives a 403 response.
+If you are using a blacklist, any connection from the blacklist IP receives a 403 forbidden response.
+To prevent unexpected changes to SiteSpect routing, provide all changes to whitelists and blacklists with enough notice for SiteSpect to apply them in our rule sets.
+Back to top
+How do you secure our data?
+The SiteSpect data layer is designed to minimize service interruption and ensure stability. SiteSpect data is stored in a distributed relational database replicated across multiple data centers. While SiteSpect traffic management is distributed across the globe, all data is stored within the United States.
+SiteSpect is audited and pen-tested annually by an independent security firm to maintain our PCI compliance. This audit includes a formal review and approval of our employee controls and data security policies. These policies include:
+Access restrictions to customer account data.
+Access to systems containing your sensitive information is logged and audited.
+Authentication: Use of single sign-on, strong passwords, and two-factor authentication.
+No third-party access to customer data.
+Back to top
+Do you respect role-based permissions?
+Yes. SiteSpect provides the ability to set multiple different user roles to support a variety of business and security concerns. You can configure users to edit global site features, create campaigns, modify existing campaigns, or only to view existing campaigns and report data. Workflow features can restrict who has permission to affect live traffic and push configurations live. We include audit tracking so you can always see what testing configuration has been changed by which users. Here are the different access levels you can choose from:
+Campaign Auditor:
+View-only access.
+Campaign Associate:
+Can create and edit inactive Metrics, Audiences, and Campaigns. Cannot activate or delete any elements. Can only view segments.
+Campaign Compliance:
+Can create and edit Metrics and Audiences. Cannot delete any elements. Can only view segments.
+Campaign Manager:
+Can create and edit Metrics, Audiences, Campaigns and Segments. Cannot delete any elements.
+Campaign Builder:
+Can create SiteSpect components. Can edit and delete components as long as they are not associated with live traffic. Can use File Storage. Cannot use Import/Export.
+Campaign Administrator:
+Can create and edit anything and delete elements. Can use import and export.
+Back to top
+How do you handle HTTPs traffic?
+SiteSpect is configured to handle both HTTP and HTTPS traffic. To do so we deploy an SSL certificate and key for your site’s traffic on the SiteSpect Cluster. There are several options for deploying certificates for your site. The options are:
+Use your existing certificate and key file:
+Authorized users within your organization deploy SSL key files through a direct upload. SiteSpect employees do not handle SSL keys.
+Provide a new certificate and key file.
+SiteSpect can generate a certificate signing request (CSR), so you can procure a the new SSL certificate and send it to us to upload.
+SiteSpect can provision a self-signed certificate.
+The SiteSpect system automatically tracks the expiration of SSL certificates. Automatic notifications are sent to active users approximately 45-days in advance of the certificate expiration to coordinate the updating of the certificates.
+Back to top
+What is your support model, including 24/7 emergency support?
+SiteSpect support is available via phone and email during SiteSpect business hours 9AM - 8PM ET M-F. Emergency phone support is available 24/7 x 365 days. Our support email address is
+helpdesk@sitespect.com
+. Phone support is available at the following numbers:
+US: +1-844-859-1900
+UK: +44 020-3239-8591, x2
+Get Started
+SiteSpect Support
+Overview Information
+Intro to SiteSpect
+Account Setup
+Artificial Intelligence
+Dashboard
+Build
+Setting Up a Campaign
+Create a Client-Side Campaign
+Create a Server-Side Campaign
+Metrics
+Audiences
+Triggers
+Variations
+Traffic Management
+Preview
+Factors
+Advanced Settings
+Omnichannel
+Regular Expressions (Regex)
+WATTS
+Recommendations
+Monitor
+Analyze
+Data Export and Integration
+SiteSpect Reports
+Site
+Tools
+Configuration
+Developers
+API Reference
+Code Samples
+Tips & Tricks
+Mobile
+Implementation, Deployment, and Security
+How does SiteSpect work with CDNs?
+Single Tenant Implementations
+Security Features
+Deployment and Implementation Overview
+SiteSpect Engine & Admin API
+Third-Party Integration
+Google
+Zuko
+Troubleshooting
+Releases
+Superfresh
+Feedback
+A/B Testing
+Personalization
+Recommendations
+Copyright © 2026, Monetate

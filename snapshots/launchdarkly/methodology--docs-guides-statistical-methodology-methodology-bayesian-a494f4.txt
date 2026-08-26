@@ -1,0 +1,2503 @@
+# https://launchdarkly.com/docs/guides/statistical-methodology/methodology-bayesian
+Statistical methodology for Bayesian experiments | LaunchDarkly | Documentation
+For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+Developer
+Developer
+Search
+/
+Pricing
+Sign in
+Try it free
+Docs
+Guides
+SDKs
+Integrations
+API docs
+Tutorials
+Flagship blog
+Developer
+Developer
+Search
+/
+Docs
+Guides
+SDKs
+Integrations
+API docs
+Tutorials
+Flagship blog
+Guides
+Cheatsheets
+Feature flags
+AgentControl
+Observability
+Experimentation
+Statistical methodology
+Choosing a statistical methodology
+Covariate adjustment and CUPED methodology
+Statistical methodology for Bayesian experiments
+Statistical methodology for frequentist experiments
+Multiple comparisons correction
+Stratified sampling
+Sample ratio mismatch
+Metrics
+Infrastructure
+Account management
+Teams and custom roles
+SDKs
+Integrations
+REST API
+Additional resources
+Guides
+Cheatsheets
+Control and govern AI agents in production
+Enable self-healing systems with runtime controls
+Optimize AI performance and cost with AgentControl configs
+Run continuous experiments in production
+Ship AI-built code with AgentControl or CodeControl
+Feature flags
+Best practices for upgrading users to contexts
+Creating flags
+Deciding between flag targeting strategies
+Defining and targeting mobile applications
+Feature flag hierarchy
+Flag conventions
+Improving flag usage in code
+LaunchDarkly CLI dev-server reference guide
+Performing multi-stage migrations with migration flags
+Reducing technical debt from feature flags
+Testing code that uses feature flags
+Using entitlements to manage customer experience
+Using flags on static sites with JavaScript
+Using the LaunchDarkly CLI for local testing
+Using segments and targeting to manage early access programs
+AgentControl
+Getting started with OpenAI and AgentControl
+Getting started with Anthropic Claude and AgentControl
+Getting started with Google Gemini and AgentControl
+Getting started with Amazon Bedrock and AgentControl
+Getting started with LangChain and AgentControl
+Getting started with LangGraph and AgentControl
+Getting started with Strands and AgentControl
+Managing AI model configuration outside of code
+Using targeting to manage AI model usage by tier
+When to use prompt-based vs agent mode
+Building a chatbot with multiple AI providers using AgentControl
+Observability
+Getting started with observability for native Android
+Experimentation
+Building your first experiment
+Creating an A/B experiment using a funnel metric group
+Creating mutually exclusive experiments
+Designing experiments
+Example experiments
+Experimentation best practices
+Bayesian versus frequentist statistics
+Maintaining consistency across user sessions when running experiments
+Measuring Experimentation impact with holdout experiments
+Migrating from Statsig to LaunchDarkly Experimentation
+Proving ROI with data-driven AI agent experiments
+Sample size calculations for frequentist experiments
+Statistical methodology
+Choosing a statistical methodology
+Covariate adjustment and CUPED methodology
+Statistical methodology for Bayesian experiments
+Statistical methodology for frequentist experiments
+Multiple comparisons correction
+Stratified sampling
+Sample ratio mismatch
+Metrics
+Building a metric import and sync integration
+Example metrics
+Understanding LaunchDarkly metrics
+Using metrics from engineering insights
+Infrastructure
+Deployment and release strategies
+Managing flags with Terraform
+Using flags with Cloudflare Workers
+Using LaunchDarkly in serverless environments
+Account management
+LaunchDarkly for large enterprise teams
+Merging LaunchDarkly accounts
+Migrating your existing feature flag solution to LaunchDarkly
+Minimizing LaunchDarkly's access to end user data
+Onboarding to views
+Using LaunchDarkly with Protected Health Information (PHI)
+Using SSO with LaunchDarkly
+Teams and custom roles
+Building teams in LaunchDarkly
+Creating roles
+Onboarding to preset roles
+SDKs
+Use cases for SDK wrappers
+Using LaunchDarkly without a supported SDK
+Using mobile SDKs
+Using the Lua SDK with HAProxy
+Using the Lua SDK with NGINX
+Using the JavaScript SDK in Salesforce Lightning Web Components
+Resilient architecture patterns for LaunchDarkly's SDKs
+Integrations
+About LaunchDarkly integrations
+Integrations use cases
+Using flag triggers with Dynatrace
+Building a change history event hook integration
+Building an ephemeral Environments as a Service integration
+Building a synced segments integration
+LaunchDarkly Shopify Pixel
+REST API
+Comparing LaunchDarkly's SDK and REST API
+Using the LaunchDarkly REST API
+REST API migration guide
+Additional resources
+Pricing
+Sign in
+Try it free
+Light
+On this page
+Core formulas
+Posterior mean
+Data mean
+Data weight
+Details of our Bayesian approach
+Calculating posterior distributions
+Binary data
+Numeric data
+Conversion metrics
+Computing relative differences, probabilities, and expected loss
+Relative differences and their credible intervals
+Probability to be best
+Expected loss
+Conclusion
+Scroll to top
+Guides
+Statistical methodology
+Statistical methodology for Bayesian experiments
+Copy page
+This guide includes advanced concepts
+This section includes an explanation of advanced statistical concepts. We provide them for informational purposes, but you do not need to understand these concepts to use Experimentation.
+This guide explains the statistical methodology LaunchDarkly uses to calculate Bayesian experiment variation means, and how these analytics formulas are useful for validating your results.
+For a high-level overview of Bayesian and frequentist statistics, read
+Bayesian versus frequentist statistics
+.
+Core formulas
+The core formulas include the posterior mean, the data mean, and the data weight. We describe these in detail below.
+Posterior mean
+In the Bayesian approach, the main quantity we report is the mean of the posterior distribution calculated by updating the prior distribution with data observed in your experiment.
+At a high level, the posterior means for all experiment variations and for any metric type, including conversion metrics and numeric metrics, can be represented by a convenient formula:
+P
+o
+s
+t
+e
+r
+i
+o
+r
+M
+e
+a
+n
+=
+W
+e
+i
+g
+h
+t
+⋅
+D
+a
+t
+a
+M
+e
+a
+n
++
+(
+1
+−
+W
+e
+i
+g
+h
+t
+)
+⋅
+P
+r
+i
+o
+r
+M
+e
+a
+n
+\begin{aligned} PosteriorMean = Weight \cdot DataMean + \left(1 - Weight \right) \cdot PriorMean \end{aligned}
+P
+os
+t
+er
+i
+or
+M
+e
+an
+=
+W
+e
+i
+g
+h
+t
+⋅
+D
+a
+t
+a
+M
+e
+an
++
+(
+1
+−
+W
+e
+i
+g
+h
+t
+)
+⋅
+P
+r
+i
+or
+M
+e
+an
+​
+With the following definitions:
+Data mean
+: The mean estimated from the data
+Prior mean
+: The mean of the Bayesian prior distribution assumed for the experiment variation mean
+Weight
+: A number between 0 and 1 which broadly reflects the amount of precision in our data mean.
+Broadly, the posterior mean is a weighted sum of the mean of the prior distribution and the mean calculated from the data. As more data arrives to the experiment, the weight increases and the posterior mean is influenced relatively more by the observed data and relatively less by the prior distribution. The specific behavior of this differs slightly between the control variation and the treatment variations, but this general principle holds for both.
+When you hover over the “Conversion rate” or “Posterior mean” heading in an experiment’s results table, you can view the conversion rate or posterior mean.
+When you hover over an actual conversion rate or posterior mean value, you can view actual numbers in the formulas instead of descriptions.
+Data mean
+The formula for the data mean differs between conversion metrics and numeric metrics:
+Conversion metrics
+, including custom conversion binary, custom conversion count, page viewed conversion, and clicked or tapped conversion metrics, use the total number of conversions divided by the total number of exposures:
+D
+a
+t
+a
+M
+e
+a
+n
+=
+S
+a
+m
+p
+l
+e
+M
+e
+a
+n
+=
+C
+o
+n
+v
+e
+r
+s
+i
+o
+n
+s
+/
+E
+x
+p
+o
+s
+u
+r
+e
+s
+DataMean = SampleMean = Conversions / Exposures
+D
+a
+t
+a
+M
+e
+an
+=
+S
+am
+pl
+e
+M
+e
+an
+=
+C
+o
+n
+v
+ers
+i
+o
+n
+s
+/
+E
+x
+p
+os
+u
+res
+Numeric metrics
+use the total value divided by the total number of exposures:
+D
+a
+t
+a
+M
+e
+a
+n
+=
+S
+a
+m
+p
+l
+e
+M
+e
+a
+n
+=
+T
+o
+t
+a
+l
+V
+a
+l
+u
+e
+/
+E
+x
+p
+o
+s
+u
+r
+e
+s
+DataMean = SampleMean = TotalValue / Exposures
+D
+a
+t
+a
+M
+e
+an
+=
+S
+am
+pl
+e
+M
+e
+an
+=
+T
+o
+t
+a
+l
+Va
+l
+u
+e
+/
+E
+x
+p
+os
+u
+res
+CUPED may affect the exact computation of these results. To learn more, read
+Covariate adjustment and CUPED methodology
+.
+Data weight
+The precision weight is given by:
+W
+e
+i
+g
+h
+t
+=
+D
+a
+t
+a
+M
+e
+a
+n
+P
+r
+e
+c
+i
+s
+i
+o
+n
+D
+a
+t
+a
+M
+e
+a
+n
+P
+r
+e
+c
+i
+s
+i
+o
+n
++
+P
+r
+i
+o
+r
+P
+r
+e
+c
+i
+s
+i
+o
+n
+\begin{aligned} Weight = \frac{DataMeanPrecision} {DataMeanPrecision + PriorPrecision} \end{aligned}
+W
+e
+i
+g
+h
+t
+=
+D
+a
+t
+a
+M
+e
+an
+P
+rec
+i
+s
+i
+o
+n
++
+P
+r
+i
+or
+P
+rec
+i
+s
+i
+o
+n
+D
+a
+t
+a
+M
+e
+an
+P
+rec
+i
+s
+i
+o
+n
+​
+​
+​ This represents the proportion of the total precision due to the data mean. However, the precision is defined differently depending on the statistical model used.
+There are two statistical models for estimating the posterior mean of experiment metrics:
+Normal-normal model
+: This model has a normal prior and a normal likelihood, and is used for numeric metrics.
+Beta-binomial model
+: This model has a beta prior distribution and a binomial likelihood, and is used for binary metrics when
+CUPED
+is not applied.
+For the normal-normal model, precision is defined as the inverse of the variance, so that the precision weight is:
+W
+e
+i
+g
+h
+t
+=
+1
+/
+D
+a
+t
+a
+M
+e
+a
+n
+V
+a
+r
+i
+a
+n
+c
+e
+1
+/
+D
+a
+t
+a
+M
+e
+a
+n
+V
+a
+r
+i
+a
+n
+c
+e
++
+1
+/
+P
+r
+i
+o
+r
+V
+a
+r
+i
+a
+n
+c
+e
+\begin{aligned} Weight = \frac{1 / DataMeanVariance} {1 / DataMeanVariance + 1 / PriorVariance} \end{aligned}
+W
+e
+i
+g
+h
+t
+=
+1/
+D
+a
+t
+a
+M
+e
+anVa
+r
+ian
+ce
++
+1/
+P
+r
+i
+or
+Va
+r
+ian
+ce
+1/
+D
+a
+t
+a
+M
+e
+anVa
+r
+ian
+ce
+​
+​
+For the beta-binomial model, precision is defined as the number of units for the data sample and the number of pseudo-units for the beta prior distribution. You can consider the
+α
+p
+r
+i
+o
+r
+\alpha_{prior}
+α
+p
+r
+i
+or
+​
+and
+β
+p
+r
+i
+o
+r
+\beta_{prior}
+β
+p
+r
+i
+or
+​
+parameters of the beta prior distribution as, respectively, the number of converted pseudo-units and the number of non-converted pseudo-units, so that the number of pseudo-units for the prior distribution is
+α
+p
+r
+i
+o
+r
++
+β
+p
+r
+i
+o
+r
+\alpha_{prior} + \beta_{prior}
+α
+p
+r
+i
+or
+​
++
+β
+p
+r
+i
+or
+​
+. If we denote by
+n
+n
+n
+the number of units in the data sample, then the precision weight is given by:
+W
+e
+i
+g
+h
+t
+=
+n
+n
++
+α
+p
+r
+i
+o
+r
++
+β
+p
+r
+i
+o
+r
+\begin{aligned} Weight = \frac{n}{n + \alpha_{prior} + \beta_{prior}} \end{aligned}
+W
+e
+i
+g
+h
+t
+=
+n
++
+α
+p
+r
+i
+or
+​
++
+β
+p
+r
+i
+or
+​
+n
+​
+​
+Details of our Bayesian approach
+The Bayesian approach to analysis involves two steps:
+Incorporating a subjective prior belief about parameters of interest, usually means, plus objective data collected during the experiment to create
+posterior distributions
+for each variation representing our current knowledge about what values those parameters are likely to take.
+Using that posterior distribution to compute helpful statistical measures that aid in
+making a decision
+about what action to take. For example, ship the treatment, don’t ship the treatment, and so on.
+The most complicated part of the setup involves creating the posterior distribution because it involves fine parameter tuning and different treatments for different types of metrics. After we compute these distributions, we indicate them to you on the results page using these summaries:
+Credible intervals that convey the
+spread
+of the posterior distribution, which represents the range of likely values for the true mean of the variation
+Posterior means that convey the
+center
+of the posterior distribution, which represents our current best estimate of the true mean
+After the posterior distribution is created, then it is a relatively simple procedure to compute the statistics we display on the results page to help you make a decision. To learn more about these results, read
+Results table data
+.
+Below we dive into detail on how we accomplish these two steps.
+Calculating posterior distributions
+At LaunchDarkly, we use different statistical models for binary data and numeric data. In both cases, we use conjugate distributions, meaning that the family of the prior distribution is the same as the family of the posterior distribution:
+For binary metrics, we start with a Beta distribution for the prior and update that into another Beta distribution for the posterior
+For numeric metrics, we start with a Normal distribution for the prior and update that into another Normal distribution for the posterior
+We give some technical details on the exact specification of the priors below, as well as some closed-form expressions for the posterior distributions once data is incorporated.
+Binary data
+Binary metrics are also called “occurrence” metrics in LaunchDarkly. That is, binary metrics result in either a 0 or a 1 recorded for each context in the experiment. For more information, read
+Custom conversion binary metrics
+.
+The natural approach for binary data is to use a Binomial likelihood function with a Beta prior, which results in another Beta distribution for the posterior.
+Suppose that
+y
+ˉ
+v
+\bar{y}_v
+y
+ˉ
+​
+v
+​
+is the proportion of the
+N
+v
+N_v
+N
+v
+​
+units in variation
+v
+v
+v
+that are converted. Then a total of
+N
+v
+y
+ˉ
+v
+N_{v} \bar{y}_v
+N
+v
+​
+y
+ˉ
+​
+v
+​
+units converted, and
+N
+v
+(
+1
+−
+y
+ˉ
+v
+)
+N_{v} (1 - \bar{y}_v)
+N
+v
+​
+(
+1
+−
+y
+ˉ
+​
+v
+​
+)
+units did not convert.
+Numeric data
+Although numeric data can take a variety of forms and be modeled by many different kinds of probability distributions, we can use a simplified approach that leverages the central limit theorem.
+Because the quantity of interest is usually some unknown population mean which is estimated by the sample mean, we can have reasonably high confidence that the normal distribution will be a good fit for the likelihood of the sample mean as we collect more and more data:
+f
+l
+i
+k
+e
+(
+y
+ˉ
+v
+∣
+μ
+v
+)
+=
+N
+o
+r
+m
+a
+l
+(
+μ
+v
+,
+σ
+2
+/
+N
+v
+)
+\begin{aligned} f_{\mathrm{like}}(\bar{y}_v | \mu_v) = \mathsf{Normal}(\mu_v, \sigma^2 / N_v) \end{aligned}
+f
+like
+​
+(
+y
+ˉ
+​
+v
+​
+∣
+μ
+v
+​
+)
+=
+Normal
+(
+μ
+v
+​
+,
+σ
+2
+/
+N
+v
+​
+)
+​
+To further simplify the model, we treat the variance parameter as known and use the natural plug-in estimate, the sample variance computed from the data. As sample sizes increase, this plug-in estimate is guaranteed to converge to the true variance.
+To complete the model, we need to specify a prior distribution for
+μ
+v
+\mu_v
+μ
+v
+​
+. For the control variation, we use an improper non-informative prior
+f
+p
+r
+i
+o
+r
+(
+μ
+0
+)
+∝
+1
+f_{\mathrm{prior}}(\mu_0) \propto 1
+f
+prior
+​
+(
+μ
+0
+​
+)
+∝
+1
+. For the other variations, we use priors that shrink the results towards the control variation’s mean. We generate this prior from the empirical distribution of relative differences between variations in all experiments on our platform using metrics of the same type (numeric or conversion) and aggregation function (average or sum).
+The equation for this prior is:
+f
+p
+r
+i
+o
+r
+(
+μ
+v
+)
+=
+N
+o
+r
+m
+a
+l
+(
+a
+v
+,
+w
+v
+2
+)
+,
+a
+v
+=
+y
+ˉ
+0
+,
+w
+v
+2
+=
+y
+ˉ
+0
+2
+γ
+^
+2
++
+σ
+^
+0
+2
+/
+N
+0
+\begin{aligned} f_{\mathrm{prior}}(\mu_v) &= \mathsf{Normal}(a_v, w_v^2), \\ a_v &= \bar{y}_0, \\ w_v^2 &= \bar{y}_0^2 \hat{\gamma}^2 + \hat{\sigma}_0^2 / N_0 \end{aligned}
+f
+prior
+​
+(
+μ
+v
+​
+)
+a
+v
+​
+w
+v
+2
+​
+​
+=
+Normal
+(
+a
+v
+​
+,
+w
+v
+2
+​
+)
+,
+=
+y
+ˉ
+​
+0
+​
+,
+=
+y
+ˉ
+​
+0
+2
+​
+γ
+^
+​
+2
++
+σ
+^
+0
+2
+​
+/
+N
+0
+​
+​
+where
+γ
+^
+2
+\hat{\gamma}^2
+γ
+^
+​
+2
+is the variance of the distribution of observed relative differences (
+(
+y
+ˉ
+v
+−
+y
+ˉ
+0
+)
+/
+y
+ˉ
+0
+(\bar{y}_v - \bar{y}_0) / \bar{y}_0
+(
+y
+ˉ
+​
+v
+​
+−
+y
+ˉ
+​
+0
+​
+)
+/
+y
+ˉ
+​
+0
+​
+) across all experiments with numeric metrics on the platform. The first term,
+y
+ˉ
+0
+2
+γ
+^
+2
+\bar{y}_0^2 \hat{\gamma}^2
+y
+ˉ
+​
+0
+2
+​
+γ
+^
+​
+2
+, scales the expected relative difference by the observed control mean. The second term,
+σ
+^
+0
+2
+/
+N
+0
+\hat{\sigma}_0^2 / N_0
+σ
+^
+0
+2
+​
+/
+N
+0
+​
+, accounts for the uncertainty in our estimate of the control mean. The value of
+γ
+^
+2
+\hat{\gamma}^2
+γ
+^
+​
+2
+is between 0.13 and 0.19, conditional on the type of the metric.
+Combining the likelihood and prior provides the posterior distribution of
+μ
+v
+\mu_v
+μ
+v
+​
+, which represents our beliefs about
+μ
+v
+\mu_v
+μ
+v
+​
+after
+observing the data from the experiment.
+Given the normal likelihood and prior, the posterior distribution is also a normal distribution with the following parameters:
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+=
+N
+o
+r
+m
+a
+l
+(
+α
+v
+,
+ω
+v
+2
+)
+,
+α
+v
+=
+ω
+v
+2
+(
+N
+v
+σ
+^
+v
+2
+y
+ˉ
+v
++
+1
+w
+v
+2
+a
+v
+)
+,
+ω
+v
+2
+=
+(
+1
+w
+v
+2
++
+N
+v
+σ
+^
+v
+2
+)
+−
+1
+\begin{aligned} f_{\mathrm{post}}(\mu_v) &= \mathsf{Normal}(\alpha_v, \omega_v^2) , \\ \alpha_v &= \omega_v^2 \left(\frac{N_v}{\hat{\sigma}_v^2} \bar{y}_v + \frac{1}{w_v^2} a_v \right) , \\ \omega_v^2 &= \left(\frac{1}{w_v^2} + \frac{N_v}{\hat{\sigma}^2_v} \right)^{-1} \end{aligned}
+f
+post
+​
+(
+μ
+v
+​
+)
+α
+v
+​
+ω
+v
+2
+​
+​
+=
+Normal
+(
+α
+v
+​
+,
+ω
+v
+2
+​
+)
+,
+=
+ω
+v
+2
+​
+(
+σ
+^
+v
+2
+​
+N
+v
+​
+​
+y
+ˉ
+​
+v
+​
++
+w
+v
+2
+​
+1
+​
+a
+v
+​
+)
+,
+=
+(
+w
+v
+2
+​
+1
+​
++
+σ
+^
+v
+2
+​
+N
+v
+​
+​
+)
+−
+1
+​
+The experiment results page displays the posterior distributions of each variation’s mean (
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+f_{\mathrm{post}}(\mu_v)
+f
+post
+​
+(
+μ
+v
+​
+)
+) in the
+probability charts
+.
+We use the expected value of the posterior distribution as a point estimate for
+μ
+v
+\mu_v
+μ
+v
+​
+,
+μ
+^
+v
+=
+E
+[
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+]
+=
+α
+v
+\hat{\mu}_v = \mathbb{E}[f_{\mathrm{post}}(\mu_v)] = \alpha_v
+μ
+^
+​
+v
+​
+=
+E
+[
+f
+post
+​
+(
+μ
+v
+​
+)]
+=
+α
+v
+​
+Conversion metrics
+Conversion metrics use binary data. We use a Binomial likelihood function with a Beta prior, which results in another Beta distribution for the posterior.
+Suppose that
+y
+ˉ
+v
+\bar{y}_v
+y
+ˉ
+​
+v
+​
+is the proportion of the
+N
+v
+N_v
+N
+v
+​
+units in variation
+v
+v
+v
+that are converted. Then a total of
+N
+v
+y
+ˉ
+v
+N_{v} \bar{y}_v
+N
+v
+​
+y
+ˉ
+​
+v
+​
+units converted, and
+N
+v
+(
+1
+−
+y
+ˉ
+v
+)
+N_{v} (1 - \bar{y}_v)
+N
+v
+​
+(
+1
+−
+y
+ˉ
+​
+v
+​
+)
+units did not convert.
+To model the total number of conversions (
+N
+v
+y
+ˉ
+v
+N_{v} \bar{y}_v
+N
+v
+​
+y
+ˉ
+​
+v
+​
+), we use a binomial distribution with proportion parameter
+μ
+v
+\mu_v
+μ
+v
+​
+and size
+N
+v
+N_v
+N
+v
+​
+as the likelihood function:
+f
+l
+i
+k
+e
+(
+N
+v
+y
+ˉ
+v
+)
+=
+B
+i
+n
+o
+m
+i
+a
+l
+(
+N
+v
+,
+μ
+v
+)
+\begin{aligned} f_{\mathrm{like}}(N_v \bar{y}_v) &= \mathsf{Binomial}(N_v, \mu_v) \end{aligned}
+f
+like
+​
+(
+N
+v
+​
+y
+ˉ
+​
+v
+​
+)
+​
+=
+Binomial
+(
+N
+v
+​
+,
+μ
+v
+​
+)
+​
+We use a Beta distribution as the prior for
+μ
+v
+\mu_v
+μ
+v
+​
+,
+f
+p
+r
+i
+o
+r
+(
+μ
+v
+)
+=
+B
+e
+t
+a
+(
+a
+v
+,
+b
+v
+)
+\begin{aligned} f_{\mathrm{prior}}(\mu_v) &= \mathsf{Beta}(a_v, b_v) \end{aligned}
+f
+prior
+​
+(
+μ
+v
+​
+)
+​
+=
+Beta
+(
+a
+v
+​
+,
+b
+v
+​
+)
+​
+The values of the prior hyperparameters
+a
+v
+a_v
+a
+v
+​
+and
+b
+v
+b_v
+b
+v
+​
+differ between the control (
+v
+=
+0
+v = 0
+v
+=
+0
+) and treatment variations (
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+). For the control variation (
+v
+=
+0
+v = 0
+v
+=
+0
+), we use a distribution with
+a
+0
+=
+1
+a_0 = 1
+a
+0
+​
+=
+1
+and
+b
+0
+=
+1
+b_0 = 1
+b
+0
+​
+=
+1
+. For the treatment variations (
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+), we use a prior similar to the one used for numeric metrics. The prior for treatment variations is a Beta distribution with hyperparameters
+a
+v
+a_v
+a
+v
+​
+,
+b
+v
+b_v
+b
+v
+​
+parameters such that its expected value and variance are:
+E
+[
+f
+p
+r
+i
+o
+r
+(
+μ
+v
+)
+]
+=
+y
+ˉ
+0
+,
+V
+a
+r
+(
+f
+p
+r
+i
+o
+r
+(
+μ
+v
+)
+)
+=
+y
+ˉ
+0
+2
+γ
+^
+2
++
+y
+ˉ
+0
+(
+1
+−
+y
+ˉ
+0
+)
+N
+0
+\begin{aligned} \mathbb{E}[f_{\mathrm{prior}}(\mu_v)] &= \bar{y}_0, \\ \mathrm{Var}(f_{\mathrm{prior}}(\mu_v)) &= \bar{y}_0^2 \hat{\gamma}^2 + \frac{\bar{y}_0 (1 - \bar{y}_0)}{N_0} \end{aligned}
+E
+[
+f
+prior
+​
+(
+μ
+v
+​
+)]
+Var
+(
+f
+prior
+​
+(
+μ
+v
+​
+))
+​
+=
+y
+ˉ
+​
+0
+​
+,
+=
+y
+ˉ
+​
+0
+2
+​
+γ
+^
+​
+2
++
+N
+0
+​
+y
+ˉ
+​
+0
+​
+(
+1
+−
+y
+ˉ
+​
+0
+​
+)
+​
+​
+The value of
+γ
+2
+\gamma^2
+γ
+2
+is the variance of the empirical distribution of relative differences of experiments using a binary metric, and is currently set to
+γ
+2
+≈
+0.04
+\gamma^2 \approx 0.04
+γ
+2
+≈
+0.04
+.
+The posterior distribution of
+μ
+v
+\mu_v
+μ
+v
+​
+is also a Beta distribution:
+f
+p
+o
+s
+t
+(
+μ
+v
+∣
+y
+ˉ
+v
+,
+N
+v
+)
+=
+B
+e
+t
+a
+(
+a
+v
++
+N
+v
+y
+ˉ
+v
+,
+b
+v
++
+N
+v
+(
+1
+−
+y
+ˉ
+v
+)
+)
+\begin{aligned} f_{\mathrm{post}}(\mu_v | \bar{y}_v, N_v) &= \mathsf{Beta}(a_v + N_v \bar{y}_v, b_v + N_v (1 - \bar{y}_v)) \end{aligned}
+f
+post
+​
+(
+μ
+v
+​
+∣
+y
+ˉ
+​
+v
+​
+,
+N
+v
+​
+)
+​
+=
+Beta
+(
+a
+v
+​
++
+N
+v
+​
+y
+ˉ
+​
+v
+​
+,
+b
+v
+​
++
+N
+v
+​
+(
+1
+−
+y
+ˉ
+​
+v
+​
+))
+​
+The expected value of this distribution is our preferred point estimate of
+μ
+v
+\mu_v
+μ
+v
+​
+:
+μ
+^
+v
+=
+E
+[
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+]
+=
+a
+v
++
+N
+v
+y
+ˉ
+v
+a
+v
++
+b
+v
++
+N
+v
+\hat{\mu}_v = \mathbb{E}[f_{\mathrm{post}}(\mu_v)] = \frac{a_v + N_v \bar{y}_v}{a_v + b_v + N_v}
+μ
+^
+​
+v
+​
+=
+E
+[
+f
+post
+​
+(
+μ
+v
+​
+)]
+=
+a
+v
+​
++
+b
+v
+​
++
+N
+v
+​
+a
+v
+​
++
+N
+v
+​
+y
+ˉ
+​
+v
+​
+​
+The experiment result table displays the value of
+μ
+^
+v
+\hat{\mu}_v
+μ
+^
+​
+v
+​
+in the
+Posterior mean column
+.
+As with numeric metrics, we use the highest density interval for the
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+credible interval of
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+f_{\mathrm{post}}(\mu_v)
+f
+post
+​
+(
+μ
+v
+​
+)
+The experiment results table displays the
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+credible interval of
+μ
+^
+v
+\hat{\mu}_v
+μ
+^
+​
+v
+​
+in the
+Conversion rate column
+.
+To calculate the relative difference in means between each variation and the control variation (
+%
+Δ
+v
+,
+0
+\%\Delta_{v,0}
+%
+Δ
+v
+,
+0
+​
+for all
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+), we use the same method as for numeric metrics after transforming the posterior distributions of the means to normal distributions by matching the expected values and variances.
+The experiment results table displays the
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+credible interval of the relative difference in means between each variation and the control variation (
+%
+Δ
+v
+,
+0
+\%\Delta_{v,0}
+%
+Δ
+v
+,
+0
+​
+for all
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+) in the column
+Relative difference from Control
+.
+Computing relative differences, probabilities, and expected loss
+Next, we discuss how we compute relative differences, probability to be best, and expected loss.
+Relative differences and their credible intervals
+We estimate the
+relative difference in means
+between two variations. We define the relative difference in the means of variations
+v
+v
+v
+and
+w
+w
+w
+as a parameter
+%
+Δ
+v
+,
+w
+=
+(
+μ
+v
+−
+μ
+w
+)
+/
+μ
+w
+\%\Delta_{v,w} = (\mu_v - \mu_w) / \mu_w
+%
+Δ
+v
+,
+w
+​
+=
+(
+μ
+v
+​
+−
+μ
+w
+​
+)
+/
+μ
+w
+​
+. The relative difference in the means
+%
+Δ
+v
+,
+w
+\%\Delta_{v,w}
+%
+Δ
+v
+,
+w
+​
+also has a posterior distribution. To derive the posterior distribution of
+%
+Δ
+v
+,
+w
+\%\Delta_{v,w}
+%
+Δ
+v
+,
+w
+​
+, we apply the delta method to
+μ
+v
+\mu_v
+μ
+v
+​
+and
+μ
+w
+\mu_w
+μ
+w
+​
+,
+f
+p
+o
+s
+t
+(
+%
+Δ
+v
+,
+w
+)
+≈
+N
+o
+r
+m
+a
+l
+(
+α
+v
+/
+α
+0
+−
+1
+,
+α
+v
+2
+α
+0
+2
+(
+ω
+v
+2
+α
+v
+2
++
+ω
+0
+2
+α
+0
+2
+)
+)
+f_{\mathrm{post}}\left(\%\Delta_{v,w}\right) \approx \mathsf{Normal}\left(\alpha_v / \alpha_0 - 1, \frac{\alpha_v^2}{\alpha_0^2} \left( \frac{\omega^2_v}{\alpha_v^2} + \frac{\omega_0^2}{\alpha_0^2} \right) \right)
+f
+post
+​
+(
+%
+Δ
+v
+,
+w
+​
+)
+≈
+Normal
+(
+α
+v
+​
+/
+α
+0
+​
+−
+1
+,
+α
+0
+2
+​
+α
+v
+2
+​
+​
+(
+α
+v
+2
+​
+ω
+v
+2
+​
+​
++
+α
+0
+2
+​
+ω
+0
+2
+​
+​
+)
+)
+Díaz-Francés (2013) show that the approximation we use for the ratio of means holds under reasonable assumptions; you can read more at
+“On the existence of a normal approximation to the distribution of the ratio of two independent normal random variables”
+.
+As with the mean of the metric for a single variation, we use the
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+highest density interval for
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+credible interval. The experiment results table displays the
+(
+1
+−
+α
+)
+×
+100
+%
+(1-\alpha) \times 100 \%
+(
+1
+−
+α
+)
+×
+100%
+credible interval of the relative difference in means between each variation and the control variation (
+%
+Δ
+v
+,
+0
+\%\Delta_{v,0}
+%
+Δ
+v
+,
+0
+​
+for all
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+) in the column
+Relative difference from Control
+.
+Probability to be best
+For both numeric and conversion metrics, LaunchDarkly calculates the
+probability to be best
+for each variation.
+The probability to be best is the probability that the mean value per unit of a variation is the largest of all the variations if the success direction is positive. If the success direction is negative, then the probability to be best is the probability that the mean value per unit of a variation is the smallest of all the variations. The success direction is positive when the metric’s
+success criterion
+is “Higher is better,” and negative when it is “Lower is better.” LaunchDarkly calculates the probability to be best for each variation by taking samples from the posterior distributions of the
+μ
+v
+\mu_v
+μ
+v
+​
+‘s. The proportion of samples in which a variation is the largest, or smallest if the success direction is negative, is the probability to be best for that variation.
+LaunchDarkly defines the probability to beat baseline only for treatment variations. Probability to beat baseline is the probability that the mean value per unit for a variation is larger than that of the control variation, if the success direction is positive. LaunchDarkly calculates it in a similar fashion to the probability to be best.
+In the case where there are only two variations (
+v
+v
+v
+and
+w
+w
+w
+) and the success direction of the metric is positive, the probability to be best for variation
+v
+v
+v
+is the probability that the difference in means
+Δ
+v
+,
+w
+=
+μ
+v
+−
+μ
+w
+\Delta_{v,w} = \mu_v - \mu_w
+Δ
+v
+,
+w
+​
+=
+μ
+v
+​
+−
+μ
+w
+​
+is greater than zero.
+Expected loss
+Ideally, shipping a winning variation would carry no risk. In reality, the probability for a treatment variation to beat the control variation is rarely 100%. This means there’s always some chance that a “winning” variation might not be an improvement over the control variation. To manage this risk, we measure it using a quantity called “expected loss.”
+Expected loss represents the average potential downside of shipping a variation, quantifying how much one could expect to lose if it underperforms relative to the control variation. LaunchDarkly calculates this by integrating probability-weighted losses across all scenarios in which a given variation performs worse than control, with loss defined as the absolute difference between them.
+A lower expected loss indicates lower risk, making it an important factor in choosing which variation to launch. The treatment variation with the highest probability to be best among those with a significant probability to beat control is generally considered the winner, but evaluating its expected loss clarifies the associated risk of implementing it.
+For example, if you’re measuring conversion rate and have a winning variation with a 96% probability to beat control and an expected loss of 0.5%, this means there’s a strong likelihood of 96% that the winning variation will outperform the control variation. However, the 0.5% expected loss indicates that, on average, you’d expect a small 0.5% decrease in conversion rate if the winning variation were to underperform.
+Expected loss does not display for
+percentile metrics
+.
+Conclusion
+This guide explained the statistical methods LaunchDarkly applies to Bayesian experiments. To learn about frequentist statistical methods in LaunchDarkly, read
+Statistical methodology for frequentist experiments
+.
+Want to know more? Start a trial.
+Your 14-day trial begins as soon as you sign up. Get started in minutes using the in-app Quickstart. You’ll discover how easy it is to release, monitor, and optimize your software.
+Want to try it out?
+Start a trial
+.
+Was this page helpful?
+Yes
+No
+Previous
+Statistical methodology for frequentist experiments
+Next
+Built with

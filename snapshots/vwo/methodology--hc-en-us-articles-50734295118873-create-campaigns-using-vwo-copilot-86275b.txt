@@ -1,0 +1,287 @@
+# https://help.vwo.com/hc/en-us/articles/50734295118873-Create-Campaigns-using-VWO-Copilot
+Generate Campaigns using Wandz – Wingify
+Knowledge Base
+Start Free trial
+Wingify
+Web Experimentation
+Campaign Configuration
+Articles in this section
+Monitor and Manage Campaigns from the Campaign Listing Page
+Campaign State Lifecycle in Wingify
+Generate Campaigns using Wandz
+Create a Campaign in Wingify
+Set Up Pages for Your Campaign
+Create and Configure Variations and Traffic
+Set Up Metrics for Your Campaign
+Configure Targeting and Triggers
+Configure Advanced Campaign Configurations
+Preview Test Variations in Wingify
+See more →
+Generate Campaigns using Wandz
+Shweta Ajwani
+Updated
+July 20, 2026 03:45
+Share:
+Facebook
+Twitter
+LinkedIn
+close this to read article
+Feature Availability
+: This feature is available with Wingify Web Experimentation and Web Rollouts on the Pro and Enterprise plans.
+This article covers the following:
+Overview
+Create Campaigns using Wandz
+Limitations
+Troubleshooting
+FAQs
+Overview
+Wandz is an AI-powered assistant that allows you to quickly generate a campaign using plain, natural language prompts. Instead of manually setting up every campaign element (changes, metrics, target audience), you can simply describe what you want. The key advantage of this feature is that it can break down and implement multiple changes and actions through a single prompt.
+For example
+, you are running a travel website and want to optimize the homepage design to encourage more bookings. You can use the prompt:
+“Change the homepage banner text to ‘Book Your Dream Vacation Today’, make the Call-to-Action button green, track clicks on the ‘Get Started’ button, and target visitors from the United States who are browsing on mobile devices.”
+Wandz interprets these instructions, applies the changes, configures the tracking, and sets up the audience targeting for you. You can then review, edit, and finalize the changes. Once you accept the changes, Wingify creates a complete campaign with pre-filled details.
+Some of the key features and benefits of this feature include:
+Rapid Experiment Setup
+- Users can describe campaign changes in plain language instead of manually configuring them and quickly create campaigns.
+Marketing Agility
+- Enable non-technical teams to implement visual and behavioral changes using descriptive language.
+Pre-generated Ideas
+- Based on your URL, Wandz suggests optimization ideas. Apply these ideas directly and let Wandz automatically determine the corresponding changes and tracking.
+This article further explains how to set up a campaign within minutes using the
+Create with Wandz
+feature.
+Important
+: Wingify uses state-of-the-art AI models from providers such as Google and OpenAI to power this functionality. Your visitor data is never accessed or processed. Campaign generation is based solely on your prompts and does not rely on visitor information.
+Create Campaigns using Wandz
+With Wandz, you can create both A/B test campaigns and Web Rollout campaigns. The following steps explain how to create an A/B test using Wandz. To create a web rollout campaign, navigate to
+Web Rollouts
+from your Wingify dashboard and follow the same procedure.
+Log in to your Wingify account.
+From the navigation menu on your dashboard, click
+Web Experimentation
+.
+On the top-right corner of the page, click
+Create
+and select
+Create with Wandz
+from the dropdown.
+In the modal that appears, enter the URL of the page you want to optimize. If a registered URL is already available, the field will be auto-populated. To update it, click and edit the URL.
+Enter a prompt describing the changes you want to implement, the metrics to track, and the audience to target. Be as specific as possible for accurate results. You can provide instructions by typing them directly or by using the mic icon to record your input. Once you stop recording, Wandz transcribes your speech into text.
+To refine your input, click the wand icon. Wandz generates three improved versions of your prompt, ranging from clear and concise to creative and expressive. Review the suggestions, choose the one that best matches your intent, and click
+Apply Prompt
+.
+Alternatively, Wingify will suggest three pre-generated ideas based on the URL you provide. If you find an idea useful, click it to implement and proceed to Step 9. If you do not want to use the suggested ideas, click
+View All Ideas
+. This option takes you to the
+Wingify Ideas
+page, which lists all ideas associated with the pre-defined goal. Select the idea you want to implement and proceed to the next step.
+Click
+One-Click Setup via Wandz
+.
+The
+Review One-click Setup
+pop-up appears. It displays a summary of the campaign that Wingify Wandz will create. To modify any part of the configuration, click
+Edit Configuration
+. For example, you can add additional pages or refine the target audience. You can also use natural language to update the changes, metrics, target pages, or audience.
+After completing your edits and review, click
+Continue with Wandz
+. A progress modal appears. Simultaneously, the Wingify Editor opens in a new browser tab. A progress modal shows Wingify Wandz setting up the campaign, configuring pages, identifying metrics, and generating variations.
+Note
+:
+The campaign setup runs through multiple automated steps. If any step fails (for example, generating a variation), the campaign setup process stops. In this case, a red cross icon appears next to the failed step in the progress pop-up, and a partially created campaign may exist in Wingify. To proceed, close the progress modal and go to the Wingify Editor to manually complete the setup.
+The progress modal in the first tab remains open until you close it manually. It auto-closes once you accept and save the changes in the editor (that opens in a new browser tab). If you close the modal before completion, it stops and cancels the automated campaign creation. Once all the steps in the setup are complete, Wingify implements the changes in the Wingify Editor and generates the variation for the idea. Review the suggestions and update the configuration if needed.
+Use the following commands on the taskbar at the bottom of the page to review and update the changes:
+Changes (x)
+- Shows the number of changes Wandz has generated based on your prompt. Clicking it will highlight the edits in the editor (for example,
+updated banner text
+,
+button color change
+).
+Metrics (y)
+- Displays the metrics Wandz has added. In this example, it is
+tracking button clicks
+. Clicking it will highlight the element on which events are being tracked.
+Edit ()
+- Lets you manually edit the currently selected change. For example, if Wandz changed a headline, you can refine the text here.
+Navigation Controls (1/2, Next, Back arrows)
+-
+1/2
+shows that you are reviewing the first of two sets of changes.
+Next >
+lets you move to the next change.
+Back <
+lets you return to the previous one.
+Unapply (revert/undo icon)
+- Temporarily turns off the currently selected change in review mode. Use it when a suggested edit doesn’t look right, but you don’t want to delete it. The change stays listed under
+Changes
+; you can reapply it later by selecting the change again (or editing with Wandz).
+Note:
+The pending total in
+Accept All (n) and Save
+for this session decreases when you click Unapply.
+Exit Editor ()
+- Closes the review/editor mode without saving. Any unapplied or pending changes will be discarded. Use this to cancel the Wandz session and return to the campaign dashboard.
+Click
+Accept all (n) & Save
+to confirm the changes. The editor tab closes automatically, and you are redirected to the previous tab. The progress pop-up in this tab closes, and you are taken to the summary page of the newly created A/B test campaign, which is ready for final review and launch.
+Wingify recommends always reviewing before launching. Even when using the automated campaign creation setup, take a moment to review the final campaign summary. Ensure the target pages, audience segmentation, and goals are exactly what you intended.
+Click
+Start Test
+to launch the test and start collecting data.
+For more information on how to run a successful A/B test campaign and use the insights to improve your website's conversion rate, see our
+Wingify Web Experimentation Help
+.
+Limitations
+Wandz cannot modify elements that appear only after user interaction. For example, if you instruct Wandz to
+“Show a tooltip when the user clicks the pricing icon and then update the CTA text inside it,”
+the interdependency may not resolve automatically, and you may need to adjust it in the editor.
+Wandz does not support multi-page changes in a single prompt. For example, if you prompt,
+“Update the text on the homepage banner and also change the color of the checkout button,”
+Wandz will only apply changes to one page. You must use separate prompts for the homepage and the checkout page.
+Wandz for web rollouts does not support automatic metric setup. You must manually configure metrics in the web rollout campaign after Wandz creates the changes.
+Troubleshooting
+Issue
+Cause
+Solution
+Prompt generates unintended changes (wrong element targeted).
+Wandz relies on element selectors and may misinterpret vague descriptions (for example, change the button color when multiple buttons exist).
+Identify the button by its text or position (for example, Change the ‘Subscribe’ button to red). Use the Wingify Editor to verify the targeted element.
+Wandz created my campaign, but the variation in the Wingify editor doesn't look right.
+While the AI is highly accurate, complex page structures can sometimes lead to unintended visual changes.
+The campaign and variation are fully editable. Simply open the campaign from the A/B test dashboard or launch the variation in the Wingify Editor and make any necessary manual adjustments to the campaign or variation.
+Progress modal freezes without errors.
+A background step may have stalled (for example, script injection or variation generation timed out).
+Refresh the tab, then open the Wingify Editor. If a partial campaign exists, complete the setup manually.
+FAQs
+I clicked "Accept all (n) & Save." Will my test go live immediately?
+No. The Wandz campaign creation setup always creates the campaign in a draft state. It will then take you to the
+Configuration Summary
+page, where you have the final say. You must review all the settings and click
+Start Test
+yourself. You always remain in complete control of when a test goes live.
+How many changes can I request in a single prompt?
+There is no strict limit, but for best results, keep prompts short and focused (1 to 3 related changes). Longer or complex prompts increase the chance of errors.
+Is there a limit to how many Wandz campaigns I can create?
+You can create as many Wandz campaigns as you like. We operate under a fair usage policy, and while there may be backend safeguards to prevent abuse, these are not intended to limit normal usage.
+Need more help?
+For further assistance or more information, contact
+Wingify Support
+.
+Was this article helpful?
+0 out of 0 found this helpful
+Return to top
+Related articles
+Create a Campaign in Wingify
+Generate Campaigns using Wandz
+Integrate Wingify with Google Tag Manager
+Fastrack Your Campaign Pages Configuration With Wingify Pages Copilot
+Introduction to Multivariate Testing
+×
+We're sorry to know about your experience. Please let us know what can we do to make this article more useful.
+A value for this field is required.
+Email
+A value for this field must be valid email.
+This allows us to keep you informed on the status of your feedback. When collecting this information, we adhere to the Privacy Policy outlined
+here
+.
+Submit
+No thanks
+Thank you for your feedback.
+There is some technical error. Please try after some time or contact us at
+support@vwo.com
+Footer Navigation
+Popular
+In-depth
+Guides
+A/B Testing
+Cart Abandonment
+Conversion Rate Optimization
+Customer Data Platform
+Customer Engagement
+Customer Experience Optimization
+Customer Retention
+Feature Rollout
+Grow Website Traffic
+Landing Page Optimization
+Mobile App A/B Testing
+Multivariate Testing
+Push Notifications
+Server-Side Testing
+Session Recording
+Usability Testing
+Visitor Behavior Analysis
+Web Form Analytics
+Website Heatmaps
+Website Optimization
+Website Personalization
+Website Redesign
+Website Surveys
+Products
+VWO Testing
+VWO Insights
+VWO Data360
+VWO Personalize
+VWO Plan
+VWO Web Rollouts
+Compare
+VWO vs. Optimizely
+VWO vs. Google Optimize
+Google Optimize vs. Optimizely
+Google Optimize 360 vs. Optimizely
+Adobe Target vs. Google Optimize
+Google Optimize vs. Optimize 360
+Google Optimize vs. Kameleoon
+Optimizely vs. Kameleoon
+Kameleoon vs. AB Tasty
+Kameleoon vs. Optimize 360
+AB Tasty vs. Optimize 360
+Resources
+Blog
+Product Updates
+Success Stories
+eBooks
+Webinars
+Events
+Glossary
+Inside VWO
+Masters of Conversion
+Popular In-Depth Guides
+Get Help
+Knowledge Base
+Free Tools
+A/B Test Significance Calculator
+A/B Test Sample Size Calculator
+A/B Test Duration Calculator
+Web Push ROI Calculator
+Cart Abandonment Calculator
+AI-Powered Heatmap Generator
+CRO Experimentation Checklist
+About Us
+Our Company
+Careers
+Media Kit
+VWO Partners
+Affiliate Program
+Contact Us
+©
+Copyright
+Wingify
+. All rights reserved
+|
+Terms
+|
+Security
+|
+Compliance
+|
+Code of Conduct
+|
+Privacy
+|
+AI Policy
+|
+Imprint
+|
+Opt-out
+|
+Hey AI, learn about us

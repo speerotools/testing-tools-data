@@ -1,0 +1,382 @@
+# https://varify.io/en/userdocumentation/server-side-a-b-testing
+Server-Side A/B Testing - Varify.io - A/B Testing Platform
+Skip to content
+Functions
+Pricing
+For agencies
+Company
+Login
+Try for free
+Get a demo
+EN
+Menu
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Live
+Success Stories
+Card Set
+EN
+Functions
+Pricing
+For agencies
+Company
+CRO Consulting
+About Varify
+Contact
+Blog
+Webinars
+Success Stories
+Card Set
+Try for free
+Get a demo
+General
+Competitor comparison
+Editor problems
+Create experiment
+Experiment start and playout
+Experts
+Get started
+Integrations
+User documentation
+Security
+Success Stories
+Targeting
+Tracking and evaluation
+Tracking evaluation
+Troubleshooting
+Visual editor
+Web analytics integrations
+Further contents
+Further integrations
+WordPress
+Search
+Popular keywords
+Support article
+Total
+Results
+No Record Found
+View All Results
+Server-side A/B testing
+Table of contents
+In short
+The server-side delivery API is aimed at in-house development teams who want to fully integrate A/B testing into their own infrastructure. Variants are assigned on the server side before the page is rendered and delivered - without any client-side JavaScript. This eliminates flickering, gives the development team full control over the implementation and makes testing possible in architectures where a classic client-side snippet does not work: Headless setups, server-side rendered applications or native mobile apps.
+How it works
+Create a new experiment in the Varify dashboard and select
+Server Side Experiment
+from.
+You will then find the experiment in the dashboard and from there you can control the traffic distribution and start the experiment. There you will also find the
+Experiment ID
+and the
+Variation IDs
+, that you need for integration.
+The integration runs via two API endpoints, which your development team integrates directly into the existing backend logic.
+1. create user
+POST /ss/{teamId}/users
+The first time a new visitor makes a request, a user is created via this endpoint. The API provides a
+userId
+(UUID), which your system must persist - for example in a cookie, a session or your database. This ID identifies the user for all future requests.
+Response example:
+{ "userId": "a9533ef0-bbc4-47a1-90b8-2f2d3bba43a3" }
+Call up 2nd variant
+GET /ss/{teamId}/experiments/{experimentId}/variations/{userId}
+With the saved
+userId
+Use the saved UUID to query the assigned variant for a specific experiment. If no variant has yet been assigned, it will be assigned automatically the first time it is called up. The assignment is deterministic - the same user always receives the same variant for the same experiment, regardless of how often the endpoint is called.
+Response example (user has been assigned a variant):
+{ "variation": 48838, "tracking": { "experiment": { "id": 32596, "name": "Homepage CTA Test" }, "variation": { "id": 48838, "name": "variation-1" } } }
+Response example (user receives the originals):
+{ "variation": null, "tracking": { "experiment": { "id": 32596, "name": "Homepage CTA Test" }, "variation": { "id": null, "name": null } } }
+The field
+variation
+contains either the
+ID of the assigned variation
+(e.g.
+48838
+) - you can find these IDs in the Varify dashboard - or
+null
+, if the user has the
+Original variant
+should see. The
+tracking
+-object with experiment context is returned in both cases.
+Your backend then uses the returned variation ID to decide which version of the page or content is rendered and delivered. To do this, map each variation ID to the corresponding rendering variant in your backend logic -
+null
+always means: show the original version.
+The experiment configuration itself - target groups, traffic distribution, start and stop - can still be conveniently managed in the Varify dashboard.
+Developer documentation
+The complete API reference (OpenAPI 3.1) with all endpoints, parameters and error codes for your development team:
+https://app.varify.io/ss/docs
+User documentation
+First steps
+How Varify.io works
+Varify Snippet - Implementation
+Set up tracking
+Start an A/A test and check the tracking
+Create experiment
+Chrome browser extension
+Best Practice
+CRO AI Audit
+Tracking & web analytics integrations
+Tracking with Varify
+Manual Google Tag Manager tracking integration
+Automatic GA4 tracking integration
+Create Custom Click Events
+Shopify Custom Pixel Integration via Google Tag Manager
+Shopify Tracking
+BigQuery
+PostHog evaluations
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+Consent - Tracking via Consent
+Advanced Settings
+Tracking with Varify
+Manual Google Tag Manager tracking integration
+Automatic GA4 tracking integration
+Create Custom Click Events
+Shopify Custom Pixel Integration via Google Tag Manager
+Shopify Tracking
+BigQuery
+PostHog evaluations
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+Consent - Tracking via Consent
+Advanced Settings
+Create experiment
+Create experiment
+Prompt Based Experiments (PBX)
+Quality assurance
+Start and stop experiments
+Time-controlled start and stop
+Redirect & Split URL Testing
+Duplicate variation
+Experiment with several variants
+Renaming experiments and variants
+Create multi-page experiment
+Create experiment
+Prompt Based Experiments (PBX)
+Quality assurance
+Start and stop experiments
+Time-controlled start and stop
+Redirect & Split URL Testing
+Duplicate variation
+Experiment with several variants
+Renaming experiments and variants
+Create multi-page experiment
+Targeting
+Audience Targeting
+Mutual exclusion of experiments
+Page targeting
+Audience Targeting
+Mutual exclusion of experiments
+Page targeting
+Reporting & evaluation
+Evaluate experiments in Varify.io
+Segment and filter reports
+Share report
+Audience-based evaluation in GA4
+Segment-based evaluation in GA 4
+BigQuery
+PostHog Tracking
+Exporting the experiment results from Varify
+Matomo - Results analysis
+etracker evaluation
+Calculate significance
+Evaluate custom events in explorative reports
+GA4 - Cross-Domain Tracking
+Evaluate experiments in Varify.io
+Segment and filter reports
+Share report
+Audience-based evaluation in GA4
+Segment-based evaluation in GA 4
+BigQuery
+PostHog Tracking
+Exporting the experiment results from Varify
+Matomo - Results analysis
+etracker evaluation
+Calculate significance
+Evaluate custom events in explorative reports
+GA4 - Cross-Domain Tracking
+Visual editor
+Campaign Booster: Arrow Up
+Campaign Booster: Exit Intent Layer
+Campaign Booster: Information Bar
+Campaign Booster: Notification
+Campaign Booster: USP Bar
+Add Link Target
+Browse Mode
+Custom Selector Picker
+Edit Content
+Edit Text
+Move elements
+Hide Element
+Keyword Insertion
+Redirect & Split URL Testing
+Remove Element
+Replace Image
+Responsive Device Switcher
+Style & Layout Changes
+Campaign Booster: Arrow Up
+Campaign Booster: Exit Intent Layer
+Campaign Booster: Information Bar
+Campaign Booster: Notification
+Campaign Booster: USP Bar
+Add Link Target
+Browse Mode
+Custom Selector Picker
+Edit Content
+Edit Text
+Move elements
+Hide Element
+Keyword Insertion
+Redirect & Split URL Testing
+Remove Element
+Replace Image
+Responsive Device Switcher
+Style & Layout Changes
+Further integrations
+Integrations
+Integrations
+Expert functions
+Add CSS
+Add HTML
+Add JavaScript
+Add JavaScript Reset
+Anti-flicker script
+Code Helpers
+Edit HTML
+Experiment API
+Add CSS
+Add HTML
+Add JavaScript
+Add JavaScript Reset
+Anti-flicker script
+Code Helpers
+Edit HTML
+Experiment API
+Security
+Security functions - overview of all features
+Role & Permission Management
+Multi Factor Authentication (MFA)
+Protection against session hijacking
+Activity Log
+Active Sessions
+Login History
+Security functions - overview of all features
+Role & Permission Management
+Multi Factor Authentication (MFA)
+Protection against session hijacking
+Activity Log
+Active Sessions
+Login History
+Troubleshooting / FAQ
+Troubleshooting (all)
+Problems with tracking and evaluation
+Problems with experiment start/delivery
+Problems with the editor
+Troubleshooting (all)
+Problems with tracking and evaluation
+Problems with experiment start/delivery
+Problems with the editor
+Further useful content
+Payment & Subscription
+Agency Account
+Step-by-step tutorials
+Multi Factor Authentication (MFA)
+Shopify optimization
+Shopify Checkout App
+Shopify Tracking
+Test Shopify Theme with Varify.io
+Shopify - Test PDP templates
+Shopify - Setting up a price test
+Test modules for Shopify Store free of charge
+WordPress optimization
+Test WordPress hidden content via overlay
+WordPress Redirect & Split URL Testing
+For nerds
+varify.debug
+varify_success and varify_error
+CNAME
+Experiment API
+Notice:
+Varify assumes no responsibility for the functionality of the code and information.
+It is the user's responsibility to ensure that the
+Test code thoroughly
+and implement them correctly.
+Platform
+Registration
+Login
+Pricing
+For agencies
+Functions
+Roadmap
+BigQuery
+Knowledge
+Blog
+Knowledge
+A/B Testing Guide
+Compare
+Varify vs. VWO
+Varify vs. Convert
+Support
+Contact
+Tutorials
+User documentation
+Demo Call
+Information on data protection
+Company
+About us
+Affiliate
+More about us
+Linkedin
+Imprint
+Terms of Service
+Privacy
+Privacy settings
+Platform
+Registration
+Login
+Pricing
+For agencies
+Functions
+Roadmap
+BigQuery
+Knowledge
+Blog
+Knowledge
+A/B Testing Guide
+Compare
+Varify vs. VWO
+Varify vs. Convert
+Support
+Contact
+Tutorials
+User documentation
+Demo Call
+Information on data protection
+Company
+About us
+Affiliate
+More about us
+OMR
+Imprint
+Terms of Service
+Privacy
+Privacy settings
+Varify.io® is available in several languages. I want to change to:
+DE
+DE
+EN
+IT
+PT
+TR
+ES
+FR
+Change Language
+Close & do not switch language

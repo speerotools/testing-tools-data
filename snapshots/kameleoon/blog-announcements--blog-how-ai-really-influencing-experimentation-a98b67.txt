@@ -1,0 +1,284 @@
+# https://kameleoon.com/blog/how-ai-really-influencing-experimentation
+How is AI really influencing experimentation? | Kameleoon
+Login
+English
+Select your language
+English
+Français
+Deutsch
+Platform
+PROMPT-BASED EXPERIMENTATION
+Optimize any website by chatting with PBX, Kameleoon’s AI.
+Learn more
+SOLUTIONS
+Experimentation
+Feature Management
+KEY Features & add-ons
+Mobile App Testing
+Recommendations & Search
+Personalization
+specialities
+AI in Experimentation
+Single Page Application
+Data Security & Privacy
+Data Accuracy
+Integrations & API
+Partners Program
+Support
+Product Roadmap
+Solutions
+for all teams
+Marketing
+Product
+Engineering
+Data Scientists
+For INDUSTRIES
+Healthcare
+Travel & Tourism
+Financial Services
+Media & Entertainment
+E-commerce
+B2B
+Automotive
+Samsung gains autonomy and speed in its most advanced tests with PBX
+read the success story
+Plans
+Resources
+Customers
+Book a demo
+Book a demo
+Quick links
+Heading 2
+Book a demo
+Book a demo
+All resources
+How is AI really influencing experimentation?
+How is AI really influencing experimentation?
+Published on
+September 12, 2024
+Article
+Has your C-suite started asking how you’ll use AI to improve experimentation? The fear of missing out on this trend is real. But rather than a flash in the pan, AI is changing how teams experiment, offering real advantages to those who implement it.
+Understanding how Generative AI and Machine Learning can be used and what they are good at (and not) will help you make the most of this technology. For example, Large Language Models (LLM) aren’t good at answering discrete problems; ask them to order a list of names alphabetically, and they might make mistakes. However, LLMs are good at exploring broader open-ended issues or acting as a co-pilot on your team.
+If facts and math aren’t suitable tasks for AI, what and where should we use them? To better understand this, we asked eight experimentation leaders how AI is changing their experimentation work.
+How is AI changing A/B testing?
+Less reliance on Devs to code test variants
+Development resources are often scarce but necessary to run more complex A/B tests. Rather than letting a lack of resources slow you down, Johannes Mandl feels it’s a perfect task for your AI assistant;
+,
+With basic JavaScript, HTML, and CSS skills, a CRO professional can leverage AI to write and implement tests quickly. AI can handle much of the coding for simpler tests, reducing the need for developer resources. Even for more complex tests, AI can assist, making the process more efficient. This reduces reliance on visual editors, which can be unstable and problematic with complex CSS selectors. Overall, this improves testing speed, decreases the need for development resources, and enhances test quality.
+Johannes Mandl
+Senior CRO Manager at Better Collective
+,
+Using AI to code tests can accelerate testing, leading to faster insights. It also frees up technical resources to work on other tasks, such as implementing the winning solutions into the codebase so you can reap the benefits quicker.
+Faster user feedback analysis and problem exploration
+Good conversion optimization ideas come from a deep understanding of your users. One of the best ways to achieve this is by reviewing qualitative user feedback. But it’s a big ask to review days worth of transcripts or user reviews. As the name suggests, Large Language Models are made for this type of job, as Iqbal Ali explains;
+,
+Based strictly on my experience and work history, qualitative analysis is a major area we should involve AI. Specifically, AI can analyze vast amounts of user feedback and mine that data for insights. It's important to note that "how" we utilize AI is vital to avoid accuracy problems. This can be resolved, however, with the right tools and process.The other area is problem exploration. AI can be a valuable collaborator to user researchers, product managers, and others, helping avoid laziness and human biases in the problem exploration phase (common challenges I’ve observed in teams). AI can especially be effective in a workshop setting, where its contributions can be clearly demonstrated.
+Iqbal Ali
+Freelance Experimentation Consultant
+,
+There are countless ways to prompt AI, and how you ask a question will influence the quality of the output. To explore problems, for example, you can use frameworks such as the Six Thinking Hats or The 5 Whys to delve into a topic. You can also ask AI to provide a range of problem exploration methods and then use those in follow-up prompts.
+Plus, we’ve written a guide to help you craft AI prompts.
+Easier test anomaly detection
+Once a test is live, you want to know if the results are within an acceptable range. It’s not just the A/B test results that must be monitored; other KPIs might indicate a problem. Often, these KPIs passively tick away in a neglected dashboard, silently witnessing something going awry. But this doesn't need to be the case. You can ask your always-on AI sidekick to alert you to anomalies, as Ellie Hughes explains:
+,
+I see AI being useful for experimenters in areas like "automated signaling." Instead of manually creating an anomaly detection report/process, AI can be used not only to generate automated responses in the right format to the right people but also the core of machine learning is learning and identifying patterns and outliers. An example would be using Holt-Winters to detect when your KPIs fall outside an expected range based on historic seasonal behavior.
+Ellie Hughes
+Head of Consulting at Eclipse Group
+,
+In addition to simplifying anomaly detection, AI can help decision-making when an anomaly is found. By analyzing patterns and outliers, your AI analyst can provide deeper insights into the root causes, helping teams identify issues and understand the underlying factors driving them.
+Moreover, AI’s ability to continuously learn from data means that its predictive accuracy improves over time, making future experiments more reliable.
+Less time spent on project management
+Not every testing team is fortunate enough to have dedicated project managers. Despite spending years honing your user behavior knowledge or understanding of statistical methods, a fair chunk of your time will need to be spent on project management.
+Project management, while critical, is incredibly time-intensive and not a good use of specialized resources. If this is the case in your team, good news! AI can act as a project manager on your team, freeing you from tedious, busy work and helping you focus on high-value tasks. Eric Itzkowitz shares some examples;
+,
+AI will help us improve our program processes and procedures by assisting us with more tedious tasks like identifying program management improvement opportunities and other mundane things like note-taking so we can be more active participants in our meetings.
+Eric Itzkowitz
+Director of CRO at FuturHealth
+,
+Anjali Arora Mehra shares this sentiment, too, with some specific tasks you can recruit your AI co-pilot to help with;
+,
+Most of the experimentation team's time is spent in the test planning stage. AI can help with some tasks during this stage, such as calculating test duration, estimating sample size, and creating test charters. It can also automate sizing various ideas and features for impact (e.g., potential revenue lift) to help with prioritization. Additionally, AI can help create an automated testing calendar and adjust timelines dynamically to account for delays and dependencies. This can significantly reduce the manual work analysts/testing teams must perform before each test, thereby improving testing velocity.
+Anjali Arora Mehra
+Experimentation leader
+,
+However, Jonathan Shuster wants to see more evidence and human oversight;
+,
+I would love to see some solid case studies where AI is effectively driving test prioritization and road mapping, but I would hope teams are continuing to use real people to oversee these tasks, given the myriad factors that inform such work (i.e., fluid OKRs, internal dynamics, technical complexity, seasonality, timelines, budgets, etc.).
+Jonathan Shuster
+Digital Marketing Optimization Consultant
+,
+The key to employing AI as your new project management is to stagger the approach. Start using AI for simple and routine processes. As you gain experience and AI continues to evolve, its role in managing complex projects could expand.
+More (and wackier) test ideas
+There’s no such thing as “the” solution in experimentation. Instead, there are often thousands of potential solutions that will have varying degrees of success. It’s why we test. But often, we’re quick to identify a solution we think will solve a problem without adequately other possibilities.
+We might fall into the trap of doing what we’ve seen work before or for competitors or ideas that fit the status quo. However, this thinking falls foul of a number of biases and can hold companies back from moving beyond their local maxim. That’s why Iqbal Ali recommends consulting your AI assistant;
+,
+AI can contribute to ideation. As a collaborator, AI can help maintain focus on problems during brainstorming. It can also broaden the diversity of ideas and foster creativity across teams, helping to balance skill levels in the process.
+Iqbal Ali
+Freelance Experimentation Consultant and Coach
+,
+The key here is the volume and diversity of ideas. Try it for yourself: gather your team, present a problem, and ask them to list all the possible solutions. Then, try the same with your AI assistant. AI usually produces many more ideas, some of which might not have occurred to your team.
+AI can also give you wackier ideas. While humans don’t like suggesting ‘silly’ ideas for fear of being ridiculed, AI doesn’t care. That’s why it deserves a place on your team.
+Help analyzing test impact
+Data interpretation is a tricky task, especially if you want to analyze multiple data sources to assess the impact of an experiment and establish a business decision. There’s a lot at stake, but your AI co-pilot can help interrogate data and point out things we might not notice on first inspection, as Eric Itzkowitz says;
+,
+We will more often engage with AI to hone the narrative of our test results to better explain the impact on website/app visitors, customers, and our business. Similarly, AI will be used to reveal hidden or harder-to-see impacts on peripheral metrics – those not captured in our Overall Evaluation Criteria or test measurement plan.
+Eric Itzkowitz
+Director of CRO at FuturHealth
+,
+Mike St Laurent is already putting AI to work on test analysis;
+,
+When applied thoughtfully, AI can supplement every stage of the experiment production process to save time or increase quality (ideally, both). At Conversion, we’re building prototypes for each stage and continue to refine them toward these two goals as the technology develops.As of today, the applications that seem the most promising are in test analysis (which runs structured data sets through several statistical rules and pulls insights out) and test development (which can set up test files and write a significant portion of the code for certain types of experiments).
+Mike St Laurent
+Managing Director, NA at Conversion
+,
+AI's role in analyzing test impact can extend beyond just interpreting data—it can also help forecast future outcomes based on past experiments. By leveraging advanced machine learning algorithms, your AI assistant can model potential scenarios and project the long-term effects of specific changes, enabling teams to prioritize tests better.
+The need for new governance frameworks
+The above use cases sound great, but you can’t rush in without some groundwork first.
+Just as you’d have a contract between a company and a new hire, you’ll need to create a governance framework that explains where AI can be used and what’s above its pay grade (think anything connected to sensitive or personal user data).
+A governance framework should be created by technical, data, experimentation, and legal professionals. Create a practical guide with real-world examples and write the framework in plain English. Ellie Hughes discusses this in greater detail;
+,
+You need a governance/ethics framework for using AI—like an extension of your data governance policy. You need to know you have put guardrails in place to stop people abusing AI in the workplace and misusing the data of other people or companies. Start with "Should I send this information to an open/public AI tool, or should I wait and use our company-approved/secured genAI tool?" That also means you need a governance/ethics officer to cover AI.
+Ellie Hughes
+Head of Consulting at Eclipse Group
+,
+What experimentation tasks should be off-limits to your AI assistant?
+We’ve covered where your new assistant can help your experimentation team, but what and where are no-go areas? Outside of tasks that would be ethically or legally problematic, there are some aspects of A/B testing where AI struggles. Think of AI as a dedicated co-pilot; you wouldn't expect them to make important decisions or use their work without reviews. Your AI assistant is no different. However, certain tasks lead to more mistakes and hallucinations. Let’s find out what you should avoid.
+Interpreting emotions
+Humans are endlessly complex. If you’re ever in doubt of just how complex, try to read the emotions behind a text message. Is the smiley emoji happiness or passive-aggressive punctuation? It gets even more complicated when we recognize that people don’t always say what they think. Plus, there are cultural differences and contexts to consider.
+,
+AI can't yet replicate the greatest skill an experimenter must have to make a difference: understanding emotions.Without understanding emotions, your coding skills or the quantity of insights won't help; reports can tell you what is wrong, but the heart will tell you why, and AI doesn't yet have a heart.
+Marcello Pasqualucci
+Head of Web at Travelopia
+,
+While AI can be trained to understand human emotion, they still struggle with some human favorites, such as sarcasm, irony, and tonal nuances. It’s also vital to understand that biases exist in AI models.
+For example,
+one study
+found that emotional analysis technology assigns more negative emotions to black men’s faces than white men’s faces. AI must be trained on diverse datasets and built by diverse teams across gender, ethnicity, socioeconomic status, and views.
+Neither humans nor AI are foolproof at interpreting emotions. The best solution is to use AI alongside diverse human teams to improve accuracy.
+Final decision-making without human involvement
+Many industry pundits have already suggested we treat AI tools like just another member of your team. Iqbal Ali elaborates;
+,
+Off-limits for me is "final decision authority." I position AI as a "collaborator" because it needs human critical thinking to steer the collaborative process and safeguard the outcomes. The role of AI should be to influence and guide, not to take over.
+Iqbal Ali
+Freelance Experimentation Consultant and Coach
+,
+Mike St Laurent also discusses the idea of human augmentation alongside your new AI coworker;
+,
+I don't think there are any elements that should be "off limits," but I think it's important to integrate AI into human-directed workflows and not strive for replacement. What I mean by that is that successful integration should be AI that is driven by a series of human prompts and refinements, not striving for first-attempt perfection.
+Mike St Laurent
+Managing Director, NA at Conversion
+,
+While AI can significantly enhance decision-making by providing data-driven insights and recommendations, it is crucial to maintain a balance between AI and human judgment.
+Thinking of AI as a supportive tool rather than a decision-maker ensures that human expertise and contextual understanding complement AI's analytical capabilities.
+This approach allows for more nuanced and well-rounded decisions, as humans can interpret AI-generated insights within the broader context of organizational goals, market dynamics, and ethical considerations.
+The key to using AI is knowing when and where to use it
+In conclusion, AI is a valuable tool in experimentation, but it's not a magic bullet. By understanding where AI excels, you can leverage it to enhance your testing program. This includes viewing AI as your new dedicated co-pilot who can assist with tasks such as coding test variants, analyzing vast amounts of user feedback, detecting anomalies, and automating tedious project management jobs.
+However, AI has limitations; it struggles with interpreting emotions and shouldn’t be given final decision-making authority.
+Integrating AI into your testing process requires thoughtful governance frameworks and a collaborative approach where AI supports human expertise rather than replacing it. The key is to use AI strategically, knowing when it adds value and when human intuition and oversight are irreplaceable.
+Thanks to all of the experts who provided their insights for this article;
+Johannes Mandl,
+Senior CRO Manager at
+Better Collective
+Iqbal Ali,
+Freelance Experimentation Consultant
+Ellie Hughes
+, Head of Consulting at
+Eclipse Group
+Eric Itzkowitz,
+Director of Conversion Rate Optimization at
+FuturHealth
+Anjali Arora Mehra,
+Experimentation leader
+Jonathan Shuster,
+Digital Marketing Optimization Consultant
+Mike St Laurent,
+Managing Director, NA at
+Conversion
+Marcello Pasqualucci,
+Head of Web at
+Travelopia
+If you want to set your new AI assistant to work, check out
+our guide to crafting AI prompts in experimentation
+.
+Explore our resources
+The page brands waste the most budget testing
+A/B testing
+Article
+How Fanatics could improve navigation using PBX
+AI
+Article
+Three A/B tests on the wrong problem
+A/B testing
+Article
+before ai
+Experiment your way
+Get the key to staying ahead in the world of experimentation.
+[Placeholder text - Hubspot will create the error message]
+Submit
+Thanks for submitting the form.
+Newsletter
+Platform
+Experimentation
+Feature Management
+PBX Free-Trial
+Mobile App Testing
+Product Reco & Merch
+Data Accuracy
+Data Privacy & Security
+Single Page Application
+AI Personalization
+Integrations
+guides
+A/B testing
+Prompt-Based Experimentation
+Feature Flagging
+Personalization
+Feature Experimentation
+AI for A/B testing
+Client-Side vs Server-Side
+plans
+Pricing
+MTU vs MAU
+Industries
+Healthcare
+Financial Services
+E-commerce
+Automotive
+Travel & Tourism
+Media & Entertainment
+B2B & SaaS
+TEAMS
+Marketing
+Product
+Developers
+Resources
+Customers Stories
+Academy
+Dev Docs
+Product Roadmap
+Calculator
+Who’s Who
+compare us
+Optimizely
+VWO
+AB Tasty
+partners
+Our Partner Ecosystem
+Become a Partner
+Integrations Directory
+Partners Directory
+company
+About Us
+Careers
+Contact Us
+Support
+legal
+Terms of use and Service
+Privacy Policy
+Legal Notice & CSU
+PCI DSS
+© Kameleoon — 2026 All rights Reserved
+Legal Notice & CSU
+Privacy policy
+PCI DSS
+Platform Status

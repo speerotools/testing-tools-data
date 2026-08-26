@@ -1,0 +1,347 @@
+# https://amplitude.com/docs/sdks
+Amplitude SDKs | Amplitude Docs
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+FAQ
+Developers
+SDKs
+APIs
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Amplitude SDKs
+Amplitude SDKs are organized by the product they connect to — Analytics, Experiment, Session Replay, and Ampli. Pick the product you're integrating, then grab the SDK for your platform. Every SDK shares the same identity, event, and consent model, so a user instrumented once is understood everywhere.
+01
+Analytics
+11
+SDKs
+02
+Experiment
+11
+SDKs
+03
+Session Replay
+4
+SDKs
+04
+Guides and Surveys
+5
+SDKs
+Analytics
+Capture every event your users generate
+Analytics SDKs send event, identify, and revenue data from your apps into Amplitude. Use them to power funnels, retention, behavioral cohorts, and dashboards across your entire product.
+Auto-instrument page views, clicks, and sessions out of the box.
+Identify users, set user properties, and group accounts by company.
+Use the same API surface across web, mobile, server, and game engines.
+Open Analytics docs
+Browser SDK
+JavaScript SDK for websites and SPAs. Supports autocapture, manual tracking, and frameworks such as React, Vue, and Angular.
+npm
+·
+@amplitude/unified
+v
+1.1.29
+Android SDK
+Native Android apps with Kotlin. Works with Jetpack Compose, Views, and mixed codebases.
+maven
+·
+com.amplitude:analytics-android
+v
+1.30.1
+iOS SDK
+Native iOS apps with Swift. Works with UIKit, SwiftUI, and mixed codebases.
+github
+·
+Amplitude-Swift
+React Native SDK
+Cross-platform mobile apps for iOS and Android with React Native and TypeScript.
+npm
+·
+@amplitude/analytics-react-native
+v
+1.6.9
+Flutter SDK
+Cross-platform mobile, web, and desktop apps with Flutter and Dart.
+pubdev
+·
+amplitude_flutter
+v
+4.7.1
+Node.js SDK
+Server-side Node.js services, APIs, and backends with TypeScript or JavaScript.
+npm
+·
+@amplitude/analytics-node
+v
+1.5.70
+Python SDK
+Server-side services, scripts, and backends with Python.
+pypi
+·
+amplitude-analytics
+v
+1.2.3
+Go SDK
+Go services, CLIs, and backends with a lightweight HTTP client.
+gomod
+·
+github.com/amplitude/analytics-go
+v
+v1.3.1
+JVM SDK
+JVM services and backends with Java. Fits Spring, Micronaut, and other Java stacks.
+github
+·
+Amplitude-Java
+Unity SDK
+Games and interactive apps built with Unity. Ships as a Unity package.
+github
+·
+unity-plugin
+Unreal Engine SDK
+Games and interactive experiences built with Unreal Engine. Ships as a plugin.
+github
+·
+Amplitude-Unreal
+Experiment
+Run feature flags and A/B tests with the data you already have
+Experiment SDKs evaluate flags, deliver variants, and exposure-track in one step — so every test reuses the cohorts, properties, and behavioral data already flowing through Amplitude.
+Evaluate flags locally for low-latency rollout decisions.
+Tie variants to existing user properties and cohorts automatically.
+Stream exposure events alongside your analytics so reporting is unified.
+Open Experiment docs
+JavaScript SDK
+Experiment feature flag SDK for JavaScript applications.
+npm
+·
+@amplitude/experiment-js-client
+v
+1.22.0
+Node.js SDK
+Experiment feature flag SDK for Node.js applications.
+npm
+·
+@amplitude/experiment-node-server
+v
+1.13.6
+Android SDK
+Experiment feature flag SDK for Android applications.
+maven
+·
+com.amplitude:experiment-android-client
+v
+1.16.1
+iOS SDK
+Experiment feature flag SDK for iOS applications.
+cocoapods
+·
+AmplitudeExperiment
+v
+1.20.2
+React Native SDK
+Experiment feature flag SDK for React Native applications.
+npm
+·
+@amplitude/experiment-react-native-client
+v
+1.8.0
+Flutter SDK
+Experiment feature flag SDK for Flutter applications.
+pubdev
+·
+amplitude_experiment
+v
+0.1.0-beta.3
+JVM SDK
+Experiment feature flag SDK for JVM applications.
+maven
+·
+com.amplitude:experiment-jvm-server
+v
+1.8.3
+Go SDK
+Experiment feature flag SDK for Go applications.
+gomod
+·
+github.com/amplitude/experiment-go-server
+v
+v1.13.0
+Python SDK
+Experiment feature flag SDK for Python applications.
+pypi
+·
+amplitude-experiment
+v
+1.12.0
+PHP SDK
+Experiment feature flag SDK for PHP applications.
+composer
+·
+amplitude/experiment-php-server
+v
+1.4.1
+Ruby SDK
+Experiment feature flag SDK for Ruby applications.
+Session Replay
+Replay sessions next to the events that defined them
+Session Replay SDKs capture DOM and native UI snapshots, sync them with your analytics events, and stream them privacy-first so you can scrub through a real user session from inside any chart.
+Add replay to existing Analytics SDKs with a single plugin.
+Mask text, inputs, and selectors with rules — no PII leaves the device.
+Jump from a funnel drop-off straight into the recorded session.
+Open Session Replay docs
+Web
+Capture session replays from browser-based applications.
+npm
+·
+@amplitude/session-replay-browser
+v
+1.48.2
+iOS
+Capture session replays from native iOS applications.
+cocoapods
+·
+AmplitudeSessionReplay
+v
+0.12.6
+BETA
+Android
+Capture session replays from native Android applications.
+maven
+·
+com.amplitude:plugin-session-replay-android
+v
+0.28.0
+BETA
+React Native
+Capture session replays from React Native applications.
+npm
+·
+@amplitude/plugin-session-replay-react-native
+v
+0.5.1
+BETA
+Guides and Surveys
+Guide users, collect feedback, and launch in-product messaging
+Guides and Surveys SDKs help you ship onboarding flows, announcements, surveys, and resource centers directly inside your product across web and mobile experiences.
+Target experiences by page, screen, event, or user property.
+Share identity and measurement flows with Analytics for reporting.
+Support web, iOS, Android, React Native, and Flutter implementations.
+Open Guides and Surveys docs
+Web SDK
+JavaScript SDK for embedding Guides and Surveys in web applications.
+npm
+·
+@amplitude/engagement-browser
+v
+1.0.12
+iOS SDK
+Native SDK for embedding Guides and Surveys in iOS applications.
+cocoapods
+·
+AmplitudeEngagementSwift
+v
+3.12.1
+Android SDK
+Native SDK for embedding Guides and Surveys in Android applications.
+maven
+·
+com.amplitude:amplitude-engagement-android
+v
+3.12.1
+React Native SDK
+SDK for embedding Guides and Surveys in React Native applications.
+npm
+·
+@amplitude/plugin-engagement-react-native
+v
+3.12.1
+Flutter SDK
+SDK for embedding Guides and Surveys in Flutter applications.
+pubdev
+·
+amplitude_engagement_flutter
+v
+0.0.10
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

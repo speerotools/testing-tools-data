@@ -1,0 +1,345 @@
+# https://launchdarkly.com/
+Runtime Control for AI-Era Software | Feature Flags & AI Agent Control | LaunchDarkly
+[Virtual event] 6 new features for more control | Aug 26, 10 AM PT
+-
+Register
+.
+Skip to:
+Home
+Content
+Footer navigation
+Get a demo
+Platform
+CodeControl
+Ship confidently, with automated control built in.
+AgentControl
+One place to keep your agent behavior under control.
+Book a demo
+How it works
+Platform overview
+Feature flags
+Observability
+Experimentation
+Agent integrations
+Integrations
+Architecture
+Solutions
+By Use Case
+Release AI-built code
+Control AI agents
+Optimize AI performance & cost
+Self-heal systems
+Run experiments
+By Team
+AI engineers
+Developers
+DevOps & SRE
+Product managers
+Data scientists
+Resources
+Learn
+Blog
+Guides & ebooks
+Events & webinars
+Videos
+Success
+Academy
+Customer stories
+Professional services
+Partners
+Get Help
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Developers
+Docs
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Resources
+Product Updates
+Power analysis calculator
+Flagship engineering blog
+Community
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Pricing
+Sign in
+Book a demo
+Book a demo
+Move at AI speed.
+Stay in control.
+The runtime control layer for AI development, de-risking releases, and enabling systems that heal and optimize themselves.
+Must be valid email. (example@yourdomain.com)
+Please enter a work email for a demo.
+Book a demo
+By supplying my contact information, I authorize LaunchDarkly to contact me with personalized marketing communications about our products and services. See our
+Privacy Policy
+for more details, or
+Opt-Out
+at any time.
+Group By
+Chat Completion
+Code Assistant
+Summarization
+Embedding
+Chat Completion
+Code Assistant
+Summarization
+Embedding
+Cost
+$3,319
+-13.7%
+300
+0
+Apr 12
+Apr 14
+Apr 16
+Code
+Control
+Toxicity
+0.1
+-6.0%
+300
+0
+Apr 12
+Apr 14
+Apr 16
+Apr 18
+Apr 20
+Apr 22
+Apr 24
+Apr 26
+Apr 28
+Apr 30
+Apr 12
+Apr 14
+Apr 16
+Apr 18
+Apr 20
+Apr 22
+Apr 24
+Apr 26
+Apr 28
+Apr 30
+Group By
+Config
+Trends
+Model Distribution
+last
+7d
+GPT-5.5
+50%
+Claude Sonnet 4.6
+35%
+Claude Opus 4.7
+10%
+Text Embedding 3
+5%
+Agent
+Control
+Financial Analyst Agent
+All variations
+⌄
+1 Tool
+Avg. Satisfaction
+91
+x
+last
+7d
+Control every change in production.
+01
+02
+03
+04
+05
+Ship AI-built code with confidence.
+Progressively release changes and roll back instantly based on real-time impact.
+Learn more
+Control and govern AI agents in production.
+Automatically keep agents on track, mitigating bad behavior and steering responses in real time.
+Learn more
+Optimize AI performance and cost.
+Test prompts and models in production and dynamically route traffic to the best option.
+Learn more
+Enable self-healing systems.
+Instantly remediate failing code and misbehaving agents (without human intervention).
+Learn more
+Experiment continuously.
+Experiment with code and agents in production and optimize based on real-world results.
+Learn more
+Code + Agents
+Ship with AI that does what you expect—however you build.
+Control your
+code
+in production.
+Ship confidently with automatic recovery and continuous improvement built in.
+Learn about CodeControl
+Feature Flags
+Targeting & Segments
+Progressive rollouts
+Automated rollbacks
+Feature monitoring
+Observability
+Error monitoring
+Logs & traces
+Session replay
+Auto-remediation
+Experimentation
+A/B/n testing
+Multi-armed bandits (MAB)
+Holdouts
+Warehouse native
+Self-healing
+Control your
+agents
+in production.
+One place to keep your agent behavior under control.
+Learn about AgentControl
+Online evals
+Offline evals
+Adaptive triggers
+Progressive rollouts
+Agent observability
+AI Insights
+Custom judges
+LLM Playground
+LLM traces
+A/B/n testing
+Agent graphs
+Approvals
+Agent definitions
+RBAC
+Prompt snippets
+Experimentation
+Platform overview
+See how LaunchDarkly works.
+Built for developers
+and their agents.
+Dive into best practices.
+See end-to-end examples of building on the LaunchDarkly platform.
+Browse tutorials
+Go agent-native.
+Learn more about working with LaunchDarkly using your agents.
+View agent integrations
+Copy, paste, go.
+Drop this prompt into your favorite coding assistant and get up and running with AI in seconds.
+Onboard me to LaunchDarkly.
+Start by installing the onboarding skill: `npx skills add launchdarkly/agent-skills --skill onboarding -y`. source-launchdarkly
+Copy to clipboard
+Savage X Fenty keeps shoppers engaged with rapid, reliable experiments.
+Read story
+LaunchDarkly gave the business teams the confidence that experiments could be run reliably and the data could be trusted.
+Alan Chang
+Product Management Director
+,
+Savage X Fenty
+Improvement in site performance
+15%
+Read story
+Poka goes “flag-first” to transform its release processes and AI innovation.
+Read story
+If prompts were only on the backend, only the backend people could modify them. But since they're a flag in LaunchDarkly, the product managers, frontend developers, or even the designers might have access to modifying them if they want to test something out.
+Edmund Lam
+Staff Software Developer
+,
+Poka
+Read story
+Dior shortens time to market from 15 minutes to instant updates.
+Read story
+LaunchDarkly allowed us to progressively deliver features with confidence, creating a safety net for developers.
+Fabien Gasser
+Retail Lead System Architect
+,
+Dior
+Minutes to release
+< Zero
+Read story
+Paramount improves developer productivity
+Read story
+It’s one of the 'three legs of the stool,' as I like to say. One leg is CI/CD, another is automated testing, and the third is LaunchDarkly.
+Dan Skaggs
+Technical Director, Content Engineering
+,
+Paramount
+Deployments per day
+6-7
+Read story
+Hireology builds safe, scalable AI features.
+Case study
+In less than 13 seconds, I can test 3 verticals, 10 tests each with LaunchDarkly. In the time it takes to generate one job description, I’ve tested all iterations programmatically.
+Sam Elliott
+Staff Quality Assurance Engineer
+,
+Hireology
+Change failure rate
+8%
+Case study
+Resources to get started.
+Check out the blog.
+Blog
+Read about LaunchDarkly news, product updates, and more.
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
+Watch on demand.
+Videos
+Check out demos and tutorials to see LaunchDarkly in action.
+Connect at events.
+Events
+Explore ways to connect with us in person and virtually.
+Ready to take control in prod?
+Get a demo
+Free trial
+CodeControl
+AgentControl
+Inboxes love LaunchDarkly.
+Get the latest on controlling code and agents in production, with tips, insights, and updates you can actually use.
+Company
+About Us
+Careers
+Media & Analysts
+Partner Program
+Terms & Policies
+Contact Us
+Community
+Support
+Support home
+Professional Services
+Documentation
+Status
+Do not Sell or Share my Personal Information
+Why Us
+Economic Impact of LaunchDarkly
+How LaunchDarkly works
+Trust & Security
+Trust Center
+LaunchDarkly vs. Competitors
+LaunchDarkly on AWS
+Terms & Conditions
+Privacy Policy
+©
+2026
+Catamorphic Co.
+Academy
+Help Center
+Explore help topics for everything LaunchDarkly.
+Request support
+Reach out to us for direct answers to your questions.
+Docs home
+Feature flags Quickstart
+AgentControl Quickstart
+API docs
+Flagship engineering blog
+Take control of your code and agents at runtime.
+Control releases, experiments, and AI behavior in prod.
+Free trial
+Sign in
+Browse tutorials
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
+Free trial

@@ -1,0 +1,227 @@
+# https://www.zoho.com/pagesense/resources/whats-new.html
+What's New in PageSense | Latest Features and Enhancements
+What's New in PageSense?
+All
+New
+Updates
+Enhancement
+Change
+Event series
+2021
+Feb
+2020
+Feb
+2019
+Nov
+Oct
+Sep
+Aug
+Mar
+Feb
+Jan
+2018
+Dec
+Nov
+Oct
+Sep
+Aug
+Jun
+Apr
+Jan
+2021
+Feb
+New
+Launched Web Analytics
+Get a complete picture of your website's metrics and make data driven decisions with Web Analytics. This way, you can identify your best customers and streamline your marketing efforts.
+Read More
+New
+Launched Personalization
+Create and deliver unique experiences for your website visitors with the Personalization feature. You can display personalized content to every visitor based on criteria like weather, demographics, browsing patterns, and more.
+Read More
+New
+Launched Push Notification
+Engage with your visitors through targeted messages even when they aren't on your website, and nudge them further into your conversion funnel with the all new Push Notification feature.
+Read More
+New
+Launched Polls
+Wave goodbye to the good old guessing game and start asking your visitors what they really want, by using PageSense's Polls. Gather valuable feedback from your visitors and convert them into actionable insights.
+Read More
+New
+Launched Pop-Ups
+Grab the attention of your website visitors and persuade them to take action on your page with PageSense's Pop-Ups and Banners. You can create, customize, and deliver pop-ups to generate leads, get more subscribers for your mailing list, incentivize visitors with offers and discounts, and turn them into customers instantly.
+Read More
+2020
+Feb
+New
+Launched cross-domain tracking
+Track your visitors throughout their journey across the multiple domains that you own, and view the various sessions on these related sites as a single session.
+Read more
+2019
+Nov
+New
+Launched mutually exclusive groups to bucket tests
+Allocate traffic between tests to ensure that a visitor is a part of only a single test in the exclusive group.
+New
+Launched the option to choose between Bayesian and Frequentist algorithm in tests [Beta]
+Tailor your tests to match your business's requirements by choosing between the Bayesian and Frequentist algorithms.
+Oct
+New
+Launched PageSense-SalesIQ integration
+View recordings of the visitor’s experience browsing your website. You can also keep track of all the Goals (key actions visitors have taken on your website) set up in PageSense, within SalesIQ as well.
+Read more
+Updates
+Introduced new functionality in the A/B test editor
+Get the option to insert text, insert HTML, insert element, and insert image in a variation using the visual editor. You can also modify the background image on a web page.
+New
+Launched PageSense tag in Google Tag Manager
+Use the PageSense tag available within the GTM tag list to directly install the code snippet on your website.
+Read more
+New
+Added the option to view the project details within the app
+View the space name, project ID, and data center details within the PageSense app under the Project Settings tab.
+Sep
+Updates
+Launched the ability to compare Goal reports across date ranges
+View and compare the performance of a goal across customizable date ranges. This can be helpful in evaluating the month-on-month or quarter-on-quarter growth.
+Enhancement
+Added support for non-standard HTML in Session Recording
+View the recordings of even those web pages that do not follow the W3C HTML standard. These non-standard HTML pages will now render in the recordings as they originally appear.
+Enhancement
+Introduced the option to view cumulative charts in A/B test reports
+View and compare the growth of a goal's performance across variations, over the test duration.
+Aug
+Enhancement
+Scheduled a maintenance period
+We carried out an hour of scheduled maintenance to optimize the server capacity and speed up the delivery time for our US data center.
+Read more
+Mar
+Enhancement
+Introduced iFrame support in Session Recording
+See the recording of the iFrames that have the exact protocol and the same domain or sub-domain as the experiment page.
+Read more
+Enhancement
+Introduced support for scrollable elements in Session Recording
+See a visitor’s interactions with all scrollable elements of your website.
+Read more
+Enhancement
+Introduced support for SVG images in Session Recording
+View recordings of all SVG and other image formats along with how visitors interact with these images.
+Read more
+Enhancement
+Introduced support for CSS hover effect and CSS added via InsertRule() in Session Recording
+View recordings of the hover effects created from dynamically added stylesheets and also view the dynamically updated elements through javascript via the insertRule() function.
+Read more
+New
+Launched QA mode
+Cross-check the A/B test’s configuration to see exactly what your target audience sees. Manipulate the audience type and interact with the page to see how the test behaves under different conditions.
+Read more
+Updates
+Added average daily and hourly chart to Goals reports
+Identify the time slots that peak in visitor activity: visitor count, conversions, and conversion rate.
+Read more
+Updates
+Added source and visitor type chart to Goals reports
+Identify where your visitors are coming from and which sources are converting the most.
+Read more
+Updates
+Added world map to Goals reports
+Learn where a majority of your audience accesses your website from.
+Read more
+Feb
+New
+Launched PageSense and Intercom integration
+Engage with visitors better via Intercom live chats using actionable information on their behavior from PageSense.
+Read more
+Enhancement
+Added new question types to polls
+While setting up a poll, you can now choose between 1-5 Rating Scale, 1-7, Rating Scale, Star Rating Scale, Smiley Rating Scale, Request Email ID (with validation), and other pre-existing question types.
+Jan
+New
+Launched Polls beta
+Run polls on your website to collect and analyze visitor feedback. You can also customize the look and feel of the poll to match your website's design.
+Read more
+2018
+Dec
+Enhancement
+Added consolidated heatmap reports
+View the heatmaps for common layout across pages like a consistent header, footer, login, or a quick-link sidebar on all your website in a single report.
+Read more
+Updates
+Introduced project-level JS
+Add a piece of javascript code that gets executed on all the pages that have the tracking code already installed.
+Read more
+Enhancement
+Rolled out the ability to share Form Analytics reports
+Share form and field-level reports with collaborators to inculcate inclusive analysis practices and decision-making.
+Read more
+Nov
+Enhancement
+Introduced tracking of domain and sub-domain in Session Recording
+Instead of just seeing the pages your visitors have browsed, you can see the exact order in which they access your website pages.
+Enhancement
+Added consolidated heatmap reports
+View the heatmaps for common layout across pages like a consistent header, footer, login, or a quick-link sidebar on all your website in a single report.
+Read more
+Oct
+Enhancement
+Added tagging option in Session Recording
+Organize, access and group similar visitor behavior or common UX issues by automatically or manually tagging recordings.
+Read more
+New
+Launched Session Recording
+View you visitor's complete browsing journey on your website with Session Recording. Easily learn what drives them to convert and the reasons they drop-off.
+Read more
+New
+Introduced Form Analytics
+Use Form Analytics to breakdown visitors' form filling patterns—identify the fields with the highest drop-offs, and optimize these to increase the count of successful submissions.
+Read more
+New
+Launched Goals
+With project-level Goals for tracking key website traffic metrics, you can Identify the time of day, devices, and countries that bring you the most conversions.
+Read more
+Sep
+Change
+Revamped UI
+Fresh look for making the process of creating and launching experiments simpler and more accessible.
+New
+Launched PageSense for GSuite
+Use Google SSO to sign into PageSense; you can also invite users from G Suite to collaborate with you in PageSense.
+Read more
+New
+Introduced Identifier API
+Automatically map recordings to particular visitors using their identity. You will be able to view their unique ID against their session recording.
+Read more
+New
+Launched Google Ads Integration for Funnel Analysis, Form Analytics, Goals
+Track expenses on Google Ads and corresponding conversion metrics within Funnel Analysis, Form Analytics, Goals. Understand how each campaign in Google Ads contributes to your website's conversions.
+Read more
+Updates
+Added additional privacy setting
+Inform visitors that they are being tracked for Session Recording experiments by displaying a banner about your tracking policies on your website.
+Read more
+Aug
+Change
+Updated Goal creation flow
+Brand-new UI for making the creation of project level goals more intuitive.
+New
+Added Global CSS/JS code editing provision in A/B test
+Use the Global editor to make JS/CSS changes that are applied across all the variations—including the original—of your A/B test.
+Read more
+Jun
+Enhancement
+Added URL targeting for custom events
+Specify the web pages on which you wish to specifically track the performance of custom event.
+Read more
+Apr
+Updates
+Introduced Attentionmap under Heatmap
+View the amount of time visitors spend across the length of your web page. Find sections that get the most attention from visitors.
+New
+Introduced Form Analytics beta
+Analyze visitor interaction at a form and field level. Easily find the fields that are preventing a visitor from submitting the form.
+Read more
+Jan
+New
+Launched PageSense
+​We launched Zoho PageSense, a complete conversion optimization platform, with support for A/B testing, Heatmaps, and Funnel Analysis. With us, you can empower your business with substantial data and stats to make informed decisions about website changes that boost conversions.
+Read more

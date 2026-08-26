@@ -1,0 +1,215 @@
+# https://support.optimizely.com/hc/en-us/articles/29328842964109-Contextual-bandits
+Contextual bandits – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Personalization
+Get started with Personalization
+Contextual bandits
+Updated
+July 15, 2026 08:08
+Optimizely Web Experimentation
+Optimizely Personalization
+Use contextual bandits with Optimizely to maximize your conversions by delivering variations that are personalized by user based on the primary metric performance in combination with user attributes. While
+multi-armed bandits (MABs)
+look for the single best-performing variation for all users, contextual bandits pick a winning variation for each user based on their contextual profile and impact on the
+primary metric
+.
+The benefits include the following:
+Provides the most personalized experience for every user.
+Increases the chances of conversions on the primary metric.
+Adapts to changes in visitor behavior, dynamically serving the best variation in every session.
+Like MABs, contextual bandits optimize toward the primary metric but also account for user attributes in that optimization. They do not have sticky bucketing like A/B tests. See
+Experimentation distribution modes
+for information on Optimizely's automated distribution modes and use cases.
+Use cases
+You should use contextual bandits when user characteristics (such as device, location, or interests) impact what variation they would prefer to see. For example, a financial institution collects user attributes on credit cards, credit scores, loans, annual income, and spending categories. They build variations for their current offers of a travel credit card, auto loan refinancing, and a business credit card.
+For a standard MAB, you would choose a primary metric, such as a call-to-action click, and display random variations to users. When one variation has a greater impact on the primary metric, more visitors are exposed to that variation. This is useful to capitalize on conversions during a short cycle like a weekend sale.
+With a contextual bandit, you can personalize the user experience and ensure the variation chosen best fits the visitor's context. If the visitor has spent much money on air travel in the last six months, they would likely get the travel credit card offer. A user with a high-interest car loan likely sees the auto loan refinance offer. A user who recently opened a small business likely sees the business card offer.
+Other use cases for contextual bandits include the following:
+Personalized offers
+– Personalize the offers users see based on their attributes, such as products owned or viewed, to increase conversion rates.
+Members-only sale
+– Deliver variations based on the user's membership for a members-only sale or something similar.
+Time-based content delivery
+– Increase user engagement during specific times of day by showing different types of content or offers, such as morning promotions and evening discounts.
+Location-based offers
+– Target a user's location with region-specific promotions or discounts to increase conversion rates in different regions.
+Behavior-triggered messaging
+– Show different messages or call-to-actions based on recent behavior, such as reminders to complete a purchase or suggestions for related products, to reduce cart abandonment rates and increase completed purchases.
+Dynamic pricing strategies
+– Use different pricing strategies or discounts based on a user's browsing history, purchase intent, or location to optimize pricing and maximize revenue while remaining competitive.
+Distribution goals
+To configure a contextual bandit, pick a distribution goal. Distribution goals allocate rates of exploration and exploitation to identify the contextual bandit's traffic distribution.
+Exploration (the learning rate) is the model's probability of serving a random variation to a visitor. Exploitation is the model's probability of serving the most personalized variation to a visitor given their attributes. For example, if the exploration rate is 10%, 1 out of 10 visitors are served a random variation intentionally to observe their behavior for the model to learn.
+Exploration must be at least 5% for the model to continue learning over time, and it cannot exceed 50%. Otherwise, the model serves non-personalized variations the majority of the time.
+Automated
+(default) – Dynamically adjusts the exploration and exploitation rates over time as Optimizely's machine learning model learns more. The exploration rate starts at 100% and gradually decreases to 5%. Choose this goal if you want Optimizely's machine learning model to decide the traffic distribution.
+Maximize Personalization
+– Sets the exploration rate to 10% and the exploitation rate to 90%. Choose this goal to maximize the number of users who see a personalized variation. Although it maximizes lift, it is harder to know what the lift is from because of the emphasis on personalization.
+Manual
+– Lets you set the exploration and exploitation rates manually. Choose this goal if you know exactly the rates you want to configure.
+Configure a contextual bandit
+Use the interactive demo
+to learn how to use this feature.
+Create a new campaign
+or select an existing one.
+Use a primary metric that is tracked on the page where the contextual bandit is running for optimal model performance. You should not use revenue as the primary metric, as it can negatively impact the effectiveness of the model.
+Click
+Create New Experience
+.
+Select your
+audiences
+.
+(Optional) Name your experience. If you do not enter a name, the audience name is used.
+Select
+Contextual Bandit
+for the
+Distribution Mode
+.
+Select the
+Distribution Goal
+from the drop-down list:
+Automated
+,
+Maximize Personalization
+, or
+Manual
+. The default is
+Automated
+.
+(Optional) Set the
+holdback
+. The holdback is the percentage of your visitors who do not see the personalized experience. It is mostly used to measure the improvement of the personalized variations.
+Add
+User Attributes
+that the contextual bandit should consider to serve personalized variations. Optimizely offers several out-of-the-box attributes such as location, device, new or returning session, and more. Additionally, you can use attributes uploaded to your Web Experimentation project, which can be found under
+Audiences > Attributes
+, specifically any
+custom attributes
+and
+external (table) attributes
+.
+Click
+Create Experience
+.
+Use the Visual Editor to
+edit your variations
+for the selected user attributes.
+Test your campaign, then publish
+by clicking
+Start Campaign
+.
+Choose and format user attributes
+The attributes you choose and how you format their values directly affect how well the model learns and personalizes. Format values consistently to give the model the strongest signal.
+How the model interprets attribute values
+Although Optimizely passes attributes as strings, the contextual multi-armed bandit (CMAB) model automatically infers each attribute's data type. The inferred type shapes how each attribute drives personalization. The model treats each attribute as one of the following signals:
+Numeric values
+(for example,
+lifetime_value = "1234.56"
+) – Continuous signals that give the model a sense of magnitude and range.
+Boolean values
+(for example,
+is_member = "true"
+) – Binary signals.
+Everything else
+– Categorical signals, where only exact matches matter.
+If a value cannot be reliably parsed as a number or a Boolean, the entire attribute falls back to categorical treatment.
+Common formatting problems
+Watch for the following formatting issues, which weaken or remove the numeric signal:
+One unparsable value affects the whole attribute
+– If the model cannot parse even one value as a number, it treats the whole attribute as categorical. The attribute loses its numeric signal for every user, so consistent formatting across all values matters.
+No locale or format normalization
+– The model does not handle thousands separators, decimal commas, currency symbols, or whitespace.
+Integer and decimal attributes
+– If an attribute is first sent with whole numbers, the model treats it as an integer type and can reject decimal values you send later, until the model is retrained. To avoid this, include a decimal point from the start for any attribute that could need decimal precision.
+The following numeric formats all fail to parse:
+Thousands separator
+–
+1,234.56
+Decimal comma
+–
+1.234,56
+Currency symbol
+–
+€1234.56
+Space separator
+–
+1 234,56
+Recommended formats for numeric values
+Send numeric attribute values in locale-neutral format:
+Numbers
+–
+1234
+,
+1234.56
+,
+-12.5
+.
+Continuous values
+– Include a decimal point even for whole numbers, such as
+1234.0
+instead of
+1234
+.
+Decimal separator
+– Use a dot (
+.
+), not a comma.
+Booleans
+– Use
+true
+or
+false
+,
+yes
+or
+no
+, or
+1
+or
+0
+.
+Avoid
+– Thousands separators, currency symbols, spaces, or locale-specific formatting.
+View results for contextual bandits
+To view results for contextual bandits, see
+Contextual Bandit Results page
+.
+Optimizely does not support republishing CMABs that you have archived.
+Why contextual bandits do not show statistical significance
+With a traditional
+A/B test
+, the goal is to collect data to discover if a variation performs better or worse than the control. This is expressed through the concept of
+statistical significance
+. Statistical significance tells you whether a change had the expected effect, so you can improve your variations each time. Fixed traffic allocation strategies reduce the time needed to reach a statistically significant result.
+Optimizely Experimentation's algorithms push traffic to whichever variations match the user's contextual profile and impact the primary metric, and do not consider the reason for any superior performance important. Contextual bandits ignore statistical significance, so the results page does not contain statistical significance. It avoids confusion about the purpose and meaning of contextual bandit optimizations.
+Article is closed for comments.
+Articles in this section
+Optimizely Personalization overview
+Core concepts of Optimizely Personalization
+Get started with Optimizely Personalization
+Inspiration for Personalization
+Optimizely Opal Chat for Personalization
+Optimizely Personalization + ODP (add-on)
+Contextual bandits
+Contextual bandits FAQ
+Holdback: Measure overall impact in Personalization
+Supported browsers
+See all 11 articles
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

@@ -1,0 +1,121 @@
+# https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-get-started
+Get started with the Adobe Target MCP server | Adobe Target
+Documentation
+Target
+Target Guide
+[Beta]{class="badge informative"}
+Get started with the Adobe Target MCP server
+target-mcp-get-started
+Last update: May 12, 2026
+Topics:
+Integrations
+CREATED FOR:
+Beginner
+Intermediate
+User
+Developer
+AVAILABILITY
+The Adobe Target MCP server is available to all customers in
+Public Beta
+. It is currently supported in
+Claude Web
+,
+Claude Desktop
+,
+Claude Code
+,
+Cursor
+, and
+ChatGPT
+.
+This page walks you through everything you need to connect the Adobe Target MCP server to your AI assistant and verify your setup.
+IMPORTANT
+The Model Context Protocol (MCP) is an emerging open-source standard and may present security or reliability risks. Adobe MCP server integrations and related documentation are provided “as is,” without warranties of any kind.
+Connecting MCP clients or servers to Adobe products is a customer-elected configuration, and customers are responsible for evaluating the security and suitability of any MCP integration. Adobe is not responsible for issues arising from misconfiguration, misuse of the MCP, vulnerabilities in third-party implementations, or unintended actions performed through MCP-enabled workflows.
+To reduce risk, Adobe encourages testing integrations in a sandbox environment prior to productive use and carefully reviewing and validating all MCP-initiated actions and responses before confirming or relying on them.
+Prerequisites
+mcp-prerequisites
+Before connecting the Adobe Target MCP server to your MCP client, ensure the following:
+You have an active Adobe Target license (Adobe Experience Cloud subscription) with an Adobe Experience Platform organization.
+You have a supported MCP-compatible application (currently Claude Web, Claude Desktop, Claude Code, Cursor, or ChatGPT).
+You have Adobe Target permissions configured in Adobe Admin Console. The required role depends on the operations you want to perform:
+Observer
+role or higher: access to all read-only tools (inspect, report, audit)
+Editor
+role or higher: access to read tools plus write tools (create, update)
+Approver
+role: access to all tools including activation and deactivation
+Connect the Adobe Target MCP server
+mcp-connect
+NOTE
+The Adobe Target MCP server uses OAuth 2.0 for authentication. When you first use a Target MCP tool, you are redirected to Adobe Experience Cloud to log in, select your organization, and grant the requested permissions. No static credentials are required.
+To connect from Claude Desktop or Claude Web:
+Open your MCP client settings and add a new MCP server.
+Enter the server URL:
+https://targetmcp.adobe.io/mcp
+When prompted, complete the Adobe IMS OAuth login with your Adobe Experience Cloud credentials.
+Once authenticated, all tools are immediately available. Try “List all active Target activities” to verify the connection.
+To connect from Claude Code:
+Add the following to your Claude Code MCP configuration:
+{ "mcpServers": { "adobe-target": { "url": "https://targetmcp.adobe.io/mcp" } } }
+Complete the OAuth browser flow when prompted on first use.
+To connect from Cursor:
+Open
+Cursor
+and navigate to
+Settings
+→
+MCP
+→
+Add New Global MCP Server
+.
+Add the following configuration:
+{ "mcpServers": { "target": { "type": "streamable-http", "url": "https://targetmcp.adobe.io/mcp" } } }
+Save the configuration. The Target MCP server will appear in your available MCP servers.
+TIP
+If activities or data from the wrong organization appear, log out of Adobe Experience Cloud completely, reconnect the MCP server, and carefully select the correct organization during re-authentication.
+Troubleshooting
+mcp-troubleshooting
+OAuth flow fails or redirects incorrectly
+Log out of Adobe Experience Cloud completely.
+Clear browser cookies for adobe.com domains.
+Retry the authentication flow.
+Ensure you select the correct organization when prompted.
+Activities or data from the wrong organization appear
+Log out of Adobe Experience Cloud completely.
+Disconnect and reconnect the MCP server in your client settings.
+Select the correct organization carefully during re-authentication.
+A tool returns an error message
+Verify you have the required role in Adobe Target for the operation you are attempting (see
+Prerequisites
+). Read-only tools require Observer or higher; write tools require Editor or higher; activation and deactivation require Approver.
+Check that the referenced resources — activities, offers, audiences — exist in your organization.
+Confirm that activity IDs and other identifiers are correct.
+Cannot connect to the MCP server
+Verify your internet connection.
+Check that the MCP server URL is entered correctly in your client configuration.
+Try removing and re-adding the server in your MCP client settings.
+Security and permissions
+mcp-security
+The Adobe Target MCP server can only access data that your Adobe user account has permission to view or modify. All operations respect your Target role assignments and workspace permissions.
+The server requests the following OAuth scopes:
+AdobeID
+— Basic Adobe identity
+openid
+— OpenID Connect authentication
+additional_info.projectedProductContext
+— Tenant discovery
+read_organizations
+— Organization-level operations
+additional_info.roles
+— Role-based access control
+OAuth tokens are validated against Adobe IMS on each request, are not stored persistently by the MCP server, and all communication uses HTTPS.
+Related resources
+mcp-get-started-related
+Overview
+Use cases and walkthroughs
+MCP server tools reference
+Model Context Protocol documentation
+Adobe Target Admin API reference
+recommendation-more-help
+target-help-main

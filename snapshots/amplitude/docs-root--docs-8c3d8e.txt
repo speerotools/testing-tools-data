@@ -1,0 +1,224 @@
+# https://amplitude.com/docs
+Amplitude Documentation
+Docs
+Get Started
+Products
+Admin
+Developers
+FAQ
+Search docs…
+⌘ K
+/
+Full width
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Send your first event in under five minutes.
+Amplitude's docs cover everything from your first
+track()
+call to cohort-targeted experiments at scale. Pick a stack, copy the snippet, and go.
+Get Started
+CLI
+AI Prompt
+Snippet
+Code
+Add your API Key
+Run in your terminal — detects your framework automatically.
+npx @amplitude/wizard
+Copy
+The wizard detects your framework, installs the right SDK, adds your API key, and fires a test event.
+Learn more in the guide.
+Products
+Explore by product area
+Amplitude AI
+AI-powered insights and predictions
+Ask questions in plain language — Amplitude AI surfaces answers across all your data.
+Global Agent Overview
+AI Visibility
+Amplitude MCP Server
+AI Context
+Data
+Govern your event taxonomy
+Define events once, validate on ingest. A single source of truth your team can trust.
+Get started with Data
+Create a tracking plan
+Enable Autocapture
+Validate events
+Analytics
+Understand product behavior
+Charts, dashboards, and insights. Build funnels, segment users, answer "why".
+Build an event segmentation chart
+Build a funnel chart
+Create user cohorts
+Create a dashboard
+Session Replay
+Watch real user sessions
+See exactly what users experience. Replay sessions with full event and network context.
+Get started
+Targeted capture
+Manage privacy settings
+Configure settings
+Zoning Insights
+Analyze engagement within page regions
+Define zones on any page and measure click rates, exposure, scroll reach, and rage clicks per region.
+Get started
+Create an overlay
+Zoning Insights metrics
+Instrumentation
+Heatmaps
+Visualize where users click and scroll
+Aggregate click, scroll, and selector data across sessions into visual maps of user engagement.
+Get started
+Click map
+Selector map
+Scroll map
+Web Experiment
+Test and optimize web experiences
+Run visual A/B tests on any page — no engineering required to get started.
+Set up Web Experiment
+Out-of-the-box widgets
+Targeting
+Actions
+Feature Experiment
+Run feature flags + A/B tests
+Ship with confidence. Test variants, target segments, measure causal lift.
+Quick start
+Create a feature flag
+Target by cohort
+Analyze experiment results
+AI Assistant
+In-product AI support that takes action
+Embed an agent grounded in your help content and user behavior. Answer questions, guide flows, and complete tasks for users in the moments that matter.
+Get started
+Use the AI Assistant
+Configure AI Assistant
+Resource center
+Guides and Surveys
+Engage users in-product
+Deliver targeted guides, onboarding flows, and surveys at exactly the right moment.
+Overview
+Get started
+Build a survey
+Guide templates
+Find your path
+Pick a guide tailored to your role
+Every team works with Amplitude differently. These role-based quickstarts skip the noise and walk you through the workflows that matter for your day-to-day.
+For developers
+Instrument, ship, and debug
+SDK setup, event tracking, identity, and clean shutdown — built for engineers who want copy-paste-ready snippets.
+Install an SDK in five minutes
+Validate events end-to-end
+Wire up identity and groups
+Start your path
+For PMs and analysts
+Answer product questions, fast
+Build funnels, retention, and segmentation charts. Save dashboards and share insight without writing SQL.
+Build your first chart
+Create user cohorts
+Share a dashboard
+Start your path
+For marketers
+Drive campaigns from real behavior
+Activate cohorts in your marketing stack, measure attribution, and run growth experiments with confidence.
+Sync cohorts to ad platforms
+Measure marketing impact
+Run growth experiments
+Start your path
+For data teams
+Govern, validate, and export
+Define a single tracking plan, enforce schema on ingest, and pipe clean event streams into your warehouse.
+Build a tracking plan
+Validate events on ingest
+Export to your warehouse
+Start your path
+SDK reference
+Client + server libraries
+All SDKs
+Analytics
+Browser
+iOS
+Android
+React Native
+More
+›
+Experiment
+Browser
+iOS
+Android
+React Native
+More
+›
+Guides & Surveys
+Web
+iOS
+Android
+React Native
+More
+›
+Session Replay
+Web
+iOS
+Android
+React Native
+More
+›
+Platform
+AI Agents
+AI Visibility
+AI Feedback
+Amplitude MCP
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+llms.txt
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+©
+2012–2026
+Amplitude, Inc.
+.
+All rights reserved.
+Amplitude is a registered trademark of Amplitude, Inc.

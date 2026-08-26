@@ -1,0 +1,202 @@
+# https://www.statsig.com/trust/security
+Security at Statsig | Statsig
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+Products
+Solutions
+Resources
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Products
+Solutions
+Resources
+Docs
+Pricing
+Sign In
+Contact Us
+PRODUCTS
+Experimentation
+Feature Flags
+Product Analytics
+Session Replay
+Web Analytics
+Infra Analytics
+Marketing Experiments
+PLATFORM
+Warehouse Native
+Infrastructure
+SDKs
+Integrations
+ROLES
+Engineering
+Dev Ops
+Data Science
+Product Management
+INDUSTRIES
+Gaming
+B2B Saas
+E-Commerce
+Blog
+Customer Stories
+Partner Program
+Product Updates
+Support
+Sample Size Calculator
+Statsig Lite
+Statsig University
+Security at Statsig
+Secure by design, and practice
+SOC2 Type II audited and certified
+Statsig has instituted several technical and organizational measures designed to protect Statsig applications. This page provides a description of our current security measures.
+Risk Management
+The Security Team at Statsig conducts periodic automated and manual risk assessments using a methodology based on AICPA SOC2 guidelines for information security risk management. Top risks are identified, and risk treatment plans are prepared. The risk assessment, top risk selection and risk treatment plans are reviewed, and progress is tracked by the Security Governance Board.
+Access Controls
+Authentication
+By default Statsig requires authentication for access to all application entry points including Web and API, except for those intended to be public.
+Secure communication of credentials and data
+Data from customers is encrypted in transit. Statsig currently uses TLS to transmit authentication credentials to Statsig products.
+Password management
+With processes designed to enforce minimum password requirements for Statsig products, we never store passwords in the clear and always use a one-way hash to validate authentication. Email-based password reset links are sent only to a user’s preregistered and verified email address, with a temporary link
+Password hashing
+End-user account passwords stored on Statsig are hashed with a random salt using industry-standard techniques.
+Single sign-on
+Statsig lets you implement Single Sign-On (SSO) through OIDC, an open standard data format for exchanging authentication and authorization information. This allows your team to log in to Statsig using their existing corporate credentials. SSO is available on select packages only, so please consult your order form for eligibility.
+Session Management
+Each time a user signs into Statsig, the system assigns them a new, unique session identifier that consists of 64 bytes of random data designed for protection against a brute force attack.
+Session timeout
+Statsig enforces hard and inactivity session timeouts that require re-authentication for API and direct web application access.
+Sign out
+When signing out of Statsig, the system is designed to delete session cookies from the client and invalidate session identifiers on Statsig servers.
+Storage
+Data persisted to disk is encrypted using 256-bit
+AES
+encryption.
+Network & Transmission Controls
+Statsig monitors and updates its communication technologies periodically with the goal of providing network security.
+SSL/TLS
+By default, all communications from your end-users and visitors are encrypted using industry standard communication encryption technology. Statsig currently uses Transport Layer Security (TLS) and updates to cipher suites and configurations as vulnerabilities are discovered.
+Network Security
+Statsig regularly updates network architecture schema and maintains an understanding of the data flows between systems. Firewall rules and access restrictions are reviewed for appropriateness on a regular basis.
+Infrastructure Security
+Statsig uses an Intrusion Detection System (IDS), Security Incident Event Management (SIEM) system and other security monitoring tools on production servers. Notifications from these tools are sent to the Security Team, who have an incident management plan to investigate, isolate and mitigate any identified events.
+Access Logs
+Statsig keeps detailed access logs of our infrastructure and products which are reviewed for events impacting security and availability. Logs are retained for forensics purposes.
+Data Confidentiality & Job Controls
+Internal Access to Data
+Access to your data stored by Statsig is restricted to employees and contractors who have a need to know this information to perform their job function. For example, to provide customer support, maintain infrastructure, enhance product or to understand how an engineering change affects a group of customers.
+Statsig currently requires the use of single sign-on, strong passwords and two-factor authentication for all employees to access production data.
+Job Controls
+Statsig has implemented several employee job controls to help protect your data:
+All Statsig employees and contractors are required to sign confidentiality agreements prior to accessing our production systems.
+All Statsig employees are required to receive security and privacy training at time of hire as well as annual security and privacy awareness training.
+Employee and contractor access to production systems that contain your data is logged and audited.
+Statsig employees are subject to disciplinary action, including but not limited to, termination if they are found to have abused their access to customer data.
+Statsig employees are subject to a background check prior to employment where permitted by law.
+Security in Engineering
+Product Security Overview
+Statsig software security practices are measured using industry-standard security models. The software development life cycle (SDLC) for our services includes many activities intended to foster security:
+Defining security requirements
+Design (threat modeling, threat analysis and security design review)
+Development controls (static analysis and manual peer code review)
+Testing (dynamic analysis, Bug Bounty Program and third party security vulnerability assessments)
+We currently use unit, integration and end-to-end tests, where applicable, to catch regressions
+Deployment controls (such as change management and canary release process)
+Statsig software is designed, reviewed and tested using applicable OWASP standards.
+Code Assessments
+Statsig developed software is continually monitored and tested using processes designed to proactively identify and remediate vulnerabilities. We regularly conduct:
+Automated source code analysis designed to find common defects
+Peer review of all code prior to being pushed to production
+Manual source code analysis on security-sensitive areas of code
+Third-party application security assessments performed annually
+Availability Controls
+Disaster Recovery
+Statsig Service infrastructure is designed to minimize service interruption due to hardware failure, natural disaster or other catastrophes. Features include:
+State of the art cloud providers: We use Amazon Web Services, Azure and Google Cloud — all trusted by thousands of businesses to store and serve their data services.
+Data replication: To help ensure availability in the event of a disaster, we can replicate data both within and across multiple data centers depending on the resiliency requirements.
+Backups: We perform frequent backups of data stored through Statsig. Backups are tested for integrity, regularly.
+Security: We do not degrade our security during Disaster Recovery operations.
+Incident Response
+Statsig has an Incident Response Plan designed to promptly and systematically respond to security and availability incidents that may arise. The incident response plan is tested and refined on a regular basis.
+Segregation Controls
+Data Segregation
+Statsig segregates all customer data and provide strong programmatic and access controls to logically isolate your data from that of other customers.
+User Roles
+Statsig products give you the ability to limit access to your data and configuration by defining user roles. You can invite users to your account without giving all team members the same levels of permissions. These user permission levels are especially useful when there are multiple people working on the same project.
+Physical Security
+Statsig uses industry leading cloud platforms (Azure and Amazon Web Services) to host its production services. These cloud services provide high industry standard levels of physical security. Access to these data centers is limited to authorized personnel only, as verified by biometric identity verification measures. Physical security measures for these data centers include on-premises security guards, closed circuit video monitoring and additional intrusion protection measures. We rely on their third-party attestations of physical security.
+Subprocessors
+To deliver the services, Statsig may use the subprocessors and Amplitude affiliates listed at
+https://www.amplitude.com/subprocessor-list
+to process customer data.
+We use cookies to ensure you get the best experience on our website.
+Privacy Policy
+Got it!
+Platform
+Feature Management
+Experimentation
+Data Warehouse
+Product Analytics
+Session Replay
+Marketing Experiments
+Web Analytics
+Test Drive Now
+Why Statsig
+Product Observability
+How It Works
+Build vs Buy
+Pricing
+Customer Stories
+Testimonials
+Resources
+Docs
+Code
+Blog
+Product Updates
+A/B Test Calculator
+Integrations
+Join Community
+Events
+Feedback
+Status
+Company
+About Us
+Careers
+Pets
+Terms
+Privacy Policy
+Contact Us
+© 2026 Statsig, LLC
+Hello from Bellevue, WA

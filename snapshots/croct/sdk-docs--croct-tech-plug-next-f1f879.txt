@@ -1,0 +1,279 @@
+# https://github.com/croct-tech/plug-next
+GitHub - croct-tech/plug-next: Croct's official SDK for Next.js. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Appearance settings
+Platform
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
+Actions
+Automate any workflow
+Codespaces
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
+Documentation
+Blog
+Changelog
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
+Enterprises
+Small and medium teams
+Startups
+Nonprofits
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
+Healthcare
+Financial services
+Manufacturing
+Government
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
+Business insights
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+Accelerator
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
+GitHub Advanced Security
+Enterprise-grade security features
+Copilot for Business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+croct-tech
+/
+plug-next
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+0
+Star
+15
+Code
+Issues
+1
+Pull requests
+3
+Actions
+Projects
+Security and quality
+0
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
+master
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+180 Commits
+180 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.github
+.github
+src
+src
+.gitignore
+.gitignore
+LICENSE
+LICENSE
+README.md
+README.md
+babel.config.json
+babel.config.json
+eslint.config.mjs
+eslint.config.mjs
+jest.config.mjs
+jest.config.mjs
+jest.setup.js
+jest.setup.js
+package-lock.json
+package-lock.json
+package.json
+package.json
+post-build.mjs
+post-build.mjs
+renovate.json
+renovate.json
+tsconfig.json
+tsconfig.json
+tsup.config.ts
+tsup.config.ts
+View all files
+Repository files navigation
+README
+MIT license
+More
+items
+Croct Next.js SDK
+Bring dynamic, personalized content natively into your applications.
+📘
+Quick start →
+Introduction
+Croct is a headless CMS that helps you manage content, run AB tests, and personalize experiences without the hassle of complex integrations.
+Installation
+Run this command to install the SDK:
+npm install @croct/plug-next
+See our
+quick start guide
+for more details.
+Documentation
+Visit our
+official documentation
+.
+Support
+Join our official
+Slack channel
+to get help from the Croct team and other developers.
+Contribution
+Contributions are always welcome!
+Report any bugs or issues on the
+issue tracker
+.
+For major changes, please
+open an issue
+first to discuss what you would like to change.
+Please make sure to update tests as appropriate. Run tests with
+npm test
+.
+License
+This library is licensed under the
+MIT license
+.
+About
+Croct's official SDK for Next.js.
+docs.croct.com/reference/sdk/nextjs/installation
+Topics
+ab-testing
+cms
+headless-cms
+nextjs
+personalization
+Resources
+Readme
+MIT license
+Activity
+Custom properties
+Stars
+15
+stars
+Watchers
+5
+watching
+Forks
+0
+forks
+Report repository
+Releases
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

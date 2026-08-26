@@ -1,0 +1,239 @@
+# https://www.harness.io/security
+Harness Security Practices: Protecting Data & Ensuring Compliance
+Product
+AI Across the SDLC
+AI for DevOps & Automation
+Accelerate innovation velocity with a modern DevOps toolchain.
+Continuous Delivery & GitOps
+new
+Continuous Integration
+new
+Internal Developer Portal
+new
+Infrastructure as Code Management
+new
+Database DevOps
+new
+Artifact Registry
+new
+AI for Testing & Resilience
+Build and deploy reliable applications that scale with confidence.
+Feature Management & Experimentation
+new
+Resilience Testing
+new
+AI Test Automation
+new
+AI SRE
+new
+AI Evals
+new
+AI for Security & Compliance
+Governance and security at every stage of the SDLC - from design to runtime.
+Application Security Testing
+Web Application & API Protection
+AI Security
+AI for Cost & Optimization
+Optimize cloud spend, resource utilization, and developer productivity.
+Cloud & AI Cost Management
+AI DLC Insights
+Customers
+Open Source
+Pricing
+Learn
+Developer
+Documentation
+API Reference Docs
+Developer Hub
+Commitment to Open Source
+Engineering Blog
+Community
+Training
+Certifications
+RESOURCES
+Ebooks
+Blog
+Case Studies
+Comparison Guide
+DevOps Academy
+Harness Support
+Professional Services
+Webinars
+Research Reports
+Events
+Upcoming Events
+On-Demand
+Harness Summits
+Company
+About us
+Careers
+Security
+Press & News
+Legal
+Partners
+Contact us
+View all
+Contact us
+Get started
+Sign up
+Sign in
+Get a demo
+Trending searches
+Products:
+Continuous Integration
+Continuous Delivery & GitOps
+Resilience Testing
+Supply Chain Security
+Internal Developer Portal
+Explore Business Values:
+DevOps & Automation
+Security & Compliance
+Cost & Optimization
+Testing & Resilience
+Contact us
+Get started
+Sign up
+Sign in
+Get a demo
+Security and Trust at Harness
+Harness takes a comprehensive approach to data privacy and security to protect our infrastructure, products and customer data. Our geographically diverse security team is committed to operating and continually enhancing our security and compliance programs.
+Get started
+Contact us
+Report a security bug
+Security
+Availability and Disaster Recovery
+We have multi-region architecture in place in a separate geographic locations to ensure the platform and its services can be rapidly scaled up in the event of a disaster to its primary location. This architecture is tested by Harness at least annually to validate the failover procedures and recovery technologies.
+We also perform frequent backups of our databases to ensure that data is backed up and can be restored to a point in time in the event of an incident or data corruption. Our Recovery Time Objective (RTO) and Recovery Point Objective (RPO) are 4 and 6 hours respectively.
+Personnel Security
+We conduct rigorous interviews and background checks to ensure we identify top candidates to join our team. Employees must complete security and privacy training during onboarding and annually.
+Secure Software Development
+Security is embedded throughout our software development lifecycle. All changes to production must be peer reviewed and approved, automatically tested through continuous integration, scanned for vulnerabilities, and include roll-back procedures prior to deployment.
+Vulnerability Management
+We perform vulnerability management over our infrastructure and application code. Scans are run at least monthly and adhere to NIST vulnerability remediation timelines.
+Incident Response
+Our Incident Response program is staffed with a dedicated Incident Response team in place to ensure the program follows established internal policies.
+‍
+Customers are updated on operational incidents through our
+Status Page
+and impacted customers are notified without undue delay of any security incidents.
+Data Security
+Customer Data Protection
+Minimal PII is required for us to provide and maintain our services. All Harness customer data is internally classified under the most critical data classification and is therefore the most strictly controlled and secured. We encrypt all data in transit utilizing TLS 1.2+. and data at rest within the Harness platform and our databases is AES-256 encrypted.
+Data Isolation
+Customer data is never used in our non-production environments which are strictly separated from our production environments and used for development, testing, and staging only.
+We logically separate all customer accounts using unique Account IDs.
+Identity and Access Management
+Harness adheres to RBAC principle, therefore unique user accounts and passwords are assigned to each employee based on least privilege.
+Single Sign On (SSO) is enforced for critical business systems and two-factor authentication (2FA) is implemented wherever possible.
+System Monitoring
+We use software to collect data from system infrastructure and endpoints, monitoring activities such as access, system performance, potential security vulnerabilities, and resource utilization; the information security and operations teams are alerted when unusual system activity or service requests are detected.
+Compliance and Certifications
+We are SOC 2 compliant and ISO 27001/27017/27018 certified! To request a copy of our latest reports as well as access additional information related to our security posture and controls, please visit the Harness Trust Center at
+trust.harness.io.
+Assessments, Audits, and Compliance
+Penetration Testing
+On an annual basis, we engage an external body to conduct a penetration test against our application and external network.
+Risk Management
+We conduct risk assessments at least annually and after significant environmental changes; risks are classified based on likelihood, impact, and existing mitigation, then reviewed with management and stakeholders and tracked in a risk register. Additionally, we perform annual application business and privacy impact assessments to validate the security and controls of critical systems.
+Vendor Management
+We maintain a vendor risk management program that includes regular monitoring and assessment of suppliers’ ability to comply with security and compliance requirements. The scope of this program includes both business systems and technical assets used for our service delivery.
+Laws and Regulations
+We comply with GDPR, CCPA, and other applicable privacy laws.
+The
+Harness Privacy Statement
+provides an overview of the data collected and how it may be used. Data Subjects rights may be executed by submitting a
+Privacy Request
+.
+Product Security
+Authentication & Authorization
+Our product supports both local authentication and integration with your corporate Identity Provider. See our
+technical documentation
+for a detailed walkthrough on how to configure SSO. You can also enforce Two-Factor Authentication through Harness or your Identity Provider.
+Access Management
+Our platform boasts advanced
+Role-Based Access Control (RBAC)
+functionality, which allows for granular control over what users and service accounts can and cannot do in the platform.
+Auditing
+We offer comprehensive, out-of-the-box Audit Trail at the account and organization levels for all events and changes that take place in the platform.
+Delegate Security
+The Harness Delegate runs in the customer’s environment to connect internal systems with the Harness Platform. This happens over a secure WebSocket connection over TLS.
+Secret Management
+The Harness product includes a built-in Secrets Management solution built on top of the GCP KMS service. This allows customers to maintain and store secrets used in their Harness account, pipelines, and connectors in a secure and convenient way.
+Container Hardening
+We build on hardened images and provide a “safe image” for deployment. This safe image ensures that third-party dependencies have been procured from trusted resources, and that relevant operating system hardening has been implemented.
+Reporting Security Issues
+If you believe you have discovered a critical security bug or vulnerability that may impact our product or services, please contact
+security@harness.io
+. We’ll get back to you within 24 hours or sooner. We request that you do not publicly disclose the issue until we have had a chance to address it.
+If you’d like to participate in our private bug bounty, please reach out with your preferred email address.
+Report a security bug
+®
+Sign up for Harness Updates
+Subscribe to our newsletter to receive the latest Harness updates in your inbox
+Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
+By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
+the State of
+Engineering
+Excellence 2026
+View the full report
+Harness AI
+Harness AI
+Platform
+Continuous Delivery & GitOps
+Continuous Integration
+Feature Management & Experimentation
+Infrastructure as Code Management
+Resilience Testing
+AI SRE
+NEW
+Database DevOps
+NEW
+Artifact Registry
+Internal Developer Portal
+AI DLC Insights
+Application Security Testing
+Web Application & API Protection
+AI Security
+Cloud & AI Cost Management
+AI Test Automation
+Pricing
+View plans
+For Developers
+Documentation
+Developer Hub
+Open Source
+Commitment to Open Source
+Community
+API Reference Docs
+Engineering Blog
+Harness University
+Training
+Resources
+Blog
+Comparison Guide
+Collateral
+Customers
+DevOps Academy
+Ebooks
+Engineering Maturity Assessment
+On-demand Videos
+Webinars
+Support
+Professional Services
+Company
+About Us
+Press & News
+Partners
+Careers
+Contact Us
+Trademark Policy
+Security
+Legal
+Press Kit
+© 2026 Harness Inc.
+Subscription Terms
+Website Terms of Use
+Privacy Statement
+Opt Out
+Cookie Settings
+© 2026 Harness Inc.

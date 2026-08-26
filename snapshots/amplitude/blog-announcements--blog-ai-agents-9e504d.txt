@@ -1,0 +1,488 @@
+# https://amplitude.com/blog/ai-agents
+Introducing Amplitude AI Agents
+Platform
+AI
+Amplitude AI
+Analytics that never stops working
+AI Agents
+Sense, decide, and act faster than ever before
+AI Feedback
+Distill what your customers say they want
+Amplitude MCP
+Insights from the comfort of your favorite AI tool
+Agent Analytics
+Measure the real impact of your agents
+Early Access Program
+Test new AI features before they launch
+Insights
+Product Analytics
+Understand the full user journey
+Marketing Analytics
+Get the metrics you need with one line of code
+Session Replay
+Visualize sessions based on events in your product
+Heatmaps
+Visualize clicks, scrolls, and engagement
+Zoning Insights
+Overlay performance and revenue metrics on your webpages
+Action
+Guides and Surveys
+Guide your users and collect feedback
+Feature Experimentation
+Innovate with personalized product experiences
+Web Experimentation
+Drive conversion with A/B testing powered by data
+Feature Management
+Build fast, target easily, and learn as you ship
+Activation
+Unite data across teams
+Data
+Data Governance
+Complete data you can trust
+Integrations
+Connect Amplitude to hundreds of partners
+Security & Privacy
+Keep your data secure and compliant
+Solutions
+Solutions that drive business results
+Deliver customer value and drive business outcomes
+Amplitude Solutions
+→
+Industry
+Financial Services
+Personalize the banking experience
+B2B
+Maximize product adoption
+Media
+Identify impactful content
+Healthcare
+Simplify the digital healthcare experience
+Ecommerce
+Optimize for transactions
+Use Case
+Acquisition
+Get users hooked from day one
+Retention
+Understand your customers like no one else
+Monetization
+Turn behavior into business
+Team
+Product
+Fuel faster growth
+Data
+Make trusted data accessible
+Engineering
+Ship faster, learn more
+Marketing
+Build customers for life
+Executive
+Power decisions, shape the future
+Size
+Startups
+Free analytics tools for startups
+Enterprise
+Advanced analytics for scaling businesses
+Resources
+Learn
+Blog
+Thought leadership from industry experts
+Resource Library
+Expertise to guide your growth
+Compare
+See how we stack up against the competition
+Glossary
+Learn about analytics, product, and technical terms
+Explore Hub
+Detailed guides on product and web analytics
+Connect
+Community
+Connect with peers in product analytics
+Events
+Register for live or virtual events
+Customers
+Discover why customers love Amplitude
+Partners
+Accelerate business value through our ecosystem
+Support & Services
+Customer Help Center
+All support resources in one place: policies, customer portal, and request forms
+Developer Hub
+Integrate and instrument Amplitude
+Academy & Training
+Become an Amplitude pro
+Customer Success
+Drive business success with expert guidance and support
+Product Updates
+See what's new from Amplitude
+Tools
+Benchmarks
+Understand how your product compares
+Prompt Library
+Prompts for Agents to get started
+Templates
+Kickstart your analysis with custom dashboard templates
+Tracking Guides
+Learn how to track events and metrics with Amplitude
+Maturity Model
+Learn more about our digital experience maturity model
+Event Taxonomy Generator
+Pricing
+Login
+Contact sales
+Get started
+Platform
+AI
+Amplitude AI
+AI Agents
+AI Feedback
+Amplitude MCP
+Agent Analytics
+Early Access Program
+Insights
+Product Analytics
+Marketing Analytics
+Session Replay
+Heatmaps
+Zoning Insights
+Action
+Guides and Surveys
+Feature Experimentation
+Web Experimentation
+Feature Management
+Activation
+Data
+Data Governance
+Integrations
+Security & Privacy
+Solutions
+Amplitude Solutions
+→
+Industry
+Financial Services
+B2B
+Media
+Healthcare
+Ecommerce
+Use Case
+Acquisition
+Retention
+Monetization
+Team
+Product
+Data
+Engineering
+Marketing
+Executive
+Size
+Startups
+Enterprise
+Resources
+Learn
+Blog
+Resource Library
+Compare
+Glossary
+Explore Hub
+Connect
+Community
+Events
+Customers
+Partners
+Support & Services
+Customer Help Center
+Developer Hub
+Academy & Training
+Customer Success
+Product Updates
+Tools
+Benchmarks
+Prompt Library
+Templates
+Tracking Guides
+Maturity Model
+Event Taxonomy Generator
+Pricing
+Login
+Sign Up
+Introducing Amplitude AI Agents
+The era of self-improving products starts now.
+Product
+Jun 10, 2025
+11 min read
+James Evans
+Former Head of AI and Engagement Products, Amplitude
+For 13 years, Amplitude has been the go-to platform for teams building better products—helping them understand what users are doing, what’s working, and what’s not.
+But getting to these insights has largely been a manual and time-consuming process. Teams have to pull data, interpret it, generate ideas, run tests, learn, and iterate. It takes a lot of expertise, focus, and time to do right. Product, growth, and marketing teams have been traditionally relegated to a "single-track" job due to these limitations. You often test one hypothesis at a time, wait for results, then move to the next idea. It's methodical and slow, often bottlenecked by the bandwidth, context, and the speed at which your teams can operate.
+Today, we’re flipping the script on all of this–with the introduction of
+Amplitude AI Agents
+. Amplitude AI Agents rewire Amplitude from a tool you use to a team of Agents you lead. They help you tackle problems (even when you are not in the office)—investigating anomalies, generating hypotheses, designing experiments, and measuring impact—faster and more intelligently than ever before.
+This is the real breakthrough with AI Agents. Instead of acting on a vague alert like “conversion is down,” you now have a system that thinks like a proactive teammate—one that not only spots issues but digs into the
+why
+, proposes next steps, and runs experiments. While you focus on strategic priorities, your Agents are working in the background, testing multiple hypotheses, analyzing impact, and surfacing the highest-leverage insights. This always-on, multi-track approach marks a turning point for product development, transforming what was once a slow, linear process into a scalable, continuous loop of discovery and action. Now your team can spend more time doing what matters most: building, shipping, and learning faster.
+With AI Agents, teams can not only move fast, they can also use Agents to access strategic thinking, rooted in best practices from across Amplitude’s own experts and power users. It’s a little like embedding a growth strategist and an analyst into every product squad. AI Agents allow you to take advantage of an integrated system that informs decisions and actively works toward your goals, 24/7. It’s an exciting approach and has been one of the most requested features from customers like Vinay Sharma, Head of Software Engineering at Yum! Brands:
+"What excites me most about Amplitude's AI Agents isn't just that they can identify conversion issues or run experiments - it's that they'll be able to work through dozens of scenarios and execute toward our goals while our team focuses on higher-level strategy. The traditional product development process gets bottlenecked by resource constraints, but Amplitude is changing that. With Agents, it'll be much faster and easier to understand customer behavior, identify optimization opportunities, and measure impact."
+How Amplitude AI Agents work
+Creating an AI Agent starts with something simple: a goal. Think of the things you already use Amplitude for today—improving website conversion, boosting feature adoption, or making onboarding smoother. That goal becomes the objective your Agent is built around.
+Once it’s set up and running, the Agent pulls in data from across your account in Amplitude—
+behavioral data
+,
+session replays
+,
+experiments
+, as well as
+guides and surveys
+—and works continuously toward its goal. It’s not just spotting issues; it’s figuring out why they’re happening and suggesting what to do next. Agents draw from all your unique company data and can apply patterns we’ve seen work across thousands of teams.
+Think of an Agent’s work in two phases: insights and actions. Insights are observations about your data; actions are suggested next steps based on those insights. For example, Agents can access “tools” to run root cause analysis and watch session replays to collect insights. They can also take action by injecting custom HTML, CSS, Javascript to configure a web experiment or deploy a targeted in-product guide for a specific cohort based on those insights. It's the same workflow a skilled team member would follow, just faster and at scale.
+With Agents, you’re always in control. Agents won’t make customer-facing changes without your OK. As they prove themselves, you can choose to give them more autonomy, with clear guardrails and limits based on what you’re comfortable with.
+Agents designed for every use case
+Amplitude AI Agents aren't one-size-fits-all solutions. They're specialized experts built to tackle specific business challenges across every part of your digital experience. Each Agent comes preconfigured with industry best practices and optimization patterns drawn from our work with thousands of leading companies. Just choose your objective, and your Agent gets to work. Here are a few examples built for the most common challenges teams face—with many more on the way.
+Website conversion
+A conversion Agent constantly monitors your website's performance metrics to catch issues before they impact your business. When it detects a conversion drop, it immediately springs into action—analyzing user sessions to pinpoint exactly where and why users are abandoning your funnel. The Agent then develops data-backed hypotheses about what's causing the friction, designs targeted
+A/B tests
+to validate potential solutions, and requests your permission to run experiments.
+Once a test reaches statistical significance, the Agent presents clear results and recommendations, awaiting your approval before implementing the winning variant. This closed-loop system ensures your conversion rates consistently improve without requiring constant manual analysis and intervention from your team.
+Onboarding
+An onboarding Agent analyzes how new users navigate your initial product experience. It identifies precise moments where users hesitate or abandon the onboarding process, pinpointing problems that might otherwise remain hidden. Based on these insights, the Agent can automatically create and deploy targeted
+in-app guides
+customized for user segments that are struggling with particular steps. Think of it as a product-led growth consultant parachuted in to optimize your funnel.
+The Agent can also position micro-surveys at key moments to gather qualitative feedback directly from users about their experience. This creates a powerful closed feedback loop where user behavior data and direct feedback inform continual refinements to both the guides and the overall onboarding flow.
+Feature adoption
+A feature adoption Agent breaks down how different groups are engaging with your latest features. It finds patterns in the behavior—who’s finding value, who’s dropping off—and identifies friction points you might not spot in aggregate dashboards.
+Based on this context, your Agent can then recommend targeted next steps. It might suggest a guide or propose to
+test a feature variant
+. You get real visibility into what's working and where adoption needs a boost.
+Monetization
+A monetization Agent looks for signs that a user is ready to upgrade, purchase, or try a premium feature. When it sees those signals—based on behavior, timing, and past patterns—it suggests the right nudge:
+a message
+, an offer, or a reminder that fits the moment.
+The Agent can take advantage of guardrails built into our guides and surveys to ensure it’s not flooding users, but instead delivering the right message at the right time.
+What makes these Agents different?
+Most analytics tools give you AI powered insights and recommendations, then leave you to figure out what to do next. That's where the real work begins: forming hypotheses, designing tests, analyzing results, making changes, and starting over. With Agents, Amplitude is integrating AI across the platform experience. Our approach is to use this intelligent foundation to rethink how our platform works. This means Agents can:
+Learn from everything:
+Agents pull from analytics data, session replays, past experiments, guides, and campaigns to learn what is working and what isn't.
+Take real action:
+Agents don’t stop at insights. They recommend changes, run tests, ship guides, track outcomes, and continue repeating that loop.
+Work around the clock:
+Agents are always monitoring, always learning from your data, always ready with the next step.
+Adapt to your pace:
+You decide how much autonomy to give Agents. Start small, add guardrails, and scale up as you go.
+This shifts the entire dynamic of how teams work with their data.
+Instead of you drowning in analysis or letting opportunities slip by, Agents actively work toward your goals in the background. They're the difference between having a dashboard that shows you problems and having a teammate who spots the problems, figures out why they're happening, and comes to you with a plan.
+We keep hearing the same frustrations: "We have the data but not the time to act on it." "We know there are insights buried in there, but we're too busy to dig them up." "We want to be more data-driven, but we're short on analysts."
+Agents close the gap between knowing and doing for your teams.
+Building the future of self-improving products
+With AI Agents, we’re taking a monumental step forward—laying the foundation for the
+future of self-improving products
+. For over a decade, Amplitude has helped teams understand what’s happening inside their products. Now, we’re helping them take action—automatically, intelligently, and continuously.
+The implications are massive. Teams that once spent weeks chasing insights can now lead a team of always-on Agents—focused on impact, built for scale, and designed to accelerate what’s possible. This is how we move from understanding what’s happening to constantly improving what’s possible. And this is how, together, we make self-improving products a reality.
+Join our beta
+If your team is interested in trying AI Agents,
+join the waitlist
+! We're starting today with a small group of customers in our beta program and will be expanding access later this summer.
+We're excited to see how our customers use Agents to tackle problems and unlock new use cases with Amplitude.
+Ready to use AI to transform your product?
+Amplitude Agents help you understand your users more easily than ever.
+Get started now
+About the author
+James Evans
+Former Head of AI and Engagement Products, Amplitude
+More from
+James
+James Evans is the former Head of AI and Engagement products at Amplitude. Previously, he was the Co-founder and CEO of Command AI, which was acquired by Amplitude in October 2024. In his youth, James studied computer science at Princeton.
+More from
+James
+Topics
+AI
+Amplitude Analytics
+Recommended Reading
+Read
+Product
+Your AI Chat Box Isn't a Strategy. Where You Put It Is.
+Aug 18, 2026
+11 min read
+Read
+Insights
+The Neobank Squeeze: Why Classic Banks Need to Learn to Move at Challenger Speed
+Aug 17, 2026
+9 min read
+Read
+Insights
+From Context to Intelligence: Building Self-Improving Products in Banking and Insurance
+Aug 17, 2026
+9 min read
+Read
+Insights
+Practical Guide to Evaluating Open Models: Achieving Sonnet-level performance with Kimi
+Aug 14, 2026
+14 min read
+Platform
+AI Agents
+Agent Analytics
+AI Feedback
+Amplitude MCP
+AI Assistant
+Product Analytics
+Web Analytics
+Feature Experimentation
+Feature Management
+Web Experimentation
+Session Replay
+Guides and Surveys
+Activation
+Compare us
+Adobe
+Google Analytics
+Contentsquare
+Fullstory
+Heap
+LaunchDarkly
+Mixpanel
+Optimizely
+Pendo
+PostHog
+Resources
+Resource Library
+Blog
+Agent Prompt Library
+Product Updates
+AI Early Access Program
+Amp Champs
+Amplitude Academy
+Events
+Glossary
+Partners & Support
+Status
+Contact Us
+Customer Help Center
+Community
+Developer Docs
+Partner Program
+Partner Directory
+Become an affiliate
+Company
+About Us
+Careers
+Press & News
+Investor Relations
+Diversity, Equity & Inclusion
+LinkedIn
+Twitter
+G2
+GitHub
+Reddit
+View markdown
+Copy markdown
+Terms of Service
+Privacy Notice
+Acceptable Use Policy
+Legal
+Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
+Español (LATAM)
+Español (Spain)
+Português (Brasil)
+Português (Portugal)
+Français
+Deutsch
+© 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.
+Blog
+Insights
+Product
+Company
+Customers
+Topics
+Topics
+101
+AI
+APJ
+Acquisition
+Adobe Analytics
+Agents
+Amplify
+Amplitude AI
+Amplitude Academy
+Amplitude Activation
+Amplitude Agent Analytics
+Amplitude Analytics
+Amplitude Audiences
+Amplitude Community
+Amplitude Feature Experimentation
+Amplitude Full Platform
+Amplitude Guides and Surveys
+Amplitude Heatmaps
+Amplitude Made Easy
+Amplitude Session Replay
+Amplitude Web Experimentation
+Amplitude on Amplitude
+Analytics
+B2B SaaS
+Behavioral Analytics
+Benchmarks
+Churn Analysis
+Cohort Analysis
+Collaboration
+Consolidation
+Conversion
+Customer Experience
+Customer Lifetime Value
+Customer Support
+DEI
+Data
+Data Governance
+Data Management
+Data Tables
+Digital Experience Maturity
+Digital Native
+Digital Transformer
+EMEA
+Ecommerce
+Employee Resource Group
+Engagement
+Engineering
+Event Tracking
+Experimentation
+Feature Adoption
+Financial Services
+Funnel Analysis
+Getting Started
+Global Agent
+Google Analytics
+Growth
+Healthcare
+How I Amplitude
+Implementation
+Integration
+Kimi
+LATAM
+LLM
+Life at Amplitude
+MCP
+Machine Learning
+Marketing Analytics
+Media and Entertainment
+Metrics
+Modern Data Series
+Monetization
+Next Gen Builders
+North Star Metric
+Open-Weight AI Models
+Partnerships
+Personalization
+Pioneer Awards
+Privacy
+Product 50
+Product Analytics
+Product Design
+Product Management
+Product Releases
+Product Strategy
+Product-Led Growth
+Recap
+Retention
+Revenue
+Startup
+Tech Stack
+The Ampys
+Warehouse-native Amplitude

@@ -1,0 +1,261 @@
+# https://docs.intelligems.io/developer-resources/javascript-api
+Javascript API | Intelligems Docs
+Intelligems Docs
+⌘
+Ctrl
+k
+Intelligems Docs
+Welcome to Intelligems
+Getting Started
+Getting Started
+Adding Intelligems Script to your Theme
+Updating the Intelligems Script
+Common Use Cases
+Best Practices
+General FAQs
+Billing FAQs
+Price Testing
+Price Testing - Getting Started
+Price Testing Integration Guides
+How to Set Up a Price Test
+Price Test QA Checklist
+Starting a Price Test
+Ending a Price Test
+Testing Prices with Subscriptions
+Multi-Currency Testing
+Price Testing FAQs
+Running a Price Test and a Theme Test at the Same Time
+Shipping Testing
+Shipping Testing - Getting Started
+How to Set Up a Shipping Test
+Shipping Test QA Checklist
+Starting a Shipping Test
+Ending a Shipping Test
+Shipping Progress Bar Integration
+Shipping Testing FAQs
+Content Testing
+Content Testing - Getting Started
+Content Test QA Checklist
+Ending a Theme Test
+Content Testing FAQs
+Troubleshooting Low Visitor Counts in a Split URL Test
+Personalizations
+Getting Started with Personalizations
+Personalization Modifications
+Theme Personalization Precautions
+Adding Targeting to a Personalization
+Previewing Personalizations
+Scheduling Personalizations
+Rolling Out Tests
+Offer Personalizations
+Personalizations FAQs
+OFFER PERSONALIZATIONS
+Getting Started with Merchandising Personalizations
+How to Set Up Onsite Upsells
+Integrating Components
+Upgrade Components
+Offer Personalizations Library
+Testing Merchandising
+How to Set Up a Price Test with Quantity Buttons
+Merchandising Experience QA Checklist
+Offers Limits
+Running a Large Number of Offer Personalizations with Shopify Functions
+Merchandising Combinations
+CHECKOUT
+Getting Started with Checkout Personalizations
+How to Set Up a Checkout Personalization or Test
+Testing Checkout Personalizations
+What You Can and Cannot Test in Checkout
+Checkout Test QA Checklist
+Checkout Personalizations Library
+Checkout FAQs
+Post Purchase Upsells
+Getting Started with Post-Purchase Upsells
+How to Set Up a Post-Purchase Upsell Personalization or Test
+Post-Purchase Upsell QA Checklist
+Post-Purchase Upsell FAQs
+General Features
+Targeting
+Onsite Editor
+Visual Experience Builder
+Atlas QA
+Image Onsite Editor
+CSS Styles and JavaScript Injection
+Global Styles
+Analytics
+Overview
+How Orders and Sessions are Attributed
+Order and Revenue Accounting
+Experiment Analytics
+Sitewide Analytics
+Custom Events
+How to Add Profit to Intelligems Analytics
+How to Add Product Groups to Intelligems Analytics
+Black Friday Live Tracker
+Data Sharing
+How to Calculate 90-Day Shopper LTV by Intelligems Test Group
+Analytics FAQs
+Performance Optimization
+Site Performance
+Optimizing Your Price-Test Integration
+Anti-Flicker Modes
+Edgemesh
+Integrations
+Webhook Integration
+Google Analytics 4 Integration
+Amplitude Integration
+Klaviyo Integration
+Heap Integration
+Segment Integration
+Heatmap Integrations
+Navidium Testing
+Corso Testing
+JUST Checkout
+SavedBy Testing
+Slack Integration
+Checkout Reviews Testing
+Checkout Champ Integration
+Shoptin Testing
+Truemed Testing
+Developer Resources
+Javascript API
+User Object
+Price Object
+Campaigns Object
+External API
+MCP Server
+Intelligems Theme Snippet
+Advanced Settings
+Cart Permalinks
+Custom Add to Cart and Order Completed Events
+Shopify's Universal Commerce Protocol (UCP) Compatibility
+Headless Storefronts
+Shopify Scripts is sunsetting
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Developer Resources
+Javascript API
+For ease of use, Intelligems adds an object to the global window scope when the page loads. It primarily acts as a read interface for configurations and session-specific A/B tests.
+Overview
+The Intelligems JS API lives on the window object:
+window.igData
+.
+The 3 main attributes attached to the
+igData
+object are:
+User Object
+(
+igData.user
+) - Used for retrieving user, test group, and experiment info.
+Price Object
+(
+igData.price
+) - Used for complicated or custom price testing integrations.
+Campaigns Object
+(
+igData.campaigns
+) - Used for customizing your onsite campaign experience
+Note:
+igData.offers
+is an alias of
+igData.campaigns
+and exposes the same functions.
+Load Timing
+As soon as Intelligems is fully loaded on the site, we will set the
+igData
+object on the window. As soon as this happens, we will fire a window event:
+ig:ready
+Event-based Ready Detection
+Here's an example of how you might perform an action when Intelligems is loaded using events:
+Copy
+window
+.
+addEventListener
+(
+'
+ig:ready
+'
+,
+()
+=>
+{
+const
+experiments
+=
+window
+.
+igData
+?.
+user
+.
+getExperiments
+()
+;
+if
+(
+experiments
+.
+length
+)
+console
+.
+log
+(
+"
+I have live experiments
+"
+)
+;
+}
+)
+Callback-based Ready Detection
+For a more convenient approach, you can use the
+window.onIgReady
+callback system. This property supports both single functions and arrays of functions:
+Key Features:
+Immediate execution
+: If you set
+window.onIgReady
+after Intelligems is already loaded, the callbacks will execute immediately
+Error handling
+: Each callback is executed safely with error handling to prevent one failing callback from breaking others
+Flexible
+: Supports both single functions and arrays of functions
+Compatible
+: Works alongside the existing
+ig:ready
+event system
+Previous
+Truemed Testing
+Next
+User Object
+Last updated
+6 months ago
+Was this helpful?
+Overview
+Load Timing
+Event-based Ready Detection
+Callback-based Ready Detection
+Was this helpful?
+Copy
+// Single callback function
+window.onIgReady = () => {
+const experiments = window.igData?.user.getExperiments();
+if (experiments.length) console.log("I have live experiments");
+};
+// Array of callback functions
+window.onIgReady = [
+() => console.log("First callback executed"),
+() => console.log("Second callback executed"),
+() => {
+const experiments = window.igData?.user.getExperiments();
+console.log(`Found ${experiments.length} experiments`);
+}
+];

@@ -1,0 +1,200 @@
+# https://docs.intelligems.io/developer-resources/mcp-server
+MCP Server | Intelligems Docs
+Intelligems Docs
+⌘
+Ctrl
+k
+Intelligems Docs
+Welcome to Intelligems
+Getting Started
+Getting Started
+Adding Intelligems Script to your Theme
+Updating the Intelligems Script
+Common Use Cases
+Best Practices
+General FAQs
+Billing FAQs
+Price Testing
+Price Testing - Getting Started
+Price Testing Integration Guides
+How to Set Up a Price Test
+Price Test QA Checklist
+Starting a Price Test
+Ending a Price Test
+Testing Prices with Subscriptions
+Multi-Currency Testing
+Price Testing FAQs
+Running a Price Test and a Theme Test at the Same Time
+Shipping Testing
+Shipping Testing - Getting Started
+How to Set Up a Shipping Test
+Shipping Test QA Checklist
+Starting a Shipping Test
+Ending a Shipping Test
+Shipping Progress Bar Integration
+Shipping Testing FAQs
+Content Testing
+Content Testing - Getting Started
+Content Test QA Checklist
+Ending a Theme Test
+Content Testing FAQs
+Troubleshooting Low Visitor Counts in a Split URL Test
+Personalizations
+Getting Started with Personalizations
+Personalization Modifications
+Theme Personalization Precautions
+Adding Targeting to a Personalization
+Previewing Personalizations
+Scheduling Personalizations
+Rolling Out Tests
+Offer Personalizations
+Personalizations FAQs
+OFFER PERSONALIZATIONS
+Getting Started with Merchandising Personalizations
+How to Set Up Onsite Upsells
+Integrating Components
+Upgrade Components
+Offer Personalizations Library
+Testing Merchandising
+How to Set Up a Price Test with Quantity Buttons
+Merchandising Experience QA Checklist
+Offers Limits
+Running a Large Number of Offer Personalizations with Shopify Functions
+Merchandising Combinations
+CHECKOUT
+Getting Started with Checkout Personalizations
+How to Set Up a Checkout Personalization or Test
+Testing Checkout Personalizations
+What You Can and Cannot Test in Checkout
+Checkout Test QA Checklist
+Checkout Personalizations Library
+Checkout FAQs
+Post Purchase Upsells
+Getting Started with Post-Purchase Upsells
+How to Set Up a Post-Purchase Upsell Personalization or Test
+Post-Purchase Upsell QA Checklist
+Post-Purchase Upsell FAQs
+General Features
+Targeting
+Onsite Editor
+Visual Experience Builder
+Atlas QA
+Image Onsite Editor
+CSS Styles and JavaScript Injection
+Global Styles
+Analytics
+Overview
+How Orders and Sessions are Attributed
+Order and Revenue Accounting
+Experiment Analytics
+Sitewide Analytics
+Custom Events
+How to Add Profit to Intelligems Analytics
+How to Add Product Groups to Intelligems Analytics
+Black Friday Live Tracker
+Data Sharing
+How to Calculate 90-Day Shopper LTV by Intelligems Test Group
+Analytics FAQs
+Performance Optimization
+Site Performance
+Optimizing Your Price-Test Integration
+Anti-Flicker Modes
+Edgemesh
+Integrations
+Webhook Integration
+Google Analytics 4 Integration
+Amplitude Integration
+Klaviyo Integration
+Heap Integration
+Segment Integration
+Heatmap Integrations
+Navidium Testing
+Corso Testing
+JUST Checkout
+SavedBy Testing
+Slack Integration
+Checkout Reviews Testing
+Checkout Champ Integration
+Shoptin Testing
+Truemed Testing
+Developer Resources
+Javascript API
+External API
+MCP Server
+Claude
+ChatGPT
+Google Gemini
+Available Tools
+Examples & Best Practices
+Creating Live Intelligems Dashboards in Claude
+Troubleshooting
+Claude: Remove Manual Configuration
+Intelligems Theme Snippet
+Advanced Settings
+Cart Permalinks
+Custom Add to Cart and Order Completed Events
+Shopify's Universal Commerce Protocol (UCP) Compatibility
+Headless Storefronts
+Shopify Scripts is sunsetting
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Developer Resources
+MCP Server
+The Intelligems MCP (Model Context Protocol) Server provides AI assistants like Claude, ChatGPT, and Gemini with secure, authenticated access to your Intelligems data and Shopify store information through a standardized protocol.
+What is MCP?
+The Model Context Protocol (MCP) is an open standard created by Anthropic that allows AI assistants to securely connect to external data sources and tools. The Intelligems MCP Server implements this protocol to give AI assistants controlled access to:
+Your Intelligems experiments and experiences
+Organization configuration
+Shopify store catalog, collections, and pages
+Analytics and audience data
+Custom events and integrations
+Prerequisites
+An active Intelligems account
+A Shopify store connected to Intelligems
+An MCP-compatible AI client (e.g., Claude Desktop, ChatGPT, Gemini, etc.)
+Installation
+The Intelligems MCP Server is hosted at:
+https://ai.intelligems.io
+No installation is required - the server is hosted by Intelligems and ready to use.
+Configuration
+Add the Intelligems MCP Server to your AI client's configuration following the applicable guide linked below:
+Claude (Desktop & Code)
+Google Gemini
+ChatGPT
+Other MCP Clients:
+Refer to your client's documentation for adding OAuth2-authenticated SSE-based or http MCP servers.
+HTTP:
+https://ai.intelligems.io/mcp
+(recommended)
+SSE:
+https://ai.intelligems.io/mcp/sse
+Multi-Organization Support
+If you have access to multiple Intelligems organizations, you can specify which one to use:
+During initial authentication, choose any organization installed on Intelligems. This is only used for authentication.
+Most tools accept an optional
+organization
+parameter to override the default
+Use the
+getOrganizationsList
+tool to see all organizations you have access to
+If you would like to always use a specific organization, add a System Prompt or Custom Instruction to your LLM with these details.
+Previous
+Automating a CFO-Friendly Incremental Revenue Attribution for CRO
+Next
+Claude
+Last updated
+4 days ago
+Was this helpful?
+What is MCP?
+Prerequisites
+Installation
+Configuration
+Multi-Organization Support
+Was this helpful?
