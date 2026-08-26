@@ -202,8 +202,9 @@ Other framework examples for agent optimization
 OptimizationContext reference
 Manage AgentControl
 Adaptive triggers
-Compare config variation versions
 AgentControl and information privacy
+Compare config variation versions
+Configure Amazon Bedrock
 Configure token limits
 Create flags
 Creating new flags
@@ -422,6 +423,7 @@ Custom conversion count metrics
 Custom conversion binary metrics
 Custom numeric metrics
 Filtering custom metric events
+Count distinct metrics
 Ratio metrics
 Creating metrics from traces
 Managing metrics
@@ -561,6 +563,7 @@ Quick configuration
 If you’re using an AI client, like Claude or Cursor, the
 install page
 connects to it without requiring you to manually edit a configuration file. Open the install page, select your AI client, and follow the prompts to authorize and connect.
+If the LaunchDarkly server does not appear in your client’s list of MCP servers after you add it, close and reopen the client.
 Manual configuration
 If you prefer to configure your AI client manually, read the instructions in this section. Here, we show examples for Cursor, Claude Code, Windsurf, and GitHub Copilot.
 Expand Cursor installation instructions
@@ -631,6 +634,7 @@ headers
 }
 8
 }
+Close and reopen Cursor to prompt the appearance of the LaunchDarkly server.
 In Cursor, navigate to
 Settings
 >
@@ -661,6 +665,7 @@ launchdarkly
 "
 https://mcp.launchdarkly.com/mcp/launchdarkly
 "
+Then, exit and restart Claude Code. A running session does not pick up the new server.
 Expand Windsurf installation instructions
 To manually configure the MCP server in Windsurf:
 Open Windsurf Settings and navigate to

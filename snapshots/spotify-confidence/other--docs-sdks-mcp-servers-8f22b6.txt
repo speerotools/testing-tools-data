@@ -57,6 +57,7 @@ for the Documentation MCP server. The server uses streamable HTTP as the transpo
 https://mcp.confidence.dev/mcp/docs
 .
 Claude Code
+Codex
 Cursor
 VS Code
 claude
@@ -65,6 +66,12 @@ add
 --transport
 http
 confidence-docs
+https://mcp.confidence.dev/mcp/docs
+codex
+mcp
+add
+confidence-docs
+--url
 https://mcp.confidence.dev/mcp/docs
 1
 Open the Command Palette
@@ -149,6 +156,7 @@ requires authentication
 https://mcp.confidence.dev/mcp/flags
 .
 Claude Code
+Codex
 Cursor
 VS Code
 claude
@@ -163,6 +171,16 @@ After adding, open Claude Code, run
 and select
 confidence-flags
 to authenticate.
+codex
+mcp
+add
+confidence-flags
+--url
+https://mcp.confidence.dev/mcp/flags
+codex
+mcp
+login
+confidence-flags
 1
 Open the Command Palette
 Use
@@ -271,6 +289,7 @@ requires authentication
 https://mcp.confidence.dev/mcp/experiments
 .
 Claude Code
+Codex
 Cursor
 VS Code
 claude
@@ -285,6 +304,16 @@ After adding, open Claude Code, run
 and select
 confidence-experiments
 to authenticate.
+codex
+mcp
+add
+confidence-experiments
+--url
+https://mcp.confidence.dev/mcp/experiments
+codex
+mcp
+login
+confidence-experiments
 1
 Open the Command Palette
 Use
@@ -419,9 +448,9 @@ Example Usage
 Once integrated, ask your AI assistant to:
 “List all running experiments”
 “Search for experiments related to checkout”
-“Show me details about the homepage-redesign experiment”
+“Show details about the homepage-redesign experiment”
 “Get the results for the checkout-flow A/B test”
-“What’s the status of the metrics in my onboarding rollout?”
+“What’s the status of the metrics in the onboarding rollout?”
 Was this page helpful?
 Yes
 No

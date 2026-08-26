@@ -9,114 +9,59 @@ Welcome to Intelligems
 Getting Started
 Getting Started
 Adding Intelligems Script to your Theme
-Updating the Intelligems Script
-Common Use Cases
-Best Practices
+Tests vs. Personalizations
 General FAQs
 Billing FAQs
-Price Testing
-Price Testing - Getting Started
-Price Testing Integration Guides
-How to Set Up a Price Test
-Price Test QA Checklist
-Starting a Price Test
-Ending a Price Test
-Testing Prices with Subscriptions
-Multi-Currency Testing
-Price Testing FAQs
-Running a Price Test and a Theme Test at the Same Time
-Shipping Testing
-Shipping Testing - Getting Started
-How to Set Up a Shipping Test
-Shipping Test QA Checklist
-Starting a Shipping Test
-Ending a Shipping Test
-Shipping Progress Bar Integration
-Shipping Testing FAQs
-Content Testing
-Content Testing - Getting Started
-Content Test QA Checklist
-Ending a Theme Test
-Content Testing FAQs
-Troubleshooting Low Visitor Counts in a Split URL Test
-Personalizations
-Getting Started with Personalizations
-Personalization Modifications
-Theme Personalization Precautions
-Adding Targeting to a Personalization
-Previewing Personalizations
-Scheduling Personalizations
-Rolling Out Tests
-Offer Personalizations
-Personalizations FAQs
-OFFER PERSONALIZATIONS
-Getting Started with Merchandising Personalizations
+CONTENT EXPERIENCES
+Content Experiences Overview
+Content Experience QA Checklist
+Content Experiences FAQs
+Merchandising Experiences
+Merchandising Experiences Overview
 How to Set Up Onsite Upsells
 Integrating Components
-Upgrade Components
-Offer Personalizations Library
-Testing Merchandising
-How to Set Up a Price Test with Quantity Buttons
 Merchandising Experience QA Checklist
-Offers Limits
-Running a Large Number of Offer Personalizations with Shopify Functions
-Merchandising Combinations
-CHECKOUT
-Getting Started with Checkout Personalizations
-How to Set Up a Checkout Personalization or Test
-Testing Checkout Personalizations
-What You Can and Cannot Test in Checkout
-Checkout Test QA Checklist
-Checkout Personalizations Library
+Merchandising Experiences FAQs
+Pricing Experiences
+Pricing Experiences Overview
+Pricing Experiences Integration Guides
+Pricing Experience QA Checklist
+Price Testing FAQs
+Shipping Experiences
+Shipping Experiences Overview
+Shipping Progress Bar Integration
+Shipping Experience QA Checklist
+Shipping Experiences FAQs
+Content Testing
+Content Testing - Getting Started
+Content Testing FAQs
+CHECKOUT Experiences
+Checkout Experiences Overview
+Checkout Experience QA Checklist
 Checkout FAQs
-Post Purchase Upsells
-Getting Started with Post-Purchase Upsells
-How to Set Up a Post-Purchase Upsell Personalization or Test
+Post Purchase Experiences
+Getting Started with Post-Purchase Expereinces
 Post-Purchase Upsell QA Checklist
 Post-Purchase Upsell FAQs
 General Features
+Editors
 Targeting
-Onsite Editor
-Visual Experience Builder
-Atlas QA
-Image Onsite Editor
-CSS Styles and JavaScript Injection
-Global Styles
+Atlas AI
+Scheduling an Experience
+Rolling Out Tests
+Best Practices
+Quick Start Experiences
 Analytics
-Overview
-How Orders and Sessions are Attributed
-Order and Revenue Accounting
-Experiment Analytics
-Sitewide Analytics
-Custom Events
-How to Add Profit to Intelligems Analytics
-How to Add Product Groups to Intelligems Analytics
-Black Friday Live Tracker
+Analytics Overview
 Data Sharing
-How to Calculate 90-Day Shopper LTV by Intelligems Test Group
 Analytics FAQs
 Performance Optimization
 Site Performance
 Optimizing Your Price-Test Integration
-Anti-Flicker Modes
-Edgemesh
 Integrations
-Webhook Integration
-Google Analytics 4 Integration
-Amplitude Integration
-Klaviyo Integration
-Heap Integration
-Segment Integration
-Heatmap Integrations
-Navidium Testing
-Corso Testing
-JUST Checkout
-SavedBy Testing
-Slack Integration
-Checkout Reviews Testing
-Checkout Champ Integration
-Shoptin Testing
-Truemed Testing
+Analytics & Data Platforms
+Alerts & Automation
+Other Integrations
 Developer Resources
 Javascript API
 External API
@@ -129,12 +74,8 @@ Examples & Best Practices
 Creating Live Intelligems Dashboards in Claude
 Troubleshooting
 Claude: Remove Manual Configuration
-Intelligems Theme Snippet
-Advanced Settings
-Cart Permalinks
-Custom Add to Cart and Order Completed Events
-Shopify's Universal Commerce Protocol (UCP) Compatibility
-Headless Storefronts
+Theme & Storefront Setup
+Developer Resources
 Shopify Scripts is sunsetting
 Powered by GitBook
 On this page

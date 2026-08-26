@@ -1,7 +1,7 @@
 # https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides
 SDK reference guides - Optimizely Feature Experimentation
 The availability of features may depend on your plan type. Contact your Customer Success Manager if you have any questions.
-For AI agents: visit https://docs.developers.optimizely.com/feature-experimentation/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.
+For AI agents: visit https://docs.developers.optimizely.com/feature-experimentation/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI. Append .md to any documentation page URL to get its markdown version.
 Jump to Content
 Dev guide
 API Reference
@@ -583,7 +583,7 @@ React Native
 Ruby
 Swift
 Updated
-27 days ago
+about 1 month ago
 Cloudflare Workers KV store configuration (optional)
 SDK compatibility matrix
 Did this page help you?

@@ -583,6 +583,9 @@ SCIM Base URL
 from PostHog
 API Token
 (the SCIM Token from PostHog)
+In
+Unique identifier field for users
+, enter the Okta attribute that is unique for each provisioned user. This is usually set to the email address, but any unique identifier works.
 Click
 Test API Credentials
 to verify the connection.
@@ -681,6 +684,8 @@ X.509 Certificate
 Assign users to the new application. Go to
 Users
 , select a user, assign roles, and add them to the application.
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better

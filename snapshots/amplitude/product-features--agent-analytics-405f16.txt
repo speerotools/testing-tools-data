@@ -126,6 +126,7 @@ Learn how to track events and metrics with Amplitude
 Maturity Model
 Learn more about our digital experience maturity model
 Event Taxonomy Generator
+Create a clean and custom event taxonomy for your website
 Pricing
 Login
 Contact sales
@@ -207,8 +208,8 @@ Sign Up
 Agent Analytics
 What’s the real impact of your AI agent?
 Knowing your agent gave a good response is the easy part. Agent Analytics ties traces and evals to conversion, retention, and revenue, so you can connect agent quality to real business impact.
-Sign up for early access
-Watch demo video
+Watch Demo
+Get Started
 Sessions
 Export
 Update SDK
@@ -413,57 +414,68 @@ Churn Watcher
 Billing intent
 Churn risk
 10m ago
-3
-3b449a79-2b00-4809-a331-93e051493497
+P
+ie53jmbua0
 5h ago
 User activity
 Find similar sessions
 Add to dataset
 1 of 12
-Why did checkout completion drop ~18% on Wednesday?
+I need a 3-row SUV under $45k with top safety ratings. What should I look at?
 May 27 · 3:22 PM
-Pulled checkout sessions · May 25–28
-One dataset query timed out, but the chart and session pulls gave me enough to isolate it. The drop traces to a single cohort:
-Affected cohort:
-users on Safari 17.4 (iOS)
-Window:
-Wed 09:12 – 17:48 UTC
-Likely cause:
-the v3.8
-payments SDK rollout
-introduced a CORS preflight that failed on Safari iOS
-Reverting the rollout for that platform should recover the rate within an hour. Want me to open a 48h follow-up cohort to confirm?
+Searched inventory · 3-row SUVs within 40 mi
+One financing quote timed out, but inventory and trim data came back clean. Three cars fit your budget and safety bar:
+Best match:
+2024 Kia Telluride EX — $43,190, IIHS Top Safety Pick+
+Runner-up:
+2024 Honda Pilot EX-L — $44,700, seats 8
+Watch out:
+the
+Highlander XLE
+clears $46,800 once you add all-wheel drive
+Two Tellurides are in stock at Northgate Kia. Want me to book a test drive this weekend?
 $0.42 · 3:22:48 PM
-Yes — ship the Safari fix and set up the 48h follow-up cohort.
+Yes — book the Telluride test drive for Saturday morning.
 3:23 PM
+Info
 Evaluators
 Traces
-Info
-Data Quality
-False
-Has Negative Feedback
-False
-Response Was Helpful
+Summary
+Matched a $45k 3-row SUV request to three models and booked a Saturday test drive for the Telluride.
+Usage
+Cost
+$0.2390
+Tokens
+413.4k
+Latency
+31.9s
+Last run
+5m ago
+Configuration
+Agent
+Auto Agent
+Model
+bedrock:claude-sonnet-4
+Turns
+1
+Signals
+Task Completed:
 True
-Task Completed
-True
-User Friction
+Response Was Helpful:
 False
-Session Resolved
-Response Provided
-Session Safety
+Session Safety:
 Normal
-User Intent
-Analysis & Synthesis
-Memory Recall
-No
-Action Offers
-No
-Intent Topics
-Chart Creation
-Failure Reasons
-Other
-Add New Evaluator
+User Intent:
+Task Execution
+User Friction:
+False
+Has Negative Feedback:
+False
+Data Quality Issues:
+False
+How do signals work?
+Topic
+Task Execution
 9:41
 Trips
 Mira
@@ -628,10 +640,10 @@ The Agent Analytics maturity model
 Most observability tools stop at the lower levels of maturity. Agent Analytics takes you to the top by connecting AI quality to the user journey and revenue.
 L4
 Revenue Attribution
-What is the AI worth in dollars?
+What's the ROI of this agent for my business?
 L4
 Revenue Attribution
-What is the AI worth in dollars?
+What's the ROI of this agent for my business?
 L3
 Behavioral Analytics
 How does AI usage affect the user journey?
@@ -640,10 +652,10 @@ Behavioral Analytics
 How does AI usage affect the user journey?
 L2
 Semantic Intelligence
-What is the agent actually doing?
+Are users happy or frustrated?
 L2
 Semantic Intelligence
-What is the agent actually doing?
+Are users happy or frustrated?
 L1
 Evaluations & Assertions
 Did the agent do it correctly?
@@ -694,32 +706,32 @@ by surface
 by user segment
 repeatable slice
 Traces
-3
-3b449a79-2b00-4809-a331-93e051493497
+P
+ie53jmbua0
 5h ago
 User activity
 Find similar sessions
 Add to dataset
 1 of 12
-Why did checkout completion drop ~18% on Wednesday?
+I need a 3-row SUV under $45k with top safety ratings. What should I look at?
 May 27 · 3:22 PM
-Pulled checkout sessions · May 25–28
-One dataset query timed out, but the chart and session pulls gave me enough to isolate it. The drop traces to a single cohort:
-Affected cohort:
-users on Safari 17.4 (iOS)
-Window:
-Wed 09:12 – 17:48 UTC
-Likely cause:
-the v3.8
-payments SDK rollout
-introduced a CORS preflight that failed on Safari iOS
-Reverting the rollout for that platform should recover the rate within an hour. Want me to open a 48h follow-up cohort to confirm?
+Searched inventory · 3-row SUVs within 40 mi
+One financing quote timed out, but inventory and trim data came back clean. Three cars fit your budget and safety bar:
+Best match:
+2024 Kia Telluride EX — $43,190, IIHS Top Safety Pick+
+Runner-up:
+2024 Honda Pilot EX-L — $44,700, seats 8
+Watch out:
+the
+Highlander XLE
+clears $46,800 once you add all-wheel drive
+Two Tellurides are in stock at Northgate Kia. Want me to book a test drive this weekend?
 $0.42 · 3:22:48 PM
-Yes — ship the Safari fix and set up the 48h follow-up cohort.
+Yes — book the Telluride test drive for Saturday morning.
 3:23 PM
+Info
 Evaluators
 Traces
-Info
 Turn 1
 412.3k / 1.1k
 $0.24
@@ -1257,11 +1269,11 @@ Product
 Why We Created Agent Analytics, and Why Every Agent Team Needs It
 We built an analytics company. Then we built an agent and couldn’t see anything. Here’s how we fixed it.
 Insights
+Achieving Sonnet-level performance with Kimi
+The flexibility of open-weight models helped us cut costs by 2/3 and maintain Sonnet-level performance.
+Insights
 The Eval Signal That Predicts 3x Agent Retention
 We used Agent Analytics to understand whether eval signals actually predict whether users come back. The result surprised us.
-Product
-Making Stone Soup: Eval-Driven Development for Analytics With AI
-How dev teams, customers, and LLMs contributed to automate insights in Amplitude.
 View more
 Instrument any LLM provider
 Native wrappers for the providers you actually use. An OpenTelemetry bridge for the rest. Manual capture when you want full control.
@@ -1295,8 +1307,6 @@ Stop shipping on vibes
 Find the failure modes that actually cost you users.
 Measure conversion and retention by agent quality.
 Connect any trace to session replay and experiments.
-Sign up for early access
-Sign up for early access
 Frequently asked questions
 What is Agent Analytics?
 The analytics layer between LLM observability and product analytics. Every user message, tool call, agent response, and session end becomes an Amplitude event tagged with topic, quality score, and behavioral pattern, so you can build cohorts, funnels, and retention curves on AI session quality.
@@ -1928,6 +1938,7 @@ Amp Champs
 Amplitude Academy
 Events
 Glossary
+Free Chart Maker
 Partners & Support
 Status
 Contact Us

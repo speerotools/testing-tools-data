@@ -202,8 +202,9 @@ Other framework examples for agent optimization
 OptimizationContext reference
 Manage AgentControl
 Adaptive triggers
-Compare config variation versions
 AgentControl and information privacy
+Compare config variation versions
+Configure Amazon Bedrock
 Configure token limits
 Create flags
 Creating new flags
@@ -422,6 +423,7 @@ Custom conversion count metrics
 Custom conversion binary metrics
 Custom numeric metrics
 Filtering custom metric events
+Count distinct metrics
 Ratio metrics
 Creating metrics from traces
 Managing metrics
@@ -541,6 +543,7 @@ Sign in
 Try it free
 Light
 On this page
+Get started
 Enable the MCP server
 Use the MCP server
 Available MCP tools
@@ -554,22 +557,26 @@ Get started
 Developer tools
 LaunchDarkly MCP server
 Copy page
-This topic describes how to get started with the LaunchDarkly Model Context Protocol (MCP) server.
-Model context protocol (MCP)
+This topic explains how to get started with the LaunchDarkly Model Context Protocol (MCP) server.
+MCP
 is an open protocol that lets you interact with REST APIs using natural language.
-Using an AI assistant?
+Install with an AI client
 If you’re using an AI client, like Claude or Cursor, visit the
 installation page
-and choose your provider. Prompts appear to guide you through the installation. You do not need to read the rest of this page.
+and choose your provider. Prompts appear to guide you through the installation. You do not need to read the rest of this topic.
 Visit the installation page
 .
-New to LaunchDarkly? Start with the
+If you’re new to LaunchDarkly, start with the
 quickstart
 to create your first flag, or read
 SDK onboarding
 if you’re integrating an SDK into your own application.
+Get started
+To get started with the LaunchDarkly MCP server, you enable the server, then use it to manage flags, AgentControl configs, and observability data with natural language. The following sections walk through each step.
 Enable the MCP server
-LaunchDarkly provides a hosted MCP server that covers multiple product areas: feature management for managing feature flags, AgentControl for managing configs, and observability for querying logs, traces, errors, and the Dashboards page. The APIs exposed by the MCP server are called MCP tools.
+LaunchDarkly provides a hosted MCP server that covers multiple product areas: feature management for managing feature flags, AgentControl for managing configs, and observability for querying logs, traces, errors, and the
+Dashboards
+page. The APIs exposed by the MCP server are called MCP tools.
 The hosted MCP server is not available in LaunchDarkly federal or European Union (EU) environments
 The LaunchDarkly federal and EU instances do not support the hosted MCP server. Instead, consider using the
 local MCP server
@@ -579,13 +586,13 @@ LaunchDarkly in federal environments
 or
 LaunchDarkly in the European Union (EU)
 .
-For manual configuration steps, read
+To configure the MCP server manually, read
 LaunchDarkly hosted MCP server
 .
 Use the MCP server
-After you enable the LaunchDarkly MCP server following one of the procedures above, you can prompt your agent to create or manage your flags, AgentControl configs, and observability data. Typically you need to click
+After you enable the LaunchDarkly MCP server, you can prompt your agent to create or manage your flags, AgentControl configs, and observability data. In your AI client, click
 Run tool
-or similar in your AI client to execute the result.
+or similar to execute the result.
 For example, you could try asking
 Create a feature flag called “example feature” in my default project
 or
@@ -595,7 +602,7 @@ Update the targeting rules for “example feature” so it’s only enabled for 
 or
 Show me error groups from the last 24 hours
 For additional examples of prompts and responses, read the tutorial
-Create a feature flag in your IDE in 5 minutes with LaunchDarkly’s MCP server
+Create a feature flag in your IDE in 5 minutes with the LaunchDarkly MCP server
 .
 Available MCP tools
 The LaunchDarkly MCP server exposes a focused set of MCP tools for different product areas including feature management, AgentControl, observability, and metrics. For a full list, read the “Available Tools” section on the
@@ -629,11 +636,19 @@ launchdarkly/agent-skills
 How skills and MCP tools work together
 Skills help AI agents facilitate common workflows, while MCP tools give the agent direct access to manage and understand your LaunchDarkly resources.
 Example: Flag cleanup workflow
-When you tell an AI agent to “clean up the old-checkout flag,” the launchdarkly-flag-cleanup skill guides the agent through:
-Discovery: the skill tells the agent to check flag status across all environments using the MCP server’s flag removal readiness tool
-Assessment: the tool returns a structured readiness classification (safe/caution/not-ready) with evidence
-Code references: the skill directs the agent to check where the flag appears in code
-Action: if safe, the skill guides the agent to make the code change, hardcoding the winning variation and opening a pull request (PR)
+When you tell an AI agent to “clean up the old-checkout flag,” the
+launchdarkly-flag-cleanup
+skill guides the agent through the following steps:
+Discovery: The skill tells the agent to check flag status across all environments using the MCP server’s flag removal readiness tool.
+Assessment: The tool returns a structured readiness classification of
+safe
+,
+caution
+, or
+not-ready
+, with evidence.
+Code references: The skill directs the agent to check where the flag appears in code.
+Action: If safe, the skill guides the agent to make the code change, hardcoding the winning variation and opening a pull request (PR).
 Without the skill, the agent might call the right tools but in the wrong order, miss the code reference check, or skip the readiness assessment. The skill encodes best practices so the agent follows the same procedure every time.
 Additional resources
 For additional information on the LaunchDarkly MCP server, or to file issues for our team, visit the

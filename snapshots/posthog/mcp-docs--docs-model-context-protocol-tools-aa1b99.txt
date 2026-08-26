@@ -33,17 +33,19 @@ Company handbook
 Store
 Careers
 Trash
-AI engineering
 Overview
-AI wizard
-Sign up with the wizard
-Model Context Protocol (MCP)
+Beta
+Get started
+Set up self-driving
+Products
+Slack
+Web app
+MCP
 Overview
 Use cases
 MCP tools reference
 FAQ and advanced setup
 Enterprise auth (ID-JAG)
-Code editors
 Claude Code
 Claude Desktop
 Codex
@@ -51,12 +53,24 @@ Cursor
 VS Code
 Windsurf
 Zed
-Platforms
 Lovable
 Replit
 v0
-AI Observability
-Markdown and llms.txt
+CLI
+Desktop
+Concepts
+The self-improving loop
+Anatomy of a pull request
+Context
+Scouts
+Signals
+Reports
+Inbox
+Resources
+Pocket guides
+New
+Pricing
+FAQ
 Copy page
 PostHog MCP tools reference
 Contents
@@ -291,6 +305,18 @@ annotations-list
 List annotations
 annotations-partial-update
 Update annotation
+Billing
+(
+3
+MCP
+tools
+)
+billing-overview-get
+Get billing overview
+billing-spend-get
+Get spend breakdown
+billing-usage-get
+Get usage breakdown
 Billing alerts
 (
 2
@@ -323,7 +349,7 @@ business-knowledge-sources-url-create
 Create URL business knowledge source
 Canvas
 (
-14
+16
 MCP
 tools
 )
@@ -353,6 +379,10 @@ canvas-publish-current-version
 Publish current canvas version
 canvas-source-retrieve
 Read canvas source project
+canvas-state-retrieve
+Read canvas state
+canvas-state-set
+Set canvas state
 canvas-validate-create
 Validate canvas source project
 Cohorts
@@ -373,6 +403,24 @@ cohorts-retrieve
 Get cohort
 cohorts-rm-person-from-static-cohort-partial-update
 Remove person from static cohort
+Context wiki
+(
+6
+MCP
+tools
+)
+context-wiki-channel-resolve
+Resolve a channel context page
+context-wiki-page-retrieve
+Read a context wiki page
+context-wiki-page-update
+Update a context wiki page
+loop-context-wiki-channel-resolve
+Resolve a loop context wiki page
+loop-context-wiki-page-retrieve
+Read a loop context wiki page
+loop-context-wiki-page-update
+Update a loop context wiki page
 Conversations
 (
 8
@@ -397,10 +445,12 @@ conversations-views-list
 List saved ticket views
 Core
 (
-4
+5
 MCP
 tools
 )
+products-enable
+Enable PostHog products
 project-get
 Get project
 project-settings-update
@@ -411,7 +461,7 @@ user-settings-update
 Update user settings
 Customer analytics
 (
-50
+65
 MCP
 tools
 )
@@ -505,6 +555,36 @@ event-streams-remove-account
 Remove account from my event stream
 event-streams-send-test-message
 Send event stream test message
+feature-request-product-areas-create
+Create feature request product area
+feature-request-product-areas-list
+List feature request product areas
+feature-request-product-areas-partial-update
+Update feature request product area
+feature-requests-add-account-create
+Link account to feature request
+feature-requests-add-evidence-create
+Add feature request evidence
+feature-requests-archive-create
+Archive feature request
+feature-requests-create
+Create feature request
+feature-requests-history-list
+List feature request history
+feature-requests-list
+List feature requests
+feature-requests-partial-update
+Update feature request
+feature-requests-remove-evidence-create
+Delete feature request evidence
+feature-requests-restore-create
+Restore feature request
+feature-requests-retrieve
+Get feature request
+feature-requests-status-history-list
+List feature request status history
+feature-requests-update-evidence-create
+Update feature request evidence
 usage-metrics-create
 Create usage metric
 usage-metrics-destroy
@@ -655,7 +735,7 @@ read-data-schema
 Explore the user's events, actions, properties, and property values.
 Data warehouse
 (
-24
+25
 MCP
 tools
 )
@@ -705,6 +785,8 @@ warehouse-column-annotations-list
 List warehouse column descriptions
 warehouse-column-annotations-partial-update
 Edit a warehouse column description
+warehouse-tables-create
+Link a bucket as a warehouse table
 warehouse-tables-refresh-schema-create
 Refresh table schema from source
 Debug
@@ -1292,7 +1374,7 @@ Configure notebook compute
 notebooks-create
 Create notebook
 notebooks-create-markdown
-Create a markdown notebook for executable cells.
+Create a markdown notebook for deep-dive analysis with SQL and Python cells.
 notebooks-delete-cell
 Delete a notebook cell.
 notebooks-destroy
@@ -1349,7 +1431,7 @@ persons-values-retrieve
 Get person property values
 Platform Features
 (
-25
+26
 MCP
 tools
 )
@@ -1379,6 +1461,8 @@ comment-get
 Get a specific comment.
 comment-thread
 Get all replies in a comment thread.
+comments-create
+Create a comment or reply
 comments-list
 List comments and discussion threads.
 org-member-get-github-login
@@ -1773,16 +1857,10 @@ execute-sql
 Execute an SQL query.
 Stamphog
 (
-11
+8
 MCP
 tools
 )
-stamphog-digest-channels-create
-Create stamphog digest channel
-stamphog-digest-channels-delete
-Delete stamphog digest channel
-stamphog-digest-channels-list
-List stamphog digest channels
 stamphog-digest-runs-list
 List stamphog digest runs
 stamphog-pull-requests-get
@@ -1877,7 +1955,7 @@ surveys-summarize-responses-create
 Summarize survey responses (per question, or survey-wide headline).
 Tasks
 (
-24
+26
 MCP
 tools
 )
@@ -1891,6 +1969,10 @@ channel-list
 List channels
 channel-retrieve
 Get a channel
+loop-channel-instructions-retrieve
+Read fallback loop context
+loop-channel-instructions-update
+Update fallback loop context
 loops-create-execute
 Create loop (execute)
 loops-create-prepare
@@ -2197,10 +2279,6 @@ workflows-update-email-template
 Update email template
 workflows-update-schedule
 Update workflow schedule
-Note:
-Some MCP tools are in alpha behind a feature flag and don't appear here yet – like the
-semantic layer MCP tools
-for governed metrics, table certifications, and relationships.
 CLI mode commands
 In
 CLI mode
@@ -2255,6 +2333,8 @@ FAQ and advanced setup
 – auth, scoping, and filtering
 Overview
 – back to the MCP overview and install instructions
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better

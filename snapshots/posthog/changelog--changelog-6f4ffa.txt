@@ -41,6 +41,80 @@ and
 RSS
 .
 August 2026
+Match flag property prefixes and suffixes
+August 24, 2026
+· Feature Flags Team
+Feature Flags
+now support "starts with", "doesn't start with", "ends with", and "doesn't end with" property conditions, all case insensitive. "ends with" is particularly useful when filtering on emails such as finding people whose email ends with "@example.com".
+Local evaluation works in the Python, Node, Go, Ruby, Rust, PHP, and .NET SDKs, so update to the latest
+See alert delivery details
+August 20, 2026
+· Analytics Platform Team
+Alerts
+history now records notifications that were accepted for delivery, rather than just the configured recipients. See which email addresses, Slack channels, webhooks, Discord, or Teams destinations were notified.
+Investigate AI observability anomalies
+August 20, 2026
+· Self-Driving Team
+AI observability
+anomaly alerts can now appear as Self-driving investigations alongside scouts and evaluation reports. Check their status, last run, and linked insight from one place.
+Charts in Slack answers
+August 20, 2026
+· Self-Driving Team
+Analytics answers delivered in Slack can include the chart beneath the explanation when chart delivery is enabled. Sometimes a picture really does save a follow-up message.
+19 new MCP tools
+August 20, 2026
+· Experiments Team
+Nineteen tools landed in PostHog's
+MCP server
+this week:
+Experiments
+Find recordings worth watching per variant
+Billing alerts
+Create billing alert
+Update billing alert
+Data warehouse
+Get managed warehouse metric history
+Get managed warehouse monitoring
+Data quality
+Create a data quality check on a table
+Create a data quality check on a view
+Delete a data quality check on a table
+Delete a data quality check on a view
+Recent results of a data quality check on a table
+Recent results of a data quality check on a view
+Run a data quality check on a table
+Run a data quality check on a view
+List data quality check types
+Update a data quality check on a table
+Update a data quality check on a view
+Billing
+Get billing overview
+Get spend breakdown
+Get usage breakdown
+Send report notes to Slack
+August 20, 2026
+· Self-Driving Team
+Edits that only change a report note are delivered to Slack as the note itself, rather than being dropped or turned into something less useful.
+Scout reports link to referenced items
+August 20, 2026
+· Self-Driving Team
+Scout reports turn referenced insights, flags, and error issues into links on their first mention, rather than leaving you to copy an ID and hunt it down.
+Set trend chart y-axis ranges
+August 20, 2026
+· Product Analytics Team
+Product Analytics
+trend charts can use a custom Y-axis range. Set the bounds when the default scale makes the change you care about hard to see.
+Slack alerts for batch exports
+August 20, 2026
+· Batch Exports Team
+Batch exports can send a Slack notification when they fail. Keep up with batch export alerts directly on your Slack channel of choice.
+SQL as scatter plots
+August 20, 2026
+· Product Analytics Team
+Product Analytics
+SQL insights can plot two numeric measures against each other, with optional trend lines to make the relationship easier to read.
+Plot SQL results as scatter points using numeric X and Y columns.
+Add a per-series least-squares line of best fit, including on logarithmic axes.
 Person properties in every export
 August 14, 2026
 · Batch Exports Team

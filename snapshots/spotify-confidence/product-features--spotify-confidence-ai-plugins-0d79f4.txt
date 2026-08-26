@@ -135,7 +135,7 @@ Code
 Issues
 0
 Pull requests
-1
+0
 Actions
 Security and quality
 0
@@ -155,8 +155,8 @@ Code
 Open more actions menu
 Latest commit
 History
-71 Commits
-71 Commits
+75 Commits
+75 Commits
 Folders and files
 Name
 Name
@@ -470,15 +470,21 @@ auto everyone catch-all
 Must
 run a
 Rules operator audit
-and mark
+: on
 exists
 /
 substring
-/
+,
+tell the user
+and auto-map
+exists → IS NOT NULL
+,
+substring → starts with / ends with
+.
 regex
-as
+and mid-string contains stay
 BLOCKED
-(Confidence unsupported). When complete, the agent
+. When complete, the agent
 must ask
 what next (adjust / tick / execute / done)
 No

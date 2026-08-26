@@ -92,11 +92,11 @@ A Product Manager’s Guide to Feature Flags
 Inside The Minds of European Online Shoppers: eCommerce 2023 Survey Report
 View all ebooks
 Webinars
-The Great Indian A/B Bazaar 🪔🛍️
 Beyond the Click: Turning Acquisition Spend Into Growth With Experimentation
+The Great Indian A/B Bazaar 🪔🛍️
+What Happens When You Test the Entire Donor Journey? Lessons From Real-World Nonprofit Fundraising Experiments
 Beyond the Win: Running an Ethical Experimentation Program
 Shall We Stop Optimizing for Humans, Yet?
-The Experimentation Gap: Why Most Organisations Test But Don’t Learn
 View all webinars
 VWO Blog
 Latest Blogs
@@ -364,8 +364,11 @@ Add new or edit UI elements to your webpage.
 Preview Variation(s)
 Conduct a quality review of the variations by previewing them to verify that all modifications have been applied to the website before going live.
 Embedded Source Loading
+Loads a page in the Visual Editor from pasted HTML/outerHTML, useful for authenticated, dynamic, or otherwise inaccessible pages.
 QA Assistant
+An on-page tool for validating campaign variations, targeting, events, and transaction tracking before launch.
 JavaScript Execution Timing
+Controls whether campaign JavaScript runs before or after the page DOM is ready, balancing faster display against element availability.
 Multi-Page Campaigns
 Easily apply the same experience to multiple pages with a single click, eliminating the need for manual duplication of changes across pages.
 Multi-Device Campaigns
@@ -373,6 +376,7 @@ Tailor modifications to specific devices or apply them consistently across all d
 Add Campaign JS
 Run a custom code for the entire campaign regardless of which variation the user sees.
 Page DOM Layers
+Displays the page’s hierarchical DOM structure so users can navigate between nested parent and child elements and select the correct element to modify.
 Redirection Variation
 Redirect visitors to alternate URLs as variations and test completely different page experiences with ease.
 Personalized Text
@@ -406,6 +410,7 @@ Unlimited
 Traffic Allocation
 Allocate the traffic on which you want to run the campaign and distribute the allocated traffic among the various variations created for the test.
 Traffic Sampling
+Allocate the traffic on which you want to run the campaign and distribute the allocated traffic among the various variations created for the test.
 Alerts
 Set email alerts for account administrators to receive notifications for your Wingify campaign related activities.
 Multi Arm Bandit
@@ -424,7 +429,6 @@ Sample Ratio Mismatch Detection
 Sanity check to identify data collection and test setup discrepancies. If an SRM check fails, our stats engine will notify you of unreliable campaign results.
 Multi-Browser QA
 Preview your tests across multiple browsers and validate them before launching the test.
-QA Assistant
 Cross Domain Testing
 Run tests on multiple domains within the user journey, where user tracking and goals can be on one or more domains.
 Scheduling
@@ -434,6 +438,7 @@ Choose where tracking information from visitor sessions is stored in their brows
 Enable Lazy Loading
 Defer campaign loading until it's needed to minimize page impact and improve website performance.
 Campaign Frequency
+Determines how often an eligible visitor can enter or see a campaign
 Funnel Tracking
 Connect multi-step user journeys to experiments for comprehensive, end-to-end funnel tracking.
 Priority Rule
@@ -498,7 +503,9 @@ Create advanced user segments by combining multiple targeting conditions using A
 Advanced Targeting Conditions
 Use variables like Minute of the Hour, Average Time Spent in Session, Days Since Last Visit, Time Spent in Session, Browser Language, Days Since First Session, Days Since Last Session, Number of Sessions, Ad Blocker Detection, Same Day Visit to target visitors
 Adblocker
+Targeting criterion that detects whether a visitor uses an ad blocker and triggers or excludes a campaign accordingly
 Weather & Temperature
+Target users based on weather and temperature
 Advanced Targeting Logic
 Use brackets to create targeting logic with multiple conditions, e.g. [Users in USA OR Users in India] AND [New Users OR iOS Device].
 Behavioral Targeting
@@ -695,11 +702,11 @@ Unpublished Changes
 Save campaign edits without pausing running campaigns and publish them once approved.
 Pages - CSS Selector & Code
 Integrations - Multi Connector Support
+Allow customers to connect multiple accounts within a single integration connector.
 Approvals
 Send campaign changes for approvals from stakeholders before publishing campaigns.
 API Access (rate limit of 60K/month)
 Start and pause campaigns programmatically or pull test metrics into other dashboards.
-Metric Global Tracking
 Asset Hub
 Images
 Store and reuse images from a centralized library across your campaigns and experiences.
@@ -1150,8 +1157,6 @@ Start and pause tests programmatically or pull test metrics into other dashboard
 Mutually Exclusive Groups With Priorities And Weights
 Ensure users are not exposed to multiple active tests simultaneously, eliminating bias, result contamination, and conflicting experiences. Set priorities and weights to control the rule execution order within mutually exclusive groups.
 Upto 10 user groups
-Metric Global Tracking
-Define metrics once at the account level and reuse them across all campaigns, ensuring consistent measurement without recreating metrics per campaign.
 Security & Compliance
 Data Storage
 All Wingify data is stored in one of the three data centers, as configured for the accounts.
@@ -1306,6 +1311,7 @@ Filter funnel reports to view data for specific days of the week, hours of the d
 Drop Off Heatmaps & Recordings
 Check heatmaps and recordings of users who drop off from the funnel at any stage.
 Funnels for Mobile Native
+Understand drop-offs of your users from specific flows in your app. Filter sessions based on a sequence of steps users took in your app. For example - checkout flow, onboarding flow, sign up flow etc.
 Heatmaps
 No. of Heatmaps
 Visualize users clicks with a colored overlay on top of your website page to identify hotspots of engagement.
@@ -1455,6 +1461,7 @@ Use brackets to create logic of targeting with multiple conditions. For example 
 Behavioral Targeting
 Target based on events, user behavior, and actions taken by the user on your website.
 Weather & Temperature
+Target users based on weather and temperature
 IP Based Targeting
 Target users based on IP address(s).
 Custom Event Targeting
@@ -1495,6 +1502,7 @@ Analyze complete user journeys for test variations and control with session reco
 Heatmaps in Campaign Reports*
 Compare heatmaps Variation vs. Control or Converted vs. Non-converted within the campaign reports.
 Friction Signal based Filters
+Find sessions where visitors encountered friction on specific pages or elements.
 user unique ID Filters
 Filter recordings of a specific user with his/her UUID generated by Wingify.
 User Language Filters
@@ -1506,7 +1514,9 @@ Use brackets to create logic of filtering reports with multiple conditions. For 
 Report Segmentation
 Slice and dice the report using the visitor's unique attributes and pre-defined user segments created in Wingify Data360 to analyze campaign performance. This is applicable if you have configured attributes and segments in Wingify Data360.
 Page Performance based Filters
+Filter session recordings by Web Vitals to understand how page performance impacts the visitor experience.
 Error Based FIlters
+Find sessions with API errors or unhandled exceptions that may disrupt the visitor experience and impact task completion.
 Mobile Native App Version Filters
 Filter recordings of specific app version you released.
 Session Duration Filters
@@ -1524,6 +1534,7 @@ Understand the instances when users go offline or come back online while using y
 Mobile Native Orientation Change Filters
 Understand the instances when users change their orientation.
 Mobile Native Funnel Analysis
+Understand drop-offs of your users from specific flows in your app. Filter sessions based on a sequence of steps users took in your app. For example - checkout flow, onboarding flow, sign up flow etc.
 Mobile Native Friction and Crash Dashboard
 Quickly identify user experience issues in your app and delve deeper with one click.
 Platform And Account Management
@@ -1598,6 +1609,7 @@ The time until which your data is stored with Wingify servers.
 Integrations
 Seamlessly integrate with third-party tools.
 Integrations - Multi Connector Support
+Allow customers to connect multiple accounts within a single integration connector.
 API Access (rate limit of 60K/month)
 Manage your Wingify account operations with automation.
 Website & Apps
@@ -1752,8 +1764,11 @@ Conduct a quality review of the created campaigns by previewing them to verify t
 Personalized Text
 Personalize text on your webpage with customer-specific, demographic or any other available information.
 JavaScript Execution Timing
+Controls whether campaign JavaScript runs before or after the page DOM is ready, balancing faster display against element availability.
 Embedded Source Loading
+Loads a page in the Visual Editor from pasted HTML/outerHTML, useful for authenticated, dynamic, or otherwise inaccessible pages.
 QA Assistant
+An on-page tool for validating campaign variations, targeting, events, and transaction tracking before launch.
 Multi-Device Campaigns
 Tailor modifications to specific devices or apply them consistently across all devices.
 Add Campaign JS
@@ -1809,6 +1824,7 @@ Choose where tracking information from visitor sessions is stored in their brows
 Enable Lazy Loading
 Defer campaign loading until it's needed to minimize page impact and improve website performance.
 Campaign Frequency
+Determines how often an eligible visitor can enter or see a campaign
 Funnel Tracking
 Connect multi-step user journeys to experiments for comprehensive, end-to-end funnel tracking.
 Priority Rule
@@ -1872,6 +1888,7 @@ Create advanced user segments by combining multiple targeting conditions using A
 Advanced Targeting Conditions
 Use variables like Minute of the Hour, Average Time Spent in Session, Days Since Last Visit, Time Spent in Session, Browser Language, Days Since First Session, Days Since Last Session, Number of Sessions, Ad Blocker Detection, Same Day Visit to target visitors
 Weather & Temperature
+Target users based on weather and temperature
 Advanced Targeting Logic
 Use brackets to create logic of targeting with multiple conditions. For example - [Users in USA OR Users in India] AND [New Users OR IOS Device].
 Behavioral Targeting
@@ -1923,6 +1940,7 @@ Target users based on cookie values. It can be customized based on varying busin
 Javascript Variable Targeting
 Target user groups based on custom events that occur on your website using Javascript variables.
 GTM Data Layer Variable Targeting
+Target users based on the GTM Data Layer variable values available on the page.
 User Intent Targeting
 Target users based on their intent of visiting your website using search keywords or referral URLs.
 Time Based Targeting
@@ -1934,6 +1952,7 @@ Create advanced user segments by combining multiple targeting conditions using A
 Advanced Targeting Conditions
 Use variables like Minute of the Hour, Average Time Spent in Session, Days Since Last Visit, Time Spent in Session, Browser Language, Days Since First Session, Days Since Last Session, Number of Sessions, Ad Blocker Detection, Same Day Visit to target visitors
 Weather & Temperature
+Target users based on weather and temperature
 Advanced Targeting Logic
 Use brackets to create logic of targeting with multiple conditions. For example - [Users in USA OR Users in India] AND [New Users OR IOS Device].
 Behavioral Targeting
@@ -2055,6 +2074,7 @@ Stream live visitor hits and event signals in real-time to debug, verify, and au
 Metric Filters
 Filter campaign reporting data instantly based on whether visitors triggered specific conversion goals or tracking metrics.
 Event Filters
+Filter campaign reporting data instantly based on visitors triggered events.
 DOM Based Metrics (Hover, Blur, Focus, Mouse Down, Element Visible)
 Track advanced on-page micro-interactions including mouse hovers, focus changes, element visibility and more.
 Advanced Metrics (Bounce, Revisit Rate, Exit Rate)
@@ -2120,13 +2140,13 @@ Classify your web pages into different categories to quickly create, manage and 
 Integrations
 Seamlessly integrate with third-party tools.
 Integrations - Multi Connector Support
+Allow customers to connect multiple accounts within a single integration connector.
 Unpublished Changes
 Save campaign edits without pausing running campaigns and publish them once approved.
 Approvals
 Send campaign changes and edits for approvals from stakeholders of your organization from within Wingify itself before publishing campaigns.
 API Access (rate limit of 60K/month)
 Make use of user's unique attributes to analyze campaign performance.
-Metric Global Tracking
 *This denotes how events stored per user will have a limit in the future. This has not been implemented on the app, is representational, and does not affect current pricing. However, this will be applicable in the future for all customers as per their respective plans.
 Asset Hub
 Images
@@ -2681,6 +2701,7 @@ Create advanced user segments by combining multiple targeting conditions using A
 Advanced Targeting Conditions
 Use variables like Minute of the Hour, Average Time Spent in Session, Days Since Last Visit, Time Spent in Session, Browser Language, Days Since First Session, Days Since Last Session, Number of Sessions, Ad Blocker Detection, Same Day Visit to target visitors
 Weather & Temperature
+Target users based on weather and temperature
 Attributes List Targeting
 Precisely target audience by matching a list of values with cookies, JavaScript variables, or any other identifier.
 20
@@ -2816,6 +2837,7 @@ Per MAU quota of events stored or collected per user.
 Integrations
 Seamlessly integrate with third-party tools.
 Integrations - Multi Connector Support
+Allow customers to connect multiple accounts within a single integration connector.
 API Access (rate limit of 60K/month)
 Manage your Wingify account operations with automation.
 Website and Apps

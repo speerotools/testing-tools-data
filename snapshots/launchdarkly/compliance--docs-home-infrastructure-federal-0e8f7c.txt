@@ -189,8 +189,9 @@ Other framework examples for agent optimization
 OptimizationContext reference
 Manage AgentControl
 Adaptive triggers
-Compare config variation versions
 AgentControl and information privacy
+Compare config variation versions
+Configure Amazon Bedrock
 Configure token limits
 Create flags
 Creating new flags
@@ -409,6 +410,7 @@ Custom conversion count metrics
 Custom conversion binary metrics
 Custom numeric metrics
 Filtering custom metric events
+Count distinct metrics
 Ratio metrics
 Creating metrics from traces
 Managing metrics

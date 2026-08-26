@@ -63,7 +63,7 @@ npm
 ·
 @amplitude/unified
 v
-1.1.29
+1.1.30
 Android SDK
 Native Android apps with Kotlin. Works with Jetpack Compose, Views, and mixed codebases.
 maven
@@ -82,7 +82,7 @@ npm
 ·
 @amplitude/analytics-react-native
 v
-1.6.9
+1.7.0
 Flutter SDK
 Cross-platform mobile, web, and desktop apps with Flutter and Dart.
 pubdev
@@ -96,7 +96,7 @@ npm
 ·
 @amplitude/analytics-node
 v
-1.5.70
+1.5.71
 Python SDK
 Server-side services, scripts, and backends with Python.
 pypi
@@ -139,7 +139,7 @@ npm
 ·
 @amplitude/experiment-js-client
 v
-1.22.0
+1.23.0
 Node.js SDK
 Experiment feature flag SDK for Node.js applications.
 npm
@@ -174,7 +174,7 @@ pubdev
 ·
 amplitude_experiment
 v
-0.1.0-beta.3
+1.0.0
 JVM SDK
 Experiment feature flag SDK for JVM applications.
 maven
@@ -195,7 +195,7 @@ pypi
 ·
 amplitude-experiment
 v
-1.12.0
+1.13.0
 PHP SDK
 Experiment feature flag SDK for PHP applications.
 composer
@@ -218,7 +218,7 @@ npm
 ·
 @amplitude/session-replay-browser
 v
-1.48.2
+1.48.3
 iOS
 Capture session replays from native iOS applications.
 cocoapods
@@ -263,21 +263,21 @@ cocoapods
 ·
 AmplitudeEngagementSwift
 v
-3.12.1
+3.13.0
 Android SDK
 Native SDK for embedding Guides and Surveys in Android applications.
 maven
 ·
 com.amplitude:amplitude-engagement-android
 v
-3.12.1
+3.13.0
 React Native SDK
 SDK for embedding Guides and Surveys in React Native applications.
 npm
 ·
 @amplitude/plugin-engagement-react-native
 v
-3.12.1
+3.13.0
 Flutter SDK
 SDK for embedding Guides and Surveys in Flutter applications.
 pubdev

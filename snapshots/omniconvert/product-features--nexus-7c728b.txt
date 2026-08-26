@@ -1,5 +1,5 @@
 # https://www.omniconvert.com/nexus
-Nexus — AI-Powered eCommerce Marketing Automation | Shopify Growth Engine
+Nexus - AI eCommerce Growth Engine for Shopify
 / Nexus
 Secure your account
 ☾
@@ -253,9 +253,8 @@ What ships when
 The build plan
 Every module. Every quarter. Click a section to expand.
 Module & Feature
-Q2 2026
 Data Insights
-Beta
+Now live
 Q3 2026
 Intelligence
 & Recs
@@ -267,7 +266,7 @@ Shopify, GA4, Meta Ads, Google Ads
 Core revenue data — orders, spend, traffic, conversions
 Klaviyo email & SMS
 Flow performance, engagement, revenue attribution
-Omniconvert Reveal — RFM & CLV data
+Customer Intelligence (formerly Reveal) - RFM & CLV data
 Customer segments, purchase cycles, lifetime value
 NPS & review sentiment (Brandfeel)
 Structured customer feedback signals
@@ -346,7 +345,7 @@ Performance monitoring agent
 Auto-pauses losers, scales winners — no babysitting required
 True Profit reporting — closed-loop
 Experiment results measured against actual bottom-line impact
-Full autonomy — email sequences, CLV optimization, predictive forecasting — ships Q1 2027.
+Full autonomy (email sequences, CLV optimization, predictive forecasting) ships Q1 2027.
 The cost of doing it manually
 0
 % CAC increase for DTC brands, 2023–2025
@@ -433,7 +432,7 @@ Lifesight
 What they do
 Multi-touch attribution, channel contribution, ROAS reporting. Excellent at "where did this order come from?" — but that's where it stops.
 + What Nexus adds
-True Profit layer — Revenue minus COGS, shipping, returns, ad spend, fees. CLV-weighted via Reveal RFM. Tells you whether the revenue was worth the acquisition cost.
+True Profit layer — Revenue minus COGS, shipping, returns, ad spend, fees. CLV-weighted via Customer Intelligence RFM. Tells you whether the revenue was worth the acquisition cost.
 Smartly.io
 Omneky
 Hunch
@@ -458,14 +457,14 @@ What they do
 Run A/B tests, deploy overlays, trigger surveys. Powerful for execution — but require you to decide what to test. Intuition-driven by default.
 + What Nexus adds
 Explore runs via MCP — Nexus controls it without you opening it directly. Every test spawned from an insight. No orphan experiments. Results feed back into the intelligence loop.
-Reveal (built-in)
+Customer Intelligence (formerly Reveal)
 Klaviyo
 Gorgias
 Yotpo
 What they do
 Segment customers, send emails, handle support, collect reviews. Enormous qualitative signal — mostly goes unread and disconnected from decisions.
 + What Nexus adds
-Reveal is the native profit engine — True Profit, CLV, RFM. External signals feed CX Intelligence where every issue is scored by profit impact. Reviews become your next experiment brief.
+Customer Intelligence is the native profit engine: True Profit, CLV, RFM. External signals feed CX Intelligence where every issue is scored by profit impact. Reviews become your next experiment brief.
 How Nexus compares against dedicated creative tools. Select a capability group to compare.
 Creative Generation
 Intelligence & Brief
@@ -709,7 +708,7 @@ Insight → Hypothesis → Brief → Experiment Chain
 Every experiment traces back to a data-backed insight. No orphan tests — structurally enforced in the UI.
 $
 True Profit Optimization
-Revenue minus COGS, shipping, returns, ad spend, platform fees. CLV-weighted via Reveal RFM. Not ROAS.
+Revenue minus COGS, shipping, returns, ad spend, platform fees. CLV-weighted via Customer Intelligence RFM. Not ROAS.
 ~
 Messaging Kernel (Congruency)
 Single messaging DNA across ad, landing page, email, survey, overlay. Eliminates CAC-inflating mismatch.
@@ -759,7 +758,7 @@ How does Nexus handle ad creative fatigue?
 Nexus tracks creative decay curves: monitoring CTR decline, CPC increases, and frequency saturation. It forecasts when each creative will fatigue and tells you how many new creatives you need next month, before CAC climbs. Proactive replenishment instead of reactive scrambling.
 How quickly will I see meaningful results?
 +
-In the Q2 beta, the first value is visibility: within days of connecting your data, Nexus surfaces anomalies, creative health issues, and profit leaks that most brands don’t spot for months. Actionable experiment recommendations follow within the first week as the AI agents learn your account patterns. Full campaign generation and autonomous deployment come in Q4 2026. The $1,000 credit is specifically designed to let you run your first cohort of experiments without financial risk.
+Now that Nexus is onboarding founding brands, the first value is visibility: within days of connecting your data, Nexus surfaces anomalies, creative health issues, and profit leaks that most brands don’t spot for months. Actionable experiment recommendations follow within the first week as the AI agents learn your account patterns. Full campaign generation and autonomous deployment come in Q4 2026. The $1,000 credit is specifically designed to let you run your first round of experiments without financial risk.
 Can Nexus help with brands that have seasonal products?
 +
 Yes. The Seasonality Engine is a dedicated module that analyses historical Shopify orders, GA4 traffic patterns, and Google Ads data to forecast demand peaks 6–8 weeks ahead. Rather than reacting to a Black Friday spike, you’re briefing creatives and building budgets while competitors are still planning.
@@ -792,10 +791,10 @@ What if I don’t use Klaviyo, Triple Whale, or some of the listed integrations?
 Nexus works with what you have. The minimum viable connection is Shopify + Meta Ads or Google Ads. Every integration you add increases the quality of insights — but you don’t need all of them to get value.
 Can I connect multiple Shopify stores?
 +
-Multi-store support is on the roadmap and will be available for brands operating multiple Shopify properties. In the Q2 beta, Nexus launches with single-store support. Founding brands with multiple stores are invited to share their setup so we can prioritise the architecture.
+Multi-store support is on the roadmap and will be available for brands operating multiple Shopify properties. Right now, Nexus supports a single store. Founding brands with multiple stores are invited to share their setup so we can prioritise the architecture.
 How does Nexus handle data from unsupported platforms?
 +
-For platforms not yet natively supported, the team evaluates integration requests from founding members on a case-by-case basis. Demand from founding brands is the primary input into the integration roadmap. In the interim, GA4 acts as a universal proxy for many behavioural signals.
+For platforms not yet natively supported, the team evaluates integration requests from founding brands on a case-by-case basis. Demand from founding brands is the primary input into the integration roadmap. In the interim, GA4 acts as a universal proxy for many behavioural signals.
 Is my data safe? What does read-only access mean?
 +
 Read-only access means Nexus can see your data but cannot make changes to your accounts, pause campaigns, or move budget without your explicit approval. Data is encrypted in transit and at rest. You can revoke access at any time from within each platform.
@@ -813,10 +812,10 @@ Will my data be used to train AI models for other brands?
 No. Your data is used exclusively to generate insights and recommendations for your own account. Nexus does not use one brand’s data to train or improve models deployed for another brand. Each brand’s intelligence layer is isolated.
 When does Nexus launch?
 +
-Q2 2026 for the data insights beta with founding brands. Q4 2026 for full ad automation and AI experiments. Q1 2027 for complete autonomous operation. Brands who connect data now receive $1,000 in credits at launch.
+Data insights are live now for founding brands who are onboarding. Q4 2026 for full ad automation and AI experiments. Q1 2027 for complete autonomous operation. Brands who connect data now receive $1,000 in credits at launch.
 What does the $1,000 credit cover?
 +
-The $1,000 credit applies to your first 3 months after launch. No charge until the product goes live. Founding members also get early access, roadmap influence, and founding-member pricing locked for life.
+The $1,000 credit applies to your first 3 months after launch. No charge until the product goes live. Founding brands also get early access, roadmap influence, and founding-brand pricing locked for life.
 How much will Nexus cost after the founding period?
 +
 Pricing is still being finalised, but Nexus is positioned for brands doing $5M–$200M in annual revenue. The model will be usage-based. Founding brands lock in a significantly discounted rate for life.
@@ -825,7 +824,7 @@ What if I connect today and decide not to use Nexus at launch?
 No penalty, no obligation. Connecting your data now simply reserves your founding-member status and your $1,000 credit. If you decide Nexus isn’t right for you when it goes live, you revoke access and walk away. There is no contract, no payment taken before launch.
 Is there a minimum contract length after launch?
 +
-No minimum term. Nexus is designed to be kept because it generates measurable profit impact, not because you’re locked in. Founding members who remain on the platform keep their discounted rate for as long as they stay.
+No minimum term. Nexus is designed to be kept because it generates measurable profit impact, not because you’re locked in. Founding brands who remain on the platform keep their discounted rate for as long as they stay.
 Our combination of advanced technology along with our methodology and specialized services for ecommerce and retail companies. (both in-house and certified partners)
 Get a Free Demo
 Products
@@ -844,6 +843,7 @@ Pricing
 Blog
 Ebooks, Tools, Templates
 Case Studies
+Reviews
 Help
 Digital Marketing Glossary
 Compare Us
