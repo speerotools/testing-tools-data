@@ -71,6 +71,14 @@ DRY_RUN   = os.environ.get("DRY_RUN", "false").lower() == "true"
 MAX_ASSESS = int(os.environ.get("MAX_ASSESS", "40"))
 ASSESS_LOW = os.environ.get("ASSESS_LOW", "false").lower() == "true"
 MAX_PROPOSALS = int(os.environ.get("MAX_PROPOSALS", "50"))
+PER_VENDOR_CAP = int(os.environ.get("PER_VENDOR_CAP", "8"))
+MIN_EVIDENCE_LEN = int(os.environ.get("MIN_EVIDENCE_LEN", "40"))
+# URL types that are narrative/marketing/dynamic — facts belong on docs/pricing/
+# product/trust pages, not here. Mining these for capability tags is where the
+# noise comes from (brief appendix, design point 1). Skip them for assessment.
+ASSESS_SKIP_TYPES = {t.strip().lower() for t in os.environ.get(
+    "ASSESS_SKIP_TYPES",
+    "Blog/Announcements,Sitemap,Homepage,Solutions/Customers,Press").split(",") if t.strip()}
 
 TOKEN = os.environ.get("AIRTABLE_TOKEN")
 GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
@@ -162,26 +170,30 @@ PROPOSAL_SCHEMA = {
     },
 }
 
-PROMPT = """You audit a single vendor page for a CRO tools comparison database. A monitored page changed; below is the unified diff of its normalized text, the vendor's current database values for the fields you may touch, and the allowed options for each linked field.
+PROMPT = """You maintain a factual database of A/B-testing and experimentation vendors. A monitored page changed; below is the unified diff of its normalized text, the vendor's current database values, and the allowed options for each linked field. Propose field changes ONLY when the page states a real, verified product fact that the database is missing or has wrong.
 
-Return proposed field changes as JSON matching the schema. Follow these rules exactly:
+Return JSON matching the schema. Default to returning [] — most diffs are copy churn and the correct answer is no proposals.
 
-1. ONLY propose these fields: {whitelist}. Never anything else.
-2. Every proposal MUST carry a verbatim quote from the NEW page text (the '+' side of the diff). No quote, no proposal.
-3. Linked/select fields must use an EXISTING allowed option (listed below). If no option fits, set proposal_type="new_canonical_option" and put the suggested new option name in proposed_value — never pick a nearest-wrong tag.
-4. "No change" is the expected answer. Marketing-copy rewrites are NOT changes. Return [] when nothing factual changed.
-5. Distinguish assistive AI (human-approves) from autonomous/agentic. A chat sidebar or copilot is NOT agentic experimentation.
-6. change_type: "vendor_change" if the vendor shipped/altered something; "baseline_correction" if our record was simply wrong all along.
-7. Status (lifecycle): only Active/Acquired/Discontinued/Sunsetting, and ONLY with vendor- or acquirer-owned evidence (a sunset notice, acquisition release, a page that stopped selling). A 404 or dead page is NEVER grounds for Discontinued.
-8. Price range fields are a 1-5 proxy, not currency; only propose them if the diff clearly moves the tier.
+RULES (follow exactly):
+1. ONLY these fields: {whitelist}. Nothing else.
+2. Evidence: every proposal needs a verbatim quote from the NEW ('+') text that, on its own, factually states the specific thing you are proposing. A headline, section title, nav label, list heading, blog title, or a bare noun/phrase (e.g. "Automation", "Deal Room", "Sales", "AI Summary:") is NOT evidence — reject it. If you cannot quote a full sentence that names the capability/integration/SDK as a supported product feature, do not propose it.
+3. Linked fields (Pricing Model, AI / Agentic Capabilities, MCP Capabilities, Integrations, Compliance & Security, SDK Languages, Use Case Fit): the proposed_value MUST be one of the EXISTING allowed options listed below, copied verbatim. If the fact is real but no option fits, set proposal_type="new_canonical_option" with the suggested name — never coerce a marketing phrase into a tag.
+4. This is a marketing page vs a product/docs page distinction: blog posts, press releases, and homepages describe narratives and aspirations. Do NOT extract capability/integration/SDK tags from them. Trust docs, pricing, product-feature, API, and trust/security pages for facts.
+5. MCP Capabilities are specific MCP-server tools/verbs (e.g. "Write: create experiment", "Read: metrics"). Product features, campaign types, or asset types are NOT MCP capabilities. If a page shows an MCP server exists but no listed capability fits, propose MCP Type instead and leave MCP Capabilities alone.
+6. Assistive vs autonomous: a copilot, chat sidebar, or "AI that drafts for human approval" is assistive, NOT agentic experimentation. Do not tag agentic capabilities for assistive features.
+7. change_type: "vendor_change" if the vendor shipped/changed something; "baseline_correction" if our record was simply always wrong.
+8. Status (lifecycle): only Active/Acquired/Discontinued/Sunsetting, and ONLY with vendor- or acquirer-owned evidence (sunset notice, acquisition release, a page that stopped selling). A 404/dead page is NEVER grounds for Discontinued.
+9. Price range (low/high) is a 1-5 proxy, not currency; propose only if the diff clearly moves the tier.
+10. Confidence: calibrate honestly. Docs/pricing/trust evidence that explicitly names the fact = high (0.85+). Anything inferred, or from a blog/marketing page = low (below 0.6). Do not return 1.0 unless the quote is unambiguous and from an authoritative page.
+11. If a single page appears to add many (5+) capabilities, it is almost certainly marketing copy — return [].
 
 VENDOR: {vendor}
-URL ({url_type}): {url}
+URL (type: {url_type}): {url}
 
 CURRENT DATABASE VALUES:
 {current}
 
-ALLOWED OPTIONS FOR LINKED FIELDS:
+ALLOWED OPTIONS FOR LINKED FIELDS (use these verbatim):
 {options}
 
 UNIFIED DIFF:
@@ -297,12 +309,23 @@ def main() -> None:
             print(f"  {it.get('type','')}  {it.get('url')}")
         return
 
+    # Drop marketing/dynamic URL types before spending Gemini calls (cost + noise).
+    before = len(changed)
+    changed = [it for it in changed if (it.get("type") or "").strip().lower() not in ASSESS_SKIP_TYPES]
+    if before != len(changed):
+        print(f"Skipped {before - len(changed)} marketing/dynamic URLs (types: {sorted(ASSESS_SKIP_TYPES)}).")
+
     print(f"Assessing {len(changed)} changed URLs (shadow={SHADOW}, model={GEMINI_MODEL}).")
     base, options, db, reg = load_context()
     names = {rid: f.get("Name", rid) for rid, f in db.items()}
     slugs = {rid: (f.get("Slug") or _slug(f.get("Name", ""))) for rid, f in db.items()}
     opts_txt = options_block(options)
+    # field -> set of canonical option names, for validating linked proposals.
+    field_opts = {}
+    for field, cat in MASTER_CATEGORIES.items():
+        field_opts[field] = {o.lower() for o in (options.get(cat) or options.get(field) or [])}
 
+    dropped = {"evidence": 0, "noncanonical": 0}
     proposals: list[dict] = []
     for item in changed:
         url = item.get("url")
@@ -325,12 +348,38 @@ def main() -> None:
         for p in raw:
             if p.get("field") not in WHITELIST:
                 continue
-            if not (p.get("evidence_quote") and p.get("source_url")):
+            quote = (p.get("evidence_quote") or "").strip()
+            if not (quote and p.get("source_url")):
                 continue  # evidence mandatory (§4.3)
+            # Thin quotes (headlines, nav labels, bare nouns) are the main noise source.
+            if len(quote) < MIN_EVIDENCE_LEN:
+                dropped["evidence"] += 1
+                continue
+            # Linked fields must match an existing canonical option; otherwise it is
+            # at most a new-canonical suggestion, never a silent field write.
+            fo = field_opts.get(p["field"])
+            if fo is not None and str(p.get("proposed_value", "")).lower() not in fo:
+                if p.get("proposal_type") != "new_canonical_option":
+                    p["proposal_type"] = "new_canonical_option"
+                    dropped["noncanonical"] += 1
             p["record_id"] = rid
             p["vendor"] = names.get(rid, "?")
             p["diff_link"] = commit_url(path)
             proposals.append(p)
+
+    # Per-vendor cap: one page dumping many tags is almost always marketing noise.
+    from collections import defaultdict as _dd
+    by_v = _dd(list)
+    for p in proposals:
+        by_v[p["vendor"]].append(p)
+    capped = []
+    for v, ps in by_v.items():
+        ps.sort(key=lambda x: -(x.get("confidence") or 0))
+        if len(ps) > PER_VENDOR_CAP:
+            print(f"  capped {v}: {len(ps)} -> {PER_VENDOR_CAP} (likely marketing noise)")
+        capped.extend(ps[:PER_VENDOR_CAP])
+    proposals = capped
+    print(f"Dropped {dropped['evidence']} thin-evidence; flagged {dropped['noncanonical']} non-canonical as new_canonical_option.")
 
     if len(proposals) > MAX_PROPOSALS:
         print(f"ERROR: {len(proposals)} proposals exceed cap {MAX_PROPOSALS}; aborting without writing.", file=sys.stderr)

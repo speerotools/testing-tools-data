@@ -43,8 +43,12 @@ def build_proposals_text(props: list) -> str:
         items = by_v[vendor]
         lines.append(f"\n*{vendor}* — {len(items)} proposal(s)")
         for p in items:
-            lc = "  ⚠️ LIFECYCLE" if p.get("field") == "Status (lifecycle)" else ""
-            lines.append(f"  {p.get('field')}: {p.get('current_value','') or '∅'} → {p.get('proposed_value')}{lc}")
+            mark = ""
+            if p.get("field") == "Status (lifecycle)":
+                mark = "  ⚠️ LIFECYCLE"
+            elif p.get("proposal_type") == "new_canonical_option":
+                mark = "  ✎ NEW OPTION (needs a canonical first)"
+            lines.append(f"  {p.get('field')}: {p.get('current_value','') or '∅'} → {p.get('proposed_value')}{mark}")
             lines.append(f"    \"{(p.get('evidence_quote') or '')[:160]}\"")
             lines.append(f"    {p.get('source_url','')}  ·  {p.get('change_type','')}  ·  conf {p.get('confidence')}")
     foot = [f"\n{len(props)} pending, {low_conf} below 0.7 confidence."]
