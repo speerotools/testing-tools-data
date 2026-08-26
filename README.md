@@ -1,47 +1,52 @@
 # Speero Testing Tools — Data
 
-Airtable is the source of truth. GitHub Actions turn it into the published data
-and keep the vendor records fresh. Nothing here is edited by hand.
+Airtable is the source of truth. GitHub Actions publish it to the live site and
+keep the vendor records fresh. Nothing here is edited by hand.
 
-Published data (served via jsDelivr, consumed by the embed):
+Published data (served via jsDelivr, read by the site embed):
 
 ```
 https://cdn.jsdelivr.net/gh/speerotools/testing-tools-data@main/testing-tools.json
 ```
 
+## Two loops
+
+**1. Publish (automatic).** Every 6 hours `sync.yml` turns Airtable into the
+published JSON, updates the Webflow vendor pages, and refreshes the CDN. Edit
+Airtable, the site follows on its own.
+
+**2. Freshness (automatic scan, human approves).** On the 1st of each month
+`enrich.yml` visits every vendor URL, detects what changed, has Gemini draft the
+exact record edits (each with an evidence quote), and posts them to Slack + the
+Airtable **Proposals** table. A person approves the good ones, then `apply.yml`
+writes them back. **Nothing changes a vendor record without approval.**
+
+## What's automatic vs manual, each month
+
+- **Automatic:** the scan runs itself, drafts proposals, writes them to Airtable, posts the Slack digest (tags the reviewer).
+- **Manual (a few minutes):** approve proposals in the Airtable **Pending Review** view, then run **apply-proposals**. If nothing real changed, there's nothing to do.
+
 ## Workflows
 
-| Workflow | When | What it does |
+| Workflow | When | What |
 |---|---|---|
-| `sync.yml` | every 6h + dispatch | Airtable → `testing-tools.json`; reconciles the Webflow CMS (per-vendor pages) and purges the CDN. |
-| `enrich.yml` | monthly (1st) + dispatch | Fetches every active vendor URL, hashes + snapshots it, triages what changed, and (in shadow) proposes Airtable edits, then posts a Slack digest. |
-| `apply.yml` | dispatch only | Writes human-approved proposals back to Airtable. Dry-run by default. |
+| `sync.yml` | every 6h + dispatch | Airtable → JSON, Webflow pages, CDN purge |
+| `enrich.yml` | monthly + dispatch | scan pages, detect change, draft proposals, Slack digest |
+| `apply.yml` | dispatch only (dry-run default) | write approved proposals to Airtable |
 
 ## Scripts (`.github/scripts/`)
 
 - `sync.py` — build the published JSON from Airtable.
-- `webflow_sync.py` — reconcile the Webflow CMS collection to the data.
-- `enrich.py` — fetch + hash + snapshot each URL; write change fields back; emit the scan summary and page snapshots (`snapshots/`).
-- `assess.py` — turn a snapshot diff into proposed field changes via Gemini (structured output, strict field whitelist + evidence). Shadow by default.
-- `apply.py` — write approved proposals; whitelist re-check, staleness check, and a `Last Vendor Scrape` bump to trigger a rescore.
+- `webflow_sync.py` — reconcile the Webflow CMS pages + per-vendor SEO fields.
+- `enrich.py` — fetch, hash, and snapshot every URL (`snapshots/`); triage change.
+- `assess.py` — snapshot diff → Gemini → proposed field changes (strict whitelist + evidence + cost guards).
+- `apply.py` — write approved proposals (whitelist re-check, staleness check, rescore trigger).
 - `notify_slack.py` — the Slack digest (scan summary + proposal queue).
-
-## The monthly loop
-
-```
-enrich (fetch, hash, snapshot, triage)
-   → assess (diff → Gemini → proposals, shadow)
-   → Slack digest (mentions the reviewer)
-   → human approves in the Airtable Pending Review view
-   → apply (writes approved changes, dispatch)
-```
-
-Nothing writes vendor facts without a human approving first.
+- `create_proposals_table.py` — one-time: build the typed Proposals table.
 
 ## Secrets / variables
 
-- Secret `AIRTABLE_TOKEN` — PAT with `data.records:read` + `data.records:write` + `schema.bases:read`.
-- Secret `WEBFLOW_TOKEN`, `SLACK_WEBHOOK_URL`, `GEMINI_API_KEY`.
-- Variables: `WEBFLOW_PUBLISH`, `PROPOSALS_SHADOW`, `PROPOSALS_QUEUE_URL`.
+- Secrets: `AIRTABLE_TOKEN` (read + write + schema.bases:read), `WEBFLOW_TOKEN`, `SLACK_WEBHOOK_URL`, `GEMINI_API_KEY`.
+- Variables: `WEBFLOW_PUBLISH`, `PROPOSALS_SHADOW` (false = proposals go to Airtable; true = preview only), `PROPOSALS_QUEUE_URL`.
 
-Proposal Queue setup and phasing: see `phase-e/proposals-table-setup.md`.
+Proposal Queue setup + phasing: `phase-e/proposals-table-setup.md`.
