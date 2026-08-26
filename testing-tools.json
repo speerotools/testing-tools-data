@@ -1,6 +1,6 @@
 {
-  "version": "2026-08-26T00:40:16Z",
-  "commit": "fc26b9736036a7fc512d94cec17c4ef58d5394fd",
+  "version": "2026-08-26T06:29:47Z",
+  "commit": "259de75d2945af4714e8f5c9b64850f48544d3c3",
   "vendors": [
     {
       "slug": "ablyft",
@@ -55,7 +55,7 @@
       "axc": 69.2,
       "ayc": 45.7,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/TvS6iC2s9ugpe1PPD8kjXA/HMU5zyGMODdbEBKC9uMdBNYqUkQf1E6QVC53aSuW5CaOHaj4u8tUfKTib0mMnRgD5dk-hlyNDGkwO2VZ8Zz2BTcWQpcXKartj6BLoBo0mqAF1_tPBt08GK6jWhY0REjh3WE2G8SNsJSFosg9wplq7w/aHW5nUpD-wV4ZlnfShhR7xZuFdFDTLGTHHa2FmeO--U",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/3P_nKU-ufw-AkWXYktwV1g/rP_SyY_DzURpV7T8cB4MDGwWrLB7rVY0R_p0AzVozWJiDBA3F7l7rro6oYF4H6_BX6nAxPxrMrLCbCsY-1VUzaHCwpUO_MyKo6RqBXrHDH-PwVpvZ5iRtPcsNEIn5jiG5t7uzLyXYQqiyjS9fbBmdA/5sCIF9E-XyJBUDULITVpSyCUeDTgHCmksVjZ-w6Zgz4",
       "sources": [
         {
           "type": "API Reference",
@@ -172,7 +172,7 @@
       "axc": 64.0,
       "ayc": 63.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/pajU2wEopwPktddQ5Kztog/QTmZrqiKje01pILIBPJg2VAu6FHIf5EhbBm44yNU7KeX_EXEqw5Bg-xXV2U2OKtgcgoma_OQJZShOsY54P6j9S1_-U6VwSEcxJtGOscnQOAPzIInQ-XrHyeebDbK_j6iEMdooUxdBvnnktTy4lzEq4c3ePM4WoiELn-_BUDzrAg/bM71L-6B_EybL3-3bRJPV4zFMroMa4Bho9Q-_PP6-0I",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/iYp_UwFVig29Rcy0cn98DA/jqNYxItOM8Hn8MYEq_4llQ3WSVQCgGQnTqYPhk65s7zBStqKxjCPTs2BryCHueIEKJBOW1GAyYESFkbhFet_2iochlkf8XxVBiBmJC98M9CnePBNQa3LQHR2RoG-hiAw2nTy-tB0gZDfES5hwF2ymEETrwExXS5U09CXEEBeIuk/dAHcz0sdG1tYXvYHyDjos5HmEpnLICMEEfXVYPv_DUw",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -305,7 +305,7 @@
       "axc": 45.3,
       "ayc": 31.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/DodeFxMKxZXZW2kV0LEhLg/mFmKShESW1OXsHnAanl6jNlYKNxvzWLOg9uU2lVU5lpMF33g1NNWkrsWf-qNBlWWf-cSBd0-6dnCBbm3jLcovT_VDh9cRPCeoIBw7bNtt6pa60tClUsDNqX4OLWOvc69i-dFPvU0pjbfCsr4UL9Lzucp_hYziq9HomWtNvAHB18/x8XEO0C1nffxp6NdgAv1JElxWE4NYLgIoEFrSgMptig",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/VvgKKKrlFpDKbhPjIhiUOg/t3Zra3spdM6rBGxAKRotA5S_ZBCQyWDMCgiPMqZT7zbQ25_JsbGrT3Lp_u5Ds33wSC7mbGAEvuMhjXGJ7TpUvRyXmcPEXfDn4SYAIOhkjLqqo7zPqcFWCNJTVePDXOXZT334CQOAJR0oCZNI9rePyO_nMiKlRPs-tFj7LqfR_6U/cUvlROE09t3JRPoRK-pv74lc_CsUgx-IRL1Rsbm3HSU",
       "sources": [
         {
           "type": "Homepage",
@@ -566,7 +566,7 @@
       "axo": 62.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/ulwn4Ii7aekymLrbBNuuvg/k_z2F_if44X8WWyS5uJ6p8tgX0xucyHGdrGcMy1_VusAiDnQ-mF1s6jxj2Oqjb_j7rKCSTT26YwIzxaEPyRwhfIUGl_WMo4ieZ1jLOMwi0hVj2JkidxPeZ6ALp5-LvpfgQsqhcnwrwNvd2BbxnNqNA/XRVWq3ZJSsd8yq04Gqfd3zYQP3dkAZYaJVJKu-2de04",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/xbmzFO-LPDAKuodsoC0dzA/WyjxHDa1WATnix7cfNoijg7ihj4edt5bDJjOX-Hb3XevXUMj0_cCvZyXOfPqMph4zv_n0DMHr3VTphGy3ZgUU5_SGm1fOepEFm4ug7dn1iepl9Vxgvx0Qy5CziH0XeZeVGeKVueuIV825nSAIiDWSQ/yvUfTohvQiFzgwZGiH4kb1i1qWbaYoPX-C3vo5ctfBk",
       "sources": [
         {
           "type": "",
@@ -716,7 +716,7 @@
       "ayc": 37.0,
       "myo": 20.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/khU7OQnBbuOnet5YRyQuzg/lGQll_I1gPtL1AMsK6gjkLftiarWl3ILNJ4f8ULUBcm5pdGFJS6vfp_po4GB1zOG6TXnduCKQ8gzYUqI2qGD37_uOUShxemELlLut6TbJa6O1D31enPdM7J_FGe5DIySlKfZRZiULGKHt3NyvFUUMpImCTibf9zZXC1WRODGVvU/KUr3fJ2qPqr3irsSeD5en19ffka7ya2mqn7TqDg4p5w",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/y2ptNvPv6hXp_gXqftpdvA/dxpcprmuhAzCVRBGwUnxq3cIZaXvgpoWgkxSVRJhJsywzvfktlAxaW3IrBRHOP9ovHr2WRncKi3-YFJf8EDmVbemN-ZgUD5rHSRITP5JcRoUc2EZKs939YG2WXii3Br40842JBFUokFf9j1aueXrEc3c7n_0sZTJ_VcxWYVJqso/4jPdRsCigh6dGIL-5U-j1wWmenZaa1fi9MGeYKyN0ME",
       "sources": [
         {
           "type": "API Reference",
@@ -861,7 +861,7 @@
       "axo": 85.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/tMLXtMil_1aOG18GSCv7-A/Y9ppk-xnM4pz9LIiSMJhHsnXKBErNUZla0Ri0OP8QcuucT-R3McCITCwnQH8VP06kixUSZ_RY0j0oeVGcybYRrcSqQlA-mhKmBSypRHUgqRmRTphZZ7peFIaPrLQFf17rwHw2bUAlsd50pLjZoUYncHQhF-murogBxgTe9zrdr0/vgoAnbD0jRiM7UbFWnZnqh0HHDnBxNoIvitCkdY62dQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/VAhVtpr_WPAIyUlgLojLMA/ovCtFQRZWXOiFWXhdj4_DsnRZkAEZRkIvqXHSHkq-WDAP2-743LRXPAq2oyW6To3LVLdejxJganZ1ZtvalAL9Jht-GRRKQMDinNL40NzOQsBhTxr6LTFOqdvKjBK7eB_OP2TRqi0r3YxQXh9IqveDDvZgZ-Q1z4O07E6wWN5B9g/OU9aI6euNkWW1kKQyuN9j10iwtODbGDVTXrFE0td8Bc",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1039,7 +1039,7 @@
       "axc": 15.5,
       "ayc": 13.8,
       "scraped": "2026-08-10",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/7Np_grx4UMAsBfB88UQqyg/EB7qSKJUi1hVRWx03SbWxOkR3wB1VVdsvY8asErxjcUb8MP4hlWGRlk0jggd288bQr8ZmL5D3ATOtgKLKPDvUw5DiZORep9XuVrEOFgnyg7u0kbHzz4qchUdGLCbzVIVCVo2a-tRdKivKyoaGR_65A/GwdC8qbYSRPW1QSCuuWR2cBkgUv7vZqEMwBxECLvX6Q",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/INasoUJ5NG07cnSu_vvhRQ/DpWuEHXFq_o_01NGV6ljf64CrbuKB7Wv_DfiYc9w1c1jNacuwl_UsUh7CXmLMjvnVFGlbOb--fPWO8gWYwNWoNM-f5OjuQ7GykdxporHLknbj54WTmGxywCxP3c8M0H4dXBrQSaYEdovtA_KAMZKJQ/hB7MIicItkYF-oBfB_vq5-CyuMw6Ac4ZQpXO7avTSOw",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1172,7 +1172,7 @@
       "mxo": 50.0,
       "myo": 50.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/d-JmuMbzcvq0WJeJaU9XCg/LeJliftoWe81mD6R2jlOSWTSGPbkv5scH1Mo5prw7lmRElIPJuymtJH0Cgtm7scEacKtcduApiKzFepnwbq8Z8L7Cd6FQjKIW-ctJ514fYD_1SWaMjm8E7fQLeu7wFAGH5_t-Oo4Ex9pZ_5CpAU7-w/68mHP0l2_hAC_hlGy9rJJne9G26viiyj3VtLwAqEJ4g",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/YPhAAt3HPL9_g7wL2M8VCQ/jSN__Fwtq1VtgaTelAzrcCFjpfXbMcSVpX-GQZsn640Ad0Qjas1X-Ck9dJGNLCOYMz_lB1dIBAXkNp6_sq9lFbBtmKWwRtFkSsb3pO-1quHMD5EwtA76CWHu-e6CVXohNPBYeu7B0D7pGi5b_fll6w/Px5JdT165in1PbKwBAvQgp17u-yfRf8KjiMR9IRH934",
       "sources": [
         {
           "type": "",
@@ -1376,7 +1376,7 @@
       "axo": 88.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/UDbnvUbrqYw-szsVP_I5mQ/nnDcXXVL3yjA4UaUI9qxbm6LoKunzPUUDzH33JbdruSx1lvT7Ur0aek15iGnyVavFJf8g8Roo8RKX8tRPnvNJ_bq90w6E5anl6FqGiowRez1iHg3tfYgEKX297ERwalj_9bYCa9J2oNtpbLcWBg4HfP07HgUBjMtNpGZwoQzGZg/X3jghLE1hHB3IFF5ctJQLs0ukHBLAyI4PbCO61St8Aw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/4QFIR4vaBmIZkDoMfzABlg/v66fztQdXbTQjcrVioh0k7qkwx7kIUSINATHqHjuIsUhgWbqk2nzwyMR-kOamLf6JpQi12Og68RrURgk7FabVSjjHhIjZW75xFsEZKu2dP6l1J99szWie4O8oDpHnh7gnu1hx3ZdWAENaEJPDm3_DOjnN2o129DY6pHtVRpALUA/EutBUGRi3bvJO2sQs_1Uf0u1q2ul-U_k7INIOc9xrK8",
       "sources": [
         {
           "type": "",
@@ -1560,7 +1560,7 @@
       "axo": 88.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/ypM9QAA2lcJ3QhC1ZdLfSw/b5jbtVZq9zeTo30pO8otQIwtqVc2365eMNOSZJn3IFe6QzuwoA6fziFTFocQ4ScCRbW-AaDFMAjJ9JBUjHxnUtLxLHhft2zVLWqwt0U3TR9-9ccUYSpgYzp5B7jJUiMorgpacgTyOheqHwRzb0V7p9qCvXZ7x72IzmcKD_mGYWE/YZD-zYclu5eoFKd24Rg731HvBqUGbklXQ6W0OLMa1Ds",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/nfzX28VvVGQF2kpa9I23Xw/WXTJSOHODAgDtpnXht7QwHa6mbjXQe-XeMhRk3Cgxo9ls1QBXfzcAAxpK_crcQXhzV1KRvNRVYFqCQB6-ZUYZJORSZL-rkkK1szTDYMv4R7MEAcTyHsJmRaCKtQy3-OxEtDmbGMtaTKa93ZtriJ8JDvKqcFscsDM1bGudhFbIS8/3gs7EgkKcyQKaddOOe_f27U10Iontt99cMfvWeFeYKk",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1686,7 +1686,7 @@
       "axc": 17.9,
       "ayc": 34.1,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/ZktxpbfdQeXDAY2_JZwBpQ/8oRny9mIEDgvK4Jfy0USgCKvgHZHNj_WMIQ6sAVbLLoy3c6oRgDzi4LQMTQwBORac8m1YtuAR_jG9vdH5h_U30xdvTF8f2CILGBtM_6SKChDIrGaEVUfD-6fyXmbfpMZ0F495v8bZOuudVqg_I6SVdKrmW0wzqdLhXYw1StRn_I/VozQuAmHRyC2Sp6Vq5zBNQEZJZFFgoX8RDmgD8Vwr0Q",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/7-jeX0tymMWNfzDgeHXAnA/hwwLNuTBGOOK9fIJdAPxwDI0TeNCbaoLWt_uzVvRhOKRnEc46DsJvfoj5-hWvFt34BPV69usLQcJ-t-6Nqe7Rr_Fe3yyB6JimLN7WafZRL6PquWUqyFtO1MkD01vmDzo47tYHs7almC6B4tnefvVr6wmHpb_z3bs_DV-uxVK3V4/5sZlL8WiL3f1JI3nuC3-n8R_1DTCTOABV1IZHKfftMc",
       "sources": [
         {
           "type": "Changelog",
@@ -1813,7 +1813,7 @@
       "axc": 83.0,
       "ayc": 31.2,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/jz73kPEjS_dVD6DeJ8lSAQ/2p3mct76Th5qSIIdyhhH7JdBhma1ckky4v2KHoB9a8Dftt8sAGiZVTbu5dGaxmg_eHStAqJvUbocV-Wc85eJR-OUQfy3VW7gltky6pN2zUJaPJ2uzRZq98h3y4RtRjp8Iu82LpiXb3KTUBOTKOYKrvbqgKIlkZxF8hUb3wZIl-A/gi4PhuCJ1FEDM8T7l3YQAW2rF64GreZFgT9GZQ3t_eI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/liGJNrBqqe2WYvHlmCwpTQ/GJjjHB8jUlmNJF4xfFbDbjeKlhINcSa9tas6GNgJFWGgoEZ-4e5jEPGy3VjljBJyL1nFFpGkpbnsUFRs7rQ9lolXMPGq7kXpFxxEX_FSXDJ8q4Wd_avTwNc0mjRMauJmRmyLzdbtJnbYJkOagJR5vwBi_kno6MCntkhOrD6FauU/cfhW0wdrHzJ38c5ak_pkzXbmLq-SE4ovIOWYWh3JP68",
       "sources": [
         {
           "type": "API Reference",
@@ -1930,7 +1930,7 @@
       "ayo": 48.0,
       "myo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/wr-RkEjYlYiORiWxlEjxAw/dyR7VmyOZ8f-2q3B8t8QWirRI1ZnuXFbxwLErPAA0v-5OP1kArjE8cz2JHdkzdAo7OkH4uDycT3MVoPKq0w3Kcv9fmmm5kdFx2yZvuB8a6AJhwDOc8-uab1Zvl73rCqDxQQPpmc_86PGeWuKez9pthFPWm9-ZTtcdGqJ2cEK6Eo/jXGa9TqQ4zukhuGJtob4Dux_IX1rFx9XeBr-F6s50qA",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/gW3c6th2cbgWBPFC-9gGkw/VHFJlL_Bs3QDe74JKkpBMSYyBUU05NTjtGafgqJTqTXk5PTA1YUth8JkARv3J9ATHA8RkSgUCkibX_cgDmg99iAdnvZAqKaGJ0JYFEvopHkSb7QMzunNKBXR8-VsjWJcH8vqVggqOOYrxmRWs_supGzOZ_S04AEyEEKfmmOX0YI/SCLlzDue2a3MNDmCQD-7KvAqx8m7-dAx-SkdV73XRXI",
       "sources": [
         {
           "type": "API Reference",
@@ -2079,7 +2079,7 @@
       "axc": 22.7,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/h3cm7bqYhjo5K4p_FZ8vRg/Pa-aepYiQ261y_WBMOjiylQI4WCifXG7ClhDV_93FA9tvlVzcXb2yUL461_zYubOeb6Nbc0AvSjU1w9A0SC8TDONntmPA_D2e4g-OhCRs4bKVfrSbc7JK_aFYb_O4ehA8u4lPiqP-aCbxeiFUkIjydHnEN0IP_FJOQlxQUm801k/vDiQJSeH6X1wY-UFwcLhtjfVST_pA2yuvjbT3IYprYA",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/jO6dI-3dE0DBnBZC8MgRPw/36_TEFemu0069gVuUW-aDSSndc6WBX0eJzFKgLZ6PVwMsGp42PrvF9bOHOJmcna6kYLv-37yMG3Hwn08eKgcUYSPccD7790tpagfTuQkzWvFafKUF0Wl1VIgoUGgsyXdITtYvlMqft2xi2fHe-aPLZ0RZaW_j4a5aQNhFF11yd8/oQvHCUEN856o0xxSvnaecGUO0wGdvzUSsLetjWANK0k",
       "sources": [
         {
           "type": "API Reference",
@@ -2229,7 +2229,7 @@
       "axo": 92.0,
       "ayo": 90.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/cr8QYcqrIGdlD-OUH-EfCQ/r1Amb-brRBfUjOqlnFZrFmZURiY5vI1mZ4w2wK6BLCwENIiUZkgwMssMPe30W-oAxsc0BW5to09jp8ntx7UMgKVeuUa5lMw-jAl2RvQ71fku2uZVfYWjVjVfLOPAhUAudtJzjqadzRTBCqw9iS6H3A/Ihulv9qwA7VNEBs-J084L0RTkKc_tD1c_tZ-GcNnwYs",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/D5y7hsDK_ciIiybDiUfTAg/qnPpqaCXa48kZ6PcYEqt1rsfsdUu_uO0RaY8SWiE801Pl2DL_z08ceSDGg13u4hMaLdqUDIdmQictfA5cUwocTnwH7R87mJ1CrRCsqgo7z-IzG0ViG7Imgk7zc7cnzzQSpBLuI4tDG3C19DP9p7C5g/WpSVzwD_YBdp1Gd-SNnMbeyFeQZTlnVZWxPub4nqcXU",
       "sources": [
         {
           "type": "API Reference",
@@ -2660,7 +2660,7 @@
       "axc": 18.3,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/xBCUzeZupk87qYTKKCgGyg/33fUsJmWQGD9s0_IoH3TDeq59evJ78HG9fPROzxlXi92sPzKFipsh9h61zoRXQIBdxormbI8ApflodzSj8-GK0-a5gO_U4H6vFw2SHJ9kjArhQ7kKKySrt5-mlohgdbC0BXTO2Ke82ii04zrYQHUqA/RDLjeSSJrcxY231Ye-GE6jqMvTUShurYJMprEaxbcoU",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/ukbaFFsp7ckXn2xh_st08g/f99dSzxGh_zkmAlscFe6hkD5j0hKekC0Ez7OrBJK9INMOF_OGRqJvG88fCAIVXfowBcP0X73pc5R7QokKk8oqByolo1DXAJURhjSQzcsYXlH5l2rp5-EWW5QmkAG-v-rJVw7bPMTEEIdq9kBcj24Zg/udZlxbYtjiffQI3H4kHQQ-6QO6VVS84A7KC_KDT86cU",
       "sources": [
         {
           "type": "API Reference",
@@ -2801,7 +2801,7 @@
       "seoTitle": "AB Tasty Review 2026: Features, Pricing & Alternatives",
       "seoDesc": "AB Tasty is a proven enterprise choice for marketing-led experimentation and personalization. Compare pricing, AI and MCP capability, and alternatives.",
       "seoH1": "AB Tasty review: features, pricing, and alternatives",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/_vbef5yEiuHm0tUNuhfmHg/zaJgEZnFrdBtEZDhToHMD6VaeBoVVQ2fML2dtZ9hmAhbo3AGLGqSgjHzQjOe0Z3kpzZCwXXgYalr9LNZolwnSZ20Vpt2X1dTY_XsP98WYq1Uz6Tl7Pb1cMlzybNdw2My6i8Ctami03-OlZXYIKFrwA/Trp_9PxyCBErOUEOTMcHUNe8qujeF9_QcTARnG8YZ28",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/5xZkoLHWcmZIGHc87amwjw/CQKpfbd6qxZwTIc7SDJ7FWYsBplsrQ-aihspI8nlwH7vacssrhBp7FAja4u17P4L0RiftkMkrl8SSHTx6qKkZ9ERNflvtx0KSGtX43JAX3jXBBQ88uU5n8DfEzpTGzdeeKe5XcfAaoYC2S5aOINvFw/XoSMdLjnlmQViTenIu18nf3MsLjlGWb-V_DppggZ6do",
       "sources": [
         {
           "type": "API Reference",
@@ -2948,7 +2948,7 @@
       "ayo": 45.0,
       "myo": 42.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/Kw307pjc2ipowy4VMraAag/7TEfBJIl0vptyGQQgS-1QuIqfpAY3xupWDCQnFqbIyhXt20kSR6qrQwzFEa3zY2jQDaTSSj0xno9pG4ob9yFA0-LV3K0FsoOojIH0NZt4Snb7LrWIeLk9HJdOogO6O4YMqpO-vrGnFTyd4Ol6j8O1Q/0aMySoBvhNI3riV28kbXJU2t-ARh4H4NBAm0wkaXHV8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/Qtkw7mnegRPNCTm4QOBdgw/DIyyGehz8q6qclD9Alx0_jkl-RYMB7MLxGe4JAcBgCz322Aj54xoyvTBbv6yeLq9kq4sPgcWNAJE-XwLXi_8tQyl6SCPTXNA2PNFQCX8-Sv_FvPZV1gXboUEc-F1Q8vqkYOA2q-HCgt47CxrgPSL2w/36_ZHxzK72ri2lsGcZHeRPgpReNkMZk-CGx1oViYd1M",
       "sources": [
         {
           "type": "API Reference",
@@ -3090,7 +3090,7 @@
       "ayo": 32.0,
       "myo": 30.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/S-aC91dfK64-zs7WeWl8EA/pfo6CuFlXrYU9-oyc7crN3K52HC9E2wLOpqpx-RGi5-CHVZxLUTU5V7T3R_yGJk7vLzoIC2TTX-ICbd5CTQ8W-kuYgmI7yzquoJ4UGUDGSBbN4Wki104ytaTK9DuhKIRkqskL_e1BGFjNZKjZJ25Xix8G5F4OtNm_H_TUkSoFjM/P1BF6ufbvuPaUobD5sA10PXlMegClXkdNV2rs29u5Yc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/fnWtXHjicOW-q4bD3Z9SQQ/MlAdmBAfHw7-TYP2tTsbF4UUhrKduT6Yp1xNxWlGSpEGAIW5q0VEct8GvmxUNMzXruDCj2G-O0YkGJLgo-uyFmwofe5XEDJjIJaRzj3MBbJMx6ViVQM6AeEYOFsI1RfJ2qLztEx6r9_YClnCwaseelTpdWzXwQU8aXROGpHtSTU/coUP2ptbOB5ppeWKW0ianqrlRFU0JOh-y-rmMuHWMck",
       "sources": [
         {
           "type": "Changelog",
@@ -3427,7 +3427,7 @@
       "axo": 30.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/nYUB9knAc0flNVfGLp8hNQ/tgQBzzKIwuU-8RFuayaVxQDnwH4pzuhAtbVePp-V3X8ah5bTibKR-a_DiuK4LDKy1L4VoUyN1rdmKUCKEc_m_Kq0k2kilokS4JY5QI5U0DbeqqwPEjVC4SKDoLywYgDMELMNjSBJmgBpzLN7D9VzMqbiztvm5yB5OrT2zyfFnUGe6_Y5mBT7nPF4pQHcqHts/YSEM1waxlLIca8YbZ5HaVgJSYyk-bLlUMEjb5QYq9S4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/yyIPQg6P8jYmWjIvfwZlGA/NqP79lhFkE37WYBNPdJvK3HHjItsV67PqJA81OBTQXgDPqzx990akG89z7U8oMvIx_e0IKNRM4ZrcTb8FNDwAvqZNGBQufHKmK5z4xNhfAgSfYG5c5-bAAf6XupkcIHkEmomJf1AVvkkCIsPmWNBsCXZz5dkBZ4bEB0FjbR4TGz-fN7rgz3opA7RlAi3ICf_/NxDA3PNXTB719P4Ygk8lT-8TRfJaqtJSX6mEFp7FeNY",
       "sources": [
         {
           "type": "API Reference",
@@ -3577,7 +3577,7 @@
       "axc": 40.6,
       "ayc": 42.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/dDZP9zYTQN5oJPKeyTC8VQ/T9DCHDLvOB8mJiV19dXRTlGqlhSHO6slGtpVj2OWu-uQXoZrMmTyNo3j0kMaK1ir1pjIWM8iUyiNx-6cno8uhm84sSg2ALGP5Zgkq1GLBsNWgekhhnHYsJvsWuDMfLIwI7fxXwTI0QYj5Eh1Pm5UkY2Xyx4RD-n1QjqVGd5SEKM/5FRJmqVxRHWmmn571YSUbCdC_QFJy9YHIKPqoMyRBc8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/rV2EgeuBbqOlLMLvo00hmw/N8IzKo8CI5FODFuIYpewg6tgFEWe6Gv5Ast9BD-A0X4JWpEN9-bIpMxhdJug1wTgLZTUtT7s6S6eIB93LVCdZTJ7Yc-Id8BjZaTl7yoShWMn5e0cBDgoI5jjiPekskhz_Pr9D9l_8gNBzq-AWXe0jdUC8wcY945EYNNZdAKkjAI/tvBbH-nGcjojXVYX-bNfHaogbBRDQ1QbItZqg83REO4",
       "sources": [
         {
           "type": "API Reference",
@@ -3698,7 +3698,7 @@
       "axc": 63.2,
       "ayc": 54.3,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/Dd7gDeAebVb4kz2AB6la8A/YEhFU2CrLHS5dXZ1JmTAxaRbPVue9khpGesfyB-baZKphSvZ8lhW99g7D9SyPm6KcUD79EE0NmJGtGIyTTie0xf0GYawlgmryTbBLfg8YpGv6D0Y5LfaeVeZiyNLKLzxx7oKSU37HJdAh8bbYL5zW4GN05xb-lcRBMzpfnhczsY/2F1rNvlZACFTy---qbCOKFVXvx4i2LElaPcG9KfkIU8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/-Io3aQNws1-om7_v1Qpwtg/EBVOXVOzVCHmCqVLcMDerwF4RQNEQHkwGOVzPLrfR7r4ESHUzCMJlwOyXvHhduXSuvBPW255IYiAL3rGRGueaQjkkNhErvG34E7U_R99GviHMmH5RbCR2TBNatyiptWYjmuFAwJhESad42XDBx3na0AClDcpq2uTCj6OzdtJu0A/60PL50l19UgSJJ6kFsSldwlmfQWRW1wSDGmWrE5E0BU",
       "sources": [
         {
           "type": "Compliance",
@@ -3792,7 +3792,7 @@
       "axc": 16.4,
       "ayc": 13.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/90BmrsCxyUHSGCdagNUZdg/SSXnh5N4GouZQfWOKQC9Y3tayhvIh38IV35QXK98efVwZPdBiAuuNAwUY5UY-Rx9tH6vjeiTlB3FnDdMqYGmtWwC_nr55zR82B0CTtDMiYbanMisLlbT_O4TK2teZqVpxyWWmw0h8mXcPpaIJjG_qjEIHF271o5d6jAjkkApzx0/0qmhAfAiRhRF2VI3mAoYksTFHAtRjL3a5d_Dv0eOEl8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/2sgrcoGNxRfAW-ndO88QPQ/L9T3pJKQ7BDyIVjoFHzqQI2Mqp7wQ9UFn7DkUXMsSKUysZYuPLCgzRXi4uLW8eYFRXsm5fRfAMrXKyUHoiR7OYYe3rjsdgBS1AkO9uZNZV7Iv-EuCiDKHPtmIR2LkSAWeuiHgMvUjjoxKnsb0nZskO6eL-4Ba8HZSqDVCfRS_KY/M-heI2hvRVNqk4WvDbxM_lWCwFXZIc4OFdD87mpDOYU",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -3912,7 +3912,7 @@
       "axo": 78.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/plcbJGKhbfQbKqgXIvzCwg/wYP_na0Wnp7R776Q6VAfwD6wIPl9q9fuliQ7kcZDEUh3gfZtp5_TrdvP5g52oE1Zt2igeuXYXypBnRws7q4DK9LKunRmFgElZt5BaLYjMGEzJOVWbKDMWogXDSH3qgbZc_BEGDND53gPgSEQHqj9Lw/domcAM_gyB8yWNDwmypQfOEguNMVMncCiSQjqP9SoHI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/uWs2Nm-z9Zwf6jnNWCB_Gg/jTmukErVupR0AldpktucLC0TgURx706T9eVWvJhcBrpr6lEyF0aGFsCeT9i0z4dbAAmkrLgFsxu6SRjU4IO09JXvZtk9TdaHvZ3jRTaShDWyLxTQ93Amdrj8XJfuFjOLS-xOWFmpORYnWchkf2sn2w/WkE5MeyHSlLK3bF3lgm4o46EGwSOt8vBzdHzYK-oJk4",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -4098,7 +4098,7 @@
       "axo": 84.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/jJImDHzZJsdwXLfmGxsduQ/e4CY1smh0yJMmfHpMRI3q6Zwexc9dCBMmEtwY_qGCewjFnH6uBK3kZCHUKoqF61jhyKou4WWu45CNAsfraZz-DnRc3UCZW23rnWLMPJgeXINMPHTqsrcfaOsdMRj1VkQKj9z4-6R0pQINz0azBSeUH1WkHsr4zMsspKDqKUGumM/hRvNm8ldmn9YaBsYViDuVlpk_Lr-bmY-KP2YotKXhyY",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/InzTj1Y7GBiohsnogHMz8A/jbgofaYlF6k6YXB7D7UZm0eIlYBqXmmuw0ko4Zg64ES64QjqvVx7vAn5DVDIxGykjfJWxQqcj0qgIAewvYN-xQSUKgvEFWVcKzOugseYxLsBPGTh8LHPwbp17qBe6fS1VNoJk6XrcLuwIjBQ9FyuQ-SOjmWQON6G1LJsom0pRD8/VcoHbqpdipHOtSuM10nHsGFY5MS78zjpiBwjko45FjU",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -4310,7 +4310,7 @@
       "axo": 82.0,
       "ayo": 65.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/xdSsThnhN3i4JogudPMHMg/35eHSKDfR7khsHjVje-NKngS0zaQPT5gTYPBGK-3UoCdHkikgSwt0bj3Sv9FuldnGIQ1GXxKJmAgb4w4zFMaTASE1oNvku0gFxBU6X0UbIHca8KtrDtmXog4i_U8WUbayYvy292Z--H-1TgeN7J2TvUPOzD9J6mBFLmOj4iFSts/X5FFlPK-Sv04PXbzX24YGVfGc12cOOci1HUCePef_Yw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/J5ggt4ij8Ag2Ad8uYM84Aw/03cS8SQjQnqgXR-jOxZc3pMIXNd9W1PFn4CTazWqQPRaxPjwdiRBvh_7qAKd69vbJYWS5EZYWMu1915XaiTpxDhkLxoQKRQw_dreYyzH_DD49Z2ReXebqoUPSih4k81Qqw0DfwNRUpp-njHPhoa_BTuMkRjjnQZaAaWVo0Rkhbk/ch_dVCPx7zJlUQ3uIN2GqBIPVTYx2mK944sl3z77U7Y",
       "sources": [
         {
           "type": "API Reference",
@@ -4549,7 +4549,7 @@
       "axo": 80.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/flSjRQurZ63k_qZEEYBNfg/Ps2398O7GFrsbZZti-YU-8U80P-BaUtlBZwiJUCtp7U0xodc2UM0NshK2nKKO_l7ikWsf1baGMoerfl30I-9gFxJ-YJF6WPZVuaEgW64HZb4LFtmpFqq5jgEVWmtDiTRMayeg_5Qyq5ysl1xnMYf33yXBCZnjph5Ct_5mSgRhw4/SXf6TMNmoEqOMvW40YFTKBWD7vIYFNeIqmuSo-DTEjw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/mnXcYWocnxZtjrCLbRS5Ww/z0Tkx9oDEuX423xAwkKoHtf385t-BrZ4dEaAdgcjr3h_N-BGQ9-GWLGrH6gIQ2nAOMmOrHhJ3V5rG2TaiKReIwHn0uz4hNO-fT0ccZfeYNZ4FksZH9RPVEPfh0wS-6YcRSjKZ9BNzhoJPfhdtYC7uutBBP5rKN-8-OykJg0Nj_4/QsjcFbwaxT506av2s5x6gO5B8tJC7EPUeXInn8L8hpk",
       "sources": [
         {
           "type": "API Reference",
@@ -4752,7 +4752,7 @@
       "mxo": 20.0,
       "myo": 28.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/WSXW32du9TYZpq2GLMXpbA/yTWSpQpML7bodhv6LeBv8lMG5SS-8cBIFMZ3oeT-Ys2pKV0ZA_I2lw4Z90ke_b28N3tK_etz_UgOzID6fziX_zyhS_e_zd5XCRqlXAjDGOGcV9SKbEJg9NjsmtJ5FQYHHYjogjWP_lRviPHTy3gbtb9T1OBVkbtCMn6l0wE6l68v3yLek4chd_XQrAggZRKy/kGe4_AuRbGSfElo-VL_hhMGQcLKHXpZNRsWxshrkjuw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/cP6tyD3w7jjNQ4rsMTpEBg/IUYyQ7eKr_40nyO5F_4_ly5dGPfHw8mg5AqLjAb-Rmh-x6V0ADOokciRdx2TiallBPl6A5kaLmZNX-8pEroXp59L6xog6CSp1upHPApkr60JujlUNOvaNg1kgF9QiqFuB1OpJ-3X4xnx0OMfsNyRSpbTqe7101CH4D7NRMAl0iPTxLANWD1Uh7QqnXMfH6J8/N58m9CEjp-MCzjm1pytnxBvPxZoZQ3ALay2IDbBT2c4",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -4884,7 +4884,7 @@
       "axc": 15.2,
       "ayc": 13.8,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/ioL7XNQrC1asjHZXKHeUHQ/5GkfipFrV81knAmtYvES79W4Bi5S4QqUotfODGDvRSJkXdawc-hP7JsMFH6AeP2m-Z7JtmAbgHsPE2Rdz9ldEtvMcp6hlbuqPc0ZQIsuJ4cj9e5ZJDQdG-sfRSBs7SVD3X3KaWmo7wgx0nvy3A0cfPBjS4rCFOlRwLPnv8suQCw/VUPVQqyly1_FA4F1XAKW5Mh4Y5q9kdXP1KwincpWKlU",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/7_ayTmyvsen6LKIaahzjmg/IWbellF9NBpZ4EaLF1QI6rCZoFtNZtOs4LENNnRCOTiDd2VEnENrRXhp6YOyTLoyKMboi3kh17Bi03WynAjMEA3-UNg83u8hzAm30Idndfi8VYZ64Q1OP6FQ1LLxfwZhC4PTwV9Ttj62UApgmXQAoKAEwtRkjSEN-IL3uRjFNZk/Ixw3bumTLVaBZuSyYhBT_aIK8I4dxcQdLi35a-75Esw",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -5028,7 +5028,7 @@
       "axo": 88.0,
       "ayo": 68.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/9Uc9A9t6vFZ16v2J7m6LFA/6XGX2bDsOsLzATxzJrpilUoA9Ig1zbPuPq2iIUTAdrTHVGhh-52hdkSb3fJUQF23Q2DwIYHRIM_OtULnbBsB8Rc2sEhSECqVcvhjv2neWW0RWRbfhsKlvRYoDTe_9yUD-XeXZixcdlShBUnsY4BMo5tiu8claIoMXOYclhcwQOs/zNQPjwLEqOufLYD3mzvavTQTpcNl7g8xfW7cIzEQyes",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/x9pUeAhw5XVCx3NsnPvwNA/Zse8fUPFPpKdJ1HK30F_2DA43x9Ydhen1HnIwJqhJQjDb4rqDotccVOuGte-qDzJ0U_QBRmIOe4W_TrlFh4lvM-gDt22MVSo3FoASe1LG--0oYMnyNN8p-Rwym4cNPv2f-Hl1T28qCsWBLnnzRV0IMaF1zYOiT1UauXnCm4rzQc/2BppDZPVsS9Ly1am1LYzu3RtTHl-L-RU_B_hQyAr0b4",
       "sources": [
         {
           "type": "",
@@ -5258,7 +5258,7 @@
       "axc": 28.4,
       "ayc": 57.2,
       "scraped": "2026-08-10",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787716800000/0yFG4kfe93N8NwY4e_IYSg/wDnhdaAuo_OFMotwAuLPg2_aGcbBfNzlFMyQL6h7dkZiDgnAp8sCgcDX0JWgKdAwvBS4PtmnnJYwiMb4dWTjYZijx_B1LeRntp9WtJFY8Y7HYWueWc8eAfgnbI3jVZ8JWuI6K38yDEusvwjBkxHRvlhWRdspO0gNub5wSKTJ-ZY/7uLDhBKyeE8pAYW5d-Uue_4D6qQULOJ35K6IagZRXw4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/56/56/1787738400000/Ww4VaIxnvdYIjxUiVVG9hQ/VQbk5IHArE4auqAOPkZamkB4kq5reEdLjZDihTFihpIriukP6yHrOvEeVq3SlToi0qv9ehihZ1ecNaPGNK093CaDewFbM-kp5aHHaGgVsgRz-mE3KqfK3baj4Wj3WFq5QaOiXE4Fngxv-e0yOSjFhLnuOcb-UyLt0XzwBsNd6II/J5jv-lfO4dcwipEs1HzB6F-ch135XozpETvMMu1RyuE",
       "sources": [
         {
           "type": "API Reference",
