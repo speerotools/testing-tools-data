@@ -75,7 +75,7 @@ Mention or DM
 to investigate something without leaving the thread you're in.
 Ask in Slack →
 Where its data comes from
-PostHog AI answers from your project's data, the context you attach to a conversation, and what it has saved to memory. It reads through your existing
+PostHog AI answers from your project's data, the context you attach to a conversation, and what it has saved to memory. It respects
 access controls
 , so it can only see what you can see.
 Your PostHog data
@@ -87,6 +87,8 @@ Add context →
 Project memory
 What your product is, who uses it, and how your team works – saved once and reused in every conversation.
 Edit memory →
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better

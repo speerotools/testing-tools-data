@@ -149,6 +149,8 @@ Migrate feature flags from Statsig to Confidence
 onboard-confidence
 Create Confidence accounts and onboard users
 Related plugins
+Customer.io
+Connect Cursor to Customer.io with the official MCP connector and skills for Journeys, Pipelines, Design Studio, and SDK setup.
 Observe by Snowflake
 Agent skills and MCP configuration for deploying and managing Observe's observability infrastructure
 Apify
@@ -159,5 +161,3 @@ Grafana Cloud
 Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required.
 Mixpanel
 Mixpanel skills for Cursor — tracking implementation, metric investigation, and more.
-OpenSearch
-OpenSearch skills to help set up and deploy OpenSearch for a variety of use cases: build search applications with semantic, hybrid, neural sparse, and agentic search strategies; analyze observability data with log analytics (PPL and Query DSL) and distributed traces (OpenTelemetry); deploy to Amazon OpenSearch Service or OpenSearch Serverless with Bedrock integration for embeddings and RAG. Just ask your AI assistant to set up a search app, query logs, investigate traces, or deploy to AWS.

@@ -33,17 +33,19 @@ Company handbook
 Store
 Careers
 Trash
-AI engineering
 Overview
-AI wizard
-Sign up with the wizard
-Model Context Protocol (MCP)
+Beta
+Get started
+Set up self-driving
+Products
+Slack
+Web app
+MCP
 Overview
 Use cases
 MCP tools reference
 FAQ and advanced setup
 Enterprise auth (ID-JAG)
-Code editors
 Claude Code
 Claude Desktop
 Codex
@@ -51,12 +53,24 @@ Cursor
 VS Code
 Windsurf
 Zed
-Platforms
 Lovable
 Replit
 v0
-AI Observability
-Markdown and llms.txt
+CLI
+Desktop
+Concepts
+The self-improving loop
+Anatomy of a pull request
+Context
+Scouts
+Signals
+Reports
+Inbox
+Resources
+Pocket guides
+New
+Pricing
+FAQ
 Copy page
 PostHog MCP FAQ and advanced setup
 Contents
@@ -66,12 +80,16 @@ How much does it cost?
 Are there rate limits?
 Which AI clients and editors are supported?
 Do I need to create an API key?
+Can I use more than one PostHog account, organization, or project at the same time?
 Can my organization manage MCP access centrally through our IdP?
 Where is my data sent?
 Is it safe to let an agent write to my project?
 Advanced configuration
 Using an API key instead of OAuth
 Pinning to a specific organization or project
+Working with multiple accounts, organizations, or projects
+Different accounts or different regions
+Different organizations or projects in the same account
 Choosing a tool mode
 Restricting to read-only MCP tools
 Filtering available MCP tools
@@ -123,6 +141,10 @@ MCP Server
 preset – see the
 API key authentication
 section below.
+Can I use more than one PostHog account, organization, or project at the same time?
+Yes, but add one MCP connection for each. A single connection signs in as one account and has one active organization and project. See
+working with multiple accounts, organizations, or projects
+.
 Can my organization manage MCP access centrally through our IdP?
 Yes. If you're on an enterprise plan, you can use
 enterprise-managed authorization (ID-JAG)
@@ -235,6 +257,85 @@ PostHog AI
 }
 }
 }
+Working with multiple accounts, organizations, or projects
+One MCP connection signs in as one account and has one active organization and project. To work across more than one, add a separate MCP server entry for each and give it a distinct name. The name is what your agent sees, so make it say which context it points to:
+JSON
+PostHog AI
+{
+"mcpServers"
+:
+{
+"posthog-acme-us"
+:
+{
+"url"
+:
+"https://mcp.posthog.com/mcp"
+,
+"headers"
+:
+{
+"Authorization"
+:
+"Bearer phx_acme_key_here"
+,
+"x-posthog-project-id"
+:
+"acme_project_id"
+}
+}
+,
+"posthog-acme-eu"
+:
+{
+"url"
+:
+"https://mcp.posthog.com/mcp"
+,
+"headers"
+:
+{
+"Authorization"
+:
+"Bearer phx_acme_eu_key_here"
+,
+"x-posthog-project-id"
+:
+"acme_eu_project_id"
+}
+}
+,
+"posthog-personal"
+:
+{
+"url"
+:
+"https://mcp.posthog.com/mcp"
+,
+"headers"
+:
+{
+"Authorization"
+:
+"Bearer phx_personal_key_here"
+}
+}
+}
+}
+Different accounts or different regions
+Use one connection for each account. The MCP server routes to the US or EU region of the account you authenticate with, so an account in each region always needs two connections.
+With OAuth, authorize each entry with the correct account. If your client shares one browser session across entries, it is easy to authorize them all as the same account by mistake. A
+personal API key
+for each entry prevents this, because each key belongs to one account.
+Different organizations or projects in the same account
+The
+switch-organization
+and
+switch-project
+MCP tools change the active context inside one connection. This is sufficient for occasional use, but the agent must keep track of where it is, and a wrong assumption can send a write to the wrong project.
+If you work across organizations or projects regularly,
+pin each connection
+to one of them instead. Pinning also removes the related switch MCP tools, so the agent cannot move the context.
 Choosing a tool mode
 The MCP server exposes its MCP tools in one of two modes:
 CLI mode
@@ -477,6 +578,8 @@ MCP tools reference
 – every MCP tool the server exposes
 Overview
 – back to the MCP overview and install instructions
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better
@@ -487,12 +590,16 @@ How much does it cost?
 Are there rate limits?
 Which AI clients and editors are supported?
 Do I need to create an API key?
+Can I use more than one PostHog account, organization, or project at the same time?
 Can my organization manage MCP access centrally through our IdP?
 Where is my data sent?
 Is it safe to let an agent write to my project?
 Advanced configuration
 Using an API key instead of OAuth
 Pinning to a specific organization or project
+Working with multiple accounts, organizations, or projects
+Different accounts or different regions
+Different organizations or projects in the same account
 Choosing a tool mode
 Restricting to read-only MCP tools
 Filtering available MCP tools

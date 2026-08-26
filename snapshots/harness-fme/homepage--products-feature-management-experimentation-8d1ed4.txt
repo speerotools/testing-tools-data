@@ -273,24 +273,24 @@ Harness FME addresses the "Set It and Forget It" anti-pattern by enforcing an ex
 What is Harness's approach to feature flagging?
 Harness Feature Flags lets you control features without deploying new code by decoupling deploy from release. The approach uses open source SDKs that integrate into your application code, allowing you to wrap features in flag statements that can be toggled on/off at runtime. Key differentiators include integration into CI/CD pipelines as visual workflows, built-in governance with approvals and audit trails, and automated service verification that can turn features off if issues are detected
 Related Resources
+Internal Developer Platform Golden Paths Guide
+Blog
+Internal Developer Platform Golden Paths Guide
+View
+->
+Measuring IDP Success: Metrics Beyond Tracking
+Blog
+Measuring IDP Success: Metrics Beyond Tracking
+View
+->
+Continuous Delivery Excellence with Harness IDP
+Blog
+Continuous Delivery Excellence with Harness IDP
+View
+->
 Software Delivery Platform Explained: Key Features and How to Evaluate One
 Blog
 Software Delivery Platform Explained: Key Features and How to Evaluate One
-View
-->
-DevOps Automation Platform Explained: How It Works and Why You Need One
-Blog
-DevOps Automation Platform Explained: How It Works and Why You Need One
-View
-->
-Platform Engineering vs DevOps: How a Software Engineering Platform Unites Both
-Blog
-Platform Engineering vs DevOps: How a Software Engineering Platform Unites Both
-View
-->
-How to build an A/B testing framework for modern CI/CD pipelines
-Blog
-How to build an A/B testing framework for modern CI/CD pipelines
 View
 ->
 How to clean up the tech debt your AI is creating

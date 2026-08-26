@@ -177,7 +177,9 @@ The
 query
 endpoint has a rate limit of
 2400/hour
-. For large or regular exports of events, use
+. Organizations without a paid plan also have a
+monthly data-read allowance
+for queries. For large or regular exports of events, use
 batch exports
 . For data-powered APIs or user-facing dashboards,
 reach out to us
@@ -410,6 +412,8 @@ OAuth refresh tokens
 phr_
 ): The key and its associated access token are automatically revoked and the user is notified via email.
 This provides an automatic layer of protection, but you should still follow best practices: never commit API keys to version control, use environment variables, and rotate keys if you suspect exposure.
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better

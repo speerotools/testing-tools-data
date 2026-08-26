@@ -128,19 +128,19 @@ Public
 Notifications
 You must be signed in to change notification settings
 Fork
-817
+818
 Star
-8.1k
+8.2k
 Code
 Issues
-641
+643
 Pull requests
-243
+266
 Discussions
 Actions
 Projects
 Security and quality
-1
+2
 Insights
 Additional navigation options
 Code
@@ -156,6 +156,7 @@ Releases
 Tags
 Releases · growthbook/growthbook
 Release list
+v5.0.1
 v5.0.0
 v4.4.0
 v4.3.0
@@ -165,10 +166,10 @@ v4.0.0
 v3.6.0
 v3.5.0
 v3.4.0
-v3.3.0
 Previous
 Next
 Jump to release
+v5.0.1
 v5.0.0
 v4.4.0
 v4.3.0
@@ -178,13 +179,60 @@ v4.0.0
 v3.6.0
 v3.5.0
 v3.4.0
-v3.3.0
 Previous
 Next
-v5.0.0
-v5.0.0
+v5.0.1
+v5.0.1
 Latest
 Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+19 Aug 15:59
+v5.0.1
+57d0747
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Security Patch Release
+Fixes critical auth vulnerability affecting self-hosted non-SSO deployments with publicly accessible
+/auth/*
+endpoints
+Switches to Docker Hardened base images to reduce exposure to 3rd party vulnerabilities
+Bump dependency versions to address various security vulnerabilities
+New Databricks OAuth M2M option for increased security
+New org setting to completely disable all Personal Access Tokens
+Various performance and bug fixes throughout the app
+We recommend all self-hosted users update as soon as possible.
+This is also a great time to read through our
+production hardening docs
+and ensure you are following all best practices for security.
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+v5.0.0
+v5.0.0
 Compare
 Choose a tag to compare
 Sorry, something went wrong.
@@ -1958,311 +2006,6 @@ There was an error while loading.
 Please reload this page
 .
 All reactions
-v3.3.0
-v3.3.0
-Compare
-Choose a tag to compare
-Sorry, something went wrong.
-Filter
-Loading
-Sorry, something went wrong.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-No results found
-View all tags
-jdorn
-released this
-12 Nov 00:20
-v3.3.0
-4c83203
-This commit was created on GitHub.com and signed with GitHub’s
-verified signature
-.
-GPG key ID:
-B5690EEEBB952194
-Verified
-Learn about vigilant mode
-.
-Highlights
-Multi-Arm Bandits by
-@bryce-fitzsimons
-@lukebrawleysmith
-@lukesonnet
-in
-#2807
-and many other commits
-Metric Groups by
-@Auz
-@bryce-fitzsimons
-in
-#3028
-#3263
-Inline and User Filters for Fact Metrics by
-@jdorn
-in
-#3127
-#3038
-Migrate to New Design System (ongoing work) by
-@msamper
-@ahdriel
-@gazzdingo
-and many others
-Other Changes
-API endpoints to kick off experiment snapshot and check status by
-@lukesonnet
-in
-#2980
-"Generate Fact Tables" will now also create metrics for GA4, Segment, and Rudderstack by
-@jdorn
-in
-#3062
-Add pagination to metric list and team members page by
-@jdorn
-in
-#3233
-Add fact metric support to North Star configuration by
-@lukesonnet
-in
-#3100
-Feature kill switch confirmation is now enabled by default for new orgs by
-@jdorn
-in
-#3208
-Fact Metrics default projects now come from fact table instead of data source by
-@jdorn
-in
-#3209
-Snowflake improvements when using a proxy by
-@lukesonnet
-in
-#3094
-Enable OpenTelemetry logs in addition to traces/metrics by
-@romain-growthbook
-in
-#3052
-New toggle for experiments to disable sticky bucketing by
-@bryce-fitzsimons
-in
-#3200
-Improved UI for enum attributes and list operators by
-@Kevin-Chant
-in
-#3184
-Bug Fixes
-Add null typeguard for window history by
-@Kevin-Chant
-in
-#3192
-Assume a webhook is raw (legacy) when no payload types are specified. by
-@romain-growthbook
-in
-#3172
-Typo bug fixes by
-@romain-growthbook
-in
-#3235
-Fix ClickHouse NULL date in Metric Analysis query by
-@lukesonnet
-in
-#3196
-Fix analysis settings bar flicker by
-@lukesonnet
-in
-#3239
-Fix copy/paste metrics in the Analysis settings screen by
-@ahdriel
-in
-#3247
-Fix loading flicker on features, metrics, and other pages by
-@jdorn
-in
-#3269
-Fix race condition when DISABLE_TELEMETRY is set by
-@jdorn
-in
-#3077
-Fix saved group bug by
-@jdorn
-in
-#3037
-Fix savedGroups sometimes hashing non-securestring attributes by
-@Kevin-Chant
-in
-#3143
-Fix typos by
-@august-growthbook
-in
-#3194
-Fix typos in openapi definition by
-@Kevin-Chant
-in
-#3182
-Fix useFeaturesList changing object pointers every rerender by
-@Kevin-Chant
-in
-#3141
-Fix webhook link. by
-@romain-growthbook
-in
-#3042
-Improve sticky bucket service by
-@bryce-fitzsimons
-in
-#3040
-Make sure targeting is copied when duplicating an experiment by
-@bryce-fitzsimons
-in
-#3234
-More graceful handling of fact table failure by
-@lukesonnet
-in
-#3240
-Prevent empty experiment names by
-@romain-growthbook
-in
-#3112
-Remove unsupported query changes by
-@msamper
-in
-#3171
-Update dependencies for SDKs (1.2.1) by
-@bryce-fitzsimons
-in
-#3087
-fix for sdk count by
-@gazzdingo
-in
-#3254
-fixed saved group deleting by
-@gazzdingo
-in
-#3251
-user lookup mem perf improvement by
-@tzjames
-in
-#3095
-Add snapshot type and configure notifications by
-@lukesonnet
-in
-#3065
-Block dimension analyses from firing significance events by
-@lukesonnet
-in
-#3061
-Fix result group for dimension results by
-@lukesonnet
-in
-#3080
-Docs and Misc
-Telemetry data fixes by
-@jdorn
-@lukesonnet
-@bryce-fitzsimons
-in
-#3193
-#3149
-#3134
-#3151
-#3174
-#3173
-Update caniuse-lite version by
-@ahdriel
-in
-#3227
-bump edge sdk versions by
-@bryce-fitzsimons
-in
-#3262
-fixing typo around quotes by
-@lukebrawleysmith
-in
-#3256
-Add bullet to no traffic debugging kb doc by
-@lukesonnet
-in
-#3147
-Add saved groups yt vid to docs by
-@royalfig
-in
-#3059
-Docs updates [override rules, multiple comparisons] by
-@lukesonnet
-in
-#3189
-Documentation for self-hosted CDNs by
-@jdorn
-in
-#3070
-Improve Fact Metric and Experiment API documentation by
-@lukesonnet
-in
-#3197
-Rewrite AA test KB article by
-@lukesonnet
-in
-#3078
-Better sentry stack traces by
-@romain-growthbook
-in
-#3103
-#3099
-#3106
-#3027
-#3032
-#3101
-#3104
-#3105
-Remove unused file by
-@lukesonnet
-in
-#3084
-Update mysql2 dependency by
-@jdorn
-in
-#3068
-Enable source maps when running as dev by
-@itsgrimetime
-in
-#2060
-Fix yarn dev by
-@jdorn
-in
-#3044
-New Contributors
-@ahdriel
-made their first contribution in
-#3204
-Full Changelog
-:
-v3.2.0...v3.3.0
-Contributors
-Auz, ahdriel, and 12 other contributors
-Assets
-2
-Loading
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-👍
-1
-ErcinDedeoglu reacted with thumbs up emoji
-🎉
-2
-ErcinDedeoglu and 0xfeeddeadbeef reacted with hooray emoji
-🚀
-1
-ErcinDedeoglu reacted with rocket emoji
-All reactions
-👍
-1 reaction
-🎉
-2 reactions
-🚀
-1 reaction
-2 people reacted
 Previous
 1
 2

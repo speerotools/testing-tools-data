@@ -18,9 +18,9 @@ Try For Free
 Login
 Convert Blog: Learn A/B Testing, Optimization & Marketing
 Latest Blog Post on Convert
-Optimization
-Testing Mind Map Series: How to Think Like a CRO Pro, Part 95 with Craig Kistler
-Craig Kistler, who leads experimentation at Signet Jewelers, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where judgment sits now that AI…
+A/B Testing
+Bonferroni Correction: The Multiple Comparisons Problem in A/B Testing
+Let’s set the stage. A CRO team runs an A/B/n test with one control and four variations, tracking three success metrics across each layout. One metric on Variant C clocks in with a p-value of 0.04. The team declares a winner, ships the change, and waits for the revenue to roll in. But it never…
 Read the full article
 →
 Our Editorial Promise
@@ -340,6 +340,14 @@ Vishal Kothari
 Vivek Patel
 Zander Aycock
 Blog Posts
+Optimization
+17 Aug, 2026
+Testing Mind Map Series: How to Think Like a CRO Pro, Part 95 with Craig Kistler
+By
+Craig Kistler
+Craig Kistler, who leads experimentation at Signet Jewelers, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where...
+Read More
+→
 A/B Testing
 10 Aug, 2026
 Why your experimentation program keeps returning inconclusive results (and what to do about it)
@@ -378,16 +386,6 @@ Statistical Power in A/B Testing: What It Is and How to Get It Right
 By
 Althea Storm
 Picture this: A team runs a textbook A/B test. The set up is clean and they don’t peek. Instead, they wait for significance and it never comes, so they call it a loss, ship the control, and move on. What they never realize is that the variation was better all...
-Read More
-→
-Optimization
-17 Jul, 2026
-14 Best Heatmap Tools In 2026
-By
-Alex Birkett
-and
-Althea Storm
-Are you looking to take your website's user experience to the next level and drive measurable improvements in conversions? Heatmap tools offer a powerful solution for in-house testers and CRO agencies seeking to understand user behavior, identify friction points, and optimize website performance. In this comprehensive guide, we'll dive into...
 Read More
 →
 1

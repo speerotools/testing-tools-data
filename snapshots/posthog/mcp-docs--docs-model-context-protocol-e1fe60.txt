@@ -41,6 +41,21 @@ Products
 Slack
 Web app
 MCP
+Overview
+Use cases
+MCP tools reference
+FAQ and advanced setup
+Enterprise auth (ID-JAG)
+Claude Code
+Claude Desktop
+Codex
+Cursor
+VS Code
+Windsurf
+Zed
+Lovable
+Replit
+v0
 CLI
 Desktop
 Concepts
@@ -144,7 +159,7 @@ Mark this issue as resolved and assign all future TypeErrors to the backend team
 Updates issue status and creates an assignment rule in one go.
 There's a lot more – analytics queries, feature flag and experiment management, SQL, CDP destinations, support ticket triage, and multi-step recipes that chain it all together. You can also run governed metrics from your
 semantic layer
-(alpha), so every agent session answers "what's our MRR?" with the same canonical definition.
+(beta), so every agent session answers "what's our MRR?" with the same canonical definition.
 Browse all use cases →
 Go deeper
 Use cases
@@ -172,6 +187,8 @@ Model Context Protocol
 : Learn more about the MCP specification
 MCP: machine/copy paste
 : What exactly is MCP again?
+Still have questions?
+Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better

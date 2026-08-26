@@ -188,8 +188,9 @@ Other framework examples for agent optimization
 OptimizationContext reference
 Manage AgentControl
 Adaptive triggers
-Compare config variation versions
 AgentControl and information privacy
+Compare config variation versions
+Configure Amazon Bedrock
 Configure token limits
 Create flags
 Creating new flags
@@ -408,6 +409,7 @@ Custom conversion count metrics
 Custom conversion binary metrics
 Custom numeric metrics
 Filtering custom metric events
+Count distinct metrics
 Ratio metrics
 Creating metrics from traces
 Managing metrics
@@ -550,6 +552,45 @@ What’s new
 Date
 Change summary
 Affected topics
+August 25, 2026
+Publishes a topic about configuring Amazon Bedrock as a model provider for the Playground integration.
+Configure Amazon Bedrock
+August 21, 2026
+Updates the Databricks Data Export topic to document OAuth machine-to-machine (M2M) authentication for the service principal.
+Databricks Data Export
+August 21, 2026
+Publishes a topic about using the LaunchDarkly observability and session replay plugins in a Salesforce Lightning Web Components (LWC) application.
+Salesforce LWC observability reference
+August 21, 2026
+Publishes a new guide about managing Data Export usage and export volume.
+Data Export usage best practices
+August 21, 2026
+Updates the metric event filtering topic to document new support for filtering warehouse native metric events from Snowflake data sources.
+Filtering custom metric events
+August 21, 2026
+Updates the Android and iOS observability SDK reference topics to document screen view tracking, session replay masking precedence, and additional plugin configuration options.
+Android SDK observability reference
+,
+iOS SDK observability reference
+August 20, 2026
+Documents Relay Proxy support for multiple concurrent SDK keys and mobile keys per environment when using automatic configuration.
+SDK credentials
+,
+Automatic configuration
+August 20, 2026
+Adds new custom role actions to the Using actions topic.
+Using actions
+August 20, 2026
+Publishes a topic about count distinct metrics, which measure the number of unique values in a warehouse column.
+Count distinct metrics
+August 20, 2026
+Updates docs to include the docs-specific commands in LaunchDarkly MCP server tools.
+AgentControl onboarding prompt
+August 19, 2026
+Documents how to sign in to LaunchDarkly from Vercel after installing the Vercel Marketplace integration.
+Vercel Marketplace
+,
+Single sign-on
 August 18, 2026
 Updates the Warehouse Data Export and Data Export topics to include ClickHouse Data Export.
 Warehouse Data Export
@@ -619,207 +660,6 @@ Node.js (client-side) SDK 3.x to 4.0 migration guide
 August 3, 2026
 Adds information about performing clustered analysis with Snowflake native experiments by selecting metric analysis units that are different from the experiment randomization unit.
 Randomization units and metric analysis units
-July 30, 2026
-Updates a tutorial to use the hosted LaunchDarkly MCP server.
-Create a feature flag in your IDE in 5 minutes with the LaunchDarkly MCP server
-July 30, 2026
-Publishes a topic about creating and testing an S3 destination for Data Export.
-Amazon S3 Data Export
-July 29, 2026
-Publishes a tutorial on reviewing agent skills for security risks before an agent loads them, and gating unsafe skills in CI.
-Uncover security risks in your agent skills before deploying
-July 28, 2026
-Adds information about creating Jira issues from observability alerts and errors.
-Create Jira issues from observability data
-July 27, 2026
-Updates the Databricks Data Export topic to document the full-page setup flow and the read-only edit page.
-Databricks Data Export
-July 24, 2026
-Adds information about the ability to bypass required approvals for segments.
-Approvals
-,
-Role Actions
-July 24, 2026
-Documents the project setting that requires a team as the maintainer for new flags.
-Project-level flag settings
-July 22, 2026
-Documents tap events and stable click IDs for the React Native observability plugin.
-React Native SDK observability reference
-,
-Product analytics events
-July 21, 2026
-Publishes a topic on how to use audience-based releases to roll out changes to specific audiences in sequence.
-Audience-based releases
-July 21, 2026
-Publishes a topic on how to create an audience-based release.
-Create an audience-based release
-July 21, 2026
-Adds a migration guide for the LaunchDarkly Terraform provider.
-Terraform provider v2.x to v3.0 migration guide
-July 17, 2026
-Consolidates release health check topic.
-Health checks for releases
-July 17, 2026
-Publishes docs on agent optimization.
-Agent optimization
-July 15, 2026
-Documents how to identify the pull requests that Vega creates during flag cleanup.
-Vega for flag cleanup
-July 14, 2026
-Publishes a topic about validating which contexts were included in an experiment.
-Validate experiment exposures
-July 13, 2026
-Updates the .NET AI SDK reference.
-.NET AI SDK reference
-July 13, 2026
-Adds information about using the observability Traces page to view OpenTelemetry traces and spans.
-Traces
-July 6, 2026
-Adds information about AgentControl’s model cost estimator.
-The model cost estimator
-July 6, 2026
-Adds information about limiting token usage for offline evaluations.
-Configure token limit
-July 2, 2026
-Documents the refreshed Redshift Data Export edit page, including the read-only setup script, staging bucket, and IAM role ARN views.
-Redshift Data Export
-June 29, 2026
-Adds information about data saving mode for the Flutter SDK.
-Data saving mode
-June 26, 2026
-Adds information about creating traces and product analytics events with the React Native Observability plugin.
-React Native SDK observability reference
-June 26, 2026
-Updates the Redshift Data Export topic to document the new full-page setup procedure.
-Redshift Data Export
-June 25, 2026
-Publishes a topic about creating ratio metrics for Snowflake native Experimentation.
-Ratio metrics
-June 25, 2026
-Publishes a topic about setting up SDKs for Experimentation.
-Experimentation
-June 23, 2026
-Publishes a guide on how to add LaunchDarkly observability and session replay to an Android application.
-Getting started with observability for native Android
-June 9, 2026
-Publishes a topic about Sanity integration.
-Sanity integration
-June 22, 2026
-Publishes a guide on building your first experiment.
-Building your first experiment
-June 22, 2026
-Publishes a topic about creating and testing a ClickHouse destination for Data Export.
-ClickHouse Data Export
-June 16, 2026
-Updates the product analytics events topic and the mobile observability references to document mobile product analytics, including app launches, app lifecycle events, and screen views.
-Product analytics events
-,
-Android SDK observability reference
-,
-iOS SDK observability reference
-,
-Flutter SDK observability reference
-Publishes a topic on guarded rollout regression detection.
-Regression detection
-June 10, 2026
-Publishes a new topic about configuring metric winsorization for warehouse native Experimentation.
-Metric winsorization
-June 10, 2026
-Publishes a topic about Relay Proxy deployment strategies.
-Relay Proxy deployment strategies
-June 8, 2026
-Updates the data saving mode EAP topic with information about using the JavaScript, React Native, and React Web SDKs.
-Data saving mode
-June 8, 2026
-Updates the data saving mode EAP topic with information about using the Android Client SDK version 5.13.
-Data saving mode
-June 2, 2026
-Publishes a new topic to describe the Flutter SDK observability plugin.
-Flutter SDK observability reference
-June 2, 2026
-Publishes a new topic to describe creating observability graphs.
-Creating custom dashboards
-June 2, 2026
-SCIM-based user provisioning is now available to Okta customers on the LaunchDarkly European Union (EU) instance.
-Okta
-May 29, 2026
-Adds documentation to describe metrics tools in the MCP server.
-LaunchDarkly MCP server
-May 28, 2026
-Updates the application metadata configuration topic to document Relay Proxy version 8.17.8 support for propagating application metadata to LaunchDarkly.
-Application metadata configuration
-May 27, 2026
-Adds a new tutorial on optimizing an AI agent to sound human and stay clear, scored by a detection service and an LLM judge, then shipping the winner with an experiment.
-Optimize an AI agent to sound human, with a judge you own
-Publishes a section of guides with brief explanations of how to use different features to get specific outcomes.
-Cheatsheets
-May 26, 2026
-Updates SDK bootstrapping topic to focus on bootstrapping with server-provided flag data. Adds new SDK feature topic to describe caching context data to local storage.
-Bootstrapping
-,
-Caching contexts to local storage
-May 22, 2026
-Updates the approvals topic with information about approvals for experiments.
-Approvals
-May 20, 2026
-Adds documentation about how to add AgentControl configs to views, including new custom role actions.
-Views
-,
-View actions
-May 19, 2026
-Adds documentation for configuring an evaluation delay for observability alerts.
-Alerts
-May 19, 2026
-Documents additional span-level functions for trace search:
-parent_span
-,
-root_span
-, and
-child_span
-.
-Search specification
-May 19, 2026
-Publishes new and updated documentation to support AgentControl release.
-AgentControl
-May 18, 2026
-Publishes a topic on using the
-Observability metrics
-page.
-Observability metrics
-May 18, 2026
-Publishes a topic about using metric measurement windows to reduce bias in warehouse native experiment results.
-Metric measurement window
-May 18, 2026
-Updates the Snowflake Data Export topic to document the new full-page setup flow, including customizable Snowflake object names and the combined setup script.
-Snowflake Data Export
-May 12, 2026
-Publishes a new topic about creating LaunchDarkly metrics from OpenTelemetry traces.
-Creating metrics from traces
-May 12, 2026
-Publishes a guide on migrating from Statsig to LaunchDarkly Experimentation.
-Migrating from Statsig to LaunchDarkly Experimentation
-May 11, 2026
-Documents new span-level functions in trace search:
-any_span
-,
-any_span2
-,
-any_span3
-, and
-no_span
-. These let you filter traces based on whether individual spans match a condition.
-Search specification
-May 11, 2026
-Publishes a topic on setting up warehouse native Experimentation with BigQuery.
-BigQuery native Experimentation
-May 5, 2026
-Adds documentation for using multiple SDK keys and new SDK key actions.
-SDK credentials
-,
-SDK key actions
-May 1, 2026
-Publishes a topic on maintaining an IP allowlist.
-IP allowlist
 See all updates
 Explore our SDKs
 Use client-side, server-side, or edge SDKs to evaluate flags. Use AI SDKs to customize configs from AgentControl. New to an SDK? Follow a

@@ -3,7 +3,42 @@ Amplitude Changelog
 https://amplitude.com/releases
 Every feature we've shipped to Amplitude, with release notes.
 en-us
-Wed, 19 Aug 2026 13:30:58 GMT
+Wed, 26 Aug 2026 07:39:04 GMT
+Multiple triggers for Guides and Surveys
+https://amplitude.com/releases/multiple-triggers-for-guides-and-surveys
+Show a guide or survey in more than one situation without duplicating it, by adding several trigger conditions to a single one.
+Alex Baumhoer
+Guides and Surveys
+https://amplitude.com/releases/multiple-triggers-for-guides-and-surveys
+Tue, 18 Aug 2026 21:05:41 GMT
+Amplitude Global Agent in Discord
+https://amplitude.com/releases/amplitude-global-agent-in-discord
+Ask questions about your product data from a Discord channel and get an answer back with charts, without switching over to Amplitude.
+Aaryan Biradar
+AI
+https://amplitude.com/releases/amplitude-global-agent-in-discord
+Tue, 18 Aug 2026 18:00:12 GMT
+Consolidated MCP Tools
+https://amplitude.com/releases/consolidated-mcp-tools
+Spend less of your agent's context on tool definitions and more on the actual question, with a smaller and more task-shaped set of MCP tools.
+Chanaka Perera
+Platform
+https://amplitude.com/releases/consolidated-mcp-tools
+Mon, 17 Aug 2026 14:57:55 GMT
+Right Event, First Try
+https://amplitude.com/releases/right-event-first-try
+Find the event you meant on the first try, with search that accounts for what your team actually uses instead of text match alone.
+Henry Ball
+Analytics
+https://amplitude.com/releases/right-event-first-try
+Fri, 14 Aug 2026 20:22:40 GMT
+Data Assistant Agent
+https://amplitude.com/releases/data-assistant-agent
+Get a prioritized list of what's actually wrong with your taxonomy, each with a proposed fix you can approve or decline.
+Alan Okada
+Data
+https://amplitude.com/releases/data-assistant-agent
+Thu, 13 Aug 2026 19:10:30 GMT
 Image Upload in Web Experiment
 https://amplitude.com/releases/image-upload-in-web-experiment
 Customers in any paid tier can now upload images to change/insert images in the web experiment visual editor.
@@ -11,10 +46,18 @@ Kevin Liou
 Experiment
 https://amplitude.com/releases/image-upload-in-web-experiment
 Mon, 10 Aug 2026 20:27:48 GMT
+Embedded Guides & Surveys on Mobile
+https://amplitude.com/releases/embedded-guides-surveys-on-mobile
+Put a guide or survey inside your mobile app's own layout, as a card that belongs on the screen rather than an overlay on top of it.
+Bianca Curutan
+Guides and Surveys
+https://amplitude.com/releases/embedded-guides-surveys-on-mobile
+Wed, 05 Aug 2026 19:13:28 GMT
 Resource Center: search term highlighting and autoscroll in articles
 https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
 When a user opens an article from a Resource Center search result, matched search terms are now highlighted inside the article and the view automatically scrolls to the relevant passage.
 Thomas Kainrad
+Guides and Surveys
 https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
 Fri, 24 Jul 2026 12:10:33 GMT
 Resource Center: open directly to a specific article via the SDK
@@ -87,7 +130,14 @@ Frank Lee
 AI
 https://amplitude.com/releases/ai-feedback-auto-analysis
 Tue, 30 Jun 2026 00:13:07 GMT
-Introducing: Custom Agents
+Offline mode is now live in the React Native SDK
+https://amplitude.com/releases/offline-mode-is-now-live-in-the-react-native-sdk
+The React Native SDK now auto detects network status and reacts to network availability change. Instead of keep retrying and dropping events hitting max retry, the SDK persists and flushes them the moment the device reconnects.
+Xinyi Ye
+Activation
+https://amplitude.com/releases/offline-mode-is-now-live-in-the-react-native-sdk
+Thu, 25 Jun 2026 22:09:38 GMT
+Custom Agents
 https://amplitude.com/releases/custom-agents
 Custom Agents are now live and generally available across all customers.
 Jacob Newman
@@ -1336,52 +1386,3 @@ Matthew Beaty
 Guides and Surveys
 https://amplitude.com/releases/personalize-guides-and-surveys-with-user-props
 Fri, 23 May 2025 00:25:48 GMT
-Data Setup Resources Sidebar
-https://amplitude.com/releases/data-setup-resources-sidebar
-Provide clearer paths for support and demos during onboarding phase.
-Marvin Liu
-Activation
-https://amplitude.com/releases/data-setup-resources-sidebar
-Thu, 22 May 2025 00:26:13 GMT
-Guides and Surveys updateLanguage SDK method
-https://amplitude.com/releases/guides-and-surveys-update-language
-Guides and Surveys can be localized by setting the language during initialization. With this addition, you can now update the language mid-session.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/guides-and-surveys-update-language
-Wed, 21 May 2025 00:00:00 GMT
-Web Experimentation: Test and Preview at Any Time
-https://amplitude.com/releases/web-experiment-test-and-preview
-Before, test and preview was only available when in draft or test instrumentation mode. Our customers want to be able to preview variants while a test is running or after it's completed. Now, test & preview anytime, anywhere, in just two clicks.
-Brian Giori
-Experiment
-https://amplitude.com/releases/web-experiment-test-and-preview
-Tue, 20 May 2025 00:27:05 GMT
-Cohort Used by Tab and Archive Modal with Usage Data
-https://amplitude.com/releases/cohort-used-by-and-archive
-Redesign of usage tab on cohort details page and cohort archive modal to better show how cohorts are used across the platform.
-Daniel Beer
-Activation
-https://amplitude.com/releases/cohort-used-by-and-archive
-Tue, 20 May 2025 00:27:04 GMT
-Unpublish Survey After Reaching X Number of Responses
-https://amplitude.com/releases/unpublish-survey-after-x-responses
-Simply set a custom response cap to have your survey automatically unpublish after reaching the desired number of responses.
-Matthew Beaty
-Guides and Surveys
-https://amplitude.com/releases/unpublish-survey-after-x-responses
-Wed, 14 May 2025 00:27:13 GMT
-Callbacks for Guides and Surveys
-https://amplitude.com/releases/run-callback-for-guides-and-surveys
-Trigger a callback function defined in your Guides and Surveys instrumentation with a button action.
-Wes Feller
-Guides and Surveys
-https://amplitude.com/releases/run-callback-for-guides-and-surveys
-Mon, 12 May 2025 00:27:32 GMT
-Web Experimentation: CSS Visual Editor Updates
-https://amplitude.com/releases/web-experiment-css-visual-editor-updates
-We’ve redesigned the overlay editing experience with a toolbar for quick actions and a drawer for detailed editing.
-Anson Chen
-Experiment
-https://amplitude.com/releases/web-experiment-css-visual-editor-updates
-Fri, 09 May 2025 00:28:00 GMT

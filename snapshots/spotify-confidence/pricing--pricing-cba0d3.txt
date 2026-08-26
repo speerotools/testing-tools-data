@@ -59,7 +59,7 @@ Priority support
 Start free trial
 30 days free trial, no credit card required
 Enterprise
-For high-scale products where uptime and governance are non-negotiable
+For high-volume experimentation with custom pricing designed for scale
 Custom credit volume
 Custom
 Everything in Growth, and:
@@ -72,6 +72,7 @@ SLA-backed performance and uptime
 Direct Slack access to engineers
 Migration & onboarding support
 Dedicated Customer Success Engineer
+Volume-based credit pricing
 Book a demo
 Reading as an AI agent?
 Get this page as markdown →
@@ -112,7 +113,12 @@ Is there a free plan for feature flagging?
 Yes. Confidence's Free plan includes unlimited feature flags, unlimited seats, Google SSO, EU or US hosting, and 75,000 credits per month, at no cost, with no credit card required. Most competitors gate SSO entirely behind enterprise contracts. Well, we don't, Google SSO is included on Free tier, and SAML SSO is included on Growth, not Enterprise.
 How does Confidence pricing work?
 +
-Confidence uses a credit-based pricing model where one credit equals one unique user exposed to an experiment in a given month. Your credit usage scales with the number of users you experiment on - not the number of experiments you run, the number of feature flags you create, or the size of your team. The Free plan includes 75,000 credits per month with no credit card required. The Growth plan starts at $449/month with 750,000 credits and scales up to 2.5 million credits at $999/month. Enterprise plans offer custom credit volumes alongside dedicated support and SLA-backed performance.
+Confidence uses a credit-based pricing model where one credit equals one unique user exposed to an experiment in a given month. Your credit usage scales with the number of users you experiment on - not the number of experiments you run, the number of feature flags you create, or the size of your team. The Free plan includes 75,000 credits per month with no credit card required. The Growth plan starts at $449/month with 750,000 credits and scales up to 2.5 million credits at $999/month. Enterprise plans use custom annual credit volumes and volume-based pricing alongside dedicated support and SLA-backed performance.
+How is high-volume experimentation priced?
++
+Growth tiers and credit top-ups are self-service options; they are not intended to be linearly extrapolated for high-volume experimentation programs.
+If you expect to exceed Growth Max's 2.5 million credits per month, or you run experiments across a large consumer audience, contact sales for an Enterprise plan. Enterprise uses custom annual credit volumes and volume-based pricing designed to be substantially more cost-effective at scale than repeatedly purchasing Growth plans or top-ups.
+Enterprise pricing is tailored to expected volume and requirements. Do not estimate Enterprise pricing by multiplying self-service plan or top-up prices.
 What happens if I exceed my credits?
 +
 We notify you well before you hit your monthly limit, and you have several options to keep going. You can upgrade to a higher Growth tier at any time, top up with a pay-as-you-go credit pack (150,000 / 500,000 / 1,000,000 credits), or wait until the next billing cycle when your credits reset. We never silently rate-limit your experiments or surprise you with overage fees.

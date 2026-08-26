@@ -46,9 +46,10 @@ AI credits
 Developer guides
 API access
 APIs
+SDKs
 CLI
-Packages
 Webhooks
+Automations
 Administration guides
 Regions
 Teams
@@ -96,6 +97,14 @@ or on the
 team dashboard
 .
 AI credits usage shown on team dashboard
+Click the
+icon next to the credit count to see when credits reset, open a usage breakdown, or request more credits.
+The credits popover, with a link to the usage breakdown and an option to get more credits.
+View usage breakdown
+opens a monthly usage report. Select a month to see credits used by user — including
+automations
+that consume AI credits — and by project.
+Monthly AI credit usage broken down by user and by project. Automations appear alongside people in the user list.
 Credit usage
 #
 Credits are consumed whenever you use Uniform features powered by AI, including:
@@ -107,14 +116,23 @@ MCP Server operations:
 Create, edit, and search operations for compositions, entries, and patterns performed through the
 MCP Server
 require a similar amount of AI credits as content edits through AI Quick edits.
+Automations that use AI:
+A
+Scout automation
+run consumes credits at the same rate as a Scout chat, and so does a code automation that
+calls Scout
+. Because automations run unattended, use
+trigger filters
+so they only run when they are needed.
 Out of credits?
 When your team's credits are exhausted, AI capabilities will be disabled until the next monthly allocation or a manual top-up. Plan accordingly to maintain access to AI features.
 Requesting additional credits
 #
-If needed, credits can be manually replenished by Uniform to ensure uninterrupted access to AI features. Reach out to your Account Representative from Uniform to request additional credits. You can also use this
+If needed, credits can be manually replenished by Uniform to ensure uninterrupted access to AI features. Reach out to your Account Representative from Uniform to request additional credits, or use this
 form
-to request additional credits, which you can access from the
-icon next to your team's credits on the team dashboard.
+.
+Get more credits
+in the credits popover on the team dashboard opens the same form.
 Was this page helpful?
 Last modified
 3 minutes ago

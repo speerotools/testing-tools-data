@@ -83,6 +83,88 @@ Your secrets are safe.
 Literally, and so is your code. Private repos stay private, and so does your data. (We're training AI models, but
 not on your code
 .)
+Merged into PostHog by self-driving
+See them all →
+fix
+hogql
+coerce numeric filter values on string properties
+merged
+#
+71294
+·
+1d ago
+fix
+tracing
+distinguish empty vs absent span comparison windows
+merged
+#
+70466
+·
+5w ago
+fix
+error-tracking
+extract exception array props for hasAny in HogQL
+merged
+#
+68027
+·
+5w ago
+fix
+insights
+hide sample-data placeholder on shared views
+merged
+#
+68415
+·
+7w ago
+fix
+tracing
+coerce duration filter to integer nanoseconds
+merged
+#
+66853
+·
+8w ago
+fix
+hogql
+coerce numeric filter values on string properties
+merged
+#
+71294
+·
+1d ago
+fix
+tracing
+distinguish empty vs absent span comparison windows
+merged
+#
+70466
+·
+5w ago
+fix
+error-tracking
+extract exception array props for hasAny in HogQL
+merged
+#
+68027
+·
+5w ago
+fix
+insights
+hide sample-data placeholder on shared views
+merged
+#
+68415
+·
+7w ago
+fix
+tracing
+coerce duration filter to integer nanoseconds
+merged
+#
+66853
+·
+8w ago
 See how it works
 Works in your workflow
 The same Inbox and agents show up wherever your team works.
@@ -150,7 +232,7 @@ Pocket guide to
 Self-driving
 Vol.
 1
-3
+6
 guides
 The pocket guide to self-driving
 A quick overview of self-driving, plus real use cases. Each one walks through the report a scout files, the pull request it becomes, and the scout itself. You can also add each use case as a custom scout to your own product.

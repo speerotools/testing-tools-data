@@ -44,6 +44,10 @@ For AI agents: a documentation index is available at
 APIs
 APIs
 Use Amplitude APIs to send and receive information and extend Amplitude.
+Choose an API
+Use
+Which API should I use?
+to compare Amplitude's ingestion options and choose between the HTTP V2 API, Batch Event Upload API, SDKs, and source integrations.
 Analytics APIs
 Attribution API
 Send attribution campaign events (identified by idfa, idfv, or adid) that contain attribution information.

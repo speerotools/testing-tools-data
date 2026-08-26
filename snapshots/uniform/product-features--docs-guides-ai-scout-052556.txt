@@ -51,9 +51,10 @@ AI credits
 Developer guides
 API access
 APIs
+SDKs
 CLI
-Packages
 Webhooks
+Automations
 Administration guides
 Regions
 Teams
@@ -94,6 +95,22 @@ Component inserter
 : when adding a component to a slot, use the Scout input at the top of the "All Components" view to describe what you want, and Scout will pick the right component and fill it in.
 Component highlighter menu
 : while editing a composition, use the highlighter menu on a component to start an AI-assisted personalization or A/B test based on that component.
+Scout outside the dashboard
+#
+Scout also works outside of a conversation:
+You can invoke Scout programmatically from server-side code with
+ScoutClient
+, including getting a structured result back. See the
+Scout Client SDK
+.
+A
+Scout automation
+runs a set of instructions through Scout every time a trigger fires, so you can automate work without writing code.
+An
+automation
+can be
+exposed to Scout as a tool
+, which lets Scout perform a deterministic, permission-scoped action on your behalf during a chat.
 In this guide
 #
 Using Scout
@@ -122,4 +139,5 @@ Level up your skills in all things headless with Headless Creator
 On this page
 Getting started
 Prerequisites
+Scout outside the dashboard
 In this guide

@@ -93,7 +93,7 @@ Frequently asked questions
 How does real-time personalization work on Croct?
 Real-time personalization on Croct works by using audience segmentation rules to evaluate specific criteria against a visitor's current
 context
-, including their device, pages visited, and real-time behavior. Our engine acts as an abstraction layer that maps complex data points, such as location or intent, to simple business rules. These evaluations are designed for high performance, often occurring with latencies under 20 milliseconds to ensure immediate content delivery. This process allows the platform to turn live data into actions that optimize the user journey in real time.
+, including their device, pages visited, and real-time behavior. Our engine acts as an abstraction layer that maps complex data points, such as location or intent, to simple business rules. These evaluations are designed for high performance, often occurring with latencies under 40 milliseconds to ensure immediate content delivery. This process allows the platform to turn live data into actions that optimize the user journey in real time.
 Can I personalize content for first-time, anonymous visitors?
 Yes, you can personalize content for visitors even while they are still anonymous. We leverage real-time anonymous signals, such as campaign source, location, and session activity, to predict intent from the very first page view. This allows you to highlight relevant lead magnets or offers before a user ever identifies themselves.
 What are the most common personalization use cases?

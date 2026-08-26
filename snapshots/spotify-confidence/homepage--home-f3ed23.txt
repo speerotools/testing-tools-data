@@ -19,6 +19,65 @@ behind
 it.
 Run experiments, manage feature flags, and let your data warehouse do the heavy lifting—with statistical defaults built on 15 years of operating evidence. Proven at Spotify. Now yours.
 Try Confidence
+Confidence by Spotify — Ship every product decision with evidence behind it
+Confidence is Spotify's warehouse-native experimentation and feature management platform. Run A/B tests, manage feature flags, define warehouse-native metrics, and make data-informed product decisions — all on top of your own data warehouse. Built on 15 years of operating evidence at Spotify, Confidence provides sequential testing, automatic guardrails, and variance reduction on by default. Try it free at app.confidence.spotify.com — no credit card needed.
+Everything you need to experiment and grow
+A/B Testing
+: Sequential testing, guardrails, CUPED. Built in.
+— The same methodology Spotify uses for more than 10,000 experiments a year. Always-valid results, automatic guardrails, and variance reduction, on by default.
+Rollouts
+: Ramps up while metrics hold. Roll back when they don't.
+— Every release automatically ramps from 1% to 100% while guardrails watch for regressions. If something breaks, you're one click from reverting.
+Warehouse-native Metrics
+: Same numbers, everywhere.
+— Metrics computed directly in your warehouse, from the definitions your dashboards already use. No copies, no pipelines, no drift.
+Feature Flags
+: Flags that clean up after themselves.
+— Typed schemas, warehouse-powered targeting, and easy cleanup when a flag has done its job. Feature flags are free, unlimited number of flags, unlimited seats, Google SSO, no credit card.
+Analytics
+: Get the answer, and the cause.
+— Ask questions in plain English, get answers with charts and causes, grounded in your experiments, your metrics, and your warehouse.
+Open Feature
+: No vendor lock-in. Built on OpenFeature. Incubated by the Cloud Native Computing Foundation.
+— Your application talks to the OpenFeature API; Confidence is a provider behind it. Migration kits rewrite competitor SDK code to the standard, one PR per flag, and after that, switching vendors is a provider swap, not a rewrite.
+Confidence Agent
+: Watches sessions, experiments, tells you what's next.
+Session Replay
+: Can't reproduce is over. The sessions behind the stats.
+— Real user sessions with flags and experiment variants overlaid. When a metric dips, jump straight to the sessions that show why.
+Battle-tested for the last decade at Spotify
+300+ Teams shipping daily. 750M+ Users world-wide. 1000s Of device types
+.
+From the Confidence blog
+The product loop
+— Discovery and delivery are no longer sequential phases. AI collapsed the build phase, and now the teams winning are the ones with the tightest loops.
+42% of Spotify experiments get rolled back. That's the point.
+— At Spotify, 42% of experiments are rolled back after guardrail metrics detect regressions. The discipline to discard is more valuable than the ability to ship.
+Accurate Sample Size for Always-Valid Inference
+— Most A/B testing tools either overestimate the sample size needed for always-valid inference or do not adjust for the sequential test in the sample size calculation at all. We derived a closed-form correction that requires no simulation.
+When A/B tests tell you what you want to hear
+— A/B testing maturity has a dangerous middle phase: teams test, dislike the answer, and explain it away. How to spot it and learn to trust your data.
+What experiments actually teach you
+— The primary output of a mature experimentation program is better judgment. At Spotify, the learning rate is 64%. The win rate is 12%.
+Explore further
+Documentation
+— Guides, API references, and SDK docs
+Blog
+— Articles on experimentation and statistical rigour
+Glossary
+— 131 experimentation and statistics terms
+Comparisons
+— side-by-side platform comparisons
+RFP guides
+— RFP guides for evaluating experimentation platforms
+Bootcamp
+— Free learning program on experimentation
+Pricing
+— Plans and credit packages
+OpenAPI specification
+— Machine-readable API schema
+llms.txt
+— LLM-optimized site index
 Everything you need
 to experiment and grow
 A/B Testing
@@ -52,16 +111,16 @@ Users world-wide
 s
 Of device types
 See the latest from Confidence
-The rise of the product builder
-As AI increases individual leverage across the product development stack, the boundaries between PM, design, analysis, and engineering are blurring.
-42% of Spotify experiments get rolled back. That's the point.
-At Spotify, 42% of experiments are rolled back after guardrail metrics detect regressions. The discipline to discard is more valuable than the ability to ship.
 The product loop
 Discovery and delivery are no longer sequential phases. AI collapsed the build phase, and now the teams winning are the ones with the tightest loops.
+42% of Spotify experiments get rolled back. That's the point.
+At Spotify, 42% of experiments are rolled back after guardrail metrics detect regressions. The discipline to discard is more valuable than the ability to ship.
 Accurate Sample Size for Always-Valid Inference
 Most A/B testing tools either overestimate the sample size needed for always-valid inference or do not adjust for the sequential test in the sample size calculation at all. We derived a closed-form correction that requires no simulation.
 When A/B tests tell you what you want to hear
 A/B testing maturity has a dangerous middle phase: teams test, dislike the answer, and explain it away. How to spot it and learn to trust your data.
+What experiments actually teach you
+The primary output of a mature experimentation program is better judgment. At Spotify, the learning rate is 64%. The win rate is 12%.
 Get Started
 Start experimenting like Spotify
 Start free trial

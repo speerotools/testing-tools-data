@@ -153,6 +153,14 @@ July 2025
 June 2025
 May 2025
 Subscribe for updates
+August 24, 2026
+Rachel Groberman
+Safeguard your code and agents with adaptive triggers
+ou can now attach an Adaptive Trigger to a feature flag or AgentControl config. When a monitored metric crosses a threshold you set, traffic moves to a variation that is already defined, with no deploy and no human intervention required. Use it to fail over a model provider, turn a feature off, or serve a safer config the moment production degrades.
+To get started, open targeting on a flag or AgentControl config and add a trigger to the default rule.
+Learn more |
+Docs
+Share link copied!
 August 17, 2026
 Seth Payne
 New: Access Token Expiration
@@ -199,22 +207,6 @@ Zoom in on one customer. Filter to a tenant, a department, or a specific user an
 Take the data with you. CSV export matches whatever you have filtered or grouped on screen.
 To get started, open a config's Monitoring tab and use the filter and Group by controls.
 Learn more about monitoring config performance
-.
-Share link copied!
-July 21, 2026
-Seth Payne
-Terraform provider v3 is now generally available
-LaunchDarkly Terraform provider v3 is now generally available. This release is a major rebuild on the newer Terraform Plugin Framework, replacing the older v2 SDK foundation and setting the provider up to support new LaunchDarkly capabilities more quickly.
-With v3, teams can manage more of their LaunchDarkly configuration in Terraform, including eight new resources: Context Kinds, Release Policies, Metric Groups, Announcements, Big Segment Stores, OAuth Clients, Integration Delivery, and Flag Import.
-This release also improves plan-time validation, helping teams catch some configuration issues earlier in the workflow instead of discovering them only at apply time.
-For customers using approval workflows and role mappings, v3 adds support for segment approval settings on environments and scoped role attributes on team role mappings.
-Because v3 includes breaking syntax changes, existing v2 configurations will need updates before they plan cleanly against v3. To help with that transition, v3 includes a migrate-tf-syntax command to rewrite Terraform configuration from v2 syntax to v3 syntax, and provider state upgrades are handled automatically on first apply without requiring destroy-and-recreate workflows.
-Why it matters
-Faster access to new LaunchDarkly resources in Terraform
-Better validation before apply
-Broader support for approvals, role mapping, and newer platform capabilities
-More information on migrating from v2 to v3 can be found
-here
 .
 Share link copied!
 Load more updates

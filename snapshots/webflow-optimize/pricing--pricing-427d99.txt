@@ -2232,7 +2232,7 @@ Can my clients or coworkers upload their own content?
 For Starter, Freelancer, and Agency Workspace plans, clients can use client seats to publish new content anytime.
 How much traffic can Webflow hosting handle?
 Webflow hosting
-scales automatically to handle millions of simultaneous visits and uses Amazon's Cloudfront CDN and Fastly to load websites in milliseconds.
+scales automatically to handle millions of simultaneous visits and uses Cloudflare's CDN to load websites in milliseconds.
 How does Webflow Cloud pricing work?
 Webflow Cloud provides built-in storage for web apps. Apps can be created and deployed without a Webflow site using the app project type, or added to an existing Webflow site to extend its functionality.
 Usage follows Webflow’s existing site plan structure, with limits for bandwidth, requests, CPU usage, and storage. Paid plans include surge protection to handle temporary traffic spikes, and additional capacity can be added as usage grows.

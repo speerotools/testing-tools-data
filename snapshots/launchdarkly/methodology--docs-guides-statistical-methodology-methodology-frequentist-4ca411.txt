@@ -139,6 +139,7 @@ Resilient architecture patterns for LaunchDarkly's SDKs
 Integrations
 About LaunchDarkly integrations
 Integrations use cases
+Data Export usage best practices
 Using flag triggers with Dynatrace
 Building a change history event hook integration
 Building an ephemeral Environments as a Service integration

@@ -51,9 +51,10 @@ AI credits
 Developer guides
 API access
 APIs
+SDKs
 CLI
-Packages
 Webhooks
+Automations
 Administration guides
 Regions
 Teams
@@ -183,11 +184,17 @@ Review changes
 flow as other Scout edits, so you can inspect them as
 pending edits
 before applying.
-Deletion is permanent
+Deletion goes to Trash
 Scout can delete asset records and asset labels when you ask it to, subject to your
 Delete
 permissions
-. Asset deletion is immediate and irreversible. Review deletions carefully before applying them.
+. Deleted
+asset records
+go to
+Trash
+. Deleted
+asset labels
+are removed immediately. Review deletions carefully before applying them.
 Working at scale
 #
 Batch edits across many entities

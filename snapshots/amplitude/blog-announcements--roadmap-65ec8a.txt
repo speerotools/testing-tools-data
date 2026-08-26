@@ -126,6 +126,7 @@ Learn how to track events and metrics with Amplitude
 Maturity Model
 Learn more about our digital experience maturity model
 Event Taxonomy Generator
+Create a clean and custom event taxonomy for your website
 Pricing
 Login
 Contact sales
@@ -259,20 +260,20 @@ Replay Insights v2
 Session Replay
 In Progress
 08
-Web Experiment Consent Management Controls
-Web Experiment
-In Progress
-09
 Flutter SDK for Session Replay
 Session Replay
 Alpha
-10
+09
 Guides and Surveys Flutter SDK
 Guides & Surveys
 Open Beta
-11
+10
 Metric Explorer Chart
 Analytics
+Open Beta
+11
+Web Experiment Consent Management Controls
+Web Experiment
 Open Beta
 12
 Web Experiment Cross Subdomain Targeting
@@ -299,13 +300,13 @@ Personalized Session Replay Dashboard V2
 Session Replay
 Planned
 18
-Web Experiment Heatmap-Linked Visual Editor
-Web Experiment
-Planned
-19
 Web Experiment Multivariate Testing (MVT)
 Web Experiment
 Planned
+19
+Web Experiment Heatmap-Linked Visual Editor
+Web Experiment
+On Hold
 Stay in the loop
 Get monthly release updates
 A short email. What's newly in progress, what shipped, what changed. No marketing
@@ -344,6 +345,7 @@ Amp Champs
 Amplitude Academy
 Events
 Glossary
+Free Chart Maker
 Partners & Support
 Status
 Contact Us
