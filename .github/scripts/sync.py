@@ -108,10 +108,22 @@ RF = {
     "url":          "fldDpTQraitVt4yHB",
     "url_type":     "fldwUVSYu5QYi3N0k",
     "fetched":      "fld7cxhRHwQ6bzFAs",  # Last Fetched
+    "status":       "fldi7kXOkskXR0BO8",  # Last Status Code (0/200 ok, 4xx/5xx blocked)
     "hash_changed": "fldjJgczTqipE2Kvn",  # Hash Changed At (drives the Updated badge)
     "active":       "fldFqvuPSinBYvrvk",
     "vendor":       "fldZpeoHlScaEp2yh",  # linked record -> Database record id
 }
+
+
+def fetch_ok(status) -> bool:
+    """A fetch counts as verified only on a 2xx (or an unstamped/None status).
+    A 4xx/5xx means we hit the page but were blocked — attempted, not verified."""
+    if status in (None, ""):
+        return True
+    try:
+        return 200 <= int(status) < 300
+    except (TypeError, ValueError):
+        return True
 
 # ---------------------------------------------------------------------------
 # GLOBALS
@@ -210,11 +222,18 @@ def fetch_sources() -> dict[str, list[dict]]:
         url = f.get(RF["url"])
         if not url:
             continue
+        st = f.get(RF["status"])
         src = {
             "type": single_select_value(f.get(RF["url_type"])) or "",
             "url": url,
             "fetched": d(f.get(RF["fetched"])),
+            "ok": fetch_ok(st),
         }
+        if st not in (None, ""):
+            try:
+                src["status"] = int(st)
+            except (TypeError, ValueError):
+                pass
         if latest_sweep and d(f.get(RF["hash_changed"])) == latest_sweep:
             src["updated"] = True
         for vid in (f.get(RF["vendor"]) or []):
@@ -339,10 +358,10 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
     # Sources and method: the live Vendor URLs list + enrichment status pill.
     srcs = SOURCES_BY_VENDOR.get(record["id"], [])
     vendor["sources"] = srcs
-    # "Last swept" is when these URLs were last fetched (max Last Fetched across
-    # the vendor's sources), NOT Last Vendor Scrape, which is a different clock
-    # (stamped by the apply step, not by the fetch).
-    swept = max((s["fetched"] for s in srcs if s.get("fetched")), default="")
+    # "Last swept" is the last time we VERIFIED these pages — the newest Last
+    # Fetched among sources that actually returned content (2xx). A page we hit
+    # but got blocked on (4xx/5xx) is not a verification, so it does not count.
+    swept = max((s["fetched"] for s in srcs if s.get("fetched") and s.get("ok")), default="")
     if swept:
         vendor["swept"] = swept
     enrichment = single_select_value(f.get(F["enrichment"]))
