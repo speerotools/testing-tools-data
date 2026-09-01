@@ -1,5 +1,5 @@
 # https://www.uniform.dev/features/personalization
-Personalization | Uniform Personalization
+Personalization by Uniform: Edge-Fast, Flicker-Free, From First Visit to 1:1
 Request a demo
 Platform
 Back to main menu
@@ -67,51 +67,339 @@ Data Center Region
 North America
 Europe
 Request a demo
-Personalization
-Personalization meets performance with Uniform Personalization. Create personalized experiences at scale for the enterprise, without sacrificing speed to market.
-See how in a free demo
-Uniform Personalization
-Create Experiences at Scale
-Data integrations
-In-line tools
-Test anything
-Personalization and performance
-Uniform Personalization can deliver personalized content to the edge, so you can drive conversions without sacrificing page speed or SEO rankings, even when
-A/B testing
-.
-Do more with your data
-Use the data you already have to drive conversations and conversions by levering Uniform's
-pre-built integrations
-and connecting your CDP to create personalized content and
-A/B tests
-.
-Smooth workflows
-Add personalization and
-A/B tests
-directly in
-the Visual Workspace
-, making it easy for business teams to test and drive conversions in their normal workflows.
-Iterate, Optimize, Captivate
-A/B testing tools from Uniform
-feed into your analytics to help your teams learn what works, then operationalize it to maximize your returns on marketing investment.
-Don’t choose between personalization and performance again
-Real-time personalization at enterprise scale
-Book a Demo Now
-Personalization meets performance
-3 ways the visual workspace powers your personalization strategy
-3 minutes read
-Tactical personalization: the right content to the right consumers
-5 minutes read
-The personalization engine: a blueprint for success
-2 minutes read
-Fast, personalized pages with Vercel Edge Middleware and Uniform
-3 minutes read
-Why an experience-first approach is the future
-4 minutes read
-Personalizing webpages with Akamai EdgeWorkers
-2 minutes read
-A day in the life of an enterprise marketer — and how a visual workspace can help them succeed
-4 minutes read
+PERSONALIZATION AT THE SPEED OF LIGHT
+Personalization that ships in clicks.
+And runs at the edge.
+Uniform personalizes and tests any experience at the edge on any CDN: decisions in under 50 milliseconds, no flicker, no third-party script tax. Start with the data every visitor brings on their first visit, and deepen to full 1:1 as you learn more.
+Hero
+Personalized
+AUDIENCE
+Visitors in the Southeast
+SIGNAL
+Campaign: spring-auto
+VARIANT
+Regional offer hero
+Default
+Variant A
+Variant B
+Setting a personalization criterion on a single component in the visual workspace: choose who it is for, pick the variant they see, publish.
+THE PERSONALIZATION GAP
+Why are so many websites still unpersonalized?
+Personalization has been available since the mid-2000s, yet most companies still don't use it.
+The blockers
+With Uniform
+01
+Performance
+Every legacy personalization tool taxes page speed: a tag manager, a vendor script, and a decision the visitor has to wait for.
+Decisions resolve at the edge before the page paints, so personalization costs the visitor nothing.
+02
+Flicker
+The swap the visitor sees. Default content paints, the script catches up, and the page rewrites itself in front of them.
+No client-side swap is left to hide.
+03
+Third-party script death
+Browsers and privacy rules killed the old delivery model. Blocked scripts, capped cookies, and consent gates broke what once worked.
+No third-party code runs in the visitor's browser.
+04
+Content velocity
+Variants there isn't time to create. A strategy that calls for twelve versions gets two.
+Reuse the components you already published, and let Scout draft the variants your team can approve.
+05
+Stack integration
+The data lives in five systems. The CDP knows the customer, the CMS knows the content, and neither one reaches the page.
+Signals, enrichments, and CDP attributes feed one decision, without moving your data anywhere.
+06
+Where do I start
+No map from zero to value. Every proposal opens at full 1:1 and stalls long before the first release.
+Start with the context every first visit already carries: location, campaign, device, time.
+Six blockers stop personalization programs: the performance cost, visible flicker, the death of third-party scripts, content velocity, stack integration, and not knowing where to start.
+HOW IT WORKS
+Personalize anything down to a single component.
+You pick the component, choose the outcome, and enable personalization visually. It adapts to each audience while everything around it stays the same, and every variant reports its own effect on conversion.
+Example of three audiences, one page, one personalized component.
+each variant carries the audience it was built for
+the component checklist: hero personalized, the rest static
+one page, three audiences, one component changed
+The same page is shown for three audiences. Culture explorers, adventure seekers, and relaxation seekers each get a hero version written for them, and the featured destinations, travel with purpose, and travel stories components are identical across all three because only the hero component changes for personalization.
+TURN DATA INTO ENGAGEMENT
+Every visitor can be personalized, even the first-time anonymous one.
+You do not need a logged-in member to personalize. Every visit arrives carrying context, and every interaction adds to it. Pick the rung that matches what you know today, and climb when you know more.
+Unknown visitor
+01
+All visitors
+First visit, anonymous
+All visitors
+Live in minutes
+Who this is
+Everyone who lands on your site, including the person who has never been here before and will not tell you who they are.
+Data available
+Location, device, campaign UTM, and time of day, all available on load.
+Example experience
+Localize offers and the hero to the visitor's region on the very first paint.
+Effort
+Minutes. This is where every team should start.
+02
+Engaged visitors
+Content behavior
+Engaged visitors
+Live in a day
+Who this is
+Visitors who have read something. The pages they choose say what they came for.
+Data available
+Behavioral profile based on interests inferred from the content they actually engage with.
+Example experience
+A visitor reading auto insurance content sees insurance-focused messaging on their next page.
+Effort
+Enrichments classifications enabled and configured in clicks, on content you have already published.
+03
+Intent
+Events and repeated behavior
+Intent
+Live in a day
+Who this is
+Visitors whose repeated actions show what they are trying to get done.
+Data available
+Lead score, conversions, searches, tool usage, and return visits, scored as behavior repeats.
+Example experience
+High leadscore on a specific insurance trigger a focused homepage on the return visit.
+Effort
+Enrichment and signal scoring, still with no developer required.
+Known contact
+04
+Known contacts
+Visitor and CDP data
+Known contacts
+Connect once
+Who this is
+Authenticated members and identified contacts you already hold real data on.
+Data available
+Profile attributes, segments, and account context, read from your CDP or CRM.
+Example experience
+An authenticated member sees offers matched to the products they hold and the stage they are in.
+Effort
+Connect the CDP or CRM once, then personalize everywhere.
+Engagement deepens → data compounds → conversion follows.
+The ladder has four rungs, and the first three are all the same anonymous visitor: what deepens across them is a behavioral signal, not identification. Only the fourth crosses into a known contact. All visitors: on the very first anonymous visit you already have location, device, campaign UTM, and time of day, enough to localize offers and the hero on the first paint, in minutes. Engaged visitors: still anonymous, but the pages someone reads reveal interest, so a visitor reading auto insurance content sees insurance-focused messaging on their next page, with signals configured in clicks. Intent: still anonymous, and searches, tool usage, and return visits score repeated behavior, so repeated CD rate views trigger a CD-focused homepage on the return visit, with no developer required. Known contacts: the one rung that needs identity, where profile attributes, segments, and account context from your CDP or CRM let an authenticated member see offers matched to the products they hold, and you connect the CDP or CRM once to personalize everywhere.
+How interest-based content delivery works
+YOUR DATA, YOUR EXPERIENCE OWNED
+Activate data where it lives
+Uniform reads the context of a visit, builds a profile from real engagement, and pulls attributes from the systems you run. Three inputs, one decision, made at the edge.
+Signals
+Turn context and behavior into triggers: location, campaign, on-site search, and events, all configured in clicks.
+Enrichments
+Build real-time interest profiles from what visitors actually engage with, so the site learns while they read.
+Attributes from anywhere
+Connect any CDP or data source and use specific visitor attributes alongside behavior in the same criteria.
+From the visit
+Location
+Device
+Campaign and search
+Page behavior and events
+From your systems
+CDP profiles
+Custom data sources
+Account lists (ABM)
+Edge decision
+resolved before first paint
+Two kinds of input converge on one decision: the context the visit itself carries, such as location, device, campaign, page behavior, and events, and the attributes held in your own systems, such as CDP profiles, custom data sources, and account lists. Uniform resolves both into a single personalization decision at the edge.
+Connect the CDPs, analytics tools, and data sources in your stack, and use them in the same criteria builder. ABM lists work the same way for B2B: bring the target account list and personalize for those companies by name.
+PERFORMANCE NOT COMPROMISED
+Decisions at the edge invisible to the visitor
+The personalization decision happens on the CDN you run before the page paints. Personalized pages at the speed of static ones.
+01
+Under 50 milliseconds
+Personalization resolves at the edge before the page paints, so nothing flickers and nothing delays.
+02
+Any CDN
+Uniform works with the edge you run versus forcing a delivery migration.
+03
+Privacy by design
+First-party and consent-aware, with no third-party scripts running in the visitor's browser.
+With Uniform
+Request
+Edge decision
+under 50ms
+Personalized page
+The old way
+Request
+Default page paints
+Script loads
+Content swaps
+the flicker the visitor sees
+Uniform resolves the decision at the edge, making the first paint the visitor sees personalized. The legacy path paints a default page, waits for a script, then rewrites the content in view.
+Read the edge-side personalization docs
+HOW PERSONALIZATION SCALES
+Three gears: crafted, programmatic, AI
+Uniform shifts gears as ambition grows, without a rebuild in between.
+GEAR ONE
+Crafted
+Hand-built variants for the campaigns that require them.
+GEAR TWO
+Programmatic
+Traits and signals automatically select experiences as visitors reveal their intent.
+GEAR THREE
+AI
+Scout proposes personalization strategies for your existing audiences, generates the variants, and rolls them out across the library, with your team approving what ships.
+Meet the agent.
+Personalization is only limited by how many variants humans have time to make.
+NEW
+THE OPTIMIZATION AGENT
+Scout: the CRO expert your team needs
+Every platform now ships an assistant that suggests a variant. However, Scout is an agent. It reads your setup, builds the strategy from your data, then does the work, with your team approving what ships.
+01
+Audits what you have.
+Scout reads your compositions, components, audiences, signals, and live insights, so its recommendations start from your reality, not a template.
+02
+Proposes the strategy.
+A prioritized personalization plan grounded in your audience data: which segments, which pages, which experiences, in what order, and why. The work of a CRO consultant's first month, available on request.
+03
+Executes end to end.
+Scout configures the signals and enrichments, enables personalization on the components, and generates the personalized variants, staging everything for review. Not a to-do list: the done work.
+04
+Understands the performance.
+Scout watches uplift and significance, proposes promoting winners and retiring losers, along with new personalization tactics. Humans approve what ships, always.
+01
+04
+The four steps run as a loop: Scout audits the setup, proposes a prioritized strategy, executes and stages the work for approval, then measures uplift and feeds what it learns back into the next audit.
+Strategy, setup, variants, and optimization: one agent, your approval.
+Personalization scales further with compute.
+See everything Scout does
+MEASUREMENT
+Know what worked and who showed up
+Personalization without measurement is decoration. Uniform ships insights with the platform, giving every personalization and every test report its own results, bringing the audience into focus as visitors engage.
+Including the tests that lose. That is what testing is for.
+uplift and significance, per active personalization
+enrichment radar: what this audience actually cares about
+optimized conversion against baseline, side by side
+The insights dashboard reports sessions, conversion rate and optimized conversion as KPI cards, the top audience segments as a share of sessions, an enrichment profile radar, and a table listing every active personalization and A/B test with its own sessions, uplift and significance.
+One dashboard for the program.
+Sessions, conversion rate, and optimized conversion side by side, with every active personalization and A/B test listed with its own sessions, uplift, and significance. No stitching reports together.
+Uplift per component, not in aggregate.
+Each personalized component and each test carries its own number, so you know which decision earned the lift, and which one to retire.
+Audience intelligence you did not have to buy.
+Segments as a share of sessions, and enrichment profiles built from real engagement, show who is actually visiting and what they care about. Today's audience insight is next week's personalization criterion: this is the flywheel that climbs the ladder above.
+Your analytics stays your analytics.
+Every personalization and test event also streams to the analytics you already standardize on, such as Google Analytics or Adobe Analytics, letting personalization results live where the rest of the business reports do, never in a silo.
+Measurement is where the next personalization comes from.
+ADOPTION
+Personalize compositions, components, or headlessly inside your own tools
+Personalization comes by layer, not platform migration. Adopt it at any level of the stack that is easiest to move first.
+Whole compositions
+Personalize a page or a template end-to-end, so a campaign landing page or a whole journey changes with the audience it is serving.
+Individual components
+Personalization is decoupled from the page, so you can personalize one hero without affecting anything else on the page.
+Headless, inside your tools
+Call the decision from your CMS, commerce platform, or front end via the API, and render it wherever you render content.
+Keep your existing technologies. Keep your CDN. Add personalization as a layer, at your pace.
+FOR DEVELOPERS
+Personalization your developers will love
+Developers have navigated personalization tools for twenty years: script tags that tank Core Web Vitals, proprietary runtimes that dictate the front end, and vendors that want to own the render. Uniform is built different.
+YOUR FRAMEWORK
+React
+Next.js
+Svelte
+Vue
+Astro
+Angular
+Uniform edge decision
+YOUR EDGE
+Akamai
+Cloudflare
+Vercel
+Netlify
+Your framework renders the experience and your edge serves it; the Uniform decision runs inside that existing pipeline rather than adding a vendor to the request path.
+Your framework, untouched.
+React, Next.js, Svelte, Vue, Astro, Angular: Uniform delivers personalization through SDKs that fit the framework you already run, rendering through your components rather than replacing them.
+Your edge, not ours.
+Akamai, Cloudflare, Vercel, Netlify: the decision runs on the CDN and hosting you already deploy to, inside your existing delivery pipeline. No new infrastructure, no traffic re-routing, no second vendor in the request path.
+Nothing to apologize for in the audit.
+No third-party script in the visitor's browser, no client-side rewrite, no performance tax: Core Web Vitals stay exactly where your team fought to get them. Personalization ships through the same CI/CD and review process as everything else you deploy.
+Keep the stack. Let marketing own performance. Upgrade the experience.
+Read the edge-side personalization docs
+ALSO ON THIS PLATFORM
+Looking for app personalization?
+Uniform personalizes native mobile apps too. Context as a service returns the personalized screen from the platform, so the app renders it without a complex SDK embedded in the build.
+WHERE TO START
+Five personalizations you could ship this week
+Pick the one that aligns with your next campaign, ship it, then add the next rung.
+01
+Marketing campaigns
+Connect content to the inbound campaign that sent the visitor, so the promise on the ad survives the click on every page visited.
+Low effort
+02
+Real-time content behavior
+Tag your content once, then surface what a visitor's reading history says is relevant to them next.
+Medium effort
+03
+Geo location
+Localize offers, branches, pricing, and language to where the visitor actually is, from the first paint from city to region to country.
+Low effort
+04
+Events
+React to a real-time action, such as interest in booking an appointment, while the visitor is still on the page.
+Low effort
+05
+ABM for B2B
+Bring the target account list and personalize the experience for the companies your sales team is talking to.
+Medium effort
+PROOF
+VyStar Credit Union understood the assignment
+VyStar started with one criterion: location. Within two months, personalized sessions became the default experience, and the downstream numbers reacted.
+4%
+to 82%
+of sessions personalized within two months of adopting location-based targeting.
+13%
+vs 3%
+form submission rate on a personalized campaign banner, against the non-personalized version.
+2x
+loan application completion rate for journeys that began personalized. About a third of completed applications started this way.
+Relevance isn't merely a conversion tactic. During storms, VyStar pushed branch status updates through the same system, giving members information relevant to their location.
+Read the VyStar case study
+FAQ
+Personalization questions, answered
+The questions that come up in every first meeting about edge-side personalization, stack fit, anonymous visitors, and privacy.
+01
+What is edge-side personalization?
+Edge-side personalization means the personalization decision happens on the CDN edge before the page renders, so visitors receive the personalized version immediately: no client-side swap, no flicker, and no performance penalty. Uniform executes these decisions in milliseconds on your CDN.
+02
+Does Uniform personalization work with my existing CMS and CDN?
+Yes. Uniform personalizes experiences composed from any source, including content in your existing CMS, and delivers decisions on your current CDN, without replatforming anything. SDKs cover the mainstream front-end frameworks, including React, Next.js, Svelte, Vue, Astro, and Angular, and decisions run on edges such as Akamai, Cloudflare, Vercel, and Netlify.
+03
+Can I personalize for anonymous first-time visitors?
+Yes. Every first visit carries usable context: location, device, campaign, and time, all available on load at the edge. Uniform personalizes from that first anonymous paint, then deepens automatically as behavior reveals interest and intent, and connects CDP attributes when visitors become known.
+04
+How does Uniform handle privacy and consent?
+Uniform's personalization is first-party and consent-aware by design: no third-party scripts, decisions at the edge, and data use scoped to what your consent framework allows. Behavioral profiling runs on your own property's signals rather than cross-site tracking.
+05
+How fast can a team launch its first personalization?
+The first personalization typically ships in clicks, not sprints: pick a component, set a criterion such as location or campaign, and publish. VyStar grew personalized sessions from 4% to 82% within two months of starting, using location-based targeting as the entry point.
+06
+How do I measure personalization performance?
+Uniform includes insights with the platform: a dashboard covering sessions, conversion, and uplift for every personalization and A/B test individually, plus audience segments and enrichment profiles built from real engagement. Every event also streams to your existing analytics, such as Google Analytics or Adobe Analytics, so results live where the business already reports.
+07
+Where does AI fit in personalization?
+Scout, Uniform's agent, audits your current setup, proposes a personalization strategy grounded in your audience data, then executes it by configuring signals, enabling personalization, and generating variants, with humans approving what ships. It then optimizes continuously against measured uplift. AI removes both the strategy gap and the variant-production bottleneck.
+Want to see it running on your own site?
+Book a demo
+ALSO ON THIS PLATFORM
+Looking for A/B testing?
+Personalization and experimentation run on the same platform and components, with one insights dashboard reporting uplift and significance for both.
+Explore Uniform A/B testing
+The web has two audiences.
+Build for both.
+Start personalizing for the first one today.
+Book a demo
+Explore platform
+Keep reading
+GUIDE
+How to make content AI-ready
+Explore how you can personalize for humans and optimize for agents.
+Feature
+Experimentation with Uniform
+Learn how you can launch A/B tests with Uniform in clicks.
+Guides
+Looking for more guides?
+Explore our guides on CMS, DXP and Agentic AI.
 Platform
 Composable DXP
 Content management

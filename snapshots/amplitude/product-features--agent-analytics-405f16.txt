@@ -2,47 +2,27 @@
 Amplitude Agent Analytics
 Platform
 AI
-Amplitude AI
-Analytics that never stops working
-AI Agents
-Sense, decide, and act faster than ever before
-AI Feedback
-Distill what your customers say they want
+Wave
+Agents
 Amplitude MCP
-Insights from the comfort of your favorite AI tool
+AI Feedback
 Agent Analytics
-Measure the real impact of your agents
 Early Access Program
-Test new AI features before they launch
 Insights
 Product Analytics
-Understand the full user journey
 Marketing Analytics
-Get the metrics you need with one line of code
 Session Replay
-Visualize sessions based on events in your product
 Heatmaps
-Visualize clicks, scrolls, and engagement
-Zoning Insights
-Overlay performance and revenue metrics on your webpages
 Action
 Guides and Surveys
-Guide your users and collect feedback
 Feature Experimentation
-Innovate with personalized product experiences
 Web Experimentation
-Drive conversion with A/B testing powered by data
 Feature Management
-Build fast, target easily, and learn as you ship
 Activation
-Unite data across teams
 Data
 Data Governance
-Complete data you can trust
 Integrations
-Connect Amplitude to hundreds of partners
 Security & Privacy
-Keep your data secure and compliant
 Solutions
 Solutions that drive business results
 Deliver customer value and drive business outcomes
@@ -50,93 +30,57 @@ Amplitude Solutions
 →
 Industry
 Financial Services
-Personalize the banking experience
 B2B
-Maximize product adoption
 Media
-Identify impactful content
 Healthcare
-Simplify the digital healthcare experience
 Ecommerce
-Optimize for transactions
 Use Case
 Acquisition
-Get users hooked from day one
 Retention
-Understand your customers like no one else
 Monetization
-Turn behavior into business
 Team
 Product
-Fuel faster growth
 Data
-Make trusted data accessible
 Engineering
-Ship faster, learn more
 Marketing
-Build customers for life
-Executive
-Power decisions, shape the future
 Size
 Startups
-Free analytics tools for startups
 Enterprise
-Advanced analytics for scaling businesses
 Resources
 Learn
 Blog
-Thought leadership from industry experts
 Resource Library
-Expertise to guide your growth
 Compare
-See how we stack up against the competition
 Glossary
-Learn about analytics, product, and technical terms
 Explore Hub
-Detailed guides on product and web analytics
 Connect
 Community
-Connect with peers in product analytics
 Events
-Register for live or virtual events
 Customers
-Discover why customers love Amplitude
 Partners
-Accelerate business value through our ecosystem
 Support & Services
 Customer Help Center
-All support resources in one place: policies, customer portal, and request forms
 Developer Hub
-Integrate and instrument Amplitude
-Academy & Training
-Become an Amplitude pro
-Customer Success
-Drive business success with expert guidance and support
 Product Updates
-See what's new from Amplitude
+Academy & Training
+Customer Success
 Tools
 Benchmarks
-Understand how your product compares
 Prompt Library
-Prompts for Agents to get started
 Templates
-Kickstart your analysis with custom dashboard templates
 Tracking Guides
-Learn how to track events and metrics with Amplitude
 Maturity Model
-Learn more about our digital experience maturity model
 Event Taxonomy Generator
-Create a clean and custom event taxonomy for your website
 Pricing
 Login
 Contact sales
 Get started
 Platform
 AI
-Amplitude AI
-AI Agents
-AI Feedback
+Wave
+Agents
 Amplitude MCP
+AI Feedback
 Agent Analytics
 Early Access Program
 Insights
@@ -144,7 +88,6 @@ Product Analytics
 Marketing Analytics
 Session Replay
 Heatmaps
-Zoning Insights
 Action
 Guides and Surveys
 Feature Experimentation
@@ -173,7 +116,6 @@ Product
 Data
 Engineering
 Marketing
-Executive
 Size
 Startups
 Enterprise
@@ -192,9 +134,9 @@ Partners
 Support & Services
 Customer Help Center
 Developer Hub
+Product Updates
 Academy & Training
 Customer Success
-Product Updates
 Tools
 Benchmarks
 Prompt Library
@@ -207,7 +149,7 @@ Login
 Sign Up
 Agent Analytics
 What’s the real impact of your AI agent?
-Knowing your agent gave a good response is the easy part. Agent Analytics ties traces and evals to conversion, retention, and revenue, so you can connect agent quality to real business impact.
+Observe what users ask your AI agent, evaluate where it fails and what those failures cost your business. Agent Analytics ties traces and evals to conversion, retention, and revenue, so you can finally connect agent quality to business impact.
 Watch Demo
 Get Started
 Sessions
@@ -544,8 +486,8 @@ Got it! Here’s another great Montreal option you might like.
 Over your $300 budget
 Message Mira…
 Over budget
-When traditional analytics falls short
-Most analytics tools were built for clicks and page views, not for reasoning and tool calls. Agents can hallucinate, ignore instructions, and confidently go off-track. All users who spend time with your agent look equally engaged. Who actually found it useful and came back?
+Where traditional analytics falls short
+Analytics tools were built for clicks and page views, not for reasoning and tool calls. Agents can hallucinate, ignore instructions, and confidently go off-track. All users who spend time with your agent look equally engaged. Who thought it sucked? Who actually found it useful and came back? At Amplitude, we faced the same problems when we launched our own specialized agents. That’s why we created Agent Analytics.
 Go beyond observability
 Learn the product and revenue impact of your agents.
 AI Quality
@@ -554,7 +496,7 @@ Product Outcomes
 What the user did next
 01
 Observe
-Inspect traces, prompts, tool calls, responses, latency, and cost. The raw record of what the agent actually did.
+Inspect traces, prompts, tool calls, responses, latency, and cost. Limitless segmentation by behavorial cohorts or semantics.
 02
 Evaluate
 Score quality, intent, resolution, and failure modes. See where the agent helps, where it gets confused, and where it adds risk.
@@ -631,11 +573,11 @@ Conversion & Revenue
 Retention & Engagement
 Quality & Cost
 01
-Did our model upgrade lift sign-up conversion this week, or hurt it?
+Did moving to the new model drive higher sign-up conversions this week, or hurt it?
 02
 What is the conversion delta when the agent answers correctly versus hallucinates?
 03
-Which agent topics correlate with expansion intent, and which ones with churn risk?
+What paths do users take before and after engaging our AI agent?
 The Agent Analytics maturity model
 Most observability tools stop at the lower levels of maturity. Agent Analytics takes you to the top by connecting AI quality to the user journey and revenue.
 L4
@@ -676,11 +618,17 @@ prompt versions
 context retrieval
 jump to replay
 Evaluators
-Move past vibe checks on agent output. Start from standard templates or write your own code-based and LLM-as-a-judge evals, and catch regressions before they turn into systemic problems.
-templates
+Move past vibe checks on agent output. Start from standard templates or write your own code-based and LLM-as-a-judge evals, and catch regressions before they turn into systemic problems. Agent Analytics ships with out of the box evals (Signals) such as Task Completion or Helpfulness so you don't have to set them up yourself to start getting value.
+signals
 code-based
 llm-as-judge
 regression alerts
+Topics
+Proactively identifies topics across all online sessions into clusters on a map. Combine this with Signals to learn which topics have high or low Task Success, User Friction or Helpfulness in order to improve your agent harness or architecture.
+clustering
+ranked list
+scorecard
+failure modes
 Semantic filtering
 Surface sessions by task success, technical failure, tool-call issue, or semantic match. Then narrow to any cohort you already track in Amplitude (like power users) to see how a specific group actually works with your agent.
 task success
@@ -1152,7 +1100,7 @@ May 11
 May 18
 May 25
 Daily spend
-Human review
+Topics
 FitForge · Member support set
 ×
 Back
@@ -1302,7 +1250,7 @@ Always compliant
 SOC 2 Type 2, HIPAA, GDPR, and ISO 27001, inherited from the Amplitude platform you already run.
 Always yours
 Your conversations never train our models.
-Agent Analytics is in beta
+Agent Analytics is available to all customers
 Stop shipping on vibes
 Find the failure modes that actually cost you users.
 Measure conversion and retention by agent quality.
@@ -1908,7 +1856,6 @@ AI Agents
 Agent Analytics
 AI Feedback
 Amplitude MCP
-AI Assistant
 Product Analytics
 Web Analytics
 Feature Experimentation

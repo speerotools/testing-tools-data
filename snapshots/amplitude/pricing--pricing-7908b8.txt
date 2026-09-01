@@ -2,47 +2,27 @@
 Amplitude Pricing
 Platform
 AI
-Amplitude AI
-Analytics that never stops working
-AI Agents
-Sense, decide, and act faster than ever before
-AI Feedback
-Distill what your customers say they want
+Wave
+Agents
 Amplitude MCP
-Insights from the comfort of your favorite AI tool
+AI Feedback
 Agent Analytics
-Measure the real impact of your agents
 Early Access Program
-Test new AI features before they launch
 Insights
 Product Analytics
-Understand the full user journey
 Marketing Analytics
-Get the metrics you need with one line of code
 Session Replay
-Visualize sessions based on events in your product
 Heatmaps
-Visualize clicks, scrolls, and engagement
-Zoning Insights
-Overlay performance and revenue metrics on your webpages
 Action
 Guides and Surveys
-Guide your users and collect feedback
 Feature Experimentation
-Innovate with personalized product experiences
 Web Experimentation
-Drive conversion with A/B testing powered by data
 Feature Management
-Build fast, target easily, and learn as you ship
 Activation
-Unite data across teams
 Data
 Data Governance
-Complete data you can trust
 Integrations
-Connect Amplitude to hundreds of partners
 Security & Privacy
-Keep your data secure and compliant
 Solutions
 Solutions that drive business results
 Deliver customer value and drive business outcomes
@@ -50,93 +30,57 @@ Amplitude Solutions
 →
 Industry
 Financial Services
-Personalize the banking experience
 B2B
-Maximize product adoption
 Media
-Identify impactful content
 Healthcare
-Simplify the digital healthcare experience
 Ecommerce
-Optimize for transactions
 Use Case
 Acquisition
-Get users hooked from day one
 Retention
-Understand your customers like no one else
 Monetization
-Turn behavior into business
 Team
 Product
-Fuel faster growth
 Data
-Make trusted data accessible
 Engineering
-Ship faster, learn more
 Marketing
-Build customers for life
-Executive
-Power decisions, shape the future
 Size
 Startups
-Free analytics tools for startups
 Enterprise
-Advanced analytics for scaling businesses
 Resources
 Learn
 Blog
-Thought leadership from industry experts
 Resource Library
-Expertise to guide your growth
 Compare
-See how we stack up against the competition
 Glossary
-Learn about analytics, product, and technical terms
 Explore Hub
-Detailed guides on product and web analytics
 Connect
 Community
-Connect with peers in product analytics
 Events
-Register for live or virtual events
 Customers
-Discover why customers love Amplitude
 Partners
-Accelerate business value through our ecosystem
 Support & Services
 Customer Help Center
-All support resources in one place: policies, customer portal, and request forms
 Developer Hub
-Integrate and instrument Amplitude
-Academy & Training
-Become an Amplitude pro
-Customer Success
-Drive business success with expert guidance and support
 Product Updates
-See what's new from Amplitude
+Academy & Training
+Customer Success
 Tools
 Benchmarks
-Understand how your product compares
 Prompt Library
-Prompts for Agents to get started
 Templates
-Kickstart your analysis with custom dashboard templates
 Tracking Guides
-Learn how to track events and metrics with Amplitude
 Maturity Model
-Learn more about our digital experience maturity model
 Event Taxonomy Generator
-Create a clean and custom event taxonomy for your website
 Pricing
 Login
 Contact sales
 Get started
 Platform
 AI
-Amplitude AI
-AI Agents
-AI Feedback
+Wave
+Agents
 Amplitude MCP
+AI Feedback
 Agent Analytics
 Early Access Program
 Insights
@@ -144,7 +88,6 @@ Product Analytics
 Marketing Analytics
 Session Replay
 Heatmaps
-Zoning Insights
 Action
 Guides and Surveys
 Feature Experimentation
@@ -173,7 +116,6 @@ Product
 Data
 Engineering
 Marketing
-Executive
 Size
 Startups
 Enterprise
@@ -192,9 +134,9 @@ Partners
 Support & Services
 Customer Help Center
 Developer Hub
+Product Updates
 Academy & Training
 Customer Success
-Product Updates
 Tools
 Benchmarks
 Prompt Library
@@ -273,12 +215,263 @@ Unlimited Monitoring and Alerts
 5,000 active AI Visibility prompts
 Advanced User Mgmt (incl RBAC)
 Trusted by leading brands
-Compare all plan features
 Early-stage startup looking to grow?
 Startups with under $10M in funding and fewer than 20 employees receive one free year on our Growth plan.
 Apply now
 “You feel like Amplitude is on your side. They want you to have success and get results, as opposed to just, ‘Hey, here’s your analytics platform.’”
 “There’s so much potential to unlock. Amplitude helps enable the Gong team to surface trends and connect specific features to outcomes.”
+Compare all plan features
+Starter
+Plus
+Growth
+Enterprise
+Analytics
+Starter templates
+Collaboration and integrations
+Dashboard subscriptions
+Product & Web analytics
+AI-powered analysis
+Campaign reporting
+2 channel views
+2 channel views
+Forecasting and alerts
+Limited
+Custom events and formulas
+Behavioral cohorts
+20 per organization
+Conversion drivers
+Saved metrics
+Cart analysis
+Computations
+Limited
+Cross-product analysis
+Limited
+Predictions
+Limited
+Analysis content management
+User Profile API
+Group behavior analysis
+Available
+Available
+Available
+Session Replay
+Monthly sessions
+1,000
+10,000
+20,000 / Add-on for more
+50,000 / Add-on for more
+Session Replay for web and mobile
+Data masking
+Search and collaboration
+Heatmaps
+Replay retention
+1 month
+1 month
+1 month / Add-on for more
+1 month / Add-on for more
+Targeted Replay Capture
+Add-on
+Add-on
+AI-based summaries
+Add-on
+Add-on
+Agent Analytics
+Monthly Agent Sessions
+5,000
+5,000
+10,000
+20,000
+Trace Analysis
+Semantic Filtering
+Topic Clustering
+Custom Datasets
+OOTB Signals
+Custom LLM Evaluators
+Calibration Runs
+BYOK for LLMs
+Custom Code-Based Evaluators
+Manual Session Labeling
+Agent Session Chats Retained
+14 days
+14 days
+30 days
+30 days
+Role Based Access Controls
+Feature Experimentation
+Feature flags
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+Active experiments
+1
+1
+2 / Add-on for more
+2 / Add-on for more
+A/B/n testing
+Feature adoption dashboards
+Target by cohort, behavior, or user property
+Experiment results
+Flag-level access controls
+Mutual exclusions groups
+Add-on
+Add-on
+Holdout groups
+Add-on
+Add-on
+Multi-armed Bandits
+Add-on
+Add-on
+Flag dependencies
+Add-on
+Add-on
+Web Experimentation
+Active experiments
+1
+1
+2 / Add-on for more
+2 / Add-on for more
+A/B/n testing
+Visual experiment editor
+Version history
+Page & Browser-level targeting
+Custom code editor
+Experiment results
+Experiment & Project-level permissions
+Approved workflows
+Add-on
+Add-on
+Stratified sampling
+Add-on
+Add-on
+Multi-armed Bandits
+Add-on
+Add-on
+AI Feedback
+Monthly feedback records
+2,000
+2,000
+2,000 / Add-on for more
+2,000 / Add-on for more
+Integration types
+One-time daily analysis
+Ongoing analysis
+Public & Uploads
+Public & Uploads
+Public & Uploads
+Public & Uploads (Private as add-on)
+Create cohort from insights
+Zoning Insights
+Zone creation
+50
+50
+Unlimited
+Unlimited
+Overlays
+5
+5
+Unlimited
+Unlimited
+Page group mapping and analysis
+Engagement metrics
+Comparisons
+Revenue metrics
+AI recommendations
+Chrome extension
+Exports
+Guides and Surveys
+Guides & Surveys
+1
+1 / Add-on for more
+2 / Add-on for more
+2 / Add-on for more
+Time and event-based triggers
+Cohort targeting
+Smart triggers
+Templates
+Standard
+Standard
+Standard / Add-on for Custom
+Standard / Add-on for Custom
+Branding
+Amplitude
+Amplitude / Add-on for Whitelabeled
+Whitelabeled
+Whitelabeled
+Localization
+Prioritization
+Add-on
+Add-on
+Resource Center
+Static
+Activation
+Built-in user identity resolution
+Unlimited sources and destinations
+Developer SDKs and APIs
+Real-time event streaming
+Limited
+Limited
+Limited / Add-on for more
+Limited / Add-on for more
+Webhooks
+One-time Audience syncs
+Scheduled syncs
+Limited / Add-on for more
+Limited / Add-on for more
+Behavioral Cohorts API
+Add-on
+Add-on
+Data Management
+Autocapture
+AI Data Assistant
+Retroactive data transformation
+Observability for data monitoring
+Data Mutability
+Derived property
+Protected schemas and workflows
+Data Access Controls
+Automated tasks
+Access to taxonomy API
+Platform and Support
+Team members
+Unlimited
+Unlimited
+Unlimited
+Unlimited
+MTUs / EV
+Up to 2M EV
+Up to 700K MTU / 70M EV
+Custom
+Custom
+Saved charts
+10 per org
+Unlimited
+Unlimited
+Unlimited
+Spaces for collaboration
+1
+3
+Unlimited
+Unlimited
+Data access
+1 year
+2 years
+Unlimited
+Unlimited
+SSO and project-level permissions
+Advanced permissions and SCIM
+EU data center option
+Access community and education
+Customer support
+Online support
+Customer success
+Assigned account manager
+Response SLA
+2 business days
+1 business day
+Professional services
+Available
+Available
 Annual Plus Plan Comparison
 Base Plus Plan, by event volume tier (up to 20M)
 The lowest-cost way to scale product analytics
@@ -358,7 +551,6 @@ AI Agents
 Agent Analytics
 AI Feedback
 Amplitude MCP
-AI Assistant
 Product Analytics
 Web Analytics
 Feature Experimentation

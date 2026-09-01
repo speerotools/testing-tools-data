@@ -179,8 +179,10 @@ endpoint has a rate limit of
 2400/hour
 . Organizations without a paid plan also have a
 monthly data-read allowance
-for queries. For large or regular exports of events, use
+for queries. For regular exports of events, use
 batch exports
+. For large one-off exports, use
+file download exports
 . For data-powered APIs or user-facing dashboards,
 reach out to us
 .
@@ -227,7 +229,9 @@ At this time, we are not offering higher limits than these, but you may wish to 
 endpoints product
 , which offers query customization and higher limits. Alternatively, you may be able to use our
 batch exports product
-to pull the data that you need from our events or persons tables on a faster cadence.
+to pull the data that you need from our events or persons tables on a faster cadence, or a
+file download export
+for a one-off export.
 Responses
 Status code: 200
 Response:

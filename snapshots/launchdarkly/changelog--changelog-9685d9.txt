@@ -1,9 +1,5 @@
 # https://launchdarkly.com/changelog/
 Product Updates | LaunchDarkly
-[Virtual event] 6 new features for more control | Aug 26, 10 AM PT
--
-Register
-.
 Skip to:
 Home
 Content
@@ -130,8 +126,8 @@ Control releases, experiments, and AI behavior in prod.
 Free trial
 Sign in
 Filter by topic
-Feature Flags
 AI Engineering
+Feature Flags
 Experimentation
 Guarded Release
 Product Analytics
@@ -153,60 +149,68 @@ July 2025
 June 2025
 May 2025
 Subscribe for updates
-August 24, 2026
-Rachel Groberman
-Safeguard your code and agents with adaptive triggers
-ou can now attach an Adaptive Trigger to a feature flag or AgentControl config. When a monitored metric crosses a threshold you set, traffic moves to a variation that is already defined, with no deploy and no human intervention required. Use it to fail over a model provider, turn a feature off, or serve a safer config the moment production degrades.
-To get started, open targeting on a flag or AgentControl config and add a trigger to the default rule.
-Learn more |
-Docs
-Share link copied!
-August 17, 2026
-Seth Payne
-New: Access Token Expiration
-Access Token Expiration
-A series of improvements to access tokens and the Authorization page have been released. Starting today, we are replacing the existing access token reset with a token expiry field that can be set and updated via the existing access token APIs and the new Authorization page UI. As part of this change, we are also marking the legacy reset API for future deprecation and transitioning it into end-of-life mode.
-This release also adds access token expiry notifications sent according to your notification settings via Slack, email, or the in-app inbox. Notifications about upcoming token expiry will be sent 30, 7, and 1 day before the token expires to the token creator and account owner for PATs, and to the account owner for service tokens.
-Why It Matters
-Previous access token reset obscured the existing token and its expiry date. This release gives you more transparency and granularity in your access token lifecycle management.
-Share link copied!
-August 3, 2026
-Feature Flags
-Michael Knighten
-A Redesigned Flag List
-We've rebuilt the flag list page to make it faster to scan and easier to action:
-Responsive table layout with a pinned name column that stays in place as you scroll horizontally
-Flag properties now have dedicated columns when space allows for it
-Full maintainer name on every row, not just avatars
-Environment visibility is prioritized; as the viewport shrinks, other flag data reflows into the name column
-These changes will roll out to customers in phases over the next week (Aug 11-14 2026).
-Share link copied!
-July 29, 2026
+August 26, 2026
 AI Engineering
 Paul Loeb
-Agent Optimization is now in public beta
-Agent Optimization is now available in public beta, giving teams a systematic way to improve their AI agents by running iterative optimization passes across models, configurations, and prompts - and deploying the best-performing result directly from LaunchDarkly.
-Agent Optimization lets teams run structured optimization experiments against their AI agents to find the best-performing configuration. Rather than manually tweaking prompts and models and guessing at what works, teams can configure an optimization run that systematically tests variations across models and prompt strategies, evaluates each result using a judge model, and surfaces the winner so it can be deployed immediately.
-Agent Optimization works with the LaunchDarkly Python AI SDK and integrates with popular agent frameworks. Configurations can be managed entirely in the AgentControl UI and pulled at runtime, or defined inline in code without any UI setup required.
-To get started,
-read the Agent Optimization documentation
+Use AgentControl from your Go and Java applications
+AI SDKs are now available for Go and Java. Your prompts, model settings, and targeting rules live in AgentControl configs instead of your code, so you can change a prompt, swap a model, or roll a variation out to a single customer segment without a deploy. Both SDKs report generation counts, token usage, latency, and errors back to AgentControl so you can watch cost and performance per config, and both run multi-step agent graphs.
+To get started, read the
+Go AI SDK reference
+or the
+Java AI SDK reference
 .
-Our team is happy to walk you through using Agent Optimization. To get help or share feedback, contact your LaunchDarkly account team or email
+Our team is happy to help you get set up. To get help or share feedback, contact your LaunchDarkly account team or email
 product@launchdarkly.com
 .
 Share link copied!
-July 23, 2026
+August 26, 2026
 AI Engineering
 Paul Loeb
-Break down AgentControl monitoring by context
-Know exactly which customer is driving your AI cost, latency, and usage. You can now filter and group AgentControl monitoring by context kinds, so you can see tokens, cost, latency, generations, and satisfaction for a single tenant, a single user, or any slice of your traffic, instead of only the global average.
-Global averages hide what individual customers experience. One power user can drive far more token spend than a typical user, and that difference disappears in the aggregate. Now you can attribute cost and latency to the customer causing them, debug one tenant's behavior in minutes, and understand how usage differs across your customer base without writing custom queries against raw data.
-What you can do:
-Compare customers side by side. Group the dashboard by user, organization, or an attribute like plan tier to see how different customers use your AI features.
-Zoom in on one customer. Filter to a tenant, a department, or a specific user and every chart and table follows. Search works even with thousands of customers.
-Take the data with you. CSV export matches whatever you have filtered or grouped on screen.
-To get started, open a config's Monitoring tab and use the filter and Group by controls.
-Learn more about monitoring config performance
+Serve different models to different users through your LiteLLM gateway
+Keep the gateway you already run, and decide the model, prompt, and parameters per request instead of per config file. Give enterprise customers your strongest model and free users a cheaper one. Roll a new model out to five percent of traffic, watch quality and cost, and revert in seconds if it degrades. None of it requires editing YAML, restarting the proxy, or shipping code, and every change is attributed and approval-gated like any feature flag change.
+To get started, read
+Use LaunchDarkly AgentControl to control model administration with LiteLLM
+.
+Our team is happy to help you set this up. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+August 26, 2026
+AI Engineering
+Paul Loeb
+AgentControl now supports EU data residency
+If your organization is required to keep data in the European Union, you can now use AgentControl there. Prompts, configs, variations, and targeting rules are managed in the EU, with the same approval workflows and audit history you already use for feature flags. Model choices are limited to providers approved for the region.
+To get started, read the
+AgentControl documentation for the EU
+. If you do not see AgentControl in your EU account yet, contact your LaunchDarkly account team.
+Our team is happy to help you get set up. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+August 26, 2026
+AI Engineering
+Paul Loeb
+Read a full agent run as a single conversation
+LaunchDarkly now stitches related LLM and agent spans into conversations, so a run that spans many traces reads as one transcript instead of a pile of spans. Open Traces and select the Conversations tab to see duration, models, providers, token usage, errors, and estimated cost for the whole run, then read the transcript turn by turn, including tool calls and their payloads, with evaluation scores shown on the turn they describe.
+To get started, read
+LLM observability
+and
+Instrumenting LLM applications
+.
+Our team is happy to help you instrument your application. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+August 26, 2026
+AI Engineering
+Paul Loeb
+Use your Amazon Bedrock models in AgentControl
+You can now configure Amazon Bedrock as a model provider, so inference keeps running in your own AWS account while your prompts and model settings live in LaunchDarkly. Compare candidate models in the playground, then swap a model or edit a prompt at runtime without redeploying.
+To get started, read
+Getting started with Amazon Bedrock and AgentControl configs
+.
+Our team is happy to help you connect Bedrock. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
 .
 Share link copied!
 Load more updates

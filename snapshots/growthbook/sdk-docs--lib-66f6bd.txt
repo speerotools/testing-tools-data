@@ -1,66 +1,58 @@
 # https://docs.growthbook.io/lib/
-GrowthBookSDKs - Feature Flags & Experimentation | GrowthBook Docs
+SDK Overview - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+SDK Overview
 SDK Overview
 Quickstart
 Client
-HTML Script Tag
-Javascript
-React
-Vue
-Kotlin (Android)
-Flutter
-Swift (iOS)
-React Native
-Roku
 Server
-Node.js
-Next.js
-PHP
-Ruby
-Python
-Java
-Kotlin (JVM)
-C#
-Go
-Rust
-Elixir
 Edge
 OpenFeature Providers
 Build Your Own
 SDK Overview
-On this page
-SDK Overview
+Copy page
+Copy page
+Choose a GrowthBook SDK for JavaScript, React, Python, Node.js, mobile, or the edge to evaluate flags and run experiments.
+Copy page
+Copy page
 GrowthBook SDKs are lightweight libraries that let you use feature flags and run experiments in your application. They handle feature evaluation and assignment logic.
-What SDKs Do
 ​
+What SDKs Do
 The SDK has two main responsibilities:
 Fetch features from the API
 : The SDK downloads your feature definitions from GrowthBook and caches them for fast access.
 Evaluate features
 : Using attributes you provide (like user ID, country, or subscription plan), the SDK evaluates your targeting rules and returns the appropriate feature values. This evaluation happens wherever the SDK runs—in the browser, on your server, or at the edge.
-Running Experiments
 ​
+Running Experiments
 To measure experiment results, the SDK needs to log which variation was assigned. This is done through a tracking callback—a function you provide that sends assignment data via your event tracking system (like Segment, Mixpanel, or GA4).
-Without a tracking callback, the SDK will still assign variations and your features will work, but you won't be able to analyze experiment results in GrowthBook.
+Without a tracking callback, the SDK will still assign variations and your features will work, but you won’t be able to analyze experiment results in GrowthBook.
 All SDKs use the same assignment logic, so the same attributes always produce the same variation regardless of which SDK you use. Each SDK has documentation on setting up tracking callbacks, and many offer
 pre-built integrations
 with popular analytics tools.
+​
 Choosing the Right SDK
-​
 The main differences between SDK types are where they run and what problems they solve best.
-Client SDKs
 ​
+Client SDKs
 Where they run:
 In the browser or mobile device
 Best for:
@@ -87,8 +79,8 @@ Kotlin
 Flutter
 ,
 React Native
-Server SDKs
 ​
+Server SDKs
 Where they run:
 On your backend infrastructure
 Best for:
@@ -117,8 +109,8 @@ Go
 C#
 ,
 Elixir
-Edge SDKs
 ​
+Edge SDKs
 Where they run:
 On edge platforms/CDNs (Cloudflare Workers, Fastly Compute, Lambda@Edge)
 Best for:
@@ -138,15 +130,15 @@ Fastly Compute
 Lambda@Edge
 Not sure which to choose?
 Most users start with a client SDK
-. They're the easiest to implement and work great for UI changes and experiments.
+. They’re the easiest to implement and work great for UI changes and experiments.
+​
 Getting Started
-​
 Choose your SDK below to see installation and setup instructions:
-Client
 ​
+Client
 HTML Script Tag
 Drop-in script for any website or low-code platform
-Javascript
+JavaScript
 Vanilla JS and TypeScript projects
 React
 React hooks and providers with SSR support
@@ -162,8 +154,8 @@ Swift (iOS)
 Native iOS development
 React Native
 Cross-platform React Native apps
-Server
 ​
+Server
 Node.js
 Express, Fastify, and Node.js servers
 PHP
@@ -184,10 +176,10 @@ Rust
 Actix, Axum, Rocket, and more
 Vercel
 Vercel Flags SDK with Edge Config
-Edge
 ​
+Edge
 Cloudflare Workers
-Low-latency edge computing on Cloudflare's network
+Low-latency edge computing on Cloudflare’s network
 Fastly Compute
 WebAssembly-powered edge computing
 Lambda@Edge
@@ -197,11 +189,14 @@ Want to build your own SDK?
 Follow our
 guide to integrate GrowthBook into any platform
 .
-Edit this page
-Was this helpful?
-Give Feedback
+Was this page helpful?
+Yes
+No
+SDK Quickstart
 Next
-Quickstart
+⌘
+I
+On this page
 What SDKs Do
 Running Experiments
 Choosing the Right SDK
@@ -212,3 +207,19 @@ Getting Started
 Client
 Server
 Edge
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

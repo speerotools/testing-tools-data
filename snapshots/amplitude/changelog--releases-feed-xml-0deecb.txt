@@ -3,7 +3,14 @@ Amplitude Changelog
 https://amplitude.com/releases
 Every feature we've shipped to Amplitude, with release notes.
 en-us
-Wed, 26 Aug 2026 08:17:46 GMT
+Tue, 01 Sep 2026 11:21:48 GMT
+Web Experiment: Cookie consent management
+https://amplitude.com/releases/web-experiment-cookie-consent-management
+The Web Experiment script now supports cookie consent gating. Customers can defer all device storage and third-party requests until a visitor consents — while still running experiments flicker-free while consent is pending.
+Tim Yiu
+Experiment
+https://amplitude.com/releases/web-experiment-cookie-consent-management
+Tue, 25 Aug 2026 16:59:04 GMT
 Multiple triggers for Guides and Surveys
 https://amplitude.com/releases/multiple-triggers-for-guides-and-surveys
 Show a guide or survey in more than one situation without duplicating it, by adding several trigger conditions to a single one.
@@ -1379,10 +1386,3 @@ Brian Giori
 Experiment
 https://amplitude.com/releases/evaluation-flags-api
 Fri, 23 May 2025 00:26:00 GMT
-Personalize Guides and Surveys with User Properties
-https://amplitude.com/releases/personalize-guides-and-surveys-with-user-props
-Customize content in guides and surveys by dynamically displaying user properties (must be available client-side). Includes UI for enhanced visibility and ease of configuration.
-Matthew Beaty
-Guides and Surveys
-https://amplitude.com/releases/personalize-guides-and-surveys-with-user-props
-Fri, 23 May 2025 00:25:48 GMT

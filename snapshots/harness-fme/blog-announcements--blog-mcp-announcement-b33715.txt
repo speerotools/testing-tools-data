@@ -1,113 +1,272 @@
 # https://www.harness.io/blog/mcp-announcement
-Meet Harness' MCP Server: A Smarter DevOps Way
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
-Pricing
-Learn
-Developer
+Meet Harness' Model Context Protocol (MCP) Server
+Platform
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
 Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
 Community
 Training
-Certifications
-RESOURCES
-Ebooks
+Learn
+Resources Hub
 Blog
-Case Studies
 Comparison Guide
+Customer Stories
 DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
 Events
-Upcoming Events
-On-Demand
+Events
 Harness Summits
+Webinars
 Company
-About us
+About Us
 Careers
 Security
-Press & News
+Press
+&
+News
 Legal
 Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
+Contact Us
+See a Demo
+Start for Free
+Platform
+Explore
+Overview
+Documentation
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+AGENTS
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
 Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Chapters
-Try It For Free
-Harness
-/
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
+Community
+Training
+Learn
+Resources Hub
 Blog
-/
-Technical
-May 29, 2025
-Meet Harness' MCP Server: A Smarter DevOps Way
+Comparison Guide
+Customer Stories
+DevOps Academy
+Events
+Events
+Harness Summits
+Webinars
+Company
+About Us
+Careers
+Security
+Press
+&
+News
+Legal
+Partners
+Contact Us
+Sign in
+See a Demo
+Start for Free
+Harness Acquires CI Pioneer Drone.io and Commits to Open Source
+What is a Kubernetes Container?
+GraphQL: Harness Your Way
+CI/CD Pipeline: Everything You Need to Know
+CI/CD Testing: The Complete Guide for Modern Software Delivery
+Your First Harness CI Installation, Build, and Publish
+IT Audits - How Continuous Delivery can Help
+Blue-Green Deployments With Kubernetes and Harness
+Harness Template Library For Continuous Delivery
+6 Actionable GitOps Best Practices to Help You Get Started
+An Introduction to Artificial Intelligence and Machine Learning
+Applying AI/ML to CI/CD Pipelines
+Comparing Helm vs Kustomize
+Continuous Integration Testing: Types, Best Practices, and Tools
+Accelerates AWS Cloud Migration
+What is O11Y? Observability Demystified with Chris Riley from Splunk
+Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
+Tutorial: How to Use the New Vault Agent Integration Method With Harness
+Pipeline Patterns for CI/CD Pipelines
+Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
+4 Best CI/CD Tools for DevOps
+How To Turn Your GitHub Repository Into an Automated Helm Chart Repo
+Harness the Power of AWS EKS-Anywhere
+Test Intelligence™: Move Fast, Don’t Break Things
+What Are Audit Trails & Why You Need Them in CD
+Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
+GitHub Actions Support in Harness CI
+Harness Launches Source Available Continuous Delivery
+Micro-Frontend Architecture in the Harness Software Delivery Platform
+Harness Achieves SOC 2 Compliance
+Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
+How Harness dashboards enhance software delivery performance
+Harness Acquires ChaosNative
+Harness Expands Software Delivery Platform
+The Git Sync Experience in Harness
+Git Branching in Harness
+Source Code Management in DevOps
+Harness Security Testing Orchestration (STO) - Key Capabilities
+Quality vs Reliability
+Build System vs CI System: What's the Difference and Why Does it Matter?
+The Best Open Source CI Tools
+Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
+Benefits of GitOps & Why GitOps Is Important
+Introducing Harness Policy as Code, Powered by OPA
+What Are GitOps Principles?
+GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
+Kubernetes Services Explained
+Harness CI and Harness CD - Your First True CI/CD Pipeline
+Continuous Delivery vs. Continuous Deployment: What’s the Difference?
+How Value Stream Mapping Optimizes Your Software Delivery Process
+How to Build CI Pipelines with GitHub Actions and Deploy to Kubernetes with Harness
+What is PaaS (Platform-as-a-Service)?
+Declarative Continuous Delivery for Kubernetes: A Closer Look at Argo CD
+What Is a CI/CD Platform and Why Should I Care?
+The Dependency and Plugin Hell That is Jenkins
+Build a Canary Deployment in 4 Mins with Harness CD
+Comparing Harness and Jenkins
+Harness Extends Continuous Verification To Dynatrace
+10 Signs You Don't Do Continuous Delivery
+Harness Continuous Delivery for Red Hat OpenShift
+A Time Series Machine Learning Model for Canary Deployments
+JFrog Artifactory & Harness - Don’t Get Bogged Down With Continuous Delivery
+Harness CI/CD Pipelines for .NET and Azure
+Harness For AWS: From Code to Cloud, Smarter and Faster
+ServiceNow for CI/CD Pipelines
+Vulnerability Scanning in your CI/CD Pipeline - Part Two
+The DevOps Tools Lifecycle Mesh for 2021
+Intro to Deployment Strategies: Blue-Green, Canary, and More
+Continuous Verification - Machine Learning to Safeguard Your Deployments
+Discover Azure DevOps Alternatives
+What Is GitOps? Learn About Benefits, Challenges, and More
+The Importance of Continuous Verification
+Best Argo CD Alternatives & Competitors
+Best Spinnaker Alternatives to Consider
+Continuous Delivery Tools to Consider
+How DORA Metrics Improve DevOps Performance
+The Software Development Life Cycle: A Complete Guide to Each Phase
+A Snapshot of DevOps
+What Is Role-Based Access Control (RBAC)?
+How to Prioritize the Developer Experience and Improve Output
+SRE vs. DevOps: Key Differences, Roles, and How They Work Together
+User & Role Management in the Harness Software Delivery Platform
+How We Built Event-Driven Architecture with Redis Streams at Harness
+Service Accounts: A Path to CI/CD Automation
+Harness YAML Editor - Code Away Your CI/CD Pipelines!
+What Is an Artifact Repository?
+Simplify test maintenance with the builder factory pattern
+Modern Software Delivery Best Practices & Software Delivery Management
+Managing the 'Git' in 'GitOps': 4 Ways to Structure Code in Your GitOps Repos
+Top 10 Best Practices for DevSecOps
+What is CircleCI? A Look at Features and Use Cases
+Kubernetes Application Deployment Strategies
+The Basics of GitOps Secrets Management
+The Data is In: Harness CI is up to 4X faster than Other Solutions
+What is ArgoCD?
+Introducing Harness CI/CD Plugin for Backstage
+GitOps Architecture Explained
+Integrating Automated Security and Testing in Your CI/CD Pipeline
+How to Implement CI/CD: Automate Builds, Testing, and Deployments in Minutes
+How to Deploy Helm Charts With Argo CD
+Next
+Blog
+→
+Continuous Integration
+Meet Harness' Model Context Protocol (MCP) Server: A Smarter Way to Interact with Harness
 | Harness Blog
-Table of Contents
+Meet Harness’ Model Context Protocol (MCP) Server: A Smarter Way for AI to Run Your DevOps Workflows
+Continuous Integration
+Published:
+May 29, 2025
+Last updated:
+By
 Rohan Gupta
-All this author’s posts
+4 minutes to read
+Table of Contents
++
+Link
+TL;DR
 Now your AI agents have a more intelligent, safer way to communicate with Harness.
 At Harness, we’ve always believed software delivery should be intelligent, efficient, and secure. That’s why AI has been part of our DNA since day one. We first brought AI into software delivery when we
 introduced
@@ -153,203 +312,77 @@ to see the MCP Server in action and learn how AI agents can securely interact wi
 Harness Developer Hub
 to get started.
 Rohan Gupta
-All this author’s posts
+All this author's posts →
 Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
-Previous
-Next
-What is a Kubernetes Container?
-Spinnaker to Harness: A Conversion Story - Part 1
-Shifting Down With Harness Cloud Cost Management
-Modern Log Layers
-GraphQL: Harness Your Way
-CI/CD Pipeline: Everything You Need to Know
-A Home for ECS Developers
-CI/CD Testing: The Complete Guide for Modern Software Delivery
-Your First Harness CI Installation, Build, and Publish
-Spinnaker vs Harness - Filming My Journey
-IT Audits - How Continuous Delivery can Help
-Deploying With Harness & AppDynamics
-Blue-Green Deployments With Kubernetes and Harness
-Your First Kubernetes Cluster Deployment
-Canary Deployments and Operations in Kubernetes
-Lessons from the Harness Cloud Cost Management
-Optimizing cloud logging to save over $140k in costs
-6 Actionable GitOps Best Practices to Help You Get Started
-An Introduction to Artificial Intelligence and Machine Learning
-Applying AI/ML to CI/CD Pipelines
-Metrics to Improve Continuous Integration Performance
-Comparing Helm vs Kustomize
-Continuous Integration Testing: Types, Best Practices, and Tools
-Eliminates Delivery Toil
-Introducing Recommendations API: Find Potential Cost Savings Programmatically
-Accelerates AWS Cloud Migration
-Selected Harness over Spinnaker for CI/CD
-Replaced Spinnaker & Saved $275,000
-Scaled Kubernetes Continuous Delivery with GitOps
-Migrates to Kubernetes with One Developer and Harness
-What is O11Y? Observability Demystified with Chris Riley from Splunk
-Travis CI Alternatives To Consider
-Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
-What is Cloud Cost Intelligence?
-ShipTalk Podcast - A Time Before, During, and After Kubernetes
-Tutorial: How to Use the New Vault Agent Integration Method With Harness
-Pipeline Patterns for CI/CD Pipelines
-Feature Flags: Should I Build or Buy?
-Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
-4 Best CI/CD Tools for DevOps
-Migrating to Harness Feature Flags: Our Technical Journey
-Tutorial: Turning a GitHub Repo Into a Helm Chart Repo
-Change Management in the World of Continuous Delivery
-Laying the Groundwork for an Effective FinOps Organization
-How to set up cross-account access for S3 bucket policies
-Harness the Power of AWS EKS-Anywhere
-Test Intelligence™: Move Fast, Don’t Break Things
-Tutorial: [GraphQL] How to Interact With the Harness API Using Python
-What Are Audit Trails & Why You Need Them in CD
-5 Feature Flag Use Cases You May Not Have Thought Of
-Announcing Support for Python in Harness Feature Flags
-The Benefits of Feature Flags in Software Delivery
-Announcing Support for .NET in Harness Feature Flags
-How to Write Your First Plugin for CI
-Migrating From Jenkins to Harness CIE: A Journey
-Feature Flags With Python
-Intelligent & Automated Feature Flags With Harness
-Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
-Cloud Center of Excellence: What It Is, Best Practices, & More
-What Is Testing in Production & How to Avoid The Risks
-Simplifying Kubernetes Cost Management With Harness
-Cloud Cost Workload Recommendations
-GitHub Actions Support in Harness CI
-How Feature Flags Help With Trunk-Based Development
-AutoStopping Rules for Kubernetes Clusters
-Dashboarding, Or Data Visualization
-Feature Flags Best Practices also known as Feature Toggles
-Micro-Frontend Architecture in the Harness Software Delivery Platform
-Lessonly by Seismic Says Goodbye to Jenkins and Toil With Harness CI Enterprise
-What Is Split.io? A Look at Features and Use Cases
-Harness CI Enterprise for UI Builds
-Feature Flags Overview For PMs: Getting Qualitative Feedback and Managing Releases
-Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
-In-Depth: Harness Feature Flags Relay Proxy
-Announcing: Public APIs for Feature Flags
-Announcing Support for Xamarin in Harness Feature Flags
-The Git Sync Experience in Harness
-Git Branching in Harness
-Source Code Management in DevOps
-Harness Service Reliability Management (SRM) - Key Capabilities
-Harness Security Testing Orchestration (STO) - Key Capabilities
-Quality vs Reliability
-Build System vs CI System: What's the Difference and Why Does it Matter?
-3 Reasons to Correlate Cloud Costs to Engineering Releases
-The Best Open Source CI Tools
-Harness Infrastructure Provisioners and ARM Templates - Part 2
-Benefits of GitOps & Why GitOps Is Important
-The Importance of Continuous Integration and Its Benefits
-What Are GitOps Principles?
-GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
-Deploy Your Simple Node.js Application Using Local Docker Images in Minikube
-Kubernetes Services Explained
-Harness CI and Harness CD - Your First True CI/CD Pipeline
-Continuous Delivery vs. Continuous Deployment: What’s the Difference?
-Move Fast and Fix Faster with Harness 24/7 Service Guard
-Value Stream Mapping for Software Delivery
-How to Maintain Istio Service Mesh with Harness
-Rancher Rio vs Harness - Filming my Journey
-Using Github Actions with Harness
-Solving Standardization in Continuous Delivery
-Next
-1 / 8
-SHARE -
-Rohan Gupta
-Read more from this author
-Read
-Next-generation CI/CD For Dummies
-Stop struggling with tools—master modern CI/CD and turn deployment headaches into smooth, automated workflows.
-Read the ebook
-Link
-Book a Demo
-Continuous Integration
-Continuous Delivery & GitOps
-Try it for Free
-Continuous Integration
-Continuous Delivery & GitOps
-Similar Blogs
+← Previous:
+Next: →
+‍
+Related Resources
 No items found.
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
+Get Started
+Get Started with Harness AI
+Try the full platform free. No module restrictions, no credit card.
+Try Harness AI Free
+See Harness AI Demo
+Rohan Gupta
+Director, Product Management
+Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
+rohan-gupta
+AI for everything after code.
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
+Overview
+Why Harness
+Knowledge Graph
 Pricing
-View plans
-For Developers
+Trust Center
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Tests
+AI Evals
+Runtime Configuration
 Resources
 Blog
+Resources Hub
+Customer Stories
 Comparison Guide
-Collateral
-Customers
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
-Webinars
-Support
-Professional Services
+Events
+Community
+API Reference
 Company
 About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-DevOps & Automation
-DevOps & Automation
-DevOps & Automation
-Continuous Integration
-Continuous Delivery & GitOps
-Technical
-Continuous Integration
-Continuous Delivery & GitOps

@@ -83,7 +83,6 @@ Fund open source developers
 PROGRAMS
 Security Lab
 Maintainer Community
-Accelerator
 GitHub Stars
 Archive Program
 REPOSITORIES
@@ -128,14 +127,14 @@ Public
 Notifications
 You must be signed in to change notification settings
 Fork
-15
+13
 Star
 14
 Code
 Issues
-8
+6
 Pull requests
-14
+31
 Actions
 Security and quality
 0
@@ -155,21 +154,21 @@ Code
 Open more actions menu
 Latest commit
 History
-424 Commits
-424 Commits
+439 Commits
+439 Commits
 Folders and files
 Name
 Name
 Last commit message
 Last commit date
-.github/
-workflows
-.github/
-workflows
+.github
+.github
 .vscode
 .vscode
 confidence-cloudflare-resolver
 confidence-cloudflare-resolver
+confidence-event-engine
+confidence-event-engine
 confidence-resolver
 confidence-resolver
 data
@@ -250,6 +249,10 @@ Ruby
 Underlying building blocks:
 confidence-resolver
 : Core resolver crate
+confidence-event-engine
+: Event batching engine compiled to WASM (shared by all providers for
+track()
+support)
 wasm
 and
 wasm-msg
@@ -306,7 +309,7 @@ Watchers
 1
 watching
 Forks
-15
+13
 forks
 Report repository
 Releases

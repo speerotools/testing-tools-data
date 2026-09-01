@@ -1,5 +1,5 @@
 # https://launchdarkly.com/docs/home/getting-started/mcp-hosted
-LaunchDarkly hosted MCP server | LaunchDarkly | Documentation
+Set up the LaunchDarkly hosted MCP server | LaunchDarkly | Documentation
 For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
 Developer
 Developer
@@ -546,15 +546,17 @@ On this page
 Configure the MCP server
 Quick configuration
 Manual configuration
+Resolve a 403 error after OAuth
 Migrate to the hosted server
 Scroll to top
 Get started
 Get started
 Developer tools
 LaunchDarkly MCP server
-LaunchDarkly hosted MCP server
+Set up the LaunchDarkly hosted MCP server
 Copy page
 This topic describes how to connect your AI client to the LaunchDarkly hosted Model Context Protocol (MCP) server. To use the hosted MCP server, you must have an AI client that supports MCP, such as Cursor, Claude Code, VS Code with Copilot, or Windsurf.
+After you connect, you can create, toggle, and target flags, manage AgentControl configs, and query observability data directly from a prompt, without leaving your editor. The hosted server works with any MCP-compatible AI client. You keep your existing workflow in Cursor, Claude Code, or another supported client, and add LaunchDarkly as a tool the client can call.
 Configure the MCP server
 The hosted MCP server at
 https://mcp.launchdarkly.com/mcp/launchdarkly
@@ -767,11 +769,30 @@ headers
 Click
 Save
 .
+Resolve a 403 error after OAuth
+A 403 error that occurs after completing the OAuth consent screen usually indicates a permissions issue with the account you used, not an OAuth failure.
+To resolve a 403 error:
+Confirm that the account you authorized has sufficient permissions. The MCP server needs permission to create, read, update, and delete flags and AgentControl configs in the projects you want to use. We recommend a Writer
+base role
+, a LaunchDarkly Developer
+preset role
+, or another role that provides this access.
+If you can
+create your own roles
+, verify that your custom role includes access to the project and environment you want to use through MCP tools.
+Disconnect and reconnect the server to restart the OAuth flow. To reconnect in Cursor, follow the steps in
+Manual configuration
+, then click
+Connect
+again to complete the consent screen.
+If the error continues after you verify your permissions, contact
+LaunchDarkly Support
+.
 Migrate to the hosted server
 If you used an earlier version of the local
 npx
 -based server, migrate to the hosted server using these steps:
-Replace your old server configuration. Your old configuration looks like this:
+Replace your old server configuration. Your original configuration looks like this:
 Old configuration to remove
 1
 {
@@ -844,7 +865,7 @@ api-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 }
 12
 }
-and should be replaced with this:
+Replace it with this:
 New configuration to add
 1
 {
@@ -887,20 +908,11 @@ Remove any environment variables for the local server, such as
 LD_ACCESS_TOKEN
 . Instead, OAuth now handles authentication.
 Close and reopen your AI client.
-(Cursor only) If you are using Cursor, authorize your LaunchDarkly account:
-Navigate to
-Settings
->
-Cursor Settings
->
-Tools & Integrations
->
-MCP Tools
-.
-Toggle on the LaunchDarkly server.
-Click
-connect
-.
+(Cursor only) If you are using Cursor, authorize your LaunchDarkly account. Follow the steps in
+Manual configuration
+, then click
+Connect
+to complete the authorization.
 To learn how to use the MCP server in your AI client, read
 Use the MCP server
 .

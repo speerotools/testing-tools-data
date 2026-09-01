@@ -1,5 +1,5 @@
 # https://www.uniform.dev/features/ab-testing
-A/B Testing | Uniform A/B Testing and Experimentation
+A/B Testing by Uniform: Experiment on Anything, Slow Nothing
 Request a demo
 Platform
 Back to main menu
@@ -67,50 +67,249 @@ Data Center Region
 North America
 Europe
 Request a demo
-A/B testing
-Uniform A/B testing provides actionable data to aid in building digital customer experiences at scale. Learn and optimize conversions without sacrificing page speed or operational agility.
-See how in a free demo
-Uniform A/B Testing
-Test everything
-No need to choose
-Flicker-Free Testing
-Improved Performance and Delivery
-Learn fast, win faster
-A/B testing tools from Uniform allow you to make data-driven decisions based on performance. Your marketing and digital teams can leverage the winning elements and strategies for improved conversion rates and customer engagement.
-Test and Personalize in a single platform
-Every change counts when building digital experiences for your customers and prospects, so the more features in a
-single platform
-, the better! With Uniform, you don’t have to choose between A/B testing and
+A/B TESTING at the speed of light
+Test anything.
+Slow nothing.
+Uniform runs experimentation at the edge on your CDN: no third-party scripts, no flicker, no Core Web Vitals penalty. Test a headline, a component, or an entire experience composed from any source, and read the results with significance built in.
+Hero
+A/B test
+50%
+50%
+VARIANT A
+Straight to the offer
+VARIANT B
+Proof before the offer
+Configuring an A/B test on a single component in the Visual Workspace: two variants, an even traffic split, one publish. Interface illustration, not a product capture.
+THE TESTING GAP
+Continuous testing made possible
+Testing tools have been affordable and widely available for a decade, yet most teams run only a handful of tests annually.
+The blockers
+With Uniform
+01
+Flicker
+The variant swap every visitor sees: the default paints, the script fires, and the page rewrites itself while they are looking at it.
+Speed by architecture: the variant is assigned before the page paints, so there is no swap to see.
+02
+Core Web Vitals
+The clumsy script tag your SEO team warned against: a third-party request loading on every page of the site.
+There is no third-party script in the visitor's browser for anyone to measure.
+03
+Variant production
+Opportunities wilt waiting for the B to be built. The hypothesis is there; production is the bottleneck.
+Scout generates the variants, inside your brand standards, staged for a human to approve.
+04
+Tool churn
+Standalone testing tools get pulled from their users, and the program fades with the contract.
+Testing is a platform capability here, not a separate product that can be sunset.
+05
+Data silos
+With results in one tool and revenue in another, the test for worked never quite ends.
+Results land in built-in insights and stream to your analytics, so there is one story rather than two.
+06
+What do we test first
+Without a solid plan, the backlog fills with changes where nothing will be learned.
+Start with the five tests, then let Scout propose the next ones based on your data.
+Six things stop testing programs: visible flicker, the script tag that damages Core Web Vitals, variant production, tool churn, split data, and not knowing what to test first. Uniform answers four of them directly and removes two outright.
+HOW IT WORKS
+Turn one component into two
+Pick the component, set the goal, and add a variant. When the needle moves, you know exactly which change moved it, as each variant reports its own effect on the goal you chose.
+One component tested, two variants, everything else held the same.
+the test toggle on the component itself, running
+the checklist: hero different, everything else held the same
+a rate per variant against the goal you set
+One component on one page is put into a test. The hero is the only thing that differs between variant A and variant B; the featured destinations and the page layout are identical in both, which is what makes the result readable. Each variant then reports its own rate against a single chosen goal, so the winner is a measurement rather than an opinion.
+PERFORMANCE NOT COMPROMISED
+The test happens before the page paints
+Variant assignment resolves on the CDN you run, serving the visitor a complete page rather than one that corrects itself in front of them.
+01
+Nothing swaps
+Variant assignment resolves at the edge, giving every visitor a complete, final page. Nothing swaps, nothing flickers, nothing blocks render.
+02
+Any CDN
+The same edges that run your personalization run your experiments, in your existing delivery pipeline.
+03
+SEO-safe by design
+No client-side rewrites and no cloaking patterns, so testing never puts rankings or Core Web Vitals at risk.
+With Uniform
+Request
+Variant assigned at the edge
+before first paint
+One complete page
+The script-tag way
+Request
+Default page paints
+Script loads
+Variant swaps
+the flicker every visitor sees
+Uniform assigns the variant at the edge. The script-tag path paints a default page, waits for a script, then swaps the content in view, which causes the flicker.
+Read the edge-side decisioning docs
+THE UNIT OF EXPERIMENTATION
+Beyond button colors: test the experience itself
+Uniform tests at the composition layer, empowering you to experiment with anything the platform composes, from any source.
+01
+Test a component.
+Two heroes, three CTAs, alternative product cards: classic A/B, configured visually on the component, no code.
+02
+Test a composition.
+Different page structures, section orders, or layouts against each other: the tests that move numbers most and that script-tag tools cannot express.
+03
+Test across sources.
+Because Uniform composes content, commerce, and data, you can test a CMS-authored hero against a commerce-driven product list, or one recommendation logic against another. If it can be composed, it can be tested.
+Traffic split
+50%
+50%
+One slot, one composition
+Variant A
+CMS-authored hero
+Variant B
+Commerce-driven product list
+CMS
+Commerce
+One slot in one composition renders either variant A or variant B, and both variants draw on the same composed sources: content from a CMS and products from commerce. The traffic split above the slot decides which visitor sees which.
+From multivariate to simple A/B test, every variant remains a managed, reusable entity.
+ONE PLATFORM, ONE LOOP
+Test to learn. Personalize to apply. Repeat.
+In most stacks, testing and personalization are separate tools with separate data, breaking the loop between them. In Uniform, they run on the same components, audiences, and insights: test broadly to learn what wins, personalize the winner to the segments it wins for, then test again inside those segments. Each cycle compounds the previous learnings, and nothing is rebuilt between steps as the variant, the audience, and the experience live in one platform.
+TEST
+broadly, to find what wins
+LEARN
+sessions, uplift, significance
+PERSONALIZE
+the winner, to the segment it won with
+and again, inside those segments
+Three steps on a circle: test broadly to learn what wins, read the result in insights, then personalize the winner to the segments it wins for. The next test starts inside those segments, so the loop closes rather than ending.
+How Uniform personalizes, from first visit to 1:1
+MEASUREMENT
+Significance is not a vibe
+Uniform ships insights with the platform, so every test reports its own sessions, uplift, and significance, and the decision to keep a variant or replace it is made on evidence.
+The losing test is still on screen. That is what testing is for.
+sessions, uplift and significance, per active test
+per-test results, winners and losers side by side
+export to the analytics your business already reports in
+The insights dashboard reports sessions, conversion rate, and optimized conversion as KPI cards, and lists every active test and personalization in one table.
+Every test carries its own math.
+Every test reports sessions, uplift, and statistical significance individually, so decisions wait for evidence, not opinions.
+Losing tests are results too.
+Retiring an under-performer is the cheapest optimization you will make all quarter, and the dashboard shows the losers as plainly as the winners.
+Your analytics stays your analytics.
+Every event also streams to Google Analytics, Adobe Analytics, or your analytics of choice, so experiment results live where the business reports.
+One table for the whole program.
+Every active test sits in one place without stitching reports together to get results.
+Make data-driven decisions with the results you create
+NEW
+THE OPTIMIZATION AGENT
+From a tool to a program
+The gap between owning a testing tool and running a testing program is labor: someone must source the hypotheses, build the variants, watch the numbers, and act on them. Scout is that someone.
+01
+Proposes the tests.
+Hypotheses drawn from your audiences, pages, and insights, prioritized by expected impact.
+02
+Builds the variants.
+The B, C, and D versions generated within your brand standards.
+03
+Watches the math.
+Significance and uplift monitored continuously, ending tests when the evidence is in.
+04
+Acts on results.
+Winners proposed for promotion and follow-up tests suggested, in autonomous or review mode, with humans approving what ships.
+01
+04
+The four steps run as a loop: Scout proposes the tests, builds the variants, watches significance and uplift, then acts on the result and feeds what it learned into the next hypothesis.
+Hypotheses, variants, significance, and the decision: one agent, your approval.
+Start a testing program stops that scales with compute.
+See everything Scout does
+FOR DEVELOPERS
+A tool that will win over your developers
+Testing tools are often how script-tag arguments begin. Uniform ends it: no third-party JavaScript, variant assignment at the edge you already deploy to, and experiments that ship through the same review process as everything else.
+YOUR FRAMEWORK
+React
+Next.js
+Svelte
+Vue
+Astro
+Angular
+Uniform variant assignment
+YOUR EDGE
+Akamai
+Cloudflare
+Vercel
+Netlify
+Your framework renders the experience and your edge serves it; variant assignment runs inside that existing pipeline rather than adding a vendor to the request path.
+Your framework, untouched.
+React, Next.js, Svelte, Vue, Astro, Angular: tests render through the components you wrote, using SDKs that fit the framework you run.
+Your edge, not ours.
+Akamai, Cloudflare, Vercel, Netlify: assignment runs on the CDN and hosting you deploy to, with no new infrastructure and no second vendor in the request path.
+Nothing to apologize for in the audit.
+No third-party script in the visitor's browser and no client-side rewrite, keeping Core Web Vitals exactly where your team fought to get them. Experiments ship through the same CI/CD and review process as everything else you deploy.
+The stack remains. Only the experiments change.
+Read the edge-side decisioning docs
+WHERE TO START
+Five tests to run this quarter
+These run on pages you already have. Pick which matches your next campaign, ship it, and let the result choose the next one.
+01
+Hero test on your highest-traffic landing page
+Two headlines and two supporting images on the page that already has the traffic, so the result arrives in days rather than quarters.
+Low effort
+02
+CTA copy and placement on the money pages
+The wording and the position of the primary action on the pages that carry revenue, changed one variable at a time so the answer is readable.
+Low effort
+03
+Section order on a key journey page
+A composition test: the same content in a different structure, to find out whether proof before pricing beats pricing before proof.
+Medium effort
+04
+Product-list logic: curated versus data-driven
+An editor's picks against a data-driven list in the same slot, which is the test a script-tag tool cannot express.
+Medium effort
+05
+Campaign page variants per inbound channel
+One landing page with one variant per channel, ensuring paid, social, and email visitors get the experience they were promised.
+Medium effort
+PROOF
+VyStar tested one banner. The gap was ten points.
+VyStar ran a personalized campaign banner against the generic version. One experiment, two months into their program, yielded a result so significant that it changed how the team works.
+13%
+vs 3%
+form submission rate on the personalized campaign banner, against the generic version.
+1 sprint
+the window the team now needs to take a tactic from idea to live. That is what a testing culture looks like from the inside.
+2x
+loan application completion rate for journeys that began personalized, with the gains attributed to personalization and A/B testing together.
+The conversion gains VyStar reports are attributed to personalization and A/B testing together. The two form one program running on one platform, making the learning from either available to both.
+Read the VyStar case study
+FAQ
+What to know before the first test
+Five questions that can help you decide what's best for your team.
+Does A/B testing hurt page speed or SEO?
+Not with edge-side testing. Uniform assigns variants at the CDN edge before the page renders, so there is no third-party script, no client-side swap, and no flicker: Core Web Vitals stay intact and no cloaking patterns are involved. Performance damage was a script-tag problem, not a testing problem.
+Can I A/B test content from my existing CMS or commerce platform?
+Yes. Uniform tests at the composition layer, so anything it composes can be tested: content from your CMS, products from your commerce platform, and data from any source, at component, composition, or whole-experience level, without moving the content anywhere.
+What is the difference between A/B testing and personalization, and which comes first?
+Testing finds what works for everyone; personalization applies what works for someone. Start by testing broadly to learn, personalize the winners to the segments they win for, then test again within segments. Uniform runs both on the same components, audiences, and insights, so the loop never breaks.
+How do I know when a test is statistically significant?
+Uniform reports sessions, uplift, and significance per test in its built-in insights, so a test ends when the evidence supports a decision. Scout can monitor significance continuously and propose promoting winners or retiring losers, with your team approving the outcome.
+Can AI run my testing program?
+Scout, Uniform's agent, proposes test hypotheses from your audience data, generates the variants, monitors significance, and recommends promotions and follow-ups, in autonomous or review mode with humans approving what ships. It removes the labor gap between owning a testing tool and running a testing program.
+ALSO ON THIS PLATFORM
+Looking for personalization?
+If the plan is to show each visitor the version that already fits them, rather than finding out which version wins, personalization is the page you want. It runs on the same components and the same audiences as everything above.
+Explore Uniform personalization
+The web has two audiences.
+Build for both.
+Start personalizing for the first one today.
+Book a demo
+Explore platform
+Keep reading
+GUIDE
+How to make content AI-ready
+Explore how you can personalize for humans and optimize for agents.
+Feature
 Personalization
-.
-No Render-blocking
-Fast-loading sites are essential for
-personalized digital experiences
-and optimal conversion rates. Uniform A/B testing won't impact site speed or performance.
-CDNs and Edge Technology
-With Uniform A/B testing, you can leverage Edge Technology and your own CDN to ensure your users receive the best-performing version of your content as rapidly as possible. Thanks to
-the Uniform Visual Workspace
-, you can leverage your current
-integrations
-or build your own.
-Don’t choose between A/B testing and performance again
-Test, learn, and innovate to win
-Book a Demo Now
-A/B testing meets performance
-3 ways the visual workspace powers your personalization strategy
-3 minutes read
-Tactical personalization: the right content to the right consumers
-5 minutes read
-The personalization engine: a blueprint for success
-2 minutes read
-Fast, personalized pages with Vercel Edge Middleware and Uniform
-3 minutes read
-Why an experience-first approach is the future
-4 minutes read
-Personalizing webpages with Akamai EdgeWorkers
-2 minutes read
-A day in the life of an enterprise marketer — and how a visual workspace can help them succeed
-4 minutes read
+How Uniform applies what your tests learn, from the first anonymous visit through to 1:1.
+Guides
+Looking for more guides?
+Explore our guides on CMS, DXP and Agentic AI.
 Platform
 Composable DXP
 Content management

@@ -41,6 +41,152 @@ and
 RSS
 .
 August 2026
+Redshift short-lived credentials for batch exports
+August 28, 2026
+· Batch Exports Team
+[Batch exports] can now utilize Redshift short-lived credentials from an assumed AWS role. This is the preferred method of authentication for new batch exports, as it avoids having to share long-lived credentials. For Redshift COPY batch exports, an assumed AWS role is also supported for S3 authentication.
+Long-running AWS exports
+August 28, 2026
+· Batch Exports Team
+S3 and file-download batch exports using short-lived AWS role authentication refresh their credentials while they run. This avoids any timeouts caused by short-lived credentials expiring. This will help some of the more longer running batch exports to successfully complete.
+WorkOS webhook sync
+August 28, 2026
+· Warehouse Sources Team
+Data Warehouse
+WorkOS sources can keep supported tables up to date from webhooks after their initial backfill. Create, update, and delete events are reflected in the imported data.
+54 new Data Warehouse sources
+August 28, 2026
+· Warehouse Sources Team
+Data Warehouse
+gained 54 new sources, spanning finance, sales, marketing, public data, and a few pleasantly niche corners of the internet.
+Analytics, ads, and marketing: Sigma Computing, Hyros, G2, Pluralsight Flow, Apple Search Ads, Bluesky, Profound, and Select Star
+Cloud, cost, and company data: AWS Organizations, AWS Budgets, AWS Cost Anomaly Detection, Cloudability, SingleStore, OpenCorporates, GLEIF, and Bigeye
+Sales, CRM, and business operations: Propertyware, Mighty Networks, Housecall Pro, Kickscale, OwnerRez, Moxie, Vendr, Dynamics 365 Business Central, Workiz, CompanyCam, and Shipmail
+Finance and payments: Avalara AvaTax, Opn Payments, HitPay, Asaas, Airwallex, Billomat, and Back Market
+Commerce and marketplaces: Reverb, Faire, Zero, Kalshi, Polymarket, and easybill
+Public, education, and productivity data: WHO GHO, CDC Open Data, US Bureau of Economic Analysis, Nager.Date, Crossref, Meteostat, Canvas LMS, ServiceM8, Cliniko, and ECB Data Portal
+More connectors: Nuntly, Waydev, Clever, Bloomerang, and Meteostat
+Error tracking releases tab
+August 28, 2026
+· Error Tracking Team
+You can now see how your issue is broken down my releases
+App Store attribution reports
+August 28, 2026
+· Warehouse Sources Team
+Data Warehouse
+App Store Connect sources can import four Detailed report variants, including campaign, source, and page-title attribution fields. Less need for a second pipeline just to find out where an install came from.
+Custom REST source beta
+August 28, 2026
+· Warehouse Sources Team
+The Custom REST source is now available in beta for
+Data Warehouse
+.
+More Gong call content
+August 28, 2026
+· Warehouse Sources Team
+Data Warehouse
+can bring more of your Gong conversations into the warehouse.
+Sync full call transcripts in a new
+transcripts
+table, joined to calls by call ID
+Sync AI-generated call briefs, key points, highlights, outcomes, and outlines in a separate opt-in
+calls_content
+table
+Safer verified domain restrictions
+August 27, 2026
+· Platform Features Team
+Before restricting membership to verified email domains or removing a domain, organization admins can see which members would lose access. The settings also flag changes that would lock out the admin making them.
+Product tours is being removed
+August 27, 2026
+· Self-Driving Team
+Unfortunately, on 26 September 2026 we're saying goodbye to our product tours tool and it will stop working with all versions of PostHog. Support for product tours will also stop at the same time.
+We're doing this because, while this feature was popular, we ultimately decided that it wasn't a good fit for our mission and that there were more impactful things we could build instead. As we're a small team we need to make these decisions quite firmly, even if they seem counterintuitive from the outside.
+We've informed everyone who was using Product Tours that the service will be removed on 26 September and we'll send a reminder one week before hand.
+We've created a new product-tours agent skill to help you replicate what we built, for free. Just run the following command in your CLI:
+npx @posthog
+/
+wizard@latest skill creating
+-
+product
+-
+tours
+Show complete previous-period trends insights
+August 27, 2026
+· Product Analytics Team
+Trends comparisons now render the full previous day, week, or month instead of stopping partway through the chart. Rolling windows such as “Last 24 hours” keep their existing comparison behavior.
+Set up replay vision
+August 27, 2026
+· Wizard & Docs Team
+npx @posthog/wizard replay-vision
+guides setup for
+Session Replay
+vision scanners from the command line.
+Wizard supports four backend languages
+August 27, 2026
+· Wizard & Docs Team
+The setup wizard can recognize more server-side projects and guide SDK setup for them:
+Go projects, including Go module detection and package installation
+Elixir and Phoenix projects, with Mix dependency setup
+Rust projects, with Cargo-based SDK setup
+Java server projects using Maven or Gradle
+Scouts get a dedicated home
+August 27, 2026
+· Self-Driving Team
+Manage your scouts from a full-width roster, then open any scout for its run history, schedule, notes, and learned context. Search and filter the fleet without squeezing it into a setup modal.
+Set a daily report limit
+August 27, 2026
+· Self-Driving Team
+Choose how many self-driving reports your project receives each day. Once the limit is reached, new scout runs and report generation pause until the next local day.
+Simplify MCP editor login
+August 27, 2026
+· Wizard & Docs Team
+Model Context Protocol
+setup in Claude Code and Codex now hands OAuth sign-in to the editor, rather than asking you to choose permissions twice. Removing an installed MCP server works too.
+Make scout reports actionable
+August 27, 2026
+· Self-Driving Team
+Web analytics, Web Vitals, and CSP scouts now produce a concrete action PostHog can take or a handoff that names the owner, change, and success check. Less detective work left for the reader.
+Switch models in Slack
+August 27, 2026
+· Self-Driving Team
+Tell the Slack assistant to use a different supported model or effort level in a follow-up message while it is working. The next turn uses the new setting without losing the thread's context.
+Enable more Inbox sources
+August 27, 2026
+· Self-Driving Team
+Turn on 12 additional Inbox sources for product feedback, app reviews, and Google Search Console. These sources previously failed validation and flipped themselves back off.
+21 new MCP tools
+August 27, 2026
+· Experiments Team
+Twenty-one tools landed in PostHog's
+MCP server
+this week:
+Customer analytics
+Create feature request product area
+List feature request product areas
+Update feature request product area
+Link account to feature request
+Add feature request evidence
+Archive feature request
+Create feature request
+List feature request history
+List feature requests
+Update feature request
+Delete feature request evidence
+Restore feature request
+Get feature request
+List feature request status history
+Update feature request evidence
+Canvas
+Read canvas state
+Set canvas state
+Platform Features
+Create a comment or reply
+Data warehouse
+Link a bucket as a warehouse table
+Experiments
+Get flag cleanup task status
+Replay vision
+Semantically search replay vision observations
 Match flag property prefixes and suffixes
 August 24, 2026
 · Feature Flags Team
@@ -4079,7 +4225,7 @@ October 24, 2025
 · Support Team
 You’re overdue for a checkup. Let the SDK doctor take a look.
 The new SDK doctor helps you stay on top of your SDK versions across several platforms, from JavaScript to iOS to Go. It’s currently in beta.
-It detects outdated SDKs in your recent events, flags them with 🟢🟡🔴 indicators, and links you to the right changelogs and docs. Outdated SDKs trigger a sidebar alert, so you can inspect and fix version issues.
+It detects outdated SDKs in your recent events, flags them with 🟢  🟡🔴 indicators, and links you to the right changelogs and docs. Outdated SDKs trigger a sidebar alert, so you can inspect and fix version issues.
 PostHog AI is now tab aware
 October 24, 2025
 · Platform UX Team

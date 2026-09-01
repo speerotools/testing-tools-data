@@ -552,6 +552,22 @@ What’s new
 Date
 Change summary
 Affected topics
+August 26, 2026
+Adds new threshold comparisons for constant observability alerts, including
+Above or equal to
+,
+Below or equal to
+,
+Equal to
+, and
+Not equal to
+. You can now choose whether an alert fires at the threshold value, or only when the observed value is strictly above or below it.
+Alerts
+August 26, 2026
+Publishes a topic about filtered SDK payloads using views.
+Filtered SDK payloads
+,
+SDK key actions
 August 25, 2026
 Publishes a topic about configuring Amazon Bedrock as a model provider for the Playground integration.
 Configure Amazon Bedrock

@@ -1,474 +1,310 @@
 # https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code
-Streamline feature management with Harness MCP and Claude Code
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
-Pricing
-Learn
-Developer
-Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
-Community
-Training
-Certifications
-RESOURCES
-Ebooks
-Blog
-Case Studies
-Comparison Guide
-DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
-Events
-Upcoming Events
-On-Demand
-Harness Summits
-Company
-About us
-Careers
-Security
-Press & News
-Legal
-Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
-Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Chapters
-Try It For Free
-Harness
-/
-Blog
-/
-Technical
-October 31, 2025
-Streamline feature management with Harness MCP and Claude Code
-| Harness Blog
-Table of Contents
-Austin Lai
-All this author’s posts
-Audrey Do
-All this author’s posts
-Robert Grassian
-All this author’s posts
-Harness now supports the Model Context Protocol (MCP) for Feature Management and Experimentation (FME), enabling developers to interact with feature flags directly from AI-powered IDEs like Claude Code and Windsurf. The FME MCP tools make it easier to explore, understand, and manage feature flags through natural language, streamlining delivery and release workflows without leaving your development environment.
-Managing feature flags can be complex, especially across multiple projects and environments. Teams often need to navigate dashboards, APIs, and documentation to understand which flags exist, their configurations, and where they are deployed. What if you could handle these tasks using simple natural language prompts directly within your AI-powered IDE?
-Screenshot of the Claude Code interface displaying the output from a prompt to identify fully rolled-out feature flags that are safe to remove from code.
-Harness Model Context Protocol (MCP) tools
-make this possible. By integrating with Claude Code, Windsurf, Cursor, or VS Code, developers and product managers can discover projects, list feature flags, and inspect flag definitions, all without leaving their development environment.
-By using one of many AI-powered IDE agents, you can query your
-feature management data
-using natural language. They analyze your projects and flags to generate structured outputs that the agent can interpret to accurately answer questions and make recommendations for release planning.
-With these agents, non-technical stakeholders can query and understand feature flags without deeper technical expertise. This approach reduces context switching, lowers the learning curve, and enables teams to make faster, data-driven decisions about feature management and rollout.
-According to
-Harness and LeadDev’s survey of 500 engineering leaders in 2024
-:
-82% of teams that are successful with feature management actively monitor system performance and user behavior at the feature level, and 78% prioritize risk mitigation and optimization when releasing new features.
-Harness MCP tools help teams address these priorities by enabling developers and release engineers to audit, compare, and inspect feature flags across projects and environments in real time, aligning with industry best practices for governance, risk mitigation, and operational visibility.
-Simplifying Feature Management Workflows
-Traditional feature flag management practices can present several challenges:
-Complexity
-: Understanding flag configurations and environment setups can be time-consuming.
-Context Switching
-: Teams frequently shift between dashboards, APIs, and documentation.
-Governance and Consistency
-: Ensuring flags are correctly configured across environments requires manual auditing.
-Harness MCP tools address these pain points by providing a conversational interface for interacting with your FME data, democratizing access to feature management insights across teams.
-How MCP Tools Work for Harness FME
-The FME MCP integration supports several capabilities:
-Tool
-Purpose
-Example Use
-list_fme_workspaces
-Discover all projects (also known as workspaces).
-Show me all FME projects in my account
-list_fme_environments
-Explore environments within a project.
-List the environments under `checkout-service`
-list_fme_feature_flags
-List all flags in a project.
-What feature flags are active in staging?
-get_fme_feature_flag_definition
-Inspect a specific flag.
-Describe the enable_discount_banner flag in staging
-You can also generate quick summaries of flag configurations or compare flag settings across environments directly in Claude Code using natural language prompts.
-‍
-Some example prompts to get you started include the following:
-"List all feature flags in the `checkout-service` project."
-"Describe the rollout strategy and targeting rules for `enable_new_checkout`."
-"Compare the `enable_checkout_flow` flag between staging and production."
-"Show me all active flags in the `payment-service` project."
-“Show me all environments defined for the `checkout-service` project.”
-“Identify all flags that are fully rolled out and safe to remove from code.”
-These prompts produce actionable insights in Claude Code (or your IDE of choice).
-Getting Started
-To start using Harness MCP tools for FME, ensure you have access to Claude Code and the Harness platform with FME enabled. Then, interact with the tools via natural language prompts to discover projects, explore flags, and inspect flag configurations.
-Installation & Configuration
-Harness MCP tools transform feature management into a conversational, AI-assisted workflow, making it easier to audit and manage your feature flags consistently across environments.
-Prerequisites
-Go version 1.23 or later
-Claude Code (paid version) or another MCP-compatible AI tool
-Access to the Harness Platform with
-Feature Management & Experimentation (FME)
-enabled
-A
-Harness API key
-for authentication
-Build the MCP Server Binary
-Clone the
-Harness MCP Server GitHub repository
-.
-Build the binary from source.
-Copy the binary to a directory accessible by Claude Code.
-Configure Claude Code
-Open your Claude configuration file at `~/claude.json`. If it doesn’t exist already, you can create it.
-Add the Harness FME MCP server configuration:
-{
-...
-"mcpServers"
-: {
-"harness"
-: {
-"command"
-:
-"/path/to/harness-mcp-server"
-,
-"args"
-: [
-"stdio"
-,
-"--toolsets=fme"
-],
-"env"
-: {
-"HARNESS_API_KEY"
-:
-"your-api-key-here"
-,
-"HARNESS_DEFAULT_ORG_ID"
-:
-"your-org-id"
-,
-"HARNESS_DEFAULT_PROJECT_ID"
-:
-"your-project-id"
-,
-"HARNESS_BASE_URL"
-:
-"https://your-harness-instance.harness.io"
-}
-}
-}
-}
-Save the file and restart Claude Code for the changes to take effect.
-To configure additional MCP-compatible AI tools like
-Windsurf
-,
-Cursor
-, or
-VS Code
-, see the
-Harness MCP Server documentation
-, which includes detailed setup instructions for all supported platforms.
-Verify Installation
-Open Claude Code (or the AI tool that you configured).
-Navigate to the
-Tools/MCP
-section.
-The Claude Code interface shows the Harness FME MCP server's status as connected, including the command path, arguments, configuration location, capabilities, and available tools.
-Verify Harness tools are available.
-The Claude Code interface displays the Harness FME MCP toolset, listing all available options.
-What’s Next
-Feature management at scale is a common operational challenge. With Harness MCP tools and AI-powered IDEs, teams can already discover, inspect, and summarize flag configurations conversationally, reducing context switching and speeding up audits.
-Looking ahead, this workflow extends itself towards a DevOps-focused approach, where developers and release engineers can prompt tools like Claude Code to identify inconsistencies or misconfigurations in feature flags across environments and take action to address them.
-By embedding these capabilities directly into the development workflow, feature management becomes more operational and code-aware, enabling teams to maintain governance and reliability in real time.
-For more information about the Harness MCP Server, see the
-Harness MCP Server documentation
-and the
-GitHub repository
-. If you’re brand new to Harness FME, sign up for a
-free trial today
-.
-Austin Lai
-All this author’s posts
-Austin Lai is a Developer Relations Engineer focused on developer experience, observability, and feature management.
-Audrey Do
-All this author’s posts
-Audrey Do is a Product Manager at Harness focused on building AI-driven experimentation and release monitoring features that help teams ship smarter and learn faster.
-Robert Grassian
-All this author’s posts
-Robert Grassian is a Senior Software Engineer at Harness focused on building the Feature Management and Experimentation (FME) Platform.
-Previous
-Next
-What is a Kubernetes Container?
-Spinnaker to Harness: A Conversion Story - Part 1
-Shifting Down With Harness Cloud Cost Management
-Modern Log Layers
-GraphQL: Harness Your Way
-CI/CD Pipeline: Everything You Need to Know
-A Home for ECS Developers
-CI/CD Testing: The Complete Guide for Modern Software Delivery
-Your First Harness CI Installation, Build, and Publish
-Spinnaker vs Harness - Filming My Journey
-IT Audits - How Continuous Delivery can Help
-Deploying With Harness & AppDynamics
-Blue-Green Deployments With Kubernetes and Harness
-Your First Kubernetes Cluster Deployment
-Canary Deployments and Operations in Kubernetes
-Lessons from the Harness Cloud Cost Management
-Optimizing cloud logging to save over $140k in costs
-6 Actionable GitOps Best Practices to Help You Get Started
-An Introduction to Artificial Intelligence and Machine Learning
-Applying AI/ML to CI/CD Pipelines
-Metrics to Improve Continuous Integration Performance
-Comparing Helm vs Kustomize
-Continuous Integration Testing: Types, Best Practices, and Tools
-Eliminates Delivery Toil
-Introducing Recommendations API: Find Potential Cost Savings Programmatically
-Accelerates AWS Cloud Migration
-Selected Harness over Spinnaker for CI/CD
-Replaced Spinnaker & Saved $275,000
-Scaled Kubernetes Continuous Delivery with GitOps
-Migrates to Kubernetes with One Developer and Harness
-What is O11Y? Observability Demystified with Chris Riley from Splunk
-Travis CI Alternatives To Consider
-Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
-What is Cloud Cost Intelligence?
-ShipTalk Podcast - A Time Before, During, and After Kubernetes
-Tutorial: How to Use the New Vault Agent Integration Method With Harness
-Pipeline Patterns for CI/CD Pipelines
-Feature Flags: Should I Build or Buy?
-Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
-4 Best CI/CD Tools for DevOps
-Migrating to Harness Feature Flags: Our Technical Journey
-Tutorial: Turning a GitHub Repo Into a Helm Chart Repo
-Change Management in the World of Continuous Delivery
-Laying the Groundwork for an Effective FinOps Organization
-How to set up cross-account access for S3 bucket policies
-Harness the Power of AWS EKS-Anywhere
-Test Intelligence™: Move Fast, Don’t Break Things
-Tutorial: [GraphQL] How to Interact With the Harness API Using Python
-What Are Audit Trails & Why You Need Them in CD
-5 Feature Flag Use Cases You May Not Have Thought Of
-Announcing Support for Python in Harness Feature Flags
-The Benefits of Feature Flags in Software Delivery
-Announcing Support for .NET in Harness Feature Flags
-How to Write Your First Plugin for CI
-Migrating From Jenkins to Harness CIE: A Journey
-Feature Flags With Python
-Intelligent & Automated Feature Flags With Harness
-Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
-Cloud Center of Excellence: What It Is, Best Practices, & More
-What Is Testing in Production & How to Avoid The Risks
-Simplifying Kubernetes Cost Management With Harness
-Cloud Cost Workload Recommendations
-GitHub Actions Support in Harness CI
-How Feature Flags Help With Trunk-Based Development
-AutoStopping Rules for Kubernetes Clusters
-Dashboarding, Or Data Visualization
-Feature Flags Best Practices also known as Feature Toggles
-Micro-Frontend Architecture in the Harness Software Delivery Platform
-Lessonly by Seismic Says Goodbye to Jenkins and Toil With Harness CI Enterprise
-What Is Split.io? A Look at Features and Use Cases
-Harness CI Enterprise for UI Builds
-Feature Flags Overview For PMs: Getting Qualitative Feedback and Managing Releases
-Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
-In-Depth: Harness Feature Flags Relay Proxy
-Announcing: Public APIs for Feature Flags
-Announcing Support for Xamarin in Harness Feature Flags
-The Git Sync Experience in Harness
-Git Branching in Harness
-Source Code Management in DevOps
-Harness Service Reliability Management (SRM) - Key Capabilities
-Harness Security Testing Orchestration (STO) - Key Capabilities
-Quality vs Reliability
-Build System vs CI System: What's the Difference and Why Does it Matter?
-3 Reasons to Correlate Cloud Costs to Engineering Releases
-The Best Open Source CI Tools
-Harness Infrastructure Provisioners and ARM Templates - Part 2
-Benefits of GitOps & Why GitOps Is Important
-The Importance of Continuous Integration and Its Benefits
-What Are GitOps Principles?
-GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
-Deploy Your Simple Node.js Application Using Local Docker Images in Minikube
-Kubernetes Services Explained
-Harness CI and Harness CD - Your First True CI/CD Pipeline
-Continuous Delivery vs. Continuous Deployment: What’s the Difference?
-Move Fast and Fix Faster with Harness 24/7 Service Guard
-Value Stream Mapping for Software Delivery
-How to Maintain Istio Service Mesh with Harness
-Rancher Rio vs Harness - Filming my Journey
-Using Github Actions with Harness
-Solving Standardization in Continuous Delivery
-Next
-1 / 8
-SHARE -
-Austin Lai
-Read more from this author
-Audrey Do
-Read more from this author
-Robert Grassian
-Read more from this author
-Read
-The Ugly Truth About DIY Feature Flag Tools
-DIY feature flags seem simple at first, but often lead to tech debt, resource drain, and scaling issues. This playbook shows why enterprises need professional feature management.
-Read the ebook
-Link
-Book a Demo
-Feature Management & Experimentation
-Try it for Free
-Feature Management & Experimentation
-Similar Blogs
-Meet Harness' MCP Server: A Smarter DevOps Way
-Harness MCP Server: Bridging AI systems and DevOps via secure and efficient communication.
-Continuous Integration
-Continuous Delivery & GitOps
-AI-Powered Chaos Engineering with Harness MCP Server and Cursor
-Democratize chaos engineering with Harness MCP + Cursor. Execute resilience tests through natural language prompts in your AI-powered IDE.
-Resilience Testing
-AI-Powered Resilience Testing with Harness MCP Server and Windsurf
-Learn how to set up AI-powered chaos engineering using Harness MCP Server with Windsurf IDE. Execute resilience tests through natural language prompts.
-Resilience Testing
-Harness launches MCP tools to enhance its AI powered Chaos Engineering Capabilities
-Chaos Tools on Harness MCP Server provide the opportunity to do the resilience testing using AI Agents and AI Tools with natural language prompts. Users can discover the resilience test capabilities, learn more about them and run the tests to measure the resilience data of the business critical applications or services. Chaos Tools lay the foundation for AI Powered Chaos Engineering using Harness in the Enterprise's journey towards building a strong resilience testing culture.
-Resilience Testing
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
+Harness Blog: DevOps, CI/CD Insights
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
-Pricing
-View plans
-For Developers
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
+Why Harness
+Pricing
+Customers
 Resources
+Build
+Documentation
+API Reference
+Community
+Training
+Learn
+Resources Hub
 Blog
 Comparison Guide
-Collateral
-Customers
+Customer Stories
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
+Events
+Events
+Harness Summits
 Webinars
-Support
-Professional Services
 Company
 About Us
+Careers
+Security
+Press
+&
+News
+Legal
+Partners
+Contact Us
+See a Demo
+Start for Free
+Platform
+Explore
+Overview
+Documentation
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+AGENTS
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
+Community
+Training
+Learn
+Resources Hub
+Blog
+Comparison Guide
+Customer Stories
+DevOps Academy
+Events
+Events
+Harness Summits
+Webinars
+Company
+About Us
+Careers
+Security
+Press
+&
+News
+Legal
+Partners
+Contact Us
+Sign in
+See a Demo
+Start for Free
+Blog
+Featured
+Autonomous Worker Agents: AI Agents in Your Pipelines
+Harness launches Autonomous Worker Agents: AI that runs as pipeline steps, with the governance enterprises need to trust agents in production
+June 30, 2026
+Jyoti Bansal
+Rohan Gupta
++ more
+7 minutes to read
+Autonomous Worker Agents: AI Agents in Your Pipelines
+All Blogs
+Software Delivery
+Security Testing
+Runtime Protection
+Cost Management
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+August 31, 2026
+Engineering
+12 minutes to read
+Building Trust in the Harness Knowledge Graph with AI Evals
+Software Delivery Agent
+Building Trust in the Harness Knowledge Graph with AI Evals
+August 27, 2026
+Company News
+1 minute to read
+Harness Cloud pricing update: lower per-minute rates
+Continuous Integration
+Harness Cloud pricing update: lower per-minute rates
+August 27, 2026
+Technical
+8 minutes to read
+Introducing Agent-Ready Code Repository with AI Code Review
+Code Repository
+Software Delivery Agent
+Introducing Agent-Ready Code Repository with AI Code Review
+August 26, 2026
+Technical
+7 minutes to read
+Developer Self-Service Pipelines with Harness IDP
+Software Delivery Agent
+Developer Self-Service Pipelines with Harness IDP
+August 25, 2026
+Technical
+8 minutes to read
+Automated Incident Response: Nobody Should Be the Scribe
+Security Testing Agent
+Automated Incident Response: Nobody Should Be the Scribe
+August 25, 2026
+Technical
+5 minutes to read
+Internal Developer Platform Golden Paths Guide
+Software Delivery Agent
+Internal Developer Platform Golden Paths Guide
+August 24, 2026
+Technical
+3 minutes to read
+Find Resilience Risks Automatically, Then Confirm Them
+Security Testing Agent
+Find Resilience Risks Automatically, Then Confirm Them
+August 21, 2026
+Technical
+6 minutes to read
+Continuous Delivery Excellence with Harness IDP
+Software Delivery Agent
+Continuous Delivery Excellence with Harness IDP
+August 21, 2026
+Technical
+5 minutes to read
+Measuring IDP Success: Metrics Beyond Tracking
+Software Delivery Agent
+Measuring IDP Success: Metrics Beyond Tracking
+August 19, 2026
+Technical
+7 minutes to read
+Harness Announces Capabilities that Enable Security at Machine Speed
+Runtime Protection Agent
+Harness Announces Capabilities that Enable Security at Machine Speed
+August 14, 2026
+Engineering
+4 minutes to read
+Bringing Third-Party Apps into Harness AI Chat: Our MCP Gateway for Distributed Enterprise Systems
+Harness AI
+Bringing Third-Party Apps into Harness AI Chat: Our MCP Gateway for Distributed Enterprise Systems
+August 12, 2026
+Technical
+4 minutes to read
+Join the Conversation: The Harness Community Is Now Live
+Harness Platform
+Join the Conversation: The Harness Community Is Now Live
+1
+1 / 64
+No blogs found matching your search.
+Clear filters
+Get Started
+Get Started with Harness AI
+Try the full platform free. No module restrictions, no credit card.
+Try Harness AI Free
+See a Demo
+AI for everything after code.
+Platform
+Overview
+Why Harness
+Knowledge Graph
+Pricing
+Trust Center
+Documentation
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Tests
+AI Evals
+Runtime Configuration
+Resources
+Blog
+Resources Hub
+Customer Stories
+Comparison Guide
+DevOps Academy
+Events
+Community
+API Reference
+Company
+About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-Feature Management & Experimentation
-DevOps & Automation
-Feature Management & Experimentation
-Feature Management & Experimentation
-DevOps & Automation
-DevOps & Automation
-Feature Management & Experimentation
-Technical
-Feature Management & Experimentation

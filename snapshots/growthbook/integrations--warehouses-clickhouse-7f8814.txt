@@ -1,28 +1,39 @@
 # https://docs.growthbook.io/warehouses/clickhouse
-Setting up Clickhouse as a data source | GrowthBook Docs
+Setting Up ClickHouse as a Data Source - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Connecting to Your Data Warehouse
+Setting Up ClickHouse as a Data Source
 Overview
 How it works
 Quickstart
-SDKs
+Command Palette
 Feature Flags
 Data & Metrics
 Choose Your Data Path
 Managed Warehouse
 Connecting to Your Data Warehouse
 Athena
+Adobe Experience Platform
 BigQuery
-Clickhouse
+ClickHouse
 Databricks
 Mixpanel
 MS SQL or SQL Server
@@ -42,6 +53,7 @@ Official Resources
 Experimentation
 Insights
 Product Analytics
+NEW
 Self-Hosting
 API
 Webhooks
@@ -53,15 +65,37 @@ Knowledge Base
 GrowthBook Guide
 Data & Metrics
 Connecting to Your Data Warehouse
-Clickhouse
-Setting up Clickhouse as a data source
+Setting Up ClickHouse as a Data Source
+Copy page
+Copy page
+Connect ClickHouse to GrowthBook with a connection URL, database, and a read-only user. Whitelist the Cloud IP if needed.
+Copy page
+Copy page
 Connecting to Clickhouse is very straightforward. You just need to provide the connection string and credentials. If you are using something like Clickhouse Cloud, you can find the connection string in the UI.
 If you are making connection credentials just for GrowthBook, you can give it read-only access to the database.
 If you are using GrowthBook Cloud (app.growthbook.io), make sure to whitelist the ip address 52.70.79.40 if applicable.
-Edit this page
-Was this helpful?
-Give Feedback
+Was this page helpful?
+Yes
+No
+GrowthBook and BigQuery
 Previous
-BigQuery
+Setting Up Databricks as a Data Source
 Next
-Databricks
+⌘
+I
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

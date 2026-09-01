@@ -1,5 +1,5 @@
 # https://www.uniform.dev/visual-workspace
-The Visual Workspace | Uniform Composable DXP
+The Visual Workspace by Uniform: See Every Source. Approve Everything That Ships.
 Request a demo
 Platform
 Back to main menu
@@ -67,82 +67,158 @@ Data Center Region
 North America
 Europe
 Request a demo
-Visual Workspace
-The only visual builder for managing composable digital experiences
-Unblock creativity while optimizing your team’s productivity and time to market with Uniform Visual Workspace.
-Unblock your team to visually manage multi-source digital experiences
-For years brands have struggled to visually manage the digital experiences with their
-headless CMSes
-, in addition having a
-composable digital experience stack
-only makes it harder to manage experiences at scale.
-Uniform is designed to bring any technology, data and content together with your design system of choice and make it simple and powerful to visually create and manage your digital experiences.
-10 ways Uniform is built for Scale
-In addition to our foundational abilities, which allow users to create and manage any composable digital experience, Uniform is built for scalability and optimized to increase speed to market—even for complex enterprise requirements.
-At Scale
-Optimization
-Launch Faster
-At Scale
-Optimization
-Launch Faster
+The visual workspace
+One surface
+for every source
+The Uniform Visual Workspace is where digital teams compose, preview, and ship experiences built from every connected source: CMS content, commerce, customer data, search, and your own APIs, and where everything that ships, whether a human made it or Scout did, gets reviewed and approved.
+The problem
+You can not see the whole experience
+Composable stacks made every capability best-of-breed and made the experience itself invisible: the hero lives in the CMS, the products in commerce, the offer logic in a third tool, and the only place they meet is a staging environment after a developer assembles them. Five tabs, three systems, one experience nobody can see whole until it is almost too late to change. The Visual Workspace is where the composed experience becomes visible, editable, and approvable in one place, before it ships.
+Three tools
+?
+CMS
+Hero
+Commerce
+Product list
+Offer engine
+Logic
+One canvas
+Hero
+CMS
+Product list
+Commerce
+Logic
+Offer engine
+On the left, one experience split across three tools: the CMS holds the hero, commerce holds the product list, an offer engine holds the logic, and no tool shows the result. On the right, the same three sources assembled on a single canvas, previewed and approved as one experience.
+Left: one experience split across three tools. Right: the same sources assembled, previewed, and approved on one canvas.
+Compose across every source
+Edit anything from anywhere in the same tab
+Every source on one canvas.
+Components powered by CMS content, commerce products, customer data, search, and your own APIs, arranged and edited together, with drafts and published states previewed side by side.
+Sources
+CMS
+Commerce
+Customer data
+Search
+Your API
+One canvas
+Hero
+CMS
+Product grid
+Commerce + Search
+Recommended for you
+Customer data + Your API
+Compose and edit CMS, commerce, customer data, search, and API-powered components together, then preview drafts and published states side by side.
+Inline editing with boundaries.
+Select any component and edit only what it exposes. Developers decide which properties are open, so speed never costs control.
+Editing happens in place, on the rendered experience.
+Remap instead of rebuild.
+The same component serves new purposes by remapping its data: the product carousel can become the event-speaker carousel without a ticket, a design request, or a new build.
+Before
+Carousel
+Data source
+Commerce: products
+After
+Carousel
+Data source
+Events: speakers
+The component name does not change. Only the data source does.
+Remap the data, and the same component becomes a new experience—no ticket, design request, or rebuild.
+Every channel
+Apps, kiosks, and other digital surfaces are composed and managed visually from the same workspace.
+One workspace, many surfaces.
+The content lives in a best-in-class headless CMS (or the CMS you currently run); the workspace is where experiences happen.
+Content management in Uniform
+Freedom inside the system
+Marketers move fast when developers set the walls
+The building blocks
+Components and design system are defined by your developers once: every experience is assembled from approved, on-brand building blocks, so creative freedom operates inside the system, never around it.
+The permissions
+Roles and permissions are granular: who edits, who approves, who publishes, per content type and per experience, with clear lines of responsibility.
+The workflow
+Workflows are yours to shape: draft, review, approve, schedule, with releases that take pages, components, and content live together.
+This is why the Visual Workspace scales to enterprises. The freedom is real because the walls are real.
+Humans approve what ships
+Where Scout's work comes to be judged
+Every agentic story on this site ends the same way: humans approve what ships. This is the room where that happens. When Scout drafts a campaign, generates variants, retags a library, or rolls out a personalization, the work lands here composed, previewable, and reviewable as the actual experience.
+01
+Review the work, not a description of it.
+Scout's output arrives as staged compositions and changes you can see, walk through, and edit before anything goes live.
+02
+Approve at the speed of trust.
+Autonomy is dialed per task: routine changes flow through with review before publish, brand-critical work waits for explicit approval, and the dial moves as intervention rates fall.
+03
+Every action accountable.
+Agent work is attributable, logged, and reversible, in the same workflows and permissions that govern your human team. One set of rules for everyone who ships.
+An agent without a review surface is a risk. An agent with one is a colleague.
+Enterprise scale
+Built for scale
+Six capabilities that decide whether a workspace survives contact with an enterprise: parallel campaigns, many markets, coordinated releases, and the rights model that keeps them all straight.
+01
 Editions
-Editions is a powerful feature that enables the creation and management of multiple temporary versions of pages or different structures for specific markets. Editions are designed to address the complex needs of global, multi-market digital strategies.
+Temporary versions and market-specific structures for campaigns and launches, managed in parallel.
+02
 Localization
-Uniform Localization
-empowers marketers and merchandisers to create unique pages for every locale to deliver experiences with regional and linguistic accuracy. Clone pages for every market in seconds and optimize market-specific experiences in clicks.
-Multisource Editing
-Multi-source editing with Uniform lets users and web producers stay in the same tab to update content in connected sources and preview both draft and published content.
-One of the big benefits of Uniform is that besides having content available through our edge APIs, your structured
-headless content
-can be connected with any front-end in clicks and managed visually.
-Benefits & Features
-Visually build for any channel
-Uniform isn’t limited to websites. Manage your app, interactive kiosks, and other digital experiences visually from Uniform.
-Powerful content management
-Manage your content models in clicks and visually make edits to any content.
-Scheduled publishing
-Create and manage future releases and have everything from pages to components and content entries go live at the same time.
-Inline editing
-Select any component and manage the content inline - of course only the content that is allowed to be changed.
-Workflow
-Visually manage your different workflows and determine which roles can edit, approve, publish etc. You are in full control.
-Ease of use
-Any user can use Uniform to visually create and manage digital experiences. All controls can be adjusted from simple to advanced rights.
-Sitemap
-Don’t worry about the structure of your site and managing URL routes through developer backlog items; Uniform has a Sitemap with URLs and redirects included.
-Control every detail
-Great digital experiences need amazing copy and the perfect layout. Uniform puts the front-end control options back in the business teams’ hands by allowing as many components and variations as they need and the design team will support. That means marketers have more freedom, but always stay on brand, even when it comes to
-personalization
-.
-Complete component control
-By separating front-end components from the data powering them, Uniform Visual Workspace empowers Marketing teams to get creative and build pages faster. For example, a product carousel can easily be remapped to show speakers for an event, removing the dependency on design and engineering to build a new component—reducing your cost and speed to deliver great pages. Plus, digital teams can
-easily run A/B tests
-, ensuring they always use the best components.
-Secure Access Control
-Granular roles and permissions ensure that users are only given the access they need to read, edit, or publish page types they need to perform their role, providing clear lines of responsibility and workflows.
-Empowered Marketers = Happy Developers
-No more dreaded “Hey, can you help me publish this?” Slack messages or unwelcome tickets. Plan sprints effectively and deliver value-add features by giving digital teams the tools they need to deliver independently.
-CASE STUDY
-”The anticipated ROI, including $1.1 million in instant savings, from a solution like Uniform is pretty insane because we no longer need to develop hundreds of UI components. We develop once.“
-TELUS
-Learn more about how Telus is using Uniform
-READY TO LEARN MORE?
-Discover how Uniform can help your team create and launch faster.
-Get in touch.
-BOOK A FREE DEMO NOW
-Learn more about the visual workspace
-Three reasons why brands choose Uniform for effective digital experience management
-4 minutes read
-How multisource content management is redefining digital experiences
-4 minutes read
-The Uniform Advantage: Visual Editing Across Channels and Sources
-3 minutes read
-Experience Operations: a new age in content management
-3 minutes read
-The future is visual for omnichannel experience management | webinar recap
-3 minutes read
-Why an experience-first approach is the future
-4 minutes read
+Clone and adapt experiences per market in seconds, with granular control on every level, and Scout drafting translations inside your workflows.
+Localization in Uniform
+03
+Releases and scheduled publishing
+Pages, components, and entries go live together, on time.
+04
+Sitemap included
+URL structure and redirects managed in the workspace, not in a developer backlog.
+05
+Roles at enterprise granularity
+From simple to advanced rights, adjusted per user and per responsibility.
+06
+Multi-brand, multi-market
+One component model serving many properties, so a new brand experience is assembled, not implemented again.
+Marketers and developers
+Empowered marketers.
+Happy developers.
+No more tickets for work that was never engineering's in the first place. Marketers ship independently inside the guardrails; developers build components once and get their sprints back for the roadmap.
+The anticipated ROI, including $1.1 million in instant savings, from a solution like Uniform is pretty insane because we no longer need to develop hundreds of UI components. We develop once.
+Telus
+$1.1M
+ROI in year one
+60x
+increase in developer efficiency
+Read the Telus story
+FAQ
+Questions about the Visual Workspace
+What the Visual Workspace is, how it differs from a page builder and from the visual editing in your CMS, and how Scout's work gets reviewed in it.
+What is a visual workspace?
+A Visual Workspace is a surface where digital teams compose, preview, and manage experiences assembled from multiple sources (CMS content, commerce, data, search) as one visual whole. The Uniform Visual Workspace adds inline editing within developer-defined guardrails, workflows, and approvals, and review of AI-agent work before it ships.
+What is a visual workspace?
+How is a visual workspace different from a page builder?
+Page builders generate their own pages from their own blocks, trapping content in layouts. The Uniform Visual Workspace composes real, managed front-end components from structured content from any source, so everything stays reusable, testable, and API-accessible: the visual layer edits the system; it doesn't replace it.
+How is this different from the visual editing in my CMS?
+CMS visual editors work only on that CMS's content. The Uniform Visual Workspace composes and edits across every connected source at once: your CMS, commerce, customer data, and APIs, in one canvas with one preview, which is the part single-repository editors structurally cannot do.
+How does Scout use the visual workspace?
+Scout's work lands in the Workspace as staged, previewable compositions: drafts, variants, translations, and bulk changes arrive as reviewable experiences, not chat suggestions. Your team inspects, edits, and approves before publishing, with autonomy dialed per task and every agent action logged and reversible.
+Does composing visually lock my content into Uniform?
+No. The Uniform Visual Workspace composes; it does not absorb. Content stays structured in its source systems (Uniform's CMS or the ones you already own) and remains fully API-accessible, so the same content serves other channels, other tools, and the AI agents that consume it.
+Content management in Uniform
+The next 30 minutes
+See it with your own sources on the canvas
+Thirty minutes. Your sources.
+On the canvas.
+Not a slide tour of the workspace. We connect what you currently run, compose a real experience from it, and let you edit and approve it while you watch.
+00-10
+You talk.
+Which systems hold your content, your products, and your customer data, and what you are trying to ship this quarter.
+10-25
+We compose.
+Your sources on one canvas, a real experience assembled from them, edited inline, and previewed in front of you.
+25-30
+You decide.
+A straight answer on fit, a recording to share with your team, and no follow-up sequence.
+Find 30 minutes
+Not ready to talk to anyone? Fair.
+Try Uniform
+or
+read what the power of composability
+no meeting required.
 Platform
 Composable DXP
 Content management

@@ -1,48 +1,59 @@
 # https://docs.growthbook.io/bandits/overview
-Bandits | GrowthBook Docs
+Bandits - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Bandits
+Bandits
 Overview
 How it works
 Quickstart
-SDKs
+Command Palette
 Feature Flags
 Data & Metrics
 Experimentation
-Creating Experiments
-Experiment Configuration
-Experiment Templates
-Pre-Launch Checklists
-Power Analysis
-Importing External Experiments
-Delivery Methods
 Feature Flag Experiments
 Visual Editor
 URL Redirects
-Analysis & Decisions
-Make Changes to Experiments
-Experiment Results
+Experiment Configuration
+Experiment Templates
+Understanding Experiment Results
 Experiment Time Series
 Experiment Decision Framework
-Experiment Dashboards
-Dimensions
-Advanced & Statistics
+Make Changes to Experiments
 Bandits
 Overview
-Configuring Bandits
-Understanding Results
+Setting up a Bandit
+Understanding Bandit Results
+Contextual Bandits
+BETA
 Holdouts
+Sticky Bucketing
+Cluster Experiments
+Dimensions
+Customizable Pre-Launch Checklists
+Experiment Dashboards
+Importing External Experiments
+Statistics
 Insights
 Product Analytics
+NEW
 Self-Hosting
 API
 Webhooks
@@ -54,14 +65,14 @@ Knowledge Base
 GrowthBook Guide
 Experimentation
 Bandits
-Overview
-On this page
 Bandits
-Pro
-Multi Armed Bandits
-is available on Pro and Enterprise plans.
-What are Bandits?
+Copy page
+Copy page
+Run multi-armed bandits in GrowthBook to shift traffic toward the best variation on a single decision metric while reducing exposure to losers.
+Copy page
+Copy page
 ​
+What are Bandits?
 Bandits, also known as multi-armed bandits, are a type of experiment where the traffic assigned to each variation changes during the experiment. This is in contrast to standard experiments, where the percentages of traffic assigned to variations are static during the experiment.
 When your bandit is running, we recalculate the percent of traffic to allocate to each variation based on which variation (or arm) is performing better on a single
 Decision Metric
@@ -77,22 +88,22 @@ They can be more complex to set up
 They can introduce certain biases in estimating the true effect of variations
 They can, in some cases, actually do worse at picking the best variation than traditional experimentation.
 Get started with our Bandit setup guide!
-When should I run a Bandit?
 ​
+When should I run a Bandit?
 You should run a bandit when:
 You want to reduce the cost of experimentation
 You have a clear decision metric you are optimizing for
 You have many arms you want to test against one another, and care less about learning about user behavior on several metrics
-Why should I run a Bandit?
 ​
+Why should I run a Bandit?
 Bandits can
 reduce the cost of experimentation
 . By allocating larger percentages of traffic to better performing arms, you avoid driving traffic to losing variations.
 Bandits can quickly determine which variations are underperforming and direct traffic to the top performers, allowing you to
 identify the best variation more quickly
 than a standard experiment. With ten variations, a bandit may be able to quickly determine that several are poor performers. Sending traffic to the higher higher performing variations improves your ability to distinguish those high performers.
-Why should I run a standard Experiment instead?
 ​
+Why should I run a standard Experiment instead?
 Bandits require a
 single decision metric
 to optimize towards. If you have multiple metrics you care about, or if you want to understand the effect of each variation on multiple metrics, a standard Experiment may be better. Furthermore, a Bandit is more powerful if the decision metric is easy to measure right after experiment exposure. If you have a long sales cycle, or if you care about long-term effects, a standard Experiment may be better.
@@ -105,8 +116,8 @@ Bandits can even perform worse at selecting the best variation more quickly than
 If you are not using
 Sticky Bucketing
 , Bandits will cause users to change variations over time, which can be jarring for users if the feature being tested is not ephemeral, or easy to switch on and off for a given user.
-Comparison of Bandits and Experiments
 ​
+Comparison of Bandits and Experiments
 While Experiments and Bandits can be used in a host of overlapping cases, there are some rough guidelines for when to use each:
 Characteristic
 Standard Experiments
@@ -128,9 +139,9 @@ Yes
 Yes (with
 Sticky Bucketing
 )
-GrowthBook's Bandit implementation
 ​
-GrowthBook's Bandit uses Thompson sampling, a Bayesian algorithm that balances
+GrowthBook’s Bandit implementation
+GrowthBook’s Bandit uses Thompson sampling, a Bayesian algorithm that balances
 exploration
 (trying out different variations) and
 exploitation
@@ -144,8 +155,8 @@ exploits
 information about which arms are likely to be best. Sending more traffic to larger revenue arms saves money.
 Exploration vs exploitation is a fundamental tradeoff in adaptive experimentation. Proportional allocation in Thompson sampling nicely balances this tradeoff.
 In practice, GrowthBook ensures that each variation has at least 1% of traffic, in case your user behavior changes over time.
-FAQ
 ​
+FAQ
 Can I run a Bandit using the frequentist engine?
 No. Currently Bandits are available only under the Bayesian engine, where Thompson sampling is easy to employ.
 How can I translate my frequentist p-value threshold into a success criterion for the Bayesian engine?
@@ -159,20 +170,39 @@ GrowthBook uses multi-armed bandit experiments, which focus on optimizing traffi
 the Decision Metric
 ). These experiments treat all users the same, without taking individual user characteristics into account.
 In contrast, contextual bandits use user-specific attributes (like location, device type, or past behavior) to select variations, aiming to tailor the experience to each user.
-While multi-arm bandit experiments aim for a global "best" variation, contextual bandits work to find the best variation for each unique user context. If you'd like to see contextual bandits in GrowthBook,
+While multi-arm bandit experiments aim for a global “best” variation, contextual bandits work to find the best variation for each unique user context. If you’d like to see contextual bandits in GrowthBook,
 please let us know
 !
-Edit this page
-Was this helpful?
-Give Feedback
+Was this page helpful?
+Yes
+No
+Make Changes to Experiments
 Previous
-Cluster Experiments
+Setting up a Bandit
 Next
-Configuring Bandits
+⌘
+I
+On this page
 What are Bandits?
 When should I run a Bandit?
 Why should I run a Bandit?
 Why should I run a standard Experiment instead?
 Comparison of Bandits and Experiments
-GrowthBook's Bandit implementation
+GrowthBook’s Bandit implementation
 FAQ
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

@@ -1,467 +1,401 @@
 # https://www.harness.io/products/feature-management-experimentation
 Feature Management & Experimentation | AI Powered | Harness
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
+Platform
+Why Harness
 Pricing
-Learn
-Developer
-Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
-Community
-Training
-Certifications
-RESOURCES
-Ebooks
-Blog
-Case Studies
-Comparison Guide
-DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
-Events
-Upcoming Events
-On-Demand
-Harness Summits
+Customers
+Resources
 Company
-About us
-Careers
-Security
-Press & News
-Legal
-Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
+See a Demo
+Start for Free
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
+Documentation
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
 Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Split has been acquired by Harness
-Feature Management & Experimentation
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Runtime Configuration
 Overview
-Features
-Feature Management
-Create, target, and manage feature flags at enterprise scale. Accelerate releases without harming the integrity of your application.
-Release Monitoring
-Protect gradual releases by monitoring each feature’s impact on system performance and user behavior. Alerts point to the specific flag causing an issue.
-Cloud Experimentation
-Experiment without toil or a wait for dedicated specialists. Every team can innovate when scale and speed are determined by the pace of ideas, not headcount.
-Warehouse Native Experimentation
-Use your own Data Warehouse to run experiments without sharing sensitive data. Quickly validate results and share with your team.
-More
-Docs
-Documentation
-API Reference
-SDK Reference
-Release Notes
-Learn
-Training & Certification
-Success Stories
-Blog
-How does Split by Harness compare to LaunchDarkly?
-Connect
-Flagship
-Slack Community
-Tools
-Sample size and sensitivity calculator
-Split by Harness’s approach to statistics
-Feature Management & Experimentation
+AI Configs
+Configs
+Feature Flags
+Experimentation
 Overview
-Features
-Feature Management
-Create, target, and manage feature flags at enterprise scale. Accelerate releases without harming the integrity of your application.
-Release Monitoring
-Protect gradual releases by monitoring each feature’s impact on system performance and user behavior. Alerts point to the specific flag causing an issue.
-Cloud Experimentation
-Experiment without toil or a wait for dedicated specialists. Every team can innovate when scale and speed are determined by the pace of ideas, not headcount.
-Warehouse Native Experimentation
-Use your own Data Warehouse to run experiments without sharing sensitive data. Quickly validate results and share with your team.
-More
-Docs
-Documentation
-API Reference
-SDK Reference
-Release Notes
-Learn
-Training & Certification
-Success Stories
-Blog
-How does Split by Harness compare to LaunchDarkly?
-Connect
-Flagship
-Slack Community
-Tools
-Sample size and sensitivity calculator
-Split by Harness’s approach to statistics
-Contact us
-Get a demo
-Contact us
-Get a demo
-AI for Feature Management & Experimentation
-Release faster with feature flags connected to critical impact data and always know whether your software changes are making things better or worse.
-Get a Demo
-Try for Free
-See the signal
-Harness Release Agent explains your experiment results and highlights what impacts your metrics.
-Learn what matters
-Ask questions, get clear AI insights, and understand how each result drives impact for your business.
-Decide with confidence
-Act on data with guided next steps to roll out, roll back, or refine your experiment.
-Trusted by the world’s most innovative software teams
+Feature Management & Experimentation
+Release & experiment in production at the speed of AI
+The runtime management platform. Feature flags, configs, and AI configs, all governed, all targeted, all measured, all delivered at scale.
+Start for Free
+See a Demo
+<200ms
+configuration propagation
+without redeploying
+50×
+faster releases
+with feature flags
+95%
+reduction in incidents
+attributed to code changes
+Why teams switch
+Your flag tool isn't a configuration platform.
+Most teams outgrow their feature flag tool before they realize it. Runtime configuration, AI behavior, and experimentation need a foundation, not a bolt-on.
+Runtime Control
+Flags only. Configs and AI parameters remain fragmented, manual, and unmanaged.
+Manage flags, configs, and AI configs without redeploys, under one governance model.
+Governance
+Flags, configs and AI changes lack controls, audits, and approvals.
+Govern every runtime change with RBAC, policies, approvals, and audit trails.
+Experimentation
+Runtime configuration changes ship without measurement or attribution.
+Experiment across flags, configs, and AI configs with one statistical engine.
+feature management and experimentation
+Control every release, govern every config, measure every change.
+Feature flags, release monitoring, and experimentation. All connected in one delivery pipeline.
+Harness AI
+Ask Harness AI...
+Pipeline
+Flag
+create-flag
+boolean · user-percentage
+apply-policies
+org-ruleset · 2 approvals
+set-targets
+staging · 10% canary
+Rollout
+release-monitor
+p99-latency · error-rate
+gradual-rollout
+5% → 25% → 100%
+kill-switch
+auto-rollback · under 30s
+Experiment
+ab-experiment
+checkout-completion · split
+stat-analysis
+p95 · bayesian · 95% sig
+result-report
++12% lift · ready to ship
 Agent Development Lifecycle
 NEW
 Update AI behavior at runtime with built-in experimentation
 Iterate, measure, and control AI agents at runtime: swap models and prompts with AI Configs, then validate every change with AI Experiments so you can promote with confidence.
-Learn more
-AI Configs
-Use structured templates, import a prompt directly from AI Evals with environment variables and one-click promotion.
-AI Experiments
+Read about AI Config Management
+Learn more about the Agent DLC
+AI Config Lifecycle
+</>
+Score Agent Quality
+</>
+Release with AI Configs
+</>
+Measure Impact with AI Experiments
+Releasing · Production
+team_meeting_summarizer
+AI Configs.
+Use structured templates, import a prompt directly from
+AI Evals
+with environment variables and one-click promotion.
+AI Experiments.
 Validate business impact across variants, track cost and latency side by side without waiting for a redeploy.
-Enterprise Governance
+Enterprise Governance.
 Every change is orchestrated through the same pipelines, policies, and RBAC that govern your deployment and releases.
-Instant Changes and Rollbacks
+Instant Changes and Rollbacks.
 Revert to a previous prompt or model in one click leveraging Harness high-availability feature flag infrastructure.
-Release. Monitor. Experiment.
-Feature Management & Experimentation is more than a toggle. It’s a shift toward safer, faster rollout practices.
-Feature Management
-Ship 50x faster with less friction and fear.
+AI DLC
+NEW
+Extends AI to the SDLC for configs, flags, and experiments.
+Feature flags, configs, experimentation, RBAC, policies, and a global delivery network already govern how your code ships safely. Harness infused AI into the same lifecycle you already run, so every config and feature release is governed exactly like every test and deployment.
+Learn more about the AI DLC
+The AI Delivery Lifecycle
+</>
+Deploy
+10%
+</>
+Release
+50%
+</>
+Experiment
+Testing - Production
+NEW CHECKOUT FLOW
+Feature Flags.
+Progressive delivery for AI driven feature releases: ship dark, release when you're ready, and roll back in seconds.
+Configs.
+Set your schema once and serve different values and parameters to any user segment.
+Experiments.
+Measure impact at the feature level, trust the statistics behind it, and run experiments wherever your data lives.
+RBAC & Policies.
+Every change, human or agent-driven, is governed by the same approvals and OPA policies that manage production today.
+Integrated AI Features
+See the signal and measure the impact
+Use prompts to explain experiment results, highlight metric impacts, and guide your next steps: rollout, rollback, or tuning. No more spreadsheet analysis or manual metric correlation.
+Explain Results.
+AI analyzes your A/B tests and tells you what changed, by how much, and whether the result is statistically significant.
+Impact Analysis.
+See the results of flag changes on performance metrics, conversion rates, and business KPIs. Understand impact in near real-time.
+Recommendations.
+AI suggests when to roll out, scale back, or kill a feature based on its actual impact on your key metrics.
+Harness AI
+How can I help you today?
+Explain experiment results
+Why did metrics drop?
+Should I ship this variant?
+Ask Harness AI...
+Everything in one platform
+The only runtime management platform with governance built in.
+From feature rollouts to code and AI configs, every runtime change governed, targeted, and measured in one place.
 Feature Flags
-Speed up software delivery by deploying code in production without releasing it to customers. Then, safely test, target, and turn features on/off with effortless controls.
-Flexible Targeting Rules
-Whether you’re gradually rolling out features to a defined set of customers, or conducting beta tests to a random sample of users, Harness lets you customize who sees what and when.
-Dynamic Configurations
-Control components of your software features without deploying new code. This empowers entire teams to iterate in real-time with little risk of breaking things.
-Learn more
-about Feature Management
->
-Release Monitoring
-Automate issue detection, triage in under 1 minute.
-Auto-Capture Performance Metrics
-The moment you start a gradual release with a feature flag, out-of-the-box metrics automatically track performance issues and errors caused by each flag.
-Detect the Impact of Progressive Delivery
-Catch release issues most monitoring tools miss. Harness quickly detects the impact of each individual feature, even when multiple features are rolled out to small fractions of users at the same time.
-Instant Alerts & Actions
-As soon as a gradual release causes an impact on system performance or user behavior, you'll be alerted to take action.
-Learn more
-about Release Monitoring
->
+Progressive rollouts, precise targeting, and instant kill switches, without redeploying.
+Configs
+New
+First-class runtime configuration, versioned, schema-validated, and governed. Purpose-built, not retrofitted onto a flag.
+AI Configs
+New
+Swap prompts, models, and parameters at runtime. Built on Configs, not bolted onto flags.
 Experimentation
-Test, learn, and iterate efficiently to deliver more impactful products with one feature management tool.
-Cloud Experimentation
-Run self-service experiments without adding new tools, extra setup, or specialist headcount. Harness turns release monitoring into an experimentation foundation, so teams can launch A/B tests, standardize metrics, and make faster product decisions from one trusted system.
-Learn more
-about Experimentation
->
-Warehouse Native Experimentation
-Run experiments directly in your data warehouse using the metrics, SQL, and governed data your team already trusts. Eliminate ETL bottlenecks, keep sensitive data in place, and give product and data teams transparent results they can validate and act on with confidence.
-Learn more
-about Warehouse - Native Experimentation
->
-The Ugly Truth About DIY Feature Flag Tools
-DIY feature flags seem simple at first, but often lead to tech debt, resource drain, and scaling issues. This playbook shows why enterprises need professional feature management.
-Read the ebook
-Built for the Enterprise
-Architected for speed, security, and resiliency
-Scale effortlessly to millions of users without performance loss. Get fast, feature flag evaluations made locally inside your app without sending private user data to the cloud.
-Designed for Developers
-We speak your language
-Harness is compatible with the toolkits teams use every day.
-Client-side SDKs
-Android SDK
-Angular utilities
-Browser SDK
-Flutter plugin
-iOS SDK
-JavaScript SDK`
-React & React
-Native SDKs
-Redux SDK
-Server-side SDKs
-Go SDK
-Java SDK
-.NET SDK
-Node.js SDK
-PHP SDK
-PHP Thin Client SDK
-Python SDK
-Ruby SDK
-We Suit Your Stack
-Ingest events from customer data, performance monitoring, and error tracking systems to power alerts and experiments. Import data from Google Analytics, mParticle, Segment, Sentry. Export data to Datadog, Jira, New Relic, Sumo Logic.
-Switch to Harness FME
-Speedway Motors
-“People would quit if we stopped using Split. The psychological safety comes up in annual reviews.”
-Andrew Boellstorff, Director of Digital Product & Technology
+A/B testing across flags, configs, and AI configs. Sequential testing and guardrail metrics built in.
+Warehouse Native
+New
+Run experiments in your data warehouse using trusted metrics. Data never leaves your infrastructure.
+Segments
+Reusable user segments shared across flags, configs, and experiments. Define once, use everywhere.
+Release Monitoring
+Automated impact detection and rollback triggers. Know within minutes if a release is causing harm.
+Harness AI
+AI-powered rollout recommendations and impact analysis.
+Built for every role
+One tool for your whole team
+Product Managers
+Developers
+Data Scientists
+Engineering Leaders
+Product Managers
+Ship features, measure impact, and iterate fast
+Launch features to specific segments without engineering tickets
+See real-time impact on conversion, engagement, and revenue
+Pause the rollout if key metrics trend in the wrong direction
+Feature Flags · 4 active
+new-checkout-flow
+● 10% rollout
+recommended-products
+✓ Enabled
+dark-mode-toggle
+● Beta users
+payment-v2
+○ Disabled
+AI monitoring all active flags in real-time
+Developer Console · new-checkout-flow
+> Deploy behind flag: new-checkout
+✓ Deployed to prod (flag disabled)
+> Enable for internal beta testers
+✓ Monitoring metrics...
+Deploy status
+✓ Live (hidden)
+Target segment
+Internal users
+Rollback
+One click · 0 deploy
+Ship to prod now, release when you're ready
+Experiment: checkout-flow-v2 · 12400 users
+Metric
+Result
+Significance
+Conversion Rate
++12.4%
+✓ Significant
+Cart Abandonment
+-14%
+✓ Significant
+Avg Order Value
++$3
+○ Not sig.
+Recommendation
+Ship variant B
+✓ Confident
+AI: 95% confidence reached · ready to ship
+Release Health · This Month
+Active feature flags
+across all services
+42
+Avg rollback time
+no deploy required
+4.2s
+Incidents prevented
+this month via flag off
+18
+Release velocity
+vs previous quarter
++50%
+AI: 11 flags ready for cleanup · reduce flag debt
+Customer stories
+Trusted by engineering teams worldwide
+Team confidence
+“
+Harness has become a key part of our overall strategy. It increases the velocity of experimentation, strengthens our culture of safety, and helps us deliver better customer experiences every day.
+”
+—
+Andrew Boellstorff
+, Director of Digital Product & Technology
+, Speedway Motors
 Read more
-about Speedway Motors
-Experian
-“This provides so much more than just a toolset change. You know, It sounds simple, feature toggles, but it’s transformative in nature. It’s transformative for the teams in terms of the culture we adopt.”
-Mirza Baig, Senior VP of Management
-SkillShare
-“Split makes it possible to really understand how our users respond to the changes we make. Now it’s easy to know the best change for our users and how we can help them satisfy their creative journey.”
-Jean Steiner, Ph.D., VP of Data Science
-Adobe Workfront
-“Previously, we'd see a 20%-40% increase in support cases, issues & questions during the first 2 weeks of a code release. With Split, that's been basically minimized to no incidents. Support costs have been drastically reduced.”
-Engineering Manager, Adobe Workfront
-Frequently Asked Questions
-What is Feature Management?
-Feature Management is a modern software development practice that provides teams with the ability to control the lifecycle of features independently of code deployments. Harness Feature Management allows organizations to release software faster, reduce risk, and gather real-time feedback from users.
-What are advanced use cases for feature flags beyond simple on/off toggles?
-Advanced feature flag platforms extend beyond basic toggles to enable critical operational functions, such as A/B testing, gradual rollouts, and complex traffic management. High-value use cases include defining entitlements (managing API rate limits by customer tier) and safely performing major infrastructure migrations by routing small percentages of production traffic based on specific criteria.
-How does feature management enable safe Testing in Production (TiP)?
-Feature flags are the core component of safe Testing in Production (TiP), as they separate the deployment of code from its release to users. They allow new features to be deployed but hidden, enabling controlled exposure via gradual rollouts or canary releases. If an issue is detected, the flag can be instantly deactivated, mitigating risk without requiring a full application redeployment.
+ROI in weeks
+“
+The benefit and the ROI that we have seen has now been 105% according to the proof of value we did with the Harness team.
+”
+—
+Chris Davis
+, VP of Product Development
+, ADP
+Read more
+Data-driven decisions
+“
+Harness helps us understand how users respond to changes and identify the best path forward.
+”
+—
+Jean Steiner
+, VP of Data Science
+, Skillshare
+Read more
+Designed for developers
+We speak your language
+Harness FME is compatible with the toolkits teams use every day.
+All SDKs
+Client-side
+Server-side
+JavaScript
+Flutter
+Browser
+Redux
+Node.js
+Python
+Java
+Go
+.NET
+Ruby
+PHP
+Elixir
+Integrations
+Connect to your entire stack
+Flag your features, monitor with your observability tools, experiment with your analytics platform. Harness FME works with what you already use.
+Datadog
+New Relic
+Dynatrace
+Grafana
+Prometheus
+Jira
+Slack
+PagerDuty
+Microsoft Teams
+Snowflake
+Amazon Redshift
+Google BigQuery
+FAQ
+Frequently asked questions
+What is Feature Management & Experimentation?
+Feature Management & Experimentation extends traditional feature flag capabilities to cover the full lifecycle of AI agents and application behavior. It lets teams control feature releases and AI agent rollouts using the same progressive delivery primitives: percentage-based targeting, kill switches, real-time config updates, and metric-driven decisions.
+What are use cases for feature flags beyond simple on/off toggles?
+High-value use cases include AI configs and configs, and safely executing infrastructure migrations by validating new systems through dual reads, verifying they match legacy behavior, gradually ramping write traffic, and maintaining rollback capability throughout.
+How does feature management enable safe Testing in Production?
+Feature flags separate the deployment of code from its release to users. They allow new features to be deployed but hidden, enabling controlled exposure via gradual rollouts or canary releases. If an issue is detected, the flag can be instantly turned off without requiring a full application redeployment.
 How can we proactively manage and eliminate feature flag technical debt?
-Harness FME addresses the "Set It and Forget It" anti-pattern by enforcing an explicit flag lifecycle. It helps identify flags ready for retirement based on inactivity metrics (e.g., flags unmodified for 30 days) and automates the process of tracking cleanup. By integrating flag status changes with issue tracking platforms like Jira, Harness ensures that the engineering bandwidth required for code cleanup is prioritized and tracked, minimizing code bloat and maintenance complexity.
+Harness
+Worker Agents
+like FME's Feature Flag Cleanup Agent integrates directly into your pipelines to automatically detect stale flags based on rollout status, targeting rules, and inactivity metrics. Teams can run scheduled scan-only audits to build trust, then trigger cleanup workflows that generate individual draft pull requests for safe human review.
 What is Harness's approach to feature flagging?
-Harness Feature Flags lets you control features without deploying new code by decoupling deploy from release. The approach uses open source SDKs that integrate into your application code, allowing you to wrap features in flag statements that can be toggled on/off at runtime. Key differentiators include integration into CI/CD pipelines as visual workflows, built-in governance with approvals and audit trails, and automated service verification that can turn features off if issues are detected
-Related Resources
-Internal Developer Platform Golden Paths Guide
-Blog
-Internal Developer Platform Golden Paths Guide
-View
-->
-Measuring IDP Success: Metrics Beyond Tracking
-Blog
-Measuring IDP Success: Metrics Beyond Tracking
-View
-->
-Continuous Delivery Excellence with Harness IDP
-Blog
-Continuous Delivery Excellence with Harness IDP
-View
-->
-Software Delivery Platform Explained: Key Features and How to Evaluate One
-Blog
-Software Delivery Platform Explained: Key Features and How to Evaluate One
-View
-->
-How to clean up the tech debt your AI is creating
-On-demand Webinar
-How to clean up the tech debt your AI is creating
-View
-->
-Better Together with Harness: Deploying a feature and releasing it are two different things.
-On-demand Webinar
-Better Together with Harness: Deploying a feature and releasing it are two different things.
-View
-->
-More AI Code, Less Certainty: Why Production Measurement Is the New Code Review
-On-demand Webinar
-More AI Code, Less Certainty: Why Production Measurement Is the New Code Review
-View
-->
-Experimentation: A Nice-to-Have?
-eBook
-Experimentation: A Nice-to-Have?
-View
-->
-How DigiCert Secured 99.99% Reliability and Global Scale
-DigiCert
-How DigiCert Secured 99.99% Reliability and Global Scale
-View
-->
-From Weeks To Days: Inside ADPs Rollout Engine With Harness FME
-ADP
-From Weeks To Days: Inside ADPs Rollout Engine With Harness FME
-View
-->
-Speedway Motors Accelerates Innovation and Customer Conversion with Harness Feature Management & Experimentation
-Speedway Motors
-Speedway Motors Accelerates Innovation and Customer Conversion with Harness Feature Management & Experimentation
-View
-->
-Cost & Optimization
-Cost & Optimization
-Security & Compliance
-Security & Compliance
-Testing & Resilience
-Testing & Resilience
-DevOps & Automation
-DevOps & Automation
-AI Evals
-AI Evals
-AI Security
-AI Security
-Web Application & API Protection
-Web Application & API Protection
-Application & API Security Testing
-Application & API Security Testing
-Software Composition Analysis
-Software Composition Analysis
-Application & API Posture Management
-Application & API Posture Management
-Application Security Testing
-Application Security Testing
-Application & API Protection
-Application & API Protection
-AI SRE
-AI SRE
-Feature Flags
-Feature Flags
-AI Test Automation
-AI Test Automation
-Cloud Development Environments
-Cloud Development Environments
-Database DevOps
-Database DevOps
-Artifact Registry
-Artifact Registry
-Open Source
-Open Source
-Code Repository
-Code Repository
-Supply Chain Security
-Supply Chain Security
-Infrastructure as Code Management
-Infrastructure as Code Management
-Harness AI
-Harness AI
-Continuous Error Tracking
-Continuous Error Tracking
-Internal Developer Portal
-Internal Developer Portal
-AI DLC Insights
-AI DLC Insights
-Cloud & AI Cost Management
-Cloud & AI Cost Management
-Resilience Testing
-Resilience Testing
-Continuous Delivery & GitOps
-Continuous Delivery & GitOps
-Security Testing Orchestration
-Security Testing Orchestration
-Service Reliability Management
-Service Reliability Management
-Feature Management & Experimentation
-Feature Management & Experimentation
-Continuous Integration
-Continuous Integration
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
+Harness Feature Flags lets you control features without deploying new code by decoupling deploy from release. SDKs integrate into your application code, allowing you to wrap features in flags that can be toggled on or off at runtime. Key differentiators include CI/CD pipeline integration, built-in governance with approvals and audit trails.
+Get started with Harness Feature Management & Experimentation
+Governed pipelines. Real-time control. Experiments that measure outcomes. All within the platform your team already uses.
+Start for Free
+See a Demo
+AI for everything after code.
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
+Overview
+Why Harness
+Knowledge Graph
 Pricing
-View plans
-For Developers
+Trust Center
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
 Resources
 Blog
+Resources Hub
+Customer Stories
 Comparison Guide
-Collateral
-Customers
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
-Webinars
-Support
-Professional Services
+Events
+Community
+API Reference
 Company
 About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-Feature Management & Experimentation

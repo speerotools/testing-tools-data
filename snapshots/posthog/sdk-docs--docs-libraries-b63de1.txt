@@ -83,28 +83,28 @@ Feature flags
 Group analytics
 Error tracking
 Logs
-Flutter
-.NET
-JavaScript web
-Java
 Android
-Node.js
-Elixir
-React
 Go
+Java
 Capacitor
-React Router
-Kotlin Multiplatform
-iOS
-Unity
-Ruby
-PHP
-Python
-React Native
-Roblox
-Rust
-Vue.js
+.NET
+Flutter
+Elixir
 Next.js
+React
+React Router
+Python
+iOS
+Roblox
+JavaScript web
+Rust
+PHP
+Kotlin Multiplatform
+React Native
+Node.js
+Vue.js
+Ruby
+Unity
 Developer tools
 In addition to SDKs, PostHog offers tools for managing your analytics infrastructure programmatically:
 Terraform provider
