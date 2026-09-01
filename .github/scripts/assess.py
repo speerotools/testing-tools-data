@@ -50,6 +50,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -71,7 +72,7 @@ DRY_RUN   = os.environ.get("DRY_RUN", "false").lower() == "true"
 MAX_ASSESS = int(os.environ.get("MAX_ASSESS", "40"))
 ASSESS_LOW = os.environ.get("ASSESS_LOW", "false").lower() == "true"
 MAX_PROPOSALS = int(os.environ.get("MAX_PROPOSALS", "50"))
-PER_VENDOR_CAP = int(os.environ.get("PER_VENDOR_CAP", "8"))
+PER_VENDOR_CAP = int(os.environ.get("PER_VENDOR_CAP", "4"))
 MIN_EVIDENCE_LEN = int(os.environ.get("MIN_EVIDENCE_LEN", "40"))
 MIN_ADDED = int(os.environ.get("MIN_ADDED", "2"))  # min GENUINELY-new content lines to bother assessing
 # URL types that are narrative/marketing/dynamic — facts belong on docs/pricing/
@@ -174,6 +175,7 @@ def commit_url(path: str) -> str:
 
 PROPOSAL_SCHEMA = {
     "type": "ARRAY",
+    "maxItems": 4,   # hard structural cap: a page yielding more is list-enumeration, not change
     "items": {
         "type": "OBJECT",
         "properties": {
@@ -207,7 +209,7 @@ RULES (follow exactly):
 8. Status (lifecycle): only Active/Acquired/Discontinued/Sunsetting, and ONLY with vendor- or acquirer-owned evidence (sunset notice, acquisition release, a page that stopped selling). A 404/dead page is NEVER grounds for Discontinued.
 9. Price range (low/high) is a 1-5 proxy, not currency; propose only if the diff clearly moves the tier.
 10. Confidence: calibrate honestly. Docs/pricing/trust evidence that explicitly names the fact = high (0.85+). Anything inferred, or from a blog/marketing page = low (below 0.6). Do not return 1.0 unless the quote is unambiguous and from an authoritative page.
-11. If a single page appears to add many (5+) capabilities, it is almost certainly marketing copy — return [].
+11. HARD LIMIT: propose at most 3 changes for this page, the most significant genuinely-new facts only. NEVER enumerate a list. If a docs/integration/SDK page lists many items, do not turn each into a proposal, that is the page's normal catalog, not a change. If you find yourself wanting to propose more than 3, the page is a list and the right answer is the 1-2 most important truly-new additions, or [].
 
 VENDOR: {vendor}
 URL (type: {url_type}): {url}
@@ -233,10 +235,18 @@ def gemini_assess(prompt: str) -> list[dict]:
         },
     }
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_KEY}"
-    req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                 headers={"Content-Type": "application/json"}, method="POST")
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        data = json.loads(resp.read().decode())
+    data = None
+    for attempt in range(2):
+        try:
+            req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                         headers={"Content-Type": "application/json"}, method="POST")
+            with urllib.request.urlopen(req, timeout=180) as resp:
+                data = json.loads(resp.read().decode())
+            break
+        except Exception as e:
+            if attempt == 0:
+                time.sleep(4); continue
+            raise
     try:
         text = data["candidates"][0]["content"]["parts"][0]["text"]
         return json.loads(text) or []
@@ -416,8 +426,10 @@ def main() -> None:
     print(f"Dropped {dropped['evidence']} thin-evidence; flagged {dropped['noncanonical']} non-canonical as new_canonical_option.")
 
     if len(proposals) > MAX_PROPOSALS:
-        print(f"ERROR: {len(proposals)} proposals exceed cap {MAX_PROPOSALS}; aborting without writing.", file=sys.stderr)
-        sys.exit(1)
+        proposals.sort(key=lambda p: -(p.get("confidence") or 0))
+        print(f"{len(proposals)} proposals over cap {MAX_PROPOSALS}; keeping the top {MAX_PROPOSALS} "
+              f"by confidence, deferring the rest (do not dump everything on the reviewer).")
+        proposals = proposals[:MAX_PROPOSALS]
 
     print(f"{len(proposals)} proposals generated.")
     for p in proposals:
