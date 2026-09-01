@@ -17,6 +17,7 @@ Session Replay
 Zoning Insights
 Heatmaps
 Amplitude AI
+Agent Analytics
 Wave
 AI Assistant
 Web Experiment
@@ -63,7 +64,7 @@ npm
 ·
 @amplitude/unified
 v
-1.1.30
+1.1.31
 Android SDK
 Native Android apps with Kotlin. Works with Jetpack Compose, Views, and mixed codebases.
 maven
@@ -82,7 +83,7 @@ npm
 ·
 @amplitude/analytics-react-native
 v
-1.7.0
+1.8.0
 Flutter SDK
 Cross-platform mobile, web, and desktop apps with Flutter and Dart.
 pubdev
@@ -218,14 +219,14 @@ npm
 ·
 @amplitude/session-replay-browser
 v
-1.48.3
+1.49.0
 iOS
 Capture session replays from native iOS applications.
 cocoapods
 ·
 AmplitudeSessionReplay
 v
-0.12.6
+0.12.7
 BETA
 Android
 Capture session replays from native Android applications.
@@ -233,7 +234,7 @@ maven
 ·
 com.amplitude:plugin-session-replay-android
 v
-0.28.0
+0.28.1
 BETA
 React Native
 Capture session replays from React Native applications.

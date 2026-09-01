@@ -1,28 +1,39 @@
 # https://docs.growthbook.io/guide/bigquery
-GrowthBook and BigQuery | GrowthBook Docs
+GrowthBook and BigQuery - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Connecting to Your Data Warehouse
+GrowthBook and BigQuery
 Overview
 How it works
 Quickstart
-SDKs
+Command Palette
 Feature Flags
 Data & Metrics
 Choose Your Data Path
 Managed Warehouse
 Connecting to Your Data Warehouse
 Athena
+Adobe Experience Platform
 BigQuery
-Clickhouse
+ClickHouse
 Databricks
 Mixpanel
 MS SQL or SQL Server
@@ -42,6 +53,7 @@ Official Resources
 Experimentation
 Insights
 Product Analytics
+NEW
 Self-Hosting
 API
 Webhooks
@@ -53,12 +65,15 @@ Knowledge Base
 GrowthBook Guide
 Data & Metrics
 Connecting to Your Data Warehouse
-BigQuery
-On this page
 GrowthBook and BigQuery
+Copy page
+Copy page
+Create a BigQuery service account, grant read access, and connect it to GrowthBook as a data source.
+Copy page
+Copy page
 This document outlines the steps needed to add your BigQuery database to GrowthBook.
-1. Create a service account for GrowthBook
 ​
+1. Create a service account for GrowthBook
 Within your
 Google Cloud console account
 , create a service account for GrowthBook to use
@@ -76,14 +91,14 @@ Manage Keys
 There are two ways to provide credentials to GrowthBook:
 Auto-discovery from environment variables or GCP metadata (only available when self-hosting)
 Upload a JSON key file for the service account
-We're going to show how to do the JSON key file method. On the keys page, add a new key, and select JSON.
+We’re going to show how to do the JSON key file method. On the keys page, add a new key, and select JSON.
 This will cause the JSON key to be downloaded to your computer.
-2. Connect GrowthBook to BigQuery
 ​
-From the Metrics and Data → Data Source page, click on add new data source and select the event tracker you're using. If your event tracker is not listed, or you're using something custom, click on the "Custom" button at the bottom.
+2. Connect GrowthBook to BigQuery
+From the Metrics and Data → Data Source page, click on add new data source and select the event tracker you’re using. If your event tracker is not listed, or you’re using something custom, click on the “Custom” button at the bottom.
 Selecting an event tracker here will pre-populate the experiment exposure query which is need to determine which user saw which experiment variation. Depending on your needs, you may still need to adjust these queries to match your specific schema.
 Select BigQuery as the data source type.
-Add the names you'd like to use, and select the JSON key file that was downloaded earlier.
+Add the names you’d like to use, and select the JSON key file that was downloaded earlier.
 Growthbook will use the
 Project Id
 and
@@ -94,35 +109,51 @@ Google Cloud explorer
 experiment_viewed
 if you use Segment or Rudderstack).
 When you click save, GrowthBook will test the connection to make sure the credentials are correct. If the connection is successful, you should see a success message on the next page.
-Enabling Data Pipeline Mode
 ​
-Enterprise
-Pipeline Mode
-is available on Enterprise plans.
+Enabling Data Pipeline Mode
 Pipeline mode can reduce query costs if you grant the GrowthBook service account write permissions in your data warehouse.
 More details can be found here.
-Monitoring GrowthBook query cost
 ​
+Monitoring GrowthBook query cost
 Whenever we query your BigQuery database we add
 { integration: "growthbook" }
 as a label to the query job to make it easy for you to monitor cost or filter GrowthBook query jobs by label for other use cases.
 Read more about how to
 group by label value for a specific key here.
-Troubleshooting
 ​
+Troubleshooting
 For help debugging missing experiment data in your BigQuery instance, please see our
 Google BigQuery (BQ) Troubleshooting Guide
 and our our
 Google Analytics (GA4) Troubleshooting Guide
-Edit this page
-Was this helpful?
-Give Feedback
+Was this page helpful?
+Yes
+No
+Adobe Experience Platform Query Service
 Previous
-Athena
+Setting Up ClickHouse as a Data Source
 Next
-Clickhouse
+⌘
+I
+On this page
 1. Create a service account for GrowthBook
 2. Connect GrowthBook to BigQuery
 Enabling Data Pipeline Mode
 Monitoring GrowthBook query cost
 Troubleshooting
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

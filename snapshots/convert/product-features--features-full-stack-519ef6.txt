@@ -16,153 +16,296 @@ GDPR
 Request a Demo
 Try For Free
 Login
-Optimize Every Customer Interaction. Be Truly Customer-Focused
-Convert’s Full-Stack module lets you run tests server-side, improve & monetize apps, and innovate across deep-impact areas like merchandising, algorithm choice, and checkout optimization.
-Starting $399/month.
-Try Full-Stack Free For 15 Days
-Proudly powering experimentation programs of brands you know
-You Came Looking for This: Here Are Our Full-Stack Features Compared Across Plans
-Don’t pay more!
-All Convert plans come with conventional web testing + full-stack access.
-Optimizely
+Convert Experiences
+Server-side A/B testing software that
+runs where decisions happen
+Convert's full-stack experimentation is supported by the server layer, so your pricing logic, recommendation algorithms, and feature rollouts are tested where decisions actually happen. Server-rendered variations avoid client-side replacement flicker, your application supplies the visitor ID (which remains persistent), and reporting is unsampled. Marketers get cleaner results. Developers get 6 FullStack SDKs and the MCP server for fast test deployment across channels, with their own AI agents.
+Start free trial
+Book a demo
+Trusted infrastructure
+400,000+ experiences served
+40,000+ sites running Convert
+SOC 2 · ISO 27001 · HIPAA · GDPR · CCPA
+Sub-3-minute average support response
+16 years building experimentation infrastructure
+WHO USES CONVERT EXPERIENCES FULL STACK (SERVER-SIDE)?
+Server-side testing built for the teams doing real work at the application layer
+Whether you're testing back-end pricing models, shipping code with feature flags, or delivering server-side programs for clients, Convert has the infrastructure to match.
+E-commerce
+SaaS
+Agencies
+Test pricing logic and checkout flows without touching the front end
+Client-side testing has a ceiling. When your most consequential experiments live in back-end pricing rules, recommendation algorithms, or cart logic, the browser is the wrong place to run them. Convert's FullStack SDKs - JavaScript (Node.js and compatible edge runtimes), PHP, Python, Ruby, Android, and iOS - give engineering teams the same server-side bucketing and controls needed to test pricing logic, recommendations, APIs, and checkout behavior within the application stack.
+Run back-end pricing tests without exposing variant logic to the browser
+Avoid client-side replacement flicker on high-stakes product and checkout pages
+Convert reports eligible exposure and conversion events from your tracking flow without report sampling
+$1.27M a year more with Convert SDKs
+→
+Experiment on onboarding logic and feature rollouts at the code level
+Activation rate tests rarely live in the UI. The decisions that move trial-to-paid conversion, such as feature sequencing, paywall logic, and API response behavior, happen in your application layer. Convert's server-side testing lets SaaS teams run statistically rigorous experiments directly in code, with Frequentist, Bayesian, and Sequential testing models available.
+Test feature flag rollouts across 10%, 25%, or 100% of users safely
+Sequential testing monitors results without inflating false positive rates
+Integrate natively with Amplitude, Mixpanel, or Heap with no data silos
+Start free trial
+→
+Deliver server-side programs across every client account from one platform
+Running server-side experimentation for multiple clients means managing the SDK, test logic, and reporting across entirely different tech stacks without letting one client's configuration bleed into another. Convert's multi-project architecture gives CRO agencies centralized billing, isolated client environments, and an API that can be integrated into CI/CD workflows for supported experiment-management and application-delivery use cases.
+Manage unlimited client projects with isolated environments and centralized billing
+Deploy and update experiments via the Convert API inside client pipelines
+Deliver unsampled reports clients can trust without caveats
+How Anatta Design won a reluctant client with us
+→
+‹ Projects
+FS project
+✦
+Your account
+Compass
+Experiences
+Locations
+Audiences
+Features
+Goals
+Live Logs
+Search...
+Add Filter
+New Experience
+New Feature
+Experience Name
+Conv. / Vis.
+Environment
+pricing-logic-test
+0 / 0
+Production
+checkout-step-order
+0 / 0
+Production
+recommendation-sort
+0 / 0
+Production
+Feature Name
+ID
+Key
+Status
+New onboarding flow
+100312
+new-onboarding-flow
+active
+Paywall logic
+100287
+paywall-logic
+active
+Checkout rollout
+10037
+checkout-rollout
+active
+Full-stack experiences, decided before the response is sent
+Feature flags live here — roll forward without another deployment
+Every client project isolated, billed centrally
+Why Convert
+Three reasons engineering and growth teams choose Convert for server-side testing
+Transparent pricing, data quality that reflects reality, and a developer workflow that doesn't fight your existing pipeline.
+01 · Pricing
+Run server-side tests at Pro pricing, not enterprise pricing
+On Optimizely, full-stack testing is a separate product. On VWO, it requires an enterprise contract. With Convert, Full Stack experimentation and Feature Flags are available on Convert Pro and Enterprise, with Pro starting at $420 per month and including sequential testing and both Frequentist and Bayesian stats engines. No separate product purchase required.
+Full Stack experimentation and Feature Flags are available on Convert Pro and Enterprise
+Sequential Testing, Frequentist, and Bayesian stats all in Pro
+No separate product purchase to unlock server-side testing
+A comparison matrix: four server-side capabilities available on Convert Pro, each gated behind a separate product or an enterprise contract on Optimizely and VWO
+Attribute
 Convert
-Free Rollouts
-Rollouts Plus
-Accelerate
-Scale
-Growth
 Pro
+Optimizely
+Full Stack
+VWO
+Testing
+Full-Stack Testing
+Included
+Separate product
 Enterprise
-Number of Tested Users per month
-100,000
-500,000
-500,000
-500,000
-100,000
-500,000
->1M
-Price per month (monthly plan)
-Free
-Gated Pricing
-Gated Pricing
-Gated Pricing
-$399
-$1,899/mo
-Contact Sales
-Price per month (annual plan)
-Free
-Gated Pricing
-Gated Pricing
-Gated Pricing
-$299/mo
-$1,330/mo
-Contact Sales
-Annual price
-Free
-Gated Pricing
-Gated Pricing
-Gated Pricing
-$3,588/yr
-$15,960/yr
-Contact Sales
-Forced plan upgrades
-N/A
-–
-Discount: 2 years
-N/A
-Unknown
-Unknown
-Unknown
-Discount: 3 years
-N/A
-Unknown
-Unknown
-Unknown
-Auto-Upgrade
-Unknown
-Unknown
-Unknown
-Unknown
-No (overcharge per 100K $399)
-No (overcharge per 250K $699)
-No
-View Full Comparison
-Try Full-Stack Free For 15 Days
-Beyond Visual Changes, Test for Performance & Efficiency
-Can you serve image swaps and copy tests through our Full-Stack module? Yes.
-Is it the best use of its power and your resources?
-No!
-Try Convert’s Full-Stack if these apply to you.
-You Value Flicker-Free, Consistent Experiences
-Tests aren’t meant to be high-fidelity prototypes. But issues like flickering are validity threats. Rolling out variations from the server as your hub eliminates performance degradation through latency (load delays) and flickering.
-Moreover, server-side A/B tests translate equally well across different platforms - web, mobile web, and native apps.
-You Care About What Isn’t Immediately Visible
-When you think of testing or optimization, you think of re-ordering a store menu, or even playing around with the carousels… In B2B? How about progressive profiling in your forms?
-However, if you’re eyeing experimenting with back-end processes like pricing models and feature availability -- Full-Stack is your technology of choice.
-Security Is of Paramount Importance
-Server-side tests expose less sensitive data and the code logic of the experiment to the end user.
-Depending on what you are working to improve, this may be non-negotiable for you and your team.
-You Want to Learn Everywhere, from One Interface
-Today’s audience exists in an omni-channel ecosystem.
-Prospects typically interact with your brand online and offline, before investing their loyalty in a product or service.
-Want to understand what unique value propositions impact their decisions? Want to gauge how that new paywall in your native app is nudging users towards monetization? What’s better for the in-store experience -- a self-service kiosk or a hybrid of assistants & AI?
-Full-Stack lets you run tests and personalizations across every step of the buyer’s journey, implementing significant changes and betting bigger bets.
-Our Javascript SDK ensures compatibility with any environment - from NodeJS (typically server-side) to ReactJS (driving SPAs).
-True customer-centricity and learning can only come from a full-stack approach.
-Try Full-Stack Free For 15 Days
-What Lean Marketing & Product Teams Need to Be Effective. None of the Fluff.
-Server-side & client-side tests, feature flags, feature tests, and roll-outs
--- starting $399per month.
-Convert Full-Stack uses our Javascript SDK.
-It runs both server-side (NodeJS) and client-side (ReactJS or SPAs).
-Learn More
-The video can't be displayed right now. Please reload or contact support if the issue continues.
-Reload Video
-Better Control Over Your Tests. With Server-Side Technology.
-In the server-side set up, content & logic are determined by the server hub - before variants are pushed out to devices.
-This means your tests are more consistent across platforms, and there is less exposure of sensitive data and experiment logic to the end-user.
-Gather Real-Time Feedback to Build High-Converting Products & Experiences. Thanks to Feature Flags.
-Switch on/off specific features for particular audience segments, without using additional code.
-With feature flags, you gather early feedback about proposed releases, working out kinks in advance.
-Marketing teams benefit from Feature flags too. Think of this particular capability as personalizations on overdrive.
-Want to filter your product catalog based on past behavior for existing buyers while new prospects see different results?
-Use Feature flags to experiment your way to the most viable solution.
-Try Full-Stack Free For 15 Days
-De-risk New Releases. With Rollouts.
-Got a most-requested feature in the pipeline?
-Engagement is great, til it's not!
-Enthusiastic use of new functionality by a large number of users may cause your system to crash.
-Use rollouts to control how many users get access to features, allowing more onboardings with time.
-Find the Optimal Version of Each App Feature. With Feature Testing.
-Help your features be the best versions of themselves.
-Think of feature testing as a personal development mentor for your app.
-Experiment with slightly different (or radically altered) versions of the same feature to determine the one that ticks all the checkboxes of performance and stability for your audience.
-If you can imagine it, you can try it.
-I am a marketer. Does Full-Stack help me?
-Convert's Full-Stack module fosters better and deeper experimentation. Client-side A/B testing is a limited facet of the cycle of trying new things, learning, and evolving.
-With Full-Stack:
-You can ensure tests don't flicker, add latency to pages, or break on devices - with a greater degree of control than when the variants are assembled and served solely client-side.
-You get Feature-Flags - which are like personalizations on over-drive. Instead of minor copy and visual changes, you can personalize the way a site behaves, in response to audience characteristics.
-Rollouts aren't just the domain of product and engineering teams. You thrive on Voc data and feedback. By allowing limited groups exposure to offers and campaigns, you can make improvements in real-time, simultaneously learning and optimizing for performance.
-Try Full-Stack Free For 15 Days
-From Prospect to Buyer, Faster.
-With Convert’s Full-Stack Module
-Form
-Online
-A/B test the number of form fields and progressive disclosure.
-App
-Online
-Use feature flags to assist hesitant prospect segments with product customization.
-In-Store
-Offline
-A/B test recommendations based on customization history, versus showing new offers.
-Checkout
-Online
-Auto-apply a generous discount to the carts of prospects who’ve already visited the store. Rollouts ensure a critical process like the checkout doesn’t crash.
-Post-purchase
-Online
-Good old A/B test gauges how post-purchase recommendations drive additional revenue.
-Try Full-Stack Free For 15 Days
+Sequential Testing
+Included
+Enterprise
+Enterprise
+Feature Flags
+Included
+Enterprise
+Enterprise
+Bayesian + Frequentist Stats
+Included
+Enterprise
+Enterprise
+Convert Pro from $420/month
+02 · Data quality
+Your server-side test results reflect reality
+Convert Experiences' full-stack set-up avoids the pitfalls of client-side testing and less thoughtfully engineered server-side deployments:
+Server-rendered variations avoid client-side flickering.
+Convert reports eligible conversion events sent through the implemented tracking flow without report sampling, so you avoid sampling errors inherited from GA4 or Adobe.
+Server-side decisioning avoids dependence on client-side script execution when iOS ITP or ad blockers limit cookies.
+Finally, the 6 SDKs ensure persistent bucketing IDs across channels for a consistent experience and tracked events are still delivered even when a visitor's connection drops.
+03 · Developer workflow
+Your dev team ships and monitors server-side tests without leaving the pipeline
+Convert API v2 and the JavaScript SDK let your engineering team manage experiments and pull reporting data programmatically, so server-side/backend tests can be built, launched, and monitored right from your CI/CD pipeline instead of a separate UI.
+Manage and report on tests without switching tools
+- Convert API v2 lets your CI/CD scripts create, launch, and pull results for server-side tests directly from the pipeline.
+Authenticate pipeline calls securely, with no manual step
+- API v2 and SDK calls use the documented SDK Key / SDK Key Secret auth, so automated pipeline jobs can call Convert without a human logging into a dashboard.
+Fix issues fast without stalling the pipeline
+- if a live backend test breaks, Convert's support team responds in under 3 minutes on average, minimizing the time your deployment process is blocked waiting on a resolution.
+Developer-first
+Read the API docs
+Convert API v2 · MCP server · JavaScript SDK · quickstart
+npm install @convertcom/js-sdk
+View docs →
+Platform capabilities
+Built for server-side teams, with Full Stack experimentation and Feature Flags on Convert Pro and Enterprise
+Convert gives engineering, product, and growth teams the infrastructure to run serious server-side experimentation without feature gates or enterprise paywalls where they don't belong.
+Full-Stack / Server-Side Testing
+Pro & Enterprise
++
+−
+Problem it solves
+Run experiments on pricing logic, recommendation algorithms, API responses, onboarding flows, and backend services. Variants are determined server-side before content reaches the device.
+How your team benefits
+Product and engineering teams gain the freedom to test any layer of the stack. Client-side tools can only touch look and feel; server-side unlocks the logic underneath.
+Feature Flags
+Pro & Enterprise
++
+−
+Problem it solves
+Toggle specific features on or off for defined audience segments without a new deployment. Supports gradual rollouts and production testing with isolated exposure.
+How your team benefits
+After a feature has been integrated behind a Convert flag, authorized teams can disable it or adjust its rollout without another application deployment.
+JS Conditions
+Pro & Enterprise
++
+−
+Problem it solves
+Write real JavaScript targeting conditions: fire experiments based on any custom logic, data attribute, cookie value, or API response your server exposes.
+How your team benefits
+For server-side targeting, pass supported visitor and location properties into the SDK context, then configure audiences and locations to evaluate those values.
+DMP / Audience Targeting
+All plans
++
+−
+Problem it solves
+Segment users using first-party data and custom attributes: account tier, pipeline value, behavioral history, or any attribute your backend surfaces. No reliance on browser-side signals.
+How your team benefits
+Target with the precision your CRM and data warehouse already enable. Move beyond "returning visitor" to "enterprise accounts in trial" or "users who hit the paywall twice."
+Sequential Testing
+Pro & Enterprise
++
+−
+Problem it solves
+Monitor live experiment results at any point without inflating false positive rates. No need to pre-commit to a fixed sample size before peeking at the data.
+How your team benefits
+Engineering and product teams make faster, safer decisions on backend changes, especially during high-stakes releases, without waiting for an arbitrary end date.
+Multi-Arm Bandits
+Pro & Enterprise
++
+−
+Problem it solves
+Automatically shift traffic toward the best-performing server-side variant in real time. Ideal for time-sensitive experiments like pricing tests, promotional logic, or algorithm variants.
+How your team benefits
+Stop leaving revenue on a static 50/50 split during peak periods. The platform adapts traffic allocation dynamically so your best variant earns more exposure while the test runs.
+Frequentist + Bayesian Statistics
+All plans
++
+−
+Problem it solves
+Choose the statistical model that fits your experiment design. Frequentist for controlled, fixed-horizon tests; Bayesian for continuous monitoring and probabilistic decision-making.
+How your team benefits
+Data and analytics teams aren't forced into a single framework. Match the stats model to the experiment type, especially important when testing backend logic with variable traffic patterns.
+No-Flicker Loading
+All plans
++
+−
+Problem it solves
+When the assigned content is generated before the response is sent, server-rendered variations can avoid the client-side replacement flicker that affects many client-side implementations.
+How your team benefits
+Server-rendered variations can avoid client-side replacement flicker, so when the variation is delivered before the response is rendered there's no client-side content swap. Hybrid apps may still render some changes client-side.
+Unsampled Reporting
+All plans
++
+−
+Problem it solves
+Convert reports eligible exposure and conversion events sent through the implemented tracking flow without report sampling. No statistical approximations applied to raw results.
+How your team benefits
+When testing backend logic that affects revenue, attribution, or product behavior, sampled data is a liability. Full fidelity reporting means decisions are made on the complete picture.
+Use cases
+What teams actually run on Convert's server-side infrastructure
+From pricing logic to regulated-industry compliance, here's what server-side experimentation looks like in production.
+01 · E-commerce
+Test Pricing Logic Without Browser Risk
+Validate dynamic versus flat pricing models at the server layer before committing to a change. Because the variation is generated before the response is sent, revenue-critical logic stays out of the browser and avoids client-side replacement flicker, ad blockers, and client-side manipulation.
+02 · Engineering
+Ship Features Safely With Flag-Controlled Rollouts
+Release new functionality to 10%, 25%, or 100% of users via Feature Flags, available on Convert Pro and Enterprise, giving engineering teams a controlled rollout path without a separate flagging tool.
+03 · Regulated industries
+Run Clean Tests on Regulated or Privacy-Sensitive Sites
+Server-side decisioning avoids dependence on client-side script execution affected by ITP, making Convert a strong fit for healthcare, insurance, and mental health platforms where HIPAA and GDPR accuracy matter. Consistent bucketing still requires a stable visitor or user identifier your application can lawfully persist and pass to the SDK.
+04 · SaaS
+Optimize Recommendation Algorithms in the Back End
+Pit profit-margin sorting against click-through sorting directly at the API response layer, so SaaS and ecommerce teams measure the revenue impact of algorithmic changes without touching a line of front-end code.
+From the Convert blog
+Go deeper on server-side experimentation
+A/B Testing
+Client-side Testing Vs. Server-side Testing: Which Should I Do?
+Read on the Convert blog
+→
+Support
+Combat ITP’s Impact on Your A/B Test Results
+Read on the Convert blog
+→
+Full-Stack Experimentation
+Feature Flags and Rollouts: The Complete Experimenter’s Guide
+Read on the Convert blog
+→
+A/B Testing
+How to Prevent P-Hacking in A/B Testing (Using Convert)
+Read on the Convert blog
+→
+Frequently asked questions
+What engineering and growth teams ask before switching their server-side testing to Convert.
+Can I use Convert Experiences for true server-side A/B testing, or is it mainly a client-side testing tool?
++
+−
+Convert Experiences supports true server-side A/B testing through its full-stack experimentation capabilities and SDK-based setup. Your team can run experiments where the decision happens in your application code, API layer, or backend logic instead of in the browser. This is the right setup when you need to test pricing logic, recommendation algorithms, feature rollouts, or API responses.
+How does Convert Experiences handle implementation for server-side experiments if my team already has an existing release workflow?
++
+−
+Convert Experiences is built to fit into developer-led release workflows. You can manage experiments through the JavaScript SDK, feature flags, and Convert API v2, which supports documented experiment-management and reporting operations and can be integrated into CI/CD workflows for supported use cases. Review the current API reference to confirm the endpoints your workflow needs. This lets your team keep experiment logic close to the codebase and deployment process you already use.
+Will server-side testing with Convert Experiences help me avoid flicker and browser-side rendering issues?
++
+−
+Server-rendered variations can avoid client-side replacement flicker when the assigned content is generated before the response is sent. Because the decision is evaluated before the experience is rendered, the application can deliver the assigned variation without a client-side content swap, so users don’t see the original version flash first. Hybrid apps may still render some changes client-side. This matters most for pricing, checkout, and regulated use cases where visual inconsistency affects trust or data quality.
+Can I use Convert Experiences to test backend logic like pricing rules, recommendation algorithms, or API responses?
++
+−
+Yes. Convert Experiences is designed for server-side experiments that go beyond page-level changes. Your team can test dynamic pricing models, recommendation logic, onboarding sequences in apps, and API payload behavior where no browser-based visual editor applies. If what you want to test lives in code or infrastructure, Convert Experiences supports that use case.
+How accurate is Convert Experiences for server-side experimentation when cookies are blocked or browser tracking is limited?
++
+−
+Server-side decisioning avoids dependence on client-side script execution affected by ITP, ad blockers, or consent restrictions because the decision happens outside the browser. Consistent bucketing still requires a stable visitor or user identifier your application can lawfully persist and pass to the SDK. Convert Experiences reports eligible exposure and conversion events sent through the implemented tracking flow without report sampling. For teams focused on cleaner data collection, server-side testing gives you a more controlled measurement setup.
+Can I roll out server-side experiments gradually, like a feature flag, instead of exposing 100% of users at once?
++
+−
+Yes. Convert Experiences supports feature-flag style rollouts as part of its full-stack testing capabilities. Your team can release a change to a defined percentage of users first, then expand from 10% to 25% to 100% as confidence grows. This reduces release risk while still measuring user impact and conversion outcomes.
+How does Convert Experiences fit with my existing analytics, data warehouse, or CRM stack for server-side testing?
++
+−
+Convert Experiences integrates with GA4, Amplitude, Mixpanel, Segment, mParticle, HubSpot, and Salesforce, among others. That means you can run server-side tests in Convert Experiences while sending experiment and conversion data into the systems your team already uses for analysis. Convert Experiences is an experimentation platform, not a CDP, so it is designed to work with your existing stack rather than replace it.
+Can my developers and marketers both work in Convert Experiences without creating workflow bottlenecks on server-side tests?
++
+−
+Yes. Developers own code-based experiment logic, while marketers and CRO teams still access reporting, goals, and experiment management. Server-side tests typically require developer implementation, but Convert Experiences does not force the rest of the team out of the process. Teams can review results, manage projects, and coordinate experiments without a separate enterprise services layer.
+What happens if I need support during a live server-side experiment or rollout?
++
+−
+Convert’s average support response time is under 3 minutes, handled by humans rather than a chatbot workflow. That is particularly important for server-side testing, where issues can involve implementation details, rollout behavior, or data validation. If support responsiveness is part of your vendor evaluation, Convert Experiences is built to be operationally dependable.
+Is Convert Experiences a good fit for server-side testing in privacy-sensitive or regulated environments?
++
+−
+Yes. Convert Experiences combines code-level control with strict compliance standards. The platform is compliant with GDPR, CCPA, HIPAA, ISO 27001:2022, and SOC 2 Type 2, uses EU-based servers, and has had zero data breaches to date. Convert Experiences also does not collect PII in standard experimentation workflows and supports consent-aware deployment options.
 Skip this form
 Start your
 15

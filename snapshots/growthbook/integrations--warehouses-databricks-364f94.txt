@@ -1,28 +1,39 @@
 # https://docs.growthbook.io/warehouses/databricks
-Setting up Databricks as a data source | GrowthBook Docs
+Setting Up Databricks as a Data Source - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Connecting to Your Data Warehouse
+Setting Up Databricks as a Data Source
 Overview
 How it works
 Quickstart
-SDKs
+Command Palette
 Feature Flags
 Data & Metrics
 Choose Your Data Path
 Managed Warehouse
 Connecting to Your Data Warehouse
 Athena
+Adobe Experience Platform
 BigQuery
-Clickhouse
+ClickHouse
 Databricks
 Mixpanel
 MS SQL or SQL Server
@@ -42,6 +53,7 @@ Official Resources
 Experimentation
 Insights
 Product Analytics
+NEW
 Self-Hosting
 API
 Webhooks
@@ -53,12 +65,15 @@ Knowledge Base
 GrowthBook Guide
 Data & Metrics
 Connecting to Your Data Warehouse
-Databricks
-On this page
-Setting up Databricks as a data source
+Setting Up Databricks as a Data Source
+Copy page
+Copy page
+Connect Databricks to GrowthBook with a SQL warehouse host, HTTP path, and OAuth or token credentials.
+Copy page
+Copy page
 To connect to Databricks, you need to provide GrowthBook with the connection details for your SQL Warehouse along with credentials that let GrowthBook authenticate and run queries against it.
-1. Find the connection details for your SQL Warehouse
 ​
+1. Find the connection details for your SQL Warehouse
 In your Databricks instance, navigate to the SQL Warehouses, select your SQL Warehouse that stores the data you want GrowthBook to access, and the click Connection Details. You should see the following page, which contains most of the fields needed to connect GrowthBook to your Databricks SQL Warehouse.
 From this page you will use the
 Server Hostname
@@ -67,17 +82,17 @@ Port
 , and
 HTTP Path
 values when adding the data source to GrowthBook.
-2. Choose an authentication method
 ​
+2. Choose an authentication method
 GrowthBook supports two ways to authenticate against Databricks:
 OAuth (machine-to-machine / service principal)
-— the recommended method. GrowthBook uses a Databricks service principal's Client ID and OAuth secret to obtain short-lived access tokens automatically at query time.
+— the recommended method. GrowthBook uses a Databricks service principal’s Client ID and OAuth secret to obtain short-lived access tokens automatically at query time.
 Personal Access Token (PAT)
 — the legacy method. Databricks now recommends OAuth over personal access tokens because OAuth provides stronger security.
 Whichever method you choose, make sure the service principal or user has permission to execute SQL queries against your SQL Warehouse.
-Option A: OAuth (machine-to-machine)
 ​
-OAuth M2M authenticates using a Databricks service principal. GrowthBook exchanges the service principal's Client ID and OAuth secret for short-lived tokens (via the
+Option A: OAuth (machine-to-machine)
+OAuth M2M authenticates using a Databricks service principal. GrowthBook exchanges the service principal’s Client ID and OAuth secret for short-lived tokens (via the
 client_credentials
 grant) and refreshes them automatically, so you never store a long-lived token.
 Create a Databricks service principal (or reuse an existing one). See the Databricks docs on
@@ -85,7 +100,7 @@ managing service principals
 .
 Generate an OAuth secret for that service principal. Databricks shows the
 Client ID
-(the service principal's application ID) and lets you generate a
+(the service principal’s application ID) and lets you generate a
 Secret
 . Copy both now — the secret is only shown once. See
 OAuth machine-to-machine (M2M) authentication
@@ -96,8 +111,8 @@ Client ID
 and
 OAuth Secret
 in step 3 below.
-Option B: Personal Access Token
 ​
+Option B: Personal Access Token
 There are two kinds of access tokens that will work to connect GrowthBook to Databricks:
 A personal access token for a user account
 A personal access token for a service principal
@@ -105,22 +120,41 @@ Follow these instructions to create a service principal and create an access tok
 https://docs.databricks.com/en/dev-tools/service-principals.html
 Alternatively, you can create a personal access token for a Databricks workspace user following these instructions:
 https://docs.databricks.com/en/dev-tools/auth.html#pat
-3. Add credentials to GrowthBook
 ​
+3. Add credentials to GrowthBook
 Now that you have the connection details and credentials, you can add the data source in GrowthBook.
-Click "Add a Datasource" from the Data Sources page under Metrics and Data and either select your event tracker or click "custom data source". Then you can select Databricks as your data warehouse and enter the above credentials.
+Click “Add a Datasource” from the Data Sources page under Metrics and Data and either select your event tracker or click “custom data source”. Then you can select Databricks as your data warehouse and enter the above credentials.
 Note: We only use the event tracker (e.g. Snowplow, Segment) to help us build queries for you. This information
 does not
 impact how or whether we are able to connect to Databricks.
-Edit this page
-Was this helpful?
-Give Feedback
+Was this page helpful?
+Yes
+No
+Setting Up ClickHouse as a Data Source
 Previous
-Clickhouse
+Setting up Mixpanel as a data source
 Next
-Mixpanel
+⌘
+I
+On this page
 1. Find the connection details for your SQL Warehouse
 2. Choose an authentication method
 Option A: OAuth (machine-to-machine)
 Option B: Personal Access Token
 3. Add credentials to GrowthBook
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

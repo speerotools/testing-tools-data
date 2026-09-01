@@ -223,6 +223,8 @@ Using Variables to Drive Logic
 Explicit SDK Settings Configuration
 Testing Email/SMS via Server-Side Experimentation
 User Aliasing
+Rules Evaluation in FE
+Web Testing Pre-Segmentation
 Preventing Bot Traffic from Impacting Your Experiments
 Deep-Dive Debugging Guide
 KNOWLEDGE BASE & SET UP GUIDE
@@ -333,7 +335,7 @@ For any other languages or frameworks you want to use FE with or for a demo of t
 .
 The Wingify SDKs code is available in various languages on GitHub. All different SDKs published under Wingify Organization on GitHub are licensed under Apache 2.0 License (c) Wingify Software Pvt. Ltd. 2024-2025.
 Updated
-2 months ago
+3 months ago
 Quick Start Guide
 Did this page help you?
 Yes

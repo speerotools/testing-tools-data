@@ -1,390 +1,282 @@
 # https://www.harness.io/products/feature-management-experimentation/release-monitoring
 Release Monitoring with Split by Harness
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
-Pricing
-Learn
-Developer
-Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
-Community
-Training
-Certifications
-RESOURCES
-Ebooks
-Blog
-Case Studies
-Comparison Guide
-DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
-Events
-Upcoming Events
-On-Demand
-Harness Summits
-Company
-About us
-Careers
-Security
-Press & News
-Legal
-Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
-Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Feature Management & Experimentation
-Overview
-Features
-Feature Management
-Create, target, and manage feature flags at enterprise scale. Accelerate releases without harming the integrity of your application.
-Release Monitoring
-Protect gradual releases by monitoring each feature’s impact on system performance and user behavior. Alerts point to the specific flag causing an issue.
-Cloud Experimentation
-Experiment without toil or a wait for dedicated specialists. Every team can innovate when scale and speed are determined by the pace of ideas, not headcount.
-Warehouse Native Experimentation
-Use your own Data Warehouse to run experiments without sharing sensitive data. Quickly validate results and share with your team.
-More
-Docs
-Documentation
-API Reference
-SDK Reference
-Release Notes
-Learn
-Training & Certification
-Success Stories
-Blog
-How does Split by Harness compare to LaunchDarkly?
-Connect
-Flagship
-Slack Community
-Tools
-Sample size and sensitivity calculator
-Split by Harness’s approach to statistics
-Feature Management & Experimentation
-Overview
-Features
-Feature Management
-Create, target, and manage feature flags at enterprise scale. Accelerate releases without harming the integrity of your application.
-Release Monitoring
-Protect gradual releases by monitoring each feature’s impact on system performance and user behavior. Alerts point to the specific flag causing an issue.
-Cloud Experimentation
-Experiment without toil or a wait for dedicated specialists. Every team can innovate when scale and speed are determined by the pace of ideas, not headcount.
-Warehouse Native Experimentation
-Use your own Data Warehouse to run experiments without sharing sensitive data. Quickly validate results and share with your team.
-More
-Docs
-Documentation
-API Reference
-SDK Reference
-Release Notes
-Learn
-Training & Certification
-Success Stories
-Blog
-How does Split by Harness compare to LaunchDarkly?
-Connect
-Flagship
-Slack Community
-Tools
-Sample size and sensitivity calculator
-Split by Harness’s approach to statistics
-Contact us
-Get a demo
-Contact us
-Get a demo
-Protect Every Rollout
-Release monitoring detects the impact of each feature on system performance and user behavior, starting with the earliest stage of a gradual rollout. With detection and triage done at the flag level, you can ship more often and with greater confidence.
-Sign up
-Get a demo
-Triage and Resolve Release Issues In
-Seconds
-‍
-Say goodbye to stressful incident channels!
-How Release Monitoring Works
-It's as easy as
-1-2-3
-Release to any subset of your population using percentage-based targeting
-Performance and behavioral metrics automatically connect to monitor your release
-Be alerted the moment there's a notable impact, good or bad
-Take instant action: "kill" the feature or accelerate your gradual release
-Catch Issues That Most Monitoring Tools Miss
-In progressive delivery, most traditional monitoring tools can’t detect a problem-causing feature when it’s rolled out to just 5% of users. And, none can determine the cause and location. Only Harness picks up on feature-related issues right away.
-Connect to the Data That Matters
-Capture Out-of-the-Box Metrics Automatically
-Our SDK Suite for Android, iOS, and web automatically captures performance impact caused by your features with no integration work necessary. All you have to do is create an active flag in production and do a percentage release.
-Connect Your Own Metrics In a Few Easy Steps
-Need to track your own metrics? Not a problem. The Harness patented attribution engine connects to the data you care about in a few simple integration steps. You can even import offline data in batches. Define how those events translate into metrics once and let Harness handle the rest.
-Learn more in docs
-Get Automatic Alerts
-Take Instant Action
-Eliminate Waste
-Alerting built for fast moving teams
-Teams that want to move fast rely upon automation to “do the right thing” without adding toil. Less time spent on training and compliance frees up more time to build value.
-Automated guardrail metric monitoring ensures that a significant impact (good or bad) to your most valued metrics will be detected for every flag, while requiring no effort at all from each flag owner.
-Flag owners can extend that same automatic detection of significant changes to other metrics by marking any metric as “Key” for their flag.
-Rapid Resolution
-Instant triage allows the right team to focus immediately on resolution. Without the need for a new deployment, a problematic change can be deactivated in less than 5 seconds, a dramatically shorter mean time to recovery (MTTR) than a rollback or hotfix.
-Less Waste, More Ship Done
-With less time lost to performing triage, planning and implementing recovery, and waiting for rollbacks or hotfixes to complete, the entire organization gets back more time to get ship done.
-Learn more in docs
-Your Guide to Do-No-Harm Rollouts
-Learn to ship more and break nothing with this best practice strategy.
-Get the eBook
-“Previously, we'd see a 20%-40% increase in support cases, issues & questions during the first 2 weeks of a code release. With Split, that's been basically minimized to no incidents. Support costs have been drastically reduced.”
-Engineering Manager, Adobe Workfront
-Related Resources
-Internal Developer Platform Golden Paths Guide
-Blog
-Internal Developer Platform Golden Paths Guide
-View
-->
-Measuring IDP Success: Metrics Beyond Tracking
-Blog
-Measuring IDP Success: Metrics Beyond Tracking
-View
-->
-Continuous Delivery Excellence with Harness IDP
-Blog
-Continuous Delivery Excellence with Harness IDP
-View
-->
-Software Delivery Platform Explained: Key Features and How to Evaluate One
-Blog
-Software Delivery Platform Explained: Key Features and How to Evaluate One
-View
-->
-How to clean up the tech debt your AI is creating
-On-demand Webinar
-How to clean up the tech debt your AI is creating
-View
-->
-Better Together with Harness: Deploying a feature and releasing it are two different things.
-On-demand Webinar
-Better Together with Harness: Deploying a feature and releasing it are two different things.
-View
-->
-More AI Code, Less Certainty: Why Production Measurement Is the New Code Review
-On-demand Webinar
-More AI Code, Less Certainty: Why Production Measurement Is the New Code Review
-View
-->
-Experimentation: A Nice-to-Have?
-eBook
-Experimentation: A Nice-to-Have?
-View
-->
-How DigiCert Secured 99.99% Reliability and Global Scale
-DigiCert
-How DigiCert Secured 99.99% Reliability and Global Scale
-View
-->
-From Weeks To Days: Inside ADPs Rollout Engine With Harness FME
-ADP
-From Weeks To Days: Inside ADPs Rollout Engine With Harness FME
-View
-->
-Speedway Motors Accelerates Innovation and Customer Conversion with Harness Feature Management & Experimentation
-Speedway Motors
-Speedway Motors Accelerates Innovation and Customer Conversion with Harness Feature Management & Experimentation
-View
-->
-Cost & Optimization
-Cost & Optimization
-Security & Compliance
-Security & Compliance
-Testing & Resilience
-Testing & Resilience
-DevOps & Automation
-DevOps & Automation
-AI Evals
-AI Evals
-AI Security
-AI Security
-Web Application & API Protection
-Web Application & API Protection
-Application & API Security Testing
-Application & API Security Testing
-Software Composition Analysis
-Software Composition Analysis
-Application & API Posture Management
-Application & API Posture Management
-Application Security Testing
-Application Security Testing
-Application & API Protection
-Application & API Protection
-AI SRE
-AI SRE
-Feature Flags
-Feature Flags
-AI Test Automation
-AI Test Automation
-Cloud Development Environments
-Cloud Development Environments
-Database DevOps
-Database DevOps
-Artifact Registry
-Artifact Registry
-Open Source
-Open Source
-Code Repository
-Code Repository
-Supply Chain Security
-Supply Chain Security
-Infrastructure as Code Management
-Infrastructure as Code Management
-Harness AI
-Harness AI
-Continuous Error Tracking
-Continuous Error Tracking
-Internal Developer Portal
-Internal Developer Portal
-AI DLC Insights
-AI DLC Insights
-Cloud & AI Cost Management
-Cloud & AI Cost Management
-Resilience Testing
-Resilience Testing
-Continuous Delivery & GitOps
-Continuous Delivery & GitOps
-Security Testing Orchestration
-Security Testing Orchestration
-Service Reliability Management
-Service Reliability Management
-Feature Management & Experimentation
-Feature Management & Experimentation
-Continuous Integration
-Continuous Integration
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
+Why Harness
 Pricing
-View plans
-For Developers
+Customers
+Resources
+Company
+See a Demo
+Start for Free
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Runtime Configuration
+Overview
+AI Configs
+Configs
+Feature Flags
+Experimentation
+Overview
+Release Monitoring
+Protect every rollout
+Catch flag-level performance and behavioral issues from the first percentage of your rollout, so you can triage faster and ship with confidence.
+Start for Free
+See a Demo
+AI-POWERED DETECTION
+Triage and resolve release issues in seconds
+Instantly identify which feature flag caused performance degradation or errors, then deactivate in under 5 seconds. No more digging through logs or stressful incident channels.
+Pinpoint the flag in seconds.
+Know exactly which feature caused the issue without digging through logs or alerts.
+Kill the flag and avoid rollbacks.
+Deactivate a single flag instantly instead of rolling back your entire deployment.
+Auto-alert before users notice.
+Get notified the moment a metric degrades, so your team responds before support tickets pile up.
+Root cause at 1% rollout.
+Catch issues when only a fraction of users are affected, not after the damage is done.
+Harness AI
+How can I help you today?
+Detect feature impact
+Triage incidents fast
+Monitor key metrics
+Ask Harness AI...
+Summary of Metrics Impact
+Recalculate
+Share results
+6
+All Metrics
+1
+Desirable
+3
+Inconclusive
+1
+Undesirable
+1
+Needs data
+Key metrics
+Metric
+Treatment
+Impact
+Value
+% users that clicked
+exec-recap
+—
+0.84
+long-form
+Desirable
+0.84
+Avg page load time
+exec-recap
+—
+2057.82
+long-form
+Inconclusive
+2685.66
+% of users that viewed
+exec-recap
+—
+0.00
+long-form
+Undesirable
+0.01
+Guardrail metrics
+Metric
+Treatment
+Impact
+Value
+Error rate
+exec-recap
+—
+0.01
+long-form
+Inconclusive
+0.00
+How it works
+Automatic monitoring at every stage
+Release Monitoring connects to your feature flags automatically. From the first user to the last, every rollout stage is watched so issues surface early and stay contained.
+1
+Release to any subset.
+Roll out to 1%, 5%, or 25% of users with percentage-based targeting. Start small and expand only when metrics confirm it is safe.
+2
+Metrics connect automatically.
+Performance and behavioral metrics link to the flag with zero manual setup. Every rollout is watched from the first request.
+3
+Get alerted and act immediately.
+AI detects impact and alerts you the moment a metric degrades. Kill the flag or expand the rollout in seconds, no deployment needed.
+Flag-level attribution
+Catch issues that most monitoring tools miss
+Standard APM tools struggle to detect issues when features roll out to small user percentages. Harness provides flag-level attribution to catch problems at 1% rollout, not just when 100% of users are affected.
+Pinpoint the exact flag.
+Attribute issues to the specific flag causing them without digging through logs.
+Catch problems at 1% rollout.
+Detect degradation before it spreads to the majority of your users.
+Statistical significance built in.
+Analyze results with confidence. Know when a change is real, not noise.
+Detection comparison
+new_checkout_flow · gradual rollout
+1%
+5%
+10%
+25%
+50%
+100%
+Harness FME
+Issue detected at 1% rollout
+94% confidence
+·
+98% of users protected
+Standard APM
+Detected at 100%
+All users already affected
+Catch issues before 99% of users are affected
+Alert triggered
+Action required
+Page load time degradation
+payment_v3_processor · 15% rollout
+Page load time
++23.79%
+Error rate
++4.1%
+Conversion rate
+-2.3%
+Kill flag
+Dismiss
+Avg. resolution time: <5 seconds
+vs. 45+ min hotfix
+Automated response
+Automatic alerts and instant action
+Teams that move fast rely on automation to do the right thing without adding toil. Harness monitors every flag automatically so you can ship with confidence. No manual setup per flag required.
+Monitor every flag automatically.
+Guardrail metrics apply to all flags by default. No configuration needed per release.
+Deactivate in under 5 seconds.
+Kill a problematic flag instantly from the alert. No deployment, no rollback, no waiting.
+Resolve faster than any hotfix.
+Close incidents before support tickets pile up. Recovery is measured in seconds, not hours.
+What our customers say
+Teams are releasing features faster with Harness
+10x
+faster flag setup
+<3ms
+cached response time
+“
+Before Harness it could be anywhere from 1 - 3 weeks to get your flag up and running. Now we're able to do it in 1 to 3 days … We're getting cached responses in under three milliseconds.
+”
+—
+Patrick Laughlin
+, Senior Software Engineer
+, ADP
+Read more
+FAQ
+Frequently asked questions
+What is Release Monitoring in Harness FME?
+Release Monitoring continuously tracks key health metrics across every active feature flag rollout. It compares metric behavior between flag variants in real time and automatically alerts your team when a degradation is detected, so you can act before users are widely affected.
+How does a flag rollback work?
+You define the metric thresholds that matter to your team, such as error rate, latency, or conversion rate. If a rollout breaches a threshold, you can quickly disable the flag or reduce rollout percentage without requiring manual intervention or a code deployment.
+Which metrics can I monitor during a rollout?
+You can monitor any metric your application emits, including custom business metrics, error rates, latency percentiles, and conversion events. Harness integrates with analytics and observability providers so data flows in automatically alongside flag assignment data.
+How is Release Monitoring different from a general observability tool?
+General observability tools show you what is happening across your entire system. Release Monitoring is specifically designed to attribute metric changes to the exact feature flag that caused them. This narrows the blast radius of an investigation from the whole system to a single flag.
+Can Release Monitoring be used for canary deployments?
+Yes. Release Monitoring pairs naturally with canary rollouts. As you increase the percentage of traffic routed to a new variant, Harness continuously compares its health metrics to the control group and surfaces any degradation before you widen the rollout further.
+Get started with Harness Release Monitoring
+Detect and resolve issues in seconds, not hours.
+Start for Free
+See a Demo
+AI for everything after code.
+Platform
+Overview
+Why Harness
+Knowledge Graph
+Pricing
+Trust Center
+Documentation
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
 Resources
 Blog
+Resources Hub
+Customer Stories
 Comparison Guide
-Collateral
-Customers
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
-Webinars
-Support
-Professional Services
+Events
+Community
+API Reference
 Company
 About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-Feature Management & Experimentation

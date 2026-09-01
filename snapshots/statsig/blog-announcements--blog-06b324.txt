@@ -6,7 +6,7 @@ Resources
 Docs
 Pricing
 Sign In
-Contact Us
+Talk to Sales
 Products
 Solutions
 Resources
@@ -46,7 +46,7 @@ Resources
 Docs
 Pricing
 Sign In
-Contact Us
+Talk to Sales
 PRODUCTS
 Experimentation
 Feature Flags
@@ -89,6 +89,11 @@ Engineering
 Experimentation
 Statsig
 Other
+EXPERIMENTATION
+Why is it OK to run a z-test on a non-normal distribution for A/B tests?
+Viv Magida
+Mon Aug 31 2026
+It feels like it should be a problem to run a z-test on a non-normal distribution. But it usually isn’t. Here's why.
 EXPERIMENTATION
 Running faster tests: Modifying metrics (Part 2)
 Akhil Prakash
@@ -160,11 +165,6 @@ How we optimized Statbot using Statsig
 Xin Huang
 Thu Dec 18 2025
 Building Statbot showed us the power of pairing rigorous offline validation with real customer insights.
-ENGINEERING
-Guide to using Statsig's MCP Server
-Katie Braden, Helen Lu
-Thu Dec 18 2025
-A guide to using Statsig's MCP Server covering setup, prompt examples, and best practices.
 Older Posts
 Show All
 Loved by customers at every stage of growth

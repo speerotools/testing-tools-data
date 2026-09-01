@@ -1,115 +1,220 @@
 # https://www.harness.io/blog/introducing-autonomous-worker-agents
 Introducing Autonomous Worker Agents
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
-Pricing
-Learn
-Developer
+Platform
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
 Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
 Community
 Training
-Certifications
-RESOURCES
-Ebooks
+Learn
+Resources Hub
 Blog
-Case Studies
 Comparison Guide
+Customer Stories
 DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
 Events
-Upcoming Events
-On-Demand
+Events
 Harness Summits
+Webinars
 Company
-About us
+About Us
 Careers
 Security
-Press & News
+Press
+&
+News
 Legal
 Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
+Contact Us
+See a Demo
+Start for Free
+Platform
+Explore
+Overview
+Documentation
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+AGENTS
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
 Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Chapters
-Try It For Free
-Harness
-/
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
+Community
+Training
+Learn
+Resources Hub
 Blog
-/
-Company News
-June 30, 2026
+Comparison Guide
+Customer Stories
+DevOps Academy
+Events
+Events
+Harness Summits
+Webinars
+Company
+About Us
+Careers
+Security
+Press
+&
+News
+Legal
+Partners
+Contact Us
+Sign in
+See a Demo
+Start for Free
+Reduce DevOps costs with effective CI/CD pipeline templates
+Navigation Design for an Array of Software Delivery Tools
+Dark - Beyond Traditional Enterprise Themes
+Announcing Harness DevOps Essentials: Your Complete DevOps Platform to Supercharge Your Productivity
+Exciting News: We’ve Merged Harness and Traceable To Create A New Leader In Secure Software Delivery
+How OpenID Connect Eliminates Secrets in CI/CD Pipelines
+10,000 Pull Requests and Counting: How Harness Developer Hub Transformed Documentation into a Product
+Rego 101: Policy Driven DevOps
+Harness the Power of Platform Engineering
+Harness strengthens application security with Qwiet AI acquisition
+Go Memory Leak: How One Line Drained Memory Across 1000+ Goroutines | Harness
+DevOps Meets AI: Evaluating the Performance of Leading LLMs
+Harness has been named to the Inc. Power Partner list for software delivery success
+Harness x AWS re:Invent 2025
+Harness and Amazon Team Up to Bring AI-Powered DevOps to Your IDE
+Secure by Default: Why AI-Driven Delivery Needs a Rethink
+Accelerating Our Mission to Bring AI to Everything After Code
+Building the Next Phase of Harness’s AI Engineering Organization in India
+CTO Predictions for 2026: Special ShipTalk Episode with Nick Durkin
+Move Harness Projects Between Orgs Without Downtime
+The Agent-Native Repo: Why AGENTS.MD is the New Standard
+It's Time to Rethink Untrusted Code in Your Pipeline
+Closing the AI Velocity Paradox: 55 Features Shipped in March 2026
+How Harness Grounds AI Agents in a Knowledge Graph for Deterministic Answers
+Women in Tech: Journeys, Grit, and the Future We’re Building
+Building for the Agentic Era: Engineering Excellence at Harness
+The Agent Loop Is the New OS: Design Philosophy of the Harness MCP Server
+What if your Legal moved as fast as your business? At Harness, ours does!
+Building for Resilience: An Engineering Guide to the Mythos Era
+From PR to Production Without Leaving Your Cursor IDE
+70+ Software Delivery Features We Shipped in April 2026
+Google Cloud Next '26 Recap: AI, Efficiency, and the Rise of Frictionless Delivery
+Get Ship Done: Everything We Shipped in May 2026
+Get Ship Done: Everything We Shipped in June 2026
+Autonomous Worker Agents: AI Agents in Your Pipelines
+We Built the Canary Partner Program for the Federal Software Mission. Today, We're Launching It.
+Identity and Permissions for AI Worker Agents in Harness
+Announcing the Harness CLI: Built for Humans and Agents
+AI Is Writing More Code Than Ever. Your Release Process Hasn't Kept Up.
+Software Release Management: A Practical Guide for Engineering Teams
+Organizing and governing AI Assets
+Introducing AI Agent Deployment in Harness Continuous Delivery
+Introducing Harness AgentTrace: An Observability and Guardrail Framework for AI Agents
+Runtime Control for AI Agents. Introducing Harness AI Configs.
+Introducing Harness Agent DLC: Extending your SDLC to AI Agents
+Securing the Agent DLC
+Join the Conversation: The Harness Community Is Now Live
+Q2 2026 Product Update: Harness Pipeline
+Get Ship Done: Everything We Shipped in July 2026
+Blog
+→
+Harness Platform
 Autonomous Worker Agents: AI Agents in Your Pipelines
 | Harness Blog
-Table of Contents
+Harness launches Autonomous Worker Agents: AI that runs as pipeline steps, with the governance enterprises need to trust agents in production
+Harness Platform
+Published:
+June 30, 2026
+Last updated:
+By
 Jyoti Bansal
-All this author’s posts
 Rohan Gupta
-All this author’s posts
+7 minutes to read
+Table of Contents
++
+Link
 AI is writing more of the code. Software delivery, the work between writing code and running it in production, is where most of the day still goes. Building, testing, scanning, deploying, remediating, and operating still require the same, if not more, effort as before AI.
 Today, we're introducing
 Autonomous Worker Agents
@@ -162,46 +267,6 @@ Output handoff happens via pipeline expressions and shared workspace files.
 Three ways to create an agent
 Using YAML
 A Worker Agent is defined in a single file. Here's a complete agent that reviews every pull request for security issues:
-agent:
-group:
-steps:
--
-name:
-Run
-Code
-Coverage
-Agent
-id:
-runCodeCoverageAgent
-if:
-<+Always>
-run:
-container:
-image:
-pkg.harness.io/vrvdt5ius7uwygso8s0bia/harness-agents/harness-ai-agent:latest
-env:yam
-ANTHROPIC_MODEL:
-${{inputs.model_name}}
-PLUGIN_HARNESS_CONNECTOR:
-${{inputs.llm_connector.id}}
-PLUGIN_MAX_TURNS:
-"150"
-PLUGIN_MCP_FORMAT:
-harness
-PLUGIN_MCP_SERVERS:
-<+connectorInputs.resolveList(<+inputs.mcp_connectors>)>
-PLUGIN_TASK:
-|
-Autonomous Harness Code Coverage Agent; no prompts. Resolve branch/repo/clone_url/account/org/project/execution strictly: input -> env -> MCP, never guess; branch must exist via SCM MCP or fail.
-Use /harness first, else $HARNESS_WORKSPACE; if repo missing, clone (SCM MCP preferred, git fallback) and checkout resolved branch.
-Detect language/test/coverage stack, run baseline coverage (overall + per-file), and target >=90% overall and >=80% per-file.
-Add meaningful tests for critical uncovered paths (happy/edge/error/boundary); allow only minimal production testability tweaks.
-Re-run full tests + coverage + lint + build; all must pass before continuing.
-Review full diff (SCM MCP preferred, git diff fallback); allow only tests + minimal testability tweaks (+ COVERAGE.md only if it already exists; never create it).
-Build report with overall before->after, per-file before/after for touched files, and key improvements.
-Stage files one-by-one only; never use git add -A or git add .; verify staged diff is clean and in-scope.
-Create exactly one commit: "Code coverage: automated test additions by Harness AI"; push plain to origin <branch> (no pull/rebase/merge/force).
-If push fails, print rejection, git reset --hard HEAD~1, exit non-zero; never commit unrelated changes, never weaken existing tests, never log secrets.
 YAML frontmatter on top. Natural language below ---. The same convention Jekyll, Hugo, and AI agent definitions across the industry use.
 Save the file, commit it to the repo, and the agent is live, governed, and in the catalog. Every PR triggers it. Every run is audited. Every action is scoped by RBAC. From a blank file to a live governed agent in minutes.
 The Harness pipeline engine handles container runtime, scoped credentials, MCP server integration, audit logging, and cost tracking.
@@ -215,146 +280,17 @@ Using your favorite coding agent, you can connect to Harness over the MCP. The M
 Agents as Pipeline Steps
 Most software delivery workflows have more than one step. Autonomous Worker Agents compose with shell scripts, plugins, approval gates, and other agents to make full pipelines.
 Referencing an Agent in a Pipeline
-pipeline:
-stages:
--
-steps:
--
-name:
-Feature
-Agent
-template:
-uses:
-ca_feature_triage_agent@1.0.2
--
-name:
-Plan
-Agent
-template:
-uses:
-ca_work_planning_agent@1.0.2
--
-name:
-Build
-Feature
-Agent
-template:
-uses:
-ca_builder_agent@1.0.2
 uses: references a Worker Agent template by name and version. The agent runs as one step alongside everything else a Harness pipeline can run.
 Sequential: Output Handoff
 Agent B consumes Agent A's output. The pipeline expression ${{ steps.<agent_id>.output }} carries the result forward.
-pipeline:
-stages:
--
-steps:
--
-name:
-spec
-design
-parallel:
-steps:
--
-name:
-Feature
-Agent
-template:
-uses:
-ca_feature_triage_agent@1.0.2
--
-name:
-PR
-Body
-template:
-uses:
-pr_body_writer
-with:
-artifactPath:
-${{featureagent.output.artifact}}
-issueKey:
-cds-1234
 Parallel
 Multiple agents run simultaneously:
-parallel:
-steps:
--
-name:
-Feature
-Agent
-template:
-uses:
-ca_feature_triage_agent@1.0.2
--
-name:
-PR
-Body
-template:
-uses:
-pr_body_writer
-with:
-artifactPath:
-${{featureagent.output.artifact}}
-issueKey:
-cds-1234
 Step Groups
 A Step Group bundles agents and deterministic steps into a single reusable unit:
-group:
-steps:
--
-name:
-feature
-anaylzer
-template:
-uses:
-feature_ingester_agent@1.0.2
--
-name:
-work
-planner
-template:
-uses:
-ca_work_planning_agent@1.0.4
 Save the group as a template. Reference it from any pipeline. The PR Autofix workflow ships as a Step Group template.
 Conditional and Matrix
 An agent runs only when a condition is met:
--
-steps:
-group:
-steps:
--
-name:
-feature
-ingest
-template:
-uses:
-feature_ingester_agent
--
-name:
-work
-planner
-template:
-uses:
-ca_work_planning_agent
-name:
-Spec
-Driven
-Development
-if:
-<+OnPipelineSuccess>
 The same agent runs across multiple targets:
--
-name:
-work
-planner
-template:
-uses:
-ca_work_planning_agent
-strategy:
-fail-fast:
-true
-for:
-iterations:
-3
 Approval gates, failure strategies, retry policies, and rollback work the same way they do for any other pipeline step.
 ‍
 Introducing the Harness Agent Marketplace
@@ -403,209 +339,97 @@ request a demo
 to see them in production.
 Visit the in-app Harness Marketplace in app to try out any of the Worker Agents. Add it to your pipeline and watch it run.
 Jyoti Bansal
-All this author’s posts
+All this author's posts →
 Jyoti Bansal is a serial entrepreneur and technology visionary who believes passionately in software's ability to change the world for the better. He co-founded Harness in 2017 to automate and simplify all software delivery processes, and serves as CEO.
 Rohan Gupta
-All this author’s posts
+All this author's posts →
 Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
-Previous
-Next
-Harness Acquires CI Pioneer Drone.io and Commits to Open Source
-Harness Cloud Cost Management On AWS Marketplace
-Introducing Harness Custom Deployments
-Harness Template Library For Continuous Delivery
-Helping Enterprises Gain an 'Easy Button' for Continuous Delivery
-Harness Product Update | February 2021
-Harness Product Update | March 2021
-Harness Commits New Dev Experience to Drone Community
-Harness Product Update | April 2021
-Selects Harness over Spinnaker For Secure Continuous Delivery
-3X Deployment Frequency & Decreases Deployment Time 75%
-Introducing Harness Feature Flags
-Harness Product Update | June 2021
-Harness AutoStopping™ - FinOps Automation for Intelligent Cloud Cost Optimization
-Introducing Harness CI Enterprise
-Migrating From Homegrown Feature Flags
-Harness Product Update | July 2021
-Harness Product Update | August 2021
-Announcing Feature Flags Analytics & Business Intelligence
-Announcing Templates for Harness CI
-Meet the Harnessians: Sony Priyadarshini & Tathagat Chaurasiya
-Announcing: GitOps for Harness Feature Flags
-Harness Launches Source Available Continuous Delivery
-Harness Achieves SOC 2 Compliance
-Harness Product Update | January 2022
-Introducing Harness GitOps: Enterprise Security, Governance, and Scale for GitOps Deployments
-How Harness dashboards enhance software delivery performance
-Harness Acquires ChaosNative
-Harness Expands Software Delivery Platform
-Celebrating our women@harness community on International Women's Day
-Celebrating our women@ community on International Women's Day
-Celebrating our Women@ community and their impactful work
-Introducing AutoStopping for AWS RDS
-Harness Product Update | March 2022
-Introducing Harness Service Reliability Management
-Introducing Harness Security Testing Orchestration
-Introducing Harness Chaos Engineering
-Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
-Introducing Harness Policy as Code, Powered by OPA
-Harness Recognized by Inc. as One of the Best Workplaces 2022
-Harness AAPI Employee Spotlight
-Harness The Power of AWS EKS Anywhere, Now with Bare Metal
-Harness Celebrates International Women in Engineering Day
-Ensuring CI CD Pipeline Governance
-Welcome to the Harness Family, Kustomize!
-Introducing The Heroes of Continuous Delivery
-Harness announces $115M in new financing with a $1.7B valuation
-Harness Product Update | December 2019
-How COVID-19 is Impacting Software Delivery
-Harness Delivers RBAC For Continuous Delivery
-Harness Ships Real-Time Analytics For Continuous Verification
-Harness Product Update | April 2018
-Harness Product Update for May/June 2018
-Harness Product Update | Fall 2018
-Harness Product Update | January 2019
-Harness Product Update | May 2020
-Drone: From Zero to 100 Million Downloads
-Insights from Nick Durkin on software delivery and automation
-Together, We're 500 Strong
-Log4Shell Response
-Harness STO Module is Now Generally Available
-Congratulations to Our Star Performers
-Now Generally Available: Harness GitOps-as-a-Service
-Harness Celebrates Hispanic + Latino Heritage Month
-Harness Honors Harnessians Who Served This Veterans Day
-The Data is In: Harness CI is up to 4X faster than Other Solutions
-Harness Named Best End-to-End DevOps Tool/Service
-Introducing Software Engineering Insights
-Harness Expands Chaos Engineering Resiliency Features with Integrated Continuous Delivery
-Harness Celebrates Black History Month 2023
-Introducing Harness Certified Experts - Continuous Delivery Developer Certification
-Introducing Harness Internal Developer Portal - Beta release
-Harness recognized as a fast mover in cloud FinOps analysis
-Introducing Harness AI - AI Development Assistant for AI Infused Software Delivery
-July 2023 Product Updates
-Explore the Harness Idea Portal to enhance our product together
-August 2023 Product Updates
-Growing the Harness Developer Hub
-Introducing the Harness CLI
-Accelerating Harness CD & GitOps Learning for New Users
-Become Harness Certified in CI and CD & GitOps at Any Level
-Harness Introduces Four New Modules to Enhance Efficiency, Collaboration, and Security Across the Software Delivery Lifecycle
-Harness Announces Engineering Leadership Community to Codify Engineering Excellence Standards
-Elevating Harness AI: Harness Unveils 7 New Innovative Capabilities
-Introducing Harness Software Supply Chain Assurance (SSCA)
-Gitness: Your Ultimate Open Source Development Platform
-Introducing Harness Infrastructure as Code Management
-Why Platform Engineers Trust Harness
-Transforming customer support with AI for faster answers
-Harness Product Updates for December 2023. Learn what has changed in Harness over the previous month.
-Retiring Harness CD Community Edition in favor of Gitness
-Navigate a New Way: Your Dedicated User Experience
-Harness Acquires Armory Assets
-Announcing new features of Harness Chaos Engineering at the ChaosCarnival 2024
-Level Up your Zero-day Vulnerability Remediation and SBOM Quality for a More Secure Software Supply Chain
-Introducing Developer 360 pricing by Harness - supercharge your Developer Experience the easy way
-Shipped by Harness - April 2024 Product Updates
-Celebrating $150M In New Financing to Accelerate Innovation
-Welcome Split to the Harness team
-LitmusChaos Cloud Migrates to Harness Chaos Engineering Free Plan
-Next
-1 / 2
-SHARE -
-Jyoti Bansal
-Read more from this author
-Rohan Gupta
-Read more from this author
-Read
-The State of Software Delivery 2025
-Beyond CodeGen: The Role of AI in the SDLC
-Read the report
-Link
-Book a Demo
-Harness Platform
-Try it for Free
-Harness Platform
-Similar Blogs
+← Previous:
+Next: →
+‍
+Related Resources
 Harness AI: The Platform for Everything After Code
-Harness AI brings enterprise-grade speed, security, and stability by unifying intelligence across testing, security, deployment, and optimization, i.e., for all stages after code generation, delivering a single, adaptive platform for the future of software delivery.
 Harness AI
+Harness AI: The Platform for Everything After Code
+August 26, 2025
+Jyoti Bansal
++ more
 Introducing the Harness CLI
-We are pleased to announce the public preview launch of the new Harness CLI.
 Harness Platform
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
+Introducing the Harness CLI
+September 19, 2023
+Sid Choudhury
++ more
+6 minutes to read
+Get Started
+Get Started with Harness AI
+Try the full platform free. No module restrictions, no credit card.
+Try Harness AI Free
+See Harness AI Demo
+Jyoti Bansal
+Co-Founder & CEO
+Jyoti Bansal is a serial entrepreneur and technology visionary who believes passionately in software's ability to change the world for the better. He co-founded Harness in 2017 to automate and simplify all software delivery processes, and serves as CEO.
+jyoti-bansal
+https://www.linkedin.com/in/jyotibansal/
+Rohan Gupta
+Director, Product Management
+Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
+rohan-gupta
+AI for everything after code.
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
+Overview
+Why Harness
+Knowledge Graph
 Pricing
-View plans
-For Developers
+Trust Center
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Tests
+AI Evals
+Runtime Configuration
 Resources
 Blog
+Resources Hub
+Customer Stories
 Comparison Guide
-Collateral
-Customers
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
-Webinars
-Support
-Professional Services
+Events
+Community
+API Reference
 Company
 About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-Harness Platform
-Harness Platform
-Harness Platform
-Harness Platform
-Company News
-Harness Platform

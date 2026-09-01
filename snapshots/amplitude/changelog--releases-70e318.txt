@@ -2,47 +2,27 @@
 Changelog | Amplitude
 Platform
 AI
-Amplitude AI
-Analytics that never stops working
-AI Agents
-Sense, decide, and act faster than ever before
-AI Feedback
-Distill what your customers say they want
+Wave
+Agents
 Amplitude MCP
-Insights from the comfort of your favorite AI tool
+AI Feedback
 Agent Analytics
-Measure the real impact of your agents
 Early Access Program
-Test new AI features before they launch
 Insights
 Product Analytics
-Understand the full user journey
 Marketing Analytics
-Get the metrics you need with one line of code
 Session Replay
-Visualize sessions based on events in your product
 Heatmaps
-Visualize clicks, scrolls, and engagement
-Zoning Insights
-Overlay performance and revenue metrics on your webpages
 Action
 Guides and Surveys
-Guide your users and collect feedback
 Feature Experimentation
-Innovate with personalized product experiences
 Web Experimentation
-Drive conversion with A/B testing powered by data
 Feature Management
-Build fast, target easily, and learn as you ship
 Activation
-Unite data across teams
 Data
 Data Governance
-Complete data you can trust
 Integrations
-Connect Amplitude to hundreds of partners
 Security & Privacy
-Keep your data secure and compliant
 Solutions
 Solutions that drive business results
 Deliver customer value and drive business outcomes
@@ -50,93 +30,57 @@ Amplitude Solutions
 →
 Industry
 Financial Services
-Personalize the banking experience
 B2B
-Maximize product adoption
 Media
-Identify impactful content
 Healthcare
-Simplify the digital healthcare experience
 Ecommerce
-Optimize for transactions
 Use Case
 Acquisition
-Get users hooked from day one
 Retention
-Understand your customers like no one else
 Monetization
-Turn behavior into business
 Team
 Product
-Fuel faster growth
 Data
-Make trusted data accessible
 Engineering
-Ship faster, learn more
 Marketing
-Build customers for life
-Executive
-Power decisions, shape the future
 Size
 Startups
-Free analytics tools for startups
 Enterprise
-Advanced analytics for scaling businesses
 Resources
 Learn
 Blog
-Thought leadership from industry experts
 Resource Library
-Expertise to guide your growth
 Compare
-See how we stack up against the competition
 Glossary
-Learn about analytics, product, and technical terms
 Explore Hub
-Detailed guides on product and web analytics
 Connect
 Community
-Connect with peers in product analytics
 Events
-Register for live or virtual events
 Customers
-Discover why customers love Amplitude
 Partners
-Accelerate business value through our ecosystem
 Support & Services
 Customer Help Center
-All support resources in one place: policies, customer portal, and request forms
 Developer Hub
-Integrate and instrument Amplitude
-Academy & Training
-Become an Amplitude pro
-Customer Success
-Drive business success with expert guidance and support
 Product Updates
-See what's new from Amplitude
+Academy & Training
+Customer Success
 Tools
 Benchmarks
-Understand how your product compares
 Prompt Library
-Prompts for Agents to get started
 Templates
-Kickstart your analysis with custom dashboard templates
 Tracking Guides
-Learn how to track events and metrics with Amplitude
 Maturity Model
-Learn more about our digital experience maturity model
 Event Taxonomy Generator
-Create a clean and custom event taxonomy for your website
 Pricing
 Login
 Contact sales
 Get started
 Platform
 AI
-Amplitude AI
-AI Agents
-AI Feedback
+Wave
+Agents
 Amplitude MCP
+AI Feedback
 Agent Analytics
 Early Access Program
 Insights
@@ -144,7 +88,6 @@ Product Analytics
 Marketing Analytics
 Session Replay
 Heatmaps
-Zoning Insights
 Action
 Guides and Surveys
 Feature Experimentation
@@ -173,7 +116,6 @@ Product
 Data
 Engineering
 Marketing
-Executive
 Size
 Startups
 Enterprise
@@ -192,9 +134,9 @@ Partners
 Support & Services
 Customer Help Center
 Developer Hub
+Product Updates
 Academy & Training
 Customer Success
-Product Updates
 Tools
 Benchmarks
 Prompt Library
@@ -223,11 +165,11 @@ Activation
 Platform
 5
 Guides and Surveys
-50
+49
 Data
 24
 Experiment
-26
+27
 AI
 23
 Session Replay
@@ -238,85 +180,85 @@ Release month
 200
 items
 01
+Web Experiment: Cookie consent management
+Experiment
+Aug 25, 2026
+02
 Multiple triggers for Guides and Surveys
 Guides and Surveys
 Aug 18, 2026
-02
+03
 Amplitude Global Agent in Discord
 AI
 Aug 18, 2026
-03
+04
 Consolidated MCP Tools
 Platform
 Aug 17, 2026
-04
+05
 Right Event, First Try
 Analytics
 Aug 14, 2026
-05
+06
 Data Assistant Agent
 Data
 Aug 13, 2026
-06
+07
 Image Upload in Web Experiment
 Experiment
 Aug 10, 2026
-07
+08
 Embedded Guides & Surveys on Mobile
 Guides and Surveys
 Aug 05, 2026
-08
+09
 Resource Center: search term highlighting and autoscroll in articles
 Guides and Surveys
 Jul 24, 2026
-09
+10
 Resource Center: open directly to a specific article via the SDK
 Guides and Surveys
 Jul 24, 2026
-10
+11
 Metric Explorer Chart
 Analytics
 Jul 22, 2026
-11
+12
 Last Non-Direct Attribution in Data Tables
 Data
 Jul 21, 2026
-12
+13
 Attribution parameters as event properties - now on by default in the Browser SDK + GTM
 Activation
 Jul 17, 2026
-13
+14
 Clickable image links
 Guides and Surveys
 Jul 16, 2026
-14
+15
 Web Experiment: Cross-subdomain experimentation
 Experiment
 Jul 15, 2026
-15
+16
 Web Experiment Bucketing ID Shared Across Subdomains
 Experiment
 Jul 13, 2026
-16
+17
 Web Experiment: Undo/Redo + Auto-apply
 Experiment
 Jul 01, 2026
-17
+18
 AI Feedback Auto Analysis
 AI
 Jun 30, 2026
-18
+19
 Offline mode is now live in the React Native SDK
 Activation
 Jun 25, 2026
-19
+20
 Custom Agents
 AI
 Jun 23, 2026
-20
-Amplitude MCP is now in Slackbot
-Platform
-Jun 18, 2026
 Load more
 180
 remaining
@@ -337,7 +279,6 @@ AI Agents
 Agent Analytics
 AI Feedback
 Amplitude MCP
-AI Assistant
 Product Analytics
 Web Analytics
 Feature Experimentation

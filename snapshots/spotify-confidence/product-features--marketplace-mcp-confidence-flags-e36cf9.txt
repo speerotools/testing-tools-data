@@ -149,15 +149,15 @@ Migrate feature flags from Statsig to Confidence
 onboard-confidence
 Create Confidence accounts and onboard users
 Related plugins
+Smartsheet
+Query and update sheets, rows, and workspaces.
+Similarweb
+Analyze website traffic, audiences, and competitors.
+Semrush
+Research keywords, backlinks, traffic, and competitors.
 Customer.io
 Connect Cursor to Customer.io with the official MCP connector and skills for Journeys, Pipelines, Design Studio, and SDK setup.
 Observe by Snowflake
 Agent skills and MCP configuration for deploying and managing Observe's observability infrastructure
 Apify
 Official Apify agent skills for web scraping, data extraction, and automation
-AWS Data Analytics
-Data lake, analytics, and ETL workflows with S3 Tables, AWS Glue, and Athena. Covers managed Iceberg tables on S3 Tables, ingestion from JDBC databases (Oracle, SQL Server, PostgreSQL, MySQL, RDS), Amazon Redshift, Snowflake, BigQuery, and DynamoDB, AWS Glue Data Catalog inventory and asset discovery, federated Athena queries, and vector storage and semantic search on Amazon S3 Vectors.
-Grafana Cloud
-Hosted MCP server for AI-assisted Grafana Cloud observability — no local installation required.
-Mixpanel
-Mixpanel skills for Cursor — tracking implementation, metric investigation, and more.

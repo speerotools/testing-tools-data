@@ -1,28 +1,39 @@
 # https://docs.growthbook.io/warehouses/postgres
-Setting up Postgres as a data source | GrowthBook Docs
+Setting Up Postgres as a Data Source - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
 Skip to main content
+GrowthBook Documentation
+home page
 Docs
 SDKs
 API
-Home
+Search...
+⌘
+K
+Github
 Log in
-GitHub
-Support
-Join our Slack
-Open an issue
-Search
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Connecting to Your Data Warehouse
+Setting Up Postgres as a Data Source
 Overview
 How it works
 Quickstart
-SDKs
+Command Palette
 Feature Flags
 Data & Metrics
 Choose Your Data Path
 Managed Warehouse
 Connecting to Your Data Warehouse
 Athena
+Adobe Experience Platform
 BigQuery
-Clickhouse
+ClickHouse
 Databricks
 Mixpanel
 MS SQL or SQL Server
@@ -42,6 +53,7 @@ Official Resources
 Experimentation
 Insights
 Product Analytics
+NEW
 Self-Hosting
 API
 Webhooks
@@ -53,28 +65,151 @@ Knowledge Base
 GrowthBook Guide
 Data & Metrics
 Connecting to Your Data Warehouse
-Postgres
-Setting up Postgres as a data source
-When setting up
-Postgres
-to work with Growthbook, remember it's important to create read-only users with minimal permissions, ideally granting only read access to the relevant data tables that need to be aggregated.
-If you are using GrowthBook Cloud (app.growthbook.io), make sure to whitelist the ip address
+Setting Up Postgres as a Data Source
+Copy page
+Copy page
+Connect Postgres to GrowthBook with a read-only user, whitelist the Cloud IP if needed, and enter host, port, database, and SSL settings.
+Copy page
+Copy page
+GrowthBook runs
+SELECT
+queries against your Postgres database to compute experiment results. Create a dedicated read-only user, allow network access from GrowthBook, then add the connection in
+Metrics and Data
+→
+Data Sources
+.
+​
+1. Create a read-only user
+Use a dedicated role so GrowthBook cannot modify data. Grant
+SELECT
+only on the schemas that hold experiment assignment and metric events.
+CREATE
+USER
+growthbook
+WITH
+PASSWORD
+'use-a-strong-password'
+;
+GRANT
+CONNECT
+ON
+DATABASE
+your_database
+TO
+growthbook;
+GRANT
+USAGE
+ON
+SCHEMA
+public
+TO
+growthbook;
+GRANT
+SELECT
+ON
+ALL TABLES
+IN
+SCHEMA
+public
+TO
+growthbook;
+ALTER
+DEFAULT
+PRIVILEGES
+IN
+SCHEMA
+public
+GRANT
+SELECT
+ON
+TABLES
+TO
+growthbook;
+Replace
+public
+with your analytics schema if events live elsewhere.
+​
+2. Allow network access
+If you use
+GrowthBook Cloud
+, whitelist
 52.70.79.40
-if applicable.
-Unfortunately there isn't a specific guide for setting up
+in your Postgres firewall, security group, or
+pg_hba.conf
+.
+Self-hosted GrowthBook runs in Docker. To reach a database on the host machine, use
+host.docker.internal
+as the host instead of
+localhost
+.
+​
+3. Add Postgres in GrowthBook
+Go to
+Metrics and Data
+→
+Data Sources
+.
+Choose
 Postgres
-for Growthbook yet. However, if you encounter any difficulties while setting up your data source, you can seek assistance from our active developer community on
-Slack
-. They can help you troubleshoot and ensure your implementation is successful. Once you've successfully set up
-Postgres
-according to best practices, we encourage you to contributing to the community by
-creating improved documentation for
-Postgres
-. Your contribution will benefit other users in the future.
-Edit this page
-Was this helpful?
-Give Feedback
+(guided setup if you use a supported event tracker, or manual setup for a custom schema).
+Enter the connection fields:
+Field
+Notes
+Host
+Public hostname or IP. Cloud cannot reach
+localhost
+.
+Port
+Default
+5432
+.
+Database
+Used for the connection and the schema browser.
+User / Password
+The read-only user from step 1.
+Default Schema
+Optional. Prefixed onto generated SQL (for example
+analytics.
+).
+Require SSL
+Enable if your server requires TLS. You can attach a CA, client cert, and client key.
+Save. GrowthBook runs a
+SELECT 1
+query to confirm the connection.
+​
+4. Map assignments and metrics
+After the connection succeeds, define
+experiment assignment queries
+and
+Fact Tables
+. Postgres supports the Schema Browser, so you can inspect tables and columns while writing SQL.
+Was this page helpful?
+Yes
+No
+Setting Up MySQL or MariaDB as a Data Source
 Previous
-MySQL or MariaDB
+Setting Up Vertica as a Data Source
 Next
-Vertica
+⌘
+I
+On this page
+1. Create a read-only user
+2. Allow network access
+3. Add Postgres in GrowthBook
+4. Map assignments and metrics
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

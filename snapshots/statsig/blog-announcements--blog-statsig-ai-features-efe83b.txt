@@ -6,7 +6,7 @@ Resources
 Docs
 Pricing
 Sign In
-Contact Us
+Talk to Sales
 Products
 Solutions
 Resources
@@ -46,7 +46,7 @@ Resources
 Docs
 Pricing
 Sign In
-Contact Us
+Talk to Sales
 PRODUCTS
 Experimentation
 Feature Flags
@@ -130,6 +130,11 @@ Please select at least one blog to continue.
 Subscribe
 Recent Posts
 EXPERIMENTATION
+Why is it OK to run a z-test on a non-normal distribution for A/B tests?
+Viv Magida
+Mon Aug 31 2026
+It feels like it should be a problem to run a z-test on a non-normal distribution. But it usually isn’t. Here's why.
+EXPERIMENTATION
 Running faster tests: Modifying metrics (Part 2)
 Akhil Prakash
 Wed Aug 19 2026
@@ -155,11 +160,6 @@ Statsig MCP: Heading toward headless workflows
 Harman Kaur
 Wed Jul 15 2026
 You've been asking for more headless. Here's how it now works to take a feature gate through its full lifecycle without opening a browser tab.
-STATSIG
-Engineering roundtable: Larry Xu, Shelley Wang, Lew Gordon
-Paul Morrill
-Tue Jul 07 2026
-Meet three new Statsig + Amplitude engineering leaders and find out their takes on the future of shipping fast and safely.
 We use cookies to ensure you get the best experience on our website.
 Privacy Policy
 Got it!

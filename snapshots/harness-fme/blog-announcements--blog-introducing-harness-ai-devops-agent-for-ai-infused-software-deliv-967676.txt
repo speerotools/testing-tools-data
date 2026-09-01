@@ -1,114 +1,275 @@
 # https://www.harness.io/blog/introducing-harness-ai-devops-agent-for-ai-infused-software-delivery
-How Harness AI enhances software delivery through automation
-Product
-AI Across the SDLC
-AI for DevOps & Automation
-Accelerate innovation velocity with a modern DevOps toolchain.
-Continuous Delivery & GitOps
-new
-Continuous Integration
-new
-Internal Developer Portal
-new
-Infrastructure as Code Management
-new
-Database DevOps
-new
-Artifact Registry
-new
-AI for Testing & Resilience
-Build and deploy reliable applications that scale with confidence.
-Feature Management & Experimentation
-new
-Resilience Testing
-new
-AI Test Automation
-new
-AI SRE
-new
-AI Evals
-new
-AI for Security & Compliance
-Governance and security at every stage of the SDLC - from design to runtime.
-Application Security Testing
-Web Application & API Protection
-AI Security
-AI for Cost & Optimization
-Optimize cloud spend, resource utilization, and developer productivity.
-Cloud & AI Cost Management
-AI DLC Insights
-Customers
-Open Source
-Pricing
-Learn
-Developer
+Harness AIDA: Full-SDLC Automation Platform
+Platform
+Harness Autonomous SDLC Platform
+Deliver at machine speed.
+Explore the platform
+Explore
+Overview
 Documentation
-API Reference Docs
-Developer Hub
-Commitment to Open Source
-Engineering Blog
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
+Supply Chain Security
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+Developer Portal
+Resilience Testing
+AI Evals
+Runtime Configuration
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
 Community
 Training
-Certifications
-RESOURCES
-Ebooks
+Learn
+Resources Hub
 Blog
-Case Studies
 Comparison Guide
+Customer Stories
 DevOps Academy
-Harness Support
-Professional Services
-Webinars
-Research Reports
 Events
-Upcoming Events
-On-Demand
+Events
 Harness Summits
+Webinars
 Company
-About us
+About Us
 Careers
 Security
-Press & News
+Press
+&
+News
 Legal
 Partners
-Contact us
-View all
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Trending searches
-Products:
-Continuous Integration
-Continuous Delivery & GitOps
-Resilience Testing
+Contact Us
+See a Demo
+Start for Free
+Platform
+Explore
+Overview
+Documentation
+Knowledge Graph
+Trust Center
+Popular Use Cases
+AI DLC
+Agent DLC
+Mythos Readiness
+AI Cost Management
+AGENTS
+Software Delivery Agent
+Get code and agents from commit to production in minutes.
+Deployments
+Builds
+Artifacts
++ more
+Security Testing Agent
+Discover bugs and resilience weaknesses before your users do.
+SAST
+SCA
 Supply Chain Security
-Internal Developer Portal
-Explore Business Values:
-DevOps & Automation
-Security & Compliance
-Cost & Optimization
-Testing & Resilience
-Contact us
-Get started
-Sign up
-Sign in
-Get a demo
-Chapters
-Try It For Free
-Harness
-/
++ more
+Runtime Protection Agent
+Catch vulnerabilities before they ship and protect your runtime.
+API Posture
+AI Posture
+API Adv. Protection
++ more
+Cost Management Agent
+Own production and manage costs without surprises.
+AI Costs
+Cloud Costs
+Engineering Efficiency
++ more
+More products
+Incidents
+AI Evals
+Developer Portal
+Runtime Configuration
+Resilience Testing
+Why Harness
+Pricing
+Customers
+Resources
+Build
+Documentation
+API Reference
+Community
+Training
+Learn
+Resources Hub
 Blog
-/
-Company News
-June 21, 2023
+Comparison Guide
+Customer Stories
+DevOps Academy
+Events
+Events
+Harness Summits
+Webinars
+Company
+About Us
+Careers
+Security
+Press
+&
+News
+Legal
+Partners
+Contact Us
+Sign in
+See a Demo
+Start for Free
+Harness Acquires CI Pioneer Drone.io and Commits to Open Source
+What is a Kubernetes Container?
+GraphQL: Harness Your Way
+CI/CD Pipeline: Everything You Need to Know
+CI/CD Testing: The Complete Guide for Modern Software Delivery
+Your First Harness CI Installation, Build, and Publish
+IT Audits - How Continuous Delivery can Help
+Blue-Green Deployments With Kubernetes and Harness
+Harness Template Library For Continuous Delivery
+6 Actionable GitOps Best Practices to Help You Get Started
+An Introduction to Artificial Intelligence and Machine Learning
+Applying AI/ML to CI/CD Pipelines
+Comparing Helm vs Kustomize
+Continuous Integration Testing: Types, Best Practices, and Tools
+Accelerates AWS Cloud Migration
+What is O11Y? Observability Demystified with Chris Riley from Splunk
+Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
+Tutorial: How to Use the New Vault Agent Integration Method With Harness
+Pipeline Patterns for CI/CD Pipelines
+Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
+4 Best CI/CD Tools for DevOps
+How To Turn Your GitHub Repository Into an Automated Helm Chart Repo
+Harness the Power of AWS EKS-Anywhere
+Test Intelligence™: Move Fast, Don’t Break Things
+What Are Audit Trails & Why You Need Them in CD
+Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
+GitHub Actions Support in Harness CI
+Harness Launches Source Available Continuous Delivery
+Micro-Frontend Architecture in the Harness Software Delivery Platform
+Harness Achieves SOC 2 Compliance
+Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
+How Harness dashboards enhance software delivery performance
+Harness Acquires ChaosNative
+Harness Expands Software Delivery Platform
+The Git Sync Experience in Harness
+Git Branching in Harness
+Source Code Management in DevOps
+Harness Security Testing Orchestration (STO) - Key Capabilities
+Quality vs Reliability
+Build System vs CI System: What's the Difference and Why Does it Matter?
+The Best Open Source CI Tools
+Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
+Benefits of GitOps & Why GitOps Is Important
+Introducing Harness Policy as Code, Powered by OPA
+What Are GitOps Principles?
+GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
+Kubernetes Services Explained
+Harness CI and Harness CD - Your First True CI/CD Pipeline
+Continuous Delivery vs. Continuous Deployment: What’s the Difference?
+How Value Stream Mapping Optimizes Your Software Delivery Process
+How to Build CI Pipelines with GitHub Actions and Deploy to Kubernetes with Harness
+What is PaaS (Platform-as-a-Service)?
+Declarative Continuous Delivery for Kubernetes: A Closer Look at Argo CD
+What Is a CI/CD Platform and Why Should I Care?
+The Dependency and Plugin Hell That is Jenkins
+Build a Canary Deployment in 4 Mins with Harness CD
+Comparing Harness and Jenkins
+Harness Extends Continuous Verification To Dynatrace
+10 Signs You Don't Do Continuous Delivery
+Harness Continuous Delivery for Red Hat OpenShift
+A Time Series Machine Learning Model for Canary Deployments
+JFrog Artifactory & Harness - Don’t Get Bogged Down With Continuous Delivery
+Harness CI/CD Pipelines for .NET and Azure
+Harness For AWS: From Code to Cloud, Smarter and Faster
+ServiceNow for CI/CD Pipelines
+Vulnerability Scanning in your CI/CD Pipeline - Part Two
+The DevOps Tools Lifecycle Mesh for 2021
+Intro to Deployment Strategies: Blue-Green, Canary, and More
+Continuous Verification - Machine Learning to Safeguard Your Deployments
+Discover Azure DevOps Alternatives
+What Is GitOps? Learn About Benefits, Challenges, and More
+The Importance of Continuous Verification
+Best Argo CD Alternatives & Competitors
+Best Spinnaker Alternatives to Consider
+Continuous Delivery Tools to Consider
+How DORA Metrics Improve DevOps Performance
+The Software Development Life Cycle: A Complete Guide to Each Phase
+A Snapshot of DevOps
+What Is Role-Based Access Control (RBAC)?
+How to Prioritize the Developer Experience and Improve Output
+SRE vs. DevOps: Key Differences, Roles, and How They Work Together
+User & Role Management in the Harness Software Delivery Platform
+How We Built Event-Driven Architecture with Redis Streams at Harness
+Service Accounts: A Path to CI/CD Automation
+Harness YAML Editor - Code Away Your CI/CD Pipelines!
+What Is an Artifact Repository?
+Simplify test maintenance with the builder factory pattern
+Modern Software Delivery Best Practices & Software Delivery Management
+Managing the 'Git' in 'GitOps': 4 Ways to Structure Code in Your GitOps Repos
+Top 10 Best Practices for DevSecOps
+What is CircleCI? A Look at Features and Use Cases
+Kubernetes Application Deployment Strategies
+The Basics of GitOps Secrets Management
+The Data is In: Harness CI is up to 4X faster than Other Solutions
+What is ArgoCD?
+Introducing Harness CI/CD Plugin for Backstage
+GitOps Architecture Explained
+Integrating Automated Security and Testing in Your CI/CD Pipeline
+How to Implement CI/CD: Automate Builds, Testing, and Deployments in Minutes
+How to Deploy Helm Charts With Argo CD
+Next
+Blog
+→
+Harness AI
 Introducing Harness AI - AI Development Assistant for AI Infused Software Delivery
 | Harness Blog
-Table of Contents
+Going Beyond Code Generation, Harness AI Infuses AI Across Entire SDLC, Tackling Error Resolution, Security Vulnerabilities, and Cloud Cost Governance.
+Harness AI
+Published:
+June 21, 2023
+Last updated:
+By
 Harish Doddala
-All this author’s posts
-Harness introduces AI Development Assistant (AIDA), integrating AI across the software delivery lifecycle to automate tasks, enhance security, and accelerate delivery, marking a transformative step in DevOps with capabilities like build troubleshooting, cloud asset policy generation, and vulnerability remediation.
+Table of Contents
++
+Link
+TL;DR
+AIDA (AI Development Assistant) is Harness's AI-powered assistant that automates tasks across the entire software delivery lifecycle, not just code generation.
+The platform analyzes build failures and deployment errors in real-time, suggesting fixes with context from log analysis and known issue correlation.
+AIDA auto-generates cloud asset policies using natural language and explains security vulnerabilities with step-by-step remediation guidance.
+Harness has used AI/ML in production since 2018 for Test Intelligence and Deployment Verification, reducing test cycle time by up to 75%, making AIDA an evolution of proven capabilities.
 Watch our
 LinkedIn Live Event or Replay
 of Announcing Harness
@@ -265,208 +426,104 @@ Learn from DevOps Modernization Summit
 Contact a Harness expert
 Harness AI Prompt Library
 Harish Doddala
-All this author’s posts
+All this author's posts →
 Harish Doddala is passionate about building/scaling new products and new businesses.
-Previous
-Next
-Harness Acquires CI Pioneer Drone.io and Commits to Open Source
-Harness Cloud Cost Management On AWS Marketplace
-Introducing Harness Custom Deployments
-Harness Template Library For Continuous Delivery
-Helping Enterprises Gain an 'Easy Button' for Continuous Delivery
-Harness Product Update | February 2021
-Harness Product Update | March 2021
-Harness Commits New Dev Experience to Drone Community
-Harness Product Update | April 2021
-Selects Harness over Spinnaker For Secure Continuous Delivery
-3X Deployment Frequency & Decreases Deployment Time 75%
-Introducing Harness Feature Flags
-Harness Product Update | June 2021
-Harness AutoStopping™ - FinOps Automation for Intelligent Cloud Cost Optimization
-Introducing Harness CI Enterprise
-Migrating From Homegrown Feature Flags
-Harness Product Update | July 2021
-Harness Product Update | August 2021
-Announcing Feature Flags Analytics & Business Intelligence
-Announcing Templates for Harness CI
-Meet the Harnessians: Sony Priyadarshini & Tathagat Chaurasiya
-Announcing: GitOps for Harness Feature Flags
-Harness Launches Source Available Continuous Delivery
-Harness Achieves SOC 2 Compliance
-Harness Product Update | January 2022
-Introducing Harness GitOps: Enterprise Security, Governance, and Scale for GitOps Deployments
-How Harness dashboards enhance software delivery performance
-Harness Acquires ChaosNative
-Harness Expands Software Delivery Platform
-Celebrating our women@harness community on International Women's Day
-Celebrating our women@ community on International Women's Day
-Celebrating our Women@ community and their impactful work
-Introducing AutoStopping for AWS RDS
-Harness Product Update | March 2022
-Introducing Harness Service Reliability Management
-Introducing Harness Security Testing Orchestration
-Introducing Harness Chaos Engineering
-Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
-Introducing Harness Policy as Code, Powered by OPA
-Harness Recognized by Inc. as One of the Best Workplaces 2022
-Harness AAPI Employee Spotlight
-Harness The Power of AWS EKS Anywhere, Now with Bare Metal
-Harness Celebrates International Women in Engineering Day
-Ensuring CI CD Pipeline Governance
-Welcome to the Harness Family, Kustomize!
-Introducing The Heroes of Continuous Delivery
-Harness announces $115M in new financing with a $1.7B valuation
-Harness Product Update | December 2019
-How COVID-19 is Impacting Software Delivery
-Harness Delivers RBAC For Continuous Delivery
-Harness Ships Real-Time Analytics For Continuous Verification
-Harness Product Update | April 2018
-Harness Product Update for May/June 2018
-Harness Product Update | Fall 2018
-Harness Product Update | January 2019
-Harness Product Update | May 2020
-Drone: From Zero to 100 Million Downloads
-Insights from Nick Durkin on software delivery and automation
-Together, We're 500 Strong
-Log4Shell Response
-Harness STO Module is Now Generally Available
-Congratulations to Our Star Performers
-Now Generally Available: Harness GitOps-as-a-Service
-Harness Celebrates Hispanic + Latino Heritage Month
-Harness Honors Harnessians Who Served This Veterans Day
-The Data is In: Harness CI is up to 4X faster than Other Solutions
-Harness Named Best End-to-End DevOps Tool/Service
-Introducing Software Engineering Insights
-Harness Expands Chaos Engineering Resiliency Features with Integrated Continuous Delivery
-Harness Celebrates Black History Month 2023
-Introducing Harness Certified Experts - Continuous Delivery Developer Certification
-Introducing Harness Internal Developer Portal - Beta release
-Harness recognized as a fast mover in cloud FinOps analysis
-Introducing Harness AI - AI Development Assistant for AI Infused Software Delivery
-July 2023 Product Updates
-Explore the Harness Idea Portal to enhance our product together
-August 2023 Product Updates
-Growing the Harness Developer Hub
-Introducing the Harness CLI
-Accelerating Harness CD & GitOps Learning for New Users
-Become Harness Certified in CI and CD & GitOps at Any Level
-Harness Introduces Four New Modules to Enhance Efficiency, Collaboration, and Security Across the Software Delivery Lifecycle
-Harness Announces Engineering Leadership Community to Codify Engineering Excellence Standards
-Elevating Harness AI: Harness Unveils 7 New Innovative Capabilities
-Introducing Harness Software Supply Chain Assurance (SSCA)
-Gitness: Your Ultimate Open Source Development Platform
-Introducing Harness Infrastructure as Code Management
-Why Platform Engineers Trust Harness
-Transforming customer support with AI for faster answers
-Harness Product Updates for December 2023. Learn what has changed in Harness over the previous month.
-Retiring Harness CD Community Edition in favor of Gitness
-Navigate a New Way: Your Dedicated User Experience
-Harness Acquires Armory Assets
-Announcing new features of Harness Chaos Engineering at the ChaosCarnival 2024
-Level Up your Zero-day Vulnerability Remediation and SBOM Quality for a More Secure Software Supply Chain
-Introducing Developer 360 pricing by Harness - supercharge your Developer Experience the easy way
-Shipped by Harness - April 2024 Product Updates
-Celebrating $150M In New Financing to Accelerate Innovation
-Welcome Split to the Harness team
-LitmusChaos Cloud Migrates to Harness Chaos Engineering Free Plan
-Next
-1 / 2
-SHARE -
-Harish Doddala
-Read more from this author
-Read
-The AI Velocity Paradox
-Why Faster Coding Without Downstream Automation is Slowing Delivery
-Read the report
-Link
-Book a Demo
-Harness AI
-Try it for Free
-Harness AI
-Similar Blogs
+← Previous:
+Next: →
+‍
+Frequently Asked Questions
+What is a harness in AI?
+In AI and software development, a harness refers to the infrastructure layer that wraps an AI model to make it production-ready. For AIDA (Harness AI Development Assistant), the harness includes everything beyond the core language model: workflow orchestration, integration with CI/CD pipelines, security guardrails, and automated remediation logic. It's what makes AI agents deployable in real-world software delivery workflows rather than just experimental prototypes.
+Is Harness an AI company?
+Harness is a software delivery platform company that has integrated AI throughout its toolchain since 2018. With AIDA (AI Development Assistant), Harness now automates tasks across coding, building, testing, securing, deploying, and optimizing software. The company was founded by Jyoti Bansal (AppDynamics founder) and is valued at $5.5B, serving enterprises that need AI-powered DevOps automation across the full SDLC.
+What is AIDA in Harness?
+AIDA (AI Development Assistant) is Harness's generative AI assistant embedded across the entire SDLC. Unlike coding assistants that only generate code, AIDA troubleshoots build failures, auto-generates cloud policies, explains and fixes security vulnerabilities, creates CI/CD pipelines, and performs root cause analysis. It's designed to reduce developer toil and accelerate delivery timelines while maintaining governance and security by integrating with existing DevOps toolchains.
+How does Harness AI differ from GitHub Copilot or other code assistants?
+While tools like GitHub Copilot focus on code generation and autocomplete within the IDE, AIDA by Harness operates across the full software delivery lifecycle. AIDA integrates directly with your CI/CD pipelines, artifact repositories, security scanners, and cloud platforms to automate build troubleshooting, deployment verification, policy generation, and vulnerability remediation. It's a platform-level assistant for the entire DevOps workflow, not just a coding productivity tool.
+What AI capabilities does AIDA provide for security?
+AIDA analyzes security scan results from Harness Security Test Orchestration (STO) to explain detected vulnerabilities including CVEs (Common Vulnerabilities and Exposures) and CWEs (Common Weakness Enumerations). It generates step-by-step remediation suggestions with code fixes, allowing developers to resolve security issues faster. Users can adjust or reset the remediation process, giving teams control while accelerating the path from vulnerability detection to resolution.
+Does Harness AI work with my existing tools?
+Yes. AIDA integrates with your existing software delivery toolchain including CI/CD systems, artifact repositories, issue tracking software, security scanners, and cloud platforms. Harness has designed AIDA to work within established workflows rather than requiring tool replacement. The platform uses permissively licensed source code for training, addressing data privacy and copyright concerns that organizations have about AI tool adoption.
+FAQs
+Related Resources
 Harness Announces New AI Agents for Software Delivery
-Harness unveils three powerful AI agents for software delivery, revolutionizing testing, coding, DevOps, and productivity tracking. Experience the future of AI-driven development.
 Harness AI
-Harness Platform
-Code Repository
-Continuous Delivery & GitOps
-AI DLC Insights
+Harness Announces New AI Agents for Software Delivery
+September 24, 2024
+Eric Minick
++ more
+6 minutes to read
 Elevating Harness AI: Harness Unveils 7 New Innovative Capabilities
-Harness is proud to announce 7 new AIDA features that span across the software delivery lifecycle. These capabilities empower engineers and team members with tools that increase productivity, streamline software delivery processes, and enhance governance.
 Harness AI
-®
-Sign up for Harness Updates
-Subscribe to our newsletter to receive the latest Harness updates in your inbox
-Thank you for subscribing to our newsletter. We will be sending you latest updates in your inbox.
-By submitting this form, you acknowledge and agree that Harness Inc will process your personal information in accordance with the Privacy Statement.
-the State of
-Engineering
-Excellence 2026
-View the full report
-Harness AI
-Harness AI
+Elevating Harness AI: Harness Unveils 7 New Innovative Capabilities
+September 21, 2023
+Arda Ulug
++ more
+5 minutes to read
+Get Started
+Get Started with Harness AI
+Try the full platform free. No module restrictions, no credit card.
+Try Harness AI Free
+See Harness AI Demo
+Harish Doddala
+General Manager & SVP
+Harish Doddala is passionate about building/scaling new products and new businesses.
+harish-doddala
+AI for everything after code.
 Platform
-Continuous Delivery & GitOps
-Continuous Integration
-Feature Management & Experimentation
-Infrastructure as Code Management
-Resilience Testing
-AI SRE
-NEW
-Database DevOps
-NEW
-Artifact Registry
-Internal Developer Portal
-AI DLC Insights
-Application Security Testing
-Web Application & API Protection
-AI Security
-Cloud & AI Cost Management
-AI Test Automation
+Overview
+Why Harness
+Knowledge Graph
 Pricing
-View plans
-For Developers
+Trust Center
 Documentation
-Developer Hub
-Open Source
-Commitment to Open Source
-Community
-API Reference Docs
-Engineering Blog
-Harness University
-Training
+Products
+Software Delivery Agent
+Deployments
+Builds
+Infrastructure
+Databases
+Artifacts
+Repositories
+Code Review
+Security Testing Agent
+AI SAST
+AI SCA
+Supply Chain Security
+Security Testing Orchestration
+Runtime Protection Agent
+API Posture
+API Advanced Protection
+AI Posture
+AI Firewall
+Cost Management Agent
+AI & Cloud Costs
+Engineering Efficiency
+More Products
+Incidents
+Developer Portal
+Resilience Tests
+AI Evals
+Runtime Configuration
 Resources
 Blog
+Resources Hub
+Customer Stories
 Comparison Guide
-Collateral
-Customers
 DevOps Academy
-Ebooks
-Engineering Maturity Assessment
-On-demand Videos
-Webinars
-Support
-Professional Services
+Events
+Community
+API Reference
 Company
 About Us
+Careers
 Press & News
 Partners
-Careers
 Contact Us
-Trademark Policy
-Security
 Legal
-Press Kit
-© 2026 Harness Inc.
+© 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
 Opt Out
 Cookie Settings
-© 2026 Harness Inc.
-DevOps & Automation
-DevOps & Automation
-DevOps & Automation
-Harness AI
-Company News
-Harness AI
