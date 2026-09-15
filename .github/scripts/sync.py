@@ -148,6 +148,22 @@ def slugify(s: str) -> str:
     return s
 
 
+def no_emdash(s: str) -> str:
+    """Strip em dashes from any published prose (Speero style forbids them).
+
+    Replaces an em dash (U+2014) and the whitespace around it with a comma and
+    a space. Applied at build time so no em dash reaches the site regardless of
+    what the Airtable source or a vendor's scraped H1/H2 contains. Also collapses
+    a resulting ", ," and a comma butting against sentence punctuation.
+    """
+    if not s:
+        return s
+    s = re.sub(r"\s*—\s*", ", ", s)
+    s = re.sub(r",\s*([.;:!?])", r"\1", s)   # ", ." -> "."
+    s = re.sub(r",\s*,", ",", s)
+    return s
+
+
 def single_select_value(field_val) -> str | None:
     """Extract string value from a singleSelect field (may be dict or str)."""
     if field_val is None:
@@ -276,7 +292,7 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
 
     status = (single_select_value(f.get(F["status"])) or "active").lower()
 
-    summary_text = f.get(F["summary"]) or ""
+    summary_text = no_emdash(f.get(F["summary"]) or "")
 
     # MCP type comes from the Airtable "MCP Type" single-select field.
     # Expected option values: Product, Platform, None.
@@ -288,8 +304,8 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
         "slug":         slug,
         "name":         name,
         "status":       status,
-        "h1":           f.get(F["h1"]) or "",
-        "h2":           f.get(F["h2"]) or "",
+        "h1":           no_emdash(f.get(F["h1"]) or ""),
+        "h2":           no_emdash(f.get(F["h2"]) or ""),
         "ucf":          ucf,
         "mcp":          mcp_type,
         "ai":           ai,
