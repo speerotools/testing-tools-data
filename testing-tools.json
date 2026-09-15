@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-15T12:09:01Z",
-  "commit": "71789e3386107e77c95523bb9eadc45f691b2a76",
+  "version": "2026-09-15T12:33:54Z",
+  "commit": "6ac9bc068353d48b2714f08277944cb06658f138",
   "vendors": [
     {
       "slug": "ablyft",
@@ -15,7 +15,7 @@
         "Server-side / feature-flag-first",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "product",
+      "mcp": "none",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
@@ -45,11 +45,6 @@
       ],
       "url": "https://ablyft.com/",
       "summary": "ABlyft positions itself as an enterprise-grade A/B testing platform built for developers and experienced marketers, 'affordable enterprise A/B testing' for organizations with many test developers. Privacy-first and GDPR-compliant. Free plan available with no credit card; full-feature Enterprise plan priced on request with unlimited experiments, customization, and priority support. Client-side JavaScript API (GET calls, experiment retrieval) is the documented developer integration; no SDK list for other languages. GA4 integration with detailed guide for connecting via GTM and querying ABlyft variation IDs in GA4 explorations. No documented Adobe Analytics, Segment, or data warehouse integrations. No MCP server. No AI/agentic features documented. GDPR is the only compliance certification publicly disclosed. Operating in 2026 with active site and docs.",
-      "mcpDetail": {
-        "url": "",
-        "hosted": "",
-        "docs": ""
-      },
       "ax": 69.2,
       "ay": 45.7,
       "axc": 69.2,
@@ -342,7 +337,7 @@
         "GDPR"
       ],
       "url": "https://www.omniconvert.com/",
-      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization, surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced, visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026, actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No MCP server, no SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented.",
+      "summary": "Omniconvert is a Romanian conversion optimization platform offering two products: Explore (A/B testing, personalization, surveys, overlays, multivariate testing with both Bayesian and frequentist statistical models) and Reveal (customer-retention and value analytics platform for Customer Value Optimization, surfaces revenue performance, repeat-purchase drivers, toxic products, high-value segments). Server-side testing via SDKs in PHP, TypeScript/Node.js, Java, Kotlin (Android), and Swift (iOS/macOS). AI-Powered CRO Audit scans sites for conversion leaks and recommends test ideas. AI Growth Engine (Nexus) connects acquisition, conversion, and retention. Pricing tiers: Free, Essential, Expert (~$79/mo billed annually), Advanced, visitor-based with discounts at scale. Free tier includes 50K monthly tested views with full Explore feature set. Integrations: GA4, Klaviyo, Shopify, Segment, Sendgrid, Gorgias. Released CSV export for main-goal conversions in March 2026, actively maintained. ICP: mid-size to large e-commerce merchants seeking data-driven CRO and retention. No SOC 2/HIPAA/ISO 27001 publicly disclosed, no data warehouse connectors documented.",
       "mcpDetail": {
         "url": "https://web.omniconvert.com/mcp",
         "hosted": "Vendor-hosted",
@@ -1294,6 +1289,9 @@
       "axc": 15.5,
       "ayc": 13.8,
       "scraped": "2026-08-10",
+      "seoTitle": "Symplify Review 2026: Features, Pricing & Alternatives",
+      "seoDesc": "Symplify is now part of Hawk Infinity Software AS, folding testing into a broader customer engagement platform. Compare pricing and alternatives.",
+      "seoH1": "Symplify review: what changed after the Hawk Infinity Software AS acquisition",
       "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/7Xjh1qYR0ILWs3sDBrVHKg/Trh3Em0Cp53Njpr4wWjpPm1xDGC8MKKtyE9pr4_NZDgm1lraq2ijzvolGBDg42Ck76uMqji3nPF0niGaxZK9yPIq5UMwKWrwFV6DfVfANkbZgoZlP5GRwNL4pQrXdZDlZfW5HEYpJnyutYDKal3jmQ/LeJGqGkFt0Q8jk5I6XVc5c-Ebz_2ozeLhrPmIy1e6B4",
       "sources": [
         {
@@ -3803,7 +3801,7 @@
         "Client-side marketing/CRO",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "none",
+      "mcp": "platform",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
@@ -3836,6 +3834,11 @@
       ],
       "url": "https://www.zoho.com/pagesense/",
       "summary": "Zoho PageSense is the conversion optimization platform within the Zoho suite. Four pillars: A/B testing (split-URL, full-stack, server-side), conversion optimization (funnel analysis, form analytics, goal tracking, session recording), heatmaps (visual, scroll, click), and personalization. Zia AI assistant is embedded across Zoho suite, can answer questions about experiment performance, suggest test ideas, and trigger PageSense actions. Zoho operates a workspace-level MCP platform (zoho.com/mcp) that exposes Zoho app actions to LLM-based agents (Claude, ChatGPT) via standardized JSON-over-HTTPS protocol; PageSense actions can be exposed through this MCP but no PageSense-specific MCP documentation exists yet. SDKs: .NET/C#, Android (Java/Kotlin), iOS (Swift/Obj-C). Integrations: Zoho ecosystem (CRM, Flow, Forms, Commerce, SalesIQ), GA4, GTM, Mixpanel, KISSmetrics, Google Ads, Intercom. Pricing: Forever Free (5K users), Professional, Enterprise (10K+ users with full A/B testing), Agency edition. Strongest compliance footprint among mid-tier CRO vendors: ISO 27001, ISO 27701, HIPAA (toggleable per project), GDPR, SAML SSO, anonymized IP, privacy masking in session recordings. No data warehouse connectors documented; SOC 2 not specifically referenced (though likely at Zoho suite level).",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": ""
+      },
       "ax": 25.0,
       "ay": 32.0,
       "axc": 17.7,
@@ -4590,7 +4593,7 @@
         "GDPR"
       ],
       "url": "https://varify.io/en/",
-      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions, the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. No MCP server documented. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026.",
+      "summary": "Varify.io is a German A/B testing platform explicitly positioned as the 'Google Optimize Alternative That's Simple, Affordable & GDPR-Ready.' Built for marketing teams and agencies who want a GDPR-ready A/B testing tool without developer overhead. Flat-rate pricing with unlimited traffic and unlimited tests across all plans: Growth €149/mo, Pro €249/mo (adds BigQuery integration + advanced segmentation + priority support), Enterprise (custom). Cookie-less operation, EU-hosted (Frankfurt). AI CRO Audit and Prompt-Based AI features generate optimization ideas and test suggestions, the Varify AI Assistant can generate test variant code from short prompt descriptions. Visual editor + code editor included on all plans. Native GA4 reporting (in-app, auto-detected). BigQuery integration on Pro+ tiers for warehouse export. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar. GDPR-compliant by design; SOC 2 and ISO 27001 inherited from AWS/Cloudflare hosting infrastructure but Varify itself is not certified directly (stores no personal data). 2,700+ teams worldwide as of 2026.",
       "mcpDetail": {
         "url": "",
         "hosted": "",
@@ -6643,7 +6646,7 @@
         "Client-side marketing/CRO",
         "Mobile app native"
       ],
-      "mcp": "product",
+      "mcp": "none",
       "ai": [
         "Variant generation (AI)",
         "Hypothesis generation (AI)",
@@ -6689,11 +6692,6 @@
       ],
       "url": "https://www.dynamicyield.com/",
       "summary": "AdaptML is the core AI engine providing real-time affinity profiles, next-best-item predictions, and multi-purchase cadence modeling. Recommendations engine uses deep learning, visual similarity, and reinforcement learning for product catalogs with millions of SKUs. Predictive Targeting scores audiences for uplift potential. Copywriter + Stability.ai integration enables automated copy and visual generation. NextML NLP models predict next-best-item. Shopping Muse is a generative AI commerce advisor (users describe needs, e.g., 'outfit for a beach wedding in Bali'). Acquired by Mastercard in 2022, the platform now incorporates Mastercard Element spend signals. Snowflake connector via Improvado for warehouse export; raw event data via Daily Activity Stream. No Model Context Protocol (MCP) server for external AI assistants documented.",
-      "mcpDetail": {
-        "url": "",
-        "hosted": "",
-        "docs": ""
-      },
       "ax": 28.4,
       "ay": 57.2,
       "axc": 28.4,
