@@ -1,6 +1,6 @@
 {
-  "version": "2026-09-15T12:33:54Z",
-  "commit": "6ac9bc068353d48b2714f08277944cb06658f138",
+  "version": "2026-09-15T15:53:58Z",
+  "commit": "5570c8665d9499bbbd504dfcca85632d44bef402",
   "vendors": [
     {
       "slug": "ablyft",
@@ -50,7 +50,7 @@
       "axc": 69.2,
       "ayc": 45.7,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/dRAwANrIgW5ucWkZNajo4A/Lzf37rnrd3T6hEqPt-xx12ibBbKd-4y2BYhW_mlEN_vt1xy3GwgwQZRtC4cq6D6J68eA9mRM074FTYQijxJUpC8Bml5YemmSGFMAsCGuTzDV_k3eeL8az2KEK2iW-qIb8UyUQ5Lh8HtMe8hPro_XOA/IP7IRLe0xFQParzHoQnrhOF3Q3IK06RemD3Bq4pRnao",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/KUfKnexQAxTiL9P7O9uiHA/xEChx6wme39REIbGpeuU7_PstadFEONhrOr7gd45K44o7kGzScvHB1w79ggTNy606l9_tKfqGeJz5wwYApBvdXUuHmPNjVJF_ngOrr4dgs6qs3pU74weQILRvX0I-0NogDlJ6m7ZMuR-iWtGMbi9uw/RulV5QVnnIhMeil_5G3pHtz3xL7vxITon-FeVzB9UQI",
       "sources": [
         {
           "type": "API Reference",
@@ -171,12 +171,13 @@
         "Databricks"
       ],
       "compliance": [
-        "SOC 2 Type II"
+        "SOC 2 Type II",
+        "HIPAA"
       ],
       "url": "https://www.geteppo.com/",
-      "summary": "Contextual Bandits deliver real-time AI personalization with full warehouse-native execution. Auto-Generate Explore Charts automatically surface statistically significant slices in experiment results. Automated Slack alerts flag traffic imbalances, anomalous metric drops, instrumentation gaps, and data pipeline errors. AI Personalization positioning aligns with the warehouse-native bandit approach. Note: Eppo was acquired by Datadog in 2025 and is being merged into Datadog Experiments.",
+      "summary": "Datadog Experiments (GA April 2026) is a composable platform built on Datadog Feature Flags for randomization plus RUM, Product Analytics, or warehouse-native metrics (Snowflake, BigQuery, Redshift, Databricks) for analysis. Statistical methods are sequential frequentist, fixed-sample frequentist, and Bayesian, with CUPED variance reduction on by default and optional multiple testing correction. Protocols let teams save reusable experiment templates (metrics, randomization, duration, analysis plan). Built-in diagnostics flag sample ratio mismatch, unreliable or zero-data metrics, and per-variant exposure imbalance before results are trusted. The most developed AI surface is agentic: the Datadog MCP Server's experiments toolset lets AI clients list, create, start, conclude, and cancel experiments, pull diagnostics and metric definitions, and segment results by any assignment property. Note: built on Datadog's 2025 acquisition of Eppo; the standalone Eppo product is being folded into Datadog Experiments. [Updated 2026-09-15: removed prior Eppo-era claims about Contextual Bandits, Auto-Generate Explore Charts, and Automated Slack alerts, none of these are documented anywhere in the current Datadog Experiments docs I could find, and searches turned up no evidence bandits carried over to the GA product.]",
       "mcpDetail": {
-        "url": "",
+        "url": "https://mcp.datadoghq.com/v1/mcp",
         "hosted": "Both",
         "docs": "https://docs.datadoghq.com/experiments/mcp_tools/"
       },
@@ -185,8 +186,15 @@
       "axc": 64.0,
       "ayc": 63.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/QLSVM4LumFpI2L324aRIVQ/Wuw749lDnSK-wRQ2zU79fHKHFu9Nfg8YgX2Wf9gVBnGfdFHDo1yUgClgx2TQ8hXEMiZQhVeDs6ylxnqMa8NLlll5GtIXVkujVD1U3qsuc_4PQV1wG_nqaCpbzC2hg8VBkZl-7f7wFM1WNVMkh1eIwQWN4kTt5yBYi5fbiOaPeDE/kIn-kZpSS_FA-IkOaKNNVIHJ3GTA23zj56LBpcJJF98",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/59M_fYB0z-mRtcWHhayPpA/JDOBwj7IV0CE4DaYeCB7xgGURdrmG72fCiu8FcrjNUEHuDJAwEiwipqKrqhoITqRSuxi4UgUSCeEhJJBKFjumpmfCuvNqlGJTxuBqGmL7rA7lDFfO0l6ZfnfSTEWTlTwHsaL6nqEAJJwNGuf9P-70yOFFm0lOYxkE3eRpF597YE/odf1DALf5DNf79z9SqGpJuZGJNgPvLLU6FtiIaimqsg",
       "sources": [
+        {
+          "type": "Blog/Announcements",
+          "url": "https://www.datadoghq.com/blog/experiments/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
         {
           "type": "Blog/Announcements",
           "url": "https://www.geteppo.com/blog/eppo-announces-integration-with-databricks",
@@ -203,6 +211,20 @@
         },
         {
           "type": "Compliance",
+          "url": "https://docs.datadoghq.com/data_security/hipaa_compliance/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Compliance",
+          "url": "https://www.datadoghq.com/legal/hipaa-eligible-services/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Compliance",
           "url": "https://www.geteppo.com/terms-and-conditions",
           "fetched": "2026-09-01",
           "ok": true,
@@ -210,8 +232,22 @@
         },
         {
           "type": "Docs Root",
+          "url": "https://docs.datadoghq.com/experiments/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Docs Root",
           "url": "https://docs.geteppo.com/",
           "fetched": "2026-09-01",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Homepage",
+          "url": "https://www.datadoghq.com/product/experiments/",
+          "fetched": "2026-09-15",
           "ok": true,
           "status": 200
         },
@@ -237,9 +273,44 @@
           "status": 200
         },
         {
+          "type": "MCP Docs",
+          "url": "https://docs.datadoghq.com/experiments/mcp_tools/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.datadoghq.com/mcp_server/setup/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "MCP Docs",
+          "url": "https://docs.datadoghq.com/mcp_server/tools/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Methodology",
+          "url": "https://docs.datadoghq.com/experiments/plan_and_launch_experiments/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
           "type": "Methodology",
           "url": "https://docs.geteppo.com/contextual-bandits",
           "fetched": "2026-09-01",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Pricing",
+          "url": "https://www.datadoghq.com/pricing/list/",
+          "fetched": "2026-09-15",
           "ok": true,
           "status": 200
         },
@@ -287,13 +358,20 @@
         },
         {
           "type": "Trust/Security",
+          "url": "https://trust.datadoghq.com/",
+          "fetched": "2026-09-15",
+          "ok": true,
+          "status": 200
+        },
+        {
+          "type": "Trust/Security",
           "url": "https://www.geteppo.com/security",
           "fetched": "2026-09-01",
           "ok": true,
           "status": 200
         }
       ],
-      "swept": "2026-09-01",
+      "swept": "2026-09-15",
       "enrichment": "Fresh"
     },
     {
@@ -348,7 +426,7 @@
       "axc": 45.3,
       "ayc": 31.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/qryO_5-V2NIODCkZTEcYrg/6qoTbQI1HQ47fP0oIOXzyrpJWXxv2znWFBWCV9hoz3UyeiK5IV6D8ZzIAg_mET12M-4Qu0ph03fBLOb9Ro8XbiwaU0u6ZKwMpPTro2b4y_iKVwmK5f0gTfzCLIu1ns8nwFYKFIlhhJjIijFSSe6vlxw7j4XH9XyNOq6C49uzVYY/K-5ubqUojj3vmzF-boFNFVhJtW9oEom--9oT6rUtzH8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/vRYZY5-axHv6IvWAb18zAw/GMCmQb-_GIIPUiUN8PhxiaC3TFt_xlILtDqBqrzfSDCyJP5Vjri8HYTTHdERsN2_jFYd21rc181R9JsRKf3SUV2an7EWoPIiTjYjpGsr8ofRaGQF_MQuI8gie2KjCUC-qvBpcsjjUdBItU2CvBJ-YUGQv55pz3_MC7z_m44w85E/yRPr7jT-LFd0x3VcAB3DxqT19OAOgWoWbMbKbgJabDI",
       "sources": [
         {
           "type": "Homepage",
@@ -397,8 +475,7 @@
           "url": "https://www.omniconvert.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -493,16 +570,14 @@
           "url": "https://confidence.spotify.com/docs/sdks/mcp-servers",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "API Reference",
           "url": "https://github.com/spotify/confidence-resolver",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
@@ -530,16 +605,14 @@
           "url": "https://confidence.spotify.com/docs",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
           "url": "https://confidence.spotify.com/docs/flags/introduction",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
@@ -553,48 +626,42 @@
           "url": "https://backstage.spotify.com/docs/portal/core-features-and-plugins/confidence-flags",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://confidence.spotify.com/docs/sdks/mcp-servers",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://confidence.spotify.com/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://cursor.com/marketplace/mcp/confidence-flags",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://github.com/spotify/confidence-ai-plugins",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://confidence.spotify.com/docs/sdks/introduction",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -669,7 +736,7 @@
       "axo": 62.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/MNUSs-6Vf65I24ZyS4KB5g/uykeNH3NE6d02dcKFQTkBdhKVVxF_P6m5ERFnSZT9nND2mYnlqhOMR3l9pnVyfV8Q2_W-pCBN1mklngKrdHojRepeNLf563i2BF31ZezpCbwVhPEtbBPxgmpV_csEmZEf8KSU_-erqzPChDEynnKNA/cq43i-rzLoC0i29Djly4ac0u_6pnPrBNI0j6tGuDTNE",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/RUdQQlWNSHF8MSrQ6WaK2g/10Otwe9D1YOxkSTKq37vjlFfpV0Ve3YaSMp_Ff3r2vJRTyoz0zJfqFDtXk5k0303SpJSHpx9ffHBGqJRH_HxOe33kPGFUe_qkUB1FJzh0OXNc6ai0ZvG4AtCUyXJhgaeQOqV__VvvcPkgYB2MqmhRg/SEiDtZyLA4g97fcQfXX9RHxdOYobvxRXcntWLuaO5ZA",
       "sources": [
         {
           "type": "",
@@ -711,8 +778,7 @@
           "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/personalize.html",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
@@ -726,16 +792,14 @@
           "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/integrating-sitecore-with-agentic-platforms.html",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
@@ -749,8 +813,7 @@
           "url": "https://doc.sitecore.com/sai/en/users/sitecoreai/ai-capabilities-in-sitecoreai.html",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -813,8 +876,7 @@
           "url": "https://www.sitecore.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
@@ -866,23 +928,21 @@
       "ayc": 37.0,
       "myo": 20.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/CPt3NdW-mm_vOQWD6Z5u6g/_oTbsNcrLZ-cFyrZxZBTFj-lS3OL03TlS3JnnkuexnLPYxaKDGJ-I10TJsylJcPJA7v9GS8PWcCbGamllaZ6LpfwRcF_OcN2NUsJoSpP1VBmVdJf4FGXBi5B0Y75enUKI8LncW-uGClohCaz9MHHvbLRxgetqyo9561BaJKWItE/N6goe5TX1U-Tgph5Fc0B5-PzdvqHkspPWEZ64KeHUdU",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/FM8Rqmqzeko89GodsUsPjg/Ms0Yscx4vA95kgdhU8bzPos99T_O2_SBnN7mP0pa0XaLLh2ZfiLHL4LeKXdtmLMsbHDIikvo4rcrMKGWJaKhg9lc7JDSVfYWpicOJSY0BOiwuw5ap3YX4eVklLTYxpNw6vjl7LxUvQ-XXRgxSeiaQl6bGHe72fqRSzc2goIA5dw/NyyIwLAEKJW70m4eQMXowIENtOfgbQabAqE2U4w8d20",
       "sources": [
         {
           "type": "API Reference",
           "url": "https://docs.shoplift.ai/test/javascript-api",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://docs.shoplift.ai/account/plans-and-billing/updates-to-our-pricing-9-25",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -896,64 +956,56 @@
           "url": "https://www.shoplift.ai/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://www.shoplift.ai/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.shoplift.ai/features/campaigns",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.shoplift.ai/features/price-testing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.shoplift.ai/features/subscription-testing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://docs.shoplift.ai/test/javascript-api",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://www.shoplift.ai/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
           "url": "https://www.shoplift.ai/case-studies",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01",
@@ -1043,23 +1095,21 @@
       "axo": 85.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/LtCW5SjouJHY3jq9qvJ2EQ/e-KtCvpAaD8ukNI9L0Q7MOmHV5uZkbRhipJWMnzDDf9ZVv7DiUVhtLAKjm0UemGSJdSXEhMIh9KkJ7dPpO45TQVfK0HgTE9mjCt4vA_JVmHN1q1fDn4D0Dkx6HtbgWfI2xAKAzi0WIUMUhpqu9kw_FEYHIFuQbVWZbR5dlduxBs/abk7qRruhuFtWTo7AkHhT_AcOVezwrZ6hxZ8QdWadus",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/siEi-Nc9kATZjIVgjZhiVA/iY6-22ZcsCHIjZgUkv-Xm3kjCUSISALLPvBei95zwUVUd0cMgw8LC3GHLfWazfHt94qabWNNuJwT89qiIc8nLlQcbQP0K02vMZBpjNIQ2n_mZ3-24x4DgRxNo96bvfAY8hcdI1bWOi4_tfYqzLer6AX7hZ2NcKdQWEwnH4roPTs/7CnMmmKc8KE4aRs4Scj0w1wWXn37pPOq0Q7m6IiHGxE",
       "sources": [
         {
           "type": "Blog/Announcements",
           "url": "https://launchdarkly.com/changelog/alerts-anomaly-detection",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://launchdarkly.com/changelog/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
@@ -1080,16 +1130,14 @@
           "url": "https://docs.launchdarkly.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
           "url": "https://launchdarkly.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
@@ -1103,24 +1151,21 @@
           "url": "https://launchdarkly.com/integrations",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://launchdarkly.com/docs/home/getting-started/mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://launchdarkly.com/docs/home/getting-started/mcp-hosted",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -1169,8 +1214,7 @@
           "url": "https://launchdarkly.com/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -1191,32 +1235,28 @@
           "url": "https://launchdarkly.com/solutions/release-ai-built-code",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://launchdarkly.com/solutions/run-experiments",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://launchdarkly.com/docs/sdk",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://launchdarkly.com/docs/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -1237,16 +1277,14 @@
           "url": "https://launchdarkly.com/customer-stories",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
           "url": "https://launchdarkly.com/security",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01"
@@ -1292,7 +1330,7 @@
       "seoTitle": "Symplify Review 2026: Features, Pricing & Alternatives",
       "seoDesc": "Symplify is now part of Hawk Infinity Software AS, folding testing into a broader customer engagement platform. Compare pricing and alternatives.",
       "seoH1": "Symplify review: what changed after the Hawk Infinity Software AS acquisition",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/7Xjh1qYR0ILWs3sDBrVHKg/Trh3Em0Cp53Njpr4wWjpPm1xDGC8MKKtyE9pr4_NZDgm1lraq2ijzvolGBDg42Ck76uMqji3nPF0niGaxZK9yPIq5UMwKWrwFV6DfVfANkbZgoZlP5GRwNL4pQrXdZDlZfW5HEYpJnyutYDKal3jmQ/LeJGqGkFt0Q8jk5I6XVc5c-Ebz_2ozeLhrPmIy1e6B4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/4Jo14yE9tlhQvXSq7U9oUw/olhPI_cB4BAoV2sc5hvhmHTr41oi7qZqahu1nNEjpg4DpsjMpV9A-dDNIN7eY4fyNcFNCAOQKl1G0Fl5lt1OXT0kQDGI65C0cC5h9clyQkS6TToJ_6ktDBLSqkcbN-v-9jwe8WlEhXQSn-htzbl5Hw/OE4qPWzW9gNLpprGVBbKWNysSjp6lB_pfxrFhUh_rSQ",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1348,8 +1386,7 @@
           "url": "https://packagist.org/packages/symplify-conversion/sst-sdk-php",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -1448,7 +1485,7 @@
       "mxo": 50.0,
       "myo": 50.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/uLwy84ImMP4lufxMe_tsGQ/dLM5zsbOndvt25edHs7pjXj_IjbcR5VklqSVQTrkrOPAiUM67ok8LPmSgDAjw9S9GCqWOO-e2ym5wUVdPv_yKAP8JlC1qzi2h-ciXFgKNbnlCzxglZalWdjwWYQz5msenH8qTcP2A7MLDn2NLDafzQ/DAAWtH4y_X6bO4NYNQ6Sqbbvjow0-PXAY1a3NHNsLGc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/ZyZSzpHi3LYHkQ_P8e705g/thyE6Qmx55QMcWq1XWsPf-YMw6sy8oNp_-CHgGFgLej-TVVxK_6SmBzWNAWdFpgxCqGtlOsjjhR29DGuQMWLrPiGvC9XSYwXk0Xtqd1c2vgy9koCuGPcEr1vhBna22Y4dNisOkHhzV2VcHqGf738zw/xxJ0TEFRF7x-JfYH9EBnS48dqVXz1zurSShFOlmjapE",
       "sources": [
         {
           "type": "",
@@ -1469,8 +1506,7 @@
           "url": "https://developers.vwo.com/v2/docs/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
@@ -1512,8 +1548,7 @@
           "url": "https://developers.vwo.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -1555,8 +1590,7 @@
           "url": "https://github.com/wingify/vwo-fme-mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -1570,8 +1604,7 @@
           "url": "https://help.vwo.com/hc/en-us/articles/50734295118873-Create-Campaigns-using-VWO-Copilot",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
@@ -1704,7 +1737,7 @@
       "axo": 88.0,
       "ayo": 72.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/Cuwo1fPwjgqfnmegPOrYhw/e2UfxkZivcXEHokpZYyz9hwysVPHwHWXj-qC1zEBN4qOVAzSgMtRlGuq8iz79cwTOZMd6YS04A74bw_clLzJJf1OmQ4p2K3bXgKBoFLJvT_7mIE_tkJm13wOQ2HXUsGd2TXFmkyKjrySc0t4rb4_DrBpYySjQCIHeUun2gl346E/LIeBwqyFOaMaBlFdOkckez8qUTqr0SWXah-3WyLvibo",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/nla8z2XBk2Idhqwt2_IC0Q/VmJ-7RTmghW469i6St82a-VyYjz1nI7vEdBmex9hyrl8nit0tH_J_WQgijDmts74h2CFATo-1iZubWafm9w08te2vPQbpv4I8Ky7NS0c8sNlgL3NbWjgJRs_uZfQh3EwyQoAZgc9PDTVIZkQe0lqN8hdbTbIRHsFUX3TuASmsLY/HSiHq-5AT4z8BKXPMMPSZ1--Ib8OyLasM7KBVYmI1Lg",
       "sources": [
         {
           "type": "",
@@ -1774,8 +1807,7 @@
           "url": "https://www.optimizely.com/connectors/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -1824,16 +1856,14 @@
           "url": "https://www.optimizely.com/products/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.optimizely.com/products/web-experimentation/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
@@ -1847,16 +1877,14 @@
           "url": "https://www.optimizely.com/en/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://www.optimizely.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
@@ -1939,7 +1967,7 @@
       "axo": 88.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/5w_U05S1gYxUdSBy7kMvog/kEmGXcE1XWcrGEUhvbzp5y9GXl7KJZreYU7auRsqahnvKLjVcPLIPYo7VeLMzs7-Ym5HdoMpurdGakpEFxFx4J_tsJaU9SIks5RrWMdVb6Nm4R3OvKuN1-aXdocFNp3KLeck2Tzo6-saJAKTGUmEt36PWhkvwl1_z27Gs1I01Ok/QP7Xackz9gb5w0haihs4WwLkHyj51-q2MFsxE50cPmQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/0GfEOetVEWfWoZRolviH1w/Enp8XIJz8855nTTsuaiX2QmCTz8yDfbK-9h42v_nwdGp8ttXqlCqUXa1hwnQRHSxgyREP6SmCu74I2J7vEqk8lgly61KlEQjWmwS3NggGjWfez7DSgHeDPvjKyltPDUBjbvjYNgKe11s2qjXzIjzewoYRV218-9aGacx9oSUbCw/GdeqZMwNOhUMeTs9l0sgoKs2HzVRj-Qn7VogPj02WAE",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -2089,39 +2117,35 @@
       "axc": 17.9,
       "ayc": 34.1,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/s35PTKoYw73P0PKh1AsM4g/hSbxgR8uBpAVJOJdGG6VD-D9QAxVMfMkc5Xm4UL-oQbw6-ZIDkihjQpOUl7Zuu9r09zCrkFB-HDZlgnd0358Y-vjWB2Atv8WmYHWzPB0zlkUOYaSVU4YnT6swlbU0Pqca3SFfTRRvOzfYhV1x8ZTbUJbpcDEk5LsynODpwLb_dQ/xurmCIf7tJsuERcTig3cFufRtWvHBKmL16wf5pOz2cs",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/9xKya1sCGyyIDXpkMSvtaA/Fn5CshABuQtTBpLSaOfZesCEGHfWaAg3U5fLyQwVAGGPu4l9cOoobZSKprS46zNiHv_E8d1CayQvMXhOKcdhD3BecgpWtLTRanr4WHUkEIsIT_E-o4irtWa7Z69cPubkmowSwbD_xfOhlyJLmUL-LZW_7dlX4kdX7DM9dEX-16M/-qJVbqvEw_vJ2Bl8FzHsJx4XW9sXXvBWzZfgC04sHrs",
       "sources": [
         {
           "type": "Changelog",
           "url": "https://support.conductrics.com/changelog",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
           "url": "https://www.conductrics.com/privacy-policy",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
           "url": "https://support.conductrics.com/docs/docs-overview",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
           "url": "https://www.conductrics.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
@@ -2135,24 +2159,21 @@
           "url": "https://www.conductrics.com/ai-bandits",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.conductrics.com/platform",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://support.conductrics.com/docs/android-native-support",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -2166,8 +2187,7 @@
           "url": "https://www.conductrics.com/security-and-compliance",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01",
@@ -2244,7 +2264,7 @@
       "axc": 83.0,
       "ayc": 31.2,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/hBsNZnsmgYt8P-3Bv-mjmw/ULKlkC9paef5TO9XhPoP62LybtAYxtaMptVoJaKwJJRMs8WoCJOpiFIf6MXs-xkUpc-sIep-ueQf51mjxD4yqhM3ARfFOPQrgU03rVeHS5TGLRBFrB9p6IrSuzxentb9Y3dFuW-vI_lcXT5IJOEevZyaMOBedEC2V1-4ryyT_sQ/arfWhCvnjtNfwmrr1-nSA5W8hDkZ990dvN03HS2bWog",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/bNbOL01baeFkjP7A1SNPJA/PDbHQgFME7ATjQqjRVcmxPpco3OG59QNNBJY5VCCJN-XY6HB3enWRi7IsjSPTAlti4uKH8OQjIX6QIOARgt4HNlrT1a8WSy7-NVZPW_IP9oOSZTvswDKC7UccLPWVhUbZ15dXXPycbZFgtGdeK3Ycd7HZgnB7a0geCo2NwUQp84/cYUgqEuK5gDeywCiZto-l0JSm67IMb_Sf2ZhiA2kMRg",
       "sources": [
         {
           "type": "API Reference",
@@ -2293,8 +2313,7 @@
           "url": "https://github.com/absmartly/mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
@@ -2308,8 +2327,7 @@
           "url": "https://github.com/absmartly",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -2385,7 +2403,7 @@
       "ayo": 48.0,
       "myo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/H9ucXfs6YFLoDBXSnd96fA/nKXt85kVUez8LvSyWNAfIvua_JeL_E7taVUnnxHGgt8O8VaHMNg8BJu8DTt_9mFiFz8gizg5NUBzcabDHNA4JG1E36LF36l_ys0wWcd7RNV_1qVJVgvdip0vuecVxJXfTCaXzHMGr2WEfRm1aEH6dOUtRQ7l82qTxCT_btb3uNQ/fuDDKI7uZUacP0O_XnHZBpsf4ydbAJjQkNWl1wr-uMM",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/w-1-u4qyHSznkPuDlQfCEw/RaaNuyqdNoEV9Nvw_YJQLcBjmrxro3MlzEs-ZzQeaj4adEDQRnpTn3WNGNa7Zo9pP5sZ3GsoNuC0KYZ_Wlu9ALNTB9N06WBG8oO5xcGZyaDFOLCu1Pxi14Ho4ORMjtZH2gPwrjr3n4G12dvmKum-2dgwTDBdtSweKF4FYp5iZ68/85KhgmfYpcZDRIsLO0pIo7OuY4Avaman_lbGfb6hKFM",
       "sources": [
         {
           "type": "API Reference",
@@ -2406,16 +2424,14 @@
           "url": "https://www.intelligems.io/resources/product-updates",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
           "url": "https://docs.intelligems.io/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
@@ -2436,16 +2452,14 @@
           "url": "https://docs.intelligems.io/developer-resources/mcp-server",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://docs.intelligems.io/developer-resources/mcp-server/available-tools.md",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -2459,8 +2473,7 @@
           "url": "https://docs.intelligems.io/developer-resources/mcp-server/examples-and-best-practices",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
@@ -2502,16 +2515,14 @@
           "url": "https://www.intelligems.io/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
           "url": "https://apps.shopify.com/intelligems",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -2574,15 +2585,14 @@
       "axc": 22.7,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/VoxiPgBWi4Bh1kl_DHMKSA/sE_rrZvHTl25GfNObP9HaqNpGVWj8UAilGS1rNCqHntTdBLbUVcm1rMQ8DxqyCobpBJYAV__zjsI7GuoFkR34hDljKucTkYii-wTiA9xZGn1X0GQHJYxm6_Wea7V5xOzZBttfw2wKts-zmYeEBw3NoWHXUzL-SfJwwI8SyGJbS8/o90LevcuoPiC228TSfCfkOdAkDTgDW8AHZ_8oKA75Kc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/EFwumPUxmSVaA05QzNlVaA/p8NgvbvPPr6dnyL80X25pwcgItGvQyv6Ui3jTc5OjV1Sl3P9SJRF_NWcap7vF5BuoP9etfe2rmV4CXp8iWq1EAi9TeLlC29YSvmKbPg5L1g3wQJxoHVhDZreES_FpRaAwa1Q0MuYbYMq60pPGhCvtkBzJhvqbunBhGX0tVQKrVQ/xKPSj2u8X1u5bZ25SkQ263SDe8OCp1hE3FaOeQmDtwg",
       "sources": [
         {
           "type": "API Reference",
           "url": "https://docs.webtrends-optimize.com/en/articles/9271819-ots-api-guide-for-server-side-testing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
@@ -2624,8 +2634,7 @@
           "url": "https://www.webtrends-optimize.com/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -2746,15 +2755,14 @@
       "axo": 92.0,
       "ayo": 90.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/GolzfE7r6BR0FU1_EM2Xag/k1igWGsECWXLC-bM0RHKjaIKR7MBV7vl6uVXRmAopdmDpLSlreuNA3aZKDmeg1OZNT8jL1U_-ZCniaLqrxtBpkgH9aLtj5z0vQ4nDMp-uFQSsUOWoTpMVTZpQpQxq7JMYucA-K42k8LKawATC6jttg/eloOm-Df_TQdeNyHxgccVS4n9c-SXj1zY0zFYe_mPvg",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/uq74hTkinHcMR6Tvqu67MA/WXij0a5DbrKBZ8MJ0ywQ78Xkx8SlaVrhIzqRGrh__RLQO9bIeJsnThIJGtPNkXzFk8K2okUAAbRFzow3g5k71wbso0M4B47JTw6hyrmsKufT-XVEqgYd9VA9AnELS47JmE48UVRkZzaLdHhGcesBcw/muH38iStZBQAarQ0Im66ElN3hCzBAJ5p2Ija3OUJTV0",
       "sources": [
         {
           "type": "API Reference",
           "url": "https://posthog.com/docs/api",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
@@ -2768,8 +2776,7 @@
           "url": "https://posthog.com/changelog",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
@@ -2797,8 +2804,7 @@
           "url": "https://posthog.com/docs",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -2819,24 +2825,21 @@
           "url": "https://posthog.com/docs/cdp/sources/bigquery",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://posthog.com/docs/cdp/sources/redshift",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://posthog.com/docs/cdp/sources/snowflake",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -2857,8 +2860,7 @@
           "url": "https://posthog.com/docs/model-context-protocol",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -2872,24 +2874,21 @@
           "url": "https://posthog.com/docs/model-context-protocol/tools",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
           "url": "https://posthog.com/docs/data-warehouse/sources",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://posthog.com/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -2917,40 +2916,35 @@
           "url": "https://posthog.com/self-driving",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://posthog.com/docs/libraries",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://posthog.com/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://posthog.com/sitemap/sitemap-0.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
           "url": "https://posthog.com/customers",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -3108,8 +3102,7 @@
           "url": "https://www.uniform.dev/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
@@ -3200,32 +3193,28 @@
           "url": "https://www.uniform.dev/features/ab-testing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.uniform.dev/features/ai-agents",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.uniform.dev/features/personalization",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.uniform.dev/visual-workspace",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
@@ -3246,8 +3235,7 @@
           "url": "https://www.uniform.dev/customers",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
@@ -3315,7 +3303,7 @@
       "axc": 18.3,
       "ayc": 57.2,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/GB2BeXsCLmBwE5Xn5-chJw/MMhICC35O8YVd9Rhec0_tNBzxa-GZBF4-C0aAj2uU7NG6H0CvIcWZB8QZ2w_NiJCQYzgGtI10PiCar1HtXlZhMEwdl0HuoRoH9Ios_FvTfVef-0k7aP0NLOcrQZ53gypI28rPqxRL4rWF53GI19GuA/jO3ZlgZWOSZUVhofxKy0j24nqnMuvjf11f2O8Tgq-kA",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/cVzqfQRVITF7Wylkeg1rzA/TvPujSQyLs1VyIE8dgtAOwEQ6kQ_buBF8aogGeE0YAxzKU2K2xS0LOKJgF2Cj_gkIla1tkZoAkPEFjbALfDskZVmWFixTC52dM_-zXusLTyE0kFAEOCRTwaUe9aTMVOYlF9WkX32El-MLRq0hsF6gg/zN5cYnmKGoQnC8PZtxoLYXluiux9KU_efUUvv9hFuqw",
       "sources": [
         {
           "type": "API Reference",
@@ -3482,7 +3470,7 @@
       "seoTitle": "AB Tasty Review 2026: Features, Pricing & Alternatives",
       "seoDesc": "AB Tasty is a proven enterprise choice for marketing-led experimentation and personalization. Compare pricing, AI and MCP capability, and alternatives.",
       "seoH1": "AB Tasty review: features, pricing, and alternatives",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/umfqOUdAsIvu2whfSRIS0w/OjXTDoNt4wXI6VSIGSZ1ixaPCWYxVRELIBh5z-BiuivOett0TETQKN1ViNnrdbueT3LZYm1Cs_KqUQGYSK0vN8Bpjx95kfarp7JRFlb6H-BLgTCW5DL_nkKTNDUStVnt9qFoiuMvpk-CMdsg0klh7w/mNl33cj0nNr1IDKEATXR-vivPPU72bZUbrVfg9iMNYI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/4ghhbW0og_Zetpva21_u_A/bbcosKwhBVecbSziRkNaczkpM9ksN2na1L_nLajnOFGNnuLGNO3mOY1Xte0vL14e4dX4RSg1-cX4hbOOs7m-AF6gioIb7MAQ8pgbrreV8nxy_3poNdU4kGGtebzRLqjzZKGYKV9NFhTB_cNUgwf-hA/slUucGgxtCLpsmCbDHsNwhTc5NapvUOAebr30UuE-7o",
       "sources": [
         {
           "type": "API Reference",
@@ -3538,8 +3526,7 @@
           "url": "https://docs.abtasty.com/integrations",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
@@ -3660,7 +3647,7 @@
       "ayo": 45.0,
       "myo": 42.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/67N8nl31lPqXU6nAb4db7Q/c1R77AVQWIiePdlfd9uFP3yG3ZMBl-1IuJeN0yzE82hu64EsA-WUPNlQ4sUo129qvkI1Y61CerO5EfxEdPtlOTu2dkzwepcYFGX-UFx9LH3P_q1QdcMOG2v468zNI9X7TDy8y9nJMvzmoQHNJz8i9Q/xfIEhqBWGkO5-sKA25ekahtO7WJ1D6Ewk8C6PO2g9u8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/_RcJkYJsTn6X_s8Ux10F-g/gXSCP5Sc7QbL004tgfjuPN1Zmg3jE9RmGx0F0gDIQqPourq4dSZWn8fTmZujsGeQI5_yz7rP0TffKJQV-nLiTkc3F2jKOEj63kV9BpaCa2htRdDOwhPFi981MpQUReJXk-m79XghRZ8Gp-uEAjgnig/dL0TRf7RpIJUJDmQDm_Hv8DZS_awGhMW5IOjTveGnXY",
       "sources": [
         {
           "type": "API Reference",
@@ -3674,16 +3661,14 @@
           "url": "https://www.convert.com/blog/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.convert.com/blog/ai/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
@@ -3732,8 +3717,7 @@
           "url": "https://www.convert.com/pricing/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -3747,8 +3731,7 @@
           "url": "https://convert.com/features/full-stack",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -3762,8 +3745,7 @@
           "url": "https://github.com/convertcom/javascript-sdk",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -3777,8 +3759,7 @@
           "url": "https://www.convert.com/case-studies",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
@@ -3847,7 +3828,7 @@
       "ayo": 32.0,
       "myo": 30.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/a_za-BqcBtuYuqNHjqDwBw/vsfilyx3hINLXvGCMNE5DTP4gQRv05vGPJGhdDPrLG6TIeSkq1AWYHFZjGQb2uscNBMxmvO3S8k5OYemt3PTKcCI9OpbRDlF-SnVBY--BOEy0SYlBhCDgJIHIyMdF5kW2Mr9g1mlDA7XlQYqj5WRkYDtlgqCtMDnypm6Ov9th1c/cKMChlpJKpgNQ1NsOU0mUS95KIH6-P46zFZFvVuqp-0",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/TEVC4aQ-ukeFSTdcxtpIrQ/_DAZLe8H7dl3DewGEgTYz4ESk09B0juX9tYaZ3Hj4ePOpSnk_QKVMCLvk-UWSVwpJO8GeyhET4eWFAdusT_zDTinZG3wOP6IusyOGnDji8jm5HMr4O69_amLEXxw3j__YCNiJXr2qFTWvR3xDYIgsbun5_jgaHc9nA8WMJOPzSw/3hzJtsELy5gi9-VRUzM169S2uL5AaC8Yr2o2d62pzrA",
       "sources": [
         {
           "type": "Changelog",
@@ -3952,8 +3933,7 @@
           "url": "https://www.zoho.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -4064,32 +4044,28 @@
           "url": "https://www.harness.io/blog/harness-to-acquire-split",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.harness.io/blog/introducing-autonomous-worker-agents",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.harness.io/blog/introducing-harness-ai-devops-agent-for-ai-infused-software-delivery",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.harness.io/blog/mcp-announcement",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -4103,8 +4079,7 @@
           "url": "https://www.harness.io/products/feature-management-experimentation",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -4125,8 +4100,7 @@
           "url": "https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
@@ -4161,16 +4135,14 @@
           "url": "https://www.harness.io/products/feature-management-experimentation/feature-management",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.harness.io/products/feature-management-experimentation/release-monitoring",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
@@ -4191,24 +4163,21 @@
           "url": "https://www.harness.io/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
           "url": "https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
           "url": "https://www.harness.io/security",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01"
@@ -4272,7 +4241,7 @@
       "axo": 30.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/53DbPdwiuglfas45J0AeJw/97u74kIw7vMHtld2tEsr5xiSHEUqVg4BkGB2mRudX8OrwehzG8K_N-CLuxSiCH9CvAg_0b2Fn44kKoHhUb7ljpcEb2JD2bMb6MLLJQfsCsZu5XWdK3oiX3EibwnUncCAqmjdxbeEgfIJmqP_QCY8Q8lKjZm4h-0teXTrpMMoXVTzMmRI4s_NxW_9CdIMm7ja/2uQ6jqcgBL-Kn5qeBpSzqrc200-c6szss68zY1bgrtc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/o4COL7Dh_zJyS2xAtZ12Ww/yPo-qJ43oymW75bZQRQl9wSkCOldP9S3LcCc1YDtedtakbCYFeh-ynns6HCvojkVf7jLEgDqntQ8HnPnLnUNdi9D4Rq_-Ux67dySNQPPebaduZ6a-qlnqQFhGVn_Biiwi9fxwNg5B5zpJsFCLeU653fvLo7pc9JBI1SdQgdZXb65Pcf5XQkyH43KHx7kwoYG/EaFP1O_qnJwu9lFCfI7DY3mEmoeSKEFdgqYu0rESGOs",
       "sources": [
         {
           "type": "API Reference",
@@ -4349,16 +4318,14 @@
           "url": "https://www.salesforce.com/marketing/personalization/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.salesforce.com/marketing/personalization/real-time",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
@@ -4379,8 +4346,7 @@
           "url": "https://www.salesforce.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
@@ -4457,7 +4423,7 @@
       "axc": 40.6,
       "ayc": 42.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/lT1jJot2zhwCVAFm0iy_rA/r2TzPyRDddBfXKw2kGSHEzoo9L0b12LSDDL7INnE04GqGJrBMuZzx2wzPXJoyr_9SCybpZS-arPHhnKDk7ked6dmgoUHFpbGFpbq9861fNDpT7MXDnZxUkrAE2tyKdVLfQnHWIsBfoD-3rMLryWIOJ2oI8_Gukb59hOOJftMkHY/6wHBE4Zm99b_8RBs1Or6XNlIGeLDWnS8aHPGXPRPayY",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/V67dDf6SNWmDktaEkSC_1A/VDB2F2RzyVaghUkrbSSr-Tg_PsMsUupbEQlrzxwttKS3YDSOcsiwqu4OSDpJduf8QPy3d3RHj_scdEWJBeEqTk7uNEU85HuIk0T_yZB2XCkSe94FO1ROEk357tiIMi4ylyEuXgu-JOEs2rj-UrSLioQfV6ixupWpp3mf4EFQiGk/-hG3AON1tDXYanLAt9INuNYz9qMyHh6xhvaXfYkL72Q",
       "sources": [
         {
           "type": "API Reference",
@@ -4604,47 +4570,42 @@
       "axc": 63.2,
       "ayc": 54.3,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/2cQ2rDV-EZ4y9oLXB5pQag/5t-CuoX4NkVE915UZDMl7j8k0JAvFj49viqYl7QwoVTNwXnfZe6TGVAM2_rxZhnBynxLTo-eAI1ek-qfJB_QwjsnBc25PlU5OGO54pJr1SlMrdgDACFO3BzxLgZOUruWDsTVyKrBrf5HtqTCTSpOYVgw8ZUakPPkFd_UZTmPU98/0BTFnchw8pas3jAmqBYgCQtk-rZXEdMOdiAhQ084Sbk",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/DD02Ch4Z0kukOIqLkTEKkg/thMyAkEz5rX9dA0uPavSHC-BiIDHLq86EVIml8lRFs_T9hH0FmGyUSc3ZQ5aXZu23Df_CO6qpp9soluLJPRemrrf44-gKo1RNYtam-IFyCMdLmGMdBAcKUrXorJsES5fzSyGdoVOgDbYMLCeetmyteRCkLmd1EbeVebW-48zmQA/kATI1-Y0gwTOykDMtAS8O9bWXlIaHIfRSp9C-84-rrQ",
       "sources": [
         {
           "type": "Compliance",
           "url": "https://varify.io/en/userdocumentation/iso-27001",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
           "url": "https://varify.io/en/userdocumentation/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
           "url": "https://varify.io/en/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://varify.io/en/integrations/google-analytics-4",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://varify.io/en/plans/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -4665,16 +4626,14 @@
           "url": "https://varify.io/en/functions",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://varify.io/en/userdocumentation/server-side-a-b-testing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -4725,15 +4684,14 @@
       "axc": 16.4,
       "ayc": 13.8,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/omcvgqhOW-ckT-D-SEwxLg/Sfyve0F_cGGO9RbGdgPOQI9kCe2Fo0RwPyAzNPN_gSSEc4YL6zPHUU4kFjs--PSH1gb1YNrY3_FXfo4yLef-Q1yF5jKqzWQq8cf6TxGdzxNqNNVPAdifoWl7vGByGpbdVzjZ3jGbCuodt9-LS6rRxfOkE6OsreKs9ATr8wo3-Y4/ctHKdkmwvXOCiSNtTrDjNySvKdJyey1TKwh0JTiiYVc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/sHCHVu2aHXGOCM-OPLxMWQ/wOFsAFpZUvmfc7aRhPdOtRCILTFvHfsmcaFUUGs-SWhy0mk_1mTS5awcXPdQEIE9JPTlaKMZSCcXAjJU9YGIfs9ZODDgchylNQN5iVGLct6KNbNDbGqDEHNlQqIko0ZU8xtd5Je8pm3lQ4PUCaALdp-pgFGXaaZ_NiG4PhPkYww/6m9IcpNP8Sokqcen_Fe3sh67JHsrwHu-Cwe7YbNjcLA",
       "sources": [
         {
           "type": "Blog/Announcements",
           "url": "https://blog.croct.com",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -4747,8 +4705,7 @@
           "url": "https://croct.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
@@ -4762,8 +4719,7 @@
           "url": "https://croct.com/features",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -4791,24 +4747,21 @@
           "url": "https://github.com/croct-tech/plug-next",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://croct.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
           "url": "https://croct.com/case-studies",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01",
@@ -4873,7 +4826,7 @@
       "axo": 78.0,
       "ayo": 62.0,
       "scraped": "2026-08-06",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/geL63ODscM7LFj0gVdGhnw/-tG3tIqoRazmjTDkAUq684KI94lZ0EIR1CVuUQTdPi_LkNVyeZZzHvpRpcdgxYSMutZNFCbpYutRPZQNq4NDu_1Ctnn792IJjQ4r6byR54DaQVa2OCdNoxhpR7kq_XKHTFjcGESWHvrS4Z0mhxCT-A/lN5V6CiPC2yk4jL6SCvSK3redymsKW05TBGZimIyN4A",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/T2C4iRQCSANDabCgEQVRcA/0mF-lEUEw-RzhNbgopBc-9voeAUAcU9DVxGrb7slz-CDKHqPA12O3YwiM7FFPK-bnQe8CyPrgenqv4o5VXnnalFeSgF_NUEg3cfx_OAZPZIRQhbZvxyaSgNw3QjhD9O4ClAeooXh3Ulve6CbZg9ySQ/k636NK9AxI2072uk-KMslj7JDiff5HL8AIoeg4zeiCw",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -4922,8 +4875,7 @@
           "url": "https://help.mutinyhq.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
@@ -4944,8 +4896,7 @@
           "url": "https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
@@ -4980,8 +4931,7 @@
           "url": "https://github.com/MutinyHQ",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -4995,8 +4945,7 @@
           "url": "https://www.mutinyhq.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -5094,207 +5043,182 @@
       "axo": 84.0,
       "ayo": 58.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/iBO92XMSgp9cYmi6jVimVg/YaXJEg8CtxV-FalEUp_SuCIa5-48bcNjIvgTwwmixR4zG5Z7SxWazPVUISZd4sZuEHkKxaaNsUqDDR2hkGQQKyFxYVG27n4PkwLWzU6SYimAVpvTe-_g7VbfLbWkGlGFR_wAw5ul8mw68yKHJKKHUwOiG7xmDPnkrwMtw92jxN8/JwtBPAQKh8noY8e_SsoRKMOhBvgj5tpLmbRVk2SmwZg",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/lGjM-MdJnp9Gw8n9zyJdDA/k-EmQ3yBRFwVfQ-wDx4zqnkIEstvVYmzpJnMDnVMEaegW8EASV5KtU-88cmEJW0hL9LkYBvEJ2hQAlpxdbcU4XCsvnFS0-YwvQQNT7ajf0i-eRbIl-YadpeKdP1FDHQ-G0H_GVCDCt1xc_F9x3WwUDYiWrYzoKh3NYZg8pCatJI/ODPB3_IjSQAHX1X_ydEjvlKA8W9R7xeY7X5JF6g3cCI",
       "sources": [
         {
           "type": "Blog/Announcements",
           "url": "https://www.growthbook.io/blog",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.growthbook.io/blog/agent-experience",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.growthbook.io/blog/ai-visual-editor-from-idea-to-live-experiment-in-minutes",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://github.com/growthbook/growthbook/releases",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://www.growthbook.io/blog/growthbook-version-5-0",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
           "url": "https://docs.growthbook.io/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
           "url": "https://www.growthbook.io/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/guide/bigquery",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/warehouses/clickhouse",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/warehouses/databricks",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/warehouses/postgres",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/warehouses/redshift",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://docs.growthbook.io/warehouses/snowflake",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://docs.growthbook.io/integrations/mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
           "url": "https://docs.growthbook.io/bandits/overview",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
           "url": "https://docs.growthbook.io/integrations/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://www.growthbook.io/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.growthbook.io/platform/ai-native-development",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://www.growthbook.io/platform/warehouse-native",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://docs.growthbook.io/lib/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://github.com/growthbook/skills",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://docs.growthbook.io/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://www.growthbook.io/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Trust/Security",
           "url": "https://www.growthbook.io/platform/security",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01"
@@ -5382,7 +5306,7 @@
       "axo": 82.0,
       "ayo": 65.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/cXGu0_xpFJQ4tDzrj9QWLg/g6qjkTKXMXdt-5qG4ueCr26N1U-DPTFtKYj2zVen6yyJX0764gPR8Bpm2c4j6CUMaOPkqjVO_jT23OiRlgm_wh7nGltShnO2Frh-pg4GvDD49lHnRJulNXBT8gNUyjxzRs5gzzQPsARBC-o3hbgPwkpLL3rzzdXuvvIF0yKMFck/67HxQ-0T2eDXkq1qLqswy_Q2u5N_877DD8RLyJLjA3Q",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/E4B9PCSk1SHf3V3eE4T1dw/z3lp8pzqb3BKkL5tyu_kU1X_2FD9E0KwGLIUnLHNOUJGn5AlXg6LlQCrKw8sEuFtBe6LZXNPH6ggN4RdCYdgyV-6WaTeFBSu83yS1cDoCXq-hSaCrUQvLeC_k0mIK2wqbUHh0Vyo45vODpmrfmI_v3lVfneeR0LVk_XBMX5TDrA/JCKnbh-3uwLzya3HzTxVfMIoXTiem8mZ9fZDmKIDWhI",
       "sources": [
         {
           "type": "API Reference",
@@ -5396,48 +5320,42 @@
           "url": "https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://kameleoon.com/blog/how-ai-really-influencing-experimentation",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://kameleoon.com/blog/kameleoon-ai-copilot-changes-how-teams-experiment",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.kameleoon.com/blog/what-is-an-mcp-server",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
@@ -5639,8 +5557,7 @@
           "url": "https://docs.kameleoon.com/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -5654,8 +5571,7 @@
           "url": "https://www.kameleoon.com/sitemap.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -5773,55 +5689,49 @@
       "axo": 80.0,
       "ayo": 52.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/B3ALTP1kgfiPm-aK697GzQ/PNcsauNf38iBJuq2wGI0hIAGxByzNFu1r26iFFQm81PrOM3ESBKFcjqzNtpvRIVCUv398lEO5R5IBYQV5JvBVffte0y1VIDKUl9IZ2xgt2w6JNQpjAA2R6y3Eu-d66tCZdiToUG35nXYj3mrfw_wYdBPvxo4xZU37PfE7t3H1V0/LEeD5cdmbAngerOPi-iH_yv4pdIrDRpt1jWO7sbsY1g",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/YTYZGArld2j9adxEHCxnmw/HrbGIjLfkXbkOrVmK4aW6FNxINUlS6y--eXYaBF0KusXMmwc6A4i7y4d4vxsm5nsnw83yO2HAHr5oeY2WTwS6XJASaGTWiDMBU2OTE_Qxkd9mwUcWRKX5ul8K27X6c9N7VHbSTIalRiSpZQiSRGC0YEf7KpZb7Fq5Tec6tecv8c/irwFMmPJBmgLeby1AYxUFIXVLndhf0xS1Zfr92Dda1c",
       "sources": [
         {
           "type": "API Reference",
           "url": "https://docs.statsig.com/api-reference/autotune/get-ranked-list-for-contextual-bandit",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "API Reference",
           "url": "https://docs.statsig.com/console-api/introduction",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.statsig.com/blog",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.statsig.com/blog/statsig-ai-features",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://www.statsig.com/blog/statsig-mcp-server-guide",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://www.statsig.com/updates",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
@@ -5842,8 +5752,7 @@
           "url": "https://www.statsig.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
@@ -5857,16 +5766,14 @@
           "url": "https://www.statsig.com/integrations",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://www.statsig.com/warehousepartner",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
@@ -5894,8 +5801,7 @@
           "url": "https://www.statsig.com/mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
@@ -5923,8 +5829,7 @@
           "url": "https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
@@ -5938,8 +5843,7 @@
           "url": "https://www.statsig.com/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
@@ -5953,8 +5857,7 @@
           "url": "https://docs.statsig.com/sdks/getting-started",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -5975,8 +5878,7 @@
           "url": "https://www.statsig.com/trust/security",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01"
@@ -6044,7 +5946,7 @@
       "mxo": 20.0,
       "myo": 28.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/zCyIFXHD-4DMktTAx-FYkg/I1ffRpGWMBTLFaW26FcMTCQaa8Biu6PMs2dHQkHo3oCAFt0Q0S8qCtkm-XdjgQ1tjx2L0v3c2gaVg6SW3OJVsVXschBVNFKnYD1G9LBzLIEd44pJLNyagUDQyO3C910ICH4y9ytTh7sPeYU_sCs76YO1j9_fbKjuMbpLSPTDOO2XRQgP1QEnOluCZ1sASVzt/BMDLEoh_Vhj8fhNuy6hGZ_pP4a4SszLhYAj9HZ-j3jk",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/KCr43uGxJf0Z27qmHEK_gQ/xp2c_38NobC61AjOP8oHdp88AnU1CQcbqzqq40NJp2-sX1MPqQRAxcrTfyyJ6yethaVv0fNu5RnYp8DbTU2NM-Rklpp2eaS4BoLRJoNYy8Zd-ogn2CJvNBI4IG4Fnm3u7F72p_5wLRHEt3LJf2xaQdy6aB1N5dA0sYaq3lyUxwpr-m8mrnGsWwupbH0NS-8x/XZatlsQqKEbZSOJS7CILkwtm9cbSCN_ez0zOsrUdvdE",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -6107,24 +6009,21 @@
           "url": "https://developers.webflow.com/mcp/tools/data-tools.md",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://developers.webflow.com/mcp/tools/designer-tools.md",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://github.com/webflow/mcp-server",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
@@ -6152,16 +6051,14 @@
           "url": "https://github.com/webflow/js-webflow-api",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
           "url": "https://developers.webflow.com/llms.txt",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -6217,7 +6114,7 @@
       "axc": 15.2,
       "ayc": 13.8,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/Jma0j68ONCD06aznpHTubw/g0T72DWnuVYBiDNySmzS7ENkYr5517aXO7JWLkLZGJWEVc0c4A80JGM8qLICFODqYE9yHjcnIE8dgTLrcfoz59cfCeK3UXQg6h5s8EWBn0noI2K2K3AUwQrl1Vhu-abqpgUfepkiCbAeVLNA23mq8MTbcDeHHSURNGDUawQtdjg/X_7dJQQ8LydUOhDwtn94bLndl5MB1u1NOLxYvgQ65N8",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/huGH17oLk2zirv4BznnZPg/Bwv1oZVmqedep7AwyC44CCzUeoFHGU7dAlE0BOW2Nt3tMtdYnXG2d2oHq6AZAYxdMbIk-RuBQCWpNkjTK0RrdfSZPZ1f9mjt27qJYnPh5uv1GHmK4OnTplB87AHMTadnED8OTIz4tEOrrODT8yggaYKckz_Hs_ygnUeKzpWpmvg/VhpLZCVJ3W_-tW1lkcNL5ndU8TdxjQjjKNWeIchoj4s",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -6287,8 +6184,7 @@
           "url": "https://apps.shopify.com/compose-app",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Solutions/Customers",
@@ -6384,71 +6280,63 @@
       "axo": 88.0,
       "ayo": 68.0,
       "scraped": "2026-08-05",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/9grPcj6Jlt3gdkQB5dOSIA/t3YS15ZJsNQI8daFv3cVUFlTwfVQKQIkvav4nvCSUAzXQWB9RexCaoV6DCwCSf7ZI0F2fQ8ifpx_xl1ktVMba0ePbRHrK1aJkSml5F-Vw1MeR-b09U5GfRhHQ6G4oc7pWOkHYqcjbWpSIkrRszHTJQO68I-IK-WfemOu5ykUKHk/vitG0tvGCT1aTG-fL6aXT2yO3IMwv91P6Sc1JtBLwcc",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/qEXNnD6F7Jb3__iAKSLzxw/teQKzKrS2eo1GpXooDTuJpHlGbCVqZh-OsFDak0M8Tz1IxMNAhZHuUdLEdaxXVZDgOf2YDC2xkXebjf-25m170SQv1gQ6vUvbO_i1_juCJYP6e36LWhnvH2fkESDoEu-jNj0p8FcmPmXuaJsDKEoe-gNiL6DDpBU9WQfft5zHfw/ye5x8a2yawWkInjUc62jVL7b4jdsozXjHnABlY6yaOY",
       "sources": [
         {
           "type": "",
           "url": "https://amplitude.com/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "API Reference",
           "url": "https://amplitude.com/docs/apis",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://amplitude.com/blog/ai-agents",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://amplitude.com/blog/amplitude-mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Blog/Announcements",
           "url": "https://amplitude.com/roadmap",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://amplitude.com/releases",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Changelog",
           "url": "https://amplitude.com/releases/feed.xml",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Compliance",
           "url": "https://amplitude.com/docs/admin/single-sign-on/sso",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Docs Root",
@@ -6462,144 +6350,126 @@
           "url": "https://amplitude.com/",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Homepage",
           "url": "https://amplitude.com/web-experimentation",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://amplitude.com/docs/data/destination-catalog/google-bigquery",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://amplitude.com/docs/data/source-catalog/databricks",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Integrations",
           "url": "https://amplitude.com/docs/data/source-catalog/snowflake",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://amplitude.com/docs/amplitude-ai/amplitude-mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://amplitude.com/mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://amplitude.com/mcp-server",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "MCP Docs",
           "url": "https://amplitude.com/releases/amplitude-mcp",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Methodology",
           "url": "https://amplitude.com/docs/data/warehouse-native/overview",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Pricing",
           "url": "https://amplitude.com/pricing",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/agent-analytics",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/ai",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/ai-agents",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/ai-feedback",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/ai-visibility",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Product/Features",
           "url": "https://amplitude.com/docs/feature-experiment/overview",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "SDK Docs",
           "url": "https://amplitude.com/docs/sdks",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         },
         {
           "type": "Sitemap",
@@ -6627,8 +6497,7 @@
           "url": "https://amplitude.com/security-and-privacy",
           "fetched": "2026-09-01",
           "ok": true,
-          "status": 200,
-          "updated": true
+          "status": 200
         }
       ],
       "swept": "2026-09-01"
@@ -6697,7 +6566,7 @@
       "axc": 28.4,
       "ayc": 57.2,
       "scraped": "2026-08-10",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789488000000/zOFzt2oZkS3ek4bArwDyng/aVXLSGdE85V5TYeXMvxp3fqgKeSFTb157xjPURcd5DSeZnwnuGJoSJAu0bsKuoBI-8u-BXNSRYLOcmo6cAE_VRwLltGm8oLvzrcmGRVU8KqnhgHxBp3BlPvJJNLEiYw-QiiwLWJ_o-3wjCosQknyGvEuaUs3rNAANu5YuG0wSgg/foEK9eBlqWsr2nE4kI5D0sUHzmfuAoqi0z8hdnzNleo",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/57/57/1789495200000/Jk1G2A8J6jXu5OWk86qVIw/WYdjIWlWBEr9Ayrr3fB07AwVxFNFjBGAVMzRK8hlYXY5O5TeDprQqInqjArbKbdAyDVgWgsgbDQ9wA3XZQG6ga4wy2CApjhTcmwGpkNb0euYAFrpBVFoawHF04GLOn4-vWDM7nsUvheo1Fn3XSYHBKqJkZRj8ANQtaV6qO2x9SI/KYarySIjlhECJ2-QT-lsU0dDQZH8yVhwK3HYqL0T9bE",
       "sources": [
         {
           "type": "API Reference",
