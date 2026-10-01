@@ -1,2 +1,328 @@
 # https://developer.harness.io/docs/platform/harness-ai/harness-agents/
-Harness Developer Hub
+Harness Agents reference | Harness AI | Harness
+⌘
+Ctrl
+k
+Sign Up
+Get a Demo
+Contact Us
+More
+Home
+Documentation
+API Reference
+Release Notes
+Roadmap
+University
+2.0
+Platform
+New to Harness Platform?
+Overview
+Get Started
+What's Supported
+Use Harness Platform
+Authentication
+Organizations & Projects
+Platform Access Control
+Delegates
+Secrets
+Connectors
+Governance
+Status Portal
+Pipelines
+Variables & Expressions
+Notifications, Alerts, & Banners
+Triggers
+Tags
+Security
+Certificates
+Templates
+Approvals
+Automation
+Git Experience
+Favorites
+Harness Dashboards
+Settings
+References
+Service Discovery
+Monitored services
+Application Maps
+Platform Rate Limits
+Platform Resource Limits
+Customize Branding
+Knowledge Graph
+Use Harness CLI
+Harness CLI
+Use Harness AI
+Overview
+Get Started
+Connect with AI
+Context & Memory
+Core capabilities
+In Harness UI
+In your IDE
+In your pipelines
+Worker Agent
+Agent permissions
+Configuration
+Agent examples
+Worker Agent in Pipeline
+Harness Agents reference
+Release Agent
+In code
+Govern AI Output
+Release Updates
+Subscriptions & Licenses
+Flex Pricing
+Manage Subscriptions
+Account Information and Alerts
+Usage Analytics
+Cloud Marketplace
+Troubleshooting & Resources
+Tutorials
+Troubleshooting
+Knowledge Base & FAQs
+Articles
+Platform FAQs
+FAQs: New navigation
+FAQs: Pipelines
+Reference Architecture
+Reference Architecture
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Documentation
+Harness AI
+2.0
+Use Harness AI
+Core capabilities
+In your pipelines
+Worker Agent
+Harness Agents reference
+Harness Agents Reference
+Worker Agent definitions use
+agent.uses
+to select a versioned template,
+agent.with
+to configure it, and
+agent.inputs
+to declare reusable parameters. The Harness-managed template supplies the container and runtime configuration.
+Worker Agent form field reference
+The following fields define a Worker Agent. Required fields are marked in the
+Required
+column.
+Field
+Required
+Description
+Example
+Name
+Yes
+Human-readable identifier displayed in the catalog and pipeline step picker.
+PR Reviewer Agent
+Description
+No
+Free-text summary of what the agent does. Helps teams discover and reuse agents from the catalog.
+Reviews PRs for security, schema, and architectural issues.
+Instructions
+Yes
+The system prompt sent to the model at runtime. Supports Harness variable expressions for dynamic context injection. Go to
+Configure instructions and Harness expressions
+to review dynamic context injection.
+Example below
+Model Connector
+Yes
+The LLM provider connector. When you configure the connector, you select a default model. Go to
+Configure Model Connectors
+for supported providers and models.
+anthropic_bedrock_99cf4be5
+Model Name
+No
+Optional override for the model used at runtime. If not specified, the agent uses the default model configured on the Model Connector. Accepts an AWS Bedrock inference profile ARN for Anthropic connectors.
+arn:aws:bedrock:us-east-1:123456789012:application-inference-profile/a1b2c3d4e5f6
+MCP Connectors
+No
+One or more MCP server connectors granting the agent access to Harness platform data and external services (such as GitHub). Each connector requires a URL and API key.
+harness_hosted_mcp
+Inputs
+No
+Named parameters declared under
+agent.inputs
+and referenced in the prompt with
+<+inputs.inputName>
+.
+projectName
+,
+orgId
+,
+repoName
+Environment variables
+No
+String values supplied to the runtime through
+agent.with.env
+.
+demo: "true"
+Allowed domains
+No
+Hostnames or regex patterns for domains the agent can reach. Harness domains are allowed by default.
+harness.io
+Agent definition YAML reference
+The following YAML shows a Worker Agent definition in the
+YAML
+tab of the Worker Agent Catalog. Replace
+harness_hosted_mcp
+with your MCP connector identifier, and set the project and organization identifiers for your environment. Input names are case-sensitive:
+projectName
+must be referenced as
+<+inputs.projectName>
+.
+Copy
+agent
+:
+uses
+:
+harnessAI@1.0.0
+with
+:
+prompt
+:
+|
+Analyze the pipelines in project <+inputs.projectName> in organization <+inputs.orgId>.
+Use Harness MCP to list the pipelines and retrieve each complete pipeline YAML.
+Identify repeated patterns and recommend improvements.
+Write the complete analysis to pipeline_analysis_report.md in the working directory.
+Confirm that the file exists and report its path.
+When you finish, output a variable TASK_SUCCESS with value true if the
+analysis succeeded, or false if it failed.
+connector
+:
+account.harnessAnthropic
+mcp
+:
+-
+harness_hosted_mcp
+allowed_domains
+:
+harness.io
+env
+:
+demo
+:
+"
+true
+"
+swarm
+:
+"
+true
+"
+inputs
+:
+projectName
+:
+type
+:
+string
+required
+:
+true
+default
+:
+Unscripted_Tour
+orgId
+:
+type
+:
+string
+required
+:
+true
+default
+:
+default
+YAML field reference
+Field
+Description
+agent.uses
+Versioned base template. Use
+harnessAI@1.0.0
+for the Harness AI agent runtime.
+agent.with.prompt
+Agent instructions. Use a YAML block scalar (`
+agent.with.connector
+Model connector identifier, such as
+account.harnessAnthropic
+. The connector supplies the default model and credentials.
+agent.with.mcp
+Optional list of MCP connector identifiers. Harness resolves their server configuration.
+agent.with.allowed_domains
+Optional comma-separated string of hostnames or regex patterns for domains the agent can reach over the network. Harness domains are allowed by default.
+agent.with.env
+Optional map of environment variable names to string values. Quote boolean-like strings such as
+"true"
+. Values can reference agent inputs or Harness secrets.
+agent.with.max_turns
+Optional limit on agent iterations. Supply a string, such as
+"40"
+.
+agent.with.output
+Not required for named pipeline variables. Tell the agent in
+Instructions
+which variables to output. Do not use this field to declare output variables.
+agent.with.workdir
+Optional working directory. Defaults to
+/harness
+.
+agent.with.backend
+Optional runtime backend. For the OpenAI-compatible LiteLLM setup, set
+openai
+.
+agent.with.image
+Optional custom agent container image.
+agent.with.docker_connector
+Optional Docker connector used to pull the agent image.
+agent.inputs
+Typed parameters referenced by the agent configuration. Each input has a
+type
+and can specify
+required
+and
+default
+.
+Go to
+OpenAI Model Connector
+to configure the LiteLLM backend.
+Give feedback
+Previous
+Worker Agent in Pipeline
+Next
+Release Agent
+Last updated
+2 days ago
+Was this helpful?
+Resources
+Sign up
+Community
+API Reference
+YouTube
+Release Notes
+Roadmap
+Feature Requests
+Feature Availability
+University
+Instructor-Led Training
+Partners
+Legal
+Terms of Use
+Privacy Policy
+Accessibility
+Do not sell or share my personal information
+Copyright © 2026 Harness Inc.
+Worker Agent form field reference
+Agent definition YAML reference
+YAML field reference
+Was this helpful?

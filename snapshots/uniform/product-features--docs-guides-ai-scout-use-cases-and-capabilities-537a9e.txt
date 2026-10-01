@@ -4,19 +4,19 @@ Guides
 Select a tab
 Home
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Search
@@ -34,7 +34,9 @@ Optimization guides
 Classification
 Personalization
 A/B testing
+Insights
 Optimize with AI
+Search
 AI & AI agents
 About AI in Uniform
 Scout
@@ -43,9 +45,11 @@ Capabilities and limitations
 Skills
 Connect MCP servers
 Best practices
+Scout security
 AI guidance
 AI quick edits
 MCP Server
+Agent skills
 AI rules
 AI credits
 Developer guides
@@ -293,10 +297,12 @@ batch edit
 .
 Provide guidance on URL structure
 , including metadata and slugs.
-View page traffic and conversion data
-when the
+Query traffic, conversion, test, and personalization data
+in plain language when
 Uniform Insights
-integration is set up.
+is set up. See
+ask Scout about Insights
+.
 Platform guidance
 #
 Answer questions
@@ -363,7 +369,7 @@ Cannot create new editions of compositions or entries. Scout can edit content wi
 Cannot monitor results after creating an A/B test or a personalization. Use the analytics surfaces in Uniform to track performance over time, and come back to Scout when you're ready to declare a winner.
 Was this page helpful?
 Last modified
-3 minutes ago
+on
 Previous
 ←
 Using Scout

@@ -28,15 +28,10 @@ Command Palette
 Feature Flags
 Data & Metrics
 Experimentation
-Feature Flag Experiments
-Visual Editor
-URL Redirects
-Experiment Configuration
-Experiment Templates
-Understanding Experiment Results
-Experiment Time Series
-Experiment Decision Framework
-Make Changes to Experiments
+Creating Experiments
+Delivery Methods
+Analysis & Decisions
+Advanced & Statistics
 Bandits
 Overview
 Setting up a Bandit
@@ -44,13 +39,6 @@ Understanding Bandit Results
 Contextual Bandits
 BETA
 Holdouts
-Sticky Bucketing
-Cluster Experiments
-Dimensions
-Customizable Pre-Launch Checklists
-Experiment Dashboards
-Importing External Experiments
-Statistics
 Insights
 Product Analytics
 NEW
@@ -63,6 +51,7 @@ FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Experimentation
 Bandits
 Bandits
@@ -88,6 +77,9 @@ They can be more complex to set up
 They can introduce certain biases in estimating the true effect of variations
 They can, in some cases, actually do worse at picking the best variation than traditional experimentation.
 Get started with our Bandit setup guide!
+If you expect the best variation to differ across user segments rather than there being one global winner, see
+Contextual Bandits
+, which learn a separate set of weights per user context.
 ​
 When should I run a Bandit?
 You should run a bandit when:
@@ -101,7 +93,7 @@ reduce the cost of experimentation
 . By allocating larger percentages of traffic to better performing arms, you avoid driving traffic to losing variations.
 Bandits can quickly determine which variations are underperforming and direct traffic to the top performers, allowing you to
 identify the best variation more quickly
-than a standard experiment. With ten variations, a bandit may be able to quickly determine that several are poor performers. Sending traffic to the higher higher performing variations improves your ability to distinguish those high performers.
+than a standard experiment. With ten variations, a bandit may be able to quickly determine that several are poor performers. Sending traffic to the higher performing variations improves your ability to distinguish those high performers.
 ​
 Why should I run a standard Experiment instead?
 Bandits require a
@@ -166,17 +158,19 @@ GrowthBook power results should be conservative for your Bandit. In many setting
 What happens to users in worse-performing variants?
 As the experiment progresses, worse-performing variations will receive progressively less traffic. New users will not be exposed to those worse-performing variations. The experience of returning users depends on whether you have set up and are using sticky bucketing; with sticky bucketing, users will continue to see the same variation they were originally assigned to, without sticky bucketing, users could be re-assigned when they return to the experiment.
 What’s the difference between multi-armed bandit and contextual bandit experiments?
-GrowthBook uses multi-armed bandit experiments, which focus on optimizing traffic allocation among variations based purely on overall performance (
+Multi-armed bandits optimize traffic allocation among variations based purely on overall performance (
 the Decision Metric
-). These experiments treat all users the same, without taking individual user characteristics into account.
+). They treat all users the same, without taking individual user characteristics into account.
 In contrast, contextual bandits use user-specific attributes (like location, device type, or past behavior) to select variations, aiming to tailor the experience to each user.
-While multi-arm bandit experiments aim for a global “best” variation, contextual bandits work to find the best variation for each unique user context. If you’d like to see contextual bandits in GrowthBook,
-please let us know
-!
+While multi-armed bandits aim for a global “best” variation, contextual bandits work to find the best variation for each unique user context. GrowthBook supports both: read
+how Contextual Bandits work
+, then follow
+Setting up a Contextual Bandit
+to launch one.
 Was this page helpful?
 Yes
 No
-Make Changes to Experiments
+Cluster Experiments
 Previous
 Setting up a Bandit
 Next

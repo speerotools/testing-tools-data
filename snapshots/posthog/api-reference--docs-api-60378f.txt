@@ -55,7 +55,6 @@ Dataset items
 Datasets
 Early access features
 Endpoints
-Environments
 Error tracking
 Evaluation runs
 Evaluations
@@ -177,9 +176,9 @@ The
 query
 endpoint has a rate limit of
 2400/hour
-. Organizations without a paid plan also have a
-monthly data-read allowance
-for queries. For regular exports of events, use
+. Queries made with a personal API key also draw from an
+hourly read budget
+. For regular exports of events, use
 batch exports
 . For large one-off exports, use
 file download exports

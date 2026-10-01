@@ -4,19 +4,19 @@ Guides
 Select a tab
 Home
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Search
@@ -34,13 +34,16 @@ Optimization guides
 Classification
 Personalization
 A/B testing
+Insights
 Optimize with AI
+Search
 AI & AI agents
 About AI in Uniform
 Scout
 AI guidance
 AI quick edits
 MCP Server
+Agent skills
 AI rules
 AI credits
 Developer guides
@@ -248,14 +251,25 @@ tip
 A/B testing is already integrated into Canvas, so there are
 no front-end code changes you need to make. After you publish
 your composition, test content should be available right away.
+Measuring your test
+#
+Uniform Insights
+shows per-variation performance in an
+Insights
+tab on the test component itself, and detects a winning variation once the data supports one.
+See
+test and personalization insights
+for how to read the results, and
+measure conversions
+for how to define what counts as a conversion.
 Was this page helpful?
 Last modified
-3 minutes ago
+on
 Previous
 ←
 Activate personalization
 Next
-Optimize with AI
+Insights
 →
 Learn and build with our community on Discord
 Check out open sourced examples on GitHub
@@ -273,3 +287,4 @@ Manage A/B testing in Uniform
 Create test
 Enable testing on slot
 Configure test on component
+Measuring your test

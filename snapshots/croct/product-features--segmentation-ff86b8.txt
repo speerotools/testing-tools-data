@@ -33,30 +33,6 @@ Simplify your data stack
 Centralize events, traits, and IDs into live profiles that you can export anywhere to personalize every touchpoint.
 Build audiences with data, not guesses
 Get live estimates on audience volume and value as you build segments so you can prioritize the ones that actually drive results.
-Data enrichment
-Every signal you need to personalize
-Build high-impact segments with 100+ signals available out of the box.
-Events
-Location
-Marketing
-Session
-Shopping
-User
-Web
-Technology
-Custom attributes
-Campaigns
-Visitors that came from
-"Black Friday"
-Goal
-Leads who
-requested a demo
-Cart
-Users who
-abandoned a cart
-with value greater than U$ 100
-...and much more
-Create your audience
 AI-powered
 Unlock hyper-granular segments
 Create AI-powered audiences that combine real-time user behavior, traits, and historical data in a single location.
@@ -233,3 +209,64 @@ Terms of service
 © Croct 2026
 ·
 Hey AI, learn about us
+Data enrichment
+Every signal you need to personalize
+Build high-impact segments with 100+ signals available out of the box.
+Events
+Location
+Marketing
+Session
+Shopping
+User
+Web
+Technology
+Custom attributes
+Campaigns
+Visitors that came from
+"Black Friday"
+Goal
+Leads who
+requested a demo
+Cart
+Users who
+abandoned a cart
+with value greater than U$ 100
+...and much more
+Create your audience
+What criteria can I use to build user segments in Croct?
+You can build segments using a
+wide variety of criteria
+, including marketing campaign engagement, geographic location, technology and devices used, session data, declared or inferred interests, specific user activities, completed goals, navigation history, shopping cart status, past order history, and much more.
+What types of signals can be used to build audiences?
+We provide over 100 out-of-the-box
+signals
+to build high-impact segments. These include behavioral events, geolocation data, marketing campaign sources, session activity, shopping actions, web technology, custom profile attributes, and real-time intent inferred from anonymous signals.
+Can I build segments using AND/OR logic?
+Yes, you can build highly specific segments by
+combining multiple criteria
+, mixing and matching events and attributes to fit your exact business goals. Using logical operators like
+and
+, you can easily chain conditions together, such as
+location's city's name is "New York" and cart's subtotal is greater than 100
+.
+Can I specify recency and frequency while building segments?
+Yes, in the Scale plan, you can use
+event-based segmentation
+to narrow your audience criteria by specifying recency and frequency, addressing identified gaps, and creating highly specific segments.
+Are segments evaluated in real-time as users navigate my site?
+Yes. We
+evaluate audience criteria
+against a user's current context, including the pages they visit and their immediate behavior, as they interact with your application. This real-time profiling allows you to trigger immediate actions, and the engine can perform evaluations with latencies under 40 milliseconds.
+Can I estimate the size and relevance of an audience before launching an experience?
+Yes, you can. We feature an audience estimator that provides real-time audience volume estimates as you build your segments. This helps you validate the size and relevance of an audience before investing time in execution, allowing you to prioritize the segments that drive the most results.
+How do segments impact my dashboards?
+Segments power our segmented
+analytics
+, allowing you to break down insights by audience behavior. This lets you drill down into any metric by audience to uncover hidden opportunities and see exactly which pages, products, or features drive each segment's engagement.
+Is there a limit to how many segments I can create?
+Yes, it varies by plan (free, growth, or scale). In addition to the plan quota, you can buy extra audience packages as add-ons.
+What is the CQL, and how do I use it to define audiences?
+Contextual Query Language (CQL)
+is an English-based query language tailored for personalization and experimentation. It acts as an abstraction layer that turns complex data points into simple, natural-language business rules. You use it to unambiguously define audience criteria, such as
+user is returning
+, so that both technical and non-technical team members can target specific users without writing complex code.

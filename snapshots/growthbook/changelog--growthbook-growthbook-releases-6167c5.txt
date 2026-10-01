@@ -116,10 +116,6 @@ You switched accounts on another tab or window.
 Reload
 to refresh your session.
 Dismiss alert
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 growthbook
 /
 growthbook
@@ -127,14 +123,14 @@ Public
 Notifications
 You must be signed in to change notification settings
 Fork
-820
+867
 Star
-8.2k
+8.5k
 Code
 Issues
-644
+513
 Pull requests
-257
+310
 Discussions
 Actions
 Projects
@@ -155,6 +151,7 @@ Releases
 Tags
 Releases · growthbook/growthbook
 Release list
+v5.1.0
 v5.0.1
 v5.0.0
 v4.4.0
@@ -164,10 +161,10 @@ v4.1.0
 v4.0.0
 v3.6.0
 v3.5.0
-v3.4.0
 Previous
 Next
 Jump to release
+v5.1.0
 v5.0.1
 v5.0.0
 v4.4.0
@@ -177,13 +174,168 @@ v4.1.0
 v4.0.0
 v3.6.0
 v3.5.0
-v3.4.0
 Previous
 Next
-v5.0.1
-v5.0.1
+v5.1.0
+v5.1.0
 Latest
 Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+22 Sep 03:07
+v5.1.0
+7cbc85d
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+GrowthBook 5.1 includes over 400 commits touching almost every part of the product. Below are some of the highlights.
+Highlights
+Contextual Bandits (beta)
+- One size doesn’t fit all. Contextual Bandits let you run personalization experiments to find the best performing variant for each group of users. The bandit continuously learns and updates weights as it runs and helps you pick out the signal from the noise.
+Saved Learnings
+- Document deeper learnings about your users that you’ve discovered through experimentation. Let our agent automatically scan your past tests to get you started or use our new API endpoints and agent skills to build your own workflows around this invaluable data.
+Funnel Metrics
+- Easily measure funnel completion in your experiments and see where users are dropping off. Perfect for testing marketing funnels, onboarding flows, and anything else where users progress through a series of steps.
+Hosted MCP + OAuth
+- Users on GrowthBook Cloud can now connect to our hosted MCP server at mcp.growthbook.io and incorporate our 30+ agent skills into your workflows. Pull GrowthBook experiment results into Notion, create feature flags from Jira tickets, query product analytics data from Claude Desktop, and so much more.
+Slack App (beta)
+- Our official Slack App is now available! Get rich notifications, full control over channels and filtering, and the ability to mention
+@GrowthBook
+to talk to your data and use our agent skills. We have a lot more coming soon and would love to get your feedback!
+User Journey Explorer
+- In GrowthBook product analytics, you can now easily see how users flow through your app. Pick a starting (or ending) step and see the actions the user does immediately before/after. Click through to continue following users deeper into your product funnel. Find an interesting path? Switch over to our Funnel Explorer to do a deeper dive.
+AI-Generated Dashboards
+- Creating product analytics (or experiment) dashboards used to be a very manual and tedious process. Now, with our new agent skill, just describe what you want and see it magically appear before your eyes. Call this skill from our in-app assistant, MCP server, or wherever else your agents live.
+EU Ingestion Server
+- Organizations on GrowthBook Cloud can now use our Managed Warehouse or Event Forwarder in the eu-west-1 region (Dublin). Take advantage of our realtime data ingestion and ETL pipelines while keeping your data stored securely within the EU. The first 1 million events per month are free so try it out today!
+Targeting Projects
+- Deliver one Feature Flag into several projects without duplicating it. Add Targeting Projects and the flag is included in those projects' SDK payloads, while ownership stays with its primary project.
+New SQL Explorer
+- Our SQL Explorer in product analytics got a big upgrade. Besides a bunch of UX improvements, all filtering and grouping now happen within SQL directly, so many of the previous restrictions (like a 1,000 row limit) no longer apply.
+Composable Permissions
+- Users and teams can now have multiple roles assigned that are merged to determine their final permissions. In addition, Custom Roles now have more fine-grained control over every action in GrowthBook. For example, grant edit permission without also granting create or delete permission.
+Atomic Publishing (beta)
+- There's a new REST endpoint (
+POST /api/v1/releases/publish-revisions
+) that lets you ship coordinated changes across several flags in one atomic transaction.
+Adobe Experience Platform (AEP) Data Source
+- GrowthBook can now connect to your Adobe data and use it as a source for both experiment metrics and product analytics. This is an early preview release to get feedback from the community, so let us know what you think!
+Full Changelog
+:
+v5.0.0...v5.1.0
+Contributors
+Thanks to all of our existing contributors:
+@Kevin-Chant
+,
+@bryce-fitzsimons
+,
+@ahdriel
+,
+@lukesonnet
+,
+@anna-yn
+,
+@mknowlton89
+,
+@jdorn
+,
+@msamper
+,
+@Auz
+,
+@tzjames
+,
+@nhat-growthbook
+,
+@oelshaikh
+,
+@gazzdingo
+,
+@teresayung
+,
+@alyssamichelle
+,
+@lillialjackson
+,
+@madhuchavva
+,
+@lukebrawleysmith
+,
+@itsgrimetime
+,
+@johnham-ant
+,
+@HampusPoppius
+,
+@natasha-growthbook
+,
+@dlin-growthbook
+,
+@CedricConday
+,
+@AnkittChauhan
+and a big thanks to everyone who made their first contribution!
+@najito
+made their first contribution in
+#6502
+@Whatsonyourmind
+made their first contribution in
+#6145
+@LegendKaito-Q
+made their first contribution in
+#6577
+@benmarks-ant
+made their first contribution in
+#6759
+@R167
+made their first contribution in
+#6860
+@avionicharshit-byte
+made their first contribution in
+#6827
+@mukmookk
+made their first contribution in
+#6876
+@EmmS21
+made their first contribution in
+#6598
+@OnkarDsharma
+made their first contribution in
+#6904
+@andywhite37
+made their first contribution in
+#6967
+Contributors
+Auz, andywhite37, and 33 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+1
+Join discussion
+v5.0.1
+v5.0.1
 Compare
 Choose a tag to compare
 Sorry, something went wrong.
@@ -1792,218 +1944,6 @@ All reactions
 🎉
 3 reactions
 3 people reacted
-v3.4.0
-v3.4.0
-Compare
-Choose a tag to compare
-Sorry, something went wrong.
-Filter
-Loading
-Sorry, something went wrong.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-No results found
-View all tags
-jdorn
-released this
-15 Jan 04:50
-v3.4.0
-98265dc
-This commit was created on GitHub.com and signed with GitHub’s
-verified signature
-.
-GPG key ID:
-B5690EEEBB952194
-Verified
-Learn about vigilant mode
-.
-Highlights
-Experiment Templates by
-@msamper
-in
-#3442
-Custom Fields by
-@Auz
-in
-#557
-Shareable Experiments by
-@bryce-fitzsimons
-in
-#3445
-#3351
-New metric types: Retention, Count Distinct, and Max by
-@lukesonnet
-in
-#3384
-#3415
-Environment Forking by
-@Kevin-Chant
-in
-#3322
-Contentful and Strapi Integrations by
-@tzjames
-and
-@royalfig
-in
-#3271
-#3444
-Major updates to Node.js and Edge SDKs by
-@jdorn
-and
-@bryce-fitzsimons
-in
-#3328
-#3357
-#3500
-Simulate Features Page by
-@Auz
-in
-#2952
-Other Changes
-Various UI improvements by
-@ahdriel
-and others
-Add has:tempRollout advanced search for experiments by
-@jdorn
-in
-#3292
-Ability to export data in experiment monthly graphs by
-@Auz
-in
-#3092
-Don't automatically refresh import experiment list when updating queries by
-@lukesonnet
-in
-#3409
-Project-scope segments by
-@mknowlton89
-in
-#3344
-Make experiment owners editable by
-@Auz
-in
-#3398
-Allow conversion window/delay to go down to minute granularity by
-@lukesonnet
-in
-#3439
-Add Delete Feature Rest API Endpoint by
-@mknowlton89
-in
-#3383
-Bug Fixes
-Increase non-test snowflake timeout by
-@lukesonnet
-in
-#3282
-Fix currency in metric analysis cards by
-@lukesonnet
-in
-#3306
-Fix bug with simulate features and scheduled rules by
-@Auz
-in
-#3299
-Make schema browser robust to switching databases by
-@lukesonnet
-in
-#3330
-Improve API endpoint validation by
-@mknowlton89
-in
-#3354
-#339
-#3423
-#3359
-Support legacy "inline experiment" rule editing by
-@bryce-fitzsimons
-in
-#3355
-Fix cumulative ratio + quantile date cohort graph by
-@lukesonnet
-in
-#3386
-Fix user filters missing field by
-@jdorn
-in
-#3434
-Re-allow activation metric to be joined to query by
-@lukesonnet
-in
-#3417
-Change user agent for webhooks by
-@msamper
-in
-#3441
-Get actual list of envs affected by experiment by
-@mknowlton89
-in
-#2835
-Fix bug with metric tag filter and pagination by
-@lukesonnet
-in
-#3479
-Fix setting stats engine in new reports by
-@lukesonnet
-in
-#3520
-Fix empty saved groups when generating SDK payloads by
-@Kevin-Chant
-in
-#3499
-Docs and Misc
-Various doc updates by
-@lukesonnet
-,
-@royalfig
-and others
-Deno Hono tutorial by
-@royalfig
-in
-#3284
-Tutorial for Express.js by
-@jdorn
-in
-#3390
-Bump TS version by
-@romain-growthbook
-in
-#3148
-Update DataDog instructions by
-@ahdriel
-in
-#3319
-#3455
-Work for upcoming built-in warehouse by
-@tzjames
-PR Preview environment by
-@ahdriel
-in
-#3378
-#3379
-Mid-experiment power core science code by
-@lukebrawleysmith
-in
-#3414
-Change demo exp to single goal metric by
-@lukesonnet
-in
-#3518
-Full Changelog
-:
-v3.3.0...v3.4.0
-Contributors
-Auz, ahdriel, and 10 other contributors
-Assets
-2
-Loading
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-All reactions
 Previous
 1
 2

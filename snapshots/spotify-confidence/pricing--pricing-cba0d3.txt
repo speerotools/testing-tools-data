@@ -143,10 +143,12 @@ Does Confidence work with my data warehouse?
 +
 Yes - and it's included on every plan, starting with Free. Confidence is warehouse-native and works with Snowflake, BigQuery, Databricks, and Redshift, letting you run experiments on metrics that already live in your data warehouse without duplicate event tracking. You can define metrics in SQL, reuse existing data models, and keep your warehouse as the source of truth. Most competitors gate warehouse integration behind enterprise contracts - we believe data teams shouldn't have to pay extra to use the data they already own.
 Learn more
+About Confidence
 Read our blog
 Take the bootcamp
 See comparisons
 Glossary
+Why not Bayes?
 RFP guides
 Listen to us
 Read our docs
@@ -157,8 +159,8 @@ Legal
 Terms of Service
 Data Protection Agreement
 Privacy Policy
+Security
 Cookie Settings
 ©
 2026
 Spotify
-The Confidence name and logo are registered trademarks of Spotify.

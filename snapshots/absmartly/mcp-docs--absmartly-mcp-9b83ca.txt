@@ -116,10 +116,6 @@ You switched accounts on another tab or window.
 Reload
 to refresh your session.
 Dismiss alert
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 absmartly
 /
 mcp
@@ -132,9 +128,9 @@ Star
 0
 Code
 Issues
-0
+2
 Pull requests
-15
+19
 Actions
 Projects
 Security and quality
@@ -156,8 +152,8 @@ Code
 Open more actions menu
 Latest commit
 History
-63 Commits
-63 Commits
+71 Commits
+71 Commits
 Folders and files
 Name
 Name
@@ -1056,13 +1052,13 @@ params
 confirmed
 (optional) — set to
 true
-to confirm destructive actions
+only after the user has explicitly confirmed the action; never set it on your own initiative
 raw
 (optional) — return full CommandResult with rows/detail/warnings/pagination
 limit
 (optional) — max items for list operations (default: 20)
 Destructive actions
-(start, stop, archive, delete) require confirmation. The server returns a confirmation prompt; call again with
+(start, stop, archive, delete) require confirmation. The server returns a confirmation prompt; only after the user has explicitly confirmed should you call again with
 confirmed: true
 to proceed.
 Experiment creation from templates
@@ -1070,7 +1066,7 @@ also requires confirmation. The first call to
 createExperimentFromTemplate
 returns a
 preview
-— the resolved API payload (with names mapped to IDs) plus any warnings — without creating the experiment. Show the preview to the user, then call again with
+— the resolved API payload (with names mapped to IDs) plus any warnings — without creating the experiment. Show the preview to the user, and only after they have explicitly confirmed should you call again with
 confirmed: true
 to actually create.
 Creating Experiments with Templates

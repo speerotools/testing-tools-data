@@ -137,6 +137,9 @@ Self-hosted
 Hosted on your private cloud or infrastructure
 You
 You
+If you use PostHog Cloud, PostHog may be considered a data processor. Article 28 of the GDPR and similar data privacy frameworks may require a contract between a controller and a processor. That contract is the Data Processing Agreement (DPA). See
+how to get a signed DPA
+.
 Step 1: Choose a hosting provider
 We recommend using
 PostHog Cloud EU

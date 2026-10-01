@@ -149,15 +149,15 @@ Migrate feature flags from Statsig to Confidence
 onboard-confidence
 Create Confidence accounts and onboard users
 Related plugins
+Omni Integrations
+Connect Omni Analytics with external data platforms.
+Fullstory
+Connect Cursor to Fullstory to query behavioral analytics, session replays, and customer experience insights.
+Statsig
+Inspect and manage feature gates, experiments, dynamic configs, and metrics.
+Monid
+Discover and run hundreds of data endpoints — web scraping, people/company enrichment, social media, and search — through one interface. Connects to the hosted Monid MCP server; falls back to the Monid CLI when a shell is available.
 Smartsheet
 Query and update sheets, rows, and workspaces.
 Similarweb
 Analyze website traffic, audiences, and competitors.
-Semrush
-Research keywords, backlinks, traffic, and competitors.
-Customer.io
-Connect Cursor to Customer.io with the official MCP connector and skills for Journeys, Pipelines, Design Studio, and SDK setup.
-Observe by Snowflake
-Agent skills and MCP configuration for deploying and managing Observe's observability infrastructure
-Apify
-Official Apify agent skills for web scraping, data extraction, and automation

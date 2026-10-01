@@ -1,0 +1,232 @@
+# https://docs.kameleoon.com/mcp/mcp-airtable-guide
+Export experiment results to Airtable - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Tutorials
+Export experiment results to Airtable
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Kameleoon MCP server
+Kameleoon Claude Connector
+Use Kameleoon documentation with AI
+Tutorials
+Export experiment results to Airtable
+Export experiment results to Notion
+Export experiment results to Confluence
+English
+On this page
+Prerequisites
+Step 1: Add the connectors
+Connect via a coding tool
+Connect via the Claude app
+Step 2: Prepare the Airtable table
+Step 3: Prompt the assistant
+Step 4: Automate it
+Notes
+Tutorials
+Export experiment results to Airtable
+Copy page
+Copy page
+Export experiment results to Airtable using Claude.
+Copy page
+Copy page
+This guide exports Kameleoon experiment results into an Airtable table from a single Claude conversation. It requires no script, no stored API credentials to manage, and no code. Claude connects to Kameleoon’s and Airtable’s own remote MCP (Model Context Protocol) servers, and performs the export when you ask it to in plain language.
+Both MCP servers expose more than read-only tools. The Kameleoon MCP server can also start, pause, stop, or delete experiments and feature flags. The Airtable MCP server can also delete records and tables. Review any action either connector proposes before approving it.
+​
+Prerequisites
+A Kameleoon account with access to the experiment being exported
+An Airtable account with edit access to the base that will host the results table
+A Claude account with Connectors available
+​
+Step 1: Add the connectors
+Two paths get you to the same result. Use whichever matches how you already work with Claude.
+​
+Connect via a coding tool
+Connect the Kameleoon MCP server to your assistant. See
+Kameleoon MCP server
+for the registration and authentication steps for Claude Code, Cursor, Codex, and Antigravity.
+Connect the Airtable MCP server. In Claude Code, run:
+claude mcp add --transport http airtable https://mcp.airtable.com/mcp
+then run
+/mcp
+inside Claude Code and authorize through the browser. See
+Using the Airtable MCP server
+for Cursor, VS Code, and other client-specific setup steps, and for a personal-access-token alternative to OAuth.
+Start a new conversation so the assistant loads the tools from both servers.
+​
+Connect via the Claude app
+Open your account’s Connectors settings in the Claude app (Customize > Connectors).
+Add the Kameleoon connector and authorize it through OAuth. If it isn’t listed in the connector directory, add it as a custom connector using the URL
+https://mcp.kameleoon.com/mcp
+, then authorize it.
+Add the Airtable connector the same way. If it isn’t listed, add it as a custom connector using the URL
+https://mcp.airtable.com/mcp
+, then authorize it.
+Start a new conversation, then use the plus button in the chat to enable both connectors for it. Connectors enabled in one conversation don’t carry over to a new one.
+On a Team or Enterprise plan, adding a connector yourself may not be available. A
+Request
+button instead of
+Add
+means your organization restricts who can add connectors, and an administrator needs to approve the request first.
+​
+Step 2: Prepare the Airtable table
+Create the table before the first run, with this schema. Note the base ID (
+appXXXXXXXXXXXXXX
+) and table ID (
+tblXXXXXXXXXXXXXX
+); both are required for the prompt in the next step.
+Airtable field
+Source
+Transformation
+Experiment Name
+experiment.name
+Direct. Used as the upsert key.
+Status
+experiment.status
+Mapped, case-insensitively:
+active → Running
+,
+draft
+/
+planned → Implementing
+,
+stopped
+/
+diverted → Completed
+,
+paused → Defunct
+.
+Start date
+experiment.dateStarted
+Date-time truncated to an ISO date (
+YYYY-MM-DD
+).
+End date
+experiment.dateEnded
+Date-time truncated to an ISO date.
+Notes
+experiment.description
+Direct.
+Actual
+best variation
+improvementRate
+Direct (measured uplift, %).
+Probability
+best variation Bayesian success probability
+Bucketed:
+≥95 → 80% - High
+,
+≥80 → 50% - Medium
+, else
+20% - Low
+.
+Result
+Bayesian success probability +
+improvementRate
+probability
+≥ 95
+and uplift > 0 →
+Success
+;
+≥ 95
+and uplift < 0 →
+Failure
+; otherwise
+Inconclusive
+.
+Create the Select field options (
+Running
+,
+Implementing
+,
+Completed
+,
+Defunct
+for Status;
+80% - High
+,
+50% - Medium
+,
+20% - Low
+for Probability;
+Success
+,
+Failure
+,
+Inconclusive
+for Result) before the first write.
+If the table also carries manual-entry fields, such as Assignee, Category, Prediction, Mkt Est, Eng Est, or Attachments, leave them out of the mapping. The prompt in the next step tells the assistant not to touch them.
+​
+Step 3: Prompt the assistant
+The Kameleoon MCP tool returns its own precomputed winner alongside the raw results, but it judges significance against this account’s configured reliability threshold, not this schema’s fixed thresholds. The prompt below works around that gap by asking for the raw numbers instead. Replace the experiment ID, base ID, and table ID with your own before sending it.
+Using the Kameleoon MCP tools, get the results for experiment XXXXXX. In the
+returned data, skip the "_reference" variation and read each remaining
+variation's raw reliability and improvement rate for the experiment's
+primary goal (not the tool's own winner summary, which judges significance
+against this account's configured reliability threshold rather than the
+fixed thresholds below). If the same reliability and improvement numbers
+appear more than once under different field names, use the plain
+percent-scale value tied to that goal, not a 0-1 fraction of it. Pick the
+variation with the highest improvement rate as the best performer.
+Then, using the Airtable MCP tools, upsert a record in base
+appXXXXXXXXXXXXXX, table tblXXXXXXXXXXXXXX, matching on the "Experiment
+Name" field against the experiment's name: update the existing record if
+one matches, or create a new one if not. Map the fields as follows:
+- Experiment Name: the experiment's name
+- Status: map a status of active to Running, draft to Implementing, stopped
+to Completed, and paused to Defunct (case-insensitive; confirm the exact
+tokens your account returns)
+- Start date / End date: the experiment's start and end dates, formatted as
+YYYY-MM-DD
+- Notes: the experiment's description
+- Actual: the best variation's improvement rate
+- Probability: 80% - High if the reliability is 95 or above, 50% - Medium if
+it's 80 or above, otherwise 20% - Low
+- Result: Success if the reliability is 95 or above with a positive
+improvement, Failure if the reliability is 95 or above with a negative
+improvement, otherwise Inconclusive
+Don't set Assignee, Category, Prediction, Mkt Est, Eng Est, or Attachments.
+A few things to know if you adjust this prompt:
+Don’t ask for the tool’s own winner summary instead of the raw numbers. It judges significance against your account’s own threshold, not this schema’s fixed 95%/80% buckets.
+Keep each experiment’s name unique in your Airtable table. The upsert matches on that name, and fails if it finds more than one record with the same one.
+Kameleoon’s results can repeat the same reliability and improvement numbers elsewhere in the response under a different name or scale. The prompt already specifies which one to use.
+​
+Step 4: Automate it
+To keep the table current without repeating the export manually, set up a recurring scheduled task with the same prompt. Each scheduled run starts a new session with no memory of prior runs, so include the experiment ID (or a request to list all running and recently completed experiments), the base ID, and the table ID every time. A daily or weekly cadence matches how often most teams need this export.
+​
+Notes
+An AI assistant interprets this mapping fresh on every run rather than executing a fixed function. Check the record it writes against the values in Kameleoon, particularly the first few runs.
+The Airtable MCP server can delete records and tables, and the Kameleoon MCP server can start, pause, stop, or delete experiments and feature flags. Review proposed actions before approving them, not just the mapped fields.
+For an export you run on a schedule or that must reproduce identically every time, a fixed script is a more predictable alternative to an AI assistant interpreting the same prompt on each run.
+Was this page helpful?
+Yes
+No
+Use Kameleoon documentation with AI
+Previous
+Export experiment results to Notion
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

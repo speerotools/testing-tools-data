@@ -30,40 +30,62 @@ FAQ
 Developers
 SDKs
 APIs
+CLI
 Overview
 Global Agent
+Global Agent Overview
+Agent modes
+Agent Skills
+Adding Context
+MCP Connectors
+Slack, Teams, and Discord
 Specialized Agents
+Overview
+Dashboard Agent
+Session Replay Agent
+Customer Feedback Agent
+Website Conversion Agent
 Custom Agents
 Agent Analytics
+Overview
+Quickstart
+Set up Agent Analytics
+Render agent artifacts
+Analyze agent results
+Reference
+FAQ and troubleshooting
 Amplitude MCP
 Amplitude MCP Server
 Common tasks
 Guides and Surveys MCP tools
 Data warehouse MCP tools
-Claude Code
-Cursor
-ChatGPT
-Claude
-Gemini CLI
-Replit
-Lovable
-Figma Make
-Kiro
-Codex CLI
-GitHub Agent
-Other clients
-AI Feedback
+Clients
+Docs MCP server
 AI Visibility
+AI Visibility
+Send AI Visibility data to Amplitude
+Optimize for LLMs
+Appearing in LLM searches
+Recommendations
+Sentiment
+FAQ
+Settings and Data
 AI Settings and Controls
 AI Context
+AI Feedback
 Privacy and Security
 Prepare data for AI
-Docs MCP server
+Language
+🇺🇸
+English
 On this page
 What the MCP is for
 Choose an interface for AI agents
 AI Context and reference files
 Tracking plan changes
+Read tools
+Write tools
+Delete and restore events and properties
 Remote server
 Regions
 Available tools and capabilities
@@ -105,7 +127,9 @@ Amplitude AI
 Amplitude MCP Server
 Amplitude MCP Server
 Amplitude MCP exposes Amplitude analytics, taxonomy, and content as tools that an AI client (Cursor, Claude, ChatGPT, Codex, Gemini, and others) can call over OAuth. It reads and writes charts, dashboards, experiments, cohorts, events, and properties from natural-language prompts, so you query and edit product data without SQL or the Amplitude UI. Setup takes about two minutes per client.
-Use Amplitude MCP when you want an AI client to read and modify Amplitude content with your account permissions. For read-only access to Amplitude's public documentation, use the Docs MCP server instead. For production event ingestion, use an Amplitude SDK or the HTTP V2 API. Amplitude MCP isn't an ingestion endpoint.
+Use Amplitude MCP when you want an AI client to read and modify Amplitude content with your account permissions. For read-only access to Amplitude's public documentation, use the Docs MCP server instead. For production event ingestion, use an Amplitude SDK or the HTTP V2 API. Amplitude MCP isn't an ingestion endpoint. For scripted or CI workflows where a conversational interface isn't the right fit, use the
+Amplitude CLI
+instead. It's a scriptable command-line client for the same platform primitives.
 Any existing Amplitude customer can use Amplitude MCP from an MCP-capable client such as Cursor, Claude Code, ChatGPT, Lovable, or Kiro.
 The
 official MCP servers registry
@@ -120,7 +144,7 @@ What the MCP is for
 Use the Amplitude MCP for these jobs:
 Search and read Amplitude content: charts, dashboards, notebooks, experiments, cohorts, events, and properties.
 Query analytics, run ad-hoc segmentation, funnels, and retention, and analyze experiment results.
-Manage taxonomy: events, properties, transformations, group types, and tracking-plan branches.
+Manage taxonomy: create, update, delete, and restore events and properties, manage tracking-plan branches, and read transformations and group types.
 Create and edit objects: charts, dashboards, notebooks, experiments, cohorts, feature flags, and metrics.
 Check data warehouse and cloud storage connections: list import sources and export destinations, and review import and export job history.
 Don't use the Amplitude MCP for these jobs:
@@ -184,30 +208,49 @@ and
 AI Controls
 .
 Tracking plan changes
-Amplitude MCP exposes tools to read and write your project's tracking plan taxonomy. Create and update calls require the
+Amplitude MCP exposes tools to read and write your project's tracking plan taxonomy. Create, update, delete, and restore calls require the
 Use MCP (write)
-RBAC action.
+RBAC action. Changes to events and properties also require the Update Tracking Plan permission in Amplitude Data. Changes to custom events require the Manage Data Enrichments permission instead.
 Read tools
-:
-manage_amp_events
-,
-get_properties
-,
-manage_amp_data_taxonomy
-, and related taxonomy tools in the tool roster below.
+get_amp_taxonomy
+reads events, properties, the changes on a branch, and the activity history of who changed what.
+get_transformations
+and
+get_group_types
+cover transformations and group types.
 Write tools
-:
 manage_amp_events
 : Create, update, delete, and restore events, custom events, and labeled events, and add ingested unexpected events to the plan.
-create_properties
-: Create event, user, or group properties.
-update_properties
-: Update event, user, or group property metadata.
-manage_amp_data_taxonomy
+manage_amp_properties
+: Create event, user, and group properties, and update, delete, and restore event and user properties.
+manage_amp_taxonomy
 : Run the branch workflow to create, update, merge, delete, review, and refresh tracking-plan branches.
 These tools modify tracking plan definitions in Amplitude Data. They don't send production event data. For the UI-based workflow, refer to
 Create a tracking plan
 .
+Delete and restore events and properties
+Delete and restore tools let an AI client finish a taxonomy cleanup without leaving the conversation. Ask your client to delete redundant events, event properties, or user properties, and to restore anything you deleted by mistake.
+manage_amp_events
+handles events and
+manage_amp_properties
+handles properties.
+What happens to an item depends on whether Amplitude has ingested it:
+Ingested events and properties
+: Amplitude marks them as deleted and stops ingesting them. You can restore them later with the matching restore action.
+Planned events and properties
+: Amplitude removes items that you added to the tracking plan but never ingested. You can't restore a removed item. Create it again if you need it.
+Custom and labeled events
+: Amplitude deletes them permanently, the same as in the Amplitude UI. You can't restore them.
+Every delete is a two-step action. The first call returns a confirmation that lists the affected items, project, and branch. Your client relays that summary and asks you to confirm before it calls the tool again with
+confirmed
+set to true. Deletes on the main branch take effect immediately. Deletes on any other tracking-plan branch don't affect ingestion until you merge the branch into main.
+For an event property, you can delete the property from a single event or plan-wide across every event. Tell your client which scope you mean. A plan-wide delete of a planned property removes it entirely, so ask for the single-event scope when you only want to detach it from one event.
+Restoring an event or property on main resumes ingestion right away. On any other branch, Amplitude stages the restore until you merge. To find items you can restore, ask your client to list deleted events or properties.
+get_amp_taxonomy
+returns them when you set
+includeDeleted
+.
+You can't delete or restore Amplitude-owned user properties. Deleting an unexpected event or property that Amplitude has already ingested marks it as deleted, so you can restore it.
 Remote server
 Regions
 Region
@@ -219,12 +262,21 @@ https://mcp.eu.amplitude.com/mcp
 Use the Standard Server URL unless your Amplitude data resides in the EU region.
 Available tools and capabilities
 The Amplitude MCP provides comprehensive access to your analytics through these tools:
+The tools listed here are the full Amplitude MCP server catalog, available to Cursor, Claude, and most other clients. ChatGPT connects through a curated subset of approximately 25 tools due to a token cap on connected tool schemas. The ChatGPT subset doesn't include session replay tools or progressive discovery tools. To use session replay or progressive discovery, connect with Cursor or Claude instead.
 Available tools
 Progressive tool discovery
 If you connect to Amplitude MCP manually and want to reduce token spend, add
 ?discovery=progressive
 to the MCP URL to enable progressive tool discovery.
-Progressive URLs (copy/paste):
+Progressive discovery tools (
+list_tool_categories
+,
+get_category_tools
+,
+describe_tool
+) aren't part of the ChatGPT tool subset. Progressive discovery requires Cursor, Claude, or another client that receives the full tool catalog.
+Progressive URLs (copy/paste)
+:
 US:
 https://mcp.amplitude.com/mcp?discovery=progressive
 .
@@ -332,6 +384,9 @@ Create a branch called "q3-cleanup" for tracking plan changes.
 Create an event called "Checkout Started" on the q3-cleanup branch.
 Add unexpected events "app_opened" and "checkout_completed" to the tracking plan.
 Create a user property called "plan_type" for my project.
+Delete the events "old_checkout" and "legacy_signup" from the tracking plan.
+Remove the "page_url" property from the "Page Viewed" event only.
+Restore the deleted user property "plan_type".
 Merge the q3-cleanup branch into main.
 Guides and Surveys
 What are the published guides with the highest priority in my project?
@@ -461,7 +516,7 @@ AI agent analytics
 Skill
 Description
 analyze-ai-topics
-Analyze what users ask AI agents about and how well each topic is answered.
+Analyze what users ask AI agents about and how well the agent answers each topic.
 investigate-ai-session
 Deep-dive specific AI agent sessions or failure patterns for root-cause analysis.
 monitor-ai-quality
@@ -521,9 +576,7 @@ Privacy considerations
 The AI service you're using (for example, Claude or Gemini) processes your Amplitude data. Review your organization's policies regarding AI-powered data analysis tools and consider compliance requirements (General Data Protection Regulation, California Consumer Privacy Act).
 Third parties (for example, Anthropic) develop and maintain the AI models used with this MCP server. Amplitude isn't responsible for model outputs, including hallucinations, inaccuracies, or errors resulting from model behavior, even if such outputs use your Amplitude data.
 Admin controls
-Amplitude enables MCP server access
-by default
-for all users in your organization. Organization administrators can opt out or restrict access if needed:
+Amplitude enables MCP server access by default for all users in your organization. Organization administrators can opt out or restrict access if needed:
 Navigate to
 Settings > Content Access > MCP
 in your Amplitude organization settings.
@@ -606,16 +659,18 @@ Amplitude is constantly improving the Amplitude MCP server and would appreciate 
 feedback form
 .
 Technical specifications
-Transport Type:
-Streaming HTTP (Remote).
-Authentication:
-OAuth 2.0 with Amplitude.
+Transport Type: Streaming HTTP (Remote).
+Authentication: OAuth 2.0 with Amplitude.
 Was this helpful?
+Copy Markdown
 On this page
 What the MCP is for
 Choose an interface for AI agents
 AI Context and reference files
 Tracking plan changes
+Read tools
+Write tools
+Delete and restore events and properties
 Remote server
 Regions
 Available tools and capabilities
@@ -703,6 +758,9 @@ Privacy Notice
 Acceptable Use Policy
 Legal
 Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
 ©
 2012–2026
 Amplitude, Inc.

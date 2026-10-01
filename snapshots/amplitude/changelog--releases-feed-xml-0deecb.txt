@@ -3,7 +3,77 @@ Amplitude Changelog
 https://amplitude.com/releases
 Every feature we've shipped to Amplitude, with release notes.
 en-us
-Tue, 01 Sep 2026 11:21:48 GMT
+Thu, 01 Oct 2026 12:47:32 GMT
+Zoning Insights access expansion
+https://amplitude.com/releases/zoning-insights-access
+Zoning Insights is now included as part of the Growth Analytics and Enterprise Analytics plans.
+Lucas Howard
+Analytics
+https://amplitude.com/releases/zoning-insights-access
+Thu, 24 Sep 2026 17:43:19 GMT
+User properties on survey responses (table + CSV export)
+https://amplitude.com/releases/user-properties-on-survey-responses-table-csv-export
+On a survey’s Responses tab you can add user properties as extra columns. Open Columns, search, and pick any project user properties (DAC-restricted ones are hidden). Those columns show in the table and are included in both immediate and async CSV exports.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/user-properties-on-survey-responses-table-csv-export
+Wed, 23 Sep 2026 10:50:58 GMT
+AI-generated descriptions for events and properties
+https://amplitude.com/releases/ai-generated-descriptions-for-events-and-properties
+Amplitude now makes it much easier to maintain a shared understanding of your taxonomy by automatically generating descriptions from both Amplitude usage and AI context, while still providing transparency about what’s been verified and what has been generated.
+Rahul Muthyam
+Data
+https://amplitude.com/releases/ai-generated-descriptions-for-events-and-properties
+Mon, 14 Sep 2026 16:58:31 GMT
+MCP: Taxonomy delete and restore
+https://amplitude.com/releases/taxonomy-mcp-taxonomy-delete-and-restore
+Users can now delete and restore events, event properties, and user properties through the MCP.
+Chantal Yuen
+Data
+https://amplitude.com/releases/taxonomy-mcp-taxonomy-delete-and-restore
+Sat, 12 Sep 2026 00:41:02 GMT
+Even distribution for Guides and Surveys
+https://amplitude.com/releases/even-distribution-for-guides-and-surveys
+Guides and surveys can now spread their audience evenly over time instead of hitting everyone at once.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/even-distribution-for-guides-and-surveys
+Thu, 10 Sep 2026 06:34:16 GMT
+Self Service Data Migrations
+https://amplitude.com/releases/self-service-data-migrations
+Users of all tiers now have the ability to migrate event data among projects and organizations they control, as well as to pull in data from Mixpanel and Posthog.
+Kaia Peacock
+Data
+https://amplitude.com/releases/self-service-data-migrations
+Tue, 08 Sep 2026 20:29:57 GMT
+Better shadow DOM support for Guides and Surveys
+https://amplitude.com/releases/better-shadow-dom-support-for-guides-and-surveys
+Guides and Surveys can now select elements inside open shadow DOMs
+Wes Feller
+Guides and Surveys
+https://amplitude.com/releases/better-shadow-dom-support-for-guides-and-surveys
+Fri, 04 Sep 2026 18:48:41 GMT
+Schedule experiment stop
+https://amplitude.com/releases/schedule-experiment-stop
+You can now schedule when an experiment or flag stops, not just when it starts. Set a start time, an end time, or both. At the end time, delivery stops, the analysis window freezes, and the experiment moves to Completed (Pending decision).
+Stephen Choi
+Experiment
+https://amplitude.com/releases/schedule-experiment-stop
+Tue, 01 Sep 2026 00:16:07 GMT
+Session Replay for React Native
+https://amplitude.com/releases/session-replay-for-react-native
+`@amplitude/session-replay-react-native` has moved from beta to GA.
+Aliaksandr Kazarez
+Session Replay
+https://amplitude.com/releases/session-replay-for-react-native
+Sat, 29 Aug 2026 00:25:29 GMT
+Guides and Surveys: Project-wide user exclusions
+https://amplitude.com/releases/project-wide-user-exclusions
+The Guides and Surveys settings drawer now has a "Default user exclusions" section that lets you add user segments that should never see guides or surveys.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/project-wide-user-exclusions
+Fri, 28 Aug 2026 11:06:28 GMT
 Web Experiment: Cookie consent management
 https://amplitude.com/releases/web-experiment-cookie-consent-management
 The Web Experiment script now supports cookie consent gating. Customers can defer all device storage and third-party requests until a visitor consents — while still running experiments flicker-free while consent is pending.
@@ -11,6 +81,13 @@ Tim Yiu
 Experiment
 https://amplitude.com/releases/web-experiment-cookie-consent-management
 Tue, 25 Aug 2026 16:59:04 GMT
+Amplitude Agent Analytics
+https://amplitude.com/releases/amplitude-agent-analytics
+Observe what users ask your AI agent, evaluate where it fails and what those cost your business. Agent Analytics is now available to all customers.
+Lena O'Grady
+AI
+https://amplitude.com/releases/amplitude-agent-analytics
+Thu, 20 Aug 2026 00:00:00 GMT
 Multiple triggers for Guides and Surveys
 https://amplitude.com/releases/multiple-triggers-for-guides-and-surveys
 Show a guide or survey in more than one situation without duplicating it, by adding several trigger conditions to a single one.
@@ -53,25 +130,46 @@ Kevin Liou
 Experiment
 https://amplitude.com/releases/image-upload-in-web-experiment
 Mon, 10 Aug 2026 20:27:48 GMT
-Embedded Guides & Surveys on Mobile
+Embedded Guides and Surveys on mobile
 https://amplitude.com/releases/embedded-guides-surveys-on-mobile
 Put a guide or survey inside your mobile app's own layout, as a card that belongs on the screen rather than an overlay on top of it.
 Bianca Curutan
 Guides and Surveys
 https://amplitude.com/releases/embedded-guides-surveys-on-mobile
 Wed, 05 Aug 2026 19:13:28 GMT
+Test users for mobile Guides and Surveys
+https://amplitude.com/releases/test-users-for-mobile-guides-surveys
+Customers can now designate Test Users for Guides and Surveys directly in project settings, so specific users, devices, or cohorts on mobile automatically enter test mode to preview and QA guides and surveys live on-device — without publishing to production users.
+Bianca Curutan
+Guides and Surveys
+https://amplitude.com/releases/test-users-for-mobile-guides-surveys
+Wed, 05 Aug 2026 18:55:27 GMT
+AI Feedback now integrates with Qualtrics
+https://amplitude.com/releases/ai-feedback-now-integrates-with-qualtrics-for-all-customers
+You can now connect a Qualtrics survey as a feedback source in AI Feedback. Once connected, AI Feedback automatically aggregates and surfaces insights across all survey responses in that survey.
+Renat Zhilkibaev
+AI
+https://amplitude.com/releases/ai-feedback-now-integrates-with-qualtrics-for-all-customers
+Mon, 03 Aug 2026 23:05:01 GMT
+Session Replay Comments
+https://amplitude.com/releases/session-replay-comments
+Native commenting inside the Session Replay modal — leave a comment on any replay, @mention teammates, and link straight to a specific moment in the recording, all without leaving Amplitude.
+Christian Cho
+Session Replay
+https://amplitude.com/releases/session-replay-comments
+Mon, 27 Jul 2026 21:37:30 GMT
 Resource Center: search term highlighting and autoscroll in articles
 https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
 When a user opens an article from a Resource Center search result, matched search terms are now highlighted inside the article and the view automatically scrolls to the relevant passage.
 Thomas Kainrad
-Guides and Surveys
+Platform
 https://amplitude.com/releases/resource-center-search-term-highlighting-and-autoscroll-in-articles
 Fri, 24 Jul 2026 12:10:33 GMT
 Resource Center: open directly to a specific article via the SDK
 https://amplitude.com/releases/resource-center-open-directly-to-a-specific-article-via-the-sdk
 The Guides and Surveys SDK now supports opening the Resource Center directly on a specific article.
 Thomas Kainrad
-Guides and Surveys
+Platform
 https://amplitude.com/releases/resource-center-open-directly-to-a-specific-article-via-the-sdk
 Fri, 24 Jul 2026 12:05:16 GMT
 Metric Explorer Chart
@@ -95,7 +193,7 @@ Dan Carmel
 Activation
 https://amplitude.com/releases/attribution-parameters-as-event-properties-browser-sdk-gtm
 Fri, 17 Jul 2026 18:55:05 GMT
-Clickable image links
+Guides and Surveys: Clickable image links
 https://amplitude.com/releases/clickable-image-links
 Turn any image in a Guide or Survey into a clickable link, so users can jump to a page, doc, or in-app destination without needing a separate button.
 Nino Villaflor
@@ -123,6 +221,27 @@ Tim Yiu
 Experiment
 https://amplitude.com/releases/web-experiment-bucketing-id-shared-across-subdomains
 Mon, 13 Jul 2026 00:00:00 GMT
+Guides and Surveys: Project-wide page targeting exclusions
+https://amplitude.com/releases/project-wide-page-targeting-exclusions
+The Guides and Surveys settings drawer now has a 'Default page exclusions' section that lets you add pages where guides and surveys should never show up. This way you don't have to set it for every guide individually.
+Thomas Kainrad
+Guides and Surveys
+https://amplitude.com/releases/project-wide-page-targeting-exclusions
+Fri, 10 Jul 2026 05:57:08 GMT
+Detailed error reason for computation configuration-related failures
+https://amplitude.com/releases/detailed-error-reason-for-computation-configuration-related-failures
+Computation overview now returns a clean and detailed error reason to users when their computation fails due to misconfiguration, instead of just saying 'Something went wrong!'.
+Charlie Gao
+Analytics
+https://amplitude.com/releases/detailed-error-reason-for-computation-configuration-related-failures
+Tue, 07 Jul 2026 00:57:14 GMT
+Computation is now available in EU region
+https://amplitude.com/releases/computation-is-now-available-in-eu-region
+Computation is now available in EU region.
+Charlie Gao
+Analytics
+https://amplitude.com/releases/computation-is-now-available-in-eu-region
+Tue, 07 Jul 2026 00:57:06 GMT
 Web Experiment: Undo/Redo + Auto-apply
 https://amplitude.com/releases/web-experiment-undo-redo-auto-apply
 The web experiment visual editor now supports undo/redo, accessed by the buttons on the navigation bar or keyboard shortcuts (Cmd+Z / Cmd+Shift+Z). Changes made in the visual editor are also now automatically applied, and the apply button has been removed.
@@ -261,9 +380,9 @@ Dan Graham
 Analytics
 https://amplitude.com/releases/web-vitals-stacked-chart
 Thu, 21 May 2026 18:53:36 GMT
-Create and edit Guides & Surveys themes with Global Chat
+Create and edit Guides and Surveys themes with Global Chat
 https://amplitude.com/releases/create-and-edit-gs-themes-via-global-chat
-Create and edit G&S themes just by sharing a screenshot of your website/figma files or by describing your dream theme with a short text description. Follow up with quick edits like 'make the button height a tad smaller' or 'give the typography a bold look'. Bonus: Use 'Fix with AI' to fix any and all theme validation errors.
+Create and edit themes just by sharing a screenshot of your website/Figma files or by describing your dream theme with a short text description. Follow up with quick edits like 'make the button height a tad smaller' or 'give the typography a bold look'. Bonus: Use 'Fix with AI' to fix any and all theme validation errors.
 Matthew Beaty
 Guides and Surveys
 https://amplitude.com/releases/create-and-edit-gs-themes-via-global-chat
@@ -526,9 +645,9 @@ Frank Lee
 AI
 https://amplitude.com/releases/even-more-external-mcp-tools-agent-skills-and-the-mcp-app
 Wed, 25 Mar 2026 00:00:00 GMT
-Multi-action CTA's for Guides & Surveys
+Multi-action CTA's for Guides and Surveys
 https://amplitude.com/releases/multi-action-ctas-for-guides-and-surveys
-Guide and survey buttons can now execute multiple actions in sequence, allowing users to chain actions together like navigating to a URL, clicking an element on that page, and then advancing to the next step.
+Buttons can now execute multiple actions in sequence, allowing users to chain actions together like navigating to a URL, clicking an element on that page, and then advancing to the next step.
 Wes Feller
 Guides and Surveys
 https://amplitude.com/releases/multi-action-ctas-for-guides-and-surveys
@@ -718,9 +837,9 @@ Anson Chen
 Experiment
 https://amplitude.com/releases/web-experiment-inline-editing-css-unit-selector
 Tue, 10 Feb 2026 23:01:51 GMT
-G&S - Adjust pin/embeds/tooltip position and offset options directly in your app
+Guides and Surveys: Adjust pin/embeds/tooltip position and offset options directly in your app
 https://amplitude.com/releases/gs-adjust-pin-embeds-tooltip-position-and-offset-options-directly-in-your-app
-It's tough for customers to quickly customize positions, size or offsets of anchored/embedded guides and surveys from the preview on amplitude.com. Now they'll be able to easily edit, preview, and 'save' these options from the preview inside their app.
+Easily edit, preview, and 'save' customized positions, sizes, or offsets from the preview inside their app instead of on amplitude.com.
 Matthew Beaty
 Guides and Surveys
 https://amplitude.com/releases/gs-adjust-pin-embeds-tooltip-position-and-offset-options-directly-in-your-app
@@ -1043,7 +1162,7 @@ Dan Graham
 Analytics
 https://amplitude.com/releases/web-vitals-metrics-collection
 Tue, 21 Oct 2025 22:02:51 GMT
-G&S Themes — Custom CSS
+Guides and Surveys themes — custom CSS
 https://amplitude.com/releases/1761081647.104099
 Users have the ability to write custom CSS directly on the theme to customize to their heart's content.
 Lucas Howard
@@ -1134,14 +1253,14 @@ Matthew Beaty
 Guides and Surveys
 https://amplitude.com/releases/content-alignment-for-guides-and-surveys
 Fri, 05 Sep 2025 14:39:45 GMT
-Testing Status for Guides & Surveys
+Testing Status for Guides and Surveys
 https://amplitude.com/releases/testing-status-for-guides-and-surveys
 Introduces a new "Testing" status that bridges the gap between Draft and Published for guides and surveys. This allows admins to test their content with specific users and cohorts without fully publishing, similar to the testing workflow for Feature Flags.
 Wes Feller
 Guides and Surveys
 https://amplitude.com/releases/testing-status-for-guides-and-surveys
 Thu, 04 Sep 2025 11:05:20 GMT
-Version History for Guides & Surveys
+Version History for Guides and Surveys
 https://amplitude.com/releases/version-history-for-guides-surveys
 Guides & Surveys users will now be able to see what changes have been made as well as when the changes were made and who made them.
 Alex Baumhoer
@@ -1162,9 +1281,9 @@ Wes Feller
 Guides and Surveys
 https://amplitude.com/releases/element-selection-strategy
 Wed, 27 Aug 2025 17:56:59 GMT
-Desktop Apps for Guides & Surveys
+Desktop apps for Guides and Surveys
 https://amplitude.com/releases/desktop-apps-for-guides-and-surveys
-Adds the ability to create a Desktop app (e.g. an Electron app) within the G&S project settings. This enables us to support desktop-specific workflows for Guides and Surveys
+Adds the ability to create a Desktop app (e.g. an Electron app) within the Guides and Surveys project settings. This enables us to support desktop-specific workflows for Guides and Surveys
 Alex Baumhoer
 Guides and Surveys
 https://amplitude.com/releases/desktop-apps-for-guides-and-surveys
@@ -1267,122 +1386,3 @@ Rahul Muthyam
 Data
 https://amplitude.com/releases/event-level-property-deletion
 Fri, 25 Jul 2025 21:59:13 GMT
-Improved Guides and Surveys loading time by not loading archived entities by default
-https://amplitude.com/releases/improved-guides-and-surveys-load-time
-On every page load, we now automatically add a filter to the Guides and Surveys table that filters out archived guides and surveys, making the dashboard load much faster.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/improved-guides-and-surveys-load-time
-Thu, 24 Jul 2025 19:32:36 GMT
-Admin-Created Templates
-https://amplitude.com/releases/admin-created-templates
-Create custom, high-quality templates of guides and surveys for your team to reuse. This can include custom designs and/or unique trigger and targeting rules. Bonus: Preview templates directly in the create flow modal!
-Matthew Beaty
-Guides and Surveys
-https://amplitude.com/releases/admin-created-templates
-Thu, 24 Jul 2025 19:30:41 GMT
-AI Summaries for Survey Responses
-https://amplitude.com/releases/ai-summaries-for-survey-responses
-AI summaries for survey responses are here! These are essentially what they sound like: get quick insights into your long-answer survey responses by seeing an LLM-generated overview of what users are saying.
-Alex Baumhoer
-Guides and Surveys
-https://amplitude.com/releases/ai-summaries-for-survey-responses
-Thu, 24 Jul 2025 19:27:38 GMT
-Hide guides and surveys on non-matching pages by default
-https://amplitude.com/releases/hide-guides-and-surveys-by-default
-Guides and surveys now disappear on all pages that don't match the page targeting by default.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/hide-guides-and-surveys-by-default
-Thu, 24 Jul 2025 17:59:17 GMT
-Heatmap Thumbnails
-https://amplitude.com/releases/heatmap-thumbnails
-We've redesigned the heatmaps list page with a new gallery layout that shows off colorful previews of your heatmaps! For those without previews, we've added delightful placeholder images.
-Joe Pollock
-Session Replay
-https://amplitude.com/releases/heatmap-thumbnails
-Mon, 21 Jul 2025 22:02:05 GMT
-Automated Guides and Surveys Localization using AI
-https://amplitude.com/releases/automated-localization-ai
-You can now press a button in the UI, and it will automatically translate your guide into all the supported languages using AI.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/automated-localization-ai
-Wed, 02 Jul 2025 22:03:30 GMT
-Guides and Surveys Resource Center
-https://amplitude.com/releases/resource-center
-The Resource Center is a new embedded launcher and widget with search, personalized recommendations, and useful links.
-Paul Hultgren
-Guides and Surveys
-https://amplitude.com/releases/resource-center
-Mon, 30 Jun 2025 22:04:07 GMT
-Web Experiment: Control Variant Editing
-https://amplitude.com/releases/control-variant-editing
-Small update to Web Experimentation to support control variant editing. This lets users iterate quickly on their web experiments on the same surface without needing to deploy the changes to production before running their next test.
-Anson Chen
-Experiment
-https://amplitude.com/releases/control-variant-editing
-Fri, 27 Jun 2025 22:05:38 GMT
-Remote Configuration for Autocapture (Browser SDK)
-https://amplitude.com/releases/remote-config-for-autocapture-browser-sdk
-Added fine grained controls for each setting in Autocapture in the Browser SDK, allowing much more control over how Autocapture functions on websites.
-Alvin Wang
-Data
-https://amplitude.com/releases/remote-config-for-autocapture-browser-sdk
-Tue, 24 Jun 2025 00:23:37 GMT
-Pages for Web Experiments
-https://amplitude.com/releases/pages-web-experimentation
-You can now scope your experiments to specific URLs using Pages—a new way to define and reuse targeted page contexts. Pages improve targeting precision, reduce test spillover, and support SPAs and dynamic websites. You can also assign custom code and URL redirects to individual Pages.
-Stephen Choi
-Experiment
-https://amplitude.com/releases/pages-web-experimentation
-Wed, 18 Jun 2025 00:00:00 GMT
-Cart Properties in Custom Events
-https://amplitude.com/releases/cart-properties-in-custom-events
-You can now include cart properties as filters when creating custom events, making it easier to define custom event logic based on what's in the user’s cart such as product IDs, quantities, prices, or categories.
-Brian Cooper
-Analytics
-https://amplitude.com/releases/cart-properties-in-custom-events
-Mon, 09 Jun 2025 00:24:17 GMT
-Improved Filtering for Guides and Surveys
-https://amplitude.com/releases/improved-filtering-for-guides-and-surveys
-Filter on any columns (like `created by`!), use complex operators, and filters now persist across web sessions!
-Matthew Beaty
-Guides and Surveys
-https://amplitude.com/releases/improved-filtering-for-guides-and-surveys
-Thu, 05 Jun 2025 00:24:32 GMT
-Organize Your Guides and Surveys by Custom Tags
-https://amplitude.com/releases/organize-guides-and-surveys-by-tags
-Create and add custom tags to make organizing guides and surveys easy!
-Matthew Beaty
-Guides and Surveys
-https://amplitude.com/releases/organize-guides-and-surveys-by-tags
-Wed, 04 Jun 2025 00:24:59 GMT
-Guides and Surveys Cooldown Period Quantifiers
-https://amplitude.com/releases/guides-and-surveys-cooldown-period-quantifiers
-Instead of just being able to specify how many times a guide or survey should trigger per day/week/month, you can now quantify the period as well. It's a small change for us but it is very effective. Bonus: There is a `year` option now as well.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/guides-and-surveys-cooldown-period-quantifiers
-Wed, 04 Jun 2025 00:24:52 GMT
-Survey Insights as Charts and CSV Export
-https://amplitude.com/releases/survey-insights-as-charts-and-csv-export
-The ability to view survey insights as charts directly in-product, and the ability to export raw survey responses to CSV.
-Leo Hanon
-Guides and Surveys
-https://amplitude.com/releases/survey-insights-as-charts-and-csv-export
-Tue, 03 Jun 2025 00:25:13 GMT
-Cart Analysis: Platform Support, Derived Properties, Lookup Tables, and Transformations
-https://amplitude.com/releases/cart-analytics-platform-support
-All beta enhancements for cart properties are now generally available, making nested cart data more powerful, usable, and trustworthy across Amplitude.
-Curtis Xuan
-Platform
-https://amplitude.com/releases/cart-analytics-platform-support
-Fri, 30 May 2025 00:25:32 GMT
-Evaluation Flags API Endpoint
-https://amplitude.com/releases/evaluation-flags-api
-An official public endpoint for downloading local evaluation model flag and experiment objects.
-Brian Giori
-Experiment
-https://amplitude.com/releases/evaluation-flags-api
-Fri, 23 May 2025 00:26:00 GMT

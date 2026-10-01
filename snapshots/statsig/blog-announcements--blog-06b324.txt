@@ -80,15 +80,36 @@ Statsig University
 Statsig Blog
 FEATURED
 STATSIG
-Rooting in customer requests | Color commentary, May–Jul 2026
+Control, AI, and ease | Color commentary, Aug 2026
 Eric Metelka
-Tue Jul 21 2026
-The story behind our recent releases follows two narratives: a governance story and an ease-of-access story. Here's why we shipped what we did.
+Thu Sep 10 2026
+Our themes for August: scaling cross-platform control, building out more AI capabilities, and tackling customer requests. Here's why we shipped what we did.
 All Articles
 Engineering
 Experimentation
 Statsig
 Other
+EXPERIMENTATION
+Multiple comparisons: More comparisons, more problems
+Matthew Rogers
+Tue Sep 29 2026
+The multiple comparisons problem is one of the most common pitfalls in A/B testing. Here’s what it is, why it matters, and how to guard against it with Statsig.
+AI
+Our take on AI for experimentation
+Nithya Rajendran
+Wed Sep 23 2026
+With several AI features launching soon and more coming down the line, here's how we're thinking about AI in the Statsig Console.
+EXPERIMENTATION
+Beyond the A/B Test: Experiment designs for your toughest questions
+Pritul Patel
+Tue Sep 15 2026
+A/B tests can't answer every question. Learn how other key experiment designs can help you avoid statistical pitfalls and get better results.
+FEATURED
+STATSIG
+Control, AI, and ease | Color commentary, Aug 2026
+Eric Metelka
+Thu Sep 10 2026
+Our themes for August: scaling cross-platform control, building out more AI capabilities, and tackling customer requests. Here's why we shipped what we did.
 EXPERIMENTATION
 Why is it OK to run a z-test on a non-normal distribution for A/B tests?
 Viv Magida
@@ -145,26 +166,6 @@ Statsig's Knowledge Graph: Connecting code, experiments, and metrics
 Pablo Beltran, Emily Hallet
 Wed Jan 28 2026
 Statsig’s Knowledge Graph connects codebase, feature gates, experiments, users and metrics to give teams richer context and faster insights.
-AI
-How we’re making Statsig smarter with AI
-Shubham Singhal, Kaz Haruna, Sid Kumar
-Wed Jan 21 2026
-Statsig’s AI-powered, copilot-like features enhance key product workflows and help teams learn and iterate faster!
-STATSIG
-Guide to onboarding with Statsig
-Ben Weymiller
-Tue Jan 13 2026
-New to Statsig and not sure where to begin? Follow this 3-step guide to onboarding with Statsig.
-AI
-Automating Safe AI Config Rollouts with Custom Benchmarks and Statsig
-Anna Yoon
-Tue Jan 06 2026
-Automate benchmark testing for AI configuration changes and block unsafe rollouts using Statsig Release Pipelines and webhooks.
-AI
-How we optimized Statbot using Statsig
-Xin Huang
-Thu Dec 18 2025
-Building Statbot showed us the power of pairing rigorous offline validation with real customer insights.
 Older Posts
 Show All
 Loved by customers at every stage of growth

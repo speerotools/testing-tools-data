@@ -48,11 +48,13 @@ GrowthBook Command Line Interface (CLI)
 Microsoft Clarity (Heatmaps)
 Jira
 AI Integrations
+LLM Tracing (Langfuse, Phoenix)
 Security
 FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Integrations
 AI Integrations
 Copy page
@@ -80,7 +82,7 @@ Experiment description and hypothesis
 Experiment tags and attributes
 ​
 Generate SQL for SQL Explorer
-You can use AI to generate SQL queries for the SQL Explorer in GrowthBook. Add you provide a natural language description of the data you want to query, and the AI will generate the SQL query for you.
+You can use AI to generate SQL queries for the SQL Explorer in GrowthBook. You provide a natural language description of the data you want to query, and the AI will generate the SQL query for you.
 ​
 Data sent:
 Table names and columns in your database
@@ -97,13 +99,13 @@ Metric attributes (e.g., type)
 Metric tags
 ​
 Hypothesis checking
-Experiment hypothesis are crucial for guiding your experiments. With this AI integration, you can check the validity of your experiment hypothesis to ensure consistency across your experiment program. This feature analyzes the hypothesis against an adjustable prompt and provides feedback and suggestions for improvement.
+Experiment hypotheses are crucial for guiding your experiments. With this AI integration, you can check the validity of your experiment hypothesis to ensure consistency across your experiment program. This feature analyzes the hypothesis against an adjustable prompt and provides feedback and suggestions for improvement.
 ​
 Data sent:
 Experiment hypothesis text
 ​
 Similar Experiment Detection
-You can use AI to detect similar experiments in your GrowthBook project. This feature helps you identify experiments that may redundant, ensuring that you don’t waste resources on testing similar ideas. The AI model analyzes the experiment metadata and provides a list of similar experiments.
+You can use AI to detect similar experiments in your GrowthBook project. This feature helps you identify experiments that may be redundant, ensuring that you don’t waste resources on testing similar ideas. The AI model analyzes the experiment metadata and provides a list of similar experiments.
 This feature is available from the “new experiment” modal when you create a new experiment. It will search the description and hypothesis and show you a list of similar experiments.
 This similar experiment detection is based on vector embeddings, which means it can find similar experiments even if they don’t share the exact same words. The embeddings will update automatically when the experiment meta information changes, however, you can regenerate the embeddings for your experiments at any time from the AI settings page.
 ​
@@ -111,6 +113,16 @@ Data sent:
 Experiment description
 Experiment hypothesis
 Experiment name
+​
+AI Assistant Skills
+Skills tell the in-app AI Assistant how to carry out tasks such as creating a Feature Flag or analyzing an experiment. Admins can turn individual skills on or off for their organization under
+Settings → General → AI & Prompts
+. A skill that’s turned off is hidden from the
+/
+menu in the chat composer, and the Assistant can’t use it. New skills start turned on.
+Self-hosted installs can also add their own skills or replace the built-in ones. See
+AI Assistant Skills
+in the environment variable reference.
 ​
 Self-Hosted AI Integrations
 Self-hosted GrowthBook instances can enable these AI features, by adding a OpenAI API key to the AI settings page.
@@ -146,7 +158,7 @@ Yes
 No
 Jira Integration
 Previous
-User & Team Permissions
+Experimenting on LLM Features
 Next
 ⌘
 I
@@ -162,6 +174,7 @@ Hypothesis checking
 Data sent:
 Similar Experiment Detection
 Data sent:
+AI Assistant Skills
 Self-Hosted AI Integrations
 GrowthBook Documentation
 home page

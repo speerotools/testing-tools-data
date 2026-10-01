@@ -130,6 +130,27 @@ Please select at least one blog to continue.
 Subscribe
 Recent Posts
 EXPERIMENTATION
+Multiple comparisons: More comparisons, more problems
+Matthew Rogers
+Tue Sep 29 2026
+The multiple comparisons problem is one of the most common pitfalls in A/B testing. Here’s what it is, why it matters, and how to guard against it with Statsig.
+AI
+Our take on AI for experimentation
+Nithya Rajendran
+Wed Sep 23 2026
+With several AI features launching soon and more coming down the line, here's how we're thinking about AI in the Statsig Console.
+EXPERIMENTATION
+Beyond the A/B Test: Experiment designs for your toughest questions
+Pritul Patel
+Tue Sep 15 2026
+A/B tests can't answer every question. Learn how other key experiment designs can help you avoid statistical pitfalls and get better results.
+FEATURED
+STATSIG
+Control, AI, and ease | Color commentary, Aug 2026
+Eric Metelka
+Thu Sep 10 2026
+Our themes for August: scaling cross-platform control, building out more AI capabilities, and tackling customer requests. Here's why we shipped what we did.
+EXPERIMENTATION
 Why is it OK to run a z-test on a non-normal distribution for A/B tests?
 Viv Magida
 Mon Aug 31 2026
@@ -139,27 +160,6 @@ Running faster tests: Modifying metrics (Part 2)
 Akhil Prakash
 Wed Aug 19 2026
 In Part 2 of our 4-part series, learn how to pick and transform metrics for quicker experiments.
-EXPERIMENTATION
-PM roundtable: How do you prioritize experiments?
-Paul Morrill
-Tue Aug 11 2026
-What should you test next? Three Statsig + Amplitude PMs share the risks, impact, and statistics they weigh when picking which product experiments to run.
-EXPERIMENTATION
-Running faster tests: The basics (Part 1)
-Akhil Prakash
-Fri Jul 31 2026
-Sample size calculator says your test will take 3 months? In the 1st part of our 4-part series, here's how to run faster tests by adjusting your constraints.
-FEATURED
-STATSIG
-Rooting in customer requests | Color commentary, May–Jul 2026
-Eric Metelka
-Tue Jul 21 2026
-The story behind our recent releases follows two narratives: a governance story and an ease-of-access story. Here's why we shipped what we did.
-ENGINEERING
-Statsig MCP: Heading toward headless workflows
-Harman Kaur
-Wed Jul 15 2026
-You've been asking for more headless. Here's how it now works to take a feature gate through its full lifecycle without opening a browser tab.
 We use cookies to ensure you get the best experience on our website.
 Privacy Policy
 Got it!

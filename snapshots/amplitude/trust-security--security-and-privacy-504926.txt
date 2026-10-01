@@ -4,9 +4,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -79,9 +80,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -234,10 +236,12 @@ Global Agent
 , an AI assistant that helps you complete workflows anywhere in Amplitude;
 Specialized Agents
 , autonomous agents that run end-to-end analytics and experimentation workflows;
-AI Visibility
-, which helps you understand how your brand is performing in AI searches; and
+Custom Agents
+, which let teams build, schedule, and share their own agents for recurring analysis;
+Agent Analytics
+, which measures the quality, cost, and business impact of the AI agents you build for your own users; and
 AI Feedback
-, which will transform unstructured customer feedback into actionable themes. In addition to these keynote capabilities, Amplitude has embedded AI-enhanced functionality throughout the platform, helping customers to streamline workflows and accelerate analysis and insights.
+, which transforms unstructured customer feedback into actionable themes. In addition to these keynote capabilities, Amplitude has embedded AI-enhanced functionality throughout the platform, helping customers to streamline workflows and accelerate analysis and insights.
 These features are powered by our trusted AI partners, which you can find listed
 here
 .
@@ -264,8 +268,7 @@ However, it is important to note that Amplitude’s AI partners never use custom
 How does Amplitude protect and govern data used by Amplitude’s AI features?
 Amplitude applies the same enterprise-grade security, privacy, and governance controls to Amplitude’s AI features that we use across the rest of the platform. All our AI partners sign enterprise-level agreements with Amplitude and must meet security measures at least as protective as our own.
 For features powered by AWS Bedrock, your customer data does not leave our secure AWS environment, and the model providers themselves do not access or receive your data. Your data remains within AWS and under AWS’s security controls.
-For workflows that leverage OpenAI, we use OpenAI’s Zero Data Retention endpoints for applicable use cases, ensuring OpenAI does not retain your data after processing.
-For workflows that leverage Google's generative AI, we use Google's Zero Data Retention features whenever possible, and in no circumstance will your data retained by Google for longer than forty-eight hours.
+For workflows that leverage OpenAI and Google Vertex, we use the provider's Zero Data Retention endpoints and features for applicable use cases, ensuring that the provider does not retain your data after processing.
 Under no circumstance will any AI partner use your data to train or improve their models.
 Do Amplitude's AI features respect the existing permissions and access controls set up in my account?
 Yes, Amplitude's AI features respect the existing permissions and access controls set up in your account. No new data access is granted to a user when using an AI feature.

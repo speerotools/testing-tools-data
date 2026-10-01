@@ -72,10 +72,10 @@ Testing your Gates/Experiments
 Migration Guides
 FAQ
 On this page
-How Bayesian testing works in Statsig
-Informed Bayesian
-Drawing the correct prior distribution from historical data
-Implementation details
+Turn on Bayesian mode
+Informative priors
+Deriving a prior from historical data
+How Statsig computes the posterior
 Bayesian statistics glossary
 For AI agents: a documentation index is available at
 /llms.txt
@@ -85,15 +85,28 @@ Product Docs
 Bayesian Experiments
 Bayesian Experiments
 Learn about Bayesian A/B testing on Statsig, including informative priors and implementation details.
-How Bayesian testing works in Statsig
-Bayesian mode analyzes your experiment with Bayesian statistics. This mode lets you factor in prior beliefs about the treatment effect and report results as a chance to beat control and expected loss. Non-technical audiences often find these terms more intuitive than the p-values that frequentist analysis uses by default. Experiments are frequentist by default; to switch to Bayesian mode, go to Advanced Settings.
-You can't modify the experiment type after the experiment starts.
-Deep-dive analysis reflects Bayesian statistics.
-Informed Bayesian
-Bayesian experiments let you specify a prior belief on the relative average treatment effect. Statsig combines the prior distribution with the observed data to display prior-adjusted results. To enable prior-adjusted results, select the "use informative priors" option.
-Drawing the correct prior distribution from historical data
-When you use Bayesian mode with informative priors, your organization must understand what influence the priors have over your experimental results. Your organization must also establish a reliable prior based on domain knowledge. Use these patterns to derive priors:
-You can use the
+Bayesian mode reports each metric as a chance to beat control and an expected loss instead of a p-value, and can combine an informative prior with the observed data. Use it when stakeholders need probability readouts, or when you have reliable priors from past experiments. Experiments use frequentist analysis by default.
+Statsig offers three analysis methods, which you choose with the
+Analytics Type
+setting under Advanced Settings on the experiment Setup tab. Use frequentist analysis with
+sequential testing
+for standard p-values and confidence intervals that stay valid when you read results early. Use
+SPRT
+when you want unlimited peeking and the option to accept the null hypothesis as well as reject it. Use Bayesian mode for chance-to-beat and expected-loss readouts, with optional priors from past experiments.
+Turn on Bayesian mode
+To switch an experiment to Bayesian mode, set
+Analytics Type
+to
+Bayesian
+under Advanced Settings on the experiment Setup tab. You can't change the analytics type after the experiment starts.
+Pulse scorecard results and deep-dive analysis both reflect Bayesian statistics.
+Informative priors
+In Bayesian mode, you can set a prior belief on the relative average treatment effect. Statsig combines the prior distribution with the observed data and displays the prior-adjusted results. To turn on priors, select
+Use informative priors
+.
+Deriving a prior from historical data
+When you use informative priors, make sure your organization understands how the prior influences the experiment results, and base the prior on domain knowledge. Two common patterns:
+Use the
 A
 V
 G
@@ -107,8 +120,8 @@ G
 (
 average treatment effect
 )
-of past experiments with a similar setup and population as your prior mean. You can use the standard deviation, or a multiple of it, as the prior standard error.
-You can also use the
+of past experiments with a similar setup and population as the prior mean, and the standard deviation of those effects, or a multiple of it, as the prior standard error.
+Use the
 A
 V
 G
@@ -122,8 +135,8 @@ G
 (
 observed standard error
 )
-as your prior standard error.
-Implementation details
+of past experiments as the prior standard error.
+How Statsig computes the posterior
 Denote
 N
 (
@@ -204,7 +217,7 @@ r
 i
 or
 ​
-is the standard error. Similarly,
+is the standard error. Denote
 N
 (
 A
@@ -259,7 +272,7 @@ d
 ​
 )
 as the observed distribution.
-Statsig then calculates the posterior distribution as
+Statsig calculates the posterior distribution as:
 A
 T
 E
@@ -480,7 +493,21 @@ d
 ​
 1
 ​
-If you don't specify a prior, Statsig represents the
+If you don't specify a prior, Statsig uses
+N
+(
+0
+,
+∞
+)
+\mathcal{N}(0, \infty)
+N
+(
+0
+,
+∞
+)
+as the prior distribution
 N
 (
 A
@@ -524,35 +551,22 @@ or
 2
 ​
 )
-as
-N
-(
-0
-,
-∞
-)
-\mathcal{N}(0, \infty)
-N
-(
-0
-,
-∞
-)
 .
 Bayesian statistics glossary
-Bayesian A/B tests use different terminology from the frequentist framework. These terms are often more intuitive for communicating results to non-technical audiences.
+Bayesian A/B tests use different terminology from the frequentist framework.
 Term
 Definition
-Credible Interval
-The interval that contains the true parameter at the given probability
-Chance to Beat
-The probability that the test is better than control
-Expected Loss
-The average potential risk if you ship the test variant
+Credible interval
+The interval that contains the true parameter at the given probability.
+Chance to beat
+The probability that the test group is better than control.
+Expected loss
+The average potential risk if you ship the test variant.
 Was this helpful?
+Copy Markdown
 On this page
-How Bayesian testing works in Statsig
-Informed Bayesian
-Drawing the correct prior distribution from historical data
-Implementation details
+Turn on Bayesian mode
+Informative priors
+Deriving a prior from historical data
+How Statsig computes the posterior
 Bayesian statistics glossary

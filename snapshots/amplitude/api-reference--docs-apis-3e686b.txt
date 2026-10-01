@@ -30,25 +30,64 @@ FAQ
 Developers
 SDKs
 APIs
+CLI
 Overview
+Authentication
 API Authentication
 Keys and Tokens
-AI Feedback API
 Analytics APIs
+AI Feedback API
+Attribution API
+Batch Event Upload API
+Behavioral Cohorts API
+Channel Classifier API
+Chart Annotations API
+Dashboard REST API
+DSAR API
+Event streaming metrics
+Export API
+Group Identify API
+HTTP API v2
+Identify API
+Lookup Table API
+Lookup Table API 2
+Releases API
+Taxonomy API
+User Mapping (Aliasing) API
+User Privacy API
+User Privacy API v2
+User Profile API
 Experiment APIs
+Experiment Evaluation API
+Management API
 Guides and Surveys APIs
+Localization API
 Session Replay APIs
+Session Replay API
 Administrative APIs
+Audit Logs API
+SCIM API
+User Management API
+Developer API
+Overview
+Analytics
+Auth
+Destinations
+Feature Flags
+Projects
+Skills
+Taxonomy Event Properties
+Taxonomy Events
+Taxonomy User Properties
+Language
+🇺🇸
+English
 For AI agents: a documentation index is available at
 /docs/llms.txt
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 APIs
 APIs
 Use Amplitude APIs to send and receive information and extend Amplitude.
-Choose an API
-Use
-Which API should I use?
-to compare Amplitude's ingestion options and choose between the HTTP V2 API, Batch Event Upload API, SDKs, and source integrations.
 Analytics APIs
 Attribution API
 Send attribution campaign events (identified by idfa, idfv, or adid) that contain attribution information.
@@ -172,6 +211,9 @@ Privacy Notice
 Acceptable Use Policy
 Legal
 Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
 ©
 2012–2026
 Amplitude, Inc.

@@ -1,75 +1,146 @@
 # https://www.zoho.com/pagesense/
 Conversion Optimization and Personalization Platform | Zoho PageSense
-The Conversion Optimization and Experimentation Platform
-Analyze user behavior with heatmaps, session recordings, and funnel analysis. Optimize user journeys with robust A/B testing and personalization that adapts to every segment, across your website, server-side, and mobile app.
-START MY FREE TRIAL
-Heatmap
-A/b Testing
-0
-%
-0
-%
-Session Recording
+Turn behavior insights into winning experiments and higher conversions
+Every visitor leaves clues. Zoho PageSense helps you read them through heatmaps, session recordings, and funnel analysis, then act on them with A/B testing and personalization that adapts to every segment, across your website, mobile app, and server.
+Start free trial
+Book a demo
+15-days free trial. No credit card required.
+Trusted by growth teams across industries
+Understand, experiment, and personalize, all in one platform
+From the first visitor click to a winning experiment, Zoho PageSense connects every step of your optimization loop so nothing lives in a silo.
+Behavior Analytics
+Web Testing
 Personalization
-15-day free trial. No credit card required.
-100% Visits
-All in one platform
-Explore our wide range of powerful CRO tools designed to optimize your website for maximum conversions.
-All
-Track
-Analyze
-Optimize
-Personalize
-Engage
-Web Analytics
-Get an in-depth overview of your website’s metrics. Identify which demographics and channels drive the most revenue and accordingly your streamline marketing efforts.
-Goals
-Set goals for each experiment. Track key website metrics.
-Session Recording
-Record every visitor session on your website to observe their browsing pattern and see what stops them from converting.
-Form Analytics
-Find out how visitors interact with your web forms. Edit the fields that cause them to abandon.
-Funnel Analysis
-Find which pages have the most drop-offs. Analyze and address visitors drop-off patterns.
+Full-Stack
+Behavior Analytics
+Traffic and channel analytics
+Know which channels drive real conversions, not just clicks. See which pages have worrying exit rates tied directly to your business goals.
+Heatmaps
+Know which parts of your page earn focus and which get ignored, so you can move what matters above the fold and remove what creates noise.
+Session recording with AI summaries
+Watch real visitors encounter friction in real time. Zia, our AI assistant reads patterns across thousands of sessions and tells you what's costing conversions, without you watching them one by one.
+Funnel analysis
+Find the exact step where visitors stop converting, and know which page to fix before running a single experiment.
+User journey mapping
+Discover every path visitors actually take, including the ones you didn't plan. Understand which flows lead to conversions and those that are quietly blocking them.
+Form analytics
+See which fields make people quit your forms. Fix the friction between a visitor's intent and your confirmation page.
+Web Testing
 A/B testing
-Run A/B tests to compare and choose the best variation that drives conversion.
-Heatmap
-See how visitors interact with your website. View attention maps and scrollmaps for more insights.
-Polls
-Ratings, feedback, or lead gen—run polls using our templates and gather actionable insights.
+Run controlled experiments on any page element from headlines, CTAs, layouts, and images. A real-time significance engine tells you when results are real, not noise.
+Split URL and multivariate testing
+Test entire page variants head-to-head, or find the best combination of multiple elements simultaneously across any traffic volume.
+Multipage tests
+Coming soon
+Test conversion sequences across entire funnels (checkout flows, multi-step forms, and onboarding journeys) as a connected experience.
+Visual and code editor
+Point-and-click editing for marketers who move fast. Full CSS and JavaScript control for developers who need precision. No compromises for either.
 Personalization
-Customize your website for every visitor using their data and past browsing behavior.
-Push Notification
-Re-engage with your customers even when they aren’t on your website.
-Pop-Ups
-Create or use our pre-designed pop-ups, slide-ins, and banners to drive visitor engagement.
-View all features
-80% Visits
-What our customers say
-Excellent tracking capabilities and good UX as well. It can be set up easily to track your customers with heatmaps, session recordings, funnels, and more.
-Shivansh
-Product Manager
-Setting up is effortless; you don't need to be technical. We mainly use the screen recording and heatmap functionalities, and they do an excellent job.
-Kevin. V
-Product Manager
-It's a simple step integration tool into any website, just adding custom element code into the pages you need to track; I like the customer care given by the team.
-Rwabwogo B.
-General manager operations
-65% Visits
-One solution for different industries
-Take a step forward with Zoho PageSense—tools built to analyze your site's metrics, drive leads that convert, and deploy web pages that perform and do much more, all without you writing a single line of code.
-Ecommerce
-B2B
-Marketers
-Why choose
-Zoho PageSense
-Multiple tools under one roof
-No-code tools with a straightforward UI that are tailored to run experiments, optimize KPIs, and derive measurable metrics.
-A tightly integrated platform
-Seamlessly integrate with the extensive Zoho ecosystem and third-party business apps to get a 360° view of your marketing campaigns.
-No impact on page load time
-Focus on experiments without worrying about website lags: one code, multiple experiments, better experiences.
-Privacy and compliance
-With GDPR-compliant and PCI DSS standard certifications, our customer’s privacy has always been our top priority.
-Start making data-driven business decisions
-SIGN UP FOR FREE
+Segment-based personalization
+Deliver different content, offers, and layouts by device, location, source, behavior, or custom attributes. All without writing code
+Behavioral targeting
+Target based on what visitors do: pages visited, scroll depth, time on site, and cart value, and not just who they are
+Mobile personalization
+Serve personalized in-app experiences to different mobile segments, from the same dashboard as your web experiments
+Zoho CRM targeting
+Personalize using real CRM data (account tier, deal stage, and lifecycle) so your highest-value visitors see the experience they deserve.
+Full-Stack
+Server-side testing
+Test backend logic, APIs, pricing algorithms, and feature releases, all with zero client-side footprint, zero flicker, and zero risk to front-end performance. Ideal for SPAs and headless architectures
+Mobile A/B testing and analytics
+Native iOS and Android testing along with React Native Bridge support. Ship winning variants instantly and understand in-app behavior from the same dashboard as your web tests
+Open API and 7 SDKs
+Node.js, Python, PHP, Java, C#, iOS, Android, plus a full REST API. Zoho PageSense is up and running in any stack within a day.
+Test smarter ideas and ship winning experiences faster
+Every experiment in Zoho PageSense comes with the behavior data that explains the outcome, so you ship winners with confidence, not just correlation.
+Statistical engine
+Multi-armed bandit
+Segment reporting
+Behavior-connected
+Zia explains results
+Know when to ship. Not when to guess
+Zoho PageSense uses a Bayesian statistics engine that calculates confidence in real time, so you always know if a result is genuinely better or not. No more waiting for arbitrary sample sizes or acting on false positives.
+Real-time confidence score which is updated with every new conversion event
+Probability to beat baseline shown clearly for every variant
+Revenue impact projection calculated automatically once winner is confirmed
+Maximize conversions while you test
+Traditional A/B testing splits traffic equally and waits. Multi-armed bandit testing dynamically shifts more traffic to the winning variant as evidence builds, so you convert more visitors during the experiment itself, not just after
+Traffic allocation shifts automatically as variant performance becomes clearer
+Reduce revenue lost to underperforming variants during long-running tests
+Ideal for time-sensitive campaigns where you can't afford to wait for statistical certainty
+Winners look different for different people
+A variant that wins for all visitors can be quietly losing for your mobile users or your highest-value paid traffic. Zoho PageSense breaks every result down by any dimension, so you personalize based on what actually wins, not what averages out.
+Segment by device, channel, geography, visitor type, or custom attribute
+Compare CVR lift across segments side by side within the same test report
+Feed segment findings directly into personalization rules that close the loop automatically
+See the behavior behind every test result
+Heatmaps and session recordings are directly linked to your test reports. Compare how visitors behave on control vs. variant inside the same view, without switching tools, exporting data, or lost context.
+Heatmaps for control vs. variant shown side by side inside the test report
+Filter session recordings to show only visitors who saw a specific variant
+Understand why the winner won—not just that it won
+Meet Zia, your always-on optimization agent
+Zia reads your session recordings, connects your behavior data to test results, and surfaces friction you'd never find manually. Your team stays focused on strategy. Zia handles the pattern-matching.
+Detect friction before it costs you
+Zia reads patterns across thousands of session recordings and tells you exactly what's hurting conversions: rage clicks, dead clicks, scroll stops, form hesitations, and error loops. You get a clear signal on what needs fixing, not a stack of recordings to wade through.
+Generate ready-to-launch test hypotheses
+Describe what you're trying to improve and Zia returns A/B test ideas with the hypothesis, target page, audience segment, and expected conversion impact already filled in. From insight to experiment in one step.
+Cross-module intelligence everything connected
+Zia connects your analytics, heatmaps, recordings, and test results into one coherent picture. In seconds, it surfaces what a human analyst would take days to find.
+Campaign insights without pulling reports
+Instead of digging through dashboards, get instant summaries of what changed, why it changed, and what it means for your next experiment. Zia puts the answer in front of you before you think to ask.
+Build and launch experiments from a chat prompt
+Tell Zia what you want to optimize, for whom, and where. It shortlists pages, creates variations, sets targeting conditions, and configures metrics, ready to launch without opening a single form.
+PageSense, now on your favorite AI assistant
+Connect PageSense MCP to Claude and other AI assistants, and ask about your funnels, tests, heatmaps, and recordings in plain language. No dashboard to open, no report to export: your data shows up right where you're already working.
+Works beautifully for every person on the team
+Product engineers, marketers, and UX analysts all get the exact tools they need, from server-side SDKs to no-code visual editors to behavior-connected test reports.
+Growth Marketers
+Product Team and Engineers
+UX and Analytics
+Growth Marketers
+Run experiments and personalize campaigns, with no developer.
+Visual editor lets you build and launch A/B tests on any page element without writing code. Personalize landing pages per traffic source. Track metrics that actually matter to your business.
+No-code visual editor for building test variants on any page
+Personalize landing pages per traffic source, campaign, or UTM
+Track CTR, form fills, AOV, and custom conversion goals
+Segment reports by device, channel, geography, and behavior
+Product Team and Engineers
+Ship experiments with confidence. Roll back without fear.
+Server-side SDKs and open APIs give engineering the control to integrate experiments safely into any stack, and undo anything instantly if it breaks in production.
+SDKs in Node.js, Python, PHP, Java, C#, iOS, Android
+Server-side testing—no client-side flicker, no performance hit
+Full REST API for custom integrations and internal tooling
+Open API for connecting Zoho PageSense to your own data pipeline
+UX and Analytics
+See behavior. Understand what changed. Act on it immediately.
+Heatmaps and session recordings feed directly into your testing pipeline. The observation and the experiment live in the same tool with no export, no handoff, and no context lost.
+Heatmaps and session recordings connected to every test report
+Compare visitor behavior on control vs. variant inside the same view
+Filter recordings by the specific users who saw each variant
+Zia reads session patterns so you don't have to watch them all
+Keep visitor data private, safe, and compliant
+Session recordings capture real people doing real things on your site. That data deserves more protection than most analytics tools offer. Zoho PageSense runs on Zoho's infrastructure, audited and certified since 1996. Your visitor data is never shared, never sold, and never used to train any model.
+Secure by design
+Role-based access controls, SSO, and full audit logs. All data encrypted in transit and at rest. No Zoho employee can access your raw visitor data or session recordings.
+Privacy without the overhead
+Built-in cookie consent mode, IP anonymization, and automatic masking of sensitive fields in session recordings. Every experiment you run stays compliant by default—no engineering overhead, no legal review for every test.
+Compliance your legal team expects
+GDPR, HIPAA, CCPA, SOC 2 Type II, and ISO 27001 certified through the Zoho platform. When your legal or security team asks, you'll have the documentation ready.
+Performance with no compromise
+The smart PageSense tag and optimized SDKs ensure your experiments run without adding a millisecond of latency. Core Web Vitals stay exactly where you worked to put them.
+Your testing program that doesn't outgrow your plan
+Unlimited concurrent experiments, users, session recordings, and integrations. The only ceiling on your optimization program is how fast your team can move—not how much your plan allows.
+Unlimited users
+Every team member who needs access gets it with no per-seat upsells at renewal.
+Concurrent tests
+Run as many experiments simultaneously as your strategy demands.
+Session recordings
+Capture and analyze every session your traffic generates.
+Integrations
+Connect every tool in your stack no integration limits on any plan.
+Custom metrics
+Track any business metric, revenue, micro-conversions, or AOV.
+Your next winning experiment starts here.
+15-days free trial. Full platform access. No credit card. Live in 10 minutes.
+Start free trial
+Book a demo

@@ -1,0 +1,356 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-ideate/what-powers-pbx-ideate
+What powers PBX Ideate? - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Ideate
+What powers PBX Ideate?
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+PBX Ideate
+What powers PBX Ideate?
+Generate test ideas
+Freemium & Plans
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Overview
+How it works
+Analysis and problem detection
+Root cause diagnosis
+Lever Framework
+Cost
+Trust
+Usability
+Comprehension
+Motivation
+PBX Ideate
+What powers PBX Ideate?
+Copy page
+Copy page
+Discover how PBX Ideate analyzes your pages using a five-layer reasoning model and the Lever Framework to generate experiment hypotheses.
+Copy page
+Copy page
+Kameleoon’s AI-powered PBX Ideate analyzes your website’s interface to identify friction points and automatically generates optimization hypotheses. It transforms raw interface observations into implementation-ready experiments, allowing you to launch tests faster and with higher confidence.
+​
+Overview
+Designed in partnership with Conversion by Gain, a leading experimentation agency, the PBX Ideate engine uses a hierarchical diagnostic structure to analyze your web pages. It mimics the reasoning of a CRO expert by analyzing your site’s visual hierarchy, content, and layout.
+Based on this analysis, the feature provides:
+Friction identification
+: Pinpoints specific usability or motivational barriers.
+Root cause analysis
+: Explains why a problem exists using behavioral psychology principles.
+Experiment suggestions
+: Proposes concrete A/B test ideas to improve performance.
+Wireframe variations
+: Generates specific design changes (copy, layout, styling) ready for implementation.
+​
+How it works
+The system performs the analysis in the background using a five-layer reasoning model, ensuring every suggestion is grounded in behavioral data rather than guesses.
+​
+Analysis and problem detection
+The system takes a snapshot of your page and maps every component (button, headers, text blocks). It then clusters observations to identify problems—high-level friction that negatively impacts user behavior.
+​
+Root cause diagnosis
+For every problem, the system identifies a root cause that explains the psychological mechanism behind the friction. It classifies issues using the Lever Framework developed by Conversion. This framework organizes friction into five master levers:
+Comprehension
+: Does the user understand the offer?
+Motivation
+: Does the user want to take action?
+Trust
+: Does the user believe the offer is legitimate?
+Cost
+: Is the perceived effort or price too high?
+Usability
+: Can the user interact with the interface easily?
+​
+Lever Framework
+Conversion’s
+Lever Framework
+is a technical taxonomy designed to categorize UX features that influence user behavior. By standardizing these “levers,” the framework enables data teams to isolate variables for more effective iteration, transfer behavioral insights across different experimentation programs, and generate structured datasets to train machine learning models for predicting experiment win rates.
+For more information on the Lever Framework, see Conversion’s dedicated
+resource
+.
+​
+Cost
+The
+Cost Master Lever
+classifies user-perceived downsides beyond financial value, defining “cost” as the total commitment required in exchange for product benefits. This hierarchy categorizes three primary friction points: monetary investment, the “soft costs” of time and effort, and the degree of flexibility available to the user to modify or bypass these anticipated commitments.
+Lever
+Sub-Lever
+Financial cost
+: How much money the user exchanges for the product.
+Known cost
+: These are financial costs that users know they will have to incur to access a product.
+Anticipated cost
+: Refers to the longer-term financial costs of subscriptions or expected add-ons.
+Relative value
+: Tactics used to make one product seem to have better value by comparing it with another.
+Soft cost
+: The time and effort costs dedicated to getting value from the product.
+Time cost
+: The part of a soft-cost which refers to the amount of time which must be dedicated to the service to gain value from it.
+Effort cost
+: The part of a soft-cost which refers to how “hard” using the product will actually be for a user to benefit.
+Commitment
+: How users contextualize the sense of commitment to the costs associated with a transaction or product.
+​
+Trust
+The
+Trust Master Lever
+measures the user’s perception of risk during website interaction. It evaluates three critical reliability factors: the foundational legitimacy of the platform, the credibility of product or service claims, and the perceived security of sensitive information processing.
+Lever
+Sub-Lever
+Legitimacy
+: A concern with whether or not the site is that of a real company, selling a real product or service.
+UI Quality
+: Cues in the overall UI presentation which suggest to a user that a site is not legitimate.
+Brand Recognition
+: Whether and to what extent the user is familiar with the brand the site is representing.
+Credibility
+: Concerned with how likely users are to believe the “motivational” claims made on a site, and how likely companies are to live up to them.
+Authority
+: Appeals to known institutions, or authority figures as “endorsers” or a company or service, thereby “borrowing” credibility for the brand.
+Customer Service
+: How the prominence/availability of customer/prospective services and easy contact of the company are used to make the company seem competent and trustworthy.
+Social Proof
+: Appeals to a broader source of endorsement among a wider variety of individuals, usually people who will be considered representative of “typical” for the user.
+Reassurances
+: Information and promises about the process behind a product/service which are designed to demonstrate good intentions and competence.
+Security
+: Refers to a user’s level of comfort inputting sensitive information such as payment details on a site.
+Payment Security
+: Refers to ways that sites can demonstrate to users that their information will be processed safely.
+Personal Information Requests
+: How requests for sensitive information are handled and presented to the user.
+​
+Usability
+The
+Usability Master Lever
+evaluates the friction-free progression of a user toward a conversion goal, mirroring the psychological concept of cognitive fluency. It focuses on optimizing five technical and psychological pillars: navigational clarity, the minimization of cognitive load and fatigue, effective product discovery, strategic attention allocation, and the consistent acknowledgment of user progress.
+Lever
+Sub-Lever
+User flow
+: A user’s sense of direction and location: do they understand where they are on the site/in the user journey and what they must do to progress?
+Location
+: A user’s sense of where they are in the user-flow/journey, answering the question “where is the user now?”
+Direction
+: About whether a user understands where they need to go next in the user journey to perform their desired action.
+Effort
+: Refers to either a concern that an action or sequence will require a lot of exertion and focus, or an unpleasant feeling that something is already requiring this.
+Experienced effort
+: The sense of how demanding it is to complete tasks and progress on a website.
+Anticipated effort
+: Effort that the user “forecasts” regarding how they will feel completing a task on a site.
+Choice
+: Refers to how product options are arranged and made findable on a site.
+Findability
+: The search paths and functionality available to a user to browse through product options.
+Structure
+: How product options are actually organized and presented on a page by default.
+Recommendation
+: These are recommendations and promotions/pushes or product/options by the site to the user based on user preferences and behaviors.
+Attention
+: How the site guides users’ attention to focus on useful/relevant elements, and away from elements distract from your goals.
+Distraction
+: About elements on a page whcih are distracting users from a more important (conversion) task.
+Engagement
+: Ways to actively engage users with a particular element or task.
+Persistence
+: About on-site mechanics that encourage users to continue trying to complete their desired action.
+Progress presentation
+: About how users’ progress is presented to them to demonstrate how far they’ve come in their journey.
+Positive feedback
+: Acknowledging when users take a desirable action on the site.
+​
+Comprehension
+The
+Comprehension Master Lever
+assesses the efficacy of information architecture and content delivery. It focuses on establishing user confidence through three layers of clarity: foundational industry/product knowledge, granular details of a specific item of interest, and the logistical transparency of the final transaction.
+Lever
+Sub-Lever
+Education
+: Aimed at educating users on the industry generally, rather than on specific offerings of the provider.
+Educational Content
+: Provides broader industry or conceptual knowledge to help users navigate the market and evaluate offerings.
+Product Understanding
+: Content that seeks to inform the user about specific product offerings, and helps them make an informed choice.
+Product Information
+: Using words explicitly to describe specifications of a product.
+Product Depiction
+: Implicit (imagery/video) used to help users understand a product.
+Transactional Understanding
+: Content which seeks to inform the user and provide transparency around the terms of payment.
+Savings understanding
+: Explains the explicit financial benefits of an offer, such as percentage discounts or total money saved.
+Payment structure
+: Details the terms and timing of payment, including installments, subscription cycles, or fees.
+​
+Motivation
+The
+Motivation Master Lever
+addresses the perceived value proposition and emotional “upside” of a product offering. It focuses on maximizing purchase intent by optimizing several psychological drivers: inspirational copy and imagery, social belonging, urgency, low-friction product trials, variety of selection, and the long-term engagement or “stickiness” of the user experience.
+Lever
+Sub-Lever
+Value statement
+: The explicit positive information included about products/services to persuade users that it’s of interest to them.
+Value proposition
+: The company’s core offering: what is the single line which applies to the product or service being offered.
+Benefits
+: Specific “positive” features of the company or individual products and services offered, often framed as benefits to the user rather than functional features of the product, which may be found in the comprehension lever.
+Motivational depiction
+: How a product or service use visual/implicit cues to convey value, as opposed to relying on explicit claims or experience with the product.
+Motivational imagery
+: Using imagery to convey motivational messaging or positive/anticipatory emotional responses to the user.
+Motivational video
+: Using video to convey motivational messaging or positive/anticipatory emotional responses to the user.
+Preview access
+: How users can be shown the upside of a product by actually using the product, or some limited part of the product (for example, a free trial, samples).
+Free Trial
+: Allowing users to experience the quality of a product or service by accessing it in full for a limited time.
+Limited Preview Content
+: Allowing users to experience the quality of a product or service by offering some limited part of the service, possibly indefinitely.
+Obligation
+: How users can be made to feel that they “ought” to purchase the product for some reason.
+Reciprocity
+: Where users are offered some gesture (for example, discount, freebie) aimed at triggering the intuition to reciprocate the gesture by purchasing.
+Altruism
+: A direct appeal to moral obligation—it is about benefits to other people’s well-being.
+Sociability
+: When users are led to expect they are gaining a social benefit from the product.
+Community
+: Trying to elicit the sense that using a product will give you access to some real or imagined community.
+Exclusivity
+: Trying to elicit the sense that using a product or service will give you an edge or superiority over the majority of people.
+Urgency
+: How users are made to feel that they should complete their purchase within their current session, or else risk losing access to the product or paying a higher price.
+Availability
+: Urgency based on the idea that failing to purchase quickly will mean missing out on the product entirely.
+Price change
+: Urgency based on the idea that failing to purchase quickly will lead to price increases and greater cost in the future.
+Product range
+: How the products available can be presented to make them appear motivationally varied and extensive.
+New product
+: Adding a new product or service to serve a product preference or option not currently catered for.
+Variety
+: Demonstrating the variety of product options available, whether explicit through copy (“Access thousands of movies and TV shows”) or implicit (showing a background image of movie and TV show posters).
+Delivery
+: Motivational content about how the user will receive the product (whether physical or virtual).
+Delivery Speed
+: Informing users how quickly they can receive their product, emphasizing fast delivery speeds or short waits.
+Delivery Ease
+: Informing users of how easy it is to receive a product, or how discretion may be used upon delivery.
+Gamification
+: Refers to creating a sense of excitement and engagement around continuing to use the product.
+Immersion
+: Creating a sense that users are in a different environment from the one they are really in.
+Progression
+: Creating a sense that satisfying progress is being made through the “task” of completing the user’s desired goals on the site.
+Competition
+: Creating a sense that users’ level of performance with the product or service is superior to that of others.
+Humanization
+: Presentation of a site/brand as human and friendly to the user.
+Friendly Language
+: The use of a friendly or informal tone to elicit a sense in users that the company/product/service is personable and accessible.
+Human Depictions
+: The depiction of people as a means to make a company/product/service seem personable and accessible (friendly).
+Control
+: Users feeling a positive sense that the product can be adapted to their preferences.
+Was this page helpful?
+Yes
+No
+Contentsquare X PBX integration
+Previous
+Generate test ideas
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

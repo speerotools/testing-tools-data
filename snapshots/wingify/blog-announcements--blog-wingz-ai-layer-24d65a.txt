@@ -1,0 +1,556 @@
+# https://wingify.com/blog/wingz-ai-layer/
+Meet Wingz: the Embedded AI Layer | Wingify
+AB Tasty and VWO have united, because half the loop was never enough.
+Learn about the merger
+Platform
+Platform
+Experimentation
+A/B Testing
+Split URL Testing
+Multivariate Testing
+Personalization
+Predictive Data
+Emotions
+Data Studio
+Segmentation & Targeting
+Analytics
+User Feedback
+Behavior Analytics
+Journey Analytics
+Feature Management
+Feature Rollouts
+Feature Experimentation
+Feature Personalization
+Mobile App Testing
+Commerce
+Search
+Recommendations
+Merchandising
+Customer Engagement
+Wingz AI
+The AI that powers Wingify. Woven into our platform, it brings clarity to every decision, at every stage.
+Explore More
+Wingify Platform
+Why Wingify?
+Data Platform
+Program Management
+Solutions
+Solutions
+For teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+SaaS & Technology
+For Enterprise
+One platform, fully governed, globally available, ready for the complexity only an enterprise can bring.
+Explore More
+Resources
+Resources
+Read
+Blog
+Ebooks
+Guides
+Glossary
+Success Stories
+Watch & Attend
+Webinars
+Podcasts
+Events
+Explore
+Tools
+Product Updates
+Knowledge Base
+All Resources
+Plans
+Company
+Company
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Contact Us
+Trust & Compliance
+Security
+Privacy Policies
+Information Security
+Code of Conduct
+Responsible AI
+Responsible Disclosure
+Terms of Use
+Partners
+Partner Program
+Affiliate
+Agency
+Technology
+Log in
+Log in
+Wingify Login
+AB Tasty Login
+Get a Demo
+Get a Demo
+Start Trial
+Start Trial
+Platform
+Platform
+Experimentation
+A/B Testing
+Split URL Testing
+Multivariate Testing
+Personalization
+Predictive Data
+Emotions
+Data Studio
+Segmentation & Targeting
+Analytics
+User Feedback
+Behavior Analytics
+Journey Analytics
+Feature Management
+Feature Rollouts
+Feature Experimentation
+Feature Personalization
+Mobile App Testing
+Commerce
+Search
+Recommendations
+Merchandising
+Customer Engagement
+Wingz AI
+The AI that powers Wingify. Woven into our platform, it brings clarity to every decision, at every stage.
+Explore More
+Wingify Platform
+Why Wingify?
+Data Platform
+Program Management
+Solutions
+Solutions
+For teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+SaaS & Technology
+For Enterprise
+One platform, fully governed, globally available, ready for the complexity only an enterprise can bring.
+Explore More
+Resources
+Resources
+Read
+Blog
+Ebooks
+Guides
+Glossary
+Success Stories
+Watch & Attend
+Webinars
+Podcasts
+Events
+Explore
+Tools
+Product Updates
+Knowledge Base
+All Resources
+Plans
+Company
+Company
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Contact Us
+Trust & Compliance
+Security
+Privacy Policies
+Information Security
+Code of Conduct
+Responsible AI
+Responsible Disclosure
+Terms of Use
+Partners
+Partner Program
+Affiliate
+Agency
+Technology
+Log in
+Log in
+Wingify Login
+AB Tasty Login
+Get a Demo
+Get a Demo
+Blog
+Meet Wingz: The AI Layer That Powers the Wingify Suite
+Mareen Cherian
+September 15, 2026
+10 Min Read
+Home
+/
+Digital Experience
+/
+Meet Wingz: The AI Layer That Powers the Wingify Suite
+Summarize with AI:
+Contents
+Wingz is Wingify’s embedded AI layer, an intelligence built directly into experimentation, personalization, feature management, commerce, and customer insight workflows across Wingify and AB Tasty.
+Because Wingz already has access to your experiments, audiences, metrics, and behavioral data, it can analyze, recommend, and help execute changes without anyone exporting data or re-explaining context to a general-purpose AI tool first.
+Key takeaways
+Wingz is Wingify’s embedded AI layer, not a standalone assistant bolted onto the suite.
+It’s built to support experimentation, personalization, feature management, customer insight, and broader optimization workflows.
+Unlike general-purpose AI tools, Wingz works with context that’s already inside the suite: experiments, audiences, metrics, and customer behavior- rather than starting from a blank slate.
+The goal is to shorten the distance between noticing something in the data and acting on it, without leaving the suite to do so.
+Most teams already have AI in their daily workflow. ChatGPT, Claude, and Gemini are genuinely useful for brainstorming, drafting copy, summarizing documents, or writing code. None of that is in question.
+But optimization work has a different shape. A useful answer to “why did conversion drop on this page” or “which audience segment should see this next” depends on context that lives entirely inside a testing and personalization suite: which experiments are running, how traffic is being split, what a given audience segment actually contains, what a heatmap or session recording shows about user behavior, and what’s already been tried before.
+A general-purpose AI assistant doesn’t have access to any of that by default. Getting useful output means exporting data, pasting it into a chat window, writing a prompt with enough context to make the answer usable, and then carrying the AI’s suggestion back into the suite to actually act on it. That round trip is where most of the friction lives — not in the quality of the AI’s reasoning, but in the manual work of feeding it what it needs to know.
+What is Wingz?
+Wingz
+is the embedded AI layer that runs inside the Wingify suite, present across experimentation, personalization, feature management, analytics, and customer insight workflows rather than existing as a separate destination. It’s built on what AB Tasty previously offered through its Evi assistant and what VWO offered through Copilot, now unified into a single AI layer as the two suites converge under Wingify.
+The distinction that matters most:
+Wingz is built into the screens
+where the work actually happens, which means it already has the context a general AI tool would need you to provide manually.
+Why Wingz lives inside Wingify
+The typical workflow with an external AI tool looks like this: export data, copy it, paste it into a prompt, write enough context for the answer to make sense, interpret what comes back, go back to the suite, and then manually execute whatever the AI suggested.
+Wingz is designed to shorten that into: analyze, recommend, build, validate, launch, all without leaving the suite. The data doesn’t need to be exported because Wingz is already looking at it. The recommendation doesn’t need to be manually translated into action because Wingz can help build the resulting experiment, segment, or rollout directly.
+One intelligence layer across the entire suite
+Rather than being a feature attached to any single product area, Wingz is designed to sit underneath all of them, drawing on the same underlying data regardless of where in the suite a team is working:
+The practical effect of this shared layer is continuity: an insight surfaced while reviewing a heatmap can inform a hypothesis for a new experiment, which can inform an audience used for personalization, which can inform how a related feature gets rolled out, without re-explaining context at each handoff, because the underlying data carries through.
+How Wingz supports every Wingify workflow
+Most AI tools assist by surfacing a suggestion, and then a human carries it forward, manually translating the recommendation into configuration, setup, or action inside the actual product. Wingz is built to go further than that.
+Across every Wingify workflow, Wingz operates agentically: it doesn’t just recommend the next step; it can execute multi-step tasks end to end, drafting an experiment, building an audience, reviewing a configuration, interpreting a result, while keeping a human in the loop at the points where approval, judgment, or sign-off actually matters. The distinction is meaningful. An AI that tells you what to do still leaves the work to you. An AI agent that does the work and asks you to confirm before anything ships is where the real time savings come from.
+Because Wingz operates inside the platform with live access to your experiments, audiences, metrics, behavioral data, and rollout history, it can act on that context directly, rather than describing what someone else should do with it.
+Experimentation
+In the experimentation workflow, Wingz generates hypotheses grounded in actual performance data rather than starting from a blank slate. It can draft an experiment end-to-end, defining variations, selecting metrics, and suggesting the right audience, and then review that configuration for likely issues before it goes live.
+Once results come in, Wingz interprets them in plain language and identifies what to test next based on what the completed test revealed. The team reviews and approves at each stage; Wingz handles the mechanics in between.
+Personalization
+For personalization, Wingz moves from behavioral data to an actionable audience segment without requiring manual analysis at every step. It identifies patterns in visitor behavior worth targeting, builds a segment, and suggests experience variations suited to that segment, compressing what typically takes a full analytical cycle into something a team can act on in a single workflow.
+A human confirms the segment logic and approves the experience before it runs; Wingz does the work of getting there.
+Feature Management
+In feature management, Wingz reviews rollout configurations before launch, checking that metrics, targeting rules, and traffic allocations are set up correctly, and flags the issues a team might not catch until a test has already run for a week.
+Beyond pre-launch review, Wingz can help reason through how aggressively to roll a feature out based on the risk profile of the change, and surface signals during a rollout that suggest it’s time to accelerate, pause, or trigger a kill switch.
+Customer insights
+For behavioral research, Wingz does the first pass across heatmaps, session recordings, and survey responses that would otherwise require hours of manual qualitative review.
+It surfaces friction patterns, identifies which sessions are worth watching in full, and connects what it finds across multiple insight sources into a starting point for the next hypothesis, so teams spend their time on interpretation and decision-making rather than data triage.
+Analytics
+On the reporting and analytics side, Wingz answers questions about performance in plain language, explains what’s behind a notable shift in a metric, and surfaces comparisons across segments or campaigns without requiring anyone to build a custom report first.
+For teams that need to communicate results upward, Wingz can pull together a summary that answers the business question rather than leaving that translation to the analyst.
+What makes Wingz different from general-purpose AI?
+The point isn’t that general-purpose AI is worse at reasoning; it’s that Wingz starts several steps ahead because it isn’t working from a blank slate.
+General-purpose AI
+Wingz
+Starts with generic knowledge
+Starts with experimentation and optimization context
+Needs data copied and pasted in
+Already connected to your suite data
+Doesn’t know your campaigns
+Has access to your actual experiments
+Doesn’t know your audiences
+Has access to your actual segments
+Mostly suggests ideas
+Can help build and configure the resulting work
+Lives in a separate workflow
+Lives inside the workflow itself
+How different teams use Wingz
+Product managers
+use Wingz to help prioritize which experiments are worth running, understand feature adoption, and think through rollout pacing.
+Marketers
+use it to optimize campaigns, build out personalized journeys, and understand what’s actually driving (or blocking) conversion.
+Growth teams
+use it to generate hypotheses faster, identify which segments are responding well to a given test, and find the next opportunity once a test concludes.
+Engineers
+use it to review feature flag configurations, sanity-check a rollout plan, and reduce the risk of shipping something that breaks in production.
+E-commerce teams
+use it to personalize the shopping journey, identify friction in checkout, and connect behavioral insight to revenue-driving changes.
+A day in the life of Wingz
+Here’s what that looks like end-to-end. A product manager notices that checkout conversion has dropped. Working inside the suite, they use Wingz to identify which audience segments are most affected. Wingz surfaces relevant session recordings showing where users are hesitating, and summarizes the heatmap patterns on the affected page.
+From there, it helps frame a hypothesis for what might be causing the drop, drafts a starting point for an experiment to test that hypothesis, and reviews the experiment’s configuration, metrics, targeting, and traffic split before it goes live. If the new variation wins, Wingz can help think through a staged rollout rather than an all-at-once release.
+No step in that sequence requires leaving the suite or re-explaining context to a separate tool. That continuity, more than any individual feature, is the actual value of an embedded AI layer.
+An AI layer that sits this close to live experiments and production feature flags has to be built with guardrails, not just capability. That means recommendations are presented for human review rather than executed automatically, changes Wingz helps build remain visible and editable before anything ships, and the suite’s existing role-based permissions, audit logs, and security controls apply to AI-assisted actions the same way they apply to manual ones.
+For enterprise teams in particular, the question isn’t just “Can the AI do this?” It’s “Can we see what it did, and who approved it?” and that accountability is treated as a requirement rather than an afterthought.
+Request a demo
+to see how Wingz fits into your optimization ecosystem.
+Frequently asked questions
+Q1.
+Is Wingz a chatbot?
+Not in the standalone sense. Wingz doesn’t live in a separate chat window disconnected from your work; it’s built into the experimentation, personalization, feature management, and analytics screens you’re already using, with a conversational interface as one way of interacting with it rather than the whole of it.
+Q2.
+Is Wingz built into every Wingify product?
+Wingz is designed to span the suite rather than being scoped to a single product. As VWO and AB Tasty continue integrating under Wingify, the pace at which Wingz reaches every individual feature will vary, but the direction is one AI layer across the combined suite rather than separate AI tools per product.
+Q3.
+Can Wingz create experiments
+?
+Wingz can help draft and configure experiments, suggesting variations, metrics, and audiences, but the team reviews and approves the configuration before it launches.
+Q4.
+Does Wingz replace analysts?
+No. It’s designed to handle the manual, repetitive parts of analysis (cross-referencing data, summarizing patterns, drafting hypotheses) so analysts and growth teams can spend more time on judgment calls and strategy rather than data wrangling.
+Q5.
+Does Wingz use customer data?
+Wingz works with the experiment, audience, and behavioral data already collected within the suite in order to generate relevant recommendations, governed by the same data handling and security practices that apply to the rest of the suite.
+Q6.
+How is Wingz different from ChatGPT?
+ChatGPT and similar tools are general-purpose and start with no knowledge of your specific experiments, audiences, or campaigns unless you provide it manually. Wingz is purpose-built for experimentation and optimization workflows and already has that context because it operates inside the suite where the data lives.
+Q7.
+Can Wingz recommend personalization strategies?
+Yes, Wingz is designed to help identify behavioral patterns worth targeting and suggest segment-specific personalization based on data already in the suite.
+Q8.
+Does Wingz support feature management?
+Yes. Wingz is designed to assist with reviewing rollout configurations, flagging potential risks before launch, and helping teams think through how aggressively to release a given feature.
+Q9.
+Is Wingz available across VWO and AB Tasty capabilities?
+Wingz is intended to be the single AI layer spanning both VWO’s and AB Tasty’s capabilities as they converge under Wingify, unifying what each company previously offered separately through Copilot and Evi.
+Continue Reading
+Categories:
+Conversion Rate Optimization
+Digital Experience
+Mareen Cherian
+I'm a branding enthusiast, marketer, and B2B content professional with over 20 years of experience. I'm also a certified native advertising expert and trained in strategic thinking. Author of 'Managing Modern Brands: Cult Theory and Psychology', and three other books in diverse genres. I generally write on marketing trends, optimization, brand strategy, consumer psychology, CRO, cult theory, data, personalization, and content strategy. With a strong expertise in building and leading teams and cross-functional collaboration, I have driven demand through content creation, data, digital media, content marketing, and technology.
+Uncover hidden visitor insights to improve their website journey
+Request a Demo →
+Related Content
+Guide
+Conversion Rate Optimization →
+You might also love to read these on Conversion Rate Optimization
+12 Min Read
+Wingify: The Unified Digital Experience Suite Powered by VWO and AB Tasty
+9 Min Read
+The Best Testing Stacks Are Built for Speed and Learning, Not Complexity
+5 Min Read
+Amplitude-Statsig Partnership: Reading Between the Lines of Experimentation’s Next Era
+The better way to test,
+learn and grow
+Get a Demo
+Get a Demo
+Start Trial
+Start Trial
+Opt for higher ROI on your optimization efforts
+Take a
+30
+-day, all-inclusive free trial with Wingify.
+Business Email
+*
+Start Now
+Invalid Email
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+*
+Follow us:
+EN
+DE
+ES
+BR
+FR
+EN
+DE
+ES
+BR
+FR
+Product Suites
+Experimentation
+Personalization
+Commerce
+Analytics
+Feature Management
+Customer Engagement
+Platform
+Wingify Platform
+Why Wingify?
+Program Management
+Integrations
+Data Platform
+For Teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For Industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+Digital Transformation
+SaaS & Technology
+All Resources
+Blog
+Product Updates
+Success Stories
+Webinars
+Guides
+Glossary
+Knowledge Base
+Events
+Free Tools
+Ebooks
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Partners
+Contact Us
+Compare
+Wingify vs Optimizely
+Wingify vs Adobe Target
+Wingify vs Mouseflow
+Wingify vs Contentsquare
+Wingify vs Dynamic Yield
+Wingify vs. Kameleoon
+© 2026 Wingify. All rights reserved.
+Terms
+Security
+Compliance
+Code of Conduct
+Privacy
+AI Policy
+Imprint
+Opt-out
+Hey AI, learn about us
+Hi 👋 Let's get you started
+Free for
+30
+days. No credit card required.
+Business Email
+*
+Invalid Email
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+*
+Start Now
+We just need a few details
+Business Email
+*
+Invalid Email
+First Name
+*
+Invalid First Name
+Last Name
+*
+Invalid Last Name
+Phone Number
+*
+Invalid Phone Number
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+*
+Create Account
+Curious how it works? Get a 1-on-1 demo
+Skip & Continue to App →
+Thank you
+,
+your meeting is confirmed.
+at
+Your account is being set up
+We've sent a message to
+yourmail@domain.com
+with instructions to verify your account.
+Can't find the mail?
+Check your spam, junk or secondary inboxes.
+Still can't find it? Let us know at
+support@wingify.com
+Let's talk
+Talk to a sales representative
+World Wide
++1 415-349-3207
+You can also email us at
+support@wingify.com
+Get in touch
+First Name:
+*
+Invalid First Name
+Last Name:
+*
+Invalid Last Name
+Business Email:
+*
+Invalid Email
+Phone Number:
+*
+Invalid Phone Number
+Nature of enquiry:
+*
+Sales enquiry
+Technical support
+Other
+Invalid select enquiry
+Message:
+*
+Invalid message
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+*
+Submit
+Thank you for writing to us!
+One of our representatives will get in touch with you shortly.
+Hi 👋 Let's schedule your demo
+First Name
+*
+Invalid First Name
+Last Name
+*
+Invalid Last Name
+Business Email*
+Invalid Email
+Phone Number*
+Invalid Phone Number
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+*
+Get a Demo
+I'm finding an executive for you
+schedule later →
+, thank you for sharing your details.
+Your dedicated Wingify representative will be in touch shortly to set up a time.
+Thank you
+, your meeting is confirmed.
+at
+Any additional details you think will helpful
+This field is required
+Submit
+Submitted.
++
+300
+%
+Increase in Trial activation
+Trusted by 3000+ leading brands globally
+Your Roadmap to Better Results
+1:1 Demo customized to your industry and optimization goals.
+Feature deep-dive into the user behaviour tools you need most.
+No-pressure advice on the best path forward for your team.

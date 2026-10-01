@@ -1,5 +1,6 @@
 # https://www.harness.io/blog/introducing-autonomous-worker-agents
 Introducing Autonomous Worker Agents
+Harness Platform
 Platform
 Harness Autonomous SDLC Platform
 Deliver at machine speed.
@@ -198,6 +199,9 @@ Securing the Agent DLC
 Join the Conversation: The Harness Community Is Now Live
 Q2 2026 Product Update: Harness Pipeline
 Get Ship Done: Everything We Shipped in July 2026
+Catch AI Regressions Before They Ship with AI Evals in CI/CD
+Internal Developer Portals: Why Native CI/CD Drives Scale
+Developer portal security and governance best practices
 Blog
 →
 Harness Platform
@@ -211,7 +215,7 @@ Last updated:
 By
 Jyoti Bansal
 Rohan Gupta
-7 minutes to read
+10 minutes to read
 Table of Contents
 +
 Link
@@ -266,8 +270,583 @@ Matrix
 Output handoff happens via pipeline expressions and shared workspace files.
 Three ways to create an agent
 Using YAML
-A Worker Agent is defined in a single file. Here's a complete agent that reviews every pull request for security issues:
-YAML frontmatter on top. Natural language below ---. The same convention Jekyll, Hugo, and AI agent definitions across the industry use.
+A Worker Agent is defined in a single file.
+yaml
+Copy
+Agent:
+uses:
+harnessAI@1.0.0
+with:
+prompt:
+|-
+## INPUTS
+- Project Name: <+inputs.projectName>
+- Organization: <+inputs.orgId>
+## OUTPUT REQUIREMENT
+**CRITICAL:
+You
+MUST
+write
+ALL
+output
+to
+a
+markdown
+file.**
+-
+At
+the
+end
+of
+your
+analysis,
+use
+the
+Write
+tool
+to
+create
+a
+file
+named
+`pipeline_analysis_report.md`
+in
+the
+current
+working
+directory
+-
+The
+file
+must
+contain
+the
+complete
+analysis
+report
+in
+markdown
+format
+-
+Do
+NOT
+just
+print
+the
+report
+to
+the
+console
+-
+you
+MUST
+write
+it
+to
+the
+.md
+file
+-
+After
+writing
+the
+file,
+confirm
+the
+file
+was
+created
+and
+provide
+the
+file
+path
+## WORKFLOW
+### Step 1: Discover Pipelines
+Use the Harness MCP tools to list all pipelines in the project:
+-
+Call
+harness_list
+with
+resource_type="pipeline",
+org_id
+and
+project_id
+-
+Record
+the
+total
+count
+and
+each
+pipeline
+identifier/name
+### Step 2: Analyze Each Pipeline
+For
+each
+pipeline
+discovered,
+retrieve
+its
+full
+YAML
+using
+harness_get
+with
+resource_type="pipeline"
+and analyze:
+**A.
+Structure
+Analysis**
+-
+Count
+stages,
+steps,
+and
+step
+groups
+-
+Identify
+stage
+types
+(CI,
+CD,
+Custom,
+Approval,
+etc.)
+-
+Check
+for
+parallel
+execution
+usage
+-
+Identify
+infrastructure
+definitions
+**B.
+Best
+Practices
+Assessment
+(Score
+0
+-100
+)**
+Evaluate each pipeline against these criteria:
+|
+Category
+|
+Weight
+|
+Criteria
+|
+|----------|--------|----------|
+| Modularity | 15% | Uses templates, step groups, reusable components |
+| Parameterization | 15% | Uses variables, runtime inputs, input sets |
+| Error Handling | 15% | Has failure strategies, rollback steps, timeout configs |
+| Security | 15% | Uses secrets properly, no hardcoded credentials |
+| Conditional Logic | 10% | Uses when conditions, skip conditions appropriately |
+| Notifications | 10% | Has notification steps for success/failure |
+| Documentation | 10% | Has meaningful names, descriptions, tags |
+| Efficiency | 10% | Uses caching, parallel execution, matrix strategies |
+**C.
+Pattern
+Detection**
+Identify recurring patterns across pipelines:
+-
+Similar
+stage
+structures
+-
+Repeated
+step
+sequences
+-
+Common
+shell
+scripts
+or
+commands
+-
+Shared
+infrastructure
+definitions
+-
+Similar
+approval
+workflows
+### Step 3: Generate Recommendations
+For
+each
+pipeline,
+provide:
+**Quick
+Wins
+(Easy
+to
+Implement):**
+-
+Add
+missing
+failure
+strategies
+-
+Add
+timeout
+configurations
+-
+Replace
+hardcoded
+values
+with
+variables
+-
+Add
+meaningful
+descriptions
+and
+tags
+**Medium
+Effort:**
+-
+Extract
+common
+steps
+into
+step
+groups
+-
+Implement
+conditional
+execution
+-
+Add
+notification
+steps
+-
+Create
+input
+sets
+for
+different
+environments
+**Template
+Opportunities:**
+Based
+on
+patterns
+found,
+suggest templates to create:
+-
+Stage
+templates
+for
+repeated
+stage
+structures
+-
+Step
+group
+templates
+for
+common
+step
+sequences
+-
+Pipeline
+templates
+for
+similar
+pipeline
+architectures
+### Step 4: Generate Report and Write to File
+Produce
+a
+structured
+report
+with
+the
+following
+sections,
+then
+**write
+the
+entire
+report
+to
+`pipeline_analysis_report.md`**:
+1
+.
+**Executive
+Summary**
+-
+Total
+pipelines
+analyzed
+-
+Average
+best
+practices
+score
+-
+Top
+3
+improvement
+areas
+2
+.
+**Pipeline
+Scorecards**
+For each pipeline:
+-
+Overall
+Score
+(0-100)
+-
+Category
+breakdown
+-
+Top
+3
+recommendations
+-
+Effort
+estimate
+(Low/Medium/High)
+3
+.
+**Common
+Patterns
+Found**
+-
+Pattern
+description
+-
+Pipelines
+using
+this
+pattern
+-
+Template
+recommendation
+4
+.
+**Prioritized
+Action
+Plan**
+-
+Quick
+wins
+(implement
+in
+<
+1
+hour)
+-
+Medium
+effort
+(implement
+in
+1
+-4
+hours)
+-
+Strategic
+improvements
+(template
+creation)
+5
+.
+**Template
+Suggestions**
+For each suggested template:
+-
+Template
+type
+(Stage/StepGroup/Pipeline)
+-
+Template
+name
+-
+Description
+-
+Pipelines
+that
+would
+benefit
+-
+Sample
+YAML
+skeleton
+### Step 5: Write Output File
+**MANDATORY:** After generating the report content:
+1
+.
+Use
+the
+Write
+tool
+to
+save
+the
+complete
+report
+to
+`pipeline_analysis_report.md`
+2
+.
+The
+file
+should
+be
+created
+in
+the
+current
+working
+directory
+3
+.
+Confirm
+successful
+file
+creation
+with
+the
+full
+path
+## RULES
+-
+Always
+fetch
+the
+complete
+pipeline
+YAML
+before
+analysis
+-
+Score
+objectively
+based
+on
+the
+defined
+criteria
+-
+Provide
+specific,
+actionable
+recommendations
+with
+YAML
+examples
+where
+helpful
+-
+Prioritize
+recommendations
+by
+impact
+and
+effort
+-
+If
+a
+pipeline
+follows
+all
+best
+practices,
+acknowledge
+it
+and
+suggest
+advanced
+optimizations
+-
+Group
+similar
+issues
+across
+pipelines
+to
+identify
+systemic
+improvements
+-
+When
+suggesting
+templates,
+provide
+concrete
+YAML
+examples
+-
+Consider
+the
+pipeline's
+purpose
+when
+scoring
+(a
+simple
+utility
+pipeline
+may
+not
+need
+all
+features)
+-
+Never
+expose
+secrets
+or
+sensitive
+values
+in
+the
+report
+-
+Format
+output
+in
+clear
+markdown
+with
+tables
+for
+easy
+reading
+-
+**ALWAYS
+write
+the
+final
+report
+to
+pipeline_analysis_report.md
+-
+this
+is
+mandatory**
+connector:
+account.harnessAnthropic
+allowed_domains:
+harness.io,
+app.harness.io,
+apidocs.harness.io
+env:
+CLAUDE_SWARM:
+"true"
+inputs:
+ProjectName:
+type:
+string
+default:
+Applications
+Team
 Save the file, commit it to the repo, and the agent is live, governed, and in the catalog. Every PR triggers it. Every run is audited. Every action is scoped by RBAC. From a blank file to a live governed agent in minutes.
 The Harness pipeline engine handles container runtime, scoped credentials, MCP server integration, audit logging, and cost tracking.
 Using the UI
@@ -354,6 +933,7 @@ Harness AI: The Platform for Everything After Code
 August 26, 2025
 Jyoti Bansal
 + more
+4 minutes to read
 Introducing the Harness CLI
 Harness Platform
 Introducing the Harness CLI

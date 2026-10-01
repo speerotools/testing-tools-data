@@ -1,21 +1,18 @@
 # https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure
-Harness FME SDKs and Customer-Deployed Components | Harness Developer Hub
-Skip to main content
-Harness Developer Hub
-Ask AI
-Search
-Contact us
-Sign in
-Sign up
+SDKs and Customer-Deployed Components | Feature Management & Experimentation | Harness
+⌘
+Ctrl
+k
+Sign Up
+Get a Demo
+Contact Us
+More
 Home
 Documentation
-▾
 API Reference
-Roadmap
 Release Notes
+Roadmap
 University
-Glossary
-Feature Management & Experimentation
 Feature Management & Experimentation
 New to FME?
 Start FME in Harness
@@ -62,20 +59,22 @@ What's Supported
 Harness FME's approach to statistics
 Split to Harness Migration
 Harness Support
-Release Notes
-Roadmap
-API Reference
-Certifications & Training
-Show All Docs
-Feature Management & Experimentation
-SDKs and Customer-Deployed Components
+Powered by GitBook
 On this page
-Harness FME SDKs and Customer-Deployed Components
-Last updated
-on
-Jul 21, 2026
-Download as PDF
-Tracking SDK changes
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Documentation
+Delivery
+Feature Management & Experimentation
+New to FME?
+SDKs and Customer-Deployed Components
+Overview of SDKs and customer-deployed components for feature management and experimentation.
+TRACKING SDK CHANGES
 To find out what's new or updated in any Harness FME SDK release, visit the SDK's GitHub repository. The
 CHANGES.txt
 file provides detailed information about updates and the dates they were made.
@@ -95,7 +94,6 @@ Determine if you need to use the Split Synchronizer & Proxy
 Split Synchronizer guide
 .
 Streaming architecture
-​
 FME SDKs were built to be scalable, reliable, fast, independent, and secure.
 Scalable
 . Harness FME is currently serving more than 50 billion feature flag evaluations per day. If you've shopped online, purchased an airline ticket, or received a text message from service provider, you've likely experienced Harness FME.
@@ -106,7 +104,6 @@ Independent with no Harness FME dependency
 Secure with no PII required
 . No customer data needs to be sent through the cloud to Harness FME. Use customer data in your feature flag evaluations without exposing this data to third parties.
 Streaming versus polling
-​
 FME updates can be streamed to FME SDKs sub-second or retrieved on configurable polling intervals.
 When streaming, Harness FME utilizes
 server-sent events (SSE)
@@ -120,7 +117,7 @@ Maintain a lower memory footprint. Each streaming connection is treated as an in
 Support environments with unreliable connectivity such as mobile networks. Mobile environments benefit from a low-frequency polling architecture
 Maintain robust security practices. Maintaining an always-open streaming connection poses risk
 Maintain control over frequency and when to initiate a network call
-Streaming is currently supported for the below SDKs with the minimum version shown below.
+STREAMING IS CURRENTLY SUPPORTED FOR THE BELOW SDKS WITH THE MINIMUM VERSION SHOWN BELOW.
 .NET 6.1.0
 Android 2.6.0
 Browser 0.1.0
@@ -135,7 +132,6 @@ Redux 1.2.0
 Ruby 7.1.0
 Python: 8.3.0
 SDK types
-​
 Our supported SDKs fall into two categories:
 Type
 Overview
@@ -150,7 +146,6 @@ Server-side
 Designed to work for multiple traffic types, like users or customers (many of them per SDK) as opposed to client-side that are bound to one (typically a single user or account in session)
 Intended to be used in a secure environment, such as your infrastructure
 Security considerations
-​
 Client- and server-side SDKs have different security considerations:
 Type
 Security Considerations
@@ -162,31 +157,19 @@ Server-side
 These SDKs operate within your own infrastructure making them not accessible by end users
 When targeting by private or sensitive data on the server-side, this information won't leave your infrastructure, keeping your sensitive data under your control
 Block traffic until the SDK is ready
-​
 When the SDK is instantiated, it begins background tasks to update an in-memory cache with data fetched from Harness servers. Depending on the size of the data, this initialization process can take up to a few hundred milliseconds.
 During this intermediate state, if the SDK is asked to evaluate which treatment to show for a specific feature flag, it may not yet have the necessary data to make an accurate evaluation. In such cases, the SDK does not fail, but instead returns the
 Control
 treatment.
 To avoid serving the Control treatment prematurely, you can block traffic until the SDK is fully ready. This is best done as part of your application's startup sequence to ensure that feature flag evaluations are accurate before serving users.
 For example:
-```ruby
-require 'splitclient-rb'
-options = { block_until_ready: 10 }
-begin
-split_factory = SplitIoClient::SplitFactoryBuilder.build("YOUR_API_KEY", options)
-split_client = split_factory.client
-rescue SplitIoClient::SDKBlockerTimeoutExpiredException
-puts "SDK failed to initialize within the requested time."
-end
 This code waits up to 10 seconds for the SDK to initialize. If the SDK is not ready within that time, an exception is raised, allowing you to handle the failure accordingly.
 Using FME SDKs in Serverless environments
-​
 In serverless environments, data persistence is best handled by externalizing state to avoid the performance impact of "cold starts", or when functions initialize and load data before they can execute. This is especially important for feature flagging SDKs like FME, which rely on cached data to perform evaluations efficiently.
 To achieve optimal performance when using FME within AWS Lambda functions or other serverless platforms, see the
 Serverless Applications Powered by FME Feature Flags blog post
 for practical examples and best practices.
 API keys
-​
 Typically, you need one API key per Harness FME environment, and additionally, you may want to issue extra API keys per microservice of your product using Harness FME for better security isolation. You must identify which type of SDK you're using to ensure you select the appropriate API key type.
 In practice, you need only a single client-side and a single server-side SDK API key for each Harness FME environment. When an environment is created, FME automatically creates one key of each type for the new environment.
 There is nothing wrong with having multiple keys of the same type for the same environment, but there is no real reason to do so because FME does not track which API key is used.
@@ -215,29 +198,24 @@ Client-side
 Configure client-side SDKs to use a client-side API key
 Grants access to fetch feature flags and segments for the provided key within the provided API key's environment
 RUM Agents
-​
 Harness FME real user monitoring (RUM) agents collect detailed information about your users' experience when they visit your application. This information is used to analyze site impact, measure the degradation of performance metrics in relation to feature flag changes and alert the owner of the feature flag about such degradation.
 For more information, see
 Client-side Agents
 .
 Evaluator service
-​
 For languages with no native SDK support, Harness FME offers the Split Evaluator, a small service capable of evaluating all available features for a given customer via a REST endpoint. This service is available as a Docker container for ease of installation and is compatible with popular framework like Kubernetes when it comes to supporting standard health checks to achieve reliable uptimes. Learn more about the
 Split evaluator
 .
 Synchronizer service
-​
 By default, FME SDKs keep segment and feature flag definitions synchronized in an in-memory cache for speed at evaluating feature flags. However, some languages do not have a native capability to keep a shared local cache of this data to properly serve treatments. For these cases, we built Split Synchronizer to maintain an external cache like Redis. To learn more, read about
 Split Synchronizer
 .
 Proxy service
-​
 Split Proxy enables you to deploy a service in your own infrastructure that behaves like Harness servers and is used by both server-side and client-side SDKs to synchronize the flags without directly connecting to Harness FME's backend.
 This tool reduces connection latencies between the SDKs and the Harness server, and can be used when a single connection is required from a private network to the outside for security reasons. To learn more, read about
 Split Proxy
 .
 Using a service for feature flags
-​
 Harness FME enables you to roll out features and experiment with target groups of customers across the full web stack, from deep backend services to client-facing JavaScript and mobile applications.
 Feature flagging is especially valuable in mobile environments. For instance, when a critical bug appears in a newly released mobile feature, you can’t push an immediate fix due to App Store approval delays, and customers cannot be forced to update their apps promptly.
 Many mobile and IoT apps are optimized for resource-constrained devices. A feature flagging solution should minimize any impact on app size or performance.
@@ -252,36 +230,20 @@ Server-side evaluation can incorporate user data not available on the client—s
 No impact on app size or performance
 Hosting the SDK on the server eliminates the need to embed additional libraries in client apps, preserving lightweight and performant clients.
 Best practices for designing the feature flag service
-​
 Harness FME offers the
 Evaluator
 as a ready-made server-side solution for evaluating feature flags and supporting languages without native SDKs.
 The client app should query the service to retrieve a mapping of feature names to treatments for the current user. Assuming the service is deployed at
 /splits
 , a recommended REST API design is:
-@GET
-/splits/{customer_id}?dimension_1={dimension_1_value}&dimension_2={dimension2_value}....
 For example:
-/splits/4915?connection_speed=3G&country=usa&device_type=android....
 customer_id
 : Unique identifier for the user. Ideally shared between web and mobile to ensure consistent treatments.
 dimension_n
 : Optional user or device attributes the service should consider during evaluation (e.g., location, connection speed, device type).
 We recommend securing this API with HTTPS due to potentially sensitive query parameters.
 Response schema
-​
 The API returns a list of feature-treatment mappings:
-[
-{
-"featureName"
-:
-"string"
-,
-"treatment"
-:
-"string"
-}
-]
 The API always returns HTTP 200. In failure cases, it returns an empty list.
 If a feature is not present in the response, the client should treat it as having the
 control
@@ -289,250 +251,40 @@ treatment, which indicates an evaluation problem. Clients must handle the
 control
 case gracefully.
 Example treatment usage in Java:
-String
-treatment
-=
-.
-.
-.
-;
-// retrieved from the response map
-if
-(
-"on"
-.
-equals
-(
-treatment
-)
-)
-{
-// Enable feature
-}
-else
-if
-(
-"off"
-.
-equals
-(
-treatment
-)
-)
-{
-// Disable feature
-}
-else
-{
-// Handle 'control' or unknown treatment
-}
 If your app treats
 control
 as
 off
 , you can simplify to:
-if
-(
-"on"
-.
-equals
-(
-treatment
-)
-)
-{
-// Enable feature
-}
-else
-{
-// Disable feature
-}
 Server-side example (Java pseudo-code):
-@Path
-(
-"/splits"
-)
-public
-class
-SplitServer
-{
-private
-SplitManager
-_manager
-;
-private
-SplitClient
-_client
-;
-@Inject
-public
-SplitServer
-(
-SplitFactory
-factory
-)
-{
-_manager
-=
-factory
-.
-manager
-(
-)
-;
-_client
-=
-factory
-.
-client
-(
-)
-;
-}
-@Path
-(
-"{customer_id}"
-)
-@GET
-public
-Response
-evaluateAllFeatures
-(
-@PathParam
-(
-"customer_id"
-)
-id
-,
-@Context
-UriInfo
-uriInfo
-)
-{
-Map
-<
-String
-,
-Object
->
-attributes
-=
-uriInfo
-.
-getQueryParams
-(
-)
-;
-List
-<
-Map
-<
-String
-,
-String
->
->
-result
-=
-new
-ArrayList
-(
-)
-;
-for
-(
-Split
-split
-:
-_manager
-.
-splits
-(
-)
-)
-{
-String
-t
-=
-_client
-.
-getTreatment
-(
-id
-,
-split
-.
-name
-(
-)
-,
-attributes
-)
-;
-Map
-<
-String
-,
-String
->
-m
-=
-new
-HashMap
-(
-)
-;
-m
-.
-put
-(
-"featureName"
-,
-split
-.
-name
-(
-)
-)
-;
-m
-.
-put
-(
-"treatment"
-,
-t
-)
-;
-result
-.
-add
-(
-m
-)
-;
-}
-return
-Response
-.
-ok
-(
-result
-)
-;
-}
-}
-Last updated
-on
-Jul 21, 2026
+Give feedback
 Previous
 Manage the Feature Flag Lifecycle
 Next
 Versioning Policy
+Last updated
+14 days ago
+Was this helpful?
+Resources
+Sign up
+Community
+API Reference
+YouTube
+Release Notes
+Roadmap
+Feature Requests
+Feature Availability
+University
+Instructor-Led Training
+Partners
+Legal
+Terms of Use
+Privacy Policy
+Accessibility
+Do not sell or share my personal information
+Copyright © 2026 Harness Inc.
 Streaming architecture
-Streaming versus polling
 SDK types
-Security considerations
 Block traffic until the SDK is ready
 Using FME SDKs in Serverless environments
 API keys
@@ -541,48 +293,67 @@ Evaluator service
 Synchronizer service
 Proxy service
 Using a service for feature flags
-Best practices for designing the feature flag service
-Response schema
-Harness Software Delivery Platform
-Overview
-Code Repository
-Continuous Integration
-Continuous Delivery & GitOps
-Infrastructure as Code Management
-Feature Flags
-Feature Management & Experimentation
-Cloud & AI Cost Management
-AI Security
-API & Application Discovery
-Application & API Runtime Protection
-Application & API Security Testing
-Security Testing Orchestration
-Supply Chain Security
-SAST and SCA
-Chaos Engineering
-AI SRE
-Service Reliability Management
-Internal Developer Portal
-AI DLC Insights
-AI Test Automation
-Resources
-Sign up
-Harness Community
-API Reference
-YouTube
-Developer Hub GitHub
-Release Notes
-Roadmap
-Feature Requests
-Feature Availability
-Glossary
-University
-Instructor-Led Training
-Partners
-Style Guide
-Legal
-Terms of Use
-Privacy Policy
-Accessibility
-Do not sell or share my personal information
-Copyright © 2026 Harness Inc.
+Was this helpful?
+Copy
+```ruby
+require 'splitclient-rb'
+options = { block_until_ready: 10 }
+begin
+split_factory = SplitIoClient::SplitFactoryBuilder.build("YOUR_API_KEY", options)
+split_client = split_factory.client
+rescue SplitIoClient::SDKBlockerTimeoutExpiredException
+puts "SDK failed to initialize within the requested time."
+end
+Copy
+@GET
+/splits/{customer_id}?dimension_1={dimension_1_value}&dimension_2={dimension2_value}....
+Copy
+/splits/4915?connection_speed=3G&country=usa&device_type=android....
+Copy
+[
+{
+"featureName": "string",
+"treatment": "string"
+}
+]
+Copy
+String treatment = ...; // retrieved from the response map
+if ("on".equals(treatment)) {
+// Enable feature
+} else if ("off".equals(treatment)) {
+// Disable feature
+} else {
+// Handle 'control' or unknown treatment
+}
+Copy
+if ("on".equals(treatment)) {
+// Enable feature
+} else {
+// Disable feature
+}
+Copy
+@Path("/splits")
+public class SplitServer {
+private SplitManager _manager;
+private SplitClient _client;
+@Inject
+public SplitServer(SplitFactory factory) {
+_manager = factory.manager();
+_client = factory.client();
+}
+@Path("{customer_id}")
+@GET
+public Response evaluateAllFeatures(@PathParam("customer_id") id,
+@Context UriInfo uriInfo) {
+Map<String, Object> attributes = uriInfo.getQueryParams();
+List<Map<String, String>> result = new ArrayList();
+for (Split split : _manager.splits()) {
+String t = _client.getTreatment(id, split.name(), attributes);
+Map<String, String> m = new HashMap();
+m.put("featureName", split.name());
+m.put("treatment", t);
+result.add(m);
+}
+return Response.ok(result);
+}
+}

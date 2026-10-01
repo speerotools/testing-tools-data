@@ -72,14 +72,11 @@ Testing your Gates/Experiments
 Migration Guides
 FAQ
 On this page
-What's the problem with looking early in a "standard" A/B test
-How peeking increases decision error rates
-Why early results can be misleading
-How Sequential Testing works for an A/B test
-Quick guides
-Enable sequential testing results
-Interpreting sequential testing results
-How Statsig implements Sequential Testing
+Why peeking inflates false positives
+How sequential testing works for an A/B test
+Enable sequential testing
+Interpret sequential testing results
+How Statsig implements sequential testing
 Two-sided tests
 One-sided tests
 For AI agents: a documentation index is available at
@@ -90,45 +87,57 @@ Product Docs
 Frequentist Sequential Testing
 Frequentist Sequential Testing
 Learn how sequential testing addresses the peeking problem in A/B tests and enables early decision making with statistical rigor.
-What's the problem with looking early in a "standard" A/B test
-Traditional A/B testing best practices (t-tests, z-tests, etc.) require that the readout of experiment metrics occur only once, when you reach the target sample size. Reaching the target sample size means you have reached your design duration and have the sample size you need. This approach is a "Fixed Horizon Test". When you design an experiment, you set the number of units you want to observe and commit to analyzing results only after the dataset is complete.
-Sequential testing lets you look at results and make valid early decisions before you reach that target sample size. A fixed-horizon analysis instead requires you to wait and analyze the data only after the data is complete.
-Continuous experiment monitoring ("peeking") to make decisions results in inflated false positive rates (the peeking problem). These rates can be much higher than the expected rate at the significance level you want.
-How peeking increases decision error rates
-Continuous monitoring leads to inflated false positives because any time you consider ending an experiment early, you risk making an incorrect conclusion. At the core of a standard hypothesis test, you decide whether to "accept the null" hypothesis or "reject the null" hypothesis and accept the alternative. Any time you look early and allow the possibility of an early decision, you're potentially rejecting the null hypothesis even when the null hypothesis is correct.
-Why early results can be misleading
-Metric values and p-values always fluctuate to some extent due to noise during any experiment. Results can move into and out of statistical significance because of this noise, even when there is no real underlying effect. Noisy fluctuations result from random unit assignment and unpredictable user behavior, and you can't eliminate them entirely. Noise levels vary by test, depending on what you're testing and who your users are. Tests also vary over time in the amount of noise they see, as adding more users and observing them longer tends to help random fluctuations even out.
-Peeking introduces selection bias when it causes an experimenter to adjust the readout date. When an experimenter makes any early decision about results (for example, "is the result stat-sig; can we ship a variant early?"), the chances increase that the decision relies on a temporary snapshot of results. These results always fluctuate. The experimenter is potentially selecting a stat-sig result that wouldn't appear if you analyzed the data only once at the full, pre-determined completion of the experiment. In frequentist A/B test procedures, early decisions can only increase the false positive rate (declaring an experimental effect when there is none). This increase occurs even when the intention is to make a less-biased decision.
-How Sequential Testing works for an A/B test
-In Statsig's implementation of Sequential Testing, Statsig automatically adjusts p-values and confidence intervals for each preliminary analysis window. These adjustments compensate for the increased false positive rate associated with peeking, as the Results tab shows:
-In this example, Statsig expands the confidence intervals for each metric using the "wings" or "tabs". This expansion is a quick visual indicator that sequential testing is on and shows how much the intervals expanded.
-In this example, the sequential testing adjustment determines whether Statsig declares the indicated result stat-sig.
-The goal of Sequential Testing is to enable early decision making when observations are sufficiently strong to outweigh random fluctuations, while limiting the risk of false positives. Although Statsig typically discourages peeking, regular monitoring with sequential testing is valuable in some cases:
-Unexpected regressions: When experiments have bugs or unintended consequences that severely impact key metrics, sequential testing helps identify these regressions early and distinguishes significant effects from random fluctuations.
-Opportunity cost: A significant loss may result from delaying the experiment decision, such as launching a new feature ahead of a major event or fixing a bug. In these cases, sequential testing can support an early decision if key metrics show improvement. Use caution: an early stat-sig result for certain metrics doesn't guarantee sufficient power to detect regressions in other metrics. Limit this approach to cases where only a small number of metrics are relevant to the decision.
-You can use sequential testing anywhere you do an experimental analysis, including your main experimental Results page and any
+Sequential testing adjusts p-values and confidence intervals so you can read experiment results before the target sample size without inflating the false positive rate. Statsig implements it as a mixture sequential probability ratio test (mSPRT): each metric's confidence interval widens by an amount that shrinks as data accumulates. Use it on frequentist experiments when you need to catch regressions early or ship early on a statistically significant result.
+Statsig offers three analysis methods, which you choose with the
+Analytics Type
+setting under Advanced Settings on the experiment Setup tab. Use frequentist analysis with sequential testing for standard p-values and confidence intervals that stay valid when you read results early. Use
+SPRT
+when you want unlimited peeking and the option to accept the null hypothesis as well as reject it. Use
+Bayesian mode
+for chance-to-beat and expected-loss readouts, with optional priors from past experiments.
+Why peeking inflates false positives
+Traditional A/B tests (t-tests and z-tests) are fixed-horizon tests. When you design the experiment, you set the number of units to observe, and you read the metrics once, after you reach that target sample size. Sequential testing lets you read results and make valid decisions before that point.
+Continuous monitoring of an experiment, or peeking, inflates the false positive rate above the significance level you chose. Every time you consider ending an experiment early, you decide whether to reject the null hypothesis, and that decision can be wrong. Metric values and p-values fluctuate because of noise from random unit assignment and unpredictable user behavior, so results can move into and out of statistical significance even when there is no real effect. Noise levels vary by test and decrease over time as more users join and you observe them longer.
+When you decide based on an early snapshot, you're more likely to select a statistically significant result that wouldn't appear if you analyzed the data once at the planned end of the experiment. In frequentist procedures, early decisions can only increase the false positive rate, even when you intend to make a less biased decision.
+How sequential testing works for an A/B test
+Statsig automatically adjusts p-values and confidence intervals for each preliminary analysis window to compensate for the increased false positive rate that peeking introduces. The Results tab shows the adjustment:
+Statsig expands the confidence interval for each metric and marks the expansion with wings on the ends of the bar. The wings show that sequential testing is on and how much the interval expanded.
+In this example, the sequential testing adjustment determines whether Statsig declares the result significant.
+Sequential testing supports early decisions when observations are strong enough to outweigh random fluctuations, while limiting the risk of false positives. Statsig discourages peeking in general, but regular monitoring with sequential testing is valuable in two cases:
+Unexpected regressions
+: When an experiment has a bug or an unintended consequence that severely affects key metrics, sequential testing identifies the regression early and distinguishes significant effects from random fluctuations.
+Opportunity cost
+: Delaying a decision can be costly, for example when you need to launch a feature ahead of a major event or fix a bug. Sequential testing can support an early decision if key metrics show improvement. Use caution: an early significant result on some metrics doesn't guarantee enough power to detect regressions in other metrics. Limit this approach to cases where only a small number of metrics matter to the decision.
+You can use sequential testing anywhere you run an experimental analysis, including the experiment Results page and any
 custom queries
 .
-Quick guides
-Enable sequential testing results
-In the
+Enable sequential testing
+On the
 Setup
-tab of your experiment, with Frequentist selected as your Analytics Type, enable Sequential Testing under the Analysis Settings section. You can toggle this setting at any time during the life of the experiment and don't need to enable it before the experiment starts.
-Interpreting sequential testing results
+tab of your experiment, set
+Analytics Type
+to
+Frequentist
+, then select
+Apply Sequential Testing
+under
+Analysis Settings
+. You can toggle this setting at any time during the experiment; you don't need to turn it on before the experiment starts.
+Interpret sequential testing results
 Click
 Edit
-at the top of the metrics section in Pulse to toggle Sequential Testing on/off.
-When you enable sequential testing, Statsig applies an adjustment to results calculated before the target completion date of the experiment.
-The dashed line represents the expanded confidence interval resulting from the adjustment. The solid bar is the standard confidence interval computed without any adjustments. If the adjusted confidence interval overlaps with zero, the metric delta isn't stat-sig at the moment, and the experiment should continue as planned.
-Sequential testing is a reliable way to make an early decision, particularly for early detection of regressions. Early decision-making often results in underpowered lift estimates with a high degree of uncertainty. If making the correct decision is important, use statistically significant sequential testing results. If accurate measurement is important, wait for the full power that your pre-experimental power calculation estimates. Statsig doesn't calculate statistical power on post-hoc experimental results (refer to section "Post-hoc Power Calculations are Noisy and Misleading" in
+at the top of the metrics section in Pulse to toggle sequential testing on or off.
+When you turn on sequential testing, Statsig adjusts the results it calculates before the target completion date of the experiment.
+The dashed line is the expanded confidence interval that results from the adjustment. The solid bar is the standard confidence interval without adjustment. If the adjusted confidence interval overlaps zero, the metric delta isn't significant yet, and the experiment should continue as planned.
+Early decisions often produce underpowered lift estimates with high uncertainty. If you need the correct ship decision, act on significant sequential testing results. If you need an accurate measurement of the effect size, wait for the full power that your pre-experiment power calculation estimates. Statsig doesn't calculate statistical power on post-hoc results; refer to the section "Post-hoc Power Calculations are Noisy and Misleading" in
 Kohavi, Deng, and Vermeer, A/B Testing Intuition Busters
-).
-How Statsig implements Sequential Testing
+.
+How Statsig implements sequential testing
 Two-sided tests
 Confidence intervals
-Statsig uses mSPRT based on the approach that Zhao et al. propose in this
-paper
-. The two-sided Sequential Testing confidence interval with significance level
+Statsig uses mSPRT based on the approach that
+Zhao et al.
+propose. The two-sided sequential testing confidence interval with significance level
 α
 \alpha
 α
@@ -173,7 +182,7 @@ Z
 ⋅
 V
 ​
-where
+where:
 Z
 α
 /
@@ -254,9 +263,9 @@ V
 V
 V
 V
-is the standard variance of the delta of means when computing
+is the standard
 variance
-. You can obtain it from the sample variance of the test and control group means:
+of the delta of means. You can obtain it from the sample variance of the test and control group means:
 V
 =
 v
@@ -446,32 +455,36 @@ is the z-critical value used in the non-sequential test, for the significance le
 α
 =
 0.05
-)
-Statsig has validated that this parameter satisfies the expected False Positive Rate and provides enough power to detect large effects early. You can find
-more details in this analysis
+).
+Statsig has validated that this parameter satisfies the expected false positive rate and provides enough power to detect large effects early. For details, refer to
+Statsig's sequential testing analysis
 .
 p-values
-To produce p-values for sequential testing that are consistent with the expanded confidence intervals above, modify the
+To produce sequential testing p-values that are consistent with the expanded confidence intervals, Statsig modifies the standard
 p-value methods
 .
 The goal is to evaluate the mSPRT test so that the Type I error remains approximately equal to
 α
 \alpha
 α
-, and so that the sequential testing p-value is consistent with the expanded confidence interval. (I.e. A CI that includes 0.0% should have p-value ≥
+, and so that the sequential testing p-value is consistent with the expanded confidence interval: a confidence interval that includes 0.0% has a p-value ≥
 α
 \alpha
 α
-, and one that excludes 0.0% should have p-value <
+, and one that excludes 0.0% has a p-value <
 α
 \alpha
 α
-.)
-The observed z-statistic (i.e. z-score) remains unchanged. Instead of evaluating
+.
+The observed z-statistic (z-score)
 Z
 Z
 Z
-on a standard-normal distribution
+remains unchanged. Instead of evaluating
+Z
+Z
+Z
+on a standard normal distribution
 N
 (
 0
@@ -485,7 +498,7 @@ N
 ,
 1
 )
-, Statsig evaluates against another normal distribution
+, Statsig evaluates it against a normal distribution
 N
 (
 0
@@ -501,15 +514,15 @@ N
 σ
 2
 )
-with mean of zero and standard deviation
+with mean zero and standard deviation
 σ
 \sigma
 σ
-. For a two-sided test, to limit the probability of an observed
+. For a two-sided test, to limit the probability that an observed
 Z
 Z
 Z
-exceeding
+exceeds
 Z
 α
 /
@@ -521,11 +534,11 @@ Z
 /2
 ∗
 ​
-(assuming the null hypothesis to be true) to
+under the null hypothesis to
 α
 \alpha
 α
-, you can find the unknown parameter by solving for
+, solve for
 σ
 \sigma
 σ
@@ -584,7 +597,7 @@ f
 is the
 inverse error function
 .
-From here, you can compute the two-sided sequential testing p-value as:
+The two-sided sequential testing p-value is then:
 p-value
 ∗
 =
@@ -645,7 +658,7 @@ where
 Z
 Z
 Z
-is the observed z-statistic (i.e. z-score) as usual.
+is the observed z-statistic.
 One-sided tests
 Statsig modifies each step for one-sided sequential testing.
 C
@@ -836,7 +849,7 @@ d
 t
 if left-sided test
 ​
-where
+where:
 Z
 α
 ∗
@@ -845,7 +858,7 @@ Z
 α
 ∗
 ​
-is the one-sided test z-critical value, modified for sequential testing:
+is the one-sided z-critical value, modified for sequential testing:
 Z
 α
 ∗
@@ -908,7 +921,24 @@ V
 V
 V
 V
-is the same as for two-sided tests.
+is the variance of the delta of means,
+v
+a
+r
+(
+Δ
+X
+‾
+)
+var(\Delta \overline X)
+v
+a
+r
+(
+Δ
+X
+)
+.
 τ
 \tau
 τ
@@ -990,7 +1020,7 @@ is the one-sided z-critical value used in the non-sequential test, for the signi
 α
 =
 0.05
-)
+).
 Statsig solves for
 σ
 \sigma
@@ -1085,16 +1115,14 @@ if left-sided test
 Z
 Z
 Z
-is the (signed) observed z-statistic as usual (i.e. z-score)
+is the signed observed z-statistic (z-score).
 Was this helpful?
+Copy Markdown
 On this page
-What's the problem with looking early in a "standard" A/B test
-How peeking increases decision error rates
-Why early results can be misleading
-How Sequential Testing works for an A/B test
-Quick guides
-Enable sequential testing results
-Interpreting sequential testing results
-How Statsig implements Sequential Testing
+Why peeking inflates false positives
+How sequential testing works for an A/B test
+Enable sequential testing
+Interpret sequential testing results
+How Statsig implements sequential testing
 Two-sided tests
 One-sided tests

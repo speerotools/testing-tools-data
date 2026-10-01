@@ -4,19 +4,19 @@ Guides
 Select a tab
 Home
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Search
@@ -34,13 +34,16 @@ Optimization guides
 Classification
 Personalization
 A/B testing
+Insights
 Optimize with AI
+Search
 AI & AI agents
 About AI in Uniform
 Scout
 AI guidance
 AI quick edits
 MCP Server
+Agent skills
 AI rules
 AI credits
 Developer guides
@@ -101,10 +104,31 @@ Click the
 icon next to the credit count to see when credits reset, open a usage breakdown, or request more credits.
 The credits popover, with a link to the usage breakdown and an option to get more credits.
 View usage breakdown
-opens a monthly usage report. Select a month to see credits used by user — including
+opens a monthly usage report. The chart shows up to six months of actual usage. When there is enough history, it also predicts usage for the remainder of the current month and next month. Select a past or current month to see credits used by user — including
 automations
 that consume AI credits — and by project.
 Monthly AI credit usage broken down by user and by project. Automations appear alongside people in the user list.
+Predicted usage
+#
+If there is sufficient usage history, the chart estimates how many credits your team is likely to use for the rest of this month and for next month:
+Solid bars
+are credits already used.
+Hatched segments
+are predicted usage.
+Trend
+shows a recency-weighted average of actual monthly usage. The legend indicates the trend direction.
+Limit
+is your team's current monthly allocation. It may not be visible in the chart, but you can hover over the legend to see your current allocation.
+The user and project lists always show actual usage.
+Predictions are for planning only
+Predicted usage does not change your credit balance or monthly allocation. Estimates are based on recent usage and may be incorrect.
+How predicted usage is calculated
+Trendline:
+A recency-weighted average of monthly totals.
+Trend direction:
+A linear regression of the trendline
+Predictions:
+The recency-weighted averages are applied to the number of days left in the current month and number of days in the next month.
 Credit usage
 #
 Credits are consumed whenever you use Uniform features powered by AI, including:
@@ -135,7 +159,7 @@ Get more credits
 in the credits popover on the team dashboard opens the same form.
 Was this page helpful?
 Last modified
-3 minutes ago
+on
 Previous
 ←
 AI rules
@@ -148,5 +172,6 @@ Overview
 How AI credits work
 AI Credit allocation
 Monitoring your balance
+Predicted usage
 Credit usage
 Requesting additional credits

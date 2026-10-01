@@ -117,14 +117,6 @@ You switched accounts on another tab or window.
 Reload
 to refresh your session.
 Dismiss alert
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 A/B Smartly
 A/B Smartly - Your A/B Testing Platform
 23
@@ -458,43 +450,40 @@ Last updated
 Name
 Stars
 Showing 10 of 41 repositories
-java-sdk
+mcp
 Public
-AB Smartly Java SDK
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/java-sdk's past year of commit activity
-Java
-3
-Apache-2.0
+absmartly/mcp's past year of commit activity
+TypeScript
+0
 1
 2
-4
+19
 Updated
-Aug 31, 2026
-cross-sdk-tests
+Oct 1, 2026
+browser-extension
 Public
-Cross-SDK integration test framework for ABsmartly SDKs
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/cross-sdk-tests's past year of commit activity
-Python
+absmartly/browser-extension's past year of commit activity
+TypeScript
+1
 0
 0
-0
-7
+13
 Updated
-Aug 29, 2026
+Sep 29, 2026
+cli
+Public
+ABsmartly CLI tool for managing experiments and feature flags
+absmartly/cli's past year of commit activity
+TypeScript
+0
+MIT
+0
+0
+3
+Updated
+Sep 29, 2026
 docs
 Public
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 absmartly/docs's past year of commit activity
 JavaScript
 1
@@ -502,44 +491,67 @@ JavaScript
 0
 19
 Updated
-Aug 18, 2026
-mcp
+Sep 25, 2026
+javascript-sdk
 Public
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/mcp's past year of commit activity
+A/B Smartly Javascript SDK
+absmartly/javascript-sdk's past year of commit activity
+JavaScript
+7
+Apache-2.0
+6
+0
+8
+Updated
+Sep 25, 2026
+cross-sdk-tests
+Public
+Cross-SDK integration test framework for ABsmartly SDKs
+absmartly/cross-sdk-tests's past year of commit activity
+Python
+0
+0
+0
+5
+Updated
+Sep 23, 2026
+sdk-plugins
+Public
+absmartly/sdk-plugins's past year of commit activity
 TypeScript
 0
-1
 0
-15
+0
+8
 Updated
-Aug 18, 2026
-cli
+Sep 11, 2026
+swift-sdk
 Public
-ABsmartly CLI tool for managing experiments and feature flags
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/cli's past year of commit activity
-TypeScript
-0
-MIT
-0
-0
+A/B Smartly Swift SDK
+absmartly/swift-sdk's past year of commit activity
+Swift
 1
+Apache-2.0
+1
+1
+2
 Updated
-Aug 14, 2026
+Sep 9, 2026
+java-sdk
+Public
+AB Smartly Java SDK
+absmartly/java-sdk's past year of commit activity
+Java
+3
+Apache-2.0
+1
+2
+2
+Updated
+Sep 2, 2026
 ab-testing-simulations
 Public
 Reproducible simulations of Bayesian A/B testing claims
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 absmartly/ab-testing-simulations's past year of commit activity
 JavaScript
 0
@@ -548,74 +560,14 @@ JavaScript
 0
 Updated
 Jul 28, 2026
-absmartly-managed-component
-Public
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/absmartly-managed-component's past year of commit activity
-TypeScript
-0
-0
-0
-3
-Updated
-Jul 28, 2026
-rust-sdk
-Public
-ABsmartly SDK for Rust - A/B testing and feature flagging
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/rust-sdk's past year of commit activity
-Rust
-0
-0
-0
-5
-Updated
-Jul 15, 2026
-python3-sdk
-Public
-A/B Smartly Python3 SDK
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/python3-sdk's past year of commit activity
-Python
-1
-MIT
-1
-0
-4
-Updated
-Jul 14, 2026
-kotlin-sdk
-Public
-ABsmartly Kotlin SDK
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-absmartly/kotlin-sdk's past year of commit activity
-Kotlin
-0
-0
-0
-2
-Updated
-Jul 14, 2026
 View all repositories
 People
 Top languages
-Loading…
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
+TypeScript
+JavaScript
+Ruby
+Python
+Kotlin
 Most used topics
 Loading…
 Uh oh!

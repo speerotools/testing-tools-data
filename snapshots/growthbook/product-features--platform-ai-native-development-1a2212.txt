@@ -1,7 +1,5 @@
 # https://www.growthbook.io/platform/ai-native-development
 GrowthBook | Agent-Ready Feature Flags and Experimentation
-Live Group Demo | Led by a GrowthBook technical expert →
-Choose Your Date
 Products
 Product
 Experimentation
@@ -18,7 +16,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.0: Build, ship, and improve at scale
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
 Solutions
 By Role
 Engineering
@@ -46,6 +44,7 @@ GrowthBook vs Others
 ROI Calculator
 Ecosystem
 Community
+Partners
 Explore
 Why migrate from Statsig to GrowthBook
 Pricing
@@ -117,6 +116,9 @@ Customer testimonials
 “GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
 Alex Kalish
 Engineering Manager, Dropbox
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
@@ -150,15 +152,15 @@ Head of Insight, TodayTix
 “GrowthBook lets us build experiments exactly how we want. The ability to target based on culture and geography, as granular as needed, is a major win for us.”
 Eslam Samy
 Data Scientist, Floward
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
 Andy Thäger
 Founder of Creatistas (toom partner)
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
-"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
-Kameron Jenkins
-Head of Growth Engineering, Fyxer
 FAQs
 What can my team and agents do with GrowthBook?
 GrowthBook is built agent-ready from the API up. Anything your team can do in the GrowthBook app, your agents can do through the MCP server or REST API. That includes creating and updating feature flags, managing revisions and approvals, configuring ramp schedules and targeting, setting up experiments from your org's templates, monitoring running experiments through the Decision Framework, querying product metrics and dashboards through MCP or REST, concluding experiments and shipping winners, and finding and archiving stale flags.
@@ -180,11 +182,10 @@ GrowthBook applies the same controls to AI agents that it applies to your team: 
 What about data privacy and AI-native development with GrowthBook?
 GrowthBook takes privacy and security seriously. The GrowthBook MCP server runs locally on your machine. It connects only to your GrowthBook instance using your API key, with no telemetry and no third-party calls. The REST API works the same way. Your prompts and source code stay between you and the AI tool you connect, so review that tool's privacy policy separately.
 Do I need GrowthBook set up before I connect to AI tools?
-Yes. A GrowthBook instance, cloud or self-hosted, is required before you connec either the MCP server or the REST API. Sign up free, then visit our
+Yes. The MCP server connects to your GrowthBook instance, Cloud or self-hosted, to create and manage feature flags and experiments.
+Sign up free, then visit our
 MCP server docs
-for tool-specific setup instructions and
-API docs
-for the REST reference.
+for tool-specific setup instructions.
 Ready to ship faster?
 No credit card required. Start with feature flags, experimentation, and product analytics — free.
 Get Started
@@ -228,6 +229,8 @@ Company
 About
 Careers
 Contact Us
+Swag Shop
+Support
 Legal
 ©2026 GrowthBook, Inc.
 Terms of Use

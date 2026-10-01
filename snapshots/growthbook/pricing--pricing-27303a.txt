@@ -1,7 +1,5 @@
 # https://www.growthbook.io/pricing
 Predictable Pricing – Free Tiers, Enterprise Plans | GrowthBook
-Live Group Demo | Led by a GrowthBook technical expert →
-Choose Your Date
 Products
 Product
 Experimentation
@@ -18,7 +16,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.0: Build, ship, and improve at scale
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
 Solutions
 By Role
 Engineering
@@ -46,6 +44,7 @@ GrowthBook vs Others
 ROI Calculator
 Ecosystem
 Community
+Partners
 Explore
 Why migrate from Statsig to GrowthBook
 Pricing
@@ -80,14 +79,14 @@ Pro
 For small and mid-sized teams with advanced statistics and analytics.
 $40
 / seat / month
-Up to 50 users
+Up to 30 users
 3 projects
 Unlimited feature flags
 Unlimited experiments
 Unlimited traffic
 Become a Pro
 Starter, plus:
-Visual editor
+AI Visual Editor
 Multi-arm bandits
 Safe rollouts
 Customizable dashboards
@@ -128,7 +127,11 @@ Contact Us
 Data
 Bring Your Own Warehouse
 Managed Warehouse
+1M events/mo
+2M events/mo (then $30/M)
+Custom
 Event Forwarder
+-
 -
 AI
 GrowthBook AI
@@ -151,6 +154,9 @@ Split URL Tests
 -
 Advanced Experimentation & Statistical Methods
 Multi-arm Bandits
+-
+Contextual Bandits
+-
 -
 Sticky Bucketing
 -
@@ -239,6 +245,7 @@ Data Source Explorer
 Custom SQL Explorer
 Advanced Analytics & Reporting
 AI Data Analyst (beta)
+User Journeys
 Custom Private Dashboards
 -
 Custom Shared Dashboards
@@ -311,12 +318,10 @@ Google Only
 Custom OIDC
 Advanced Permissioning
 -
-Custom Roles
--
--
-"No Access" Roles
--
--
+Roles
+Admin only
+Basic roles
+Custom roles
 Team Permissioning
 -
 -
@@ -375,7 +380,7 @@ Advanced access control
 SSO & SCIM provisioning
 Advanced permissioning workflows
 Data pipelines
-Visual editor
+AI Visual Editor
 Multi-arm bandits
 Safe rollouts
 Ramp schedules
@@ -413,6 +418,8 @@ Split URL Tests
 -
 Advanced Experimentation & Statistical Methods
 Multi-arm bandits
+-
+Contextual Bandits
 -
 Sticky Bucketing
 -
@@ -490,6 +497,7 @@ Data Source Explorer
 Custom SQL Explorer
 Advanced Analytics & Reporting
 AI Data Analyst (beta)
+User Journeys
 Custom Private Dashboards
 -
 Custom Shared Dashboards
@@ -552,10 +560,9 @@ SSO
 Custom OIDC
 Advanced Permissioning
 -
-Custom Roles
--
-"No Access" Roles
--
+Roles
+Admin only
+Custom roles
 Team Permissioning
 -
 SCIM Provisioning
@@ -598,6 +605,9 @@ Testimonials
 “GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
 Alex Kalish
 Engineering Manager, Dropbox
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
@@ -631,15 +641,15 @@ Head of Insight, TodayTix
 “GrowthBook lets us build experiments exactly how we want. The ability to target based on culture and geography, as granular as needed, is a major win for us.”
 Eslam Samy
 Data Scientist, Floward
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
 Andy Thäger
 Founder of Creatistas (toom partner)
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
-"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
-Kameron Jenkins
-Head of Growth Engineering, Fyxer
 FAQs
 Plans and Billing
 Product Capabilities
@@ -651,7 +661,7 @@ A seat equals a user. All users of the GrowthBook platform must have their own l
 How is GrowthBook's pricing different from usage-based platforms?
 GrowthBook uses a seat-based model rather than charging per monthly active user or API event. Teams pay for the people who run experiments and manage flags, not for the end users who see them—keeping costs predictable as products scale.
 What's included in the Pro plan?
-The Pro tier adds more seats (up to 50 users) and advanced experimentation features such as sequential testing, CUPED variance reduction, sticky bucketing, URL split tests, and built-in product analytics. It is designed for product and engineering teams for more comprehensive release management and continuous learning from experiments.
+The Pro tier adds more seats (up to 30 users) and advanced experimentation features such as sequential testing, CUPED variance reduction, sticky bucketing, URL split tests, and built-in product analytics. It is designed for product and engineering teams for more comprehensive release management and continuous learning from experiments.
 Who typically chooses the Enterprise plan?
 The Enterprise option is aimed at large teams with apps and websites that can serve millions of users and billions of events. Regulated industries choose enterprise for advanced governance, and custom security integrations (SSO, SCIM). Enterprise is ideal for organizations that require data-warehouse cost controls and formal support agreements.
 What happens if I exceed my plan's limits?
@@ -717,6 +727,8 @@ Company
 About
 Careers
 Contact Us
+Swag Shop
+Support
 Legal
 ©2026 GrowthBook, Inc.
 Terms of Use

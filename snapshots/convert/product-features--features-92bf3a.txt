@@ -5,9 +5,8 @@ Pricing
 Personalization
 Partnerships
 For Agencies
-For Certified Partners
+Be a Certified Partner
 For Affiliates
-Technology Partners
 Company
 About Us
 Blog
@@ -16,165 +15,624 @@ GDPR
 Request a Demo
 Try For Free
 Login
-Enterprise grade A/B testing features at self-service prices.
-When you are tired of the limits of your existing A/B testing app, but don’t want a 100K USD annual contract, Convert Experiences is a better alternative.
+The experimentation suite you trust, now with scoped, secure AI automations and workflows.
+Convert Experiences has customer insights, a/b testing, split URL testing, price testing, full-stack (server-side) experiments, 1:1 personalization, & AI flows - starting at $399/mo (paid monthly).
 Start 15-Day Free Trial
-No Credit Card Needed
-The video can't be displayed right now. Please reload or contact support if the issue continues.
-Reload Video
-Experimentation is Human Nature
-Set Up Every Kind of Experiment Possible
-A/B Testing
-Best in class
-A/B testing features
-like advanced targeting & post segmentation in every plan. Starting $399/mo.
-Split Testing
-Mature
-split testing features
-like hybrid tests and multipage split tests.
-Multivariate Testing
+Request a Demo
+No credit card
+15-day trial
+Full access to features
+How much to trust data: A walkthrough of Convert Experiences — heatmaps and session recordings, full-stack experimentation across six SDKs, the stats engine, 1:1 personalization, and the Convert Intelligence assistant
+Compliant
+Optimize sites, stores, mobile apps and more
+Do it yourself. Or call on Convert Intelligence
+®
+(our AI).
+A/B testing
+Best in class A/B testing features like advanced targeting & post segmentation in every plan. Starting $399/mo.
+Split testing
+Mature split testing features like hybrid tests and multipage split tests.
+Multivariate testing
 In the mvt testing set up, change a cluster of page elements in each version to find the highest performing combination.
-Multipage Experiments
-Make different changes across linked pages to optimize your entire funnel—or your entire site–simultaneously.
+Multipage experiments
+Make different changes across linked pages to optimize your entire funnel, or your entire site, simultaneously.
 Personalizations
 Serve prospect needs like never before with free personalizations that match visitor segments to relevant, unique site experiences.
-Full Stack Experiments
-Bring the power of experimentation to all your growth channels and strategies. Get around cookie issues and unlock the potential of data with
-server side testing, release better products
-, faster with feature flagging and rollouts.
-Start 15-day Free Trial
-Or Explore Our A/B Testing Guide
-Convert counts visitors to ensure the best use of your allotted traffic. If a single visitor is bucketed into multiple experiences, this visitor will still show up as one unique consumed from your monthly or yearly quota.
-Convert never forces upgrades. Convert Experiences honors legacy plans.
-Get Hands-On With Your Tests
-Powerful New Visual Editor
-Want a WYSIWYG editor? We still have it. But it's a fraction of what the new Convert Visual Editor is all about. Try our Code Editor - It allows you to work with JS & CSS on Global and Variation levels. We’re proud of its ability to bring the most ambitious changes to life.
-All rendered blink-free, thanks to the deep_DOM_element Jquery selector. Want to harness the ever evolving copy skills of AI? Play with our AI Wizard (within the Visual Editor). Choose from several evergreen persuasion principles & copy frameworks to improve and clarify your site content with.
-Try Convert Free
-No Credit Card Needed
+Full-stack (server-side) experiments
+Experiment on business logic, APIs, pricing, and feature flags across the front-end and back-end. With 6 SDKs and counting.
+Start 15-Day Free Trial
+No credit card required
+7 reasons why 41,567 websites run Convert Experiences
+AI
+Thoughtful AI use
+The MCP server brings Convert Experiences to your favorite AI agents. It accesses tools in 13 structured namespaces - with tiered permission levels.
+Reduce test build times by up to 40%, analyze massive volumes of results, schedule experiments, edit variations, and automate admin - all while staying in the loop.
+The Convert Intelligence in-app assistant lets you enjoy these same capabilities and even learn to use our platform better, without touching the MCP server, through simple prompts.
+Explore Convert's AI
+→
+mcp.ai.app.convert.com/mcp
+›
+Create the pricing-page A/B test for returning visitors
+●
+audiences.list
+✓
+●
+experiences.create
+✓
+status:
+Draft review in Convert before it goes live
+Convert MCP
+Insights
+Complete insights module - at no extra cost
+Convert Signals session recordings filter interactions with signs of frustration for you to view. Native heatmaps visualise clicks, taps & scrolls across controls & variants on desktops, tablets, and mobile devices. Each plan has access to the insights module from the same UI. No add-ons. No additional fee. Won't deplete your monthly tested user quota.
+Explore Convert insights
+→
+Summary
+Report
+Heatmaps
+Change History
+Live Logs
+Action
+Clicks
+Resolution
+Desktop
+Variation
+Original Page
+Cold / Low Engagement
+Warm / High Engagement
+Flowstate
+Features
+Pricing
+Customers
+Resources
+Log in
+Start Free Trial
+Start free, upgrade when you’re ready. No surprise fees, ever.
+Monthly
+Annual
+Save 20%
+Starter
+$0
+/mo
+For solo builders getting started.
+Get started
+1 workspace
+Up to 5k events / mo
+Most Popular
+Pro
+$19
+/mo
+For growing product teams.
+Start free trial
+5 workspaces
+Up to 100k events / mo
+Team
+$49
+/mo
+For scaling organizations.
+Get started
+Unlimited workspaces
+Advanced roles & SSO
+Scale
+Full-stack experimentation with 6 SDKs
+Run reliable experiments across websites, apps, and offline point-of-sales.
+Test
+business logic, APIs, pricing, algorithms, LLM.text files, and feature flags
+- switching between the front-end and the back-end.
+Allow
+Edge Workers
+to move persistent server-side bucketing decisions closer to the visitor to minimize latency & flickering.
+JS SDK
+PHP SDK
+Python SDK
+Android SDK
+Ruby SDK
+iOS SDK
+Explore full-stack testing
+→
+JS SDK
+PHP SDK
+Android SDK
+Python SDK
+Ruby SDK
+iOS SDK
+Edge Worker
+server-side bucketing
+One experiment
+One decision per visitor, every channel
+The best testing environment we've used
+There are so many features that we love, like:
+The frontend Javascript-based tests are very easy to setup and run, with some of our simpler tests going up in 30mins or less.
+The backend tests (though a little more time consuming) allow for greater flexibility and utility for testing larger UI/UX changes
+Built in audiences make it easy for us to capture mobile vs desktop users or even only test during weekdays or business hours.
+Customizeable goals allow us to set up our tests to give relevant data about what our AB test is trying to achieve.
+The data captured is easy to read and gives us the assurance that what we are testing is/isn't moving us towards our goals.
+Abby R
+Co-Founder and CMO Via G2 Crowd
 Go as deep & technical as you like
 The depth and capabilities of Convert Experiences for experimentation just blew me away. Convert knows that one size does “not” fit all, and have provided so many places to inject a script at runtime to be able to decide when and how to run an experiment. This is so huge for me because the app I experiment on is written with woldly changing view layers. The specific feature I’m describing is called “JS Conditions” or DMP Profiling.I’ve used Adobe, Optimizely, Google Experiments, etc. and none of them really let you get your hands dirty with code like this tool.
 Ken Hanson
 Modern Message
-The best testing environment we've used
-There are so many features that we love, like:
-- The frontend Javascript-based tests are very easy to setup and run, with some of our simpler tests going up in 30mins or less.
-- The backend tests (though a little more time consuming) allow for greater flexibility and utility for testing larger UI/UX changes
-- Built in audiences make it easy for us to capture mobile vs desktop users or even only test during weekdays or business hours.
-- Customizeable goals allow us to set up our tests to give relevant data about what our AB test is trying to achieve.
-- The data captured is easy to read and gives us the assurance that what we are testing is/isn't moving us towards our goals.
-Abby R
-Co-Founder and CMO Via G2 Crowd
-Audience Targeting Engine with 40+ Filters
-Use dozens of presets for popular audience segments based on location, language, device, and time of day.
-Not enough?
-Of course not! We also offer 40+ filters in a drag and drop conditions builder where you can target audiences by Javascript conditions, cookies, UTM parameters, experiment ID, page type, and custom tags. Expose the right people to your experiments. Keep away the strays.
-Explore Audience Targeting in Detail
-Privacy Compliant
-We have notifications that warn of potential privacy violations in your targeting set-up.
-Collision Prevention
-Never expose the same visitor to multiple experiments
-Forget pricey add-ons and extra modules. You get everything you need to run A-grade experiments - from a host of targeting options to granular goals - with every Convert plan.
-Get Started For Free Today
-No Credit Card Needed
-QA Tests Efficiently, Without Modal Hopping!
-We solemnly promise that our QA overlay will work as expected when you invite stakeholders to review soon-to-be deployed tests.
-It integrates into the Convert Experiences Summary.
-This tool lets you switch from previewing control to variants across devices, check on the health of your Convert installation (all the data you need to do so is available as a convenient summary), and dive into Live Log streams to troubleshoot goals & tests in real-time - all from one widget.
-Is Our QA Overlay All That?
-Start a 15-day free trial
+‹
+›
+Personalize
+Website & outreach personalization
+Serve action & behavior-driven personalizations.
+Want more? Give Convert Nexus
+™
+a shot.
+Upload .csv data for account-based-marketing contacts.
+Drive target company visitors to fully branded and 1:1 customized landing pages from your ads, emails, and outreach.
+Learn about Convert Nexus
+→
+Experiences
+Locations
+Audiences
+Goals
+Live Logs
+Change History
+Configuration
+General Settings
+Stats Settings
+Import & Export
+Global Javascript
+Environments & Tracking Code
+Active Websites
+Blocked IPs
+Opt-Out Link
 Integrations
-We work where you work.
-We get it. You have the data-you just need to know what it all means. Easily integrate any third party tool with Convert, and start turning digits into insights.
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-Explore Guide
-…and many more
-View All Integrations
-Or explore how our HotJar integration drove 27% in crease in conversions
-+
-Yes! Convert Experiences integrates with GA4
-Learn More
-A/B Testing Improves Real Business KPIs. Let the C-Suite Peek
-Own revenue growth of your company? Responsible for experimentation initiatives?
-You can quickly and effectively pull the vital stats of tests you run using Convert Experiences.
-Understand which variants have won for your assigned goals, and which have won for revenue generated. Make an impact in board meetings by showing how experimentation tangibly improves bottom-lines.
-Post Segmentation
-Based on visitor type, device used, campaign clicked, and more.
-Customization
-Choose metrics displayed graph type, and contextualize reporting by test goal(s).
-Set as Control
-Set a winning variant as Control in the next test.
+Personalization
+More Settings
+Personalization Data
+Manage the import and view of personalization data used in Deploy experiences.
+Import CSV File
+View Data
+Placeholders
+Search...
+Placeholder Name
+Default Value
+group_id
+ambassador_name
+america_offer
+amount_saved
+phone
+email
+job_title
+last_name
+company
+first_name
+Build
+Both WYSIWYG & 5 code editors
+What-You-See-Is-What-You-Get (WYSIWYG)
+has element selectors and a clear container hierarchy that allows those who aren't code savvy to choose and edit the right elements, minus trial and error. Developers can edit code on 5 levels -
+Global Experience CSS, Variation CSS, Variation JS, Global Experience JS and Global Project Javascript
+for efficiency, control, and clean architecture.
+AI code checks
+AI content recommendations
+Rendered blink-free
+‹ Summary
+Multivariate Experiment - 100349677
+MVT Test
+Section: Headline (2)
+Original
+Revenue headline
+Add Version
+Section: Buttons (2)
+Original
+Single CTA
+Add Version
++ Add Section
+Full Width
+100%
+▾
+Settings ▾
+FOR GROWTH TEAMS
+Ship experiments faster
+Headline
+Run experiments across your whole funnel and ship what actually moves revenue.
+Start free trial
+Book a demo
+Target
+Targeting engine & dynamic triggering
+Target audiences by
+Javascript conditions, cookies, UTM parameters, experiment ID, page type, and custom tags
+.
+Dynamic triggers activate tests at the right time.
+For example, on Single Page Applications (SPAs) like React, Vue, and Angular, tests fire when content loads dynamically after visitor interactions.
+DOM Element Trigger
+Upon-Run Trigger
+Programmatic Trigger
+Javascript Callback Trigger
+Analyze
+Frequentist & Bayesian models, Sequential test design
+With Convert Experiences, you don't sacrifice scientific rigour, business decision flexibility or faster learning cycles.
+As long as you know why you're running an experiment, and the associated risk appetite, we have you covered with:
+Traditional Frequentist
+Bayesian
+Sequential test design (Asymptotic Confidence Sequences)
+You can also customise parameters like
+statistical significance
+and
+power thresholds
+.
+Guardrails
+:
+Collision prevention
+Prevents multiple experiments from contaminating each other
+SRM checks
+Automatically detects traffic allocation issues before they compromise test data
+QA mode
+Validate and preview experiment experiences instantly before going live
+GDPR privacy warnings
+Flags potential privacy risks so you can stay compliant by design
+Consent-mode
+Run experiments in alignment with user consent choices
+Trusted by 41,567 websites
 Start 15-Day Free Trial
-Or compare us with VWO, Optimizely, Kameleoon
-There’s more...
-Testers do these jobs every day. Our features make them easier.
+No credit card required
+That's just seven of our signature features!
+Explore even more
+We work where you work
+Convert connects to the analytics, commerce, and CRO stack you already run. 90+ native integrations, no glue code required.
+Explore all integrations
+→
+Accuracy & integrity, built in
+Flexible snippet setup
+Three ways to load the tracking snippet, with transparent Core Web Vitals trade-offs for each
+Reporting that fits your existing stack
+90+ native integrations help reduce metric gaps between platforms
+Bot-free data
+Convert identifies scrapers, bots, and agents, so these do not pollute your experiment data
+Multiple statistical models
+Frequentist, Bayesian & Sequential models run on the same dataset with SRM flags
+Revenue outliers detection
+Outliers detected and capped. We don’t delete your experiment data
+Sticky variation IDs
+First-party cookies and deterministic hashing keep visitors in the variation they first saw
+Transparent full-stack tracking
+Six SDKs show you what’s happening under the hood, and tracked events are still delivered even when a visitor’s connection drops
+Consent-aware experimentation
+Cookie writing and experiment execution only after consent is recorded
+Scoped AI access
+MCP server protects your data from exposure by limiting both scope (what it can touch) and time (short shelf-life) of requests
+Start 15-Day Free Trial
+No credit card required
+Overview of Convert Experiences' features
+Gather insights. Choose the test type and design that best fits your needs. Ensure glitch-free experiences and clean learning. Do it yourself or let Convert Intelligence (our AI) step in.
+AI
 Formulate Hypotheses
 Design Experiments
-Target The Right People
+Target the Right People
 Get Reliable Results
-Scale Your Program
+Scale
 Secure Account & Data
+Convert Intelligence
+®
+Convert Intelligence allows optimizers and growth professionals to analyze experiment reports, create and edit experiences, get platform questions answered from Convert's own documentation, receive guided onboarding to first value, edit draft variations in the visual editor, and get CRO guidance on what to test — in plain language (through prompting) — without touching an API or the MCP server.
+Explore Feature In Free Trial
+→
+Convert Intelligence
+In-app assistant
+What should I test next on the pricing page?
+Convert Intelligence
+Three things worth testing next.
+Move the plan table above the fold
+From your report
+Retest the annual billing default
+Draft ready
+Add trust badges beside the pay button
+From the docs
+Ask in plain language…
+Convert MCP Server
+With
+45 hosted tools
+and
+a 16-tool local server
+, Convert’s MCP allows effective and scoped access to your account ecosystem, while ensuring requests are granularly approved and they expire quickly to prevent malactions. Combine the power of Convert’s trusted experimentation with your favorite AI agents.
+Explore Feature In Free Trial
+→
+Convert MCP
+Scoped access
+45
+Hosted tools
+16
+Local server tools
+Incoming request
+experiences.create
+1 project
+Account & project approval
+Guardrails on writes
+Signed with HMAC-SHA256. Requests expire after 60 seconds.
 Heatmaps
-Available in all plans
-purchased from March 2025 onward
-, and free to use without a separate billing system, our heatmaps do not eat into your quota of monthly tested users. It offers effective visualization of clicks, taps, and scrolls — overlaid across both control and variants. Filter for resolution across desktop, mobile, and tablets.
+Available in all plans, and free to use without a separate billing system, our heatmaps do not eat into your quota of monthly tested users. It offers effective visualization of clicks, taps, and scrolls — overlaid across both control and variants. Filter for resolution across desktop, mobile, and tablets.
 Explore Feature In Free Trial
 →
+Summary
+Report
+Heatmaps
+Change History
+Live Logs
+Action
+Clicks
+Resolution
+Desktop
+Variation
+Original Page
+Cold / Low Engagement
+Warm / High Engagement
+Flowstate
+Features
+Pricing
+Customers
+Resources
+Log in
+Start Free Trial
+Start free, upgrade when you’re ready. No surprise fees, ever.
+Monthly
+Annual
+Save 20%
+Starter
+$0
+/mo
+For solo builders getting started.
+Get started
+1 workspace
+Up to 5k events / mo
+Most Popular
+Pro
+$19
+/mo
+For growing product teams.
+Start free trial
+5 workspaces
+Up to 100k events / mo
+Team
+$49
+/mo
+For scaling organizations.
+Get started
+Unlimited workspaces
+Advanced roles & SSO
 Convert Signals
 ®
-Convert Signals
+Convert Signals is a system powered by Convert Intelligence
 ®
-is a system powered by Convert Intelligence that tracks micro-frustrations on websites and combines them into patterns pointing to the presence of potential bugs, UX/UI glitches, and other technical issues.
-Convert Signals
-®
-offers a privacy-friendly selection of the most impactful issues in the form of session recordings at Locations and in Reports (by variation), helping you find key (but anonymous) user interface and usability problems per device, page zone and by other dimensions.
+that tracks micro-frustrations on websites and combines them into patterns pointing to the presence of potential bugs, UX/UI glitches, and other technical issues.
+Convert Signals offers a privacy-friendly selection of the most impactful issues in the form of session recordings at Locations and in Reports (by variation), helping you find key (but anonymous) user interface and usability problems per device, page zone and by other dimensions.
 Explore Feature In Free Trial
 →
+Summary
+Report
+Heatmaps
+Signals
+Change History
+Live Logs
+Filtered
+Visited Pages: 20-30
+Last 7 Days
+Signals ID
+Duration
+Visited Pages
+Location
+Date & Time
+Actions
+2941ABX
+01:12
+06
+https://example.com/home
+Mar 11, 2025 08:40 AM
+Play
+2941ABX
+00:45
+15
+https://example.com/checkout
+Mar 11, 2025 08:40 AM
+Replay
+2941ABX
+00:45
+15
+https://example.com/checkout
+Mar 11, 2025 08:40 AM
+Replay
+2941ABX
+01:12
+06
+https://example.com/home
+Mar 11, 2025 08:40 AM
+Play
+7C20FDA
+02:03
+22
+https://example.com/pricing
+Mar 11, 2025 08:39 AM
+Play
+7C20FDA
+00:58
+09
+https://example.com/product/42
+Mar 11, 2025 08:37 AM
+Replay
+3B81CE7
+01:47
+18
+https://example.com/cart
+Mar 11, 2025 08:34 AM
+Play
+3B81CE7
+00:39
+07
+https://example.com/collections/new
+Mar 11, 2025 08:31 AM
+Replay
+A5D0119
+02:26
+27
+https://example.com/checkout
+Mar 11, 2025 08:28 AM
+Play
+A5D0119
+01:03
+11
+https://example.com/product/17
+Mar 11, 2025 08:24 AM
+Replay
+E4F7B22
+00:52
+09
+https://example.com/home
+Mar 11, 2025 08:21 AM
+Play
+E4F7B22
+01:58
+21
+https://example.com/pricing
+Mar 11, 2025 08:18 AM
+Play
 Multi-Arm Bandit (Auto-Allocate)
 Quick refresher: Multi-arm bandit isn’t a conventional A/B test. It is a reinforcement learning framework where more traffic is dynamically or automatically allocated to better performing variants, in real time, to maximize immediate gains.
 Ideal for promotions and offers, where learning what worked may not be worth the trade-offs of hitting statistical significance, and quick, fast wins are preferred.
 We’re giving you the option to choose from three MAB algorithms:
 Epsilon Greedy
-ⓘ
-EThompson Sampling
-ⓘ
+It’s a balanced approach where the algorithm chooses a random action a fraction of the time (epsilon), and the best course of action the rest of the time (1-epsilon). Easy to understand and adopt. May be slow in eliminating dud variants.
+Thompson Sampling
+Want to go the efficient route ‘cause there is little traffic to spare? Thomson Sampling could be your best bet … literally. The algorithm maintains a probability distribution of each arm’s performance, samples from the posteriors at a given decision point, and chooses the one that is most likely to outperform. Requires knowledge of Bayesian to be truly powerful.
 Upper Confidence Bound (UCB)
-ⓘ
+The algorithm maintains an upper bound on the maximum reward for each arm, and at any given point of time, chooses the arm with the highest upper confidence bound or limit. Don’t want to twiddle your thumbs? Needed results yesterday? Get both speed and sophistication with this option.
 Explore Feature In Free Trial
 →
+Multi-Arm Bandit (MAB)
+Adaptive Traffic Allocation Algorithms
+Epsilon Greedy
+Balanced & beginner-friendly
+Thompson Sampling
+Efficient with low traffic
+UCB
+Fast, reward-maximizing
+Ideal for flash promos, ecommerce offers, and short-term campaigns where speed > learning.
 Full Stack Experimentation
 Convert Experiences is the only A/B testing tool in the market that doesn't charge extra for full-stack capabilities. We believe experimentation is incomplete, if you can't apply its principles across all your growth channels and motions. We've made our offering Full Stack - with server side experimentation (serve code and variations from your server, instead of relying on your traffic's browser), A/B testing across both web & apps, feature flagging & rollouts to build and release better products, faster. More to come!
 Explore Feature In Free Trial
 →
+JS SDK
+PHP SDK
+Android SDK
+Python SDK
+Ruby SDK
+iOS SDK
+Edge Worker
+server-side bucketing
+One experiment
+One decision per visitor, every channel
 Data Sources
 Use data locked in your customer data platform (CDP) of choice to segment audiences and trigger tests.
 Explore Feature In Free Trial
 →
+Website Data
+Purchase Data
+3rd Party Data
+Offline / CRM Data
+Social Data
 Transparent Frequentist & Bayesian Stats Engines
 Choose the statistical model
 that fits your workflow. See clear lift metrics, confidence levels, and test validity—no black boxes, only honest data.
 Explore Feature In Free Trial
 →
+Stats & Settings
+Statistics
+Settings
+Type of stats
+?
+Frequentist
+Bayesian
+Confidence
+95 %
+Correction
+Šidák
+Sample Ratio Mismatch detection
+· Chi-square at 99% on every plan
 Advanced Goals
-Use 9 goal templates to help gauge the success of your variants. Set up advanced goals with 40+ filter conditions. Or import goals from Google Analytics. Set scroll goals and click goals.
+Use 7 goal templates to help gauge the success of your variants. Set up advanced goals with 40+ filter conditions. Or import goals from Google Analytics. Set scroll goals and click goals.
 Explore Feature In Free Trial
 →
+New Goal
+Templates
+Advanced
+Import from GA4
+Search...
+Visit a specific page
+Is triggered when a visitor goes to a certain page
+Revenue goal
+Is triggered when visitors generate revenue
+Click on a link
+It triggers when a visitor clicks on a link, whether site-wide or on pages you define
+Submit a form
+It triggers when a visitor submits a form, whether side-wide or on pages you define
+Click something on a page
+It triggers when a visitor clicks on something, whether site-wide or on pages you define
+Code (JavaScript) triggered goal
+Can only be triggered using Javascript
+Scroll percentage goal
+Checks after each scroll action to see if a visitor has acheived certain scroll depth and fires a goal based on the depth
 Dynamic & Web Triggers
 Precision in terms of when you should launch your experiments. Use our web & dynamic triggers to push changes live only when certain conditions (like element enters view port, element is clicked - among others) are met. Triggers - also referred to as manual activation in many tools - help eliminate noise and reach statistical significance faster.
 Explore Feature In Free Trial
 →
+Triggers
+Element enters viewport
+Fires when the node becomes visible
+On click
+Fires when a selector is clicked
+SPA route change (React/Vue)
+Fires on client-side navigation
+Upon-Run Trigger
+Fires as soon as the experience runs
+Programmatic Trigger
+Fires from your own code
+Javascript Callback Trigger
+Fires from a callback you define
 JS Tester for Dynamic Testing
 Build tests directly in our JS editor—which gives you full acess to your site’s JS, jQuery and CSS. Plus, create tests based on JS event pushing, so you can track and account for user behavior.
 Explore Feature In Free Trial
 →
+variation.js
+window
+._conv_q =
+window
+._conv_q || [];
+// Fire a goal from your own code
+window
+._conv_q.
+push
+({
+what:
+'triggerConversion'
+,
+params: { goalId:
+'100299463'
+}
+});
+// React when a variation is applied
+window
+._conv_q.
+push
+({
+what:
+'addListener'
+,
+params: {
+event:
+'experience.activated'
+,
+handler:
+function
+(data) {
+console
+.
+log
+(data.experienceId, data.variationId);
+}
+}
+});
 Advanced Targeting
 Sources, channels, and geo-locations that underperform, don't need to stay that way. Segment off users by historical behavior, third party input using Data Sources, cookies, or JS events. And, give underperformers the boost they need.
 Explore Feature In Free Trial
@@ -183,146 +641,496 @@ Personalization
 In the end, it’s individuals who convert. So focus on the individual. Convert’s personalization features allow you to be more persuasive—matching specific pages to specific people with rich geo-targeting.
 Explore Feature In Free Trial
 →
+Experiences
+Locations
+Audiences
+Goals
+Live Logs
+Change History
+Configuration
+General Settings
+Stats Settings
+Import & Export
+Global Javascript
+Environments & Tracking Code
+Active Websites
+Blocked IPs
+Opt-Out Link
+Integrations
+Personalization
+More Settings
+Personalization Data
+Manage the import and view of personalization data used in Deploy experiences.
+Import CSV File
+View Data
+Placeholders
+Search...
+Placeholder Name
+Default Value
+group_id
+ambassador_name
+america_offer
+amount_saved
+phone
+email
+job_title
+last_name
+company
+first_name
 Unified QA Overlay
 We are proud of our QA widget. And testers love the convenience. It is a reliable way to switch previews, to check the health of the Convert tracking script installation, and to dive into real-time event streams of your controls and variants (via the Live Logs) - for efficient troubleshooting.
 Explore Feature In Free Trial
 →
+Convert QA
+Current View
+QA Experience
+Live Log
+Active
+Scheduled
+Draft
+Homepage Hero Test
+Variation 1
+Active
+Pricing Layout
+Original
+Active
+Checkout Copy Test
+Variation 2
+Scheduled
+Product Badges
+Variation 1
+Scheduled
+Status Overview
+Tracking code
+Detected
+Goals triggered
+2
+Integrations
+Not detected
 Rich Reporting
 From CTR, AOV, RPV, to ROI—compare any of your KPIs with high confidence, and low costs. We stop tests at the right time: once they reach the capped visitors, statistical significance, or your fixed time window. So you save money, and can test something new.
-What Test Methodology does Convert use?
 Explore Feature In Free Trial
 →
-The video can't be displayed right now. Please reload or contact support if the issue continues.
-Reload Video
+Automatic GA Revenue Tracking
+Primary Goal
+Awesome Header Text seems to be performing better than the Original Page, but we can't be sure yet.
+Conversion Rate (CR)
+Revenue Per Visitor (RPV)
+Avg Products Per Visitor (APPV)
+Variations
+Improvement
+Visitors
+Conversions
+Conversion Rate
+Confidence Level
+Status
+Confidence Interval
+Original Page
+Baseline
+-
+275
+43
+15.64%
+-
+Running
+Awesome Header Text
+▲
++4.65%
+275
+45
+16.36%
+± 5.20%
+0.00%
+?
+Running
+Conversion Rate Over Time ▾
 Post Segmentation
-Slice and dice your test data with ease after concluding your experiments. Identify segments like
-new/returning users, browsers used, devices used, campaigns clicked, and resident countries
-from the audiences exposed to your variants. Take advantage of custom segments as well, so that no learning is lost.
+Slice and dice your test data with ease after concluding your experiments. Identify segments like new/returning users, browsers used, devices used, campaigns clicked, and resident countries from the audiences exposed to your variants. Take advantage of custom segments as well, so that no learning is lost.
 Explore Feature In Free Trial
 →
+Segment
+Add filter
+Device: Mobile
+Browser: Chrome
+Variation Name
+Visitors
+Conv. Rate
+Original
+4,182
+11.4%
+Variation 1
+4,096
+13.9%
+Basic
+Browser
+Device
+New vs. old visitors
+Advanced
+Traffic source
+Continent
+Custom segments · 10
 Outlier Detection
-Tackle anomalies head-on with both
-Winsorizing
-(adjusting outliers based on percentiles) and
-Capping
-(setting fixed limits). Whether you’re analyzing unpredictable traffic or refining high-stakes tests, this ensures reliable data.
+Tackle anomalies head-on with both Winsorizing (adjusting outliers based on percentiles) and Capping (setting fixed limits). Whether you’re analyzing unpredictable traffic or refining high-stakes tests, this ensures reliable data.
 And now? It works seamlessly across Shopify, APIs, and Webhooks—making outlier detection available everywhere.
 Explore Feature In Free Trial
 →
+Order Outliers
+Stats & Settings
+Minimum / Maximum
+Percentile
+Order Value
+Min
+$1
+Max
+$10,000
+Number of Products Ordered
+Min
+1
+Max
+25
+A
+$25,000
+order is capped at
+$10,000
+— not removed
+Raw exports keep the original value alongside the capped value
 Sequential Testing
 Convert's Sequential Testing is designed to speed up A/B tests without sacrificing rigor. Powered by Asymptotic Confidence Sequences, it keeps the process of validation dynamic & responsive. You can evaluate A/B tests at any point during the run, making prompt and informed decisions. We help you manage error rates, despite check-ins.
 Explore Feature In Free Trial
 →
+Sequential Testing
+Statistical method
+Confidence sequence
+Estimate
+Asymptotic Confidence Sequences — evaluate at any point during the run.
 SRM Check
 Even big tech firms see Sample Ratio Mismatch creep into 6%-10% of their experiments. SRM (or the instance where the control & the variant in your experiment do not receive equal split of traffic) is such an important validity threat that most experts consider peeking for the purpose of detecting SRM an acceptable risk.
 In Convert reports, you can now choose to be notified of SRM when it occurs.
 Explore Feature In Free Trial
 →
+Purchase completed
+Primary Goal
+SRM
+Variation Name
+Visitors
+Split
+Original
+21,588
+58.2%
+Variation 1
+15,482
+41.8%
+Observed split
+Expected 50 / 50
+Chi-squared goodness-of-fit
+p < 0.0001
+threshold p < 0.01
+Potential Sample Ratio Mismatch detected on your test and you need to contact
+[email protected]
+or check the experience setup.
 Live Duration Insights
 ®
-Guessing when your test will reach completion is a thing of the past. With our new Live Duration Insights
-®
-, you have real-time visibility into the progress of your primary metric of interest’s journey toward statistical significance.
+Guessing when your test will reach completion is a thing of the past. With our new Live Duration Insights, you have real-time visibility into the progress of your primary metric of interest’s journey toward statistical significance.
 Explore Feature In Free Trial
 →
+Live Duration Insights
+Time Till Done
+Primary Goal
+All Goals
+Progress to significance
+68%
+Start Date
+12 Jun 2026
+Days Running
+18
+Remaining Visitors Needed
+6,420
+Projected Completion Date
+9 Jul 2026
+Projected from frequentist and Bayesian models
 Remove Data From Report within Range
 When you've run an experiment but due to external factors, one or multiple days of data have been rendered unusable, this feature lets you manually remove a specific dataset from the experiment, keeping the rest intact.
 Explore Feature In Free Trial
 →
-Observations & Knowledge Base
-Observations and the Knowledge Base work in tandem for test lifecycle management.
-Use
-Observations
-to capture what inspires you to run tests. You can append meta data to your Observations, covering site area where potential tests will be run, metrics impacted, and even screenshots.
-Once an Observation has informed a hypothesis and has been run as a test, it can be sent to the Knowledge Base in one click where it is stored to be filtered by the experiment result, learning, who proposed the idea and more.
-Explore Feature In Free Trial
-→
+Report
+Report Range: 14–25 Jun
+Days Running
+21
+Tested Users
+28,940
+Conversions
+3,412
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+Removed from report
+18–19 Jun
+Excluded days drop out of every metric in the report; the rest of the range is untouched.
 Collision Prevention
 Wisdom says don’t run simultaneous tests on the same page, or set of pages. Actual business decisions are taken based on risk/reward analysis. Often targeting the same page with two experiments might make sense in terms of expediting learning and avoiding opportunity costs. For the discerning tester, we have the collision prevention feature that prevents users bucketed in one experience from being exposed to a second (potentially) conflicting experience.
 Explore Feature In Free Trial
 →
-Change History
-Transparency, security and compliance come to the forefront with the Convert Experiences Change History. This centralized stream of activity spans all projects in your account, controls and monitors access of information in the company and serves as an audit trail during incident reviews.
+New Audience
+Visitor Data
+Condition
+Bucketed in Experience
+is
+No
+100346143 · Pricing CTA test
+The visitor will be tested only if they have not been tested before.
+Traffic Distribution
+100346143
+Pricing CTA test
+Lowest ID
+50%
+100346187
+Plan layout test
+50%
+Experiments execute sequentially on a page, taking into account their experiment ID.
+Request Approval System
+A native approval workflow that lets teams require sign-offs before an experience can go live or otherwise be edited. Accounts with multiple stakeholders & agencies find this particularly helpful. Our Approval system is optional. It doesn’t support self-approval. And maintains a full audit-trail of every request, approval & rejection.
 Explore Feature In Free Trial
 →
+Approvals
+Sign-off required
+Set live · Pricing CTA test
+Requested by M. Okafor
+Approve
+Reject
+Self-approval not permitted
+Audit trail
+Requested
+Pricing CTA test
+2m ago
+Approved
+Plan layout test
+1h ago
+Rejected
+Checkout badge test
+3h ago
 API Integration
 The secure, token-based Convert API lets you create new tests and experiences, retrieve and modify settings, and generate reports and overviews, without ever logging into the app.
 Convenient for CRO agencies, organizations with a high testing velocity, and developers interested in bringing the abilities of Convert Experiences to their own ecosystem.
 Explore Feature In Free Trial
 →
+REST API
+Credentials
+Your keys
+ApplicationID
+ApplicationSecretKey
+••••••••••••••••
+Resources
+Projects
+Experiences
+Goals
+Audiences
+Reports
+Create, retrieve and modify without logging into the app.
 Bring Your Own ID (BYOID)
 With BYOID you have the ability to randomize visitors/site traffic based on IDs from your own tech stack (and data platforms). You no longer use Convert’s IDs for bucketing users into experiences. This means you have more control over cookie persistence (it is tied to the persistence mandates that govern where/how the IDs are generated at your end). And you can also tie your own insights to test results more easily.
-**Only available in Enterprise plans.
+Only available in Enterprise plans.
 Explore Feature In Free Trial
 →
+Bring Your Own ID
+Enterprise
+1
+Define your visitorId
+window
+._conv_q =
+window
+._conv_q || [];
+window
+._conv_q.
+push
+({
+what:
+'identify'
+,
+params: {
+visitorId:
+'YOUR_INTERNAL_USER_ID'
+}
+});
+2
+Then load the tracking tag
+Convert tracking script
+cdn-4.convertexperiments.com
+The BYOID must be defined
+before
+the main Convert tracking tag loads on your page.
 Environments
 Dedicated spaces optimizers can use to deploy tests in different settings.
 Each environment comes with its own tracking script. Launch tests on Staging for function-heavy QA. Or reserve an Environment each for rollouts and validation-first experiences like A/B tests & multivariate tests.
 Explore Feature In Free Trial
 →
+Environments & Tracking Code
+Environments
+4 of 6
+Production
+Tracking script
+Staging
+Tracking script
+QA
+Tracking script
+Development
+Tracking script
+Add Environment
+Each environment serves its own tracking script. Only one can be Production, and it cannot be deleted.
 Import/Export Templates
 Download complete projects, with all their settings. Or choose to export only certain elements like complex goals & advanced audience targeting segments. These items are exported as JSON files which can then be integrated into new Convert accounts. This is a tool to standardize experimentation workflows and for agencies, to bring their unique process to blank accounts in mere seconds.
 Explore Feature In Free Trial
 →
+Export Template
+Include
+Experiments
+Variations
+Goals
+Audiences
+Project settings
+JSON
+CSV
+PDF
+Export
+Create once, apply everywhere — import into a new Convert account.
 Version Control System for Convert’s Tracking Script
 Convert Experiences is ever-improving!
 But that doesn’t mean you have no control over how the tracking script in your account is updated. With our Version Control System interface, you can choose to allow automatic update rollouts, schedule them, or manually activate fixes and other improvements. The degree of flexibility depends on your Convert plan.
 Choose low activity periods or off times for your business to apply the patches.
 Explore Feature In Free Trial
 →
+Tracking Script Version
+Account Settings
+A new version (v2.12) is now available! See what’s new & Upgrade.
+Release type
+Manual
+Automatic
+Scheduled
+Versions
+v2.12
+Available
+Upgrade
+v2.11
+Current
+v2.10
+Rollback
+Only admins and account owners can manage versions.
 Single Sign-On
 Complete control over who accesses your Convert Experiences account. Only allow members of your organization to log in with Single Sign-On that integrates with your existing authentication layers. Ditch messy passwords. Using your A/B testing tool got easier, yet more secure.
 Explore Feature In Free Trial
 →
+Single Sign On
+Account Settings
+Convert has received the SSO request.
+Single Sign On
+Let members of your organization sign in through your own authentication layer instead of a Convert password.
+Enable Single Sign On
+Request sent from Account Settings
+Convert’s Support team will contact you to process the request.
+This feature is available on selected plans only.
 Privacy Notifications
 As a Convert Experiences user, making your site and your business better should be your only concern. That’s why we have a privacy roadmap and provisions, like no other.
 Want to step outside the box with your testing? Want to open up our tool and see what it can do? We’ve built timely, easy to read and useful notifications right into the app. Get signaled about the privacy impact of turning on key features. Make good decisions. Keep your testing effective and compliant.
 Explore Feature In Free Trial
 →
+Privacy notifications
+Audience
+Audience uses location data
+A consent mechanism is suggested before this audience goes live.
+Historical segmentation is on
+Consent from the individual is needed.
+Cross domain cookie reconnect
+Turned off by default for all projects.
+Experience spans multiple domains
+Consents of the individual don’t automatically travel between properties.
+Debugging tools
+Visitors in the European Union must consent before they load.
+Universal User ID in use
+Consent from the individual is needed.
 Two-Factor Authentication
 Something you know + something you have = unparalleled data security. That’s the premise for the Convert Experiences two-factor authentication as default on every plan. With this feature you add much needed layers of protection to your testing system. For further ease of use we also offer Single Sign-On (SSO) for specific plan levels to integrate with your existing authentication layers.
 Explore Feature In Free Trial
 →
+Two-factor Authentication (2FA)
+My Profile
+Scan the QR code
+Open the authenticator app on your mobile device and scan the code generated by Convert.
+Google Authenticator
+Verification code
+482
+Enable
+Google Authenticator generates a new code every 30 seconds.
 Data Segregation
 An enterprise plan feature, segregation completely isolates the data generated by your Convert Experiences account.
 While all data is safe and separate in the Convert ecosystem, Segregation takes this buffer up a notch with the ability to allow multi-account management.
 For example, large orgs with several offices in different locations can unlink data sets from each other, even if their projects sit in the same Convert account.
 Explore Feature In Free Trial
 →
-A/B Testing for E-Commerce brands
-Want more cart additions, transactions, revenue? Convert Experiences has features E-commerce companies should not test without.
-Explore Them
-Or Dive Into Shopify A/B Testing
-Powerful API Access Awaits
-You can do pretty much anything that you accomplish in our app,
-through our secure, versatile API
-Learn More
-A Developer's Delight
-I loved the flexibility they provide while creating complex experiences like the experiences life cycle events. The new editor is feature-rich, easy to use, and boosts productivity. And the support is awesome!
-Tuseeq B
-We Care About Your Experience With Us
-Limitless Testing
-Don't you hate having to upgrade for every little thing? We don't want to break your "testing flow". Your account lets you set up unlimited projects, work with unlimited sub-domains, and create unlimited variations.
-Thorough Onboarding
-We set you up for success. This onboarding includes a kick off call, hypotheses generation assistance, project creation, goal set up, quality assurance with A/A testing -- all with competent Convert consultants.
-Zero Flickering
-Blinking causes bias. Bias causes invalid results. We use Smartlnsert
-™
-to ensure flicker-free testing-with variation switching taking only 200-300ms on first load, and 10-50ms on repeat loads.
-The Stability Of Akamai
+Data Segregation
+Enterprise plan
+London
+Isolated
+convert.com
+10045821
+shop.eu
+10045822
+No data shared
+Singapore
+Isolated
+convert.sg
+10047310
+apac.store
+10047311
+Projects can sit in the same Convert account with their data sets unlinked.
+Start 15-Day Free Trial
+No credit card required
+Most exhaustive breakdown of pricing, features & privacy for top A/B testing tools.
+In an easy to navigate, interactive template. Filter by tool and area of interest. Covers Convert Experiences alongside Optimizely, VWO, AB Tasty, Kameleoon, Dynamic Yield, Intelligems, Amplitude, Shoplift, Visually and Zoho PageSense. More added every quarter.
+Get guide
+We care about your experience with us
+The stability of Akamai
 Convert runs on Akamai - the global leader in content delivery network services (CDN), with the largest infrastructure in the business. This means you can rely on us for a consistent experience and faster load times than other providers.
-Carbon Neutral Hosting
-We are a Carbon Positive company. To further that initiative we've moved to a carbon neutral hosting environment, and to Akamai CDNs.
-4X Faster, Expert Support
-We respond 4x faster to support queries than the industry average. And our CSAT score makes us smile. What this means for you is our customers love communicating with our support agents and can't say enough good things about the service they receive.
-Get Started For Free Today
-No Credit Card Needed
-Most Exhaustive Breakdown of Pricing, Features & Privacy for Top A/B Testing Tools.
-In an easy to navigate, interactive template. Filter by tool and area of interest. Covers Convert, AB Tasty, Optimizely, Kameleoon, VWO. More added every quarter.
-Get Guide
-FAQ
+Thorough onboarding
+We set you up for success. This onboarding includes a kick off call, hypotheses generation assistance, project creation, goal set up, quality assurance with A/A testing - with competent Convert consultants.
+Transparency & reliability
+Transparent, publicly-available prices. The promise to
+never
+force plan upgrades. We reveal our full tracking script size upfront.
+While many vendors only share the initial stub size, gradually injecting load as tests are run
+. We also offer three ways to prevent flickering and clearly note the trade-offs for each.
+Blazing fast human support
+Average
+first response time of 2 minutes 44 seconds
+. And our CSAT score makes us smile. What this means for you is our customers love communicating with our support agents and can’t say enough good things about the service they receive.
+Carbon-neutral hosting
+We are a Carbon Positive company. To further that initiative we’ve moved to a carbon neutral hosting environment, and to Akamai CDNs.
+Conscious business in practice
+We donate 10% of our topline revenue every single month to initiatives like TIST, 1% for the Planet, and Stripe Climate. We are also one of the only A/B testing tools with a Climate Label certification.
+Start 15-Day Free Trial
+No credit card required
 Frequently Asked Questions About Our Features
+What AI features does Convert Experiences support?
++
+−
+Convert understands that AI has dramatically shifted the way experimenters, marketers, growth professionals, and product leaders make decisions and run tests. However, our own agency AI usage research shows that AI compresses certain parts of the flywheel. But it doesn’t improve or impact the speed to results for others. Many AI inclusions require strict guardrails to implement. And unwanted access to sensitive data is always a challenge. The AI features at Convert are designed to give you scale and momentum, without giving up on privacy, data integrity, and the human judgment.
+Our
+MCP server
+is highly-regarded as very well-built. It not only queries your account data and our dev repositories, it also builds, edits, deploys tests and experiences with granular control & complete safety.
+The power of the MCP server finds home in-app as
+Convert Intelligence®
+. Yes, you can use it to conduct prompt-based, natural language experimentation. Most importantly, it is a guide that sits on top of 17 years of testing know-how from our brand. It helps you learn the platform better and improve the way you run tests.
+Approval flows. Not an AI-assisted feature. But one every AI-savvy and multi-stakeholder team needs. It adds a human-in-the-loop as a reviewer for high-stakes actions like putting experiments live.
 What are tested users?
++
+−
 Tested users are the number of site visitors participating in A/B tests you have running on the Convert Experiences platform.
 Let’s break down how we count users.
 The people who come to your site are termed as your
@@ -341,31 +1149,45 @@ Less than 200,000 if the two sample sizes (of 100,000 each) have overlaps. If bo
 Tested users count is thus the same as (or less than) your website’s total unique site visitors, depending on how you choose to bucket your visitors into tests.
 This method of counting unique users replaces the older (pre April 2020) counting of unique tested visitors which took overlaps into consideration and gave a net tested visitors count based on all the visitors to each test.
 Does Convert Experiences apply sampling?
++
+−
 No. Convert Experiences reports are based on unsampled data. This means our stats engines consider all the data collected by your set-up to call winners, thereby bypassing the issue introduced by most digital analytics platforms.
 Does Convert Experiences allow server side testing?
++
+−
 Convert Experiences started out as a client-side
 A/B testing tool
 . But over the years we have received multiple requests from users who would like to include server-side testing to their optimization mix.
 As a result we do support server-side A/B testing through the manual creation of a Convert custom cookie which can determine Experiment ID/Variation ID, and programmatically assign it to website visitors.
 How well does Convert Experiences work with Single Page Applications (SPA)?
++
+−
 In the standard format Convert Experiences takes note of the URLs website visitors navigate to trigger experiments (and goals). But with Single Page Applications (SPAs), this is not the case. Thus SPAs have to be handled differently.
 Our tool is capable of doing that.
 We use custom code to start polling for both when an experiment should be triggered on a page, and when a goal should be fired.
 We have detailed documentation in our support repository to walk users through this process for various SPAs like React/Redux and Angular.
 How can you track revenue/transactions for eCommerce stores using Convert Experiences?
++
+−
 Convert Experiences has robust revenue tracking and it is privacy friendly as well. If you have the latest version of Google Analytics ecommerce tracking running on your store and the Convert tracking code is duly added after the tag, then we automatically connect revenue tracking to your experiments.
 You can also set up a revenue goal manually, count multiple transactions per customer, and track revenue attributed to actions that are not accompanied by URL changes.
 Will my page load speed be impacted by the installation of Convert Experiences tracking code?
++
+−
 Convert Experiences is one of the fastest loading A/B testing tools in the optimization space.
 Through the use of our patent-pending SmartInsert™ Technology, we can offer you the advantage of fast loading time, and no flashing.
 Learn more
 here
 .
 Do I need to ask consent from site visitors before testing with Convert Experiences?
++
+−
 No
 As long as you use Convert Experiences in its default setting, you do not need to ask consent from your website visitors and browsers. This is because we don’t store any personal data in the default, and use only first party cookies.
 If however you need to target audiences by city, or enable cross domain linking, you will see in-app GDPR warnings that are designed to let you test to your fullest potential while staying on the safe side of privacy.
 What are must-have features for an A/B testing tool?
++
+−
 An A/B testing tool is obviously a key part of any conversion rate optimization drive.
 In recent times though there has been a definite shift in the way leaders, businesses and experts perceive optimization & experimentation.
 The discipline of CRO is no longer restricted to only conversion rates. The sentiment is swaying towards:
@@ -380,6 +1202,14 @@ These vendors too should have a culture of putting people (users) first over con
 Want to learn more about the culture at Convert?
 Come meet our team.
 Ask Even More Questions
+Get started
+Enterprise-grade experimentation, at self-service pricing
+Six ways to experiment, a complete insights module, and compliance built in - starting at $399/mo. No sales call to begin.
+Start 15-Day Free Trial
+Request a Demo
+No credit card
+15-day trial
+Full access to features
 901 N Market St Suite #100 Wilmington
 DE 19801 United States USA
 Phone (U.S.):
@@ -392,6 +1222,7 @@ Free Trial
 Request a Demo
 Features
 Pricing
+Customer Insights
 A/B Testing
 Convert MCP Server
 Multivariate Testing
@@ -443,8 +1274,8 @@ Contact Us
 94035
 TREES PLANTED
 © 2026, Convert Insights Inc. All rights reserved
-Terms of use
-Privacy Notice
+Terms of Service
+Privacy Policy
 Opt Out
 Skip this form
 Start your
@@ -459,9 +1290,9 @@ Business Email
 (Input a valid email address)
 I want to receive the Convert Newsletter
 By submitting this form, you agree to have read and acknowledged our:
-terms of use
+terms of service
 ,
-privacy notice
+privacy policy
 and
 non-aligned customers' policy
 *

@@ -9,7 +9,6 @@ API Documentation
 Log In
 API Documentation
 Introduction
-JUMP TO
 API Overview
 Introduction
 Authentication
@@ -245,8 +244,8 @@ Update user's groups
 patch
 Delete a pending user
 del
-Introduction
 Copy Page
+Introduction
 This section details Split API. Split API uses resource-oriented URLs, uses status codes to indicate the success or failure of requests and returns JSON from all requests.
 You can use Split API to push data into Split, get data out of Split, build custom integrations, or build on top of the Split platform.
 🚧
@@ -260,8 +259,8 @@ In addition to these API endpoints, we have an extensive
 library of API examples
 at your disposal in the Harness Developer Hub.
 Updated
-10 months ago
+11 months ago
 Authentication
 Updated
-10 months ago
+11 months ago
 Authentication

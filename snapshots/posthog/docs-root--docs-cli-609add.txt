@@ -35,9 +35,9 @@ Careers
 Trash
 Overview
 Beta
-Get started
+Setup
 Set up self-driving
-Products
+Apps
 Slack
 Web app
 MCP
@@ -54,12 +54,14 @@ Inbox
 Resources
 Pocket guides
 New
+From our inbox
 Pricing
 FAQ
 Copy page
 PostHog CLI
 Contents
 Installation
+Updating
 Authentication
 Command reference
 Global options
@@ -94,16 +96,42 @@ Install the PostHog CLI with our wizard:
 Install the PostHog CLI
 npx @posthog/wizard cli add
 Installs the CLI and adds instructions to your coding agent
-If you'd rather not use our wizard, you can install the CLI by running:
-Terminal
+If you'd rather not use our wizard, you can install the CLI with npm, the install script, Homebrew, or Cargo.
+Install
+posthog-cli
+:
+Npm
+Curl
+Homebrew
+Cargo
 PostHog AI
 npm
 install
--g @posthog/cli@latest
+-g @posthog/cli
+curl
+-LsSf https://download.posthog.com/cli
+|
+sh
+brew
+install
+posthog/tap/posthog-cli
+cargo
+install
+posthog-cli
 Using Claude Code, Codex, or another coding agent?
 : You should follow our
 CLI setup for agents
 instructions.
+Updating
+To update the CLI, run:
+Terminal
+PostHog AI
+posthog-cli update
+If you installed with the install script, this updates the CLI in place. If you installed with npm, Homebrew, or Cargo, it prints the command your package manager uses to update instead. For example, Homebrew users run
+brew upgrade posthog-cli
+.
+posthog-cli update
+is available from version 0.18.7. On an older version, reinstall the CLI with the same method you used to install it.
 Authentication
 Terminal
 PostHog AI
@@ -263,7 +291,13 @@ if needed.
 The
 api
 command is unavailable
-Install the latest version of the CLI, then rerun the command:
+Your CLI version is too old to include
+api
+or
+posthog-cli update
+. Reinstall the latest version with the method you used to
+install it
+, then rerun the command. For example, with npm:
 Terminal
 PostHog AI
 npm
@@ -271,12 +305,12 @@ install
 -g @posthog/cli@latest
 posthog-cli api --agent-help
 The tool list looks outdated
-The tool catalog is bundled with the CLI, so an old binary serves an old catalog. Update the CLI and rerun the command:
+The tool catalog is bundled with the CLI, so an old binary serves an old catalog.
+Update the CLI
+and rerun the command:
 Terminal
 PostHog AI
-npm
-install
--g @posthog/cli@latest
+posthog-cli update
 If a tool you used before is gone, names change as the PostHog API evolves — use
 search
 to find the current name:
@@ -290,6 +324,7 @@ Helpful
 Could be better
 Jump to:
 Installation
+Updating
 Authentication
 Command reference
 Global options

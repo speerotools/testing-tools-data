@@ -4,9 +4,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -79,9 +80,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -486,8 +488,8 @@ Got it! Here’s another great Montreal option you might like.
 Over your $300 budget
 Message Mira…
 Over budget
-Where traditional analytics falls short
-Analytics tools were built for clicks and page views, not for reasoning and tool calls. Agents can hallucinate, ignore instructions, and confidently go off-track. All users who spend time with your agent look equally engaged. Who thought it sucked? Who actually found it useful and came back? At Amplitude, we faced the same problems when we launched our own specialized agents. That’s why we created Agent Analytics.
+Building AI features creates new blind spots
+Two users can ask an agent the same question and get completely different outputs. AI can hallucinate, ignore instructions and confidently give incorrect answers. Additionally, both those users who spent time with your agent look equally engaged on a traditional analytics dashboard. Who actually found it to be useful?
 Go beyond observability
 Learn the product and revenue impact of your agents.
 AI Quality
@@ -496,16 +498,16 @@ Product Outcomes
 What the user did next
 01
 Observe
-Inspect traces, prompts, tool calls, responses, latency, and cost. Limitless segmentation by behavorial cohorts or semantics.
+Inspect traces, prompts, tool calls, responses, latency, and cost. Limitless segmentation by semantics and behaviors.
 02
 Evaluate
-Score quality, intent, resolution, and failure modes. See where the agent helps, where it gets confused, and where it adds risk.
+Score quality and failure modes. See where the agent helps and where it adds risk.
 03
 Decide
 Tie those quality signals to conversion, retention, and revenue. Did the agent actually move the user forward?
 04
 Deploy
-Tune prompts, run experiments, trigger guides, and personalize the next step from what you learned.
+Run experiments, deploy personalized guides and optimize agent harness.
 Trace
 Raw spans
 Turn 1
@@ -564,18 +566,16 @@ Session
 ]
 cost $0.24 · 33.5s
 Trace turns automatically become Amplitude events
-Each user message, tool call, and agent response is an Amplitude event with the same
-user_id
-as the rest of your product data. Unlike observability tools that stop at the trace, Agent Analytics decomposes these conversations into events, making them directly queryable in the same funnels, cohorts, and retention analyses you already use.
+All agent interactions including a user message and AI response are agent behaviors that you can query on a chart alongside your typical behaviors (session start, page viewed, button clicked). Unlike observability tools that stop at the trace, Agent Analytics decomposes these conversations into events, making them directly queryable in the same funnels, cohorts, and retention analyses you already use.
 The questions you can finally answer
 With traces, evals, and product events in one place, the analyses that used to be out of reach become routine.
 Conversion & Revenue
 Retention & Engagement
 Quality & Cost
 01
-Did moving to the new model drive higher sign-up conversions this week, or hurt it?
+Which model drove higher sign-ups or workflow completions?
 02
-What is the conversion delta when the agent answers correctly versus hallucinates?
+Does conversion drop when AI agent hallucinates vs. answers correctly?
 03
 What paths do users take before and after engaging our AI agent?
 The Agent Analytics maturity model
@@ -612,7 +612,7 @@ Tracing & Telemetry
 Can I see what happened?
 Inside Agent Analytics
 Traces
-Production runs surprise teams with questions they never prepared the model for. Read the user prompt, the agent’s response, the tools it called, and the context it pulled, then jump straight to Session Replay to see what went wrong.
+Production runs surprise teams with questions they never prepared the model for. Read the user prompt, the agent’s response, the tools it called, and the context it pulled, including seeing Session Replays, to see what went wrong.
 tool calls
 prompt versions
 context retrieval
@@ -1211,20 +1211,29 @@ Does breaking my lease affect my rewards balance?
 1d ago
 Pending
 —
-We perfected it for ourselves
-We shipped agents at Amplitude, hit the same issues you have, and built Agent Analytics as a result. Hear the data and stories from the team behind it.
-Product
-Why We Created Agent Analytics, and Why Every Agent Team Needs It
-We built an analytics company. Then we built an agent and couldn’t see anything. Here’s how we fixed it.
+Customer Stories
+Hear directly from customer teams using Agent Analytics.
 Insights
 Achieving Sonnet-level performance with Kimi
 The flexibility of open-weight models helped us cut costs by 2/3 and maintain Sonnet-level performance.
+Customers
+The Economist | Putting a number on AI Quality
+How The Economist Group used Amplitude Agent Analytics to move their agent Lens from sampled reviews to measurable AI quality, reaching 96.9% task success and cutting weekly task failures by 84%.
+Customers
+HYBRD | Turning agent evals into a retention signal
+HYBRD (Y Combinator F24) used Amplitude Agent Analytics to catch real bugs, then found a 4x retention signal they weren’t looking for.
+Customers
+Cashbook | The hidden cost of a bad AI answer
+CashBook (Y Combinator W21) discovered that a bad first AI answer quietly cost it retention across the app. Here’s how they fixed it using Amplitude Agent Analytics.
 Insights
 The Eval Signal That Predicts 3x Agent Retention
 We used Agent Analytics to understand whether eval signals actually predict whether users come back. The result surprised us.
+Product
+Why We Created Agent Analytics, and Why Every Agent Team Needs It
+We built an analytics company. Then we built an agent and couldn’t see anything. Here’s how we fixed it.
 View more
 Instrument any LLM provider
-Native wrappers for the providers you actually use. An OpenTelemetry bridge for the rest. Manual capture when you want full control.
+Native wrappers for the providers you already use.
 your terminal
 $
 $
@@ -1249,31 +1258,82 @@ Send full conversations, your own labels, or metadata only. Switch modes per age
 Always compliant
 SOC 2 Type 2, HIPAA, GDPR, and ISO 27001, inherited from the Amplitude platform you already run.
 Always yours
-Your conversations never train our models.
+Take advantage of enterprise-grade controls including Personally Identifiable Information (PII) redaction and role-based access controls. Your conversations never train our models.
 Agent Analytics is available to all customers
 Stop shipping on vibes
-Find the failure modes that actually cost you users.
-Measure conversion and retention by agent quality.
-Connect any trace to session replay and experiments.
+Observe traces and score agent quality.
+Learn the conversion patterns and failure modes that cost you.
+Get Started
 Frequently asked questions
 What is Agent Analytics?
 The analytics layer between LLM observability and product analytics. Every user message, tool call, agent response, and session end becomes an Amplitude event tagged with topic, quality score, and behavioral pattern, so you can build cohorts, funnels, and retention curves on AI session quality.
-How is Agent Analytics different from a tracing tool?
-Tracing tools answer “What did the agent do?” Agent Analytics answers “Did it work for the user?” You can keep your tracing tool: AmplitudeGenAIExporter adds Amplitude as a second OpenTelemetry destination in one span processor registration.
-Do I have to send raw prompt and response content?
-No. The SDK has three privacy modes: metadata_only (tokens, latency, cost and behavioral signals only), customer_enriched (your own labels, no raw text) and full (managed enrichment). Most teams start in metadata-only and upgrade as trust builds.
+How is Agent Analytics different from other observability or tracing tools?
+Most observability tools today let you answer questions such as
+"How performant is my product (latency in seconds)?"
+"Do we see infrastructure failures or technical errors?"
+They're not designed to help answer questions such as
+"How did users navigate my digital experience before, during and after using my Agent?"
+"What is the conversion rate for OpenAI vs Anthropic vs Google AI models in production?"
+"What failure modes impact retention?"
+Even the observability tools that do show traces, don't make it easy to filter them for behavioral cohorts (eg. "Show me traces of power users or people that dropped off at step 3 of a funnel").
+Amplitude Agent Analytics helps answer both is designed specifically for AI builders, product managers and ML Ops Engineers to score online production sessions on AI quality by defining evalulations (evals) and also crucially connect AI quality to product outcomes including conversion, retention and revenue.
+Is Agent Analytics available to all Amplitude customers? How much does it cost?
+Yes. We know how important it is to measure AI products so every Amplitude plan, including our starter (free), gets a default allocation to use Agent Analytics.
+Your monthly agent session allowance scales by tier: 5,000 on Free and Plus, 10,000 on Growth, and 20,000 on Enterprise. Take advantage of the full evaluation stack that ships at every tier, including out-of-the-box signals, trace analysis, semantic filtering, topic clustering. Define custom LLM evaluators (evals), calibration runs, and Bring Your Own Key (BYOK) for LLM calibration runs and custom evals. Growth and Enterprise extend agent session chat retention from 14 to 30 days, along with role-based access controls at Enterprise plan tier.
+Amplitude doesn't charge for custom evaluations (evals). Bring Your Own Key (BYOK) for the model providers you already use to power your choice of LLM-as-a-Judge or Code-based custom evals.
+Get started
+today.
+How does Agent Analytics handle Personally Identifiable Information (PII)?
+Role-based access and privacy redaction are on by default.
+If a user drops a phone number or another sensitive data that can be classified as PII into a support chat, Agent Analytics handles this at the SDK level, through a privacy mode you set. There are three modes:
+full
+is the default, and it sends prompt and response text with Personally Identifiable Information (PII) redaction on by default. This is completely configurable and extensible by customers. You can redact as needed beyond the out of the box PII scrubbing rules that the SDK ships with.
+metadata_only
+sends tokens, latency, model, and cost, and no text at all, which is the setting for regulated or sensitive workloads.
+customer_enriched
+sends pre-scored summaries from your own evaluation stack and nothing else.
+Some examples of fields we redact by default are Email, Phone, Credit Card, SSN, IP Address. When these values are sent into Amplitude Agent Analytics, the resulting traces will show those as [email], [phone], [credit_card], [ssn], [ip_address] so the actual values are obfuscated.
+Additionally, Access to Agent Analytics runs through Amplitude’s role-based access control. Three permission levels are available:
+View Agent Analytics Objects
+lets a role open sessions, evaluators, and related objects. A role needs this to use the product at all.
+Manage Inactive Evals and Runs
+lets a role create evaluators and launch dry runs.
+Activate Evals
+lets a role turn an evaluator live or archive one.
+You decide which roles carry which permission, so a support analyst can read sessions while only your ML leads can push an evaluator into production.
+Take advantage of enterprise-grade controls when sending traces to Amplitude Agent Analytics. Read more
+here.
 What languages and frameworks do you support?
-Python on PyPI (pip install amplitude-ai) and Node.js / TypeScript on npm (npm install @amplitude/ai). Native wrappers for OpenAI, Anthropic, Gemini, Bedrock, Mistral, and Azure OpenAI. Framework integrations for LangChain, LlamaIndex, OpenAI Agents SDK, CrewAI, and the Claude Agent SDK. Anything emitting OpenTelemetry GenAI spans (OpenLIT, Traceloop, and OpenAI instrumentation) flows in via the bridge.
+Python on PyPI (pip install amplitude-ai) and Node.js / TypeScript on npm (npm install @amplitude/ai). Native wrappers for OpenAI, Anthropic, Gemini, Bedrock, Mistral, and Azure OpenAI. Framework integrations for LangChain, LlamaIndex, OpenAI Agents SDK, CrewAI, and the Claude Agent SDK. Anything emitting OpenTelemetry GenAI spans (OpenLIT, Traceloop, and OpenAI instrumentation) flows in via the bridge. Learn more
+here.
 How does Session Replay fit in?
 Every agent event carries a
 Session Replay
 ID. From any session in the explorer, View Replay opens at the moment the conversation started, so you watch the agent fail inside the actual product the user was using.
-How does this connect to Amplitude Experiment and Guides?
-Each event carries the experiment variant as a property, so prompt A/B tests attribute correctly across multi-turn conversations. Quality scores and behavioral patterns flow into cohorts that
+How does Agent Analytics connect to Amplitude Experiment or Guides?
+All agent interactions are available as standard behaviors to query alongside classic events in Amplitude charts. They're also available to use through the rest of Amplitude's platform including Experiment and Guides. Each event carries the experiment variant as a property, so prompt A/B tests attribute correctly across multi-turn conversations. Quality scores and behavioral patterns flow into cohorts that
 Guides
 and
 Activation
-target in real time. Same workspace, same identity graph.
+target in real time.
+Do I need to replace my AI observability tool with Agent Analytics?
+The answer depends on what you're using in those other tools.
+If you're using them only to score online production sessions and nothing else, Agent Analytics will help serve your needs and you can replace those other tools. You'll be able to take advantage of out-of-the-box Signals, standard evaluations (evals) of task completion, response quality, user intent, session safety, user friction, negative feedback, and data quality. Explore topics across all agent conversations to quickly learn AI quality measures and what parts of your agent needs immediate fixing. You'll also crucially then connect AI quality to product outcomes including conversion, retention and revenue.
+If you're using aspects like offline evals or deploying agents using those tools, then keep them. Agent Analytics is not designed for those specific use cases.
+Try Agent Analytics today as it is available on all plans, including our starter (free), to all customers. Send us a few traces, filter them by behavorial cohorts, build a funnel or retention chart with agent behaviors.
+Get started today.
+Is Agent Analytics being used by any customers already?
+Yes. Ranging from Y Combinator startups such as
+Hyrbd
+and
+Cashbook
+to enterprise companies such as
+The Economist
+, Agent Analytics has been put through rigorous performance tests. We originally designed Agent Analtyics for ourselves and have been documenting our own usage of it
+here
+and
+here
+.
 A new era of analytics
 From a live agent overview to evals and datasets, every view ties what the agent did to what the user did next.
 Overview

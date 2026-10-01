@@ -63,6 +63,7 @@ FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Data & Metrics
 Connecting to Your Data Warehouse
 Setting Up Snowflake as a Data Source
@@ -76,6 +77,57 @@ account identifier
 formats when connecting to Snowflake. An example account identifier is
 xy12345.us-east-2.aws
 .
+​
+Authentication Methods
+GrowthBook supports three ways to authenticate with Snowflake:
+Password
+— the default. Username and password for a Snowflake user.
+Key Pair
+—
+key-pair authentication
+: upload the user’s private key (and its password, if encrypted). Required if you use the Event Forwarder.
+Workload Identity Federation
+(self-hosted only) — secretless authentication using the ambient cloud identity of the server GrowthBook runs on (an AWS IAM role, Azure managed identity, or Google Cloud service account). No Snowflake credential is stored on the data source.
+​
+Workload Identity Federation
+Workload Identity Federation
+lets GrowthBook authenticate as the cloud identity it already runs under — for example, the IAM role of the ECS task or EC2 instance hosting your self-hosted GrowthBook.
+On the Snowflake side, create a service user bound to that identity:
+create
+user
+growthbook_service
+type
+=
+service
+;
+alter
+user
+growthbook_service
+set
+workload_identity
+=
+(
+type
+=
+aws
+arn
+=
+'arn:aws:iam::<account-id>:role/<growthbook-task-role>'
+);
+(Azure and Google Cloud have equivalent
+type = azure
+/
+type = gcp
+forms — see the Snowflake docs above.)
+Then in GrowthBook’s connection settings, choose
+Workload Identity Federation
+as the Authentication Method, select the cloud provider GrowthBook runs on, and set the Username to the Snowflake service user.
+Notes:
+Self-hosted deployments only — on GrowthBook Cloud there is no customer-controlled cloud identity to bind.
+The identity you bind is whatever the GrowthBook
+server
+runs as. If that role is shared with other services, they can all authenticate as this Snowflake user — prefer a dedicated role for GrowthBook.
+The Event Forwarder still requires key-pair authentication (Confluent’s Snowflake sink needs a literal private key). Remove it before switching an existing data source to Workload Identity; the forwarder keeps its own copy of the private key until removed.
 ​
 Self-Hosting
 If you are self-hosting GrowthBook, you can send queries to Snowflake through an Authenticated Proxy.
@@ -96,6 +148,8 @@ Next
 ⌘
 I
 On this page
+Authentication Methods
+Workload Identity Federation
 Self-Hosting
 Enabling Data Pipeline Mode
 GrowthBook Documentation

@@ -214,3 +214,47 @@ Terms of service
 © Croct 2026
 ·
 Hey AI, learn about us
+What are the core capabilities included in the Croct platform?
+Croct is an end-to-end platform that includes several core capabilities: a
+component-based CMS
+for managing modular and dynamic content,
+personalization
+to tailor experiences for each user,
+AB testing
+to validate and measure content performance,
+user profiles
+to unify customer data,
+segmentation
+to build real-time audiences, and built-in analytics to monitor results.
+Can I use Croct for both web and mobile applications?
+Currently, we support both web and server contexts. You can integrate it into your websites using flexible
+SDKs
+or leverage our
+APIs
+for custom server-side and mobile integrations.
+What makes Croct different from a traditional CMS or a standalone CDP?
+Unlike a traditional CMS that serves static pages, we offer a Personalization Management System that pairs headless, reusable components with dynamic, user-profile-driven data to seamlessly tailor experiences. Compared to a standalone CDP, which typically only tells you "what happened" by storing historical data, we enable you to act in real time. We centralize data into live profiles and trigger personalization in real time, so you get the functionality of a CMS, CDP, and experimentation tool all built into one platform without extra vendors.
+How does Croct ensure high performance and low latency for dynamic content?
+The product is built for speed, delivering end-to-end response times under 90 milliseconds at P95. On the backend, we use a highly optimized segmentation engine that evaluates business rules with latencies under 40 milliseconds through lazy evaluation, caching, and parallelization. Furthermore, we support server-side rendering and testing, which completely eliminates website flicker and avoids the performance hits common with client-side-only tools.
+Will adding Croct to my website affect my page load speed or cause flickering?
+No, our product is built specifically to maximize your website's performance and deliver a flicker-free experience. It operates using highly optimized, low-latency APIs that achieve end-to-end response times under 90 milliseconds at P95, and its real-time query engine can perform evaluations in under 40 milliseconds. Additionally, because we support both client-side and server-side rendering, you can run experiments and deliver personalized content on the server to eliminate loading screens and visual flicker.
+Do I need developers to use Croct daily?
+No, you do not need developers for daily operations. While the initial setup and integration require some developer time, our product is designed to give marketing and product teams full autonomy once implemented. You can create, edit, publish, pause experiments, and launch personalization strategies directly through an intuitive UI without writing a single line of code or waiting for the next deployment sprint.
+How long does it typically take to implement Croct's features?
+Implementations typically take just a few hours, not months. Teams can get started in minutes using our
+CLI
+, flexible
+SDKs
+, and pre-built starter
+templates
+that can be applied with a single command.
+How does Croct integrate with my existing tech stack?
+We're framework agnostic and fit seamlessly into any composable stack. You can integrate it using powerful
+SDKs
+designed for modern frameworks (such as React, Vue.js, and Next.js) or by connecting via custom
+APIs
+. We allow you to easily bring in first-party data from your existing databases and export enriched user profiles to your domain in seconds.
+Does Croct integrate with headless CMS, such as Strapi, Sanity, or Storyblok?
+Yes, we work as a standalone solution, but also pair easily with external headless CMS platforms like Strapi and
+Storyblok
+, as well as other tools in your stack like Shopify, HubSpot, and Amplitude.

@@ -1,0 +1,249 @@
+# https://docs.kameleoon.com/user-manual/ai-predictive-targeting/enable-ai-predictive-targeting-on-a-goal
+Enable AI Predictive Targeting on a goal - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Enable AI Predictive Targeting on an existing goal
+Enable AI Predictive Targeting when creating a new goal
+How to choose the right trigger
+Example: on-site personalization after cart abandonment
+Learning phase
+AI model status badges
+Next step
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Copy page
+Copy page
+Enable AI Predictive Targeting on a goal to train a machine learning model that predicts each visitor’s likelihood of converting.
+Copy page
+Copy page
+AI Predictive Targeting is an add-on available in both Web Experimentation and Feature Experimentation. Contact your Customer Success Manager for details.
+Enable AI Predictive Targeting on your goals to train a machine learning model that predicts how likely your visitors are to convert. By linking these predictions to key customer journey milestones—such as product views or cart abandonments—you can target visitors with tailored campaigns based on their real-time propensity scores.
+This article guides you through enabling AI Predictive Targeting for new or existing goals, selecting the right triggers for your audience, and tracking the initial learning phase of your model.
+​
+Enable AI Predictive Targeting on an existing goal
+Click
+Settings
+>
+Goals
+.
+Find the goal you want to update and click
+Edit
+.
+Click
+Advanced settings
+.
+Toggle
+Use this goal with AI Predictive Targeting
+to
+On
+.
+Select the trigger at which AI Predictive Targeting will make probability predictions.
+Click
+Save
+.
+​
+Enable AI Predictive Targeting when creating a new goal
+Click
+Settings
+>
+Goals
+.
+Click
+New goal
+.
+Enter the required goal details and click
+Next
+.
+Click
+Advanced settings
+.
+Toggle
+Use this goal with AI Predictive Targeting
+to
+On
+.
+Click
+Save
+.
+​
+How to choose the right trigger
+A trigger is the customer action, event, or journey moment that activates a prediction. Don’t select a trigger arbitrarily or only because the event is technically available. A good trigger represents a meaningful step in the customer journey where you have a decision to make: whether to engage, personalize, recommend, retain, incentivize, or let the user continue without intervention.
+Examples of meaningful triggers include:
+A user views a product page
+A user adds an item to cart
+A user abandons a checkout
+A user completes a purchase
+A user shows signs of churn risk
+A user reaches a loyalty milestone
+A user returns after a period of inactivity
+In practice, map your triggers to your customer journey. Most brands already define key journey stages such as discovery, consideration, purchase, onboarding, retention, loyalty, and reactivation. Propensity scores are most useful when you generate and interpret them at these moments.
+A “high likelihood to convert” score is not meaningful in isolation. It becomes actionable when you attach it to a specific journey step, for example, after a product view, after cart abandonment, or before a renewal date. The same score can lead to different actions depending on the journey stage.
+Kameleoon groups visitors into five score buckets, each representing roughly 20% of the eligible audience:
+Very low
+Low
+Moderate
+High
+Very high
+A
+high
+or
+very high
+score may indicate that the visitor only needs a light nudge, or no incentive at all. A
+low
+or
+very low
+score may indicate that the visitor needs a stronger message, a different on-site experience, a better-timed interaction, or an incentive. In some cases, it may also mean the visitor should not be targeted at all because the expected impact is too low.
+You cannot define the right action for each score level universally: validate it through experimentation. Test which on-site experience works best for each journey stage and propensity bucket, then refine your triggers and decisioning strategy based on observed performance.
+​
+Example: on-site personalization after cart abandonment
+A retailer wants to use propensity scoring to optimize the on-site experience for visitors who abandoned their cart.
+The trigger should not simply be “show a personalization every time we have a score.” Instead, the trigger should be the meaningful journey moment: a visitor adds items to cart, does not complete checkout, and returns to the site within a defined period.
+At that point, the propensity score informs the best on-site action:
+Very high / High propensity to purchase:
+show a light in-page reminder of the saved cart, or no incentive at all.
+Moderate propensity to purchase:
+show contextual reassurance, such as social proof, product reviews, or shipping benefits.
+Low / Very low propensity to purchase:
+test a stronger on-site experience, such as an incentive banner, an alternative product recommendation, or a different layout for the cart page.
+Over time, test these on-site experiences and learn which strategy performs best at each score bucket.
+​
+Learning phase
+After you enable AI Predictive Targeting, Kameleoon begins a learning phase before predictions are available. The model requires:
+7 days
+of data
+100,000 visits
+Both conditions must be met. For example, if your site receives 100,000 visits in a single day, the model still needs a full week of data. If your site receives 50,000 visits per week, training takes two weeks.
+Once training completes, the model activates on day 7 (D+7) and predictions become available on day 8 (D+8), after one day of prediction data has accumulated.
+After activation, the model keeps learning: Kameleoon retrains it every 10 minutes as it collects new data points and analyzes more visits and conversions. To learn more, see
+How often the model and scores update
+.
+Model quality depends on traffic volume, conversion rate,
+and
+the absolute number of conversions collected within your triggers. Traffic alone is not enough: if a goal receives a lot of visits but only a handful of conversions, the AI will not see enough conversion patterns to learn a reliable predictive signal.
+To check whether a goal has enough conversion volume, open the
+Goals
+dashboard and hover over the goal. Kameleoon displays the number of conversions collected over the last 24 hours. Use this number as a quick health check before relying on the goal for AI Predictive Targeting.
+Aim for a reasonable audience size
+and
+a meaningful, sustained number of conversions to get the best predictions.
+​
+AI model status badges
+Goals with AI Predictive Targeting enabled display a status badge on the Goals dashboard.
+Badge
+Color
+Meaning
+AI Learning
+Blue
+The model is collecting data and has not yet met the 7-day and 100,000-visit thresholds.
+AI Active
+Green
+Predictions are available, and the model evaluates visitors in real time.
+AI Alert
+Orange
+Training is taking longer than expected, typically due to low traffic.
+Hover over an
+AI Learning
+badge to see a tooltip showing the estimated time and visitors required for AI Predictive Targeting to activate.
+​
+Next step
+After the model reaches
+AI Active
+status,
+create a segment using the Likelihood to convert condition
+to target visitors by their predicted conversion probability.
+Was this page helpful?
+Yes
+No
+AI Predictive Targeting
+Previous
+Use AI Predictive Targeting in a segment
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

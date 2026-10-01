@@ -1,0 +1,188 @@
+# https://help.wingify.com/hc/en-us/articles/58824142306585-Understand-the-Working-of-Multi-Armed-Bandit-in-Wingify
+Understand the Working of Multi-Armed Bandit in Wingify – Wingify
+Knowledge Base
+Start Free trial
+Wingify
+Web Experimentation
+Shared Resources
+Articles in this section
+Track Your Wingify Campaign Activities
+Estimate the Duration to Get Statistically Significant Results From Your Test in Wingify
+Use URL Patterns in Wingify
+Warnings in Wingify
+Understand the Working of Multi-Armed Bandit in Wingify
+Ways to Minimize the Time to Reach Statistical Significance
+Define a Custom URL in Wingify
+How to Track Offline Conversions for non-Data Platform Workspaces in Wingify?
+Available Options for Configuring Custom Segments in Wingify
+Adding Conversion Goals in Wingify
+See more →
+Understand the Working of Multi-Armed Bandit in Wingify
+Shweta Ajwani
+Updated
+July 20, 2026 17:11
+Share:
+Facebook
+Twitter
+LinkedIn
+close this to read article
+This article covers the following:
+Overview
+How Do We Calculate the Traffic Split of Variations?
+How are Weights Learned?
+Defining Traffic Split Based on Weights
+How Does the Hill-climbing Algorithm Work?
+Simulation Results
+Summary
+References
+Appendix
+Overview
+Wingify enables you to run an A/B test on your website and uses the Bayesian-based SmartStats engine to determine which variation of your website is better and by how much. It does that by analyzing the visitors and conversion information tracked in a test. Traditionally, in an A/B test, the visitors who become part of the test are split evenly between the two variants until the test declares one of them as the winners. After that, by allocating 100% traffic to the winning variation or building the website changes, all the visitors are shown the better variation.
+At this point, our customers start to get the maximum output by rolling out the best variation on their website.
+With the new algorithm, we aim to maximize the website's output by continuously exposing the better performing variation to more and more visitors on your website. We do this by continuously comparing the performance of all variations and acting on the output reported by the comparison.
+There needs to be a good balance between 'exploration' and 'exploitation' to maximize conversions or revenue. We use an epsilon-greedy multi-armed bandit approach to balance exploration and exploitation. Based on this strategy, we dynamically change the traffic split of all variations as per their performance.
+How Do We Calculate the Traffic Split of Variations?
+Wingify starts to adjust the traffic split of all variations to expose the better performing variation to your website traffic. Multiple factors determine the traffic to be allocated to each variation. These factors are:
+Individual performance of different variants (internally known as content weight). For example - say you have an image of a trouser on your website and you have 3 different versions of it. In this case, each version, including the original, will have a weight assigned to it for measurement. This weight is a direct indicator of the impact your content has on your conversion rate/revenue.
+(In the case of a multivariate test) Performance of a variant in a section when combined with a variant from a different section (internally known as content interaction weight). For example - say your webpage has two sections - one section for shirts and another for trousers. If you have 2 versions of shirts and 3 versions of trousers. This will create 6 different weights, one for each combination of shirt and trouser. This weight indicates what the performance of a combination (of 2 variations from different sections) is. We account for this to determine how the overall performance changes when two specific versions for each section are chosen. This can give us insights like a certain combination of shirt and trouser work well together then rest of the others.
+These weights indicate the contribution of content and content-interaction variables. All weights associated with a variation contribute towards its conversion rate or average revenue. Both content weight and content interaction weight are Random Variables that follow a Normal distribution.
+How are Weights Learned?
+We get the conversions and visitor numbers for each variation. The update algorithm will work best if we know the sequence in which visitors land and conversions happen on your website. Using the following equations, we update the parameters of every weight distribution:
+These equations are derived using the message passing algorithm of factor graphs and assumed density filtering algorithm. The detailed derivation of these equations is given in the Appendix.
+Defining Traffic Split Based on Weights
+Once we have all the updated weights, we then simulate 10K visitors and use a Thompson Sampling based
+hill-climbing algorithm
+to determine which variation will be the best one to show to each of those 10,000 visitors. The result of this exercise gives us the traffic split based on the weights.
+How Does the Hill-climbing Algorithm Work?
+Say we have 2 sections with 3 variations each - so we now have 6 content weights as there are 6 different content pieces and 9 content interaction weights as there can be 9 pairs from these contents.
+Assume that a visitor lands on your website, and you now have to decide to be bucketed that visitor into any of the 9 possible combinations. We calculate the score of each possible combination and see which gets the maximum score. The combination with the maximum score is then chosen.
+To calculate this score, we fetch all associated weights for a given combination and sum them up. So for any combination, there will be 2 content weights (one from each section) and 1 interaction weight (of this specific pair). To get the value of each weight, we sample from its corresponding distribution, and after repeating this exercise 10K times, we obtain a traffic split for each variation based on their winning proportion.
+Simulation Results
+Let ∆t be the difference between the expected reward of the optimal arm and the selected arm at time t:
+The objective of our bandit problem is to estimate µ and σ while minimizing cumulative regret over T rounds:
+Following are the regret plots of 100 sims each for 4 different cases where the cumulative regret of the above-proposed algorithm is compared with the Multivariate Testing algorithm over T rounds. In all cases, we use 10% traffic for exploration.
+We see in all cases, the cumulative regret gets saturated over time with the proposed algorithm.
+Summary
+In this article, we explained the overall view of the different components involved in the Multi-Armed Bandit algorithm. MAB is a great algorithm for optimizers who care more about maximizing a metric in a short time and can give up on statistical significance.
+References
+TrueSkill -
+https://www.microsoft.com/en-us/research/wp-content/uploads/2007/01/NIPS2006_0688.pdf
+AdPredictor-
+https://www.microsoft.com/en-us/research/wp-content/uploads/2010/06/AdPredictor-ICML-2010-final.pdf
+https://blog.acolyer.org/2017/09/27/an-efficient-bandit-algorithm-for-real-time-multivariate-optimization/
+Expectation Propagation -
+https://tminka.github.io/papers/ep/minka-thesis.pdf
+Appendix
+The MAB algorithm described above is an extension of the TrueSkill algorithm developed by Microsoft. They use it in Xbox to rank and match players so that a player is matched to a player of a similar level. This ensures more engagement in the game. Much like our case where we try to match a visitor with a variation that will engage him. Intuitively we can feel that if we collect data about how the visitors have responded to variations we have, we can then use some Machine Learning algorithm to use this data for training. And at the time of inference, it will return a score for every variation for a given visitor, and whichever variation gives a higher score, we'll show that variation to the visitor.
+And for the matching, the approach mentioned in the Adpredictor paper seems like a great fit for us. Microsoft built an Adpredictor algorithm based on the aforementioned equations derived taking the ideas of the Trueskill algorithm. The factor graph we used in our case is a special case of the Adpredictor algorithm.
+We used the following factor graph was used to obtain the update equations mentioned in the article.
+Factor Graph
+Description
+Factors fi: N(wi;0,1) Standard Normal Distribution. This is the prior p(w). Factor g: Calculate the score s for x as the inner product wTx, such that p(s|x,w) = δ(s = wTx). Factor h: Add zero-mean Gaussian noise to obtain t from s, such that p(t|s):= N(t;s,β2). Factor q: Determine y by a threshold on the noisy score t at zero, such that p(y|t):= δ(y= sign(t))
+Step 0: Initialise incoming skill messages mg→w1 = 1 (π g→w1 = 0, τ g->w1 =0) mf1→ w1, π f1→w1 = 1, τ f1→w1 = 0 Step 1: Compute Marginals p(w1) = mf1→ w1 * mg→w1 Since the messages are gaussian. π T w1 = π 0f1→w1 + π T g→w1 τ T w1 = τ 0 f1→w1 + τ Tg->w1
+Step 2: Compute W to g messages: mw1→ g = p(w1) / mg→w1 π T w1→g = π T w1 - π T g→w1 τ T w1→g = τ T w1 - τ T g→w1
+Step 3: Compute g to S message Factor g: Calculate the score s for x as the inner product wTx, such that p(s|x,w) = δ(s = wTx). Showed previously mean and variance of the delta function is 0. In the case of integrals, means of gaussian messages are combined based on the factor's logic. However, variances always get adds up. μ T g→s = μ T w1→g + μ T w2→g + 0 v T g→s = v T w1→g + v T w2→g + 0
+Step 4: Compute S to h message ms→ h = mg→s Hence, π T s→h = π T g→s τ T s→h = τ T g→s
+Step 5: Compute h to t message Factor h: Add zero-mean Gaussian noise to obtain t from s, such that p(t|s):= N(t;s,β2). μ T h→t = μ T s→h v T h→t = v T s→h + β2
+Step 6: Compute marginal performances Factor q: Determine y by a threshold on the noisy score t at zero, such that p(y|t):= δ(y= sign(t)) p(t) = m h→ t * m q→t We find the parameters μt and vt by moment matching using the Assumed Density Filtering algorithm which we'll describe in the next section. Notice how these equations look similar to the equations we are trying to derive.
+Step 7: Compute t to h message (Similar situation as Step 2) mt→ h = p(t) / mh→t π T+1 t→ h = π T+1t - π T h→t τ T+1 t→ h = τ T+1 t - τ T h→t
+Step 8: Compute h to S message (Similar situation as Step 5) μ T+1h→s = μ T+1 t→h v T+1 h→s = v T+1 t→h + β2
+Step 9: Compute S to g message (Similar situation as Step 4) m s→ g = m h→s π T+1 s→ g = π T+1 h→s τ T+1 s→ g = τ T+1 h→s
+Step 10: Compute g to W1 message (Similar situation as Step 3) μT+1 g→w1 = μT+1s→g - μT w2→g vT+1 g→w1 = vT+1s→g + vT w2→g Perform Step 1 to compute back the marginals. That will be the updated mean and std of the weights. These 10 steps describe the 1 step forward and backward propagation across the Factor graph.
+The equations in step 6
+The following update equations are obtained from T.Minka’s thesis on Expectation Propagation:
+For Mean
+by placing the gradient of mean in the mean equation, we will obtain:
+For Variance
+by placing the gradient of mean and variance in the variance equation, we will obtain:
+Need more help?
+For further assistance or more information, contact
+Wingify Support
+.
+Was this article helpful?
+0 out of 0 found this helpful
+Return to top
+Related articles
+Ways to Minimize the Time to Reach Statistical Significance
+Set Up a Synthetic A/B Test in Wingify
+Set Up and Automate Your Hypotheses Workflow in Wingify
+Introduction to Wingz Agents
+JavaScript Code Snippets for Standard Wingify Editor Operations
+×
+We're sorry to know about your experience. Please let us know what can we do to make this article more useful.
+A value for this field is required.
+Email
+A value for this field must be valid email.
+This allows us to keep you informed on the status of your feedback. When collecting this information, we adhere to the Privacy Policy outlined
+here
+.
+Submit
+No thanks
+Thank you for your feedback.
+There is some technical error. Please try after some time or contact us at
+support@wingify.com
+Product Suites
+Experimentation
+Personalization
+Commerce
+Analytics
+Feature Management
+Customer Engagement
+Platform
+Wingify Platform
+Why Wingify?
+Program Management
+Integrations
+Data Platform
+For Teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For Industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+Digital Transformation
+SaaS & Technology
+All Resources
+Blog
+Product Updates
+Success Stories
+Webinars
+Guides
+Glossary
+Knowledge Base
+Events
+Free Tools
+Ebooks
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Partners
+Contact Us
+Compare
+Wingify vs Optimizely
+Wingify vs Adobe Target
+Wingify vs Mouseflow
+Wingify vs Contentsquare
+Wingify vs Dynamic Yield
+Wingify vs. Kameleoon
+© 2026 Wingify. All rights reserved.
+Terms
+Security
+Compliance
+Code of Conduct
+Privacy
+AI Policy
+Imprint
+Opt-out
+Hey AI, learn about us

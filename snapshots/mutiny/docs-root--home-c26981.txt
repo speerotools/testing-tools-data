@@ -1,36 +1,411 @@
 # https://help.mutinyhq.com/
-Mutiny Help Center
-Go to Mutiny
-Submit a Ticket
-How can we help?
-Getting started
-How to get setup and started on Mutiny
-29 articles
-Building & Automating
-Collection of docs related to using the asset editor and automating your workflows with Mutiny
-42 articles
-Feature Details
-Deep dives into the different Mutiny features
-24 articles
-Mutiny MCP
-Learn about setting up and using the Mutiny MCP
-9 articles
-Account & User Management
-Manage your team, organizations, and compliance
-18 articles
-Distribution & Strategy
-Docs about distributing Mutiny assets
-12 articles
-Popular Articles
-Designing and Exporting Assets as a PDF
-›
-Integrating with Google Drive
-›
-Understanding API Call Volume When Integrating Mutiny with Salesforce
-›
-Connecting Mutiny to Claude
-›
 Mutiny
-Blog
-Powered by
-Pylon
+Skip to Content
+Mutiny
+Docs
+Getting Started
+Updates
+Submit a Ticket
+Submit Feedback
+CTRL K
+Submit a Ticket
+Submit Feedback
+CTRL K
+Introduction
+Mutiny
+Mutiny Tour
+Getting Started
+Mutiny Settings Overview
+Managing your Brand in Mutiny
+Managing your Integrations
+Setting Up Your Custom Subdomain
+Changing your Fallback URL
+Build & Automate
+Build & Design
+Asset Design
+Making Basic Design Changes with the Agent
+Make Multi-element Changes with the Agent
+Create Sections from a Screenshot
+Add Hover Effects to your Asset
+Create a Sticky Navbar
+Create Dynamic Components
+Creating Popup Modals
+Linking CTAs to Page Sections (Anchor Links)
+Make Assets Mobile Friendly
+How to Create a Pitch Deck
+How to Create a Deal Room Asset
+Creating & Exporting PDFs in Mutiny
+Creating Docs with Mutiny
+Creating 1:1 Assets at Scale
+Create Assets for Segments
+Create Closed-Lost Assets
+Creating Ads with the Mutiny Agent
+Using Mutiny Skills
+Automate
+Automate Outreach to Stale Deals
+Automatic Daily Deal Updates
+Automatic Renewal Updates
+Automating Call Coaching Summaries
+Automating Competitor Alerts from Your Calls
+Automating Daily Meeting Prep
+Automating Deal Risk Alerts
+Automating Followups from Call Transcripts
+Automating Rep 1:1 Prep
+Automating Your Weekly Forecast Rollup
+Conduct Account Research with Mutiny
+Create Recurring Analytics Reports
+Get Asset Design Strategy Recommendations from the Agent
+Write Personalized Email Sequences
+Personalize
+Add Company Logos to your Mutiny asset
+Embed Resources from your Library
+Forms
+Create Custom Forms and Sync to Google Forms
+Create Custom Forms and Sync to HubSpot
+Create Custom Forms and Sync to Marketo
+Create Custom Forms and Sync to Pardot
+Embed Forms to Mutiny Assets
+Publish & Share
+Smart Access Control Overview
+Add an Asset Preview to an Email
+Add Script Tags on a Per-Asset Level
+Managing Search Engine Settings for your Assets
+Managing your Assets
+Password-Protected Assets
+Publishing Assets on Mutiny
+Sharing Your Mutiny Work with Your Team
+Setting up Asset Metadata
+Feature Details
+Overviews
+Projects Overview
+Routines Overview
+Skills Overview
+Editor
+Assets Editor Deep Dive
+Quick Changes Menu
+Analytics
+Asset Analytics
+Asset Visitor Notifications
+3rd Party Analytics
+Add Tag Manager and Analytics Script Tags to Your Mutiny Assets
+Tracking & Analyzing Mutiny Assets in Google Analytics 4 (GA4)
+Tracking & Analyzing Mutiny Assets in Adobe Analytics
+Bot Detection and Filtering on Mutiny
+Data discrepancy between Mutiny and other platforms
+Library
+Library Overview
+Creating and Using Folders in the Library
+Library Content Versioning
+Sharing your Library Resources Directly
+Tracking Library Resource Views
+Templates
+Create Templates
+Templates Deep Dive
+Brand
+Brand Overview
+Brand Settings: Colors
+Brand Settings: CTA
+Brand Settings: Fonts
+Brand Settings: Typography
+Integrations
+Connect Your Tools to Mutiny (Custom integrations)
+What is Pipedream?
+Whitelisting Mutiny's Infrastructure
+CRM
+Integrating with HubSpot
+Integrating with Salesforce
+Integrating with Attio
+Sales & Prospecting
+Integrating with Outreach
+Integrating with Salesloft
+Integrating with Apollo
+Integrating with LeadIQ
+Integrating with ZoomInfo
+Meetings & Scheduling
+Integrating with Gong
+Integrating with Fireflies
+Integrating with Granola
+Integrating with Chili Piper
+Integrating with Google Calendar
+Communication & Files
+Slack integration overview
+Integrating with Gmail
+Integrating with Google Drive
+Integrating with Notion
+Analytics & Signals
+Integrating with Amplitude
+Integrating with Common Room
+Integrate with Semrush
+Integrating with Profound
+Mutiny MCP
+Getting Started with Mutiny in Your AI Assistant
+Mutiny MCP Overview
+What Can You Do with Mutiny + AI?
+Connecting Mutiny to ChatGPT
+Connecting Mutiny to Claude
+Creating Assets using Context with the Mutiny MCP
+Creating Assets with the Mutiny MCP
+Generating Analytics Reports with the Mutiny MCP
+MCP Data Handling & Security
+Admin & Compliance
+Users & Teams
+Adding New Users to Mutiny
+Creating Teams in Mutiny
+Leaving or Deactivating Your Organization
+Managing Your Team
+Setting up SSO on Your Saml iDP
+Switching Between Mutiny Instances
+Billing & Usage
+How Credits Work in Mutiny
+Tracking Usage
+Mutiny Organization Discovery
+Security & Compliance
+Mutiny Compliance Overview
+CCPA
+GDPR
+Implementing Cookie Consent
+Light
+Introduction
+Mutiny
+Mutiny Tour
+Getting Started
+Mutiny Settings Overview
+Managing your Brand in Mutiny
+Managing your Integrations
+Setting Up Your Custom Subdomain
+Changing your Fallback URL
+Build & Automate
+Build & Design
+Asset Design
+Making Basic Design Changes with the Agent
+Make Multi-element Changes with the Agent
+Create Sections from a Screenshot
+Add Hover Effects to your Asset
+Create a Sticky Navbar
+Create Dynamic Components
+Creating Popup Modals
+Linking CTAs to Page Sections (Anchor Links)
+Make Assets Mobile Friendly
+How to Create a Pitch Deck
+How to Create a Deal Room Asset
+Creating & Exporting PDFs in Mutiny
+Creating Docs with Mutiny
+Creating 1:1 Assets at Scale
+Create Assets for Segments
+Create Closed-Lost Assets
+Creating Ads with the Mutiny Agent
+Using Mutiny Skills
+Automate
+Automate Outreach to Stale Deals
+Automatic Daily Deal Updates
+Automatic Renewal Updates
+Automating Call Coaching Summaries
+Automating Competitor Alerts from Your Calls
+Automating Daily Meeting Prep
+Automating Deal Risk Alerts
+Automating Followups from Call Transcripts
+Automating Rep 1:1 Prep
+Automating Your Weekly Forecast Rollup
+Conduct Account Research with Mutiny
+Create Recurring Analytics Reports
+Get Asset Design Strategy Recommendations from the Agent
+Write Personalized Email Sequences
+Personalize
+Add Company Logos to your Mutiny asset
+Embed Resources from your Library
+Forms
+Create Custom Forms and Sync to Google Forms
+Create Custom Forms and Sync to HubSpot
+Create Custom Forms and Sync to Marketo
+Create Custom Forms and Sync to Pardot
+Embed Forms to Mutiny Assets
+Publish & Share
+Smart Access Control Overview
+Add an Asset Preview to an Email
+Add Script Tags on a Per-Asset Level
+Managing Search Engine Settings for your Assets
+Managing your Assets
+Password-Protected Assets
+Publishing Assets on Mutiny
+Sharing Your Mutiny Work with Your Team
+Setting up Asset Metadata
+Feature Details
+Overviews
+Projects Overview
+Routines Overview
+Skills Overview
+Editor
+Assets Editor Deep Dive
+Quick Changes Menu
+Analytics
+Asset Analytics
+Asset Visitor Notifications
+3rd Party Analytics
+Add Tag Manager and Analytics Script Tags to Your Mutiny Assets
+Tracking & Analyzing Mutiny Assets in Google Analytics 4 (GA4)
+Tracking & Analyzing Mutiny Assets in Adobe Analytics
+Bot Detection and Filtering on Mutiny
+Data discrepancy between Mutiny and other platforms
+Library
+Library Overview
+Creating and Using Folders in the Library
+Library Content Versioning
+Sharing your Library Resources Directly
+Tracking Library Resource Views
+Templates
+Create Templates
+Templates Deep Dive
+Brand
+Brand Overview
+Brand Settings: Colors
+Brand Settings: CTA
+Brand Settings: Fonts
+Brand Settings: Typography
+Integrations
+Connect Your Tools to Mutiny (Custom integrations)
+What is Pipedream?
+Whitelisting Mutiny's Infrastructure
+CRM
+Integrating with HubSpot
+Integrating with Salesforce
+Integrating with Attio
+Sales & Prospecting
+Integrating with Outreach
+Integrating with Salesloft
+Integrating with Apollo
+Integrating with LeadIQ
+Integrating with ZoomInfo
+Meetings & Scheduling
+Integrating with Gong
+Integrating with Fireflies
+Integrating with Granola
+Integrating with Chili Piper
+Integrating with Google Calendar
+Communication & Files
+Slack integration overview
+Integrating with Gmail
+Integrating with Google Drive
+Integrating with Notion
+Analytics & Signals
+Integrating with Amplitude
+Integrating with Common Room
+Integrate with Semrush
+Integrating with Profound
+Mutiny MCP
+Getting Started with Mutiny in Your AI Assistant
+Mutiny MCP Overview
+What Can You Do with Mutiny + AI?
+Connecting Mutiny to ChatGPT
+Connecting Mutiny to Claude
+Creating Assets using Context with the Mutiny MCP
+Creating Assets with the Mutiny MCP
+Generating Analytics Reports with the Mutiny MCP
+MCP Data Handling & Security
+Admin & Compliance
+Users & Teams
+Adding New Users to Mutiny
+Creating Teams in Mutiny
+Leaving or Deactivating Your Organization
+Managing Your Team
+Setting up SSO on Your Saml iDP
+Switching Between Mutiny Instances
+Billing & Usage
+How Credits Work in Mutiny
+Tracking Usage
+Mutiny Organization Discovery
+Security & Compliance
+Mutiny Compliance Overview
+CCPA
+GDPR
+Implementing Cookie Consent
+Light
+On This Page
+How it works
+Your brand theme
+Your resource library
+Connect your tools
+Skills and routines
+Work with Mutiny from your AI assistant
+Go deeper
+Scroll to top
+Copy page
+Mutiny
+The first AI built for end-to-end GTM automation.
+Every seller and marketer gets an AI that knows your accounts and playbooks, learns what’s working, and handles the busywork end-to-end. Mutiny comes preloaded with GTM playbooks, works alongside your team like a teammate across the tools you already use, and produces consistent, on-brand assets from your CRM, brand, and library.
+This is the Mutiny help center. Start with the basics below, or jump to a topic.
+How it works
+Create your account.
+Mutiny scrapes your website and builds your brand theme automatically.
+Review your brand guidelines.
+Edit what Mutiny generated, or upload your own brand guidelines doc.
+Check your resource library.
+Mutiny pulls in case studies, product media, spreadsheets, docs, and presentations from your site, and you can add more anytime.
+Connect your tools.
+Use a native integration or bring your own via custom MCP servers.
+Set up skills and routines.
+Codify how you sell and talk about your product, then automate the repeatable work.
+Your brand theme
+Mutiny generates consistent, on-brand customer-facing materials (follow-ups, decks, business cases, campaigns, landing pages) from your brand theme and guidelines. When you first create your account, Mutiny scrapes your website to build the theme automatically.
+Your brand theme and guidelines are fully editable. You can also upload your own brand guidelines document and Mutiny will adhere to those rules instead.
+Brand overview
+Managing your brand in Mutiny
+Brand settings: colors
+Your resource library
+The library is how Mutiny knows your accounts and your story. Mutiny automatically pulls resources from your website (case studies, product media and images, spreadsheets, documentation, and presentations), and you can add your own at any time.
+The agent draws on everything in your library when it creates assets, so the more complete your library, the more accurate and on-brand the output.
+Library overview
+Organize with folders
+Share library resources
+Connect your tools
+Mutiny works like a teammate inside the stack you already have. Connect your CRM, native integrations, and any custom tool via MCP, and Mutiny plugs in to do the work across all of them.
+Category
+What Mutiny can do
+CRM
+Update records directly in HubSpot or Salesforce, so you spend less time on data entry and more time on the work that matters
+Native integrations
+A wide range of integrations are supported out of the box
+Custom tools
+Bring your own tools by connecting a custom MCP server
+Managing your integrations
+Integrating with HubSpot
+Custom integrations
+Skills and routines
+Skills and routines are how Mutiny comes preloaded with GTM playbooks, and how your team codifies what your best reps and marketers do so everyone runs the same play.
+Skills
+are repeatable guidelines you give the agent. Create a skill that codifies your product messaging, your stage-by-stage sales process, your ICP, or your brand’s tone and voice.
+Routines
+are repeatable actions you set up for the agent to run. Use routines to automate things like one-to-one ABM, call follow-ups, and meeting prep.
+Combine a well-built library with skills and routines, and you can automate most of your GTM work in short order.
+Skills overview
+Routines overview
+Projects overview
+Work with Mutiny from your AI assistant
+Delegate to Mutiny from wherever you already work. The
+Mutiny MCP
+lets you drive Mutiny from Claude, ChatGPT, or any MCP-compatible assistant. Create assets, pull analytics, and use Mutiny context without leaving the tool you’re in.
+Mutiny MCP overview
+Get started in your AI assistant
+Connect Mutiny to Claude
+Go deeper
+Build
+Build & design with the agent
+Editor deep dive
+Templates
+Automate
+Automate call follow-ups
+Automate meeting prep
+Run account research
+Publish & measure
+Publish assets
+Share with your team
+Asset analytics
+Admin
+Add new users
+How credits work
+Compliance overview
+Next:
+take the
+Mutiny Tour →
+Last updated on
+September 30, 2026
+Getting Started with Mutiny

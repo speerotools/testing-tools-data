@@ -1,29 +1,57 @@
-# Vendor scan — 2026-09-01
+# Vendor scan — 2026-10-01
 
-Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
+Scanned 642 URLs. 34 vendor(s) with real changes, 62 error(s), 2 noisy.
 
-## HIGH — pricing changed (9)
+## HIGH — pricing changed (20)
 - Amplitude — https://amplitude.com/pricing [Pricing]
 - Confidence (Spotify) — https://confidence.spotify.com/pricing [Pricing]
 - Convert — https://www.convert.com/pricing/ [Pricing]
+- Croct — https://croct.com/pricing [Pricing]
 - GrowthBook — https://www.growthbook.io/pricing [Pricing]
+- Harness FME — https://developer.harness.io/docs/feature-flags/subscribe-ff/available-plans-for-feature-flags [Pricing]
+- Intelligems — https://www.intelligems.io/pricing [Pricing]
 - LaunchDarkly — https://launchdarkly.com/pricing [Pricing]
+- LaunchDarkly — https://launchdarkly.com/docs/home/account/plans [Pricing]
+- Mutiny — https://www.mutinyhq.com/pricing [Pricing]
+- Omniconvert — https://www.omniconvert.com/pricing/ [Pricing]
 - PostHog — https://posthog.com/pricing [Pricing]
+- Salesforce Personalization — https://www.salesforce.com/marketing/personalization/pricing/ [Pricing]
 - Shoplift — https://www.shoplift.ai/pricing [Pricing]
-- Statsig — https://www.statsig.com/pricing [Pricing]
+- Symplify — https://symplify.com/conversion-experimentation/plans/ [Pricing]
+- Uniform — https://docs.uniform.app/docs/guides/ai/ai-credits [Pricing]
 - Varify.io — https://varify.io/en/plans/ [Pricing]
+- Webflow Optimize — https://webflow.com/pricing [Pricing]
+- Webtrends Optimize — https://www.webtrends-optimize.com/resources/pricing/ [Pricing]
+- Zoho PageSense — https://www.zoho.com/pagesense/pricing.html [Pricing]
 
-## CHANGED — needs review (194)
+## CHANGED — needs review (354)
 - AB Tasty — https://docs.abtasty.com/integrations [Integrations]
+- AB Tasty — https://docs.abtasty.com/ [Docs Root]
+- AB Tasty — https://docs.abtasty.com/release-notes [Changelog]
+- AB Tasty — https://docs.abtasty.com/client-side/data-apis/public-api [API Reference]
+- ABsmartly — https://docs.absmartly.com/docs/platform-release-notes/2026/03 [Changelog]
+- ABsmartly — https://www.absmartly.com/sitemap.xml [Sitemap]
+- ABsmartly — https://absmartly.com/security [Trust/Security]
 - ABsmartly — https://github.com/absmartly [SDK Docs]
+- ABsmartly — https://docs.absmartly.com/docs/apis-and-sdks/overview/ [API Reference]
+- ABsmartly — https://absmartly.com/gdpr-and-hipaa-compliance-policy [Compliance]
+- ABsmartly — https://absmartly.com/blog/automate-experimentation-ai-mcp [Blog/Announcements]
 - ABsmartly — https://github.com/absmartly/mcp [MCP Docs]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/release-notes/release-notes [Changelog]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp [MCP Docs]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/introduction/intro [Docs Root]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/introduction/how-target-works [Docs Root]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-get-started [MCP Docs]
+- Adobe Target — https://experienceleague.adobe.com/en/docs/target/using/mcp/target-mcp-tools-reference [MCP Docs]
 - Amplitude — https://amplitude.com/docs/data/destination-catalog/google-bigquery [Integrations]
-- Amplitude — https://amplitude.com/roadmap [Blog/Announcements]
 - Amplitude — https://amplitude.com/ai
 - Amplitude — https://amplitude.com/mcp-server [MCP Docs]
 - Amplitude — https://amplitude.com/docs/data/source-catalog/databricks [Integrations]
 - Amplitude — https://amplitude.com/security-and-privacy [Trust/Security]
+- Amplitude — https://amplitude.com/docs [Docs Root]
+- Amplitude — https://amplitude.com/llms.txt [Sitemap]
 - Amplitude — https://amplitude.com/ai [Product/Features]
+- Amplitude — https://amplitude.com/docs/llms.txt [Sitemap]
 - Amplitude — https://amplitude.com/ai-visibility [Product/Features]
 - Amplitude — https://amplitude.com/blog/amplitude-mcp [Blog/Announcements]
 - Amplitude — https://amplitude.com/blog/ai-agents [Blog/Announcements]
@@ -41,6 +69,7 @@ Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
 - Amplitude — https://amplitude.com/ai-agents [Product/Features]
 - Amplitude — https://amplitude.com/releases/amplitude-mcp [MCP Docs]
 - Compose — https://apps.shopify.com/compose-app [Solutions/Customers]
+- Conductrics — https://www.conductrics.com/architecture-integrations/ [Integrations]
 - Conductrics — https://www.conductrics.com/ai-bandits [Product/Features]
 - Conductrics — https://www.conductrics.com/privacy-policy [Compliance]
 - Conductrics — https://support.conductrics.com/docs/android-native-support [SDK Docs]
@@ -48,30 +77,56 @@ Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
 - Conductrics — https://www.conductrics.com/platform [Product/Features]
 - Conductrics — https://www.conductrics.com/security-and-compliance [Trust/Security]
 - Conductrics — https://support.conductrics.com/docs/docs-overview [Docs Root]
+- Confidence (Spotify) — https://confidence.spotify.com/blog/when-ai-writes-the-code [Blog/Announcements]
 - Confidence (Spotify) — https://github.com/spotify/confidence-ai-plugins [Product/Features]
-- Confidence (Spotify) — https://confidence.spotify.com/docs/sdks/introduction [SDK Docs]
 - Confidence (Spotify) — https://confidence.spotify.com/docs [Docs Root]
-- Confidence (Spotify) — https://confidence.spotify.com/docs/sdks/mcp-servers
-- Confidence (Spotify) — https://confidence.spotify.com/docs/sdks/mcp-servers [MCP Docs]
-- Confidence (Spotify) — https://backstage.spotify.com/docs/portal/core-features-and-plugins/confidence-flags [Integrations]
-- Confidence (Spotify) — https://confidence.spotify.com/docs/flags/introduction [Docs Root]
+- Confidence (Spotify) — https://confidence.spotify.com/dpa [Compliance]
+- Confidence (Spotify) — https://confidence.spotify.com/blog [Blog/Announcements]
 - Confidence (Spotify) — https://cursor.com/marketplace/mcp/confidence-flags [Product/Features]
+- Confidence (Spotify) — https://confidence.spotify.com/llms.txt [Sitemap]
+- Confidence (Spotify) — https://confidence.spotify.com/sitemap.xml [Sitemap]
 - Confidence (Spotify) — https://github.com/spotify/confidence-resolver [API Reference]
 - Convert — https://convert.com/features/full-stack [Product/Features]
+- Convert — https://www.convert.com/integrations/ [Integrations]
+- Convert — https://www.convert.com/developer [API Reference]
 - Convert — https://www.convert.com/blog/ [Blog/Announcements]
 - Convert — https://www.convert.com/blog/ai/ [Blog/Announcements]
+- Convert — https://convert.com/blog/ai/ab-testing-without-ui-convert-mcp-claude-code [MCP Docs]
+- Convert — https://convert.com/features [Product/Features]
 - Convert — https://www.convert.com/case-studies [Solutions/Customers]
+- Convert — https://convert.com/security [Trust/Security]
+- Convert — https://convert.com/llm-info [Product/Features]
 - Convert — https://github.com/convertcom/javascript-sdk [SDK Docs]
+- Convert — https://convert.com/gdpr/dpa [Compliance]
 - Croct — https://croct.com/sitemap.xml [Sitemap]
+- Croct — https://croct.com/personalization [Product/Features]
 - Croct — https://blog.croct.com [Blog/Announcements]
 - Croct — https://croct.com/features [Product/Features]
 - Croct — https://github.com/croct-tech/plug-next [SDK Docs]
-- Croct — https://croct.com/case-studies [Solutions/Customers]
+- Croct — https://croct.com/segmentation [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/clients [Solutions/Customers]
+- Dynamic Yield — https://www.dynamicyield.com/security [Trust/Security]
+- Dynamic Yield — https://www.dynamicyield.com/experience-apis [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/adaptml [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/experience-os [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/shopping-muse [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/blog/shopping-muse-announcement [Blog/Announcements]
+- Dynamic Yield — https://www.dynamicyield.com/partners [Integrations]
+- Dynamic Yield — https://www.dynamicyield.com/blog/transform-search-with-experience-search-ai [Blog/Announcements]
+- Dynamic Yield — https://www.dynamicyield.com/recommendations [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/element [Product/Features]
+- Dynamic Yield — https://www.dynamicyield.com/compliance [Trust/Security]
 - Evolv AI — https://github.com/evolv-ai/react-sdks [SDK Docs]
 - Evolv AI — https://github.com/evolv-ai/javascript-sdk [SDK Docs]
 - Evolv AI — https://github.com/evolv-ai/ios-sdk [SDK Docs]
 - Evolv AI — https://github.com/evolv-ai/android-sdk [SDK Docs]
+- FigPii — https://kb.figpii.com/article/301-offline-tracking-api [SDK Docs]
+- FigPii — https://kb.figpii.com/article/280-security-at-figpii [Trust/Security]
+- FigPii — https://kb.figpii.com/ [Docs Root]
+- FigPii — https://kb.figpii.com/category/298-sso-single-sign-on [Compliance]
+- FigPii — https://www.figpii.com/sitemap.xml [Sitemap]
 - FigPii — https://apps.shopify.com/figpii [Solutions/Customers]
+- FigPii — https://kb.figpii.com/category/198-integrations [Integrations]
 - GrowthBook — https://docs.growthbook.io/warehouses/databricks [Integrations]
 - GrowthBook — https://www.growthbook.io/blog/how-we-built-weblens-creating-an-ai-powered-hypothesis-generator [Blog/Announcements]
 - GrowthBook — https://www.growthbook.io/platform/security [Trust/Security]
@@ -84,7 +139,6 @@ Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
 - GrowthBook — https://docs.growthbook.io/integrations/mcp [MCP Docs]
 - GrowthBook — https://github.com/growthbook/growthbook/releases [Changelog]
 - GrowthBook — https://docs.growthbook.io/warehouses/snowflake [Integrations]
-- GrowthBook — https://docs.growthbook.io/lib/ [SDK Docs]
 - GrowthBook — https://www.growthbook.io/blog/agent-experience [Blog/Announcements]
 - GrowthBook — https://www.growthbook.io/blog/growthbook-version-5-0 [Changelog]
 - GrowthBook — https://www.growthbook.io/platform/warehouse-native [Product/Features]
@@ -96,68 +150,125 @@ Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
 - GrowthBook — https://www.growthbook.io/blog [Blog/Announcements]
 - Harness FME — https://www.harness.io/products/feature-management-experimentation/feature-management [Product/Features]
 - Harness FME — https://www.harness.io/blog/introducing-harness-ai-devops-agent-for-ai-infused-software-delivery [Blog/Announcements]
-- Harness FME — https://www.harness.io/security [Trust/Security]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/api [API Reference]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features]
 - Harness FME — https://www.harness.io/blog/introducing-autonomous-worker-agents [Blog/Announcements]
-- Harness FME — https://www.harness.io/llms.txt [Sitemap]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/experimentation/experiment-results/analyzing-experiment-results/dimensional-analysis [Methodology]
+- Harness FME — https://developer.harness.io/docs/platform/authentication/single-sign-on-for-harness-mcp [MCP Docs]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation [Docs Root]
 - Harness FME — https://www.harness.io/blog/harness-to-acquire-split [Blog/Announcements]
 - Harness FME — https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation [Solutions/Customers]
+- Harness FME — https://developer.harness.io/llms.txt [Sitemap]
+- Harness FME — https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/ [MCP Docs]
 - Harness FME — https://www.harness.io/blog/mcp-announcement [Blog/Announcements]
+- Harness FME — https://developer.harness.io/docs/platform/harness-ai/harness-agents/ [Product/Features]
 - Harness FME — https://www.harness.io/products/feature-management-experimentation/release-monitoring [Product/Features]
-- Harness FME — https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code [MCP Docs]
+- Harness FME — https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure [SDK Docs]
+- Intelligems — https://docs.intelligems.io/developer-resources/javascript-api [SDK Docs]
 - Intelligems — https://www.intelligems.io/resources/product-updates [Changelog]
+- Intelligems — https://www.intelligems.io/resources/blog/using-ai-with-intelligems-use-cases-that-are-possible-right-now [Blog/Announcements]
+- Intelligems — https://www.intelligems.io/resources/customer-stories [Solutions/Customers]
+- Intelligems — https://docs.intelligems.io/developer-resources/javascript-api [API Reference]
 - Intelligems — https://docs.intelligems.io/developer-resources/mcp-server [MCP Docs]
 - Intelligems — https://docs.intelligems.io/developer-resources/mcp-server/examples-and-best-practices [MCP Docs]
+- Intelligems — https://docs.intelligems.io/llms.txt [Sitemap]
 - Intelligems — https://www.intelligems.io/sitemap.xml [Sitemap]
 - Intelligems — https://docs.intelligems.io/ [Docs Root]
 - Intelligems — https://apps.shopify.com/intelligems [Solutions/Customers]
+- Intelligems — https://docs.intelligems.io/developer-resources/mcp-server/claude.md [MCP Docs]
 - Intelligems — https://docs.intelligems.io/developer-resources/mcp-server/available-tools.md [MCP Docs]
 - Kameleoon — https://docs.kameleoon.com/llms.txt [Sitemap]
-- Kameleoon — https://kameleoon.com/blog/kameleoon-ai-copilot-changes-how-teams-experiment [Blog/Announcements]
-- Kameleoon — https://www.kameleoon.com/blog/what-is-an-mcp-server [Blog/Announcements]
-- Kameleoon — https://www.kameleoon.com/sitemap.xml [Sitemap]
-- Kameleoon — https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again [Blog/Announcements]
-- Kameleoon — https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention [Blog/Announcements]
-- Kameleoon — https://kameleoon.com/blog/how-ai-really-influencing-experimentation [Blog/Announcements]
-- Kameleoon — https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance [Blog/Announcements]
+- Kameleoon — https://docs.kameleoon.com/mcp/claude-connector.md [MCP Docs]
+- Kameleoon — https://docs.kameleoon.com/mcp/use-docs-with-ai.md [MCP Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/guides/statistical-methodology/methodology-bayesian [Methodology]
+- LaunchDarkly — https://launchdarkly.com/docs/home/multi-armed-bandits [Methodology]
 - LaunchDarkly — https://launchdarkly.com/solutions/release-ai-built-code [Product/Features]
 - LaunchDarkly — https://launchdarkly.com/docs/llms.txt [Sitemap]
 - LaunchDarkly — https://launchdarkly.com/solutions/run-experiments [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/docs/home/getting-started/mcp-local [MCP Docs]
 - LaunchDarkly — https://launchdarkly.com/docs/sdk [SDK Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/home/ai-configs [Product/Features]
+- LaunchDarkly — https://launchdarkly.com/docs/guides/statistical-methodology/methodology-frequentist [Methodology]
 - LaunchDarkly — https://launchdarkly.com/docs/home/getting-started/mcp-hosted [MCP Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/home/infrastructure/eu [Compliance]
+- LaunchDarkly — https://launchdarkly.com/docs/home/experimentation/health-checks [Methodology]
+- LaunchDarkly — https://launchdarkly.com/docs/home/infrastructure/federal [Compliance]
 - LaunchDarkly — https://launchdarkly.com/customer-stories [Solutions/Customers]
 - LaunchDarkly — https://launchdarkly.com/docs/home/getting-started/mcp [MCP Docs]
+- LaunchDarkly — https://launchdarkly.com/docs/home/agentcontrol [Product/Features]
 - LaunchDarkly — https://launchdarkly.com/changelog/ [Changelog]
 - LaunchDarkly — https://docs.launchdarkly.com/ [Docs Root]
+- LaunchDarkly — https://launchdarkly.com/docs/home/warehouse-native/snowflake [Integrations]
 - LaunchDarkly — https://launchdarkly.com/integrations [Integrations]
 - LaunchDarkly — https://launchdarkly.com/changelog/alerts-anomaly-detection [Blog/Announcements]
 - LaunchDarkly — https://launchdarkly.com/security [Trust/Security]
+- Monetate — https://monetate.com/resource/simon-ai-acquired-by-monetate/ [Blog/Announcements]
+- Monetate — https://developer.monetate.com/sdks [SDK Docs]
+- Monetate — https://monetate.com/feature-experimentation/ [Product/Features]
+- Monetate — https://monetate.com/resource/monetate-unveils-experience-optimization-platform-merging-ai-powered-personalization-and-experimentation-for-enterprises/ [Blog/Announcements]
+- Monetate — https://monetate.com/product-recommendations [Product/Features]
 - Mutiny — https://github.com/MutinyHQ [SDK Docs]
+- Mutiny — https://www.mutinyhq.com/products/integration [Integrations]
+- Mutiny — https://www.mutinyhq.com/product/website-personalization [Product/Features]
+- Mutiny — https://mutinyhq.com/blog/from-research-to-ready-to-send-collateral-in-one-conversation [Blog/Announcements]
+- Mutiny — https://www.mutinyhq.com/blog/how-we-built-an-agent-for-on-brand-asset-creation [Blog/Announcements]
+- Mutiny — https://www.mutinyhq.com/blog/intellipse-ai-acquisition [Blog/Announcements]
+- Mutiny — https://www.mutinyhq.com/customers [Solutions/Customers]
 - Mutiny — https://www.mutinyhq.com/sitemap.xml [Sitemap]
-- Mutiny — https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp [MCP Docs]
+- Mutiny — https://mutinyhq.com/blog/introducing-microsites [Blog/Announcements]
+- Mutiny — https://www.mutinyhq.com/products/beautiful-assets [Product/Features]
+- Mutiny — https://www.mutinyhq.com/blog/how-mutiny-gives-every-seller-a-full-creative-team-with-claude [Blog/Announcements]
+- Mutiny — https://mutinyhq.com/blog/mutiny-6sense-integration [Blog/Announcements]
+- Mutiny — https://www.mutinyhq.com/products/reliable-automation [Product/Features]
 - Mutiny — https://help.mutinyhq.com/ [Docs Root]
+- Omniconvert — https://www.omniconvert.com/privacy-security [Trust/Security]
 - Omniconvert — https://www.omniconvert.com/sitemap.xml [Sitemap]
+- Omniconvert — https://www.omniconvert.com/explore/ab-testing [Product/Features]
+- Omniconvert — https://www.omniconvert.com/pulse [Product/Features]
+- Omniconvert — https://www.omniconvert.com/nexus [Product/Features]
+- Omniconvert — https://www.omniconvert.com/case-studies [Solutions/Customers]
+- Optimizely — https://docs.developers.optimizely.com/feature-experimentation/docs/introduction [Docs Root]
 - Optimizely — https://www.optimizely.com/products/web-experimentation/ [Product/Features]
+- Optimizely — https://support.optimizely.com/hc/en-us/articles/36354416686477-Optimizely-Opal-overview [Product/Features]
+- Optimizely — https://www.optimizely.com/trust-center/compliance [Compliance]
 - Optimizely — https://www.optimizely.com/products/ai [Product/Features]
+- Optimizely — https://www.optimizely.com/field-notes/articles/experimentation-mcp-server [Blog/Announcements]
+- Optimizely — https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides [SDK Docs]
+- Optimizely — https://www.optimizely.com/product-updates/ai [Blog/Announcements]
+- Optimizely — https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides
+- Optimizely — https://www.optimizely.com/field-notes/articles/ai-experimentation [Blog/Announcements]
 - Optimizely — https://www.optimizely.com/connectors/ [Integrations]
+- Optimizely — https://www.optimizely.com/trust-center/ai-ethics-policy [Trust/Security]
+- Optimizely — https://www.optimizely.com/trust-center/ [Trust/Security]
 - Optimizely — https://www.optimizely.com/en/sitemap.xml [Sitemap]
+- Optimizely — https://docs.developers.optimizely.com/ [Docs Root]
 - Optimizely — https://www.optimizely.com/sitemap.xml [Sitemap]
+- PostHog — https://posthog.com/blog/posthog-cloud-eu [Blog/Announcements]
+- PostHog — https://posthog.com/docs/model-context-protocol/faq [MCP Docs]
 - PostHog — https://posthog.com/docs [Docs Root]
 - PostHog — https://posthog.com/docs/api [API Reference]
-- PostHog — https://posthog.com/self-driving [Product/Features]
 - PostHog — https://posthog.com/changelog [Changelog]
+- PostHog — https://posthog.com/docs/posthog-ai [Product/Features]
 - PostHog — https://posthog.com/docs/model-context-protocol [MCP Docs]
+- PostHog — https://posthog.com/docs/experiments/surfaces/mcp [MCP Docs]
 - PostHog — https://posthog.com/docs/cdp/sources/snowflake [Integrations]
+- PostHog — https://posthog.com/context-warehouse [Product/Features]
 - PostHog — https://posthog.com/docs/cdp/sources/redshift [Integrations]
 - PostHog — https://posthog.com/customers [Solutions/Customers]
 - PostHog — https://posthog.com/docs/data-warehouse/sources [Methodology]
+- PostHog — https://posthog.com/docs/privacy/gdpr-compliance [Compliance]
+- PostHog — https://posthog.com/docs/feature-flags/surfaces/mcp [MCP Docs]
+- PostHog — https://posthog.com/docs/mcp-analytics [Product/Features]
+- PostHog — https://posthog.com/docs/cli [Docs Root]
 - PostHog — https://posthog.com/llms.txt [Sitemap]
 - PostHog — https://posthog.com/docs/cdp/sources/bigquery [Integrations]
 - PostHog — https://posthog.com/sitemap/sitemap-0.xml [Sitemap]
+- PostHog — https://posthog.com/docs/settings/sso [Compliance]
 - PostHog — https://posthog.com/docs/libraries [SDK Docs]
 - PostHog — https://posthog.com/docs/model-context-protocol/tools [MCP Docs]
-- Salesforce Marketing Cloud Personalization — https://www.salesforce.com/sitemap.xml [Sitemap]
-- Salesforce Marketing Cloud Personalization — https://www.salesforce.com/marketing/personalization/ai [Product/Features]
-- Salesforce Marketing Cloud Personalization — https://www.salesforce.com/marketing/personalization/real-time [Product/Features]
+- Salesforce Personalization — https://www.salesforce.com/sitemap.xml [Sitemap]
+- Salesforce Personalization — https://www.salesforce.com/marketing/personalization/ai [Product/Features]
+- Salesforce Personalization — https://www.salesforce.com/marketing/personalization/real-time [Product/Features]
 - Shoplift — https://docs.shoplift.ai/test/javascript-api [SDK Docs]
 - Shoplift — https://www.shoplift.ai/features/price-testing [Product/Features]
 - Shoplift — https://docs.shoplift.ai/account/plans-and-billing/updates-to-our-pricing-9-25 [Changelog]
@@ -166,125 +277,199 @@ Scanned 636 URLs. 31 vendor(s) with real changes, 61 error(s), 2 noisy.
 - Shoplift — https://www.shoplift.ai/features/subscription-testing [Product/Features]
 - Shoplift — https://www.shoplift.ai/sitemap.xml [Sitemap]
 - Shoplift — https://docs.shoplift.ai/test/javascript-api [API Reference]
+- Shoplift — https://docs.shoplift.ai/ [Docs Root]
+- SiteSpect (now part of Monetate) — https://monetate.com/resource/simon-ai-acquired-by-monetate [Blog/Announcements]
 - Sitecore — https://doc.sitecore.com/sai/en/users/sitecoreai/marketer-mcp-and-agent-api-overview.html [MCP Docs]
+- Sitecore — https://doc.sitecore.com/personalize/en/users/sitecore-personalize/introduction-to-sitecore-personalize.html [Docs Root]
 - Sitecore — https://www.sitecore.com/sitemap.xml [Sitemap]
+- Sitecore — https://www.sitecore.com/resources/insights/security-privacy/hipaa-readiness [Compliance]
+- Sitecore — https://www.sitecore.com/platform/ai-search [Product/Features]
+- Sitecore — https://www.sitecore.com/platform/ai-innovation-lab [Product/Features]
+- Sitecore — https://www.sitecore.com/platform/conversion-optimization [Product/Features]
+- Sitecore — https://doc.sitecore.com/stream/en/users/sitecore-stream/sitecore-stream-ai-capabilities.html [Product/Features]
+- Sitecore — https://doc.sitecore.com/sdk/en/developers/006/cloud-sdk/sitecore-cloud-sdk-for-javascript.html [SDK Docs]
+- Sitecore — https://doc.sitecore.com/personalize [Docs Root]
 - Sitecore — https://doc.sitecore.com/sai/en/users/sitecoreai/integrating-sitecore-with-agentic-platforms.html [Integrations]
 - Sitecore — https://doc.sitecore.com/sai/en/users/sitecoreai/ai-capabilities-in-sitecoreai.html [Product/Features]
+- Sitecore — https://doc.sitecore.com/llms.txt [Sitemap]
+- Sitecore — https://doc.sitecore.com/cdp/en/developers/api/index.html
+- Sitecore — https://www.sitecore.com/legal/compliance-certs [Trust/Security]
+- Sitecore — https://www.sitecore.com/platform/use-cases/connect-ai-assistants-with-mcp [Product/Features]
+- Sitecore — https://doc.sitecore.com/cdp/en/developers/api/index.html [API Reference]
 - Sitecore — https://doc.sitecore.com/sai/en/users/sitecoreai/personalize.html [Docs Root]
+- Sitecore — https://www.sitecore.com/resources/glossary/m/marketer-mcp-model-context-protocol [Methodology]
+- Split — https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features]
+- Split — https://docs.split.io/reference/introduction [API Reference]
+- Split — https://docs.split.io/ [Docs Root]
 - Split — https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation [Solutions/Customers]
+- Split — https://docs.split.io/llms.txt [Sitemap]
 - Split — https://www.harness.io/products/feature-management-experimentation/feature-management [Product/Features]
 - Statsig — https://www.statsig.com/blog/statsig-ai-features [Blog/Announcements]
 - Statsig — https://docs.statsig.com/console-api/introduction [API Reference]
-- Statsig — https://www.statsig.com/mcp [MCP Docs]
+- Statsig — https://docs.statsig.com/ [Docs Root]
+- Statsig — https://docs.statsig.com/integrations/mcp/cursor [MCP Docs]
 - Statsig — https://www.statsig.com/updates [Changelog]
+- Statsig — https://docs.statsig.com/integrations/introduction [Integrations]
 - Statsig — https://www.statsig.com/blog/statsig-mcp-server-guide [Blog/Announcements]
+- Statsig — https://docs.statsig.com/stats-engine/methodologies/srm-checks [Methodology]
 - Statsig — https://www.statsig.com/blog [Blog/Announcements]
-- Statsig — https://www.statsig.com/trust/security [Trust/Security]
-- Statsig — https://docs.statsig.com/api-reference/autotune/get-ranked-list-for-contextual-bandit [API Reference]
+- Statsig — https://docs.statsig.com/compliance/ai_governance_security_privacy [Compliance]
+- Statsig — https://docs.statsig.com/experiments/advanced-setup/bayesian [Methodology]
+- Statsig — https://docs.statsig.com/integrations/mcp [MCP Docs]
+- Statsig — https://docs.statsig.com/experiments/exploring-results/interaction-detection [Methodology]
+- Statsig — https://docs.statsig.com/experiments/advanced-setup/sequential-testing [Methodology]
 - Statsig — https://docs.statsig.com/sdks/getting-started [SDK Docs]
+- Statsig — https://docs.statsig.com/integrations/mcp/manual-setup [MCP Docs]
 - Statsig — https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped [Methodology]
 - Statsig — https://www.statsig.com/warehousepartner [Integrations]
-- Statsig — https://www.statsig.com/integrations [Integrations]
+- Statsig — https://docs.statsig.com/llms.txt [Sitemap]
+- Statsig — https://docs.statsig.com/ai-evals/overview [Product/Features]
+- Symplify — https://symplify.com/integrations/ [Integrations]
+- Symplify — https://symplify.com/ai-predictive-marketing [Product/Features]
 - Symplify — https://packagist.org/packages/symplify-conversion/sst-sdk-php [SDK Docs]
-- Uniform — https://www.uniform.dev/features/personalization [Product/Features]
-- Uniform — https://www.uniform.dev/visual-workspace [Product/Features]
-- Uniform — https://www.uniform.dev/customers [Solutions/Customers]
-- Uniform — https://www.uniform.dev/features/ai-agents [Product/Features]
-- Uniform — https://www.uniform.dev/features/ab-testing [Product/Features]
-- VWO — https://developers.vwo.com/ [Docs Root]
-- VWO — https://developers.vwo.com/v2/docs/ [API Reference]
-- VWO — https://github.com/wingify/vwo-fme-mcp [MCP Docs]
-- VWO — https://help.vwo.com/hc/en-us/articles/50734295118873-Create-Campaigns-using-VWO-Copilot [Methodology]
+- Symplify — https://symplify.com/press-room/open-ai-integration [Blog/Announcements]
+- Symplify — https://symplify.com/privacy-policy [Compliance]
+- Symplify — https://symplify.com/customer-stories [Solutions/Customers]
+- Symplify — https://symplify.com/communication/security-policy [Trust/Security]
+- Uniform — https://docs.uniform.app/docs/guides/ai/scout/skills [Product/Features]
+- Uniform — https://docs.uniform.app/docs/guides/ai/scout [Product/Features]
+- Uniform — https://docs.uniform.app/docs/api [API Reference]
+- Uniform — https://docs.uniform.app/docs/changelog/shipped/uniform-mcp-server-in-developer-preview [MCP Docs]
+- Uniform — https://docs.uniform.app [Docs Root]
+- Uniform — https://docs.uniform.app/docs/guides/ab-testing [Methodology]
+- Uniform — https://docs.uniform.app/docs/guides/ai/mcp-server [MCP Docs]
+- Uniform — https://docs.uniform.app/docs/changelog/shipped [Changelog]
+- Uniform — https://docs.uniform.app/docs/guides/ai/ai-rules [Docs Root]
+- Uniform — https://docs.uniform.app/docs/guides/regions [Compliance]
+- Uniform — https://docs.uniform.app/docs/integrations/data/google-analytics [Integrations]
+- Uniform — https://docs.uniform.app/docs/guides/ai/scout/use-cases-and-capabilities [Product/Features]
+- Uniform — https://docs.uniform.app/sitemap.xml [Sitemap]
+- Uniform — https://www.uniform.dev/blogs [Blog/Announcements]
+- Uniform — https://docs.uniform.app/docs/integrations/sso [Trust/Security]
+- Uniform — https://docs.uniform.app/docs/changelog/shipped/uniform-mcp-enhancements [Changelog]
+- Uniform — https://docs.uniform.app/docs/guides/personalization/edge-side-personalization [Methodology]
+- Uniform — https://docs.uniform.app/docs/guides/ai/scout/connect-mcp-servers [MCP Docs]
+- Uniform — https://www.uniform.dev/integrations [Integrations]
 - Varify.io — https://varify.io/en/userdocumentation/server-side-a-b-testing [SDK Docs]
 - Varify.io — https://varify.io/en/userdocumentation/ [Docs Root]
 - Varify.io — https://varify.io/en/functions [Product/Features]
 - Varify.io — https://varify.io/en/integrations/google-analytics-4 [Integrations]
+- Varify.io — https://varify.io/en/ai-powered-ab-testing-platforms [Product/Features]
+- Varify.io — https://varify.io/en/ab-testing-flat-rate-pricing [Product/Features]
 - Varify.io — https://varify.io/en/userdocumentation/iso-27001 [Compliance]
+- Webflow Optimize — https://developers.webflow.com/mcp/reference/how-it-works [MCP Docs]
 - Webflow Optimize — https://developers.webflow.com/llms.txt [Sitemap]
 - Webflow Optimize — https://developers.webflow.com/mcp/tools/data-tools.md [MCP Docs]
 - Webflow Optimize — https://github.com/webflow/mcp-server [MCP Docs]
-- Webflow Optimize — https://developers.webflow.com/mcp/tools/designer-tools.md [MCP Docs]
+- Webflow Optimize — https://webflow.com/updates/optimize-integrations [Blog/Announcements]
+- Webflow Optimize — https://webflow.com/blog/the-agentic-web-is-here [Blog/Announcements]
+- Webflow Optimize — https://developers.webflow.com/mcp/llms.txt [Sitemap]
+- Webflow Optimize — https://developers.webflow.com/mcp/faqs [MCP Docs]
+- Webflow Optimize — https://webflow.com/ai [Product/Features]
+- Webflow Optimize — https://webflow.com/ai-site-builder [Product/Features]
+- Webflow Optimize — https://webflow.com/apps/compliance [Compliance]
 - Webflow Optimize — https://github.com/webflow/js-webflow-api [SDK Docs]
+- Webtrends Optimize — https://onpremises.webtrends.help/docs/webtrends-android-sdk-330 [SDK Docs]
+- Webtrends Optimize — https://docs.webtrends-optimize.com/en [Docs Root]
+- Webtrends Optimize — https://docs.webtrends-optimize.com/en/articles/10697353-integrations-snowflake-pull [Integrations]
+- Webtrends Optimize — https://www.webtrends-optimize.com/solutions/feature-list [Product/Features]
 - Webtrends Optimize — https://docs.webtrends-optimize.com/en/articles/9271819-ots-api-guide-for-server-side-testing [API Reference]
+- Webtrends Optimize — https://www.webtrends-optimize.com/privacy [Compliance]
 - Webtrends Optimize — https://www.webtrends-optimize.com/ai [Product/Features]
-- Zoho Pagesense — https://www.zoho.com/sitemap.xml [Sitemap]
+- Zoho PageSense — https://www.zoho.com/pagesense/sitemap.xml [Sitemap]
+- Zoho PageSense — https://www.zoho.com/sitemap.xml [Sitemap]
+- Zoho PageSense — https://www.zoho.com/compliance.html [Trust/Security]
 
-## LOW — marketing copy churn (11)
+## LOW — marketing copy churn (24)
+- ABsmartly — https://www.absmartly.com/ [Homepage]
 - Amplitude — https://amplitude.com/web-experimentation [Homepage]
 - Amplitude — https://amplitude.com/ [Homepage]
 - Conductrics — https://www.conductrics.com/ [Homepage]
+- Confidence (Spotify) — https://confidence.spotify.com/ [Homepage]
+- Convert — https://www.convert.com/ [Homepage]
 - Croct — https://croct.com/ [Homepage]
+- Dynamic Yield — https://www.dynamicyield.com/ [Homepage]
 - GrowthBook — https://www.growthbook.io/ [Homepage]
 - Harness FME — https://www.harness.io/products/feature-management-experimentation [Homepage]
+- Intelligems — https://www.intelligems.io/ [Homepage]
 - LaunchDarkly — https://launchdarkly.com/ [Homepage]
+- Mutiny — https://www.mutinyhq.com/ [Homepage]
+- Omniconvert — https://www.omniconvert.com/ [Homepage]
+- Optimizely — https://www.optimizely.com/ [Homepage]
+- PostHog — https://posthog.com/ [Homepage]
+- Salesforce Personalization — https://www.salesforce.com/marketing/personalization [Homepage]
 - Shoplift — https://www.shoplift.ai/ [Homepage]
-- Statsig — https://www.statsig.com/ [Homepage]
-- Uniform — https://www.uniform.dev/ [Homepage]
+- Sitecore — https://www.sitecore.com/products/personalize [Homepage]
+- Symplify — https://symplify.com/conversion-experimentation/ [Homepage]
 - Varify.io — https://varify.io/en/ [Homepage]
+- Webflow Optimize — https://webflow.com/feature/optimize [Homepage]
+- Webtrends Optimize — https://www.webtrends-optimize.com/ [Homepage]
+- Zoho PageSense — https://www.zoho.com/pagesense/ [Homepage]
 
-## ERRORS (61)
-- AB Tasty — https://abtasty.com/blog/ai-features-transforming-experimentation [Blog/Announcements] status 403
-- AB Tasty — https://www.abtasty.com/pricing [Pricing] status 403
-- AB Tasty — https://abtasty.com/gdpr-compliant [Compliance] status 403
-- AB Tasty — https://www.abtasty.com/resource-categories/case-studies [Solutions/Customers] status 403
-- AB Tasty — https://www.abtasty.com/ [Homepage] status 403
-- AB Tasty — https://abtasty.com/blog/iso-27001-certification [Blog/Announcements] status 403
-- AB Tasty — https://abtasty.com/emotions-ai [Product/Features] status 403
-- AB Tasty — https://www.abtasty.com/evi [Product/Features] status 403
-- AB Tasty — https://www.abtasty.com/sitemap.xml [Sitemap] status 403
+## ERRORS (62)
 - Adobe Target — https://business.adobe.com/products/target/adobe-target [Homepage]
 - Adobe Target — https://business.adobe.com/products/target/experimentation-optimization.html [Product/Features]
 - Adobe Target — https://business.adobe.com/blog/adobe-target-announces-redesigned-user-interface-with-generative-ai-features [Blog/Announcements]
 - Adobe Target — https://www.adobe.com/trust/compliance/compliance-list.html [Trust/Security]
 - Adobe Target — https://business.adobe.com/sitemap.xml [Sitemap]
 - Adobe Target — https://business.adobe.com/products/target/personalized-interactions.html [Product/Features]
-- Adobe Target — https://helpx.adobe.com/legal/product-descriptions/adobe-target.html [Pricing]
-- Compose — https://www.compose.co/web-experimentation [Product/Features]
-- Compose — https://www.compose.co/sitemap.xml [Sitemap]
-- Compose — https://www.compose.co [Homepage]
-- Compose — https://www.compose.co/strategic-planning [Product/Features]
-- Compose — https://www.compose.co/agencies [Solutions/Customers]
-- Compose — https://www.compose.co/blog/product-image-testing-on-shopify [Blog/Announcements]
-- Compose — https://www.compose.co/gdpr [Compliance]
-- Compose — https://www.compose.co/shopify [Integrations]
-- Compose — https://www.compose.co/pricing [Pricing]
-- Compose — https://www.compose.co/blog/the-most-affordable-ab-testing-software-for-maximizing-roi [Blog/Announcements]
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/optimization-sdk/overview [SDK Docs] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/insights/ [API Reference] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/marketplace/app/ninetailed-personalization [Integrations] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/remote-mcp-now-generally-available [Blog/Announcements] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/sitemap.xml [Sitemap] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/introducing-contentful-personalization [Blog/Announcements] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/pricing/ [Pricing] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/solutions/personalization [Solutions/Customers] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/developers/docs/personalization/ [Docs Root] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/products/personalization [Product/Features] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/blog/welcoming-ninetailed-contentful [Blog/Announcements] status 429
-- Contentful Personalization (formerly Ninetailed) — https://www.contentful.com/personalization [Homepage] status 429
+- Adobe Target — https://helpx.adobe.com/legal/product-descriptions/adobe-target.html [Pricing] status 403
+- Amplitude — https://amplitude.com/roadmap [Blog/Announcements] status 404
+- Contentful Personalization — https://www.contentful.com/developers/docs/personalization/optimization-sdk/overview [SDK Docs] status 429
+- Contentful Personalization — https://www.contentful.com/developers/docs/personalization/insights/ [API Reference] status 429
+- Contentful Personalization — https://www.contentful.com/marketplace/app/ninetailed-personalization [Integrations] status 429
+- Contentful Personalization — https://www.contentful.com/blog/remote-mcp-now-generally-available [Blog/Announcements] status 429
+- Contentful Personalization — https://www.contentful.com/sitemap.xml [Sitemap] status 429
+- Contentful Personalization — https://www.contentful.com/blog/introducing-contentful-personalization [Blog/Announcements] status 429
+- Contentful Personalization — https://www.contentful.com/pricing/ [Pricing] status 429
+- Contentful Personalization — https://www.contentful.com/solutions/personalization [Solutions/Customers] status 429
+- Contentful Personalization — https://www.contentful.com/developers/docs/personalization/ [Docs Root] status 429
+- Contentful Personalization — https://www.contentful.com/products/personalization [Product/Features] status 429
+- Contentful Personalization — https://www.contentful.com/blog/welcoming-ninetailed-contentful [Blog/Announcements] status 429
+- Contentful Personalization — https://www.contentful.com/personalization [Homepage] status 429
+- Datadog — https://trust.datadoghq.com/ [Trust/Security] status 403
 - Dynamic Yield — https://support.dynamicyield.com/hc/en-us/articles/360014076018-Single-Sign-On-SSO-Integration [Compliance] status 403
 - Dynamic Yield — https://support.dynamicyield.com/ [Docs Root] status 403
 - Dynamic Yield — https://support.dynamicyield.com/hc/en-us/articles/29314031599389-Dynamic-Yield-Mobile-SDKs [SDK Docs] status 403
 - Evolv AI — https://support.evolv.ai/hc/en-us/articles/4403709383955-Integrating-with-Google-Analytics [Integrations]
 - Evolv AI — https://support.evolv.ai/hc/en-us [Docs Root]
 - Evolv AI — https://support.evolv.ai/hc/en-us/articles/4403940019347-Adobe-Analytics-Integration-and-Data-Accuracy [Integrations]
-- Evolv AI — https://evolv.ai/privacy-policy [Compliance] status 401
+- Evolv AI — https://evolv.ai/privacy-policy [Compliance]
+- Harness FME — https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code [MCP Docs] status 404
 - Kameleoon — https://developers.kameleoon.com/ [Docs Root]
+- Kameleoon — https://www.kameleoon.com/customers [Solutions/Customers] status 403
+- Kameleoon — https://kameleoon.com/plans [Pricing] status 403
+- Kameleoon — https://kameleoon.com/blog/kameleoon-ai-copilot-changes-how-teams-experiment [Blog/Announcements] status 403
+- Kameleoon — https://www.kameleoon.com/blog/what-is-an-mcp-server [Blog/Announcements] status 403
+- Kameleoon — https://www.kameleoon.com/ [Homepage] status 403
+- Kameleoon — https://www.kameleoon.com/eol-policy [Compliance] status 403
+- Kameleoon — https://kameleoon.com/prompt-based-experimentation [Product/Features] status 403
+- Kameleoon — https://www.kameleoon.com/sitemap.xml [Sitemap] status 403
+- Kameleoon — https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again [Blog/Announcements] status 403
 - Kameleoon — https://developers.kameleoon.com/apis/automation-api-rest/ [API Reference]
+- Kameleoon — https://www.kameleoon.com/product-roadmap [Changelog] status 403
+- Kameleoon — https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention [Blog/Announcements] status 403
 - Kameleoon — https://developers.kameleoon.com/feature-management-and-experimentation/versions/ [SDK Docs]
+- Kameleoon — https://www.kameleoon.com/llms.txt [Sitemap] status 403
+- Kameleoon — https://kameleoon.com/blog/how-ai-really-influencing-experimentation [Blog/Announcements] status 403
+- Kameleoon — https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance [Blog/Announcements] status 403
 - Kameleoon — https://developers.kameleoon.com/developer-tools/mcp-server [MCP Docs]
+- Kameleoon — https://www.kameleoon.com/pbx-ideate [Product/Features] status 403
 - Kameleoon — https://developers.kameleoon.com/feature-management-and-experimentation/overview [Docs Root]
+- Kameleoon — https://kameleoon.com/platform/privacy-security [Trust/Security] status 403
 - LaunchDarkly — https://launchdarkly.com/llms.txt [Sitemap] status 404
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html [MCP Docs] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/guide/ [Docs Root] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html [MCP Docs] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html [MCP Docs] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.html [API Reference] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-ios-sdk/integration.html [SDK Docs] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/overview [Docs Root] status 403
-- Salesforce Marketing Cloud Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-android-sdk/integration.html [SDK Docs] status 403
+- Mutiny — https://help.mutinyhq.com/articles/2908744000-mutiny-model-context-protocol-mcp [MCP Docs] status 404
+- Salesforce Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html [MCP Docs] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/marketing/personalization/guide/ [Docs Root] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html [MCP Docs] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html [MCP Docs] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.html [API Reference] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-ios-sdk/integration.html [SDK Docs] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/marketing/personalization/overview [Docs Root] status 403
+- Salesforce Personalization — https://developer.salesforce.com/docs/marketing/personalization/references/personalization-android-sdk/integration.html [SDK Docs] status 403
 - Symplify — https://help.symplify.com/ [Docs Root] status 403
 - Webflow Optimize — https://help.webflow.com/hc/en-us/articles/33609390628243-Intro-to-Webflow-Optimize [Docs Root] status 403
 
 ## NOISY (likely hash noise) (2)
-- Amplitude — https://amplitude.com/releases/feed.xml [Changelog] streak 5
-- GrowthBook — https://github.com/growthbook/skills [SDK Docs] streak 3
+- Amplitude — https://amplitude.com/releases/feed.xml [Changelog] streak 6
+- GrowthBook — https://github.com/growthbook/skills [SDK Docs] streak 4

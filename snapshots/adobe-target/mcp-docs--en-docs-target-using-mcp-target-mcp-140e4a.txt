@@ -6,7 +6,7 @@ Target Guide
 [Beta]{class="badge informative"}
 Adobe Target MCP server
 target-mcp
-Last update: May 12, 2026
+Last update: September 28, 2026
 Topics:
 Integrations
 CREATED FOR:
@@ -52,9 +52,11 @@ Create and update activities
 - Create new A/B and Experience Targeting activities, update configurations, manage traffic splits, add or remove variants, and control activity state (activate, pause, deactivate).
 Explore and manage audiences and offers
 - List, inspect, create, and update audiences, HTML offers, and JSON offers.
+Manage Recommendations
+- List, inspect, create, and update criteria, collections, designs, promotions, and exclusions, and search the product catalog. Requires a Target Premium entitlement.
 Audit implementation
 - Review at.js settings, response tokens, and per-entity revision history.
-The Adobe Target MCP server exposes 41 tools across 10 categories — from activity creation and reporting to audience management and QA previews. For the complete parameter reference, see
+The Adobe Target MCP server exposes 62 tools across 11 categories — from activity creation and reporting to audience management, QA previews, and Recommendations configuration. For the complete parameter reference, see
 MCP server tools reference
 .
 To explore what you can do with the Adobe Target MCP server — including step-by-step prompt walkthroughs — see
@@ -78,7 +80,7 @@ Cursor
 ChatGPT
 . Support for additional MCP-compatible applications may be added in future releases.
 What Adobe Target objects can I access via MCP?
-You can access and manage activities (A/B, XT, AP), audiences, offers, properties, mboxes, response tokens, at.js configuration, A4T reports, and entity revision history. The MCP server exposes 41 tools covering both read and write operations.
+You can access and manage activities (A/B, XT, AP), audiences, offers, properties, mboxes, response tokens, at.js configuration, A4T reports, entity revision history, and Recommendations configuration (criteria, collections, designs, promotions, exclusions, and catalog search). The MCP server exposes 62 tools covering both read and write operations. Recommendations tools require a Target Premium entitlement and are not available on non-Premium accounts.
 Can the MCP server create or modify activities?
 Yes. The MCP server supports write operations including creating A/B and Experience Targeting activities, updating activity configurations, managing traffic splits, adding or removing variants, activating, pausing, and deactivating activities. Editor role or higher is required for write operations; Approver role is required for activation and deactivation.
 Do I need developer access to use the MCP server?

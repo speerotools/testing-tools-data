@@ -1,0 +1,641 @@
+# https://www.datadoghq.com/blog/experiments/
+Measure the business impact of every product change with Datadog Experiments | Datadog
+Datadog named a Leader in the Gartner® Magic Quadrant™ for Observability Platforms
+Leader in the Gartner® Magic Quadrant™
+Product
+The integrated platform for monitoring & security
+Observability
+Security
+Digital Experience
+Software Delivery
+Service Management
+AI
+Platform Capabilities
+View pricing
+Observability
+End-to-end, simplified visibility into your stack’s health & performance
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Sensitive Data Scanner
+Infrastructure
+Applications
+Data
+Logs
+Security
+Outpace AI-powered attacks with unified security and observability
+Learn more
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Bits Security Analyst
+Digital Experience
+Optimize front-end performance and enhance user experiences
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Continuous Testing
+Error Tracking
+Dashboards
+Software Delivery
+Build, test, secure and ship quality code faster
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+Software Composition Analysis
+DORA Metrics + AI Impact
+Service Management
+Integrated, streamlined workflows for faster time-to-resolution
+Incident Response
+Incident Management
+Work Management
+Service Level Objectives
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Internal Developer Portal (IDP)
+Software Catalog
+AI
+Monitor and improve model performance. Pinpoint root causes and detect anomalies
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+MCP Server
+Pup CLI
+GPU Monitoring
+Platform Capabilities
+Built-in features & integrations that power the Datadog platform
+Built-in Features
+Bits AI
+Bits Chat
+Bits Agent Builder
+Alerts
+Custom Metrics
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+DORA Metrics + AI Impact
+Incident Management
+Work Management
+Workflow Automation
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+MCP Server
+Agent Directory
+Datadog Apps
+API
+Marketplace
+Pup CLI
+Software Catalog
+Service Level Objectives
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use Case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+Database Visibility
+Docs
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+Login
+GET STARTED FREE
+Free Trial
+Toggle navigation
+Product
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Sensitive Data Scanner
+Security
+Overview
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+Cloud SIEM
+Bits Security Analyst
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Continuous Testing
+Error Tracking
+Dashboards
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+Software Composition Analysis
+DORA Metrics + AI Impact
+Service Management
+Incident Management
+Work Management
+Service Level Objectives
+Workflow Automation
+Datadog Apps
+Event Management
+Internal Developer Portal (IDP)
+Software Catalog
+AI
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Agent Observability
+MCP Server
+Pup CLI
+GPU Monitoring
+Platform Capabilities
+Bits AI
+Bits Chat
+Bits Agent Builder
+Alerts
+Custom Metrics
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+DORA Metrics + AI Impact
+Incident Management
+Work Management
+Workflow Automation
+Teams
+OpenTelemetry
+Integrations
+IDE Plugins
+MCP Server
+Agent Directory
+Datadog Apps
+API
+Marketplace
+Pup CLI
+Software Catalog
+Service Level Objectives
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use Case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+Database Visibility
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+Docs
+Login
+Get Started
+Get Started with Datadog
+Close modal
+The Monitor
+Measure the business impact of every product change with Datadog Experiments
+product analytics
+feature flags
+experiments
+data analytics
+digital experience monitoring
+Published
+Apr 1, 2026
+Read time
+8m
+Bridgitte Kwong
+Group Product Marketing Manager
+Lukas Goetz-Weiss
+Product Manager
+Adam Virani
+Product Marketing Manager
+Modern product teams ship features constantly. Every change—whether it’s a new onboarding flow, pricing tweak, or UI adjustment—raises the same question: Did this improve the product? AI has changed the stakes entirely: As release cycles accelerate and code generation scales across every team, the volume of changes has outpaced most teams’ ability to measure their true value.
+In noisy, real-world environments, randomized experiments (A/B tests) are the only reliable way to know which changes affect a metric. The problem is that running those experiments is often slow and fragmented: Teams open tickets to define metrics, wait for dashboards to be built, and depend on data scientists to validate results. Until now, understanding whether a change improved the product meant stitching together a product analytics vendor, business intelligence tools, a standalone experimentation tool, and a monitoring platform, which creates fragmented workflows and blind spots between product changes and business impact.
+Datadog Experiments
+helps product and engineering teams run trustworthy experiments directly within the Datadog platform. By combining behavioral analytics, application performance telemetry data, and warehouse-native business metrics in a single workflow, teams can design, launch, and analyze experiments without waiting on specialists, making experimentation something the whole organization can own.
+In this post, we’ll look at how Datadog Experiments enables you to:
+Accelerate learning and decisions without the overhead
+Prevent costly experiment restarts with built-in guardrails
+Catch performance regressions before they offset your wins
+Measure warehouse-native business outcomes
+Optimize AI and LLM apps with integrated testing in production
+Accelerate learning and decisions without the overhead
+Running experiments should shorten the feedback loop between shipping a change and understanding its impact. However, many teams still rely on custom dashboards and manual analysis pipelines that slow this process down.
+Datadog Experiments
+provides self-serve analysis tools
+that allow product and engineering teams to explore experiment results without waiting on specialized analytics workflows. Teams can define behavioral or business metrics directly in the platform and immediately analyze experiment performance as traffic flows to different variants. Datadog Experiments also integrates directly with
+Feature Flags
+, making it easy to control rollout and experiments from the same workflow. This enables teams to test new behaviors on subsets of users, compare outcomes, and gradually increase release exposure as confidence grows.
+Close dialog
+Because experiment results are available in real time, teams can monitor experiments as they run rather than waiting for post-hoc analysis. This visibility helps teams identify meaningful signals earlier in the experiment life cycle and move faster from observation to decision. The analysis interface also supports deeper exploration of results across multiple dimensions. Teams can investigate how changes affect different segments—such as device type, geographic region, or user persona—or analyze temporal trends to understand how experiment effects evolve over time.
+Close dialog
+Behind the scenes, Datadog drives a statistical engine that supports a wide range of metric types, including counts, sums, averages, ratios, and percentiles. Advanced statistical techniques like variance reduction improve sensitivity, allowing teams to detect meaningful changes with smaller sample sizes.
+Prevent restarts with built-in guardrails
+It’s a more common failure than most teams want to admit—2 weeks of an experiment running cleanly, results come back neutral, and the postmortem finds the real answer: The modal wasn’t rendering in production. Users in the treatment group never saw the feature. By the time the data revealed the problem, it was too late.
+Watch real user sessions from the first enrollment
+With Datadog Experiments, you can open a
+Session Replay
+directly from the experiment and watch how real users interact with each variant within minutes of enrolling your first cohort. Rather than waiting for aggregate metrics to signal something is off, you can see it firsthand.
+Close dialog
+This qualitative layer sits alongside your quantitative results throughout the experiment life cycle, making it possible to catch setup issues in hours rather than the weeks it would take for bad data to surface in a scorecard.
+Automatically detect data quality issues before they invalidate your results
+Beyond what users see, Datadog Experiments continuously monitors the integrity of the experiment itself. The platform automatically checks for sample ratio mismatches (SRM) and traffic imbalances that could compromise the validity of an experiment. These checks surface potential problems directly in the experiment interface so teams can correct them immediately. Instead of discovering issues weeks later during analysis, engineers and product managers can address them while the experiment is still running.
+Close dialog
+Standardized experiment design also improves consistency across teams. By using governed statistical methods and predefined experiment configurations, organizations can maintain trust in experiment outcomes and reduce the risk of inconsistent methodologies across teams.
+Catch performance regressions before they offset your wins
+Product experiments often focus on engagement or revenue metrics, but changes can also affect application performance. A new feature might increase conversions while simultaneously introducing latency, errors, or crashes that degrade the overall user experience.
+With Datadog Experiments, performance telemetry is integrated directly into the experiment workflow. Teams can monitor metrics such as request latency, error rates, and application crashes alongside experiment results to understand the full impact of each variant.
+Close dialog
+Because different signals emerge at different time scales, Datadog helps teams interpret results in terms of a signal latency spectrum. Immediate performance signals—such as latency or errors—act as an early pulse, while frustration signals like rage clicks surface within minutes as indicators of user pain. Longer-term business outcomes, such as retention or lifetime value, provide proof of sustained impact over time. Viewing these signals together allows teams to understand not only whether an experiment is working but also how its effects evolve from initial rollout through long-term adoption.
+This unified visibility helps teams detect performance regressions early. For example, if a new checkout flow increases conversions but also raises API latency, engineers can quickly identify the issue and investigate it by using correlated traces, logs, and infrastructure metrics. Because experiments data and observability telemetry data exist in the same platform, teams can move from experiment analysis to root cause investigation without switching tools.
+Measure warehouse-native business impact
+The metrics that matter most to your business and leadership, such as revenue, customer lifetime value, or subscription retention, live in your data warehouse. Most experimentation tools require copying this data into external analytics systems, introducing additional pipelines, governance challenges, and a black box approach to analysis. To support warehouse-native experiments, Datadog Experiments allows teams to analyze results directly against business metrics stored in their existing data warehouse platforms, such as Snowflake, BigQuery, Redshift, or Databricks.
+Close dialog
+This approach preserves a single source of truth for business metrics. Teams can inspect the SQL definitions and statistical methods used to calculate experiment outcomes, helping ensure transparency and auditability. Because sensitive data remains in the organization’s cloud environment, this model also reduces the operational overhead of maintaining pipelines to external experimentation vendors while maintaining full visibility into how experiment results are calculated.
+Close dialog
+Optimize AI and LLM apps with integrated testing in production
+AI-powered applications are fundamentally harder to evaluate than other types of software. Outputs are non-deterministic, and small changes to prompts, model versions, or retrieval strategies can affect experience, latency, and cost. Teams need a safe, systemic way to evaluate these changes in production without risking regressions.
+For example, consider a team improving a customer support agent. They might test two prompt variations to compare latency and token usage. Once they have singled out a new version of their prompt by doing
+offline evaluations
+, they can deploy it safely to a subset of users to A/B test and measure business impact with Experiments. By bringing offline evaluations and A/B testing into one platform, Datadog makes it easy to both safely vet ideas offline and understand real-world impact through randomized, controlled experiments. Offline evaluations let you quickly iterate on and validate the changes that are likely to improve the quality and performance of the AI agent, while A/B testing lets you measure the impact these changes have on business metrics such as user satisfaction, resolution rate, and revenue generated.
+Build a faster experiments culture with Datadog
+Experiments make it easier to learn from every product change. Datadog Experiments helps teams run reliable experiments faster by combining product analytics, performance telemetry, and warehouse-native business metrics in a unified workflow. With self-serve analysis, built-in guardrails, performance-aware experiments, and direct access to warehouse metrics, teams can evaluate the full impact of product changes and make decisions grounded in behavioral, performance, and business signals.
+To learn more about Datadog Experiments, check out the documentation for
+running experiments with Datadog Product Analytics
+and our post on
+unifying experiment data in Datadog
+. If you’re new to Datadog,
+sign up for a 14-day free trial
+.
+Measure the business impact of every product change with Datadog Experiments
+Accelerate learning and decisions without the overhead
+Prevent restarts with built-in guardrails
+Watch real user sessions from the first enrollment
+Automatically detect data quality issues before they invalidate your results
+Catch performance regressions before they offset your wins
+Measure warehouse-native business impact
+Optimize AI and LLM apps with integrated testing in production
+Build a faster experiments culture with Datadog
+Close feedback prompt
+Did you find this article helpful?
+Article thumbs up
+Article thumbs down
+Further reading
+Benefits of End-to-End Observability
+Break down frontend and backend silos with full-stack observability
+Download to learn more
+Related jobs at Datadog
+We're always looking for talented people to collaborate with
+Featured positions
+We have
+positions
+View all
+Start monitoring your metrics in minutes
+find out how
+Product
+Observability
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Security
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Digital Experience
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Software Delivery
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+DORA Metrics + AI Impact
+Service Management
+Incident Response
+Incident Management
+Work Management
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Software Catalog
+AI
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+MCP Server
+Pup CLI
+Platform Capabilities
+Built-in Features
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+Agent Directory
+API
+Marketplace
+Service Level Objectives
+Resources
+Pricing
+Documentation
+Support
+Services & Enablement
+Product Preview Program
+Certification
+Open Source
+Events and Webinars
+Security
+Privacy Center
+Knowledge Center
+Learning Resources
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+About
+Contact Us
+Partners
+Press
+Leadership
+Careers
+Legal
+Investor Relations
+Analyst Reports
+ESG Report
+Vendor Help
+Trust Hub
+Download mobile app
+© Datadog 2026
+Terms
+|
+Privacy
+|
+Cookies
+English
+English
+English
+日本語
+Japanese
+한국어
+Korean

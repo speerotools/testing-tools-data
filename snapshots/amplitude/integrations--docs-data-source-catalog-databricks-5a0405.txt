@@ -30,6 +30,7 @@ FAQ
 Developers
 SDKs
 APIs
+CLI
 Source catalog
 Ad Networks
 Attribution
@@ -448,9 +449,7 @@ data type and Append-Only Ingestion, optionally select
 Sync User Properties
 or
 Sync Group Properties
-to sync the corresponding properties
-within
-an event.
+to sync the corresponding properties within an event.
 After you add the SQL, click
 Test SQL
 . Amplitude runs a test against your Databricks instance to ensure the SQL is valid. Click
@@ -580,6 +579,7 @@ If you want to reuse the same source and skip the table version, contact
 Amplitude Support
 .
 Was this helpful?
+Copy Markdown
 On this page
 Features
 Limitations
@@ -646,6 +646,9 @@ Privacy Notice
 Acceptable Use Policy
 Legal
 Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
 ©
 2012–2026
 Amplitude, Inc.

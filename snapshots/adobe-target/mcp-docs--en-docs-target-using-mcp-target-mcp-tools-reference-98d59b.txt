@@ -6,7 +6,7 @@ Target Guide
 [Beta]{class="badge informative"}
 Adobe Target MCP server tools reference
 target-mcp-tools-reference
-Last update: May 12, 2026
+Last update: September 28, 2026
 Topics:
 Integrations
 CREATED FOR:
@@ -1287,6 +1287,440 @@ Returns:
 JSON object listing available templates and resources.
 Example prompt:
 “What templates are available for creating activities?”
+Recommendations tools
+tools-recommendations
+NOTE
+Recommendations tools require a Recommendations-enabled tenant with
+Target Premium
+. On non-Premium accounts, these tools are not shown in the client’s tool list, and the underlying API returns a 403 error.
+These tools support list, get, create, and update operations for Criteria, Collections, Designs, Promotions, and Exclusions. Delete operations are not exposed through the MCP server.
+Criteria
+Tools:
+list_target_criteria
+,
+get_target_criteria
+,
+list_target_criteria_by_type
+,
+get_target_criteria_by_type
+,
+create_target_criteria
+,
+update_target_criteria
+Criteria are rules that determine which items to recommend, based on a predetermined set of visitor behaviors. Criteria are grouped into 9 typed families:
+category
+,
+custom
+,
+item
+,
+cart
+,
+popularity
+,
+profileattribute
+,
+recent
+,
+sequence
+,
+userhistory
+.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4 9-row-4 10-row-4
+Parameter
+Type
+Required
+Description
+criteria_id
+integer
+For get/update
+The unique identifier of the criteria
+criteria_type
+string
+For typed operations
+One of the 9 criteria families
+limit
+/
+offset
+integer
+No
+Pagination
+name
+string
+Yes (create)
+Unique name of the criteria
+criteriaTitle
+string
+No
+Display title used in the design via
+$criteria.title
+description
+string
+No
+Description of the criteria
+key
+string
+Yes (create/update, most types)
+Recommendation key (e.g.
+CURRENT
+,
+LAST_VIEWED
+,
+LAST_PURCHASED
+,
+MOST_VIEWED
+,
+PROFILE_ATTRIBUTE
+)
+type
+string
+Yes (create/update, most types)
+Recommendation logic (e.g.
+VIEWED_BOUGHT
+,
+BOUGHT_CF
+,
+VIEWED_CF
+,
+SITE_AFFINITY
+,
+SIMILARITY
+)
+configuration
+object
+Yes (create/update)
+Inclusion rules, attribute weighting, price filter, and other family-specific settings
+daysCount
+string
+Varies
+Historical time range considered (e.g.
+ONE_DAY
+through
+TWO_MONTHS
+)
+list_target_criteria
+and
+get_target_criteria
+return minimal, cross-family criteria metadata (
+id
+,
+name
+,
+criteriaTitle
+,
+criteriaGroup
+). Use
+list_target_criteria_by_type
+/
+get_target_criteria_by_type
+(or
+create_target_criteria
+/
+update_target_criteria
+) with a
+criteria_type
+to work with the full, type-specific configuration. Field requirements differ per family — see the Adobe
+Recommendations API Reference
+for the complete per-type schema.
+Returns:
+The criteria object, or a paginated list with
+offset
+,
+limit
+,
+total
+, and
+list
+.
+Example prompt:
+“List all Recommendations criteria configured in this account and summarize the algorithm types in use.”
+Collections
+Tools:
+list_target_collections
+,
+get_target_collection
+,
+create_target_collection
+,
+update_target_collection
+Collections group catalog entities by matching rules, for use in criteria and promotions.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4
+Parameter
+Type
+Required
+Description
+collection_id
+integer
+For get/update
+The unique identifier of the collection
+limit
+/
+offset
+integer
+No
+Pagination
+name
+string
+Yes
+Unique name of the collection (max 250 characters)
+description
+string
+No
+Description of the collection (max 1000 characters)
+rules
+array
+Yes
+1–1000 rules (
+attribute
++ operator/operand) that determine catalog membership
+Returns:
+The collection object, including
+id
+,
+name
+,
+description
+,
+rules
+, and last-modified metadata.
+Example prompt:
+“What collections do I have, and which catalog attributes do they filter on?”
+Designs
+Tools:
+list_target_designs
+,
+get_target_design
+,
+create_target_design
+,
+update_target_design
+Designs are Velocity or HTML templates that control how recommended entities are rendered.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4
+Parameter
+Type
+Required
+Description
+design_id
+integer
+For get/update
+The unique identifier of the design
+limit
+/
+offset
+integer
+No
+Pagination
+includeScript
+boolean
+No
+Whether to include the design’s template content
+name
+string
+Yes
+Unique name of the design (max 250 characters)
+script
+string
+Yes
+Velocity template referencing at least one entity object (max 65,000 characters)
+type
+string
+No
+Content type of the script:
+HTML
+,
+JSON
+, or
+OTHER
+(default)
+Returns:
+The design object, including
+id
+,
+name
+,
+script
+, and
+type
+.
+Example prompt:
+“What designs and collections do I have configured for Recommendations?”
+Promotions
+Tools:
+list_target_promotions
+,
+get_target_promotion
+,
+create_target_promotion
+,
+update_target_promotion
+Promotions force specific entities into recommendation results, taking precedence over criteria and backup recommendations.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4 5-row-4 6-row-4 7-row-4 8-row-4 9-row-4 10-row-4
+Parameter
+Type
+Required
+Description
+promotion_id
+integer
+For get/update
+The unique identifier of the promotion
+limit
+/
+offset
+integer
+No
+Pagination
+name
+string
+Yes
+Unique name of the promotion (max 250 characters)
+type
+string
+Yes
+Currently only
+EXTERNAL
+is supported
+key
+string
+No
+Promotion key:
+CURRENT
+,
+LAST_VIEWED
+,
+LAST_PURCHASED
+,
+MOST_VIEWED
+, or
+PROFILE_ATTRIBUTE
+attribute
+string
+No
+Profile attribute name, applicable when
+key
+is
+PROFILE_ATTRIBUTE
+schedule
+object
+No
+Start/end time window during which the promotion applies
+order
+object
+No
+Ordering configuration for promoted entities
+configuration
+object
+No
+Collection reference for the promoted items (used when
+rules
+is empty)
+rules
+array
+No
+Inclusion rules identifying which entities to promote
+Returns:
+The promotion object.
+Example prompt:
+“Create an external promotion that features the ‘Backpacking Tents’ collection through the end of August.”
+Exclusions
+Tools:
+list_target_exclusions
+,
+get_target_exclusion
+,
+create_target_exclusion
+,
+update_target_exclusion
+Exclusions remove matching entities from recommendation results. Exclusions apply account-wide, across all criteria and activities.
+table 0-row-4 1-row-4 2-row-4 3-row-4 4-row-4
+Parameter
+Type
+Required
+Description
+exclusion_id
+integer
+For get/update
+The unique identifier of the exclusion
+name
+string
+Yes
+Unique name of the exclusion (max 250 characters)
+description
+string
+No
+Description of the exclusion (max 1000 characters)
+rule
+object
+No
+A single rule (
+attribute
++ operator/operand) identifying entities to exclude
+Returns:
+The exclusion object.
+Example prompt:
+“Are any account-wide exclusions currently configured, and what do they filter on?”
+Catalog
+Tools:
+get_target_entity
+,
+search_target_catalog
+Read-only tools for inspecting the Recommendations product/content catalog. There is no create, update, or delete tool for catalog entities through the MCP server.
+table 0-row-4 1-row-4 2-row-4 3-row-4
+Parameter
+Type
+Required
+Description
+catalog_entity_id
+string
+Yes (get)
+The catalog entity ID (e.g. SKU)
+environment_id
+string
+No
+Environment to look up the entity in
+query
+object
+Yes (search)
+A
+meta
+block (requires
+environmentId
+, optional
+displayFields
+) plus a
+query
+block (
+simple
+or
+compound
+); simple queries use
+queryFields
+, an
+operator
+(
+eq
+,
+lt
+,
+gt
+,
+le
+,
+ge
+,
+contains
+), and a
+matchValue
+Returns:
+get_target_entity
+returns the entity’s catalog attributes.
+search_target_catalog
+returns matches in an
+entities
+array. Field names in
+query
+must be real catalog attributes configured for the tenant.
+Example prompt:
+“Search the catalog for products with inventory under 1000.”
 Tools summary
 tools-summary
 Category
@@ -1379,8 +1813,57 @@ get_atjs_versions
 Template
 1
 list_target_templates
+Recommendations
+24
+list_target_criteria
+,
+get_target_criteria
+,
+list_target_criteria_by_type
+,
+get_target_criteria_by_type
+,
+create_target_criteria
+,
+update_target_criteria
+,
+list_target_collections
+,
+get_target_collection
+,
+create_target_collection
+,
+update_target_collection
+,
+list_target_designs
+,
+get_target_design
+,
+create_target_design
+,
+update_target_design
+,
+list_target_promotions
+,
+get_target_promotion
+,
+create_target_promotion
+,
+update_target_promotion
+,
+list_target_exclusions
+,
+get_target_exclusion
+,
+create_target_exclusion
+,
+update_target_exclusion
+,
+get_target_entity
+,
+search_target_catalog
 Total
-38
+62
 Related resources
 tools-related
 Work with MCP clients

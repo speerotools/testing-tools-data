@@ -1,0 +1,241 @@
+# https://docs.kameleoon.com/user-manual/integrations/data-warehouses/databricks/setting-up-databricks
+Setting up Databricks - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Databricks
+Setting up Databricks
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Integrations
+Integrations overview
+As a destination
+As a source
+CMS e-commerce
+Data warehouses
+Amazon Redshift
+Bigquery
+Databricks
+Setting up Databricks
+Use Databricks as a destination
+Use Databricks as a source — audience targeting
+Use Databricks as a source — pulling events for reporting
+Snowflake
+Target your imported audiences
+English
+On this page
+Considerations
+Prerequisites
+Setup
+1. Create a personal access token (PAT)
+2. Create kameleoon_configuration schema
+3. Grant read access to your data
+4. Authorize Kameleoon IPs (Optional)
+Databricks
+Setting up Databricks
+Copy page
+Copy page
+Configure a Databricks service principal, personal access token, and schema permissions to connect your Databricks SQL warehouse to Kameleoon.
+Copy page
+Copy page
+Data warehouse integrations are available as a premium add-on for Kameleoon’s Web Experimentation and Feature Experimentation module. For more information, contact your Customer Success Manager.
+This article explains how to set up a connection to your Databricks SQL warehouse. It contains several configuration steps that you must perform in your Databricks account. Kameleoon recommends that your Databricks administrator performs these steps.
+With the Databricks integration, you can simplify data retrieval for targeted campaigns and personalized user experiences.
+Key benefits:
+Allows precise data collection, enhancing audience targeting for personalized campaigns tailored to specific audience needs.
+Powering goal metrics to improve real-time performance tracking.
+​
+Considerations
+Keep these things in mind when using this integration:
+Data volume:
+Keep in mind the volume of data you plan to interact with, as it can affect query performance and costs.
+Query complexity:
+Complex queries may require more time and resources to execute. Optimize your queries for efficiency.
+Data privacy:
+Ensure compliance with data privacy regulations when handling user data within your warehouse.
+Access control:
+Implement proper access controls to limit who can configure and use the integration within your organization.
+Data schema:
+Maintain a clear and consistent data schema to facilitate data retrieval and analysis.
+Monitoring:
+Regularly monitor your data warehouse usage to manage costs and performance effectively.
+Documentation:
+Maintain documentation for queries, configurations, and integration processes to facilitate collaboration and troubleshooting.
+​
+Prerequisites
+To configure this integration, you need the following information:
+Databricks personal access token (PAT)
+Proper access to create Databricks schema and grant access.
+​
+Setup
+​
+1. Create a personal access token (PAT)
+Kameleoon will authenticate to your Databricks SQL warehouse with a personal access token. You should create a Databricks
+service principal
+and then create a PAT for that service account.
+Once you create a service principal, you can generate a PAT with the Databricks CLI, using the Service Principal “Application Id” that you can find in the Service Principal management page of the Databricks UI.
+databricks
+token-management
+create-obo-token
+{Service
+Principal
+Application
+Id}
+--lifetime-seconds
+7776000
+--comment
+"Token for Kameleoon service principal"
+​
+2. Create kameleoon_configuration schema
+When using Databricks as a source
+Create a dedicated schema for Kameleoon polling configuration within the catalog that contains the data that Kameleoon will be polling. You must name this schema
+kameleoon_configuration
+. You must also grant read and write access to the Service Principal that Kameleoon will be using. Here are some example commands:
+CREATE
+SCHEMA
+my_catalog
+.kameleoon_configuration;
+GRANT
+CREATE
+TABLE
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_configuration
+TO
+`{Service Principal Application Id}`
+;
+GRANT
+SELECT
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_configuration
+TO
+`{Service Principal Application Id}`
+;
+When using Databricks as a destination:
+CREATE
+SCHEMA
+my_catalog
+.kameleoon_configuration;
+GRANT
+CREATE
+TABLE
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_events
+TO
+`{Service Principal Application Id}`
+;
+As in the preceding commands, you will need to replace
+{Service Principal Application Id}
+with your service principal’s application ID.
+You can omit the
+my_catalog
+prefix when running queries directly in the necessary catalog.
+​
+3. Grant read access to your data
+Kameleoon must have access to the tables you wish to read from or write into. To grant this access, run commands such as:
+Using Databricks as a source:
+GRANT
+SELECT
+ON
+my_catalog
+.
+user_data
+.user_account_table
+TO
+`{Service Principal Application Id}`
+;
+//
+will
+grant
+read
+rights
+on
+a specific
+table
+GRANT
+SELECT
+ON
+SCHEMA
+my_catalog
+.
+user_data
+TO
+`{Service Principal Application Id}`
+;
+//
+will
+grant
+read
+rights
+on
+all tables
+within
+a
+schema
+Using Databricks as a destination:
+GRANT
+INSERT
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_events
+TO
+`{Service Principal Application Id}`
+;
+//
+will
+grant
+write rights
+on
+all tables
+within
+a
+schema
+Note: You can omit the
+my_catalog
+prefix when running queries directly in the necessary catalog.
+​
+4. Authorize Kameleoon IPs (Optional)
+If you implement
+IP access lists
+, contact your Kameleoon account manager, so they can provide you with the list of Kameleoon IPs you must authorize.
+Was this page helpful?
+Yes
+No
+Use BigQuery as a source — pulling events for reporting
+Previous
+Use Databricks as a destination
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

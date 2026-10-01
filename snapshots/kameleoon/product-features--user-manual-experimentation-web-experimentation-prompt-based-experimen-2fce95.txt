@@ -1,0 +1,377 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/create-a-prompt-based-experiment
+Create a prompt-based experiment - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Build
+Create a prompt-based experiment
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+Prompt-based experimentation plans
+Create a prompt-based experiment
+PBX Configure
+Master Prompts
+How to write effective prompts
+Best practices and safeguards
+Import designs from Figma
+Contentsquare X PBX integration
+PBX Ideate
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Access the creation flow
+Configure your experiment
+1. Define your prompt
+Use images and designs
+Use speech-to-text
+Select elements
+Configure AI settings
+2. AI workflow
+Real-time tracking and reasoning
+AI navigation
+Interaction tools
+Choose between variations
+Copy a variation to Figma
+Undo a prompt
+Create from sketches
+3. Review and adjust the generated code
+4. Compare and simulate
+Preview on different devices
+Share your experiment
+Finalize the experiment
+PBX Build
+Create a prompt-based experiment
+Copy page
+Copy page
+Learn how to create AI-powered experiments in minutes by writing natural language prompts.
+Copy page
+Copy page
+PBX Build
+is Kameleoon’s AI-powered experiment editor. You can use it to create AI-powered experiments in minutes by writing a simple prompt, with no coding needed.
+For a guided tour of prompt-based experimentation in Kameleoon, click
+here
+.
+​
+Access the creation flow
+In the Kameleoon app, go to
+Experiences
+>
+A/B Test
+>
+New experiment
+.
+If you use the Starter or Trial plan, the prompt-based interface opens automatically.
+If you use the Enterprise plan, a pop-up appears. Select
+By Prompt
+.
+You can’t use the Graphic editor to edit a variant that PBX generates. For more information, see the
+FAQ
+.
+Enter the required information and click
+Create
+.
+If you use PBX without the Kameleoon script installed, refer to the
+PBX FAQ
+for guidance.
+​
+Configure your experiment
+​
+1. Define your prompt
+In the prompt field, describe the modification you want to make using natural language. You can resize the prompt area by clicking and dragging the corner.
+Examples:
+“Update the product listing grid to display 2 products per row instead of 4.”
+“Change the default sorting option to ‘Price, low to high’.”
+By analyzing your website and existing visual assets, Kameleoon automatically detects and maps your brand identity, including your tone of voice, fonts, imagery, and color palette.
+​
+Use images and designs
+To provide visual context or add specific assets (like banners or pop-ups), click
++
+>
+Add an image
+or paste an image from your clipboard. You can attach up to 10 images in a single prompt for complete visual context.
+PBX automatically detects how to use each image, with no manual tagging required:
+Asset:
+PBX inserts the image file directly into the variation.
+Mockup:
+PBX uses the image as a reference to recreate the design with code.
+To preview an uploaded image, click it in the prompt area. You can also click
+Copy reference
+to copy the image link.
+You can also import Figma designs directly. For more information, see
+Import designs from Figma
+.
+For details on prompt limitations, see the
+PBX FAQ
+.
+​
+Use speech-to-text
+Dictate your prompt instead of typing it. Click the microphone icon in the prompt toolbar, say your prompt, then click the checkmark to transcribe it into the prompt field.
+​
+Select elements
+Help the AI identify which elements to modify in the following ways:
+Text description:
+Describe the element in your prompt (for example,
+“Move the product grid below the banner”
+).
+Selection box:
+Click
++
+>
+Draw sketch
+and outline the target element on the page. Use the toolbox to draw, erase, or delete your selection.
+PBX can also navigate to other pages on your site or to external sites if your prompt requires it. For example, PBX can reference a design element from another page, or use another website as inspiration.
+You can’t scroll or draw outside your current view when using the drawing tool. Use text descriptions for elements located lower on the page.
+​
+Configure AI settings
+Customize how the AI generates variants and interacts with your website. Click the
++
+icon and select
+AI Settings
+. In the
+Projects
+sidebar, select the project you want to edit.
+The AI Settings menu includes two tabs:
+Master Prompt:
+Define overarching instructions and context for the AI. For more information, refer to the
+Master Prompts
+article.
+Technical Settings:
+Configure technical preferences for your project. You can adjust the following options:
+Website adapts automatically to different screen sizes:
+Enable this option for responsive websites. Turn it off if your mobile version uses a separate URL or doesn’t update on resize.
+Enable support for dynamic websites (SPA, PWA…):
+Enable this option to detect virtual URL changes and ensure URL targeting and data collection work correctly.
+Custom attribute:
+Set a custom attribute to allow Kameleoon to track every virtual URL change, enable URL targeting, and gather data, such as the number of page views.
+Avoid dynamic IDs selectors:
+Specify selectors to avoid.
+Click
+Save
+to keep your changes, or click
+Back to the editor
+to return to the editor interface and discard any changes.
+​
+2. AI workflow
+When you submit a prompt, PBX works through the change in real time. Each action the AI takes appears as it happens, along with its reasoning in plain language, so you can follow what PBX is doing at every step.
+​
+Real-time tracking and reasoning
+As PBX generates your variation, you can see each step it takes and the thinking behind it. PBX highlights elements on the page as it processes your prompt, showing you exactly what the AI is targeting.
+​
+AI navigation
+PBX can navigate to other pages on your site or to external sites when your prompt requires it. You can reference a feature or design element from a different page, or point the AI at another site to use as inspiration. You can request this directly in your prompt: “Replicate the search filter layout from this travel booking site:
+www.example.com/search
+.”
+​
+Interaction tools
+At key points in the generation process, PBX pauses and presents one of the following interaction tools before continuing:
+Highlight elements validation:
+PBX highlights the element it intends to modify. Confirm the selection or redirect PBX to a different element.
+Option picker:
+PBX presents two or more design options for you to choose from. Select the option that fits your intent.
+Confirmation:
+PBX summarizes the action it’s about to take and asks you to confirm before it commits.
+This see-understand-steer loop catches wrong turns early, reducing rework and dead-end generations.
+​
+Choose between variations
+After generation, PBX presents several variation options for you to compare. Select the one that matches your intent and click
+Apply version
+. If none of the options are right, continue prompting to refine the result or provide additional details.
+The AI may also ask clarifying questions (for example, about image preferences or content types) to make sure the result matches what you have in mind.
+​
+Copy a variation to Figma
+Once a variation is ready, you can copy it to your clipboard as editable Figma layers and paste it directly into a Figma file, without rebuilding the design from scratch.
+On the
+Your version is ready
+card, open the three-dot menu and click
+Copy to Figma
+.
+Wait while PBX packages the variation. Progress appears for each step.
+Click
+Copy to clipboard
+.
+Open Figma and paste with
+⌘ + V
+(macOS) or
+Ctrl + V
+(Windows).
+The pasted content appears as native Figma layers.
+The copied layers work well for simple, mostly static variations. Variations with heavy interactive elements may not transfer cleanly. PBX captures only the component you built, not the full surrounding page.
+You can also start this flow from the experiment card in the
+Experiments dashboard
+.
+​
+Undo a prompt
+Each prompt’s output includes an
+Undo
+button. Click it to rewind your variation to the state it was in when that prompt completed, discarding all changes made by later prompts.
+Use this when a follow-up prompt moves the variation in the wrong direction. Rather than starting over, click
+Undo
+on the prompt you want to return to and try a different approach from that point.
+​
+Create from sketches
+Design components like pop-ups or overlays by drawing them directly on the page:
+Click
++
+>
+Draw sketch
+.
+Draw your design.
+Prompt the AI to build it (for example,
+“Build the popup based on your sketch”
+).
+Follow the
+guidelines for writing effective prompts
+for better results.
+​
+3. Review and adjust the generated code
+Click the
+Code
+switch in the header to open the code panel. Click
+CSS
+or
+JS
+to view and edit the relevant code. Click
+Edit code
+to make changes.
+If you prompt several times and generate multiple versions for a given variant, you can switch between those variants using the dropdown in the top-left of the code panel.
+Once the AI generates content for your experiment, you can refine its output by editing the underlying code.
+To refine a variant using prompts instead of code, see the
+FAQ
+.
+​
+4. Compare and simulate
+Use the header buttons to switch between views:
+Website display:
+Preview the variant appearance.
+Code:
+View the technical implementation.
+Compare:
+Compare different variations side-by-side.
+​
+Preview on different devices
+To see how your variant looks on different screen sizes, click the
+mobile
+,
+tablet
+, or
+desktop
+icons at the top of the page. Switching the device preview doesn’t affect the generated code.
+Click
+Simulate
+to test the experiment live on your website before launching.
+​
+Share your experiment
+Click the
+share icon
+in the top-right to:
+Copy link:
+Share a direct link to the experiment.
+Share on LinkedIn:
+Post your experiment directly to your feed.
+​
+Finalize the experiment
+Once your variation is complete:
+Click
+Finalize
+.
+Set your goals, audience targeting, and traffic allocation.
+Launch your experiment.
+You are now ready to experiment faster than ever, with no code, and no delay.
+Was this page helpful?
+Yes
+No
+Prompt-based experimentation plans
+Previous
+PBX Configure
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

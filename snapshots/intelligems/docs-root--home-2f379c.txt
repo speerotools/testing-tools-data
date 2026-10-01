@@ -6,6 +6,7 @@ Ctrl
 k
 Intelligems Docs
 Welcome to Intelligems
+What You Can Test
 Getting Started
 Getting Started
 Adding Intelligems Script to your Theme
@@ -18,7 +19,6 @@ Content Experience QA Checklist
 Content Experiences FAQs
 Merchandising Experiences
 Merchandising Experiences Overview
-How to Set Up Onsite Upsells
 Integrating Components
 Merchandising Experience QA Checklist
 Merchandising Experiences FAQs
@@ -26,21 +26,18 @@ Pricing Experiences
 Pricing Experiences Overview
 Pricing Experiences Integration Guides
 Pricing Experience QA Checklist
-Price Testing FAQs
+Price Experiences FAQs
 Shipping Experiences
 Shipping Experiences Overview
 Shipping Progress Bar Integration
 Shipping Experience QA Checklist
 Shipping Experiences FAQs
-Content Testing
-Content Testing - Getting Started
-Content Testing FAQs
 CHECKOUT Experiences
 Checkout Experiences Overview
 Checkout Experience QA Checklist
 Checkout FAQs
 Post Purchase Experiences
-Getting Started with Post-Purchase Expereinces
+Getting Started with Post-Purchase Experiences
 Post-Purchase Upsell QA Checklist
 Post-Purchase Upsell FAQs
 General Features
@@ -67,7 +64,6 @@ Javascript API
 External API
 MCP Server
 Theme & Storefront Setup
-Developer Resources
 Shopify Scripts is sunsetting
 Powered by GitBook
 On this page
@@ -80,16 +76,25 @@ Copy
 On this page
 Welcome to Intelligems
 What is Intelligems?
-Intelligems is the ultimate profit optimization tool. We provide data-driven solutions and help maximize profits for Shopify merchants wanting to optimize their content, prices, discounts, and shipping rates, along with their checkout and post-purchase upsells.
+Intelligems is the ultimate profit optimization platform for Shopify. You can A/B test and personalize your
+content
+,
+prices
+,
+discounts
+, and
+shipping rates
+, along with your
+checkout
+and
+post-purchase upsells
+, and measure every experience on conversion rate, AOV, revenue per visitor, and gross profit per visitor.
 Our mission is simple: we want to help e-commerce entrepreneurs improve their businesses and make more money, by helping you use data to manage your websites and profitability more effectively. We aim to provide independent e-commerce stores access to the same revenue optimization tools that power the growth and profitability of companies like Amazon and Uber.
-Why Intelligems?
-Our founders and several team members met at Via Transportation, a ridesharing company based in NYC. Over the course of five years, we gradually built out the tools, data, algorithms, and systems to compete with the rapidly evolving rideshare market.
-The most powerful tool we built was a dynamic pricing engine underpinned by robust A/B testing. Any question or hypothesis we had, we could simply run a test to get the (statistically significant) answer.
-Now, as Intelligems, we are bringing our learning, mindset, and toolkit to e-commerce operators, especially Shopify store owners.
-Looking for developer docs? You're in the right place, you can get started
-here
+Looking for developer docs? You're in the right place, you can
+get started here
 !
 What can you build with Intelligems?
+What You Can Test
 Everything you build in Intelligems is an
 experience
 : a change to your store that you show to a portion of your visitors or all of them.
@@ -98,8 +103,9 @@ test
 to split your traffic and let the data tell you which version wins. Run it as a
 personalization
 to show it to a specific audience, always on.
+Tests Vs Personalizations
 The six experience modules
-Experiences are grouped into six modules, matching the sections in your Intelligems left nav. Which modules you have access to depends on your plan.
+Experiences are grouped into six modules, matching the sections in your Intelligems left nav.
 Module
 What it's for
 Content
@@ -114,15 +120,37 @@ Checkout
 Add upsells, trust badges, and progress bars to convert more of the shoppers who reach checkout.
 Post-purchase
 Offer one-click upsells after checkout to add revenue to orders you've already won.
+Which experience should I build?
+Plans and requirements
+Every paid plan includes Content, and you add the modules you want from there. Unlimited includes all of them.
+Checkout experiences require Shopify Plus. Post-purchase experiences run on every Shopify plan.
+Checkout and Post-purchase are two sections in the nav and one module on your plan.
+Pricing covers product prices, discounts, and subscription prices.
+Sitewide Analytics
+is included on every paid plan.
+Every module except Pricing can be trialed for 14 days.
+Getting Started
+Targeting and measurement
+Any experience can be limited to an audience, using device, new or returning visitors, traffic source, country, UTM parameters, landing page, referring domain, cookies, or a Klaviyo segment.
+Results come back as conversion rate, AOV, revenue per visitor, and gross profit per visitor. Add your COGS, shipping cost, and transaction fee assumptions and profit shows up on every experience, including tests you already ran.
+Targeting
+How to Add Profit to Intelligems Analytics
+Why Intelligems?
+Our founders and several team members met at Via Transportation, a ridesharing company based in NYC. Over the course of five years, we gradually built out the tools, data, algorithms, and systems to compete with the rapidly evolving rideshare market.
+The most powerful tool we built was a dynamic pricing engine underpinned by robust A/B testing. Any question or hypothesis we had, we could simply run a test to get the (statistically significant) answer.
+Now, as Intelligems, we are bringing our learning, mindset, and toolkit to e-commerce operators, especially Shopify store owners.
 If you don't see what you're looking for, or aren't sure of the best way to set up a specific experience you have in mind, reach out to our support team
 here
 .
 Next
-Getting Started
+What You Can Test
 Last updated
-14 days ago
+28 days ago
 Was this helpful?
 What is Intelligems?
-Why Intelligems?
 What can you build with Intelligems?
+The six experience modules
+Plans and requirements
+Targeting and measurement
+Why Intelligems?
 Was this helpful?

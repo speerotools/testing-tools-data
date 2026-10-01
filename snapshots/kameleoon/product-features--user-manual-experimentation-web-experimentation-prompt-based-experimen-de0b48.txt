@@ -1,0 +1,192 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/import-designs-from-figma
+Import designs from Figma - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Build
+Import designs from Figma
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+Prompt-based experimentation plans
+Create a prompt-based experiment
+PBX Configure
+Master Prompts
+How to write effective prompts
+Best practices and safeguards
+Import designs from Figma
+Contentsquare X PBX integration
+PBX Ideate
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Access the Figma integration
+Link your Figma account
+Insert a design in the prompt
+Important considerations
+PBX Build
+Import designs from Figma
+Copy page
+Copy page
+Import Figma frame designs directly into Kameleoon PBX to use as visual inputs for generating experiment variations without manual coding.
+Copy page
+Copy page
+You can import Figma designs directly into
+PBX Build
+to use in prompt-based experiments. This
+Figma-to-prompt
+integration lets you transform your Figma frames into functional website elements without manual coding. You can reference multiple Figma frames in a single prompt, and PBX generates variations that match each frame’s layout and spacing pixel-perfectly, including design assets such as images, icons, and embedded media.
+​
+Access the Figma integration
+The Figma icon appears in the prompt area of the PBX interface. You can find it to the right of the
++
+icon, which you use for sketch or mockup imports.
+For more information about navigating the PBX interface, see
+Create a prompt-based experiment
+.
+​
+Link your Figma account
+The first time you link Kameleoon to Figma, you must authorize access.
+Click the
+Figma
+icon in the prompt area or paste your Figma link into the prompt area.
+In the pop-up, click
+Sign in to Figma
+.
+In the new tab that opens, click
+Allow access
+to authorize the “PBX by Kameleoon” app.
+​
+Insert a design in the prompt
+To insert a design into your prompt, use a link to the specific Figma node you want PBX to use as an input.
+In Figma, right-click the frame you want to import.
+Select
+Copy as
+>
+Copy link to selection
+.
+In the Kameleoon PBX interface, do one of the following:
+Paste the Figma link directly into the prompt area.
+Click the
+Figma
+icon, paste the link into the
+Figma
+pop-up, and click
+Insert design
+.
+To include multiple frames in the same prompt, repeat this process for each additional frame. You can add up to 10 Figma files per prompt. All added frames appear in the chatbox.
+You can hover over any added frame to see a preview, view information about the file, or click
+Open in new tab
+to open it in Figma.
+PBX requires a link to a specific Figma node (such as a frame) rather than a general file URL.
+PBX uses all inserted frames as visual inputs once you send your prompt. Click the
+X
+icon to remove a frame from the prompt.
+​
+Important considerations
+Keep the following requirements and limitations in mind when using the Figma integration:
+File limit:
+You can add a maximum of 10 Figma files per prompt.
+Screens per export:
+Each Figma export can include up to 4 screens, so a single export also works for a variant with multiple steps or screens.
+Authentication:
+You must be signed in to your Figma account and authorize Kameleoon to access your design files.
+Rate limiting:
+The Kameleoon Figma integration follows Figma’s rate limits, which vary by subscription plan.
+Was this page helpful?
+Yes
+No
+Best practices and safeguards
+Previous
+Contentsquare X PBX integration
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

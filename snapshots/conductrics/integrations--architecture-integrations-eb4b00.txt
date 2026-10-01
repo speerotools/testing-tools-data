@@ -1,6 +1,8 @@
 # https://www.conductrics.com/architecture-integrations/
 Architecture & Integrations | Conductrics
 Skip to content
+Free webinar on October 8: See how Conductrics turns real-time Snowplow data into personalized experiences.
+Save your spot >
 Platform
 All features
 Experimentation
@@ -29,11 +31,13 @@ Make your optimizations render faster and more reliably by executing logic direc
 Connect your ecosystem
 We don’t want to be another data silo. Conductrics acts as a decision layer that connects your inputs to your outputs.
 Universal compatibility:
-We integrate natively with the tools you already use. Through our flexible integration options, tools like Contentsquare, Hotjar, Segment, and Mixpanel can automatically “read” your experiments and personalization logic without complex custom integration work.
+We integrate natively with the tools you already use. Platforms like Contentsquare, Hotjar, Segment, and Mixpanel automatically “read” your experiments without complex custom integration.
 Cloud-native:
 Whether you need to ingest offline conversion data from AWS S3 or query Google BigQuery for real-time targeting, we connect directly to your cloud infrastructure.
 Streaming & analytics:
-Push your decision data where it needs to go. Stream events to your data lake via built-in Connectors for GA4, Adobe Analytics/AEP, and Snowplow, or a custom pipeline.
+Push decision data where it needs to go. Stream events via built-in Connectors for GA4, Adobe Analytics/AEP, and Snowplow, or a custom pipeline.
+AI Agents (MCP):
+Connect coding assistants like Claude and Cursor to securely automate test drafting and data analysis via our restricted MCP server.
 Governance & workflow
 Move fast without breaking production. We provide the guardrails large teams need to experiment safely.
 Staging & QA:
@@ -66,13 +70,14 @@ Meet the team
 Contact us
 Book a demo
 Resources
+Articles & Guides
 Case studies
-Experimentation & Testing
-Predictive AI & Bandits
-Customer research & Intent
+Conductrics vs. Statsig
+Conductrics vs. VWO AB Tasty (Wingify)
 Support
 Getting started
 Conductrics API
+MCP Server
 Mobile SDKs
 © 2010-
 Conductrics, Inc.

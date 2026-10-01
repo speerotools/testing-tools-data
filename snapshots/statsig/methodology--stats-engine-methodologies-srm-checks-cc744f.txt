@@ -86,9 +86,7 @@ SRM Checks
 SRM Checks
 Understand how Statsig detects sample ratio mismatch (SRM) and how to debug skewed traffic splits.
 SRM - sample ratio mismatch
-Sample ratio mismatch (SRM) occurs when the observed allocation of
-unique
-users between test groups differs from the expected allocation or split of the test. Refer to the
+Sample ratio mismatch (SRM) occurs when the observed allocation of unique users between test groups differs from the expected allocation or split of the test. Refer to the
 Statsig blog post on sample ratio mismatch
 for background.
 SRM is a signal that there may be unknown bias in the test. Unknown bias is a significant problem because, without a clear diagnosis of the imbalance, it's difficult to know how much the bias affects your results.
@@ -98,6 +96,7 @@ Health Checks
 ). Statsig uses a Chi-squared test to identify whether the split of users between groups indicates a sample ratio mismatch.
 Statsig automatically analyzes data by common dimensions that the Statsig SDK logs to identify potential drivers of SRM. These include sdk_type, sdk_version, reason, is_bot, browser_name, browser_version, os, os_version, and region.
 Was this helpful?
+Copy Markdown
 On this page
 SRM - sample ratio mismatch
 SRM checks

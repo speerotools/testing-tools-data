@@ -1,5 +1,5 @@
 # https://posthog.com/
-PostHog – We make your product self-driving
+PostHog - your product’s context layer
 Products
 Pricing
 Docs
@@ -33,26 +33,70 @@ Company handbook
 Store
 Careers
 Trash
-Shift your product into
-self-driving mode
-PostHog already knows your customers, which features they use, and the issues they have.
-Now, PostHog automatically
-diagnoses problems
-,
-fixes bugs
-, and
-generates pull requests
-– all
-without you having to prompt it.
+Your product's
+context layer
+PostHog ingests and stores your
+analytics, errors, replays, and business data
+so you and your
+agents
+can query and act on it.
 Join 500,000+ teams already shipping with PostHog.
-Built-in tools for your agents:
+Set up
+for free
+97% of users pay us $0
+No credit card required
+Setup wizard installs PostHog for you
+Get started
+Install with AI
+Happier in the terminal? Skip the browser:
+npx -y @posthog/wizard@latest
+Ask PostHog anything
+Give agents product context
+Ship with PostHog
+Illustrative demo: PostHog AI investigates falling paid conversion using Google Ads traffic, PostHog funnels, Stripe payments, and GitHub changes. It finds an extra required field at mobile checkout and recommends testing a shorter checkout. All findings are sample data.
+What can I help you with?
+Add context
+Describe the task in detail...
+Auto
+Default · Claude Sonnet 5 High
+Coding
+Product analytics
+SQL
+Session replay
+SDK setup
+Feature flags
+Experiments
+Surveys
+Docs
+PostHog AI
+Sample data
+Why are signups growing, but paid conversions falling?
+I’ll trace the path from ad click to paying customer.
+Google Ads
+Compare campaign traffic
+PostHog
+Analyze the signup → payment funnel
+Stripe
+Check payments and declines
+GitHub
+Review recent checkout changes
+The drop starts before payment.
+A new required field is losing customers at mobile checkout.
+Test a shorter mobile checkout.
+Ask PostHog anything
+PostHog is the single place to ingest, store, and query your product and company data. Analytics, replays, errors, and logs, stitched together on-the-fly to answer any question you have.
+Pipe in third party data from
+800
++ sources
+for a more complete picture.
+Get started - free
 Product Analytics
-Web Analytics
 Session Replay
+Error Tracking
+Web Analytics
 Feature Flags
 Experiments
 Surveys
-Error Tracking
 Managed warehouse
 CDP
 Workflows
@@ -60,17 +104,98 @@ Logs
 AI Observability
 Endpoints
 Inbox
-Traces
+Tracing
+Heatmaps
+Replay Vision
+No-code A/B Testing
+and
+more
+Product Analytics, Session Replay, Error Tracking, Feature Flags, Experiments, Managed warehouse
+flow into your agents.
+Product Analytics
+Session Replay
+Error Tracking
+Feature Flags
+Experiments
+Managed warehouse
+Your agents
+Give agents product context
+Query product data from your editor instead of context-switching to a browser. Do everything from one-off analytics to launching new features - no new UI needed.
+Install the PostHog MCP
+npx @posthog/wizard mcp add
+Or use
+PostHog Desktop
+Illustrative self-driving inbox. Four sample reports arrive one at a time, newest first: an invoice request from GitHub, a conversion tracking scout with a draft pull request, a checkout issue from session replay, and a high-priority sign-in error with a pull request ready to review.
+Your inbox is clear
+New findings will appear here.
+P2
+feat(billing)
+Make invoices easier to find
+Customers keep asking where to download invoices. Add a direct link from their account page.
+GitHub
+Just now
+P3
+fix(analytics)
+Restore checkout conversion tracking
+#
+2041
+The new checkout stopped sending completion events. Restore tracking so the funnel is accurate.
+acme/web
+Scout · Conversion tracking
+Just now
+P2
+fix(checkout)
+Explain why a payment was declined
+Replays show customers retrying the same card. Replace the generic error with a useful message.
+Session replay
+Just now
+P1
+fix(auth)
+Fix sign-in failures on mobile
+#
+2043
+An expired token leaves mobile users on a blank screen. Refresh the session before redirecting.
+acme/web
+Error tracking
+Just now
+Ship with PostHog
+Your Inbox clusters related findings into researched reports, ranked by priority. Review proposed improvements and pull requests, then decide what ships.
+Get started - free
+Self-driving pulls signals from:
+Error tracking
+Exceptions and stack traces grouped into issues
+Session replay
+Dead clicks, quick backs, long stalls
+Support
+Tickets and conversations from your users
+External tools
+Zendesk, Linear, GitHub issues
+Built-in tools for your agents:
+Product Analytics
+Session Replay
+Error Tracking
+Web Analytics
+Feature Flags
+Experiments
+Surveys
+Managed warehouse
+CDP
+Workflows
+Logs
+AI Observability
+Endpoints
+Inbox
+Tracing
 Heatmaps
 Replay Vision
 No-code A/B Testing
 Product Analytics
-Web Analytics
 Session Replay
+Error Tracking
+Web Analytics
 Feature Flags
 Experiments
 Surveys
-Error Tracking
 Managed warehouse
 CDP
 Workflows
@@ -78,7 +203,7 @@ Logs
 AI Observability
 Endpoints
 Inbox
-Traces
+Tracing
 Heatmaps
 Replay Vision
 No-code A/B Testing

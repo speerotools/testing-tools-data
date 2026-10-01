@@ -122,6 +122,12 @@ Managing Express Agents via Admin APIs
 Agent Edit History API
 Goal Management API
 Custom Visitor Traits API
+🤖
+Conductrics Admin MCP Server
+🤖
+Admin MCP Tool Reference
+🤖
+Using the MCP Inspector
 Deployments
 Deployment Options
 Script Tag Installation
@@ -410,7 +416,7 @@ is not
 api.Exec
 . The lower-case names are deprecated but still supported for now.
 Updated
-11 months ago
+about 1 year ago
 iOS On-Device API
 React Native Support
 Did this page help you?
@@ -425,3 +431,6 @@ API Interface
 Refreshing the "Profile" from Conductrics Servers
 Specifying Traits for a User
 Changelog
+1.0.7
+1.0.6
+1.0.5

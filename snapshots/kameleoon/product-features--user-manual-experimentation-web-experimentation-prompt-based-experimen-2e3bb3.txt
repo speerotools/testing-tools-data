@@ -1,0 +1,313 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/pbx-configure
+PBX Configure - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Build
+PBX Configure
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+Prompt-based experimentation plans
+Create a prompt-based experiment
+PBX Configure
+Master Prompts
+How to write effective prompts
+Best practices and safeguards
+Import designs from Figma
+Contentsquare X PBX integration
+PBX Ideate
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Configure targeting
+Reference existing assets with @ mentions
+Configure triggers
+Combine segment and trigger instructions in one prompt
+Configure traffic allocation
+Configure goals
+Configure integrations
+Review the experiment configuration
+Launch the experiment
+PBX Build
+PBX Configure
+Copy page
+Copy page
+Set up targeting, triggers, traffic allocation, and goals for a prompt-based experiment, then launch it directly from the PBX builder.
+Copy page
+Copy page
+PBX Configure
+is the setup step of PBX Build. After you generate a variation in the PBX builder, click
+Prepare for launch
+to enter PBX Configure. This article walks you through each configuration step and explains how to launch the experiment.
+For help generating a variation, see
+Create a prompt-based experiment
+.
+To open PBX Configure, click the
+cog icon
+in the PBX sidebar. To return to the prompting view, click the
+pencil icon
+.
+​
+Configure targeting
+In the targeting step, select who to expose to the experiment. Choose one of the following options:
+All visitors
+: Exposes every visitor to the experiment.
+Specific segment
+: Lets you choose an existing segment from your project.
+Build your segment with AI
+: Lets you describe your audience in natural language so PBX generates the targeting conditions.
+To build a segment with AI, select
+Build your segment with AI
+, click
+Apply
+, and describe your intended audience. For example:
+Mobile users
+Returning visitors
+Users from the United States
+Visitors who viewed a product page
+​
+Reference existing assets with @ mentions
+To reuse an existing asset in your prompt, type
+@
+followed by the asset name. PBX inserts the asset as an
+@Asset_Name
+mention and applies its configuration directly to the segment.
+You can mention any of the following asset types:
+Experiments
+Personalizations
+Segments
+Triggers
+For example, enter
+Target visitors matching @Returning_Customers who viewed a product page
+to reuse the
+Returning_Customers
+segment as part of the new segment.
+PBX checks for duplicates against existing assets in the project scope and reuses a matching asset by name rather than creating a new one.
+A checkbox lets you save the created segment for future reuse across the project. Without saving, the segment is scoped to this experiment only.
+If PBX cannot confidently interpret part of your prompt, it will ask for clarification before generating the segment.
+​
+Configure triggers
+In the trigger step, choose when to activate the experiment. Choose one of the following options:
+When webpage is reached
+: Activates the experiment when a visitor lands on the URL you specified during experiment creation. PBX pre-populates this URL.
+When specific trigger occurs
+: Lets you choose from existing triggers in your project.
+Build your trigger with AI
+: Lets you describe the activation condition in natural language.
+To build a trigger with AI, select
+Build your trigger with AI
+, click
+Apply
+, and describe when to activate the experiment. For example:
+Visitors who spend more than 30 seconds on a product page
+Users who return to the website
+Visitors who scroll past the pricing section
+PBX generates the trigger configuration based on your description.
+To reuse an existing experiment, personalization, segment, or trigger, type
+@
+followed by the asset name and select it from the list. PBX inserts the asset as an
+@Asset_Name
+mention and applies its configuration to the trigger. For details on supported asset types, see
+Reference existing assets with @ mentions
+.
+A checkbox lets you save the created trigger for future reuse across the project. Without saving, the trigger is scoped to this experiment only.
+If PBX cannot confidently interpret part of your prompt, it will ask for clarification before generating the trigger.
+​
+Combine segment and trigger instructions in one prompt
+When you provide a prompt that contains both audience and activation instructions, PBX identifies what belongs to the segment and what belongs to the trigger, then splits the prompt across both configurations. PBX handles this bifurcation regardless of which step (segment or trigger) you are currently in.
+The following scenarios describe how PBX responds to different prompt inputs:
+Your prompt contains a mix of segment and trigger conditions
+: PBX walks you through the segment step first, then moves to the trigger step with each pre-filled based on your initial prompt. You do not need to re-enter your instructions.
+Your prompt contains only conditions that belong to the other category
+: For example, if you enter trigger conditions while in the segment step, PBX skips ahead directly to the correct step rather than requiring you to navigate there yourself.
+Your segment is already defined, but a subsequent prompt in the trigger step affects the segment
+: After you finalize the trigger, PBX returns you to the segment step so you can review and confirm the additional conditions it identified.
+For example, if you enter the following prompt:
+Target USA visitors who are browsing a page
+/shop
+on desktop, and who have not converted the Add to Cart goal.
+PBX assigns each condition to the correct configuration step:
+Segment
+: USA-based visitors on desktop devices.
+Trigger
+: Page URL contains
+/shop
+, and the visitor has not converted the Add to Cart goal.
+Review both the segment and trigger configurations after PBX processes your prompt to confirm that each condition lands in the expected step.
+​
+Configure traffic allocation
+In the traffic allocation step, choose how PBX distributes visitors between the control and the variation. Choose one of the following allocation methods:
+Manual
+: Assigns a fixed percentage of traffic to each variation.
+Multi-armed Bandit
+: Allocates more traffic to better-performing variations automatically over time.
+Contextual Bandit
+: Allocates variations based on visitor attributes and real-time performance data, serving the most relevant variation to each visitor.
+Use the
+Exposed traffic
+control to set the percentage of eligible visitors who participate in the experiment.
+After you configure traffic allocation, click
+Apply Traffic
+.
+​
+Configure goals
+Goals determine how Kameleoon measures experiment performance. In the goals step, you can:
+Search for and select one or more existing goals from your project.
+Create a new goal manually by clicking
++ Create a new goal
+. For detailed instructions, see
+Create a goal
+.
+Build a goal with AI by clicking
+Create a goal with AI
+and entering a description of the conversion event you want to track.
+To build a goal with AI, click
+Create a goal with AI
+. A text box opens where you can describe the action you want to measure. Click
+Send
+to submit your prompt. For example:
+Visitors who click the Add to Cart button
+Visitors who reach the order confirmation page
+Visitors who submit the newsletter signup form
+PBX generates the goal configuration based on your description. Review the generated goal before you apply it.
+You can use the on-screen toolbar in the PBX preview zone to add visual context to your goal prompt.
+The toolbar includes the following tools:
+Rectangle select
+: Click and drag to draw a box around page elements.
+Element selector
+: Click any element in the DOM to select it.
+Undo
+: Deselects the most recently selected or boxed element.
+You can click and drag the toolbar to reposition it in the preview zone.
+Goals are implemented as custom JavaScript. The goal contains the JS code generated and, once created, can be used in this experiment as well as in other experiments if needed.
+You can reference existing Kameleoon goals by name in your prompt. PBX checks for duplicates against existing assets in the project scope and reuses a matching asset by name rather than creating a new one.
+If PBX cannot confidently interpret part of your prompt, it will ask for clarification before generating the goal.
+After you select your goals, click
+Apply Goals
+.
+​
+Configure integrations
+In the integrations step, select the integrations that receive experiment data. The available integrations depend on your project configuration.
+Toggle on each integration you want to receive experiment data, then continue to the review step.
+​
+Review the experiment configuration
+PBX displays a full summary of your experiment configuration before launch.
+Review each configured item. To make changes, click the relevant section to return to it.
+When the configuration is correct, choose one of the following options:
+Simulate
+: Preview how the experiment behaves before you expose it to real visitors.
+Schedule
+: Set a future start date and time for the experiment.
+Launch
+: Start the experiment immediately.
+​
+Launch the experiment
+Click
+Launch
+to activate the experiment. PBX begins tracking performance in real time.
+After launch, experiment data appears in reporting as visitors are exposed to the variation, and configured integrations begin receiving experiment information.
+To view results, go to
+Experiences
+>
+A/B Test
+, open the experiment, and click
+Results
+.
+Was this page helpful?
+Yes
+No
+Create a prompt-based experiment
+Previous
+Master Prompts
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

@@ -9,9 +9,49 @@ Login
 Start free trial
 Technology
 Blog
+Confidence Loop: Building products that continuously improve
+Confidence Loop turns signals from real users into product understanding and improvements, with teams choosing how much of the loop runs autonomously.
+Read article
+September 30, 2026
+/
+Johan Rydberg
+Introducing the Confidence Slack Bot
+The Confidence Slack bot puts experiment results, flags, recordings, and analytics in the Slack threads where product questions already start.
+September 24, 2026
+/
+Sebastian Ankargren
+Introducing Confidence Cloud
+Confidence Cloud gives you a data warehouse created and operated by Confidence, so you can define entities, send events, and run experiments without setting up warehouse infrastructure of your own.
+September 23, 2026
+/
+Zan Markan
+Introducing Product Analytics
+Product Analytics in Confidence lets you ask questions of your data in plain language and get answers you can explore with more depth and flexibility than a dashboard.
+September 18, 2026
+/
+Guillaume Perchais
+Introducing Recordings
+Confidence Session Recordings lets you replay actual user sessions, with AI-powered analysis to surface bugs and insights right from your experiments.
+September 16, 2026
+/
+Zan Markan
+Bayes vs Frequentism: Goals All the Way Down
+Many apparent Bayes-versus-frequentist disagreements are really disagreements about goals, estimands, modelling assumptions, or desired decision properties.
+September 15, 2026
+/
+Mårten Schultzberg
+Introducing Confidence Agent
+Confidence Agent is an AI collaborator built into Confidence that works with your flags, experiments, metrics, and project documents.
+September 9, 2026
+/
+Sebastian Ankargren
+The rise of the product builder
+As AI increases individual leverage across the product development stack, the boundaries between PM, design, analysis, and engineering are blurring.
+September 1, 2026
+/
+Johan Rydberg
 The product loop
 Discovery and delivery are no longer sequential phases. AI collapsed the build phase, and now the teams winning are the ones with the tightest loops.
-Read article
 August 19, 2026
 /
 Johan Rydberg
@@ -20,76 +60,38 @@ At Spotify, 42% of experiments are rolled back after guardrail metrics detect re
 August 3, 2026
 /
 Johan Rydberg
-Accurate Sample Size for Always-Valid Inference
-Most A/B testing tools either overestimate the sample size needed for always-valid inference or do not adjust for the sequential test in the sample size calculation at all. We derived a closed-form correction that requires no simulation.
-July 14, 2026
-/
-Mårten Schultzberg
-When A/B tests tell you what you want to hear
-A/B testing maturity has a dangerous middle phase: teams test, dislike the answer, and explain it away. How to spot it and learn to trust your data.
-July 8, 2026
-/
-Johan Rydberg
-What experiments actually teach you
-The primary output of a mature experimentation program is better judgment. At Spotify, the learning rate is 64%. The win rate is 12%.
-June 10, 2026
-/
-Johan Rydberg
-When AI writes the code, who decides what ships?
-AI-accelerated code production increases the need for experimentation. The validation bottleneck grows with build speed. The fastest learners will win.
-June 8, 2026
-/
-Johan Rydberg
-What Makes a Good Sample Size Calculator?
-A good sample size calculator must match your analysis: sequential testing, multiple metrics, and variance reduction all change the number it returns.
-May 27, 2026
-/
-Mårten Schultzberg
-The Judgment Gap
-AI made building cheap. It also made bad decisions cheaper to ship. The distance between execution speed and validation speed is the judgment gap.
-May 20, 2026
-/
-Johan Rydberg
-The Real ROI of Experimentation
-The ROI of experimentation goes beyond counting winners: shipped wins, prevented regressions, and faster organizational learning all add measurable value.
-May 19, 2026
-/
-Johan Rydberg
-Spotify's Experimentation Bootcamp is now free: Introducing Confidence Bootcamp
-The A/B testing curriculum Spotify built over ten years to train thousands of experimenters is now free and open to everyone.
-April 27, 2026
-/
-Mårten Schultzberg
 All posts
+Accurate Sample Size for Always-Valid Inference
+View post
+When A/B tests tell you what you want to hear
+View post
+What experiments actually teach you
+View post
+When AI writes the code, who decides what ships?
+View post
+What Makes a Good Sample Size Calculator?
+View post
+The Judgment Gap
+View post
+The Real ROI of Experimentation
+View post
+Spotify's Experimentation Bootcamp is now free: Introducing Confidence Bootcamp
+View post
 Powered ≠ Trustworthy
 View post
 Are Optimal Multiple Testing Corrections Optimal for You?
 View post
-When Proxy Metrics Break: How Optimizing for Proxies Can Backfire
-View post
-Why We Use Separate Tech Stacks for Personalization and Experimentation
-View post
-Two Questions Every Experiment Should Answer
-View post
-The Feature Flag Toolbox: Cloud, Edge, and Local
-View post
-How Experimental Evidence Travels Through Your Organization: Why Better May Be Worse
-View post
-Beyond Winning: Spotify's Experiments with Learning Framework
-View post
-A/B Test Bandwidth: The Currency of Innovation
-View post
-Experiments with Smaller Samples
-View post
 View more posts
 (
-13
+21
 )
 Learn more
+About Confidence
 Read our blog
 Take the bootcamp
 See comparisons
 Glossary
+Why not Bayes?
 RFP guides
 Listen to us
 Read our docs
@@ -100,8 +102,8 @@ Legal
 Terms of Service
 Data Protection Agreement
 Privacy Policy
+Security
 Cookie Settings
 ©
 2026
 Spotify
-The Confidence name and logo are registered trademarks of Spotify.

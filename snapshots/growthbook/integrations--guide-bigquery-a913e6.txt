@@ -63,6 +63,7 @@ FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Data & Metrics
 Connecting to Your Data Warehouse
 GrowthBook and BigQuery
@@ -96,7 +97,7 @@ This will cause the JSON key to be downloaded to your computer.
 ​
 2. Connect GrowthBook to BigQuery
 From the Metrics and Data → Data Source page, click on add new data source and select the event tracker you’re using. If your event tracker is not listed, or you’re using something custom, click on the “Custom” button at the bottom.
-Selecting an event tracker here will pre-populate the experiment exposure query which is need to determine which user saw which experiment variation. Depending on your needs, you may still need to adjust these queries to match your specific schema.
+Selecting an event tracker here will pre-populate the experiment exposure query which is needed to determine which user saw which experiment variation. Depending on your needs, you may still need to adjust these queries to match your specific schema.
 Select BigQuery as the data source type.
 Add the names you’d like to use, and select the JSON key file that was downloaded earlier.
 Growthbook will use the
@@ -124,7 +125,7 @@ group by label value for a specific key here.
 Troubleshooting
 For help debugging missing experiment data in your BigQuery instance, please see our
 Google BigQuery (BQ) Troubleshooting Guide
-and our our
+and our
 Google Analytics (GA4) Troubleshooting Guide
 Was this page helpful?
 Yes

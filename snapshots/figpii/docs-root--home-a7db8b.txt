@@ -3,32 +3,19 @@ FigPii Support
 Toggle Navigation
 Home
 Getting Started
-APIs
+Shopify
 Account Settings
 A/B Testing
 Polls
 Heatmaps
-Video Recording
+Session Recording
+APIs
 Contact
 Contact
 How can we help?
 Search
 No results found
-APIs
-Event Tracking
-4
-articles
-Overview
-2
-articles
-Account Settings
-SSO (Single Sign-on)
-1
-article
 Getting Started
-GA4
-3
-articles
 General
 Get your FigPii account setup in a few easy steps.
 11
@@ -39,12 +26,32 @@ Managing your account, creating new users, pricing details and more.
 articles
 Integrations
 Connecting your FigPii account to your favorite apps and services.
-20
+19
 articles
-A/B Testing
+GA4
+3
+articles
 Shopify
+Installing FigPii on Shopify
 1
 article
+Tracking Orders and Revenue (Server-Side)
+1
+article
+Tracking Other Ecommerce Events
+1
+article
+Running Theme and Template Tests on Shopify
+1
+article
+Troubleshooting Shopify Tracking
+4
+articles
+Account Settings
+SSO (Single Sign-on)
+1
+article
+A/B Testing
 Getting Started
 Start creating AB tests
 58
@@ -58,7 +65,7 @@ Your AB Testing dashboard.
 articles
 Running an experiment
 Learn about how to start running AB test or Split URL experiments on your website
-19
+18
 articles
 Experiment Configuration
 2
@@ -73,7 +80,7 @@ Reporting features, metric definitions, and more.
 articles
 Technical Questions
 Where to install the FigPii tracking code, errors, etc.
-11
+9
 articles
 Troubleshooting Problems
 1
@@ -127,7 +134,7 @@ articles
 Viewing the Heatmap
 5
 articles
-Video Recording
+Session Recording
 Getting Started
 4
 articles
@@ -137,9 +144,16 @@ article
 Recording Options
 3
 articles
-Searching Amongst Videos
+Searching Videos
 1
 article
+APIs
+Event Tracking
+4
+articles
+Overview
+2
+articles
 ©
 FigPii
 2026.

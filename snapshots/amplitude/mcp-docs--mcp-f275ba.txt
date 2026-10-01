@@ -1,12 +1,13 @@
 # https://amplitude.com/mcp
-Amplitude MCP
+Amplitude MCP: Connect Amplitude to your Agents
 Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -79,9 +80,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -148,21 +150,21 @@ Pricing
 Login
 Sign Up
 MCP Server
-Prompt new insights
-Bring Amplitude’s behavioral context directly into your AI tools—Claude, Cursor, OpenAI, Lovable, Figma, and more—to get answers where you work.
+Product data where you work
+Bring trusted behavioral context into Claude, Cursor, ChatGPT, Codex, and more. Ask questions and take action with your existing Amplitude permissions.
 Learn how
 See connectors
-Talk to data
-Unlock insights anywhere
-Start a conversation about your users or product and get expert-level answers in seconds that you can share with your whole org. No SQL, configuring dashboards, or waiting on the data team.
+Ask
+Investigate without switching tabs
+Ask about activation, conversion, retention, experiments, or customer behavior from the AI tool where you’re already planning, building, or investigating.
 Read more
-Connect context
-For any team in any tool
-No matter where you sit or how technical you are, bring user data to the heart of your workflows. Inform design decisions, discover what works for different cohorts, and collaborate seamlessly.
+Context
+Ground agents in real behavior
+Ground your agents in behavioral data, cohorts, experiments, replays, feedback, and the definitions your team already trusts in Amplitude.
 Try Amplitude
-Find your way
-Take action in AI workflows
-You’ve vibe-coded an app—now what? Understand what’s working and how to do more of it by asking questions, creating charts, and running tests from where you’re already building.
+Focus
+Keep your agents focused
+Save your agent’s context window for your product questions and behavioral evidence, and get an answer with Amplitude’s focused toolset.
 See connectors
 "We’ve been able to embed our domain knowledge directly into our LLM workflows. Now insights that used to require specialized analytics expertise are accessible to everyone."
 Moss Pauly
@@ -187,26 +189,24 @@ Start for free
 Get a demo
 Frequently asked questions
 What does MCP stand for?
-MCP stands for Model Context Protocol. It’s an open-source standard for connecting AI applications to external systems, kind of like a USB-C plug for all your AI tools. You can read more about it
+MCP stands for Model Context Protocol. It’s an open standard that lets AI applications retrieve context and call tools from external systems. Learn more about it
 here
 .
 Is access to Amplitude MCP free?
-Amplitude MCP is available to all Amplitude customers, so even if you're on the
-Free plan
-, you can connect to it. You will separately need to have access to the AI application you want to connect with, and that may involve creating a paid account.
-Does Amplitude MCP connect to other AI applications not listed on this page?
-The links above are just the applications that we have native connectors built with today. You can also build your own connector to any AI tool you want as long as it supports MCP servers.
-Learn how with our documentation
-!
+Amplitude MCP is available to every Amplitude customer on every plan, including the free Starter plan. The AI application you connect it to may require a separate account or subscription.
+Which AI tools work with Amplitude MCP?
+The featured connectors are the AI tools and coding environments Amplitude customers use most: Claude and Claude Code, Cursor, ChatGPT, Codex, and Lovable. You can also connect through Figma, GitHub, Kiro, Notion, Rovo, and other AI applications that support remote MCP servers. Outreach support is coming soon.
+See current setup instructions
+.
 How does Amplitude MCP work?
-First connect and authenticate your preferred AI tool to Amplitude’s MCP server. Your AI tool can then query data from your Amplitude account when responding to prompts. Our server acts as an interface for connecting Amplitude’s structured context to LLM-based AI systems like Claude, Cursor, and Gemini. It provides a comprehensive set of tools that enable LLMs to:
-Search or create dashboards, charts, notebooks, cohorts, and experiments
-Query and analyze user data, such as acquisition, conversion, retention engagement, and user feedback
-Retrieve feature flags and experiment results
-Access project context, events, and user properties
-We’ll continue adding new capabilities in the near future based on learnings and customer feedback.
-How is customer and end-user data handled by Amplitude’s MCP server?
-The MCP server uses your existing Amplitude user permissions and access controls. OAuth authentication ensures a secure connection between the MCP server and your Amplitude account. You can only access Amplitude projects and data that you already have permission to view in your regular Amplitude account. You receive no additional data access beyond your current Amplitude account privileges.
+Connect and authenticate a compatible AI application to Amplitude through OAuth. The client can then use Amplitude MCP to:
+Search and create charts, dashboards, notebooks, cohorts, and experiments.
+Analyze acquisition, conversion, retention, engagement, user behavior, feedback, and session replays.
+Retrieve feature flags and experiment results.
+Access project context, events, and properties.
+You ask in natural language; the client selects the appropriate Amplitude tools using your existing permissions. Amplitude MCP can manage event and property definitions in your tracking plan, but it does not send production event data. Use an Amplitude SDK or the HTTP V2 API to instrument your product.
+How is customer and end-user data handled by Amplitude’s MCP?
+Amplitude MCP uses OAuth and your existing Amplitude permissions and access controls. The connected AI application can access only the projects and data the authenticated user can already view in Amplitude. It does not grant additional access or create a separate permissions model.
 Platform
 AI Agents
 Agent Analytics

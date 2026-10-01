@@ -1,0 +1,197 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-ideate/pbx-ideate-freemium
+PBX Ideate freemium - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Ideate
+PBX Ideate freemium
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+PBX Ideate
+What powers PBX Ideate?
+Generate test ideas
+Freemium & Plans
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Basic (Free) plan
+Premium plan
+Track plan usage
+Analyze again disabled
+Upgrade to Premium
+PBX Ideate
+PBX Ideate freemium
+Copy page
+Copy page
+Overview of PBX Ideate plans, usage tracking, and the upgrade process.
+Copy page
+Copy page
+PBX Ideate offers a freemium model. All Web Experimentation customers and PBX Build users automatically have access to the
+Basic (Free)
+tier. You can upgrade to the
+Premium
+plan as a paid add-on to unlock unlimited use.
+​
+Basic (Free) plan
+Each analysis is scoped to one page and one version. Analyzing both the Desktop and Mobile version of the same URL counts as 2 analyses, not 1.
+The Basic plan provides
+5 successful analyses per year
+. Kameleoon shares this quota across all projects and users in your workspace. You can distribute these analyses across any number of pages (for example, 2 analyses on one page and 3 on another, or 5 analyses on a single page).
+Credit consumption:
+Kameleoon only deducts a credit when an analysis completes successfully (
+DONE
+status).
+Retry:
+if an analysis fails (
+ERROR
+status), it doesn’t consume a credit. You can retry it for free.
+Analyze again:
+re-running the analysis on a page that already completed successfully consumes 1 analysis, the same as a new page. Analyze again is only available starting 30 days after the page’s last successful analysis.
+Deletions:
+Deleting a page does not refund the credit used to analyze it.
+​
+Premium plan
+The Premium plan provides
+unlimited analyses
+with no annual quota or project limits.
+​
+Track plan usage
+Kameleoon shows your current usage as a progress bar in the
+Plan usage
+widget, inside the
+Analyze pages
+modal, before you start an analysis.
+Progress bar:
+a stepped bar with 5 segments tracks your annual usage. The bar changes color as you approach the limit, and turns red when you reach 5/5.
+Dynamic notifications:
+warning messages appear as you approach or hit your limit.
+Service lockout:
+when you reach 5/5 analyses, Kameleoon disables the
+Add page
+button. You must upgrade to Premium to continue analyzing pages.
+​
+Analyze again disabled
+Kameleoon greys out
+Analyze again
+on a page card with an info tooltip when the action isn’t available yet:
+Still in the 30-day cooldown:
+the tooltip reads “To keep results relevant, each page can be analyzed once every 30 days.”
+Basic plan’s annual quota exhausted:
+the tooltip reads “You’ve reached your annual analysis limit: you won’t be able to analyze this page until your quota resets or you upgrade to Premium,” with an
+Upgrade to Premium
+link.
+​
+Upgrade to Premium
+You can start an upgrade request from the
+Plan usage
+widget or from the
+Upgrade to Premium
+link in a disabled
+Analyze again
+tooltip.
+Click
+Upgrade to Premium
+.
+Review the plan comparison modal.
+Click
+Send upgrade request
+.
+After you submit the request, a Customer Success Manager (CSM) contacts you to complete the process. You don’t need to submit payment immediately.
+Was this page helpful?
+Yes
+No
+Generate test ideas
+Previous
+Prompt-based experimentation FAQ
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

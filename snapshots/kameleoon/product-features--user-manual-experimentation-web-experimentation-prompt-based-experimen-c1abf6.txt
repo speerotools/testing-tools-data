@@ -1,0 +1,215 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/master-prompts
+Master Prompts - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+PBX Build
+Master Prompts
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+Prompt-based experimentation plans
+Create a prompt-based experiment
+PBX Configure
+Master Prompts
+How to write effective prompts
+Best practices and safeguards
+Import designs from Figma
+Contentsquare X PBX integration
+PBX Ideate
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Why use Master Prompts?
+How it works
+Typical use cases
+Configure a Master Prompt
+Roles and permissions
+Admin users
+Non-admin users
+Best practices for admins
+PBX Build
+Master Prompts
+Copy page
+Copy page
+Learn how to use Master Prompts to ensure consistency, quality, and governance across all AI-generated experiments in your project.
+Copy page
+Copy page
+Use Master Prompts to ensure consistency, quality, and governance across all AI-generated experiments that a project creates with
+PBX Build
+. They serve as a global instruction set that PBX automatically and transparently integrates into every prompt.
+​
+Why use Master Prompts?
+Effortless consistency:
+Establish a singular project-wide standard for brand voice, technical patterns, and data requirements.
+Improved output velocity:
+Reduce the need to repeat recurring instructions, which accelerates experimental cycles.
+Project governance:
+Automate compliance with accessibility, tracking, and architectural standards.
+​
+How it works
+The Master Prompt provides a background instruction layer at the project level. When you use PBX to generate an experiment or variation:
+PBX automatically injects the Master Prompt into the request.
+PBX combines the Master Prompt with your specific prompt and processes the combined input. This ensures the final output adheres to both your specific request and the global project constraints.
+​
+Typical use cases
+Brand consistency:
+Enforce global rules for voice, tone, and visual styles (for example, standardizing CTA terminology and button behaviors).
+Architectural alignment:
+Framework support:
+Define global rules for interacting with specific frameworks (for example, React hooks or Vue components).
+DOM handling:
+Orchestrate complex DOM structures, including Web Components and Shadow DOM (for example, when to inject styles or how to handle slot positioning).
+Governance and compliance:
+Standard enforcement:
+Automatically require essential attributes for every generated element, such as accessibility tags (ARIA, alt text) or tracking parameters.
+Resilience:
+Set rules for handling dynamic rendering and re-rendering to ensure modifications persist.
+Data and layout integrity:
+Layout detection:
+Guide the AI to correctly identify real layout containers (for example, flex/grid nodes) rather than outer wrappers.
+Structured output:
+Mandate strict data formats or JSON schemas for configuration-driven elements.
+​
+Configure a Master Prompt
+To set up a Master Prompt for your project:
+Open the
+PBX editor
+.
+Click
++
+>
+AI Settings
+.
+Select your project from the
+Projects
+sidebar.
+On the
+Master Prompt
+tab, enter your Master Prompt into the text box.
+You can turn on
+Allow users to skip the master prompt
+. This option lets users ignore the Master Prompt, meaning PBX does not apply your global rules and constraints to their variations.
+​
+Roles and permissions
+PBX separates capabilities to ensure proper project governance and guardrails.
+​
+Admin users
+Admins manage the strategic direction of the AI’s behavior within a project. Admins can:
+Access the
+AI Settings
+>
+Master Prompt
+interface for any project.
+Define the Master Prompt text and project-level toggle settings.
+Set whether individual users can “skip” the Master Prompt for specific sessions or prompts, or if PBX should strictly enforce it.
+​
+Non-admin users
+Users interact with PBX normally and see a visible Master Prompt indicator when PBX applies global rules.
+Users can view the active Master Prompt content to understand the constraints.
+If an admin permits it, users can bypass the Master Prompt for a specific prompt or session. They can re-attach it at any point.
+​
+Best practices for admins
+Keep it modular:
+Focus on high-level constraints rather than micromanaging every detail. Let the user prompt handle specific session goals. If you notice users consistently overriding certain behaviors, consider formalizing those behaviors within the Master Prompt.
+Avoid overlapping rules:
+Ensure the Master Prompt does not contain conflicting instructions that might confuse the AI model.
+Clarity is key:
+Use concise, declarative language (for example, “Always use…”) to ensure the highest adherence to your rules.
+Was this page helpful?
+Yes
+No
+PBX Configure
+Previous
+How to write effective prompts
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

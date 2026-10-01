@@ -4,9 +4,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -79,9 +80,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -147,11 +149,112 @@ Event Taxonomy Generator
 Pricing
 Login
 Sign Up
+Blog
+Insights
+Product
+Company
+Customers
+Topics
+Topics
+101
+AI
+APJ
+Acquisition
+Adobe Analytics
+Agents
+Amplify
+Amplitude AI
+Amplitude Academy
+Amplitude Activation
+Amplitude Agent Analytics
+Amplitude Analytics
+Amplitude Audiences
+Amplitude Community
+Amplitude Feature Experimentation
+Amplitude Full Platform
+Amplitude Guides and Surveys
+Amplitude Heatmaps
+Amplitude Made Easy
+Amplitude SDK
+Amplitude Session Replay
+Amplitude Web Experimentation
+Amplitude on Amplitude
+Analytics
+B2B SaaS
+Behavioral Analytics
+Benchmarks
+Churn Analysis
+Cohort Analysis
+Collaboration
+Consolidation
+Conversion
+Customer Experience
+Customer Lifetime Value
+Customer Support
+DEI
+Data
+Data Governance
+Data Management
+Data Tables
+Data ingestion
+Digital Experience Maturity
+Digital Native
+Digital Transformer
+EMEA
+Ecommerce
+Employee Resource Group
+Engagement
+Engineering
+Event Tracking
+Experimentation
+Feature Adoption
+Financial Services
+Funnel Analysis
+Getting Started
+Global Agent
+Google Analytics
+Growth
+Healthcare
+How I Amplitude
+Implementation
+Integration
+Kimi
+LATAM
+LLM
+Life at Amplitude
+MCP
+Machine Learning
+Marketing Analytics
+Media and Entertainment
+Metrics
+Modern Data Series
+Monetization
+Next Gen Builders
+North Star Metric
+Open-Weight AI Models
+Partnerships
+Personalization
+Pioneer Awards
+Privacy
+Product 50
+Product Analytics
+Product Design
+Product Management
+Product Releases
+Product Strategy
+Product-Led Growth
+Recap
+Retention
+Revenue
+Startup
+Tech Stack
+The Ampys
+Warehouse-native Amplitude
 Introducing Amplitude MCP: Unlock behavioral insights everywhere you work
 Bring Amplitude’s behavioral context wherever you work—inside Claude, Cursor, or any MCP-compatible client.
 Product
 Oct 21, 2025
-7 min read
+8 min read
 Karan Johar
 Software Engineering Manager and Technical Lead, Amplitude
 TL;DR
@@ -195,6 +298,9 @@ Unlocking behavioral context for any AI system, agent, or workflow
 AI can sense, detect, and act faster than humans ever could. But without behavioral context, it’s adrift.
 Our vision is to make behavioral context the foundation for AI, and to make it accessible everywhere. Our platform captures the richest dataset on customer behavior (Sense). Our analytics, experiments, and session replays reveal the signals that matter—growth levers, churn risks, engagement drivers (Detect). MCP unlocks access to those insights inside any AI tool, empowering teams to move faster, eliminate guesswork, and build experiences customers adopt and love (Act).
 Amplitude MCP is the first step toward making every AI interaction informed by behavioral context—a future where your insights are universally accessible across any AI system, agent, or workflow.
+Taking action is exactly where
+Amplitude Wave
+picks up. It surfaces prioritized opportunities from your Amplitude data and exposes them through the same MCP server, so an agent can triage the work and draft a pull request from your editor.
 Ready to get started?
 Learn how to set up Amplitude MCP
 today.
@@ -215,25 +321,25 @@ Behavioral Analytics
 MCP
 Recommended Reading
 Read
-Product
-How to Secure AI Agent Traces Without Losing the Signal
-Aug 28, 2026
-7 min read
+Insights
+An analysis of Jev: Faster and cheaper, but watch the accuracy
+Sep 28, 2026
+13 min read
 Read
 Product
-Connecting agent performance to product outcomes
-Aug 20, 2026
-10 min read
-Read
-Customers
-The hidden cost of a bad AI answer
-Aug 19, 2026
+Your agent isn’t broken. It’s guessing.
+Sep 23, 2026
 6 min read
 Read
+Company
+Bring headless Amplitude where you work
+Sep 16, 2026
+3 min read
+Read
 Insights
-Verification loops in software factories: What PMs need to know
-Aug 19, 2026
-11 min read
+Should I install the Amplitude SDK?
+Sep 15, 2026
+4 min read
 Platform
 AI Agents
 Agent Analytics
@@ -306,102 +412,3 @@ Português (Portugal)
 Français
 Deutsch
 © 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.
-Blog
-Insights
-Product
-Company
-Customers
-Topics
-Topics
-101
-AI
-APJ
-Acquisition
-Adobe Analytics
-Agents
-Amplify
-Amplitude AI
-Amplitude Academy
-Amplitude Activation
-Amplitude Agent Analytics
-Amplitude Analytics
-Amplitude Audiences
-Amplitude Community
-Amplitude Feature Experimentation
-Amplitude Full Platform
-Amplitude Guides and Surveys
-Amplitude Heatmaps
-Amplitude Made Easy
-Amplitude Session Replay
-Amplitude Web Experimentation
-Amplitude on Amplitude
-Analytics
-B2B SaaS
-Behavioral Analytics
-Benchmarks
-Churn Analysis
-Cohort Analysis
-Collaboration
-Consolidation
-Conversion
-Customer Experience
-Customer Lifetime Value
-Customer Support
-DEI
-Data
-Data Governance
-Data Management
-Data Tables
-Digital Experience Maturity
-Digital Native
-Digital Transformer
-EMEA
-Ecommerce
-Employee Resource Group
-Engagement
-Engineering
-Event Tracking
-Experimentation
-Feature Adoption
-Financial Services
-Funnel Analysis
-Getting Started
-Global Agent
-Google Analytics
-Growth
-Healthcare
-How I Amplitude
-Implementation
-Integration
-Kimi
-LATAM
-LLM
-Life at Amplitude
-MCP
-Machine Learning
-Marketing Analytics
-Media and Entertainment
-Metrics
-Modern Data Series
-Monetization
-Next Gen Builders
-North Star Metric
-Open-Weight AI Models
-Partnerships
-Personalization
-Pioneer Awards
-Privacy
-Product 50
-Product Analytics
-Product Design
-Product Management
-Product Releases
-Product Strategy
-Product-Led Growth
-Recap
-Retention
-Revenue
-Startup
-Tech Stack
-The Ampys
-Warehouse-native Amplitude

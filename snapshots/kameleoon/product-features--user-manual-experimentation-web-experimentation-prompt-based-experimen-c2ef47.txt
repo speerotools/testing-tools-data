@@ -1,0 +1,378 @@
+# https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/prompt-based-experimentation-faq
+Prompt-based experimentation FAQ - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Prompt-based experiments
+Prompt-based experimentation FAQ
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Prompt-based experiments
+Get started with prompt-based experimentation
+PBX Build
+PBX Ideate
+Prompt-based experimentation FAQ
+Graphic-based experiments
+Code-based experiments
+Configure and launch
+Manage your web experiments
+Advanced experiment types
+Advanced experiment features
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+Prompt-based experiments
+Prompt-based experimentation FAQ
+Copy page
+Copy page
+Find answers to common questions about Kameleoon’s prompt-based experimentation (PBX), AI models, and technical capabilities.
+Copy page
+Copy page
+This article answers common questions about prompt-based experimentation (PBX).
+Which LLM does PBX use as its thinking model?
+PBX uses
+GPT 5.6 Sol
+as its thinking model.
+Can I edit the code that Kameleoon generates?
+Yes, you can
+edit code directly from the prompt-based interface
+. When you save the code, Kameleoon automatically generates a new version of your variant.
+Can I use the Graphic editor on an AI-generated variant?
+No, you
+can’t use the Graphic editor
+on AI-generated variants. Although some edge cases might benefit from it, prompt-based experimentation handles all scenarios that the Graphic editor covers. To prevent conflicts, Kameleoon disables the visual tool for AI-generated experiments.
+What types of variants can I create with prompts?
+You can create
+any variant that you manage with front-end code
+. However, Kameleoon can’t generate code for prompts that require
+backend logic or server-side changes
+. A developer familiar with your backend system must handle such cases.
+Can I create multi-page experiments?
+Yes, you can prompt changes across multiple pages. Navigate to your chosen pages and apply prompts directly. Kameleoon automatically combines the code into a single variation.
+However,
+test the complete experience using Simulation mode
+to ensure that the code on different pages does not conflict.
+Can I prompt changes on elements that appear on hover?
+Yes,
+provided the page’s DOM contains the HTML code for the hover-triggered element
+. If JavaScript injects the element dynamically after the hover interaction, Kameleoon’s AI might not detect or modify it accurately.
+For best results, verify that:
+The hover element exists in the initial HTML, even if hidden.
+The structure is stable and does not generate asynchronously.
+How can I test a variation across several product pages?
+After you create a variation on the first product page, navigate to the next product page. This action re-executes the AI-generated code.
+Alternatively, use Simulation mode to test the experience across all relevant pages and ensure consistent behavior.
+How does PBX differ from other vibe-coding tools such as Claude and Codex?
+Technical users can use general-purpose AI coding tools to generate JavaScript, CSS, or HTML and paste it into a Kameleoon experiment. PBX targets experimentation specifically and differs from those tools in several important ways.
+PBX targets experimentation, not just code generation
+Building an A/B test differs from building a standard website feature. Experiment code must be cautious, non-disruptive, dynamic, performant, and reliable across different page states. Kameleoon trained and optimized PBX on thousands of experimentation scenarios, so it performs more like a developer who specializes in A/B testing than a generic coding assistant.
+PBX provides richer page context to the model
+With a direct Claude or Codex workflow, you must manually explain the page, the DOM, the expected change, the constraints, and the technical setup. PBX automatically provides much richer context, including site-level information, real-time DOM analysis, page screenshots for visual understanding, and direct Figma imports where relevant.
+PBX applies Kameleoon-specific experimentation logic
+PBX generates code that works with the
+Kameleoon JavaScript API
+, including methods such as
+runWhenElementPresent()
+and
+enableDynamicRefresh()
+. These methods listen to DOM mutation observers and help manage complex dynamic websites, single-page applications (SPAs), DOM changes, rerendering behavior, and flicker. Code that a general-purpose assistant generates may work in some cases, but it typically requires more manual adaptation, QA, and maintenance to remain robust in an experimentation context.
+PBX guides you through a human-in-the-loop workflow
+PBX does more than generate code from a single prompt. The interface asks follow-up questions, guides you through design and implementation choices, and lets you validate at multiple steps before you launch a variation. This approach makes the experience well-suited to building experiments.
+PBX integrates into the full Kameleoon workflow
+A general-purpose AI workflow typically fragments the process across multiple steps: prompt creation, code generation, technical review, manual insertion into Kameleoon, troubleshooting, and then separate configuration of targeting, goals, launch, and analysis. PBX integrates directly into the experimentation workflow, making the process faster, safer, and more scalable for product, marketing, and technical teams.
+​
+Supporting developer-led workflows
+You don’t have to choose between the two approaches. For technical teams that prefer to work with Claude, Codex, Cursor, or similar tools, the Kameleoon
+MCP server
+lets you connect those tools directly to Kameleoon and integrate them into your existing workflow.
+Summary:
+A general-purpose AI tool requires more effort, more QA, more maintenance, and greater dependency on technical users, which ultimately increases costs. PBX provides a dedicated experimentation tool that makes the process easier, safer, and more scalable within Kameleoon.
+Why does the same prompt generate different outputs when I run it multiple times?
+The AI explores many possible ways to fulfill your request, so it doesn’t produce a fixed result. The same prompt can yield different outputs each time.
+This occurs because of:
+Controlled randomness:
+The model varies its answers to avoid repetition and encourage creativity.
+Prompt interpretation:
+Minor context differences can prompt the model to focus on different details.
+Training diversity:
+The model draws on patterns from varied training datasets.
+To get more consistent results, add constraints. Provide a mockup, design file, or define a
+Master Prompt
+that sets overarching rules and brand context for all your generations.
+Does prompt-based experimentation work on all websites?
+You can use PBX on most websites, including single-page applications. Each time you submit a prompt, Kameleoon sends page context, such as HTML code or screenshots, to help the AI interpret the content. However, the AI might not properly handle context within iframes or a shadow DOM. If you frequently experience this issue, contact your Customer Success Manager.
+Which browsers are compatible with the Kameleoon PBX extension?
+The Kameleoon PBX extension supports Chromium-based browsers, including Google Chrome, Brave, Arc, and Microsoft Edge.
+Can PBX handle complex experiments?
+PBX excels at tasks such as:
+Text or content changes, including headlines, CTAs, and disclaimers.
+Style updates, like colors, fonts, and layout tweaks.
+Banners and content insertions.
+Simple interactive changes, including button repositioning, links, and modals.
+You can also use PBX for multi-step flows, galleries, or custom interactive elements. For advanced cases, use a hybrid approach. First, let PBX generate the initial implementation, then refine it manually. This method combines the speed of automation with the precision of custom development.
+How reliable is the code that PBX generates?
+PBX generates clean, secure, responsive, and accessible code. It often creates more robust solutions than manual coding, particularly for modern websites and single-page applications (SPAs). PBX follows QA best practices, such as cross-browser testing and visual checks.
+The generated code also respects your project configurations:
+PBX applies SPA settings and custom attributes automatically.
+It honors exclusion rules.
+These considerations ensure that generated code integrates smoothly with your setup and adheres to the rules for manually coded experiments.
+Can PBX generate a variant by retrieving content from a different page?
+Yes. You can prompt PBX to retrieve and use content from a different page within your website. Provide a link or describe the source page and element in your prompt, and PBX will incorporate that content into the generated variant.
+Can I use a design mockup to create a variant?
+Yes, you can use a design or mockup. Click the
++
+icon >
+Add an image
+to upload your file. However,
+a mockup alone is usually insufficient
+. For better results, use your design alongside clear, detailed instructions.
+Treat PBX like a developer: provide specific details for the best output.
+Example of a good prompt with a mockup:
+Attach your mockup or design file.
+Describe the elements to change.
+Specify dimensions, colors, and spacing.
+Explain interactive behaviors.
+Note technical requirements.
+Can I dictate my prompt instead of typing it?
+Yes. Click the microphone icon in the prompt toolbar, say your prompt, then click the checkmark to transcribe it into the prompt field. For more information, see
+Use speech-to-text
+.
+How do SPA settings affect PBX?
+PBX adopts your project’s single-page application (SPA) settings. If you configured these settings (see
+Set up an experiment on a single-page app
+), PBX automatically uses:
+Your custom attributes.
+Your exclusion rules.
+Any other SPA-specific configurations.
+Can I reference an existing segment, trigger, experiment, or personalization in my prompt?
+Yes. In PBX Configure, type
+@
+followed by the asset’s name to reuse an existing experiment, personalization, segment, or trigger. PBX inserts the asset as an
+@Asset_Name
+mention and applies its configuration directly, checking for duplicates against existing assets in the project scope. For more information, see
+Reference existing assets with @ mentions
+.
+Can I submit follow-up prompts to fix incorrect output?
+Yes, you can refine the output with follow-up prompts, but keep prompt history in mind.
+What PBX remembers:
+The code it most recently generated (used as context).
+What PBX doesn’t remember:
+Your previous prompt instructions.
+The full conversation history.
+Mockups or sketches added in earlier prompts.
+Why this matters:
+Vague follow-up prompts like “Fix the issue with X and Y” might fail because PBX lacks full context.
+Best practices for follow-up prompts:
+Less effective:
+“The arrow navigation doesn’t work.”
+More effective:
+“In the new carousel, the arrow navigation does not work as expected. Fix it using the code generated from my previous prompt. The arrows should appear on the left and right and advance one image per click.”
+Be specific in follow-up prompts:
+Identify the element or feature to fix.
+Describe the expected behavior.
+Reference the generated code explicitly.
+Include relevant technical details.
+Can I upload a file to use as an asset in my prompt-based experiment?
+Yes. Click
++
+>
+Add an image
+to upload your file.
+What is the difference between an asset and a mockup when I upload an image?
+When you upload or paste an image, PBX asks you to choose how to use it:
+Asset:
+PBX inserts the image file directly into your variation (for example, as a banner, background, or logo).
+Mockup:
+PBX uses the image as a visual reference to recreate the design using code, rather than inserting the image itself.
+Where is the data for PBX processed?
+Kameleoon processes PBX data in the PBX editor, not in a separate data warehouse or analytics pipeline. When you build an experiment, the Kameleoon PBX extension captures the content visible on that page, including the HTML structure, text, and screenshots, and sends it to the AI model as context for your prompt.
+Kameleoon processes this page content only when you create or edit an experiment from a page you control. It does not process or transmit data for each individual site visitor.
+For more information, see
+How does PBX protect personal or sensitive data?
+.
+How does PBX protect personal or sensitive data?
+PBX keeps your data secure and meets industry standards, including those for regulated sectors.
+PBX invokes the LLM only
+when you create an experiment
+from a webpage
+you control
+. This setup ensures that:
+PBX sends no end-user data to the LLM.
+The model processes only the page content visible to you as the creator, excluding site visitor data.
+PBX does not dynamically generate experiments for each user; it creates them once from your environment.
+PBX will not access or transmit personal or confidential information unless you include it in the page or prompt. Avoid including such data.
+Kameleoon continuously improves the PBX workflow to maintain high privacy and compliance standards.
+Does Kameleoon use PBX data to train AI models?
+Kameleoon doesn’t send end-user or site-visitor data to the AI model at any point, so that data can’t be part of a training process. PBX invokes the model only when you create or edit an experiment, using the page content visible to you at that time.
+PBX Ideate’s prioritization model draws on patterns from Kameleoon’s broader experimentation history, aggregated across tens of thousands of experiments, rather than on the specific prompts, page content, or code from your account.
+For a formal statement on data usage that meets your organization’s compliance requirements, contact your Customer Success Manager.
+Can I work on other variants while PBX generates a variant?
+No. You must wait for PBX to finish generating a variant before starting work on another.
+Why do I see a white screen in the PBX editor?
+This issue occurs on secure pages, such as logged-in areas, that block loading within an iframe. The PBX editor uses an iframe to safely edit webpages. Your site’s security settings might block the iframe content, resulting in a white screen.
+How to fix it:
+Ask your development team to modify the “frame-busting” logic. The code must check if the frame’s name is
+kameleoon-pbx-preview
+. If it matches, the logic should allow the page to load.
+Example code:
+if
+(
+window
+.
+self
+!==
+window
+.
+top
+&&
+window
+.
+frameElement
+?.
+name
+!==
+'kameleoon-pbx-preview'
+) {
+Your
+existing
+redirect
+/
+blocking
+logic
+}
+Can I prompt PBX to copy a feature from another website?
+Yes. PBX can navigate to another webpage or website and use it as a reference when generating your variant. Provide a link to the page and describe the feature you want to replicate, and PBX will incorporate what it finds into the generated code.
+Why can't I log in to PBX?
+If you can’t log in, your browser likely blocks third-party cookies. PBX requires a session cookie from the Kameleoon domain for authentication.
+You must enable third-party cookies to access PBX.
+To allow third-party cookies:
+Open your browser
+Settings
+.
+Go to
+Privacy & security
+>
+Third-party cookies
+.
+Select
+Allow third-party cookies
+.
+Browsers often block third-party cookies in Private or Incognito modes automatically.
+Ensure your browser allows these specific cookies:
+refresh-token
+kameleoonSessionId
+access-token
+expiration-access
+Why should I use Kameleoon PBX Ideate?
+Fewer than 20% of launched experiments yield positive results, often because teams test low-impact ideas or vague hypotheses. PBX Ideate provides prioritized, evidence-based hypotheses and converts them into precise prompts for PBX. For high-confidence recommendations, PBX Ideate achieves three times the accuracy of the industry benchmark, helping you prioritize your tests effectively.
+How does PBX Ideate generate test ideas?
+PBX Ideate uses a taxonomy and semantic framework developed with Conversion by Gain. It analyzes your website and uses data from tens of thousands of experiments to surface the ideas most likely to succeed.
+How does PBX Ideate prioritize test ideas?
+PBX Ideate scores ideas based on potential impact using a model trained on over 20,000 experiments. This model provides 63% accuracy on high-confidence predictions, exceeding the industry average of about 20%.
+Who can access PBX Ideate?
+All Web Experimentation customers and PBX Build users automatically have access to PBX Ideate through the
+Basic (Free)
+tier. You can upgrade to the
+Premium
+plan as a paid add-on to unlock unlimited use. For details on both tiers, see
+PBX Ideate freemium
+.
+Do I need a Kameleoon account for PBX Ideate?
+Yes, you need an existing Kameleoon account. If you are a Web Experimentation customer or PBX Build user, Kameleoon automatically enables PBX Ideate access on your account, so you don’t need to register separately.
+Must I agree to specific terms for PBX Ideate?
+No, PBX Ideate requires no separate agreement. Your existing Kameleoon terms of service cover the feature, and the Basic (Free) tier requires no credit card.
+How long does access to PBX Ideate last?
+Access doesn’t expire. The Basic (Free) tier gives you 5 successful analyses per year on an ongoing basis, and the Premium plan provides unlimited analyses for as long as your subscription is active. For more information, see
+PBX Ideate freemium
+.
+Must I install a script on my website to use PBX?
+You don’t need to install a script to generate ideas or use PBX for front-end experiences. However, to run these experiments live on your site, you must install
+Kameleoon Web Experimentation
+.
+Was this page helpful?
+Yes
+No
+PBX Ideate freemium
+Previous
+Getting started with the Graphic editor
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

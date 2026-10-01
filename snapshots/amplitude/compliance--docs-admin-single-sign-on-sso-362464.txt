@@ -30,9 +30,27 @@ FAQ
 Developers
 SDKs
 APIs
+CLI
 Overview
 Billing and Use
+MTU billing guide
+Usage reports
 Account Management
+The Settings page
+Currency unit
+SCIM provisioning
+Portfolio
+Scale and event sampling
+Orgs and projects
+Permission groups
+Privacy notifications
+Manage users and permissions
+Roles and permissions
+Self-service data deletion
+Webhooks for custom monitors
+API and secret keys
+Role-based Access Controls (RBAC)
+Audit log
 Single Sign-On
 Single sign-on (SSO) in Amplitude
 Auth0 SSO
@@ -42,8 +60,11 @@ Microsoft Azure AD SSO
 Okta SSO
 OneLogin SSO
 Set up single sign-on (SSO) for Amplitude using another service
-Audit log
+Language
+🇺🇸
+English
 On this page
+Plan availability
 SSO basics
 What your identity provider must send
 For AI agents: a documentation index is available at
@@ -53,8 +74,7 @@ Admin
 /
 Single sign-on (SSO) in Amplitude
 Single sign-on (SSO) in Amplitude
-Single sign-on
-(SSO) is an authentication scheme that lets users use a single ID and password combination to log into multiple platforms, services, or systems. Amplitude supports SSO and is compatible with any SAML 2.0-compliant SSO provider, including:
+Single sign-on (SSO) is an authentication scheme that lets users use a single ID and password combination to log into multiple platforms, services, or systems. Amplitude supports SSO and is compatible with any SAML 2.0-compliant SSO provider, including:
 Auth0
 AWS IAM Identity Center
 G Suite
@@ -64,14 +84,12 @@ OneLogin
 Other
 providers not specifically named.
 Follow the provider-specific guide for setup and configuration details.
+Plan availability
+Single Sign-on (SSO) is available on the Growth and Enterprise plans.
 SSO basics
 Before you enable SSO:
-You can
-require
-members of your organization to sign in with SSO. Requiring SSO prevents users from signing in with their email and password, so make sure your SSO system works before you turn it on in Amplitude.
-You can also
-automatically
-grant new users access to your organization through just-in-time provisioning. Amplitude only requires a new user to successfully authenticate with your identity provider. After Amplitude receives authentication, Amplitude adds the user to your organization. You can then configure roles for each new user to reflect their needs and the organization's needs.
+You can require members of your organization to sign in with SSO. Requiring SSO prevents users from signing in with their email and password, so make sure your SSO system works before you turn it on in Amplitude.
+You can also automatically grant new users access to your organization through just-in-time provisioning. Amplitude only requires a new user to successfully authenticate with your identity provider. After Amplitude receives authentication, Amplitude adds the user to your organization. You can then configure roles for each new user to reflect their needs and the organization's needs.
 Enterprise customers with access to project
 permissions
 can also choose the default project(s) that JIT-provisioned users will have access to.
@@ -87,10 +105,11 @@ attribute (case insensitive).
 An
 email
 attribute (case insensitive).
-If Amplitude can't find a valid email, the user can't sign in.
-Most identity providers send the email by default. If yours doesn't, follow the provider-specific guide linked above to map the user's email into the assertion.
+If Amplitude can't find a valid email, the user can't sign in. Most identity providers send the email by default. If yours doesn't, follow the provider-specific guide linked above to map the user's email into the assertion.
 Was this helpful?
+Copy Markdown
 On this page
+Plan availability
 SSO basics
 What your identity provider must send
 Platform
@@ -147,6 +166,9 @@ Privacy Notice
 Acceptable Use Policy
 Legal
 Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
 ©
 2012–2026
 Amplitude, Inc.

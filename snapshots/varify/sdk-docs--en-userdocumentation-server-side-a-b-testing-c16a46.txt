@@ -1,7 +1,7 @@
 # https://varify.io/en/userdocumentation/server-side-a-b-testing
 Server-Side A/B Testing - Varify.io - A/B Testing Platform
 Skip to content
-Functions
+Features
 Pricing
 For agencies
 Company
@@ -19,7 +19,7 @@ Live
 Success Stories
 Card Set
 EN
-Functions
+Features
 Pricing
 For agencies
 Company
@@ -106,6 +106,35 @@ Your backend then uses the returned variation ID to decide which version of the 
 null
 always means: show the original version.
 The experiment configuration itself - target groups, traffic distribution, start and stop - can still be conveniently managed in the Varify dashboard.
+3. Set up tracking
+To ensure that the server experiment can be analyzed in the dashboard, the
+tracking
+-Block from the response from
+GET /ss/{teamId}/experiments/{experimentId}/variations/{userId}
+be integrated on the client side:
+The content of the
+tracking
+-Object unchanged as JSON in a
+<script type="application/json" data-varify-tracking>
+Write the -tag in the rendered HTML.
+Varify then automatically triggers the tracking functions—taking into account the user's consent status. This also applies when
+varify.js
+the client-side is not involved in the test at all otherwise; a manual
+window.varify.setTracking(true)
+is not necessary for that.
+If this step is omitted, only the experiment configuration will be visible in the dashboard—no evaluation data, since the Delivery API itself does not have an endpoint for reporting events.
+Sample markup:
+With the saved
+userId
+Use the saved UUID to query the assigned variant for a specific experiment. If no variant has yet been assigned, it will be assigned automatically the first time it is called up. The assignment is deterministic - the same user always receives the same variant for the same experiment, regardless of how often the endpoint is called.
+Response example (user has been assigned a variant):
+<script type="application/json" data-varify-tracking> { "experiment": { "id": 32596, "name": "Homepage CTA Test" }, "variation": { "id": 48838, "name": "variation-1" } } </script>
+If
+variation.id
+and
+variation.name
+null
+(original version), the block is still rendered—Varify then treats it as an original playback.
 Developer documentation
 The complete API reference (OpenAPI 3.1) with all endpoints, parameters and error codes for your development team:
 https://app.varify.io/ss/docs
@@ -119,35 +148,27 @@ Create experiment
 Chrome browser extension
 Best Practice
 CRO AI Audit
-Tracking & web analytics integrations
-Tracking with Varify
+Tracking setup
+Tracking with Varify.io
+Varify Real-Time Tracking
 Manual Google Tag Manager tracking integration
 Automatic GA4 tracking integration
-Create Custom Click Events
+User-defined click events
 Shopify Custom Pixel Integration via Google Tag Manager
 Shopify Tracking
 BigQuery
-PostHog evaluations
-etracker integration
-econda integration
-Matomo - Integration via Matomo Tag Manager
-Piwik Pro Integration
 Consent - Tracking via Consent
-Advanced Settings
-Tracking with Varify
+Advanced Setup
+Tracking with Varify.io
+Varify Real-Time Tracking
 Manual Google Tag Manager tracking integration
 Automatic GA4 tracking integration
-Create Custom Click Events
+User-defined click events
 Shopify Custom Pixel Integration via Google Tag Manager
 Shopify Tracking
 BigQuery
-PostHog evaluations
-etracker integration
-econda integration
-Matomo - Integration via Matomo Tag Manager
-Piwik Pro Integration
 Consent - Tracking via Consent
-Advanced Settings
+Advanced Setup
 Create experiment
 Create experiment
 Prompt Based Experiments (PBX)
@@ -240,6 +261,19 @@ Remove Element
 Replace Image
 Responsive Device Switcher
 Style & Layout Changes
+Web analytics integrations
+Adobe Analytics Integration
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+PostHog evaluations
+Adobe Analytics Integration
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+PostHog evaluations
 Further integrations
 Integrations
 Integrations
@@ -252,6 +286,7 @@ Anti-flicker script
 Code Helpers
 Edit HTML
 Experiment API
+Server-side A/B testing
 Add CSS
 Add HTML
 Add JavaScript
@@ -260,6 +295,7 @@ Anti-flicker script
 Code Helpers
 Edit HTML
 Experiment API
+Server-side A/B testing
 Security
 Security functions - overview of all features
 Role & Permission Management
@@ -344,7 +380,7 @@ Registration
 Login
 Pricing
 For agencies
-Functions
+Features
 Roadmap
 BigQuery
 Knowledge
@@ -353,7 +389,11 @@ Knowledge
 A/B Testing Guide
 Compare
 Varify vs. VWO
+Varify vs. Optimizely
+Varify vs. AB Tasty
+Varify vs. Kameleoon
 Varify vs. Convert
+All comparisons
 Support
 Contact
 Tutorials

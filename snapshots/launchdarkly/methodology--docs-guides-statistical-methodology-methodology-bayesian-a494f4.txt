@@ -84,7 +84,9 @@ Using targeting to manage AI model usage by tier
 When to use prompt-based vs agent mode
 Building a chatbot with multiple AI providers using AgentControl
 Observability
+Getting started with observability for .NET MAUI
 Getting started with observability for native Android
+When to use session replay, traces, logs, and Vega
 Experimentation
 Building your first experiment
 Creating an A/B experiment using a funnel metric group
@@ -153,7 +155,7 @@ Additional resources
 Pricing
 Sign in
 Try it free
-Light
+System
 On this page
 Core formulas
 Posterior mean
@@ -795,8 +797,14 @@ Results table data
 Below we dive into detail on how we accomplish these two steps.
 Calculating posterior distributions
 At LaunchDarkly, we use different statistical models for binary data and numeric data. In both cases, we use conjugate distributions, meaning that the family of the prior distribution is the same as the family of the posterior distribution:
-For binary metrics, we start with a Beta distribution for the prior and update that into another Beta distribution for the posterior
-For numeric metrics, we start with a Normal distribution for the prior and update that into another Normal distribution for the posterior
+For binary metrics, we start with a Beta distribution for the prior and update that into another Beta distribution for the posterior.
+For numeric metrics, we start with a Normal distribution for the prior and update that into another Normal distribution for the posterior.
+The control variation always uses an uninformative prior. The specific prior distribution for treatment variations is selected when you design a Bayesian experiment, and the choice applies to every metric in it:
+Shrinkage priors (default): Each treatment variation uses a prior centered on the control variation’s mean. This pulls treatment results toward the control when data is limited.
+Uninformative priors: Each treatment variation uses a flat prior, which means results reflect only the data collected. To select this, check
+Use uninformative priors for treatments
+under “Statistical approach and success criteria” when you create the experiment.
+You cannot update the prior distribution setting after you start running the experiment.
 We give some technical details on the exact specification of the priors below, as well as some closed-form expressions for the posterior distributions once data is incorporated.
 Binary data
 Binary metrics are also called “occurrence” metrics in LaunchDarkly. That is, binary metrics result in either a 0 or a 1 recorded for each context in the experiment. For more information, read
@@ -934,7 +942,7 @@ v
 μ
 v
 ​
-. For the control variation, we use an improper non-informative prior
+. The control variation always uses an uninformative prior,
 f
 p
 r
@@ -958,7 +966,92 @@ prior
 )
 ∝
 1
-. For the other variations, we use priors that shrink the results towards the control variation’s mean. We generate this prior from the empirical distribution of relative differences between variations in all experiments on our platform using metrics of the same type (numeric or conversion) and aggregation function (average or sum).
+.
+If you selected uninformative priors, the treatment variations use the same prior,
+f
+p
+r
+i
+o
+r
+(
+μ
+v
+)
+∝
+1
+f_{\mathrm{prior}}(\mu_v) \propto 1
+f
+prior
+​
+(
+μ
+v
+​
+)
+∝
+1
+, yielding the following posterior:
+f
+p
+o
+s
+t
+(
+μ
+v
+)
+=
+N
+o
+r
+m
+a
+l
+(
+y
+ˉ
+v
+,
+σ
+^
+v
+2
+/
+N
+v
+)
+\begin{aligned} f_{\mathrm{post}}(\mu_v) &= \mathsf{Normal}\left(\bar{y}_v,\ \hat{\sigma}_v^2 / N_v\right) \end{aligned}
+f
+post
+​
+(
+μ
+v
+​
+)
+​
+=
+Normal
+(
+y
+ˉ
+​
+v
+​
+,
+σ
+^
+v
+2
+​
+/
+N
+v
+​
+)
+​
+Otherwise, the treatment variations use the default shrinkage priors that shrink the results towards the control variation’s mean. We generate this prior from the empirical distribution of relative differences between variations in all experiments on our platform using metrics of the same type (numeric or conversion) and aggregation function (average or sum).
 The equation for this prior is:
 f
 p
@@ -1600,46 +1693,15 @@ v
 ​
 )
 ​
-The values of the prior hyperparameters
-a
-v
-a_v
-a
-v
-​
-and
-b
-v
-b_v
-b
-v
-​
-differ between the control (
+The control variation (
 v
 =
 0
-v = 0
+v=0
 v
 =
 0
-) and treatment variations (
-v
-≠
-0
-v \neq 0
-v
-
-=
-0
-). For the control variation (
-v
-=
-0
-v = 0
-v
-=
-0
-), we use a distribution with
+) always uses the uninformative prior where
 a
 0
 =
@@ -1650,7 +1712,7 @@ a
 ​
 =
 1
-and
+,
 b
 0
 =
@@ -1661,7 +1723,20 @@ b
 ​
 =
 1
-. For the treatment variations (
+, which is uniform on
+[
+0
+,
+1
+]
+[0,1]
+[
+0
+,
+1
+]
+.
+If you selected uninformative priors, the treatment variations (
 v
 ≠
 0
@@ -1670,7 +1745,170 @@ v
 
 =
 0
-), we use a prior similar to the one used for numeric metrics. The prior for treatment variations is a Beta distribution with hyperparameters
+) also use
+a
+v
+=
+1
+a_v = 1
+a
+v
+​
+=
+1
+,
+b
+v
+=
+1
+b_v = 1
+b
+v
+​
+=
+1
+, yielding the following posterior:
+f
+p
+o
+s
+t
+(
+μ
+v
+∣
+y
+ˉ
+v
+,
+N
+v
+)
+=
+B
+e
+t
+a
+(
+1
++
+N
+v
+y
+ˉ
+v
+,
+1
++
+N
+v
+(
+1
+−
+y
+ˉ
+v
+)
+)
+\begin{aligned} f_{\mathrm{post}}(\mu_v | \bar{y}_v, N_v) &= \mathsf{Beta}\left(1 + N_v \bar{y}_v,\ 1 + N_v (1 - \bar{y}_v)\right)\end{aligned}
+f
+post
+​
+(
+μ
+v
+​
+∣
+y
+ˉ
+​
+v
+​
+,
+N
+v
+​
+)
+​
+=
+Beta
+(
+1
++
+N
+v
+​
+y
+ˉ
+​
+v
+​
+,
+1
++
+N
+v
+​
+(
+1
+−
+y
+ˉ
+​
+v
+​
+)
+)
+​
+with expected value
+μ
+^
+v
+=
+1
++
+N
+v
+y
+ˉ
+v
+N
+v
++
+2
+\hat{\mu}_v = \frac{1 + N_v \bar{y}_v}{N_v + 2}
+μ
+^
+​
+v
+​
+=
+N
+v
+​
++
+2
+1
++
+N
+v
+​
+y
+ˉ
+​
+v
+​
+​
+Otherwise, the treatment variations (
+v
+≠
+0
+v \neq 0
+v
+
+=
+0
+) use the default shrinkage priors, similar to numeric metrics. The prior for treatment variations is a Beta distribution with hyperparameters
 a
 v
 a_v
@@ -1684,7 +1922,7 @@ b_v
 b
 v
 ​
-parameters such that its expected value and variance are:
+such that its expected value and variance are:
 E
 [
 f

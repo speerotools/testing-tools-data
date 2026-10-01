@@ -1,7 +1,7 @@
 # https://varify.io/en/userdocumentation/
 Varify.io® - User Documentation
 Skip to content
-Functions
+Features
 Pricing
 For agencies
 Company
@@ -19,7 +19,7 @@ Live
 Success Stories
 Card Set
 EN
-Functions
+Features
 Pricing
 For agencies
 Company
@@ -86,35 +86,27 @@ Create experiment
 Chrome browser extension
 Best Practice
 CRO AI Audit
-Tracking & web analytics integrations
-Tracking with Varify
+Tracking setup
+Tracking with Varify.io
+Varify Real-Time Tracking
 Manual Google Tag Manager tracking integration
 Automatic GA4 tracking integration
-Create Custom Click Events
+User-defined click events
 Shopify Custom Pixel Integration via Google Tag Manager
 Shopify Tracking
 BigQuery
-PostHog evaluations
-etracker integration
-econda integration
-Matomo - Integration via Matomo Tag Manager
-Piwik Pro Integration
 Consent - Tracking via Consent
-Advanced Settings
-Tracking with Varify
+Advanced Setup
+Tracking with Varify.io
+Varify Real-Time Tracking
 Manual Google Tag Manager tracking integration
 Automatic GA4 tracking integration
-Create Custom Click Events
+User-defined click events
 Shopify Custom Pixel Integration via Google Tag Manager
 Shopify Tracking
 BigQuery
-PostHog evaluations
-etracker integration
-econda integration
-Matomo - Integration via Matomo Tag Manager
-Piwik Pro Integration
 Consent - Tracking via Consent
-Advanced Settings
+Advanced Setup
 Create experiment
 Create experiment
 Prompt Based Experiments (PBX)
@@ -207,6 +199,19 @@ Remove Element
 Replace Image
 Responsive Device Switcher
 Style & Layout Changes
+Web analytics integrations
+Adobe Analytics Integration
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+PostHog evaluations
+Adobe Analytics Integration
+etracker integration
+econda integration
+Matomo - Integration via Matomo Tag Manager
+Piwik Pro Integration
+PostHog evaluations
 Further integrations
 Integrations
 Integrations
@@ -219,6 +224,7 @@ Anti-flicker script
 Code Helpers
 Edit HTML
 Experiment API
+Server-side A/B testing
 Add CSS
 Add HTML
 Add JavaScript
@@ -227,6 +233,7 @@ Anti-flicker script
 Code Helpers
 Edit HTML
 Experiment API
+Server-side A/B testing
 Security
 Security functions - overview of all features
 Role & Permission Management
@@ -311,7 +318,7 @@ Registration
 Login
 Pricing
 For agencies
-Functions
+Features
 Roadmap
 BigQuery
 Knowledge
@@ -320,7 +327,11 @@ Knowledge
 A/B Testing Guide
 Compare
 Varify vs. VWO
+Varify vs. Optimizely
+Varify vs. AB Tasty
+Varify vs. Kameleoon
 Varify vs. Convert
+All comparisons
 Support
 Contact
 Tutorials

@@ -60,6 +60,8 @@ Data pipelines
 10K events + 1M rows
 AI Observability
 100K events
+Evaluations
+Billed with AI observability
 PostHog AI
 500 credits (worth $5)
 Inbox
@@ -93,6 +95,8 @@ Data pipelines
 10K events + 1M rows
 AI Observability
 100K events
+Evaluations
+Billed with AI observability
 PostHog AI
 500 credits (worth $5)
 Inbox
@@ -158,8 +162,63 @@ Talk to a human
 Book an onboarding call
 Get 30 minutes with a PostHog expert for $80 – they’ll get your setup right the first time.
 Book a call
-Most companies stay on the free tier.
-Calculate what you'd pay past it
+Pricing calculator
+Your estimate
+(
+7
+products
+)
+Analytics
+$0
+Session Replay
+$0
+AI Observability
+$0
+Replay Vision
+$0
+Feature Flags
+$0
+Error Tracking
+$0
+PostHog AI
+$0
+Add a product
+9
+more
+Platform packages
+$0
+See all products and per-unit rates
+Analytics
+Remove
+The first
+1M
+events
+are
+free
+, every month.
+Estimated total
+for all products & add-ons
+Free
+Get started
+Share estimate
+Create an estimate with AI
+How our pricing works
+Only pay for products you use
+Generous free tier for each product (resets monthly)
+You can set billing limits per product so you never get a surprise bill
+We also offer
+discounts
+for startups and non-profits
+Estimating usage
+Not sure what your volume looks like?
+Generate an AI estimate
+or add the tracking code to your site and check back in a few days – no credit card required.
+If something stupid happens and you get an unexpected bill (like if
+your side project unexpectedly goes viral
+or you're unhappy), we'll pretty much always refund it!
+We've also written
+this handy guide
+to help!
 James Hawkins
 Co-founder
 Our pricing is designed to make you happy
@@ -177,34 +236,104 @@ Get started - free
 No credit card required
 Pricing FAQ
 How do I know how much PostHog will cost?
+The easiest way is to sign up, set your billing limit to $0 (if you expect to go over), and install PostHog. You'll get an accurate projection after just a few days. You can also read our doc on
+estimating usage and costs
+.
 Do I pay anything for stored data (events, exceptions, replays, logs, etc.)?
+No, for all of our products you only pay for what you capture, ingest, or sync in a given month (i.e. you only pay when each event is first received). There are no additional storage costs or fees.
 How long does PostHog retain data (events, recordings, logs)?
+Events and metadata are guaranteed to be retained for 7 years on any paid plan and 1 year on a free plan. After 1 year, data may be moved into cold storage so queries may run more slowly.
+Recordings on the free plan are retained for 1 month. On the pay-as-you-go plan, recordings are retained for 90 days. The Boost and Scale add-ons can increase this to up to one year. The Enterprise add-on can increase retention to 5 years.
+Logs are retained for 14 days by default. You can set custom retention per service or per source at $0.05/GB per month retained.
 What happens after the data retention period elapses?
+Any data stored for more than the retention period may be permanently deleted from our systems.
 Is there a free trial on paid plans?
+We have a generous free tier on every paid plan so you can try out all the features available on PostHog before paying (though you will need to enter your credit card to unlock those features). If you have additional needs, such as enterprise features, please
+get in touch with our sales team
+.
 What currency are your prices in?
+All prices are in US Dollars (USD), excluding taxes.
 Do you offer a discount for non-profits?
+Yes in most cases! Create your account,
+contact the sales team for help
+with some basic details on your organization. We will then apply a discount.
 Are there any minimums or annual commitments?
+Nope. We can, however, offer annual commitments (for example, to maintain pricing) if you need them as part of an enterprise agreement.
 How does PostHog's pricing work?
+PostHog has per-product usage-based pricing. This means you only pay for what you use, such as events captured, sessions recorded, and flags requested.
+PostHog is free to use and each product has a generous free monthly allowance (1M events for analytics, 5K session replays, 1M feature flag requests, and more). There is no minimum spend or annual contracts needed and you can set billing limits so you're never surprised.
 Which plan is right for me?
+For nearly everyone, the pay-as-you-go plan is the right choice. It unlocks all of the features of PostHog and remains free if you stay within the limits each month (which you can set billing limits to do).
 What happens if I hit or go over the free limit?
+On the pay-as-you-go plan, we charge based on usage for everything above the free allowance. On the free plan, any additional events are permanently dropped and feature flags will return a default quota limited response.
 Do free tier limits reset every month?
+Yes. Every month, your usage is reset and you get another 1M events, 5K session replays, and more to use. Unused free tier limits do not rollover.
 Can I set a billing limit?
+Yes, you can set a billing limit for each of PostHog's products separately in your organization's
+billing settings
+. Check out our doc on
+billing limits and alerts
+for more information.
 What happens if I hit my billing limit?
+If you've set a billing limit and your usage hits it, any additional events are permanently dropped and feature flags will return a default quota limited response. PostHog will never charge you more than what you've set as your billing limit.
 How is usage calculated?
+Usage is calculated on a per-product level. Events for product and web analytics, recordings for session replay, requests for feature flags and experiments, exceptions for error tracking, responses for surveys, synced rows for data warehouse, messages for workflows, and GB ingested for logs.
 How can I manage my spend?
+You monitor your usage and set billing limits on the billing page in-app. This shows how much you've spent, projected spend, and a billable usage dashboard. Many products, like
+product analytics
+and
+feature flags
+, also have docs on cutting costs.
 Can I cancel my plan at any time?
+Yes, you can cancel your plan by setting a billing limit at any time and we'll only charge for what you use. If you have an
+accidental spike
+, talk to us and we'll help you sort it out.
 Is PostHog cheaper than competitors?
+Usually, yes, and often by a significant margin. Because PostHog provides multiple products teams need, we're able to charge less than competitors. We aim to be the cheapest option for each product compared to major competitors.
+Beyond the all-in-one advantage, most competitors offer time-limited free trials (typically 14-30 days) with restricted features; PostHog's free tier doesn't expire, includes full access to most features, and resets every month, no credit card or sales call required.
+You can read how we stack up against competitors like
+Amplitude
+,
+Mixpanel
+,
+Heap
+,
+FullStory
+,
+Hotjar
+,
+GA4
+, and a lot more in our
+comparison blogs
+.
 What do I get with PostHog that I wouldn't get paying for multiple separate tools?
+A lot less headache, mostly.
+All your data lives in one place so you don't need to jump between tools or piece them together to do analysis. With PostHog, you can go directly from a funnel to a replay to an error trace instead of context switching to piece together what actually happened. You just need to install a single SDK, manage a single bill, and sign a single contract (if you're into that sort of thing).
+If you need a BAA for HIPAA compliance, it's one conversation instead of five. Your procurement team will genuinely thank you.
 When does billing start?
+Usage starts being tracked as soon as you sign up for PostHog, but you aren't billed until 1 month later. For example, if I signed up on April 6th, my first month would be billed May 6th.
 How often am I billed?
+You are billed once a month, on the same day each month.
 What payment methods does PostHog accept?
+PostHog accepts credit or debit cards processed through Stripe. If you want to pay via invoice, you can
+contact the sales team for help
+.
 Do you support invoicing or purchase orders?
+Yes, but you need to make an upfront credit purchase which can be done by
+contacting our sales team
+.
 Does PostHog have any setup fees or hidden costs?
+No. Our pricing is fully transparent.
 Can I use PostHog completely free forever?
+Yes, as long as you stay under the free tier limits. Many of our users have used PostHog for free for years.
 Do I need to pay for everything or only certain products?
+You can choose what products you use and you don't need to pay for anything you don't want. You can set billing limits for the products you don't want to use to be extra safe too. PostHog's products still work if you only use them individually.
 Does PostHog offer annual commitment discounts?
+Yes. PostHog does offer bigger discounts for annual commitments above a certain spend. See
+our doc on pre-paid plans
+for more.
 Have another pricing-related question?
-Ask in our community forum
+Ask PostHog AI
 or
 talk to a human
 .

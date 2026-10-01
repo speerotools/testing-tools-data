@@ -1,7 +1,5 @@
 # https://www.growthbook.io/blog/agent-experience
 GrowthBook 5.0: AI Agents Now Operate Flags & Experiments | Growthbook Blog
-Live Group Demo | Led by a GrowthBook technical expert →
-Choose Your Date
 Products
 Product
 Experimentation
@@ -18,7 +16,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.0: Build, ship, and improve at scale
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
 Solutions
 By Role
 Engineering
@@ -46,6 +44,7 @@ GrowthBook vs Others
 ROI Calculator
 Ecosystem
 Community
+Partners
 Explore
 Why migrate from Statsig to GrowthBook
 Pricing
@@ -97,6 +96,9 @@ that fuels the skills and the CLI. If you’d rather see it than read about it,
 watch here
 .
 This foundation powers new ways you and your agents can run GrowthBook: the in-app AI Assistant, a reworked MCP server that integrates the skills, and a native Slack app (coming soon!).
+Watch agents run GrowthBook
+Join a live demo to see how agents work with GrowthBook through the MCP server and CLI.
+Pick a Demo Date
 How to trust your agents
 When agents are part of your team, they should follow your team’s standards and processes, just like anyone else shipping flags or experiments. Agents can make mistakes, but we’ve built our skills and Assistant so that agent-driven changes land as drafts and a person reviews before anything publishes. The same approval policies, audit trails, and guardrails to catch bad flags before they ship apply to both humans and agents. Your team maintains judgment and governance.
 We’ll dive more into the improvements we’ve made to governance, especially for features flags, on Thursday.
@@ -111,6 +113,9 @@ and join us for a live Office Hours Thursday, July 30, at 9am PT and tell us wha
 ‍
 Tomorrow
 : the new AI Visual Editor, rebuilt from scratch to make experimentation easier in the browser.
+Connect your agents today
+Create a free account and give your coding agents access to feature flags and experiments through GrowthBook's MCP server.
+Start Building Free
 Table of Contents
 Example H2
 The Uplift
@@ -119,19 +124,16 @@ Stay ahead on testing and AI-native development
 Share
 Related articles
 See All Articles
+Releases
+Featured
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
+Product Updates
+Platform
+Introducing EU data residency for GrowthBook Cloud
 5.0
 Experiments
 Product Updates
 Experimentation friction changes as you grow. GrowthBook keeps pace.
-Feature Flags
-Featured
-Product Updates
-5.0
-Feature flag governance — GrowthBook 5.0
-5.0
-Analytics
-Releases
-GrowthBook 5.0: Product Analytics is now generally available
 Ready to ship faster?
 No credit card required. Start with feature flags, experimentation, and product analytics — free.
 Get Started
@@ -175,6 +177,8 @@ Company
 About
 Careers
 Contact Us
+Swag Shop
+Support
 Legal
 ©2026 GrowthBook, Inc.
 Terms of Use

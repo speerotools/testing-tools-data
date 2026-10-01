@@ -63,6 +63,7 @@ FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Data & Metrics
 Connecting to Your Data Warehouse
 Setting Up Amazon Redshift as a Data Source
@@ -129,7 +130,9 @@ Inbound Rules
 :
 Protocol: TCP
 Port: 5439
-Source: 52.70.79.40/32 (GrowthBook’s IP)
+Source: 52.70.79.40/32 (
+GrowthBook Cloud’s outbound IP
+)
 Click
 Save Changes
 .

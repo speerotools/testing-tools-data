@@ -1,0 +1,596 @@
+# https://www.datadoghq.com/legal/hipaa-eligible-services/
+HIPAA-Eligible Services | Datadog
+Product
+The integrated platform for monitoring & security
+Observability
+Security
+Digital Experience
+Software Delivery
+Service Management
+AI
+Platform Capabilities
+View pricing
+Observability
+End-to-end, simplified visibility into your stack’s health & performance
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Sensitive Data Scanner
+Infrastructure
+Applications
+Data
+Logs
+Security
+Outpace AI-powered attacks with unified security and observability
+Learn more
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Bits Security Analyst
+Digital Experience
+Optimize front-end performance and enhance user experiences
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Continuous Testing
+Error Tracking
+Dashboards
+Software Delivery
+Build, test, secure and ship quality code faster
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+Software Composition Analysis
+DORA Metrics + AI Impact
+Service Management
+Integrated, streamlined workflows for faster time-to-resolution
+Incident Response
+Incident Management
+Work Management
+Service Level Objectives
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Internal Developer Portal (IDP)
+Software Catalog
+AI
+Monitor and improve model performance. Pinpoint root causes and detect anomalies
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+MCP Server
+Pup CLI
+GPU Monitoring
+Platform Capabilities
+Built-in features & integrations that power the Datadog platform
+Built-in Features
+Bits AI
+Bits Chat
+Bits Agent Builder
+Alerts
+Custom Metrics
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+DORA Metrics + AI Impact
+Incident Management
+Work Management
+Workflow Automation
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+MCP Server
+Agent Directory
+Datadog Apps
+API
+Marketplace
+Pup CLI
+Software Catalog
+Service Level Objectives
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use Case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+Database Visibility
+Docs
+Looking for Datadog logos?
+You can find the logo assets on our press page.
+Download Media Assets
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+Login
+GET STARTED FREE
+Free Trial
+Toggle navigation
+Product
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Agent Observability
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Sensitive Data Scanner
+Security
+Overview
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+Cloud SIEM
+Bits Security Analyst
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Continuous Testing
+Error Tracking
+Dashboards
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+Software Composition Analysis
+DORA Metrics + AI Impact
+Service Management
+Incident Management
+Work Management
+Service Level Objectives
+Workflow Automation
+Datadog Apps
+Event Management
+Internal Developer Portal (IDP)
+Software Catalog
+AI
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Agent Observability
+MCP Server
+Pup CLI
+GPU Monitoring
+Platform Capabilities
+Bits AI
+Bits Chat
+Bits Agent Builder
+Alerts
+Custom Metrics
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+DORA Metrics + AI Impact
+Incident Management
+Work Management
+Workflow Automation
+Teams
+OpenTelemetry
+Integrations
+IDE Plugins
+MCP Server
+Agent Directory
+Datadog Apps
+API
+Marketplace
+Pup CLI
+Software Catalog
+Service Level Objectives
+Customers
+Pricing
+Solutions
+Industry
+Financial Services
+Manufacturing & Logistics
+Healthcare/Life Sciences
+Retail/E-Commerce
+Government
+Education
+Media & Entertainment
+Technology
+Gaming
+Technology
+Amazon Web Services Monitoring
+Azure Monitoring
+Google Cloud Monitoring
+Oracle Cloud Monitoring
+Kubernetes Monitoring
+Red Hat OpenShift
+Pivotal Platform
+OpenAI
+SAP Monitoring
+OpenTelemetry
+Use Case
+Application Security
+Cloud Migration
+Monitoring Consolidation
+Unified Commerce Monitoring
+SOAR
+DevOps
+FinOps
+Shift-Left Testing
+Digital Experience Monitoring
+Security Analytics
+Compliance for CIS Benchmarks
+Hybrid Cloud Monitoring
+Edge Device Monitoring
+Real-Time BI
+On-Premises Monitoring
+Log Analysis & Correlation
+CNAPP
+Database Visibility
+About
+Contact
+Partners
+Newsroom
+Events & Webinars
+Leadership
+Careers
+Analyst Reports
+Investor Relations
+ESG Report
+Trust Hub
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+Docs
+Login
+Get Started
+back to datadog legal
+HIPAA-Eligible Services
+Last updated
+July 23, 2026
+July 23, 2026
+Last updated
+July 23, 2026
+July 23, 2026
+As of the date displayed above, the following Datadog Services are included as “
+Eligible Services
+” under the applicable Datadog Business Associate Agreement.
+Cloud SIEM (formerly Security Monitoring)
+Log Management
+As of the date displayed above, the following Datadog Services are included as “
+Extended Eligible Services
+” under the applicable Datadog Business Associate Agreement.
+Agent Observability (formerly LLM Observability)
+Application Performance Monitoring
+App and API Protection (formerly Application Security Management)
+Audit Trail
+Bits Agent Builder
+Bits Investigation
+Bits Chat
+Bits Security Analyst
+CI Visibility
+Cloud Network Monitoring (formerly Network Performance Monitoring)
+Cloud Security Posture Management
+Cloud SIEM
+Continuous Profiler
+Data Observability
+Database Monitoring
+Datadog MCP Server
+Eppo
+Error Tracking
+Experiments
+Feature Flags
+Incident Management
+Infrastructure Monitoring
+Log Management
+Metaplane
+Network Device Monitoring
+Product Analytics
+Real User Monitoring
+Sensitive Data Scanner
+Serverless Monitoring
+Session Replay
+Synthetic Monitoring
+Workflow Automation
+Workload Protection (formerly Cloud Workload Security)
+The Datadog Services listed above may be used to process protected health information (PHI) in organizations covered by an applicable business associate agreement (BAA) with Datadog. Datadog Services not listed above may still be used in HIPAA-enabled organizations provided they don't process PHI. Customers are responsible for configuring and using Datadog Services in a manner consistent with their HIPAA obligations and their BAA with Datadog. For more information about our HIPAA-eligible services, please contact your account executive or customer success manager.
+Product
+Observability
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Security
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Digital Experience
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Software Delivery
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+DORA Metrics + AI Impact
+Service Management
+Incident Response
+Incident Management
+Work Management
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Software Catalog
+AI
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+MCP Server
+Pup CLI
+Platform Capabilities
+Built-in Features
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+Agent Directory
+API
+Marketplace
+Service Level Objectives
+Resources
+Pricing
+Documentation
+Support
+Services & Enablement
+Product Preview Program
+Certification
+Open Source
+Events and Webinars
+Security
+Privacy Center
+Knowledge Center
+Learning Resources
+Blog
+The Monitor
+Engineering
+AI
+Security Labs
+About
+Contact Us
+Partners
+Press
+Leadership
+Careers
+Legal
+Investor Relations
+Analyst Reports
+ESG Report
+Vendor Help
+Trust Hub
+Download mobile app
+English
+English
+English
+日本語
+Japanese
+한국어
+Korean
+© Datadog 2026
+Terms
+|
+Privacy
+|
+Cookies
+Request a personalized demo with a Datadog engineer
+×
+I'd like Datadog to share the latest news about Datadog services and related offerings with me by email or telephone. You may unsubscribe at any time by following the instructions in the communications received from Datadog.
+Start Your Free Datadog Trial Now
+Get Started with Datadog
+×

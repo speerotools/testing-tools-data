@@ -63,12 +63,13 @@ FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Data & Metrics
 Connecting to Your Data Warehouse
 Setting Up Postgres as a Data Source
 Copy page
 Copy page
-Connect Postgres to GrowthBook with a read-only user, whitelist the Cloud IP if needed, and enter host, port, database, and SSL settings.
+Connect Postgres to GrowthBook with a read-only user, allowlist the Cloud IP if needed, and enter host, port, database, and SSL settings.
 Copy page
 Copy page
 GrowthBook runs
@@ -132,9 +133,12 @@ with your analytics schema if events live elsewhere.
 2. Allow network access
 If you use
 GrowthBook Cloud
-, whitelist
-52.70.79.40
-in your Postgres firewall, security group, or
+and the destination is behind a firewall, allow inbound traffic from
+52.70.79.40/32
+. That is the only address GrowthBook Cloud connects out from — see
+IP addresses
+.
+For Postgres that means your firewall, security group, and
 pg_hba.conf
 .
 Self-hosted GrowthBook runs in Docker. To reach a database on the host machine, use

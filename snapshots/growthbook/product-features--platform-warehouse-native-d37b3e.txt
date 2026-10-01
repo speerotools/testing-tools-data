@@ -1,7 +1,5 @@
 # https://www.growthbook.io/platform/warehouse-native
 Warehouse Native Architecture | Growthbook
-Live Group Demo | Led by a GrowthBook technical expert →
-Choose Your Date
 Products
 Product
 Experimentation
@@ -18,7 +16,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.0: Build, ship, and improve at scale
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
 Solutions
 By Role
 Engineering
@@ -46,6 +44,7 @@ GrowthBook vs Others
 ROI Calculator
 Ecosystem
 Community
+Partners
 Explore
 Why migrate from Statsig to GrowthBook
 Pricing
@@ -129,15 +128,15 @@ Director of Engineering, Upstart
 “Being able to turn a feature on and off with a flip of a switch is fantastic... That’s so much easier than having to do a deploy or a roll-back.”
 John Resig
 Chief Software Architect, Khan Academy
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
 Andy Thäger
 Founder of Creatistas (toom partner)
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
-"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
-Kameron Jenkins
-Head of Growth Engineering, Fyxer
 FAQs
 What is warehouse-native experimentation?
 Warehouse-native means GrowthBook queries your data where it already lives (Snowflake, BigQuery, etc.) instead of copying it into our systems. Benefits: no data duplication costs, complete data ownership, use your existing metrics definitions, and total transparency into how results are calculated.
@@ -192,6 +191,8 @@ Company
 About
 Careers
 Contact Us
+Swag Shop
+Support
 Legal
 ©2026 GrowthBook, Inc.
 Terms of Use

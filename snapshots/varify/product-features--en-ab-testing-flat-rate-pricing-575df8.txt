@@ -1,6 +1,7 @@
 # https://varify.io/en/ab-testing-flat-rate-pricing
 A/B Testing with Flat-Rate Pricing — No Traffic Limits, No Surprises — Varify.io
-Functions
+EN
+Features
 Pricing
 For agencies
 Company
@@ -18,7 +19,7 @@ Live
 Success Stories
 Card Set
 EN
-Functions
+Features
 Pricing
 For agencies
 Company
@@ -103,13 +104,13 @@ Growth (€199/month):
 Visual editor, code editor, GA4 integration, Matomo integration, audience targeting, scheduling, CSV export. Everything most teams need.
 Pro (€249/month):
 Everything in Growth plus BigQuery integration, Piwik Pro integration, PostHog integration, advanced segmentation, and priority support.
-Both plans: monthly billing, cancel anytime, no annual lock-in. Free 30-day trial on both. See
+Both plans: monthly billing, cancel anytime, no annual lock-in. Free 15-day trial on both. See
 detailed pricing
 .
 €199/month. Same price at 10,000 or 1,000,000 visitors.
 No MTU charges. No traffic tiers. No annual contracts. Just flat-rate A/B testing.
 Start your free trial
-Free 30-day trial
+Free 15-day trial
 When traffic-based pricing makes sense
 Fair is fair — flat-rate isn't always the cheapest option:
 Very low traffic sites (under 10K visitors/month):
@@ -130,13 +131,13 @@ Varify doesn't build its own tracking infrastructure — it uses your existing a
 Is Varify's flat-rate pricing really cheaper than VWO?
 For most sites, yes. VWO's entry point is $299/month for limited MTU. At 200K+ monthly visitors, VWO typically costs $500-800/month. Varify is €199/month regardless of traffic. The only scenario where VWO is cheaper: if you need heatmaps + recordings + testing in one tool and don't already have Hotjar/Clarity.
 Can I switch from annual contracts at other tools to Varify's monthly billing?
-Yes. Varify offers monthly billing with no annual commitment. You can start a free 30-day trial, migrate your tests, and cancel your annual contract at the other tool at the end of its term. Many teams run both tools in parallel during the transition.
+Yes. Varify offers monthly billing with no annual commitment. You can start a free 15-day trial, migrate your tests, and cancel your annual contract at the other tool at the end of its term. Many teams run both tools in parallel during the transition.
 Platform
 Registration
 Login
 Pricing
 For agencies
-Functions
+Features
 Roadmap
 BigQuery
 Knowledge
@@ -145,7 +146,11 @@ Knowledge
 A/B Testing Guide
 Compare
 Varify vs. VWO
+Varify vs. Optimizely
+Varify vs. AB Tasty
+Varify vs. Kameleoon
 Varify vs. Convert
+All comparisons
 Support
 Contact
 Tutorials
@@ -157,6 +162,7 @@ About us
 Affiliate
 More about us
 OMR
+G2
 Imprint
 Terms of Service
 Privacy

@@ -4,9 +4,11 @@ Documentation
 Target
 Target Guide
 How Adobe Target works
-Last update: May 12, 2026
+Last update: September 28, 2026
 Topics:
-Overview
+Audiences
+Implementation
+Administration and configuration
 Learn how Adobe Target works, including details on the JavaScript libraries (Adobe Experience Platform Web SDK and at.js). This article also covers the various activity types that you can create, Target usage-counting strategies, the Target Edge Network, SEO, and bot detection.
 Key points include:
 JavaScript Libraries

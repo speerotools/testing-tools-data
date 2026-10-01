@@ -104,7 +104,7 @@ available in our docs
 .
 Need analytics hosted in the EU?
 Try PostHog Cloud EU for free
-PostHog is the leading platform for building self-driving products. With a full suite of developer tools –
+PostHog is your product's context layer. With a full suite of developer tools –
 AI observability
 ,
 product analytics
@@ -118,7 +118,7 @@ experiments
 error tracking
 ,
 logs
-, and more – PostHog captures all the context agents need to diagnose problems, uncover opportunities, and ship fixes. A
+, and more – PostHog ingests and stores all the data agents need to diagnose problems, uncover opportunities, and ship fixes. A
 data warehouse
 and
 CDP
@@ -131,6 +131,8 @@ PostHog Desktop
 ), or your own editor via
 the MCP
 .
+Community questions
+Ask a question
 Jump to:
 FAQ
 Where are PostHog Cloud EU's servers based?

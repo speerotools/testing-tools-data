@@ -116,10 +116,6 @@ You switched accounts on another tab or window.
 Reload
 to refresh your session.
 Dismiss alert
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
 spotify
 /
 confidence-ai-plugins
@@ -127,14 +123,14 @@ Public
 Notifications
 You must be signed in to change notification settings
 Fork
-7
+9
 Star
-8
+9
 Code
 Issues
-0
-Pull requests
 1
+Pull requests
+0
 Actions
 Security and quality
 0
@@ -154,8 +150,8 @@ Code
 Open more actions menu
 Latest commit
 History
-75 Commits
-75 Commits
+82 Commits
+82 Commits
 Folders and files
 Name
 Name
@@ -167,10 +163,8 @@ Last commit date
 .codex-plugin
 .cursor-plugin
 .cursor-plugin
-.github/
-workflows
-.github/
-workflows
+.github
+.github
 assets
 assets
 commands
@@ -187,6 +181,8 @@ skills
 .mcp.json
 .release-please-manifest.json
 .release-please-manifest.json
+AGENTS.md
+AGENTS.md
 CHANGELOG.md
 CHANGELOG.md
 CLAUDE.md
@@ -605,13 +601,13 @@ Code of conduct
 Activity
 Custom properties
 Stars
-8
+9
 stars
 Watchers
 1
 watching
 Forks
-7
+9
 forks
 Report repository
 Releases

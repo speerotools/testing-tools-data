@@ -1,2 +1,284 @@
 # https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/
-Harness Developer Hub
+Harness MCP Server | Harness Platform | Harness
+⌘
+Ctrl
+k
+Sign Up
+Get a Demo
+Contact Us
+More
+Home
+Documentation
+API Reference
+Release Notes
+Roadmap
+University
+2.0
+Platform
+New to Harness Platform?
+Overview
+Get Started
+What's Supported
+Use Harness Platform
+Authentication
+Organizations & Projects
+Platform Access Control
+Delegates
+Secrets
+Connectors
+Governance
+Status Portal
+Pipelines
+Variables & Expressions
+Notifications, Alerts, & Banners
+Triggers
+Tags
+Security
+Certificates
+Templates
+Approvals
+Automation
+Git Experience
+Favorites
+Harness Dashboards
+Settings
+References
+Service Discovery
+Monitored services
+Application Maps
+Platform Rate Limits
+Platform Resource Limits
+Customize Branding
+Knowledge Graph
+Use Harness CLI
+Harness CLI
+Use Harness AI
+Overview
+Get Started
+Connect with AI
+Anthropic Model Connector
+OpenAI Model Connector
+Anthropic Connector
+OpenAI Connector
+MCP Server
+Configure AI Clients
+Hosted MCP
+Self-Hosted Deployment
+Environment Variables
+Tools Reference
+Prompt Templates
+Resource Types
+Approvals and Safety
+Troubleshooting
+MCP Connectors
+Context & Memory
+Core capabilities
+Govern AI Output
+Release Updates
+Subscriptions & Licenses
+Flex Pricing
+Manage Subscriptions
+Account Information and Alerts
+Usage Analytics
+Cloud Marketplace
+Troubleshooting & Resources
+Tutorials
+Troubleshooting
+Knowledge Base & FAQs
+Articles
+Platform FAQs
+FAQs: New navigation
+FAQs: Pipelines
+Reference Architecture
+Reference Architecture
+Powered by GitBook
+On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Documentation
+Harness Platform
+2.0
+Use Harness AI
+Connect with AI
+Harness MCP Server
+Give AI agents full access to the Harness platform through 11 consolidated tools and 139 resource types using the Model Context Protocol (MCP).
+The Harness MCP Server is an open-source
+Model Context Protocol
+server that gives AI agents full access to the Harness platform. It uses a registry-based dispatch system that routes 11 consolidated tools (
+harness_list
+,
+harness_get
+,
+harness_create
+, and others) to 139 resource types across 30 toolsets, covering CI/CD, GitOps, Feature Management & Experimentation, Cloud Cost Management, Security Testing, Chaos Engineering, Internal Developer Portal, Software Supply Chain, and more.
+Unlike MCP servers that map one tool per API endpoint (which degrades LLM tool-selection accuracy as tool count grows), this server keeps the tool count small and the schema footprint minimal. Agents discover organizations and projects dynamically, so multi-project workflows work out of the box without hardcoded environment variables. Twenty-seven pre-built prompt templates cover common workflows such as debugging failed pipelines, reviewing DORA metrics, triaging vulnerabilities, and optimizing cloud costs.
+Source code
+:
+github.com/harness/mcp-server
+npm package
+:
+harness-mcp-v2 on npm
+What you will learn in this topic
+By the end of this topic, you will be able to:
+Configure your AI client
+by adding the server to Claude Desktop, Claude Code, Cursor, VS Code, Windsurf, Gemini CLI, and Amazon Q Developer CLI with an API key.
+Connect to the Harness-managed endpoint
+with OAuth instead of an API key.
+Run the server
+with Docker, Kubernetes, MCP gateways, or HTTP transport in multi-user mode.
+Use pre-built workflow prompts
+.
+Elicitate
+risk-based auto-approve, and platform safeguards.
+Troubleshoot common errors
+and interactive debugging with MCP Inspector.
+Before you begin
+Before you configure MCP server, ensure you have the following:
+Harness API key
+: A personal access token (PAT) in the format
+pat.<accountId>.<tokenId>.<secret>
+. The account ID is auto-extracted from PAT tokens. To create one, go to
+My Profile
+>
+API Keys
+>
++ New API Key
+, then create a
+Token
+. Go to
+Manage API Keys
+to review detailed instructions.
+Node.js
+: Required when you use
+npx
+or
+npm install
+. This is not required for Docker.
+If you use the
+Harness Hosted MCP
+endpoint, you need to authenticate with OAuth through Harness ID. This does not need an API key in your client configuration.
+If your Harness account signs in through a SAML or OIDC Identity Provider, an administrator must add the MCP-specific ACS URL or redirect URI to that Identity Provider before you connect. For more information, see
+Single Sign-On (SSO) for Harness MCP
+.
+Quick start
+This set up does not require any installation. Run the server directly with
+npx
+command described below:
+The server defaults to
+stdio
+transport (for Claude Desktop, Cursor, Windsurf, and similar clients). For remote or shared deployments, use
+http
+as described below:
+Once the server runs, go to
+Configure your AI client
+to connect your editor or terminal.
+Install with an alternative method
+In this set up, use a global install or a source build when
+npx
+does not fit your environment.
+Global install
+Build from source
+CLI usage
+Option
+Description
+--port <number>
+Port for HTTP transport (default:
+3000
+, or
+PORT
+env var)
+--help
+Show help message and exit
+--version
+Print version and exit
+How it works
+The image below describes the flow of control from AI agent (such as Claude) to Harness REST API.
+Click to view full size image
+Tools
+are generic verbs (
+harness_list
+,
+harness_get
+, and others) that accept a
+resource_type
+parameter to route to the correct API endpoint.
+The Registry
+maps each
+resource_type
+to a declarative
+ResourceDefinition
+specifying the HTTP method, URL path, parameter mappings, and response extraction.
+Dispatch
+resolves the resource definition, builds the HTTP request, calls the Harness API, and extracts the relevant response data.
+Toolset filtering
+controls which resource definitions load at startup.
+Deep links
+are automatically appended to responses, providing direct Harness UI URLs.
+Compact mode
+strips verbose metadata from list results to minimize token usage.
+Next steps
+Configure your AI client
+: Add the server to your editor or terminal.
+Tools reference
+: Review the 11 tools and their parameters.
+Model Context Protocol specification
+: Understand the underlying protocol.
+Give feedback
+Previous
+OpenAI Connector
+Next
+Configure AI Clients
+Last updated
+2 days ago
+Was this helpful?
+Resources
+Sign up
+Community
+API Reference
+YouTube
+Release Notes
+Roadmap
+Feature Requests
+Feature Availability
+University
+Instructor-Led Training
+Partners
+Legal
+Terms of Use
+Privacy Policy
+Accessibility
+Do not sell or share my personal information
+Copyright © 2026 Harness Inc.
+What you will learn in this topic
+Before you begin
+Quick start
+Install with an alternative method
+CLI usage
+How it works
+Next steps
+Was this helpful?
+Copy
+HARNESS_API_KEY=pat.xxx.xxx.xxx npx harness-mcp-v2@latest
+Copy
+# Stdio transport (default) <a href="#stdio-transport-default" id="stdio-transport-default"></a>
+HARNESS_API_KEY=pat.xxx npx harness-mcp-v2
+# HTTP transport <a href="#http-transport" id="http-transport"></a>
+HARNESS_API_KEY=pat.xxx npx harness-mcp-v2 http --port 8080
+Copy
+npm install -g harness-mcp-v2
+harness-mcp-v2
+Copy
+git clone https://github.com/harness/mcp-server.git
+cd mcp-server
+pnpm install
+pnpm build
+pnpm start # Stdio transport
+pnpm start:http # HTTP transport
+pnpm inspect # Test with MCP Inspector
+Copy
+harness-mcp-v2 [stdio|http] [--port <number>]

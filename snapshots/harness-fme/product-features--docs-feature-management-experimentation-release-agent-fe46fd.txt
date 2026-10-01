@@ -1,21 +1,18 @@
 # https://developer.harness.io/docs/feature-management-experimentation/release-agent
-Release Agent | Harness Developer Hub
-Skip to main content
-Harness Developer Hub
-Ask AI
-Search
-Contact us
-Sign in
-Sign up
+Release Agent | Feature Management & Experimentation | Harness
+⌘
+Ctrl
+k
+Sign Up
+Get a Demo
+Contact Us
+More
 Home
 Documentation
-▾
 API Reference
-Roadmap
 Release Notes
+Roadmap
 University
-Glossary
-Feature Management & Experimentation
 Feature Management & Experimentation
 New to FME?
 Start FME in Harness
@@ -28,7 +25,6 @@ Release Monitoring
 Cloud Experimentation
 Warehouse Native Experimentation
 Release Agent
-Overview
 MCP Tools
 Management & Administration
 API Keys
@@ -54,22 +50,23 @@ What's Supported
 Harness FME's approach to statistics
 Split to Harness Migration
 Harness Support
-Release Notes
-Roadmap
-API Reference
-Certifications & Training
-Show All Docs
-Feature Management & Experimentation
-Release Agent
+Powered by GitBook
 On this page
+For the complete documentation index, see
+llms.txt
+. This page is also available as
+Markdown
+.
+Copy
+On this page
+Documentation
+Delivery
+Feature Management & Experimentation
+Use FME
 Release Agent
-Last updated
-on
-Jul 15, 2026
-Download as PDF
+Learn about the Release Agent capabilities in Harness FME.
 Release Agent is an in-app AI chatbot designed to streamline the use of Harness Feature Management and Experimentation (FME). It offers multilingual support, rapid responses, and knowledge-based assistance by using Harness public documentation and blogs. Release Agent makes it easy for all developers to get the help they need without leaving the Harness interface.
 What will you learn in this topic?
-​
 By the end of this topic, you will be able to:
 Ask Release Agent questions about FME features and configuration
 .
@@ -80,7 +77,6 @@ Enable or disable Release Agent for your team
 Understand how Release Agent handles your data and privacy
 .
 Before you begin
-​
 Before you use Release Agent, ensure you have the following:
 Harness FME access
 : Access to the Feature Management and Experimentation module.
@@ -89,12 +85,10 @@ Admin permissions
 Active feature flags or experiments
 : At least one feature flag or experiment configured to use AI Summarize features (optional for Ask Release Agent).
 Ask Release Agent
-​
 Ask Release Agent provides conversational assistance for FME tasks and workflows. Navigate to the FME navigation menu and click
 Ask Release Agent
 to open the chat modal.
 Example questions
-​
 Release Agent can answer questions across setup, configuration, best practices, and troubleshooting:
 How do I set up a JavaScript SDK in my codebase?
 How do I create and manage feature flags in FME?
@@ -112,30 +106,30 @@ Can I use FME across multiple environments, and how?
 How does Harness FME handle data privacy and security?
 What are best practices for cleaning up old flags and technical debt?
 AI Summarize
-​
 AI Summarize analyzes and summarizes metric results on feature flags and experiments. This feature helps you understand performance data and experiment outcomes without manual analysis.
 Feature flag metrics
-​
 To use AI Summarize on a feature flag metric, drill into a metric tile on a feature flag's Metrics impact dashboard and click
 Summarize
 .
+Click to view full size image
 Experiment results and metrics
-​
 AI Summarize works on both individual experiment metrics and overall experiment results.
 To summarize an experiment metric, drill into a metric on an experiment's Metrics dashboard and click
 Summarize
 .
+Click to view full size image
 To summarize an experiment's overall results, select an experiment on the
 Experiments
 page and click
 Summarize
 .
+Click to view full size image
 Go to
 Viewing experiment results
 for more information on AI Summarize.
 Enable Release Agent for your team
-​
 Admins can enable or disable Release Agent and control experimentation data processing through FME settings.
+Click to view full size image
 Navigate to
 FME Settings
 >
@@ -153,16 +147,13 @@ Click
 Save
 .
 Your data usage
-​
 Release Agent processes data with accuracy and privacy standards to ensure secure and reliable AI assistance.
 Accuracy
-​
 While Release Agent strives to provide accurate information, it cannot guarantee the accuracy, completeness, or timeliness of all information. Large Language Models (LLMs) can struggle with precision and context of numerical information.
 You can reach out to
 support@split.io
 if you have questions or require additional help.
 Privacy
-​
 Your data is protected by the
 Harness privacy policy
 , which applies when you use the product. Release Agent uses OpenAI as a data subprocessor for the data summarization feature, so your data is additionally protected by the
@@ -174,78 +165,44 @@ No training on your data
 Minimal data sharing
 : Harness sends OpenAI only the minimal necessary information required to create data summarization.
 Feedback and support
-​
 Submit support inquiries or report issues with Release Agent via
 support@split.io
 .
 Provide detailed descriptions and reproduction steps for issues to facilitate expedited troubleshooting. Your feedback is instrumental for the iterative enhancement of Release Agent.
 Next steps
-​
 AI-Native Software Delivery: Proven Practices to Produce High-Quality Software Faster
-Tags:
-harness-ai
-feature-management
-experimentation
-Last updated
-on
-Jul 15, 2026
+Give feedback
 Previous
-Health Checks
+Create an Experiment
 Next
-Overview
-What will you learn in this topic?
-Before you begin
-Ask Release Agent
-Example questions
-AI Summarize
-Feature flag metrics
-Experiment results and metrics
-Enable Release Agent for your team
-Your data usage
-Accuracy
-Privacy
-Feedback and support
-Next steps
-Harness Software Delivery Platform
-Overview
-Code Repository
-Continuous Integration
-Continuous Delivery & GitOps
-Infrastructure as Code Management
-Feature Flags
-Feature Management & Experimentation
-Cloud & AI Cost Management
-AI Security
-API & Application Discovery
-Application & API Runtime Protection
-Application & API Security Testing
-Security Testing Orchestration
-Supply Chain Security
-SAST and SCA
-Chaos Engineering
-AI SRE
-Service Reliability Management
-Internal Developer Portal
-AI DLC Insights
-AI Test Automation
+MCP Tools
+Last updated
+14 days ago
+Was this helpful?
 Resources
 Sign up
-Harness Community
+Community
 API Reference
 YouTube
-Developer Hub GitHub
 Release Notes
 Roadmap
 Feature Requests
 Feature Availability
-Glossary
 University
 Instructor-Led Training
 Partners
-Style Guide
 Legal
 Terms of Use
 Privacy Policy
 Accessibility
 Do not sell or share my personal information
 Copyright © 2026 Harness Inc.
+What will you learn in this topic?
+Before you begin
+Ask Release Agent
+AI Summarize
+Enable Release Agent for your team
+Your data usage
+Feedback and support
+Next steps
+Was this helpful?

@@ -4,9 +4,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -79,9 +80,10 @@ Platform
 AI
 Wave
 Agents
+Headless Amplitude
+Agent Analytics
 Amplitude MCP
 AI Feedback
-Agent Analytics
 Early Access Program
 Insights
 Product Analytics
@@ -170,7 +172,6 @@ Cohort syncs (one time)
 2000 AI feedback records
 10K monthly session replays
 Limited Experiments, Guides & Surveys
-500 active AI Visibility prompts
 Recommended
 Plus
 For small teams finding product-market fit
@@ -186,7 +187,6 @@ Custom events and formulas
 20 Behavioral cohorts
 Alerts
 Heatmaps
-1,000 active AI Visibility prompts
 2-year data retention
 Growth
 For businesses looking to scale
@@ -199,7 +199,6 @@ Advanced Behavioral Exploration
 Currency conversion
 Monitoring and Alerts
 20K monthly session replays
-2,500 active AI Visibility prompts
 SSO & Project Permissions
 Enterprise
 For larger enterprises with complex requirements
@@ -212,7 +211,6 @@ Unlimited projects per portfolio
 Data Access Controls
 Unlimited Monitoring and Alerts
 50K monthly session replays
-5,000 active AI Visibility prompts
 Advanced User Mgmt (incl RBAC)
 Trusted by leading brands
 Early-stage startup looking to grow?
@@ -221,58 +219,145 @@ Apply now
 “You feel like Amplitude is on your side. They want you to have success and get results, as opposed to just, ‘Hey, here’s your analytics platform.’”
 “There’s so much potential to unlock. Amplitude helps enable the Gong team to surface trends and connect specific features to outcomes.”
 Compare all plan features
-Starter
+Feature
+Free
 Plus
 Growth
 Enterprise
 Analytics
 Starter templates
+Included
+Included
+Included
+Included
 Collaboration and integrations
+Included
+Included
+Included
+Included
 Dashboard subscriptions
+Included
+Included
+Included
+Included
 Product & Web analytics
+Included
+Included
+Included
+Included
 AI-powered analysis
+Included
+Included
+Included
+Included
 Campaign reporting
 2 channel views
 2 channel views
+Included
+Included
 Forecasting and alerts
+Not included
 Limited
+Included
+Included
 Custom events and formulas
+Not included
+Included
+Included
+Included
 Behavioral cohorts
+Not included
 20 per organization
+Included
+Included
 Conversion drivers
+Not included
+Not included
+Included
+Included
 Saved metrics
+Not included
+Not included
+Included
+Included
 Cart analysis
+Not included
+Not included
+Included
+Included
 Computations
+Not included
+Not included
 Limited
+Included
 Cross-product analysis
+Not included
+Not included
 Limited
+Included
 Predictions
+Not included
+Not included
 Limited
+Included
 Analysis content management
+Not included
+Not included
+Not included
+Included
 User Profile API
+Not included
+Not included
+Not included
+Included
 Group behavior analysis
+Not included
 Available
 Available
 Available
 Session Replay
 Monthly sessions
-1,000
 10,000
-20,000 / Add-on for more
-50,000 / Add-on for more
+10,000
+20,000
+Add-on for more
+50,000
+Add-on for more
 Session Replay for web and mobile
+Included
+Included
+Included
+Included
 Data masking
+Included
+Included
+Included
+Included
 Search and collaboration
+Included
+Included
+Included
+Included
 Heatmaps
+Not included
+Included
+Included
+Included
 Replay retention
 1 month
 1 month
-1 month / Add-on for more
-1 month / Add-on for more
+1 month
+Add-on for more
+1 month
+Add-on for more
 Targeted Replay Capture
+Not included
+Not included
 Add-on
 Add-on
 AI-based summaries
+Not included
+Not included
 Add-on
 Add-on
 Agent Analytics
@@ -280,23 +365,71 @@ Monthly Agent Sessions
 5,000
 5,000
 10,000
+Add-on for more
 20,000
+Add-on for more
 Trace Analysis
+Included
+Included
+Included
+Included
 Semantic Filtering
+Included
+Included
+Included
+Included
 Topic Clustering
+Included
+Included
+Included
+Included
 Custom Datasets
+Included
+Included
+Included
+Included
 OOTB Signals
+Included
+Included
+Included
+Included
 Custom LLM Evaluators
+Included
+Included
+Included
+Included
 Calibration Runs
+Included
+Included
+Included
+Included
 BYOK for LLMs
+Included
+Included
+Included
+Included
 Custom Code-Based Evaluators
+Included
+Included
+Included
+Included
 Manual Session Labeling
+Included
+Included
+Included
+Included
 Agent Session Chats Retained
 14 days
 14 days
 30 days
+Add on for 90 days
 30 days
+Add on for 90 days
 Role Based Access Controls
+Not included
+Not included
+add-on
+Included
 Feature Experimentation
 Feature flags
 Unlimited
@@ -306,61 +439,143 @@ Unlimited
 Active experiments
 1
 1
-2 / Add-on for more
-2 / Add-on for more
+2
+Add-on for more
+2
+Add-on for more
 A/B/n testing
+Not included
+Not included
+Included
+Included
 Feature adoption dashboards
+Included
+Included
+Included
+Included
 Target by cohort, behavior, or user property
+Included
+Included
+Included
+Included
 Experiment results
+Not included
+Not included
+Included
+Included
 Flag-level access controls
+Not included
+Not included
+Not included
+Included
 Mutual exclusions groups
+Not included
+Not included
 Add-on
 Add-on
 Holdout groups
+Not included
+Not included
 Add-on
 Add-on
 Multi-armed Bandits
+Not included
+Not included
 Add-on
 Add-on
 Flag dependencies
+Not included
+Not included
 Add-on
 Add-on
 Web Experimentation
 Active experiments
 1
 1
-2 / Add-on for more
-2 / Add-on for more
+2
+Add-on for more
+2
+Add-on for more
 A/B/n testing
+Included
+Included
+Included
+Included
 Visual experiment editor
+Included
+Included
+Included
+Included
 Version history
+Included
+Included
+Included
+Included
 Page & Browser-level targeting
+Included
+Included
+Included
+Included
 Custom code editor
+Not included
+Not included
+Included
+Included
 Experiment results
+Not included
+Not included
+Included
+Included
 Experiment & Project-level permissions
+Not included
+Not included
+Included
+Included
 Approved workflows
+Not included
+Not included
 Add-on
 Add-on
 Stratified sampling
+Not included
+Not included
 Add-on
 Add-on
 Multi-armed Bandits
+Not included
+Not included
 Add-on
 Add-on
 AI Feedback
 Monthly feedback records
 2,000
 2,000
-2,000 / Add-on for more
-2,000 / Add-on for more
+2,000
+Add-on for more
+2,000
+Add-on for more
 Integration types
+Included
+Included
+Included
+Included
 One-time daily analysis
+Included
+Included
+Included
+Included
 Ongoing analysis
 Public & Uploads
 Public & Uploads
 Public & Uploads
-Public & Uploads (Private as add-on)
+(Private as add-on)
+Public & Uploads
+(Private as add-on)
 Create cohort from insights
+Not included
+Included
+Included
+Included
 Zoning Insights
 Zone creation
 50
@@ -373,12 +588,40 @@ Overlays
 Unlimited
 Unlimited
 Page group mapping and analysis
+Included
+Included
+Included
+Included
 Engagement metrics
+Included
+Included
+Included
+Included
 Comparisons
+Not included
+Not included
+Included
+Included
 Revenue metrics
+Not included
+Not included
+Included
+Included
 AI recommendations
+Not included
+Not included
+Included
+Included
 Chrome extension
+Not included
+Not included
+Included
+Included
 Exports
+Not included
+Not included
+Included
+Included
 Guides and Surveys
 Guides & Surveys
 1
@@ -386,8 +629,20 @@ Guides & Surveys
 2 / Add-on for more
 2 / Add-on for more
 Time and event-based triggers
+Not included
+Included
+Included
+Included
 Cohort targeting
+Included
+Included
+Included
+Included
 Smart triggers
+Not included
+Not included
+Included
+Included
 Templates
 Standard
 Standard
@@ -399,39 +654,112 @@ Amplitude / Add-on for Whitelabeled
 Whitelabeled
 Whitelabeled
 Localization
+Not included
+Not included
+Included
+Included
 Prioritization
+Not included
+Not included
 Add-on
 Add-on
 Resource Center
+Not included
 Static
+Included
+Included
 Activation
 Built-in user identity resolution
+Included
+Included
+Included
+Included
 Unlimited sources and destinations
+Included
+Included
+Included
+Included
 Developer SDKs and APIs
+Included
+Included
+Included
+Included
 Real-time event streaming
 Limited
 Limited
 Limited / Add-on for more
 Limited / Add-on for more
 Webhooks
+Not included
+Included
+Included
+Included
 One-time Audience syncs
+Included
+Included
+Included
+Included
 Scheduled syncs
+Not included
+Not included
 Limited / Add-on for more
 Limited / Add-on for more
 Behavioral Cohorts API
+Not included
+Not included
 Add-on
 Add-on
 Data Management
 Autocapture
+Included
+Included
+Included
+Included
 AI Data Assistant
+Included
+Included
+Included
+Included
 Retroactive data transformation
+Included
+Included
+Included
+Included
 Observability for data monitoring
+Not included
+Included
+Included
+Included
 Data Mutability
+Not included
+Not included
+Included
+Included
 Derived property
+Not included
+Not included
+Included
+Included
 Protected schemas and workflows
+Not included
+Not included
+Included
+Included
 Data Access Controls
+Not included
+Not included
+Not included
+Included
 Automated tasks
+Not included
+Not included
+Not included
+Included
 Access to taxonomy API
+Included
+Included
+Included
+Included
 Platform and Support
 Team members
 Unlimited
@@ -459,17 +787,48 @@ Data access
 Unlimited
 Unlimited
 SSO and project-level permissions
+Not included
+Not included
+Included
+Included
 Advanced permissions and SCIM
+Not included
+Not included
+Not included
+Included
 EU data center option
+Included
+Included
+Included
+Included
 Access community and education
+Included
+Included
+Included
+Included
 Customer support
+Not included
 Online support
+Included
+Included
 Customer success
+Not included
+Not included
+Not included
+Included
 Assigned account manager
+Not included
+Not included
+Not included
+Included
 Response SLA
+Not included
+Not included
 2 business days
 1 business day
 Professional services
+Not included
+Not included
 Available
 Available
 Annual Plus Plan Comparison
@@ -523,7 +882,7 @@ B2B-focused reporting
 Expanded packages are priced as a percentage of your platform plan.
 Frequently asked questions
 Does Amplitude have a free plan?
-Yes. The Free plan is completely free, with no credit card required. You get 2 million events per month, plus access to out-of-the-box analytics, session replay, unlimited feature flags, web experimentation, activation, guides and surveys, unlimited AI Agents, MCP, AI Visibility, and AI Feedback. It's not a trial. There's no time limit. You can use Amplitude for free as long as it fits your needs.
+Yes. The Free plan is completely free, with no credit card required. You get 2 million events per month, plus access to out-of-the-box analytics, session replay, unlimited feature flags, web experimentation, activation, guides and surveys, unlimited AI Agents, MCP, and AI Feedback. It's not a trial. There's no time limit. You can use Amplitude for free as long as it fits your needs.
 How much does Amplitude cost?
 Amplitude has plans for every stage of growth. The Amplitude Free plan includes 2 million events per month, session replay, A/B tests, feature flags, AI analytics, and unlimited seats, with no credit card required and no time limit. The Amplitude Plus plan starts at $0 and scales with your event volume as you grow. You can track usage in real time and upgrade anytime for better rates. For larger teams, the Growth and Enterprise plans offer custom pricing based on your volume and feature needs
 What is a monthly tracked user (MTU)?

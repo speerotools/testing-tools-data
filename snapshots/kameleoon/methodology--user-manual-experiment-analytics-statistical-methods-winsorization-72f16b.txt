@@ -1,0 +1,200 @@
+# https://docs.kameleoon.com/user-manual/experiment-analytics/statistical-methods/winsorization
+Winsorization - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Statistical methods
+Winsorization
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Choosing the right statistical method for A/B testing
+Bayesian
+CUPED
+Winsorization
+Sample Ratio Mismatch
+Statistical significance
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+What’s Winsorization?
+Why Winsorization matters in A/B testing
+Risks and good practices with Winsorization
+How to implement Winsorization in Kameleoon
+1. Create a custom goal
+2. Set limits
+3. Read your results
+Example of impact
+Technical considerations
+Scope of thresholds
+Recompute schedule
+Behavior over time
+Statistical methods
+Winsorization
+Copy page
+Copy page
+Apply Winsorization to limit the impact of outliers on A/B test results and improve the accuracy of revenue and conversion metrics.
+Copy page
+Copy page
+​
+What’s Winsorization?
+Winsorization is a statistical technique that limits extreme values in your data, using percentiles to reduce the impact of outliers. Outliers are data points that differ significantly from other observations, and they can skew the results of your A/B tests. Winsorizing your data makes your results more robust and reliable.
+​
+Why Winsorization matters in A/B testing
+In A/B testing, you compare two or more variations to determine which one performs better. Outliers can distort the true performance of these variations and lead to misleading conclusions. Applying Winsorization mitigates the effect of these extreme values and gives you more accurate, actionable insights.
+Winsorization is particularly useful when:
+Your data contains extreme values that aren’t errors but are still significantly different from other observations.
+You want a simple and effective method to handle outliers without resorting to more complex techniques.
+You need to balance data integrity against managing outliers effectively.
+​
+Risks and good practices with Winsorization
+Winsorization is a valuable tool, but it carries risks:
+Loss of data integrity:
+Excessive Winsorization can significantly alter your data, potentially masking important variations and patterns.
+Over-simplification:
+Modifying outliers can oversimplify your data, which can result in an incomplete understanding of your dataset.
+Bias introduction:
+Inappropriate Winsorization thresholds can introduce bias, skewing your results and leading to incorrect conclusions. If you don’t ensure symmetry around the mean, such as using the fifth and ninety-fifth percentile, you might alter the mean.
+To mitigate these risks, follow these best practices:
+Understand your data:
+Before applying Winsorization, thoroughly understand the nature and distribution of your data. Understanding your data helps you set appropriate thresholds for identifying outliers.
+Set appropriate thresholds:
+Use industry standards or data-specific insights to set your Winsorization thresholds. Common thresholds cap the top and bottom 0.1% up to 5% of your data, but adjust these based on your specific use case.
+Evaluate impact:
+After applying Winsorization, evaluate its impact on your data and test results. Compare the Winsorized data with the original to ensure you don’t lose important information.
+Document your process:
+Keep a detailed record of your Winsorization process, including the rationale for your chosen thresholds and their impact on your data. This transparency aids in reproducibility and understanding.
+​
+How to implement Winsorization in Kameleoon
+​
+1. Create a custom goal
+Create a custom goal
+to apply Winsorization to.
+​
+2. Set limits
+Set limits to replace the outliers. For example, if you use 95% Winsorization, Kameleoon sets any data point below the 2.5 percentile to the value at the 2.5 percentile, and any data point above the 97.5 percentile to the value at the 97.5 percentile.
+Find these bounds in the
+Advanced settings
+of your custom goal. If your custom goal includes a Revenue metric, Kameleoon applies Winsorization to it.
+Kameleoon computes these percentiles across all account data for the goal, not per experiment. For details, see
+Scope of thresholds
+(the preceding section).
+Kameleoon applies the Winsorization method to your custom goal and identifies the outliers in your data.
+​
+3. Read your results
+After you apply Winsorization to your goal, you can read the adjusted results on any Results page that includes that goal. The goal container then displays a badge indicating that Kameleoon handles outliers for that goal. Hover over the badge to view the parameters you set.
+​
+Example of impact
+Consider an A/B test comparing two landing pages, A, and B. Without Winsorization, a few high-value outliers, such as purchases made by a few very high-spending users, could make one page appear significantly more effective, even if typical user behavior doesn’t support that conclusion.
+Original data (metric: Revenue per user):
+Page A:
+[10, 12, 14, 15, 16, 18, 100]
+Page B:
+[11, 13, 15, 15, 17, 19, 110]
+Winsorized data:
+Page A:
+[10, 12, 14, 15, 16, 18, 18]
+Page B:
+[11, 13, 15, 15, 17, 19, 19]
+In this example, capping the extreme values (100 and 110) gives a more accurate comparison of typical user revenue between the two pages.
+​
+Technical considerations
+When you first apply Winsorization to a custom goal, Kameleoon computes and stores the values for the percentiles you set, then uses them on Results pages to adjust your data.
+​
+Scope of thresholds
+Kameleoon computes Winsorization percentiles across all account data for a custom goal, pooled across every experiment and variation that uses that goal, not per experiment. This scope keeps the definition of an outlier for a goal consistent everywhere you use it.
+As a result, two different experiments that use the same custom goal share the same Winsorization thresholds, even when the underlying data distributions of those experiments differ from each other.
+​
+Recompute schedule
+Kameleoon recomputes the percentile values used to cap outliers once a day at 3:00 AM, using a trailing 14-day window of account data. If you change the threshold settings on the custom goal, Kameleoon re-evaluates the values instantly instead of waiting for the next scheduled recompute.
+​
+Behavior over time
+Because thresholds recompute daily from the trailing 14-day window, the Winsorized figures on a Results page can keep changing as your account’s data evolves, even for experiments that you’ve already stopped or paused. A Results page can show different Winsorized numbers today than it showed last week, regardless of whether the experiment is still running.
+If you need a stable, permanent record of the exact value Kameleoon reported at a specific point in time, for reporting or auditing purposes, use the raw export instead. Kameleoon never modifies raw exported data, so the raw export stays fixed no matter how the account’s Winsorization thresholds change afterward.
+Was this page helpful?
+Yes
+No
+CUPED
+Previous
+Sample Ratio Mismatch
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

@@ -1,0 +1,235 @@
+# https://docs.kameleoon.com/mcp/mcp-notion-guide
+Export experiment results to Notion - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Tutorials
+Export experiment results to Notion
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Kameleoon MCP server
+Kameleoon Claude Connector
+Use Kameleoon documentation with AI
+Tutorials
+Export experiment results to Airtable
+Export experiment results to Notion
+Export experiment results to Confluence
+English
+On this page
+Prerequisites
+Step 1: Add the connectors
+Connect via a coding tool
+Connect via the Claude app
+Step 2: Prepare the Notion database
+Step 3: Prompt the assistant
+Step 4: Automate it
+Notes
+Tutorials
+Export experiment results to Notion
+Copy page
+Copy page
+Export experiment results to Notion using Claude.
+Copy page
+Copy page
+This guide exports Kameleoon experiment results into a Notion database from a single Claude conversation. It requires no script, no stored API credentials to manage, and no code. Claude connects to Kameleoon’s and Notion’s own remote MCP (Model Context Protocol) servers, and performs the export when you ask it to in plain language.
+Both MCP servers expose more than read-only tools. The Kameleoon MCP server can also start, pause, stop, or delete experiments and feature flags. The Notion MCP server, as of this writing, exposes only search, create, and update tools; it has no tool to delete or archive pages or databases. Review any action either connector proposes before approving it, particularly on the Kameleoon side.
+​
+Prerequisites
+A Kameleoon account with access to the experiment being exported
+A Notion workspace with edit access to the page that will host the results database
+A Claude account with Connectors available
+​
+Step 1: Add the connectors
+Two paths get you to the same result. Use whichever matches how you already work with Claude.
+​
+Connect via a coding tool
+Connect the Kameleoon MCP server to your assistant. See
+Kameleoon MCP server
+for the registration and authentication steps for Claude Code, Cursor, Codex, and Antigravity.
+Connect the Notion MCP server. In Claude Code, run:
+claude mcp add --transport http notion https://mcp.notion.com/mcp
+then run
+/mcp
+inside Claude Code and authorize through the browser. See
+Connect to Notion MCP
+for Cursor, VS Code, and other client-specific setup steps, and for a personal-access-token alternative to OAuth.
+Start a new conversation so the assistant loads the tools from both servers.
+​
+Connect via the Claude app
+Open your account’s Connectors settings in the Claude app (Customize > Connectors).
+Add the Kameleoon connector and authorize it through OAuth. If it isn’t listed in the connector directory, add it as a custom connector using the URL
+https://mcp.kameleoon.com/mcp
+, then authorize it.
+Add the Notion connector the same way. If it isn’t listed, add it as a custom connector using the URL
+https://mcp.notion.com/mcp
+, then authorize it and pick the pages it can access.
+Start a new conversation, then use the plus button in the chat to enable both connectors for it. Connectors enabled in one conversation don’t carry over to a new one.
+On a Team or Enterprise plan, adding a connector yourself may not be available. A
+Request
+button instead of
+Add
+means your organization restricts who can add connectors, and an administrator needs to approve the request first.
+​
+Step 2: Prepare the Notion database
+Create the database before the first run, with this schema:
+Notion property
+Type
+Source
+Transformation
+Experiment Name
+Title
+experiment.name
+Direct. Used as the upsert key.
+Status
+Select
+experiment.status
+Mapped, case-insensitively:
+active → Running
+,
+draft
+/
+planned → Implementing
+,
+stopped
+/
+diverted → Completed
+,
+paused → Defunct
+.
+Start date
+Date
+experiment.dateStarted
+Date-time truncated to an ISO date (
+YYYY-MM-DD
+).
+End date
+Date
+experiment.dateEnded
+Date-time truncated to an ISO date.
+Notes
+Rich text
+experiment.description
+Direct.
+Actual
+Number
+best variation
+improvementRate
+Direct (measured uplift, %).
+Probability
+Select
+best variation Bayesian success probability
+Bucketed:
+≥95 → 80% - High
+,
+≥80 → 50% - Medium
+, else
+20% - Low
+.
+Result
+Select
+Bayesian success probability +
+improvementRate
+probability
+≥ 95
+and uplift > 0 →
+Success
+;
+≥ 95
+and uplift < 0 →
+Failure
+; otherwise
+Inconclusive
+.
+Create the Select options (
+Running
+,
+Implementing
+,
+Completed
+,
+Defunct
+;
+80% - High
+,
+50% - Medium
+,
+20% - Low
+;
+Success
+,
+Failure
+,
+Inconclusive
+) in Notion before the first write.
+​
+Step 3: Prompt the assistant
+The Kameleoon MCP tool returns its own precomputed winner alongside the raw results, but it judges significance against this account’s configured reliability threshold, not this schema’s fixed thresholds. The prompt below works around that gap by asking for the raw numbers instead. Replace the experiment ID and the Notion database link with your own before sending it.
+Using the Kameleoon MCP tools, get the results for experiment XXXXXX. In the
+returned data, skip the "_reference" variation and read each remaining
+variation's raw reliability and improvement rate for the experiment's
+primary goal (not the tool's own winner summary, which judges significance
+against this account's configured reliability threshold rather than the
+fixed thresholds below). If the same reliability and improvement numbers
+appear more than once under different field names, use the plain
+percent-scale value tied to that goal, not a 0-1 fraction of it. Pick the
+variation with the highest improvement rate as the best performer.
+Then, using the Notion MCP tools, upsert a page in the database at
+[your Notion database link], matching on the "Experiment Name" title
+property against the experiment's name: update the existing page if one
+matches, or create a new one if not. Set the properties as follows:
+- Experiment Name: the experiment's name
+- Status: map a status of active to Running, draft to Implementing, stopped
+to Completed, and paused to Defunct (case-insensitive; confirm the exact
+tokens your account returns)
+- Start date / End date: the experiment's start and end dates, formatted as
+YYYY-MM-DD
+- Notes: the experiment's description
+- Actual: the best variation's improvement rate
+- Probability: 80% - High if the reliability is 95 or above, 50% - Medium if
+it's 80 or above, otherwise 20% - Low
+- Result: Success if the reliability is 95 or above with a positive
+improvement, Failure if the reliability is 95 or above with a negative
+improvement, otherwise Inconclusive
+Don't add or change any properties outside this list.
+A few things to know if you adjust this prompt:
+Don’t ask for the tool’s own winner summary instead of the raw numbers. It judges significance against your account’s own threshold, not this schema’s fixed 95%/80% buckets.
+Keep each experiment’s name unique in your Notion database. The upsert matches on that title property, and may update the wrong page, or create a duplicate, if more than one page shares that name.
+Kameleoon’s results can repeat the same reliability and improvement numbers elsewhere in the response under a different name or scale. The prompt already specifies which one to use.
+​
+Step 4: Automate it
+To keep the database current without repeating the export manually, set up a recurring scheduled task with the same prompt. Each scheduled run starts a new session with no memory of prior runs, so include the experiment ID (or a request to list all running and recently completed experiments) and the full prompt above every time. A daily or weekly cadence matches how often most teams need this export.
+​
+Notes
+An AI assistant interprets this mapping fresh on every run rather than executing a fixed function. Check the page it writes against the values in Kameleoon, particularly the first few runs.
+The Notion MCP server’s current tool set can’t delete or archive your content, but it can overwrite existing property values. Review proposed updates before approving them, and review any Kameleoon-side action separately, since that connector can affect running experiments and feature flags.
+Was this page helpful?
+Yes
+No
+Export experiment results to Airtable
+Previous
+Export experiment results to Confluence
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

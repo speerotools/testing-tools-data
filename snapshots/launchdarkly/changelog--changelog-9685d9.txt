@@ -1,5 +1,8 @@
 # https://launchdarkly.com/changelog/
 Product Updates | LaunchDarkly
+[Virtual event] Automate Your Software Factory - Nov 5
+—
+Save my seat
 Skip to:
 Home
 Content
@@ -102,6 +105,7 @@ Do not Sell or Share my Personal Information
 Why Us
 Economic Impact of LaunchDarkly
 How LaunchDarkly works
+Solutions
 Trust & Security
 Trust Center
 LaunchDarkly vs. Competitors
@@ -126,12 +130,13 @@ Control releases, experiments, and AI behavior in prod.
 Free trial
 Sign in
 Filter by topic
+Experimentation
 AI Engineering
 Feature Flags
-Experimentation
 Guarded Release
 Product Analytics
 Filter by date
+September 2026
 August 2026
 July 2026
 June 2026
@@ -149,6 +154,40 @@ July 2025
 June 2025
 May 2025
 Subscribe for updates
+September 23, 2026
+Experimentation
+Marlo Abramowitz
+Run experiments with assignment data from your warehouse
+You can now run a warehouse native experiment where audience assignment comes from a table in your own warehouse rather than a LaunchDarkly flag evaluation. If your team randomizes in its own service, or assignment happens in a third-party tool such as an email platform, those tests can now be analyzed in LaunchDarkly with the same statistics, exposures, and sliced results as any other experiment, rather than rebuilt in a notebook or dbt.
+It works backwards too: assignment data already sitting in your warehouse can be analyzed retroactively, so you can get a read on a past experiment without waiting out a fresh one. Define an assignment source once and reuse it across experiments in the same project and environment.
+See
+Assignment data sources
+and
+Manage assignment data sources
+in our documentation to get started.
+Share link copied!
+September 16, 2026
+AI Engineering
+Paul Loeb
+Edit your offline evaluation datasets in AgentControl
+A dataset holds the inputs for an offline evaluation, where each row is one case that AgentControl runs your config against and scores. You can now edit those rows in place instead of uploading a replacement file every time one of them needs to change.
+Open a dataset from the AgentControl Library page and you get a Rows tab. Add a row by hand or append a file, edit a row's input, expected output, variables and metadata, search by input or expected output, drag rows into a different order, and delete the ones you no longer want. You can also create an empty dataset and add rows to it, rather than needing a finished CSV or JSONL file first. Changes stage until you click Save, so a whole editing session commits at once.
+Each save creates a new dataset version that records who made the change, when, and the resulting row count, and you can open any earlier version or restore it. Evaluation runs pin to the version that existed when the run started, so editing a dataset never changes the results of a run you have already completed.
+To get started, read
+Datasets
+.
+To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+September 3, 2026
+Experimentation
+Marlo Abramowitz
+Estimate sample size and duration without leaving LaunchDarkly
+You can now work out how much traffic a frequentist experiment needs, and how long it will take to get there, inside LaunchDarkly. Start from the experiment list for a quick gut-check before you commit to a design, or from the builder to attach the estimate to that iteration, so the experiment carries its own sample size target and anyone reviewing it can see when it's ready for a decision. You can view, edit, or remove that target from the results page while the experiment runs.
+Settling on a sample size up front is what holds your false positive rate to the significance level you chose, and until now it meant a spreadsheet or a separate trip to our website. Estimates assume steady traffic, so an experiment may hit its sample size earlier or later. Available for fixed-horizon frequentist experiments.
+Read Sample size calculations (https://launchdarkly.com/docs/home/experimentation/sample-size-calculator) and Sample size calculations for frequentist experiments (https://launchdarkly.com/docs/guides/experimentation/sample-size-calc) to get started.
+Share link copied!
 August 26, 2026
 AI Engineering
 Paul Loeb
@@ -172,44 +211,6 @@ To get started, read
 Use LaunchDarkly AgentControl to control model administration with LiteLLM
 .
 Our team is happy to help you set this up. To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-August 26, 2026
-AI Engineering
-Paul Loeb
-AgentControl now supports EU data residency
-If your organization is required to keep data in the European Union, you can now use AgentControl there. Prompts, configs, variations, and targeting rules are managed in the EU, with the same approval workflows and audit history you already use for feature flags. Model choices are limited to providers approved for the region.
-To get started, read the
-AgentControl documentation for the EU
-. If you do not see AgentControl in your EU account yet, contact your LaunchDarkly account team.
-Our team is happy to help you get set up. To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-August 26, 2026
-AI Engineering
-Paul Loeb
-Read a full agent run as a single conversation
-LaunchDarkly now stitches related LLM and agent spans into conversations, so a run that spans many traces reads as one transcript instead of a pile of spans. Open Traces and select the Conversations tab to see duration, models, providers, token usage, errors, and estimated cost for the whole run, then read the transcript turn by turn, including tool calls and their payloads, with evaluation scores shown on the turn they describe.
-To get started, read
-LLM observability
-and
-Instrumenting LLM applications
-.
-Our team is happy to help you instrument your application. To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-August 26, 2026
-AI Engineering
-Paul Loeb
-Use your Amazon Bedrock models in AgentControl
-You can now configure Amazon Bedrock as a model provider, so inference keeps running in your own AWS account while your prompts and model settings live in LaunchDarkly. Compare candidate models in the playground, then swap a model or edit a prompt at runtime without redeploying.
-To get started, read
-Getting started with Amazon Bedrock and AgentControl configs
-.
-Our team is happy to help you connect Bedrock. To get help or share feedback, contact your LaunchDarkly account team or email
 product@launchdarkly.com
 .
 Share link copied!

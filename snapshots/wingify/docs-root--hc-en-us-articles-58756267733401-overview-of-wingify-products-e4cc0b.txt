@@ -1,0 +1,182 @@
+# https://help.wingify.com/hc/en-us/articles/58756267733401-Overview-of-Wingify-Products
+Overview of Wingify Products – Wingify
+Knowledge Base
+Start Free trial
+Wingify
+Getting Started
+Introduction to Wingify
+Articles in this section
+About Wingify Experience Optimization Platform
+Overview of Wingify Products
+Before You Get Started with Wingify
+Important Considerations for Using Wingify
+Navigate the Wingify Campaigns Overview Dashboard
+Navigate the Impact Dashboard in Wingify
+Wingify Plugin: Installation, Setup, and Usage Guide
+Extensions and Plugins in Wingify
+See more →
+Overview of Wingify Products
+Jash Unadkat
+Updated
+September 18, 2026 12:12
+Share:
+Facebook
+Twitter
+LinkedIn
+close this to read article
+This article covers the following:
+Overview
+Web Experimentation
+Behavior Analytics
+User Feedback
+Feature Management
+Engage
+Web Personalization
+Web Rollout
+Data Platform
+Overview
+Wingify offers a suite of products that help you understand visitor behavior, experiment with digital experiences, manage feature releases, personalize user journeys, engage customers, and analyze data.
+This article provides an overview of each product and its primary capabilities.
+Web Experimentation
+Wingify Web Experimentation enables you to create and run tests to increase revenue, sign-ups, and goal completions. These tests are built based on your hypotheses. Using Wingify Web Experimentation features, you can build experiences exactly the way you want without writing a single line of code. This is done using the Wingify Visual Editor, which lets you create variations of your website by changing its look and feel. For example, based on your hypothesis, you can modify the button and run A/B tests for different sizes, text, colours, positions, or shapes. Your test results and conversion data will demonstrate the validity of the hypothesis and provide learning points to help you develop more ideas for optimizing conversions.
+Wingify Web Experimentation has the following features:
+A/B Testing
+Multivariate Testing
+Split URL Testing
+Behavior Analytics
+Wingify Behavior Analytics enables you to understand different visitor actions, like why visitors click a button, leave a page, or abandon a shopping cart. Wingify Behavior Analytics comes with qualitative analytics processes and tools that allow you to collect data through Heatmaps, Session Recordings, on-page Surveys, Form Analytics, and more to diagnose problem areas in your visitors' experiences. This helps in fixing what's broken.
+Wingify Behavior Analytics has the following features:
+Metric Reports
+Funnel Reports
+Heatmaps
+Session Recordings
+Mobile Recordings
+Forms
+User Feedback
+Wingify
+User Feedback
+is a Voice of Customer product by Wingify that captures contextual, in-the-moment user feedback and turns it into actionable insights. It bridges the gap between what users do (shown by analytics) and why they do it, helping teams understand drop-offs, low feature adoption, and abandoned carts. It supports surveys across web, mobile, and shareable links, triggered by specific user behaviors.
+Wingz
+automatically categorizes responses by theme and sentiment, saving hours of manual analysis.
+Feature Management
+Wingify Feature Management is the evolved form of Wingify Fullstack. Feature Management is a one-stop solution for managing features and offers several new capabilities, such as executing progressive rollouts and automating guarded releases, running A/B tests, and delivering personalized experiences.
+It helps understand feature impact, accelerate shipping velocity, and ensure deployment safety—an approach trusted by the best tech-driven companies.
+Feature Management supports multiple SDKs and frameworks across digital platforms, such as web, mobile, tablet, and kiosks, catering to different development environments. The complete list and its specific implementations are
+here.
+Note
+: The legacy products, Wingify Fullstack and Mobile App Testing, are now unified under Wingify Feature Management.
+Engage
+Wingify Engage enables you to instantly reach out to your customers, even when they’re not on your website, by sending messages directly to their browsers. Unlike emails, you won’t have to worry that your messages may get lost in their inbox or go to spam. With Wingify Engage, you can keep your visitors engaged with automated marketing campaigns through web push notifications.
+Wingify Engage has the following features:
+Web Push Notifications
+Cart Abandonment Campaigns
+Web Personalization
+Wingify Web Personalization brings to you the power to design experiences specific to different cohorts. With this tool, you can create multiple changes and apply them to different visitor groups in one shot. Besides, you can also amplify the analytical potential of Wingify by integrating with other third-party applications available in Wingify. This will enable you to pull data from third-party applications to run campaigns in Wingify and also push data from Wingify to run campaigns in the third-party applications.
+Web Rollout
+Wingify Web Rollouts allows you to quickly release an experience without involving IT, i.e., a simple one-click push enables you to go live with the changes instantly. For example, suppose you wish to notify your website visitors about a change in the privacy policy or any new feature. In that case, create a Wingify Web Rollout campaign with an announcement banner on your homepage, and make it live instantly. The changes are made using the Visual or Code editor in Wingify.
+Wingify Web Rollouts also allows you to instantly roll out the winning variation (or any other variation) of a test with a single click. You can do this using any hand-held device such as a mobile, tablet, etc.; you need not be near your desktop or laptop to roll out a variation.
+Using Wingify Web Rollout's capabilities, you can even decide who gets to see the changes you make. This can be achieved by visitor segmentation. It can particularly be useful if you plan to roll out changes specific to different groups of visitors.
+Data Platform
+Wingify Data Platform enables you to create custom tracking and segmentation conditions to be applied in your Wingify campaigns to capture every meticulous aspect of your website. With Data Platform, you can create custom events, metrics (custom tracking conditions that can be used across campaigns), and custom visitor properties. It also provides you with visitor profiles that feature the list of all the events that the visitor has performed on your website and the properties of all the visitors that arrive at your website when a Wingify campaign is running on it.
+Data Platform lets you break the borders of the traditional approach of gauging aspects using predefined parameters. It gives you the freedom to set up your own conditions that are specific to your needs. For example, you can create an event to track cart additions and define a property for that event to capture payments that are above 50 dollars. Not just that, Data Platform also includes tracking multiple conversions for the same event. This means that you can also track the number of times a visitor has purchased the same product repeatedly. Or the number of times one has visited a given page.
+Besides these, you can easily cross-verify the streaming of the events on your website. You can also know which event has been triggered and when.
+Wingify Data Platform encompasses the following features:
+Profiles
+Properties
+Events
+Metrics
+Audit
+Data Studio
+To compare features and pricing for different product plans, refer to
+Wingify Pricing and Plans
+.
+Need more help?
+For further assistance or more information, contact
+Wingify Support.
+Was this article helpful?
+0 out of 0 found this helpful
+Return to top
+Related articles
+Before You Get Started with Wingify
+About Wingify Experience Optimization Platform
+Troubleshooting: Heatmap Report Not Loading in Wingify
+Build a Wingz Workflow Manually to Automate Tasks
+Manage Wingz AI Credits
+×
+We're sorry to know about your experience. Please let us know what can we do to make this article more useful.
+A value for this field is required.
+Email
+A value for this field must be valid email.
+This allows us to keep you informed on the status of your feedback. When collecting this information, we adhere to the Privacy Policy outlined
+here
+.
+Submit
+No thanks
+Thank you for your feedback.
+There is some technical error. Please try after some time or contact us at
+support@wingify.com
+Product Suites
+Experimentation
+Personalization
+Commerce
+Analytics
+Feature Management
+Customer Engagement
+Platform
+Wingify Platform
+Why Wingify?
+Program Management
+Integrations
+Data Platform
+For Teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For Industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+Digital Transformation
+SaaS & Technology
+All Resources
+Blog
+Product Updates
+Success Stories
+Webinars
+Guides
+Glossary
+Knowledge Base
+Events
+Free Tools
+Ebooks
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Partners
+Contact Us
+Compare
+Wingify vs Optimizely
+Wingify vs Adobe Target
+Wingify vs Mouseflow
+Wingify vs Contentsquare
+Wingify vs Dynamic Yield
+Wingify vs. Kameleoon
+© 2026 Wingify. All rights reserved.
+Terms
+Security
+Compliance
+Code of Conduct
+Privacy
+AI Policy
+Imprint
+Opt-out
+Hey AI, learn about us

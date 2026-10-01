@@ -1,0 +1,201 @@
+# https://docs.kameleoon.com/user-manual/recommendations-and-merchandising/recommendations/manage-recommendation-strategies
+Manage recommendation strategies - Kameleoon Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Kameleoon Documentation
+home page
+Welcome
+User manual
+Developer docs
+MCP
+SDKs
+APIs
+Integrations
+Kameleoon login
+Kameleoon login
+Search...
+Navigation
+Recommendations
+Manage recommendation strategies
+Search...
+⌘
+K
+Kameleoon Academy
+Slack Community
+Product changelog
+Home
+User manual overview
+Get started
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
+Experimentation
+Web Experimentation
+Feature Experimentation
+Assets
+Advanced targeting tools
+Custom data
+Goals
+Images
+Segments
+Themes
+Triggers
+Widgets
+Experiment analytics
+Data and metrics
+Results page
+Results page tabs
+Feature flag results
+Advanced analysis
+Statistical methods
+Takeaways
+Troubleshooting
+Web personalization
+Set up and launch a personalization
+Manage personalizations
+Recommendations and merchandising
+Merchandising
+Recommendations
+Import your product catalog feed
+Create and configure a recommendation strategy
+Manage recommendation strategies
+Select an algorithm for your product recommendation block
+Define advanced merchandising rules
+Use a product recommendation block in a campaign
+Enable Kameleoon Search capabilities
+Analyze your product recommendation strategy's performance
+Strategy settings
+Product targeting and social proofing
+Get started
+Product targeting
+Social proofing
+Tracking counters in the Widget Studio
+Account and team management
+Security and authentication
+Users and teams
+Organization settings
+Project management
+Manage your projects
+Consent management
+Kai
+Kai
+AI opportunity detection
+Get started
+Audiences — Key metrics
+Audiences — Segment analysis
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
+English
+On this page
+Access recommendation strategies
+Overview
+Performance
+Preview
+Edit your strategy
+Recommendations
+Manage recommendation strategies
+Copy page
+Copy page
+View, activate, preview, and analyze all your product recommendation strategies from a central workspace with performance metrics and fill rate indicators.
+Copy page
+Copy page
+Kameleoon lets you manage and analyze your product recommendation strategies in a central workspace. You can view key metrics, activate or deactivate strategies, and preview them before going live.
+This is a premium feature. Contact your Customer Success Manager to enable it on your Kameleoon account.
+​
+Access recommendation strategies
+To access your strategies:
+In the left sidebar, click
+Settings
+>
+Recommendations
+.
+In the Product Recommendations workspace, go to
+Recommendations
+>
+Recommendation strategy
+. The page opens on the
+In use
+tab. If no strategies are live, the page displays an empty list.
+Click
+All blocks
+to see all available recommendation strategies.
+​
+Overview
+The
+All blocks
+view shows an overview of your strategies, including:
+Name, description, and code — use the code when calling the API.
+Tags — filter strategies in the list.
+Status — displays
+Paused
+,
+Not installed
+, or
+In use
+.
+Kameleoon shows
+Not installed
+when it has not yet detected the strategy on your website.
+Click-through rate (CTR) — shows the ratio of clicks to views.
+Fill rate — indicates how effectively the strategy displays products.
+Green: The strategy consistently displays the maximum number of products you set (for example, 10/10).
+Yellow, Orange, Red: The strategy displays fewer products than intended, often because of restrictive rules. The color’s intensity reflects how many products are missing.
+​
+Performance
+The
+Performance
+section shows how each recommendation strategy performs.
+In this section, you can:
+Activate, deactivate, or preview a strategy.
+See the number of impressions (views), clicks, CTR (clicks per impression), conversions (clicks per purchase), products added to cart, purchases, and revenue.
+You can export the list of products that users purchased after seeing a recommender block in an XLS file.
+For more details, see
+Analyze your product collection strategy’s performance
+.
+​
+Preview
+You can preview your recommendation strategy before activating it. To use preview mode, ensure the strategy’s
+<div>
+code appears on your website. Copy the strategy’s snippet first.
+In the
+Performance
+section, click
+Preview
+in the toggle.
+A pop-up appears with three options:
+Enable:
+Turns on preview mode and opens your website in a new tab with the preview parameter added to the URL.
+Disable:
+Turns off preview mode, and the strategy will no longer appear.
+Copy link:
+Copies a shareable preview URL for others to see the strategy.
+When preview mode is active, you can see exactly how the strategy appears to users before going live.
+​
+Edit your strategy
+To edit your strategy, use the
+Rules
+and
+Templates
+sections. For more information, see
+this article
+.
+Was this page helpful?
+Yes
+No
+Create and configure a recommendation strategy
+Previous
+Select an algorithm for your product recommendation block
+Next
+⌘
+I
+Assistant
+Responses are generated using AI and may contain mistakes.
+Contact support

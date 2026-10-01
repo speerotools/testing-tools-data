@@ -36,6 +36,7 @@ API
 Webhooks
 Integrations
 AI Agents
+Setup Wizard
 MCP Server
 Agent Skills plugin
 Vercel
@@ -50,11 +51,13 @@ GrowthBook Command Line Interface (CLI)
 Microsoft Clarity (Heatmaps)
 Jira
 AI Integrations
+LLM Tracing (Langfuse, Phoenix)
 Security
 FAQ
 Tutorials
 Knowledge Base
 GrowthBook Guide
+Guides for Agents
 Integrations
 AI Agents
 Official GrowthBook MCP Server
@@ -566,7 +569,7 @@ Join our community Slack for additional tips and tricks
 Was this page helpful?
 Yes
 No
-Connect AI Agents to GrowthBook
+Set Up GrowthBook With the Wizard
 Previous
 Install the Agent Skills plugin
 Next

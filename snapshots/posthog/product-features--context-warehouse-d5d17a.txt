@@ -37,8 +37,9 @@ PostHog context warehouse
 Overview
 Start here
 Is PostHog warehouse native?
+The context gap report
 Data tools
-Managed DuckDB warehouse
+Managed Warehouse
 PostHog AI
 Data sources & import (ELT)
 CDP
@@ -136,13 +137,34 @@ Not using PostHog?
 Sign up
 FAQ
 Can I use PostHog's context warehouse with my existing warehouse?
+Yes. You can query your existing Snowflake, BigQuery, or Redshift data inside PostHog without moving it. PostHog works alongside your current setup, or replaces parts of it, up to you.
 What if I'm already using Segment or Rudderstack?
+You can migrate to PostHog's pipelines, or run them in parallel while you figure out what to move. The integrations overlap heavily, and switching is less painful than it sounds.
 How does pricing work?
+The data warehouse is free for your first 1M rows/month then from $0.000015/row (historical syncs are always free). Data pipelines are free for 10K events then from $0.0005/event, batch exports free for 1M rows then from $0.000015/row, and PostHog AI gives 500 free credits then $0.01/credit. See a full breakdown at
+posthog.com/pricing
+.
 Is my data leaving PostHog's infrastructure?
+Your PostHog data stays in PostHog Cloud (EU or US region, your choice). When you sync external sources into the warehouse, that data is stored in PostHog's managed infrastructure. Full details in the
+docs
+.
 How does this connect to the rest of PostHog?
+Natively. Warehouse data can power cohorts used in experiments and flags. Pipeline data flows directly into analytics. Trino queries run on the same dataset your dashboards use. There's no separate sync to set up.
 Do I need to know SQL to use the context warehouse?
+No. Ask questions in plain English and
+PostHog AI
+writes the SQL for you against your schema. If you do know SQL, the editor is right there and supports HogQL or standard SQL. Most product engineers start with plain English and drop into SQL when they want precise control.
 Can I set this up myself, or do I need a data engineer?
+You can do it yourself. Connecting a source is a few clicks, and your product events are already in PostHog. Data engineers are great for complex modeling and transformation logic, but you don't need to wait to hire one to sync a source, query it, or use it in a flag.
 How fresh is the data, can I use it in flags and experiments right away?
+Product events are available immediately, no sync step. Synced sources like Stripe or your CRM refresh on a schedule, so there's a short delay on those. Once data is in the warehouse it can power cohorts, feature flags, and experiments natively without a separate pipeline to build to move it into the product.
 Can I join my external data to product events without building a pipeline?
+Yes, sync a source like Stripe or Postgres, and you can join a revenue column to a signup event without moving data between tools or standing up your own ETL. It all lives in one warehouse.
 How do agents access the warehouse?
+Through the
+PostHog MCP
+. Point an agent (PostHog's, Claude Code, Cursor, whatever you're running) at the PostHog MCP and it can query your data directly. Or take any model or SQL query and expose it as a stable API endpoint your product or an agent calls, so the warehouse becomes something agents read from, not just a place dashboards pull from.
 How do I control what agents and PostHog AI can see?
+You set the boundaries. Access follows your
+existing PostHog permissions
+, and when an agent acts on your data, like opening a PR, you can review it before anything ships. Nothing self-drives past a checkpoint you haven't approved.

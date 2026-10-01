@@ -1,0 +1,598 @@
+# https://wingify.com/blog/inside-wingify-digital-experience-optimization/
+Inside Wingify: The Digital Experience Optimization Suite
+AB Tasty and VWO have united, because half the loop was never enough.
+Learn about the merger
+Platform
+Platform
+Experimentation
+A/B Testing
+Split URL Testing
+Multivariate Testing
+Personalization
+Predictive Data
+Emotions
+Data Studio
+Segmentation & Targeting
+Analytics
+User Feedback
+Behavior Analytics
+Journey Analytics
+Feature Management
+Feature Rollouts
+Feature Experimentation
+Feature Personalization
+Mobile App Testing
+Commerce
+Search
+Recommendations
+Merchandising
+Customer Engagement
+Wingz AI
+The AI that powers Wingify. Woven into our platform, it brings clarity to every decision, at every stage.
+Explore More
+Wingify Platform
+Why Wingify?
+Data Platform
+Program Management
+Solutions
+Solutions
+For teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+SaaS & Technology
+For Enterprise
+One platform, fully governed, globally available, ready for the complexity only an enterprise can bring.
+Explore More
+Resources
+Resources
+Read
+Blog
+Ebooks
+Guides
+Glossary
+Success Stories
+Watch & Attend
+Webinars
+Podcasts
+Events
+Explore
+Tools
+Product Updates
+Knowledge Base
+All Resources
+Plans
+Company
+Company
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Contact Us
+Trust & Compliance
+Security
+Privacy Policies
+Information Security
+Code of Conduct
+Responsible AI
+Responsible Disclosure
+Terms of Use
+Partners
+Partner Program
+Affiliate
+Agency
+Technology
+Log in
+Log in
+Wingify Login
+AB Tasty Login
+Get a Demo
+Get a Demo
+Start Trial
+Start Trial
+Platform
+Platform
+Experimentation
+A/B Testing
+Split URL Testing
+Multivariate Testing
+Personalization
+Predictive Data
+Emotions
+Data Studio
+Segmentation & Targeting
+Analytics
+User Feedback
+Behavior Analytics
+Journey Analytics
+Feature Management
+Feature Rollouts
+Feature Experimentation
+Feature Personalization
+Mobile App Testing
+Commerce
+Search
+Recommendations
+Merchandising
+Customer Engagement
+Wingz AI
+The AI that powers Wingify. Woven into our platform, it brings clarity to every decision, at every stage.
+Explore More
+Wingify Platform
+Why Wingify?
+Data Platform
+Program Management
+Solutions
+Solutions
+For teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+SaaS & Technology
+For Enterprise
+One platform, fully governed, globally available, ready for the complexity only an enterprise can bring.
+Explore More
+Resources
+Resources
+Read
+Blog
+Ebooks
+Guides
+Glossary
+Success Stories
+Watch & Attend
+Webinars
+Podcasts
+Events
+Explore
+Tools
+Product Updates
+Knowledge Base
+All Resources
+Plans
+Company
+Company
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Contact Us
+Trust & Compliance
+Security
+Privacy Policies
+Information Security
+Code of Conduct
+Responsible AI
+Responsible Disclosure
+Terms of Use
+Partners
+Partner Program
+Affiliate
+Agency
+Technology
+Log in
+Log in
+Wingify Login
+AB Tasty Login
+Get a Demo
+Get a Demo
+Blog
+Inside Wingify: The Digital Experience Optimization Suite Driven by VWO and AB Tasty
+Stephanie Safdie
+September 18, 2026
+12 Min Read
+Home
+/
+Non classé
+/
+Inside Wingify: The Digital Experience Optimization Suite Driven by VWO and AB Tasty
+Summarize with AI:
+Contents
+Main Takeaways
+›
+Wingify is the Digital Experience Optimization (DXO) suite that now houses both Wingify and VWO.
+›
+It unites personalization, experimentation, feature management, customer insight, and AI under a single roof.
+›
+Current VWO and AB Tasty products keep running as-is while they’re gradually folded into one Wingify experience.
+›
+Wingz is the AI engine woven through every part of the suite.
+Wingify is a Digital Experience Optimization (DXO) suite built for teams that need to build, test, personalize, and refine digital experiences across web, mobile, and backend environments. With the 2026 merger of VWO and AB Tasty, Wingify has become the shared suite brand for both platforms, and the tools you’re already using are steadily coming together into a single ecosystem, sitting on one data and AI foundation.
+Below, we break down what the suite actually contains, how the different pieces work together, and what changes (and what doesn’t) if you’re currently on Wingify or VWO.
+What is Wingify?
+Wingify brings two established, independently built platforms, VWO and AB Tasty, together under one roof, reachable at app.wingify.com. For now, in mid-2026, each still functions as its own suite while the underlying engineering, data models, and workflows are merged step by step over the coming quarters. Nothing about your current contract, pricing, or support changes in the meantime.
+In practical terms, Wingify is built around seven interlocking capability areas: personalization, experimentation, feature management, behavioral insight, user surveys, commerce, and AI, topped off with an enterprise governance layer so larger organizations can run everything at scale across teams and geographies.
+What you get inside Wingify
+Wingify folds everything VWO and AB Tasty used to offer separately into one DXO suite. Rather than juggling several point tools, teams can now move through every stage of optimization from a single place.
+Personalize every customer touchpoint
+This is where Wingify’s DNA is most visible. It covers:
+Experience personalization:
+delivering different content, page layouts, or flows to different visitor groups, without maintaining separate page versions.
+Behavioral targeting:
+firing personalized experiences based on a visitor’s on-site actions, such as pages browsed, dwell time, cart activity, or how far they scroll.
+Dynamic content and product recommendations:
+showing tailored content or product suggestions to each visitor, widely used across e-commerce and media sites.
+Audience segmentation:
+assembling reusable visitor segments from behavioral, demographic, or CRM data, shared across both personalization campaigns and experiments.
+AI-driven personalization:
+tools such as Emotions AI, which reads on-site behavior to gauge a visitor’s emotional state, and Adaptive CX, which evolves the experience the longer someone stays on a page.
+The key difference from a standard A/B test is timing: personalization doesn’t sit around waiting for a statistically significant winner, it continuously serves each segment its best-known experience, while experimentation keeps refining what “best” even means.
+Run experiments with confidence
+This is the territory most closely tied to Wingify’s roots. It spans:
+Web A/B testing:
+pitting two or more page variants against live traffic to see which one moves a target metric, such as signups, purchases, or add-to-cart rate.
+Split URL testing:
+comparing entirely separate URLs, useful when a redesign is too extensive to represent as a single-page variant.
+Multivariate testing (MVT):
+testing several page elements in combination (say, headline, image, and CTA together) to find the strongest overall combination instead of isolating one variable at a time.
+Server-side experimentation:
+running tests within backend logic, essential for anything client-side JavaScript can’t touch, like pricing logic, algorithms, or checkout flows.
+Mobile app experimentation:
+running controlled tests inside native iOS and Android apps through an SDK, including feature testing that doesn’t depend on app-store review cycles.
+This matters because real product decisions rarely live in just one layer, a checkout overhaul, for example, might need a front-end A/B test, a server-side pricing experiment, and a mobile counterpart, all tracked against the same success metric.
+Power commerce performance
+For retail and e-commerce teams, Wingify offers Wingify Commerce, bringing product search, recommendations, and merchandising together in one system instead of three separate tools.
+It packages AI-driven product recommendations (frequently bought together, recently viewed, trending, and similar items, among other models), on-site search that understands typos and natural-language queries without manually built synonym lists, and merchandising controls that let business teams reorder products, promote or suppress specific items, and launch campaigns without pulling in a developer. Because search, recommendations, and merchandising draw on the same rules and data, a change made in one place is reflected consistently everywhere, with reporting that covers all three together.
+This layer is aimed squarely at lifting conversion rate and average order value on product-heavy sites, working alongside the broader experimentation and personalization layers rather than overlapping with them.
+Ship features without the risk
+This is where product engineering meets experimentation, giving teams a way to release code without staking the entire rollout on launch day:
+Feature flags:
+switches that turn functionality on or off without a fresh deployment.
+Progressive rollouts:
+rolling a feature out to a growing share of users (1% → 10% → 50% → 100%) instead of releasing to everyone simultaneously.
+Kill switches:
+a way to shut off a misbehaving feature in production instantly, with no code changes required.
+Canary releases:
+trying a new feature out on a small, often internal or low-risk group before a broader release.
+Feature experimentation:
+running a genuine A/B test on what a new feature actually does to key metrics, rather than shipping it and hoping for the best.
+Understand what customers are actually doing
+Every other layer depends on the insight this one provides:
+Heatmaps
+show where visitors click, scroll, and move across a page.
+Session recordings
+replay individual visitor sessions so you can see precisely what happened and where someone got stuck.
+Funnel analysis
+pinpoints where visitors abandon a multi-step process, like checkout or onboarding.
+Visitor behavior analytics
+roll up how traffic engages with a site or app over time.
+AI-enhanced research, surveys, and feedback
+, powered by Blitzllama’s technology (acquired by Wingify in 2025) and branded Pulse, which layers AI-assisted analysis on top of qualitative input like open-text survey answers and user feedback.
+This layer is what tells a team
+what to test next
+; it’s the diagnostic step ahead of a hypothesis, not simply a dashboard you glance at after the fact.
+Optimize everything with Wingz
+Wandz is Wingify’s AI layer, and it lives inside the suite itself rather than sitting off to the side as a bolt-on assistant. That distinction is important: a generic AI tool knows nothing about your actual experiment setup, variations, traffic split, success metrics, or audience definitions, so every question starts with exporting data and re-explaining context from scratch. Wandz skips that step because it already operates inside the same environment where the experiment lives.
+Wandz merges what Wingify previously delivered through its Evi assistant with what Wingify offered through Copilot. In practice, it can:
+Explain results in plain language,
+answering things like “how did this campaign perform on mobile versus desktop” or “show me every test we’ve run on the checkout page,” without anyone touching a CSV export first.
+Suggest hypotheses and experiment ideas
+grounded in real campaign performance and behavioral data, and able to factor in outside material like a competitor screenshot or a project brief.
+Check configurations before launch,
+scanning metrics, audience targeting, and traffic allocation for likely errors before a test or rollout goes live, essentially a pre-launch QA check.
+Build and modify campaigns via the AI Editor,
+letting teams set up or tweak an experiment through natural-language instructions, with every change staying visible and reversible before the team ships it.
+Wandz is built to cover the full experimentation journey: setup, targeting, analysis, and iteration, rather than being confined to a single feature.
+Govern optimization at enterprise scale
+For organizations running optimization programs across several teams, brands, or regions, Wingify provides:
+Role-based permissions
+that govern who can launch, edit, or view experiments and campaigns.
+Audit logs
+that track changes for compliance and accountability purposes.
+Collaboration workflows,
+approval chains, and shared workspaces, so marketing, product, and engineering can work off the same experiment without colliding.
+APIs and integrations
+linking the suite to analytics platforms, CDPs, CMSs, and internal data warehouses.
+Security, compliance, and multi-team governance
+controls are the safeguards larger or regulated organizations need to run experimentation at scale.
+How it all fits together
+Bringing these layers together only pays off because they run on the same underlying data, letting a team move through the entire loop without re-exporting or re-explaining context at each handoff:
+Customer behavior → behavioral insight → hypothesis generation → experimentation → personalization → commerce → feature rollout → AI-powered analysis → back to customer behavior.
+A heatmap flags friction on a checkout page.
+That observation turns into a hypothesis.
+The hypothesis becomes an A/B test.
+A winning variation is rolled out as a personalized experience for a specific segment or shipped as a feature behind a progressive rollout.
+Wandz analyzes the outcome and proposes the next test.
+The same audience definitions, metrics, and historical data flow through every stage, illustrated below:
+Who is Wingify built for?
+Marketers
+Test campaigns, personalize content, and lift conversion rates.
+Product managers
+Validate product ideas, oversee releases, and improve feature adoption.
+Ecommerce teams
+Deliver personalized shopping journeys and optimize every step of the customer path.
+Growth teams
+Run continuous experiments and surface the highest-impact optimization opportunities.
+CX teams
+Understand user behavior through a mix of qualitative and quantitative insight.
+Engineers
+Release features safely using feature flags and progressive rollouts.
+What current VWO and AB Tasty customers need to know
+Is Wingify becoming Wingify?
+Yes. Wingify is moving under the shared Wingify brand, and over time, both VWO and AB Tasty are expected to fully converge under that umbrella. This is a branding shift, not a functional one.
+Is Wingify becoming Wingify too?
+Yes, in the same way. Wingify has also moved under the unified Wingify brand: the application moved from app.vwo.com to app.wingify.com (effective June 13, 2026), and Wingify product names are being renamed accordingly (Wingify Insights, for instance, is now Wingify Insights). Your existing plans, features, data, and access are unaffected.
+Will the products themselves change?
+Not right away. Your live website campaigns, mobile SDK campaigns, server-side experiments, tracking snippets, feature flags, and data collection keep working normally through the transition; only the dashboard changes. Over the medium term, expect Wingify’s strengths in personalization and AI-driven targeting to be woven more closely with Wingify’s experimentation, analytics, and behavioral insight tools into one shared roadmap.
+What happens to existing contracts?
+Your current contracts, pricing, and service levels carry over unchanged as a result of the merger, and the team supporting you today keeps doing so.
+What happens to logins?
+If you’re a Wingify customer, your account, settings, and credentials transfer over to app.wingify.com, though active sessions end the moment the domain switches, so you’ll need to sign back in at the new address. Single Sign-On (SSO) and SAML setups keep working automatically, since the SSO callback URL redirects to the new domain without any action needed on your side. Passkeys are the exception, since they’re tied to a specific domain for security reasons. A passkey created for app.vwo.com won’t transfer, so you’ll need to create a new one after logging in at the new domain. System emails, password resets, reports, and notifications now come from @wingify.com instead of @vwo.com, so it’s worth having your IT team allowlist that domain to keep them out of spam.
+What happens to integrations?
+Your integrations stay intact. Wingify’s REST APIs are now served on the Wingify domain, and existing integrations keep working with no changes needed. The Wingify SmartCode already installed on your site doesn’t need replacing either. IT teams should whitelist wingify.com and its subdomains in company firewalls to prevent disruption to features like session recording playback that run on those domains.
+What stays exactly the same?
+Your historical data, reports, settings, integrations, audiences, and configurations remain fully intact and accessible from the new domain. Contract terms, pricing, your support team, and service levels don’t change. Tracking snippets and live campaigns run uninterrupted throughout the switch. In short: what’s changing is the brand, and eventually, how deeply VWO and AB Tasty’s capabilities are integrated, not what you’re already paying for or how it works today.
+Where digital experience optimization is headed
+The next phase of digital optimization is about bringing personalization, experimentation, feature management, customer insights, and AI into a single suite, where each capability builds directly on the last.
+That’s precisely the role Wingify is built to play.
+Wingify gives teams one foundation for continuous digital growth, from understanding customer behavior through to launching new features and refining every interaction. Start a free trial or
+book a demo
+to see both platforms working as one unified suite.
+Frequently asked questions
+What is Wingify?
+Wingify is the combined Digital Experience Optimization suite formed by AB Tasty and VWO following their 2026 merger.
+What’s included in Wingify?
+Wingify covers web, mobile, and server-side experimentation; personalization and product recommendations; feature management (progressive rollouts and kill switches included); behavioral insight tools like heatmaps, session recordings, and surveys; and Wingz, the suite’s shared AI layer.
+Does Wingify support feature flags?
+Yes. Feature management, including progressive rollouts and kill switches, is built into the suite, giving engineering and product teams a way to roll features out gradually and shut them off instantly if something goes wrong.
+Does Wingify handle personalization?
+Yes, it’s one of the suite’s core pillars, drawing heavily on AB Tasty’s strength in adaptive, behavior-based targeting, including Emotions AI for reading user emotional state and Adaptive CX for adjusting the experience as a visitor spends more time on-site.
+What exactly is Wingz?
+Wingz is Wingify’s shared AI layer, built directly into the experimentation and personalization workflow rather than bolted on as a separate tool. It combines what AB Tasty previously offered through Evi with what VWO offered through Copilot, so teams can ask plain-language questions about campaign performance, generate experiment ideas from real data, check campaign configurations before launch, and build or adjust campaigns through an AI Editor using natural language.
+Does Wingz work across every Wingify product?
+Wingz is designed to span the full experimentation journey, from campaign setup and audience targeting through to results analysis and hypothesis generation, rather than being limited to one feature. As AB Tasty and VWO’s underlying suites continue merging, Wingz is intended to extend across that combined surface, though how quickly it reaches every individual feature will vary as integration work continues.
+Continue Reading
+Categories:
+Non classé
+Stephanie Safdie
+Stephanie Safdie holds a bachelor’s degree in English Language and Literature from the University of Maryland, specializing in multimedia studies. She has worked as a social media video creator, freelance copywriter, SEO copywriter at Greenly climate tech, and runs a travel blog Destination Dreamer Diaries.
+Uncover hidden visitor insights to improve their website journey
+Request a Demo →
+Related Content
+Guide
+Conversion Rate Optimization →
+You might also love to read these
+4 Min Read
+Curiosity Meets Clarity: Why We Became Wingify
+8 Min Read
+Pulse vs Hotjar: Which Feedback Tool Is Right for Your Team?
+10 Min Read
+8 Feature Flag Best Practices for Product and Engineering Teams
+The better way to test,
+learn and grow
+Get a Demo
+Get a Demo
+Start Trial
+Start Trial
+Opt for higher ROI on your optimization efforts
+Take a
+30
+-day, all-inclusive free trial with Wingify.
+Business Email
+*
+Start Now
+Invalid Email
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+Follow us:
+EN
+DE
+ES
+BR
+FR
+EN
+DE
+ES
+BR
+FR
+Product Suites
+Experimentation
+Personalization
+Commerce
+Analytics
+Feature Management
+Customer Engagement
+Platform
+Wingify Platform
+Why Wingify?
+Program Management
+Integrations
+Data Platform
+For Teams
+Marketing
+Product
+Data Analytics
+UX/ UI
+Digital Transformation
+Engineering
+Merchandising
+For Industries
+Retail & ecommerce
+Travel & Hospitality
+Financial Services
+Media & Publishing
+Digital Transformation
+SaaS & Technology
+All Resources
+Blog
+Product Updates
+Success Stories
+Webinars
+Guides
+Glossary
+Knowledge Base
+Events
+Free Tools
+Ebooks
+Company
+About Us
+Leadership
+Offices
+Careers
+Newsroom
+Media Kit
+Partners
+Contact Us
+Compare
+Wingify vs Optimizely
+Wingify vs Adobe Target
+Wingify vs Mouseflow
+Wingify vs Contentsquare
+Wingify vs Dynamic Yield
+Wingify vs. Kameleoon
+© 2026 Wingify. All rights reserved.
+Terms
+Security
+Compliance
+Code of Conduct
+Privacy
+AI Policy
+Imprint
+Opt-out
+Hey AI, learn about us
+Hi 👋 Let's get you started
+Free for
+30
+days. No credit card required.
+Business Email
+*
+Invalid Email
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+Start Now
+We just need a few details
+Business Email
+*
+Invalid Email
+First Name
+*
+Invalid First Name
+Last Name
+*
+Invalid Last Name
+Phone Number
+*
+Invalid Phone Number
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+Create Account
+Curious how it works? Get a 1-on-1 demo
+Skip & Continue to App →
+Thank you
+,
+your meeting is confirmed.
+at
+Your account is being set up
+We've sent a message to
+yourmail@domain.com
+with instructions to verify your account.
+Can't find the mail?
+Check your spam, junk or secondary inboxes.
+Still can't find it? Let us know at
+support@wingify.com
+Let's talk
+Talk to a sales representative
+World Wide
++1 415-349-3207
+You can also email us at
+support@wingify.com
+Get in touch
+First Name:
+*
+Invalid First Name
+Last Name:
+*
+Invalid Last Name
+Business Email:
+*
+Invalid Email
+Phone Number:
+*
+Invalid Phone Number
+Nature of enquiry:
+*
+Sales enquiry
+Technical support
+Other
+Invalid select enquiry
+Message:
+*
+Invalid message
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+Submit
+Thank you for writing to us!
+One of our representatives will get in touch with you shortly.
+Hi 👋 Let's schedule your demo
+First Name
+*
+Invalid First Name
+Last Name
+*
+Invalid Last Name
+Business Email*
+Invalid Email
+Phone Number*
+Invalid Phone Number
+Yes, I agree to receive communications from Wingify. I can opt-out at any time.
+I agree to Wingify's
+Privacy Policy
+&
+Terms
+Get a Demo
+I'm finding an executive for you
+schedule later →
+, thank you for sharing your details.
+Your dedicated Wingify representative will be in touch shortly to set up a time.
+Thank you
+, your meeting is confirmed.
+at
+Any additional details you think will helpful
+This field is required
+Submit
+Submitted.
++
+300
+%
+Increase in Trial activation
+Trusted by 3000+ leading brands globally
+Your Roadmap to Better Results
+1:1 Demo customized to your industry and optimization goals.
+Feature deep-dive into the user behaviour tools you need most.
+No-pressure advice on the best path forward for your team.

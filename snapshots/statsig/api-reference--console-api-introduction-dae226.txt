@@ -128,14 +128,34 @@ Slack channel
 Base URL
 https://statsigapi.net
 Authorization
-All requests must include the
+All requests must include a Console API key in the
 STATSIG-API-KEY
-field in the header. The value should be a
-Console API Key
-, which you can create in the Project Settings on
-console.statsig.com/api_keys
+header. Create a key in
+Project Settings
+.
 Rate limiting
-Mutation requests (POST/PATCH/PUT/DELETE) to the Console API are limited to ~ 100 requests / 10 seconds and ~ 900 requests / 15 minutes, per project.
+The Console API rate limits mutation requests (
+POST
+,
+PATCH
+,
+PUT
+, and
+DELETE
+). Most mutation endpoints share a quota per project across all Console API keys. The default quota is approximately 1,800 request attempts per 15-minute window. Limits can vary by project and endpoint. Segment endpoints use a separate quota.
+Statsig also applies burst protection. A burst of requests can trigger rate limiting even when your project is below its 15-minute quota. Spread requests over time and limit concurrent requests.
+The API returns
+429 Too Many Requests
+when a request exceeds either limit. Attempts rejected by this rate limiter also count toward the quota, so immediate retries can consume additional capacity.
+When you receive a
+429
+response:
+Reduce request concurrency.
+Retry with exponential backoff and jitter: increase the delay after each retry and add a random delay to avoid simultaneous retries.
+Limit the number of retries to avoid repeatedly consuming your quota.
+Contact
+Statsig support
+to confirm your project's limits or discuss higher-volume requirements.
 API version
 Statsig versions the Console API. Statsig guarantees that each version won't break existing usage; each new version introduces breaking changes. There is only one version:
 20240601
@@ -146,6 +166,7 @@ Pass the version in the
 STATSIG-API-VERSION
 field in the header. This field is optional but becomes required in the future.
 Was this helpful?
+Copy Markdown
 On this page
 Base URL
 Authorization

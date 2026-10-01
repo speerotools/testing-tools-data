@@ -75,7 +75,6 @@ Testing your Gates/Experiments
 Migration Guides
 FAQ
 On this page
-CUPED - Controlled-experiment Using Pre-Existing Data
 CUPED for simple aggregations
 CUPED for ratio metrics
 For AI agents: a documentation index is available at
@@ -86,24 +85,22 @@ Product Docs
 CUPED
 CUPED
 How Statsig uses CUPED variance reduction to improve experiment sensitivity by adjusting for pre-experiment user behavior on metric values.
-CUPED - Controlled-experiment Using Pre-Existing Data
-CUPED (short for Controlled-experiment Using Pre-Existing Data) is a technique that uses user information from before an experiment to reduce variance and increase confidence in experimental metrics. Statsig defines this pre-experiment data as the 7 days before each user's exposure rather than a fixed window before the experiment starts for all users. This approach helps debias experiments that have meaningful pre-exposure bias (for example, groups that were randomly different before you applied any treatment).
+CUPED (Controlled-experiment Using Pre-Existing Data) reduces a metric's variance by adjusting each user's metric value with that user's pre-exposure data. Pre-exposure data is the same metric measured over the 7 days before the user's exposure. Statsig defines this window per user, not as a fixed window before the experiment starts for all users. The adjustment increases confidence in experiment metrics and reduces pre-exposure bias, for example when groups were randomly different before you applied any treatment. Use CUPED when a metric is autocorrelated over time. Use
 CURE
-extends CUPED for Warehouse Native, so use CURE when you need covariates beyond a metric's own pre-experiment history, such as new-user experiments or metrics that aren't autocorrelated.
-The Cloud product uses a 7-day window for CUPED calculation. For Warehouse Native customers, Statsig recommends a 7-day window, but you can customize it to any length.
-For more details, refer to the
-Variance Reduction
-page.
+, which extends CUPED on Warehouse Native, when you need covariates beyond the metric's own pre-exposure history, such as in new-user experiments or for metrics that aren't autocorrelated.
+Statsig Cloud always uses the 7-day pre-exposure window. On Warehouse Native, Statsig recommends the 7-day window, but you can set any length. For how CUPED fits with Statsig's other variance reduction options, refer to
+Variance reduction
+.
 CUPED for simple aggregations
 The original
 Microsoft paper
-describes the methodology for simple aggregations, as does the in-depth
-article
-on the technique.
-The Cloud product uses stratification alongside CUPED to account for users who may not have pre-experiment data. Statsig groups users into strata based on available pre-experimentation information, estimates treatment and control effects within each stratum, then aggregates them to produce an overall result. Statsig then applies the standard difference-in-means and variance estimation. This approach lets Statsig retain users with missing pre-data while still benefiting from variance reduction where applicable.
+describes the methodology for simple aggregations, as does Statsig's
+in-depth CUPED article
+.
+Statsig Cloud uses stratification alongside CUPED to account for users who have no pre-exposure data. Statsig groups users into strata based on the pre-exposure data available, estimates treatment and control effects within each stratum, then aggregates the strata to produce an overall result. Statsig then applies the standard difference-in-means and variance estimation. This approach retains users with missing pre-exposure data while still reducing variance where pre-exposure data exists.
 CUPED for ratio metrics
-The Microsoft paper also gives details on how to implement CUPED for metrics with a different analysis unit (Appendix B). On Statsig, this methodology extends to ratio metrics, where a numerator and a denominator represent each experiment unit. The variance reduction process finds the variance of experiment data, pre-experiment data, and the covariance between the two.
-Denote the numerator, denominator, pre-experiment numerator, and pre-experiment denominator of a unit as
+The Microsoft paper also describes how to implement CUPED for metrics with a different analysis unit (Appendix B). Statsig extends this methodology to ratio metrics, where a numerator and a denominator represent each experiment unit. The variance reduction process finds the variance of the experiment data, the variance of the pre-exposure data, and the covariance between the two.
+Denote the numerator, denominator, pre-exposure numerator, and pre-exposure denominator of a unit as
 Y
 Y
 Y
@@ -257,7 +254,6 @@ X
 )
 ​
 expanded to
-\
 C
 o
 v
@@ -509,7 +505,7 @@ X
 c
 ​
 ​
-transforms the formulas above to the following two:
+transforms these two formulas into the following:
 Y
 c
 v
@@ -941,19 +937,39 @@ Using the optimal
 θ
 \theta
 θ
-, Statsig reduces group-level variance by applying the parameter to calculate the adjustment. Across-group
+, Statsig reduces group-level variance by applying the parameter to calculate the adjustment. An across-group
 θ
 \theta
 θ
-doesn't necessarily reduce variance for one group, or the sum of variances of all groups, but in most cases it does. Simulations show that 98.3% of metrics saw a decrease through CUPED.
-Statsig uses CUPED variance when all of the following are true:
-Core assumptions of the CUPED model hold; rounding error or other data artifacts can violate this
-E(X_hat) = E(X)
-The pooled variance of the adjusted population across groups is < the variance of the unadjusted population
-Enough units have pre-experiment values (> 100)
-Enough percentage of units have pre-experiment values (> 5%)
+doesn't necessarily reduce the variance for one group, or the sum of variances of all groups, but in most cases it does. Simulations show that 98.3% of metrics saw a decrease through CUPED.
+Statsig applies the CUPED-reduced variance when all of the following are true:
+The core assumptions of the CUPED model hold. Rounding error or other data artifacts can violate them:
+E
+(
+X
+^
+)
+=
+E
+(
+X
+)
+E(\hat{X}) = E(X)
+E
+(
+X
+^
+)
+=
+E
+(
+X
+)
+The pooled variance of the adjusted population across groups is less than the variance of the unadjusted population.
+More than 100 units have pre-exposure values.
+More than 5% of units have pre-exposure values.
 Was this helpful?
+Copy Markdown
 On this page
-CUPED - Controlled-experiment Using Pre-Existing Data
 CUPED for simple aggregations
 CUPED for ratio metrics

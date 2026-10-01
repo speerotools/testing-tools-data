@@ -14,6 +14,7 @@ Data API
 Metadata API
 Data Privacy APIs
 Navigate through spaces
+Search
 K
 Getting Started with Monetate SDKs
 SDK Version updates
@@ -42,7 +43,16 @@ Create a No Action Handler
 Docs powered by
 Archbee
 Getting Started with Monetate SDKs
-the monetate sdk allows you to easily utilize the capabilities of the engine api docid\ gxb o1cjhu7jty l prd8 using methods that simplify the api calls, you can create and run your experience quickly and with minimal effort the sdk can be used for any channel, including web, mobile apps, and single page applications in a traditional monetate tag–based implementation docid\ zfxs45ymf6aicwwkkgxcc , monetate is running in the browser and can directly manipulate the site by inserting, editing, or removing content via reusable actions monetate tag–based integrations are easy to deploy but can't be implemented in some channels such as mobile apps the engine api is a restful api that serves as a direct entry point to monetate's decision engine it can be used to access the decision engine in any channel passing and collecting data requires specific api calls and might be complicated for some applications the monetate sdk simplifies the api calls by acting as a translation layer to the monetate decision engine the sdk provides easy to use methods that send event data directly to the decision engine and receive the experience to serve sdk implementations can be used in the same channels as engine api implementations
+The Monetate SDK allows you to easily utilize the capabilities of the
+Engine API
+﻿
+. Using methods that simplify the API calls, you can create and run your experience quickly and with minimal effort. The SDK can be used for any channel, including Web, mobile apps, and single-page applications.
+In a traditional
+Monetate tag–based implementation
+﻿
+, Monetate is running in the browser and can directly manipulate the site by inserting, editing, or removing content via reusable actions. Monetate tag–based integrations are easy to deploy but can't be implemented in some channels such as mobile apps.
+The Engine API is a RESTful API that serves as a direct entry point to Monetate's decision engine. It can be used to access the decision engine in any channel. Passing and collecting data requires specific API calls and might be complicated for some applications.
+The Monetate SDK simplifies the API calls by acting as a translation layer to the Monetate decision engine. The SDK provides easy-to-use methods that send event data directly to the decision engine and receive the experience to serve. SDK implementations can be used in the same channels as Engine API implementations.
 Updated
 29 Apr 2026
 NEXT

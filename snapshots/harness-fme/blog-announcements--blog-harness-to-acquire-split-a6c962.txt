@@ -1,5 +1,6 @@
 # https://www.harness.io/blog/harness-to-acquire-split
 Split Acquisition: Harness Adds Feature Flags
+Runtime Configuration
 Platform
 Harness Autonomous SDLC Platform
 Deliver at machine speed.
@@ -186,6 +187,7 @@ How to Branch by Abstraction with Feature Flags
 Feature Flags vs. Feature Branches
 How HugOps Help Reduce Software Developer Burnout
 Best Practices for Implementing Value Stream Management
+Use Feature Flag-Driven Development to Drive Innovation
 Getting Started With Express TypeScript: Setup, APIs, and Advanced Features
 A Git Branching Strategy for Efficient Software Development
 What Is Trunk-Based Development? Your Complete Implementation Guide
@@ -204,7 +206,7 @@ Best Practices for Kubernetes Labels and Selectors
 The Seven Phases of the Software Development Life Cycle
 Monoliths vs Microservices vs Serverless: Choosing the Right Architecture for Your Team
 How to Build a CRUD API Using Node.js and Express: Complete Tutorial
-Understanding Rollbacks in Software Development
+What Is a Software Rollback? How and When to Use One | Harness
 A Quick Guide to Feature Toggles in a Spring Boot App
 Parity Testing With Feature Flags
 Exploring Chaos Engineering for Kubernetes resilience testing
@@ -248,7 +250,6 @@ Harness Adds 8 New Features to Redefine Resiliency with AI-Powered Chaos Enginee
 Improve AI communication with feature management and DPO
 Flagship 2025: The Feature Management &amp; Experimentation Summit–Now On Demand
 Linux Resilience Testing with Harness Chaos Engineering
-5 Proven Strategies for Testing in Production with Feature Flags
 Next
 Blog
 →

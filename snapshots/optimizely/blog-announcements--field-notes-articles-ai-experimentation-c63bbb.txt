@@ -8,16 +8,16 @@ Here is how experimentation used to work. You had an idea. It went to a develope
 By the time it shipped, weeks had passed. Sometimes more. And then, analysis waited on the one person who understood the data. Variations sat in a backlog behind three other releases. Results took so long to interpret that the next test was already overdue before anyone had acted on the last one.
 AI does not change what good experimentation looks like. It removes what was getting in the way.
 How does AI make it easier to run more quality experiments?
-58.74% of all Optimizely Opal agent usage is experimentation.
+58.74% of all Optimizely Agent Platform usage is experimentation.
 AI workflow agents now handle the work that used to involve waiting at every stage of the experimentation cycle.
 Ideas get generated faster and grounded in what has actually worked before.
 Test plans get structured in seconds, with the right metrics from the start. Variations get built without touching the dev queue. Results get summarized before the insight has a chance to go cold.
 The result is a program where each stage feeds the next, and nothing stalls waiting for someone to have time.
 Still, AI implementations are struggling because most AI tools have no memory of your program.
 So, does AI even work reliably, at scale, and with accountability and governance?
-To find an answer to this problem, we analyzed data across 47,000 Optimizely Opal interactions across 900 companies. What we found was that AI’s impact is stuck at the individual level.
+To find an answer to this problem, we analyzed data across 47,000 Optimizely Agent Platform interactions across 900 companies. What we found was that AI’s impact is stuck at the individual level.
 Here’s the full
-AI experimentation benchmark report.
+AI Optimizely Agentic Experimentation report
 AI implementations are failing without context
 Most AI tools give you a response. When your AI has no memory of your program, problems show up:
 Teams repeat tests they have already run because nothing connects past learnings to new ideas.
@@ -27,7 +27,7 @@ When AI understands your existing experiments, metrics, feature flags, and progr
 “
 “
 Experimentation ROI is not in more ideas. It is in the relevant ones. Not in more tests, but a program where every learning compounds.
-Optimizely Opal
+Optimizely Agent Platform
 understands your full experimentation program. It has:
 Program-level reporting:
 Which experiments launched or concluded in a given timeframe, which performed best, and how win rates are trending.
@@ -45,7 +45,7 @@ Teams using agents across the full experimentation lifecycle are
 running 78.7% more experiments
 , launching 24.1% more personalization campaigns, and seeing win rates lift by 9.3%. More tests are reaching conclusions, too, not just getting started.
 Experimentation is where the operational drag is highest and where workflow agents are creating the most value.
-Optimizely Opal agents cover the full experimentation lifecycle from ideation through post-test execution. Out-of-the-box agents handle the most common stages. Teams can also build custom agents for workflows specific to their program.
+Optimizely Agent Platform covers the full experimentation lifecycle from ideation through post-test execution. Out-of-the-box agents handle the most common stages. Teams can also build custom agents for workflows specific to their program.
 1. Experiment ideation: Agent and builder
 Run more tests without adding headcount.
 The Ideation Agent
@@ -114,11 +114,8 @@ Two examples of what that looks like:
 Adding a button across an entire page:
 You describe what you want. The agent applies a consistent change across every product page in seconds, no dev ticket needed.
 Adding a new section to a page:
-Ask Optimizely Opal to introduce a value proposition block or a trust signal. It generates the section, places it correctly, and keeps branding consistent.
+Ask Optimizely Agent Platform to introduce a value proposition block or a trust signal. It generates the section, places it correctly, and keeps branding consistent.
 The agent checks for conflicts automatically, cutting QA time and reducing failed builds.
-Our
-analysis of 127,000 experiments
-found that teams achieve the highest impact at under 10 tests per engineer. The Variation Development Agent is what makes that ratio sustainable as programs scale.
 4. Experiment summary agent
 Points directly to the next test worth running
 The
@@ -140,12 +137,12 @@ settings
 crop_free
 6.8% of experiments are already being summarized by agents. 19.54% of follow-up tests are driven by agent recommendations.
 What is our approach to AI governance?
-The questions we hear most from teams adopting Opal are not about whether AI works. They are about control.
+The questions we hear most from teams adopting Optimizely Agent Platform are not about whether AI works. They are about control.
 How do we make sure AI-generated content does not go live without our team checking it first?
 Who actually has access to launch these tests?
 Without answers to those questions, things go sideways.
 Different teams run overlapping tests on the same audience without realizing it. AI outputs ship without anyone checking them against brand standards. Leadership has no visibility into what is actually running. And when something goes wrong, nobody knows where to start.
-Optimizely Opal is built with governance in mind:
+Optimizely Agent Platform is built with governance in mind:
 Risk mitigation and brand safety:
 AI generates quickly. Governance ensures what goes live reflects your standards, not just what the model produced.
 Cross-functional alignment:
@@ -156,16 +153,16 @@ Future-proofing AI adoption:
 When roles like Admin, User, and Agent Builder are clearly defined and documented, the AI black box stops feeling like a black box. Leadership builds confidence. Adoption follows.
 Still got more questions? We got them covered.
 Frequently asked questions about governance in AI
-1. Who can access and use Optimizely Opal within my organization?
-You control access with user-level permissions. You designate exactly who can use Optimizely Opal and at what level, whether that is Admin, Agent Builder, or User.
-2. Do I own the content Optimizely Opal creates for me?
-Yes. Your input and any output Optimizely Opal generates in response to your prompt are fully owned by you. Also, your data is never shared with anyone nor accessible to any other customers.
+1. Who can access and use Optimizely Agent Platform within my organization?
+You control access with user-level permissions. You designate exactly who can use Optimizely Agent Platform and at what level, whether that is Admin, Agent Builder, or User.
+2. Do I own the content Optimizely Agent Platform creates for me?
+Yes. Your input and any output Optimizely Agent Platform generates in response to your prompt are fully owned by you. Also, your data is never shared with anyone nor accessible to any other customers.
 3. Will my data be used to train other LLMs?
 No. Both your input and generated content are fully private. Neither Google nor Optimizely uses your data to train models.
 4. Where is my data processed?
 All data is handled within Google’s secure infrastructure. You can also upload brand guidelines, tone of voice, and example content, and customers retain ownership of everything that goes in and comes out.
-5. Can I disable Optimizely Opal if needed?
-Yes. Opal can be opted out of or disabled at any time via a toggle in the Optimizely Admin Center.
+5. Can I disable Optimizely Agent Platform if needed?
+Yes. Optimizely Agent Platform can be opted out of or disabled at any time via a toggle in the Optimizely Admin Center.
 Wrapping up
 The potential of AI in experimentation is clear through accelerated workflows and more time for strategic thinking. But what excites us most at Optimizely isn’t just AI assistance, it’s the evolution toward true AI partnership.
 We’re building an ecosystem where AI agents work proactively across your entire marketing and experimentation ecosystem, from surfacing test opportunities to ensuring brand compliance and connecting cross-product insights.
@@ -196,6 +193,7 @@ About us
 Life at Optimizely
 Optimizers
 Press
+Contact us
 The MVP club is calling.
 ANZ webinar: claim your spot
 chevron_right

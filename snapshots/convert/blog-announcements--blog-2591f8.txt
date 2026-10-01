@@ -5,9 +5,8 @@ Pricing
 Personalization
 Partnerships
 For Agencies
-For Certified Partners
+Be a Certified Partner
 For Affiliates
-Technology Partners
 Company
 About Us
 Blog
@@ -18,9 +17,9 @@ Try For Free
 Login
 Convert Blog: Learn A/B Testing, Optimization & Marketing
 Latest Blog Post on Convert
-A/B Testing
-Bonferroni Correction: The Multiple Comparisons Problem in A/B Testing
-Let’s set the stage. A CRO team runs an A/B/n test with one control and four variations, tracking three success metrics across each layout. One metric on Variant C clocks in with a p-value of 0.04. The team declares a winner, ships the change, and waits for the revenue to roll in. But it never…
+AI
+Use AI for Statistical Analysis Without Letting It Tamper With the Numbers
+Are you one of those people using AI for analysis and statistical calculations? I know why you might be doing that. Convenience, right? Reducing friction. But let's consider the story of the data. That hard-earned data you spent time and effort ensuring robustness and accuracy. And then you throw it into a language model and…
 Read the full article
 →
 Our Editorial Promise
@@ -96,6 +95,7 @@ Brian Skewes
 Bronwynn Dyson
 Bruno Borges
 Burkhard Berger
+Buse Hizarci
 Callum Dreniw
 Carlos Trujillo
 Carmen Apostu
@@ -340,52 +340,52 @@ Vishal Kothari
 Vivek Patel
 Zander Aycock
 Blog Posts
+A/B Testing
+17 Sep, 2026
+How to Forecast A/B Test Revenue Impact Without Overselling It
+By
+Ryan Thomas
+Forecasting the effect your experiments will have on future revenue is a bit of a controversial topic in the CRO world. The reason for this comes down to the fact that we don't really know for sure if a 10% lift from an experiment will translate into a 10% increase...
+Read More
+→
+Growth Marketing
+14 Sep, 2026
+Why Your Pricing Tests Keep Failing
+By
+Daphne Tideman
+Work the pyramid from the bottom up When you think of first running price tests, what comes to mind? Adjusting your prices up or down? Maybe testing discount levels? That’s what comes to mind for most of us, but it should be the last thing you test. Most subscription apps...
+Read More
+→
+Optimization
+07 Sep, 2026
+Testing Mind Map Series: How to Think Like a CRO Pro, Part 96 with Buse Hizarci
+By
+Buse Hizarci
+Buse Hizarci, Optimisation Manager at Vervaunt, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where judgment sits...
+Read More
+→
+Full Stack Experimentation
+03 Sep, 2026
+Feature Flags vs Rollouts vs Feature Testing: What’s the Difference?
+By
+Uwemedimo Usa
+Feature flags switch functionality on or off at runtime, without a deploy. Rollouts widen an already-approved feature to a growing percentage of users. Feature testing compares variations against a control to find which performs better, using A/B/n testing underneath. All three run on feature flags. Only feature testing holds back...
+Read More
+→
+A/B Testing
+24 Aug, 2026
+Bonferroni Correction: The Multiple Comparisons Problem in A/B Testing
+By
+Althea Storm
+Let’s set the stage. A CRO team runs an A/B/n test with one control and four variations, tracking three success metrics across each layout. One metric on Variant C clocks in with a p-value of 0.04. The team declares a winner, ships the change, and waits for the revenue to...
+Read More
+→
 Optimization
 17 Aug, 2026
 Testing Mind Map Series: How to Think Like a CRO Pro, Part 95 with Craig Kistler
 By
 Craig Kistler
 Craig Kistler, who leads experimentation at Signet Jewelers, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where...
-Read More
-→
-A/B Testing
-10 Aug, 2026
-Why your experimentation program keeps returning inconclusive results (and what to do about it)
-By
-Andrea Bronzini
-If you have experience running experiments, you’ve probably noticed this: You design a variation, build it, and launch the experiment. Traffic starts coming in, but four weeks later, the platform returns a single word: Inconclusive. But after some time has passed, you try again, and four weeks later, the result...
-Read More
-→
-AI
-03 Aug, 2026
-Promote your n8n workflows to MCP tools any AI chat can call
-By
-Iqbal Ali
-If you've been following my tutorials, you'll know how easy it is to create your own custom workflows in n8n. We've built workflows to verify research claims in marketing copy as well as workflows that generate JavaScript for experiments, and there's plenty more to come. These workflows are centralised, easy...
-Read More
-→
-Optimization
-27 Jul, 2026
-Testing Mind Map Series: How to Think Like a CRO Pro (Part 94)
-By
-Sanne Maach
-Interview with Sanne Maach Abrahamsson There's the experimentation everyone talks about. And then there's how it actually happens. We’re hunting for signals in the noise to bring you conversations with people who live in the data. The ones who obsess over test design and know how to secure buy-in even...
-Read More
-→
-Growth Marketing
-23 Jul, 2026
-The Complete Guide to Optimizing Your Content For AI Search (Getting Recommended by GenAI & Making Your Way Into Coveted AI Overviews)
-By
-Uwemedimo Usa
-You’re not just optimizing for Google anymore. Large language models like ChatGPT, Claude, and Gemini are the new gatekeepers of online discovery. These AI-powered search engines often surface answers and shape buyer journeys within their interfaces, but they also direct traffic to websites they deem authoritative. The numbers are hard...
-Read More
-→
-A/B Testing
-22 Jul, 2026
-Statistical Power in A/B Testing: What It Is and How to Get It Right
-By
-Althea Storm
-Picture this: A team runs a textbook A/B test. The set up is clean and they don’t peek. Instead, they wait for significance and it never comes, so they call it a loss, ship the control, and move on. What they never realize is that the variation was better all...
 Read More
 →
 1
@@ -415,6 +415,7 @@ Free Trial
 Request a Demo
 Features
 Pricing
+Customer Insights
 A/B Testing
 Convert MCP Server
 Multivariate Testing
@@ -466,8 +467,8 @@ Contact Us
 94035
 TREES PLANTED
 © 2026, Convert Insights Inc. All rights reserved
-Terms of use
-Privacy Notice
+Terms of Service
+Privacy Policy
 Opt Out
 Skip this form
 Start your
@@ -482,9 +483,9 @@ Business Email
 (Input a valid email address)
 I want to receive the Convert Newsletter
 By submitting this form, you agree to have read and acknowledged our:
-terms of use
+terms of service
 ,
-privacy notice
+privacy policy
 and
 non-aligned customers' policy
 *

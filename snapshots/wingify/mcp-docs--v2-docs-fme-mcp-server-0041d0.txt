@@ -1,0 +1,474 @@
+# https://developers.wingify.com/v2/docs/fme-mcp-server
+MCP Server
+For AI agents: visit https://developers.wingify.com/v2/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+Documentation
+API Reference
+Support
+Documentation
+API Reference
+Changelog
+v1.0
+v2
+v3
+Documentation
+API Reference
+Support
+Sign In
+Documentation
+Search
+Sign In
+v2
+Documentation
+API Reference
+Changelog
+MCP Server
+Feature Experimentation
+Overview
+Quick Start Guide
+SDK Reference
+List of FE SDKs
+Architecture and Flow
+Recipes
+Server-side SDKs
+Node.js
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Java
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+PHP
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Proxy URL (bypassing Firewall)
+Python
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+.NET/C#
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Shutdown
+Ruby
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Go
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Proxy URL (bypassing Firewall)
+Client-side SDKs
+Android(Kotlin/Java)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+Impact Analysis
+Flutter/Dart
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+iOS(Swift)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+Impact Analysis
+React Native
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Event Batching
+Cache Settings
+JavaScript(web)
+Installing the SDK
+Initialization
+User Context
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Cache Settings
+Proxy URL / Prevent Ad-blockers
+React(web)
+Installing the SDK
+Initialization
+User Context
+Hooks
+Feature Flags & Variables
+Metrics Tracking
+Attributes
+Logging
+Storage Service
+Integrations
+Cache Settings
+Proxy URL / Prevent Ad-blockers
+Testing SDK Hooks and Provider
+Next.js
+Expo(React-Native)
+Capacitor(JavaScript)
+Ionic(JavaScript)
+Cordova(Javascript)
+Edge Support
+Gateway Service
+OpenFeature Providers
+.NET Provider
+Java Provider
+Node Provider
+PHP Provider
+Python Provider
+Go Provider
+Unified Experimentation
+Overview
+Cross-System Identity Synchronization
+Conversion Tracking Across Platforms
+Integration with Wingify Web & Mobile Insights
+Concepts
+Identifying Users (User ID)
+How User Bucketing Works
+Salting
+Polling
+Configuring Webhooks
+SDK Retry Mechanism
+Segment Evaluation in Client-Side vs Server-Side SDKs
+Using Variables to Drive Logic
+Explicit SDK Settings Configuration
+Testing Email/SMS via Server-Side Experimentation
+User Aliasing
+Rules Evaluation in FE
+Web Testing Pre-Segmentation
+Preventing Bot Traffic from Impacting Your Experiments
+Deep-Dive Debugging Guide
+KNOWLEDGE BASE & SET UP GUIDE
+Introduction
+Getting Started with Feature Experimentation
+Set Up Feature Flags
+Set Up Rules
+Set Up Approval Flow for Rules in Feature Flags
+Configure Environment-Level Permissions (Open Access)
+Overview of Segmentation
+Configure Segmentation
+Auto-Deploy Winning Variations from A/B Tests
+Set Up Multivariate Rules
+Advanced Debugging
+Wingify Testing vs Wingify Feature Experimentation
+Transitioning from Fullstack to Feature Experimentation
+Best Practices
+SDK Keys in Client-Side Environments
+Caching Layer
+Performance and Benchmarking
+Integrations
+Overview
+Data Export
+Sending Wingify Data
+Google Analytics
+Firebase Analytics
+Mixpanel
+Segment
+Heap
+Amplitude
+Import Events into Wingify
+Google Tag Manager (GTM)
+Trigger Wingify Events Using GTM
+Streaming Events From GTM to Wingify
+Amplitude
+Mixpanel
+Heap
+Segment
+Analytics & Experimentation
+Wingify Insights Mobile
+CI/CD & DevOps
+Github Action
+AI
+MCP Server
+Developer Tools / IDE
+Tech Debt Client
+VS Code Extension
+Collaboration Tools
+Slack
+Content Management System(CMS)
+Contentful
+Observability
+Datadog Triggers
+Sentry Triggers
+New Relic Triggers
+Splunk Triggers
+Shopify Headless
+RESTful APIs
+Overview
+REST APIs
+Example Apps
+Overview
+FAQs
+List of Questions
+CHANGELOG
+History of changes that went live
+Powered by
+Integrations
+AI
+MCP Server
+Introduction
+The
+Wingify FE MCP Server
+serves as a seamless bridge between your development environment and Wingify’s Feature Experimentation. It enables effortless feature flag management by integrating directly with AI-powered IDEs, allowing you to control and optimize feature releases without disrupting your coding workflow.
+Key Features
+AI Assistant Integration
+: Compatible with tools such as
+Cursor
+,
+VS Code
+, and
+Claude
+.
+Feature Flag Management
+: Enables the creation, reading, updating, and deletion of feature flags.
+Environment Control
+: Offers flexibility to enable or disable features in different environments.
+Cursor Rule Setup
+: Bootstrapping simplifies the configuration of Cursor rules to deliver contextual results and integrate with the SDK
+This is ideal for developers who want to manage feature flags efficiently within their IDEs.
+Required Configuration
+To connect the MCP server to the Wingify feature experimentation system, you must configure two essential environment variables:
+WINGIFY_ACCOUNT_ID
+: Wingify Account ID.
+WINGIFY_API_KEY
+: The API key (Developer Token) for authenticating with Wingify REST APIs.
+To create your developer token, please refer to the article
+How to Access Wingify API
+and navigate to the
+Generate API Tokens
+section for step-by-step instructions.
+Setup Instructions
+To begin using the
+Wingify MCP server
+with your client, follow the setup instructions below for popular tools.
+Cursor
+Open
+Cursor Settings
+and navigate to the
+MCP
+section.
+Click on
+Add new global MCP server
+.
+Add the following configuration in
+mcp.json
+, ensuring that you replace the placeholder values with your actual credentials:
+JSON
+{ "mcpServers": { "wingify-mcp-server": { "command": "npx", "args": ["-y", "wingify-fme-mcp@latest"], "env": { "WINGIFY_ACCOUNT_ID": "WINGIFY_ACCOUNT_ID", "WINGIFY_API_KEY": "WINGIFY_API_KEY" } } } }
+Save the configuration and confirm that the server status turns green, indicating it's active.
+Wingify FE MCP Server Setup in Cursor
+📘
+Note:
+If the MCP stays red after being turned on, ensure that you have
+Node.js
+installed, as the MCP requires
+npx
+to install the package. To confirm this, run
+npx -v
+. If you get an error saying the
+npx: command not found
+, then install
+Node.js
+and check again. If you get the correct version of npx, restart the cursor and try turning on the MCP again.
+You can add the Wingify FE MCP Server by simply clicking the button below. Make sure to update the VWO_ACCOUNT_ID and VWO_API_KEY environment variables before you start using it.
+VS Code
+Open the
+User Settings (JSON)
+in VS Code.
+Add or update the MCP server configuration as follows:
+JSON
+"mcp": { "servers": { "wingify-mcp-server": { "command": "npx", "args": ["-y", "wingify-fme-mcp@latest"], "env": { "VWO_ACCOUNT_ID": "VWO_ACCOUNT_ID", "VWO_API_KEY": "VWO_API_KEY" } } } }
+Save the settings and ensure the MCP server is ready for use within VS Code.
+Wingify FE MCP Server Setup in VS Code
+Claude Desktop
+Open the
+Settings
+menu and navigate to the
+Developer
+section.
+Click on
+Edit Config
+to open the
+claude_desktop_config.json
+file.
+Add the following configuration (replacing placeholders with actual credentials):
+JSON
+{ "mcpServers": { "wingify-mcp-server": { "command": "npx", "args": ["-y", "wingify-fme-mcp@latest"], "env": { "WINGIFY_ACCOUNT_ID": "WINGIFY_ACCOUNT_ID", "WINGIFY_API_KEY": "WINGIFY_API_KEY" } } } }
+Save the file and restart Claude Desktop. Once the server is active, a hammer icon will appear in the chat window.
+Wingify FE MCP Server Setup in Claude
+📘
+Looking for other AI Clients?
+For other clients, refer to their documentation on configuring custom MCP servers. The configuration pattern remains similar.
+Available tools
+Here's what you can do with our feature flag management tools:
+IDE Configuration with Wingify
+Add Wingify Rules
+- Retrieve IDE rules and configuration settings to seamlessly manage feature flags within your project. This enables smooth integration with your SDK and leverages Wingify's feature experimentation capabilities.
+Note: Supports both Cursor IDE and VS Code. The tool automatically detects your IDE or you can specify it manually. Needs to be called once after setting up Wingify FE MCP.
+Cursor IDE
+: Creates rules in
+.cursor/rules/wingify-feature-flag-rule.mdc
+VS Code
+: Creates instructions in
+.github/instructions/wingify-fme.instructions.md
+Feature Flags
+Create Feature Flag With Defaults
+- Create a complete feature flag with variables, variations, associated metric, rules, and automatic enablement. This tool handles the entire setup process.
+Create Feature Flag
+- Create a new feature flag into your Wingify account with mandatory requirements like variables, variations and metrics.
+Delete Feature Flag
+- Safely remove any feature flag from your account when it's no longer needed.
+Get Feature Flag
+- Dive into the details of any feature flag to see its current configuration and status.
+List Feature Flags
+- Get a bird's-eye view of all your feature flags in one place.
+Update Feature Flag
+- Fine-tune your feature flags by modifying their properties, metrics, and variations.
+Toggle Feature Flag
+- Instantly enable or disable feature flags in different environments with a single click.
+Find Stale Feature Flags
+- Identify unused or stale feature flags in your codebase by scanning your source code and comparing against active feature flags. This helps maintain clean code by finding feature flags that are no longer referenced in your project.
+Integrate SDK
+- Get comprehensive SDK integration documentation and code examples for seamless feature flag implementation in your project. This tool provides language-specific integration guides without requiring Cursor rule files.
+Feature Flag Rules
+List Feature Flag Rules
+- View all rules associated with your feature flags.
+Create Feature Flag Rules
+- Set up rules for gradual rollout, A/B testing, personalization or multivariate testing of your features.
+Get Feature Flag Rule
+- Examine the details of a specific feature flag rule.
+Toggle Feature Flag Rule
+- Enable or disable specific rules for your feature flags.
+Update Feature Flag Rules
+- Modify existing feature flag rules to change their configuration or targeting.
+Delete Feature Flag Rule
+- Remove unwanted rules from your feature flags.
+Projects and Environments
+List Projects and Environments
+- See all your projects and their associated environments.
+Metrics
+Get Metrics
+- Access metrics for your feature flags and experiments.
+Source Code
+You can browse the source code on Wingify's GitHub repository, Here's the
+link
+How it works
+Starts with a natural language
+prompt
+from a developer or AI agent.
+MCP Plugin acts as the
+orchestrator
+: detecting context, managing IDE rules, interacting with Wingify APIs, and generating SDK code.
+Flags are created/updated in the Wingify dashboard, and integration code is directly injected into the user’s codebase.
+graph TD A[Developer/AI Agent in IDE] --> B{Feature intent detected} B -->|Yes, use VWO SDK| C[MCP Plugin] C --> D[Detect project context: language and structure] D --> E[Generate IDE rules for Cursor] C --> F[Call VWO API to create or update flag] F --> G[VWO FE Dashboard] C --> H[Generate SDK code: getFlag and getVariable] H --> I[Insert integration code into codebase] %% Assign classes class C project class G dashboard class I code %% Define styles classDef project fill:#ff9,stroke:#333,stroke-width:1px,color:#000 classDef dashboard fill:#bbf,stroke:#333,stroke-width:1px,color:#000 classDef code fill:#cfc,stroke:#333,stroke-width:1px,color:#000
+Updated
+3 months ago
+Github Action
+Developer Tools / IDE
+Did this page help you?
+Yes
+No
+Copy Page
+Introduction
+Key Features
+Required Configuration
+Setup Instructions
+Cursor
+VS Code
+Claude Desktop
+Available tools
+IDE Configuration with Wingify
+Feature Flags
+Feature Flag Rules
+Projects and Environments
+Metrics
+How it works

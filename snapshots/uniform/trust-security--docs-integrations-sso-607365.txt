@@ -4,19 +4,19 @@ Integrations
 Select a tab
 Home
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Get started
-Tutorials
 Guides
 APIs
 SDK
 Integrations
+Apps
 Knowledge base
 Changelog
 Search
@@ -53,6 +53,7 @@ Project Tools location
 Dashboard tools location
 Editor state API
 Identity delegation
+On this page
 Single sign-on integrations
 Single sign-on integrations allow you to enable users to log into Uniform using your preferred authentication service, such as Auth0 and Microsoft Entra ID (formerly Azure Active Directly).
 Since these integrations require configuration in Uniform itself, setting up SSO requires you provide the team at Uniform with the following information:
@@ -76,9 +77,14 @@ In addition, Uniform expects the name assertion from this for a SAML connection 
 { "user_id": [ "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn", "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name"], "email": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress", "name": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" }
 Copy
 Copied!
+User deprovisioning
+#
+When an SSO user is removed from their last Uniform team, Uniform permanently erases their account and login. For details on what's erased, see
+delete your account
+.
 Was this page helpful?
 Last modified
-3 minutes ago
+on
 Previous
 ←
 Sending for translation
@@ -86,3 +92,5 @@ Learn and build with our community on Discord
 Check out open sourced examples on GitHub
 Learn about Uniform on YouTube
 Level up your skills in all things headless with Headless Creator
+On this page
+User deprovisioning

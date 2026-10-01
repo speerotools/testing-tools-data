@@ -30,6 +30,7 @@ FAQ
 Developers
 SDKs
 APIs
+CLI
 Destination catalog
 Ad Networks
 Attribution
@@ -117,9 +118,7 @@ that has the following permissions enabled:
 bigquery.transfers.get
 bigquery.transfers.update
 bigquery.datasets.update
-After you create a service account, generate and download the service account key file and upload it to Amplitude.
-Export Amplitude's account key in JSON format
-.
+After you create a service account, generate and download the service account key file and upload it to Amplitude. Export Amplitude's account key in JSON format.
 Set up the integration
 Creating a recurring data export is a three-step process. Each sync completes within ten minutes, and all jobs appear in Amplitude.
 To set up a recurring export of your Amplitude data to BigQuery, follow these steps:
@@ -366,6 +365,7 @@ rn
 1
 ;
 Was this helpful?
+Copy Markdown
 On this page
 Considerations
 Prerequisites
@@ -427,6 +427,9 @@ Privacy Notice
 Acceptable Use Policy
 Legal
 Cookie Settings
+English
+Japanese (日本語)
+Korean (한국어)
 ©
 2012–2026
 Amplitude, Inc.

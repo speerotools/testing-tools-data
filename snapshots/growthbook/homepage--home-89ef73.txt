@@ -1,7 +1,5 @@
 # https://www.growthbook.io/
 GrowthBook | Experimentation, Feature Flags & Product Analytics Platform
-Live Group Demo | Led by a GrowthBook technical expert →
-Choose Your Date
 Products
 Product
 Experimentation
@@ -18,7 +16,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.0: Build, ship, and improve at scale
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
 Solutions
 By Role
 Engineering
@@ -46,6 +44,7 @@ GrowthBook vs Others
 ROI Calculator
 Ecosystem
 Community
+Partners
 Explore
 Why migrate from Statsig to GrowthBook
 Pricing
@@ -86,9 +85,17 @@ Dropbox uses GrowthBook to safely drive AI product development
 3 billion
 feature evaluations daily
 Read the Story
+How the Wikimedia Foundation scaled experimentation for 15B+ monthly page views
++30%
+account creation
+Read the Story
 Breeze Airways scales testing, avoids mistakes, and unlocks millions
 $1MM+
 incremental monthly revenue
+Read the Story
+The Philadelphia Inquirer scales experimentation across the organization
++126%
+premium subscriptions
 Read the Story
 TodayTix Scales Poster Experimentation and Lifts Show Page Views Up to 24%
 24%
@@ -109,14 +116,6 @@ Read the Story
 How Fyxer used AI-powered experimentation to grow from $1M to $35M ARR
 5% to 35%
 paid conversion
-Read the Story
-How Toom increased user learning with GrowthBook
-95% uplift
-loyalty card signups
-Read the Story
-How Floward drove double-digit revenue growth
-YoY sales
-revenue double-digit growth
 Read the Story
 1T+
 Feature flag lookups per day
@@ -167,8 +166,8 @@ GrowthBook low-latency feature flags, high-velocity experimentation, and warehou
 Plans & Pricing
 The latest uplift
 Releases
-GrowthBook 5.0: Build, ship, and improve at scale
-Agents in your workflow, analytics on your warehouse, and experimentation for your whole team
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
+MCP server, Slack app, and contextual bandits
 Guides
 Why migrate from Statsig to GrowthBook
 Experiments
@@ -395,6 +394,9 @@ Repo
 “GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
 Alex Kalish
 Engineering Manager, Dropbox
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
@@ -428,15 +430,15 @@ Head of Insight, TodayTix
 “GrowthBook lets us build experiments exactly how we want. The ability to target based on culture and geography, as granular as needed, is a major win for us.”
 Eslam Samy
 Data Scientist, Floward
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
 GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
 Andy Thäger
 Founder of Creatistas (toom partner)
 "A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
 Kelli Hill, Ph.D.
 Senior Director, Data Insights, Khan Academy
-"Experimentation is core to how Fyxer runs. GrowthBook gives us a way to measure what’s happening, learn from wins and losses, and avoid shipping every risky idea to 100%."
-Kameron Jenkins
-Head of Growth Engineering, Fyxer
 Ready to ship faster?
 No credit card required. Start with feature flags, experimentation, and product analytics — free.
 Get Started
@@ -480,9 +482,9 @@ Company
 About
 Careers
 Contact Us
+Swag Shop
+Support
 Legal
 ©2026 GrowthBook, Inc.
 Terms of Use
 Privacy Policy
-Learn faster with unlimited feature flags, experiments, and traffic. GrowthBook grows with your experimentation culture without penalizing your success.
-Learn faster with unlimited feature flags, experiments, and traffic. GrowthBook grows with your experimentation culture without penalizing your success.
