@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+
+# One-off operational scripts live OUTSIDE this repo (../ops-scripts/), never here.
+# This repo holds only the app/pipeline. Safety net if one is ever copied in:
+apply_seo_edits.py
+apply_seo_meta.py
+push_proposals.py
+proposals.json
