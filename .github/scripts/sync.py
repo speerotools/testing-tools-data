@@ -85,8 +85,9 @@ F = {
     "ayo": "fldNamypy2pKrRbzD",  # Agentic Map Y Override
     "mxo": "fldW3nEUbQRmmjXSm",  # Market Map X Override
     "myo": "fldOGU3c1vDoMH8ml",  # Market Map Y Override
-    # SEO (Phase E). Last Vendor Scrape drives the visible "last verified" date
-    # and JSON-LD datePublished. Meta Title / Description / H1 are only emitted
+    # SEO (Phase E). Last Vendor Scrape is an enrichment timestamp: the page
+    # labels it "Last enrichment" and it is never a review or publication date.
+    # Meta Title / Description / H1 are only emitted
     # when SEO Reviewed is ticked (the publish gate), so unreviewed drafts never
     # reach the live page. OG Image falls back to Logo in the template.
     "scraped":   "fld1x7M0E6FaSLGVe",  # Last Vendor Scrape
@@ -97,6 +98,12 @@ F = {
     "og_image":  "fldM0WRHyUqT1h7BX",  # OG Image (multipleAttachments)
     "logo":      "fldrvnMFBLEtwom6T",  # Logo (fallback for OG image)
     "enrichment": "fldQGRQlzeZBeRxGP",  # Enrichment Status (status pill on the page)
+    # Provenance dates, set by people, never by a fetch or enrichment run.
+    # Fact Verified At covers specific checked claims, not the whole profile;
+    # Editorial Reviewed At is a human editorial approval. Verification Notes
+    # (fldbCqtalHAgS45dj) is internal and deliberately not read here.
+    "fact_verified":      "fldqno2pLju6p4fjk",  # Fact Verified At
+    "editorial_reviewed": "fldxIZycD4S1j059L",  # Editorial Reviewed At
 }
 
 # Master Variables table field that holds the option name
@@ -347,11 +354,17 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
         if val is not None:
             vendor[key] = val
 
-    # SEO fields. Last Vendor Scrape → "last verified"; the Meta/OG fields ride
-    # along once created (and only when SEO Reviewed is ticked, the publish gate).
+    # Last Vendor Scrape → "Last enrichment". The Meta/OG fields ride along
+    # once created (and only when SEO Reviewed is ticked, the publish gate).
     scraped = f.get(F["scraped"])
     if scraped:
         vendor["scraped"] = str(scraped)[:10]
+    # Provenance dates come only from their own fields. A record without them
+    # simply has none: they are never backfilled from scraped or swept.
+    for key, out in (("fact_verified", "factVerifiedAt"), ("editorial_reviewed", "editorialReviewedAt")):
+        val = f.get(F[key])
+        if val:
+            vendor[out] = str(val)[:10]
     if f.get(F["seo_ok"]):  # SEO Reviewed publish gate
         for key, out in (("seo_title", "seoTitle"), ("seo_desc", "seoDesc"), ("seo_h1", "seoH1")):
             val = f.get(F[key])
@@ -374,9 +387,9 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
     # Sources and method: the live Vendor URLs list + enrichment status pill.
     srcs = SOURCES_BY_VENDOR.get(record["id"], [])
     vendor["sources"] = srcs
-    # "Last swept" is the last time we VERIFIED these pages — the newest Last
-    # Fetched among sources that actually returned content (2xx). A page we hit
-    # but got blocked on (4xx/5xx) is not a verification, so it does not count.
+    # "Sources last fetched": the newest Last Fetched among sources that
+    # actually returned content (2xx). A blocked fetch (4xx/5xx) does not count.
+    # A successful fetch is still not a fact check; see factVerifiedAt.
     swept = max((s["fetched"] for s in srcs if s.get("fetched") and s.get("ok")), default="")
     if swept:
         vendor["swept"] = swept
