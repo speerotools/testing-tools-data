@@ -10,7 +10,7 @@ Runs after enrich.py in the same workflow, BEFORE the snapshots are committed, s
 whose hash moved (the high/normal/low buckets in scan-summary.json) are assessed.
 
 Pipeline: changed URL -> unified snapshot diff + current record + allowed options
--> Gemini (native structured output) -> validated proposals -> Proposals rows.
+-> Claude Opus 5.5 (structured output) -> validated proposals -> Proposals rows.
 
 Guardrails (brief §4, §8, §11):
   - Field whitelist (WHITELIST). Anything else is dropped here, and re-checked
@@ -24,24 +24,27 @@ Guardrails (brief §4, §8, §11):
     model emits proposal_type=new_canonical_option for human review.
 
 Environment:
-  GEMINI_API_KEY   required
-  GEMINI_MODEL     default: gemini-2.5-flash
+  ANTHROPIC_API_KEY required
+  ANTHROPIC_MODEL   default: claude-opus-5-5
+  ANTHROPIC_EFFORT  default: medium (low|medium|high|xhigh|max; lower = cheaper)
   AIRTABLE_TOKEN   required (read Database/Master/registry, write Proposals)
   AIRTABLE_BASE_ID default: appRX3rtuXifUnvD4
   SUMMARY_IN       default: scan-summary.json
-  SHADOW           default: "true" — call Gemini, write proposals.json, but do
-                   NOT create Airtable rows
-  DRY_RUN          default: "false" — list changed URLs + diff sizes and exit
-                   WITHOUT calling Gemini (free; for pipeline testing)
-  MAX_ASSESS       default: 40 — abort before any Gemini call if more URLs than
-                   this changed (a flood means noise, not real change — protects
-                   the API bill)
-  ASSESS_LOW       default: "false" — skip the low/marketing-homepage bucket
-                   (churniest, near-zero factual yield) to save Gemini calls
+  SHADOW           default: "true". Call Claude, write proposals.json, but do
+                   NOT create Airtable rows.
+  DRY_RUN          default: "false". List changed URLs + diff sizes and exit
+                   WITHOUT calling Claude (free; for pipeline testing).
+  MAX_ASSESS       default: 40. Abort before any Claude call if more URLs than
+                   this changed (a flood means noise, not real change; protects
+                   the API bill).
+  ASSESS_LOW       default: "false". Skip the low/marketing-homepage bucket
+                   (churniest, near-zero factual yield) to save Claude calls.
   MAX_PROPOSALS    default: 50
 
-Cost note: one Gemini call per changed URL. Expected volume ~7-35/month. The
-MAX_ASSESS guard and skipping 'low' keep a bad scan from running up the bill.
+Cost note: one Claude call per changed URL. Expected volume ~7-35/month. Opus 5.5
+is far pricier than the old Gemini Flash ($4/$20 vs ~$0.10 per MTok), so the
+MAX_ASSESS guard, skipping 'low', and ANTHROPIC_EFFORT keep the bill in check;
+drop to a cheaper model (claude-sonnet-5-5 / claude-haiku-5-5) via ANTHROPIC_MODEL.
 """
 
 from __future__ import annotations
@@ -52,12 +55,17 @@ import subprocess
 import sys
 import time
 import urllib.parse
-import urllib.request
 
 try:
     from pyairtable import Api
 except ImportError:
     print("ERROR: pip install 'pyairtable>=3,<4'", file=sys.stderr)
+    sys.exit(1)
+
+try:
+    import anthropic
+except ImportError:
+    print("ERROR: pip install anthropic", file=sys.stderr)
     sys.exit(1)
 
 BASE_ID   = os.environ.get("AIRTABLE_BASE_ID", "appRX3rtuXifUnvD4")
@@ -83,8 +91,9 @@ ASSESS_SKIP_TYPES = {t.strip().lower() for t in os.environ.get(
     "Blog/Announcements,Sitemap,Homepage,Solutions/Customers,Press").split(",") if t.strip()}
 
 TOKEN = os.environ.get("AIRTABLE_TOKEN")
-GEMINI_KEY = os.environ.get("GEMINI_API_KEY")
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+ANTHROPIC_KEY = os.environ.get("ANTHROPIC_API_KEY")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-opus-5-5")
+ANTHROPIC_EFFORT = os.environ.get("ANTHROPIC_EFFORT", "medium")
 
 # Fields the model may propose (brief §4.1). Linked = resolves to Master Variables.
 LINKED = {"Pricing Model", "AI / Agentic Capabilities", "MCP Capabilities",
@@ -170,33 +179,44 @@ def commit_url(path: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Gemini (native structured output)
+# Claude (structured output)
 # ---------------------------------------------------------------------------
 
-PROPOSAL_SCHEMA = {
-    "type": "ARRAY",
-    "maxItems": 4,   # hard structural cap: a page yielding more is list-enumeration, not change
-    "items": {
-        "type": "OBJECT",
-        "properties": {
-            "field": {"type": "STRING", "enum": WHITELIST},
-            "current_value": {"type": "STRING"},
-            "proposed_value": {"type": "STRING"},
-            "evidence_quote": {"type": "STRING"},
-            "source_url": {"type": "STRING"},
-            "confidence": {"type": "NUMBER"},
-            "rationale": {"type": "STRING"},
-            "change_type": {"type": "STRING", "enum": ["vendor_change", "baseline_correction"]},
-            "proposal_type": {"type": "STRING", "enum": ["field_change", "new_canonical_option"]},
+# Anthropic structured-output schema (output_config.format). Top level must be an
+# object, so the proposals ride in a "proposals" array. maxItems keeps the hard
+# structural cap: a page yielding more than 4 is list-enumeration, not change.
+RESPONSE_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "proposals": {
+            "type": "array",
+            "maxItems": 4,
+            "items": {
+                "type": "object",
+                "properties": {
+                    "field": {"type": "string", "enum": WHITELIST},
+                    "current_value": {"type": "string"},
+                    "proposed_value": {"type": "string"},
+                    "evidence_quote": {"type": "string"},
+                    "source_url": {"type": "string"},
+                    "confidence": {"type": "number"},
+                    "rationale": {"type": "string"},
+                    "change_type": {"type": "string", "enum": ["vendor_change", "baseline_correction"]},
+                    "proposal_type": {"type": "string", "enum": ["field_change", "new_canonical_option"]},
+                },
+                "required": ["field", "current_value", "proposed_value", "evidence_quote",
+                             "source_url", "confidence", "rationale", "change_type", "proposal_type"],
+                "additionalProperties": False,
+            },
         },
-        "required": ["field", "proposed_value", "evidence_quote", "source_url",
-                     "confidence", "rationale", "change_type", "proposal_type"],
     },
+    "required": ["proposals"],
+    "additionalProperties": False,
 }
 
 PROMPT = """You maintain a factual database of A/B-testing and experimentation vendors. A monitored page changed; below is the unified diff of its normalized text, the vendor's current database values, and the allowed options for each linked field. Propose field changes ONLY when the page states a real, verified product fact that the database is missing or has wrong.
 
-Return JSON matching the schema. Default to returning [] — most diffs are copy churn and the correct answer is no proposals.
+Return JSON matching the schema: an object with a "proposals" array. Default to an empty proposals array; most diffs are copy churn and the correct answer is no proposals.
 
 RULES (follow exactly):
 1. ONLY these fields: {whitelist}. Nothing else.
@@ -209,7 +229,7 @@ RULES (follow exactly):
 8. Status (lifecycle): only Active/Acquired/Discontinued/Sunsetting, and ONLY with vendor- or acquirer-owned evidence (sunset notice, acquisition release, a page that stopped selling). A 404/dead page is NEVER grounds for Discontinued.
 9. Price range (low/high) is a 1-5 proxy, not currency; propose only if the diff clearly moves the tier.
 10. Confidence: calibrate honestly. Docs/pricing/trust evidence that explicitly names the fact = high (0.85+). Anything inferred, or from a blog/marketing page = low (below 0.6). Do not return 1.0 unless the quote is unambiguous and from an authoritative page.
-11. HARD LIMIT: propose at most 3 changes for this page, the most significant genuinely-new facts only. NEVER enumerate a list. If a docs/integration/SDK page lists many items, do not turn each into a proposal, that is the page's normal catalog, not a change. If you find yourself wanting to propose more than 3, the page is a list and the right answer is the 1-2 most important truly-new additions, or [].
+11. HARD LIMIT: propose at most 3 changes for this page, the most significant genuinely-new facts only. NEVER enumerate a list. If a docs/integration/SDK page lists many items, do not turn each into a proposal, that is the page's normal catalog, not a change. If you find yourself wanting to propose more than 3, the page is a list and the right answer is the 1-2 most important truly-new additions, or an empty proposals array.
 
 VENDOR: {vendor}
 URL (type: {url_type}): {url}
@@ -225,34 +245,49 @@ UNIFIED DIFF:
 """
 
 
-def gemini_assess(prompt: str) -> list[dict]:
-    body = {
-        "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {
-            "responseMimeType": "application/json",
-            "responseSchema": PROPOSAL_SCHEMA,
-            "temperature": 0,
-        },
-    }
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={GEMINI_KEY}"
-    data = None
+_client = None
+
+
+def _anthropic():
+    """Lazily build the Anthropic client (reads ANTHROPIC_API_KEY)."""
+    global _client
+    if _client is None:
+        _client = anthropic.Anthropic(api_key=ANTHROPIC_KEY)
+    return _client
+
+
+def claude_assess(prompt: str) -> list[dict]:
+    # Structured outputs (output_config.format) instead of Gemini's responseSchema.
+    # Opus 5.5: thinking is always on (adaptive, omit it), forced tool_choice and
+    # temperature are rejected, so a json_schema format block is how we get the
+    # proposals object back. The first text block is guaranteed valid JSON.
     for attempt in range(2):
         try:
-            req = urllib.request.Request(url, data=json.dumps(body).encode(),
-                                         headers={"Content-Type": "application/json"}, method="POST")
-            with urllib.request.urlopen(req, timeout=180) as resp:
-                data = json.loads(resp.read().decode())
-            break
+            resp = _anthropic().messages.create(
+                model=ANTHROPIC_MODEL,
+                max_tokens=16000,
+                messages=[{"role": "user", "content": prompt}],
+                output_config={
+                    "effort": ANTHROPIC_EFFORT,
+                    "format": {"type": "json_schema", "schema": RESPONSE_SCHEMA},
+                },
+            )
+            if resp.stop_reason == "refusal":
+                print(f"  Claude refused: {getattr(resp, 'stop_details', None)}", file=sys.stderr)
+                return []
+            text = next((b.text for b in resp.content if b.type == "text"), "")
+            data = json.loads(text) if text else {}
+            return data.get("proposals") or []
+        except anthropic.APIStatusError as e:
+            if attempt == 0 and (e.status_code == 429 or e.status_code >= 500):
+                time.sleep(4); continue
+            print(f"  Claude API error {e.status_code}: {e}", file=sys.stderr)
+            return []
         except Exception as e:
             if attempt == 0:
                 time.sleep(4); continue
-            raise
-    try:
-        text = data["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text) or []
-    except Exception as e:
-        print(f"  Gemini parse error: {e} | {json.dumps(data)[:400]}", file=sys.stderr)
-        return []
+            print(f"  Claude assess error: {e}", file=sys.stderr)
+            return []
 
 
 # ---------------------------------------------------------------------------
@@ -313,8 +348,8 @@ def options_block(options: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
-    if not GEMINI_KEY or not TOKEN:
-        print("ERROR: GEMINI_API_KEY and AIRTABLE_TOKEN required", file=sys.stderr)
+    if not ANTHROPIC_KEY or not TOKEN:
+        print("ERROR: ANTHROPIC_API_KEY and AIRTABLE_TOKEN required", file=sys.stderr)
         sys.exit(1)
     try:
         summary = json.load(open(SUMMARY_IN))
@@ -346,7 +381,7 @@ def main() -> None:
     # Diff-gate (git is free): keep only URLs whose snapshot ADDED real content.
     # Deletion-heavy / tiny diffs are fetch noise (partial responses, bot walls,
     # the sites' own A/B tests), not vendor changes. This is what stops a noisy
-    # scan from ever reaching Gemini.
+    # scan from ever reaching Claude.
     cands = []
     for item in changed:
         url = item.get("url")
@@ -366,9 +401,9 @@ def main() -> None:
     cands.sort(key=lambda c: -c["added"])
     if len(cands) > MAX_ASSESS:
         print(f"{len(cands)} substantive diffs; assessing the top {MAX_ASSESS} by added content, "
-              f"deferring {len(cands) - MAX_ASSESS} to keep the Gemini bill bounded.")
+              f"deferring {len(cands) - MAX_ASSESS} to keep the Claude bill bounded.")
         cands = cands[:MAX_ASSESS]
-    print(f"Assessing {len(cands)} URLs after diff-gating {before} changed (shadow={SHADOW}, model={GEMINI_MODEL}).")
+    print(f"Assessing {len(cands)} URLs after diff-gating {before} changed (shadow={SHADOW}, model={ANTHROPIC_MODEL}, effort={ANTHROPIC_EFFORT}).")
 
     if DRY_RUN:
         for c in cands:
@@ -385,9 +420,9 @@ def main() -> None:
             url_type=url_type, url=url, current=current_values(db[rid]),
             options=opts_txt, diff=diff[:12000])
         try:
-            raw = gemini_assess(prompt)
+            raw = claude_assess(prompt)
         except Exception as e:
-            print(f"  Gemini call failed for {url}: {e}", file=sys.stderr)
+            print(f"  Claude call failed for {url}: {e}", file=sys.stderr)
             continue
         for p in raw:
             if p.get("field") not in WHITELIST:

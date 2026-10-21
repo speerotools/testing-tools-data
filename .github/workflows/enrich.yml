@@ -35,7 +35,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install "pyairtable>=3,<4"
+        run: pip install "pyairtable>=3,<4" anthropic
 
       - name: Run enrichment monitor
         env:
@@ -49,14 +49,16 @@ jobs:
           fi
 
       # P2: turn snapshot diffs into proposals. Shadow by default (writes
-      # proposals.json, no Airtable rows). Cost-guarded: one Gemini call per
+      # proposals.json, no Airtable rows). Cost-guarded: one Claude call per
       # changed URL, aborts on a flood (MAX_ASSESS). continue-on-error so a
-      # Gemini hiccup never fails the scan itself.
+      # Claude hiccup never fails the scan itself.
       - name: Assess changes into proposals
         if: github.event.inputs.mode != 'baseline'
         continue-on-error: true
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-opus-5-5' }}
+          ANTHROPIC_EFFORT: ${{ vars.ANTHROPIC_EFFORT || 'medium' }}
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           SHADOW: ${{ vars.PROPOSALS_SHADOW || 'true' }}
         run: python .github/scripts/assess.py
