@@ -18,6 +18,7 @@ TEST
 Template Testing
 Theme Testing
 URL Redirect Testing
+Personalizations
 Price Testing
 JavaScript API Testing
 Overview
@@ -29,7 +30,8 @@ Campaigns
 Test Planning
 Test Management
 Lift Assist™
-Audiences & Targeting
+Roadmap
+Audiences
 Preview Mode
 QA Checklist
 Scheduling Tests
@@ -46,6 +48,7 @@ How Shoplift Calculates Conversion Rate
 Does A/B testing affect my ads?
 integrate
 GA4
+Klaviyo
 Subscription Apps
 Page Builder Apps
 Heatmap Integration
@@ -76,8 +79,6 @@ JavaScript API Testing
 Shoplift's JavaScript API enables you to create sophisticated A/B tests directly in your theme code, giving you complete control over test logic and visitor experiences.
 API tests require developer involvement. Most merchants will need their developer or agency to write the JavaScript and (for manual API tests) implement the trigger logic.
 To learn more about API testing, explore the documentation below.
-This guide covers basic usage of the JavaScript API for API testing purposes. For a full API reference, see
-.
 Overview
 Use Cases
 Create an API Test
@@ -88,7 +89,7 @@ Subscription Price Testing
 Next
 Overview
 Last updated
-5 months ago
+3 days ago
 Was this helpful?
 Contact Us
 Get help

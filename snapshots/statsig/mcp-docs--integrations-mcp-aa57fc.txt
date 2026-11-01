@@ -22,16 +22,19 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-End An Experiment
 Read Results
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -52,12 +55,16 @@ Session Replay
 Statsig + AI
 MCP
 Overview
-Docs MCP server
 Statsig MCP with Codex
 Statsig ChatGPT App
+Claude connector
 Statsig MCP with Cursor
 Statsig MCP with Claude Code
 Statsig MCP with Other MCP-Compatible Clients
+Enterprise-managed auth
+Reference
+Legacy V1
+Docs MCP server
 Agent Skills Repository
 AI Development with Statsig
 Github AI Integration
@@ -76,6 +83,8 @@ Migration Guides
 FAQ
 On this page
 MCP configuration guides
+Enterprise-managed authorization
+Reference and automation
 Current MCP capabilities
 Use cases
 Example prompt for stale gate cleanup
@@ -98,19 +107,83 @@ Claude Code
 Set up Statsig MCP in Claude Code.
 Manual setup
 Manual configuration for any MCP-compatible tool.
+Enterprise-managed auth
+Connect Claude through your identity provider.
+Enterprise-managed authorization
+Admins can configure Claude's connection to Statsig centrally instead of asking each member to authenticate. Claude acts as the person already signed in, and Statsig applies that person's project permissions and review requirements.
+Statsig supports two identity modes: Claude-issued identity, which works without Statsig SSO, and Okta OIDC Cross App Access, which reuses your existing Statsig SSO configuration. Both modes need the target project's Tenant ID. To set either one up, go to
+Enterprise-managed authorization for Statsig MCP
+.
+Reference and automation
+Tool reference
+Look up MCP tools, actions, and inputs.
+Automation examples
+Call the V3 server from scheduled and CI jobs.
 Current MCP capabilities
-Audit Logs
-Dynamic Configs
-Experiments (A/B Tests)
-Autotunes
-Gates (Feature Flags)
-Layers
-Metrics and Metric Sources
-Parameter Stores
-Segments
-Reviews
-Logs and Observability
-Need other functions? Statsig considers additions by request. Reach out in Slack.
+Statsig MCP exposes 18 default tools. Tool visibility depends on your permissions and the server configuration.
+Tool group
+What it does
+Context and search
+get_context
+returns your project, permissions, and review settings.
+search
+and
+fetch
+find and retrieve Statsig resources.
+Read tools
+gate_read
+,
+experiment_read
+,
+dynamic_config_read
+,
+metric_read
+, and
+log_read
+list and inspect gates, experiments, dynamic configs, metrics, metric sources, audit logs, and Logs Explorer data. Each takes an
+action
+.
+Create tools
+gate_create
+,
+experiment_create
+, and
+dynamic_config_create
+create new resources. These tools require write access.
+Update tools
+gate_update
+,
+experiment_update
+, and
+dynamic_config_update
+replace an existing resource. These tools require write access and a
+confirmation
+.
+Discovery tools
+discover_tools
+finds other operations, including layers, segments, Parameter Stores, Autotunes, holdouts, prompts, tags, dashboards, reviews, and partial updates.
+api_read
+,
+api_write
+, and
+api_destructive
+run the operation you discover.
+Clients that use expanded tool exposure also show typed tools for layers, segments, Parameter Stores, and Autotunes.
+Your agent can find and run any operation that Statsig exposes through discovery, without a dedicated tool. For the inputs each tool accepts, go to the
+tool reference
+.
+Safety and confirmation
+Update tools and
+api_destructive
+operations require a
+confirmation
+. Review each change before your agent supplies a
+confirmation
+.
+api_destructive
+covers sensitive updates and review actions, not only deletion.
+Project permissions and review policies still apply. Approving a review doesn't commit its changes.
+Legacy V1 resources
 Use cases
 The Statsig MCP server supports both
 GET
@@ -121,18 +194,20 @@ Repetitive tasks like cleaning up stale gates
 Summarizing console information in your IDE workflows
 Bulk creating or deleting gates, and making the necessary changes in your code
 Example prompt for stale gate cleanup
-plaintext
+text
 Copy
 You are an expert, diligent Software engineer with the sole goal of reducing the amount of tech debt in the code base. This code base, making use of best practices, leverages feature gates liberally using Statsig. As gates complete their lifecycle in Statsig, they may end up "stale" which means that they're enabled, but no longer checked. Your job is to find these gates, and refactor the codebase to no longer check the gate (instead, changing the check to a constant value).
 You should follow coding best practices:
 - You should not simply replace gate calls with "True" or "False" but instead carefully trace the logic through to where it is used and change the behavior that way - adjusting the code in minor ways to make the default behavior what the value is that the gate was returning
 - You should always strive to write minimal code - readable but terse, never longer than it needs to be
 - You should never write comments or debug statements.
-You should use the statsig-local MCP to list feature gates, then look for gates that are marked as stale. You should then grep the codebase for that feature flag name, and do a minimal rewrite of the code to no longer use Statsig, removing the checkGate call or similar. When you use the MCP use the get /console/v1/gates endpoint and parameters type="STALE" and limit =10. You should select only one gate to do this with, before stopping. If you cannot find the gate after a grep, try the next one you found using the MCP. Once you successfully remove a gate, return.
+You should use the statsig-local MCP to list feature gates, then look for gates that are marked as stale. You should then grep the codebase for that feature flag name, and do a minimal rewrite of the code to no longer use Statsig, removing the checkGate call or similar. When you use the MCP, list gates with type="STALE" and limit=10. Call gate_read with the get_list_of_gates action and the parameters query_type and query_limit. You should select only one gate to do this with, before stopping. If you cannot find the gate after a grep, try the next one you found using the MCP. Once you successfully remove a gate, return.
 Was this helpful?
 Copy Markdown
 On this page
 MCP configuration guides
+Enterprise-managed authorization
+Reference and automation
 Current MCP capabilities
 Use cases
 Example prompt for stale gate cleanup

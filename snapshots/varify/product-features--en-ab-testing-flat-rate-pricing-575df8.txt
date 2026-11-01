@@ -56,6 +56,15 @@ flat-rate pricing
 : €199/month for the Growth plan with unlimited experiments and unlimited traffic. Whether you have 10,000 or 1,000,000 monthly visitors, the price stays the same. No MTU calculations, no tier upgrades, no surprise invoices. For the full comparison, see our
 European SMB tools guide
 .
+Your next A/B test is
+one prompt away.
+Describe the change. The AI builds the variant for you.
+Start your free trial →
+15 days free · no credit card
+Add customer reviews under the headline.
+A
+B
+★★★★★
 The problem with traffic-based A/B testing pricing
 Costs scale when they shouldn't
 Your A/B testing tool costs should scale with the value you get, not with your raw traffic. A site with 500K visitors running 3 tests doesn't need 5× the infrastructure of a site with 100K visitors running 3 tests. Yet traffic-based pricing charges 5× more.
@@ -65,6 +74,19 @@ Growth penalty
 The irony: successful companies get penalized. As your marketing improves and traffic grows, your testing costs increase. This creates perverse incentives to limit testing scope or avoid testing during high-traffic periods — exactly when testing matters most.
 Opaque pricing tiers
 Many tools don't publish pricing at all (Kameleoon, AB Tasty pre-merger). Others have complex tier systems where crossing a threshold (50K MTU → 100K MTU) triggers a significant price jump. Flat-rate eliminates this entirely.
+AI finds ideas for
+more conversions.
+Enter a page URL. The AI suggests concrete ideas to A/B test.
+Start your free trial →
+15 days free · no credit card
+AI CRO Audit
+3 ideas found
+Add reviews under the headline
+Build
+Shorten the sign-up form
+Build
+Highlight the main button
+Build
 Pricing models compared
 Tool
 Pricing model
@@ -127,7 +149,7 @@ Frequently asked questions about A/B testing pricing
 What happens if my traffic exceeds expectations with Varify?
 Nothing. Your price stays at €199/month (Growth) or €249/month (Pro) regardless of traffic volume. There are no overage charges, no tier upgrades, no surprise bills. This is the core promise of flat-rate pricing.
 How does Varify afford unlimited traffic at flat-rate?
-Varify doesn't build its own tracking infrastructure — it uses your existing analytics (GA4, BigQuery, Matomo). This means Varify's server costs don't scale linearly with your traffic. The snippet delivery is lightweight (11.5 KB cached), and the computation happens in your analytics tool, not on Varify's servers.
+On the analytics path, Varify doesn't run tracking infrastructure of its own — it uses your existing analytics (GA4, BigQuery, Matomo). This means Varify's server costs don't scale linearly with your traffic. The snippet delivery is lightweight (11.5 KB cached), and the computation happens in your analytics tool, not on Varify's servers. Varify Realtime Tracking, a dedicated Varify tracking service with results in Varify Reporting, is the optional second path.
 Is Varify's flat-rate pricing really cheaper than VWO?
 For most sites, yes. VWO's entry point is $299/month for limited MTU. At 200K+ monthly visitors, VWO typically costs $500-800/month. Varify is €199/month regardless of traffic. The only scenario where VWO is cheaper: if you need heatmaps + recordings + testing in one tool and don't already have Hotjar/Clarity.
 Can I switch from annual contracts at other tools to Varify's monthly billing?

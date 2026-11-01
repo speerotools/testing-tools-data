@@ -5,6 +5,10 @@ Fetch the complete documentation index at:
 /llms.txt
 Use this file to discover all available pages before exploring further.
 Skip to main content
+New:
+See what we've shipped lately on our
+Product Updates
+page.
 GrowthBook Documentation
 home page
 Docs
@@ -13,8 +17,9 @@ API
 Search...
 ⌘
 K
+Product Updates
 Github
-Log in
+Open App
 GrowthBook Documentation
 home page
 Search or ask...
@@ -39,12 +44,14 @@ AI Agents
 Setup Wizard
 MCP Server
 Agent Skills plugin
+API Keys for Agents
 Vercel
 Official GrowthBook for Framer Plugin
-Slack integration
+Slack
 Discord integration
 Datadog Integration
 GitHub (Metric Definitions)
+dbt (Semantic Layer)
 DevTools Browser Extension
 VS Code Extension
 GrowthBook Command Line Interface (CLI)
@@ -146,7 +153,15 @@ https://mcp.growthbook.io/mcp
 GrowthBook Cloud
 If you use
 GrowthBook Cloud
-, connect your MCP client to the hosted server. You sign in with OAuth in the browser — no API key in the MCP config.
+, connect your MCP client to the hosted server. You sign in with OAuth in the browser — no API key in the MCP config. The consent page asks what the connection may do:
+Read only
+,
+Human-in-the-Loop
+(the default, where risky changes wait for you to
+confirm them
+),
+Full access
+, or custom permissions.
 Endpoint
 Tools
 https://mcp.growthbook.io/mcp
@@ -262,7 +277,13 @@ API Keys
 Account
 →
 Personal Access Tokens
-. A PAT is recommended so actions are attributed to your user and scoped to your permissions.
+. A PAT is recommended so actions are attributed to your user and scoped to your permissions. With a Secret Key, set
+GB_HTTP_HEADER_X_GROWTHBOOK_REQUESTED_BY
+to your email to name yourself on each change. To have a person confirm risky changes before they run, turn on
+Require confirmation
+for the key. See
+API Keys for Agents
+.
 Add an MCP server entry that runs
 npx
 with env vars:
@@ -423,7 +444,7 @@ instead.
 Option B: Official Docker image
 Run the same HTTP MCP server GrowthBook Cloud uses, against your own API. Clients connect with a URL and OAuth — no API key in the MCP client config.
 Prerequisites
-Your GrowthBook API must expose the OAuth 2.1 Authorization Server. Set
+Your GrowthBook API must expose the OAuth 2.1 Authorization Server. It’s on by default; on older versions, set
 OAUTH_AS_ENABLED=1
 on the API process (see
 Environment variables
@@ -576,6 +597,7 @@ Next
 ⌘
 I
 On this page
+Back to top
 How it works
 GrowthBook Cloud
 Cursor

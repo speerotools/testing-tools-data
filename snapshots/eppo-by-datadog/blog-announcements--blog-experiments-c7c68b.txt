@@ -595,19 +595,121 @@ Agent Directory
 API
 Marketplace
 Service Level Objectives
+Observability
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Digital Experience
+Digital Experience
+Product Analytics
+Experiments
+Browser Real User Monitoring
+Mobile Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Security
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Sensitive Data Scanner
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+Software Delivery
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+DORA Metrics + AI Impact
+Service Management
+Incident Response
+Incident Management
+Work Management
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Software Catalog
+AI
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+MCP Server
+Pup CLI
+Platform Capabilities
+Built-in Features
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+Agent Directory
+API
+Marketplace
+Service Level Objectives
 Resources
 Pricing
-Documentation
-Support
-Services & Enablement
-Product Preview Program
-Certification
-Open Source
 Events and Webinars
-Security
-Privacy Center
+Product Preview Program
+Documentation
 Knowledge Center
 Learning Resources
+Support
+Services & Enablement
+Certification
+Open Source
+Architecture Center
 Blog
 The Monitor
 Engineering
@@ -619,11 +721,12 @@ Partners
 Press
 Leadership
 Careers
-Legal
 Investor Relations
 Analyst Reports
 ESG Report
 Vendor Help
+Legal
+Privacy Center
 Trust Hub
 Download mobile app
 © Datadog 2026

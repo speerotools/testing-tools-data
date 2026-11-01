@@ -121,14 +121,10 @@ Group Analytics
 Everything lives in your context warehouse
 Use PostHog as the full context layer for your product, or mix and match with your own tools.
 Data Sources
-Sources & Import (ELT)
-Regularly sync or bulk import data into your warehouse from databases, ad platforms, SaaS tools, and more.
-Managed Warehouse
+Data pipelines
+Sync data in from your tools and databases, transform events as they arrive, and send data to the rest of your stack.
+Warehouse
 Store, query, and join your product and business data in one place without maintaining any infrastructure.
-CDP
-Ingest, transform, and route data between PostHog and the rest of your stack in real time.
-Batch Exports
-Send PostHog data to your existing warehouse or data lake on a schedule you control.
 Data Modeling
 Models
 Define your metrics to keep them consistent across PostHog products, update them on a schedule.
@@ -141,15 +137,11 @@ SQL Editor
 Write and run HogQL or standard SQL directly against your data. For when you know exactly what you want and just need to ask for it properly.
 Notebooks
 Combine insights, replays, flags, experiment results, and SQL into a single document. For when your analysis has a story and a dashboard isn't the right way to tell it.
-Reverse ETL
-Send data back to the tools that need it. Keep your CRM, support tools, and marketing platforms in sync.
 Business Intelligence
 Visualize your data with interactive dashboards and ad-hoc analyses right in PostHog.
 Learn it by use case
 Pocket guide to
 Self-driving
-Vol.
-1
 6
 guides
 The pocket guide to

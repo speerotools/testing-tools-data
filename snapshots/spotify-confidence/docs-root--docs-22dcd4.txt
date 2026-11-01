@@ -1,5 +1,5 @@
 # https://confidence.spotify.com/docs
-Introduction - Confidence Documentation
+What Is Confidence - Confidence Documentation
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
@@ -12,11 +12,25 @@ home page
 Search...
 ⌘
 K
-Blog
+Start
+Quickstart with Confidence CLI
+Confidence Cloud
+Warehouse Native Confidence
+Guides
+Capabilities
+Migrations
+Platform & governance
+Troubleshooting
 Bootcamp
 Support
 Status
 Confidence App
+Log In
+Documentation
+SDKs
+MCP
+API Reference
+Changelog
 Sign up and get started with Confidence today!
 Create your account
 Confidence Documentation
@@ -27,51 +41,77 @@ K
 Ask Assistant
 ⌘
 I
+Bootcamp
 Support
 Status
+Log In
 Confidence App
 Confidence App
 Search...
 Navigation
-Get Started
-Introduction
-Get Started
-Introduction
-Copy page
-Copy page
-Welcome to the Confidence documentation
-Copy page
-Copy page
-​
-Welcome to Confidence
-Confidence is a comprehensive experimentation and feature management platform that helps teams make data-driven decisions.
-Get Started
-Follow our onboarding guide to get started with Confidence
-Quickstarts
-Jump right in with our quickstart guides
-API Reference
-Explore our comprehensive API documentation
+Start
+What Is Confidence
+Documentation
 SDKs
-Learn about our SDKs and integrations
+MCP
+API Reference
+Changelog
+Start
+What Is Confidence
+Copy page
+Copy page
+Confidence is a product platform for shipping features, measuring their impact, and turning user behavior into product insights. Built and used at Spotify.
+Copy page
+Copy page
+Run experiments, manage feature flags, track metrics, explore your data, and watch user sessions in one place. Spotify built Confidence to run its own product development: hundreds of teams use it to run thousands of experiments, and the same statistics engine and experimentation workflows power every Confidence account.
+​
+What You Can Do
+Test and ship
+—Run A/B tests and rollouts, release features behind flags, and target the right users with segments. Every decision rests on metrics you define once and reuse.
+Learn and iterate
+—Ask questions of your product data with Insights, watch real sessions with Recordings, and feed what you learn into the next experiment.
+Organize
+—Group experiments and flags by product area with Surfaces, so every team sees its own work and the metrics that matter to it.
+Work with AI
+—The Confidence Agent in the app and in Slack creates experiments and rollouts, explains results, and explores your data. It launches anything only after you confirm. MCP servers bring flags, events, metrics, and experiment results into Claude Code, Cursor, VS Code, or any AI assistant that supports MCP.
+​
+Get Started Right Away
+Every new account runs on Confidence Cloud by default. Your account comes with User and Visitor entities, a
+tutorial-feature
+flag, a client, and demo metrics and experiments so you can explore the platform before your own data arrives.
+Run the setup wizard from your project folder. It signs you in, connects your AI assistant, and adds flags, events, or recordings to your code:
+npx
+@spotify-confidence/quickstart
+Already connected the Confidence MCP servers? Ask your AI assistant:
+Add a Confidence feature flag called new-checkout to this project,
+wire it into the checkout page, and show me how to test both variants.
+To run Confidence on your own BigQuery, Snowflake, Redshift, or Databricks instead, see
+Warehouse Native Confidence
+. To compare the two, see
+Confidence Cloud
+.
 Quickstart with the CLI
-Set up flags, event tracking, or session recordings in your project, then manage them from Claude Code, Cursor, or Codex.
+—Set up flags, events, or recordings, then manage them from your IDE or terminal.
+Run an A/B Test
+—Set up and launch your first experiment in the app.
+Add a Feature Flag
+—Create a flag with targeting rules and roll it out.
+Migrate to Confidence
+—Move flags and experiments from PostHog, Eppo, Statsig, or Optimizely with AI-powered migration kits.
 ​
-What is Confidence?
-Confidence provides powerful tools for:
-Feature Flags
-: Control feature rollouts with flexible targeting rules
-Experimentation
-: Run A/B tests and analyze results with statistical rigor
-Metrics
-: Define and track business metrics across your organization
-Data Warehouse Native
-: Leverage your existing data infrastructure
-​
-Choose Your Path
-Warehouse-Native
-Built on top of your data warehouse
-Platform Approach
-Extensible platform for custom workflows
+Learn More
+Set Up Your Organization
+—For admins: add a second admin and invite your team.
+Capabilities
+—Detailed documentation for every product capability.
+Guides
+—Complete one job from start to finish.
+Set Up Confidence for Your AI Assistant
+—Connect MCP servers to your AI assistant.
+API Reference
+—Explore the Confidence API.
+SDKs
+—Client libraries and integrations.
 Was this page helpful?
 Yes
 No
@@ -81,9 +121,10 @@ twitter
 github
 linkedin
 On this page
-Welcome to Confidence
-What is Confidence?
-Choose Your Path
+Back to top
+What You Can Do
+Get Started Right Away
+Learn More
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

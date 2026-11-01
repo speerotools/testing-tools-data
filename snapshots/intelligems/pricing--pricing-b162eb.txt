@@ -363,17 +363,61 @@ Our team manages it all: testing roadmap, implementation, building tests, report
 Request a demo
 FAQ
 Frequently asked questions
-How does the free trial work?
-Every plan starts with a 14-day trial — no credit card required. You get full access to the entire Intelligems platform except Smart Pricing.
-Try for free
-What are the bundle discounts?
-When you build your own plan you get 5% off with 2 modules, 10% off with 3, and 15% off with 4 or more. (Expert Support is excluded from the discount.)
-What's the difference between Limited and Unlimited pricing?
-Limited (Tier 1) includes 1 price test per month (12 per year) with a 3-month minimum commitment. Unlimited (Tier 2) gives you unlimited concurrent tests plus multi-currency pricing support, also with a 3-month minimum.
+Plans and modules
+How does Intelligems pricing work?
+Intelligems is priced per store, based on your monthly order volume. Every plan starts with Smart Content. Add the modules you need including Smart Merchandising, Smart Pricing, Smart Shipping, Smart Checkout & Post-Purchase, or choose Unlimited to get all of them. You pay a flat monthly fee for your volume tier, with no per-visitor charges and no overages. Build Your Own plans start at $69/month at the lowest order volume tier. Annual billing is 20% off.
+Which module do I need?
+It depends on what you want to test or personalize:
+Smart Content
+: landing pages, images and copy, themes and templates, split URL tests, on-site personalization. Included in every plan.
+Smart Merchandising
+: discounts, gifts with purchase, quantity breaks, progress bars, cart and product page upsells.
+Smart Pricing
+: product prices, subscription prices, compare-at prices, multi-currency pricing.
+Smart Shipping
+: shipping rates and free shipping thresholds and offers.
+Smart Checkout
+&
+Post-Purchase
+: checkout blocks like trust badges and upsells (Shopify Plus), plus one-click post-purchase offers.
+Is Smart Content included in every plan?
+Yes.
+Smart Content
+is the base of every Intelligems plan and covers content tests, theme and template tests, split URL tests, and on-site personalizations. Other modules are added on top of it. For example: you can't buy Smart Pricing or Smart Shipping on their own.
+What's included on every paid plan?
+Every Intelligems plan includes
+multi-variant testing
+(up to five groups per test, so A/B/C/D/E, not just A/B),
+personalizations
+for the modules you have,
+Sitewide Analytics
+, the
+Intelligems MCP server
+for Claude, ChatGPT and Gemini, Intelligems AI (Atlas), the
+AI Visual Builder
+, unlimited users and visitors, and Slack and email support.
+What's the difference between Smart Pricing Limited and Unlimited?
+Smart Pricing
+Limited gives you one active price test per month in your store's default currency. One test can cover as many products as you like, from a single SKU to your whole catalog, with up to five price points. Smart Pricing Unlimited lets you run price tests at the same time, iterate as often as you want, and test in multiple currencies. Both include the price test integration our team builds for your store, and both have a 3-month minimum.
 What's included in the Unlimited plan?
-The Unlimited plan is Intelligems' all-in-one bundle that includes every module — Smart Content, Smart Pricing (with unlimited price tests and multi-currency support), Smart Checkout & Post-purchase, Smart Merchandising, and Smart Shipping — plus a Dedicated Customer Success Manager, storefront audit and testing roadmap, white glove onboarding and price integration, quarterly impact reviews, unlimited AI usage, custom integrations, and early access to new AI features.
-Can I change plans later?
-Yes. You can add or remove modules, switch tiers, or upgrade to Unlimited at any time. Changes take effect on your next billing cycle.
+Unlimited
+is every module in one plan: Smart Content, Smart Merchandising, Smart Pricing (unlimited tests and multi-currency), Smart Shipping, and Smart Checkout & Post-Purchase, with unlimited tests and personalizations and unlimited AI usage. Unlimited is usually the better deal once you want three or more modules, or any price testing module.
+Do I need Shopify Plus?
+No. Intelligems works on every Shopify plan. Two features depend on your Shopify plan:
+checkout tests and checkout personalizations
+need Shopify Plus, and shipping rate tests need Shopify Advanced or Plus (Shopify's carrier rate API). Price tests, content tests, merchandising offers, and post-purchase upsells work on any Shopify plan. Intelligems is built for Shopify and doesn't run on other platforms.
+Can I test subscription prices?
+Yes, with either the Smart Pricing Limited or Unlimited module, or the Unlimited plan.
+Getting started
+How does the free trial work?
+Every new store gets a 14-day trial. The trial includes every module except Smart Pricing, which needs a paid plan because our team builds an integration for your store. There's no free trial available for the Unlimited plan.
+Try for free
+Why is there a 3-month minimum on the Smart Pricing modules and the Unlimited plan?
+Price testing needs a one-time integration our team builds for your store, and one test rarely tells the whole story. So Smart Pricing (Limited and Unlimited) and the Unlimited plan carry a 3-month minimum. All other modules are month-to-month.
+Can I change my plan later?
+Yes, but removing modules depends on the timing of your billing cycle. Add a module any time and it's available immediately, prorated for the rest of your billing cycle. Remove a module or downgrade and it takes effect at the end of your billing cycle, so you keep access until then.
+How do bundle discounts work when adding multiple modules to my plan?
+Build your own plan and the discount applies automatically: 5% off with two modules, 10% off with three, and 15% off with four or more. Annual billing takes a further 20% off.
 ↗ Grow profit, not just traffic
 Ready to grow your bottom line?
 We've run countless e-commerce experiments. Book a call with our team, or start your free trial and launch your first test this week.
@@ -392,12 +436,19 @@ Atlas AI
 Targeting & Segmentation
 Analytics
 AI Visual Builder
+Product Recommendations
 Integrations
 MCP
 Claude Connection
 App
 Pricing
 Book A Demo
+Compare
+Shoplift
+Visually
+Rebuy
+PDQ
+VWO/Wingify
 Resources
 BFCM Hub
 Customer Stories
@@ -427,12 +478,19 @@ Atlas AI
 Targeting & Segmentation
 Analytics
 AI Visual Builder
+Product Recommendations
 Integrations
 MCP
 Claude Connection
 App
 Pricing
 Book A Demo
+Compare
+Shoplift
+Visually
+Rebuy
+PDQ
+VWO/Wingify
 Resources
 BFCM Hub
 Customer Stories
@@ -462,12 +520,19 @@ Atlas AI
 Targeting & Segmentation
 Analytics
 AI Visual Builder
+Product Recommendations
 Integrations
 MCP
 Claude Connection
 App
 Pricing
 Book A Demo
+Compare
+Shoplift
+Visually
+Rebuy
+PDQ
+VWO/Wingify
 Resources
 BFCM Hub
 Customer Stories

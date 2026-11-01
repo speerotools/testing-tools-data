@@ -70,7 +70,13 @@ Variation 1
 7.4 %
 Significance 97 %
 Declare winner
-2.700+ teams trust Varify
+2,700+ teams trust Varify
+G2 REVIEWS
+4.9
+(
+57
+)
+★★★★★
 All Varify features at a glance
 Open a category to see everything it contains.
 160+ features
@@ -303,7 +309,7 @@ Results you can defend in a management meeting — with real statistics.
 30 features
 +
 ✓
-Varify real-time tracking
+Varify Realtime Tracking
 Live results as conversions happen — no analytics connection required.
 ✓
 Evaluation of Google Analytics 4 goals
@@ -578,7 +584,7 @@ A shared Slack channel with direct access to your Varify contacts.
 Phone
 Direct phone support for urgent topics.
 Services
-Hands-on help — from onboarding to running the programme with you.
+Hands-on help — from onboarding to running the program with you.
 5 features
 +
 ✓
@@ -643,7 +649,7 @@ What you get with every feature
 No traffic pricing
 With GA4 analytics your tested users are unlimited — 10,000 or 10 million users cost the same.
 Cookie-less & EU-hosted
-No personal data, no consent hurdle — stored and processed inside the EU.
+Varify sets no cookies. A consent option is built in; whether you need it is up to your legal review. The application runs on AWS in Frankfurt. Delivery runs through Cloudflare's global network. All sub-processors and transfer bases are listed in Annex 5 of our DPA.
 No flicker
 Anti-flicker script plus CDN delivery — the original never flashes.
 Full product in the trial
@@ -658,13 +664,13 @@ Will I be charged for my traffic?
 No. With a GA4 analytics connection your tested users are unlimited. Varify bills in credits — one credit equals one domain per month, whether you test 10,000 or 10 million users.
 How does Varify handle cookies and personal data?
 +
-Varify sets no cookies on your visitors and processes no personal data. Experiment assignment is kept in the browser of your visitor via local and session storage, and everything on our side is stored and processed in the EU. How that fits your consent setup is a decision for your own legal and privacy team; we provide the technical details and our DPA.
+Varify sets no cookies on your visitors. Varify does not store any personal data. Experiment assignment is kept in the browser of your visitor via local and session storage. The application runs on AWS in Frankfurt. Delivery runs through Cloudflare's global network. All sub-processors and transfer bases are listed in Annex 5 of our DPA. How that fits your consent setup is a decision for your own legal and privacy team; we provide the technical details and our DPA.
 Do I need developers?
 +
 Usually not — if you can add the Varify snippet yourself, for example through your tag manager or CMS, you are set up. From there variations are built in the visual editor, with a JavaScript and CSS editor available for edge cases.
 What can the AI features do?
 +
-Prompt Based Experiments (PBX) is the core: describe the change in your native language and AI builds the variation including its code — then you refine it in the visual editor like any other variation. On top of that, the AI CRO Audit suggests prioritised test ideas and the AI Results Summary explains an outcome in your native language.
+Prompt Based Experiments (PBX) is the core: describe the change in your native language and AI builds the variation including its code — then you refine it in the visual editor like any other variation. On top of that, the AI CRO Audit suggests prioritized test ideas and the AI Results Summary explains an outcome in your native language.
 Does Varify work with single-page apps?
 +
 Yes. Experiments and goals can be triggered on route changes and custom events — documented for the common frameworks.

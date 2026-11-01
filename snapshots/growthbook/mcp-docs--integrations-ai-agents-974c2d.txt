@@ -1,0 +1,167 @@
+# https://docs.growthbook.io/integrations/ai-agents
+Connect AI Agents to GrowthBook - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+New:
+See what we've shipped lately on our
+Product Updates
+page.
+GrowthBook Documentation
+home page
+Docs
+SDKs
+API
+Search...
+⌘
+K
+Product Updates
+Github
+Open App
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+AI Agents
+Connect AI Agents to GrowthBook
+Overview
+How it works
+Quickstart
+Command Palette
+Feature Flags
+Data & Metrics
+Experimentation
+Insights
+Product Analytics
+NEW
+Self-Hosting
+API
+Webhooks
+Integrations
+AI Agents
+Setup Wizard
+MCP Server
+Agent Skills plugin
+API Keys for Agents
+Vercel
+Official GrowthBook for Framer Plugin
+Slack
+Discord integration
+Datadog Integration
+GitHub (Metric Definitions)
+dbt (Semantic Layer)
+DevTools Browser Extension
+VS Code Extension
+GrowthBook Command Line Interface (CLI)
+Microsoft Clarity (Heatmaps)
+Jira
+AI Integrations
+LLM Tracing (Langfuse, Phoenix)
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Guides for Agents
+Integrations
+AI Agents
+Connect AI Agents to GrowthBook
+Copy page
+Copy page
+GrowthBook connects to AI coding agents like Claude Code and Cursor in two ways: the MCP server and the Agent Skills plugin. Learn which to use.
+Copy page
+Copy page
+GrowthBook works directly inside your AI coding agent: Claude Code, Cursor, and others.
+If you selected
+Engineering
+as your role during signup, run
+npx @growthbook/wizard
+to add GrowthBook to your project. The
+Setup Wizard
+handles sign-in and SDK setup, installs Agent Skills, and guides your agent through the integration and your first Feature Flag.
+For ongoing work with flags and experiments, both options below use the same skills:
+MCP Server
+:
+a thin MCP bridge your agent can call mid-conversation. On GrowthBook Cloud, point your client at
+https://mcp.growthbook.io/mcp
+and sign in with OAuth. The server loads bundled Agent Skills and calls the REST API on your behalf.
+Agent Skills
+:
+the same workflows installed as a plugin. Your agent follows each skill step by step and calls the REST API through a small local helper — no MCP server to run.
+You can use either. Prefer MCP when your host speaks MCP (including chat clients without a shell). Prefer the plugin when you already use Claude Code / Agent Skills install and don’t want an MCP process.
+Watch GrowthBook’s Head of Experimentation, Luke Sonnet, run an experiment end to end using the skills.
+​
+Which should I use?
+MCP Server
+Agent Skills
+What it is
+Thin server: skill loader + authenticated API read/write tools
+Markdown playbooks your agent follows step by step
+Setup
+Cloud: add
+https://mcp.growthbook.io/mcp
+(OAuth). Self-hosted: stdio or the official Docker image
+Install the plugin (no running server)
+Best for
+MCP-native hosts, Claude Desktop, remote/OAuth connect, teams that want one Cloud URL
+Coding agents that already run shell commands and prefer slash commands
+Lifecycle coverage
+Flags, experiments, and product analytics via bundled skills
+Same skills, installed locally
+Governance
+Draft → review → publish and other guardrails live in the skills the server loads
+Same guardrails, enforced as the agent follows each skill
+Where it runs
+Any MCP-compatible host
+Agents that can run shell commands: Claude Code, Cursor, Codex, and other
+agentskills.io
+agents
+Agent can’t run a terminal? Use the MCP server
+The Agent Skills plugin works by having your agent run a local Node helper, so it only works in agents that can execute shell commands, such as Claude Code, Cursor, and Codex. The MCP server is started by your host from a one-time config entry (Cloud URL + OAuth, or a local process). That works in MCP-compatible hosts that don’t give the agent a terminal, like Claude Desktop. If your agent can’t run shell commands, use the MCP server.
+Not sure where to start?
+On
+GrowthBook Cloud
+, start with the
+MCP Server
+— add the hosted URL and sign in. If you live in Claude Code and want slash commands without MCP, install
+Agent Skills
+instead.
+​
+Next steps
+Set up GrowthBook with the wizard
+Set up the MCP Server
+Install the Agent Skills plugin
+Browse the GrowthBook REST API
+, which both call under the hood
+Join our community Slack for additional help and announcements
+Was this page helpful?
+Yes
+No
+GrowthBook integrations
+Previous
+Set Up GrowthBook With the Wizard
+Next
+⌘
+I
+On this page
+Back to top
+Which should I use?
+Next steps
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

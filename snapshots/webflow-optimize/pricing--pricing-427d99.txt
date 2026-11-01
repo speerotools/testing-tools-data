@@ -23,6 +23,7 @@ Analyze
 Optimize
 SEO
 AEO
+Campaigns
 new
 Extend
 Apps
@@ -30,7 +31,6 @@ Figma to Webflow
 Webflow Cloud
 DevLink
 MCP
-new
 Platform Overview
 Explore the power of the Webflow platform
 Learn more about Platform
@@ -668,20 +668,20 @@ Unlimited
 Unlimited
 Storage
 Total storage capacity across all R2 databases on your site.
-100 MB
-100 MB
+1 GB
+1 GB
 2 GB
 Then $2 per 5 GB; surge protection included
 Simple operations
 Read objects from your R2 database.
-100,000
-100,000
+10,000
+10,000
 20,000
 Then $2 per 100k; surge protection included
 Advanced operations
 Write to, delete, or list objects in your R2 database.
-10,000
-10,000
+2,000
+2,000
 4,000
 Then $2 per 10k; surge protection included
 Security
@@ -885,7 +885,7 @@ Pages on your site that aren't generated from CMS Collections, like a homepage o
 Custom
 Bandwidth
 The data transfer limit for your site. We'll let you know if you go over.
-Up to 30 TB/month
+Up to 30 TB/yr
 Custom
 Form submissions
 Collect form submissions, customize notification emails, and download submissions as a CSV.
@@ -1161,16 +1161,17 @@ Contact us
 ←
 ↑
 Contact us
-Preview Localize for free
-You can try out basic Localize functionality for free, no matter what plan you’re on. Pay only when you’re ready to publish.
-Read more
+Webflow Campaigns for marketers
+new
+Create on-brand landing pages and ads that drive pipeline. Works alongside any CMS. Starting at $2k/mo.
+Contact us
 →
 ↗
 ►
 ↓
 ←
 ↑
-Read more
+Contact us
 Optimize
 Features
 Optimize
@@ -2451,9 +2452,9 @@ Analyze
 Optimize
 SEO
 MCP
+Campaigns
 new
 AEO
-new
 Webflow Cloud
 DevLink
 Labs
@@ -2511,8 +2512,13 @@ Pricing
 Status
 Community Homebase
 Wishlist
+Webflow's homepage
+Made in Webflow
+English
+English
+French
+German
+Spanish
 ©
 2026
 Webflow, Inc. All rights reserved
-Webflow's homepage
-Made in Webflow

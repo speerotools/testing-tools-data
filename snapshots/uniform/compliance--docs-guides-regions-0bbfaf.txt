@@ -72,6 +72,7 @@ Reference
 Contentful CMS Migration
 On this page
 Regions and data residency
+Copy page
 Uniform's data residency options allow you to control where your data is physically stored and processed. Choosing the right region for your data residency needs helps you:
 Meet compliance requirements
 like GDPR for European data
@@ -132,10 +133,33 @@ For EU region
 : You must configure your SDKs and CLI to communicate with the EU data center using one of the following methods:
 Configure SDKs for EU
 #
-Add the
+Delivery clients (
+CompositionDeliveryClient
+,
+EntryDeliveryClient
+,
+RouteClient
+) talk to the edge and need
+edgeApiHost
+. All other clients, including the management clients (
+CompositionManagementClient
+,
+EntryManagementClient
+,
+ContentTypeClient
+,
+ComponentDefinitionClient
+,
+ProjectMapClient
+), talk to the origin and need
 apiHost
-parameter when creating the client:
-const client = new CanvasClient({ apiHost: 'https://eu.uniform.app', edgeAPiHost: 'https://eu.uniform.global', apiKey: process.env.UNIFORM_API_KEY, projectId: process.env.UNIFORM_PROJECT_ID, });
+:
+Delivery client
+import { CompositionDeliveryClient } from '@uniformdev/canvas'; const client = new CompositionDeliveryClient({ edgeApiHost: 'https://eu.uniform.global', apiKey: process.env.UNIFORM_API_KEY, projectId: process.env.UNIFORM_PROJECT_ID, });
+Copy
+Copied!
+Management client
+import { CompositionManagementClient } from '@uniformdev/canvas'; const client = new CompositionManagementClient({ apiHost: 'https://eu.uniform.app', apiKey: process.env.UNIFORM_API_KEY, projectId: process.env.UNIFORM_PROJECT_ID, });
 Copy
 Copied!
 Copy environment variables when creating a service account
@@ -180,10 +204,8 @@ on
 Next
 Teams
 →
-Learn and build with our community on Discord
 Check out open sourced examples on GitHub
 Learn about Uniform on YouTube
-Level up your skills in all things headless with Headless Creator
 On this page
 Choosing a region for data residency
 Compliance and data processing

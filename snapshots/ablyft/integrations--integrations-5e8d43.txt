@@ -1,81 +1,99 @@
 # https://docs.ablyft.com/integrations
-Integrations - docs.ablyft.com
-Set Up ABlyft
-Implement the Snippet
-Implement the Snippet via Google Tag Manager
-Settings related to the Cookie Consent Manager
-Projects
-Snippet Settings
-Prerequisites Rules
-Single Page Application (SPA) Testing
-Snippet´s Sequence
-Exclusion Groups (Mutually Exclusive Experiments)
-Experiments
-Redirect Experiments
-Multi-Page (Funnel) Experiments
-ablyftTools / Helper Functions
-Rerun Condition Check (SPA)
-Preview Mode / Perform Quality Assurance
-Force Variation
-Get and Set Bucketing
-Variations
-The Visual Editor
-Environments
-Overview
-Targeting Pages
-URL Targeting
-Target on URL Parameters
-Targeting Audiences
-Target on Visits
-Target on User Attributes
-Target on Cookies
-Goals
-Tracking in Shopify - Overview
-Tracking in Shopify (Webhook)
-Tracking in Shopify (Customer Event)
-Apply Click Goals programmatically
-Troubleshooting
-Integrations
-Google Tag Manager + GA4
-Google Analytics 4 Data
-How to build a Custom Integration
-JavaScript Events
-Publication Webhook
-Usercentrics CMP Testing
-Results and Statistics
-Statistic Settings
-Detailed Charts
-Reset Results
-API Access
-Personal Settings
-Notification Settings
-MCP Settings
-Team Settings
-Manage Team Members
-Visitor´s Perspective
-Opt-Out
-Cookies and localStorage
-Client Privacy Statement (GER)
-Client Side (JavaScript) API
-PUSH Calls
-GET Calls
-Feature Experimentation API
-Get started
-Implementation Guide
-The Basics & Best Practices
-Retrieving Variations (Decide)
-Sending Events/Goals (Track)
-Hybrid Experimentation
-Integrations
-Google Tag Manager + GA4
-Google Analytics 4 Data
-How to build a Custom Integration
-JavaScript Events
-Publication Webhook
-Usercentrics CMP Testing
+Integrations | ABlyft Docs
 Docs
-Status
-A/B-Testing Platform
-Privacy Notice
-Legal Notice
-©2026 ABlyft® - Conversion Expert GmbH
+Search
+⌘
+K
+Open app
+EN
+DE
+Documentation
+API Reference
+Documentation
+Open app
+API Reference
+Overview
+Use ABlyft
+Integrate ABlyft
+Integrate ABlyft
+Quickstart
+Installation
+Tracking & events
+Integrations
+Integrations
+Google Tag Manager + GA4
+Analyze experiments in GA4
+Usercentrics
+Custom Integrations
+Matomo
+Amplitude
+etracker
+Contentsquare
+econda
+Heap
+Hotjar
+Klaviyo
+Mixpanel
+Mouseflow
+New Relic
+Segment
+Mapp
+Zuko
+Application integration
+Reference
+Consent & security
+Debugging
+Integrations
+Integrate ABlyft
+Integrations
+Integrations
+Send ABlyft experiment data to other tools and test with third-party services.
+ABlyft can pass experiment data on to analytics tools and work together with consent platforms. These pages describe the setup step by step.
+Google Tag Manager + GA4
+Send the experiments a visitor saw to Google Analytics 4 through the data layer.
+Analyze experiments in GA4
+Create custom dimensions and explorations to compare variations in GA4.
+Usercentrics
+A/B test consent banner variants and track their events as goals.
+Custom Integrations
+Run your own JavaScript when an experiment event happens, for example to push data to the data layer.
+Supported tools
+Copy Anchor Link
+These tools work with ABlyft.
+adtribute
+Amplitude
+Bazaarvoice
+Microsoft Clarity
+ContentSquare
+econda Analytics
+Google Analytics 4
+Google Tag Manager
+Heap
+Hotjar
+JavaScript Events (ViewedExperiment, UserBucketed)
+KLAR!
+klaviyo
+Matomo
+Mixpanel
+Mouseflow
+New Relic
+PollHero
+Segment
+Shopify
+etracker
+Mapp
+Webtrekk
+Zuko
+Other building blocks are described elsewhere:
+Data layer events
+,
+publication webhooks
+and the
+JavaScript API
+.
+Shopify customer event pixel
+Track revenue, checkout steps and product-level goals in Shopify with a custom pixel.
+Google Tag Manager + GA4
+Send the experiments and variations a visitor saw to Google Analytics 4 through Google Tag Manager.
+On this page
+Supported tools

@@ -999,6 +999,15 @@ Source data protection
 Automatic retries
 : Amplitude automatically retries failed imports up to 8 times, giving your data multiple opportunities to import successfully.
 Your Snowflake data remains safe and unchanged regardless of import job outcomes.
+Related
+:
+BigQuery Data Import
+·
+Amazon S3 Import
+·
+Data Mutability Features
+·
+Understand the data differences between Amplitude, Snowflake, and the Export API
 Was this helpful?
 Copy Markdown
 On this page

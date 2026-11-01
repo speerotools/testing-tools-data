@@ -22,31 +22,29 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-End An Experiment
 Read Results
 Read Results
-User Properties
-Metric Drill-Down
-Export
 Best Practices
-Reconciling Results Between Experimentation Platforms
-Pulse FAQs
-Participating Units
+Explore Results
 Further Analysis
-Custom "Explore" Queries
 Aggregated Impact
 Topline Impact
 Meta-Analysis
 Differential Impact Detection
 Interaction Detection
+Troubleshooting
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -89,6 +87,8 @@ For AI agents: a documentation index is available at
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 Product Docs
 /
+Further Analysis
+/
 Interaction Detection
 Interaction Detection
 Learn how to detect interactions between overlapping experiments and understand their impact.
@@ -104,8 +104,14 @@ published research
 Layers
 (also called Universes) instead of running them together.
 How to use interaction detection
-To start an Interaction Detection analysis, go to
-Experiment > Results > Explore > Interaction Effect Detection
+To start an Interaction Detection analysis, open the experiment's
+Explore
+tab, select
+Create
+, then set
+Query Type
+to
+Interaction Effect Detection
 .
 Select a second experiment and the metrics to analyze. Statsig shows a summary with three sections:
 By Groups

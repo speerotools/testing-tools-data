@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,9 +26,12 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Kameleoon MCP server
-Kameleoon Claude Connector
+Connect Kameleoon to Claude and ChatGPT
 Use Kameleoon documentation with AI
 Tutorials
 Export experiment results to Airtable
@@ -35,6 +39,7 @@ Export experiment results to Notion
 Export experiment results to Confluence
 English
 On this page
+Back to top
 Prerequisites
 Step 1: Add the connectors
 Connect via a coding tool
@@ -51,10 +56,10 @@ Export experiment results to Notion using Claude.
 Copy page
 Copy page
 This guide exports Kameleoon experiment results into a Notion database from a single Claude conversation. It requires no script, no stored API credentials to manage, and no code. Claude connects to Kameleoon’s and Notion’s own remote MCP (Model Context Protocol) servers, and performs the export when you ask it to in plain language.
-Both MCP servers expose more than read-only tools. The Kameleoon MCP server can also start, pause, stop, or delete experiments and feature flags. The Notion MCP server, as of this writing, exposes only search, create, and update tools; it has no tool to delete or archive pages or databases. Review any action either connector proposes before approving it, particularly on the Kameleoon side.
+Both MCP servers expose more than read-only tools. The Kameleoon MCP server can also edit experiments, segments, and triggers, and start, pause, stop, or delete experiments and feature flags. The Notion MCP server, as of this writing, exposes only search, create, and update tools. It has no tool to delete or archive pages or databases. Review any action either connector proposes before approving it, particularly on the Kameleoon side.
 ​
 Prerequisites
-A Kameleoon account with access to the experiment being exported
+A Kameleoon account with access to the experiment you want to export
 A Notion workspace with edit access to the page that will host the results database
 A Claude account with Connectors available
 ​
@@ -131,12 +136,12 @@ experiment.description
 Direct.
 Actual
 Number
-best variation
+winning variation
 improvementRate
 Direct (measured uplift, %).
 Probability
 Select
-best variation Bayesian success probability
+winning variation Bayesian success probability
 Bucketed:
 ≥95 → 80% - High
 ,
@@ -159,7 +164,7 @@ Failure
 ; otherwise
 Inconclusive
 .
-Create the Select options (
+Create the Select options for Status (
 Running
 ,
 Implementing
@@ -167,13 +172,13 @@ Implementing
 Completed
 ,
 Defunct
-;
+), for Probability (
 80% - High
 ,
 50% - Medium
 ,
 20% - Low
-;
+), and for Result (
 Success
 ,
 Failure
@@ -216,7 +221,7 @@ Keep each experiment’s name unique in your Notion database. The upsert matches
 Kameleoon’s results can repeat the same reliability and improvement numbers elsewhere in the response under a different name or scale. The prompt already specifies which one to use.
 ​
 Step 4: Automate it
-To keep the database current without repeating the export manually, set up a recurring scheduled task with the same prompt. Each scheduled run starts a new session with no memory of prior runs, so include the experiment ID (or a request to list all running and recently completed experiments) and the full prompt above every time. A daily or weekly cadence matches how often most teams need this export.
+To keep the database current without repeating the export manually, set up a recurring scheduled task with the same prompt. Each scheduled run starts a new session with no memory of prior runs, so include the experiment ID (or a request to list all running and recently completed experiments) and the full prompt every time. A daily or weekly cadence matches how often most teams need this export.
 ​
 Notes
 An AI assistant interprets this mapping fresh on every run rather than executing a fixed function. Check the page it writes against the values in Kameleoon, particularly the first few runs.
@@ -224,10 +229,6 @@ The Notion MCP server’s current tool set can’t delete or archive your conten
 Was this page helpful?
 Yes
 No
-Export experiment results to Airtable
-Previous
-Export experiment results to Confluence
-Next
 ⌘
 I
 Assistant

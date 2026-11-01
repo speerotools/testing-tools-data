@@ -45,6 +45,8 @@ Capacitor
 Elixir
 Flutter
 Go
+Godot
+Experimental
 iOS
 Popular
 Java
@@ -84,28 +86,29 @@ Group analytics
 Error tracking
 Logs
 Tracing
+Capacitor
 Android
+.NET
 Elixir
 Go
-Java
-Capacitor
 iOS
-React Router
-.NET
-JavaScript web
 Flutter
-Kotlin Multiplatform
+Godot
+JavaScript web
+Java
 Next.js
+Kotlin Multiplatform
+PHP
+Node.js
+React Router
 React
 Python
-Node.js
 React Native
-Rust
-Vue.js
 Roblox
-PHP
-Unity
 Ruby
+Rust
+Unity
+Vue.js
 Developer tools
 In addition to SDKs, PostHog offers tools for managing your analytics infrastructure programmatically:
 Terraform provider

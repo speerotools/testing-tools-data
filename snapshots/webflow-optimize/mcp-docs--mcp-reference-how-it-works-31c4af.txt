@@ -13,46 +13,7 @@ Guides
 Reference
 Prompt Library
 Changelog
-MCP Server
-MCP Server
-Use Webflow APIs with AI agents
-Guides
-Reference
-Prompt Library
-Changelog
-MCP Server
-Overview
-Getting started
-ChatGPT
-Claude Code
-Claude Desktop
-Cursor
-Postman
-Slack
-Windsurf
-Beta server
-Documentation server
-How it works
-Skills
-FAQs and troubleshooting
-Overview
-Getting started
-ChatGPT
-Claude Code
-Claude Desktop
-Cursor
-Postman
-Slack
-Windsurf
-Beta server
-Documentation server
-How it works
-Skills
-Skill Migration
-FAQs and troubleshooting
-Resources
-Get started
-System
+Skip to navigation
 On this page
 Architecture
 Remote deployment
@@ -65,13 +26,14 @@ Scroll to top
 MCP Server
 How it works
 Copy page
+This page is for MCP Server.
 The Webflow MCP server implements
 Anthropic’s Model Context Protocol specification
 to standardize communication between AI agents and Webflow’s APIs. This allows you to interact with your Webflow projects using natural language in any MCP-compatible AI tool.
 Architecture
 The MCP server acts as a translation layer between AI agents and Webflow’s APIs. When you prompt your AI agent, the server:
 Receives the request
-from your AI tool (Claude Desktop, Cursor, etc.)
+from your AI tool (Claude Desktop, Grok Build, etc.)
 Translates the intent
 into specific Webflow API calls
 Executes operations
@@ -100,7 +62,7 @@ MCP resources
 In addition to tools, the Webflow MCP server exposes
 MCP resources
 . Resources are read-only content that supported clients can load directly into context without calling a tool.
-The Webflow Guide tool, which describes how to use Webflow’s APIs and the MCP server, is available as a resource to agents. In clients that support resource references, such as Claude and Cursor, you can
+The Webflow Guide tool, which describes how to use Webflow’s APIs and the MCP server, is available as a resource to agents. In clients that support resource references, such as Claude and Grok Build, you can
 @
 -reference the Webflow Guide in a prompt to pull it into context before the agent starts working.
 Agent Instructions
@@ -121,6 +83,51 @@ Was this page helpful?
 Yes
 No
 Previous
+Documentation server
 Skills
 Next
 Built with
+Guides
+Reference
+Prompt Library
+Changelog
+MCP Server
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Grok Build
+Postman
+Slack
+Beta server
+Documentation server
+How it works
+Skills
+FAQs and troubleshooting
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Grok Build
+Postman
+Slack
+Beta server
+Documentation server
+How it works
+Skills
+Skill Migration
+FAQs and troubleshooting
+Home
+Data API
+Designer API
+Browser API
+Code Components
+Webflow Cloud
+DevLink
+Flowkit CSS Framework
+Webflow Apps
+MCP Server
+Webflow CLI
+Reference

@@ -1,76 +1,81 @@
 # https://docs.ablyft.com/
-docs.ablyft.com
-ABlyft - Knowledge Base
-Documentation and Help for the A/B-Testing Platform for Developers
-Set Up ABlyft
-Implement the Snippet
-Implement the Snippet via Google Tag Manager
-Settings related to the Cookie Consent Manager
-Projects
-Snippet Settings
-Prerequisites Rules
-Single Page Application (SPA) Testing
-Snippet´s Sequence
-Exclusion Groups (Mutually Exclusive Experiments)
-Experiments
-Redirect Experiments
-Multi-Page (Funnel) Experiments
-ablyftTools / Helper Functions
-Rerun Condition Check (SPA)
-Preview Mode / Perform Quality Assurance
-Force Variation
-Get and Set Bucketing
-Variations
-The Visual Editor
-Environments
-Overview
-Targeting Pages
-URL Targeting
-Target on URL Parameters
-Targeting Audiences
-Target on Visits
-Target on User Attributes
-Target on Cookies
-Goals
-Tracking in Shopify - Overview
-Tracking in Shopify (Webhook)
-Tracking in Shopify (Customer Event)
-Apply Click Goals programmatically
-Troubleshooting
-Integrations
-Google Tag Manager + GA4
-Google Analytics 4 Data
-How to build a Custom Integration
-JavaScript Events
-Publication Webhook
-Usercentrics CMP Testing
-Results and Statistics
-Statistic Settings
-Detailed Charts
-Reset Results
-API Access
-Personal Settings
-Notification Settings
-MCP Settings
-Team Settings
-Manage Team Members
-Visitor´s Perspective
-Opt-Out
-Cookies and localStorage
-Client Privacy Statement (GER)
-Client Side (JavaScript) API
-PUSH Calls
-GET Calls
-Feature Experimentation API
-Get started
-Implementation Guide
-The Basics & Best Practices
-Retrieving Variations (Decide)
-Sending Events/Goals (Track)
-Hybrid Experimentation
+Overview | ABlyft Docs
 Docs
-Status
-A/B-Testing Platform
-Privacy Notice
-Legal Notice
-©2026 ABlyft® - Conversion Expert GmbH
+Search
+⌘
+K
+Open app
+EN
+DE
+Documentation
+API Reference
+Documentation
+Open app
+API Reference
+Overview
+Use ABlyft
+Integrate ABlyft
+Overview
+Overview
+Learn how to run experiments with ABlyft and how to integrate it into your website or application.
+For marketing, product & CRO teams
+Use ABlyft
+Create and run experiments, define audiences and goals, and read results.
+Get started
+For developers
+Integrate ABlyft
+Install the snippet, track events and connect ABlyft to your application.
+Get started
+Start here
+Copy Anchor Link
+Your first experiment
+From an empty project to a running test.
+Install the snippet
+Add the ABlyft script to your pages.
+Understand your results
+Turn numbers into decisions.
+Explore ABlyft
+Copy Anchor Link
+Getting started
+Core concepts and orientation in the app.
+Projects & collaboration
+Projects, members, roles and single sign-on.
+Experiments
+Create, edit, schedule and run experiments.
+Audiences & delivery
+Pages, audiences, environments and traffic.
+Goals & measurement
+Define what you want to measure.
+Results & analysis
+Metrics, statistics and sharing results.
+Developers
+Copy Anchor Link
+Quickstart
+Minimal integration in a few minutes.
+Installation
+Snippet, environments, settings and publishing.
+Tracking & events
+Trigger events and conversions.
+Shopify tracking
+Webhook and customer event pixel for Shopify shops.
+Integrations
+Google Tag Manager, GA4 and Usercentrics.
+Application integration
+SPAs, dynamic content and custom JavaScript.
+Reference
+JavaScript API, page API, URL parameters, REST API and MCP server.
+Consent & security
+Consent flows, browser storage and security.
+Help
+Copy Anchor Link
+Troubleshooting
+Experiment not showing, changes missing, implausible results.
+Debugging
+Verify the integration and fix technical issues.
+Use ABlyft
+Learn how to work with ABlyft, from your first experiment to reading results.
+On this page
+Start here
+Explore ABlyft
+Developers
+Help

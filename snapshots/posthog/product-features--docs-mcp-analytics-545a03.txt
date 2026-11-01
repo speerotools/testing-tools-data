@@ -39,11 +39,9 @@ Setup
 Start here
 Installation
 MCP SDK v2
-Custom servers
-Surfaces
+Where to use
 PostHog Web
 PostHog MCP
-PostHog Desktop
 API
 Events
 Event & property reference
@@ -61,7 +59,6 @@ MCP Analytics
 Contents
 Where you can use it
 Where its data comes from
-How MCP Analytics works with Self-driving
 MCP Analytics shows how AI agents use your MCP tools. It records tool calls, agent intent, reported models, failures, and requests for missing capabilities. It supports PostHog's hosted MCP server and servers that use the
 MCP Analytics SDKs
 .
@@ -72,8 +69,11 @@ Product Analytics
 , or
 SQL
 .
-Self-driving
-uses them to find problems and create reports. It can open a pull request for a server you own.
+Want to see it at work? Our public
+MCP leaderboard
+is MCP Analytics running on PostHog's own MCP server, built from its
+$mcp_tool_call
+events.
 Get started
 Where you can use it
 You explore MCP usage in the PostHog web app. The other surfaces let you query the same data, act on it, and pull it into your own tools.
@@ -85,11 +85,6 @@ Explore MCP usage
 PostHog MCP
 Query sessions, tool stats, failures, and intent clusters from any MCP client.
 Query over PostHog MCP
-→
-PostHog Desktop
-Beta
-Read Self-driving reports about failing tools, and merge the fixes for servers you own.
-Fix tools in PostHog Desktop
 →
 API
 Pull sessions, tool calls, intent clusters, and feedback into your own systems.
@@ -108,7 +103,11 @@ Event reference
 Lifecycle and discovery
 Legacy initialize handshakes,
 tools/list
-, and per-request protocol versions power client and spec adoption breakdowns.
+, and per-request protocol versions power client and spec adoption breakdowns. The Go SDK sends neither
+$mcp_initialize
+nor
+$mcp_tools_list
+.
 See all events
 →
 Agent intent
@@ -121,35 +120,6 @@ get_more_tools
 virtual tool when the right tool doesn't exist.
 Track missing capabilities
 →
-How MCP Analytics works with Self-driving
-Self-driving
-uses your tool calls to find tools that need attention. A scout checks for high failure rates, repeated calls, slow responses, and large responses. It considers call volume and reach, then creates reports grouped by the team that owns the tools.
-For your own server, the report includes a fix loop metric: the value that the proposed fix should improve. A coding agent then opens a pull request. For PostHog's hosted server, the report goes to a human without an attached repository. This path does not open a pull request.
-Tool calls
-Every agent invocation of your MCP tools
-Signals
-Failures, retries, and slow responses surfaced by a scout
-One report
-Grouped by owning team, with the evidence behind it
-Draft PR
-Only when you own the server and the fix is concrete
-You merge
-Nothing ships without a human
-Tool calls
-Every agent invocation of your MCP tools
-Signals
-Failures, retries, and slow responses surfaced by a scout
-One report
-Grouped by owning team, with the evidence behind it
-Draft PR
-Only when you own the server and the fix is concrete
-You merge
-Nothing ships without a human
-Select
-Create fix task
-in the tool quality view to start a fix in a repository you choose. See
-PostHog Desktop
-for the report and fix process.
 Still have questions?
 Ask PostHog AI
 Was this page useful?
@@ -158,4 +128,3 @@ Could be better
 Jump to:
 Where you can use it
 Where its data comes from
-How MCP Analytics works with Self-driving

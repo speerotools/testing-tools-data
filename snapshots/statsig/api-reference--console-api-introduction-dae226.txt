@@ -43,7 +43,6 @@ Node
 Python
 Java
 Go Core
-Early Access
 Ruby
 .NET
 More Server SDKs
@@ -71,9 +70,11 @@ Configs
 Dashboards
 Dynamic Configs
 Environments
+Evals
 Events
 Experiments
 Experiments (Warehouse Native)
+Exports
 Gates
 Holdouts
 Ingestions

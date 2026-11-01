@@ -314,6 +314,8 @@ Build variations with social proof nudges driven by event-based variables.
 Add-On available
 Add-On available
 Add-On available
+Translations Manager
+Manage multilingual campaign text in one places.
 Editor Library
 Elements Library
 Library of customizable pre-designed UI elements like list item, content block, buttons, etc.
@@ -333,15 +335,13 @@ Configure and track goals in your Wingify account.
 Unlimited
 Unlimited
 Unlimited
-Traffic Allocation
-Allocate the traffic on which you want to run the campaign and distribute the allocated traffic among the various variations created for the test.
 Traffic Sampling
 Allocate the traffic on which you want to run the campaign and distribute the allocated traffic among the various variations created for the test.
 Alerts
 Set email alerts for account administrators to receive notifications for your Wingify campaign related activities.
 Multi Arm Bandit
 Expose the better performing variation to more users long before the test reaches statistical significance, reducing opportunity cost.
-Testing Objective
+Experimentation Objective
 Choose from two objectives: Better (apply changes only if the metric improves) or Better or Equivalence (apply if the metric improves or stays the same).
 Fixed Horizon Tests
 Calculate results only after the entire sample size has been collected to get highly accurate results.
@@ -688,11 +688,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account helps you every step of the way toward success.
 Web Personalization
 Tailor digital experiences to specific customer segments across any device or platform.
 Enterprise
@@ -795,6 +790,8 @@ Build variations with social proof nudges driven by event-based variables.
 Add-On available
 Add-On available
 Add-On available
+Translations Manager
+Manage multilingual campaign text in one places.
 Editor Library
 Elements Library
 Library of customizable pre-designed UI elements like list item, content block, buttons, etc.
@@ -856,7 +853,7 @@ View the changes that you've made to your campaign over its lifetime.
 Unlimited
 Unlimited
 Last 3
-*Holdback control group is available only with the Enterprise plan of Wingify Testing, in addition to your Wingify Personalization subscription.
+*Holdback control group is available only with the Enterprise plan of Web Experimentation & Rollouts, in addition to your Web Personalization subscription.
 Variation Targeting
 Traffic Source Targeting
 Target users based on the traffic source (e.g., direct, non-paid, email) that directed them to the campaign page.
@@ -1212,11 +1209,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch our recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account helps you every step of the way toward success.
 Feature Experimentation, Personalization & Rollout
 Safely deploy features, manage rollouts with feature flags across any tech stack or device, mitigating any risk.
 Enterprise
@@ -1329,23 +1321,23 @@ Phased Rollouts And Rollbacks Based On Metric
 Add multiple conditions to modify rollout percentages or the status (ON or OFF) according to metric conversion percentages.
 Kill Switch Based On Metrics
 Automatically roll back a feature if metric conversion rates drop below a preset threshold.
-Testing
-Testing Rules
-Set conditions to determine which users get included in a feature test.
-Concurrent Tests On The Same Feature
-The number of testing rules per feature that can be active simultaneously.
+Experimentation
+Experimentation Rules
+Set conditions to determine which users get included in a feature experiment.
+Concurrent Experiments On The Same Feature
+The number of experimentation rules per feature that can be active simultaneously.
 Unlimited
 Unlimited
 Limited
-Clone Settings Of Another Testing Rule
-Copy another testing rule's settings to quickly set up a new rule with similar or slightly modified settings.
-Set Testing Rule Priority
+Clone Settings Of Another Experimentation Rule
+Copy another experimentation rule's settings to quickly set up a new rule with similar or slightly modified settings.
+Set Experimentation Rule Priority
 Drag and drop rules to set their order of priority. The system checks the top rule first, moving to the next if there's no match, and continues evaluating rules until a match is found or all rules are evaluated.
 Set Traffic Allocation
-Define the percentage of total traffic to include in the testing rule.
+Define the percentage of total traffic to include in the experimentation rule.
 Traffic Split Across Variations
-Specify the percentage of traffic to be allocated to each variation within the testing rule.
-Testing Objective
+Specify the percentage of traffic to be allocated to each variation within the experimentation rule.
+Experimentation Objective
 Choose from two objectives when creating a campaign: Better — apply campaign changes only if the metric improves. Better or Equivalence — apply campaign changes if the metric improves or remains the same.
 Fixed Horizon Tests
 Calculate results only after the entire sample size has been collected to get highly accurate results.
@@ -1360,7 +1352,7 @@ Expose the better-performing variation to more users to accelerate results.
 Auto-Deploy
 Auto-deploy winning variations from A/B tests.
 Scheduling
-Schedule testing rules to automatically start and stop at specified dates and times, enabling time-boxed experiments without manual intervention.
+Schedule experimentation rules to automatically start and stop at specified dates and times, enabling time-boxed experiments without manual intervention.
 Holdout Groups
 Reserve a segment of users from all active features to serve as a global control group, allowing you to measure the cumulative lift of your feature releases and experiments.
 Personalization
@@ -1376,7 +1368,7 @@ Copy another personalization rule's settings to quickly set up a new rule with s
 Set Personalization Rule Priority
 Drag and drop rules to set their order of priority. The system checks the top rule first, moving to the next if there's no match, and continues evaluating rules until a match is found or all rules are evaluated.
 Set Traffic Allocation
-Define the percentage of total traffic to include in the testing rule.
+Define the percentage of total traffic to include in the experimentation rule.
 Scheduling
 Schedule personalization rules to automatically start and stop at specified dates and times, enabling time-based personalized experiences without manual intervention.
 Audience Selection Options For Rules
@@ -1425,7 +1417,7 @@ Use brackets to combine multiple conditions in targeting logic, e.g. '[Users in 
 *Note: Few targeting features may require additional setup conditions. Please email support@Wingify.com for setup help.
 Reports And Filters
 Reporting Dashboard
-View the results of your tests, rollouts, and personalization rules on our Bayesian-powered dashboard.
+View the results of your experiments, rollouts, and personalization rules on our Bayesian-powered dashboard.
 Event Batching
 Event batching allows the Wingify SDK to queue and send multiple events in a single request, optimizing network bandwidth and metrics tracking.
 Metrics
@@ -1463,9 +1455,9 @@ Use brackets to create complex filtering logic with multiple conditions (e.g., [
 Download Detailed CSV
 Download detailed user reports in CSV format, including segment data, metric conversions, and custom dimensions.
 Session Recordings in Campaign Reports
-Watch session recordings of users participating in your campaigns directly within campaign reports to understand how users interact with different feature variations. Requires Wingify Insights.
+Watch session recordings of users participating in your campaigns directly within campaign reports to understand how users interact with different feature variations. Requires Behavior Analytics subscription.
 Heatmaps in Campaign Reports
-View heatmaps for users in your campaigns within campaign reports to visualize click and scroll patterns across different feature variations. Requires Wingify Insights.
+View heatmaps for users in your campaigns within campaign reports to visualize click and scroll patterns across different feature variations. Requires Behavior Analytics subscription.
 ROI Dashboard
 Quantify business value by measuring and projecting the financial impact of your experimentation program.
 Custom Metrics Tracking
@@ -1574,7 +1566,7 @@ Per MAU quota of events stored or collected per user.
 100 events stored per MAU*
 50 events stored per MAU*
 Webhooks
-Ensure your tests always run with the latest Wingify setting files by enabling webhooks for campaigns.
+Ensure your experiments always run with the latest Wingify setting files by enabling webhooks for campaigns.
 Integrations
 Easily integrate with third-party tools for streamlined campaign setups and in-depth analysis.
 Unpublished Changes
@@ -1584,9 +1576,9 @@ Allow users with restricted role access to create and disable feature flag rules
 Approvals
 Send campaign changes for approvals from stakeholders before publishing campaigns.
 API Access (rate limit of 60000/month)
-Start and pause tests programmatically or pull test metrics into other dashboards.
+Start and pause experiments programmatically or pull experiment metrics into other dashboards.
 Mutually Exclusive Groups With Priorities And Weights
-Ensure users are not exposed to multiple active tests simultaneously, eliminating bias, result contamination, and conflicting experiences. Set priorities and weights to control the rule execution order within mutually exclusive groups.
+Ensure users are not exposed to multiple active experiments simultaneously, eliminating bias, result contamination, and conflicting experiences. Set priorities and weights to control the rule execution order within mutually exclusive groups.
 Upto 10 user groups
 Security & Compliance
 Data Storage
@@ -1627,11 +1619,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support team member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch our recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account will guide you every step of the way toward success.
 Select Product
 Behavior Analytics
 Journey Analytics
@@ -1764,8 +1751,8 @@ Segmented Recordings
 Forms
 No. of Active Form Reports
 No. of active forms you can simultaneously track at a given time.
+50
 20
-10
 5
 Conversion Report
 Track user drop-offs at different stages of form submission, from landing to interaction to submission.
@@ -2029,11 +2016,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch our recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account helps you every step of the way toward success.
 Journey Analytics
 Track critical user metrics, funnels, and journey maps to measure overall digital performance.
 Enterprise
@@ -2220,7 +2202,7 @@ Jump straight from a report into related session recordings. *requires Behavior 
 Heatmaps*
 Jump straight from a report into related heatmaps. *requires Behavior Analytics Subscription
 Campaign & Experiment Integration*
-Break down any report by Wingify Testing or Personalize campaign or variant. *requires Web Experimentation Subscription
+Break down any report by Web Experimentation & Rollouts or Web Personalization campaigns or variant. *requires Web Experimentation & Rollouts Subscription
 Platform & Account Management
 Account Members
 Add multiple people to the same account but with varying levels of access.
@@ -2318,11 +2300,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account helps you every step of the way toward success.
 User Feedback
 Capture actionable insights from user feedback across all platforms and user journeys
 Enterprise
@@ -2656,11 +2633,6 @@ Chat Support
 Reach out to support via in-app chat to give feedback or raise an issue.
 Phone Support
 Get on a call with a Wingify support member to resolve your queries.
-Customer Success
-Self Paced Training Videos
-Watch our recorded training videos for every feature as per your schedule.
-Dedicated Account Manager
-A dedicated manager assigned to your account helps you every step of the way toward success.
 Select Product
 Search
 Recommendations
@@ -2993,8 +2965,6 @@ First Response Time* Working days only
 Email Support
 In Product Chat Support
 Phone Support
-Customer Success
-Dedicated Account Manager
 Unleash Wingz AI. Standard with Every product.
 Accelerate optimization with AI-powered analysis, workflows, and autonomous agents.
 Wingz Advanced
@@ -3060,6 +3030,7 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
+*
 Schedule a Demo
 Thank you for sharing your details.
 Continue booking your demo slot
@@ -3120,7 +3091,7 @@ Why Wingify?
 Program Management
 Integrations
 Data Platform
-For Teams
+For teams
 Marketing
 Product
 Data Analytics
@@ -3128,7 +3099,7 @@ UX/ UI
 Digital Transformation
 Engineering
 Merchandising
-For Industries
+For industries
 Retail & ecommerce
 Travel & Hospitality
 Financial Services
@@ -3162,6 +3133,8 @@ Wingify vs Mouseflow
 Wingify vs Contentsquare
 Wingify vs Dynamic Yield
 Wingify vs. Kameleoon
+Wingify vs. Monetate
+Wingify vs Convert
 © 2026 Wingify. All rights reserved.
 Terms
 Security
@@ -3184,6 +3157,7 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
+*
 Start Now
 We just need a few details
 Business Email
@@ -3203,6 +3177,7 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
+*
 Create Account
 Curious how it works? Get a 1-on-1 demo
 Skip & Continue to App →
@@ -3251,6 +3226,7 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
+*
 Submit
 Thank you for writing to us!
 One of our representatives will get in touch with you shortly.
@@ -3270,6 +3246,7 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
+*
 Get a Demo
 I'm finding an executive for you
 schedule later →

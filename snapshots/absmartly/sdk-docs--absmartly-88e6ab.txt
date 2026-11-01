@@ -3,104 +3,86 @@ A/B Smartly · GitHub
 Skip to content
 Navigation Menu
 Sign in
-Appearance settings
 absmartly
+Products
 Platform
-AI CODE CREATION
-GitHub Copilot
-Write better code with AI
-GitHub Copilot app
-Direct agents from issue to merge
-MCP Registry
-Integrate external tools
-DEVELOPER WORKFLOWS
+GitHub
+Repository hosting, code review, and collaboration
+Copilot
+AI coding agent for tasks, projects and automated work
+Build & Ship
 Actions
-Automate any workflow
-Codespaces
-Instant dev environments
-Issues
-Plan and track work
-Code Review
-Manage code changes
+CI/CD and automation
 Code Quality
-Enforce quality at merge
-APPLICATION SECURITY
-GitHub Advanced Security
-Find and fix vulnerabilities
-Code security
-Secure your code as you build
-Secret protection
-Stop leaks before they start
-EXPLORE
-Why GitHub
+Quality analysis, fixes, and enforcement
+Codespaces
+Cloud development environments
+Secure
+Code Security
+Vulnerability detection and remediation
+Secret Protection
+Secret scanning and leak prevention
+All Features
+Developers
+Learn
 Documentation
-Blog
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Events
 Changelog
-Marketplace
-View all features
-Solutions
-BY COMPANY SIZE
+Changelog
+Your source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
 Enterprises
-Small and medium teams
+Team
 Startups
 Nonprofits
-BY USE CASE
-App Modernization
-DevSecOps
-DevOps
-CI/CD
-View all use cases
-BY INDUSTRY
+By Industry
 Healthcare
 Financial services
 Manufacturing
 Government
-View all industries
-View all solutions
-Resources
-EXPLORE BY TOPIC
-AI
-Software Development
-DevOps
-Security
-View all topics
-EXPLORE BY TYPE
-Customer stories
-Events & webinars
-Ebooks & reports
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
 Business insights
-GitHub Skills
-SUPPORT & SERVICES
-Documentation
-Customer support
-Community forum
-Trust center
-Partners
-View all resources
-Open Source
-COMMUNITY
-GitHub Sponsors
-Fund open source developers
-PROGRAMS
-Security Lab
-Maintainer Community
-GitHub Stars
-Archive Program
-REPOSITORIES
-Topics
-Trending
-Collections
-Enterprise
-ENTERPRISE SOLUTIONS
-Enterprise platform
-AI-powered developer platform
-AVAILABLE ADD-ONS
+Trust Center
+Add-ons
 GitHub Advanced Security
-Enterprise-grade security features
-Copilot for Business
+Enterprise-grade code security
+Copilot for business
 Enterprise-grade AI features
 Premium Support
 Enterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub Universe
+The event for developers, by developers — talks, workshops, and what’s next for GitHub.
 Pricing
 Search
 /
@@ -450,63 +432,41 @@ Last updated
 Name
 Stars
 Showing 10 of 41 repositories
-mcp
-Public
-absmartly/mcp's past year of commit activity
-TypeScript
-0
-1
-2
-19
-Updated
-Oct 1, 2026
-browser-extension
-Public
-absmartly/browser-extension's past year of commit activity
-TypeScript
-1
-0
-0
-13
-Updated
-Sep 29, 2026
-cli
-Public
-ABsmartly CLI tool for managing experiments and feature flags
-absmartly/cli's past year of commit activity
-TypeScript
-0
-MIT
-0
-0
-3
-Updated
-Sep 29, 2026
 docs
 Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 absmartly/docs's past year of commit activity
 JavaScript
 1
 0
 0
-19
+21
 Updated
-Sep 25, 2026
-javascript-sdk
+Nov 1, 2026
+mcp
 Public
-A/B Smartly Javascript SDK
-absmartly/javascript-sdk's past year of commit activity
-JavaScript
-7
-Apache-2.0
-6
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/mcp's past year of commit activity
+TypeScript
 0
-8
+1
+2
+25
 Updated
-Sep 25, 2026
+Nov 1, 2026
 cross-sdk-tests
 Public
 Cross-SDK integration test framework for ABsmartly SDKs
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 absmartly/cross-sdk-tests's past year of commit activity
 Python
 0
@@ -514,60 +474,123 @@ Python
 0
 5
 Updated
-Sep 23, 2026
-sdk-plugins
-Public
-absmartly/sdk-plugins's past year of commit activity
-TypeScript
-0
-0
-0
-8
-Updated
-Sep 11, 2026
-swift-sdk
-Public
-A/B Smartly Swift SDK
-absmartly/swift-sdk's past year of commit activity
-Swift
-1
-Apache-2.0
-1
-1
-2
-Updated
-Sep 9, 2026
+Oct 30, 2026
 java-sdk
 Public
 AB Smartly Java SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 absmartly/java-sdk's past year of commit activity
 Java
 3
 Apache-2.0
 1
 2
-2
+3
 Updated
-Sep 2, 2026
-ab-testing-simulations
+Oct 30, 2026
+browser-extension
 Public
-Reproducible simulations of Bayesian A/B testing claims
-absmartly/ab-testing-simulations's past year of commit activity
-JavaScript
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/browser-extension's past year of commit activity
+TypeScript
+1
 0
+0
+7
+Updated
+Oct 29, 2026
+elixir-sdk
+Public
+Elixir A/B testing SDK for cross-SDK tests
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/elixir-sdk's past year of commit activity
+Elixir
+0
+MIT
 0
 0
 0
 Updated
-Jul 28, 2026
+Oct 28, 2026
+scala-sdk
+Public
+A/B Smartly Scala SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/scala-sdk's past year of commit activity
+Scala
+0
+0
+0
+1
+Updated
+Oct 28, 2026
+react-sdk
+Public
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/react-sdk's past year of commit activity
+TypeScript
+3
+Apache-2.0
+4
+1
+7
+Updated
+Oct 27, 2026
+python3-sdk
+Public
+A/B Smartly Python3 SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/python3-sdk's past year of commit activity
+Python
+1
+MIT
+1
+0
+4
+Updated
+Oct 27, 2026
+ruby-sdk
+Public
+A/B Smartly Ruby SDK
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+absmartly/ruby-sdk's past year of commit activity
+Ruby
+2
+MIT
+3
+0
+3
+Updated
+Oct 27, 2026
 View all repositories
 People
 Top languages
-TypeScript
-JavaScript
-Ruby
-Python
-Kotlin
+Loading…
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
 Most used topics
 Loading…
 Uh oh!

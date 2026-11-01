@@ -1,20 +1,35 @@
 # https://support.optimizely.com/hc/en-us/articles/45740092135693-Optimizely-Analytics-MCP-server-overview
-Optimizely Analytics MCP server overview – Support Help Center
-Skip to main content
-Toggle navigation menu
-AI On
-AI Off
-Developer documentation
-Developer community
-Optimizely Academy
-Submit a request
-Sign in
-Support Help Center
+Optimizely Analytics MCP server overview - Analytics docs
+Search
+K
+Ask AI
+Analytics docs
+Release notes for Analytics
 Analytics
+Getting Started
+Warehouse-Native Experimentation Analytics
+Work with Data
 Optimizely Analytics MCP server
+Explore Data
+Model Behavioral Semantics
+Categories
+Favorites
+Blocks
+Dashboards
+Goal trees
+Data Visualization and Filtering
+Share and Collaborate
+Configuring Rules
+Catalog
+Actor Lookup
+Administration
+Reference
+Docs powered by
+Archbee
+Analytics
+Optimizely Analytics MCP serve...
 Optimizely Analytics MCP server overview
-Updated
-May 11, 2026 10:11
+7 min
 The
 Model Context Protocol (MCP)
 is an open standard that lets AI agents connect to external tools and live data sources without copy-pasting data into prompts or writing custom API scripts. The Optimizely Analytics MCP server is a hosted service that exposes Optimizely Analytics to MCP-capable AI clients. From a single conversation, your agent can find events and properties, build Funnel, Retention, and Event Segmentation explorations, create and arrange dashboards, and analyze experiment results, all through natural language.
@@ -29,17 +44,38 @@ Prerequisites
 Before you connect, make sure you have all of the following:
 An
 Opti ID
+﻿
 account.
 An Optimizely account with
-Optimizely Opal
+Mark (Optimizely Agent Platform)
+﻿
 enabled and connected to at least one Optimizely Analytics app.
-Access to both the Opal instance and the Optimizely Analytics app you want to query.
+Access to both the
+Mark
+﻿
+instance and the Optimizely Analytics app you want to query.
 An AI client that supports remote MCP.
-When you authenticate, you connect to your Opal instance. The MCP server then loads any linked Optimizely Analytics apps.
+When you authenticate, you connect to your
+Mark
+﻿
+instance. The MCP server then loads any linked Optimizely Analytics apps.
 About Opti ID
 Opti ID is Optimizely's unified identity system. It is the single set of credentials you use to log in across Optimizely products, including Optimizely Analytics. If you already have an Optimizely account, you already have an Opti ID.
-About Opal
-Opal is Optimizely's agent orchestration platform. Optimizely Analytics MCP server authenticates through your Opal instance. The Opal instance links the connection to your data. You select the Opal instance during the OAuth flow the first time you connect.
+About
+Mark
+﻿
+Mark
+﻿
+is Optimizely's agent orchestration platform. Optimizely Analytics MCP server authenticates through your
+Mark
+﻿
+instance. The
+Mark
+﻿
+instance links the connection to your data. You select the
+Mark
+﻿
+instance during the OAuth flow the first time you connect.
 What you can do
 Optimizely Analytics MCP server groups its capabilities into three categories:
 Discover
@@ -148,18 +184,13 @@ Optimizely Analytics MCP server quickstart
 . For per-client setup steps, see
 Install Optimizely Analytics MCP server
 .
-Article is closed for comments.
-Articles in this section
-Optimizely Analytics MCP server overview
+Updated
+28 Oct 2026
+PREVIOUS
+Curate nested JSON fields in dataset columns
+NEXT
 Optimizely Analytics MCP server quickstart
-Install Optimizely Analytics MCP server
-Optimizely Analytics MCP server example prompts
-Optimizely Website
-Support Policy
-Privacy Notice
-Website terms of use
-Cookie settings
-Trust center
-Third-Party Addons & Platforms
-English (United States)
-Deutsch
+Docs powered by
+Archbee
+Docs powered by
+Archbee

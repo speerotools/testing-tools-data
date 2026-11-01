@@ -36,17 +36,14 @@ Trash
 PostHog context warehouse
 Overview
 Start here
-Is PostHog warehouse native?
 The context gap report
 Data tools
-Managed Warehouse
+Warehouse
 PostHog AI
-Data sources & import (ELT)
-CDP
+Data pipelines
 Data modeling
 SQL editor
 Business intelligence (BI)
-Reverse ETL & export
 Integrations
 Integration library
 Give your agents the
@@ -58,6 +55,10 @@ Store product and business data
 Transform, query, and model
 Data-driven self-driving development
 Get started
+Install with AI
+Happier in the terminal? Skip the browser:
+npx @posthog/wizard warehouse
+Learn more
 Built for data engineers, loved by product teams
 Data engineers
 Build complex models and transformations that need your expertise, not plumbing.
@@ -92,8 +93,8 @@ Sync Stripe and your CRM
 Custom sources and transformation logic
 Storage
 Data stored by PostHog
-Managed Warehouse, basic queries
-Managed Warehouse, advanced modeling
+Warehouse, basic queries
+Warehouse, advanced modeling
 Data out
 Use PostHog Product Analytics
 Create Cohorts from combined data
@@ -106,14 +107,10 @@ No migration, re-instrumentation, or switching tools because you scaled out of t
 What's in your context warehouse
 Use PostHog as the full context layer for your product, or mix and match with your own tools.
 Data Sources
-Sources & Import (ELT)
-Regularly sync or bulk import data into your warehouse from databases, ad platforms, SaaS tools, and more.
-Managed Warehouse
+Data pipelines
+Sync data in from your tools and databases, transform events as they arrive, and send data to the rest of your stack.
+Warehouse
 Store, query, and join your product and business data in one place without maintaining any infrastructure.
-CDP
-Ingest, transform, and route data between PostHog and the rest of your stack in real time.
-Batch Exports
-Send PostHog data to your existing warehouse or data lake on a schedule you control.
 Data Modeling
 Models
 Define your metrics to keep them consistent across PostHog products, update them on a schedule.
@@ -126,13 +123,15 @@ SQL Editor
 Write and run HogQL or standard SQL directly against your data. For when you know exactly what you want and just need to ask for it properly.
 Notebooks
 Combine insights, replays, flags, experiment results, and SQL into a single document. For when your analysis has a story and a dashboard isn't the right way to tell it.
-Reverse ETL
-Send data back to the tools that need it. Keep your CRM, support tools, and marketing platforms in sync.
 Business Intelligence
 Visualize your data with interactive dashboards and ad-hoc analyses right in PostHog.
 Get started
 Your first data source is free to connect. So is your second. By the time you've connected your third, you'll stop thinking about your stack entirely, which is the whole point.
-Get Started
+Get started
+Install with AI
+Happier in the terminal? Skip the browser:
+npx @posthog/wizard warehouse
+Learn more
 Not using PostHog?
 Sign up
 FAQ
@@ -141,7 +140,7 @@ Yes. You can query your existing Snowflake, BigQuery, or Redshift data inside Po
 What if I'm already using Segment or Rudderstack?
 You can migrate to PostHog's pipelines, or run them in parallel while you figure out what to move. The integrations overlap heavily, and switching is less painful than it sounds.
 How does pricing work?
-The data warehouse is free for your first 1M rows/month then from $0.000015/row (historical syncs are always free). Data pipelines are free for 10K events then from $0.0005/event, batch exports free for 1M rows then from $0.000015/row, and PostHog AI gives 500 free credits then $0.01/credit. See a full breakdown at
+Sources are free for your first 1M synced rows/month then from $0.000015/row (historical syncs are always free). Destinations are free for 10K events then from $0.0005/event, batch exports free for 1M rows then from $0.000015/row, and PostHog AI gives 500 free credits then $0.01/credit. See a full breakdown at
 posthog.com/pricing
 .
 Is my data leaving PostHog's infrastructure?

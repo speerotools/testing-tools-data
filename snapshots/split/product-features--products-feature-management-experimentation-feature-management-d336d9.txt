@@ -1,12 +1,17 @@
 # https://www.harness.io/products/feature-management-experimentation/feature-management
 Feature Management with Split by Harness
+For the complete documentation index, see
+llms.txt
+. A Markdown version of this page is available by requesting this URL with the header "Accept: text/markdown".
 Feature Management & Experimentation
+®
 Platform
 Why Harness
 Pricing
 Customers
 Resources
 Company
+Sign in
 See a Demo
 Start for Free
 Harness Autonomous SDLC Platform
@@ -46,19 +51,23 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
+Cosmos Software Factory Agent
+New
+Take engineering work from ticket to code.
 More products
 Incidents
 AI Evals
 Developer Portal
 Runtime Configuration
 Resilience Testing
+®
 Runtime Configuration
-Overview
+Agent Overview
 AI Configs
 Configs
 Feature Flags
 Experimentation
-Overview
+Agent Overview
 Feature Management
 Ship more features without breaking things
 Create, target, and manage feature flags for progressive delivery at enterprise scale. Accelerate releases without harming the integrity of your application or your customer experience.
@@ -74,11 +83,9 @@ Ship code in the off state, turn it on when ready, and turn it off instantly if 
 Roll out granularly.
 Start with internal users, expand to a percentage of traffic, then ramp to everyone when you're confident.
 Harness AI
-How can I help you today?
 Release without risk
 Dynamic config updates
 Target specific users
-Ask Harness AI...
 Segments
 + New Segment
 Search segments
@@ -204,7 +211,9 @@ Gradual Traffic Shifting.
 Automatically split traffic by percentage. Scale from 5% → 25% → 50% → 100% based on success thresholds.
 Instant Kill Switches.
 One click disables any flag globally in seconds. No deployment, no waiting, no damage spreading to more users.
-new-checkout-flow · Progressive Rollout
+new-checkout-flow
+·
+Progressive Rollout
 Flag Created
 ✓ Complete
 2 days ago
@@ -235,7 +244,7 @@ We've seen an increase of over 30% in conversion of our mobile usage. Harness FM
 Andrew Boellstorff
 , Director of Digital Product & Technology
 , Speedway Motors
-Read more
+Read the Speedway Motors case study
 FAQ
 Frequently asked questions
 How does Harness Feature Management separate deployment from release?
@@ -252,7 +261,8 @@ Get started with Harness Feature Management
 Try Harness Feature Management free. No credit card. No commit. Full access to feature flags, targeting, and dynamic configurations.
 Start for Free
 See a Demo
-AI for everything after code.
+®
+The Autonomous SDLC Platform.
 Platform
 Overview
 Why Harness
@@ -274,6 +284,7 @@ AI SAST
 AI SCA
 Supply Chain Security
 Security Testing Orchestration
+Cosmos Software Factory Agent
 Runtime Protection Agent
 API Posture
 API Advanced Protection
@@ -302,11 +313,13 @@ About Us
 Careers
 Press & News
 Partners
+Government
 Contact Us
 Legal
 © 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
+Cookies Notice
 Opt Out
 Cookie Settings

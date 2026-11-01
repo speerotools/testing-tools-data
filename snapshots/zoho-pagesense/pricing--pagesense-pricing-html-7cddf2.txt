@@ -95,35 +95,74 @@ Detailed product walkthrough
 Q&A session with experts
 REQUEST DEMO
 Frequently asked questions
-Do I have to provide payment information up front?
-Absolutely not! Every user who signs up for Zoho PageSense starts with the free trial. Only when you subscribe to a paid plan will you be expected to provide payment information.
+Do I have to provide payment information upfront?
+No. Every new Zoho PageSense user gets a 15-day free trial with access to all features. You only need to provide payment information when you subscribe to a paid plan.
 What happens when my trial ends?
-All experiments currently running will be paused. You'll have complete access to your configurations and reports. You can move to a paid plan to re-launch existing experiments and create new ones. You can also choose a paid plan at any time during your trial period.
+Any running experiments will be paused, but you'll retain access to your experiment configurations and reports for up to 90 days. You can subscribe to a paid plan to resume existing experiments and create new ones.
 What types of payment do you accept?
-We accept payment via Visa, MasterCard, American Express, and PayPal. We also accept payment through bank transfer or check transfer for yearly subscriptions. For more details, please contact
+We accept Visa, MasterCard, American Express, and PayPal. For yearly subscriptions, we also accept bank transfers and cheque payments. For more information, contact
 presales@zohopagesense.com
 .
-How are the monthly tracked users counted?
-Our monthly user tracking is cookie-based. For example, If a visitor "A" comes to your site multiple times during a month, we will account for 1 visitor only. However, this applies only until they clear or delete the cookie.
-What happens if I exceed the monthly tracked user count in my plan?
-Running experiments will be paused but you'll still be able to access your configuration and reports. You can purchase a top-up plan at any time.
+What happens if I exceed my monthly tracked user limit?
+Your running experiments will be paused when you reach your plan's monthly tracked user limit. You'll still be able to access your experiment configurations and reports. You can purchase a top-up plan to resume tracking.
 Can I upgrade or downgrade my plan?
-Yes, at any time you like. Your plan will be upgraded as soon as you opt for it. In case you opt for a downgrade, it will be carried out at the end of your billing cycle.
-What happens if I downgrade or cancel my subscription before its completion?
-You'll be charged for the entire billing cycle. All of your previous PageSense functionalities will still be available to you until the billing cycle closes.
-I'm subscribed to a yearly plan; how will I be billed?
-You'll need to make a one-time payment for the annual plan based on the visitor count in the subscription you've chosen.
+Yes. You can upgrade or downgrade your plan at any time. Upgrades take effect immediately, while downgrades take effect at the end of your current billing cycle.
+What happens if I downgrade or cancel my subscription before the billing period ends?
+You'll be charged for the entire billing cycle and retain access to your current plan's features until the billing cycle ends.
+What happens when I reach my monthly tracked-user limit?
+PageSense notifies you when you reach 80% of your tracked-user limit. When you reach 100%, your running experiments are paused. You can purchase a top-up plan to resume tracking while retaining access to your configurations and reports.
+I'm subscribed to a yearly plan. How will I be billed?
+You'll make a one-time payment for your annual subscription based on your selected monthly tracked user limit. Your annual tracked user allowance will be credited to your account upfront.
 Will I have access to my data if I downgrade my plan?
-Of course! When you downgrade your plan, you'll still have access to all the experiments' configurations and reports. If you have more projects than your plan covers after you downgrade, the experiments in those will be paused.
+Yes. You'll retain access to your experiment configurations and reports. If your account has more projects than your downgraded plan supports, experiments in the additional projects will be paused.
+What happens to my data after I cancel my account?
+Data retention after cancellation depends on your plan:
+Trial:
+Data is retained for 90 days after your trial expires.
+Professional:
+Data is retained for 6 months.
+Enterprise:
+Data is retained for 12 months.
+Is Zoho PageSense included in Zoho One?
+Yes. Zoho One subscribers can access PageSense at no additional cost. Refer to the Enterprise plan features to understand the features included in your subscription. Monthly tracked user counting works differently for Zoho One Bundle users, as each module has its own visitor count.
 Is my data safe?
-We go to every length to keep your data safe and secure. Our facilities feature stringent 24/7/365 security with video monitoring, biometric access, and advanced fire, flood, and theft monitoring systems. Our network security system employs the latest encryption and intrusion detection and prevention technologies.
-I have more questions; who should I contact?
-You can visit our
-support center
-or drop us a line at
+Zoho PageSense uses security measures to protect your data. For more information about data protection and privacy, refer to our
+GDPR and privacy information
+.
+I have more questions. Who should I contact?
+Visit our support center or email
 support@zohopagesense.com
 . You can also post your questions on our community forums.
-If I subscribe to the yearly plan, will my monthly tracked user count be added to my account every month?
-No, as soon as subscription is activated, the monthly tracked user count will be added in total to your account. For example, if you've chosen 10,000 monthly tracked users for your yearly plan, then 120,000 (10,000 * 12) monthly tracked users will be added to your account directly.
-What happens to my data after I cancel the account?
-In case you cancel your account, we will retain your data for 90 days if you’re in the trial period, 6 months if you're in the Analyze or Engage plan, and 12 months if you're in the Optimize plan.
+If I subscribe to a yearly plan, will my monthly tracked user count be added to my account every month?
+No. Your total annual tracked user allowance is credited to your account when your subscription is activated. For example, a plan with 10,000 monthly tracked users provides an annual allowance of 120,000 tracked users.
+What happens if I cancel my account during a yearly subscription?
+You'll be charged for the full billing cycle, and your plan's features will remain available until the billing cycle ends. Data retention after cancellation follows the retention period for your plan.
+Which Zoho PageSense plan is right for me?
+Choose a plan based on your goals and the features you need.
+Forever Free:
+Best for getting started with website analytics and understanding visitor behavior.
+Professional:
+Best for teams that want to engage visitors using polls, push notifications, and pop-ups and banners.
+Enterprise:
+Best for teams that need A/B testing, split URL testing, full-stack testing, and personalization.
+Not sure which plan to choose? Start with the 15-day free trial to explore all features before subscribing.
+Is there a free trial? Do I need a credit card?
+Yes. Every new user gets a 15-day free trial with access to all PageSense features, with no credit card required. The trial supports up to 5,000 monthly tracked users across three projects.
+Is there a permanently free plan?
+Yes. The Forever Free plan has no time limit and includes up to 5,000 monthly tracked users across one project. It provides core analytics features, including web analytics, mobile analytics, goals, funnel analysis, heatmaps, session recordings, and form analytics.
+Does PageSense offer discounts or custom plans?
+PageSense offers special discounts for nonprofit organizations. If you need to track more than 1,000,000 monthly tracked users or discuss a custom requirement, contact
+presales@zohopagesense.com
+.
+What happens if my payment fails?
+If a payment fails, PageSense sends reminder emails asking you to update your payment details or retry the transaction. If the payment remains unresolved after the reminder process, your account may be moved to the Forever Free plan.
+Does PageSense offer refunds?
+Refunds depend on the circumstances of your subscription. Contact
+support@zohopagesense.com
+to discuss cancellation or refund eligibility.
+Where can I get help choosing a plan?
+Contact
+presales@zohopagesense.com
+for help comparing plans and finding the right option for your needs. You can also explore the
+PageSense pricing page
+for a detailed feature comparison.

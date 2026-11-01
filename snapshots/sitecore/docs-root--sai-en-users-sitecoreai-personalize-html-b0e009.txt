@@ -29,7 +29,7 @@ SITES & PAGES
 Build digital experiences
 Create and manage sites
 Build pages
-PERFORMANCE
+OPTIMIZATION
 Conversion optimization
 Personalize
 Create a page variant
@@ -41,6 +41,8 @@ Work with condition groups
 Create a custom condition
 Component personalization
 A/B/n testing
+Headless personalization and A/B/n testing
+Triggered personalization
 Get performance insights
 PUBLISH
 Publish content
@@ -52,7 +54,7 @@ AI FEATURES
 Agentic studio
 Marketer MCP
 AI capabilities in SitecoreAI
-AI discoverability powered by Scrunch (Early access)
+AI discoverability powered by Scrunch
 Brand context
 RESOURCES
 Glossary
@@ -63,7 +65,9 @@ Personalize
 Toggle full width
 Change font size
 Toggle focus mode
+Copy page
 Personalize
+Copy page
 In a world saturated with digital content, standing out as a company can be challenging. By personalizing the pages of your website, you can provide a more engaging, efficient, and satisfying user experience, leading to improved business outcomes.
 With the Page builder, you can personalize the site experience to target specific audiences, offering tailored content during a browsing session, but also across sessions for returning visitors. This ensures that visitors to your website always see content that meets their expectations and needs, turning ordinary browsing into an original and personal digital experience.
 You can build the target audience using any combination of the following conditions:
@@ -83,6 +87,9 @@ Point of sale
 – your audience has visited one or more of your websites united under the same site identifier.
 After you have defined your audience, you personalize the page they will see by modifying one or more of its components. For example, you can change the content source of a component and update its content, hide another component, or replace it with another. Within each page variant, the user can choose to personalize any number of components, or keep their original version.
 In addition to personalization, the Page builder gives you real-time site and page analytics, with a performance dashboard per variant. You can also visualize the variant analytics' metrics side by side with the original. This gives you an insight into what is happening on your digital properties, and you can measure the impact of the changes you have made on a personalized page.
+You can also use
+the personalization insights dashboard
+to monitor personalization activity across your site. The dashboard provides operational analytics for page personalization, headless personalization, and triggered experiences, including reach, delivery health, and experience performance metrics.
 Sitecore uses
 cookies
 to identify site visitors to apply personalization based on their behavior, such as the pages they viewed.
@@ -97,26 +104,14 @@ Upgrading to Personalize or CDP will not backfill historical data beyond the 30/
 If you have suggestions for improving this article,
 let us know!
 Feedback
-Copy link
-Open in
-Documentation Assistant
-MCP
-This assistant uses AI to generate responses based on
-Sitecore documentation
-. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
-How does a developer get started in SitecoreAI?
-How do I create a hierarchy of page elements in SitecoreAI?
-How do I start using the Sitecore Content SDK?
-How do I use AI-assisted visual search in Content Hub?
-Deep Thinking
-Powered by
-k
-kapa.ai
-Protected by reCAPTCHA
 © Copyright
-2026
 , Sitecore A/S or a Sitecore affiliated company.
 All rights reserved.
 Privacy policy
 Sitecore Trust Center
 Terms of use
+Users
+Developers
+Cloud Portal
+Go to the search page
+en

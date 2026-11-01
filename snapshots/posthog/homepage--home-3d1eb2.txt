@@ -1,5 +1,5 @@
 # https://posthog.com/
-PostHog - your product’s context layer
+PostHog – Your product’s context layer
 Products
 Pricing
 Docs
@@ -86,7 +86,7 @@ Test a shorter mobile checkout.
 Ask PostHog anything
 PostHog is the single place to ingest, store, and query your product and company data. Analytics, replays, errors, and logs, stitched together on-the-fly to answer any question you have.
 Pipe in third party data from
-800
+900
 + sources
 for a more complete picture.
 Get started - free
@@ -97,7 +97,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -110,14 +110,14 @@ Replay Vision
 No-code A/B Testing
 and
 more
-Product Analytics, Session Replay, Error Tracking, Feature Flags, Experiments, Managed warehouse
+Product Analytics, Session Replay, Error Tracking, Feature Flags, Experiments, Warehouse
 flow into your agents.
 Product Analytics
 Session Replay
 Error Tracking
 Feature Flags
 Experiments
-Managed warehouse
+Warehouse
 Your agents
 Give agents product context
 Query product data from your editor instead of context-switching to a browser. Do everything from one-off analytics to launching new features - no new UI needed.
@@ -178,7 +178,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -196,7 +196,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -232,7 +232,7 @@ The data your agents need to make good decisions is already here. Ready to turn 
 Connect your first data source
 Usage-based pricing
 Our whole philosophy is that you shouldn't have to worry about pricing.
-All our paid products are pay-per-use with generous monthly free tiers. In fact, 98% of our customers use PostHog for free.
+All our paid products are pay-per-use with generous monthly free tiers. In fact, 97% of our customers use PostHog for free.
 We aim to match the cheapest option at scale – PostHog should be a no-brainer. You never have to "jump on a quick call" with sales.
 Here are some examples of how we charge for most popular products:
 1
@@ -273,7 +273,7 @@ $
 request
 4
 .
-Managed warehouse
+Warehouse
 Free tier:
 1 million
 row
@@ -308,7 +308,7 @@ $
 /
 request
 4
-Managed warehouse
+Warehouse
 1 million rows/mo
 $
 0.000015

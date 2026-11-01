@@ -39,10 +39,13 @@ API-First Architecture
 Full-coverage REST API lets you create, update, and report on experiments, goals, and collaborators — from a script or CLI.
 Programmatic control means you can version, QA, and roll back tests entirely inside your own tooling and workflows.
 CI/CD-friendly: Call the API (or the Full-Stack JS SDK for runtime evaluation) in your pipeline to roll out changes with fewer manual steps and lower risk.
-MCP Server for Prompt-Based Test Development
+Full Stack SDKs for JavaScript/TypeScript, PHP, Python, Ruby, iOS and Android. All six share one bucketing algorithm, so a visitor lands in the same variation whichever SDK evaluates them.
+MCP (Model Context Protocol) Server for Prompt-Based Test Development
 Turn your favorite AI tool into your Convert co-pilot (One you’ll actually use!)
 Automate experiment management with natural language. Your AI assistant can create, update, or pause experiments, adjust traffic splits, or inspect targeting rules from your editor or chat environment to reduce manual coding overhead by 60%.
-Use AI safely with least-privilege access and local-only credentials.
+Connect the way your team works. The
+hosted connector
+signs in with Convert OAuth, so no API keys go into your AI client. The local npm server keeps your API credentials in your own environment. Either way, access stays least-privilege and every change is yours to review.
 Maintain line-by-line code visibility, because AI can never replace your reasoning & judgment.
 5 Flexible Code Editors
 Global Experience CSS editor.
@@ -192,6 +195,7 @@ Multi-page Testing
 Audience Targeting
 A/B Testing Goals
 Full-stack Experimentation
+AI In Convert Experiences
 Integrations
 API Access
 Ecommerce A/B Testing

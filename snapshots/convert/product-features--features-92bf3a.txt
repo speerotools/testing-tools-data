@@ -117,7 +117,7 @@ Scale
 Full-stack experimentation with 6 SDKs
 Run reliable experiments across websites, apps, and offline point-of-sales.
 Test
-business logic, APIs, pricing, algorithms, LLM.text files, and feature flags
+business logic, APIs, pricing, algorithms, llms.txt, files, and feature flags
 - switching between the front-end and the back-end.
 Allow
 Edge Workers
@@ -273,14 +273,14 @@ No credit card required
 That's just seven of our signature features!
 Explore even more
 We work where you work
-Convert connects to the analytics, commerce, and CRO stack you already run. 90+ native integrations, no glue code required.
+Convert connects to the analytics, commerce, and CRO stack you already run. 100+ native integrations, no glue code required.
 Explore all integrations
 →
 Accuracy & integrity, built in
 Flexible snippet setup
 Three ways to load the tracking snippet, with transparent Core Web Vitals trade-offs for each
 Reporting that fits your existing stack
-90+ native integrations help reduce metric gaps between platforms
+100+ native integrations help reduce metric gaps between platforms
 Bot-free data
 Convert identifies scrapers, bots, and agents, so these do not pollute your experiment data
 Multiple statistical models
@@ -1117,6 +1117,10 @@ We donate 10% of our topline revenue every single month to initiatives like TIST
 Start 15-Day Free Trial
 No credit card required
 Frequently Asked Questions About Our Features
+What are tested users (MTUs), and what happens if I go over my quota?
++
+−
+Tested users are the site visitors actually bucketed into experiments you’re running, not your total traffic, and overlaps are disregarded: a visitor who sees three of your tests counts once. If your traffic spikes past your plan’s limit, nothing gets cancelled; A/B testing should support growth, so Convert alerts you at 90% and 100% of your allotment, and beyond that you can purchase additional tested users at $399 per 100,000 on Growth or $699 per 250,000 on Pro. Scale isn’t a concern either way: Convert has served high-traffic sites for over a decade on the Akamai CDN.
 What AI features does Convert Experiences support?
 +
 −
@@ -1128,26 +1132,6 @@ The power of the MCP server finds home in-app as
 Convert Intelligence®
 . Yes, you can use it to conduct prompt-based, natural language experimentation. Most importantly, it is a guide that sits on top of 17 years of testing know-how from our brand. It helps you learn the platform better and improve the way you run tests.
 Approval flows. Not an AI-assisted feature. But one every AI-savvy and multi-stakeholder team needs. It adds a human-in-the-loop as a reviewer for high-stakes actions like putting experiments live.
-What are tested users?
-+
-−
-Tested users are the number of site visitors participating in A/B tests you have running on the Convert Experiences platform.
-Let’s break down how we count users.
-The people who come to your site are termed as your
-site visitors
-. Not all site visitors though are Convert app
-tested users
-.
-Users
-are specifically the people who are bucketed into tests that you have running on your site. In counting users, we do one key thing.
-We disregard overlaps
-. So if there are 100,000 site visitors who see Test #1, and another 100,000 visitors who see Test #2… the total app tested users will be:
-200,000 people if the two sample sizes (of 100,000 each) have no overlaps. That means
-no one person
-has seen both tests.
-Less than 200,000 if the two sample sizes (of 100,000 each) have overlaps. If both sample sizes have 50,000 people who are unique to one test and 50,000 people who have seen both tests, then the tested users count will be 150,000.
-Tested users count is thus the same as (or less than) your website’s total unique site visitors, depending on how you choose to bucket your visitors into tests.
-This method of counting unique users replaces the older (pre April 2020) counting of unique tested visitors which took overlaps into consideration and gave a net tested visitors count based on all the visitors to each test.
 Does Convert Experiences apply sampling?
 +
 −
@@ -1230,6 +1214,7 @@ Multi-page Testing
 Audience Targeting
 A/B Testing Goals
 Full-stack Experimentation
+AI In Convert Experiences
 Integrations
 API Access
 Ecommerce A/B Testing

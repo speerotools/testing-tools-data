@@ -1,0 +1,218 @@
+# https://www.growthbook.io/platform/mcp-server
+MCP Server for Agentic Workflows & Analysis | GrowthBook
+Live Group Demo | Led by a GrowthBook technical expert →
+Choose Your Date
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Updates
+New
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Partners
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+MCP Server
+Develop faster with AI, safer with GrowthBook
+Connect GrowthBook to Claude, Cursor, Codex, and more to enable feature flags and experimentation for agentic workflows and analysis.
+Start for Free
+Request a Demo
+Trusted by 4,000+ companies worldwide
+Add GrowthBook to your AI tool in minutes
+Self-hosting GrowthBook, or want the server on your own machine? See the setup guide.
+View Setup Guide
+01
+Connect to the hosted server
+Add "https://mcp.growthbook.io/mcp" to your AI tool's MCP settings. Nothing to install.
+02
+Approve access
+Sign in to GrowthBook in your browser and approve the OAuth prompt. No API key required.
+03
+Start prompting
+Ask your AI assistant to create flags, check experiments, analyze past experiments. No switching tabs.
+Start learning with these prompts
+Start for Free
+01
+Automatically add feature gates
+Every new feature built, wrap in a flag, gradually deploy
+02
+Set up experiments from your editor
+Set up an A/B test for the new pricing page with 50/50 traffic split
+03
+Clean up automatically
+Identify and clean up stale flags. Schedule to run weekly.
+04
+Ask Claude for updates
+Give me an update on my banner test for the pricing page
+05
+Start planning with a brainstorm
+Analyze all past checkout flow experiments. Find the top 3 win / lose reasons.
+Go from coding velocity to shipping with confidence
+Ship fast from your workflow
+AI coding tools make it easy to write and deploy features quickly. Feature flags let you control who sees what and measure the impact. With the MCP server, you can automate feature flag setup and you’re one chat away from an experiment.
+See Feature Flags
+More context for prompts and agents
+The MCP server brings GrowthBook context and capabilities to your AI tool. Bring your policies and templates from GrowthBook to your AI tool for context. Review your entire experimentation program before your next sprint planning session. Reduce technical debt with a stale-flag cleanup agent.
+Set up MCP
+Build a culture of experimentation
+Just because you can build it, doesn’t mean you should. Only 20% of product changes have a positive impact on core business metrics. For teams already living in Cursor or Claude Code, GrowthBook fits into your workflow rather than interrupting it.
+See Experimentation
+One warehouse-native platform for modern product development
+Experimentation
+Add rigorous experimentation to any feature flag in minutes.
+See Experimentation
+Feature Flags
+Ship features instantly, ramp safely rollout, scale without lag.
+See Feature Flags
+Product Analytics
+Turn data into insights anyone can explore, act on, and share.
+See Product Analytics
+Customer testimonials
+“People only see the wins, but there’s actually greater value in avoiding losses. We’ve stopped changes that could have cost millions.”
+Merritt Aho
+Digital Analytics Lead at Breeze Airways
+“GrowthBook has changed the way we think about experiments... It allowed us to uplevel our code, speed up decision-making, and focus on what we do best.”
+Diego Accame
+Director of Engineering, Upstart
+“Experimentation showed what customers actually do rather than what we assume they’ll do.”
+Marek Maciusowicz
+Head of Engineering, Treatwell
+GrowthBook gives us a way to standardize experimentation while respecting the way Wikimedia projects actually work: open source, self-hosted, privacy-first, and deeply integrated with our existing data infrastructure.
+Adam Baso
+Principal Engineer, Wikimedia
+GrowthBook is the only platform that lets us automate analysis at this level. It gives us the flexibility to measure accurately and the speed to help teams learn every day.
+Andy Thäger
+Founder of Creatistas (toom partner)
+"A/B testing GenAI features has been an absolute game changer. Experimentation went from feeling like a speed bump to becoming a safety net."
+Kelli Hill, Ph.D.
+Senior Director, Data Insights, Khan Academy
+FAQs
+What is MCP?
+MCP (Model Context Protocol) is a standard that connects AI models with external software, databases, workflows, and tools. GrowthBook launched the first open-source production MCP server for experimentation and product development in early 2025. It brings feature flags and testing into AI development environments so engineering teams can measure what they ship without breaking flow.
+Which AI tools are supported by GrowthBook?
+Any AI tool that supports the Model Context Protocol works with the GrowthBook MCP server, including Claude Code, Cursor, VS Code, and Codex. For tools without MCP support, custom agents you build yourself, or any HTTP client, the REST API exposes the same functionality.
+Is the MCP server open source?
+Yes, GrowthBook's MCP server is 100% open source. You can inspect the code, verify the implementation, and contribute improvements at
+github.com/growthbook/growthbook-mcp
+. GrowthBook itself is fully open source at
+github.com/growthbook/growthbook
+. The REST API runs on code you can read.
+‍
+Do I need GrowthBook set up first?
+Yes. The MCP server connects to your GrowthBook instance (cloud or self-hosted) to create and manage feature flags and experiments. Setup takes minutes. See
+docs.growthbook.io/integrations/mcp
+for tool-specific instructions.
+Can I use this to test different AI models?
+Yes. Teams use GrowthBook to run A/B tests comparing LLM providers, prompt variations, and model versions — measuring impact on real user metrics rather than benchmark scores. The MCP server lets you set up those experiments from your editor.
+What about data privacy and the MCP server?
+You can connect to the hosted MCP server or run the server yourself.
+The hosted server runs on GrowthBook Cloud and calls the GrowthBook API on your behalf. Its access is limited to what your GrowthBook account can already see.
+Running it yourself keeps that traffic in your own infrastructure. The server talks only to the GrowthBook instance you point it at. Run it as a local process in your editor with an API key, or deploy the official Docker image as your own HTTP endpoint.
+In both cases your AI tool decides what goes into a tool call, so review that tool's privacy policy alongside this one.
+Do I have to run the MCP server myself?
+Not on GrowthBook Cloud. Point your AI tool at
+https://mcp.growthbook.io/mcp
+and approve the OAuth prompt in your browser. There is no API key to create and nothing to install. If you self-host GrowthBook, you run the server yourself, either as a local stdio process in your editor or as your own HTTP endpoint using the official Docker image.
+What if I am not using an MCP-compatible tool?
+GrowthBook also exposes a REST API that delivers the same capabilities to any HTTP client, including custom agents, CI jobs, and internal tools. See our AI-native development page for the full picture of how GrowthBook supports humans and agents working together.
+‍
+Do I need an API key?
+Only for self-hosted setups. The hosted server authenticates with OAuth, so it acts with your own GrowthBook permissions instead of a shared key in a config file. Self-hosted local setups still pass an API key or personal access token.
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 4,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Product Updates
+new
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Swag Shop
+Support
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

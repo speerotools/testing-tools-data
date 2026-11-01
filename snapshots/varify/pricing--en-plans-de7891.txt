@@ -1,5 +1,5 @@
 # https://varify.io/en/plans/
-Varify Pricing Overview
+Varify Pricing: A/B Testing Plans from €199/Month
 EN
 Features
 Pricing
@@ -36,37 +36,55 @@ Varify pricing – simple & fair
 A/B testing without limits. Same price, unlimited traffic. Choose the plan that best suits your business.
 NEW
 Optional:
-Varify Tracking
+Varify Realtime Tracking
 – real-time & cookieless.
 Learn more
 ↓
+Varify plans and prices
 Growth
 For small teams getting started with A/B testing.
 Monthly
 Annually −20%
 199 €
 per month
-billed annually · 2.388 € per year
+billed annually · 2,388 € per year
+billed monthly · save 20% with annual billing
 Start 15-day free trial
 Book demo call
 ✓
 1 website (domain)
+:
+Your plan covers one domain. Unlimited subdomains are included.
 ✓
 Unlimited traffic (MTU)**
 ✓
 5 active experiments
+:
+Up to five experiments can run at the same time. Archived and finished tests do not count.
 ✓
 A/B & Split URL testing
+:
+Compare variations on the same URL, or split traffic across completely separate URLs.
 ✓
 Multi page testing
+:
+Run one experiment across several pages of a funnel and measure the journey as a whole.
 ✓
 Visual & code editor
+:
+Build variations by clicking in the page, or drop into HTML, CSS and JavaScript.
 ✓
 Basic page & audience targeting
+:
+Target experiments by URL, device and browser.
 ✓
 Google Analytics 4 integration
+:
+Connect your GA4 property and evaluate experiments on the goals you already track.
 ✓
 Roll out winning variations
+:
+Keep a winning variation live with one click, without waiting for a developer release.
 Show all features
 Most popular
 Pro
@@ -75,32 +93,46 @@ Monthly
 Annually −28%
 249 €
 per month
-billed annually · 2.988 € per year
+billed annually · 2,988 € per year
+billed monthly · save 28% with annual billing
 Start 15-day free trial
 Book a demo call
 Includes all Growth features, plus
 ✓
 Unlimited active experiments
+:
+Run as many experiments in parallel as your traffic allows.
 ✓
 Full page & audience targeting
+:
+Target by CSS selectors, JavaScript conditions, cookies, storage, geolocation and more.
 ✓
 Bayesian statistics
+:
+Probability-based evaluation including an estimate of the remaining test runtime.
 ✓
 Unlimited team members
+:
+Invite your whole team and agency partners at no extra cost.
 ✓
 API access — Experiment & Reporting API
+:
+Create experiments and pull results programmatically from your own systems.
 +
 and more
 New features!
 ✓
 MCP connector — Varify MCP + GA4 MCP
+:
+Connect Varify and GA4 to AI assistants such as Claude via the Model Context Protocol.
 ✓
 Media library
+:
+Upload and reuse images across experiments instead of hotlinking external files.
 ✓
 Roll out winning variations
-✓
-Varify Tracking
-** — real-time & cookieless
+:
+Keep a winning variation live with one click, without waiting for a developer release.
 AI
 Varify AI unlocked
 New
@@ -116,6 +148,8 @@ AI: Web Analytics Audit
 ✦
 Your own AI agents
 AI credits not included*
+:
+AI features are billed in credits, booked separately as a monthly credit package.
 Show all features
 Enterprise
 For organizations with individual contracts plus special procurement and implementation requirements.
@@ -128,55 +162,96 @@ Services quoted separately
 Includes all Pro features, plus
 ✓
 Your own NDA
+:
+We sign your non-disclosure agreement instead of our standard template.
 ✓
 Your own SLA
+:
+Agree availability, response times and penalties on your own terms.
 ✓
 Your own DPA
+:
+We sign your data processing agreement, including your sub-processor requirements.
 ✓
 Own payment & contract terms
+:
+Payment terms, invoicing cycles and contract duration negotiated individually.
 ✓
 Advanced roles & permission settings
+:
+Create your own roles and assign individual permissions per user and workspace.
 ✓
 Server-side testing
+:
+Run experiments in your backend or edge layer instead of the browser.
 ✓
 Mutual exclusion of experiments
+:
+Keep experiments apart: a visitor who enters one experiment is excluded from the others in the group.
 +
 and more
 New features!
 ✓
 AI credits included
+:
+A credit volume is part of your Enterprise agreement — no separate credit purchase needed.
 ✓
 Bring your own AI key
+:
+Connect your own Anthropic, Google or OpenAI key and run AI features on your own contingent.
 ✓
 First-party context (CNAME)
+:
+Deliver the Varify script from your own subdomain for better performance and fewer blockers.
 ✓
 Auto stop experiments
+:
+An experiment ends on its own once your defined stop rule is met, without manual checking.
 ✓
 Server-side testing
+:
+Run experiments in your backend or edge layer instead of the browser.
 ✓
 Sequential testing
+:
+Evaluate results continuously and stop a test as soon as significance is reached.
 SOON
 ✓
 Multi-armed bandit
+:
+Traffic shifts automatically toward the better-performing variation while the test runs.
 SOON
 ✓
 SSO (SAML)
+:
+Single sign-on through your identity provider — Okta, Entra ID, Google Workspace and others.
 SOON
 ✓
 SOC 2
+:
+An independent audit of how a provider handles data security.
 SOON
 Show all features
 All plans include unlimited A/B testing, visual editor, code editor and GDPR compliance.
 *AI features such as AI CRO Audit and Prompt-Based Experimentation are available from the Pro plan and are billed in AI credits – as a monthly credit package or with your own API key.
-**Experiment data can be imported from Google Analytics 4 (and BigQuery). With any other analytics provider, experiments are measured with Varify Tracking – we set that up individually with you.
-2.700+ teams trust Varify
+**Experiment data can be imported from Google Analytics 4 (and BigQuery). With any other analytics provider, experiments are measured with Varify Realtime Tracking – we set that up individually with you based on your MTU.
+2,700+ teams trust Varify
+G2 REVIEWS
+4.9
+(
+57
+)
+★★★★★
 Where the plans actually differ
 Head to head. The full feature list is below.
+Varify plans compared: Growth, Pro and Enterprise
 Plan
 Growth
 Pro
 Enterprise
 Monthly Tested Users (MTU) with GA4 tracking
+:
+How many monthly users can enter experiments when you evaluate through GA4.
 unlimited
 unlimited
 unlimited
@@ -193,14 +268,20 @@ unlimited
 unlimited
 unlimited
 Active experiments
+:
+How many experiments can run at the same time.
 5
 unlimited
 unlimited
 Active deploys
+:
+How many winning variations can stay permanently live.
 10
 unlimited
 unlimited
 Goals per experiment
+:
+How many goals you can evaluate within one experiment.
 unlimited
 unlimited
 unlimited
@@ -213,776 +294,1114 @@ Monthly price with annual billing
 249 €
 on request
 Annual price
-2.388 €
-2.988 €
+2 388 €
+2 988 €
 on request
 Monthly price
 249 €
 349 €
 on request
 Development environments (staging / UAT)
-—
-✓
-✓
+Not included
+Included
+Included
 Custom payment & contract terms
-—
-—
-✓
+Not included
+Not included
+Included
 All features in detail
 Every feature by plan – open a group to see the details.
 Experiment types & setup
 −
+Experiment types & setup
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 A/B Testing
-✓
-✓
-✓
+:
+Split traffic between two or more variations of the same page and compare the results.
+Included
+Included
+Included
 Split URL Testing
-✓
-✓
-✓
+:
+Send traffic to completely separate URLs — ideal for full relaunches or new templates.
+Included
+Included
+Included
 Multi Page Testing
-✓
-✓
-✓
+:
+Run one experiment across several pages of a funnel and measure the journey as a whole.
+Included
+Included
+Included
 Personalization
-✓
-✓
-✓
+:
+Permanently show a specific audience a tailored version of your page.
+Included
+Included
+Included
 Full page redesigns
-✓
-✓
-✓
+:
+Rebuild an entire page as a variation instead of changing single elements.
+Included
+Included
+Included
 Multi-variation per experiment (unlimited)
-✓
-✓
-✓
+:
+Test as many variations against the control as you like within one experiment.
+Included
+Included
+Included
 Traffic Allocation
-✓
-✓
-✓
+:
+Decide what share of your visitors enters the experiment and how it is split.
+Included
+Included
+Included
 Traffic allocation with decimal places
-✓
-✓
-✓
+:
+Allocate traffic precisely, for example 0.5 % for a careful ramp-up.
+Included
+Included
+Included
 Archive experiments
-✓
-✓
-✓
+:
+Move finished tests out of the active list while keeping their results.
+Included
+Included
+Included
 Deactivate tracking per experiment
-✓
-✓
-✓
+:
+Run a change without measuring it — useful for pure rollouts.
+Included
+Included
+Included
 Media library
-—
-✓
-✓
+:
+Upload and reuse images across experiments instead of hotlinking external files.
+Not included
+Included
+Included
 Unlimited experiments
-—
-✓
-✓
+:
+No cap on how many experiments run at the same time.
+Not included
+Included
+Included
 Schedule Experiments
-—
-✓
-✓
+:
+Set a start and end date so tests go live and stop automatically.
+Not included
+Included
+Included
+Experiment JS/CSS
+:
+Add JavaScript and CSS once per experiment. It runs in every variation, including the original.
+Not included
+Included
+Included
 Mutual exclusion of experiments
-—
-—
-✓
+:
+Prevent visitors from entering two conflicting experiments at the same time.
+Not included
+Not included
+Included
 Server-side testing
-—
-—
-✓
+:
+Run experiments in your backend or edge layer instead of the browser.
+Not included
+Not included
+Included
 Editor
 +
+Editor
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Visual editor
-✓
-✓
-✓
+:
+Change texts, styles, images and layout by clicking directly in your page.
+Included
+Included
+Included
 Code editor
-✓
-✓
-✓
+:
+Write your own HTML, CSS and JavaScript for a variation.
+Included
+Included
+Included
 Text changes
-✓
-✓
-✓
+:
+Edit headlines, body copy, labels and button text without a developer.
+Included
+Included
+Included
 Style changes
-✓
-✓
-✓
+:
+Adjust colors, fonts, sizes, borders and spacing visually.
+Included
+Included
+Included
 Exchange of images
-✓
-✓
-✓
+:
+Swap images and background graphics inside a variation.
+Included
+Included
+Included
 Moving elements
-✓
-✓
-✓
+:
+Drag elements to a different position on the page.
+Included
+Included
+Included
 Add new HTML
-✓
-✓
-✓
+:
+Insert completely new sections, banners or blocks into the page.
+Included
+Included
+Included
 Change HTML
-✓
-✓
-✓
+:
+Edit the existing markup of an element directly.
+Included
+Included
+Included
 Duplicate elements
-✓
-✓
-✓
+:
+Copy an existing element including its styling to another spot.
+Included
+Included
+Included
 Add or change links
-✓
-✓
-✓
+:
+Change link targets or turn elements into links.
+Included
+Included
+Included
 Keyword Insertion
-✓
-✓
-✓
+:
+Insert dynamic values such as search terms or campaign parameters into your copy.
+Included
+Included
+Included
 Campaign Booster
-✓
-✓
-✓
+:
+Pre-defined, easy-to-add elements such as USP bars, notifications or exit-intent layers.
+Included
+Included
+Included
 Single Page Application Supported
-✓
-✓
-✓
+:
+Works with React, Vue and other SPAs, re-applying changes after route changes.
+Included
+Included
+Included
 Breadcrumb selector
-✓
-✓
-✓
+:
+Walk up the DOM tree to select exactly the element you want to change.
+Included
+Included
+Included
 User-defined selectors
-✓
-✓
-✓
+:
+Enter your own CSS selector to target elements precisely.
+Included
+Included
+Included
 Selector display for each change
-✓
-✓
-✓
+:
+See which selector a change is bound to, so you can spot fragile targeting.
+Included
+Included
+Included
 Delete or edit changes afterwards
-✓
-✓
-✓
+:
+Revisit and adjust individual changes in a variation at any time.
+Included
+Included
+Included
 Adjust margin & padding
-✓
-✓
-✓
+:
+Fine-tune spacing around and inside elements visually.
+Included
+Included
+Included
 Duplicate & rename variations
-✓
-✓
-✓
+:
+Copy a variation as a starting point and give it a meaningful name.
+Included
+Included
+Included
 Change the editor URL afterwards
-✓
-✓
-✓
+:
+Point the editor at a different page without rebuilding the experiment.
+Included
+Included
+Included
 Tooltips in the floating editor
-✓
-✓
-✓
+:
+Inline hints explain each editor control while you work.
+Included
+Included
+Included
 AI Prompt-Based Testing
-—
-✓
-✓
+:
+Describe the change in plain language and AI builds the variation and its code.
+Not included
+Included
+Included
 AI features
 +
+AI features
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 AI Results Summary (beta)
-—
-✓
-✓
+:
+AI summarizes what happened in the test and what it means in plain language.
+Not included
+Included
+Included
 AI test ideas (CRO Audit)
-—
+:
+AI analyzes your page and returns prioritized, testable optimization ideas.
+Not included
 AI credits
 AI credits
-AI Web Analytics Audit
-—
+AI Web Analytics Audit (Coming soon)
+:
+AI audits your web analytics data across pages, funnels and channels, identifies pages with potential and suggests concrete optimizations.
+Not included
 AI credits
 AI credits
 Prompt Based Experiments (PBX)
-—
+:
+Describe the experiment in plain language and AI builds the variation for you.
+Not included
 AI credits
 AI credits
 Bring your own AI Key
-—
+:
+Use your own provider key so AI usage is billed by your provider, not in credits.
+Not included
 199 €
 included
 QA & delivery
 +
+QA & delivery
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Preview link
-✓
-✓
-✓
+:
+Share a link that shows a variation to colleagues without exposing it to visitors.
+Included
+Included
+Included
 QA Mode
-✓
-✓
-✓
+:
+Force yourself into a variation to check it in the live environment before launch.
+Included
+Included
+Included
 Force a variation via URL parameter
-✓
-✓
-✓
+:
+Append a URL parameter to jump into a specific variation for QA or demos.
+Included
+Included
+Included
 Chrome extension (QA & variation switch)
-✓
-✓
-✓
+:
+Switch between variations directly in the browser while reviewing a page.
+Included
+Included
+Included
 Anti-flicker script
-✓
-✓
-✓
+:
+Hides the original content until the variation is applied, avoiding visible flicker.
+Included
+Included
+Included
 Audience Targeting
 +
+Audience Targeting
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Device
-✓
-✓
-✓
+:
+Target desktop, tablet or mobile visitors.
+Included
+Included
+Included
 Browser
-✓
-✓
-✓
+:
+Restrict an experiment to specific browsers.
+Included
+Included
+Included
 Browser language
-—
-✓
-✓
+:
+Target visitors by the language setting of their browser.
+Not included
+Included
+Included
 Cookie
-—
-✓
-✓
+:
+Include or exclude visitors based on cookie names and values.
+Not included
+Included
+Included
 IP address
-—
-✓
-✓
+:
+Target or exclude specific IP addresses or ranges, for example your own offices.
+Not included
+Included
+Included
 JavaScript
-—
-✓
-✓
+:
+Use a custom JavaScript condition to decide who enters the experiment.
+Not included
+Included
+Included
 Platform
-—
-✓
-✓
+:
+Target by operating system, such as iOS, Android, Windows or macOS.
+Not included
+Included
+Included
 Session storage
-—
-✓
-✓
+:
+Use session storage values as a targeting condition.
+Not included
+Included
+Included
 Local storage
-—
-✓
-✓
+:
+Use local storage values as a targeting condition.
+Not included
+Included
+Included
 URL Query Parameter
-—
-✓
-✓
+:
+Target visitors arriving with specific URL parameters, for example UTM campaigns.
+Not included
+Included
+Included
 URL referrer
-—
-✓
-✓
+:
+Target by the page or source a visitor came from.
+Not included
+Included
+Included
 Geolocation
-—
-✓
-✓
+:
+Target by country, region or city.
+Not included
+Included
+Included
 Segment builder (UI)
-—
-✓
-✓
+:
+Combine targeting conditions visually instead of writing code.
+Not included
+Included
+Included
 Save & reuse segments
-—
-✓
-✓
+:
+Store a segment once and apply it to future experiments.
+Not included
+Included
+Included
 Page targeting
 +
+Page targeting
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 URL targeting incl. match types
-✓
-✓
-✓
+:
+Define where an experiment runs using exact, contains, starts-with or regex matching.
+Included
+Included
+Included
 Targeting via CSS Selector
-—
-✓
-✓
+:
+Run an experiment only when a specific element exists on the page.
+Not included
+Included
+Included
 Targeting via JavaScript
-—
-✓
-✓
+:
+Run an experiment only when your own JavaScript condition is true.
+Not included
+Included
+Included
 Experiment reporting
 +
+Experiment reporting
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Evaluation of Google Analytics 4 Goals
-✓
-✓
-✓
+:
+Use your existing GA4 key events as experiment goals.
+Included
+Included
+Included
 One-sided frequentist test procedure
-✓
-✓
-✓
+:
+Tests whether a variation is better than the control.
+Included
+Included
+Included
 Exclude duplicate user events
-✓
-✓
-✓
+:
+Counts one conversion per user so repeat events do not distort results.
+Included
+Included
+Included
 Revenue significance & ARPU
-✓
-✓
-✓
+:
+Significance on revenue and average revenue per user, not just conversion rate.
+Included
+Included
+Included
 Experiment details in the report (start, end, …)
-✓
-✓
-✓
+:
+Runtime, start and end dates and setup details are documented in the report.
+Included
+Included
+Included
 Segmentation of the results
-✓
-✓
-✓
+:
+Break results down by device, source, audience and more.
+Included
+Included
+Included
 Setting the baseline variation
-✓
-✓
-✓
+:
+Choose which variation results are compared against.
+Included
+Included
+Included
 Significance test of the results
-✓
-✓
-✓
+:
+Statistical confirmation that a difference is not random noise.
+Included
+Included
+Included
 Filter by device and new / returning users
-✓
-✓
-✓
+:
+Check whether an effect holds for mobile, desktop, new or returning visitors.
+Included
+Included
+Included
 Evaluation of BigQuery Goals
-—
-✓
-✓
+:
+Evaluate experiments on raw event data instead of sampled reports.
+Not included
+Included
+Included
 Evaluation of Shopify Goals
-—
-✓
-✓
+:
+Measure orders and revenue directly from your Shopify store.
+Not included
+Included
+Included
 Evaluation of PostHog Goals
-—
-✓
-✓
+:
+Use your PostHog events as experiment goals.
+Not included
+Included
+Included
 Two-sided frequentist test procedure
-—
-✓
-✓
+:
+Tests for a difference in either direction — better or worse.
+Not included
+Included
+Included
 Bayesian test procedure incl. remaining test time
-—
-✓
-✓
+:
+Shows the probability of winning and estimates how long the test still needs.
+Not included
+Included
+Included
 Outlier Smoothing
-—
-✓
-✓
+:
+Caps extreme individual orders so one outlier cannot decide the test.
+Not included
+Included
+Included
 CSV export of raw data
-—
-✓
-✓
+:
+Download the underlying result data for your own analysis.
+Not included
+Included
+Included
 Sharing results reports
-—
-✓
-✓
+:
+Share a read-only report link with stakeholders and clients.
+Not included
+Included
+Included
 Filter Shopify results by product
-—
-✓
-✓
+:
+See which products drove the effect in a Shopify experiment.
+Not included
+Included
+Included
 Auto stop experiments
-—
-—
-✓
+:
+Stops an experiment automatically once your defined result condition is met.
+Not included
+Not included
+Included
 Integrations
 +
+Integrations
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Google Analytics 4
-✓
-✓
-✓
+:
+Import GA4 events and key events as experiment goals and evaluate them in Varify.
+Included
+Included
+Included
 Google Analytics 4 (Shopify Custom Pixel)
-✓
-✓
-✓
+:
+GA4 measurement in Shopify through the official custom pixel.
+Included
+Included
+Included
 Google Tag Manager
-✓
-✓
-✓
+:
+Deploy the Varify script and events through your existing GTM container.
+Included
+Included
+Included
 MS Clarity
-✓
-✓
-✓
+:
+Experiment data is sent to Clarity, where you segment heatmaps and recordings. These results stay in Clarity and are not imported into Varify reports.
+Included
+Included
+Included
 Mouseflow
-✓
-✓
-✓
+:
+Experiment data is sent to Mouseflow, where you segment recordings and heatmaps. These results stay in Mouseflow and are not imported into Varify reports.
+Included
+Included
+Included
 Hotjar
-✓
-✓
-✓
-Contentsquare
-–
-–
-✓
-Custom Tracker
-✓
-✓
-✓
+:
+Experiment data is sent to Hotjar, where you segment recordings and heatmaps. These results stay in Hotjar and are not imported into Varify reports.
+Included
+Included
+Included
 Shopify (conversions & revenue)
-✓
-✓
-✓
+:
+Orders and revenue flow into Varify automatically — no manual goal setup.
+Included
+Included
+Included
 Shopify multi-currency tracking script
-✓
-✓
-✓
+:
+Revenue is normalized across currencies for correct comparisons.
+Included
+Included
+Included
 Tracking setup wizard
-✓
-✓
-✓
+:
+A guided flow connects your analytics and verifies the setup in a few clicks.
+Included
+Included
+Included
 GA4: Auto-import of all GA4 events, metrics and key events
-✓
-✓
-✓
+:
+Your existing GA4 events appear as selectable goals without manual configuration.
+Included
+Included
+Included
 GA4: Automatic creation & archiving of audiences
-✓
-✓
-✓
+:
+Varify creates and cleans up the GA4 audiences an experiment needs.
+Included
+Included
+Included
 GA4: Evaluation based on events and users possible
-✓
-✓
-✓
+:
+Analyze results per event or per user, depending on the question.
+Included
+Included
+Included
 GA4: Cross Device Tracking
-✓
-✓
-✓
+:
+Recognize the same user across devices when GA4 user data allows it.
+Included
+Included
+Included
 BigQuery
-—
-✓
-✓
+:
+Evaluate experiments on raw event data from your BigQuery export.
+Not included
+Included
+Included
 Matomo
-—
-✓
-✓
+:
+Experiment data is sent to Matomo and evaluated there. These results stay in Matomo and are not imported into Varify reports.
+Not included
+Included
+Included
 Adobe Analytics
-—
-✓
-✓
+:
+Experiment data is sent to Adobe Analytics and evaluated there. These results stay in Adobe Analytics and are not imported into Varify reports.
+Not included
+Included
+Included
 Fullstory
-—
-✓
-✓
+:
+Experiment data is sent to Fullstory, so you watch sessions per variation there. These results stay in Fullstory and are not imported into Varify reports.
+Not included
+Included
+Included
 Mixpanel
-—
-✓
-✓
+:
+Experiment data is sent to Mixpanel and evaluated there. These results stay in Mixpanel and are not imported into Varify reports.
+Not included
+Included
+Included
 etracker
-—
-✓
-✓
+:
+Experiment data is sent to etracker and evaluated there. These results stay in etracker and are not imported into Varify reports.
+Not included
+Included
+Included
 Piano
-—
-✓
-✓
+:
+Experiment data is sent to Piano Analytics and evaluated there. These results stay in Piano and are not imported into Varify reports.
+Not included
+Included
+Included
 Snowplow
-—
-✓
-✓
+:
+Experiment data is sent to Snowplow and evaluated there. These results stay in Snowplow and are not imported into Varify reports.
+Not included
+Included
+Included
 Tealium
-—
-✓
-✓
+:
+Deploy and enrich Varify through your Tealium tag management setup.
+Not included
+Included
+Included
 PostHog
-—
-✓
-✓
+:
+Connect PostHog as your analytics source for experiment goals.
+Not included
+Included
+Included
 BigQuery auto setup
-—
-✓
-✓
+:
+Varify creates the required BigQuery queries and views for you.
+Not included
+Included
+Included
 BigQuery: Automatic import of all BigQuery events
-—
-✓
-✓
+:
+All events in your export become available as experiment goals.
+Not included
+Included
+Included
 BigQuery: Cross Device Tracking
-—
-✓
-✓
+:
+Join sessions across devices using your raw BigQuery data.
+Not included
+Included
+Included
 BigQuery: Segmentation according to cross-device tracking
-—
-✓
-✓
+:
+Break results down by cross-device behavior.
+Not included
+Included
+Included
 Shopify: Automatic import of the number of all sales
-—
-✓
-✓
+:
+Order counts are imported automatically as a conversion metric.
+Not included
+Included
+Included
 Shopify: Automatic import of all sales
-—
-✓
-✓
+:
+Revenue is imported automatically so you can measure real business impact.
+Not included
+Included
+Included
 Shopify: Segmentation by product
-—
-✓
-✓
+:
+Break experiment results down by product.
+Not included
+Included
+Included
 Shopify: Segmentation according to product variants
-—
-✓
-✓
+:
+Break results down by size, color or any other product variant.
+Not included
+Included
+Included
 PostHog: Automatic import of all PostHog Goals
-—
-✓
-✓
+:
+Your PostHog events become selectable experiment goals.
+Not included
+Included
+Included
 PostHog: Segmentation based on specific properties possible
-—
-✓
-✓
+:
+Filter results by any PostHog event or person property.
+Not included
+Included
+Included
 HubSpot
-—
-—
-✓
+:
+Writes the experiment and variation a user saw onto their HubSpot contact. This data stays in HubSpot and is not imported into Varify reports.
+Not included
+Not included
+Included
+Contentsquare
+:
+Experiment data is sent to Contentsquare and you analyze it there.
+Not included
+Not included
+Included
+Custom Tracker
+:
+Push experiment data into any tool via a custom tracking callback. You evaluate the results in that tool, not in Varify reports.
+Not included
+Not included
+Included
 Connectors
 +
+Connectors
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Varify MCP
-—
-✓
-✓
+:
+Let AI assistants read and act on your Varify data through the Model Context Protocol.
+Not included
+Included
+Included
 GA4 MCP
-—
-✓
-✓
+:
+Connect your GA4 data to AI assistants through the Model Context Protocol.
+Not included
+Included
+Included
 API
 +
+API
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Experiments API
-—
-✓
-✓
+:
+Create, update and control experiments programmatically.
+Not included
+Included
+Included
 Reporting API
-—
-✓
-✓
+:
+Pull experiment results into your own dashboards and data warehouse.
+Not included
+Included
+Included
 Security & Compliance
 +
+Security & Compliance
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Multi Factor Authentication (MFA)
-✓
-✓
-✓
+:
+Protect accounts with a second factor in addition to the password.
+Included
+Included
+Included
 Login History
-✓
-✓
-✓
+:
+Review when and from where users signed in.
+Included
+Included
+Included
 Active Sessions Log
-✓
-✓
-✓
+:
+See all active sessions and end them remotely.
+Included
+Included
+Included
 Password/MFA confirmation for sensitive actions
-✓
-✓
-✓
+:
+Critical actions require re-authentication before they are executed.
+Included
+Included
+Included
 MFA compulsory recruitment at team level
-—
-✓
-✓
+:
+Enforce multi-factor authentication for every member of your team.
+Not included
+Included
+Included
 Activity Log
-—
-✓
-✓
+:
+See which changes were made in the account and by whom.
+Not included
+Included
+Included
 Account history (who changed what)
-—
-✓
-✓
+:
+Full audit trail of account-level changes for compliance reviews.
+Not included
+Included
+Included
 Privacy
 +
+Privacy
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Cookieless at the end-user delivery
-✓
-✓
-✓
+:
+No cookies are set on your visitors, so consent is not a blocker for measurement.
+Included
+Included
+Included
 Varify Consent Mode
-✓
-✓
-✓
+:
+Align experiment delivery and measurement with your consent management platform.
+Included
+Included
+Included
 CNAME: individual delivery via a freely configurable subdomain
-—
-—
-✓
+:
+Serve the script from your own subdomain for first-party context and better performance.
+Not included
+Not included
+Included
 Roles & authorization management
 +
+Roles & authorization management
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Set predefined user roles
-—
-✓
-✓
+:
+Assign ready-made roles such as admin, editor or viewer.
+Not included
+Included
+Included
 Creating new user roles
-—
-—
-✓
+:
+Define your own roles with exactly the permissions you need.
+Not included
+Not included
+Included
 Allocation of individual authorizations
-—
-—
-✓
+:
+Grant or revoke single permissions per user.
+Not included
+Not included
+Included
 Payment
 +
+Payment
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Contract duration
+:
+The billing periods you can choose from for this plan.
 monthly, yearly
 monthly, half-yearly, yearly
 on request
 Credit card
-✓
-✓
-✓
+:
+Pay by credit card, charged automatically per billing period.
+Included
+Included
+Included
 PayPal
-—
-✓
-✓
+:
+Pay through your PayPal account.
+Not included
+Included
+Included
 Bank transfer
-—
-—
-✓
+:
+Pay by invoice and bank transfer instead of an automatic charge.
+Not included
+Not included
+Included
 Technical support
 +
+Technical support
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 E-mail
-✓
-✓
-✓
+:
+Support by email from our technical team.
+Included
+Included
+Included
 AI assistant chat
-✓
-✓
-✓
+:
+An in-app AI assistant answers setup and product questions instantly.
+Included
+Included
+Included
 Chat
-✓
-✓
-✓
+:
+Live chat with the Varify team during business hours.
+Included
+Included
+Included
 Slack
-—
-—
-✓
+:
+A shared Slack channel with direct access to your Varify contacts.
+Not included
+Not included
+Included
 Phone
-—
-—
-✓
+:
+Direct phone support for urgent topics.
+Not included
+Not included
+Included
 Services
 +
+Services
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Development experiment
+:
+Our team builds complex experiments for you.
 on request
 on request
 on request
 Guided onboarding
-—
-✓
-✓
+:
+A structured onboarding with your team so the first tests go live quickly.
+Not included
+on request
+on request
 Weekly check-ins
-—
-—
-✓
+:
+Regular sessions to review results and plan the next experiments.
+Not included
+Not included
+Included
 Account & Success Manager
-—
-—
-✓
+:
+A named contact responsible for your account and your testing program.
+Not included
+Not included
+Included
 Migration service
-—
-—
-✓
+:
+We move your existing experiments and setup from your previous tool.
+Not included
+Not included
+Included
 Contractual
 +
+Contractual
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Standard DPA
-✓
-✓
-✓
+Included
+Included
+Included
 Standard SLA
-✓
-✓
-✓
+Included
+Included
+Included
 NDA
-—
-—
-✓
+Not included
+Not included
+Included
 Adapted or own NDA
-—
-—
-✓
+:
+We review and sign your non-disclosure agreement.
+Not included
+Not included
+Included
 Customized or own SLA
-—
-—
-✓
+:
+Service levels agreed to your requirements.
+Not included
+Not included
+Included
 Adapted or own DPA
-—
-—
-✓
+:
+We review and sign your data processing agreement.
+Not included
+Not included
+Included
 Questionnaires on cyber security or data protection
-—
-—
-✓
+:
+We complete your security and privacy assessments during procurement.
+Not included
+Not included
+Included
 Adjusted terms of payment
-—
-—
-✓
+:
+Payment terms and invoicing adapted to your procurement process.
+Not included
+Not included
+Included
 Extras
 +
+Extras
 FEATURE
 GROWTH
 PRO
 ENTERPRISE
 Chrome extension
-✓
-✓
-✓
+:
+Switch between variations and run QA directly in the browser.
+Included
+Included
+Included
 Free test ideas (Knowledge hub)
-✓
-✓
-✓
+:
+A library of proven, ready-to-run test ideas — free for every customer.
+Included
+Included
+Included
 With Varify, the choice is yours
-Use Varify’s real-time tracking no matter which analytics tool you already run – set up in minutes, results in real time and custom goals without the tag manager.
+Use Varify Realtime Tracking no matter which analytics tool you already run – set up in minutes, results in real time and custom goals without the tag manager.
 New
-Varify Tracking – or keep the analytics you already use
-Varify Tracking** measures your experiments in real time, right next to your tests – cookie-less and GDPR-compliant, alongside whichever analytics tool you already use.
+Varify Realtime Tracking – or keep the analytics you already use
+Varify Realtime Tracking** measures your experiments in real time, right next to your tests – cookie-less and GDPR-compliant, alongside whichever analytics tool you already use.
 Talk to us about tracking
 Set up in minutes
 One snippet, no data layer work – tracking runs with the Varify script you already have.
@@ -991,10 +1410,10 @@ See conversions as they happen instead of waiting for tomorrow's export.
 Custom goals without the GTM
 Define clicks, revenue and custom events directly in Varify – no Google Tag Manager needed.
 Cookieless by design
-No cookies, no consent hurdle, data stays in the EU – full results from the first visitor.
+Varify sets no cookies. A consent option is built in; whether you need it is up to your legal review. The application runs on AWS in Frankfurt. Delivery runs through Cloudflare's global network. All sub-processors and transfer bases are listed in Annex 5 of our DPA.
 Our promise
 Test the full version of Varify
-The trial is always the complete product – every feature unlocked, no reduced version. Experiments are measured with Varify Tracking, so you see results from day one. No credit card details, no active cancellation.
+The trial is always the complete product – every feature unlocked, no reduced version. Experiments are measured with Varify Realtime Tracking, so you see results from day one. No credit card details, no active cancellation.
 Companies with more than one domain
 Get in touch with us
 Running A/B tests on multiple domains or need a larger credit volume? Then get in

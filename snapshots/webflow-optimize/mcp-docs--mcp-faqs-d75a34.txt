@@ -13,46 +13,7 @@ Guides
 Reference
 Prompt Library
 Changelog
-MCP Server
-MCP Server
-Use Webflow APIs with AI agents
-Guides
-Reference
-Prompt Library
-Changelog
-MCP Server
-Overview
-Getting started
-ChatGPT
-Claude Code
-Claude Desktop
-Cursor
-Postman
-Slack
-Windsurf
-Beta server
-Documentation server
-How it works
-Skills
-FAQs and troubleshooting
-Overview
-Getting started
-ChatGPT
-Claude Code
-Claude Desktop
-Cursor
-Postman
-Slack
-Windsurf
-Beta server
-Documentation server
-How it works
-Skills
-Skill Migration
-FAQs and troubleshooting
-Resources
-Get started
-System
+Skip to navigation
 On this page
 Installation and setup
 Using the MCP server
@@ -60,10 +21,11 @@ Scroll to top
 MCP Server
 FAQs and troubleshooting
 Copy page
+This page is for MCP Server.
 Common questions and solutions for installing, configuring, and using the Webflow MCP server.
 Installation and setup
 Why is my MCP server not appearing in my AI client?
-After installing the MCP server, you may need to restart your AI client to see the new server. Additionally, check that your client (Claude Desktop, Cursor, or Windsurf) is updated to the latest version.
+After installing the MCP server, you may need to restart your AI client to see the new server. Additionally, check that your client (Claude Desktop or Grok Build) is updated to the latest version.
 Troubleshooting steps:
 Restart your AI client completely
 Check for updates to your AI client
@@ -159,4 +121,50 @@ Was this page helpful?
 Yes
 No
 Previous
+Skill Migration
+Next
 Built with
+Guides
+Reference
+Prompt Library
+Changelog
+MCP Server
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Grok Build
+Postman
+Slack
+Beta server
+Documentation server
+How it works
+Skills
+FAQs and troubleshooting
+Overview
+Getting started
+ChatGPT
+Claude Code
+Claude Desktop
+Grok Build
+Postman
+Slack
+Beta server
+Documentation server
+How it works
+Skills
+Skill Migration
+FAQs and troubleshooting
+Home
+Data API
+Designer API
+Browser API
+Code Components
+Webflow Cloud
+DevLink
+Flowkit CSS Framework
+Webflow Apps
+MCP Server
+Webflow CLI
+Reference

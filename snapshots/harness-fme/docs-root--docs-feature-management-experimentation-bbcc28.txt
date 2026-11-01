@@ -1,5 +1,5 @@
 # https://developer.harness.io/docs/feature-management-experimentation
-Feature Management & Experimentation Documentation | Feature Management & Experimentation | Harness
+Feature Management & Experimentation Documentation | Runtime Configuration | Harness
 ⌘
 Ctrl
 k
@@ -29,21 +29,24 @@ Management & Administration
 API Keys
 Audit Logs
 Automated Feature Flag Cleanup
+Dashboards
+LIMITED GA
 Environments
 Groups
 Integrations
 My Work
 Owners
 Permissions
+Pipeline-gated changes
+BETA
 Pipelines
 Policies
 Projects
 Tags
 Traffic Types
-Users
 Usage Data
 Admin Best Practices
-API Best Practices
+API best practices
 Troubleshooting & Resources
 What's Supported
 Harness FME's approach to statistics
@@ -59,8 +62,8 @@ Markdown
 Copy
 On this page
 Documentation
-Delivery
-Feature Management & Experimentation
+More Products
+Runtime Configuration
 Feature Management & Experimentation Documentation
 Harness Feature Management & Experimentation (FME) is a feature management platform that helps you manage feature releases, monitor performance, and run experiments for data-driven development.
 Getting started
@@ -103,7 +106,7 @@ Give feedback
 Next
 Start FME in Harness
 Last updated
-14 days ago
+1 month ago
 Was this helpful?
 Resources
 Sign up

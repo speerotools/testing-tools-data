@@ -1,6 +1,6 @@
 # https://developers.wingify.com/v2/docs/fme-mcp-server
 MCP Server
-For AI agents: visit https://developers.wingify.com/v2/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI. Append .md to any documentation page URL to get its markdown version.
+For AI agents: the docs index is at https://developers.wingify.com/v2/llms.txt. Append .md to any documentation page URL to get its markdown version.
 Jump to Content
 Documentation
 API Reference
@@ -451,7 +451,7 @@ orchestrator
 Flags are created/updated in the Wingify dashboard, and integration code is directly injected into the user’s codebase.
 graph TD A[Developer/AI Agent in IDE] --> B{Feature intent detected} B -->|Yes, use VWO SDK| C[MCP Plugin] C --> D[Detect project context: language and structure] D --> E[Generate IDE rules for Cursor] C --> F[Call VWO API to create or update flag] F --> G[VWO FE Dashboard] C --> H[Generate SDK code: getFlag and getVariable] H --> I[Insert integration code into codebase] %% Assign classes class C project class G dashboard class I code %% Define styles classDef project fill:#ff9,stroke:#333,stroke-width:1px,color:#000 classDef dashboard fill:#bbf,stroke:#333,stroke-width:1px,color:#000 classDef code fill:#cfc,stroke:#333,stroke-width:1px,color:#000
 Updated
-3 months ago
+4 months ago
 Github Action
 Developer Tools / IDE
 Did this page help you?

@@ -22,25 +22,29 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-Experiment Types
-Reducing False Positives
-Health Checks
-Variance Reduction
-How we Calculate:
-Stratified Sampling
-Frequentist Sequential Testing
-Bayesian Experiments
-Sequential Probability Ratio Tests
-End An Experiment
 Read Results
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
+Introduction
+Analysis Methods
+Frequentist Sequential Testing
+Sequential Probability Ratio Tests
+Bayesian Experiments
+One-Sided Tests
+Reducing False Positives
+Variance Reduction
+Health Checks
+How We Calculate
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -114,19 +118,25 @@ custom queries
 Enable sequential testing
 On the
 Setup
-tab of your experiment, set
+tab of your experiment, expand
+Advanced Settings
+, set
 Analytics Type
 to
 Frequentist
 , then select
 Apply Sequential Testing
 under
-Analysis Settings
+Frequentist Mode Settings
 . You can toggle this setting at any time during the experiment; you don't need to turn it on before the experiment starts.
 Interpret sequential testing results
-Click
-Edit
-at the top of the metrics section in Pulse to toggle sequential testing on or off.
+On the
+Results
+tab, select the pencil icon next to the Scorecard summary row to open
+Comparison & Stats
+, then toggle
+Sequential Testing
+on or off.
 When you turn on sequential testing, Statsig adjusts the results it calculates before the target completion date of the experiment.
 The dashed line is the expanded confidence interval that results from the adjustment. The solid bar is the standard confidence interval without adjustment. If the adjusted confidence interval overlaps zero, the metric delta isn't significant yet, and the experiment should continue as planned.
 Early decisions often produce underpowered lift estimates with high uncertainty. If you need the correct ship decision, act on significant sequential testing results. If you need an accurate measurement of the effect size, wait for the full power that your pre-experiment power calculation estimates. Statsig doesn't calculate statistical power on post-hoc results; refer to the section "Post-hoc Power Calculations are Noisy and Misleading" in

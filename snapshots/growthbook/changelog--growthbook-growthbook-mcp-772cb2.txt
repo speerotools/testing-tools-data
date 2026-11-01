@@ -1,0 +1,746 @@
+# https://github.com/growthbook/growthbook-mcp
+GitHub - growthbook/growthbook-mcp: Official GrowthBook MCP server for creating flags, getting experiments, and more. · GitHub
+Skip to content
+Navigation Menu
+Sign in
+Products
+Platform
+GitHub
+Repository hosting, code review, and collaboration
+Copilot
+AI coding agent for tasks, projects and automated work
+Build & Ship
+Actions
+CI/CD and automation
+Code Quality
+Quality analysis, fixes, and enforcement
+Codespaces
+Cloud development environments
+Secure
+Code Security
+Vulnerability detection and remediation
+Secret Protection
+Secret scanning and leak prevention
+All Features
+Developers
+Learn
+Documentation
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Events
+Changelog
+Changelog
+Your source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
+Enterprises
+Team
+Startups
+Nonprofits
+By Industry
+Healthcare
+Financial services
+Manufacturing
+Government
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
+Business insights
+Trust Center
+Add-ons
+GitHub Advanced Security
+Enterprise-grade code security
+Copilot for business
+Enterprise-grade AI features
+Premium Support
+Enterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub Universe
+The event for developers, by developers — talks, workshops, and what’s next for GitHub.
+Pricing
+Search
+/
+Sign in
+Sign up
+Appearance settings
+You signed in with another tab or window.
+Reload
+to refresh your session.
+You signed out in another tab or window.
+Reload
+to refresh your session.
+You switched accounts on another tab or window.
+Reload
+to refresh your session.
+Dismiss alert
+growthbook
+growthbook-mcp
+Repository navigation
+Code
+Issues
+7
+(
+7
+)
+Pull requests
+13
+(
+13
+)
+Actions
+Projects
+Security and quality
+Insights
+More
+items
+growthbook-mcp
+Public
+Notifications
+You must be signed in to change notification settings
+Fork
+23
+(
+23
+)
+Star
+24
+(
+24
+)
+You must be signed in to star a repository
+About
+Official GrowthBook MCP server for creating flags, getting experiments, and more.
+docs.growthbook.io/integrations/mcp
+Topics
+ab-testing
+feature-flags
+mcp
+mcp-server
+Resources
+Readme
+MIT license
+Activity
+Custom properties
+Stars
+24
+stars
+Watchers
+9
+watching
+Forks
+23
+forks
+Report repository
+main
+Branches
+Tags
+Go to file
+Code
+Open more actions menu
+Latest commit
+History
+199 Commits
+199 Commits
+Folders and files
+Name
+Name
+Last commit message
+Last commit date
+.cursor-plugin
+.cursor-plugin
+.github
+.github
+scripts
+scripts
+src
+src
+test
+test
+.dockerignore
+.dockerignore
+.gitignore
+.gitignore
+.mcpbignore
+.mcpbignore
+CHANGELOG.md
+CHANGELOG.md
+Dockerfile
+Dockerfile
+LICENSE
+LICENSE
+README.md
+README.md
+agent-skills.local.json.example
+agent-skills.local.json.example
+agent-skills.lock.json
+agent-skills.lock.json
+icon.png
+icon.png
+manifest.json
+manifest.json
+mcp.json
+mcp.json
+package-lock.json
+package-lock.json
+package.json
+package.json
+server.json
+server.json
+tsconfig.json
+tsconfig.json
+vitest.config.ts
+vitest.config.ts
+View all files
+Repository files navigation
+README
+MIT license
+More
+items
+GrowthBook MCP Thin
+A thin MCP server for GrowthBook with four tools:
+Tool
+Purpose
+growthbook_list_skills
+List top-level skill entry points (name + description)
+growthbook_read_skill
+Return a listed skill or qualified child workflow (
+feature-flags
+or
+feature-flags/references/flag-create
+)
+growthbook_api_read
+Authenticated GET passthrough to the GrowthBook API
+growthbook_api_write
+Authenticated POST/PUT/PATCH/DELETE passthrough
+Competence lives in the
+skills
+repo and is
+bundled at build time
+. Capability is split into read vs write API tools (no per-endpoint formatters) so clients can honor
+readOnlyHint
+/
+destructiveHint
+correctly.
+Tools are prefixed with
+growthbook_
+so they stay unambiguous when a client has multiple MCP servers loaded.
+Cursor plugin
+Install
+GrowthBook
+from the
+Cursor Marketplace
+. The plugin connects Cursor to the hosted server at
+https://mcp.growthbook.io/mcp
+; the first tool call opens a GrowthBook sign-in to authorize it. Self-hosted GrowthBook users should configure the server manually as described below.
+The plugin is defined by
+.cursor-plugin/plugin.json
+and
+mcp.json
+. To test changes locally, copy the repo into
+~/.cursor/plugins/local/growthbook
+and run
+Developer: Reload Window
+.
+Install / run
+npm install npm run build
+Point your MCP client at the compiled entrypoint:
+{
+"mcpServers"
+: {
+"growthbook"
+: {
+"command"
+:
+"
+node
+"
+,
+"args"
+: [
+"
+/absolute/path/to/growthbook-mcp/server/index.js
+"
+],
+"env"
+: {
+"GB_API_KEY"
+:
+"
+your_api_key_or_pat
+"
+,
+"GB_API_URL"
+:
+"
+https://api.growthbook.io
+"
+} } } }
+Or run the published package:
+npx @growthbook/mcp
+Environment variables
+Variable
+Required
+Default
+Purpose
+GB_API_KEY
+Yes for stdio; optional for HTTP OAuth
+—
+GrowthBook API key or personal access token
+GB_API_URL
+No
+https://api.growthbook.io
+API base URL (self-hosted) and default OAuth AS issuer
+GB_MCP_TRANSPORT
+No
+stdio
+stdio
+or
+http
+GB_MCP_PORT
+No
+3333
+HTTP listen port (when transport=http)
+GB_MCP_HOST
+No
+127.0.0.1
+HTTP bind host
+GB_MCP_URL
+Yes for HTTP
+—
+Public MCP base URL stamped into OAuth resource metadata (server refuses to start in HTTP mode without it)
+GB_MCP_KEEP_ALIVE_TIMEOUT_MS
+No
+90000
+Idle keep-alive timeout in HTTP mode. Must exceed the idle timeout of any load balancer in front, or the LB can reuse a connection the server has already closed and the request fails with a 502
+OPENAI_APPS_CHALLENGE_TOKEN
+No
+—
+Served as plain text at
+/.well-known/openai-apps-challenge
+for OpenAI plugin domain verification (HTTP mode); the route returns 404 when unset
+GB_OAUTH_ISSUER
+No
+GB_API_URL
+GrowthBook OAuth AS issuer URL
+GB_HTTP_HEADER_*
+No
+—
+Extra request headers (e.g.
+GB_HTTP_HEADER_CF_ACCESS_TOKEN
+)
+GB_SKILLS_ENABLED
+No
+true
+Set to
+false
+/
+0
+to disable skill tools
+HTTP + OAuth mode
+OAUTH_AS_ENABLED=1
+#
+on the GrowthBook API
+GB_MCP_TRANSPORT=http GB_API_URL=http://localhost:3100 GB_MCP_PORT=3333 npm start
+Clients connect to:
+http://127.0.0.1:3333/mcp
+— full (skills + API read/write)
+http://127.0.0.1:3333/mcp/api
+— capability-only (
+growthbook_api_read
++
+growthbook_api_write
+)
+Unauthenticated requests receive
+401
+with
+WWW-Authenticate
+pointing at
+/.well-known/oauth-protected-resource
+, which advertises the GrowthBook Authorization Server.
+Before handling MCP, the server probes GrowthBook REST (
+GET /api/v1/
+) with the bearer. A
+401
+from that probe (or later from an API tool) yields HTTP
+401
+with
+error="invalid_token"
+so the MCP client can refresh — instead of surfacing
+"This API key has expired"
+as a tool error. A
+403
+is treated as an accepted bearer (permission denied ≠ invalid token) so clients are not forced into a refresh loop.
+Capability-only mode
+HTTP (recommended for remote):
+point the client at
+/mcp/api
+instead of
+/mcp
+:
+{
+"mcpServers"
+: {
+"growthbook"
+: {
+"url"
+:
+"
+http://127.0.0.1:3333/mcp/api
+"
+} } }
+Path
+Tools
+/mcp
+growthbook_list_skills
+,
+growthbook_read_skill
+,
+growthbook_api_read
+,
+growthbook_api_write
+(unless
+GB_SKILLS_ENABLED=false
+)
+/mcp/api
+growthbook_api_read
+,
+growthbook_api_write
+only
+stdio / process-wide:
+set env so skills are never registered:
+"env"
+: {
+"GB_API_KEY"
+:
+"
+...
+"
+,
+"GB_SKILLS_ENABLED"
+:
+"
+false
+"
+}
+When skills are disabled, only the API read/write tools are registered.
+growthbook_list_skills
+and
+growthbook_read_skill
+are not exposed.
+How skills are bundled
+npm run build
+#
+tsc && bundle-skills
+scripts/bundle-skills.mjs
+copies the top-level skill tree from the canonical skills checkout, preserving structure:
+skills/<skill>/SKILL.md → server/skills/<skill>/SKILL.md skills/<skill>/references/<workflow>.md → server/skills/<skill>/references/<workflow>.md
+Source path resolution:
+SKILLS_SRC
+env var (path to the skills repo root)
+agent-skills.local.json
+—
+{ "path": "../skills" }
+, relative to the repo root. Gitignored; copy
+agent-skills.local.json.example
+skills-src/
+— what CI and the Docker build vendor
+There is no implicit sibling lookup.
+../skills
+resolves to whatever happens to be at that path, which makes a local build silently disagree with the commit CI builds from.
+CI, cloud deploys, and releases all read
+agent-skills.lock.json
+and check out that exact skills commit. To ship upstream skill changes, update the commit in the lock file. Local development can point at any checkout with
+agent-skills.local.json
+or
+SKILLS_SRC
+.
+The skills repo stays the source of truth — this package does not maintain a fork of skill content. New skills flow through automatically, except those named in the small blocklist in
+bundle-skills.mjs
+. Currently only
+gb-setup
+is blocked because it configures the
+gb-call
+shell adapter rather than GrowthBook itself.
+Per-skill
+scripts/
+directories are not copied. Relative
+`references/foo.md`
+links are rewritten to qualified
+`feature-flags/references/foo`
+paths so
+growthbook_read_skill
+can resolve them.
+Using skills with the API tools
+Bundled skills still show workflows as:
+gb-call GET /api/v1/projects gb-call POST /api/v2/features ./payload.json
+This MCP server does
+not
+shell out to
+gb-call
+. Map
+GET
+→
+growthbook_api_read
+and
+POST
+/
+PUT
+/
+PATCH
+/
+DELETE
+→
+growthbook_api_write
+with the same path and optional JSON body string. Server instructions and
+growthbook_read_skill
+output include this bridge note.
+Tools detail
+growthbook_api_read
+/
+growthbook_api_write
+{
+"path"
+:
+"
+/api/v1/projects
+"
+} {
+"method"
+:
+"
+POST
+"
+,
+"path"
+:
+"
+/api/v2/features
+"
+,
+"body"
+:
+"
+{
+\"
+id
+\"
+:
+\"
+my-flag
+\"
+,...}
+"
+}
+Read: GET only (
+readOnlyHint: true
+)
+Write:
+POST
+|
+PUT
+|
+PATCH
+|
+DELETE
+(
+destructiveHint: true
+)
+Returns raw response body on 2xx
+On non-2xx, returns an actionable error (
+isError: true
+) covering auth failures, self-hosted 404 hints, and rate limits
+Freeform paths target the
+GrowthBook REST API
+Each request carries MCP usage headers (see
+Usage telemetry
+)
+growthbook_list_skills
+/
+growthbook_read_skill
+Only registered when
+GB_SKILLS_ENABLED
+is not disabled.
+growthbook_list_skills
+returns top-level skill entry points. An entry may contain a complete workflow or route to child workflows.
+growthbook_read_skill
+accepts a listed top-level name or a qualified child path named by a loaded skill (
+feature-flags/references/flag-create
+) and returns the full markdown (workflow + guardrails).
+Usage telemetry
+This server never sends telemetry anywhere itself. Instead, every REST call made by
+growthbook_api_read
+/
+growthbook_api_write
+includes headers that tell the GrowthBook instance it's talking to that the call came from the MCP:
+Header
+Example
+Contents
+X-GB-MCP-Tool
+growthbook_api_read
+The tool that made the call
+X-GB-MCP-Version
+2.2.0
+This server's version
+X-GB-MCP-Transport
+stdio
+stdio
+or
+http
+X-GB-MCP-Client
+cursor/1.2.3
+The MCP client's name/version from the initialize handshake, or its
+User-Agent
+in HTTP mode
+GrowthBook records these through its existing product telemetry, so the same controls apply. On a self-hosted instance, setting
+DISABLE_TELEMETRY
+on the GrowthBook back-end turns this off along with the rest of GrowthBook's telemetry. Older GrowthBook versions ignore the headers. Skill tools (
+growthbook_list_skills
+/
+growthbook_read_skill
+) are served locally and make no requests, so they aren't tracked.
+Development
+git clone git@github.com:growthbook/skills.git ../skills cp agent-skills.local.json.example agent-skills.local.json
+#
+edit if not at ../skills
+npm install npm run build npm start
+Standalone HTTP mode
+By default the server runs over stdio. Set
+GB_MCP_TRANSPORT=http
+to run it as a standalone HTTP server that exposes MCP at
+/mcp
+(skills + API tools) and
+/mcp/api
+(capability-only), behind an OAuth 2.0 protected-resource surface (RFC 9728 metadata + RFC 6750
+WWW-Authenticate
+).
+GB_MCP_URL
+(
+required
+in HTTP mode) — the server's public base URL. It is stamped into the OAuth resource (audience) and the protected-resource metadata, so it is never derived from request headers. The server refuses to start without it.
+GB_MCP_PORT
+(default
+3333
+) and
+GB_MCP_HOST
+(default
+127.0.0.1
+).
+Incoming bearers are validated by probing the GrowthBook REST API; a rejected token gets HTTP
+401
++
+WWW-Authenticate
+so the client can refresh.
+Run it on a trusted network or bound to loopback. For a multi-tenant or public deployment, front it with your own gateway/auth.
+Releases
+Cutting a release is deliberate: bump the version in
+package.json
+, run
+npm run sync-version
+(updates
+manifest.json
+,
+server.json
+, and
+.cursor-plugin/plugin.json
+), then push a matching
+v*
+tag:
+git tag v2.0.0 git push origin v2.0.0
+That tagged commit (with skills frozen at cut time) publishes:
+@growthbook/mcp
+to npm — prereleases (versions with a
+-
+, e.g.
+2.0.0-beta.1
+) go under the
+beta
+dist-tag; stable versions become
+latest
+a multi-arch (
+amd64
++
+arm64
+) image to
+ghcr.io/growthbook/growthbook-mcp
+(
+:<version>
+, plus
+:<major>
+,
+:<major>.<minor>
+, and
+:latest
+for stable releases)
+an entry in the MCP registry
+a GitHub Release
+The Cursor plugin is not published by CI: Cursor re-reviews the plugin from the default branch after the version bump lands.
+Install a release with
+npx @growthbook/mcp@<version>
+or pull
+ghcr.io/growthbook/growthbook-mcp:<version>
+.
+About
+Official GrowthBook MCP server for creating flags, getting experiments, and more.
+docs.growthbook.io/integrations/mcp
+Topics
+ab-testing
+feature-flags
+mcp
+mcp-server
+Resources
+Readme
+MIT license
+Activity
+Custom properties
+Stars
+24
+stars
+Watchers
+9
+watching
+Forks
+23
+forks
+Report repository
+Packages
+Used by
+Contributors
+Languages
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+You can’t perform that action at this time.

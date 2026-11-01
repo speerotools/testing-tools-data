@@ -22,16 +22,19 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-End An Experiment
 Read Results
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -52,12 +55,16 @@ Session Replay
 Statsig + AI
 MCP
 Overview
-Docs MCP server
 Statsig MCP with Codex
 Statsig ChatGPT App
+Claude connector
 Statsig MCP with Cursor
 Statsig MCP with Claude Code
 Statsig MCP with Other MCP-Compatible Clients
+Enterprise-managed auth
+Reference
+Legacy V1
+Docs MCP server
 Agent Skills Repository
 AI Development with Statsig
 Github AI Integration
@@ -79,11 +86,12 @@ Prerequisites
 Configuration
 Verification
 Testing the connection
-Next steps
 For AI agents: a documentation index is available at
 /llms.txt
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 Product Docs
+/
+MCP
 /
 Statsig MCP with Other MCP-Compatible Clients
 Statsig MCP with Other MCP-Compatible Clients
@@ -93,7 +101,7 @@ Prerequisites
 A Statsig account (sign up at
 console.statsig.com
 )
-An MCP-compatible tool or client
+An MCP-compatible tool or client that supports Streamable HTTP
 Access to your tool's configuration files
 Configuration
 Add the following configuration to your MCP client's configuration file:
@@ -106,43 +114,35 @@ Copy
 : {
 "url"
 :
-"https://api.statsig.com/v1/mcp"
+"https://api.statsig.com/v3/mcp"
 }
 }
 }
-This installs the Statsig MCP Server with OAuth. When you first use the MCP server:
-Your tool prompts you to authenticate
-Statsig redirects you to its OAuth page
-Sign in and authorize the MCP server
-Your tool stores the authentication token automatically
+This installs the Statsig MCP server with OAuth. When you first use the MCP server:
+Your tool prompts you to authenticate.
+Statsig redirects you to its OAuth page.
+Sign in and authorize the MCP server.
+Your tool stores the authentication token automatically.
 MCP OAuth only supports Personal Console API Keys. Ensure your Statsig org
 owner has enabled Personal Console API Keys creation for your role in
 organization settings
-{" "}
-Using API Key instead of OAuth
+.
+Using API key instead of OAuth
 Verification
 After adding the configuration:
-Restart your tool to apply the changes
-Check your tool's MCP server list to verify Statsig appears
-Try using a Statsig MCP command to test the connection
+Restart your tool to apply the changes.
+Check your tool's MCP server list to verify Statsig appears.
+Try using a Statsig MCP command to test the connection.
 Testing the connection
 You can test the connection by asking your tool to:
+Check the project
+: "Which Statsig project am I connected to, and what permissions do I have?"
 List experiments
 : "Get list of experiments"
 List gates
 : "Get list of gates"
 Get details
 : "Get details for experiment [experiment-id]"
-Next steps
-MCP capabilities
-Use cases
-for Statsig MCP
-Tool-specific guides:
-Cursor
-,
-Claude Code
-,
-Codex CLI
 Was this helpful?
 Copy Markdown
 On this page
@@ -150,4 +150,3 @@ Prerequisites
 Configuration
 Verification
 Testing the connection
-Next steps

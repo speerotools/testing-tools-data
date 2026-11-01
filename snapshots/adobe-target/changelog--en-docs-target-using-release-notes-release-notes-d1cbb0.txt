@@ -4,107 +4,49 @@ Documentation
 Target
 Target Guide
 Target release notes (current)
-Last update: October 1, 2026
+Last update: October 16, 2026
 Topics:
 Implementation
 Administration and configuration
 Explore the latest features, enhancements, and fixes in Adobe Target. These release notes also cover updates to Target APIs, SDKs, the Adobe Experience Platform Web SDK, at.js, and other platform components when applicable.
 (The issue numbers in parentheses are for internal Adobe use.)
-Target Standard/Premium 26.9.8 (September 30, 2026)
-Features
-Sample size calculator
-The Sample Size Calculator helps you plan experiments before launch by estimating required traffic, test duration, the number of experiences, or the minimum effect you can reliably detect. Available from the Activities menu, it uses your inputs to help you determine the resources and runtime needed for your test.
-The Sample size calculator feature is currently available as a beta feature.
-For more information, refer to the
-detailed documentation
-.
-AI Insights
-AI insights provides AI-generated experiment learnings and optimization opportunities for A/B Test activities with Manual traffic allocation. Once an experiment reaches statistical significance, insights highlight attributes of the winning experience that likely contributed to its performance. Suggested opportunities include new experience ideas, hypotheses, and implementation guidance to help improve conversion rates.
-The AI insights feature is currently available as a beta feature.
-For more information, refer to the
-detailed documentation
-.
-Improvements
-Administration
+Target Standard/Premium 26.10.2 (October 15, 2026)
+Activities
 See details
-Unable to grant AI permissions to users
-. Users with Product Admin and System Admin access could not grant AI permissions to other users. Attempting to enable the AI permission resulted in an
-Unauthorized
-error, even when AI was enabled for the organization. (TGT-56261)
-Target Standard/Premium 26.9.7 (September 28, 2026)
+Incorrect goal settings displayed in the Activity Overview
+. Fixed an issue where the goal settings shown in the
+Overview
+page of an activity were incorrect. For example,
+https://
+was added to the page URL, and the
+URL contains
+condition was not shown, even though the actual goal configuration was correct. (TGT-56326)
 Recommendations
 See details
-“Invalid user input” error in the Visual Experience Composer
-. When editing a Recommendations activity in the Visual Experience Composer, an “Invalid user input” error appeared when attempting to save and close the activity.
-Target Standard/Premium 26.9.6 (September 24, 2026)
-Visual Experience Composer (VEC)
-See details
-Endless redirection loop when accessing an SSO-authenticated page through the Visual Experience Composer
-. When a page URL loaded in the Visual Experience Composer went through an SSO/login redirection flow, the Visual Experience Composer entered an endless redirect loop and never reached the intended page. (TGT-56233)
-Target Standard/Premium 26.9.5 (September 21, 2026)
-Feature
-Content pre-hiding
-Content pre-hiding helps reduce page flicker by hiding only the sections that Adobe Target personalization is about to change, providing a smoother experience while content loads. This approach avoids hiding the entire page and helps minimize implementation effort when new activities are launched.
-Previously released in Limited Availability, this capability is now available to all environments (General Availability).
-For more information, refer to the
-detailed documentation
-.
-Improvements
-Analytics for Target
-See details
-A4T report link not generated in Target UI
-. For A4T activities, the report link was not generated in the
+Backup recommendations displayed after a promotion is updated in a live activity
+. Fixed an issue where editing a promotion in a live Recommendations activity caused Target to create new promotions and recommendation units even though nothing changed in their definition. (TGT-56369)
 Reports
-section, even though the underlying report data was visible in both the Target UI and the Adobe Analytics UI. (TGT-56247)
-Target Standard/Premium 26.9.4 (September 17, 2026)
+See details
+Reporting presets deleted after two weeks
+. Fixed an issue where the reporting presets that users saved for an activity were deleted automatically after approximately two weeks. (TGT-56374)
 Visual Experience Composer (VEC)
 See details
-Insert Before control inaccessible for Experience Fragments on the top-most page element
-. In the Visual Experience Composer, selecting the top-most element on a page scrolled the page upward, causing the
-Insert Before
-control to render above the visible viewport where it coul not be selected. (TGT-55829)
-Target Standard/Premium 26.9.3 (September 16, 2026)
-Reporting
-See details
-Missing Lift and Confidence values in some A4T Auto-Target reports
-. For A4T Auto-Target activities using the
-Maximize Visit Conversion Rate
-optimization goal, the default
-My Primary Metric
-report metric did not resolve correctly, leaving
-Lift
-and
-Confidence
-blank. (TGT-56137)
+Safari support added to Adobe Target
+. Target is now supported in the Safari browser. Note that Visual Experience Composer and Enhanced Experience Composer are not supported in Safari. As a result, an overlay now appears in the VEC to notify users that they must switch to Chrome to use the editor. (TGT-55853)
+Learn more
+Target Standard/Premium 26.10.1 (October 13, 2026)
 Analytics for Target
 See details
-Reporting Source field is now read-only for live activities without Analytics access
-. Previously, when a live activity’s owner did not have access to Adobe Analytics, the
-Reporting Source
-field and its related field remained editable. (TGT-56089)
-Target Standard/Premium 26.9.2 (September 8, 2026)
-Recommendations
+A4T reporting fails with a “Something went Wrong” error
+. Fixed an issue where A4T activities using a newly added report suite displayed a “Something went Wrong” error in the Target report instead of results. Clicking
+View in Analytics
+also displayed an “Incompatible report suite” message with missing Analytics for Target classification information. (TGT-56389)
+Visual Experience Composer (VEC)
 See details
-New user interface encodes feed URLs incorrectly
-. When creating a recommendations feed from a URL in the new Target interface, the feed URL was encoded incorrectly, causing feed creation to fail with an unknown error. (TGT-56084)
-Reporting
-See details
-Automated Segments report does not consistently display attribute values
-. The Automated Segments report inconsistently displayed attribute values and ranges for Automated Personalization and Auto-Target activities. Some automated segments showed only the attribute name instead of the associated value or range. (TGT-55855)
-Target Standard/Premium 26.9.1 (September 1, 2026)
-Audience
-See details
-Copying an Activity with an activity-only audience fails to save
-. When an A/B activity uses an activity-only (locally-scoped) audience rule and a Custom Code modification, copying it and saving the copy fails with an “Invalid audience ids” error. (TGT-55785)
-Adobe Target MCP server — Recommendations tools (Public Beta)
-See details
-The Adobe Target MCP server now exposes Recommendations tools, letting you list, inspect, create, and update criteria, collections, designs, promotions, and exclusions, and search the product catalog directly from your AI assistant.
-This capability requires a Recommendations-enabled tenant with
-Target Premium
-; it is not available on non-Premium accounts.
-For more information, see
-MCP server tools reference
-.
+Raw HTML displayed instead of the offer name for Experience Fragments delivered through an mbox
+. Fixed an issue where the
+Modifications
+panel displayed raw HTML/code instead of the offer name when an Experience Fragment was delivered through an mbox. (TGT-56241)
 Time-sensitive updates you need to know
 time-sensitive
 [Important]{class="badge informative"}

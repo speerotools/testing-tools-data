@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -24,9 +25,12 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Kameleoon MCP server
-Kameleoon Claude Connector
+Connect Kameleoon to Claude and ChatGPT
 Use Kameleoon documentation with AI
 Tutorials
 Export experiment results to Airtable
@@ -34,16 +38,25 @@ Export experiment results to Notion
 Export experiment results to Confluence
 English
 On this page
+Back to top
+Set up the server where you build
 Features
+Create variations with their own code
+Edit experiments, segments, and triggers
+Analyze results and learn from past tests
 The primary workflow: Winning experiment to production
 Token usage and plan considerations
+Rate limits
 Available tools
 Experiments
 Feature flags
-Flag delivery, variations, and variables
+Rules, variations, and variables
 Goals
+Ideas and learnings
+Sites
 Segments
-Sites and targeting rules
+Triggers
+Targeting rules
 Claude Code integration
 Step 1: Register the server
 Step 2: Complete OAuth authentication
@@ -66,15 +79,26 @@ Advanced workflow: End-to-end automation
 Tool parameters reference
 Experiments
 Feature flags
-Flag delivery, variations, and variables
+Rules, variations, and variables
 Goals
+Ideas and learnings
+Sites
 Segments
-Sites and targeting rules
+Triggers
+Targeting rules
 Prompting tips
 General troubleshooting
+Rate-limit error
 Port 35535 is already in use
 MCP server doesn’t appear in Codex chat
 Browser flow doesn’t complete
+A tool returns BLOCKED instead of making the change
+Health check returns DOWNSTREAM_ERROR
+Goal impacts return no rows
+Single-day results differ from the daily breakdown
+Improvement is 0 or missing on a variation
+A page, page size, or limit of 0 returns the default
+New tools are missing after a release
 Headless or remote agents fail to authenticate
 npx command not found
 Kameleoon MCP server
@@ -83,22 +107,116 @@ Copy page
 Connect AI coding assistants directly to your Kameleoon project to automate experiment and feature flag workflows.
 Copy page
 Copy page
-The Kameleoon Model Context Protocol (MCP) server connects AI coding assistants directly to your Kameleoon project. It enables agentic workflows for experiments and feature flags. Beyond reading configurations and pulling variation code, your AI assistant can build and manage experiments, feature flags, goals, segments, and targeting rules, and run the full rollout lifecycle, all from your development environment. Register and authenticate the server to automate your implementation lifecycle, from a winning variation to a gated production rollout.
+The Kameleoon Model Context Protocol (MCP) server connects AI coding assistants directly to your Kameleoon project. It enables agentic workflows for experiments and feature flags. Beyond reading configurations and pulling variation code, your AI assistant can build and manage experiments, feature flags, goals, segments, triggers, and targeting rules, and run the full rollout lifecycle, all from your development environment. Register and authenticate the server to automate your implementation lifecycle, from a winning variation to a gated production rollout.
+​
+Set up the server where you build
+Select your AI coding assistant to get a ready-to-paste setup prompt.
 Kai
-, Kameleoon’s in-app AI assistant, includes these same tools natively, with no separate connection step. Use the setup below when you want an AI coding assistant to act on your Kameleoon project from your IDE instead.
-If you want to use these tools from Claude.ai chat (web or desktop) rather than an IDE, see the
-Kameleoon Claude Connector
+, Kameleoon’s in-app AI assistant, includes these same tools natively, with no separate connection step. Use the setup prompts for your AI coding assistant when you want it to act on your Kameleoon project from your IDE instead.
+If you want to use these tools from Claude or ChatGPT chat (web or desktop) rather than an IDE, see
+Connect Kameleoon to Claude and ChatGPT
 .
 ​
 Features
 After you connect the server, your AI agent can interact with Kameleoon to:
-Discover and inspect experiments, feature flags, goals, segments, and targeting rules.
-Build experiments end to end: create, duplicate, and run the full lifecycle (start, pause, resume, stop, delete).
+Discover and inspect experiments, feature flags, goals, segments, triggers, and targeting rules.
+Build experiments end to end: create, duplicate, edit their settings and traffic split, add variations with their own code, and run the full lifecycle (start, pause, resume, stop, delete).
 Manage feature flags: create, duplicate, delete, toggle per environment, and review the change history.
 Configure flag delivery: add targeted and experimentation rules, custom variations, and typed variables.
-Create and maintain goals and audience segments, and bind segments to experiments.
+Create and maintain goals, audience segments, and triggers, and set an experiment’s segment and trigger.
 Analyze experiment and feature-flag-experiment results, and pull raw variation code (JavaScript and CSS).
 Automate the full implementation lifecycle, from a winning variation to a gated production rollout.
+​
+Create variations with their own code
+Your AI assistant can set up a test with several variations, each with its own code, without direct API calls. Give the assistant the page URL and the element selectors to change, and ask it to follow these steps:
+Create the experiment with
+experiment_create
+, for example as a
+DEVELOPER
+experiment.
+Use the ID of the auto-created
+Variation 1
+from the
+experiment_create
+response, and set its code with
+experiment_variation_update
+. Don’t add a second variation for it.
+Add each further variation with
+experiment_variation_create
+, passing its
+name
+and any
+jsCode
+,
+cssCode
+,
+customJson
+, or
+redirection
+it needs.
+To restrict who views the experiment, set its segment or trigger with
+targeting_rule_update
+. The experiment already has a targeting rule, so don’t create another one.
+Read back each variation’s code with
+experiment_code_get
+to confirm the code that Kameleoon stored.
+Kameleoon can’t recover a variation’s previous code from the server. Copy the existing code somewhere safe before you update it.
+The tools store the code you provide. They don’t generate it, so the result is only as accurate as what your AI assistant knows about the page, which includes the URL and element selectors. An assistant that can read your codebase or the live page can use that context when it writes the code.
+In a draft experiment, Kameleoon splits traffic evenly across the original page and all variations. With two variations, each of the three versions gets 33% of the traffic. A variation added to a running experiment starts with 0% traffic. Set its share with
+experiment_traffic_allocation_set
+for a paused or scheduled experiment, or in the Kameleoon app while it’s running.
+Both variation tools check the experiment first. On an experiment that isn’t a draft, such as one that’s running, the tool returns a preview of what will change and applies it only after you confirm.
+For example, you can use this prompt:
+“On site
+d1alzzxd7k
+, create a developer experiment for
+https://www.example.com/pricing
+with two variations. Make the
+#buy-now
+button red in the first variation and green in the second.”
+​
+Edit experiments, segments, and triggers
+Your AI assistant can change an existing experiment’s settings and targeting without the Kameleoon app. For example, a draft experiment needs a goal and a traffic split before it can start. The assistant can attach the goal, set the split, and point the experiment at the segment or trigger that should target it.
+Each experiment comes with a targeting rule. The assistant changes the segment or trigger of that rule with
+targeting_rule_update
+, so you don’t need to create a second rule.
+Changes that affect live traffic need your confirmation. When an experiment has left draft, or when you change the conditions of a segment or trigger that anything other than a draft experiment uses, the assistant first returns a preview of what will change. It applies the change only after you confirm. The MCP server can’t change the traffic split of a running, deviated, or stopped experiment, or of an experiment used as a personalization. Make that change in the Kameleoon app.
+For example, you can use this prompt:
+“On site
+d1alzzxd7k
+, for the draft experiment
+Pricing test
+: attach goal
+Purchase
+, split traffic 50/50 between the original and the variation, and target it to phone visitors on
+/pricing
+.”
+The assistant finds the experiment and the goal, attaches the goal, sets the split, creates a segment for phone visitors and a trigger for
+/pricing
+, and binds both to the experiment. The experiment is then ready to start.
+​
+Analyze results and learn from past tests
+Five read-only tools let the assistant check whether an experiment’s results are reliable, see how a goal is doing, find what moved it, recall earlier learnings, and pick up Ideate ideas.
+Is the test healthy?
+experiment_health_check_get
+runs the checks of the Health tab: visit and conversion tracking, sample ratio mismatch, and overlapping exposure.
+How’s a goal doing?
+goal_performance_get
+returns the goal’s KPIs for a period, the change against the previous period, and daily events with unusual days flagged.
+Which tests moved a goal?
+goal_experiment_impacts_list
+lists the variations whose effect reached the site’s reliability threshold, strongest first.
+Did an earlier test cover this?
+takeaway_list
+returns the learnings that Kameleoon records when you pause or stop an experiment.
+What should the next test be?
+idea_list
+reads the ranked ideas PBX Ideate generated for a page, with the full variation specs.
+Health checks and goal impacts depend on data that Kameleoon prepares in the background. A tool can answer that Kameleoon is still preparing the data (
+PENDING
+or
+PREPARING
+). Ask again a minute later.
 ​
 The primary workflow: Winning experiment to production
 The Kameleoon MCP server automates the “last mile” of implementation.
@@ -120,8 +238,17 @@ The number of sites or brands a single workflow touches. Duplicating and auditin
 How broadly you scope a single prompt. A narrow, single-site check consumes far less than an open-ended request to review every experiment across every site.
 Before you commit a team to a specific AI assistant plan, scope your expected workflows: how many sites or brands they span, how often you run them, and whether they include large data-retrieval or code-generation steps. Recurring, multi-site workflows need a plan with a larger usage allowance or context window than a plan sized for occasional, single-site prompts. Check your AI assistant provider’s plan documentation for its specific usage limits and context window size.
 ​
+Rate limits
+The MCP server has its own rate limits, applied per user, per tool, per minute. Results and analytics tools allow 10 calls per minute, write tools allow 20 to 60 calls per minute, and the list and get tools for segments, triggers, and targeting rules allow 100 calls per minute. A call over the limit returns a rate-limit error with a
+retryAfterSeconds
+value.
+Every MCP call also goes through the Automation API gateway, so the
+Automation API limits
+of 50 requests per 10 seconds and 1,000 requests per hour apply underneath. These limits count against the MCP integration, not against your own API credentials. One tool call usually makes 1 to 3 API requests, and results calls make more. Normal conversational use stays well below both limits, but bulk scripts that loop over hundreds of experiments through the MCP server can reach the gateway limit.
+​
 Available tools
 The server exposes the tools below, grouped by area. Each tool maps to a single, well-scoped action, so you can compose them into larger workflows (for example: read results, pull code, create a flag, add a rule, enable it).
+To use the newest tool settings, such as the results breakdowns and filters or the extra segment condition types, reconnect the Kameleoon MCP server in your client. Until you reconnect, the client keeps the tool list it loaded earlier and doesn’t show the new settings.
 For
 experiment_results_get
 ,
@@ -130,7 +257,176 @@ feature_flag_experiment_results_get
 transpose_winning_experiment
 , the
 goalResults
-array covers every goal attached to the experiment, primary and secondary. Kameleoon computes a winner verdict for the primary goal only; secondary goals return the same statistical figures as guardrail metrics, without a verdict.
+array covers every goal attached to the experiment, which includes primary and secondary goals. Kameleoon computes a winner verdict for the primary goal only. Secondary goals return the same statistical figures as guardrail metrics, without a verdict.
+experiment_results_get
+and
+feature_flag_experiment_results_get
+accept these optional settings:
+breakdown
+: splits the results.
+DAY
+,
+WEEK
+, and
+MONTH
+show a trend over time.
+HOUR
+shows a trend over a
+dateFrom
+and
+dateTo
+window of at most 2 days.
+DEVICE_TYPE
+,
+BROWSER
+,
+OS
+, and
+NEW_VISITOR
+return one bucket per value. Period buckets carry audience, conversions, and conversion rate only. Improvement and reliability stay in the summary for the whole run.
+filters
+: a list of strings, or one string with
+;
+between filters. Kameleoon combines the filters with AND. Each filter has the format
+DIMENSION=V1,V2
+or
+DIMENSION!=V1,V2
+. The dimensions and values are
+DEVICE_TYPE
+(
+DESKTOP
+,
+TABLET
+,
+PHONE
+),
+BROWSER
+(
+CHROME
+,
+EDGE
+,
+FIREFOX
+,
+SAFARI
+,
+OPERA
+,
+OTHERS
+),
+OS
+(
+WINDOWS
+,
+MAC_OS
+,
+I_OS
+,
+LINUX
+,
+ANDROID
+,
+WINDOWS_PHONE
+,
+OTHERS
+), and
+NEW_VISITOR
+(
+NEW
+,
+RETURNING
+). A breakdown by
+DEVICE_TYPE
+can show an
+OTHERS
+bucket, but you can’t filter on
+DEVICE_TYPE=OTHERS
+.
+dateFrom
+and
+dateTo
+: a specific period, as
+YYYY-MM-DD
+dates in the account time zone.
+dateTo
+is inclusive. Set them only when you need a specific period. A narrower window gives noisier figures, so don’t call a winner from a short window.
+statisticalMethod
+:
+FREQUENTIST
+(default),
+SEQUENTIAL
+,
+BAYESIAN
+, or
+CUPED
+. With
+BAYESIAN
+,
+reliabilityRate
+becomes the probability to beat the reference.
+CUPED
+applies to whole-run figures only, and breakdown buckets stay frequentist. The tool rejects a method that your plan doesn’t include.
+conversionType
+:
+CONVERTED
+(default) counts each converting visitor once.
+ALL
+counts every conversion, so the rate can exceed 100%. Improvement and reliability always use
+CONVERTED
+.
+referenceVariationId
+: the variation that the others compare against. Pass a variation ID, or
+0
+for the original. For feature flags, pass a variation ID or key, or
+0
+or
+off
+for the off variation. The default is the experiment’s saved reference, or the original if the experiment has none.
+The response states the settings it applied in
+appliedOptions
+and adds notes where a figure needs context. The response leaves out figures that the engine didn’t compute, for example because of too little data or a reference without conversions, and adds a note for each one.
+Results compare against the reference saved on the experiment, as the results screen does. Experiments that Kameleoon builds from a prompt, and feature flag experiments whose off variation gets 0% of the traffic, don’t return improvement and reliability.
+Tools that change live traffic show a preview of what will change, and apply the change only after you confirm:
+feature_flag_enable
+,
+feature_flag_disable
+, and
+feature_flag_delete
+: always.
+feature_flag_rule_targeted_create
+,
+feature_flag_rule_progressive_create
+, and
+feature_flag_rule_experimentation_create
+: when the flag is already enabled in the target environment.
+experiment_update
+,
+experiment_variation_create
+,
+experiment_variation_update
+, and
+targeting_rule_update
+: when the experiment isn’t a draft.
+experiment_traffic_allocation_set
+: for a scheduled or paused experiment.
+segment_update
+and
+trigger_update
+: when the conditions change and anything other than a draft experiment uses the segment or trigger. Renaming never needs confirmation.
+experiment_lifecycle_update
+: for
+stopped
+and
+deleted
+.
+segment_delete
+and
+trigger_delete
+refuse to delete an item that’s in use unless you set
+force
+. You can’t change the traffic split of a running experiment through the MCP server. Change it in the Kameleoon app. If a feature flag rule tool times out or returns a gateway error, the tool may still have created the rule. Check with
+feature_flag_get
+before you retry, or the retry adds a duplicate rule.
 ​
 Experiments
 Build, inspect, and run A/B tests (Web Experiments).
@@ -138,8 +434,8 @@ Tool
 Description
 Example prompt
 experiment_list
-Find experiments by name or ID. Returns paginated summaries (id, name, status, and tags).
-”List active experiments on site
+Find experiments by name or ID, or list only those with a given status, such as the running ones. Returns paginated summaries (id, name, status, and tags).
+”List running experiments on site
 d1alzzxd7k
 .”
 experiment_get
@@ -153,24 +449,69 @@ Pull a variation’s raw JavaScript, CSS, and custom JSON, plus the experiment�
 149640
 .”
 experiment_results_get
-Fetch statistical results for every attached goal: per-variation conversion rates, significance, confidence intervals, and the winner.
+Fetch statistical results for every attached goal: per-variation conversion rates, significance, confidence intervals, and the winner. Optionally split the results with
+breakdown
+, narrow them with
+filters
+,
+dateFrom
+, and
+dateTo
+, and choose the
+statisticalMethod
+,
+conversionType
+, and
+referenceVariationId
+.
 ”Summarize results for experiment
 149640
 .”
 experiment_create
-Create a draft experiment (type, base URL, goals, optional common code).
+Create a draft experiment (type, base URL, goals, optional common code). It comes with a first variation and a targeting rule.
 ”Create a CLASSIC experiment
 Homepage hero
 on site
 d1alzzxd7k
 .”
+experiment_variation_create
+Add a variation with its own JavaScript, CSS, custom JSON, or redirect settings to an existing experiment. Draft experiments split traffic evenly. A running experiment gets the new variation at 0%.
+”On experiment
+149640
+, add a variation that makes the
+#buy-now
+button green.”
+experiment_variation_update
+Change a variation’s code, name, or redirect. Only the fields you pass change, and repeating a call with the same values changes nothing.
+”In variation 1 of experiment
+149640
+, make the
+#buy-now
+button red.”
+experiment_update
+Change an existing experiment’s settings: name, description, base URL, tags, goals and main goal, shared JavaScript and CSS, global script, data collection, whether shared code also runs on the original page, multiple testing correction, and traffic allocation method. Use it to attach the goal an experiment needs before it can start. Only the fields you pass change. Needs confirmation when the experiment isn’t a draft.
+”On experiment
+149640
+, set goal
+271552
+as the main goal.”
+experiment_traffic_allocation_set
+Set the traffic split of the original page and every variation. Draft experiments change immediately. Scheduled and paused experiments need confirmation, and the new split takes effect when they start or resume. Use the Kameleoon app to change the split of running, deviated, and stopped experiments.
+”On experiment
+149640
+, split traffic 50/50 between the original and variation 1.”
 experiment_duplicate
 Clone an experiment into a new draft, copying variations, code, deviations, and targeting.
 ”Duplicate experiment
 149640
 .”
+experiment_health_check_get
+Run the Health tab checks for an experiment: visit and conversion tracking per goal, sample ratio mismatch, and overlapping exposure. Returns an overall status with a finding and next step for each check.
+”Is experiment
+149640
+healthy? Are its results reliable?”
 experiment_lifecycle_update
-Drive the lifecycle: start, pause, resume, stop, or delete (stop and delete require confirmation).
+Drive the lifecycle: start, pause, resume, stop, or delete (stop and delete require confirmation). Starting an experiment requires a goal, variations, and a traffic split. You can pause running or scheduled experiments, and stop running, scheduled, or paused ones. You can delete only draft or stopped experiments.
 ”Start experiment
 149640
 .”
@@ -230,21 +571,38 @@ feature_flag_activity_logs_get
 Read the audit trail of flag changes (who changed what, and when).
 ”Show the recent change history for these feature flags.”
 feature_flag_experiment_results_get
-Fetch statistical results for every goal attached to a flag’s experimentation rule.
+Fetch statistical results for every goal attached to a flag’s experimentation rule. Accepts the same
+breakdown
+,
+filters
+, date,
+statisticalMethod
+,
+conversionType
+, and
+referenceVariationId
+settings as
+experiment_results_get
+.
 ”Get the experiment results for the rule on
 new_search
 .”
 ​
-Flag delivery, variations, and variables
-Shape how a flag delivers value to users, and define the variations and typed variables it serves.
+Rules, variations, and variables
+Shape how a flag delivers value to users: add delivery and experimentation rules, and define the variations and typed variables it serves.
 Tool
 Description
 Example prompt
 feature_flag_rule_targeted_create
-Add a targeted delivery rule: serve one variation to a percentage of traffic, with optional scheduling.
+Add a targeted delivery rule: serve one variation to a percentage of traffic, with a scheduled start.
 ”Roll
 new_search
 out to 20% in production.”
+feature_flag_rule_progressive_create
+Add a progressive delivery rule that raises a variation’s exposure in fixed steps, for a gradual rollout without statistical comparison.
+”Roll
+new_search
+out in production from 5% to 100%, adding 10% every day.”
 feature_flag_rule_experimentation_create
 Add an A/B experimentation rule that splits traffic across variations with statistical tracking.
 ”A/B test
@@ -320,6 +678,36 @@ Permanently delete a goal.
 ”Delete goal
 271552
 .”
+goal_performance_get
+Get a goal’s events, conversion rate, and revenue for a period, the change against the previous period, and daily events with the expected range and flagged anomalies.
+”Did the Purchase goal drop last week? Which days were unusual?”
+goal_experiment_impacts_list
+List the experiment variations whose effect on a goal reached the site’s reliability threshold, positive and negative, strongest first.
+”Which experiments moved the Purchase goal the most, good and bad?”
+​
+Ideas and learnings
+Pick up test ideas and recall what earlier tests taught you.
+Tool
+Description
+Example prompt
+idea_list
+Read the experiment ideas PBX Ideate generated for a page: score-ordered ideas with the component each changes and the full variation specs. Read only; it never starts an analysis.
+”What are the top 3 ideas for the checkout page?”
+takeaway_list
+List the learnings that Kameleoon records when you pause or stop an experiment: result (win, loss, inconclusive), uplift, revenue, and an AI summary of what the test covered. Filters and sorting match the Takeaways page.
+”Did an earlier test cover a free-shipping banner? What did it show?”
+​
+Sites
+Discover the projects you can access. Most other tools need a site code, so start here.
+Tool
+Description
+Example prompt
+site_list
+List the sites (projects) you can access, with each site’s code, name, and tracking status.
+”List the available Kameleoon sites.”
+The MCP server can’t set or read the JavaScript code of a custom goal, because the Automation API doesn’t expose it. When you create a custom goal with
+goal_create
+and include code, the assistant adds the code to the experiment’s global script instead.
 ​
 Segments
 Define and inspect the audiences you target.
@@ -337,22 +725,134 @@ Inspect a segment’s condition tree (raw JSON plus a human-readable summary).
 200604
 .”
 segment_create
-Create an audience segment from a condition tree (geolocation, device, browser, custom data, and more).
+Create an audience segment from a condition tree. It accepts every condition type of the segment builder, such as geolocation, device, browser, custom data, visitor code, cookie, and conversions. A tree has at most two levels.
 ”Create a segment for desktop visitors in France.”
+segment_update
+Change a segment’s name, description, or conditions, using any condition type of the segment builder. Every campaign that uses the segment targets the new audience right away. Changing the conditions of a segment used by anything other than draft experiments needs confirmation.
+”Add Belgium to segment
+200604
+.”
 segment_delete
-Delete a segment. The tool blocks deletion by default when the segment is in use; override with force.
+Delete a segment. The tool blocks deletion by default when the segment is in use, including when another segment uses it; override with
+force
+.
 ”Delete segment
 200604
 .”
+Segment conditions take at most two levels: groups of conditions joined by a top-level
+AND
+or
+OR
+. The tool refuses a deeper condition tree with an explanation instead of flattening it, because flattening can widen the audience. Ask your AI assistant to rewrite the tree in two levels.
+segment_create
+and
+segment_update
+accept every condition type of the segment builder. The existing conditions, such as geolocation, device type, browser, and custom data, stay available. The following groups are also available:
+Visitor code (
+VISITOR_CODE
+), cookie (
+COOKIE
+), JS code (
+JS_CODE
+), and ad blocker (
+AD_BLOCKER
+).
+SDK language and app version (
+SDK_LANGUAGE
+,
+APPLICATION_VERSION
+).
+Conversions (
+CONVERSIONS
+).
+AI Targeting (
+HEAT_SLICE
+).
+Targeted experiment, personalization, or feature flag (
+TARGET_EXPERIMENT
+,
+TARGET_PERSONALIZATION
+,
+TARGET_FEATURE_FLAG
+).
+Exclusive experiment (
+EXCLUSIVE_EXPERIMENT
+).
+Segment in segment (
+SEGMENT
+).
+Tealium audiences and badges (
+TEALIUM_AUDIENCE
+,
+TEALIUM_BADGE
+).
+A condition that can’t exclude, namely exclusive experiment, new or returning visitors, and event, refuses
+include=false
+instead of switching to include. Deleting a segment that another segment uses requires
+force
+, and changing its conditions needs confirmation with
+confirm
+. The tools refuse references to the goals, experiments, feature flags, or segments of another site.
 ​
-Sites and targeting rules
-Discover your projects and bind segments to experiments.
+Triggers
+Define when a campaign fires. A trigger says when (a visitor reaches a page, an event happens, or a visit count passes a set number), and a segment says who. An experiment’s targeting rule combines one of each.
 Tool
 Description
 Example prompt
-site_list
-List the sites (projects) you can access, with each site’s code, name, and tracking status.
-”List the available Kameleoon sites.”
+trigger_list
+Browse the saved triggers on a site, optionally filtered by name.
+”List triggers for site
+d1alzzxd7k
+.”
+trigger_get
+Inspect a trigger’s conditions and the campaigns that reference it.
+”Show trigger
+300118
+.”
+trigger_create
+Create a saved trigger from conditions that describe a moment, such as a page URL or title, landing page, referrer, traffic origin, page views, visits, day of week, time range, custom data, cookie, or an event. Visitor attributes such as device or location belong in a segment. A new trigger doesn’t affect live traffic until you bind it to an experiment.
+”Create a trigger on site
+d1alzzxd7k
+that fires on
+/pricing
+.”
+trigger_update
+Change a trigger’s name, description, or conditions. Changing the conditions of a trigger used by anything other than a draft experiment first shows a preview and applies after you confirm.
+”Rename trigger
+300118
+to
+Pricing page
+.”
+trigger_delete
+Permanently delete a trigger. You can delete a trigger that’s in use only with
+force
+set to true, and never while a live campaign uses it.
+”Delete trigger
+300118
+.”
+Trigger conditions accept page, visit, time, and event types, such as
+PAGE_URL
+,
+VISITS
+,
+TIME_RANGE
+, and
+EVENT
+. Visitor attributes, such as
+DEVICE_TYPE
+,
+GEOLOCATION
+, and
+BROWSER
+, belong in a segment, and triggers refuse them. You can’t edit triggers that Kameleoon creates for an experiment’s targeting rule with these tools. Use
+targeting_rule_update
+for those.
+​
+Targeting rules
+Bind a segment (who views an experiment) and a trigger (when it fires) to an experiment.
+Tool
+Description
+Example prompt
 targeting_rule_list
 List targeting rules on a site.
 ”List targeting rules for site
@@ -363,13 +863,20 @@ Inspect a single targeting rule (segment, configuration, trigger, and the experi
 ”Show targeting rule
 118605
 .”
-targeting_rule_create
-Bind a segment to an experiment to control who participates.
+targeting_rule_update
+Switch the segment or trigger that targets an experiment, and change its configuration. Only the fields you pass change. The tool rejects invalid configurations without a write.
 ”Target experiment
 149640
 to segment
 200604
 .”
+targeting_rule_create
+Attach a targeting rule to an experiment that has none. Experiments created with
+experiment_create
+already have one, so use
+targeting_rule_update
+for those.
+None
 ​
 Claude Code integration
 ​
@@ -442,7 +949,7 @@ Claude Code makes tools from newly added MCP servers available only in sessions 
 Step 4: Verify the connection
 In a new Claude Code conversation, try the following prompts:
 “List the Kameleoon feature flags.”
-“What experiments are active on site X?”
+“What experiments are running on site X?”
 “Show the status of experiment Y.”
 “Show the code for variation 1 of experiment Z.”
 ​
@@ -464,6 +971,21 @@ Re-run the Step 2 command to refresh your token.
 Tools aren’t visible in Claude.
 Session started before adding the server.
 Start a new Claude Code conversation.
+A newer tool, such as
+experiment_update
+or
+trigger_list
+, is missing from the tool list.
+The client keeps the tool list it loaded before Kameleoon released these tools.
+Reconnect the server. In Claude.ai, go to
+Settings
+>
+Connectors
+and reconnect Kameleoon. In Claude Code, run
+/mcp
+and choose
+Reconnect
+.
 mcpServers
 key rejected in
 settings.json
@@ -484,8 +1006,15 @@ Connect to the Kameleoon MCP production server. The endpoint is https://mcp.kame
 ​
 Manual configuration
 Edit the configuration file at
-~/.gemini/antigravity/mcp_config.json
-and add the following JSON block:
+~/.gemini/config/mcp_config.json
+and add the following JSON block. If the file already has an
+mcpServers
+object, add only the
+kameleoon
+entry to it:
+{
+"mcpServers"
+: {
 "kameleoon"
 : {
 "command"
@@ -514,6 +1043,8 @@ openid
 \"
 }"
 ]
+}
+}
 }
 ​
 Codex integration
@@ -719,6 +1250,10 @@ d1alzzxd7k
 in the production environment for site
 d1alzzxd7k
 .”
+“How has the checkout experiment performed week by week on phones?”
+“Did new visitors react differently from returning ones in the pricing test? Use Bayesian statistics.”
+“Show the daily trend of the checkout test without Safari, counting every purchase, not only buyers.”
+“Create a segment of returning visitors from Germany on desktop who already completed the Purchase goal.”
 ​
 Advanced workflow: End-to-end automation
 transpose_winning_experiment
@@ -758,6 +1293,26 @@ siteCode
 ,
 filterQuery
 ,
+status
+(one or more of
+active
+,
+deviated
+,
+draft
+,
+paused
+,
+scheduled
+,
+stopped
+,
+used_as_personalization
+; running experiments are
+active
+and
+deviated
+),
 page
 ,
 perPage
@@ -777,7 +1332,66 @@ experiment_results_get
 experimentId
 goalIds
 ,
+audienceBasis
+(
+VISITORS
+by default, or
+VISITS
+),
 includeRawReport
+,
+breakdown
+(
+DAY
+,
+WEEK
+,
+MONTH
+,
+HOUR
+,
+DEVICE_TYPE
+,
+BROWSER
+,
+OS
+, or
+NEW_VISITOR
+),
+filters
+(a list of strings, or one
+;
+-separated string, in the format
+DIMENSION=V1,V2
+or
+DIMENSION!=V1,V2
+),
+dateFrom
+and
+dateTo
+(
+YYYY-MM-DD
+),
+statisticalMethod
+(
+FREQUENTIST
+by default,
+SEQUENTIAL
+,
+BAYESIAN
+, or
+CUPED
+),
+conversionType
+(
+CONVERTED
+by default, or
+ALL
+),
+referenceVariationId
+(a variation ID, or
+0
+for the original)
 experiment_create
 payload
 (
@@ -810,8 +1424,119 @@ collectingDataEnabled
 multipleTestingCorrection
 ,
 executeCodeForReference
+experiment_variation_create
+experimentId
+,
+name
+jsCode
+,
+cssCode
+,
+customJson
+(a JSON string),
+isJsCodeAfterDomReady
+,
+shadowDom
+,
+redirection
+(
+type
+required;
+url
+for
+GLOBAL_REDIRECTION
+;
+parameters
+for
+PARAMETER_REDIRECTION
+;
+includeQueryParameters
+, default
+false
+),
+confirm
+(required when the experiment isn’t a draft)
+experiment_variation_update
+variationId
+experimentId
+(the tool refuses the call if it doesn’t match the variation’s experiment),
+name
+,
+jsCode
+,
+cssCode
+(an empty string clears the field),
+customJson
+(a JSON string),
+isJsCodeAfterDomReady
+,
+shadowDom
+,
+redirection
+(replaces the existing redirect settings;
+type
+required),
+confirm
+(required when the experiment isn’t a draft)
+experiment_update
+experimentId
+name
+,
+description
+(an empty value keeps the current one),
+baseURL
+(an absolute
+http
+or
+https
+URL),
+tags
+and
+goals
+(each replaces the whole list),
+mainGoalId
+,
+commonJavaScriptCode
+,
+commonCssCode
+,
+globalScript
+(an empty string clears the field),
+collectingDataEnabled
+,
+executeCodeForReference
+,
+multipleTestingCorrection
+,
+trafficAllocationMethod
+(not while the experiment serves traffic or after it has stopped),
+confirm
+(required when the experiment isn’t a draft)
+experiment_traffic_allocation_set
+experimentId
+,
+originPercentage
+(0 to 100),
+variationAllocations
+(one entry for every variation, each with
+variationId
+and
+percentage
+; the total with
+originPercentage
+can’t exceed 100)
+respool
+(default
+false
+),
+confirm
+(required for scheduled and paused experiments)
 experiment_duplicate
 experimentId
+None
+experiment_health_check_get
+experimentId
+(for a feature flag experiment, the experiment ID of the rule)
 None
 experiment_lifecycle_update
 experimentId
@@ -866,6 +1591,9 @@ PROMPT
 all create successfully. To create an MVT experiment, call the Automation API directly and follow the steps in
 Create a multivariate experiment
 .
+The variation tools don’t support stopped, MVT, or feature-flag experiments. For feature flag variations, use
+feature_flag_variation_create
+. You can’t change the traffic split of a running experiment, or of one that uses a bandit allocation method, through the MCP server.
 ​
 Feature flags
 Tool
@@ -908,21 +1636,24 @@ feature_flag_delete
 featureKey
 ,
 siteCode
-None
+confirm
+(required to apply the change)
 feature_flag_enable
 featureKey
 ,
 siteCode
 ,
 environmentKey
-None
+confirm
+(required to apply the change)
 feature_flag_disable
 featureKey
 ,
 siteCode
 ,
 environmentKey
-None
+confirm
+(required to apply the change)
 feature_flag_activity_logs_get
 None
 type
@@ -946,9 +1677,35 @@ environmentKey
 experimentId
 goalIds
 ,
+audienceBasis
+(
+VISITORS
+by default, or
+VISITS
+),
 includeRawReport
+,
+breakdown
+,
+filters
+,
+dateFrom
+,
+dateTo
+,
+statisticalMethod
+,
+conversionType
+,
+referenceVariationId
+(a variation ID or key,
+0
+or
+off
+for the off variation); values as for
+experiment_results_get
 ​
-Flag delivery, variations, and variables
+Rules, variations, and variables
 Tool
 Required parameters
 Optional parameters
@@ -967,6 +1724,41 @@ releaseDateTime
 ,
 timeZone
 ruleName
+,
+confirm
+(required when the flag is already enabled in the environment)
+feature_flag_rule_progressive_create
+siteCode
+,
+featureKey
+,
+environmentKey
+,
+variationKey
+,
+startExposition
+,
+stopExposition
+,
+increaseBy
+,
+frequencyValue
+,
+frequencyUnit
+(
+MINUTES
+,
+HOURS
+, or
+DAYS
+),
+releaseDateTime
+,
+timeZone
+ruleName
+,
+confirm
+(required when the flag is already enabled in the environment)
 feature_flag_rule_experimentation_create
 siteCode
 ,
@@ -984,6 +1776,9 @@ releaseDateTime
 ,
 timeZone
 ruleName
+,
+confirm
+(required when the flag is already enabled in the environment)
 feature_flag_variation_create
 siteCode
 ,
@@ -1063,8 +1858,6 @@ timeSeconds
 pageViews
 ,
 url
-,
-jsCode
 ),
 tags
 ,
@@ -1092,6 +1885,108 @@ type-specific params
 goal_delete
 goalId
 None
+goal_performance_get
+siteCode
+,
+goalId
+period
+(
+7D
+,
+14D
+,
+30D
+,
+3M
+, or
+6M
+; default
+30D
+),
+dateFrom
+and
+dateTo
+(
+YYYY-MM-DD
+, at most 366 days)
+goal_experiment_impacts_list
+siteCode
+,
+goalId
+impact
+(
+POSITIVE
+,
+NEGATIVE
+, or
+BOTH
+),
+limit
+(1 to 50, default 10),
+cursor
+​
+Ideas and learnings
+Tool
+Required parameters
+Optional parameters
+idea_list
+siteCode
+page
+(part of a URL, a name, or a page type),
+pageId
+,
+deviceType
+(
+DESKTOP
+or
+MOBILE
+),
+limit
+(1 to 50)
+takeaway_list
+siteCode
+results
+,
+campaignTypes
+,
+experimentTypes
+,
+campaignIds
+,
+goalIds
+,
+segmentIds
+,
+dateFrom
+,
+dateTo
+,
+search
+,
+sortBy
+(
+DATE
+,
+STARTED
+,
+NAME
+, or
+UPLIFT
+),
+sortOrder
+,
+page
+,
+perPage
+(1 to 50, default 10)
+​
+Sites
+Tool
+Required parameters
+Optional parameters
+site_list
+None
+None
 ​
 Segments
 Tool
@@ -1114,19 +2009,81 @@ name
 ,
 siteCode
 conditionDataTree
+(any condition type of the segment builder),
+description
+segment_update
+segmentId
+name
 ,
 description
+,
+conditionDataTree
+(replaces the whole tree; any condition type of the segment builder),
+confirm
+(required when the conditions change on a segment used by anything other than a draft experiment, or by another segment)
 segment_delete
 segmentId
 force
+(required when an experiment, personalization, feature flag, or another segment uses the segment)
 ​
-Sites and targeting rules
+Triggers
 Tool
 Required parameters
 Optional parameters
-site_list
+trigger_list
 None
+siteCode
+,
+query
+,
+page
+,
+perPage
+trigger_get
+triggerId
 None
+trigger_create
+name
+,
+siteCode
+,
+conditionDataTree
+description
+,
+audienceTracking
+(default
+false
+)
+trigger_update
+triggerId
+name
+,
+description
+,
+conditionDataTree
+(replaces the whole tree),
+confirm
+(required when the conditions change on a trigger used by anything other than a draft experiment)
+trigger_delete
+triggerId
+force
+(default
+false
+)
+To bind a saved trigger to an experiment, call
+targeting_rule_update
+with
+triggerConfiguration
+set to
+SAVED_TEMPLATE
+and
+targetingConfigurationParam
+set to the trigger ID.
+​
+Targeting rules
+Tool
+Required parameters
+Optional parameters
 targeting_rule_list
 None
 siteCode
@@ -1137,6 +2094,24 @@ perPage
 targeting_rule_get
 targetingRuleId
 None
+targeting_rule_update
+experimentId
+targetingRuleId
+(optional; when given, it must be the rule the experiment owns),
+segmentId
+,
+segmentConfiguration
+(
+ALL_VISITORS
+removes the segment),
+triggerId
+,
+triggerConfiguration
+,
+targetingConfigurationParam
+,
+confirm
+(required when the experiment isn’t a draft)
 targeting_rule_create
 segmentConfiguration
 ,
@@ -1228,6 +2203,60 @@ Europe/Paris
 or
 UTC
 ).
+trafficAllocationMethod
+is
+MANUAL
+(default),
+MULTI_ARMED_BANDIT
+, or
+CONTEXTUAL_BANDIT
+.
+frequencyUnit
+is
+MINUTES
+,
+HOURS
+, or
+DAYS
+.
+audienceBasis
+is
+VISITORS
+(default) or
+VISITS
+.
+segmentConfiguration
+is
+ALL_VISITORS
+,
+AUTOPROMO_AUTODEFINED
+,
+GRAPHICAL_PAGES
+,
+HEAT_SLICE
+,
+PAGE
+,
+SAVED_TEMPLATE
+,
+SITE
+, or
+URL
+, and
+triggerConfiguration
+takes the same values except
+ALL_VISITORS
+. The
+targetingConfigurationParam
+input is a saved trigger ID for
+SAVED_TEMPLATE
+, a segment ID for
+HEAT_SLICE
+, a full URL for
+PAGE
+, or a URL fragment for
+URL
+.
 For environment-specific queries, pass
 environmentKey = "production"
 or
@@ -1246,6 +2275,17 @@ Explicitly name the target environment when you ask the agent to turn a feature 
 Request a plain-English summary if you want your AI agent to interpret the MCP response rather than just retrieving the raw data.
 ​
 General troubleshooting
+​
+Rate-limit error
+A tool call returns a rate-limit error that includes a
+retryAfterSeconds
+value.
+Cause:
+The call went over the MCP server’s per-tool limit for your user, or the Automation API gateway limit for the MCP integration.
+Fix:
+Wait the number of seconds in
+retryAfterSeconds
+, then retry the call. For bulk work, batch your requests or throttle the loop so it stays under the limits.
 ​
 Port 35535 is already in use
 If authentication fails with an
@@ -1275,6 +2315,63 @@ localhost
 callbacks.
 Manually open the callback URL if your browser fails to launch it automatically.
 ​
+A tool returns BLOCKED instead of making the change
+Tools that change live traffic return a preview with the status
+BLOCKED
+until you confirm, which doesn’t mean an error.
+Fix:
+Read the preview, and if the change is what you want, ask your AI assistant to repeat the call with
+confirm
+set to
+true
+. For
+segment_delete
+and
+trigger_delete
+, use
+force
+instead.
+​
+Health check returns DOWNSTREAM_ERROR
+experiment_health_check_get
+fails for an experiment that uses a ratio goal whose numerator goal isn’t attached to the experiment.
+Fix:
+Attach the missing goal in the app, or run the check on another experiment.
+​
+Goal impacts return no rows
+goal_experiment_impacts_list
+can return no rows while the data is still preparing.
+Fix:
+Check the
+readiness
+field (
+PREPARING
+,
+PARTIAL
+, or
+READY
+), and ask again after
+retryAfterSeconds
+.
+​
+Single-day results differ from the daily breakdown
+A one-day window follows your organization’s time zone. Daily buckets follow the site’s time zone, so the two can cover different 24 hours.
+​
+Improvement is 0 or missing on a variation
+There’s no baseline to compare with when the original gets 0% of the traffic.
+​
+A page, page size, or limit of 0 returns the default
+In
+takeaway_list
+and
+goal_experiment_impacts_list
+, 0 for a page, page size, or limit means “use the default.”
+​
+New tools are missing after a release
+Clients keep the old tool list until you reconnect.
+Fix:
+After a release, reconnect the Kameleoon MCP connector.
+​
 Headless or remote agents fail to authenticate
 Remote or headless agents (such as cloud-hosted Codex) can’t complete the browser-based authorization step.
 Fix:
@@ -1290,8 +2387,6 @@ by default.
 Was this page helpful?
 Yes
 No
-Kameleoon Claude Connector
-Next
 ⌘
 I
 Assistant

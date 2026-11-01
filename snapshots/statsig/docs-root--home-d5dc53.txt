@@ -22,16 +22,19 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-End An Experiment
 Read Results
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -93,6 +96,9 @@ Experimentation
 Run A/B tests and experiments to optimize your product decisions.
 Product Analytics
 Analyze user behavior and product metrics with powerful analytics tools.
+To run an experiment end to end, go to
+Experiment process overview
+, which lists each step from sizing the experiment through making a decision.
 You can use any of these features on top of your own data warehouse through
 Warehouse Native
 with no extract, transform, and load (ETL). Or, you can host your data in

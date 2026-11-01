@@ -43,7 +43,6 @@ Node
 Python
 Java
 Go Core
-Early Access
 Ruby
 .NET
 More Server SDKs
@@ -71,9 +70,11 @@ Configs
 Dashboards
 Dynamic Configs
 Environments
+Evals
 Events
 Experiments
 Experiments (Warehouse Native)
+Exports
 Gates
 Holdouts
 Ingestions
@@ -208,7 +209,9 @@ Select your SDK
 Follow the installation guide
 : Each SDK has an installation guide that walks you through setup.
 Start experimenting
-: After you integrate the SDK, set up feature flags, run experiments, and log events for analysis.
+: After you integrate the SDK, set up feature flags, run experiments, and log events for analysis. To run an experiment, follow the
+experiment process overview
+, which lists each step from sizing the experiment through making a decision.
 If you have questions or need help with installation, reach out in the
 Slack community
 .
