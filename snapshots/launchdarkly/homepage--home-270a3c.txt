@@ -1,8 +1,8 @@
 # https://launchdarkly.com/
 Runtime Control for AI-Era Software | Feature Flags & AI Agent Control | LaunchDarkly
-[Virtual event] Automate Your Software Factory - Nov 5
+Introducing Release Autopilot: Automated release control for AI-built code
 —
-Save my seat
+Read the announcement
 Skip to:
 Home
 Content
@@ -17,6 +17,7 @@ Book a demo
 How it works
 Platform overview
 Feature flags
+Release Autopilot
 Observability
 Experimentation
 Agent integrations
@@ -39,7 +40,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events & webinars
+Events
 Videos
 Success
 Academy
@@ -130,14 +131,14 @@ Trends
 Model Distribution
 last
 7d
-GPT-5.5
-50%
-Claude Sonnet 4.6
-35%
-Claude Opus 4.7
+GPT-6.1 Terra
+55%
+Claude Fable 5.1
+29%
+Claude Sonnet 5.5
 10%
-Text Embedding 3
-5%
+GPT-6.1 Sol
+6%
 Agent
 Control
 Financial Analyst Agent
@@ -149,6 +150,9 @@ Avg. Satisfaction
 x
 last
 7d
+Releases that run themselves.
+Automate flagging, rollouts, rollbacks, and cleanup for every change that needs it, with no extra work for your team.
+Explore Release Autopilot
 Control every change in production.
 01
 02
@@ -214,8 +218,8 @@ Agent definitions
 RBAC
 Prompt snippets
 Experimentation
-Platform overview
-See how LaunchDarkly works.
+See for yourself
+Platform Overview Demo
 Built for developers
 and their agents.
 Dive into best practices.
@@ -227,7 +231,7 @@ View agent integrations
 Copy, paste, go.
 Drop this prompt into your favorite coding assistant and get up and running with AI in seconds.
 Onboard me to LaunchDarkly.
-Start by installing the onboarding skill: `npx skills add launchdarkly/agent-skills --skill onboarding -y`. source-launchdarkly
+Start by installing the onboarding skill: `npx skills add launchdarkly/ai-tooling --skill onboarding -y`. source-launchdarkly
 Copy to clipboard
 Savage X Fenty keeps shoppers engaged with rapid, reliable experiments.
 Read story
@@ -257,15 +261,15 @@ Dior
 Minutes to release
 < Zero
 Read story
-Paramount improves developer productivity
+Hulu performs targeted rollout of major UI launch to 39 million users.
 Read story
-It’s one of the 'three legs of the stool,' as I like to say. One leg is CI/CD, another is automated testing, and the third is LaunchDarkly.
-Dan Skaggs
-Technical Director, Content Engineering
+We were able to use five rules with five segments configured using custom attributes from our servers to target all the rules in the right places at the right time.
+Dominic Hopton
+Client Architect
 ,
-Paramount
-Deployments per day
-6-7
+Hulu
+Customer experiences
+Improved
 Read story
 Hireology builds safe, scalable AI features.
 Case study

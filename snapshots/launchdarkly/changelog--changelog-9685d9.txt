@@ -1,8 +1,8 @@
 # https://launchdarkly.com/changelog/
 Product Updates | LaunchDarkly
-[Virtual event] Automate Your Software Factory - Nov 5
+Introducing Release Autopilot: Automated release control for AI-built code
 —
-Save my seat
+Read the announcement
 Skip to:
 Home
 Content
@@ -17,6 +17,7 @@ Book a demo
 How it works
 Platform overview
 Feature flags
+Release Autopilot
 Observability
 Experimentation
 Agent integrations
@@ -39,7 +40,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events & webinars
+Events
 Videos
 Success
 Academy
@@ -71,16 +72,29 @@ Book a demo
 Book a demo
 Product
 Updates
-[ What's launched
-at LaunchDarkly ]
+[ What's launched.
+What's next. ]
+Subscribe for updates.
+Stay up to date with our latest product changes.
+By supplying my contact information, I authorize LaunchDarkly to contact me with personalized marketing communications about our products and services. See our
+Privacy Policy
+for more details, or
+Opt-Out
+at any time.
 Loading...
-Explore the docs
-What makes experimentation with LaunchDarkly stand out among other tools on the market?
-Explore the blog
-What makes experimentation with LaunchDarkly stand out among other tools on the market?
-Join our community
-What makes experimentation with LaunchDarkly stand out among other tools on the market?
-Get product updates straight to your inbox once a month.
+Resources to get started.
+Check out the blog.
+Blog
+Read about LaunchDarkly news, product updates, and more.
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
+Watch on demand.
+Videos
+Check out demos and tutorials to see LaunchDarkly in action.
+Connect at events.
+Events
+Explore ways to connect with us in person and virtually.
 Ready to take control in prod?
 Get a demo
 Free trial
@@ -130,12 +144,14 @@ Control releases, experiments, and AI behavior in prod.
 Free trial
 Sign in
 Filter by topic
-Experimentation
-AI Engineering
 Feature Flags
+AI Engineering
+Experimentation
 Guarded Release
 Product Analytics
 Filter by date
+November 2026
+October 2026
 September 2026
 August 2026
 July 2026
@@ -153,68 +169,114 @@ August 2025
 July 2025
 June 2025
 May 2025
-Subscribe for updates
-September 23, 2026
-Experimentation
-Marlo Abramowitz
-Run experiments with assignment data from your warehouse
-You can now run a warehouse native experiment where audience assignment comes from a table in your own warehouse rather than a LaunchDarkly flag evaluation. If your team randomizes in its own service, or assignment happens in a third-party tool such as an email platform, those tests can now be analyzed in LaunchDarkly with the same statistics, exposures, and sliced results as any other experiment, rather than rebuilt in a notebook or dbt.
-It works backwards too: assignment data already sitting in your warehouse can be analyzed retroactively, so you can get a read on a past experiment without waiting out a fresh one. Define an assignment source once and reuse it across experiments in the same project and environment.
-See
-Assignment data sources
+November 10, 2026
+Feature Flags
+Seth Payne
+Application Views
+You can now link a view to an application! The view tracks which flags that application evaluates, so teams working on one app can scope their project down to just their flags instead of wading through everything.
+Link a view to an application, and the view is populated with every flag the application has already evaluated.
+See which flags the application evaluates that aren’t in the view, and add them in one click.
+Turn on auto-linking to add flags to the view automatically as the application evaluates them, typically within about a minute. Each automated addition shows up in the audit log.
+See which flags in the view the application hasn’t evaluated, to spot candidates for cleanup.
+Use application views to grant engineers access to only the flags their service relies on.
+Application views are available now in project settings under Views. They work on their own and don’t require payload filtering.
+Learn more:
+Views
+,
+Create views
+,
+Manage views
+, and
+Payload filtering
+.
+Share link copied!
+November 9, 2026
+Feature Flags
+Michael Knighten
+Assign access faster with preset roles
+You can now assign members
+preset roles
+, a library of organization and project roles maintained by LaunchDarkly that match the most common ways teams split up access. Choose a role and the projects it applies to, with no policy JSON to write.
+Previously, giving a member anything other than a base role meant building a custom role from scratch. Preset roles are modeled on how LaunchDarkly customers already configure custom roles, and every preset that can change flags denies bypassing required approvals by default.
+What you can do:
+Assign an organization role and project roles.
+Organization roles such as
+Organization Admin
+,
+Architect
+,
+Billing Admin
+, and
+Member
+cover account-level access. Project roles such as
+Project Admin
+,
+Release Manager
+,
+Developer
+, and
+Viewer
+cover work inside the projects you choose.
+Invite members in one flow.
+The new invite modal asks for the organization role and project roles separately, then shows a summary before you send the invite.
+See what a role allows.
+Access summaries describe in plain language what a role lets a member do.
+Review preset updates before you take them.
+When LaunchDarkly publishes a new version of the presets, admins see a prompt on the
+Roles
+page listing the changes. Upgrades can't be undone, so review the changes before you accept.
+Keep classic roles.
+Reader, Writer, and Admin remain available as
+Classic roles
+, and existing custom roles don't change.
+Preset roles are available on Enterprise and Guardian plans and will roll out to customers in phases between November 9 and November 18, 2026.
+Learn more in the documentation →
+Share link copied!
+November 4, 2026
+Feature Flags
+Michael Knighten
+Schedule changes to segments
+You can now schedule segment changes for a future date and time. Choose when a change applies from the segment's targeting page, then edit or cancel it under Pending changes. In environments that require approvals, the change is scheduled once approved.
+Docs ->
+Share link copied!
+October 30, 2026
+AI Engineering
+Paul Loeb
+Run offline evaluations from code, plus Agent Skills and AI SDK 1.0 are generally available
+Run evaluations from code
+You can now run AgentControl offline evaluations from a script or a CI job, against the same code your application runs in production. A single `run()` call in the Python or Node.js AI SDK sends each row of a dataset through your own handler. That handler calls your model provider and your real tools, the same way your app does. The SDK records every tool call, so a judge can check that your agent called the right tools, in the right order, with the right arguments.
+You can score each output with checks you write in code, LaunchDarkly judges, or both. Each run returns pass or fail, so a regression can fail your build, and the results appear on the Evaluations page in LaunchDarkly. Evaluations from code is included in AgentControl at no extra cost, and model calls use your own provider credentials.
+To get started, click Evaluations, then Run evaluations, then From code. To learn more, read
+https://launchdarkly.com/docs/home/agentcontrol/evaluations-from-code
+.
+Agent Skills is generally available
+Agent Skills is out of beta. You can manage your agents' instruction files in the AgentControl Library, version them, and attach them to config variations without shipping code. To learn more, read
+https://launchdarkly.com/docs/home/agentcontrol/agent-skills
+.
+AI SDK 1.0 for Python and Node.js
+The Python and Node.js AI SDKs have reached 1.0. Evaluations from code and Agent Skills need them, so upgrade to `launchdarkly-ai-server` 1.0.0 or later with Python 3.12 or later, or `@launchdarkly/ai-node` 1.0.0 or later with Node.js 22 or later. To learn more, read
+https://launchdarkly.com/docs/sdk/ai
+.
+For help or feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+October 9, 2026
+AI Engineering
+Paul Loeb
+Manage your agent skills in AgentControl
+Agent skills are now available in beta. A skill is a Markdown file that tells an agent how to do a specific job. You can now write, version, and roll out those files from AgentControl instead of keeping them in your codebase and redeploying every time one changes.
+Create a skill in the Library under Agents, attach it to a config variation, and the SDK delivers it to your running application. Because the skill is attached to a config, it picks up the targeting, rollouts, approvals, version history, and audit trail you already use everywhere else in AgentControl. You can see every config that references a skill before you change it, and publishing a new version never changes a running agent until you choose to.
+The SDK can write skills to disk where runtimes such as the Claude Agent SDK expect to find them, hand the content to your own code, or pass the pinned references through to a model provider that hosts skills itself.
+The beta works with the Python and Node.js AI SDKs.
+To get started, read
+https://launchdarkly.com/docs/home/agentcontrol/agent-skills
 and
-Manage assignment data sources
-in our documentation to get started.
-Share link copied!
-September 16, 2026
-AI Engineering
-Paul Loeb
-Edit your offline evaluation datasets in AgentControl
-A dataset holds the inputs for an offline evaluation, where each row is one case that AgentControl runs your config against and scores. You can now edit those rows in place instead of uploading a replacement file every time one of them needs to change.
-Open a dataset from the AgentControl Library page and you get a Rows tab. Add a row by hand or append a file, edit a row's input, expected output, variables and metadata, search by input or expected output, drag rows into a different order, and delete the ones you no longer want. You can also create an empty dataset and add rows to it, rather than needing a finished CSV or JSONL file first. Changes stage until you click Save, so a whole editing session commits at once.
-Each save creates a new dataset version that records who made the change, when, and the resulting row count, and you can open any earlier version or restore it. Evaluation runs pin to the version that existed when the run started, so editing a dataset never changes the results of a run you have already completed.
-To get started, read
-Datasets
-.
-To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
+https://launchdarkly.com/docs/sdk/features/agent-skills
 .
 Share link copied!
-September 3, 2026
-Experimentation
-Marlo Abramowitz
-Estimate sample size and duration without leaving LaunchDarkly
-You can now work out how much traffic a frequentist experiment needs, and how long it will take to get there, inside LaunchDarkly. Start from the experiment list for a quick gut-check before you commit to a design, or from the builder to attach the estimate to that iteration, so the experiment carries its own sample size target and anyone reviewing it can see when it's ready for a decision. You can view, edit, or remove that target from the results page while the experiment runs.
-Settling on a sample size up front is what holds your false positive rate to the significance level you chose, and until now it meant a spreadsheet or a separate trip to our website. Estimates assume steady traffic, so an experiment may hit its sample size earlier or later. Available for fixed-horizon frequentist experiments.
-Read Sample size calculations (https://launchdarkly.com/docs/home/experimentation/sample-size-calculator) and Sample size calculations for frequentist experiments (https://launchdarkly.com/docs/guides/experimentation/sample-size-calc) to get started.
-Share link copied!
-August 26, 2026
-AI Engineering
-Paul Loeb
-Use AgentControl from your Go and Java applications
-AI SDKs are now available for Go and Java. Your prompts, model settings, and targeting rules live in AgentControl configs instead of your code, so you can change a prompt, swap a model, or roll a variation out to a single customer segment without a deploy. Both SDKs report generation counts, token usage, latency, and errors back to AgentControl so you can watch cost and performance per config, and both run multi-step agent graphs.
-To get started, read the
-Go AI SDK reference
-or the
-Java AI SDK reference
-.
-Our team is happy to help you get set up. To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-August 26, 2026
-AI Engineering
-Paul Loeb
-Serve different models to different users through your LiteLLM gateway
-Keep the gateway you already run, and decide the model, prompt, and parameters per request instead of per config file. Give enterprise customers your strongest model and free users a cheaper one. Roll a new model out to five percent of traffic, watch quality and cost, and revert in seconds if it degrades. None of it requires editing YAML, restarting the proxy, or shipping code, and every change is attributed and approval-gated like any feature flag change.
-To get started, read
-Use LaunchDarkly AgentControl to control model administration with LiteLLM
-.
-Our team is happy to help you set this up. To get help or share feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-Load more updates
-Explore the docs
-What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Load more
+Explore our docs.
+Docs
+Learn best practices for getting started with LaunchDarkly.
 Free trial

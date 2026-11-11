@@ -5,71 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Overview
-Billing and Use
-MTU billing guide
-Usage reports
-Account Management
-The Settings page
-Currency unit
-SCIM provisioning
-Portfolio
-Scale and event sampling
-Orgs and projects
-Permission groups
-Privacy notifications
-Manage users and permissions
-Roles and permissions
-Self-service data deletion
-Webhooks for custom monitors
-API and secret keys
-Role-based Access Controls (RBAC)
-Audit log
-Single Sign-On
-Single sign-on (SSO) in Amplitude
-Auth0 SSO
-Set up single sign-on (SSO) for Amplitude using AWS IAM Identity Center
-G Suite SSO
-Microsoft Azure AD SSO
-Okta SSO
-OneLogin SSO
-Set up single sign-on (SSO) for Amplitude using another service
-Language
-🇺🇸
-English
-On this page
-Plan availability
-SSO basics
-What your identity provider must send
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Admin
 /
 Single sign-on (SSO) in Amplitude
@@ -106,12 +45,109 @@ An
 email
 attribute (case insensitive).
 If Amplitude can't find a valid email, the user can't sign in. Most identity providers send the email by default. If yours doesn't, follow the provider-specific guide linked above to map the user's email into the assertion.
+Common questions
+How do I fix a 500 error when signing in with SSO?
+A 500 internal server error on SSO sign-in usually means a problem with your SAML certificate, and it can affect every user in your organization. To resolve it:
+Make sure you can reach the Amplitude platform to upload a new certificate. If you need to turn off SSO to sign in and fix the problem, contact the Support team.
+Check with your IT team whether the SAML certificate has expired. If it has, upload a new one.
+Confirm the certificate uses the correct format. If it doesn't, have an Amplitude admin upload a correctly formatted certificate.
+Why am I seeing a Google Workspace 403 error on SSO sign-in?
+If you configured SSO through Google Workspace, you might see
+403 Error: app_not_enabled_for_user
+or
+403 Error: app_not_configured_for_user
+. Refer to
+Set up SSO using G Suite
+for the fix.
+What do I do if I can't sign in with a password?
+If your organization doesn't require SSO and you're signing in with an email and password, work through these steps:
+Confirm the password is correct, and reset it if you've forgotten it.
+Check whether the problem happens in another browser or in incognito mode. If it doesn't, clear your browser's cookies and cache.
+Update your browser, restart your computer so the browser fully relaunches, and try again.
+Confirm your browser is supported. Refer to
+browser compatibility
+.
+Turn off ad blockers and VPNs, or add Amplitude to their allowed lists. Both can make Amplitude behave unexpectedly.
+If you signed up with EU data storage, sign in at
+app.eu.amplitude.com/login
+.
+If you've forgotten your organization's URL, contact Amplitude Support. They can tell you which organization is associated with your email address.
+If none of these resolve it, contact Amplitude Support and include your browser and its version number.
 Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Plan availability
+SSO basics
+What your identity provider must send
+Common questions
+How do I fix a 500 error when signing in with SSO?
+Why am I seeing a Google Workspace 403 error on SSO sign-in?
+What do I do if I can't sign in with a password?
 Copy Markdown
 On this page
 Plan availability
 SSO basics
 What your identity provider must send
+Common questions
+How do I fix a 500 error when signing in with SSO?
+Why am I seeing a Google Workspace 403 error on SSO sign-in?
+What do I do if I can't sign in with a password?
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Overview
+Security and privacy
+Billing and Use
+Plans and billing
+MTU billing guide
+Usage reports
+Account Management
+The Settings page
+Currency unit
+SCIM provisioning
+Portfolio
+Scale and event sampling
+Orgs and projects
+Permission groups
+Privacy notifications
+Manage users and permissions
+Roles and permissions
+Self-service data deletion
+Webhooks for custom monitors
+API and secret keys
+Role-based Access Controls (RBAC)
+Audit log
+Single Sign-On
+Single sign-on (SSO) in Amplitude
+Auth0 SSO
+Set up single sign-on (SSO) for Amplitude using AWS IAM Identity Center
+G Suite SSO
+Microsoft Azure AD SSO
+Okta SSO
+OneLogin SSO
+Set up single sign-on (SSO) for Amplitude using another service
+Language
+🇺🇸
+English
 Platform
 AI Agents
 AI Visibility

@@ -1,5 +1,5 @@
 # https://posthog.com/docs/data-warehouse/sources
-Data warehouse sources - Docs - PostHog
+Link a source - Docs - PostHog
 Products
 Pricing
 Docs
@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -33,856 +33,102 @@ Company handbook
 Store
 Careers
 Trash
-Data Warehouse
+Data Pipelines
+Product
+Pricing
+Docs
+Data pipelines
 Overview
 Setup
 Start here
-Surfaces
+Where to use
 PostHog Web
 PostHog MCP
-PostHog Desktop
 API
 Sources
 Link sources
 Overview
 PostHog as a source
+Upload a file
+Incoming webhooks
 Sources
-1Password
-Ably
-AccuLynx
-ActiveCampaign
-Adjust
-Adobe Analytics
-Adobe Commerce (Magento)
-AdRoll
-Adyen
-AfterShip
-AgileCRM
-Aha!
-Aha! Ideas
-Airbrake
-Aircall
-AirOps
-Airtable
-Airwallex
-Aiven
-Alegra
-Algolia
-Alguna
-Alpha Vantage
-Amazon Ads
-Amazon SES
-Amplemarket
-Amplitude
-Anthropic
-Anvil
-Apify Dataset
-Apitally
-Apollo
-Appfigures
-AppFollow
-Apple (App Store Connect)
-Apple Ads
-AppLovin
-AppsFlyer
-AppSignal
-Appstack
-Apptio Cloudability (IBM)
-Argo CD
-Asaas
-Asana
-Ashby
-AskNicely
-AssemblyAI
-Atlassian Bitbucket Cloud
-Attentive
-Attio
-Automox
-Autumn
-Avalara AvaTax
-Aviationstack
-Aviator
-Awin
-AWS Budgets
-AWS Cost Anomaly Detection
-AWS Cost Explorer
-AWS Organizations
-Azure DevOps
-Babelforce
-Back Market (Back Market SAS)
-BambooHR
-Baserow
-Baton
-Beamer
-beehiiv
-Better Stack
-Bettermode
-BigCommerce
-Bigeye
-BigMailer
-BigQuery
-BILL (formerly Bill.com)
-Billomat
-Bing Ads
-Bing Webmaster Tools
-Bitrise
-Bland AI
-Blogger
-Bloomerang
-Bluesky
-BlueTally
-BoldSign
-Braintree
-Braze
-BreezoMeter
-Brevo
-Brex
-Browse AI
-Browser Use
-Browserbase
-BugHerd
-Bugsnag
-BuildBetter
-Buildkite
-Bunny.net
-Buttondown
-Buy Me a Coffee
-Buzzsprout
-Cal.com
-Calendly
-CallRail
-Campaign Monitor
-Campayn
-Campfire
-Canny
-Capsule CRM
-Care Quality Commission
-CAST AI
-CDC Open Data (data.cdc.gov)
-Census (Fivetran)
-Chameleon
-Chargebee
-Chargedesk
-Chargify
-ChartHop
-ChartMogul
-Chatwoot
-Checkmarx (Checkmarx One)
-Checkout.com
-Churnkey
-CIMIS
-CircleCI
-CircleCI Insights
-Cisco Duo
-Clari
-Clay
-Clerk
-Clever
-ClickHouse
-ClickHouse Cloud (ClickHouse, Inc.)
-ClickUp
-Cliniko
-Clockify
-Clockodo
-Close
-Cloudbeds
-Cloudflare
-Cloudinary
-Cloudsmith
-CloudZero
-Coassemble
-Coda
-Codacy
-Codecov (Sentry)
-Codefresh
-Codemagic
-CodeScene
-Cody
-Cohere
-CoinAPI
-CoinGecko
-CoinMarketCap
-commercetools
-Companies House (UK government)
-CompanyCam
-Concord
-Conekta
-ConfigCat
-Confluence
-Confluent Cloud
-ConvertKit
-Convex
-Coolify
-Copper
-Coralogix
-Cortex
-Coupa
-Courier
-Coveralls
-crates.io
-Cronitor
-Crossref
-Crunchbase
-Culture Amp
-Cursor
-Custom REST source
-Customer.io
-Customerly
-Dagster+ (Dagster Cloud)
-Databricks
-Datadog
-DataForSEO
-DataHub
-dbt
-DebugBear
-Decagon
-Deel
-Deepgram
-DeepSource
-Demodesk
-Deno Deploy
-Depot
-Descope
-Devin AI
-DigitalOcean
-DingConnect
-Discourse
-Dixa
-Docker Hub
-DocuSeal
-DocuSign
-Dodo Payments
-DoIt
-Doppler
-Dovetail
-Drata
-Drip
-Dropbox Sign
-Dub
-DynamoDB
-Dynatrace
-e-conomic
-E2B
-easybill
-EasyPost
-Easypromos
-Elastic Email
-Elasticsearch
-Electricity Maps
-ElevenLabs
-EmailOctopus
-env0
-Eppo (Datadog)
-Etsy
-European Central Bank (ECB Data Portal)
-Eventbrite
-Eventee
-Eventzilla
-Everhour
-Exchange Rates API
-Expo (EAS)
-EZOfficeInventory
-Factorial
-Faire
-Fastly
-Featurebase
-Fillout
-Finage
-Financial Modeling Prep
-Finnhub
-Finnworlds
-Fintoc
-Firebase
-Firecrawl
-FireHydrant
-Fireworks AI
-FirstPromoter
-Flagsmith
-Fleetio
-Flexmail
-Float
-Flowlu
-Flutterwave
-Fly.io
-Folk
-Formbricks
-Fourthwall
-Framer
-FRED
-Freshcaller
-Freshchat
-Freshdesk
-Freshsales
-Freshservice
-Frill
-Front
-Fulcrum
-Fullstory
-FusionAuth
-G2 (G2.com, Inc.)
-Gainsight CS
-Gainsight PX
-Gerrit
-Giphy
-GitBook
-Gitea
-GitGuardian
-GitHub
-GitLab
-Givebutter
-Gladly
-GlassFrog
-GLEIF (Global Legal Entity Identifier Foundation)
-GNews
-GoCardless
-Goldcast
-Gong
-Google Ads
-Google Analytics
-Google PageSpeed Insights
-Google Play Console
-Google Search Console
-Google Sheets
-Google Webfonts
-Gorgias
-Grafana
-Grafana Cloud k6
-Granola
-Greenhouse
-Gridly
-Groq
-GrowthBook
-Gumroad
-Guru
-Gusto
-Harvest
-Harvey
-HashiCorp (HCP Terraform / Terraform Cloud)
-Hatchet
-Healthchecks.io
-Height
-Helicone
-Help Scout
-Heroku
-Hetzner Cloud
-Hex
-HeyGen
-HeyReach
-HiBob
-Hightouch
-HitPay
-Honeybadger
-Honeycomb
-Hookdeck
-HoorayHR
-Housecall Pro
-Hub Planner
-Hubspot
-Hugging Face
-Humanitix
-Huntr
-Hyperspell
-Hyros
-IBM Instana Observability
-impact.com
-impact.com Partner
-incident.io
-Infisical
-Inflowinventory
-Inngest
-Insightly
-Instagram
-Instantly
-Instatus
-Instructure Canvas LMS
-Intercom
-Intruder
-Invoice Ninja
-Invoiced
-IP2WHOIS
-Iterable
-Jamf Pro
-Jellyfish
-Jenkins
-JetBrains TeamCity
-JFrog (Artifactory / JFrog Platform)
-Jira
-JobNimbus
-Jotform
-Judge.me Reviews
-JumpCloud
-JustCall
-JustSift
-Kafka
-Kalshi
-Kandji (Iru Endpoint Management)
-kapa.ai
-Katana
-Kernel
-Kickscale
-Klaus
-Klaviyo
-Knock
-KnowBe4
-Kommo
-Kong Inc. (Kong Konnect)
-Koyeb
-Kubecost (IBM / Apptio)
-Kustomer
-Lacework FortiCNAPP (Fortinet)
-Lago
-Lambda
-Langfuse
-LangSmith
-Lattice
-LaunchDarkly
-Leadfeeder
-Leexi
-Lemlist
-Lemon Squeezy
-Less Annoying CRM
-Lever
-Lexware Office (formerly lexoffice), Haufe-Lexware GmbH
-Lightdash
-Lightfield
-Lightspeed Retail
-Linear
-LinearB
-Lingo.dev
-LinkedIn Ads
-Linkrunner
-Linode
-LlamaCloud
-Lob
-Logz.io
-Loop Returns
-Loops
-Lovable
-Luma
-Mailchimp
-MailerLite
-MailerSend
-Mailgun
-Mailjet
-Mailosaur
-Mailtrap
-Marketo
-Marketstack
-Matomo
-Maxio
-Medusa
-Mem0
-Membrain
-Mention
-Mercury
-Meta Ads
-Metabase
-Metaplane by Datadog
-Meteostat
-Metorial
-Metronome
-Microsoft Azure Cost Management
-Microsoft Clarity
-Microsoft Dynamics 365
-Microsoft Dynamics 365 Business Central
-Microsoft SQL Server
-Mighty Networks
-Mistral AI
-Mixmax
-Mixpanel
-MoEngage
-Mollie
-monday.com
-MongoDB
-Monte Carlo
-MotherDuck
-Motion
-Moxie
-Mux
-My Hours
-MySQL
-n8n
-Nager.Date
-Nebius AI
-Neon
-Netlify
-New Relic
-New York Times
-NewsAPI
-NewsData.io
-noCRM.io
-Northflank
-Northpass LMS
-Notion
-npm registry
-NuGet
-Nuntly
-Octolens
-Octopus Deploy
-Okendo
-Okta
-Omni Analytics
-Omnisend
-OnceHub
-OnePageCRM
-Onfleet
-Open Exchange Rates
-Open-Meteo
-OpenAI
-OpenAI Ads
-OpenAlex
-OpenAQ
-OpenCorporates
-openFDA
-OpenRouter
-OpenWeather
-Opinion Stage
-Opn Payments (formerly Omise)
-Opsgenie
-Optimizely
-OPUSWatch
-Orb
-Orca Security
-Ortto
-Oura
-Outbrain
-OwnerRez
-Pabbly Subscription Billing
-Packagist
-Paddle
-PagerDuty
-PandaDoc
-Paperform
-Papersign
-Pardot
-Partnerize
-PartnerStack
-PayFit
-PayMongo
-Paystack
-Pendo
-Perigon
-PersistIq
-Persona
-Personio
-Pexels
-pganalyze
-Phyllo
-Picqer
-Pinecone
-Pingdom
-Pinterest Ads
-Pipedrive
-Pipeliner
-Plaid
-Plain
-PlanetScale MySQL
-PlanetScale Postgres
-Planhat
-Platform.sh
-Plausible
-Plivo
-Plunk
-Pluralsight Flow
-Polar
-Polymarket
-Postgres
-Postmark
-Postscript
-Power BI admin
-Prefect Cloud
-Pretix
-Printify
-Productboard
-Productive
-Profound
-Propertyware (RealPage)
-Pulumi
-Pylon
-PyPI
-Qualaroo
-Qualtrics
-Qualys VMDR
-Quo
-Railway
-Ramp
-Rapid7 InsightVM
-Raygun
-Razorpay
-Recall.ai
-Recharge
-Recreation.gov
-Recruitee
-Recurly
-Reddit Ads
-Redshift
-Render
-RentCast
-Replicate
-Reply.io
-Resend
-Retell AI
-Retently
-RevenueCat
-Reverb
-Revolut Merchant
-Rippling
-RKI COVID-19
-Roark
-Rocketlane
-Rokt Ads
-Rollbar
-Rootly
-RSS.com
-RubyGems.org
-Ruddr
-RunPod
-SafetyCulture
-Sage HR
-Salesflare
-Salesforce
-Salesloft
-SavvyCal
-Scale AI
-Scaleway
-Secoda
-Secureframe
-Segment
-Select Star
-Semgrep
-SendGrid
-Sendowl
-SentinelOne
-Sentry
-Sequenzy
-ServiceM8
-ServiceNow
-sevDesk (sevDesk GmbH)
-SFTP
-Shipmail
-Shippo
-ShipStation
-Shopify
-ShopWired
-Shortcut
-Shortio
-Shutterstock
-Sigma Computing
-SigNoz
-Sim
-SimFin
-Similarweb
-SimpleCast
-Simplesat
-SingleStore, Inc.
-Skio
-Skyvern
-Slack
-Sleekplan
-Smaily
-SmartEngage
-Smartlead
-Smartreach
-Smartsheet
-Smartwaiver
-Snapchat Ads
-Snowflake
-Snowplow Analytics
-Snyk
-SolarWinds Service Desk
-Sonar (SonarSource) - SonarQube Server
-Sonar Cloud
-Sonatype (Nexus Repository)
-Sourcegraph
-Spacelift
-SparkPost
-Split.io
-Splunk AppDynamics (Cisco)
-Splunk Observability Cloud
-Spot by Flexera (Spotinst)
-Spotler CRM
-Sprig
-Squadcast (SolarWinds Incident Response)
-Square
-Squarespace
-Stack Overflow (Prosus/Stack Exchange)
-StatusCake
-Statuspage
-Stigg
-StockData.org
-STRATO
-StreamElements
-Stripe
-Stytch
-Sumo Logic
-Supabase
-SurveyMonkey
-SurveySparrow
-Svix
-Swarmia
-Taboola
-Tailscale
-Tally
-Tavus
-tawk.to
-Teachable
-Teamtailor
-Teamwork
-telli
-Telnyx
-Tempo
-Temporal.io
-Tenable Vulnerability Management
-Tenjin
-TestRail
-The Guardian
-Thinkific
-Thinkific Courses
-Ticket Tailor
-TikTok Ads
-tinyEmail
-TMDb
-Todoist
-Together AI
-Torii
-Transistor.fm
-Travis CI (Idera)
-Trello
-Tremendous
-Trigger.dev
-Trunk.io (Trunk Technologies, Inc.)
-Trustpilot
-Turso
-TVmaze
-Twelve Data
-Twelve Labs
-Twenty
-Twilio
-Tyntec SMS
-Typeform
-Ubidots
-Unleash
-Unstructured
-UpPromote
-Upstash
-UptimeRobot
-US Bureau of Economic Analysis (BEA)
-US Census
-Usersnap
-UserVoice
-Vantage
-Vapi
-Veeqo
-Vellum
-Vendr (OpenPrice API)
-Veracode
-Vercel
-Vitally
-Vultr
-Wasabi
-Watchmode
-Waydev
-Webflow
-Weights & Biases
-Whop
-Wikipedia Pageviews
-Windmill
-Wix
-WooCommerce
-WordPress
-Workable
-Workday
-Workiz
-WorkOS
-World Bank Open Data
-World Health Organization Global Health Observatory (GHO)
-Wrike
-Writesonic
-Wufoo
-Xendit
-xMatters (Everbridge)
-YNAB (You Need A Budget)
-Yoco
-Yousign
-YouTube Analytics
-Zapier (Storage by Zapier)
-ZapSign
-Zendesk
-Zendesk Sell
-Zendesk Sunshine
-Zenduty
-Zenloop
-Zep
-Zero
-Zoho CRM
-Zonka Feedback
-Zoom
-Zuora
-Zylo
-Self-managed
-Azure Blob
-Cloudflare R2
-File upload
-Google Cloud Storage
-S3
-Modeling
-Views
-Materializing views
-Materialization troubleshooting
-Data quality
-Alpha
-SQL commands
-Accessing data with SQL
-SQL functions
-Variables
-Managed warehouse
-Overview
-Set up your warehouse
-Connect and query
+Destinations
+Realtime destinations
+ELT destinations
+Monitoring your syncs
+Batch exports
+File download exports
+Transformations
+Transformations
 Resources
-Integrated warehouse
-Under the hood
-Cutting costs
-More tutorials
+Migrate off Fivetran
+Using Fivetran, Airbyte or other ETL tools with PostHog
 Troubleshooting
 Changelog
 Copy page
-Data warehouse sources
+Link a source
 Let AI connect your sources for you
 Skip the manual setup — run this in your project and the wizard auto-detects your databases and APIs and connects them to PostHog.
 npx @posthog/wizard warehouse
 Learn more
 Let AI connect your sources for you
 Contents
-PostHog data
 Managed sources
-Self-hosted sources
-PostHog data
-Much of your PostHog data is available in the data warehouse by default. This includes data like events, persons, sessions, groups, and the query log. Learn how to
-use PostHog as your data source
-.
+Files and object storage
+Where synced rows are written
+Linking a custom source
+Sync methods
+Webhook
+Incremental
+Primary key columns
+Lookback window
+Append only
+Full table
+xmin (Postgres only)
+Filtering rows
+Configuring row filters
+Supported operators
+Supported column types
+How row filters work
+Masking sensitive columns
+Configuring column masking
+Limitations
+Syncing
+Filtering and sorting schemas
+Managing schemas in bulk
+Sync frequency
+Anchor time
+Managing webhook tables
+Sources enables you to move data from anywhere to anywhere, including bringing data into PostHog so you can query it alongside your product data. This includes external data from tools like your CRM, payment processor, or database.
+To link a source, go to the
+Data pipeline page
+and select the
+Sources
+tab.
 Managed sources
 Provide your credentials and PostHog handles the entire extract and load process. Data syncs automatically from your source to PostHog's storage.
+100ms
 1Password
-AWS Budgets
-AWS Cost Anomaly Detection
-AWS Cost Explorer
-AWS Organizations
+7shifts
 Ably
+Abnormal Security (Abnormal AI)
+Acast
 AccuLynx
 ActiveCampaign
-AdRoll
+Adapty
 Adjust
 Adobe Analytics
 Adobe Commerce (Magento)
+AdRoll
 Adyen
 AfterShip
 AgileCRM
 Aha!
 Aha! Ideas
-AirOps
+Ahrefs
 Airbrake
 Aircall
+AirOps
 Airtable
 Airwallex
 Aiven
@@ -891,6 +137,11 @@ Algolia
 Alguna
 Alpha Vantage
 Amazon Ads
+Amazon Athena
+Amazon CloudWatch
+Amazon DocumentDB
+Amazon S3
+Amazon Selling Partner
 Amazon SES
 Amplemarket
 Amplitude
@@ -899,44 +150,72 @@ Anvil
 Apify Dataset
 Apitally
 Apollo
-AppFollow
-AppLovin
-AppSignal
+Appcues
 Appfigures
+AppFollow
 Apple (App Store Connect)
 Apple Ads
+AppLovin
 AppsFlyer
+AppSignal
 Appstack
 Apptio Cloudability (IBM)
+Arcade
 Argo CD
 Asaas
 Asana
 Ashby
 AskNicely
 AssemblyAI
+Astronomer (Astro)
 Atlassian Bitbucket Cloud
 Attentive
 Attio
+Auth0
 Automox
 Autumn
 Avalara AvaTax
 Aviationstack
 Aviator
 Awin
+AWS Batch
+AWS Budgets
+AWS CloudTrail
+AWS Compute Optimizer
+AWS Config
+AWS Cost and Usage Report
+AWS Cost Anomaly Detection
+AWS Cost Explorer
+AWS Glue Data Catalog
+AWS GuardDuty
+AWS IAM Access Analyzer
+AWS Inspector
+AWS Macie
+AWS Organizations
+AWS SageMaker
+AWS Savings Plans
+AWS Security Hub
+AWS Step Functions
+AWS Systems Manager
+AWS WAF
+Axiom
+Azure Blob Storage
+Azure Cosmos DB
 Azure DevOps
-BILL (formerly Bill.com)
 Babelforce
 Back Market (Back Market SAS)
 BambooHR
 Baserow
 Baton
 Beamer
+beehiiv
 Better Stack
 Bettermode
 BigCommerce
+Bigeye
 BigMailer
 BigQuery
-Bigeye
+BILL (formerly Bill.com)
 Billomat
 Bing Ads
 Bing Webmaster Tools
@@ -944,10 +223,13 @@ Bitrise
 Bland AI
 Blogger
 Bloomerang
-BlueTally
+Blueshift
 Bluesky
+BlueTally
+bol.com Retailer
 BoldSign
 Braintree
+Braintrust
 Braze
 BreezoMeter
 Brevo
@@ -958,15 +240,14 @@ Browserbase
 BugHerd
 Bugsnag
 BuildBetter
+Buildium (RealPage)
 Buildkite
 Bunny.net
 Buttondown
 Buy Me a Coffee
 Buzzsprout
-CAST AI
-CDC Open Data (data.cdc.gov)
-CIMIS
 Cal.com
+Calendarific
 Calendly
 CallRail
 Campaign Monitor
@@ -975,48 +256,65 @@ Campfire
 Canny
 Capsule CRM
 Care Quality Commission
+CAST AI
+Catchpoint Systems
+CDC Open Data (data.cdc.gov)
 Census (Fivetran)
 Chameleon
+Channel.io
 Chargebee
 Chargedesk
 Chargify
 ChartHop
 ChartMogul
 Chatwoot
+Checkly
 Checkmarx (Checkmarx One)
 Checkout.com
+Chess.com
 Churnkey
+CIMIS
+Circleback
 CircleCI
 CircleCI Insights
 Cisco Duo
+Cisco Meraki
+Cisco ThousandEyes
 Clari
+Clarifai
 Clay
 Clerk
 Clever
+CleverTap
 ClickHouse
 ClickHouse Cloud (ClickHouse, Inc.)
 ClickUp
 Cliniko
+Clip (PayClip S. de R.L. de C.V.)
 Clockify
 Clockodo
 Close
-CloudZero
 Cloudbeds
 Cloudflare
+Cloudflare D1
+Cloudflare R2
 Cloudinary
 Cloudsmith
+CloudZero
+Clover (Fiserv)
 Coassemble
 Coda
 Codacy
-CodeScene
 Codecov (Sentry)
 Codefresh
 Codemagic
+CodeScene
 Cody
 Cohere
 CoinAPI
 CoinGecko
 CoinMarketCap
+commercetools
 Companies House (UK government)
 CompanyCam
 Concord
@@ -1033,6 +331,9 @@ Cortex
 Coupa
 Courier
 Coveralls
+crates.io
+Crisp
+Criteo
 Cronitor
 Crossref
 Crunchbase
@@ -1042,39 +343,44 @@ Custom REST source
 Customer.io
 Customerly
 Dagster+ (Dagster Cloud)
-DataForSEO
-DataHub
 Databricks
 Datadog
+DataForSEO
+DataHub
+dbt
 DebugBear
 Decagon
 Deel
-DeepSource
 Deepgram
+DeepSource
 Demodesk
 Deno Deploy
 Depot
 Descope
+Develocity
 Devin AI
 DigitalOcean
 DingConnect
 Discourse
 Dixa
-DoIt
 Docker Hub
 DocuSeal
 DocuSign
 Dodo Payments
+DoIt
+Donorbox
 Doppler
 Dovetail
 Drata
 Drip
 Dropbox Sign
 Dub
+DX (getdx.com)
 DynamoDB
 Dynatrace
+e-conomic
 E2B
-EZOfficeInventory
+easybill
 EasyPost
 Easypromos
 Elastic Email
@@ -1082,29 +388,34 @@ Elasticsearch
 Electricity Maps
 ElevenLabs
 EmailOctopus
+Embrace (Embrace.io)
+env0
 Eppo (Datadog)
 Etsy
 European Central Bank (ECB Data Portal)
 Eventbrite
 Eventee
 Eventzilla
+Everflow
 Everhour
 Exchange Rates API
 Expo (EAS)
-FRED
+EZOfficeInventory
 Factorial
 Faire
 Fastly
 Featurebase
+FieldPulse
+File upload
 Fillout
 Finage
 Financial Modeling Prep
 Finnhub
 Finnworlds
 Fintoc
-FireHydrant
 Firebase
 Firecrawl
+FireHydrant
 Fireworks AI
 FirstPromoter
 Flagsmith
@@ -1118,6 +429,7 @@ Folk
 Formbricks
 Fourthwall
 Framer
+FRED
 Freshcaller
 Freshchat
 Freshdesk
@@ -1125,29 +437,36 @@ Freshsales
 Freshservice
 Frill
 Front
+Frontegg
 Fulcrum
 Fullstory
 FusionAuth
 G2 (G2.com, Inc.)
-GLEIF (Global Legal Entity Identifier Foundation)
-GNews
 Gainsight CS
 Gainsight PX
+Gcore
+Genesys Cloud
 Gerrit
+Ghost (Ghost Foundation)
 Giphy
 GitBook
+Gitea
 GitGuardian
 GitHub
 GitLab
-Gitea
 Givebutter
 Gladly
 GlassFrog
+GLEIF (Global Legal Entity Identifier Foundation)
+GNews
 GoCardless
 Goldcast
+GoLogin
 Gong
 Google Ads
 Google Analytics
+Google Cloud Platform (Cloud Billing)
+Google Cloud Storage
 Google PageSpeed Insights
 Google Play Console
 Google Search Console
@@ -1156,6 +475,7 @@ Google Webfonts
 Gorgias
 Grafana
 Grafana Cloud k6
+Grafana IRM
 Granola
 Greenhouse
 Gridly
@@ -1164,6 +484,7 @@ GrowthBook
 Gumroad
 Guru
 Gusto
+Harness
 Harvest
 Harvey
 HashiCorp (HCP Terraform / Terraform Cloud)
@@ -1188,12 +509,16 @@ Housecall Pro
 Hub Planner
 Hubspot
 Hugging Face
+Humanitec
 Humanitix
 Huntr
 Hyperspell
 Hyros
 IBM Instana Observability
-IP2WHOIS
+impact.com
+impact.com Partner
+Imperva (Thales) Cloud Application Security
+incident.io
 Infisical
 Inflowinventory
 Inngest
@@ -1206,12 +531,13 @@ Intercom
 Intruder
 Invoice Ninja
 Invoiced
+IP2WHOIS
 Iterable
-JFrog (Artifactory / JFrog Platform)
 Jamf Pro
 Jellyfish
 Jenkins
 JetBrains TeamCity
+JFrog (Artifactory / JFrog Platform)
 Jira
 JobNimbus
 Jotform
@@ -1220,16 +546,22 @@ JumpCloud
 JustCall
 JustSift
 Kafka
+Kajabi
 Kalshi
 Kandji (Iru Endpoint Management)
+kapa.ai
 Katana
 Kernel
+Kestra
 Kickscale
+Kisi
+Klarna
 Klaus
 Klaviyo
 Knock
 KnowBe4
 Kommo
+Komodor
 Kong Inc. (Kong Konnect)
 Koyeb
 Kubecost (IBM / Apptio)
@@ -1237,8 +569,8 @@ Kustomer
 Lacework FortiCNAPP (Fortinet)
 Lago
 Lambda
-LangSmith
 Langfuse
+LangSmith
 Lattice
 LaunchDarkly
 Leadfeeder
@@ -1257,9 +589,17 @@ Lingo.dev
 LinkedIn Ads
 Linkrunner
 Linode
+Listmonk
+LiteLLM
+Livestorm
 LlamaCloud
 Lob
+Lodgify
+LogicMonitor
+LogRocket
 Logz.io
+Lokalise
+Looker (Google Cloud)
 Loop Returns
 Loops
 Lovable
@@ -1276,9 +616,11 @@ Marketstack
 Matomo
 Maxio
 Medusa
+Megaphone
 Mem0
 Membrain
 Mention
+Mercado Pago (Mercado Libre)
 Mercury
 Meta Ads
 Metabase
@@ -1286,18 +628,27 @@ Metaplane by Datadog
 Meteostat
 Metorial
 Metronome
+Mezmo (formerly LogDNA)
+Microsoft Azure (Application Insights)
+Microsoft Azure (Azure Monitor / Log Analytics)
+Microsoft Azure API Management
 Microsoft Azure Cost Management
 Microsoft Clarity
+Microsoft Defender for Cloud Apps
 Microsoft Dynamics 365
 Microsoft Dynamics 365 Business Central
 Microsoft SQL Server
 Mighty Networks
+Mintlify
 Mistral AI
 Mixmax
 Mixpanel
+Modal
 MoEngage
 Mollie
+monday.com
 MongoDB
+Mono
 Monte Carlo
 MotherDuck
 Motion
@@ -1305,20 +656,25 @@ Moxie
 Mux
 My Hours
 MySQL
+n8n
 Nager.Date
+Naver Ads
 Nebius AI
+Neo4j
 Neon
 Netlify
 New Relic
 New York Times
 NewsAPI
 NewsData.io
+NOAA Climate Data Online (NCEI)
+noCRM.io
 Northflank
 Northpass LMS
 Notion
+npm registry
 NuGet
 Nuntly
-OPUSWatch
 Octolens
 Octopus Deploy
 Okendo
@@ -1327,20 +683,23 @@ Omni Analytics
 Omnisend
 OnceHub
 OnePageCRM
+OneSignal
 Onfleet
 Open Exchange Rates
 Open-Meteo
 OpenAI
 OpenAI Ads
-OpenAQ
 OpenAlex
+OpenAQ
 OpenCorporates
+openFDA
 OpenRouter
 OpenWeather
 Opinion Stage
 Opn Payments (formerly Omise)
 Opsgenie
 Optimizely
+OPUSWatch
 Orb
 Orca Security
 Ortto
@@ -1355,17 +714,20 @@ PandaDoc
 Paperform
 Papersign
 Pardot
-PartnerStack
+Particle
 Partnerize
+PartnerStack
 PayFit
 PayMongo
 Paystack
+Peec AI
 Pendo
 Perigon
 PersistIq
 Persona
 Personio
 Pexels
+pganalyze
 Phyllo
 Picqer
 Pinecone
@@ -1375,6 +737,7 @@ Pipedrive
 Pipeliner
 Plaid
 Plain
+Plane
 PlanetScale MySQL
 PlanetScale Postgres
 Planhat
@@ -1385,6 +748,7 @@ Plunk
 Pluralsight Flow
 Polar
 Polymarket
+Poplar
 Postgres
 Postmark
 Postscript
@@ -1395,16 +759,18 @@ Printify
 Productboard
 Productive
 Profound
+Promptwatch
+Proofpoint TAP
 Propertyware (RealPage)
 Pulumi
-PyPI
 Pylon
+PyPI
+Qdrant
+Qonto
 Qualaroo
 Qualtrics
 Qualys VMDR
 Quo
-RKI COVID-19
-RSS.com
 Railway
 Ramp
 Rapid7 InsightVM
@@ -1417,6 +783,7 @@ Recruitee
 Recurly
 Reddit Ads
 Redshift
+ReferralHero
 Render
 RentCast
 Replicate
@@ -1427,60 +794,78 @@ Retently
 RevenueCat
 Reverb
 Revolut Merchant
+Rewardful
 Rippling
+RKI COVID-19
 Roark
 Rocketlane
 Rokt Ads
 Rollbar
 Rootly
+RSS.com
 RubyGems.org
+RudderStack
 Ruddr
 RunPod
-SFTP
-STRATO
 SafetyCulture
 Sage HR
+Sage Intacct
 Salesflare
 Salesforce
 Salesloft
+Sanity
 SavvyCal
 Scale AI
 Scaleway
+Scalr
+Scarf
+Schematic
+Scrunch
 Secoda
 Secureframe
 Segment
 Select Star
+Semantic Scholar (Allen Institute for AI)
+Semaphore (Semaphore CI)
 Semgrep
+Semrush
 SendGrid
 Sendowl
 SentinelOne
 Sentry
 Sequenzy
+Serpstat
 ServiceM8
 ServiceNow
-ShipStation
+sevDesk (sevDesk GmbH)
+SFTP
+SharePoint
 Shipmail
 Shippo
-ShopWired
+ShipStation
 Shopify
+ShopWired
 Shortcut
 Shortio
 Shutterstock
-SigNoz
 Sigma Computing
+SigNoz
 Sim
 SimFin
 Similarweb
 SimpleCast
 Simplesat
 SingleStore, Inc.
+Singular
 Skio
 Skyvern
 Slack
+Slash
 Sleekplan
 Smaily
 SmartEngage
 Smartlead
+Smartlook (Smartlook.com s.r.o. / Cisco)
 Smartreach
 Smartsheet
 Smartwaiver
@@ -1488,6 +873,7 @@ Snapchat Ads
 Snowflake
 Snowplow Analytics
 Snyk
+Soda Data (Soda Cloud)
 SolarWinds Service Desk
 Sonar (SonarSource) - SonarQube Server
 Sonar Cloud
@@ -1495,6 +881,7 @@ Sonatype (Nexus Repository)
 Sourcegraph
 Spacelift
 SparkPost
+SpeedCurve
 Split.io
 Splunk AppDynamics (Cisco)
 Splunk Observability Cloud
@@ -1505,66 +892,89 @@ Squadcast (SolarWinds Incident Response)
 Square
 Squarespace
 Stack Overflow (Prosus/Stack Exchange)
+Statsig
 StatusCake
 Statuspage
+Steam
 Stigg
 StockData.org
+STRATO
 StreamElements
 Stripe
 Stytch
 Sumo Logic
 Supabase
+Superwall
 SurveyMonkey
 SurveySparrow
+Survicate
 Svix
 Swarmia
-TMDb
-TVmaze
+Synthesia
+Systeme.io
 Taboola
 Tailscale
 Tally
 Tavus
+tawk.to
 Teachable
 Teamtailor
+TeamUp Fitness
 Teamwork
+telli
 Telnyx
 Tempo
 Temporal.io
 Tenable Vulnerability Management
 Tenjin
+TestDino
 TestRail
 The Guardian
+The Prompting Company
 Thinkific
 Thinkific Courses
 Ticket Tailor
+Ticketmaster
 TikTok Ads
+tinyEmail
+TMDb
 Todoist
 Together AI
 Torii
+TrafficStars
 Transistor.fm
 Travis CI (Idera)
 Trello
 Tremendous
 Trigger.dev
+Trino
+Triple Whale
 Trunk.io (Trunk Technologies, Inc.)
 Trustpilot
+TrustRadius
 Turso
+TVmaze
 Twelve Data
 Twelve Labs
 Twenty
 Twilio
+Twitter
 Tyntec SMS
 Typeform
-US Bureau of Economic Analysis (BEA)
-US Census
 Ubidots
+Umami
+Unity Ads
 Unleash
 Unstructured
 UpPromote
 Upstash
 UptimeRobot
-UserVoice
+US Bureau of Economic Analysis (BEA)
+US Census
+US Energy Information Administration (EIA)
+US Treasury Fiscal Data
 Usersnap
+UserVoice
 Vantage
 Vapi
 Veeqo
@@ -1572,8 +982,10 @@ Vellum
 Vendr (OpenPrice API)
 Veracode
 Vercel
+Vimeo
 Vitally
 Vultr
+VWO (Wingify)
 Wasabi
 Watchmode
 Waydev
@@ -1585,22 +997,27 @@ Windmill
 Wix
 WooCommerce
 WordPress
-WorkOS
 Workable
 Workday
 Workiz
+WorkOS
 World Bank Open Data
 World Health Organization Global Health Observatory (GHO)
 Wrike
 Writesonic
 Wufoo
+X Ads
 Xendit
+xMatters (Everbridge)
+Xsolla
 YNAB (You Need A Budget)
 Yoco
-YouTube Analytics
+Yotpo
 Yousign
-ZapSign
+YouTube (Google)
+YouTube Analytics
 Zapier (Storage by Zapier)
+ZapSign
 Zendesk
 Zendesk Sell
 Zendesk Sunshine
@@ -1613,44 +1030,358 @@ Zonka Feedback
 Zoom
 Zuora
 Zylo
-beehiiv
-commercetools
-crates.io
-dbt
-e-conomic
-easybill
-env0
-impact.com
-impact.com Partner
-incident.io
-kapa.ai
-monday.com
-n8n
-noCRM.io
-npm registry
-openFDA
-pganalyze
-sevDesk (sevDesk GmbH)
-tawk.to
-telli
-tinyEmail
-xMatters (Everbridge)
-Self-hosted sources
-Upload a CSV, JSON, or Parquet file directly to PostHog, or link files in your own object storage (S3, GCS, R2, Azure Blob). PostHog reads directly from storage on every query.
-File upload
-S3
+Files and object storage
+To import files, connect the bucket that holds them with the
+Amazon S3
+,
 Google Cloud Storage
+,
+Azure Blob Storage
+, or
 Cloudflare R2
-Azure Blob
-For detailed setup instructions, IP allowlisting, custom sources, and sync configuration, see the
-data pipeline source docs
+source. These sources import CSV, JSON Lines, and Parquet files, and Delta Lake tables, and keep them up to date on a schedule. For a single file of up to 50MB,
+upload the file
+to PostHog.
+Like other sources, these sources import the data, and synced rows count toward your data warehouse usage. PostHog no longer reads self-managed tables directly from your bucket on each query. If you linked self-managed tables before, PostHog moved them into sources, and they keep their names. See the page of your storage provider to learn how to turn on syncing for them.
+Where synced rows are written
+A source writes to PostHog's own warehouse by default. You can also point it at your own Postgres, Snowflake, BigQuery, Redshift, Databricks, S3, or Azure Blob, and PostHog writes there on the same schedule it syncs. See
+ELT destinations
 .
+Inbound IP addresses
+We use a set of IP addresses to access your instance. To ensure this connector works, add these IPs to your inbound security rules:
+US
+EU
+44.205.89.55
+3.75.65.221
+52.4.194.122
+18.197.246.42
+44.208.188.173
+3.120.223.253
+3.41.215.48/28
+3.40.9.80/28
+Linking a custom source
+If PostHog has no source for a tool, export its data to a bucket in Amazon S3, Google Cloud Storage, Azure Blob Storage, or Cloudflare R2. You can use an ETL tool such as Airbyte, Fivetran, or Stitch. Then connect the bucket with the source for your storage provider. See the
+Amazon S3 source
+for an example.
+Sync methods
+When setting up a source, you choose a sync method for each table. The available options depend on the source and table. Some sources also support webhook sync for real-time updates.
+Webhook
+Webhook sync receives data updates directly from the source via webhooks. This provides the fastest data freshness with minimal sync overhead. It's available only on sources that support webhooks (like Stripe) and is shown as the recommended option when available.
+The webhook is configured during source setup.
+Incremental
+With incremental replication, you only sync new or updated data. This reduces the total number of rows synced and how long it takes to sync.
+When choosing incremental replication, you must select a field to identify new and updated data. This is often something like an
+updated_at
+timestamp, or an autoincrementing ID. Not all fields are suitable to be used to identify new and updated data, and so we only support the following types as replication keys:
+integer
+(including
+bigint
+and
+smallint
+)
+datetime
+date
+timestamp
+numeric
+(for Snowflake)
+The one downside to incremental syncing is that deletions of data won't be synced to your PostHog data warehouse. You need to use full table refreshes for this.
+If you select a nullable field as the replication key, any rows where that field is null are skipped during sync. PostHog displays a warning when you select a nullable field. To avoid missing data, use a non-nullable field as the replication key.
+Primary key columns
+Incremental sync uses primary key columns to deduplicate rows. During source setup, PostHog auto-detects primary keys from your source's metadata (such as
+INFORMATION_SCHEMA
+constraints). If no constraint is found, it falls back to an
+id
+column when one exists.
+For sources like BigQuery views that don't support primary key constraints, or tables with non-standard primary key names (like
+_id
+), you can select custom primary key columns during setup. This is available for all managed SQL sources: Postgres, MySQL, MSSQL, Redshift, Snowflake, and BigQuery.
+Once the first incremental sync completes, the primary key columns are locked and can't be changed. To modify them, delete the synced data first.
+PostHog displays a warning if your selected primary key columns are nullable, since null values can cause deduplication issues.
+Lookback window
+For timestamp or date incremental fields, you can configure a lookback window to re-read recent data on each sync. This catches late-arriving or backdated rows that would otherwise be missed because the watermark has already advanced past them.
+The lookback subtracts time from the stored watermark when querying the source, creating a rolling overlap window. For example, with an 8-day lookback, each sync re-reads the last 8 days of data. The stored watermark continues advancing normally, so you don't lose your place. Incremental sync's merge-by-primary-key makes the re-read idempotent – duplicate rows are deduplicated automatically.
+To configure a lookback window, enter a duration (in minutes, hours, or days) when selecting the incremental sync method during source setup or in the schema settings. The maximum lookback is 60 days.
+Lookback windows are only available for incremental sync, not append-only sync. They only apply to
+datetime
+,
+date
+, and
+timestamp
+incremental fields – integer or numeric fields aren't supported.
+Note:
+For
+date
+incremental fields, sub-day lookback values have no effect since date arithmetic only counts whole days.
+Append only
+Append only does what it says on the tin: append rows to your table.
+We use a cursor in the form of an incremental field (similar to incremental syncing above) to query the source for new data. This replication method won't merge any rows, but this can cause duplicate data if you're using an incremental field that can change. To avoid this, we recommend using a timestamp field like
+created_at
+.
+Append only is ideal for tables where rows are never updated, only added. A common example is an event log table, where each new event is recorded as a new row and existing records remain unchanged.
+As with incremental syncing, selecting a nullable field as the cursor skips any rows where that field is null.
+Full table
+This reloads the whole table on every sync. This is great for tables with common data deletions or ones without an incrementing field (such as a
+updated_at
+timestamp).
+xmin (Postgres only)
+xmin sync uses PostgreSQL's hidden
+xmin
+system column as an incremental cursor. Use it when your table has no reliable
+updated_at
+or incremental field and you want incremental syncing without setting up CDC.
+Requirements:
+PostgreSQL 13 or newer
+Table must have a primary key
+Only regular tables and materialized views (not views, foreign tables, or partitioned parents)
+xmin does not capture deletes. If you need delete tracking, use CDC instead. See the
+Postgres source documentation
+for more details.
+Filtering rows
+SQL sources (Postgres, MySQL, MSSQL, Snowflake, BigQuery, and Redshift) and ClickHouse support row filters. Row filters let you control which rows sync from a source table by specifying conditions like
+created_at > ' '
+. This reduces sync time and storage costs by syncing only the data you need.
+Filters are applied as a
+WHERE
+clause on the source query, so only matching rows are fetched and synced. Row filters are not available for tables using
+CDC sync
+.
+Note:
+Row filters are only available for SQL sources and ClickHouse. API sources (Stripe, HubSpot, Zendesk, Paddle, etc.) do not support row filtering.
+Configuring row filters
+To add row filters during source setup:
+In the table picker, click
+Columns
+next to any table.
+Under
+Row filters
+, click
+Add filter
+and configure:
+Column
+- Select the column to filter on
+Operator
+- Choose a comparison operator
+Value
+- Enter the filter value
+Add more filters as needed (up to 20 per table). Multiple filters are ANDed together.
+You can also add or change row filters after setup:
+Go to the
+sources tab
+and click your source.
+Click
+Configure
+next to any schema.
+Under
+Row filters
+, add, edit, or remove filters.
+Click
+Save
+.
+Supported operators
+Operator
+Description
+>
+Greater than
+>=
+Greater than or equal
+<
+Less than
+<=
+Less than or equal
+=
+Equals
+!=
+Not equal
+IN
+Matches one of a comma-separated list of values
+NOT IN
+Does not match any of a comma-separated list of values
+Supported column types
+Row filters validate values against the column's data type. Columns with unsupported types (like
+json
+or
+jsonb
+) are not filterable.
+Type category
+Example types
+Value format
+Integer
+int
+,
+bigint
+,
+smallint
+Whole numbers like
+100
+Numeric
+decimal
+,
+numeric
+,
+float
+Decimal numbers like
+99.99
+String
+varchar
+,
+text
+,
+char
+Text like
+active
+Boolean
+boolean
+,
+bool
+true
+or
+false
+Date
+date
+Timestamp
+datetime
+,
+timestamp
+How row filters work
+Filters apply on the next sync — they don't remove rows that have already been synced.
+If a filter references a column that no longer exists or has a type mismatch, the sync fails with an error message. Fix or remove the filter to resume syncing.
+Sampling and row count estimates remain unfiltered.
+Masking sensitive columns
+Column masking replaces sensitive values (like passwords, emails, or card numbers) with a deterministic one-way hash during sync. Each masked value becomes a 64-character hex string. Equal values produce the same hash within a project, so joins and distinct counts still work, but the original value can't be recovered from the hash.
+Masking is available for SQL sources (Postgres, MySQL, MSSQL, Snowflake, BigQuery, and Redshift) and other sources that support column selection. It is not available for:
+Direct query sources
+– nothing syncs, so a mask would protect nothing.
+Managed-schema sources
+(Stripe, Paddle, Zendesk) – their tables use fixed column types.
+CDC tables
+– masking is supported on CDC tables via a new snapshot, not inline on the change stream.
+Configuring column masking
+To mask columns during source setup:
+In the table picker, click
+Columns
+next to any table.
+Click
+Mask
+on the columns you want to mask.
+Masked columns show
+Masked
+as text. Click it to unmask.
+To mask columns after setup:
+Go to the
+sources tab
+and click your source.
+Click
+Configure
+next to any schema.
+Click
+Mask
+or
+Masked
+to toggle masking on individual columns.
+Click
+Save
+.
+You can also set
+masked_columns
+through the API when creating a source or updating a schema.
+Note:
+Changing masked columns on a synced table triggers a full resync (CDC tables take a new snapshot). A confirmation dialog appears before the change is saved.
+Limitations
+Primary key, incremental-field, and partition columns
+can't be masked – a hashed merge key would break deduplication, and a hashed cursor has no order.
+Masked columns lose their min/max statistics. Only row counts are preserved.
+Rows already synced keep their original values until the rebuild completes.
+A synced webhook table can't change its masked columns, because its data can't be fetched again from the source.
+Syncing
+Once you add a source, you can see its status, sync frequency, and last successful run in the
+sources page
+. You can also reload or delete sources here.
+When you expand each source, you can see:
+Schema name
+Enable or disable syncing for that table
+Synced table name in PostHog
+Time the table was last synced
+Rows synced – the number of rows in the synced table. During an active sync, a spinner and live row count display, updating approximately every 5 seconds. Once complete, the final row count appears. Rows being synced are not queryable until the sync completes.
+If you add new tables to your source database, click
+Pull new schemas
+to discover them without waiting for the next sync. This only updates the list of available schemas – it doesn't trigger a data sync.
+To sync all enabled schemas at once, click
+Sync all enabled schemas
+. A confirmation dialog appears before the sync starts. This triggers a new sync for every enabled schema that isn't already syncing, so you don't need to sync schemas one by one.
+Filtering and sorting schemas
+The schemas table supports filtering and sorting to help you find specific schemas in sources with many tables.
+You can filter schemas by:
+Status
+- Running, Completed, Error, etc.
+Sync method
+- Incremental, Full table, xmin (Postgres only), CDC, or schemas not yet set up
+Frequency
+- Filter by a specific sync interval
+You can also use the name search and the
+Show enabled only
+toggle to narrow results further.
+All columns in the schemas table are sortable, including schema name, status, frequency, last synced, and rows synced.
+Managing schemas in bulk
+Select multiple schemas using the checkboxes in the schemas table to perform bulk actions. The following bulk actions are available:
+Disable
+- Disable syncing for all selected schemas. A confirmation dialog appears if any selected schemas use CDC or webhook sync, since re-enabling them requires a full resync.
+Set frequency
+- Change the sync frequency for all selected schemas at once. If the selection includes non-CDC schemas, only frequencies of 5 minutes or longer are available.
+Sync now
+- Trigger an immediate sync for all selected schemas that are enabled and have a sync method configured. Schemas that are disabled or don't have a sync method set up are skipped.
+Delete tables and resync
+- Delete the synced data in PostHog and re-import it from scratch.
+Delete tables from PostHog
+- Remove the synced tables from PostHog without affecting the data in the source.
+Bulk enable is not available – you must enable schemas individually since each one requires selecting a sync method and configuration.
+Sync frequency
+CDC (Change Data Capture) schemas support sync frequencies as low as every 1 minute. All other sync methods (Incremental, Full table, Append only) have a minimum sync frequency of 5 minutes. This restriction is enforced in both the UI and the API.
+Anchor time
+Anchor time pins the sync schedule so runs start at a predictable time each day. This is useful for coordinating syncs with downstream jobs or reports. Anchor time only applies to sync intervals longer than one hour.
+The anchor time is stored in UTC. When your project timezone is something other than UTC, a toggle lets you view and set the anchor time in either UTC or your project timezone.
+Managing webhook tables
+Webhook-synced tables have special behavior when enabling or disabling them:
+Disabling a webhook table
+- When you turn off syncing for a webhook table, a confirmation dialog warns you that the webhook stops consuming data immediately. Any events sent while the table is disabled are lost.
+Re-enabling a webhook table
+- When you re-enable a previously disabled webhook table, PostHog automatically triggers a full refresh sync. This ensures no data gaps from the period when the webhook was inactive.
+Enabling a new webhook table
+- For sources with provider-side webhook subscriptions (like Stripe), PostHog automatically adds the required events to the webhook when you enable a new table. This requires the appropriate permissions – for example,
+Write
+on
+Webhooks
+for Stripe restricted API keys, or an OAuth connection. If automatic sync isn't possible (due to missing permissions or a manually created webhook), PostHog shows a warning banner in the
+Webhook
+tab listing the events you need to add in your provider's dashboard.
 Still have questions?
 Ask PostHog AI
 Was this page useful?
 Helpful
 Could be better
 Jump to:
-PostHog data
 Managed sources
-Self-hosted sources
+Files and object storage
+Where synced rows are written
+Linking a custom source
+Sync methods
+Webhook
+Incremental
+Primary key columns
+Lookback window
+Append only
+Full table
+xmin (Postgres only)
+Filtering rows
+Configuring row filters
+Supported operators
+Supported column types
+How row filters work
+Masking sensitive columns
+Configuring column masking
+Limitations
+Syncing
+Filtering and sorting schemas
+Managing schemas in bulk
+Sync frequency
+Anchor time
+Managing webhook tables

@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -40,32 +40,842 @@ RSS
 and
 Markdown
 .
+November 2026
+Trace Firebase Genkit flows
+November 9, 2026
+· AI Observability Team
+· AI observability
+Firebase Genkit flows can send model, tool, and embedding traces to
+AI observability
+. The integration records tokens, costs, messages, and errors while redacting credentials.
+Read the docs
+Verify pinned SDK scripts
+November 6, 2026
+· Client Libraries Team
+· SDKs
+Browser SDK installations can pin a SHA-384 hash for the core script that the static loader downloads. Modified bytes are rejected rather than silently loaded.
+Read the docs
+Autocapture service metrics
+November 6, 2026
+· APM Team
+· SDKs
+Python services can turn on
+Metrics
+autocapture for HTTP requests, database operations, and runtime health. It uses OpenTelemetry instrumentors and excludes raw URLs, query paths, headers, and SQL statements.
+Read the docs
+Review public links before offboarding
+November 6, 2026
+· Platform Features Team
+· Platform features
+When removing a member, admins can review the public dashboards they shared and choose which links to disable. It helps prevent a departure from quietly leaving data on the internet.
+PostHog for Laravel
+November 6, 2026
+· Client Libraries Team
+· SDKs
+Laravel applications can install a dedicated PostHog package with lifecycle-aware context, optional server-side event collection, and Laravel-native flag reads.
+Adds the Laravel runtime for request, queue, command, exception, and feature-flag context
+Adds opt-in capture for requests, auth changes, jobs, commands, models, and selected domain events
+Reads
+Feature Flags
+through Laravel Pennant
+Releases the Laravel package
+Read the docs
+Transactional email SDKs
+November 6, 2026
+· Workflows Team
+· SDKs
+Node and Python services can send transactional messages from PostHog templates, with retries, idempotency keys, and status reads.
+Adds template-based sending and delivery-status reads for Python
+Adds template-based sending and delivery-status reads for Node.js
+Read the docs
+Cross-project dashboards
+November 6, 2026
+· Platform Features Team
+· Dashboards
+You can now put insights from several projects on one dashboard. Each tile shows data from its own project, and one date range and set of property filters apply to every tile. Open the
+Cross-project dashboards
+tab on the Dashboards page to create one.
+Docs
+Read the docs
+Materialize endpoints with conditional functions
+November 5, 2026
+· Data Modeling Team
+· Endpoints
+Endpoints that use non-aggregate functions such as
+nullIf
+and
+multiIf
+can be materialized instead of being rejected as if they aggregated data.
+Read the docs
+More control over view cadences
+November 5, 2026
+· Data Modeling Team
+· Data modeling
+Data Warehouse
+views can be pinned below downstream demand!
+Pin a view to a slower cadence and see which downstream views will read older data.
+See when a downstream view has increased an upstream view’s refresh cadence.
+Read the docs
+Safer endpoint materialization
+November 5, 2026
+· Data Modeling Team
+· Endpoints
+Endpoints with unsupported variable expressions now fail clearly without sacrificing a working query or accumulating retries until suspension.
+Explain when a variable cannot be used for materialization.
+Keep the last working query when a rebuild is incompatible.
+Turn off unsupported materialization and run the endpoint directly instead.
+Read the docs
+Filter lineage without broken paths
+November 5, 2026
+· Data Modeling Team
+· Data modeling
+Hide node types in
+Data Warehouse
+lineage without severing the paths between the models that remain. Dashed connections show where hidden models sit in the dependency chain.
+Read the docs
+Report context follows to chat
+November 5, 2026
+· Self-Driving Team
+· Self-driving
+In
+Self-Driving
+, opening AI chat from an inbox report automatically attaches its evidence, artifacts, and linked tasks. Ask the question instead of re-explaining the report.
+Read the docs
+Personal inbox priorities
+November 5, 2026
+· Self-Driving Team
+· Inbox
+Ask
+Self-Driving
+for your top inbox reports and get a ranking based on your activity, priority, freshness, and what needs you. Refine the list by focusing on a topic or skipping digests.
+Read the docs
+Mask sensitive source columns
+November 5, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+tables can mask selected source columns as deterministic hashes before they are stored. You can still join and count matching values without keeping the original emails, passwords, or card numbers in plaintext.
+Read the docs
+Resume person property syncs
+November 5, 2026
+· Warehouse Sources Team
+· Data pipelines
+Interrupted
+Data Warehouse
+person-property syncs continue from the last confirmed chunk instead of sending completed rows again. This helps large syncs survive deploys and retries without running forever.
+Read the docs
+Catch missing source webhooks
+November 5, 2026
+· Warehouse Sources Team
+· Warehouse
+The
+Data Warehouse
+setup wizard no longer lets webhook-synced tables quietly proceed without a webhook. Existing sources with this problem show a banner and table-level tags, with options to finish webhook setup or choose another sync method.
+Read the docs
+Complete agent destination setup
+November 5, 2026
+· Warehouse Sources Team
+· Data pipelines
+Agents setting up a
+Data Warehouse
+destination can securely check which integration a user connected from the original connect link. No copying integration IDs back into the chat.
+Read the docs
+14 warehouse sources reach GA
+November 5, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+sources for these services have graduated from beta and are ready for production use.
+Help Scout
+Easybill and Steam
+Cloudflare D1
+SigNoz
+Ticket Tailor
+GCP Cloud Billing
+Qonto
+Azure Application Insights
+Skio
+Unleash
+PayMongo
+AppSignal
+Dovetail
+Read the docs
+More reliable source resumes
+November 5, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+syncs can now hand off safely during empty API pages instead of waiting for a worker to time out.
+71 existing resumable sources reach a safe hand-off point during empty pages
+Nine more sources resume from their saved cursor rather than starting over after an interruption
+Read the docs
+MCP analytics for Rust servers
+November 4, 2026
+· MCP Analytics Team
+· MCP Analytics
+Wrap an rmcp server with the Rust SDK to send tool-call data to
+MCP analytics
+. The experimental
+mcp
+feature requires Rust 1.88.
+Read the docs
+Capture opted-in form values
+November 4, 2026
+· Client Libraries Team
+· SDKs
+Autocapture can append a committed input, textarea, or select value to an event when that field is explicitly opted in. Values stay off by default.
+Read the docs
+Trace context across server SDKs
+November 4, 2026
+· Client Libraries Team
+· Error tracking
+Server SDKs can now carry trace and request context into error events and application spans, making it easier to follow a failure back to the request that caused it.
+Java: add active trace IDs to exceptions and request context to application spans.
+.NET: add trace context to captured exceptions and request context to application spans.
+Elixir: add trace context to exceptions and optional request context to application spans.
+Go: add opt-in trace context to exceptions and request context to application spans.
+Ruby and Rails: add trace context to exceptions and correlate request and child spans.
+PHP: add an optional application-span context processor.
+Rust: add request context, Tower middleware, and a Reqwest client that propagates it.
+Node.js: add request context to OpenTelemetry application spans.
+Read the docs
+Install the web SDK with one tag
+November 2, 2026
+· Client Libraries Team
+· SDKs
+One external
+<script>
+tag can initialize the web SDK and queue calls while the full client downloads. Existing installation paths keep working.
+Read the docs
+Follow new SDK defaults
+November 2, 2026
+· Client Libraries Team
+· SDKs
+Set
+defaults: 'latest'
+to adopt defaults introduced in future browser SDK upgrades without revising a pinned date. Explicit configuration still wins.
+Read the docs
+October 2026
+Complete Help Scout conversation syncs
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+now imports Help Scout conversations in every status, including closed and pending. Incremental conversation and customer syncs also use fields Help Scout actually returns.
+Read the docs
+More marketing reporting data
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+sources for Meta Ads, LinkedIn Ads, Ahrefs, and HeyReach gained requested reporting data. That includes video engagement, conversion and reach metrics, landing page URLs, daily site metrics, and sender-level campaign stats.
+Read the docs
+More Hookdeck sync data
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+Hookdeck sources can now import ignored request events, transformation executions, and destination queue metrics. More to query when a webhook delivery looks suspicious.
+Read the docs
+Easier Amazon S3 source setup
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+accepts common Amazon S3 URL formats, including
+s3://
+URIs and bucket URLs without an explicit region. Delta Lake tables also default to incremental syncs, and reimports avoid duplicate internal columns.
+Read the docs
+Complete Auth0 user imports
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+Auth0 user imports no longer stop at the API's 1,000-result search cap. Larger directories now sync in full instead of quietly arriving incomplete.
+Read the docs
+Hundreds more warehouse source tables
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+The
+Data Warehouse
+catalog gained a large batch of new tables across existing sources.
+Marketing and growth sources gained richer campaign, search, audience, email, conversion, and attribution data.
+Sales, CRM, support, and community sources gained records for memberships, contacts, conversations, activities, and follow-ups.
+Payments, billing, and commerce sources gained payouts, invoices, subscriptions, orders, commissions, and catalog data.
+Engineering, cloud, security, and observability sources gained deployment, incident, usage, vulnerability, monitoring, and audit data.
+Identity and workforce sources gained users, factors, roles, memberships, and access-management records.
+Public-data and research sources gained financial, health, weather, geographic, and reference datasets.
+Many existing sources now cover previously missing API endpoints, so more of the data already in those tools can be queried in PostHog.
+Read the docs
+More reliable property backfills
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+person-property syncs recover more cleanly from interrupted workers and deployments.
+Interrupted syncs and backfills are promptly shown as failed instead of looking stuck.
+Backfills retry routine shutdowns and heartbeat timeouts before asking for manual action.
+Read the docs
+Keep Stripe data available
+October 30, 2026
+· Warehouse Sources Team
+· Warehouse
+Data Warehouse
+keeps serving a Stripe table's previous complete version while it rebuilds. Dashboards, insights, and materialized views no longer see a partial table for the duration of a refresh.
+Read the docs
+Flutter flags and feature events
+October 29, 2026
+· Client Libraries Team
+· SDKs
+Flutter SDK users get more control over flag evaluation and feature analytics.
+Supply evaluation contexts for flag targeting.
+Read all flags in one call.
+Choose whether individual flag reads send an analytics event.
+Capture explicit feature-view and feature-interaction events.
+Read the docs
+Suppress similar exceptions
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+Suppressing an issue in
+Error Tracking
+can suggest a rule for matching exception messages with changing IDs, hashes, or numbers. See how many recent exceptions and issues the rule would have caught before creating it.
+Read the docs
+Pause exception ingestion
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+An
+Error Tracking
+setting can pause exception ingestion for an environment, then resume it when you're ready.
+Read the docs
+Filter exceptions by recordings
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+Filter an
+Error Tracking
+issue's exception occurrences to those with a session recording, then open the related recordings to see what happened.
+Read the docs
+Filter exceptions by recordings
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+Filter an
+Error Tracking
+issue's exception occurrences to those with a session recording, then open the related recordings to see what happened.
+Read the docs
+Safer iOS replay masking
+October 29, 2026
+· Client Libraries Team
+· SDKs
+iOS replays now fail closed for more rendering paths, reducing the chance that content marked for masking reaches a recording.
+Mask SwiftUI drawing groups, Canvas surfaces, and charts by default when text or image masking is enabled.
+Mask image views based on every image source they can render.
+Fill screenshot-mask rectangles completely.
+Mask full-window views marked ph-no-capture.
+Read the docs
+Pause exception ingestion
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+An
+Error Tracking
+setting can pause exception ingestion for an environment, then resume it when you're ready.
+Read the docs
+Upload Flutter source context
+October 29, 2026
+· Error Tracking Team
+· Error tracking
+Upload Flutter app source alongside AOT symbols with the CLI's source-root option. Obfuscated Dart stack frames can resolve to your app files without including framework sources from the build machine.
+Read the docs
+Trace Gemini Interactions calls
+October 23, 2026
+· Client Libraries Team
+· AI observability
+AI observability
+captures foreground Gemini Interactions calls, including streamed responses, tool activity, usage, and supported media output. Agent and background interactions are still excluded because their completion lifecycle works differently.
+Read the docs
+WebMCP tool-call analytics
+October 23, 2026
+· MCP Analytics Team
+· MCP Analytics
+Capture browser-based WebMCP tool calls with the standard MCP Analytics event contract, connected to the current user, session, and replay. Intent and model metadata are captured too, with sensitive values sanitized.
+Opt in to automatic WebMCP tool-call capture in posthog-js
+Include sanitized agent intent and model metadata
+More sources for Self-Driving
+October 23, 2026
+· Self-Driving Team
+· Self-driving
+Self-Driving
+can now draw on 38 external sources. Browse, search, and connect sources from setup, with GitHub, Linear, Zendesk, Sentry, and Jira pinned at the top.
+Read the docs
+Clearer report resolution outcomes
+October 23, 2026
+· Self-Driving Team
+· Self-driving
+When you resolve a
+Self-Driving
+inbox report, choose whether it was implemented manually or needed no action. The activity log keeps that outcome distinct from a dismissal, and asks for confirmation before closing an open PR.
+Read the docs
+Clearer view failure digests
+October 23, 2026
+· Data Modeling Team
+· Data modeling
+Materialized-view failure emails now separate views that need action from newly failing and ongoing failures. Each row includes the failure streak and, when relevant, what to do next.
+Turn off approval emails
+October 23, 2026
+· Platform Features Team
+· Platform features
+Members can turn off email notifications for approval requests, so their inboxes get one less thing to ignore.
+Control access to AI properties
+October 23, 2026
+· Platform Features Team
+· Platform features
+Set access rules for built-in AI event properties before they appear in your project.
+Manage access control rules only via Terraform
+October 23, 2026
+· Platform Features Team
+· Platform features
+You can now export existing project access control rules as Terraform configuration and lock them to prevent accidental changes in the UI.
+OpenFeature support for JVM flags
+October 23, 2026
+· Client Libraries Team
+· Feature flags
+A new Java provider lets JVM services evaluate
+Feature Flags
+through the standard OpenFeature API, using posthog-server underneath.
+Read the docs
+Android replay masks follow keyboards
+October 22, 2026
+· Client Libraries Team
+· SDKs
+Session Replay
+privacy masks now stay aligned with Android content when the soft keyboard pans the window, so shifted fields remain masked.
+Read the docs
+Capture React Native render crashes
+October 22, 2026
+· Client Libraries Team
+· SDKs
+Error Tracking
+captures fatal React render crashes in React Native 0.78 and later, including crashes that bypass the usual JavaScript error hook. One crash, one event.
+Read the docs
+Feature Flags setup in Wizard
+October 22, 2026
+· Wizard & Docs Team
+· wizard
+Set up
+Feature Flags
+from the Wizard, without all the manual work.
+Creates inactive example flags, adds framework-appropriate evaluations, and records the setup in a notebook.
+Lets those setup runs obtain the gateway access they need instead of failing before they begin.
+Read the docs
+Simpler MCP installations
+October 22, 2026
+· Wizard & Docs Team
+· wizard
+Wizard detects local coding agents such as Claude Code and Codex, then installs the PostHog MCP connection for them by default. A separate flow handles browser and account-based clients such as ChatGPT and Claude.
+Find the right evaluation template
+October 22, 2026
+· AI Observability Team
+· AI observability
+We have a whole new set of evaluation templates! Browse evaluation templates by job, preview example runs, and start from new score and category templates alongside pass/fail checks.
+Read the docs
+Failed checks get follow-ups
+October 22, 2026
+· Self-Driving Team
+· Inbox
+When a resolved Inbox report fails a validation check, Self-Driving now creates a linked follow-up report so the regression returns to the Inbox instead of disappearing into the original report.
+Read the docs
+Find persistent APM problems
+October 22, 2026
+· Self-Driving Team
+· Inbox
+The
+Self-Driving
+APM scout can look for persistent N+1 calls, expensive query patterns, and caching candidates–not just fresh regressions. It runs when higher-priority regressions are clear.
+Read the docs
+More inbox signal sources
+October 22, 2026
+· Self-Driving Team
+· Inbox
+The
+Self-Driving
+inbox can now turn alerts, incidents, cases, security findings, and work items from more tools into signals.
+Datadog errors, alerts, logs, spans, and incidents
+Incidents from PagerDuty, Opsgenie, incident.io, and seven other incident tools
+Data-quality alerts from Monte Carlo and Bigeye
+Support cases from Dynamics 365 and Zoho CRM
+Security findings from Lacework, Orca Security, and Tenable
+Errors from Trigger.dev, Checkly, and Roark
+Work items from Asana, monday.com, Plane, and Azure DevOps
+Read the docs
+Import SharePoint file contents
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+can turn selected CSV, TSV, and Excel files in SharePoint into queryable tables. Turn on file imports, optionally filter paths with a pattern, and each file or worksheet will sync as a full-refresh table.
+Read the docs
+Track Google Ads changes
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+Google Ads sources can now sync account change events into an incremental history table. Query who changed what, when, without spelunking around Google Ads.
+Read the docs
+Ten new warehouse sources
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+can now pull in data from ten more services.
+Auth0: tenant users, logs, organizations, roles, and more
+Modal: daily and hourly workspace billing reports
+Neo4j: labeled graph nodes and relationships
+Vimeo: videos, folders, and showcases
+Arcade: teams, users, engagement, and leads
+Scrunch: brands, prompts, competitors, personas, and responses
+TestDino: test runs and manual test data
+Steam: privacy-preserving game ownership and playtime snapshots
+Chess.com: privacy-preserving games and ratings for a team
+The table has room for more sources now
+Read the docs
+Ten new warehouse sources
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Data Warehouse
+can now pull in data from ten more services.
+Auth0: tenant users, logs, organizations, roles, and more
+Modal: daily and hourly workspace billing reports
+Neo4j: labeled graph nodes and relationships
+Vimeo: videos, folders, and showcases
+Arcade: teams, users, engagement, and leads
+Scrunch: brands, prompts, competitors, personas, and responses
+TestDino: test runs and manual test data
+Steam: privacy-preserving game ownership and playtime snapshots
+Chess.com: privacy-preserving games and ratings for a team
+The table has room for more sources now
+Read the docs
+Six sources reach general availability
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Six
+Data Warehouse
+sources have graduated from alpha to general availability.
+Outbrain
+Squarespace
+Braze
+Drip
+Recurly
+Ramp
+Read the docs
+More reliable warehouse syncs
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Warehouse imports are less likely to stall, lose data after a resume, or leave partial rows behind after an interruption.
+Interrupted append runs are cleaned up before the next load
+Resume cursors are saved only after rows safely enter the pipeline
+Buffered sources flush before saving a resume point
+Imports that cannot hand off during worker shutdown are safely preempted
+Retry waits are bounded and can be interrupted
+BigQuery, Redshift, MongoDB, Snowflake, MySQL, and Microsoft SQL Server reads have deadlines
+All source requests receive a default timeout
+Read the docs
+More reliable warehouse syncs
+October 19, 2026
+· Warehouse Sources Team
+· Data pipelines
+Warehouse imports are less likely to stall, lose data after a resume, or leave partial rows behind after an interruption.
+Interrupted append runs are cleaned up before the next load
+Resume cursors are saved only after rows safely enter the pipeline
+Buffered sources flush before saving a resume point
+Imports that cannot hand off during worker shutdown are safely preempted
+Retry waits are bounded and can be interrupted
+BigQuery, Redshift, MongoDB, Snowflake, MySQL, and Microsoft SQL Server reads have deadlines
+All source requests receive a default timeout
+Read the docs
+5 new MCP tools
+October 15, 2026
+· Conversations Team
+· MCP
+Five tools landed in PostHog's
+MCP server
+this week:
+Signals
+Step off a report's suggested reviewers
+Replay vision
+Request session scans
+Get a session scan request
+Annotations
+List recent production changes
+Conversations
+Start a support ticket by email
+Read the docs
+Find underused product features
+October 15, 2026
+· Self-Driving Team
+· Self-driving
+A new canonical scout finds features that people can reach but rarely use, then suggests likely reasons. It uses product telemetry and, when connected, repository context to distinguish a quiet feature from one that may be hard to find or no longer needed.
+Read the docs
+More useful weekly digests
+October 15, 2026
+· Growth Team
+· Uncategorized
+Weekly digest emails got a rebrand and are now show proper error counts, more info on how your users are using you, and more useful AI prompts for you.
+Updated hedgehogs across PostHog
+October 15, 2026
+· Growth Team
+· Uncategorized
+We've retired some of our old hedgehogs illustrations. We now keep a curated list of all the official hoggies over at
+https://brand.posthog.com/hoggies
+Go and Ruby MCP Analytics with the Wizard
+October 15, 2026
+· Wizard & Docs Team
+· wizard
+PostHog Wizard's MCP analytics flow supports Go servers and experimental Ruby servers, with language-specific SDK instructions and compatibility checks.
+Trace endpoint dependencies
+October 8, 2026
+· Data Modeling Team
+· Endpoints
+Endpoints
+with a materialized model now include a Lineage tab. See the tables and models an endpoint reads from without leaving its page.
+Read the docs
+Refreshed toolbar launch settings
+October 8, 2026
+· Growth Team
+· Toolbar
+The
+Toolbar
+launch page has been rebuilt with the newer Quill interface, including responsive layouts and clearer product icons. You'll see Quill rolling out in more pages very soon!
+Read the docs
+19 new MCP tools
+October 8, 2026
+· AI Observability Team
+· MCP
+Nineteen tools landed in PostHog's
+MCP server
+this week:
+AI observability
+Cancel evaluation backfill
+Start evaluation backfill
+Estimate evaluation backfill
+Get evaluation backfill
+List evaluation backfills
+Today
+Get my Today briefing
+List my Today candidates
+Workflows
+List a workflow's published versions
+Get workflow stats for one version
+Visual review
+Quarantine a visual review snapshot
+Lift a visual review quarantine
+Re-check a visual review run's gate
+Lift a visual review quarantine when the pull request merges
+Cancel a visual review lift on merge
+List visual review lifts on merge
+Signals
+Replace a metric follow-up check
+Run a private scout variant
+Read a private scout result
+Replay vision
+Compare an experiment scanner's variants
+Read the docs
+Send email broadcasts
+October 5, 2026
+· Workflows Team
+· Workflows
+Workflows
+now has a dedicated
+Broadcasts
+experience for sending one-off or scheduled emails to an audience. Build a campaign in a guided flow, preview it with a real recipient's properties, send a test, pace delivery, and track conversion goals.
+Read the docs
+Send email broadcasts
+October 5, 2026
+· Workflows Team
+· Workflows
+Workflows
+now has a dedicated
+Broadcasts
+experience for sending one-off or scheduled emails to an audience. Build a campaign in a guided flow, preview it with a real recipient's properties, send a test, pace delivery, and track conversion goals.
+Read the docs
+Prevent Gmail mailbox duplicates
+October 2, 2026
+· Platform Features Team
+· Platform features
+PostHog treats dotted Gmail addresses and googlemail.com as the same mailbox, closing a way to create duplicate active accounts.
+Password sign-up rejects a Gmail address that maps to an existing active mailbox.
+Account email changes reject the same collisions, while allowing people to adjust their own Gmail address spelling.
+Manage access rules through MCP
+October 2, 2026
+· Platform Features Team
+· Platform features
+MCP agents can set or clear access rules for everyone, individual members, and roles after confirmation. The tools work across projects, resource types, individual objects, and property definitions. Boost plan and up.
+See member project access
+October 2, 2026
+· Platform Features Team
+· Platform features
+Organization admins can see which projects each member can access directly in the members table. Open a member’s access details to see their level, the rule behind it, and jump to the relevant setting when there’s one to manage.
+Archived notifications count as read
+October 2, 2026
+· Platform Features Team
+· Platform features
+Archiving a notification also marks it as read, so it won’t keep showing as unread.
+Bring your own OpenAI-compatible endpoint for online evals
+October 2, 2026
+· AI Observability Team
+· AI observability
+Use API keys from public OpenAI-compatible endpoints–such as a hosted gateway or regional provider–for LLM judges evals, and the playground. Add a base URL per key, and PostHog validates it before sending requests.
+Read the docs
+Recover React Native fatal errors
+October 2, 2026
+· Client Libraries Team
+· Error tracking
+Error Tracking
+in React Native preserves fatal JavaScript exceptions through process crashes, so they can be reported after the app relaunches.
+Read the docs
+Fine-grained Flutter replay masking
+October 2, 2026
+· Client Libraries Team
+· Session replay
+Session Replay
+for Flutter can mask selected text ranges, such as account numbers or email addresses, while leaving safe labels visible. Built-in policies cover digits and regular-expression matches, and custom policies can choose per text node.
+Read the docs
+Autocapture SwiftUI taps
+October 2, 2026
+· Client Libraries Team
+· SDKs
+The iOS SDK can now autocapture SwiftUI control taps with an opt-in configuration. Add
+.postHogLabel
+markers to provide useful control labels without duplicate UIKit events.
+Read the docs
+Use OpenFeature from Elixir
+October 2, 2026
+· Client Libraries Team
+· Feature flags
+Elixir applications can evaluate
+Feature Flags
+through a new optional OpenFeature provider. It maps OpenFeature targeting context to PostHog people and groups, including typed variants and payloads.
+Read the docs
+Analyze Ruby MCP servers
+October 2, 2026
+· Client Libraries Team
+· MCP Analytics
+Experimental
+MCP analytics
+is available for Ruby servers built with the Ruby MCP gem. Instrument a server to capture tool calls, prompts, resources, conversations, and failures in PostHog.
+Read the docs
+Share Go flag definitions
+October 2, 2026
+· Client Libraries Team
+· Feature flags
+Go applications using
+Feature Flags
+local evaluation can provide a shared cache for flag definitions across distributed instances. This avoids each instance fetching and storing its own copy.
+Read the docs
+Track foldable iPhone posture
+October 2, 2026
+· Client Libraries Team
+· SDKs
+Events on foldable iPhones include a
+$hinge_status
+property, letting you distinguish closed, partially open, and fully open use. The property is omitted on devices without a hinge.
+Read the docs
+Navigate lineage search results
+October 1, 2026
+· Data Modeling Team
+· Data modeling
+Lineage search now lists matching models and relationship paths in the graph. Move through results with the keyboard or controls, then center the selected node without losing your search.
+Longer-lived MCP connections
+October 1, 2026
+· Growth Team
+· MCP
+MCP clients using non-rotating refresh tokens stay connected as long as they keep refreshing, rather than asking you to authorize again after roughly 67 days.
+Read the docs
+Use date interval placeholders in HogQL batch exports
+October 1, 2026
+· Batch exports
+HogQL queries powering a batch export can now include
+{data_interval_start}
+and
+{data_interval_end}
+placeholders. Use them in your WHERE clauses to select specific time ranges of data:
+For on demand batch exports, these can be populated with the
+data_interval_start and
+data_interval_end` request parameters. This allows re-using the same query for different requests, just update the parameters!
+For scheduled batch exports, the schedule automatically populates the placeholders with the bounds of each new run. Get only new data on every new run!
+Read the docs
+Set HogQL modifiers for batch export queries
+October 1, 2026
+· Batch exports
+HogQL-model batch exports can now use their own HogQL modifiers when you create or update them, instead of inheriting every setting from the team. Include a
+hogql_modifiers
+key in your request to keep them fixed without needing to change modifiers for all other queries.
+Read the docs
+Export events with person IDs
+October 1, 2026
+· Batch exports
+Event batch exports may now include
+person_id
+for every destination. This value represents the person associated with the event at the time the event is generated.
+Please note
+: More often than not, this id does not point to the person associated with an event. Persons are updated over time, sometimes much later than events are generated, so the
+person_id
+could be stale. Use the event's
+distinct_id
+to join with the persons model to obtain the final person for each event.
+Read the docs
+Report iOS out-of-memory terminations
+October 1, 2026
+· Client Libraries Team
+· Error tracking
+With
+Error Tracking
+autocapture enabled, iOS apps on iOS 27+ report out-of-memory terminations as fatal exceptions on the next launch. Reports retain the terminated session’s context and exception steps.
+Read the docs
+More reliable project detection
+October 1, 2026
+· Wizard & Docs Team
+· wizard
+Wizard enforces structured project-detection output, then retries once if a scan is invalid or times out. This makes it more likely to reach the right setup path instead of getting stuck.
+Find MCP sessions with errors
+October 1, 2026
+· MCP Analytics Team
+· MCP Analytics
+MCP Analytics
+can filter sessions with errors or without them, and shows each session's error count. Start triage with the sessions that need it.
+Read the docs
 September 2026
 BigQuery service account imports
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 imports from BigQuery can use a shared Google Cloud service account instead of an uploaded JSON key. Existing BigQuery sources keep working, and you can switch an existing source to the shared integration.
 Read the docs
 Backfill App Store analytics
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can backfill App Store Connect analytics from account inception or January 2024 when you first sync, resync, or fully refresh a table. No more connection-date data cliff.
 Read the docs
 Finish large Metronome imports
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can import large Metronome usage datasets by processing customers in parallel. Choose how much daily or hourly usage history to include during setup.
 Read the docs
 Safer incremental sync setup
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 warns when an incremental table lacks a usable key, takes you to the setting that needs attention, and keeps managed sources from being asked for keys they already define.
 Explains why a missing or duplicate key blocked an incremental sync, with next steps
@@ -75,7 +885,7 @@ Read the docs
 More warehouse source coverage
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 sources gained a large set of new tables across development, CRM, billing, collaboration, finance, and operations tools.
 Buildkite, CallRail, Azure DevOps, Canny, Capsule CRM, Campaign Monitor, Chatwoot, ChartMogul, ClickUp, Close, Cisco Duo, and many more gained additional tables
@@ -85,7 +895,7 @@ Read the docs
 More sources ready for production
 September 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 More
 Data Warehouse
 sources have graduated from prerelease status.
@@ -95,9 +905,8 @@ Read the docs
 See what blocks view deletion
 September 28, 2026
 · Data Modeling Team
-· Data warehouse
+· Warehouse
 When a view cannot be deleted because other views or metrics read from it, the error names the dependencies you can access and takes you to its lineage. No more playing dependency detective.
-Read the docs
 Backfill LLM evaluations
 September 26, 2026
 · AI Observability Team
@@ -130,7 +939,6 @@ Python MCP SDK
 Read the docs
 HogQL-model batch exports are now in closed beta
 September 25, 2026
-· Batch Exports Team
 · CDP
 Batch exports now support a new "hogql" model which is powered by a HogQL query: Users can now export the results of any SELECT HogQL query to any supported batch exports destination. For batch exports that trigger on a schedule, the optional placeholders
 {data_interval_start}
@@ -187,7 +995,6 @@ Request a stamphog review
 Read the docs
 Use standard Parquet file names
 September 24, 2026
-· Batch Exports Team
 · Batch exports
 New Parquet batch exports to object storage use
 .parquet
@@ -204,7 +1011,7 @@ Read the docs
 More sources are generally available
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Twelve
 Data Warehouse
 sources moved from prerelease to general availability.
@@ -241,7 +1048,6 @@ Cover the full height of growing text fields.
 Read the docs
 More reliable file download exports
 September 18, 2026
-· Batch Exports Team
 · Batch exports
 File download exports
 now split into roughly 1 GB files by default, so large downloads are less likely to expire mid-transfer. Completed exports also report their row count.
@@ -249,14 +1055,14 @@ Read the docs
 Metronome usage by period
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 sources for Metronome can now import daily and hourly usage tables alongside lifetime totals. Use them to track each customer's billable usage over time, with incremental updates to the current period.
 Read the docs
 Eight warehouse sources reach GA
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Eight
 Data Warehouse
 sources have moved from alpha or beta to general availability after meeting the team's reliability and time-in-production criteria.
@@ -271,14 +1077,14 @@ Read the docs
 Sync Gainsight CS data
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can now sync Gainsight CS companies, people, relationships, activities, calls to action, and email logs. Add custom objects too, and their discovered fields come along for the ride.
 Read the docs
 OpenAI Ads enters beta
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 OpenAI Ads source has moved from alpha to beta, so more teams can try syncing its data.
@@ -286,7 +1092,7 @@ Read the docs
 Expanded source table coverage
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Dozens of existing
 Data Warehouse
 sources gained more tables, covering product, marketing, finance, engineering, support, and operations data.
@@ -299,7 +1105,7 @@ Read the docs
 Set sync methods in bulk
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Choose multiple
 Data Warehouse
 tables and set them all to full refresh or append in one go. The menu explains the trade-offs and keeps incompatible CDC and webhook tables out of trouble.
@@ -307,7 +1113,7 @@ Read the docs
 Anthropic source enters beta
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 Anthropic source has moved from alpha to beta, including its activity, usage, and Enterprise tables.
@@ -315,14 +1121,14 @@ Read the docs
 Choose App Store apps
 September 18, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 App Store Connect sources can sync only the apps you select, instead of everything tied to the account.
 Read the docs
 Find models needing attention
 September 17, 2026
 · Data Modeling Team
-· Data warehouse
+· Warehouse
 The
 Context Warehouse Models
 page now calls out failed, suspended, behind-schedule, and failing-check models, including the downstream models they hold up. Search the Lineage view with
@@ -332,15 +1138,13 @@ model+
 , or
 +model+
 to narrow it to upstream, downstream, or both.
-Read the docs
 Suspend repeatedly failing models
 September 17, 2026
 · Data Modeling Team
-· Data warehouse
+· Warehouse
 Materialized models that hit the repeated-failure threshold now stop running for every project, rather than continuing to fail on schedule. Their suspension reason and a Resume action are available in the
 Models page
 .
-Read the docs
 Push notifications in Workflows
 September 13, 2026
 · Workflows Team
@@ -422,7 +1226,6 @@ Suggested scouts are prepared in the background for eligible projects, so a fres
 Read the docs
 Snowflake exports use integrations
 September 10, 2026
-· Batch Exports Team
 · Batch exports
 New Snowflake batch exports must use an integration instead of inline credentials. Existing exports were migrated automatically.
 Read the docs
@@ -459,42 +1262,42 @@ Read the docs
 Incremental Firestore collection syncs
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can incrementally sync Firestore collections using a timestamp or integer field you choose. Collections without a suitable field keep using full refreshes.
 Read the docs
 Connect Shopify with access tokens
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 Shopify sources can authenticate with an Admin API access token, helping stores that cannot use the existing client-credentials flow.
 Read the docs
 Sync Metronome billing data
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 has a new Metronome source for customers, contracts, invoices, products, rate cards, and more. Connect it with an API token.
 Read the docs
 Sync data from Lovable
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 has a new Lovable source for workspaces, projects, members, credit usage history, and security scans. Tables unavailable on your Lovable plan stay out of the way.
 Read the docs
 Import Rokt Ads reports
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 has a new Rokt Ads source for account data and campaign, creative, audience, demographic, and transaction performance reports.
 Read the docs
 More tables across warehouse sources
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 sources gained more tables to sync:
 Ashby referrals and sequences
@@ -516,7 +1319,7 @@ Read the docs
 More warehouse sources available
 September 7, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 expanded source availability:
 OpenAI is available in beta
@@ -575,7 +1378,7 @@ Inbox data and report details load faster, particularly in Desktop.
 Read the docs
 19 new MCP tools
 September 3, 2026
-· Batch Exports Team
+· Developer Experience Team
 · MCP
 Nineteen tools landed in PostHog's
 MCP server
@@ -611,7 +1414,6 @@ List governed metrics
 Read the docs
 created_at field added to Databricks batch exports
 September 3, 2026
-· Batch Exports Team
 · Batch exports
 Databricks event batch exports now include
 created_at
@@ -620,7 +1422,6 @@ Note that new fields will not be added to destination tables automatically; they
 Read the docs
 Filter batch export runs by status
 September 3, 2026
-· Batch Exports Team
 · Batch exports
 It is now possible to filter batch export runs by
 status
@@ -628,7 +1429,6 @@ status
 Read the docs
 Role-based authentication for AWS Redshift batch exports
 September 3, 2026
-· Batch Exports Team
 · Batch exports
 Redshift batch exports can now use short-lived temporary credentials obtained by assuming an AWS role configured for PostHog to assume. With this authentication method, long-lived credentials no longer need to be stored in PostHog.
 For Redshift batch exports using COPY, separate roles may be used for the S3 bucket we stage the files in, and for Redshift itself.
@@ -652,27 +1452,26 @@ Read the docs
 August 2026
 Redshift short-lived credentials for batch exports
 August 28, 2026
-· Batch Exports Team
 · Batch exports
-[Batch exports] can now utilize Redshift short-lived credentials from an assumed AWS role. This is the preferred method of authentication for new batch exports, as it avoids having to share long-lived credentials. For Redshift COPY batch exports, an assumed AWS role is also supported for S3 authentication.
+Batch exports
+can now utilize Redshift short-lived credentials from an assumed AWS role. This is the preferred method of authentication for new batch exports, as it avoids having to share long-lived credentials. For Redshift COPY batch exports, an assumed AWS role is also supported for S3 authentication.
 Read the docs
 Long-running AWS exports
 August 28, 2026
-· Batch Exports Team
 · Batch exports
 S3 and file-download batch exports using short-lived AWS role authentication refresh their credentials while they run. This avoids any timeouts caused by short-lived credentials expiring. This will help some of the more longer running batch exports to successfully complete.
 Read the docs
 WorkOS webhook sync
 August 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 WorkOS sources can keep supported tables up to date from webhooks after their initial backfill. Create, update, and delete events are reflected in the imported data.
 Read the docs
 54 new Data Warehouse sources
 August 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 gained 54 new sources, spanning finance, sales, marketing, public data, and a few pleasantly niche corners of the internet.
 Analytics, ads, and marketing: Sigma Computing, Hyros, G2, Pluralsight Flow, Apple Search Ads, Bluesky, Profound, and Select Star
@@ -692,14 +1491,14 @@ Read the docs
 App Store attribution reports
 August 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 App Store Connect sources can import four Detailed report variants, including campaign, source, and page-title attribution fields. Less need for a second pipeline just to find out where an install came from.
 Read the docs
 Custom REST source beta
 August 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The Custom REST source is now available in beta for
 Data Warehouse
 .
@@ -707,7 +1506,7 @@ Read the docs
 More Gong call content
 August 28, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can bring more of your Gong conversations into the warehouse.
 Sync full call transcripts in a new
@@ -913,7 +1712,6 @@ trend charts can use a custom Y-axis range. Set the bounds when the default scal
 Read the docs
 Slack alerts for batch exports
 August 20, 2026
-· Batch Exports Team
 · Batch exports
 Batch exports can send a Slack notification when they fail. Keep up with batch export alerts directly on your Slack channel of choice.
 Read the docs
@@ -928,7 +1726,6 @@ Add a per-series least-squares line of best fit, including on logarithmic axes.
 Read the docs
 Person properties in every export
 August 14, 2026
-· Batch Exports Team
 · Batch exports
 Batch exports now include
 person_properties
@@ -936,7 +1733,6 @@ by default across destinations, so your exported events carry the person context
 Read the docs
 More complete session batch exports
 August 14, 2026
-· Batch Exports Team
 · Batch exports
 Batch exports pick up late-arriving sessions more reliably. An increase in the number of session model exported rows is expected, as we now catch more updates. This is mostly affecting users with late-arriving events.
 Read the docs
@@ -948,7 +1744,6 @@ Advanced activity logs can be polled in a stable order and returned in OCSF form
 Read the docs
 S3 exports use integrations
 August 14, 2026
-· Batch Exports Team
 · Batch exports
 New AWS S3 and S3-compatible batch exports must use a team-scoped integration for their credentials. Existing exports were migrated automatically. Integrations support additional authentication methods, like role-based authentication for AWS S3.
 Read the docs
@@ -1041,28 +1836,28 @@ Read the docs
 More Reddit Ads tables
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can sync 13 more Reddit Ads tables, expanding the campaign and account data available for analysis.
 Read the docs
 Sync Checkout.com report files
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can import Checkout.com report files as tables alongside payment data.
 Read the docs
 Reliable incremental Sentry events
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 uses Sentry's dateReceived field to incrementally sync event endpoints, keeping subsequent imports on the right cursor.
 Read the docs
 Customer.io source is generally available
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 Customer.io source has graduated from beta and is available to every team.
@@ -1070,14 +1865,14 @@ Read the docs
 Choose your PlanetScale engine
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 separates PlanetScale connections into MySQL and Postgres sources, so you can configure the right engine for your database.
 Read the docs
 Expanded Decagon data coverage
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 imports can keep Decagon conversations current and include more of the operational data around them.
 Conversations sync incrementally and no longer stop after the first results page
@@ -1086,7 +1881,7 @@ Read the docs
 28 new warehouse sources
 August 13, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can now bring in data from 28 more services.
 Mailjet, MailerLite, SparkPost, Mailgun, and Postmark for email delivery data
@@ -1104,7 +1899,7 @@ Read the docs
 Vercel source enters beta
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 Vercel source is now available in beta for syncing your Vercel data.
@@ -1112,9 +1907,8 @@ Read the docs
 Control warehouse table access
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Set access permissions per table within a warehouse schema, so teammates see only the data they should.
-Read the docs
 Edit prompt configurations
 August 6, 2026
 · AI Observability Team
@@ -1125,9 +1919,8 @@ Read the docs
 Import all Bing Ads campaigns
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Bing Ads sources now import Performance Max, Shopping, App, Audience, Dynamic Search Ads, Hotel, and Search campaigns. Marketing analytics can include spend that was previously missing from non-Search campaigns.
-Read the docs
 Scout feedback closes the loop
 August 6, 2026
 · Self-Driving Team
@@ -1138,7 +1931,7 @@ Send written thumbs-up or thumbs-down feedback to that same scout.
 161 new source tables
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Existing
 Data Warehouse
 connectors gained 161 tables, so there is less API archaeology to do.
@@ -1155,7 +1948,7 @@ Read the docs
 More sources reach general availability
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 ClickHouse and Google Analytics sources are now generally available.
@@ -1165,7 +1958,7 @@ Read the docs
 23 new warehouse sources
 August 6, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Import data into
 Data Warehouse
 from 23 newly supported services.
@@ -1308,20 +2101,19 @@ July 2026
 Import GitHub deployment data
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 GitHub sources can import deployment and deployment-status records alongside the rest of your repository data.
 Read the docs
 Add new tables to the Mailchimp source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added 28 tables to the Mailchimp source
-Read the docs
 Brevo source enters beta
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 The
 Data Warehouse
 Brevo source has moved from alpha to beta after a clean run with active users. Same connector, less caveat.
@@ -1329,7 +2121,7 @@ Read the docs
 Nine new warehouse sources
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can now import data from nine additional services:
 Codemagic build and CI data
@@ -1345,27 +2137,26 @@ Read the docs
 Query ClickHouse sources directly
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 can run live, read-only HogQL queries against ClickHouse and ClickHouse Cloud sources. No import required when you need the current data.
 Read the docs
 More Cloudflare source tables
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 Cloudflare sources can now import 33 additional tables, giving you more of your Cloudflare data to query.
 Read the docs
 Add tables to the Clerk source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added 23 tables to the Clerk source
-Read the docs
 Add tables to Sentry source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added 23 tables to the Sentry
 Data Warehouse
 source
@@ -1373,7 +2164,7 @@ Read the docs
 Add HubSpot leads table
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Add leads table to HubSpot
 Data Warehouse
 source
@@ -1381,7 +2172,7 @@ Read the docs
 Add tables to Zendesk source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added 25 tables to the Zendesk
 Data Warehouse
 source
@@ -1389,7 +2180,7 @@ Read the docs
 Add Marketo source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added a Marketo
 Data Warehouse
 source
@@ -1397,7 +2188,7 @@ Read the docs
 Add Qualtrics source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added a Qualtrics
 Data Warehouse
 source
@@ -1405,7 +2196,7 @@ Read the docs
 Add Pardot source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added a Pardot
 Data Warehouse
 source
@@ -1413,7 +2204,7 @@ Read the docs
 Add tables to Klaviyo source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added 24 tables to the Klaviyo
 Data Warehouse
 source
@@ -1421,7 +2212,7 @@ Read the docs
 Added Adobe Analytics source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added an Adobe Analytics
 Data Warehouse
 source
@@ -1429,7 +2220,7 @@ Read the docs
 Added Adobe Commerce source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added an Adobe Commerce
 Data Warehouse
 source
@@ -1437,7 +2228,7 @@ Read the docs
 Add Adyen source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added an Adyen
 Data Warehouse
 source
@@ -1445,7 +2236,7 @@ Read the docs
 Add BILL.com source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added a BILL.com
 Data Warehouse
 source
@@ -1453,7 +2244,7 @@ Read the docs
 Add Workday source
 July 31, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Added a Workday
 Data Warehouse
 source
@@ -1475,7 +2266,6 @@ July 30, 2026
 Create a Scout with AI guidance or fill out the prompt, schedule, and Slack destination yourself. Daily schedules can run at a chosen time in your project timezone.
 Retries for batch exports with less duplicates
 July 30, 2026
-· Batch Exports Team
 · Batch exports
 Batch Exports
 resume interrupted reads from staging storage at the last completed batch, rather than restarting the file and potentially duplicating rows at the destination.
@@ -1502,7 +2292,7 @@ Read the docs
 Query synced sources directly
 July 24, 2026
 · Data Tools Team
-· Data warehouse
+· Warehouse
 Run live SQL queries against synced
 Data Warehouse
 sources from the SQL editor. Enable direct querying in source settings, or jump in from a source's schema tab.
@@ -1510,9 +2300,8 @@ Read the docs
 Browse notebook dataframes
 July 24, 2026
 · Data Tools Team
-· Data warehouse
+· Warehouse
 The Notebook SQL schema browser now lists the dataframes, tables, and views available in your live kernel, so you can query them without guessing their names.
-Read the docs
 Reports for trace evaluations
 July 24, 2026
 · AI Observability Team
@@ -1654,23 +2443,23 @@ can search and inspect official dashboard templates before creating a dashboard.
 Read the docs
 Run SQL against managed warehouses
 July 24, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Managed Warehouse
 tables are available in the SQL editor through a project-scoped, read-only connection. New tables are picked up automatically.
 Read the docs
 Onboard projects to managed warehouses
 July 24, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Each project in an organization can join its
 managed warehouse
 with its own schema name. Availability is checked before onboarding, so conflicting names fail early.
 Read the docs
 See warehouse import activity
 July 24, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 The
 Data Warehouse
 overview shows when each schema was last applied, rather than an unavailable status. It replaces the unreliable queue status check.
@@ -1897,7 +2686,7 @@ Read the docs
 Upload files to Data Warehouse
 July 24, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Upload CSV, JSON, or Parquet files directly into
 Data Warehouse
 as self-managed tables. No separate sync pipeline required.
@@ -1905,7 +2694,7 @@ Read the docs
 Automatically sync new schemas
 July 24, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse
 sources can automatically enable and sync newly discovered tables or channels. Use glob patterns such as
 raw_*
@@ -1914,7 +2703,7 @@ Read the docs
 Sync multiple GitHub repositories
 July 24, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 One GitHub
 Data Warehouse
 source can now sync multiple repositories. New repositories keep separate schemas and webhook mappings under the same source.
@@ -1955,7 +2744,7 @@ Read the docs
 22 new warehouse sources
 July 24, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Data Warehouse can now import data from 22 additional services, ready to join with the rest of your tables.
 Microsoft Clarity
 KnowBe4
@@ -1979,7 +2768,6 @@ CodeScene
 CloudZero
 Census
 Ably
-Read the docs
 Better saved ticket views
 July 24, 2026
 · Conversations Team
@@ -2051,54 +2839,47 @@ Flutter bootstrap configuration
 Read the docs
 Bing Ads connector is available for Data Warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Bing Ads in Data Warehouse is now marked as generally available instead of beta. Nothing else changed, so the connector still does the same thing, just with a less tentative label.
-Read the docs
 AirOps is now available as a Data Warehouse source for syncing app execution telemetry
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 AirOps now shows up as a Data Warehouse source, so you can connect a workspace API key and sync your apps plus execution telemetry like status, inputs, output, credits used, runtime, and feedback. It runs as full refresh only, because AirOps doesn’t give us a clean timestamp filter and the executions like to keep changing after they’re born.
-Read the docs
 PyPI is now available as a data warehouse source
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 PyPI is now a Data warehouse source, so you can pull package metadata, release files, and known vulnerabilities for the Python packages you care about. It uses the public JSON API, so there’s no setup beyond entering package names, and every sync runs as a full refresh since PyPI doesn’t give us a “changed since” filter.
-Read the docs
 Kernel can now sync into the data warehouse to merge agent activity with product data
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Kernel can now sync into the Data Warehouse, pulling in apps, deployments, invocations, browsers, and profiles so you can join agent activity with your product data. It ships as a full-refresh source for now, because we couldn’t verify Kernel’s
 since
 filter without a live key, so incremental gets to stay in the queue for once.
-Read the docs
 You can now import Storage by Zapier into Data Warehouse using a full-refresh source
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now pull a Storage by Zapier store into Data Warehouse as a full-refresh source: it fetches the whole key/value store with a secret and turns it into one row per key. The source is alpha, uses a single required secret, and stops on bad auth instead of retrying forever like a very committed raccoon.
-Read the docs
 Replicate is now available as a Data Warehouse source for syncing your data into PostHog
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Replicate is now wired up as a Data Warehouse source, so you can sync predictions, trainings, deployments, models, hardware, and account data into PostHog. Predictions sync incrementally off
 created_at
 ; the rest do full refresh, because the API apparently enjoyed keeping the nice filter to itself.
-Read the docs
 Cal.com booking sync API limit improvements
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Cal.com bookings sync now stays under the API’s 100-item page limit, so it stops tripping over a 400 on the first request. Webhooks keep their 250-item page size, because apparently one endpoint’s ceiling is another endpoint’s bad idea.
-Read the docs
 Browserbase alpha source now syncs sessions and projects into the data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Browserbase can now sync its
 sessions
 and
@@ -2106,153 +2887,129 @@ projects
 into the Data Warehouse, using full refresh since the API doesn’t offer a real incremental path. It ships as an alpha, visible source with the Browserbase key passed in as
 X-BB-API-Key
 , so you can pull browser automation data in without the stub doing nothing anymore.
-Read the docs
 Sync Google PageSpeed Insights results from URLs into Data Warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now sync Google PageSpeed Insights scores into Data Warehouse from a list of URLs, with separate desktop and mobile tables. It pulls the Lighthouse report plus core scores like performance, accessibility, best practices, and SEO, and keeps appending results over time so you can watch your pages get judged repeatedly.
-Read the docs
 Data Warehouse source for Twelve Labs is now available for indexing, tasks, and videos
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Twelve Labs now has a working Data Warehouse source, so you can pull in indexes, tasks, and videos instead of staring at an empty stub. Indexes and tasks sync incrementally, while videos fan out per index and stay full refresh only for now, because the API decided that was the least annoying option.
-Read the docs
 Healthchecks.io can now be used as a Data Warehouse source
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Healthchecks.io is now available as a Data Warehouse source, so you can pull in checks, notification channels, status-change history, and recent ping logs. Flips sync incrementally; the rest do a full refresh, because the API apparently enjoys keeping us humble.
-Read the docs
 You can now connect Hatchet as a Data Warehouse source
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Hatchet can now be connected as a Data Warehouse source, pulling workflow runs, task runs, events, and event keys into PostHog. It uses the Hatchet API token to figure out your tenant and server URL, with optional host and tenant overrides if you’re self-hosting or the token won’t play nice.
-Read the docs
 Windmill job history and workspace data now sync into the data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Windmill now syncs into Data Warehouse, pulling job history and workspace tables like scripts, flows, apps, schedules, resources, users, and audit logs. Completed jobs can sync incrementally; everything else gets a full refresh, because not every API wants to make our lives easy.
-Read the docs
 Metorial is now supported as a data warehouse source in PostHog
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Metorial is now a Data warehouse source, so you can pull sessions, messages, tool calls, provider runs, deployments, and error telemetry into PostHog. It syncs incrementally, keeps going after interruptions, and leaves
 providers
 off by default because apparently even catalogs need a little self-control.
-Read the docs
 Firecrawl data is now synced into Data Warehouse for account and crawl metrics
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Firecrawl is now wired into Data Warehouse, so you can sync account activity, credit and token usage, active crawls, monitors, and monitor checks into PostHog. It runs full refresh only, because Firecrawl doesn’t give us an “updated since” filter, which is rude but consistent.
-Read the docs
 You can now connect Trigger.dev as a Data Warehouse source and sync runs incrementally
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Trigger.dev can now be connected as a Data Warehouse source, pulling in task runs, schedules, and queues. Runs sync incrementally with a short lookback so late updates get picked up, and self-hosted instances can point the connector at their own API URL.
-Read the docs
 Scaleway import is now available in the data warehouse for IAM and audit trail data
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now import Scaleway into the Data warehouse to pull IAM, billing, account, instance, and audit trail data into PostHog alongside the rest of your stuff. It handles Scaleway’s weird little pagination flavors and region/zone fan-out, but ships as full refresh only for now, because incremental support would have been asking for trouble without live credentials.
-Read the docs
 Billing data now imports into the data warehouse behind an alpha gate
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Alguna billing data now syncs into Data warehouse as eight full-refresh tables: customers, invoices, subscriptions, payments, refunds, plans, products, and billable metrics. It’s still tucked behind an alpha gate, because no live account was available to fully bully-test it.
-Read the docs
 You can now import Maxio Advanced Billing data into Data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now pull Maxio Advanced Billing data into Data warehouse, including customers, subscriptions, invoices, products, coupons, components, payment profiles, events, and credit notes. It supports US and EU sites, with incremental sync where the API actually behaves itself and full refresh everywhere else.
-Read the docs
 Linode data warehouse source is now available in PostHog
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Linode now has a working Data warehouse source, so you can pull account, billing, and infrastructure data like linodes, volumes, domains, users, invoices, payments, and audit events into PostHog instead of staring at the Cloud Manager tab like it’s helping. Events sync incrementally from the last 90 days, invoices update by date, and the rest do full refreshes because apparently not every API wants to be convenient.
-Read the docs
 Data Warehouse now supports incremental imports from Writesonic GEO analytics
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Data Warehouse can now pull Writesonic GEO analytics into your warehouse, including daily performance exports and config tables for topics, platforms, websites, and prompts. It syncs incrementally by day, resumes mid-run without skipping data, and uses the usual auth, retries, and error handling so it mostly just gets on with it.
-Read the docs
 ElevenLabs now syncs real usage data into the data warehouse with incremental, resumable imports
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 ElevenLabs now syncs real data into Data Warehouse instead of sitting there looking decorative. You can pull in speech generation history, conversations, agents, voices, and models, with incremental sync where the API supports it and resumable pagination so interrupted runs can pick up where they left off.
-Read the docs
 Direct-query support for Redshift is now available
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now run direct query against Redshift instead of importing it first, using the same setup you already had for Postgres, MySQL, and Snowflake. The Redshift printer keeps the shared Postgres-ish SQL surface, but blocks the bits Redshift can’t handle so the query fails loudly instead of pretending everything is fine.
-Read the docs
 Claude usage and cost data now sync into the data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Anthropic can now sync Claude usage, cost reports, org members, workspaces, invites, and API keys into the Data warehouse. The daily usage and cost tables run incrementally with a one-day lookback, so your LLM spend doesn’t get lost in the usual API paperwork.
-Read the docs
 You can now import ChartHop data into your data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now import ChartHop into Data Warehouse, pulling in people, org chart, compensation changes, and a few related lookup tables.
 changes
 syncs incrementally, while the snapshot-style endpoints do a full refresh because ChartHop makes that part awkward.
-Read the docs
 Cursor team data now syncs into the data warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now sync Cursor team data into the Data warehouse: members, daily usage, usage events, and current-cycle spend. The connector handles Cursor’s weird little POST-based pagination, rate limits, and incremental backfills so it doesn’t immediately fall over like the rest of us.
-Read the docs
 GitHub warehouse sources sync pull request reviews
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 GitHub warehouse sources now sync pull request reviews, so you can build review metrics like reviews per PR, time to first review, and approval latency. It uses the
 pull_request_review
 webhook as the source of truth, with polling only re-fanning recent PRs instead of doing a full historical crawl.
-Read the docs
 RevenueCat available in Data Warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 RevenueCat is now generally available in Data Warehouse, so you can connect it without the beta rollout gate. Nothing about the connector changed under the hood - this is just a status bump from beta to GA.
-Read the docs
 Sync Metorial observability data
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now pull Metorial MCP observability data into PostHog, including sessions, messages, tool calls, errors, provider runs, deployments, and providers. The sync is resumable and incremental where Metorial supports it, so interrupted backfills don’t have to start from page one.
-Read the docs
 Decagon conversation data available in Data Warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Decagon now syncs into Data warehouse, pulling conversation history, CSAT ratings, tags, and metadata through a single
 conversations
 stream. It runs as a full refresh, remembers its cursor so long backfills can resume, and throttles itself to Decagon’s 1 request per second limit so it doesn’t get itself banned for enthusiasm.
-Read the docs
 Sync Anthropic usage into Data Warehouse
 July 17, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Anthropic now syncs into Data Warehouse, pulling Claude usage, cost, and org admin data so you can poke at spend and token usage next to the rest of your stuff. The reports sync incrementally, the admin tables full refresh, and the whole thing is wired up with resumable pagination so it can crash and keep going like a well-behaved gremlin.
-Read the docs
 Sentiment evaluations are now included in AI Observability
 July 16, 2026
 · AI Observability Team
@@ -3133,7 +3890,6 @@ May 15, 2026
 pganalyze is now a signal source. Actionable Postgres findings – missing indexes, vacuum lag, schema problems – get routed into the same signals grouping and report pipeline alongside your customer-facing sources like Zendesk, Linear, and GitHub.
 File download batch export API
 May 15, 2026
-· Batch Exports Team
 · CDP
 Batch Exports
 now has a dedicated API for programmatic file downloads on demand. Three new endpoints let you create a run, check its status, and download the resulting file – without needing to set up a recurring batch export or a destination.
@@ -3287,7 +4043,7 @@ Searching in the filter bar now matches attribute values, not just attribute nam
 Resend source for data warehouse
 May 4, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 Resend is now available as a beta source in the
 Data Warehouse
 . Pull your audiences, broadcasts, domains, emails, and contacts into PostHog to analyze them alongside your product data.
@@ -3358,7 +4114,7 @@ Read the docs
 ClickHouse as a source for Data Warehouse
 April 23, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 You can now connect
 ClickHouse
 as a source in our
@@ -3368,9 +4124,8 @@ Read the docs
 Pie charts in the SQL editor
 April 23, 2026
 · Data Tools Team
-· Data warehouse
+· Warehouse
 The SQL editor in PostHog now supports pie charts as a visualization option.
-Read the docs
 Weekly web analytics summary via MCP
 April 23, 2026
 · Web Analytics Team
@@ -3579,12 +4334,11 @@ Read the docs
 Multiple DAGs per project
 April 10, 2026
 · Data Modeling Team
-· Data warehouse
+· Warehouse
 Now you can create multiple directed acyclic graphs (DAGs) for your data modeling needs.
 This is great for semantic separation between your models:
 Separation by product area, like finance, marketing, and analytics
 Separation by environment, like dev, staging, and production
-Read the docs
 Copy experiments across projects
 April 10, 2026
 · Experiments Team
@@ -3607,7 +4361,6 @@ Insights can now automatically generate names and descriptions with AI. Click th
 Read the docs
 History tab for batch exports
 April 3, 2026
-· Batch Exports Team
 · CDP
 Batch Exports
 now have a
@@ -3617,7 +4370,7 @@ Read the docs
 Copy SQL results to Markdown
 April 3, 2026
 · Data Tools Team
-· Data warehouse
+· Warehouse
 In
 Data Warehouse
 , you can now copy query results from the SQL editor as Markdown. Handy for pasting tables into LLMs and agents.
@@ -3636,7 +4389,7 @@ Read the docs
 View folders in SQL editor
 April 3, 2026
 · Data Tools Team
-· Data warehouse
+· Warehouse
 You can now organize your saved views into folders in the SQL editor for
 Data Warehouse
 . Keep things tidy as your view count grows.
@@ -3841,9 +4594,8 @@ Read the docs
 Typeform support
 March 21, 2026
 · Warehouse Sources Team
-· Data warehouse
+· Warehouse
 TypeForm is now available as a Data Warehouse source to pull your forms and answers into PostHog.
-Read the docs
 Timestamp bucketing for materialized queries
 March 21, 2026
 · Data Modeling Team
@@ -3997,7 +4749,7 @@ column in the ticket list. Hold your team accountable, or at least pretend to.
 Read the docs
 Row count estimated for batch export backfills
 March 5, 2026
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
 Before running a
 batch export
@@ -4151,12 +4903,11 @@ CLI tool.
 Read the docs
 Sync schemas from managed data sources
 February 27, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Adds a
 Pull new schemas
 button to pipelines. Users can now instantly refresh schema updates, grabbing the latest changes without waiting for a scheduled sync to kick in.
-Read the docs
 Combine events inline for funnels
 February 27, 2026
 · Product Analytics Team
@@ -4188,12 +4939,11 @@ with Terraform.
 Read the docs
 Sync all enabled schemas
 February 27, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Adds a
 Sync now
 button to easily sync all enabled schemas in one go, replacing the need to sync them individually. Also includes a schema count in the table view.
-Read the docs
 Manage cohorts through PostHog MCP
 February 27, 2026
 · Product analytics
@@ -4303,8 +5053,8 @@ You can now switch to the plain text editor and send the barebones emails you al
 Read the docs
 Amazon Redshift data source
 February 12, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now connect
 Amazon Redshift
 as a data source in your PostHog project. Supports both direct connection strings and secure SSH tunnels for flexible integration.
@@ -4389,12 +5139,11 @@ settings to configure them.
 Read the docs
 Attio data source
 February 6, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now
 link Attio as a data source
 in your PostHog project to access CRM data for analytics.
-Read the docs
 SQL variables
 February 6, 2026
 · Platform Features Team
@@ -4405,12 +5154,11 @@ SQL variables
 Read the docs
 Mailchimp data source
 February 6, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now
 link Mailchimp as a data source
 in your PostHog project. This lets you access campaigns, contacts and report data in PostHog.
-Read the docs
 Metric breakdowns
 February 6, 2026
 · Experiments Team
@@ -4443,12 +5191,11 @@ MCP tool.
 Read the docs
 GitHub data source
 February 6, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now
 link GitHub as a data source
 in your PostHog project. This lets you access commits, issues, pull requests, releases, and stargazer data in PostHog.
-Read the docs
 Visualize survey flows
 February 6, 2026
 · Surveys
@@ -4492,7 +5239,6 @@ repo
 and add the browser extension.
 Databricks batch exports in beta
 January 29, 2026
-· Batch Exports Team
 · CDP
 Databricks
 officially in open beta for
@@ -4540,15 +5286,14 @@ for all users. You can add tags to dashboards, insights, actions, and even featu
 Read the docs
 Schedule batch exports
 January 29, 2026
-· Batch Exports Team
 · CDP
 Batch exports
 can now be scheduled. You can set the timezone and start time for daily exports, or choose a weekly schedule with a specific day and hour.
 Read the docs
 Heatmaps for SQL queries
 January 29, 2026
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 We have a new visualization type for
 SQL queries
 : 2D heatmaps!
@@ -4605,7 +5350,7 @@ Customer Analytics
 Read the docs
 Set error thresholds for pipeline alerts
 January 23, 2026
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
 Set an error rate threshold for notifications with
 Data Pipelines
@@ -4693,7 +5438,6 @@ Stop stashing SQL in Typescript comments. Save materialized queries as code inst
 Read the docs
 Azure Blob Storage available in Batch Exports
 January 16, 2026
-· Batch Exports Team
 · CDP
 Azure Blob Storage
 is now available as a Batch Exports destination, with built-in validation and connection testing to help you configure exports confidently.
@@ -4733,7 +5477,7 @@ Click the edit button on any profile to toggle tiles on or off: properties, even
 Read the docs
 5x higher rate limits for materialized endpoints
 January 8, 2026
-· Managed Warehouse Team
+· Warehouse Team
 · Endpoints
 Materialized endpoints now support 5x higher rate limits with smart caching. You can query your data more often without hitting limits.
 Read the docs
@@ -4796,7 +5540,7 @@ Switch tabs and come back to your replay without losing your place in the video.
 Read the docs
 Activity log notifications
 January 8, 2026
-· Managed Warehouse Team
+ · Warehouse Team
 · CDP
 Get real-time alerts when changes occur in your PostHog project. Send activity log updates to Slack, Discord, Microsoft Teams, or a custom webhook. Filter to see only the events you care about.
 This feature is available on Scale and Enterprise plans.
@@ -4988,7 +5732,7 @@ and above.
 Read the docs
 Kudosity now available as a data destination
 December 19, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
 You can now deliver SMS alerts triggered by PostHog events through Kudosity. Try the new
 Kudosity
@@ -5170,12 +5914,11 @@ Logs
 Read the docs
 Connect Supabase databases to PostHog
 December 4, 2025
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 You can now connect your Supabase database to PostHog as a data source. Import tables from Supabase to combine with your product analytics data for deeper insights.
 Learn more about
 querying Supabase data
-Read the docs
 PostHog AI conversation feedback
 December 4, 2025
 · PostHog AI
@@ -5245,7 +5988,7 @@ You can now name your conditional branches in workflows. Give them descriptive n
 Read the docs
 Advanced filters for batch exports
 December 4, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
 You can now use feature flags, HogQL, and person property filters in batch exports, not just event property filters. This brings batch export filtering up to speed with what you can already do in workflows.
 Learn more about
@@ -5304,7 +6047,7 @@ These links aren't public, users still need access to the organization to view t
 Read the docs
 Allow semicolon at end of select statement
 November 27, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · HogQL
 It works. It doesn’t throw an error. That’s it.
 SELECT
@@ -5546,7 +6289,6 @@ You can now plot specific time periods in retention insights. Select individual 
 Read the docs
 Sessions model for batch exports
 November 14, 2025
-· Batch Exports Team
 · CDP
 The sessions model for batch exports is now generally available. You can now export session-level data to destinations like S3, Snowflake, Postgres, BigQuery, and more.
 Read the docs
@@ -5721,701 +6463,282 @@ Email MFA confirmation for new logins
 October 31, 2025
 · Platform Features Team
 · Uncategorized
-Users logging in without SSO or an OTP device will be sent an email verification link. A quick click keeps your account secure – no codes, no drama.
 Full-text search capabilities
 October 31, 2025
 · PostHog AI
-PostHog AI can now search across your dashboards, experiments, feature flags, cohorts, actions, surveys, and error tracking by using full-text search tool calls under the hood to find relevant resources. That means smarter, more context-aware answers.
-Read the docs
 GitLab integration for error tracking
 October 31, 2025
 · Error Tracking Team
 · Error tracking
-We’ve added an error tracking integration for GitLab, enabling you to connect PostHog issues with your GitLab projects for easier management.
-Read the docs
 Groups section in new tabs
 October 31, 2025
 · Platform UX Team
 · Uncategorized
-In the new tab page, we’ve added a dedicated section for groups, which are custom defined entities like companies or organizations, for quick and easy access.
 Console logs in exception timeline
 October 31, 2025
 · Error Tracking Team
 · Error tracking
-Console logs now appear directly in the
-Session
-tab's timeline for an error tracking issue, helping you see exactly what led to the error.
-Read the docs
 Base currency conversion
 October 31, 2025
 · Web Analytics Team
 · Web analytics
-We now convert all currencies to your team’s base currency for consistent reporting. All integrations support currency conversion, so everything adds up.
-Open your
-project settings
-to set your base currency.
-Read the docs
 Updated chat UI
 October 31, 2025
 · PostHog AI
-PostHog AI now shows you what it’s thinking about. With the updated chat UI, you can see PostHog AI’s reasoning, planning, and tool calling all in real-time.
-Read the docs
 Duplicate static cohorts
 October 31, 2025
 · Feature Flags Team
 · People & properties
-You can now duplicate static cohorts and create copies with a single click.
-Read the docs
 Capture events when elements scroll into view
 October 31, 2025
 · Replay Team
 · Uncategorized
-The new
-PostHogCaptureOnViewed
-component enables you to automatically capture events when elements scroll into view in the browser.
-It’s useful for tracking impressions of important content, monitoring user engagement with specific sections, or understanding which parts of your page users are actually seeing.
-import
-{
-PostHogCaptureOnViewed
-}
-from
-'posthog-js/react'
-function
-App
-(
-)
-{
-return
-(
-<
-PostHogCaptureOnViewed
-name
-=
-"hero-banner"
->
-<
-div
->
-Your
-important content here
-<
-/
-div
->
-<
-/
-PostHogCaptureOnViewed
->
-)
-}
-Read the
-docs
-for more details.
-Read the docs
 Refreshed UI for new tabs
 October 31, 2025
 · Platform UX Team
 · Uncategorized
-We’ve updated the new tabs UI with a cleaner, more streamlined single-column layout that now shows your most recently visited apps, dashboards, and insights at the top for quick and easy access.
 BETWEEN operator support for PostHog SQL
 October 31, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · HogQL
-PostHog SQL now supports the BETWEEN operator, so you can write queries like:
-SELECT
-column
-BETWEEN
-low_value
-AND
-high_value
-Read the docs
 Data warehouse prices cut by 20%
 October 29, 2025
-· Managed Warehouse Team
-· Data warehouse
-TL;DR
-We're now the cheapest data warehouse option at any volume
-We're now charging the average team 20% less than before
-We've added more tiers, making our pricing more fair
-You'll get 7 days of free usage now, and whenever you add a new source
-This is good for you, but will cut our data warehouse revenue by 40%. So, why do it?
-Firstly, we want to do what's right for you. A 7-day free period lets you test things for free. If it works, we think you'll stick around a while and spend more money. If not, you were going to churn anyway.
-We also want to be the obvious choice for a data warehouse. Our goal is to always undercut competitors. We can do this because we have a lot of products, so the unit economics equal out.
-More products coming soon!
-It's important to note too that we want to build sustainably. Despite the revenue hit, every product we offer is margin-positive and we remain
-default alive
-. This isn't a loss-leader, it's an investment in retention. Fingers crossed it pays off.
-We've also added some new sources
-over the last three months and
-PostHog AI
-can now also help you write SQL faster than ever. So, if you're looking to try the data warehouse out then there has never been a better time to
-get started
-.
-Read the docs
+· Warehouse Team
+· Warehouse
 Pinned persons properties in replays
 October 24, 2025
 · Replay Team
 · Session replay
-You can now customize the pinned persons properties when watching session replays.
-Pin your custom fields, like organization names or paid plan tiers, to the person’s overview for quick reference and context.
-Read the docs
 Faster buffering for long session replays
 October 24, 2025
 · Replay Team
 · Session replay
-Long session replays now take less time to buffer. Session replay only loads the next 15 minutes of the session at a time, with an indicator in the seekbar showing what’s been loaded.
-Read the docs
 Include mean metrics in the query builder
 October 24, 2025
 · Experiments Team
 · Experiments
-You can now include mean metrics directly within the query builder interface for data analysis.
-Read the docs
 Duplicate surveys to multiple projects at once
 October 24, 2025
 · Surveys
-Do you have a survey that you need for multiple projects? You can now create it once, duplicate it, and add it to all the projects you need with multi-select.
-Read the docs
 Filter overrides for dashboard tiles
 October 24, 2025
 · Product Analytics Team
 · Dashboards
-You can now set filter overrides for individual dashboard tiles in product analytics. This means you can customize filters for every insight without leaving the dashboard. Find filter overrides in the three dots menu of a tile, tweak the filters, and you’re all set.
-Read the docs
 New changelog layout
 October 24, 2025
 · Website Team
 · Uncategorized
-Have you seen our new changelog? Well you’re looking at it right now!
 Meet the SDK doctor (beta)
 October 24, 2025
 · Support Team
 · Configuration
-You’re overdue for a checkup. Let the SDK doctor take a look.
-The new SDK doctor helps you stay on top of your SDK versions across several platforms, from JavaScript to iOS to Go. It’s currently in beta.
-It detects outdated SDKs in your recent events, flags them with 🟢🟡🔴 indicators, and links you to the right changelogs and docs. Outdated SDKs trigger a sidebar alert, so you can inspect and fix version issues.
 PostHog AI is now tab aware
 October 24, 2025
 · Platform UX Team
 · PostHog AI
-Max
-PostHog AI is now aware of the active tab that you’re on, so you can expect it to give more context aware responses.
-Read the docs
 TikTok Ads as a data source
 October 24, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
-If you run ads on TikTok, you can now import ad performance data into PostHog.
-Connect them as a source in your
-marketing analytics settings
-.
-Read the docs
 Sort error tracking issues by revenue
 October 24, 2025
 · Error Tracking Team
 · Error tracking
-You can now sort issues in error tracking by revenue, so you prioritize fixes based on business impact and see which errors are costing you the most.
-Once you’ve configured error tracking and revenue analytics in your PostHog project, try sorting by revenue in the
-issue tracker
-.
-Read the docs
 Android SDK now supports error tracking (beta)
 October 24, 2025
 · Error Tracking Team
 · Error tracking
-Error tracking for Android is in beta. If you already have the PostHog Android SDK (versions 3.24.0 and above) installed in your project, you can enable error tracking like this:
-import
-com
-.
-posthog
-.
-android
-.
-PostHogAndroidConfig
-val config
-=
-PostHogAndroidConfig
-(
-apiKey
-=
-POSTHOG_API_KEY
-,
-host
-=
-POSTHOG_HOST
-)
-.
-apply
-{
-...
-errorTrackingConfig
-.
-autoCapture
-=
-true
-}
-...
-Learn more about error tracking for Android in the docs
-.
-Read the docs
 Auto-generated collections for session replays
 October 24, 2025
 · Replay Team
 · Session replay
-PostHog automatically creates collections for your replays to make them easier to sort through based on the following:
-Your watch history
-Summarised sessions
-Commented sessions
-Publicly shared sessions
-Sessions that have been clipped or screenshotted
-See them in your collections tab
-Read the docs
 Improved Redshift batch export performance
 October 24, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
-Redshift batch export now supports
-COPY
-for batch exports. Expect to see a significant improvement in performance.
-Support for the
-COPY
-operations
-in RedShift requires slightly more configuration than before. You can learn about the new configuration steps in the
-CDP documentation
-.
-Read the docs
 Choose your attribution mode
 October 17, 2025
 · Web Analytics Team
 · Web analytics
-You can now set your attribution mode as
-First Touch
-or
-Last Touch
-, giving you control over how conversions are counted and how to define attribution.
-Read the docs
 PostHog AI can navigate PostHog
 October 17, 2025
 · PostHog AI
-PostHog AI just got another upgrade 🧠. PostHog AI can now navigate PostHog's in-app UI, see the results of its actions, and verify its results across products and tools.
-Try asking PostHog AI to filter session recordings right from your project homepage.
-Read the docs
 Runtime control for /flags API
 October 17, 2025
 · Feature Flags Team
 · Feature flags
-You can now include
-evaluation_runtime
-in your request to the API endpoint
-/flags
-. This gives you explicit control over which flags are evaluated across client and server contexts.
-Read the docs
 Issues section on person profiles
 October 17, 2025
 · Customer Analytics Team
 · People & properties
-We shipped a dedicated Issues section for persons, letting you quickly scope error tracking data for a specific user profile.
-Read the docs
 Sync company data from PostHog to HubSpot
 October 17, 2025
 · Workflows Team
 · CDP
-You can now automatically create or update HubSpot company records based on PostHog group properties. The new
-HubSpot company sync destination
-allows you to push updates so your CRM stays in sync.
-Read the docs
 RBAC for web analytics
 October 17, 2025
 · Web Analytics Team
 · Web analytics
-Web analytics now supports role-based access control (RBAC), so you can define who can view reports, change settings, or access sensitive data. Keep your analytics secure and your permissions precise.
-Read the docs
 Retention rolling time windows
 October 17, 2025
 · Product Analytics Team
 · Product analytics
-You can now configure retention analysis using rolling 24-hour windows instead of fixed calendar intervals. This gives you precise, user-based time windows for cleaner, more accurate retention data.
-Read the docs
 Marketing analytics overview dashboard
 October 17, 2025
 · Web Analytics Team
 · Web analytics
-We’ve introduced a marketing analytics overview dashboard, giving you a high-level overview of key performance metrics. Built with new query types and improved data handling under the hood, it’s a fast and easy way to understand your marketing impact.
-Read the docs
 Limit how often users can enter a workflow
 October 17, 2025
 · Workflows Team
 · CDP
-You can now cap how many times a user can go through a workflow. Set maximum enrollments and define a reset window using new masking options to prevent over-triggering and manage your campaigns.
-Read the docs
 Expand AI generations
 October 17, 2025
 · AI Observability Team
 · AI observability
-You can now expand individual AI generations directly in the list view.
-Read the docs
 Recalculate timeseries
 October 17, 2025
 · Experiments Team
 · Experiments
-You can now trigger a full timeseries recalculation when metrics or experiment settings change. Click the
-Recalculate
-button in the experiment modal.
-Read the docs
 Summarize session replays
 October 10, 2025
 · Replay Team
 · PostHog AI
-Don’t have the time to watch all your session replays? Max can watch recordings and summarize the replays for you.
-Head to session replays and
-try asking Max
-about your sessions.
-Read the docs
 Better UI for path cleaning rules
 October 9, 2025
 · Web Analytics Team
 · Web analytics
-Path cleaning rules
-let you use regex to create aliases for paths.
-For example, with the regex:
-\/merchant\/\d+\/dashboard$
-The paths under
-https://example.com/merchant/12345/dashboard
-and
-https://example.com/merchant/6789/dashboard
-would both become
-https://example.com/merchant/dashboard
-.
-This is very helpful when analyzing user paths.
-The new UI update organizes path cleaning rules as a drag and drop, sorted table. Configure it in your
-project settings
-.
-Read the docs
 Scheduled feature flag updates
 October 9, 2025
 · Feature Flags Team
 · Feature flags
-You can now schedule changes to feature flags at a future point in time. You can schedule:
-Updates to feature flag variants
-Updates to feature flag status
-New rollout conditions
-To try scheduling, edit one of your
-feature flags
-and schedule a change under the
-Schedule tab
-.
-Read the docs
 Batch open error tracking issues
 October 9, 2025
 · Error Tracking Team
 · Error tracking
-Love hoarding tabs?
-Batch select error tracking issues and click the
-Open all
-button to open each issue in their own tab. This helps you triage issues faster and look extra productive around your coworkers .
-Read the docs
 Display heatmap data with wildcard URLs
 October 9, 2025
 · Replay Team
 · Session replay
-You can now overlay a
-Display URL
-with data from a separate
-Heatmap data URL
-. This lets you overlay one page’s heatmap over another URL.
-The heatmap data URL also supports wild cards like
-foo.bar/pages/*
-, which lets you
-aggregate
-heatmap data over many similar pages.
-Read the docs
 Configurable recalculation time
 October 9, 2025
 · Experiments Team
 · Experiments
-You can configure when your experiment calculations automatically refresh in the
-experiment settings
-. Usually, this is before the start of a work day for your team.
-Read the docs
 Custom model pricing
 October 9, 2025
 · AI Observability Team
 · AI observability
-Struck a deal with your model provider? You can now set custom per-token costs for input, output, and cache reads/writes via event properties for accurate billing analytics.
-Find details in the
-LLM analytics documentation
-.
-Read the docs
 Role-based access controls for actions
 October 9, 2025
 · Platform Features Team
 · Configuration
-You can now configure role-based access controls for actions to prevent unwanted tempering for critical action definitions.
-You can configure them
-per action
-in the right hand access control tab.
 Advanced activity logs
 October 9, 2025
 · Platform Features Team
 · Configuration
-Follow your whole team’s activity logs on
-a single page
-.
-Filterable by user, scope, activity type, date, and more.
-Export data as CSV or Excel.
-Detailed diffs for each log entry.
-Perfect for auditing and investigating incidents.
-You can find the activity log in your
-project settings
-.
 Unified role-based access control (RBAC)
 October 6, 2025
 · Platform Features Team
 · Configuration
-We currently have some features that allow users to set who can view and edit certain parts of PostHog, but such features don't exist for every product.
-We are considering overhauling our RBAC functionality, bringing it to every PostHog product, and unify the functionality across each product.
-If you have any feedback or specific feature request, please leave a comment on the linked GitHub issue!
 Tabs
 October 3, 2025
 · Platform UX Team
 · Dashboards
-PostHog now supports tabs. Multi-taskers, rejoice.
-Switch between and manage all your PostHog workflows in one place. Open dashboards, insights, SQL editors, error tracking, session replays, any of our products and features – each in their own tab.
-You can even set the “'new tab” layout as your homepage, giving you quick access to search, shortcuts, dashboard and notebook creation, recently viewed pages, and more. It’s like having a command center for your PostHog projects.
-Log in to your homepage and try out tabs.
-Read the docs
 Pass $anon_distinct_id with backend feature flag calls
 October 2, 2025
 · Feature Flags Team
 · Feature flags
-You can now pass $anon_distinct_id in person_properties when calling feature flags from backend SDKs.
-This ensures flag persistence works even if you only identify users on the backend. In practice, it means evaluations will stay consistent across frontend and backend requests – even if the frontend only has an anonymous ID.
-See our
-feature flag best practices
-for more
-Read the docs
 Unstacked bar charts
 October 2, 2025
 · Product Analytics Team
 · Product analytics
-We added support for unstacked bar charts as a graph option in PostHog insights. When comparing results to a previous period, bars are now shown side by side for quick and easy analysis.
-Read the docs
 Export session replays as GIFs or MP4s
 October 2, 2025
 · Replay Team
 · Session replay
-Love watching session replays? Don’t keep it to yourself.
-You can now export 5–15 second clips from session replays as GIFs or MP4s to share highlights with your team.
-Read the docs
 Max AI can create filters for revenue analytics
 October 2, 2025
 · PostHog AI
-Max AI can create and update filters and breakdowns in revenue analytics for you. Skip the clicks and instead ask Max to do things like:
-Break down revenue by product for the last year
-Show revenue from customers in France
-Analyze revenue for the 2025-10 customer cohort
-Open
-revenue analytics
-and click the hedgehog icon to open Max AI.
-Read the docs
 Configurable runtime evaluation
 October 2, 2025
 · Feature Flags Team
 · Feature flags
-You can now specify evaluation runtimes for feature flags, enabling you to control for environments and optimize performance. Feature flags can be scoped to:
-Server
-: Flags are only evaluated on server-side SDKs (Node.js, Python, Ruby, Go, PHP, etc.)
-Client
-: Flags are only evaluated on client-side SDKs (JavaScript, React, mobile SDKs)
-All
-(default): Flags are evaluated in both server and client environments
-Read our
-feature flag docs
-for more information on runtime evaluation.
-Read the docs
 September 2025
 2FA enforcement
 September 26, 2025
 · Platform Features Team
 · Configuration
-We’ve upgraded our account security with several two-factor authentication (2FA) features:
-Updated 2FA setup and verification
-Organization-level 2FA requirements for all members
-Session-based 2FA verification with configurable enforcement
-2FA bypass for domains with SSO enforcement
-Support for switching between organizations when 2FA is required
-Check out your PostHog
-settings
-to set up and configure 2FA.
 Ignore rageclick by CSS selector
 September 26, 2025
 · Replay Team
 · Session replay
-Sometimes rapid clicks are signs of excitement, not rage.
-You can now exclude elements from rageclick detection using the new
-.ph-no-rageclick
-class, letting you filter out false positives like clicking “next” or “previous” buttons too quickly.
-We’ve also added a
-rageclick configuration
-with a
-css_selector_ignorelist
-setting to our JS web SDK. You can use it to create a custom list of CSS selectors to exclude, giving you more control over which elements trigger rage clicks.
-Read the docs
 Meta ads as a data source
 September 26, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
-We’ve added Meta Ads as a supported data source for marketing analytics. You can pull campaign and performance data – like clicks, impressions, costs, and reported conversions – directly from Meta Ads into PostHog to create insights.
-Read the docs
 Export heatmaps to PNGs
 September 19, 2025
 · Replay Team
 · Session replay
-You can now export heatmaps to a PNG, use the built in editing tool to highlight important areas, and use them to write “I told you so” messages to your coworkers.
-We also shipped a handsome new UI. If you haven’t tried heatmaps, enable the
-feature preview
-.
-Read the docs
 Optional funnel steps
 September 19, 2025
 · Product Analytics Team
 · Product analytics
-You can mark certain funnel steps as optional. These steps will still appear in your insights, but users who skip them won't be excluded from the downstream analysis.
-Click on the three dots menu besides a
-funnel insight
-step to mark it optional.
-Read the docs
 Automatically generate GitHub issues from error tracking
 September 19, 2025
 · Error Tracking Team
 · Error tracking
-Automatically create new GitHub issues when error tracking reports a new issue using the
-alerts feature
-. You can create templates to customize the title, description, and PostHog issue ID.
-Read the docs
 Granular access control for insights and dashboards
 September 19, 2025
 · Platform Features Team
 · Configuration
-Configure who can access an insight or dashboard in the
-Access control
-panel.
-Within dashboards, users will only see data for insights they have permission to view, even if they have access to the dashboard.
 Validate joins before they’re created
 September 19, 2025
-· Managed Warehouse Team
-· Data warehouse
-When joining two tables, a test query will be performed first to surface potential issues. This validation step will:
-Surface any errors from this test query
-Warn you when key column types don’t match
-Warn you if the query doesn’t return any rows
-Errors will block you from performing joins, but not warnings.
-Read the docs
+· Warehouse Team
+· Warehouse
 Query internal PostHog data with system tables
 September 19, 2025
-· Managed Warehouse Team
-· Data warehouse
-HogQL now supports the concept of system tables. System tables let you query your own internal PostHog data, like feature flags, dashboards, insights, cohorts, and more.
-Try querying your insights in the
-SQL editor
-with
-select * from system.insights
-.
-Read the docs
+· Warehouse Team
+· Warehouse
 LinkedIn and Reddit Ads as a data source
 September 19, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
-Want to see if your ads are increasing shareholder value?
-If you run ads on
-LinkedIn
-or
-Reddit
-, you can now import them as a data source. Connect them as a source in
-data pipelines
-.
-Read the docs
 Filter issues by first seen date
 September 13, 2025
 · Error Tracking Team
 · Error tracking
-If you’re looking for an issue that started appearing on a specific date, or you’re tracking down a problem caused by a recent release, you can filter by issues first seen. This lets you filter by first seen date ranges and exact dates.
-Read the docs
 Set goals for your experiment metrics
 September 13, 2025
 · Experiments Team
 · Experiments
-Up and to the right isn’t the goal of every experiment metric. Sometimes, your goal is to see a decrease, like fewer unsubscribes or support tickets. You can now configure goals for your experiments to increase or
-decrease
-a metric.
-Read the docs
 Feature flags with variant overrides now respect condition evaluation order
 September 13, 2025
 · Feature Flags Team
 · Feature flags
-We fixed a bug where feature flags ignore
-condition evaluation order
-configured when variant overrides are present.
-This introduces a
-breaking change
-. If this change impacts one of your feature flags, we’ll send you an email.
-Before this update, your feature flag conditions with variant overrides would always evaluate before other conditions, ignoring the defined order. With this fix, the conditions will be evaluated respecting the defined order.
-To make sure your feature flags still work as expected, do the following:
-Review multi-variant flags that mix conditions with and without variant overrides.
-Check the order of conditions – after the fix, they’ll be respected exactly as configured.
-Reorder conditions if needed so that the intended audience still gets the right variant.
-This is especially important if you have complex flags with multiple conditions mixing variant overrides. If you have questions about this change, reach out to our support team.
-Read the docs
 Clip recordings to the relevant parts + export as video/gif
 September 11, 2025
 · Replay Team
 · Session replay
-Being able to turn session recordings into "Clips" and allow users to highlight the important parts of a recording with the option to export the clip as a video/gif.
-Read the docs
 Create surveys with natural language
 September 9, 2025
 · PostHog AI
-PostHog AI can now generate surveys in seconds. Just go to the Surveys product, and start telling PostHog AI what your dream survey looks like.
-Read the docs
 Leverage saved insights to answer product questions
 September 9, 2025
 · PostHog AI
-You can now add insights, dashboards, events and actions as context a conversation, so that PostHog AI can reference them to answer your questions.
-Read the docs
 Add goal lines to your insights to measure success
 September 5, 2025
 · Product analytics
-You can now add configurable goal lines to your insights, visualizing how close you are to success with a simple dotted line. It's available from the advanced options on any trend insight. Adding a goal line doesn't
-guarantee
-success, but, hey, it can't hurt.
-Read the docs
 Clickup now available as a destination
 September 5, 2025
 · Workflows Team
 · CDP
-Clickup, the project management platform, is now available as a real-time destination for your product data from the data pipelines tool. You can now send data there to enhance your project plans, for example, by adding relevant person data to an issue.
-Don't tell anyone, but now is a great time to try data pipelines out too -- we're planning a huge price cut next week!
-Read the docs
 Marketing analytics now in beta
 September 5, 2025
 · Product Analytics Team
 · Dashboards
-You can now use the new marketing analytics beta to track marketing campaigns, costs, and performance from multiple advertising platforms in your marketing analytics dashboard.
-Right now we're mainly building this for ourselves (we use PostHog for tracking all our marketing), but the vision is for it to work for other teams too. You can already breakdown marketing costs over time, dissect campaign performance, and more by connecting with your data warehouse.
-Head to
-the docs
-for more info, or just
-enable the beta
-to start trying it out yourself.
-Read the docs
 Revenue analytics is now in open beta
 September 5, 2025
 · Web analytics
-Do you like money? Do you like counting money? Do you like connecting Stripe to PostHog so you can easily calculate important financial metrics with initialized names that sound like zombie noises, such as ARR and MRR?
-Of course you do! And now you can do all that and more in our revenue analytics tool, which has just graduated to open beta so that everyone can try it out.
-Revenue analytics enables you to connect financial and payment data into PostHog so you can correlate it with other product data and analyze how things impact your bottom line.
-Check out the docs to get started!
-Read the docs
 August 2025
 Full-screen survey forms
 August 29, 2025
@@ -6587,11 +6910,11 @@ May 23, 2025
 · Surveys
 Data warehouse now loads Stripe info faster
 May 23, 2025
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Max can write SQL in the SQL editor
 May 14, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · PostHog AI
 Laudspeaker is now part of PostHog
 May 6, 2025
@@ -6649,8 +6972,8 @@ April 3, 2025
 · Groups
 SQL variables now available
 April 3, 2025
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 March 2025
 LLM observability gets OpenAI response API support (and more)
 March 28, 2025
@@ -6673,11 +6996,11 @@ March 20, 2025
 Early access now supports roadmap items
 March 20, 2025
 · Website Team
-· Uncategorized
+ · Uncategorized
 BigQuery now available as a CDP source
 March 15, 2025
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Revenue tracking enters public beta
 March 15, 2025
 · Web analytics
@@ -6759,7 +7082,6 @@ February 5, 2025
 · Product analytics
 Property filters added for batch exports
 February 5, 2025
-· Batch Exports Team
 · CDP
 Web Vitals on toolbar
 February 1, 2025
@@ -6771,7 +7093,6 @@ January 29, 2025
 · Configuration
 Key-pair authentication now available for Snowflake batch exports
 January 29, 2025
-· Batch Exports Team
 · CDP
 Independent filters on retention insights
 January 29, 2025
@@ -6842,7 +7163,6 @@ January 15, 2025
 · Experiments
 S3 batch exports can now split files by size
 January 15, 2025
-· Batch Exports Team
 · Uncategorized
 Improved detail overview for replays
 January 15, 2025
@@ -6858,7 +7178,7 @@ January 15, 2025
 · Uncategorized
 Big, fancy SQL editor now in simple, modest beta
 January 9, 2025
-· Managed Warehouse Team
+· Warehouse Team
 · HogQL
 GrowSurf made a PostHog integration
 January 9, 2025
@@ -6926,8 +7246,8 @@ November 27, 2024
 · Web analytics
 Breakdowns now available in warehouse visualizations
 November 13, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Heatmaps now support dead clicks
 November 13, 2024
 · Replay Team
@@ -6946,8 +7266,8 @@ November 7, 2024
 · Uncategorized
 Chargebee data import support
 November 5, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 October 2024
 Trigger recordings on matching URL
 October 30, 2024
@@ -7044,8 +7364,8 @@ September 24, 2024
 · Session replay
 Vitally now supported as a warehouse source
 September 24, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 React Native session replay now in beta
 September 24, 2024
 · Replay Team
@@ -7060,7 +7380,7 @@ September 17, 2024
 · Session replay
 Conditional formatting on SQL tables
 September 17, 2024
-· Managed Warehouse Team
+· Warehouse Team
 · Product analytics
 Web analytics now excludes subdomains on outbound link clicks
 September 17, 2024
@@ -7084,12 +7404,12 @@ September 3, 2024
 · Product analytics
 Azure SQL now available as a data source
 September 2, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 August 2024
 Batch exports now offer hour or minute precision
 August 21, 2024
-· Managed Warehouse Team
+· Warehouse Team
 · CDP
 Relative deltas and credible intervals added to A/B tests
 August 21, 2024
@@ -7125,11 +7445,11 @@ August 14, 2024
 · Product analytics
 Even more formatting options added to SQL insights
 August 14, 2024
-· Managed Warehouse Team
+· Warehouse Team
 · Product analytics
 Many visualization updates added for SQL insights
 August 9, 2024
-· Managed Warehouse Team
+· Warehouse Team
 · HogQL
 Multiple breakdowns now supported
 August 9, 2024
@@ -7153,8 +7473,8 @@ July 31, 2024
 · Product analytics
 Customizable sync rates added to data warehouse
 July 25, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Session attribution explorer beta
 July 24, 2024
 · Web Analytics Team
@@ -7165,16 +7485,16 @@ July 24, 2024
 · Dashboards
 Azure blob storage added as a data warehouse source
 July 24, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Data warehouse built-in logs
 July 24, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 MySQL source for data warehouse
 July 24, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Replays now 50% cheaper
 July 24, 2024
 · Replay Team
@@ -7195,8 +7515,8 @@ July 16, 2024
 · Product analytics
 Data warehouse leaves beta
 July 16, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 Confidence values added to GeoIP data
 July 9, 2024
 · Product Analytics Team
@@ -7261,8 +7581,8 @@ June 7, 2024
 · Configuration
 Data warehouse open beta
 June 5, 2024
-· Managed Warehouse Team
-· Data warehouse
+· Warehouse Team
+· Warehouse
 May 2024
 PostHog is now up to 80% cheaper
 May 31, 2024
@@ -8178,3 +8498,5 @@ Jun
 Jul
 Aug
 Sep
+Oct
+Nov

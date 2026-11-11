@@ -10,116 +10,6 @@ Search docs…
 /
 Full width
 Statsig Console
-More
-Product Docs
-Warehouse Native
-SDKs & APIs
-Management & Integrations
-SDK Quickstarts
-Statsig SDK Quickstart Guide
-Identify Users
-Create your first feature flag
-Run your first A/B test
-Log your first custom event
-SDK Concepts
-SDK Getting Started
-User (StatsigUser) Object
-Initializing SDKs
-How Evaluation Works
-SDK Debugging
-Client vs Server SDKs
-Data Privacy for Mobile
-Client SDKs
-Javascript (Web)
-HTML Snippet
-React
-Next.js
-Android
-iOS
-More Client SDKs
-Server SDKs
-Server Core Overview
-Node
-Python
-Java
-Go Core
-Early Access
-Ruby
-.NET
-More Server SDKs
-Legacy Server SDKs
-AI SDKs
-Early Access
-Node SDK
-Python SDK
-More SDK Methods
-Client Persistent Assignment
-Server Persistent Assignment
-Local Eval Adapter
-Server Data Stores / Data Adapter
-Target Apps
-Deprecation Notices
-SDK Support Policy
-Console API Reference
-Overview
-Alerts
-Audit Logs
-Autotunes
-Change Validation
-Company
-Configs
-Dashboards
-Dynamic Configs
-Environments
-Events
-Experiments
-Experiments (Warehouse Native)
-Gates
-Holdouts
-Ingestions
-Keys
-Layers
-Logs
-Metrics
-Metrics (Warehouse Native)
-Overrides
-Param Store
-Project
-Prompts
-Release Pipelines
-Reports
-Roles
-Segments
-Settings
-Tags
-Target App
-Unit ID Types
-Usage
-Users
-Warehouse Connections
-Statsig CLI
-Overview
-Commands
-Example: Gate Management
-HTTP API Reference
-HTTP API
-Autotune
-Dynamic Configs
-Events
-Feature Gates
-Layers
-On this page
-When to use Statsig SDKs
-1. Targeting and assignment
-2. Logging events
-Choose between client and server SDKs
-Available SDKs
-Client-side SDKs
-Server-side SDKs
-How to install your SDK
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 SDKs & APIs
 /
 SDK Getting Started
@@ -208,11 +98,25 @@ Select your SDK
 Follow the installation guide
 : Each SDK has an installation guide that walks you through setup.
 Start experimenting
-: After you integrate the SDK, set up feature flags, run experiments, and log events for analysis.
+: After you integrate the SDK, set up feature flags, run experiments, and log events for analysis. To run an experiment, follow the
+experiment process overview
+, which lists each step from sizing the experiment through making a decision.
 If you have questions or need help with installation, reach out in the
 Slack community
 .
 Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+When to use Statsig SDKs
+1. Targeting and assignment
+2. Logging events
+Choose between client and server SDKs
+Available SDKs
+Client-side SDKs
+Server-side SDKs
+How to install your SDK
 Copy Markdown
 On this page
 When to use Statsig SDKs
@@ -223,3 +127,103 @@ Available SDKs
 Client-side SDKs
 Server-side SDKs
 How to install your SDK
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+SDK Quickstarts
+Statsig SDK Quickstart Guide
+Identify Users
+Create your first feature flag
+Run your first A/B test
+Log your first custom event
+SDK Concepts
+SDK Getting Started
+User (StatsigUser) Object
+Initializing SDKs
+How Evaluation Works
+SDK Debugging
+Client vs Server SDKs
+Data Privacy for Mobile
+Client SDKs
+Javascript (Web)
+HTML Snippet
+React
+Next.js
+Android
+iOS
+More Client SDKs
+Server SDKs
+Server Core Overview
+Node
+Python
+Java
+Go Core
+Ruby
+.NET
+More Server SDKs
+Legacy Server SDKs
+AI SDKs
+Node SDK
+Python SDK
+More SDK Methods
+Client Persistent Assignment
+Server Persistent Assignment
+Local Eval Adapter
+Server Data Stores / Data Adapter
+Target Apps
+Deprecation Notices
+SDK Support Policy
+Forward Proxy user enrichment
+Early Access
+Console API Reference
+Overview
+Alerts
+Audit Logs
+Autotunes
+Change Validation
+Company
+Configs
+Dashboards
+Dynamic Configs
+Environments
+Evals
+Events
+Experiments
+Experiments (Warehouse Native)
+Exports
+Gates
+Holdouts
+Ingestions
+Keys
+Layers
+Logs
+Metrics
+Metrics (Warehouse Native)
+Overrides
+Param Store
+Project
+Prompts
+Release Pipelines
+Reports
+Roles
+Segments
+Settings
+Tags
+Target App
+Unit ID Types
+Usage
+Users
+Warehouse Connections
+Statsig CLI
+Overview
+Commands
+Example: Gate Management
+HTTP API Reference
+HTTP API
+Autotune
+Dynamic Configs
+Events
+Feature Gates
+Layers

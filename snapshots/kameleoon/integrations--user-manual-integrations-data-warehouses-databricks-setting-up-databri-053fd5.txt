@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,7 +26,10 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Integrations
 Integrations overview
 As a destination
@@ -42,14 +46,6 @@ Use Databricks as a source — pulling events for reporting
 Snowflake
 Target your imported audiences
 English
-On this page
-Considerations
-Prerequisites
-Setup
-1. Create a personal access token (PAT)
-2. Create kameleoon_configuration schema
-3. Grant read access to your data
-4. Authorize Kameleoon IPs (Optional)
 Databricks
 Setting up Databricks
 Copy page
@@ -58,28 +54,22 @@ Configure a Databricks service principal, personal access token, and schema perm
 Copy page
 Copy page
 Data warehouse integrations are available as a premium add-on for Kameleoon’s Web Experimentation and Feature Experimentation module. For more information, contact your Customer Success Manager.
-This article explains how to set up a connection to your Databricks SQL warehouse. It contains several configuration steps that you must perform in your Databricks account. Kameleoon recommends that your Databricks administrator performs these steps.
+Steps 1 to 3 happen in your Databricks account, and step 4 happens in Kameleoon. Kameleoon recommends that your Databricks administrator performs steps 1 to 3.
 With the Databricks integration, you can simplify data retrieval for targeted campaigns and personalized user experiences.
 Key benefits:
-Allows precise data collection, enhancing audience targeting for personalized campaigns tailored to specific audience needs.
-Powering goal metrics to improve real-time performance tracking.
-​
-Considerations
-Keep these things in mind when using this integration:
-Data volume:
-Keep in mind the volume of data you plan to interact with, as it can affect query performance and costs.
-Query complexity:
-Complex queries may require more time and resources to execute. Optimize your queries for efficiency.
-Data privacy:
-Ensure compliance with data privacy regulations when handling user data within your warehouse.
-Access control:
-Implement proper access controls to limit who can configure and use the integration within your organization.
-Data schema:
-Maintain a clear and consistent data schema to facilitate data retrieval and analysis.
-Monitoring:
-Regularly monitor your data warehouse usage to manage costs and performance effectively.
-Documentation:
-Maintain documentation for queries, configurations, and integration processes to facilitate collaboration and troubleshooting.
+Lets you target visitors with audiences built from your Databricks tables.
+Lets you use Databricks conversions as goal metrics in experiment results.
+Sync frequency:
+Databricks as a source:
+Each Data Ingestion Task runs at the
+Frequency
+you set when you create it, for example per day. Kameleoon polls goal queries every hour and merges the collected conversions into experiment results once per day.
+See Data Ingestion Tasks
+.
+Databricks as a destination:
+Kameleoon sends exposure events to Databricks whenever one of your experiments exposes a visitor.
+See how the destination works
+.
 ​
 Prerequisites
 To configure this integration, you need the following information:
@@ -104,16 +94,47 @@ Id}
 7776000
 --comment
 "Token for Kameleoon service principal"
+You create the token in your Databricks workspace and then enter it in Kameleoon. For the full procedure, see the Databricks documentation on
+personal access tokens
+.
 ​
-2. Create kameleoon_configuration schema
+2. Create Kameleoon schemas and grant Unity Catalog access
+For both source and destination, give the service principal
+CAN USE
+on the Databricks SQL warehouse in its
+Permissions
+settings. For Unity Catalog, grant access to each catalog Kameleoon uses:
+GRANT
+USE
+CATALOG
+ON
+CATALOG
+my_catalog
+TO
+`{Service Principal Application Id}`
+;
+Your Databricks administrator creates the schemas below. Kameleoon’s service principal doesn’t need
+CREATE SCHEMA
+on the catalog.
 When using Databricks as a source
-Create a dedicated schema for Kameleoon polling configuration within the catalog that contains the data that Kameleoon will be polling. You must name this schema
+For audience ingestion, create a dedicated schema in the catalog that contains the data Kameleoon polls. Name it
 kameleoon_configuration
-. You must also grant read and write access to the Service Principal that Kameleoon will be using. Here are some example commands:
+. Kameleoon creates, reads, and removes audience snapshot tables in this schema. Grant the service principal access to this schema only. It doesn’t need write access to your source tables.
 CREATE
 SCHEMA
 my_catalog
 .kameleoon_configuration;
+GRANT
+USE
+SCHEMA
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_configuration
+TO
+`{Service Principal Application Id}`
+;
 GRANT
 CREATE
 TABLE
@@ -136,10 +157,26 @@ TO
 `{Service Principal Application Id}`
 ;
 When using Databricks as a destination:
+Create a separate schema for Kameleoon event tables. Kameleoon creates tables and inserts events there.
+MODIFY
+also requires
+SELECT
+on the tables.
 CREATE
 SCHEMA
 my_catalog
-.kameleoon_configuration;
+.kameleoon_events;
+GRANT
+USE
+SCHEMA
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_events
+TO
+`{Service Principal Application Id}`
+;
 GRANT
 CREATE
 TABLE
@@ -151,57 +188,13 @@ kameleoon_events
 TO
 `{Service Principal Application Id}`
 ;
-As in the preceding commands, you will need to replace
-{Service Principal Application Id}
-with your service principal’s application ID.
-You can omit the
-my_catalog
-prefix when running queries directly in the necessary catalog.
-​
-3. Grant read access to your data
-Kameleoon must have access to the tables you wish to read from or write into. To grant this access, run commands such as:
-Using Databricks as a source:
+The service principal owns the tables it creates, so you don’t need an extra table grant for them. If event tables already exist under another owner, grant
+SELECT
+and
+MODIFY
+on those tables. The following schema-level grants also cover current and future event tables in this dedicated schema:
 GRANT
 SELECT
-ON
-my_catalog
-.
-user_data
-.user_account_table
-TO
-`{Service Principal Application Id}`
-;
-//
-will
-grant
-read
-rights
-on
-a specific
-table
-GRANT
-SELECT
-ON
-SCHEMA
-my_catalog
-.
-user_data
-TO
-`{Service Principal Application Id}`
-;
-//
-will
-grant
-read
-rights
-on
-all tables
-within
-a
-schema
-Using Databricks as a destination:
-GRANT
-INSERT
 ON
 SCHEMA
 my_catalog
@@ -210,32 +203,122 @@ kameleoon_events
 TO
 `{Service Principal Application Id}`
 ;
-//
-will
-grant
-write rights
-on
-all tables
-within
-a
-schema
-Note: You can omit the
+GRANT
+MODIFY
+ON
+SCHEMA
+my_catalog
+.
+kameleoon_events
+TO
+`{Service Principal Application Id}`
+;
+Replace
+{Service Principal Application Id}
+in these commands with your service principal’s application ID.
+You can omit the
 my_catalog
 prefix when running queries directly in the necessary catalog.
 ​
-4. Authorize Kameleoon IPs (Optional)
-If you implement
+3. Grant read access to your data
+For Databricks as a source, grant access only to the customer tables or views used by your audience and goal queries. First grant usage on their schema:
+GRANT
+USE
+SCHEMA
+ON
+SCHEMA
+my_catalog
+.
+user_data
+TO
+`{Service Principal Application Id}`
+;
+Then grant
+SELECT
+on each required table or view. Alternatively, grant it on the schema if Kameleoon should read all current and future tables and views in it:
+GRANT
+SELECT
+ON
+TABLE
+my_catalog
+.
+user_data
+.user_account_table
+TO
+`{Service Principal Application Id}`
+;
+For a view, use:
+GRANT
+SELECT
+ON
+VIEW
+my_catalog
+.
+user_data
+.my_view
+TO
+`{Service Principal Application Id}`
+;
+GRANT
+SELECT
+ON
+SCHEMA
+my_catalog
+.
+user_data
+TO
+`{Service Principal Application Id}`
+;
+The destination doesn’t need
+SELECT
+or
+MODIFY
+on your customer-data schema. If you use goals without audience ingestion, Kameleoon only reads your query results and doesn’t create audience snapshots.
+​
+4. Enter your credentials in Kameleoon
+In the Databricks integration settings of your project in Kameleoon, complete the
+Credentials
+fields:
+Databricks Server Hostname
+: the server hostname of your Databricks workspace.
+HTTP Path
+: the path to your Databricks SQL warehouse.
+Personal Access Token (PAT)
+: the token you created in step 1.
+PAT expiry timestamp in milliseconds (optional)
+: the expiry time of the token, as a Unix timestamp in milliseconds. This field is optional, and you enter the value yourself.
+To replace a token, enter the new token in the
+Personal Access Token (PAT)
+field and click
+Confirm
+.
+After you save, Kameleoon shows the credentials in a summary card. The card displays the hostname, HTTP path and PAT expiry, but not the token.
+After the credentials are saved, you can send experiment exposure events to Databricks. See
+Use Databricks as a destination
+.
+​
+Network and security
+Kameleoon authenticates to Databricks with a personal access token. Kameleoon supports IP allowlisting. If you implement
 IP access lists
 , contact your Kameleoon account manager, so they can provide you with the list of Kameleoon IPs you must authorize.
+​
+Data region
+Kameleoon stores the data from this integration in the Kameleoon data region of your account, which is the US or the EU.
 Was this page helpful?
 Yes
 No
-Use BigQuery as a source — pulling events for reporting
-Previous
-Use Databricks as a destination
-Next
 ⌘
 I
+On this page
+Back to top
+Prerequisites
+Setup
+1. Create a personal access token (PAT)
+2. Create Kameleoon schemas and grant Unity Catalog access
+3. Grant read access to your data
+4. Enter your credentials in Kameleoon
+Network and security
+Data region
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

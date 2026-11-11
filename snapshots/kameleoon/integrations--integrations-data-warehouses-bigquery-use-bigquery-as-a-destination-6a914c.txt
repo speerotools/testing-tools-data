@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,7 +26,10 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Integrations
 Integrations overview
 As a destination
@@ -42,9 +46,6 @@ Databricks
 Snowflake
 Target your imported audiences
 English
-On this page
-Activate BigQuery as a destination
-What “Use BigQuery as a destination” does
 Bigquery
 Use BigQuery as a destination
 Copy page
@@ -53,94 +54,69 @@ Send Kameleoon experiment exposure events to Google BigQuery to centralize campa
 Copy page
 Copy page
 Data warehouse integrations are available as a premium add-on for the Web Experimentation and Feature Experimentation module. For more information, contact your Customer Success Manager.
-With the BigQuery integration, you can simplify data retrieval for targeted campaigns and personalized user experiences.
-Key benefits:
-Allows precise data collection, enhancing audience targeting for personalized campaigns tailored to specific audience needs and preferences.
-Set up Data Ingestion Tasks and extract data from BigQuery.
+If your analysts query experiment data in BigQuery, the exposure data in Kameleoon sits apart from the rest of your warehouse. When you turn on
+Use BigQuery as a destination
+, Kameleoon writes each experiment exposure event to a table in your BigQuery project, so your analysts can work with it there. Complete
+Setting up BigQuery
+first, because that page creates the dataset and grants the service account access that this feature uses.
 ​
 Activate BigQuery as a destination
-Once you have
-enabled the BigQuery integration for your project
-, you can activate
+To turn the feature on, activate
 Use BigQuery as a destination
-to send the results of your Kameleoon campaigns to BigQuery.
-To do this, follow these steps:
-Within the selected project’s configuration, you’ll find a checkbox labeled
+in your project.
+Follow these steps:
+In the selected project’s configuration, check the checkbox labeled
 Use BigQuery as a destination
-. Check this checkbox to enable the feature.
-You’ll need to provide the BigQuery project ID associated with your Google BigQuery project. Enter the project ID in the
+to enable the feature.
+Enter the BigQuery project ID for your Google BigQuery project in the
 BigQuery project ID
-.
+field.
 Click
 Validate
 to save your changes.
+When you save the configuration, Kameleoon writes each exposure event to the
+kameleoon_experiment_event
+table.
 ​
 What “Use BigQuery as a destination” does
-Enabling
-Use BigQuery as a destination
-sends all Kameleoon experiment exposure events into Google BigQuery. Kameleoon saves the events in the “kameleoon” dataset you previously created, with write access for the Kameleoon service account, in a table called
+Kameleoon writes each experiment exposure event to a table named
 kameleoon_experiment_event
-. The SQL schema of this table is the following:
+in your “kameleoon” dataset, using the write access you granted the Kameleoon service account. The table uses this SQL schema:
 CREATE
 TABLE
 kameleoon_experiment_event
 (
-nonce
-BIGINT
+nonce INT64
 PRIMARY KEY
-,
-//
-unique
-identifier of the
-event
+NOT
+ENFORCED,
+-- unique identifier of the event
 timestamp
-BIGINT
-,
-//
-timestamp
-in
-millis of the
-event
-visitor_code
-VARCHAR
-(
-255
-),
-//
-Kameleoon visitor identifier
-custom_visitor_id
-VARCHAR
-(
-255
-),
-//
-Visitor identifier used
-by
-your company
-experiment_id
-BIGINT
-,
-//
-Kameleoon id of the experiment
-variation_id
-BIGINT
-//
-Kameleoon id of the variation
+INT64,
+-- timestamp in millis of the event
+visitor_code STRING,
+-- Kameleoon visitor identifier
+custom_visitor_id STRING,
+-- Visitor identifier used by your company
+experiment_id INT64,
+-- Kameleoon id of the experiment
+variation_id INT64
+-- Kameleoon id of the variation
 );
 Kameleoon reads the
 custom_visitor_id
 from the
-Cross Device Reconciliation custom data
+cross-device history reconciliation custom data
 , if you set it.
 Was this page helpful?
 Yes
 No
-Setting up BigQuery
-Previous
-Use BigQuery as a source — audience targeting
-Next
 ⌘
 I
+On this page
+Back to top
+Activate BigQuery as a destination
+What “Use BigQuery as a destination” does
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

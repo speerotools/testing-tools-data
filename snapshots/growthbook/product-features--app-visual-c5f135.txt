@@ -1,0 +1,201 @@
+# https://docs.growthbook.io/app/visual
+AI Visual Editor - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+New:
+See what we've shipped lately on our
+Product Updates
+page.
+GrowthBook Documentation
+home page
+Docs
+SDKs
+API
+Search...
+⌘
+K
+Product Updates
+Github
+Open App
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+AI Visual Editor
+AI Visual Editor
+Overview
+How it works
+Quickstart
+Command Palette
+Feature Flags
+Data & Metrics
+Experimentation
+Creating Experiments
+Experiment Configuration
+Experiment Templates
+Customizable Pre-Launch Checklists
+Power Analysis
+Importing External Experiments
+Delivery Methods
+Feature Flag Experiments
+AI Visual Editor
+Install and connect
+AI mode
+Manual mode
+Images
+Figma & image import
+Running on your site
+Preview and QA
+Troubleshooting
+URL Redirects
+Analysis & Decisions
+Make Changes to Experiments
+Understanding Experiment Results
+Experiment Time Series
+Experiment Decision Framework
+Experiment Dashboards
+Dimensions
+Advanced & Statistics
+Bandits
+Contextual Bandits
+BETA
+Interleaving
+BETA
+Holdouts
+Insights
+Product Analytics
+NEW
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Guides for Agents
+Experimentation
+Delivery Methods
+AI Visual Editor
+AI Visual Editor
+Copy page
+Copy page
+Design, preview, and run A/B tests on your live site from a Chrome side panel — with AI-generated variations or a point-and-click editor, no code required.
+Copy page
+Copy page
+GrowthBook’s AI Visual Editor is a no-code way to build and launch experiments on your website. Describe the change you want in natural language, review what the editor proposes, and ship a real A/B test without writing code or waiting on a deploy.
+Install the extension
+Get the
+GrowthBook AI Visual Editor
+from the Chrome Web Store, then
+connect it to your account
+.
+The AI Visual Editor is a
+Chrome side-panel extension
+. You open it next to your site, pick the page you want to test, and make changes two ways:
+AI mode
+— describe the change in plain language (“make the hero headline shorter and the CTA green”) and the editor proposes the edits for you to preview and accept.
+Manual mode
+— point and click to select any element and edit its content, typography, layout, background, classes, and more with structured controls.
+Figma & image import
+— turn a Figma frame or a mockup image into a high-fidelity, testable component the editor builds and places on the page for you.
+To actually render your variations on your live site, a developer integrates one of GrowthBook’s front-end SDKs — the
+Script Tag
+,
+JavaScript
+, or
+ReactJS
+SDK — or renders them on a CDN with an
+Edge SDK
+. See
+Running on your site
+.
+​
+Benefits
+Prompt-driven editing
+: Describe changes to text, images, buttons, spacing, and more in
+AI mode
+. Pin an element when you want the AI to focus on a specific spot on the page.
+Run experiments without dedicated eng time
+: Draft and QA variations in the browser; your site still needs the GrowthBook SDK for production delivery. See
+Running on your site
+.
+Manual precision
+: Fine-tune typography, spacing, links, and visibility with structured controls when you know exactly what you want. See
+Manual mode
+.
+Transparent by design
+: Preview links, a debug panel, and warnings when you edit a live experiment. See
+Preview and QA
+.
+Join the AI Visual Editor community on Slack
+Connect with the GrowthBook team and other users.
+Join the AI Visual Editor channel on Slack
+.
+​
+Quick start
+Install and connect
+the Chrome extension (~30 seconds).
+Open the side panel on the page you want to test and start editing in
+AI mode
+or
+Manual mode
+.
+Set up the SDK
+on your site so variations render for real users.
+Hitting a snag? See
+Troubleshooting
+.
+​
+Requirements
+Your app must be a
+front-end web app in a browser
+(not native mobile or desktop). For other platforms, use
+Feature Flags
+in code.
+Client-side rendering can interfere with visual changes
+Heavily client-side-rendered apps (React, Vue, Svelte) may flicker or fight the SDK when the framework re-renders the DOM. See
+Running on your site → Strategy 4
+for details and alternatives.
+​
+SDK setup
+Visual experiments only render if your SDK Connection has
+Include Visual Experiments
+enabled and the correct SDK is installed on your site. See
+Running on your site
+for the full setup.
+Was this page helpful?
+Yes
+No
+Feature Flag Experiments
+Previous
+Install and Connect the GrowthBook AI Visual Editor
+Next
+⌘
+I
+On this page
+Back to top
+Benefits
+Quick start
+Requirements
+SDK setup
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

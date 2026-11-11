@@ -10,112 +10,6 @@ Search docs…
 /
 Full width
 Statsig Console
-More
-Product Docs
-Warehouse Native
-SDKs & APIs
-Management & Integrations
-SDK Quickstarts
-Statsig SDK Quickstart Guide
-Identify Users
-Create your first feature flag
-Run your first A/B test
-Log your first custom event
-SDK Concepts
-SDK Getting Started
-User (StatsigUser) Object
-Initializing SDKs
-How Evaluation Works
-SDK Debugging
-Client vs Server SDKs
-Data Privacy for Mobile
-Client SDKs
-Javascript (Web)
-HTML Snippet
-React
-Next.js
-Android
-iOS
-More Client SDKs
-Server SDKs
-Server Core Overview
-Node
-Python
-Java
-Go Core
-Early Access
-Ruby
-.NET
-More Server SDKs
-Legacy Server SDKs
-AI SDKs
-Early Access
-Node SDK
-Python SDK
-More SDK Methods
-Client Persistent Assignment
-Server Persistent Assignment
-Local Eval Adapter
-Server Data Stores / Data Adapter
-Target Apps
-Deprecation Notices
-SDK Support Policy
-Console API Reference
-Overview
-Alerts
-Audit Logs
-Autotunes
-Change Validation
-Company
-Configs
-Dashboards
-Dynamic Configs
-Environments
-Events
-Experiments
-Experiments (Warehouse Native)
-Gates
-Holdouts
-Ingestions
-Keys
-Layers
-Logs
-Metrics
-Metrics (Warehouse Native)
-Overrides
-Param Store
-Project
-Prompts
-Release Pipelines
-Reports
-Roles
-Segments
-Settings
-Tags
-Target App
-Unit ID Types
-Usage
-Users
-Warehouse Connections
-Statsig CLI
-Overview
-Commands
-Example: Gate Management
-HTTP API Reference
-HTTP API
-Autotune
-Dynamic Configs
-Events
-Feature Gates
-Layers
-On this page
-Base URL
-Authorization
-Rate limiting
-API version
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 SDKs & APIs
 /
 Console API Overview
@@ -166,9 +60,117 @@ Pass the version in the
 STATSIG-API-VERSION
 field in the header. This field is optional but becomes required in the future.
 Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Base URL
+Authorization
+Rate limiting
+API version
 Copy Markdown
 On this page
 Base URL
 Authorization
 Rate limiting
 API version
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+SDK Quickstarts
+Statsig SDK Quickstart Guide
+Identify Users
+Create your first feature flag
+Run your first A/B test
+Log your first custom event
+SDK Concepts
+SDK Getting Started
+User (StatsigUser) Object
+Initializing SDKs
+How Evaluation Works
+SDK Debugging
+Client vs Server SDKs
+Data Privacy for Mobile
+Client SDKs
+Javascript (Web)
+HTML Snippet
+React
+Next.js
+Android
+iOS
+More Client SDKs
+Server SDKs
+Server Core Overview
+Node
+Python
+Java
+Go Core
+Ruby
+.NET
+More Server SDKs
+Legacy Server SDKs
+AI SDKs
+Node SDK
+Python SDK
+More SDK Methods
+Client Persistent Assignment
+Server Persistent Assignment
+Local Eval Adapter
+Server Data Stores / Data Adapter
+Target Apps
+Deprecation Notices
+SDK Support Policy
+Forward Proxy user enrichment
+Early Access
+Console API Reference
+Overview
+Alerts
+Audit Logs
+Autotunes
+Change Validation
+Company
+Configs
+Dashboards
+Dynamic Configs
+Environments
+Evals
+Events
+Experiments
+Experiments (Warehouse Native)
+Exports
+Gates
+Holdouts
+Ingestions
+Keys
+Layers
+Logs
+Metrics
+Metrics (Warehouse Native)
+Overrides
+Param Store
+Project
+Prompts
+Release Pipelines
+Reports
+Roles
+Segments
+Settings
+Tags
+Target App
+Unit ID Types
+Usage
+Users
+Warehouse Connections
+Statsig CLI
+Overview
+Commands
+Example: Gate Management
+HTTP API Reference
+HTTP API
+Autotune
+Dynamic Configs
+Events
+Feature Gates
+Layers

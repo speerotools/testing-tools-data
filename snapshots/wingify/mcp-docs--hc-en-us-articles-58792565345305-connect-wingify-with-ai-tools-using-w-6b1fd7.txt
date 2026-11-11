@@ -7,12 +7,13 @@ Wingz
 MCP Integrations
 Articles in this section
 Connect Wingify with AI Tools using Wingify’s MCP Server
+Configure Wingify Connector in Claude
 Connect Wingify MCP Server with Gemini Enterprise
-Configure a Custom Wingify Connector in Claude
+Configure Wingify Plugin in ChatGPT
 Connect Wingify with AI Tools using Wingify’s MCP Server
 Jash Unadkat
 Updated
-September 17, 2026 10:26
+October 22, 2026 12:43
 Share:
 Facebook
 Twitter
@@ -22,13 +23,7 @@ This article covers the following:
 Overview
 Wingify MCP Authentication
 Supported MCP Tools
-Connect Wingify MCP Server with ChatGPT
-Step 1: Enable Developer Mode in ChatGPT
-Step 2: Configure Custom Wingify Connector in ChatGPT
-Step 3: Authorize Wingify Access
-Step 4: Verify the Connection
-Step 5: Query Your Wingify Data Using Natural Language
-FAQs
+Supported MCP Integrations
 Overview
 The Wingify Model Context Protocol (MCP) server is a secure connection layer that enables external AI tools, such as ChatGPT, n8n, or other automation systems, to connect with your Wingify account. It allows these tools to directly access and analyze your live Wingify campaign data and insights using simple natural-language queries. Think of it as a secure digital bridge that turns Wingify data into an AI-native app, eliminating the need to manually export reports and copy/paste data for external analysis or workflow automation.
 Integrating third-party AI tools like ChatGPT with the Wingify MCP server offers the following benefits:
@@ -121,129 +116,11 @@ Modify settings of an existing campaign.
 Update Wingify Campaign Status
 Write
 Start, pause, or stop a campaign.
-Connect Wingify MCP Server with ChatGPT
-Follow the steps below to integrate the Wingify MCP server with your ChatGPT account:
-Step 1: Enable Developer Mode in ChatGPT
-Note
-: Use the official ChatGPT website to follow the steps below.
-To add Wingify as a custom connector within ChatGPT:
-Log in to your ChatGPT account.
-Go to
-Settings
->
-Apps
->
-Advanced settings
->
-Developer mode.
-Toggle on the
-Developer mode.
-This allows you to add and configure custom connectors.
-Note:
-Developer Mode allows unverified connectors that could modify or erase data. Only proceed with MCP servers from developers you trust.
-Step 2: Configure Custom Wingify Connector in ChatGPT
-To configure Wingify as a custom connector within ChatGPT:
-Log in to your ChatGPT account.
-Go to
-Settings
->
-Apps.
-Click
-Create app
-to add a new custom connector.
-Enter the following configuration details for the Wingify connector:
-Name:
-Enter a name that helps you recognize the connector (
-Wingify
-in this case).
-Description:
-Provide a short description that describes the capabilities of the connector
-MCP server URL:
-Set the MCP server URL as
-https://mcp.wingify.ai/mcp
-Authentication:
-Set Authentication to
-OAuth.
-Select the
-I understand and want to continue
-checkbox.
-Click
-Create.
-Step 3: Authorize Wingify Access
-After you click
-Create
-, follow these steps on the Wingify authorization screen:
-From the
-Select an account
-dropdown, choose the Wingify account you want to connect.
-From the
-Permission level
-dropdown, choose the permissions to grant to ChatGPT.
-You can select from the following permissions to manage how end users interact with Wingify data through the MCP server.
-Permission
-Description
-Browse
-Read-only access to Wingify data, session recordings, heatmaps, A/B tests, Split URL, and Multivariate tests. Cannot create or edit.
-Design
-Enables creation of new A/B or Split URL tests via the MCP.
-Publish / Admin
-Provides full control to create, edit, start, pause, or delete A/B tests and Split URL tests.
-Select the acknowledgment check box.
-Click
-Approve
-.
-Step 4: Verify the Connection
-Once you complete authorization, follow these steps to verify if your Wingify app connection is successful:
-Go to ChatGPT
-Settings
->
-Apps
-Select the Wingify app and verify the following details:
-Connected on
-: the current date
-URL
-: https://mcp.wingify.ai/mcp
-Authorization supported / used:
-OAuth
-Scroll down to the
-Actions
-section to verify that the full list of available Wingify tools appears.
-Step 5: Query Your Wingify Data Using Natural Language
-Once the Wingify connector is configured, activate it before asking campaign-related queries. To activate the connector:
-On your ChatGPT account dashboard, navigate to the
-Ask anything
-field and click
-+.
-Select
-Wingify
-from the connectors list to activate it.
-Alternatively
-,
-type
-@Wingify
-before your question to direct it to Wingify.
-Start asking your questions in natural language. To answer your questions, ChatGPT calls the Wingify MCP server to fetch the relevant data. If the query is successful, the system displays a
-Calling tool
-message in the ChatGPT interface before the results appear. This indicates that the connector is working successfully.
-For best results, make your questions as specific as possible. Include campaign names, page URLs, and date ranges (for example,
-share the progress of campaigns that were published
-in the last 7 days
-).
-FAQs
-What is the difference between the Wingify MCP Server and Wingz?
-The Wingify MCP server is a headless backend system that enables external tools, such as ChatGPT, to connect to your Wingify data. Wingz is a self-contained, in-app assistant that helps you with tasks
-inside
-the Wingify platform.
-Can I use the Wingify MCP Server to create a new campaign and manage its lifecycle?
-Yes
-,
-currently, the Wingify MCP server allows third-party AI tools to create and manage only A/B tests and Split URL campaigns.
-Can I connect Wingify MCP with Microsoft Copilot?
-The standard version of Microsoft Copilot does not currently support MCP connections. However, Microsoft Copilot
-Studio
-users can connect to Wingify MCP. For more information, see
-Introducing MCP in Copilot Studio
-.
+Supported MCP Integrations
+Wingify supports MCP integration with the following third-party AI tools:
+Claude
+Gemini
+ChatGPT
 Need more help?
 For further assistance or more information, contact
 Wingify Support

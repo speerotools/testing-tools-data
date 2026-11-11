@@ -10,89 +10,14 @@ Search docs…
 /
 Full width
 Statsig Console
-More
 Product Docs
-Warehouse Native
-SDKs & APIs
-Management & Integrations
-Get Started
-Start Here
-Statsig Platform Overview
-Support Options
-Experiments
-Overview
-Create & Implement
-Configure Stats Engine
-End An Experiment
-Read Results
-Read Results
-User Properties
-Metric Drill-Down
-Export
-Best Practices
-Reconciling Results Between Experimentation Platforms
-Pulse FAQs
-Participating Units
+/
 Further Analysis
-Custom "Explore" Queries
-Aggregated Impact
-Topline Impact
-Meta-Analysis
-Differential Impact Detection
-Interaction Detection
-Layers
-Holdouts
-Feature Management
-Feature Flags
-Dynamic Config
-Segments
-Release Pipelines
-Analytics
-Product Analytics
-Infra Analytics
-Alerts
-Web Analytics
-AI Experimentation
-Overview
-Early Access
-Setup
-Early Access
-Prompts & Graders
-Offline Evals
-Online Evals
-Early Access
-Other Features
-Low-Code Experiments
-Session Replay
-Statsig + AI
-Control Panel
-Early Access
-Data & Metrics
-Tutorials
-Parameterizing your Code
-Device-Level Experiments
-Using Custom ID Types
-Environment-based Evaluation
-Ingesting Open Telemetry Data
-Testing your Gates/Experiments
-Migration Guides
-FAQ
-On this page
-When overlapping experiments need interaction detection
-How to use interaction detection
-Methodology
-Intuition
-Directionality
-Magnitude
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
-Product Docs
 /
 Interaction Detection
 Interaction Detection
 Learn how to detect interactions between overlapping experiments and understand their impact.
-Interaction Detection measures whether two overlapping experiments change each other's effect on a metric. It compares experiment B's lift among users in experiment A's test group with B's lift among users in A's control group. A statistically significant difference between those two lifts is the interaction effect. Run Interaction Detection when two experiments share traffic and you want to know whether rolling out both produces the sum of their individual effects. To prevent overlap instead of measuring it, put the experiments in the same
+Interaction Detection measures whether two overlapping experiments change each other's effect on a metric. It calculates experiment B's lift separately for users in experiment A's test group and for users in A's control group. A statistically significant difference between those two lifts is the interaction effect. Run Interaction Detection when two experiments share traffic and you want to know whether rolling out both produces the sum of their individual effects. To prevent overlap instead of measuring it, put the experiments in the same
 Layer
 .
 When overlapping experiments need interaction detection
@@ -102,21 +27,27 @@ and
 published research
 . If you expect two experiments to conflict, make them mutually exclusive with
 Layers
-(also called Universes) instead of running them together.
+(also called Universes).
 How to use interaction detection
-To start an Interaction Detection analysis, go to
-Experiment > Results > Explore > Interaction Effect Detection
+To start an Interaction Detection analysis, open the experiment's
+Explore
+tab, select
+Create
+, then set
+Query Type
+to
+Interaction Effect Detection
 .
-Select a second experiment and the metrics to analyze. Statsig shows a summary with three sections:
+Select a second experiment and the metrics you want to analyze. Statsig shows a summary with three sections:
 By Groups
-: unit counts for each combination of group assignments across the two experiments.
+: Unit counts for each combination of group assignments across the two experiments.
 Metric Summary Results
-: estimated intervals of the difference in metric lift.
+: Estimated intervals of the difference in metric lift.
 Overlapping Unique Users
-: an overview of the traffic intersection between the two experiments.
+: An overview of the traffic intersection between the two experiments.
 For more examples, refer to the Statsig blog post
 Interaction effect detection
-.
+on interaction effect detection.
 Methodology
 Assume two experiments, A and B, each with a control group and a test group. The interaction effect measures the overlapping impact on users exposed to both experiment A and experiment B.
 Δ
@@ -780,7 +711,7 @@ B
 ​
 answers: "If a user is in A's control group, how much does changing B from control to test change the metric?"
 The difference between those two values shows whether the effect of B depends on whether the user is in A's test or control group. That difference is the interaction effect.
-If the result isn't statistically significant, the effect of B is the same regardless of which group the user is in for A (no significant interaction). If it's statistically significant, the effect of B depends on A's assignment (significant interaction).
+If the result isn't statistically significant, the effect of B is the same regardless of which group the user is in for A. If it's statistically significant, the effect of B depends on A's assignment (significant interaction).
 Directionality
 The sign of the interaction effect (positive or negative) indicates whether the two treatments amplify or dampen each other's effects.
 Statistically positive interaction
@@ -799,6 +730,16 @@ When an experiment includes more than two groups, Statsig evaluates interaction 
 Select Comparison
 dropdown in the Interaction Effect Detection results.
 Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+When overlapping experiments need interaction detection
+How to use interaction detection
+Methodology
+Intuition
+Directionality
+Magnitude
 Copy Markdown
 On this page
 When overlapping experiments need interaction detection
@@ -807,3 +748,70 @@ Methodology
 Intuition
 Directionality
 Magnitude
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Read Results
+Read Results
+Best Practices
+Explore Results
+Further Analysis
+Aggregated Impact
+Topline Impact
+Meta-Analysis
+Differential Impact Detection
+Interaction Detection
+Troubleshooting
+End An Experiment
+Experiment Types
+Layers
+Holdouts
+Configure Stats Engine
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Smart Gate
+Early Access
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+Agent Experimentation
+Overview
+Setup
+AI Configs
+Graders
+Datasets
+Evals
+Playground
+Offline Evals
+Online Evals
+AI Traces
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ

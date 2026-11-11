@@ -10,69 +10,6 @@ Search docs…
 /
 Full width
 Statsig Console
-More
-Product Docs
-Warehouse Native
-SDKs & APIs
-Management & Integrations
-Get Started
-Start Here
-Statsig Platform Overview
-Support Options
-Experiments
-Overview
-Create & Implement
-Configure Stats Engine
-End An Experiment
-Read Results
-Layers
-Holdouts
-Feature Management
-Feature Flags
-Dynamic Config
-Segments
-Release Pipelines
-Analytics
-Product Analytics
-Infra Analytics
-Alerts
-Web Analytics
-AI Experimentation
-Overview
-Early Access
-Setup
-Early Access
-Prompts & Graders
-Offline Evals
-Online Evals
-Early Access
-Other Features
-Low-Code Experiments
-Session Replay
-Statsig + AI
-Control Panel
-Early Access
-Data & Metrics
-Tutorials
-Parameterizing your Code
-Device-Level Experiments
-Using Custom ID Types
-Environment-based Evaluation
-Ingesting Open Telemetry Data
-Testing your Gates/Experiments
-Migration Guides
-FAQ
-On this page
-Quick links
-Key features
-Explore SDKs
-Client-side SDKs
-Server-side SDKs
-Integrations
-Learning resources
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Product Docs
 /
 Statsig Overview
@@ -93,6 +30,9 @@ Experimentation
 Run A/B tests and experiments to optimize your product decisions.
 Product Analytics
 Analyze user behavior and product metrics with powerful analytics tools.
+To run an experiment end to end, go to
+Experiment process overview
+, which lists each step from sizing the experiment through making a decision.
 You can use any of these features on top of your own data warehouse through
 Warehouse Native
 with no extract, transform, and load (ETL). Or, you can host your data in
@@ -186,6 +126,17 @@ Use Cases
 Customer Stories
 to learn why customers love Statsig and how they use it to power their product development.
 Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Quick links
+Key features
+Explore SDKs
+Client-side SDKs
+Server-side SDKs
+Integrations
+Learning resources
 Copy Markdown
 On this page
 Quick links
@@ -195,3 +146,60 @@ Client-side SDKs
 Server-side SDKs
 Integrations
 Learning resources
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Read Results
+End An Experiment
+Experiment Types
+Layers
+Holdouts
+Configure Stats Engine
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Smart Gate
+Early Access
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+Agent Experimentation
+Overview
+Setup
+AI Configs
+Graders
+Datasets
+Evals
+Playground
+Offline Evals
+Online Evals
+AI Traces
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ

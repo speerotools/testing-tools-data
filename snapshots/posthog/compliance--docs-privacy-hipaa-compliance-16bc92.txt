@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -88,6 +88,9 @@ Does PostHog offer a BAA for PostHog Cloud?
 Yes. If you're interested in a BAA for HIPAA compliance, please
 contact us with information about your requirements
 .
+For a real example, read how
+Juno
+, an AI health assistant, uses PostHog to debug and improve its app while user data stays masked and private.
 How to set PostHog up for HIPAA compliance
 Important
 We strongly recommend teams which need HIPAA compliance use PostHog Cloud under a BAA, rather than the legacy self-hosted product or Hobby versions.

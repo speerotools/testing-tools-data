@@ -1,0 +1,213 @@
+# https://docs.growthbook.io/integrations/ai-agents/agent-skills/experiments
+Install the Agent Skills plugin - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+New:
+See what we've shipped lately on our
+Product Updates
+page.
+GrowthBook Documentation
+home page
+Docs
+SDKs
+API
+Search...
+⌘
+K
+Product Updates
+Github
+Open App
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+AI Agents
+Install the Agent Skills plugin
+Overview
+How it works
+Quickstart
+Command Palette
+Feature Flags
+Data & Metrics
+Experimentation
+Insights
+Product Analytics
+NEW
+Self-Hosting
+API
+Webhooks
+Integrations
+AI Agents
+Setup Wizard
+MCP Server
+Agent Skills plugin
+API Keys for Agents
+Vercel
+Official GrowthBook for Framer Plugin
+Slack
+Discord integration
+Datadog Integration
+GitHub (Metric Definitions)
+dbt (Semantic Layer)
+DevTools Browser Extension
+VS Code Extension
+GrowthBook Command Line Interface (CLI)
+Microsoft Clarity (Heatmaps)
+Jira
+AI Integrations
+LLM Tracing (Langfuse, Phoenix)
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Guides for Agents
+Integrations
+AI Agents
+Install the Agent Skills plugin
+Copy page
+Copy page
+Install GrowthBook’s Agent Skills plugin in Claude Code, Cursor, or other agents that can run shell commands. Same playbooks as the MCP server, no MCP process.
+Copy page
+Copy page
+The
+MCP Server
+and this plugin load the
+same playbooks
+. Use this page only if you want those playbooks installed locally — slash commands, no MCP process. On GrowthBook Cloud, most hosts should use the
+hosted MCP endpoint
+instead.
+The plugin works in agents that follow the
+Agent Skills standard
+and can run shell commands: Claude Code, Cursor, Codex, and others. It calls the
+GrowthBook REST API
+through a small bundled helper.
+Open source
+The playbooks live at
+github.com/growthbook/skills
+. The MCP server bundles that same repo at build time.
+​
+Prerequisites
+A GrowthBook account:
+GrowthBook Cloud
+or a self-hosted instance.
+A Personal Access Token (PAT):
+create one at
+Account
+→
+Personal Access Tokens
+. The token is tied to your GrowthBook user, so flags and experiments the plugin creates are attributed to you.
+Node.js 18+:
+check with
+node -v
+. Many agents already run on it.
+​
+Install
+Claude Code
+Cursor, Codex, and others
+Add the marketplace, then install the plugin:
+/plugin marketplace add growthbook/skills
+/plugin install growthbook@growthbook-skills
+Install with the
+Agent Skills
+CLI:
+npx
+skills
+add
+growthbook/skills
+Restart your agent if the skills don’t appear right away.
+​
+Configure credentials
+Run the setup skill and follow the prompts:
+/growthbook:gb-setup
+It asks for your PAT or API key (and, for self-hosted, your API URL), validates them against the live API, and writes
+~/.config/growthbook/.env
+with
+chmod 600
+. Every other skill reads that file automatically.
+Prefer environment variables?
+The helper reads environment variables first and only falls back to the file. Handy for CI:
+export
+GB_API_KEY
+=<
+your-key
+>
+# required: PAT or Secret Key
+export
+GB_API_URL
+=
+https
+://
+api
+.
+your-host
+# self-hosted only
+Then ask your agent to list your feature flags. If the credentials are wrong, the error points you back to
+/growthbook:gb-setup
+.
+​
+What you can do
+The plugin covers four domains. Describe the task in natural language, or use a
+/growthbook:…
+slash command in Claude Code. The agent picks the matching workflow.
+Domain
+Covers
+Feature flags
+Create, target, ramp, review, publish, search, and clean up flags
+Experiments
+Brainstorm, design, launch, analyze, and stop A/B tests
+Analytics
+Search the metric catalog, chart product data, build dashboards
+Setup
+gb-setup
+— configure and validate your API credentials
+The live workflow list is in the
+skills README
+. MCP users get the same list from
+growthbook_list_skills
+.
+Guardrails are in the playbooks, not in this page: draft → review → publish, two-step deletes, and read-only workflows that never write. See
+Publishing & approval flows
+.
+​
+Next steps
+Set up the MCP Server
+if your host can’t run a shell, or you want Cloud OAuth
+MCP vs the plugin
+Skills source on GitHub
+Join our community Slack for additional help, tips, and announcements
+Was this page helpful?
+Yes
+No
+Official GrowthBook MCP Server
+Previous
+API Keys for Agents
+Next
+⌘
+I
+On this page
+Back to top
+Prerequisites
+Install
+Configure credentials
+What you can do
+Next steps
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

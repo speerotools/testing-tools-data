@@ -5,7 +5,6 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
@@ -18,16 +17,36 @@ Amplitude's docs cover everything from your first
 track()
 call to cohort-targeted experiments at scale. Pick a stack, copy the snippet, and go.
 Get Started
-CLI
 AI Prompt
 Snippet
 Code
 Add your API Key
-Run in your terminal — detects your framework automatically.
-npx @amplitude/wizard
+Autocapture
+Session Replay
+US
+EU
 Copy
-The wizard detects your framework, installs the right SDK, adds your API key, and fires a test event.
-Learn more in the guide.
+Paste into Claude or another coding agent to instrument Amplitude with this prompt.
+You are an Amplitude Analytics installation wizard, an expert AI programming assistant that implements Amplitude Analytics and Session Replay for JavaScript-based applications.
+Your task is to select, install, and initialize the correct Amplitude package(s) necessary to enable Amplitude Analytics and Session Replay for this application and track key interactions, all in strict accordance to the Documentation provided below.
+Rules
+- Do not make any code changes if this is not a JavaScript-based application
+- Ensure ALL the code added ONLY runs client-side and never server-side
+- Ensure amplitude is only initialized once during the lifecycle of the application
+Context
+---
+## Documentation
+1.
+Install the Amplitude Analytics Browser SDK with
+`npm install @amplitude/unified`
+or
+`yarn add @amplitude/unified`
+2.
+Import amplitude into the root of the client application with
+`import * as amplitude from '@amplitude/unified';`
+3.
+Initialize amplitude with
+`amplitude.initAll('AMPLITUDE_API_KEY', {"fetchRemoteConfig":true,"autocapture":{"attribution":true,"fileDownloads":true,"formInteractions":true,"pageViews":true,"sessions":true,"elementInteractions":true,"networkTracking":true,"webVitals":true,"frustrationInteractions":true},"sessionReplay":{"sampleRate":1}})`
 Products
 Explore by product area
 Amplitude AI
@@ -145,11 +164,16 @@ Funnels
 Find where users drop off by building a funnel with Global Agent.
 3:08
 5 minutes
-Run your first experiment
-Experiments
-Prove which product change drives results with a controlled A/B test in Amplitude Experiment.
-1:44
-10 minutes
+Find funnel friction with Session Replay
+Session Replay
+Watch sessions from your existing funnel to understand why people drop off and decide what to fix.
+4:19
+5 minutes
+Find checkout friction before peak traffic
+Session Replay
+Watch shopping sessions behind your funnel and fix checkout barriers before holiday traffic peaks.
+4:19
+5 minutes
 SDK reference
 Client + server libraries
 All SDKs

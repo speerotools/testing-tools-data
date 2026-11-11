@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,14 +26,15 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Home
 User manual overview
 Get started
-Web Experimentation installation guide
-Feature Experimentation installation guide
-Using the homepage
-Embed a saved view on your homepage
+Installation
+Kameleoon homepage
 Experimentation
 Web Experimentation
 Feature Experimentation
@@ -72,10 +74,11 @@ Product targeting
 Social proofing
 Tracking counters in the Widget Studio
 Account and team management
-Security and authentication
+Profile and authentication
 Users and teams
 Organization settings
 Project management
+Create a project
 Manage your projects
 Consent management
 Kai
@@ -84,26 +87,11 @@ AI opportunity detection
 Get started
 Audiences — Key metrics
 Audiences — Segment analysis
-AI Predictive Targeting
-AI Predictive Targeting
-Enable AI Predictive Targeting on a goal
-Use AI Predictive Targeting in a segment
-FAQ
-FAQ
+AI Targeting
+AI Targeting
+Enable AI Targeting on a goal
+Use AI Targeting in a segment
 English
-On this page
-What’s Winsorization?
-Why Winsorization matters in A/B testing
-Risks and good practices with Winsorization
-How to implement Winsorization in Kameleoon
-1. Create a custom goal
-2. Set limits
-3. Read your results
-Example of impact
-Technical considerations
-Scope of thresholds
-Recompute schedule
-Behavior over time
 Statistical methods
 Winsorization
 Copy page
@@ -189,12 +177,22 @@ If you need a stable, permanent record of the exact value Kameleoon reported at 
 Was this page helpful?
 Yes
 No
-CUPED
-Previous
-Sample Ratio Mismatch
-Next
 ⌘
 I
+On this page
+Back to top
+What’s Winsorization?
+Why Winsorization matters in A/B testing
+Risks and good practices with Winsorization
+How to implement Winsorization in Kameleoon
+1. Create a custom goal
+2. Set limits
+3. Read your results
+Example of impact
+Technical considerations
+Scope of thresholds
+Recompute schedule
+Behavior over time
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

@@ -5,123 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Overview
-Global Agent
-Global Agent Overview
-Agent modes
-Agent Skills
-Adding Context
-MCP Connectors
-Slack, Teams, and Discord
-Specialized Agents
-Overview
-Dashboard Agent
-Session Replay Agent
-Customer Feedback Agent
-Website Conversion Agent
-Custom Agents
-Agent Analytics
-Overview
-Quickstart
-Set up Agent Analytics
-Render agent artifacts
-Analyze agent results
-Reference
-FAQ and troubleshooting
-Amplitude MCP
-Amplitude MCP Server
-Common tasks
-Guides and Surveys MCP tools
-Data warehouse MCP tools
-Clients
-Docs MCP server
-AI Visibility
-AI Visibility
-Send AI Visibility data to Amplitude
-Optimize for LLMs
-Appearing in LLM searches
-Recommendations
-Sentiment
-FAQ
-Settings and Data
-AI Settings and Controls
-AI Context
-AI Feedback
-Privacy and Security
-Prepare data for AI
-Language
-🇺🇸
-English
-On this page
-What the MCP is for
-Choose an interface for AI agents
-AI Context and reference files
-Tracking plan changes
-Read tools
-Write tools
-Delete and restore events and properties
-Remote server
-Regions
-Available tools and capabilities
-Progressive tool discovery
-Example progressive discovery flow
-Connect Amplitude MCP to your AI client
-Query examples
-Analytics and charts
-Dashboards and notebooks
-Experiments and feature flags
-Session Replay and debugging
-Feedback and opportunities
-AI agent analytics
-Taxonomy and tracking plan
-Guides and Surveys
-Users, cohorts, and metrics
-Data warehouse
-Typical workflows
-Analysis workflow
-Creation and editing workflow
-Plugins
-Install the plugin
-Available skills
-Security and compliance
-Data access
-Privacy considerations
-Admin controls
-Scope MCP access with roles
-Troubleshooting
-Common issues
-Getting help
-Send feedback
-Technical specifications
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Amplitude AI
 /
 Amplitude MCP Server
@@ -132,14 +19,18 @@ Amplitude CLI
 instead. It's a scriptable command-line client for the same platform primitives.
 Any existing Amplitude customer can use Amplitude MCP from an MCP-capable client such as Cursor, Claude Code, ChatGPT, Lovable, or Kiro.
 The
-official MCP servers registry
-on GitHub lists the Amplitude MCP server. You can also find MCP integration guides and examples in
+official MCP Registry
+lists the Amplitude MCP server as
+com.amplitude/mcp-server
+. You can also find MCP integration guides and examples in
 Anthropic's Claude documentation
 , the
 MCP quickstart resources
 , and
 Cursor's MCP documentation
 .
+Plan availability
+MCP service account authentication is available on the Enterprise plan.
 What the MCP is for
 Use the Amplitude MCP for these jobs:
 Search and read Amplitude content: charts, dashboards, notebooks, experiments, cohorts, events, and properties.
@@ -183,18 +74,17 @@ Anything the interfaces above don't cover
 Browser UI
 Use the Amplitude UI for the remaining gaps.
 AI Context and reference files
-When an MCP client calls
 get_amplitude_context
-with a project ID, the response includes your organization and project markdown AI Context text from
+returns your markdown AI Context text from
 AI Controls
-. Call this tool at the start of a session so the client applies your metric definitions, terminology, and business rules to later queries.
+. Call it with no project ID to get organization AI Context, then call it with a project ID to get that project's AI Context. Call this tool at the start of a session so the client applies your metric definitions, terminology, and business rules to later queries.
 AI Context has two configuration surfaces:
 Text instructions
-: Markdown you enter in AI Controls. Amplitude MCP returns org and project text when you call
+: Markdown you enter in AI Controls. Amplitude MCP returns org text when you call
 get_amplitude_context
-with a project ID.
+with no project ID, and project text when you call it with a project ID.
 Uploaded reference files
-: Documents and spreadsheets you upload in AI Controls. These supplement in-product Agents with detailed reference material. Amplitude MCP tools don't return uploaded file contents. Put rules and definitions the client needs in text instructions instead.
+: Documents and spreadsheets you upload in AI Controls. These supplement in-product Agents with detailed reference material. Amplitude MCP tools return uploaded file titles and matching search snippets, not full file contents. Put rules and definitions the client needs in text instructions instead.
 For repo-local instrumentation conventions, add an optional
 .amplitude/instrumentation-agent-context.md
 file at your repository root.
@@ -207,13 +97,26 @@ AI Context
 and
 AI Controls
 .
+Tracking standards
+Amplitude MCP clients read your tracking standard from two places:
+Naming conventions in
+Data > Settings
+set event and property casing and, for events, word order. Clients read them with
+get_amp_taxonomy
+(
+action: workspace
+). When AI Context text describes a different naming rule, clients follow the settings and tell you about the conflict.
+AI Context text holds the rules the naming settings can't express, such as description wording, categories, required properties, allowed values, and prefixes.
+Set casing in
+Data > Settings
+, and keep the remaining rules in AI Context text instructions rather than an uploaded file.
 Tracking plan changes
 Amplitude MCP exposes tools to read and write your project's tracking plan taxonomy. Create, update, delete, and restore calls require the
 Use MCP (write)
 RBAC action. Changes to events and properties also require the Update Tracking Plan permission in Amplitude Data. Changes to custom events require the Manage Data Enrichments permission instead.
 Read tools
 get_amp_taxonomy
-reads events, properties, the changes on a branch, and the activity history of who changed what.
+reads events, properties, the changes on a branch, the activity history of who changed what, and workspace context for a Data project or portfolio: governance settings, environments, and tracking-plan branches.
 get_transformations
 and
 get_group_types
@@ -223,7 +126,7 @@ manage_amp_events
 : Create, update, delete, and restore events, custom events, and labeled events, and add ingested unexpected events to the plan.
 manage_amp_properties
 : Create event, user, and group properties, and update, delete, and restore event and user properties.
-manage_amp_taxonomy
+manage_amp_branches
 : Run the branch workflow to create, update, merge, delete, review, and refresh tracking-plan branches.
 These tools modify tracking plan definitions in Amplitude Data. They don't send production event data. For the UI-based workflow, refer to
 Create a tracking plan
@@ -259,22 +162,20 @@ United States Server (Default)
 https://mcp.amplitude.com/mcp
 EU Residency Server
 https://mcp.eu.amplitude.com/mcp
-Use the Standard Server URL unless your Amplitude data resides in the EU region.
+Use the US server URL unless your Amplitude data resides in the EU region.
 Available tools and capabilities
 The Amplitude MCP provides comprehensive access to your analytics through these tools:
-The tools listed here are the full Amplitude MCP server catalog, available to Cursor, Claude, and most other clients. ChatGPT connects through a curated subset of approximately 25 tools due to a token cap on connected tool schemas. The ChatGPT subset doesn't include session replay tools or progressive discovery tools. To use session replay or progressive discovery, connect with Cursor or Claude instead.
+The tools listed here are the full Amplitude MCP server catalog, available to Cursor, Claude, and most other clients. ChatGPT connects through a curated subset of these tools. To reach the wider catalog from ChatGPT, add
+?discovery=progressive
+to the MCP URL.
 Available tools
 Progressive tool discovery
 If you connect to Amplitude MCP manually and want to reduce token spend, add
 ?discovery=progressive
 to the MCP URL to enable progressive tool discovery.
-Progressive discovery tools (
-list_tool_categories
-,
-get_category_tools
-,
-describe_tool
-) aren't part of the ChatGPT tool subset. Progressive discovery requires Cursor, Claude, or another client that receives the full tool catalog.
+Progressive discovery works in ChatGPT too. By default, ChatGPT receives a curated tool subset. With
+?discovery=progressive
+, it can discover tools beyond that subset.
 Progressive URLs (copy/paste)
 :
 US:
@@ -324,7 +225,91 @@ query_amplitude_data
 describe_tool
 and then call it with valid parameters."
 Connect Amplitude MCP to your AI client
-Select your client to open its setup guide.
+Every client connects to the same remote server over streamable HTTP and signs in with OAuth, so you don't manage API keys. Setup has three steps: add the server URL for your
+region
+to the client's configuration, sign in to Amplitude, and then
+verify the connection
+. You can also start the connection from Amplitude at
+Settings > Connections > MCP
+.
+The examples use the US server. If your Amplitude data resides in the EU, replace
+https://mcp.amplitude.com/mcp
+with
+https://mcp.eu.amplitude.com/mcp
+.
+Cursor
+Claude Code
+Codex
+Cursor reads MCP servers from
+.cursor/mcp.json
+in a project, which you can commit to share the server with your team, or from
+~/.cursor/mcp.json
+for every project on your machine. Add the Amplitude server to either file:
+json
+Copy
+{
+"mcpServers"
+: {
+"Amplitude"
+: {
+"url"
+:
+"https://mcp.amplitude.com/mcp"
+}
+}
+}
+Open
+Cursor Settings > Tools & Integrations
+and select
+Connect
+or
+Needs login
+next to Amplitude to complete the OAuth flow.
+To skip editing the file, use the one-click install link for the
+US server
+or the
+EU server
+.
+Authentication and regions
+OAuth sign-in
+: The client opens an Amplitude sign-in page the first time it connects. Sign in to only one Amplitude organization during the flow. Being signed in to several organizations can cause the flow to fail.
+Permissions
+: Amplitude MCP acts as the user who signs in. It can read and change only the projects that user can already access, with that user's role in each project. Amplitude grants no extra access.
+Organization and project
+: The organization comes from your sign-in. Most tools need a project ID, so ask your client which projects you can access and name one in your prompts.
+Region
+: The server URL must match the region where your Amplitude data resides. If it doesn't, sign-in fails or the client finds none of your projects. To switch regions, replace the URL in your configuration and sign in again.
+Service accounts and enterprise auth
+: For non-interactive agents, use
+service accounts
+. To manage Claude access through your identity provider, use
+enterprise-managed auth
+.
+Verify the connection
+A configuration file only tells the client where the server is. The connection works only after you complete OAuth and a tool call returns data. Check both:
+Check the client's connection status.
+Cursor
+: In
+Cursor Settings > Tools & Integrations
+, Amplitude shows a green status indicator and a list of tools.
+Needs login
+means OAuth isn't complete.
+Claude Code
+: Run
+/mcp
+in a session or
+claude mcp list
+in your shell. Amplitude shows as connected. A status that says the server needs authentication or approval means it isn't connected yet.
+Codex
+: Run
+codex mcp list
+to confirm the configuration includes Amplitude. This command doesn't call the server, so continue to the next step.
+Run a test prompt.
+Ask the client "What Amplitude projects can I access?" A list of your projects confirms the connection. If the client doesn't call an Amplitude tool, or returns an authentication error, go to
+Troubleshooting
+.
+Setup guides for other clients
+Each guide covers one client, including the clients above.
 Claude Code
 Terminal-based AI workflow with Claude Code CLI.
 Cursor
@@ -343,8 +328,8 @@ Figma Make
 Figma Make connector for design workflows.
 Kiro
 Kiro IDE with user or workspace scope.
-Codex CLI
-OpenAI Codex CLI terminal workflow.
+Codex
+OpenAI Codex CLI and IDE extension.
 ⌁
 Other clients
 Any MCP-compatible client that supports HTTP and OAuth.
@@ -378,6 +363,7 @@ AI agent analytics
 How are our AI agents performing? Show quality, cost, and error rates.
 What topics are users asking the AI assistant about?
 Investigate the low-quality AI sessions from yesterday. What went wrong?
+Build a dataset from last week's failed agent sessions and run the refund-policy evaluator against it.
 Taxonomy and tracking plan
 What branches exist in my project?
 Create a branch called "q3-cleanup" for tracking plan changes.
@@ -557,10 +543,6 @@ Skill
 Description
 taxonomy
 Generate, validate, audit, and score event tracking plans, naming conventions, and data governance best practices.
-what-would-lenny-do
-Answer product strategy questions by searching Lenny Rachitsky's archive (requires
-lennysdata
-MCP server).
 Skills activate automatically based on your request. For example, asking "Why did this metric spike last week?" triggers the
 analyze-chart
 skill, and asking "Summarize this dashboard for my exec meeting" triggers
@@ -572,14 +554,18 @@ The MCP server uses your existing Amplitude user permissions and access controls
 You can only access Amplitude projects and data that you already have permission to view in your regular Amplitude account.
 You receive no additional data access beyond your current Amplitude account privileges.
 OAuth authentication ensures secure connection between the MCP server and your Amplitude account.
+Enterprise-managed auth
+connects Claude through your identity provider and skips the consent screen.
 Privacy considerations
 The AI service you're using (for example, Claude or Gemini) processes your Amplitude data. Review your organization's policies regarding AI-powered data analysis tools and consider compliance requirements (General Data Protection Regulation, California Consumer Privacy Act).
 Third parties (for example, Anthropic) develop and maintain the AI models used with this MCP server. Amplitude isn't responsible for model outputs, including hallucinations, inaccuracies, or errors resulting from model behavior, even if such outputs use your Amplitude data.
 Admin controls
 Amplitude enables MCP server access by default for all users in your organization. Organization administrators can opt out or restrict access if needed:
-Navigate to
-Settings > Content Access > MCP
-in your Amplitude organization settings.
+In your Amplitude organization settings, go to
+Settings > Content Access
+and open the
+Model Context Protocol (MCP)
+tab.
 Use the content access controls to allow or block the Amplitude MCP server.
 Access restrictions apply to all MCP clients across all users in your organization.
 MCP access controls are an admin-only setting. Individual users can't override organization-level MCP restrictions.
@@ -604,7 +590,7 @@ succeeds for a project where your role grants read access and fails for a projec
 Applies to everyone
 : these actions override admin status. If a role doesn't grant the action, MCP calls fail even for an org administrator.
 Enabled by default
-: existing roles already include these actions. Every role grants read access, and the Member, Manager, and Admin roles also grant write access, so nothing changes until an admin adjusts a role.
+: existing roles already include these actions. The Viewer role grants read access, and the Member, Manager, and Admin roles grant read and write access, so nothing changes until an admin adjusts a role.
 To scope MCP access with a role:
 In
 Org Settings > Role Management
@@ -660,13 +646,28 @@ feedback form
 .
 Technical specifications
 Transport Type: Streaming HTTP (Remote).
-Authentication: OAuth 2.0 with Amplitude.
+Authentication: OAuth 2.0 with Amplitude, or
+enterprise-managed auth
+for Claude through your identity provider.
+Related
+:
+Common Amplitude MCP tasks
+·
+MCP Connectors for Global Agent
+·
+Agent Analytics FAQ and troubleshooting
+·
+Global Agent Overview
 Was this helpful?
-Copy Markdown
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
 On this page
+Plan availability
 What the MCP is for
 Choose an interface for AI agents
 AI Context and reference files
+Tracking standards
 Tracking plan changes
 Read tools
 Write tools
@@ -677,6 +678,9 @@ Available tools and capabilities
 Progressive tool discovery
 Example progressive discovery flow
 Connect Amplitude MCP to your AI client
+Authentication and regions
+Verify the connection
+Setup guides for other clients
 Query examples
 Analytics and charts
 Dashboards and notebooks
@@ -704,6 +708,123 @@ Common issues
 Getting help
 Send feedback
 Technical specifications
+Copy Markdown
+On this page
+Plan availability
+What the MCP is for
+Choose an interface for AI agents
+AI Context and reference files
+Tracking standards
+Tracking plan changes
+Read tools
+Write tools
+Delete and restore events and properties
+Remote server
+Regions
+Available tools and capabilities
+Progressive tool discovery
+Example progressive discovery flow
+Connect Amplitude MCP to your AI client
+Authentication and regions
+Verify the connection
+Setup guides for other clients
+Query examples
+Analytics and charts
+Dashboards and notebooks
+Experiments and feature flags
+Session Replay and debugging
+Feedback and opportunities
+AI agent analytics
+Taxonomy and tracking plan
+Guides and Surveys
+Users, cohorts, and metrics
+Data warehouse
+Typical workflows
+Analysis workflow
+Creation and editing workflow
+Plugins
+Install the plugin
+Available skills
+Security and compliance
+Data access
+Privacy considerations
+Admin controls
+Scope MCP access with roles
+Troubleshooting
+Common issues
+Getting help
+Send feedback
+Technical specifications
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Overview
+Global Agent
+Global Agent Overview
+Agent modes
+Agent Skills
+Adding Context
+MCP Connectors
+Slack, Teams, and Discord
+Specialized Agents
+Overview
+Dashboard Agent
+Session Replay Agent
+Customer Feedback Agent
+Website Conversion Agent
+Custom Agents
+Agent Analytics
+Overview
+Quickstart
+Set up Agent Analytics
+Render agent artifacts
+Analyze agent results
+Evaluators
+Reference
+FAQ and troubleshooting
+Amplitude MCP
+Amplitude MCP Server
+Enterprise-managed auth
+Service accounts
+Common tasks
+Guides and Surveys MCP
+Data warehouse MCP tools
+Clients
+Docs MCP server
+AI Visibility
+AI Visibility
+Send AI Visibility data to Amplitude
+Optimize for LLMs
+Appearing in LLM searches
+Recommendations
+Sentiment
+FAQ
+Settings and Data
+AI Settings and Controls
+AI Context
+AI Feedback
+Privacy and Security
+Prepare data for AI
+Language
+🇺🇸
+English
 Platform
 AI Agents
 AI Visibility

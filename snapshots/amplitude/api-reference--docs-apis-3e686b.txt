@@ -5,89 +5,67 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Overview
-Authentication
-API Authentication
-Keys and Tokens
-Analytics APIs
-AI Feedback API
-Attribution API
-Batch Event Upload API
-Behavioral Cohorts API
-Channel Classifier API
-Chart Annotations API
-Dashboard REST API
-DSAR API
-Event streaming metrics
-Export API
-Group Identify API
-HTTP API v2
-Identify API
-Lookup Table API
-Lookup Table API 2
-Releases API
-Taxonomy API
-User Mapping (Aliasing) API
-User Privacy API
-User Privacy API v2
-User Profile API
-Experiment APIs
-Experiment Evaluation API
-Management API
-Guides and Surveys APIs
-Localization API
-Session Replay APIs
-Session Replay API
-Administrative APIs
-Audit Logs API
-SCIM API
-User Management API
-Developer API
-Overview
-Analytics
-Auth
-Destinations
-Feature Flags
-Projects
-Skills
-Taxonomy Event Properties
-Taxonomy Events
-Taxonomy User Properties
-Language
-🇺🇸
-English
 For AI agents: a documentation index is available at
 /docs/llms.txt
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 APIs
 APIs
 Use Amplitude APIs to send and receive information and extend Amplitude.
+API hosts and regions
+Use the base URL for your project's or organization's data residency. API families use different hosts;
+https://analytics.amplitude.com
+is the Analytics web app, not an API host. The linked API reference gives the full path and any endpoint-specific exceptions.
+API family
+Default base URL
+EU base URL
+HTTP V2
+and
+Batch Event Upload
+https://api2.amplitude.com
+https://api.eu.amplitude.com
+Attribution API
+https://api.amplitude.com
+https://api.eu.amplitude.com
+Dashboard REST
+,
+Export
+,
+Taxonomy
+, and
+Behavioral Cohorts
+https://amplitude.com
+https://analytics.eu.amplitude.com
+Lookup Table API V2
+https://data-api.amplitude.com
+https://data-api.eu.amplitude.com
+SCIM API
+and
+User Management API
+https://core.amplitude.com
+https://core.eu.amplitude.com
+User Privacy API V2
+https://privacy.amplitude.com
+https://privacy.eu.amplitude.com
+Experiment Management API
+https://experiment.amplitude.com
+https://experiment.eu.amplitude.com
+Experiment Evaluation API
+https://api.lab.amplitude.com/v1/
+https://api.lab.eu.amplitude.com/v1/
+Agent Analytics Export API
+https://developer-api.amplitude.com
+https://developer-api.eu.amplitude.com
+Guides and Surveys API
+https://app.amplitude.com/a/
+https://app.eu.amplitude.com/a/
+User Profile API
+https://profile-api.amplitude.com
+Not supported
+For an API that isn't listed here, use the base URL in its own reference page.
 Analytics APIs
 Attribution API
 Send attribution campaign events (identified by idfa, idfv, or adid) that contain attribution information.
@@ -157,6 +135,86 @@ SCIM API
 Provision and manage users and groups. This API uses the System for Cross-domain Identity Management (SCIM) 2.0 Standard.
 User Management API
 Automate organization users, roles, project role assignments, group membership, and effective access.
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Overview
+Authentication
+API Authentication
+Keys and Tokens
+Analytics APIs
+AI Feedback API
+Attribution API
+Batch Event Upload API
+Behavioral Cohorts API
+Channel Classifier API
+Chart Annotations API
+Dashboard REST API
+DSAR API
+Event streaming metrics
+Export API
+Group Identify API
+HTTP API v2
+Identify API
+Lookup Table API
+Lookup Table API 2
+Releases API
+Taxonomy API
+User Mapping (Aliasing) API
+User Privacy API
+User Privacy API v2
+User Profile API
+Agent Analytics APIs
+Export API
+Experiment APIs
+Experiment Evaluation API
+Management API
+Guides and Surveys APIs
+Localization API
+Session Replay APIs
+Session Replay API
+Administrative APIs
+Audit Logs API
+SCIM API
+User Management API
+Developer API
+Overview
+Agent Analytics
+Analytics
+Auth
+Destinations
+Feature Flags
+Guides
+Heatmaps
+MCP Analytics
+Projects
+Skills
+Surveys
+Taxonomy Event Properties
+Taxonomy Events
+Taxonomy User Properties
+Themes
+Zoning
+Language
+🇺🇸
+English
 Platform
 AI Agents
 AI Visibility

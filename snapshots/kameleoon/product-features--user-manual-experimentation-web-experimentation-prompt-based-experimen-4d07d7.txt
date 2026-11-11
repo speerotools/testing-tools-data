@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,14 +26,15 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Home
 User manual overview
 Get started
-Web Experimentation installation guide
-Feature Experimentation installation guide
-Using the homepage
-Embed a saved view on your homepage
+Installation
+Kameleoon homepage
 Experimentation
 Web Experimentation
 Prompt-based experiments
@@ -42,7 +44,6 @@ PBX Ideate
 What powers PBX Ideate?
 Generate test ideas
 Freemium & Plans
-Prompt-based experimentation FAQ
 Graphic-based experiments
 Code-based experiments
 Configure and launch
@@ -80,10 +81,11 @@ Product targeting
 Social proofing
 Tracking counters in the Widget Studio
 Account and team management
-Security and authentication
+Profile and authentication
 Users and teams
 Organization settings
 Project management
+Create a project
 Manage your projects
 Consent management
 Kai
@@ -92,24 +94,11 @@ AI opportunity detection
 Get started
 Audiences — Key metrics
 Audiences — Segment analysis
-AI Predictive Targeting
-AI Predictive Targeting
-Enable AI Predictive Targeting on a goal
-Use AI Predictive Targeting in a segment
-FAQ
-FAQ
+AI Targeting
+AI Targeting
+Enable AI Targeting on a goal
+Use AI Targeting in a segment
 English
-On this page
-Overview
-How it works
-Analysis and problem detection
-Root cause diagnosis
-Lever Framework
-Cost
-Trust
-Usability
-Comprehension
-Motivation
 PBX Ideate
 What powers PBX Ideate?
 Copy page
@@ -132,10 +121,10 @@ Wireframe variations
 : Generates specific design changes (copy, layout, styling) ready for implementation.
 ​
 How it works
-The system performs the analysis in the background using a five-layer reasoning model, ensuring every suggestion is grounded in behavioral data rather than guesses.
+The system performs the analysis in the background using a five-layer reasoning model, ensuring every suggestion rests on behavioral data rather than guesses.
 ​
 Analysis and problem detection
-The system takes a snapshot of your page and maps every component (button, headers, text blocks). It then clusters observations to identify problems—high-level friction that negatively impacts user behavior.
+The system takes a snapshot of your page and maps every component (button, headers, text blocks). It then clusters observations to identify problems: high-level friction that negatively impacts user behavior.
 ​
 Root cause diagnosis
 For every problem, the system identifies a root cause that explains the psychological mechanism behind the friction. It classifies issues using the Lever Framework developed by Conversion. This framework organizes friction into five master levers:
@@ -175,7 +164,7 @@ Relative value
 Soft cost
 : The time and effort costs dedicated to getting value from the product.
 Time cost
-: The part of a soft-cost which refers to the amount of time which must be dedicated to the service to gain value from it.
+: The part of a soft-cost which refers to the amount of time you must dedicate to the service to gain value from it.
 Effort cost
 : The part of a soft-cost which refers to how “hard” using the product will actually be for a user to benefit.
 Commitment
@@ -190,7 +179,7 @@ Sub-Lever
 Legitimacy
 : A concern with whether or not the site is that of a real company, selling a real product or service.
 UI Quality
-: Cues in the overall UI presentation which suggest to a user that a site is not legitimate.
+: Cues in the overall UI presentation which suggest to a user that a site isn’t legitimate.
 Brand Recognition
 : Whether and to what extent the user is familiar with the brand the site is representing.
 Credibility
@@ -198,17 +187,17 @@ Credibility
 Authority
 : Appeals to known institutions, or authority figures as “endorsers” or a company or service, thereby “borrowing” credibility for the brand.
 Customer Service
-: How the prominence/availability of customer/prospective services and easy contact of the company are used to make the company seem competent and trustworthy.
+: How companies use the prominence/availability of customer/prospective services and easy contact to make themselves seem competent and trustworthy.
 Social Proof
-: Appeals to a broader source of endorsement among a wider variety of individuals, usually people who will be considered representative of “typical” for the user.
+: Appeals to a broader source of endorsement among a wider variety of individuals, usually people the user considers representative of “typical.”
 Reassurances
-: Information and promises about the process behind a product/service which are designed to demonstrate good intentions and competence.
+: Information and promises about the process behind a product/service which companies design to demonstrate good intentions and competence.
 Security
 : Refers to a user’s level of comfort inputting sensitive information such as payment details on a site.
 Payment Security
-: Refers to ways that sites can demonstrate to users that their information will be processed safely.
+: Refers to ways that sites can demonstrate to users that the site processes their information safely.
 Personal Information Requests
-: How requests for sensitive information are handled and presented to the user.
+: How the site handles and presents requests for sensitive information to the user.
 ​
 Usability
 The
@@ -217,21 +206,21 @@ evaluates the friction-free progression of a user toward a conversion goal, mirr
 Lever
 Sub-Lever
 User flow
-: A user’s sense of direction and location: do they understand where they are on the site/in the user journey and what they must do to progress?
+: A user’s sense of direction and location: do they understand their location on the site/in the user journey and what they must do to progress?
 Location
-: A user’s sense of where they are in the user-flow/journey, answering the question “where is the user now?”
+: A user’s sense of their position in the user-flow/journey, answering the question “where’s the user now?”
 Direction
 : About whether a user understands where they need to go next in the user journey to perform their desired action.
 Effort
 : Refers to either a concern that an action or sequence will require a lot of exertion and focus, or an unpleasant feeling that something is already requiring this.
 Experienced effort
-: The sense of how demanding it is to complete tasks and progress on a website.
+: The sense of how demanding completing tasks and progressing on a website is.
 Anticipated effort
 : Effort that the user “forecasts” regarding how they will feel completing a task on a site.
 Choice
-: Refers to how product options are arranged and made findable on a site.
+: Refers to how a site arranges product options and makes them findable.
 Findability
-: The search paths and functionality available to a user to browse through product options.
+: The search paths and capabilities available to a user to browse through product options.
 Structure
 : How product options are actually organized and presented on a page by default.
 Recommendation
@@ -245,7 +234,7 @@ Engagement
 Persistence
 : About on-site mechanics that encourage users to continue trying to complete their desired action.
 Progress presentation
-: About how users’ progress is presented to them to demonstrate how far they’ve come in their journey.
+: About how the site presents users’ progress to them to demonstrate how far they’ve come in their journey.
 Positive feedback
 : Acknowledging when users take a desirable action on the site.
 ​
@@ -281,9 +270,9 @@ Sub-Lever
 Value statement
 : The explicit positive information included about products/services to persuade users that it’s of interest to them.
 Value proposition
-: The company’s core offering: what is the single line which applies to the product or service being offered.
+: The company’s core offering: the single line which applies to the product or service the company offers.
 Benefits
-: Specific “positive” features of the company or individual products and services offered, often framed as benefits to the user rather than functional features of the product, which may be found in the comprehension lever.
+: Specific “positive” features of the company or individual products and services offered, often framed as benefits to the user rather than functional features of the product, which you may find in the comprehension lever.
 Motivational depiction
 : How a product or service use visual/implicit cues to convey value, as opposed to relying on explicit claims or experience with the product.
 Motivational imagery
@@ -291,33 +280,33 @@ Motivational imagery
 Motivational video
 : Using video to convey motivational messaging or positive/anticipatory emotional responses to the user.
 Preview access
-: How users can be shown the upside of a product by actually using the product, or some limited part of the product (for example, a free trial, samples).
+: How users can see the upside of a product by actually using the product, or some limited part of the product (for example, a free trial, samples).
 Free Trial
 : Allowing users to experience the quality of a product or service by accessing it in full for a limited time.
 Limited Preview Content
 : Allowing users to experience the quality of a product or service by offering some limited part of the service, possibly indefinitely.
 Obligation
-: How users can be made to feel that they “ought” to purchase the product for some reason.
+: How a site can make users feel that they “ought” to purchase the product for some reason.
 Reciprocity
-: Where users are offered some gesture (for example, discount, freebie) aimed at triggering the intuition to reciprocate the gesture by purchasing.
+: Where the site offers users some gesture (for example, discount, freebie) aimed at triggering the intuition to reciprocate the gesture by purchasing.
 Altruism
-: A direct appeal to moral obligation—it is about benefits to other people’s well-being.
+: A direct appeal to moral obligation, centered on benefits to other people’s well-being.
 Sociability
-: When users are led to expect they are gaining a social benefit from the product.
+: When a site leads users to expect they’re gaining a social benefit from the product.
 Community
 : Trying to elicit the sense that using a product will give you access to some real or imagined community.
 Exclusivity
 : Trying to elicit the sense that using a product or service will give you an edge or superiority over the majority of people.
 Urgency
-: How users are made to feel that they should complete their purchase within their current session, or else risk losing access to the product or paying a higher price.
+: How a site makes users feel that they should complete their purchase within their current session, or else risk losing access to the product or paying a higher price.
 Availability
 : Urgency based on the idea that failing to purchase quickly will mean missing out on the product entirely.
 Price change
 : Urgency based on the idea that failing to purchase quickly will lead to price increases and greater cost in the future.
 Product range
-: How the products available can be presented to make them appear motivationally varied and extensive.
+: How a site can present the available products to make them appear motivationally varied and extensive.
 New product
-: Adding a new product or service to serve a product preference or option not currently catered for.
+: Adding a new product or service to serve a product preference or option not catered for.
 Variety
 : Demonstrating the variety of product options available, whether explicit through copy (“Access thousands of movies and TV shows”) or implicit (showing a background image of movie and TV show posters).
 Delivery
@@ -325,13 +314,13 @@ Delivery
 Delivery Speed
 : Informing users how quickly they can receive their product, emphasizing fast delivery speeds or short waits.
 Delivery Ease
-: Informing users of how easy it is to receive a product, or how discretion may be used upon delivery.
+: Informing users of how easily they can receive a product, or how the company may use discretion upon delivery.
 Gamification
 : Refers to creating a sense of excitement and engagement around continuing to use the product.
 Immersion
-: Creating a sense that users are in a different environment from the one they are really in.
+: Creating a sense that users are in a different environment from the one they’re really in.
 Progression
-: Creating a sense that satisfying progress is being made through the “task” of completing the user’s desired goals on the site.
+: Creating a sense that users make satisfying progress through the “task” of completing the user’s desired goals on the site.
 Competition
 : Creating a sense that users’ level of performance with the product or service is superior to that of others.
 Humanization
@@ -341,16 +330,31 @@ Friendly Language
 Human Depictions
 : The depiction of people as a means to make a company/product/service seem personable and accessible (friendly).
 Control
-: Users feeling a positive sense that the product can be adapted to their preferences.
+: Users feeling a positive sense that they can adapt the product to their preferences.
+​
+FAQ
+How does PBX Ideate prioritize test ideas?
+PBX Ideate scores ideas based on potential impact using a model trained on more than 20,000 experiments.
+Why should I use Kameleoon PBX Ideate?
+PBX Ideate provides prioritized, evidence-based hypotheses and converts them into precise prompts for PBX, helping you prioritize your tests effectively.
 Was this page helpful?
 Yes
 No
-Contentsquare X PBX integration
-Previous
-Generate test ideas
-Next
 ⌘
 I
+On this page
+Back to top
+Overview
+How it works
+Analysis and problem detection
+Root cause diagnosis
+Lever Framework
+Cost
+Trust
+Usability
+Comprehension
+Motivation
+FAQ
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

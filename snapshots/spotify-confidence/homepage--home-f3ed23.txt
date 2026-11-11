@@ -6,19 +6,14 @@ Blog
 Bootcamp
 Contact us
 Login
-Start free trial
+Start free
 Technology
-Experiment like Spotify
-Ship
-every
-product
-decision
-with
-evidence
-behind
-it.
-Run experiments, manage feature flags, and let your data warehouse do the heavy lifting—with statistical defaults built on 15 years of operating evidence. Proven at Spotify. Now yours.
-Try Confidence
+New
+Confidence Loop turns user signals into tested next moves
+Proven at Spotify. Now yours to use.
+Ship every product decision with evidence behind it.
+Connect analytics, session recordings, experiments, and support conversations, to see what's worth building next. The whole picture, in one place.
+Get started
 Confidence by Spotify — Ship every product decision with evidence behind it
 Confidence is Spotify's warehouse-native experimentation and feature management platform. Run A/B tests, manage feature flags, define warehouse-native metrics, and make data-informed product decisions — all on top of your own data warehouse. Built on 15 years of operating evidence at Spotify, Confidence provides sequential testing, automatic guardrails, and variance reduction on by default. Try it free at app.confidence.spotify.com — no credit card needed.
 Everything you need to experiment and grow
@@ -28,37 +23,34 @@ A/B Testing
 Rollouts
 : Ramps up while metrics hold. Roll back when they don't.
 — Every release automatically ramps from 1% to 100% while guardrails watch for regressions. If something breaks, you're one click from reverting.
-Warehouse-native Metrics
-: Same numbers, everywhere.
-— Metrics computed directly in your warehouse, from the definitions your dashboards already use. No copies, no pipelines, no drift.
 Feature Flags
 : Flags that clean up after themselves.
 — Typed schemas, warehouse-powered targeting, and easy cleanup when a flag has done its job. Feature flags are free, unlimited number of flags, unlimited seats, Google SSO, no credit card.
-Analytics
-: Get the answer, and the cause.
-— Ask questions in plain English, get answers with charts and causes, grounded in your experiments, your metrics, and your warehouse.
-Open Feature
-: No vendor lock-in. Built on OpenFeature. Incubated by the Cloud Native Computing Foundation.
-— Your application talks to the OpenFeature API; Confidence is a provider behind it. Migration kits rewrite competitor SDK code to the standard, one PR per flag, and after that, switching vendors is a provider swap, not a rewrite.
-Confidence Agent
-: Watches sessions, experiments, tells you what's next.
 Session Replay
 : Can't reproduce is over. The sessions behind the stats.
 — Real user sessions with flags and experiment variants overlaid. When a metric dips, jump straight to the sessions that show why.
+Analytics
+: Get the answer, and the cause.
+— Ask questions in plain English, get answers with charts and causes, grounded in your experiments, your metrics, and your warehouse.
+Confidence Agent
+: Watches sessions, experiments, tells you what's next.
+Open Feature
+: Your last flag rewrite. Built on OpenFeature, a CNCF standard.
+— Your application talks to the OpenFeature API; Confidence is a provider behind it. Migration kits rewrite competitor SDK code to the standard, one PR per flag, and after that, switching vendors is a provider swap, not a rewrite.
 Battle-tested for the last decade at Spotify
 300+ Teams shipping daily. 750M+ Users world-wide. 1000s Of device types
 .
 From the Confidence blog
+What will you build next?
+— As AI makes building cheap, the competitive advantage shifts to the quality of product decisions. Confidence is expanding into a system for the full product loop.
+The Hidden Cost of Winsorizing
+— Most platforms handle outliers with a data-dependent threshold. That threshold is influenced by the treatment, introducing bias most teams never notice.
 Confidence Loop: Building products that continuously improve
 — Confidence Loop turns signals from real users into product understanding and improvements, with teams choosing how much of the loop runs autonomously.
 Introducing the Confidence Slack Bot
 — The Confidence Slack bot puts experiment results, flags, recordings, and analytics in the Slack threads where product questions already start.
 Introducing Confidence Cloud
 — Confidence Cloud gives you a data warehouse created and operated by Confidence, so you can define entities, send events, and run experiments without setting up warehouse infrastructure of your own.
-Introducing Product Analytics
-— Product Analytics in Confidence lets you ask questions of your data in plain language and get answers you can explore with more depth and flexibility than a dashboard.
-Introducing Recordings
-— Confidence Session Recordings lets you replay actual user sessions, with AI-powered analysis to surface bugs and insights right from your experiments.
 Explore further
 Documentation
 — Guides, API references, and SDK docs
@@ -81,24 +73,173 @@ llms.txt
 Everything you need
 to experiment and grow
 A/B Testing
-Sequential testing, guardrails, CUPED. Built in.
+Sequential testing, guardrails,
+CUPED. Built in.
 Rollouts
 Ramps up while metrics hold. Roll back when they don't.
-Warehouse-native Metrics
-Same numbers, everywhere.
+You can safely keep your experiment running.
+Health check
+Passed
+Guardrails metrics meet their tolerance
+Passed
+Current reach
+50%
+At launch
+30%
+Yesterday
+40%
+Tomorrow
+70%
+May 1st
+90%
 Feature Flags
 Flags that clean up after themselves.
+#confidence-flags
+Confidence
+AGENT
+discover-weekly is fully rolled out.
+Ready to clean up the stale flag?
+Clean up flag
+#confidence-flags
+Confidence
+AGENT
+discover-weekly is fully rolled out.
+Ready to clean up the stale flag?
+Clean up flag
+#confidence-flags
+Confidence
+AGENT
+discover-weekly is fully rolled out.
+Ready to clean up the stale flag?
+Clean up flag
+Learn and iterate
+Session Replay
+BETA
+Can't reproduce is over.
+The sessions behind the stats.
+Clicked "Get started"
+Filled signup form
+Scrolled past pricing
+Selected Free plan
+Signup complete
 Analytics
 BETA
 Get the answer, and the cause.
-Open Feature
-No vendor lock-in. Built on OpenFeature. Incubated by the Cloud Native Computing Foundation.
+How are our active users trending in EU?
+Thought for 1 min, checked 10 sources
+MAU is up 16% last month.
+The growth is concentrated in one segment:
+iOS
++38%
+Android
++5%
 Confidence Agent
-BETA
-Watches sessions, experiments, tells you what's next.
-Session Replay
-BETA
-Can't reproduce is over. The sessions behind the stats.
+Watches sessions, experiments,
+tells you what's next.
+Works with
+Slack
+CLI
+Web UI
+VS Code
+Cursor
+Claude
+Erin
+Where are users getting stuck during onboarding?
+Show me a session recording and suggest a PR I can review to fix
+Confidence
+AGENT
+A user leaves workspace setup, then hits a login error with no way to resume.
+Watch the session at 00:12
+Review the suggested PR, add continue setup, account switching, and regression tests.
+Foundations
+Open Feature
+Your last flag rewrite.
+Built on OpenFeature, a CNCF standard.
+OpenFeature
+.setProvider
+(
+new
+MyProvider
+());
+const
+featureFlags
+=
+OpenFeature
+.getClient
+();
+const
+withCows
+= await
+featureFlags
+.getBooleanValue
+(
+"with-cows"
+,
+false
+);
+if
+(withCows) {
+res
+.send
+(
+cowsay
+.say
+({ text:
+"Hello, World!"
+}));
+}
+else
+{
+res
+.send
+(
+"Hello, World!"
+);
+}
+Cloud or warehouse-native?
+Confidence supports two ways to run the data layer behind your experiments.
+Setup
+Confidence Cloud
+Created by Confidence
+Confidence Warehouse-Native
+Configured by your organization
+Credentials
+Confidence Cloud
+None to create
+Confidence Warehouse-Native
+Warehouse credentials required
+Infrastructure management
+Confidence Cloud
+Managed by Confidence
+Confidence Warehouse-Native
+Managed by your organization
+Fact tables
+Confidence Cloud
+Generated from events
+Confidence Warehouse-Native
+Defined using your data and SQL
+Warehouse technology
+Confidence Cloud
+BigQuery
+Confidence Warehouse-Native
+BigQuery, Snowflake, Redshift or Databricks
+Confidence Cloud
+Confidence Warehouse-Native
+Setup
+Created by Confidence
+Configured by your organization
+Credentials
+None to create
+Warehouse credentials required
+Infrastructure management
+Managed by Confidence
+Managed by your organization
+Fact tables
+Generated from events
+Defined using your data and SQL
+Warehouse technology
+BigQuery
+BigQuery, Snowflake, Redshift or Databricks
 By the numbers
 Battle-tested for the last decade at Spotify
 300
@@ -111,19 +252,19 @@ Users world-wide
 s
 Of device types
 See the latest from Confidence
+What will you build next?
+As AI makes building cheap, the competitive advantage shifts to the quality of product decisions. Confidence is expanding into a system for the full product loop.
+The Hidden Cost of Winsorizing
+Most platforms handle outliers with a data-dependent threshold. That threshold is influenced by the treatment, introducing bias most teams never notice.
 Confidence Loop: Building products that continuously improve
 Confidence Loop turns signals from real users into product understanding and improvements, with teams choosing how much of the loop runs autonomously.
 Introducing the Confidence Slack Bot
 The Confidence Slack bot puts experiment results, flags, recordings, and analytics in the Slack threads where product questions already start.
 Introducing Confidence Cloud
 Confidence Cloud gives you a data warehouse created and operated by Confidence, so you can define entities, send events, and run experiments without setting up warehouse infrastructure of your own.
-Introducing Product Analytics
-Product Analytics in Confidence lets you ask questions of your data in plain language and get answers you can explore with more depth and flexibility than a dashboard.
-Introducing Recordings
-Confidence Session Recordings lets you replay actual user sessions, with AI-powered analysis to surface bugs and insights right from your experiments.
 Get Started
 Start experimenting like Spotify
-Start free trial
+Start free
 Contact sales
 Expand
 what’s
@@ -133,14 +274,18 @@ Spotify
 Technology
 Portal
 Build like Spotify
-The internal developer platform that helps your teams ship faster, together.
+One source of truth for engineers and agents
 Xirp
-By Spotify
-Ground every AI coding session in real context from your services & docs.
+Know your systems
+So your agents can too.
 Spotify Plugins
-for Backstage
+Supercharge Backstage
 Premium plugins that supercharge your Backstage developer portal.
 Learn more
+Feature flags
+Confidence Loop
+Product Analytics
+Session Recordings
 About Confidence
 Read our blog
 Take the bootcamp
@@ -149,8 +294,17 @@ Glossary
 Why not Bayes?
 RFP guides
 Listen to us
+(opens in a new tab)
 Read our docs
 Status page
+(opens in a new tab)
+Solutions
+Startups
+Scale-ups
+Enterprise
+Engineers
+Data scientists
+Product managers
 Need help
 Contact us
 Legal
@@ -159,6 +313,7 @@ Data Protection Agreement
 Privacy Policy
 Security
 Cookie Settings
+(opens in a new tab when cookie preferences are unavailable)
 ©
 2026
 Spotify

@@ -13,7 +13,7 @@ API Reference
 Release Notes
 Roadmap
 University
-2.0
+Classic Experience
 Platform
 New to Harness Platform?
 Overview
@@ -94,10 +94,14 @@ Markdown
 Copy
 On this page
 Documentation
+Platform
 Harness Platform
-2.0
+Classic Experience
 Use Harness Platform
 Authentication
+Authentication
+SSO
+Mcp
 Single Sign-On (SSO) for Harness MCP
 Learn how to add an additional ACS URL or redirect URI in your Identity Provider to enable Harness MCP login via SAML or OIDC.
 Manual
@@ -490,6 +494,22 @@ Index
 to a higher value, such as
 1
 .
+Why does MCP sign-in return a 400 Bad SAML request in Okta?
+Okta can reject the MCP sign-in request with a
+400 Bad Request
+and the message
+Bad SAML request
+. The cause is not confirmed. In the Okta Admin Console, go to
+SAML Settings
+and confirm that:
+Allow this app to request other SSO URLs
+is enabled.
+The MCP URL under
+Other Requestable SSO URLs
+exactly matches the
+Additional Reply URL for MCP
+value displayed in Harness.
+If the error persists after these checks, contact Harness Support and include the time of the failed sign-in attempt and your Okta SAML settings.
 Can my Identity Provider support multiple ACS URLs or redirect URIs?
 Most enterprise Identity Providers, including Microsoft Entra ID, Okta, and PingOne, support multiple ACS URLs or redirect URIs for a single application.
 Do I need to make this change if I do not use Harness MCP?

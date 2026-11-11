@@ -32,6 +32,7 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
+Startups
 Blog
 Customer Stories
 Partner Program
@@ -69,6 +70,7 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
+Startups
 Blog
 Customer Stories
 Partner Program
@@ -79,13 +81,30 @@ Statsig Lite
 Statsig University
 Product Updates
 We ship fast to help you ship faster
+Subscribe to updates
+Nov 2026
+📊 Expanded Dashboard Support
+Oct 2026
+🔑 Enterprise Auth for MCP
+🔭 Pipeline and Editing for WHN
+🗂️ Update to User Dimensions
+⏱️ Schedule Experiment Stop
+📝 AI-Powered Experiment Reports
+🧮 Power Analysis Calculator V2
+🎛️ Filter Dashboards by Status
+🩺 Warehouse Export Observability
+👀 Preview Changes
+🔐 Entity-Level Create Permissions
+🤖 Statsig MCP v3
 Sep 2026
+🎯 Choose Features for Contextual Bandits
+🧹 Stale Dynamic Config Management
 🔐 Self-Serve RBAC for MCP
 🔐 Entity-Level Permissions
 Aug 2026
-🔭 Pipeline Overview for Athena
 🧪 Experiment Configuration via MCP
 🔐 SCIM Role Aliases
+🔭 Pipeline Overview for Athena
 🩺 Experiment Daily Checks in API
 💰 Query Cost Attribution
 🧪 Layers Targeting
@@ -97,19 +116,19 @@ Aug 2026
 Jul 2026
 ✅ Autotune Reviews on MCP
 🎯 Holdouts Public Gate IDs
-☁️ Athena New Key Support
 📊 Topline Impact in Warehouse Native
+☁️ Athena New Key Support
 🔐 Config Delete Permission
-🔎 Audit Overrides
 🔬 Experiment Reviews
+🔎 Audit Overrides
 Jun 2026
 📣 Follow Dynamic Configs
 🔍 Feature Gate Reviews
 🗄️ Parameter Store in MCP
 🧪 Leaner Experiment Reads
 🔓 Read-Only MCP Access
-🎰 Create Autotunes in MCP
 🗑️ Single-Override DELETE Endpoints
+🎰 Create Autotunes in MCP
 🕰️ Version History Tools in MCP
 Mar 2026
 🧩 Statsig Agent Skills Repository
@@ -120,9 +139,9 @@ Feb 2026
 🧰 Generate Dashboards via API (Private Beta)
 🗂️ Dashboard Pages
 📬 Dashboard Subscriptions
-🎚️ Enhanced WHN Switchback
 📋 Quick Copy/Paste Results
 🔋 Inline Power Analysis
+🎚️ Enhanced WHN Switchback
 📈 Metrics Tools in Statsig MCP
 📊 Stratification in CUPED
 💬 Statsig ChatGPT App
@@ -134,15 +153,15 @@ Jan 2026
 📏 Count Distinct Metric in Cloud
 🗺️ Explore Multi-Dimension Group By
 Dec 2025
-🕵️ AI Knowledge Bank Search [Beta]
 🚀 AI-Powered Experiment Summary
-✏️ Contextual AI Descriptions
+🕵️ AI Knowledge Bank Search [Beta]
 🧹 AI Stale Gate Cleanup
+✏️ Contextual AI Descriptions
 ⭐ Github AI Integration
-🧩 Segment Filters on Dashboards
-🔎 Global Filters in Funnels
 📊 Session Analytics on Warehouse Native
 🧭 Warehouse Explorer
+🧩 Segment Filters on Dashboards
+🔎 Global Filters in Funnels
 🔐 OAuth Support for Statsig MCP Server
 🕵 Traces Explorer
 Nov 2025
@@ -151,8 +170,8 @@ Nov 2025
 🧏‍♀️ Recent Queries in Logs Explorer
 🚨 Topline Alerts on Metrics
 🍋 Metric Source Freshness
-🧾 Results Table View
 🏡 Metric Family
+🧾 Results Table View
 📚 Bulk Topline Impact Calculation
 🧅 Layers UI Improvements
 Oct 2025
@@ -190,8 +209,8 @@ Jul 2025
 🎯 Segments in Funnels and Metrics Explorer
 🕵️ Hypothesis Advisor
 🧩 ID Resolution in Funnels
-📝 Summary Customization
 🎬 Create a Statsig Sample App
+📝 Summary Customization
 Jun 2025
 🔄 Automatic Dashboard Refreshes
 🧪 Experiment Exposure Events Metrics Explorer
@@ -200,19 +219,19 @@ Jun 2025
 🕵️‍♂️ Log Explorer
 📉 Fieller Interval
 🧙🏻‍♂️ AI Onboarding Wizard
-📊 Data Table View in Metric Drilldown
 🛫 Pulumi Statsig Provider
+📊 Data Table View in Metric Drilldown
 🌩️ Statsig MCP Server
 🪨 Geotest Experiments
 📸 Results Snapshot
 May 2025
-🧑🏼‍🏭 Braze Integration
 🧮 Unique Values Aggregation
 📈 Delta Comparison View for Time Series
+🧑🏼‍🏭 Braze Integration
 🚢 Experiment Decision Framework
 📝 Setup Page's New Layout
-📐 Format Y-Axis Units in Time Series Charts
 🗂️ Multiple Group-Bys in Funnels
+📐 Format Y-Axis Units in Time Series Charts
 📋 Copy Experiment Metrics
 🕒 Compute Scheduling
 📊 Experiment Histograms
@@ -221,9 +240,9 @@ Apr 2025
 🚨 Topline Alerts Enhancements
 🔮 Surrogate Metrics
 📊 Compare more Groups in Funnels
-✋ Holdout Analysis in Product Analytics
-📊 New Aggregation: Count per User
 ⚙️ New Chart Options in Metrics Explorer
+📊 New Aggregation: Count per User
+✋ Holdout Analysis in Product Analytics
 🎯 Cohort Filters on Dashboards
 🍩 Donut Chart & World Map 🌍
 🧭 User Journeys on Warehouse Native
@@ -251,8 +270,8 @@ Jan 2025
 🐍 Python Server Core
 👤 User Profiles
 ⚙️ Custom Metrics in Funnels
-🕵Differential Impact Detection
 💾 Results in your Warehouse
+🕵Differential Impact Detection
 ☕️ Java Server Core
 ⚔️ Interaction Detection
 ⚙️ Improved Console Settings
@@ -261,14 +280,14 @@ Debug Data Ingestion Errors
 👥 Filtering by User Dimensions in Custom Metrics
 Dec 2024
 🛣️ User Journey Analysis Clarity
-🔍 Filter Analysis by Features and Experiments
 🎯 Add Dashboard Widgets in Place
-💘 Improvement to CUPED for Ratio Metrics
+🔍 Filter Analysis by Features and Experiments
 📊 Storytelling with Experiments
+💘 Improvement to CUPED for Ratio Metrics
 📡 IPV6 Support
 Nov 2024
-➡ Horizontal Bar Charts
 📊 Warehouse Native on Athena
+➡ Horizontal Bar Charts
 🏭 Autoscale on Snowflake WHN
 🅰️ Angular Support
 ⏱️Experiment Compute Overview
@@ -287,228 +306,154 @@ Oct 2024
 ⌚💰📊 Latest value metrics
 👯 Cohort analysis in all charts types
 🧲 Group-by in Retention Analysis
-⏱️ 2x Funnel Performance Improvements
-🪜Funnels Now Support Up to 15 Steps
-🔗 Improved Segment Integration
-📊 Cohort Analysis in Funnels
-💥 Cross-Environment Feature Gates View
-🚫 Metrics Update: Deprecating event_dau metric
-Sep 2024
-🕧 Time to Complete Metrics
-⏳Funnels ++ on WHN
-⏰ Time Period Comparison in Funnels
-% Percentage-Based Grouping
-⏳ Funnels - Time to Convert Improvements
-📊 Distribution Analysis of Event Property Values
-⏸️ Stop New Assignment
-🔔 Email Notification Preferences
-9/12/2026
+11/5/2026
 Permalink ›
-🔐 Self-Serve RBAC for the Statsig MCP
-You can now manage MCP access directly in the console, with project-level and role-level controls.
+📊 Expanded Dashboard API and MCP Support
+You can now create, edit, and analyze more dashboard charts through the Console API and the Statsig MCP.
 What you can do now
-Set a project-level MCP scope — No access, Read only, or Read and write — as the ceiling for all roles in that project.
-Configure MCP access per role within that project maximum, including Member and custom roles.
-MCP only exposes tools that the project scope, role permissions, and token scope all allow.
-To configure:
-Go to Project Settings > Roles to set Default Project MCP Scope, then open a role's Permissions > MCP to configure its access.
+Work with line, bar, pie, table, number, and geo-map charts alongside funnels
+Use catalog metrics like WAU and formulas in your charts
+Edit individual widgets without touching the rest of the dashboard
+Rely on safeguards against accidental deletion and conflicting updates
 Why this matters
-Before this, teams that wanted to give analysts or stakeholders AI-assisted exploration through the MCP had no way to cap what they could do. Now, you can give some users read-only MCP access for exploration while keeping write access to the people who need it.
-Try it out
-Go to Project Settings > Roles in the Statsig console to configure MCP access for your team.
-Learn more in the
-Statsig MCP Overview
-.
-9/1/2026
-Permalink ›
-🔐 Entity-Level Edit and Delete Permissions
-Role permissions now let you control edit and delete access separately for each config type.
-What you can do now
-Each role can now be configured with independent edit and delete permissions for:
-Gates · Holdouts · Dynamic Configs · Segments Experiments · Layers · Autotunes · Parameter Stores · Prompts
-Why this matters
-Before this, permissioning wasn't specific and allowed for broad experiment and gates access. Now, you can define roles that match how your teams actually own and operate different config types, without over-permissioning anyone.
-Try it out
-Available now for all Enterprise customers. Go to Settings in the Statsig console to configure granular permissions per role.
-Learn more in the
-Statsig Access Management docs
-.
-8/21/2026
-Permalink ›
-🧪 Richer Experiment Configuration via MCP
-Create_Experiment
-and
-Update_Experiment_Entirely
-now accept five additional fields, giving you fuller control over experiment setup through the MCP.
-What you can do now
-Five new fields are now accepted by
-Create_Experiment
-and
-Update_Experiment_Entirely
-:
-secondaryIDType
-identifierMappingMode
-enabledNonProdEnvironments
-links
-secondaryMetrics
-Why this matters
-Now, you can set secondary ID types, identifier mapping, non-prod environments, secondary metrics, and external links without falling back to the console.
+Dashboards can now be built and maintained programmatically beyond funnels, so your scripts and agents can cover the charts your team actually uses, with protections against overwriting each other’s changes.
 Try it out
 If you have the Statsig MCP set up, try a prompt like:
-"Using the Statsig MCP, create an experiment with a secondary metric of
-revenue
-and enable it in staging."
+“Using the Statsig MCP, create a dashboard with a line chart of WAU.”
 Learn more in the
-Statsig MCP Overview
+Dashboard API docs
 .
-8/21/2026
+10/30/2026
 Permalink ›
-🔭 Pipeline Overview Auto-Provisions for Athena Connections
-New Athena Warehouse Native projects now get the Pipeline Overview dashboard set up automatically on connection creation.
+🔑 Enterprise-Managed Authorization for the Statsig MCP
+Admins can now connect Claude to Statsig once for the whole organization.
 What you can do now
-Get the Pipeline Overview dashboard, metric source, and pipeline table created automatically when setting up a new Athena connection
-No manual repair or setup step needed to get DAG and pipeline visibility from day one
+Let members use Statsig in Claude without individual OAuth prompts or personal API keys
+Keep access tied to each member’s existing Statsig permissions, with admin controls for read-only or read and write access
+Choose between Claude-issued identity and Okta / OIDC Cross App Access
+Set it up in any Statsig organization. An organization admin configures and enables it
 Why this matters
-Before this, new Athena projects skipped the Pipeline Overview provisioning step entirely, leaving teams with no pipeline observability until someone ran a manual repair. Now, you get full pipeline visibility out of the box from the moment your connection is created.
+Rolling out the MCP across a company shouldn’t mean every person authorizing separately or managing a personal key. Now one admin setup covers the organization, and permissions still follow each member.
 Try it out
-Create a new Athena Warehouse Native connection in the Statsig console to see the Pipeline Overview dashboard provisioned automatically.
+Follow the
+Enterprise-managed authorization setup guide
+.
+10/28/2026
+Permalink ›
+🔭 Pipeline Activity and Schedule Editing
+Teams using Statsig Warehouse-Native can now see what is running in their warehouse and adjust schedules in one click.
+What you can do now
+Use the new Pipeline Activity page to see the jobs that have run in your warehouse and how long they ran
+Open the details behind any job in one click, including the DAG and the SQL that will run
+See every experiment and gate schedule on the data connection reload settings page, and edit any of them in one click
+Why this matters
+Two questions come up constantly, “What’s running in my warehouse?” and “Why is this experiment taking so long to refresh?” Now you can answer both yourself and tune schedules to reduce warehouse load.
+Try it out
+Open Data → Pipeline Activity in the Statsig Console. To edit schedules, open your data connection’s reload settings.
 Learn more in the
-Statsig Warehouse Native docs
+Pipeline Activity docs
 .
-8/21/2026
+10/27/2026
 Permalink ›
-🔐 SCIM Role Aliases for Custom IdP Naming Conventions
-You can now map your identity provider's role names to Statsig roles without renaming anything in your IdP.
+🗂️ Fewer Tables for Pre-Computed User Dimensions
+Statsig Warehouse Native can creates far fewer tables for pre-computed user dimensions, with the same results.
 What you can do now
-Create aliases on the Statsig side that translate your IdP's existing role names to first-class Statsig roles. Works with Okta, Microsoft Entra ID, and other SCIM-compatible identity providers with strict or unchangeable naming conventions.
-Self-serve setup in a few clicks. No support ticket or manual intervention needed
+Get 60 to 80% fewer PCUD-related tables for a standard 4-dimension setup, with larger savings as you add dimensions
+Keep healthy dimensions computing when the source for one dimension is missing
+Spend less on table creation and S3 / catalog management on Athena
 Why this matters
-Now, SCIM provisioning no longer requires your IdP group names to match an expected role format. You can define the translation on the Statsig side and let provisioning work with whatever names your IdP already uses.
+Separate pipelines for each dimension meant table counts grew quickly. Now one combined path keeps your warehouse cleaner, and one failing dimension no longer blocks the rest.
 Try it out
-Go to Settings in the Statsig console to configure SCIM role aliases for your organization.
 Learn more in the
-Statsig SCIM docs
+Slicing by User Properties docs
 .
-8/20/2026
+10/23/2026
 Permalink ›
-🩺 Experiment Daily Checks Now Available via Console API
-You can now pull the data behind the Daily Checks column in the experiment list directly over the API.
+⏱️ Schedule Experiment Stop
+You can now schedule when a Cloud or Warehouse Native assign-and-analyze experiment stops.
 What you can do now
-One new endpoint is available on
-statsigapi.net/console/v1/
-:
-GET /console/v1/experiments/{id}/diagnostics_checks?lastDays=30
-Use
-lastDays
-(1-90) to set a lookback window without computing dates yourself
-Use
-startDate
-/
-endDate
-if you need an explicit range instead
-is_realtime
-tells you whether the final day is still filling, so you know not to treat it as a complete day
-Warehouse Native experiments now return real data from the warehouse exposures summary, the same source the console list column uses
+Choose Stop New Assignments or Conclude & Defer Decision. At the scheduled time, Console runs the same action as clicking it by hand
+Set a date and time up to a year out
+Edit or cancel from the experiment header
+Save a scheduled start and stop together as one request
 Why this matters
-Before, the Daily Checks column in the experiment list flagged experiments that were "In Progress" after being pulled from code, or "Decision Made" while still serving traffic and catching those states meant querying your own warehouse. Now, you can surface that signal programmatically and build automated checks or alerts on top of it.
+Stopping an experiment at a specific moment used to mean someone had to be at the keyboard. Now you can set it and leave it.
 Try it out
-Review the full API reference in the
-Statsig Console API docs
-.
-8/19/2026
+To request early access, contact your Statsig account team.
+10/16/2026
 Permalink ›
-💰 Warehouse Native Query Cost Attribution
-Statsig WHN queries now carry cost attribution tags in your warehouse, so you can see exactly what Statsig activity is driving your compute costs.
+📝 AI-Powered Experiment Reports
+A new Report tab turns experiment results into a shareable readout.
 What you can do now
-Every query is stamped with
-is_whn
-, a type (experiment, gate, etc.), the experiment or gate name, a job type, and the reload ID. Tags land natively in each warehouse — nothing leaves your account:
-Snowflake
-— session
-QUERY_TAG
-in
-ACCOUNT_USAGE.QUERY_HISTORY
-and
-QUERY_ATTRIBUTION_HISTORY
-BigQuery
-— job labels (
-type=whn_query
-) in
-INFORMATION_SCHEMA.JOBS
-Redshift
-—
-query_group
-in
-SYS_QUERY_HISTORY.query_label
-Databricks
-— statement comment in
-system.query.history
+Generate an experiment report with AI analysis and key metric cards
+Edit and reorder sections, and add your own context
+Export the report as a PDF
 Why this matters
-Before , you could see total spend but had no way to attribute it to a specific experiment or job type in Statsig. Now, you can point one query at your warehouse's usage view, filter to Statsig WHN queries, group by experiment, and get per-experiment reload cost, making it straightforward to spot expensive reloads and change your schedule.
+Teams spend real time assembling numbers and writing the narrative after an experiment ends. Now you start from a generated draft and edit it.
 Try it out
-Filter your warehouse usage view to
-is_whn:"True"
-(or
-type=whn_query
-on BigQuery) and group by experiment to see per-experiment reload costs.
+To request early access, contact your Statsig account team.
+10/15/2026
+Permalink ›
+🧮 Power Analysis Calculator V2
+Planning an experiment is now one connected workflow in Cloud and Warehouse Native.
+What you can do now
+Configure a population and metrics, run an analysis, and compare MDE, duration, and allocation tradeoffs
+Review results in a Scenario Matrix, Week-by-Week view, and Advanced Statistics
+Save settings, rerun or duplicate an analysis, and attach it to an experiment
+Find past analyses on their own report pages, restore reports, and get completion notifications
+Why this matters
+Estimated duration is now the direct answer, so PMs and non-data-scientists can complete the calculator and trust what it tells them.
+Try it out
+Go to Console → Experimentation → Power Analysis.
+10/9/2026
+Permalink ›
+🎛️ Filter Dashboards by Experiment Status
+Dashboards can now focus on the experiments that are running right now.
+What you can do now
+Choose Add Filter → Experiment Status on any dashboard, including dashboards generated automatically from tags
+Share the filtered view by URL, or save your selection as the dashboard’s default filter
+Experiment widgets that don’t match the filter are dimmed in place, so your layout stays intact
+Why this matters
+Experiment overview dashboards get cluttered as tests start and finish. Now you can keep the view focused on running experiments without removing widgets by hand.
+Try it out
+Open any dashboard, choose Add Filter, and select Experiment Status.
+10/8/2026
+Permalink ›
+👀 Preview Changes Before Requesting a Review
+You can now verify a proposed gate or dynamic config change inside the review modal before you submit it for approval.
+What you can do now
+Toggle a preview with Visual and Diff views, and filter between Changes and All Rules
+See compact comparisons that highlight the changed fields when requesting a review for rule changes
+Find reviewers faster with a searchable selector for Teams and Individuals, with checkboxes and removable pills
+Get a prompt in the review flow to turn on Slack notifications for reviews
+Why this matters
+Reviewers can only approve what they can clearly see. Now you can check exactly what you are proposing before you send it, which means fewer review rounds spent on mistakes you could have caught yourself.
+Try it out
+Request a review on a gate or dynamic config rule change and open the preview in the review modal.
+10/8/2026
+Permalink ›
+🩺 Warehouse Export Observability
+You can now see when a warehouse export fails and why, without guessing or contacting support.
+What you can do now
+Get a failure notification email when an export fails
+See the error message in the UI so you understand why an export failed
+Query export success and failure status programmatically with the new
+list-warehouse-export-status
+endpoint
+Ask the Statsig MCP to help you understand an export failure
+Why this matters
+A failed export used to be easy to miss and hard to diagnose. Now you hear about failures right away and can see the cause, in the UI, over the API, or through your AI tooling.
+Try it out
 Learn more in the
-Statsig Warehouse Native docs
+Warehouse Exports docs
+and the
+export status API reference
 .
-8/14/2026
-Permalink ›
-🧪 Layers Targeting
-Setting up Layers when creating an experiment is now easier than ever.
-What you can do now
-See Layers as a top-level Targeting option alongside ID Type and Target Applications.
-Pick a layer and have ID Type and Target Applications auto-fill and lock automatically.
-Clear the layer to unlock those fields and keep your values.
-See Target Applications displayed by name rather than a raw count
-Why this matters
-Layers keep experiments mutually exclusive, preventing cross-experiment contamination across your project. With Layers now a top-level option in the Create Experiment modal, setting them up correctly takes less effort from the start.
-Try it out
-Open the Statsig console and create a new experiment to try it out.
-8/13/2026
-Permalink ›
-🍱 Expanded Targeting Multiselect
-View and manage values entered into freeform or custom-value fields when editing targeting rules, however many you want.
-What you can do now
-A new and improved
-StatsigValueMultiSelect
-component gives you:
-A dropdown that makes the complete list easy to view and manage, including removing individual values
-A dedicated input for adding or pasting values
-Search across both added values and available autocomplete suggestions
-Selected-value chips with an accurate
-+N more
-summary that includes only values not already visible
-Clear sections separating search results and added values
-A contextual empty state when no values have been added
-Type-aware copy throughout, e.g. “Add or search Unit IDs,” “Added Unit IDs,” and “No Unit IDs added”
-Copy-all and remove-all actions
-It can be reused across targeting rules and other custom-value workflows. Preset-only selectors such as Operating System and Device remain unchanged and will be updated to have a more consistent UI.
-Why this matters
-Previously, the targeting input displayed only a few values and hid the rest behind a popover, making values increasingly difficult to find and remove as lists grew. Adding new values was also cumbersome through the existing input field, and there was no way to search existing values.
-If you have lots of values to add, that's easier now.
-Try it out
-This is currently behind a feature gate, but will be released to all customers soon. If you want early access, reach out to your account team.
-8/12/2026
-Permalink ›
-✏️ Create Modals Updates
-You can now give gates, experiments, and dynamic configs the same display name.
-What you can do now
-Use duplicate display names across feature gates, experiments, dynamic configs, and their templates.
-When a name collision occurs, the ID auto-resolves to the smallest free suffix (
-checkout_flow
-becomes
-checkout_flow_1
-) and Create stays enabled with an info note instead of a dead-end error.
-Edit the auto-generated ID inline by hovering or focusing the row and clicking the pencil icon.
-Works across create, clone, and rename flows.
-Why this matters
-Before this, two entities with the same display name hit "ID already in use" and teams with naturally similar naming conventions had to add arbitrary suffixes just to get past the create step. Now display names can reflect what something actually is, while uniqueness is still enforced on the ID.
-Try it out
-Open the Statsig console and create a new gate, experiment, or dynamic config with a name that already exists to see the new flow in action.
 Older updates
+Subscribe to product updates
+Get the latest Statsig updates in your inbox every month.
+Thanks for subscribing!
+Keep an eye on your inbox for the latest Statsig product updates.
 Loved by customers at every stage of growth
 See what our users have to say about building with Statsig
 Testimonials

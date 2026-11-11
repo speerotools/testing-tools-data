@@ -6,7 +6,7 @@ Target Guide
 [Beta]{class="badge informative"}
 Adobe Target MCP server tools reference
 target-mcp-tools-reference
-Last update: September 28, 2026
+Last update: October 27, 2026
 Topics:
 Integrations
 CREATED FOR:
@@ -28,7 +28,7 @@ Cursor
 , and
 ChatGPT
 .
-This page is a complete reference for all tools exposed by the Adobe Target MCP server. For each tool you’ll find a description, parameter details, return value, and an example natural-language prompt. For setup instructions and use cases, see
+This page is a complete reference for all tools exposed by the Adobe Target MCP server. For each tool you will find a description, parameter details, return value, and an example natural-language prompt. For setup instructions and use cases, see
 Get started
 and
 Use cases and walkthroughs

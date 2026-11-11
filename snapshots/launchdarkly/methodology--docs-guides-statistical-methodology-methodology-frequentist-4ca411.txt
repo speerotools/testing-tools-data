@@ -1,24 +1,27 @@
 # https://launchdarkly.com/docs/guides/statistical-methodology/methodology-frequentist
-Statistical methodology for frequentist experiments | LaunchDarkly | Documentation
-For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
-Developer
-Developer
-Search
-/
-Pricing
+Statistical methodology for frequentist experiments - LaunchDarkly
+Documentation Index
+Fetch the complete documentation index at:
+/docs/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+Assistant
+Responses are generated using AI and may contain mistakes.
+LaunchDarkly
+home page
+Search...
+⌘
+K
+Ask Assistant
+⌘
+I
 Sign in
 Try it free
-Docs
-Guides
-SDKs
-Integrations
-API docs
-Tutorials
-Flagship blog
-Developer
-Developer
-Search
-/
+Try it free
+Search...
+Navigation
+Statistical methodology
+Statistical methodology for frequentist experiments
 Docs
 Guides
 SDKs
@@ -48,115 +51,9 @@ SDKs
 Integrations
 REST API
 Additional resources
-Guides
-Cheatsheets
-Control and govern AI agents in production
-Enable self-healing systems with runtime controls
-Optimize AI performance and cost with AgentControl configs
-Run continuous experiments in production
-Ship AI-built code with AgentControl or CodeControl
-Feature flags
-Best practices for upgrading users to contexts
-Creating flags
-Deciding between flag targeting strategies
-Defining and targeting mobile applications
-Feature flag hierarchy
-Flag conventions
-Improving flag usage in code
-LaunchDarkly CLI dev-server reference guide
-Performing multi-stage migrations with migration flags
-Reducing technical debt from feature flags
-Testing code that uses feature flags
-Using entitlements to manage customer experience
-Using flags on static sites with JavaScript
-Using the LaunchDarkly CLI for local testing
-Using segments and targeting to manage early access programs
-AgentControl
-Getting started with OpenAI and AgentControl
-Getting started with Anthropic Claude and AgentControl
-Getting started with Google Gemini and AgentControl
-Getting started with Amazon Bedrock and AgentControl
-Getting started with LangChain and AgentControl
-Getting started with LangGraph and AgentControl
-Getting started with Strands and AgentControl
-Managing AI model configuration outside of code
-Using targeting to manage AI model usage by tier
-When to use prompt-based vs agent mode
-Building a chatbot with multiple AI providers using AgentControl
-Observability
-Getting started with observability for .NET MAUI
-Getting started with observability for native Android
-When to use session replay, traces, logs, and Vega
-Experimentation
-Building your first experiment
-Creating an A/B experiment using a funnel metric group
-Creating mutually exclusive experiments
-Designing experiments
-Example experiments
-Experimentation best practices
-Bayesian versus frequentist statistics
-Maintaining consistency across user sessions when running experiments
-Measuring Experimentation impact with holdout experiments
-Migrating from Statsig to LaunchDarkly Experimentation
-Proving ROI with data-driven AI agent experiments
-Sample size calculations for frequentist experiments
-Statistical methodology
-Choosing a statistical methodology
-Covariate adjustment and CUPED methodology
-Statistical methodology for Bayesian experiments
-Statistical methodology for frequentist experiments
-Multiple comparisons correction
-Stratified sampling
-Sample ratio mismatch
-Metrics
-Building a metric import and sync integration
-Example metrics
-Understanding LaunchDarkly metrics
-Using metrics from engineering insights
-Infrastructure
-Deployment and release strategies
-Managing flags with Terraform
-Using flags with Cloudflare Workers
-Using LaunchDarkly in serverless environments
-Account management
-LaunchDarkly for large enterprise teams
-Merging LaunchDarkly accounts
-Migrating your existing feature flag solution to LaunchDarkly
-Minimizing LaunchDarkly's access to end user data
-Onboarding to views
-Using LaunchDarkly with Protected Health Information (PHI)
-Using SSO with LaunchDarkly
-Teams and custom roles
-Building teams in LaunchDarkly
-Creating roles
-Onboarding to preset roles
-SDKs
-Use cases for SDK wrappers
-Using LaunchDarkly without a supported SDK
-Using mobile SDKs
-Using the Lua SDK with HAProxy
-Using the Lua SDK with NGINX
-Using the JavaScript SDK in Salesforce Lightning Web Components
-Resilient architecture patterns for LaunchDarkly's SDKs
-Integrations
-About LaunchDarkly integrations
-Integrations use cases
-Data Export usage best practices
-Using flag triggers with Dynatrace
-Building a change history event hook integration
-Building an ephemeral Environments as a Service integration
-Building a synced segments integration
-LaunchDarkly Shopify Pixel
-REST API
-Comparing LaunchDarkly's SDK and REST API
-Using the LaunchDarkly REST API
-REST API migration guide
-Additional resources
-Pricing
-Sign in
-Try it free
-System
+Developer
 On this page
+Back to top
 Data mean formula
 Percentile analysis
 Fixed-horizon versus sequential analysis
@@ -166,17 +63,16 @@ Confidence intervals
 p-values
 Edge case handling
 Conclusion
-Scroll to top
-Guides
 Statistical methodology
 Statistical methodology for frequentist experiments
-Copy page
+Developer
 This guide includes advanced concepts
 This section includes an explanation of advanced statistical concepts. We provide them for informational purposes, but you do not need to understand these concepts to use Experimentation.
 This guide explains the statistical methodology LaunchDarkly uses to calculate frequentist experiment variation means, and how these analytics formulas are useful for validating your results.
 For a high-level overview of frequentist and Bayesian statistics, read
 Bayesian versus frequentist statistics
 .
+​
 Data mean formula
 This section applies to metrics that use the
 average (mean) analysis method
@@ -246,7 +142,8 @@ C
 o
 n
 v
-ers
+er
+s
 i
 o
 n
@@ -257,7 +154,8 @@ x
 p
 os
 u
-res
+r
+es
 Numeric metrics
 use the total value divided by the total number of exposures:
 D
@@ -322,7 +220,8 @@ o
 t
 a
 l
-Va
+V
+a
 l
 u
 e
@@ -332,11 +231,13 @@ x
 p
 os
 u
-res
+r
+es
 When you hover on the “Conversion rate” and ‘Mean” headings in an experiment results table, the above formulas for the data mean display.
 CUPED may affect the exact computation of these results. To learn more, read
 Covariate adjustment and CUPED methodology
 .
+​
 Percentile analysis
 This section applies to metrics using a
 percentile analysis method
@@ -348,6 +249,7 @@ This produces a sequential interval for one arm of an experiment which is optimi
 Because this is a sequential method, LaunchDarkly automatically checks the
 Enable sequential testing
 box when you create an experiment. CUPED is not compatible with percentile metrics.
+​
 Fixed-horizon versus sequential analysis
 At LaunchDarkly, we use two different modes of frequentist analysis:
 Fixed-horizon analysis
@@ -361,6 +263,7 @@ The main difference between the version of these statistics in the fixed-horizon
 Fixed-horizon statistics: You can only act on fixed-horizon statistics at a specific point in time calculated prior to the start of the experiment.
 Sequential statistics: You can act on sequential statistics at any point during the experiment.
 Mean metrics can use either fixed-horizon analysis or sequential analysis. Percentile metrics can use only sequential analysis.
+​
 Fixed-horizon analysis
 LaunchDarkly uses the industry- and scientific-standard z-test for fixed-horizon analyses on metrics based on means. This is because data volumes typical of online experimentation imply that sample means in nearly all cases will be approximately normally distributed.
 LaunchDarkly also computes confidence intervals in the usual way based on the same normal approximation used in the z-test.
@@ -414,6 +317,7 @@ are the sample means of the control and treatment variations, respectively.
 To compute these statistical quantities, LaunchDarkly uses the standard delta method approximation to calculate the variance of the relative difference. For details of the computation, read
 Applying the Delta Method in Metric Analytics: A Practical Guide with Novel Ideas
 .
+​
 Sequential analysis
 For sequential analysis LaunchDarkly uses the method of
 Howard (2021)
@@ -423,6 +327,7 @@ Waudby-Smith et. Al. (2024)
 This method constructs confidence intervals that are similar in structure to the fixed-horizon ones from a z-test, but leverage modern results on concentration inequalities. This provides strong statistical guarantees regarding false positive rate and statistical power for all time, not just a specific fixed point in time.
 From those confidence intervals, we can derive p-values that bring the user experience of sequential testing to parity with the ordinary fixed-horizon test.
 Below, we provide the formulas for the two-sided case. The intervals for the one-sided test are similar, except with all the allowable false positive rates distributed to one side rather than both.
+​
 Confidence intervals
 The general form of a symmetric two-sided confidence intervals is:
 estimate
@@ -462,6 +367,7 @@ N^*
 N
 ∗
 chiefly affects the statistical power of the technique at a given expected sample size for the experiment. When it is roughly equal to the expected magnitude of the sample size of the experiment, then the test has the best performance. At LaunchDarkly, we set this to a reasonable default we expect will work for most use cases, although we give the user the ability to change it if they know in advance to expect significantly higher or lower traffic volume.
+​
 p-values
 p-values are not a primary outcome of the GAVI technique described in the paper above. However, they can be derived from the confidence intervals since p-values and confidence intervals are dual in some sense.
 We define the p-value as the smallest value of the significance level
@@ -497,6 +403,7 @@ This construction guarantees that whenever the sequential confidence interval do
 \alpha
 α
 and vice versa, so that the two measures can be used interchangeably to tell when the comparison is significant.
+​
 Edge case handling
 LaunchDarkly always displays raw exposure counts and metric totals on the results tab. However, certain edge cases require LaunchDarkly to calculate statistical summaries (
 confidence intervals
@@ -506,6 +413,7 @@ p-values
 The edge cases include:
 When the control mean is zero, LaunchDarkly does not show any statistical results. The p-value and confidence interval calculations are based off the relative difference, and the relative difference cannot be calculated when the control mean is zero.
 When the control mean is non-zero, but the estimated variance of the data is zero, then LaunchDarkly uses heuristics to impute a variance until both arms display variation. You might encounter this scenario with binary metrics where the observed rate is 0% or 100%, or with numeric metrics where each unit has the same value.
+​
 Conclusion
 This guide explained the statistical methods LaunchDarkly applies to frequentist experiments. To learn about Bayesian statistical methods in LaunchDarkly, read
 Statistical methodology for Bayesian experiments
@@ -515,10 +423,7 @@ Your 14-day trial begins as soon as you sign up. Get started in minutes using th
 Want to try it out?
 Start a trial
 .
-Was this page helpful?
-Yes
-No
+Statistical methodology for Bayesian experiments
 Previous
 Multiple comparisons correction
 Next
-Built with

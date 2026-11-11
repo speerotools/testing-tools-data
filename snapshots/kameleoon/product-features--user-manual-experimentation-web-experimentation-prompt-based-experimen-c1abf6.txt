@@ -14,6 +14,7 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -25,14 +26,15 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Home
 User manual overview
 Get started
-Web Experimentation installation guide
-Feature Experimentation installation guide
-Using the homepage
-Embed a saved view on your homepage
+Installation
+Kameleoon homepage
 Experimentation
 Web Experimentation
 Prompt-based experiments
@@ -47,7 +49,6 @@ Best practices and safeguards
 Import designs from Figma
 Contentsquare X PBX integration
 PBX Ideate
-Prompt-based experimentation FAQ
 Graphic-based experiments
 Code-based experiments
 Configure and launch
@@ -85,10 +86,11 @@ Product targeting
 Social proofing
 Tracking counters in the Widget Studio
 Account and team management
-Security and authentication
+Profile and authentication
 Users and teams
 Organization settings
 Project management
+Create a project
 Manage your projects
 Consent management
 Kai
@@ -97,22 +99,11 @@ AI opportunity detection
 Get started
 Audiences — Key metrics
 Audiences — Segment analysis
-AI Predictive Targeting
-AI Predictive Targeting
-Enable AI Predictive Targeting on a goal
-Use AI Predictive Targeting in a segment
-FAQ
-FAQ
+AI Targeting
+AI Targeting
+Enable AI Targeting on a goal
+Use AI Targeting in a segment
 English
-On this page
-Why use Master Prompts?
-How it works
-Typical use cases
-Configure a Master Prompt
-Roles and permissions
-Admin users
-Non-admin users
-Best practices for admins
 PBX Build
 Master Prompts
 Copy page
@@ -135,7 +126,7 @@ Automate compliance with accessibility, tracking, and architectural standards.
 How it works
 The Master Prompt provides a background instruction layer at the project level. When you use PBX to generate an experiment or variation:
 PBX automatically injects the Master Prompt into the request.
-PBX combines the Master Prompt with your specific prompt and processes the combined input. This ensures the final output adheres to both your specific request and the global project constraints.
+PBX combines the Master Prompt with your specific prompt and processes the combined input. This process ensures the final output adheres to both your specific request and the global project constraints.
 ​
 Typical use cases
 Brand consistency:
@@ -172,9 +163,35 @@ sidebar.
 On the
 Master Prompt
 tab, enter your Master Prompt into the text box.
+The Master Prompt accepts up to 10,000 characters.
 You can turn on
 Allow users to skip the master prompt
-. This option lets users ignore the Master Prompt, meaning PBX does not apply your global rules and constraints to their variations.
+. This option lets users ignore the Master Prompt, meaning PBX doesn’t apply your global rules and constraints to their variations.
+You can also configure the Master Prompt on the project’s
+PBX
+tab:
+Click
+Admin
+>
+Projects
+, then click
+Edit
+on your project’s row.
+Click the
+PBX
+tab.
+In the
+PBX Build
+section, click
+Edit
+.
+In
+Master prompt
+, enter your instructions, optionally turn on
+Allow users to skip the master prompt
+, and click
+Save changes
+.
 ​
 Roles and permissions
 PBX separates capabilities to ensure proper project governance and guardrails.
@@ -198,18 +215,24 @@ Best practices for admins
 Keep it modular:
 Focus on high-level constraints rather than micromanaging every detail. Let the user prompt handle specific session goals. If you notice users consistently overriding certain behaviors, consider formalizing those behaviors within the Master Prompt.
 Avoid overlapping rules:
-Ensure the Master Prompt does not contain conflicting instructions that might confuse the AI model.
+Ensure the Master Prompt doesn’t contain conflicting instructions that might confuse the AI model.
 Clarity is key:
 Use concise, declarative language (for example, “Always use…”) to ensure the highest adherence to your rules.
 Was this page helpful?
 Yes
 No
-PBX Configure
-Previous
-How to write effective prompts
-Next
 ⌘
 I
+On this page
+Back to top
+Why use Master Prompts?
+How it works
+Typical use cases
+Configure a Master Prompt
+Roles and permissions
+Admin users
+Non-admin users
+Best practices for admins
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

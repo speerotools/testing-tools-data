@@ -15,41 +15,56 @@ en
 Deutsch (DE)
 English (EN)
 ABlyft Lumen AI
-Meet ABlyft Lumen - your AI-powered co-pilot for A/B testing. From generating experiment ideas to interpreting results, Lumen helps you make smarter decisions faster and spend your time where it matters most.
+Meet ABlyft Lumen - your AI-powered co-pilot for A/B testing. From generating experiment ideas and building variations via chat in the Visual Editor to interpreting results, Lumen helps you make smarter decisions faster and spend your time where it matters most.
 Find out more
 AI-Generated Test Ideas
 - never run out of experiments
-Stop guessing what to test next. Just enter your URL and goal, and Lumen delivers five ready-to-run experiment ideas - complete with hypotheses, effort scores and recommended KPIs. More experiments, less brainstorming.
+Stop guessing what to test next. Enter your URL, goal and target audience, and Lumen delivers up to five ready-to-run experiment ideas - complete with a hypothesis, effort, risk and confidence scores and recommended KPIs. And with every piece of feedback, the suggestions get more relevant.
 AI Result Interpretation
 - understand your data instantly
-Get clear, actionable recommendations for every experiment: Ship, Don't Ship, or Keep Running. Ask follow-up questions, filter by device or date range, and compare Frequentist vs. Bayesian results - all in a conversational interface.
+One click on "Interpret" and Lumen explains your results - with a clear recommendation: Ship, Keep Running or Gather More Data. Ask follow-up questions, filter by device or date range, and compare Frequentist, Bayesian and Legacy results - all in one chat.
 MCP Server
 - control ABlyft from any AI assistant
-Connect Claude, ChatGPT or any AI assistant to ABlyft via the Model Context Protocol. Create experiments, generate variations, check results and manage your entire testing program - without ever opening the dashboard.
+Connect Claude, ChatGPT, Cursor, Windsurf or any other AI assistant to ABlyft via the Model Context Protocol. With 42 tools, you can create experiments, generate variations, check results and manage your entire testing program - without ever opening the dashboard.
+Lumen in the Visual Editor
+- just describe your variation
+You know what you want to change, but not how? Just tell Lumen. With "Edit with AI" on any element or "Build with AI" in the toolbar, you describe your change in your own words - and Lumen applies it live on your page right away.
+Describe changes instead of coding them
+Live preview, refine and undo
+Combine AI and manual changes
+Credits only on save, not per message
 All AI Features at a Glance
 ABlyft Lumen brings artificial intelligence directly into your experimentation workflow - so you can focus on growing your business, not on manual tasks.
 Experiment Ideas Generation
-Enter your URL, select your goal and target audience - and receive five AI-generated experiment ideas with hypotheses, effort and confidence scores and recommended KPIs. Ready to implement in minutes, not days.
+Enter your URL, select your goal, your target audience and whether you want content or feature tests - and receive up to five AI-generated ideas with a hypothesis, effort, risk and confidence scores and recommended KPIs. Everything lands in your idea backlog, and Lumen learns from every rejection.
 AI Result Interpretation
-A conversational AI agent that analyzes your A/B test results and gives you clear recommendations: Ship, Don't Ship, or Keep Running. Ask follow-up questions, filter by date or device type and compare statistical methods.
+A conversational AI agent that analyzes your A/B test results and gives you clear recommendations: Ship, Keep Running or Gather More Data. Start with suggested questions, filter by date or device type and compare Frequentist, Bayesian and Legacy.
+AI in the Visual Editor
+With "Edit with AI" and "Build with AI", you simply describe changes in words - Lumen applies them live in the preview. Refine step by step, combine AI and manual changes and remove any AI change individually. Credits are only charged when you save.
 Variation Code Generation
-Describe the change you want to make and Lumen generates the CSS and JavaScript code for your experiment variation. It identifies the right DOM elements, creates reliable selectors and explains every change it makes.
+Describe the variation you want in your AI assistant and Lumen generates the matching CSS and JavaScript code and creates the variation directly in ABlyft. Reliable selectors and proper waiting for elements included.
 MCP Server Integration
-Connect your favorite AI assistant to ABlyft via the Model Context Protocol. With 17 tools available, you can create experiments, manage variations, retrieve results and control your entire testing program through natural language.
+Connect Claude, ChatGPT, Cursor, Windsurf or any other MCP-compatible AI assistant to ABlyft via OAuth. With 42 tools, you control experiments, variations, pages, audiences, goals, schedules, exclusion groups and results through natural language.
 AI Credits & Usage Tracking
-Keep full control of your AI usage with a transparent credit system. See exactly how many credits you've used, what's left this month and who used which feature when - all in a clear dashboard under Team Settings.
+Keep full control of your AI usage with a transparent credit system. See exactly how many credits you've used, what's left this month and who used which feature when - with warning levels at 70% and 90% and filters by type, source and user.
 AI Opt-In & Privacy Controls
-Stay in control of your data. Team admins can enable or disable AI features at any time. No personal data is processed, no data is used for AI training - and a clear data processing agreement is in place.
+Stay in control of your data. AI is off by default - only the team owner can enable it or disable it permanently. No personal data is processed, no data is used for AI training, and an amendment to the data processing agreement is available on request.
+Security Guardrails
+Lumen only sees what it really needs: form values, password fields, email addresses, phone numbers and tokens are removed or masked before sending. Generated code cannot send data anywhere or access cookies or browser storage.
 ABlyft Lumen - Your AI Identity
 All AI responses come from ABlyft Lumen, your dedicated A/B testing AI assistant. Lumen focuses exclusively on experimentation expertise and responds in your language - so you always get relevant, context-aware answers.
 What are AI Credits and how do they work?
-Every AI action uses credits from your monthly budget. Generating experiment ideas costs 100 credits, while result interpretations and code generation each cost 50 credits per request. Your credits reset automatically every month, and you can track your usage anytime in Team Settings.
+Every AI action uses credits from your monthly allowance: experiment ideas cost 100 credits per run (up to five ideas), result interpretation 50 credits per chat message, code generation via MCP 50 credits, and saving new AI changes in the Visual Editor 50 credits per save. Your credits reset automatically every month. You can track your usage anytime in Team Settings - including a warning at 70% and 90%.
 Is my data safe when using ABlyft Lumen?
-Absolutely. AI features are opt-in and can be enabled or disabled by your team admin at any time. No personal data is processed, and your data is never used for AI training.
+Absolutely. AI features are opt-in: only the team owner can enable, disable or permanently turn them off. Only the minimum necessary information is sent to the AI provider - sensitive content such as form values, email addresses or phone numbers is removed or masked beforehand. Your data is never used for AI training.
 What is the MCP Server and how do I connect it?
-The MCP Server (Model Context Protocol) allows external AI assistants like Claude or ChatGPT to interact with ABlyft directly. With 17 available tools, you can manage experiments, create variations and retrieve results - all through your preferred AI assistant.
+The MCP Server (Model Context Protocol) allows AI assistants like Claude, ChatGPT, Cursor or Windsurf to work with ABlyft directly. Simply add the server URL from your personal settings as a connector and authorize the connection via OAuth. You then get 42 tools for experiments, variations, pages, audiences, goals, schedules, exclusion groups and results - always with exactly the permissions of your user.
 Do I need technical knowledge to use the AI features?
-Not at all. ABlyft Lumen is designed to be intuitive for everyone. Whether you're generating test ideas, interpreting results or using the MCP Server - Lumen guides you through the process and responds in your language.
+Not at all. ABlyft Lumen is designed to be intuitive for everyone. Whether you're generating test ideas, building variations via chat in the Visual Editor, interpreting results or using the MCP Server - Lumen guides you through the process and responds in your language.
+Do I pay for every chat message in the Visual Editor?
+No. In the Visual Editor, you can chat with Lumen and refine your changes as much as you like. Credits are only charged when you save a variation with new or modified AI changes - a flat 50 credits per save, no matter how many changes it contains.
+Will Lumen overwrite my manual changes?
+No. AI changes and manual changes are managed separately and can be combined in the same variation. Lumen only ever adjusts its own changes - and you can remove any AI change individually without losing the rest of your variation.
 Have Questions? Get in touch!
 Want to learn more about how ABlyft Lumen can accelerate your experimentation program? We're happy to help.
 Talk to us

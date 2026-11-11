@@ -10,77 +10,9 @@ Search docs…
 /
 Full width
 Statsig Console
-More
 Product Docs
-Warehouse Native
-SDKs & APIs
-Management & Integrations
-Get Started
-Start Here
-Statsig Platform Overview
-Support Options
-Experiments
-Overview
-Create & Implement
-Configure Stats Engine
-Experiment Types
-Reducing False Positives
-Health Checks
+/
 Variance Reduction
-Variance Reduction
-CUPED
-Winsorization
-How we Calculate:
-Stratified Sampling
-Frequentist Sequential Testing
-Bayesian Experiments
-Sequential Probability Ratio Tests
-End An Experiment
-Read Results
-Layers
-Holdouts
-Feature Management
-Feature Flags
-Dynamic Config
-Segments
-Release Pipelines
-Analytics
-Product Analytics
-Infra Analytics
-Alerts
-Web Analytics
-AI Experimentation
-Overview
-Early Access
-Setup
-Early Access
-Prompts & Graders
-Offline Evals
-Online Evals
-Early Access
-Other Features
-Low-Code Experiments
-Session Replay
-Statsig + AI
-Control Panel
-Early Access
-Data & Metrics
-Tutorials
-Parameterizing your Code
-Device-Level Experiments
-Using Custom ID Types
-Environment-based Evaluation
-Ingesting Open Telemetry Data
-Testing your Gates/Experiments
-Migration Guides
-FAQ
-On this page
-CUPED for simple aggregations
-CUPED for ratio metrics
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
-Product Docs
 /
 CUPED
 CUPED
@@ -969,7 +901,80 @@ The pooled variance of the adjusted population across groups is less than the va
 More than 100 units have pre-exposure values.
 More than 5% of units have pre-exposure values.
 Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+CUPED for simple aggregations
+CUPED for ratio metrics
 Copy Markdown
 On this page
 CUPED for simple aggregations
 CUPED for ratio metrics
+More
+Product Docs
+Warehouse Native
+SDKs & APIs
+Management & Integrations
+Get Started
+Start Here
+Statsig Platform Overview
+Support Options
+Experiments
+Overview
+Create & Implement
+Read Results
+End An Experiment
+Experiment Types
+Layers
+Holdouts
+Configure Stats Engine
+Introduction
+Analysis Methods
+Reducing False Positives
+Variance Reduction
+Variance Reduction
+CUPED
+Winsorization
+Stratified Sampling
+Health Checks
+How We Calculate
+Feature Management
+Feature Flags
+Dynamic Config
+Segments
+Release Pipelines
+Smart Gate
+Early Access
+Analytics
+Product Analytics
+Infra Analytics
+Alerts
+Web Analytics
+Agent Experimentation
+Overview
+Setup
+AI Configs
+Graders
+Datasets
+Evals
+Playground
+Offline Evals
+Online Evals
+AI Traces
+Other Features
+Low-Code Experiments
+Session Replay
+Statsig + AI
+Control Panel
+Early Access
+Data & Metrics
+Tutorials
+Parameterizing your Code
+Device-Level Experiments
+Using Custom ID Types
+Environment-based Evaluation
+Ingesting Open Telemetry Data
+Testing your Gates/Experiments
+Migration Guides
+FAQ

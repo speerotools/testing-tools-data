@@ -5,11 +5,55 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
+Data
+Trustworthy data, flowing both ways
+Get clean, governed behavioral data into Amplitude, stitch it to the right users, and push it back out to the tools your team already uses — so every team works from the same numbers.
+Explore Data
+Get every event into Amplitude
+Stream activity from SDKs, servers, warehouses, and pre-built sources so no behavior goes uncounted.
+Activate insights in your stack
+Send behavioral data and cohorts to the marketing, ad, and warehouse tools your team already uses.
+See one user, not many
+Stitch warehouse profile data to behavioral events so each person is the same user across devices.
+Trust the data your team queries
+Lock in a tracking plan, review changes, and keep events on-spec as your product evolves.
+Fix data without redeploying
+Rename, redact, or reshape events on the way in instead of waiting on an instrumentation fix.
+Add the context analysts need
+Join reference data like plans, regions, or accounts to events so every chart has the full picture.
+Plan and collect data
+Start with an implementation plan that defines the events, users, and properties your team needs.
+Plan your implementation
+to connect product questions to the events you track.
+Create a tracking plan
+to document event names, properties, and ownership.
+Choose client-side or server-side tracking
+to match your product architecture.
+Use Autocapture
+to collect website interactions before you manually instrument every event.
+Govern and activate data
+Keep your taxonomy healthy, then send trusted data to the teams and tools that need it.
+Configure schema
+to monitor event volume, property types, and unexpected changes.
+Transform incoming events
+to rename, redact, or reshape data after ingestion.
+Manage data access controls
+to limit access to sensitive events and properties.
+Forward data to destinations
+to activate behavioral data in downstream tools.
+Amplitude Academy
+Get Started with Amplitude Data
+Learn the fundamentals of Amplitude Data.
+Get started
+Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+Copy Markdown
 Products
 Data
 Analytics
@@ -26,7 +70,6 @@ Guides and Surveys
 More
 Get Started
 Admin
-FAQ
 Developers
 SDKs
 APIs
@@ -38,7 +81,6 @@ Common Patterns
 Get started
 Getting started with Amplitude
 Autocapture
-Visual Labeling
 Chrome extension
 Settings
 Environment settings
@@ -56,6 +98,7 @@ Protect your schema
 .CSV import and export
 Jira
 Data Access Control
+Limits and quotas
 Organize your data
 Properties
 Descriptions
@@ -103,51 +146,6 @@ Integrations and sources
 Language
 🇺🇸
 English
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
-Data
-Trustworthy data, flowing both ways
-Get clean, governed behavioral data into Amplitude, stitch it to the right users, and push it back out to the tools your team already uses — so every team works from the same numbers.
-Explore Data
-Get every event into Amplitude
-Stream activity from SDKs, servers, warehouses, and pre-built sources so no behavior goes uncounted.
-Activate insights in your stack
-Send behavioral data and cohorts to the marketing, ad, and warehouse tools your team already uses.
-See one user, not many
-Stitch warehouse profile data to behavioral events so each person is the same user across devices.
-Trust the data your team queries
-Lock in a tracking plan, review changes, and keep events on-spec as your product evolves.
-Fix data without redeploying
-Rename, redact, or reshape events on the way in instead of waiting on an instrumentation fix.
-Add the context analysts need
-Join reference data like plans, regions, or accounts to events so every chart has the full picture.
-Plan and collect data
-Start with an implementation plan that defines the events, users, and properties your team needs.
-Plan your implementation
-to connect product questions to the events you track.
-Create a tracking plan
-to document event names, properties, and ownership.
-Choose client-side or server-side tracking
-to match your product architecture.
-Use Autocapture
-to collect website interactions before you manually instrument every event.
-Govern and activate data
-Keep your taxonomy healthy, then send trusted data to the teams and tools that need it.
-Configure schema
-to monitor event volume, property types, and unexpected changes.
-Transform incoming events
-to rename, redact, or reshape data after ingestion.
-Manage data access controls
-to limit access to sensitive events and properties.
-Forward data to destinations
-to activate behavioral data in downstream tools.
-Amplitude Academy
-Get Started with Amplitude Data
-Learn the fundamentals of Amplitude Data.
-Get started
-Was this helpful?
-Copy Markdown
 Platform
 AI Agents
 AI Visibility

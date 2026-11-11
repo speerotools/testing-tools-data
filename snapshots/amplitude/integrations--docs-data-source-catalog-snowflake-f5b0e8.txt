@@ -5,95 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Source catalog
-Ad Networks
-Attribution
-CDP
-Collaboration
-Customer Engagement
-Data warehouse/data lake
-BigQuery Data Import
-Databricks
-Google Analytics 4 Import
-Snowflake Data Import
-Experimentation
-Marketing Analytics
-Marketing Automation
-Messaging
-Other
-Privacy
-Qualitative Feedback
-Reverse ETL
-Sales
-Storage
-Subscription Management
-Website
-On this page
-Limits
-Reuse existing Snowflake credentials
-Set up the integration
-Set up and verify the connection
-Select the data type
-Select the import strategy
-Map your data
-Schedule your sync
-Choose the best integration for your use case
-Prerequisites and considerations for CDC
-Migrate to Change Data Capture (CDC) Mirror Sync
-Data fields
-Events
-User properties
-Group properties
-SQL query examples
-Event data example
-User property example
-Group property example
-Common snippets
-SQL troubleshooting
-Required event properties
-Basic event query with properties
-Snowflake-specific features and best practices
-Performance optimization tips
-Use clustering keys
-Use materialized views
-Date partitioning in WHERE clauses
-Micro-partitions
-Troubleshooting
-Frequently asked questions
-What happens when a Snowflake query times out?
-How many times does Amplitude retry failed queries?
-Why is ABORTDETACHEDQUERY set to FALSE?
-How can I prevent duplicate data during imports?
-Is there any risk of data loss during query timeouts?
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Data
 /
 Source catalog
@@ -128,7 +43,7 @@ at the session level.
 Reuse existing Snowflake credentials
 When you create a new Snowflake import or export, Amplitude lets you select previously saved credentials from your organization instead of entering them again. Reusable credentials include connections from other imports, exports, and connections made in other projects (if you have permission).
 Shared credentials update together
-Credentials are shared at the underlying level. If you update the password or key pair on one connection, Amplitude updates all connections that share those credentials. Review which connections use the credentials before making changes.
+Amplitude shares credentials at the underlying level. If you update the key pair on one connection, Amplitude updates all connections that share those credentials. Review which connections use the credentials before making changes.
 To reuse existing credentials, select
 Use existing credentials
 at the credential entry step when creating a new connection. Amplitude lists all saved credentials from your organization. To reuse credentials from another project, you need permission to create Data Warehouse connections in both projects.
@@ -158,25 +73,16 @@ Warehouse
 : Used by Amplitude to execute SQL.
 Username
 : Used by Amplitude for authentication.
-Password
-: Used by Amplitude for authentication.
-Amplitude offers password-based and key pair authentication for Snowflake.
-Snowflake Password Authentication Deprecation
-Beginning in May 2026, Snowflake is removing support for single-factor password authentication. This impacts the way you send data from Snowflake to Amplitude. Amplitude recommends migrating to key pair authentication for enhanced security and future compatibility with Snowflake. For detailed migration guidance, refer to the
-Snowflake Password Authentication Deprecation FAQ
+Use key pair authentication to connect to Snowflake.
+Snowflake password authentication deprecation
+Snowflake previously offered password connections, but Amplitude no longer supports them. To move an existing source off password authentication, refer to
+Migrate a Snowflake connection to key pair authentication
 .
-- If you want to use password authentication, select
-Password
-and enter your password in the
-Password
-field.
--
-Key pair authentication (Recommended)
-: If you want to use key pair authentication, select
+- Select
 Key pair
-and then click
+, then click
 Generate Key
-. Then provide the organization and account names in the format
+. Provide the organization and account names in the format
 ORGNAME-ACCOUNTNAME
 .
 (Optional) Configure S3 Storage Integration with Stage for Snowflake (Open Beta): You can set up a storage integration with stage to provide an additional layer of security when Amplitude accesses your Snowflake data. For more information, refer to Snowflake's
@@ -999,7 +905,56 @@ Source data protection
 Automatic retries
 : Amplitude automatically retries failed imports up to 8 times, giving your data multiple opportunities to import successfully.
 Your Snowflake data remains safe and unchanged regardless of import job outcomes.
+Related
+:
+BigQuery Data Import
+·
+Amazon S3 Import
+·
+Data Mutability Features
+·
+Understand the data differences between Amplitude, Snowflake, and the Export API
 Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Limits
+Reuse existing Snowflake credentials
+Set up the integration
+Set up and verify the connection
+Select the data type
+Select the import strategy
+Map your data
+Schedule your sync
+Choose the best integration for your use case
+Prerequisites and considerations for CDC
+Migrate to Change Data Capture (CDC) Mirror Sync
+Data fields
+Events
+User properties
+Group properties
+SQL query examples
+Event data example
+User property example
+Group property example
+Common snippets
+SQL troubleshooting
+Required event properties
+Basic event query with properties
+Snowflake-specific features and best practices
+Performance optimization tips
+Use clustering keys
+Use materialized views
+Date partitioning in WHERE clauses
+Micro-partitions
+Troubleshooting
+Frequently asked questions
+What happens when a Snowflake query times out?
+How many times does Amplitude retry failed queries?
+Why is ABORTDETACHEDQUERY set to FALSE?
+How can I prevent duplicate data during imports?
+Is there any risk of data loss during query timeouts?
 Copy Markdown
 On this page
 Limits
@@ -1038,6 +993,49 @@ How many times does Amplitude retry failed queries?
 Why is ABORTDETACHEDQUERY set to FALSE?
 How can I prevent duplicate data during imports?
 Is there any risk of data loss during query timeouts?
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Source catalog
+Ad Networks
+Attribution
+CDP
+Collaboration
+Customer Engagement
+Data warehouse/data lake
+BigQuery Data Import
+Databricks
+Google Analytics 4 Import
+Snowflake Data Import
+Experimentation
+Marketing Analytics
+Marketing Automation
+Messaging
+Other
+Privacy
+Qualitative Feedback
+Reverse ETL
+Sales
+Storage
+Subscription Management
+Website
 Platform
 AI Agents
 AI Visibility

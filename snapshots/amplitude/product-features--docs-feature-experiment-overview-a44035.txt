@@ -5,108 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Overview
-Get Started
-Overview
-Experiment Quick Start
-Feature vs Web use cases
-Functional comparison
-Key terms
-Creating Experiments
-Project-level permissions
-Define audience
-Configure delivery
-Notifications through Slack, Microsoft Teams, or Webhook
-Experiment Goals
-Group Experiments
-Estimate duration
-Feature Experiments
-Web Experiments
-Testing Experiments
-Test and launch
-Make a decision
-Run an A/A test
-Analyzing Experiments
-Overview
-The Experiment Analysis view
-Dimensional Analysis
-Advanced metric use cases
-Learn from your experiment
-Understand the cumulative exposures graph
-Troubleshooting
-Troubleshoot
-New Experiment Run
-Exposures w/o assignments
-Sample Ratio Mismatch
-Variant jumping
-Debug metric spikes and dips
-Instrument Experiment
-Configure
-Implement Web Experiment
-Event tracking
-SDK Catalog
-Evaluation
-Experiment Integrations
-Contentful
-Experiment Advanced Concepts
-Data model
-Performance and caching
-AWS CloudFront proxy
-Server-side rendering
-Bonferroni Correction
-JSON payloads
-Advanced settings
-Flag Prerequisites
-Flag Dependencies
-Statistics Method
-Sequential testing
-T-test
-Bayesian
-Multi-armed bandit
-Winsorization
-Language
-🇺🇸
-English
-On this page
-How feature flags and the Web editor differ
-Functional availability
-Creating an experiment
-Create a hypothesis
-Pick a metric
-Create a variant
-Decide who receives the variant
-Allocate users
-Activate your experiment
-Analyze your results
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Feature Experiment
 /
 Overview
@@ -192,7 +94,30 @@ Read more about experiment briefs and how to use them in this blog
 The
 Website Conversion Agent
 can help you identify high-impact pages, generate experiment strategies, and create draft experiments, all through a guided AI workflow.
+Related
+:
+Feature and Web Experiment Use Cases
+·
+Experiment Quick Start
+·
+Run an A/A test
+·
+Notifications through Slack, Microsoft Teams, or Webhook
 Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+How feature flags and the Web editor differ
+Functional availability
+Creating an experiment
+Create a hypothesis
+Pick a metric
+Create a variant
+Decide who receives the variant
+Allocate users
+Activate your experiment
+Analyze your results
 Copy Markdown
 On this page
 How feature flags and the Web editor differ
@@ -205,6 +130,88 @@ Decide who receives the variant
 Allocate users
 Activate your experiment
 Analyze your results
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Overview
+Get Started
+Overview
+Experiment Quick Start
+Feature vs Web use cases
+Functional comparison
+Key terms
+Creating Experiments
+Project-level permissions
+Define audience
+Configure delivery
+Notifications through Slack, Microsoft Teams, or Webhook
+Experiment Goals
+Group Experiments
+Estimate duration
+Feature Experiments
+Web Experiments
+Testing Experiments
+Test and launch
+Make a decision
+Run an A/A test
+Analyzing Experiments
+Overview
+The Experiment Analysis view
+Dimensional Analysis
+Advanced metric use cases
+Learn from your experiment
+Understand the cumulative exposures graph
+Troubleshooting
+Troubleshoot
+New Experiment Run
+Exposures w/o assignments
+Sample Ratio Mismatch
+Variant jumping
+Debug metric spikes and dips
+Instrument Experiment
+Configure
+Implement Web Experiment
+Event tracking
+SDK Catalog
+Evaluation
+Experiment Integrations
+Contentful
+Experiment Advanced Concepts
+Data model
+Performance and caching
+AWS CloudFront proxy
+Server-side rendering
+Bonferroni Correction
+JSON payloads
+Advanced settings
+Flag Prerequisites
+Flag Dependencies
+Statistics Method
+Sequential testing
+T-test
+Bayesian
+Multi-armed bandit
+Winsorization
+Language
+🇺🇸
+English
 Platform
 AI Agents
 AI Visibility

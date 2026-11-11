@@ -1,8 +1,8 @@
 # https://launchdarkly.com/pricing
-Pricing | LaunchDarkly
-[Virtual event] Automate Your Software Factory - Nov 5
+LaunchDarkly Pricing | Compare Plans & Features
+Introducing Release Autopilot: Automated release control for AI-built code
 —
-Save my seat
+Read the announcement
 Skip to:
 Home
 Content
@@ -17,6 +17,7 @@ Book a demo
 How it works
 Platform overview
 Feature flags
+Release Autopilot
 Observability
 Experimentation
 Agent integrations
@@ -39,7 +40,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events & webinars
+Events
 Videos
 Success
 Academy
@@ -69,100 +70,219 @@ Pricing
 Sign in
 Book a demo
 Book a demo
-Flexible pricing for
+Pricing for
 every stage
-and team.
+.
 Developer
-One platform for features and agents. Free to start.
+One platform for features, agents, observability, and experiments.
 Get started free
-No credit card required
 $0
-/ mo, forever
-Unlimited seats
+per mo, forever
+No credit card required
+Features include:
+Unlimited seats, no per-seat fees
 No per-seat pricing. Invite your whole team; pricing is based on usage.
-A/B Tests and Experiments
-Includes 100K experimentation MAU per month at no additional charge.
-10M logs and 10M traces /mo
-A log is a single log line and a trace is a single span, each ingested, stored, and searchable for one month.
-CodeControl:
-Unlimited feature flags
-30 idiomatic SDKs
-13 client-side, 13 server-side, and 4 edge SDKs.
-5 service connections and 1K client-side MAU /mo
-A service connection is one server-side SDK connected to one environment for a month. Each unique client-side user or device is one MAU.
-5K session replays and 5K errors /mo
-A session replay is one recorded user session (a single tab instance); an error is one unique error or exception. Each is stored for one month.
-AgentControl:
-Configure, evaluate, roll out, and observe your AI end to end
-5k AI runs/mo included
-An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
-14 days data retention
-How long AgentControl run and eval data stays available.
+Unlimited flags with targeting
+Create as many feature flags as you need and target them by user, segment, or rule.
+Agent configs & LLM-as-judge evals
+Configure, evaluate, roll out, and observe your AI end to end.
+Observability for apps & LLMs
+Session replays, errors, logs, and traces for your apps and the LLM calls inside them.
+A/B tests & multi-armed bandits
+No limit on experimentation.
+New
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Usage limits and rates
+Usage included, free every month
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Included
+Service connections
+One server-side SDK connected to one environment, counted by time and averaged over the month. Every replica, worker and dev or staging environment counts.
+5
+free
+Client-side MAU
+Each unique client-side user or device counts as one monthly active user.
+1K
+free
+AgentControl AI runs
+One AI run is one LLM call your app makes through an AgentControl config, or one judge evaluation. Tokens and traces don’t count. An online eval scores a live response, so it uses two runs.
+5K
+free
+Session replays
+Recordings of real user visits to your web or mobile app, captured by the LaunchDarkly observability SDK.
+5K
+free
+Errors captured
+Exceptions and crashes thrown by your own application code and sent to LaunchDarkly through the observability SDK or OpenTelemetry.
+5K
+free
+Trace spans
+Distributed traces from your services, sent through OpenTelemetry.
+10M
+free
+Log lines
+Log records your application sends to LaunchDarkly through the observability SDK or an OpenTelemetry collector, so you can read them next to flag changes.
+10M
+free
+Never billed. Upgrade when you hit a
+limit.
 Foundation
 Ship features and agents to production. Scale both without hitting a ceiling.
 Pay as you go
-14-day trial, then pay as you go.
-No platform or seat fees.
 Pay as you go
-Break it down
-Billed yearly
-$10
-per Service Connection / mo
-One server-side SDK connected to one environment for a month. Serverless and short-lived processes bill fractionally by connection time.
-$8.33
-per 1k client-side MAU / mo
-Each unique client-side user or device counts as one monthly active user.
-5k
-AI Runs included / mo.
-An AI run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
-$5 per additional 1k runs.
-Special rates for K8s, Serverless, Python, & Ruby
-Because these architectures create a high volume of server-side connections, standard per-connection pricing isn't a fair fit. We'll tailor a package to your environment, so the way you run doesn't inflate your bill.
-Get custom pricing
 Everything in Developer, plus:
-Unlimited projects and environments
-5 service connections included, pay as you go beyond
-Your first 5 service connections each month are included. Additional connections bill at $10 each per month.
-Scalable observability usage
-5K session replays, 5K errors, 10M logs, and 10M traces included each month. Usage beyond that bills as you go.
-AgentControl:
-Usage-based pricing past 5,000 AI runs/mo
-An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
-30 days data retention
-How long AgentControl run and eval data stays available.
+Flag & experiment approval requests
+Request a review before a change applies, with 1 to 5 reviewers. Making approvals mandatory requires Enterprise.
+Unlimited projects & environments
+Organize flags across as many projects and environments as you need.
+Pay as you go past the free limits
+Keep going past the free amounts and pay only for the usage you add.
+Discounted annual billing
+Save 17% on usage rates when you bill yearly instead of monthly.
+AWS/Vercel Marketplace billing available
+Pay for LaunchDarkly through your AWS Marketplace or Vercel Marketplace account.
+New
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Usage limits and rates
+Usage included, then pay as you go
+Billed yearly
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Free
+until Feb 1, 2027
+Service connections
+One server-side SDK connected to one environment, counted by time and averaged over the month. Every replica, worker and dev or staging environment counts.
+5
+free
+, then
+$10
+each
+billed yearly ($12 each billed monthly)
+Client-side MAU
+Each unique client-side user or device counts as one monthly active user.
+1K
+free
+, then
+$8.33
+/1K
+billed yearly ($10/1K billed monthly)
+AgentControl AI runs
+One AI run is one LLM call your app makes through an AgentControl config, or one judge evaluation. Tokens and traces don’t count. An online eval scores a live response, so it uses two runs.
+5K
+free
+, then
+$5
+/1K
+Session replays
+Recordings of real user visits to your web or mobile app, captured by the LaunchDarkly observability SDK.
+5K
+free
+, then
+$2.92
+/1K
+billed yearly ($3.50/1K billed monthly)
+Errors captured
+Exceptions and crashes thrown by your own application code and sent to LaunchDarkly through the observability SDK or OpenTelemetry.
+5K
+free
+, then
+$0.25
+/1K
+billed yearly ($0.30/1K billed monthly)
+Trace spans
+Distributed traces from your services, sent through OpenTelemetry.
+10M
+free
+, then
+$1.25
+/1M
+billed yearly ($1.50/1M billed monthly)
+Log lines
+Log records your application sends to LaunchDarkly through the observability SDK or an OpenTelemetry collector, so you can read them next to flag changes.
+10M
+free
+, then
+$1.25
+/1M
+billed yearly ($1.50/1M billed monthly)
+Example: 10 connections and 2K MAU =
+$58.33
+/mo
+billed yearly ($70/mo billed monthly)
+.
+5 connections over the free 5 at $10 each, plus 1K MAU over the free 1K at $8.33 per 1K, billed yearly.
 Enterprise
-Full Platform controls and security for engineering teams at scale.
+Full platform controls and security for engineering teams at scale.
 Get custom pricing
 Get Enterprise trial
 Custom pricing
 Everything in Foundation, plus:
-Advanced user targeting
-Bulk targeting plus large list-based and synced segments.
-Custom roles & teams
-Fine-grained permissions with custom roles, organized into teams.
-Workflows, scheduling, & approvals
-Approval requests, scheduled flag changes, and multi-step release workflows.
-Release automation
-Release Assistant
-SCIM user provisioning
-Automated user provisioning and deprovisioning through your identity provider. SSO and SAML are included on every plan.
-AgentControl:
-Custom number of AI runs
-An AI Run is generated when you track an LLM request or run an online eval (LLM-as-a-judge).
-100 days data retention
-How long AgentControl run and eval data stays available.
-Guardian
-Paid add-on
-Guardian adds release safety on top of Enterprise: monitoring, guardrail metrics, and automatic rollback. Priced separately.
-Release Monitoring
-Guardrail Metrics
-Metrics watched during every rollout to catch regressions early.
-Proactive Failure Notifications
-Automatic Pause or Rollback
-Advanced Observability
-Exposure Insights
-See which users and segments were exposed to each release and how it affected them.
+SCIM provisioning & IdP team sync
+Provision, update, and deprovision members, and sync teams, from your identity provider.
+Custom roles & unlimited audit history
+Write your own roles with resource-level policies, group members into teams, and keep an unlimited history of who changed what.
+Required approvals, scheduling, & workflows
+Make approvals mandatory per environment or by tag, add teams as reviewers, route through ServiceNow or custom approval integrations, schedule changes, and build release workflows.
+Bulk targeting & code references
+Bulk targeting plus large list-based and synced segments, and see where each flag lives in your code.
+CSM & premium support
+A named customer success manager, plus Silver support with Gold or Platinum available.
+New
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Usage limits and rates
+Volume discounts, sized in your contract
+Release Autopilot
+Release Autopilot
+New
+Your agents write the code. Autopilot ships it safely, and rolls it back if it breaks.
+See all capabilities
+Custom
+Service connections
+One server-side SDK connected to one environment, counted by time and averaged over the month. Every replica, worker and dev or staging environment counts.
+Custom
+Client-side MAU
+Each unique client-side user or device counts as one monthly active user.
+Custom
+AgentControl AI runs
+One AI run is one LLM call your app makes through an AgentControl config, or one judge evaluation. Tokens and traces don’t count. An online eval scores a live response, so it uses two runs.
+Custom
+Session replays
+Recordings of real user visits to your web or mobile app, captured by the LaunchDarkly observability SDK.
+Custom
+Errors captured
+Exceptions and crashes thrown by your own application code and sent to LaunchDarkly through the observability SDK or OpenTelemetry.
+Custom
+Trace spans
+Distributed traces from your services, sent through OpenTelemetry.
+Custom
+Log lines
+Log records your application sends to LaunchDarkly through the observability SDK or an OpenTelemetry collector, so you can read them next to flag changes.
+Custom
+Includes architecture mapping, security review, &
+POCs.
+.
+Before your contract is sized, our team maps your architecture, reviews your security needs, and runs a proof of concept with you.
 Compare all features
+Expand all
 Developer
 Get started free
 Start free
@@ -173,6 +293,11 @@ Enterprise
 Get custom pricing
 Get custom pricing
 Platform
+Platform features by plan
+Feature
+Developer
+Foundation
+Enterprise
 AI Runs / month
 5000 / mo
 5000 / mo + overages
@@ -182,15 +307,15 @@ Data / trace retention
 30 days
 100+ days
 Config delivery latency (SLO)
-< 300ms
-< 200ms
-< 150ms (SLA)
+<300ms
+<200ms
+<200ms
 Overage behavior
 Ingestion stops at 5K
 $5 / 1000
 Contracted true-up
 Add-on AI Run blocks
-—
+Not included
 $5 / 1000
 Volume discounts available
 Service Connections (SCs)
@@ -206,11 +331,33 @@ Projects & environments
 Unlimited
 Unlimited
 Agent configuration
+Agent configuration features by plan
+Feature
+Developer
+Foundation
+Enterprise
 Prompts & model configs
+Included
+Included
+Included
 Prompt Snippets
+Included
+Included
+Included
 Tools Library
+Included
+Included
+Included
 Agent Graphs
+Included
+Included
+Included
 Feature management
+Feature management features by plan
+Feature
+Developer
+Foundation
+Enterprise
 Boolean feature flags
 Unlimited
 Unlimited
@@ -220,52 +367,162 @@ Unlimited
 Unlimited
 Unlimited
 User / account / device targeting
+Included
+Included
+Included
 Segments & percentage rollouts
+Included
+Included
+Included
 Flag history
+Included
+Included
+Included
 Code references
-—
-—
+Not included
+Not included
+Included
 Flag scheduling
-—
-—
+Not included
+Not included
+Included
 Workflows & approval (flag-level)
-—
-—
+Not included
+Not included
+Included
 Evaluation & quality
+Evaluation & quality features by plan
+Feature
+Developer
+Foundation
+Enterprise
 Playground
+Included
+Included
+Included
 Offline Evals (Datasets + Batch)
+Included
+Included
+Included
 Online Evals (LLM-as-judge)
+Included
+Included
+Included
 Custom Judges
+Included
+Included
+Included
 Datasets
+Included
+Included
+Included
 Experimentation
+Experimentation features by plan
+Feature
+Developer
+Foundation
+Enterprise
 A/B/n testing (configs)
+Included
+Included
+Included
 A/B/n testing (feature flags)
+Included
+Included
+Included
 Full-stack experimentation
+Included
+Included
+Included
 Bayesian and frequentist analysis
+Included
+Included
+Included
 CUPED variance reduction
+Included
+Included
+Included
 Sequential testing
+Included
+Included
+Included
 Sample ratio mismatch (SRM) detection
+Included
+Included
+Included
 A/A validity testing
+Included
+Included
+Included
 Multi-armed bandits
+Included
+Included
+Included
 Confidence and credible interval reporting
+Included
+Included
+Included
 Flexible metric design: click, pageview, numeric, conversion, custom event, groups
+Included
+Included
+Included
 Warehouse-native integration (Snowflake, Redshift, Databricks, BigQuery and more)
+Included
+Included
+Included
 Metrics import: API, integrations, SDK-level
+Included
+Included
+Included
 Metric measurement window
+Included
+Included
+Included
 Custom SQL metric definitions
+Included
+Included
+Included
 Mutual exclusion and layered experiments
+Included
+Included
+Included
 Holdouts
+Included
+Included
+Included
 Audience definitions and segment targeting
+Included
+Included
+Included
 Results filtering by audience attributes
+Included
+Included
+Included
 Experiment lifecycle stages
+Included
+Included
+Included
 Experiment Approvals
-—
-—
+Not included
+Not included
+Included
 Observability
+Observability features by plan
+Feature
+Developer
+Foundation
+Enterprise
 AI Insights dashboard
+Included
+Included
+Included
 LLM Observability (traces)
+Included
+Included
+Included
 Data export (AI traces & metrics)
-—
+Not included
+Included
 Custom
 Session Replays
 5K / mo
@@ -283,64 +540,245 @@ Error monitoring
 Limited
 Scalable
 Custom
-Automation & release
-Agent Optimization
-Guarded Rollouts
-Adaptive Triggers
-Release Monitoring
-—
-—
-Guardian only
-Guardrail Metrics
-—
-—
-Guardian only
-Automatic Rollback
-—
-—
-Guardian only
-Flag Audiences
-—
-—
-Guardian only
+Release management
+Release management features by plan
+Feature
+Developer
+Foundation
+Enterprise
+Release automation
+LaunchDarkly GitHub app
+:
+Reviews every PR, recommends a flag and a release plan, and applies both after one approval. Acts as the PR author and can be a required check before merge.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Change classifier
+(
+Beta
+)
+:
+Decides whether a change needs a flag, with a risk score, from a PR or your coding agent.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Auto-flagging
+(
+Beta
+)
+:
+Wraps a change in a feature flag and creates the flag in LaunchDarkly, from your coding agent or the PR. Undo with one command, and bring your own model key.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Auto-release
+:
+Takes a flag from merge to fully released in every environment, following deploy signals and its release plan. Available through the API, CLI and MCP.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Release plans
+:
+Define your release path once (environments, deploy signals, approvals) and reuse it across flags.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Auto-cleanup
+:
+Checks that a flag is safe to remove, then opens a PR that deletes the dead code.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Auto-archival
+(
+Beta
+)
+:
+Archives finished flags automatically, after a grace period and a heads-up to the maintainer.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Release agent
+:
+Chat with our agent to change how a PR is flagged or released.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Release safety
+Guarded releases
+:
+Roll out gradually while watching guardrail metrics, and roll back automatically on a regression. Set your own steps, with sample-ratio checks at each one, or choose notify-only.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Multi-phase releases
+:
+Release to lower-risk audiences first, with a regression check before each phase moves on.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Auto-fix
+:
+When a guarded release rolls back, see the errors it introduced and open a PR that fixes them.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Adaptive triggers
+:
+Switch a flag or AI config to a safe variation automatically when a metric crosses its threshold.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Flag audiences
+:
+See who got each variation of a flag, with their session replays. Filter by context, attribute, variation, date or release stage. Data is kept for 30 days.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
+Release dashboard
+:
+See every active release in a project, its current stage and its health.
+Included
+,
+Free (limited)
+Included
+,
+Free until Feb 2027
+Included
 Safety & guardrails
+Safety & guardrails features by plan
+Feature
+Developer
+Foundation
+Enterprise
 AI Guardrails & Blocklists
 Basic
 Enhanced
 Advanced
 PII Redaction
-—
-—
+Not included
+Not included
+Included
 Integrations
+Integrations features by plan
+Feature
+Developer
+Foundation
+Enterprise
 Model providers
 All providers
 All providers
 All providers
 Agent frameworks
+Included
+Included
+Included
 API Controls
+Included
+Included
+Included
 Slack, Microsoft Teams, & Trello
+Included
+Included
+Included
 Governance
+Governance features by plan
+Feature
+Developer
+Foundation
+Enterprise
 SSO / SAML
 -- (2FA included)
 -- (2FA included)
+Included
 SCIM
-—
-—
+Not included
+Not included
+Included
 Audit Logging
-—
-—
+Not included
+Not included
+Included
 Advanced RBAC / Custom roles
-—
-—
+Not included
+Not included
+Included
 Approvals (governance-level)
-—
-—
-Security & Compliance (SOC2 / ISO / HIPAA)
-—
-—
+Not included
+Not included
+Included
+Security & Compliance (SOC2 / ISO)
+Not included
+Not included
+Included
 AI & agentic access
+AI & agentic access features by plan
+Feature
+Developer
+Foundation
+Enterprise
 MCP Server
+Included
+Included
+Included
 Support
+Support features by plan
+Feature
+Developer
+Foundation
+Enterprise
 Support Response
 Discord Community (1 business day outage)
 Discord Community (1 business day outage)
@@ -350,28 +788,37 @@ Bronze
 Bronze
 Silver (Gold/Platinum Available)
 Upgrade Available
-—
-—
+Not included
+Not included
 Available
 Product Uptime
-—
-—
+Not included
+Not included
 Gold/Platinum (99.99%)
 Customer Success Managers
-—
-—
+Not included
+Not included
+Included
 Professional Services
-—
+Not included
 Available
 Recommended
 Advisory Sessions
-—
+Not included
 Available
+Included
 LaunchDarkly Academy
+Included
+Included
+Included
 Guided Onboarding Program
-—
+Not included
 Available
+Included
 LaunchDarkly Certifications
+Included
+Included
+Included
 Resources to get started.
 Check out the blog.
 Blog

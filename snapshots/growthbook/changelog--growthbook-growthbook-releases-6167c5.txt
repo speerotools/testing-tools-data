@@ -3,103 +3,85 @@ Releases · growthbook/growthbook · GitHub
 Skip to content
 Navigation Menu
 Sign in
-Appearance settings
+Products
 Platform
-AI CODE CREATION
-GitHub Copilot
-Write better code with AI
-GitHub Copilot app
-Direct agents from issue to merge
-MCP Registry
-Integrate external tools
-DEVELOPER WORKFLOWS
+GitHub
+Repository hosting, code review, and collaboration
+Copilot
+AI coding agent for tasks, projects, and automated work
+Build & Ship
 Actions
-Automate any workflow
-Codespaces
-Instant dev environments
-Issues
-Plan and track work
-Code Review
-Manage code changes
+CI/CD and automation
 Code Quality
-Enforce quality at merge
-APPLICATION SECURITY
-GitHub Advanced Security
-Find and fix vulnerabilities
-Code security
-Secure your code as you build
-Secret protection
-Stop leaks before they start
-EXPLORE
-Why GitHub
+Quality analysis, fixes, and enforcement
+Codespaces
+Cloud development environments
+Secure
+Code Security
+Vulnerability detection and remediation
+Secret Protection
+Secret scanning and leak prevention
+All Features
+Developers
+Learn
 Documentation
-Blog
+Training
+Certifications
+Build
+Build with Copilot
+Customize Copilot
+Integrations
+Explore
+Trending repos
+GitHub Sponsors
+Developer articles
 Changelog
-Marketplace
-View all features
-Solutions
-BY COMPANY SIZE
+Changelog
+Your source for the latest features, improvements, and fixes across GitHub products, all in one place.
+Businesses
+By Stage
 Enterprises
-Small and medium teams
+Team
 Startups
 Nonprofits
-BY USE CASE
-App Modernization
-DevSecOps
-DevOps
-CI/CD
-View all use cases
-BY INDUSTRY
+By Industry
 Healthcare
 Financial services
 Manufacturing
 Government
-View all industries
-View all solutions
-Resources
-EXPLORE BY TOPIC
-AI
-Software Development
-DevOps
-Security
-View all topics
-EXPLORE BY TYPE
-Customer stories
-Events & webinars
-Ebooks & reports
+See all industries
+Evaluate GitHub
+Why GitHub
+Customer Stories
 Business insights
-GitHub Skills
-SUPPORT & SERVICES
-Documentation
-Customer support
-Community forum
-Trust center
-Partners
-View all resources
-Open Source
-COMMUNITY
-GitHub Sponsors
-Fund open source developers
-PROGRAMS
-Security Lab
-Maintainer Community
-GitHub Stars
-Archive Program
-REPOSITORIES
-Topics
-Trending
-Collections
-Enterprise
-ENTERPRISE SOLUTIONS
-Enterprise platform
-AI-powered developer platform
-AVAILABLE ADD-ONS
+Trust Center
+Add-ons
 GitHub Advanced Security
-Enterprise-grade security features
-Copilot for Business
+Enterprise-grade code security
+Copilot for business
 Enterprise-grade AI features
 Premium Support
 Enterprise-grade 24/7 support
+Resources
+Learn & Connect
+Documentation
+Resource center
+Blog
+Events & webinars
+Community Forum
+Customer Stories
+Integrations
+Support
+Customer support
+Training
+GitHub Status
+Company
+About
+Partners
+Changelog
+GitHub Universe
+GitHub Universe
+The event for developers, by developers — talks, workshops, and what’s next for GitHub.
 Pricing
 Search
 /
@@ -117,69 +99,227 @@ Reload
 to refresh your session.
 Dismiss alert
 growthbook
-/
 growthbook
-Public
-Notifications
-You must be signed in to change notification settings
-Fork
-867
-Star
-8.5k
+Repository navigation
 Code
 Issues
-513
+538
+(
+538
+)
 Pull requests
-310
+370
+(
+370
+)
 Discussions
 Actions
 Projects
 Security and quality
 2
+(
+2
+)
 Insights
-Additional navigation options
-Code
-Issues
-Pull requests
-Discussions
-Actions
-Projects
-Security and quality
-Insights
-Releases: growthbook/growthbook
+More
+items
 Releases
 Tags
+On this page
+v5.2.0
+v5.1.0
+v5.0.1
+v5.0.0
+v4.4.0
+v4.3.0
+v4.2.0
+v4.1.0
+v4.0.0
+v3.6.0
+Collapse sidebar
+Releases
 Releases · growthbook/growthbook
-Release list
-v5.1.0
-v5.0.1
-v5.0.0
-v4.4.0
-v4.3.0
-v4.2.0
-v4.1.0
-v4.0.0
-v3.6.0
-v3.5.0
-Previous
-Next
-Jump to release
-v5.1.0
-v5.0.1
-v5.0.0
-v4.4.0
-v4.3.0
-v4.2.0
-v4.1.0
-v4.0.0
-v3.6.0
-v3.5.0
-Previous
-Next
-v5.1.0
-v5.1.0
+v5.2.0
+v5.2.0
 Latest
 Latest
+Compare
+Choose a tag to compare
+Sorry, something went wrong.
+Filter
+Loading
+Sorry, something went wrong.
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+No results found
+View all tags
+jdorn
+released this
+03 Nov 04:00
+v5.2.0
+0bd125f
+This commit was created on GitHub.com and signed with GitHub’s
+verified signature
+.
+GPG key ID:
+B5690EEEBB952194
+Verified
+Learn about vigilant mode
+.
+Highlights
+Interleaving Experiments (beta)
+- We are the first platform to offer interleaving experiments, which let you test ranking algorithms 50-100x faster than traditional A/B tests. This is a great tool for testing search results, carousels, and news feeds in a wide variety of products and is a critical tool at companies like Netflix, DoorDash, and Airbnb.
+Agent API Keys
+- New controls to let agents act on your behalf with proper attribution and safety guardrails. Easily restrict which actions agents can do autonomously and use our brand new “Human in the Loop” mode that let agents propose risky changes (like publishing to production) that a human must review and approve in the UI before it is applied. This is available for both our MCP OAuth server and personal access tokens.
+Remote Saved Groups
+- You can now upload CSVs with millions of ids and use them for feature and experiment targeting without increasing the size of the payload that clients have to download. Works with the GrowthBook Proxy server and remote eval today and coming to other back-end SDKs soon.
+UX Overhaul
+-
+Experiments
+- We greatly improved the UX around experiments with inline editing, clear next steps, and general polish.
+-
+Metrics
+- We completely redesigned the metric creation process with two goals in mind - make the metric types and settings more intuitive and let you preview and verify the result before you save.
+-
+Data Sources
+- Connecting GrowthBook to your data warehouse and configuring queries has always been a huge point of friction during the onboarding process. We’ve completely redesigned this flow from scratch to simplify steps, provide better guidance, and catch errors earlier.
+-
+Settings
+- GrowthBook is the most customizable and flexible experimentation platform on the planet, but that comes with a downside - tons and tons of settings to sift through. We re-organized and redesigned our settings page to make it easier to tweak GrowthBook and make it your own.
+Warehouse Usage Dashboard
+- Data sources in GrowthBook now have a dedicated Usage dashboard where you can see exactly which queries, experiments, or users are driving warehouse costs and get tips for how to optimize your spend.
+Experiment Diagnostics
+- The health tab in experiments has a new Diagnostics section where you can filter and view raw exposure events to see exactly who is included in the experiment and which variation they saw. This is a great debugging tool when investigating data quality issues.
+dbt Sync
+- We released a new tool to translate dbt models into GrowthBook fact tables and metrics, sync them to GrowthBook, and keep them up-to-date automatically as your dbt models change.
+Datadog-Triggered Auto-Rollbacks
+- New API endpoints match feature ramp-ups by metadata like tags and custom fields, so you can configure a Datadog (or other observability) webhook once and have it automatically stop and roll back any actively ramping features that match when an alert fires.
+Event Forwarder Free Tier
+- In our quest to lower the barrier to warehouse native experimentation, we are now offering 1M events per month FREE with our Event Forwarder. Track exposure and metric events with the GrowthBook SDK and get them delivered to your BigQuery, Snowflake, or DataBricks warehouse within seconds - no ETL pipelines to manage.
+Contextual Bandit Improvements
+- Since launching Contextual Bandits in beta last release, we’ve made tons of bug fixes and improvements, including support for the Visual Editor and a dedicated Health tab to catch issues.
+More API Coverage
+- We’re continuing to close the gap between what is possible for humans to do in the GrowthBook UI and what is possible for agents to do via the API. This release adds over 30 new endpoints and improves 60 existing endpoints.
+Full Changelog
+:
+v5.1.0...v5.2.0
+Contributors
+Thanks to all of our existing contributors:
+@Kevin-Chant
+,
+@ahdriel
+,
+@jdorn
+,
+@bryce-fitzsimons
+,
+@andywhite37
+,
+@mknowlton89
+,
+@Auz
+,
+@najito
+,
+@tzjames
+,
+@alyssamichelle
+,
+@nhat-growthbook
+,
+@gazzdingo
+,
+@teresayung
+,
+@anna-yn
+,
+@lukebrawleysmith
+,
+@dlin-growthbook
+,
+@lukesonnet
+,
+@madhuchavva
+,
+@lillialjackson
+,
+@oelshaikh
+,
+@msamper
+,
+@HampusPoppius
+,
+@mohammedyunus2002
+,
+@EmmS21
+and a big thanks to everyone who made their first contribution!
+@jmcginnis-times
+made their first contribution in
+#6667
+@allileong
+made their first contribution in
+#7191
+@darmukh
+made their first contribution in
+#7266
+@sulgik
+made their first contribution in
+#7128
+@alran
+made their first contribution in
+#7398
+@gypsy5oul
+made their first contribution in
+#7174
+Self-hosted build changes
+Changes since v5.1.0 that affect building the Docker image from source:
+Remote saved groups (
+#7277
+)
+None if you build with the repo's Dockerfile.
+packages/sdk-js
+and
+packages/remote-saved-groups
+now have
+prepare
+scripts, which
+pnpm install
+runs. If your own Dockerfile runs
+pnpm install
+before copying
+packages/
+, set
+GB_SKIP_PREPARE=1
+on that install (and on any
+--prod
+reinstall), as the repo's Dockerfile does.
+Ship Node 24.22.1 in the runtime image until the hardened base updates (
+#7410
+)
+The build now also pulls the public
+node:24.22.1-bookworm-slim
+image from Docker Hub, which needs no login. If you build through a registry mirror or offline, mirror that image too. This is temporary and goes away once
+dhi.io/node:24-debian12
+ships Node 24.22.1.
+Pin the Dockerfile frontend and retry the image build (
+#7111
+)
+Contributors
+Auz, andywhite37, and 28 other contributors
+Assets
+2
+Loading
+Uh oh!
+There was an error while loading.
+Please reload this page
+.
+All reactions
+1
+Join discussion
+v5.1.0
+v5.1.0
 Compare
 Choose a tag to compare
 Sorry, something went wrong.
@@ -1569,381 +1709,6 @@ There was an error while loading.
 Please reload this page
 .
 All reactions
-v3.5.0
-v3.5.0
-Compare
-Choose a tag to compare
-Sorry, something went wrong.
-Filter
-Loading
-Sorry, something went wrong.
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-No results found
-View all tags
-jdorn
-released this
-04 Mar 04:55
-v3.5.0
-4470a21
-This commit was created on GitHub.com and signed with GitHub’s
-verified signature
-.
-GPG key ID:
-B5690EEEBB952194
-Verified
-Learn about vigilant mode
-.
-Highlights
-New Dev Tools Browser Extension
-by
-@Kevin-Chant
-@bryce-fitzsimons
-@gazzdingo
-in
-#3618
-#3739
-#3696
-Experiment Decision Framework
-by
-@ahdriel
-@lukebrawleysmith
-in
-#3540
-#3683
-#3557
-Power Calculator
-by
-@lukesonnet
-in
-#3695
-#3638
-#3564
-CUPED for Ratio Metrics
-by
-@lukebrawleysmith
-in
-#3649
-#3698
-#3727
-#3724
-#3733
-#3610
-Major JS, Go, Java, Python, C# SDK Updates
-by
-@madhuchavva
-@mkurkov
-in
-#3566
-#3635
-#3688
-#3662
-#3631
-UX Improvements
-by
-@Auz
-and others across 30+ commits
-Other Changes
-Add API endpoints for Archetypes by
-@Kevin-Chant
-in
-#3577
-Athena enable query reuse by
-@Kevin-Chant
-in
-#3126
-Add support to key-pair authentication for Snowflake data source by
-@ahdriel
-in
-#3729
-Added custom fields to new experiment ref flow by
-@Auz
-in
-#3608
-Add CDN Usage graphs to GrowthBook Cloud by
-@jdorn
-in
-#3636
-Enable 'Edit status' escape hatch for drafts with data by
-@jdorn
-in
-#3756
-Introduce Edit Info Modal for Experiments by
-@mknowlton89
-in
-#3462
-fix(LinkedChanges): Allow changes to be deleted by
-@ahdriel
-in
-#3702
-Added project selector to feature modal by
-@mohammedyunus2002
-in
-#3534
-Feature environment selector improvements by
-@Kevin-Chant
-in
-#3560
-#3590
-#3544
-#3717
-Compare Feature Environments by
-@Kevin-Chant
-in
-#3490
-Start experiments when publishing a feature draft by
-@jdorn
-in
-#3422
-#3687
-#3607
-Only refresh fact table columns when needed by
-@jdorn
-in
-#3757
-Add rule ids to SDK payload by
-@jdorn
-in
-#3665
-Filter /reports by project by
-@mknowlton89
-in
-#3731
-New onboarding flow by
-@tzjames
-in
-#3614
-#3633
-#3626
-Support experiment/bandit sharing in the REST API by
-@bryce-fitzsimons
-in
-#3745
-Added savedgroups syntaxic search for features and experiments by
-@Auz
-in
-#3533
-Update saved group edit flow by
-@Kevin-Chant
-in
-#3547
-Ability to edit visual editor changes directly by
-@Auz
-in
-#3684
-Add Ctrl-F Functionality to CodeTextArea by
-@mknowlton89
-in
-#3736
-Change directory location of enterprise code by
-@jdorn
-in
-#2869
-Bug Fixes
-Fix bandit periods for funnel metrics by
-@lukesonnet
-in
-#3667
-#3669
-Added way to see the change set regardless of the experiment state by
-@Auz
-in
-#3682
-[api] Change datasource validation for update experiment by
-@lukesonnet
-in
-#3651
-Allow undefined project stats engine to inherit org default by
-@lukesonnet
-in
-#3652
-Don't allow deleting the only experiment phase by
-@gazzdingo
-in
-#3714
-Fix experiment creation flow bugs, consistently include metrics page on creation flow by
-@bryce-fitzsimons
-in
-#3569
-Allow empty lists for feature $in and $nin conditions by
-@Kevin-Chant
-in
-#3719
-Fixed issue with duplicate feature and custom fields by
-@Auz
-in
-#3599
-Rename form input to get LastPass/other password managers to ignore it by
-@tzjames
-in
-#3741
-Improve saved group reference checks by
-@Kevin-Chant
-in
-#3528
-Bugfix for mixpanel EAQ selection by
-@lukesonnet
-in
-#3587
-Metric selector reordering bug fix by
-@Auz
-in
-#3603
-[api] Allow update fact metric to go from ratio to non-ratio by
-@lukesonnet
-in
-#3743
-Remove upper bound on pagination offset by
-@Kevin-Chant
-in
-#3615
-Fix delete segment bug showing related ideas that werent related by
-@mknowlton89
-in
-#3732
-Fix remote evaluation by adding missing await (
-#3654
-) by
-@vadzimsharai
-in
-#3655
-sdk: Prevent overly-eager early exit when evaluating prereqs by
-@bryce-fitzsimons
-in
-#3542
-Fixes Add Experiment Template DropdownMenuItem by
-@mknowlton89
-in
-#3567
-Fix presentations page error card margin by
-@ari-party
-in
-#3606
-Fix wrong text color on tooltips by
-@Hephaest
-in
-#3656
-Remove add implementation when no options remain by
-@bryce-fitzsimons
-in
-#3730
-Use correct reference for visual editor status check by
-@bryce-fitzsimons
-in
-#3721
-Docs and Misc
-Feature usage analytics - dogfooding by
-@tzjames
-in
-#3711
-#3453
-Updates archetype docs by
-@mknowlton89
-in
-#3700
-Add docs on cluster experiments by
-@lukesonnet
-in
-#3568
-Fix formatting by
-@royalfig
-in
-#3663
-Fix grammar user-permissions.mdx by
-@tzjames
-in
-#3671
-Move Impact on Dashboard (pseudo a/a test) by
-@lukesonnet
-in
-#3584
-Upgrade from actions/cache from v2 to v4 by
-@mknowlton89
-in
-#3621
-Docs/image-update by
-@royalfig
-in
-#3675
-#3617
-Add env var customization for default log event properties by
-@Kevin-Chant
-in
-#3694
-Add SDK resources box to docs by
-@royalfig
-in
-#3647
-Add definition of one-sided rule by
-@august-growthbook
-in
-#3632
-Update gitBranch logo by
-@royalfig
-in
-#3699
-Update node.mdx by
-@joostfroon
-in
-#3573
-add markdown location, organize guides, add yt video to strapi by
-@royalfig
-in
-#3553
-update json & docs for edge versions 0.2.1 by
-@bryce-fitzsimons
-in
-#3602
-updating docs so links go to specific troubleshooting sections by
-@lukebrawleysmith
-in
-#3538
-add feedback widget to docs by
-@royalfig
-in
-#3629
-Improved GTM instructions by
-@royalfig
-@Auz
-in
-#3748
-#3582
-#3497
-#3583
-New Contributors
-@mohammedyunus2002
-made their first contribution in
-#3534
-@joostfroon
-made their first contribution in
-#3573
-@ari-party
-made their first contribution in
-#3606
-@vadzimsharai
-made their first contribution in
-#3655
-Full Changelog
-:
-v3.4.0...v3.5.0
-Contributors
-mkurkov, Auz, and 17 other contributors
-Assets
-2
-Loading
-Uh oh!
-There was an error while loading.
-Please reload this page
-.
-🎉
-3
-ahdriel, egelhaus, and TonyRoussel reacted with hooray emoji
-All reactions
-🎉
-3 reactions
-3 people reacted
 Previous
 1
 2

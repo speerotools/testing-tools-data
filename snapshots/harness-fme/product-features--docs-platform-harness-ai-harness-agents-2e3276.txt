@@ -13,7 +13,7 @@ API Reference
 Release Notes
 Roadmap
 University
-2.0
+Classic Experience
 Platform
 New to Harness Platform?
 Overview
@@ -64,6 +64,7 @@ In your pipelines
 Worker Agent
 Agent permissions
 Configuration
+Harness Managed Worker Agents
 Agent examples
 Worker Agent in Pipeline
 Harness Agents reference
@@ -97,12 +98,16 @@ Markdown
 Copy
 On this page
 Documentation
+Platform
 Harness AI
-2.0
+Classic Experience
 Use Harness AI
 Core capabilities
 In your pipelines
 Worker Agent
+Harness AI
+Worker Agents
+Reference
 Harness Agents reference
 Harness Agents Reference
 Worker Agent definitions use
@@ -142,11 +147,15 @@ for supported providers and models.
 anthropic_bedrock_99cf4be5
 Model Name
 No
-Optional override for the model used at runtime. If not specified, the agent uses the default model configured on the Model Connector. Accepts an AWS Bedrock inference profile ARN for Anthropic connectors.
+Optional override for the model used at runtime. If not specified, the agent uses the model on the Model Connector. If that model is also unset, Harness uses a provider default. Go to
+Configure Model Connectors
+. Accepts an AWS Bedrock inference profile ARN for Anthropic connectors.
 arn:aws:bedrock:us-east-1:123456789012:application-inference-profile/a1b2c3d4e5f6
 MCP Connectors
 No
-One or more MCP server connectors granting the agent access to Harness platform data and external services (such as GitHub). Each connector requires a URL and API key.
+One or more MCP server connectors granting the agent access to Harness platform data and external services (such as GitHub), or a local MCP server that runs inside the agent's container. Go to
+Configure MCP connectors
+for remote and local setup.
 harness_hosted_mcp
 Inputs
 No
@@ -200,7 +209,7 @@ When you finish, output a variable TASK_SUCCESS with value true if the
 analysis succeeded, or false if it failed.
 connector
 :
-account.harnessAnthropic
+account.harnessLlm
 mcp
 :
 -
@@ -255,7 +264,7 @@ agent.with.prompt
 Agent instructions. Use a YAML block scalar (`
 agent.with.connector
 Model connector identifier, such as
-account.harnessAnthropic
+account.harnessLlm
 . The connector supplies the default model and credentials.
 agent.with.mcp
 Optional list of MCP connector identifiers. Harness resolves their server configuration.
@@ -302,7 +311,7 @@ Worker Agent in Pipeline
 Next
 Release Agent
 Last updated
-2 days ago
+8 days ago
 Was this helpful?
 Resources
 Sign up

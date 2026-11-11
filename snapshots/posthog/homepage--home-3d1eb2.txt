@@ -1,5 +1,5 @@
 # https://posthog.com/
-PostHog - your product’s context layer
+PostHog – Your product’s context layer
 Products
 Pricing
 Docs
@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -86,7 +86,7 @@ Test a shorter mobile checkout.
 Ask PostHog anything
 PostHog is the single place to ingest, store, and query your product and company data. Analytics, replays, errors, and logs, stitched together on-the-fly to answer any question you have.
 Pipe in third party data from
-800
+900
 + sources
 for a more complete picture.
 Get started - free
@@ -97,7 +97,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -110,14 +110,14 @@ Replay Vision
 No-code A/B Testing
 and
 more
-Product Analytics, Session Replay, Error Tracking, Feature Flags, Experiments, Managed warehouse
+Product Analytics, Session Replay, Error Tracking, Feature Flags, Experiments, Warehouse
 flow into your agents.
 Product Analytics
 Session Replay
 Error Tracking
 Feature Flags
 Experiments
-Managed warehouse
+Warehouse
 Your agents
 Give agents product context
 Query product data from your editor instead of context-switching to a browser. Do everything from one-off analytics to launching new features - no new UI needed.
@@ -178,7 +178,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -196,7 +196,7 @@ Web Analytics
 Feature Flags
 Experiments
 Surveys
-Managed warehouse
+Warehouse
 CDP
 Workflows
 Logs
@@ -212,136 +212,134 @@ Yes they actually use us, no it's not just some random engineer who tried us out
 Colorful logos
 "Sleek" logos
 Open Customers
-All your data,
-working together
-Built-in, the context warehouse
-ships
-with:
-A data warehouse
-120+ sources/destinations
-SQL editor + BI + data viz
-User activity feed (CDP-lite)
-API, webhooks
-Whether you're analyzing customer usage or directing AI, you should be operating with the
-full
-context.
-Combine everything in PostHog's context warehouse so that you, your agents, and your dashboard can query it directly. That includes:
-Data from 120+ external sources like Stripe, Postgres, and HubSpot
-Insights from every other PostHog tool like Session Replays and Experiments
-The data your agents need to make good decisions is already here. Ready to turn "tell me what happened" into "here's what to fix next."
-Connect your first data source
-Usage-based pricing
-Our whole philosophy is that you shouldn't have to worry about pricing.
-All our paid products are pay-per-use with generous monthly free tiers. In fact, 98% of our customers use PostHog for free.
-We aim to match the cheapest option at scale – PostHog should be a no-brainer. You never have to "jump on a quick call" with sales.
-Here are some examples of how we charge for most popular products:
+How PostHog helps you
+build better products
 1
 .
-Product Analytics
-Free tier:
-1 million
-event
-s/mo
-Pricing:
-$
-0.00005
-/
-event
+Get the data in
+PostHog ingests product signals from users and AI agents, and combines them with revenue, CRM, and support data from Stripe, HubSpot, Zendesk, and
+900+
+other tools
+.
+Fetch
+Uber for dogs. The dogs drive.
+14
+drivers online
+4 good dogs nearby
+Hi, I’m Fetch. Where should a good dog drive you today?
+Book a ride
+Pet policy
+Pricing
+Message Fetch…
+↑
+posthog.capture()
+·
+0
+events
+Live events
+Event
+Person
+When
+900+
+more sources
+AI analytics
+$ai_generation · gpt-5.6-luna
+Latency
+median
+Input tokens
+median
+Output tokens
+median
+Cost
+median
+box p25–p75 · bar median · dot mean · whiskers 1.5×IQR
 2
 .
-Session Replay
-Free tier:
-5,000
-recording
-s/mo
-Pricing:
+Query the data with your agent (or use ours)
+PostHog builds a profile of every user and team. Ask PostHog AI, or your own agent, why a customer churned, and it follows the trail to find the answer.
+─
+___ _ _ _ __ __ ___ ___ | _ \___ __| |_| || |___ __ _ | \/ |/ __| _ \ | _/ _ (_-< _| __ / _ \/ _` | | |\/| | (__| _/ |_| \___/__/\__|_||_\___/\__, | |_| |_|\___|_| |___/
+$ Or bring your own tool and use our MCP
 $
-0.005
-/
-recording
+npx @posthog/wizard mcp add
+click to copy
+Read the MCP docs →
+Claude
+ChatGPT
+PostHog AI
+Cursor
+Claude Code
+>_
+Codex
+>_
 3
 .
-Feature Flags
-Free tier:
-1 million
-request
-s/mo
-Pricing:
-$
-0.0001
-/
-request
+Give the data to your agent to act on
+Scouts
+watch your product 24/7 and file reports in your
+Inbox
+. Each report carries the context behind it, so your agent can pick it up and start.
+Home
+Chats
+Analytics
+Products
+Settings
+Acme
+Search
+Self-driving inbox
+Reports
+Scouts
+Settings
+All priorities
+Newest first
+Triage mode
+T
+P3
+fix(docs)
+Return results for "flags" in docs search
+Searches for "flags" return nothing, so readers open a support ticket instead.
+Zendesk + 1
+2 days ago
+P3
+feat(billing)
+Show the plan price on the upgrade button
+Customers hover the upgrade button to find the price, then leave to check the pricing page.
+Product analytics
+27
+users
+4 days ago
 4
 .
-Managed warehouse
-Free tier:
-1 million
-row
-s/mo
-Pricing:
-$
-0.000015
-/
-row
-Product
-Free tier
-Pricing (decreases with volume)
+Let PostHog self-drive
+If you enable
+self-driving
+, when a report is ready, PostHog writes the pull request for you. You review and merge. After the change ships, PostHog checks whether it worked. Any new problem starts the loop again.
+Guard
+plan
+in checkout
+#
+482
+PostHog
+wants to merge into
+main
+Open
+Conversation
+3
+Commits
 1
-Product Analytics
-1 million events/mo
-$
-0.00005
-/
-event
-2
-Session Replay
-5,000 recordings/mo
-$
-0.005
-/
-recording
-3
-Feature Flags
-1 million requests/mo
-$
-0.0001
-/
-request
+Files changed
+1
++
 4
-Managed warehouse
-1 million rows/mo
-$
-0.000015
-/
-row
-Explore pricing
-Why PostHog?
-We're different from most companies for a bunch of reasons:
-Transparency.
-You can read our
-company handbook
-, our
-sales manual
-, and
-company strategy
-.
-We ship fast.
-See our
-changelog
-.
-Actually
--technical support.
-Our
-support folks
-all have engineering backgrounds.
-Read more about us
-Bedtime reading
-Still here? We've got some links that may be mildly interesting to you:
-demo.mov
-Technical docs
-API
-Ask a question
-Small teams at PostHog
+−
+1
+Self-driving in PostHog, right now
+We run PostHog on PostHog. These pull requests came from Inbox reports on our own product. PostHog wrote each one, and an engineer reviewed and merged it.
+1
+2
+3
+4
+5
 Shameless CTA
 If nothing else has sold you on PostHog, hopefully these classic marketing tactics will.
 Eco-friendly

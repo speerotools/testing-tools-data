@@ -57,7 +57,6 @@ IaC Security
 Secret Scanning
 Cloud Security
 Cloud Security
-Sensitive Data Scanner
 Cloud Security Posture Management
 Cloud Infrastructure Entitlement Management
 Vulnerability Management
@@ -67,13 +66,15 @@ App & API Protection
 SIEM
 Cloud SIEM
 Bits Security Analyst
+AI & Data Security
+AI Guard
+Sensitive Data Scanner
 Digital Experience
 Optimize front-end performance and enhance user experiences
 Digital Experience
 Product Analytics
 Experiments
-Browser Real User Monitoring
-Mobile Real User Monitoring
+Real User Monitoring
 Session Replay
 Synthetic Monitoring
 Mobile App Testing
@@ -115,6 +116,7 @@ Bits Code
 Bits Security Analyst
 Datadog for AI
 Agent Observability
+AI Guard
 MCP Server
 Pup CLI
 GPU Monitoring
@@ -253,7 +255,6 @@ Runtime Code Analysis
 IaC Security
 Secret Scanning
 Cloud Security
-Sensitive Data Scanner
 Cloud Security Posture Management
 Cloud Infrastructure Entitlement Management
 Vulnerability Management
@@ -262,11 +263,12 @@ Cloud Workload Protection
 App & API Protection
 Cloud SIEM
 Bits Security Analyst
+AI Guard
+Sensitive Data Scanner
 Digital Experience
 Product Analytics
 Experiments
-Browser Real User Monitoring
-Mobile Real User Monitoring
+Real User Monitoring
 Session Replay
 Synthetic Monitoring
 Mobile App Testing
@@ -299,6 +301,7 @@ Bits Agent Builder
 Bits Code
 Bits Security Analyst
 Agent Observability
+AI Guard
 MCP Server
 Pup CLI
 GPU Monitoring
@@ -404,6 +407,12 @@ Billing Unit
 Billed Annually
 Billed Month-to-month
 Billed On-demand
+Infrastructure Basic
+Per infra host, per month
+Per infra host, per month
+Contact Sales
+Contact Sales
+Contact Sales
 Infrastructure Pro
 Per infra host, per month
 Per infra host, per month
@@ -519,36 +528,36 @@ NetFlow Monitoring
 Per million aggregated NetFlow records (15-day retention), per month
 Per million aggregated NetFlow records (15-day retention), per month
 $
-0.60
+0.14
 $
-0.72
+0.17
 $
 0.86
 NetFlow Monitoring
 Per million aggregated NetFlow records (30-day retention), per month
 Per million aggregated NetFlow records (30-day retention), per month
 $
-0.65
+0.15
 $
-0.78
+0.18
 $
 0.94
 NetFlow Monitoring
 Per million aggregated NetFlow records 60-day retention), per month
 Per million aggregated NetFlow records 60-day retention), per month
 $
-0.75
+0.17
 $
-0.90
+0.20
 $
 1.08
 NetFlow Monitoring
 Per million aggregated NetFlow records (90-day retention), per month
 Per million aggregated NetFlow records (90-day retention), per month
 $
-0.85
+0.20
 $
-1.02
+0.24
 $
 1.22
 Serverless Workload Monitoring - Apps
@@ -851,6 +860,15 @@ $
 0.06
 $
 0.072
+Data Observability: Jobs Monitoring (Databricks Serverless)
+Per DBU
+Per DBU
+$
+0.025
+$
+0.03
+$
+0.036
 Data Observability: Jobs Monitoring (Orchestrators)
 Per job, per hour
 Per job, per hour
@@ -1067,6 +1085,24 @@ $
 48
 $
 57.60
+Code Security Flex Bundle (Secrets)
+Per committer, per month
+Per committer, per month
+$
+48
+$
+58
+$
+70
+Code Security Advanced Bundle
+Per committer, per month
+Per committer, per month
+$
+55
+$
+66
+$
+80
 Product Analytics
 Per 1,000 sessions, per month on full traffic
 Per 1,000 sessions, per month on full traffic
@@ -1085,7 +1121,7 @@ $
 0.18
 $
 0.22
-Real User Investigate (RUM) - Investigate
+Real User Monitoring (RUM) - Investigate
 Per 1,000 sessions, per month on filtered sessions
 Per 1,000 sessions, per month on filtered sessions
 $
@@ -1094,7 +1130,7 @@ $
 3.60
 $
 4.50
-Session Replay (Add-On for RUM and Prodct Analytics)
+Session Replay (Add-On for RUM and Product Analytics)
 Per 1,000 sessions, per month
 Per 1,000 sessions, per month
 $
@@ -1103,6 +1139,51 @@ $
 3
 $
 3.60
+RUM Managed Archive (Add-On for RUM Measure)
+Per 1,000 sessions (1-month storage), per month
+Per 1,000 sessions (1-month storage), per month
+$
+0.20
+$
+0.25
+$
+0.30
+RUM Managed Archive (Add-On for RUM Measure)
+Per 1,000 sessions (3-month storage), per month
+Per 1,000 sessions (3-month storage), per month
+$
+0.30
+$
+0.38
+$
+0.45
+RUM Managed Archive (Add-On for RUM Measure)
+Per 1,000 sessions (6-month storage), per month
+Per 1,000 sessions (6-month storage), per month
+$
+0.45
+$
+0.56
+$
+0.68
+Export Pipelines (Add-On for RUM Measure and Product Analytics)
+Per 1,000 sessions, per month
+Per 1,000 sessions, per month
+$
+0.10
+$
+0.12
+$
+0.15
+RUM Profiling (Add-On for RUM Measure)
+Per 1,000 sessions, per month
+Per 1,000 sessions, per month
+$
+3
+$
+3.60
+$
+4.50
 Experiments
 Per experiment launched, per month
 Per experiment launched, per month
@@ -1338,6 +1419,15 @@ $
 6
 $
 7.20
+End User Device Monitoring
+Per device, per month
+Per device, per month
+$
+5
+$
+6
+$
+7.20
 AI Credits
 Per 500 credit bundle, per month
 Per 500 credit bundle, per month
@@ -1352,6 +1442,15 @@ Per credit
 Per credit
 $
 1.30
+GPU Monitoring
+Per active GPU device, per month
+Per active GPU device, per month
+$
+20
+$
+24
+$
+29
 Managed Platform OTLP
 Per GB of ingested spans, per month
 Per GB of ingested spans, per month
@@ -1367,6 +1466,15 @@ Custom pricing based on scope of coverage
 Contact Sales
 Contact Sales
 Contact Sales
+AI Guard
+Per 1M input tokens, per month
+Per 1M input tokens, per month
+$
+0.80
+$
+1
+$
+1.20
 * For existing customers, please refer to your latest billing agreement for included allotments of this product.
 ** 40k LLM spans are free.
 *** Experiment retention is 3 months with annual or month-to-month commitment, otherwise 15 days.
@@ -1407,7 +1515,6 @@ IaC Security
 Secret Scanning
 Cloud Security
 Cloud Security
-Sensitive Data Scanner
 Cloud Security Posture Management
 Cloud Infrastructure Entitlement Management
 Vulnerability Management
@@ -1416,12 +1523,14 @@ Cloud Workload Protection
 App & API Protection
 SIEM
 Cloud SIEM
+AI & Data Security
+AI Guard
+Sensitive Data Scanner
 Digital Experience
 Digital Experience
 Product Analytics
 Experiments
-Browser Real User Monitoring
-Mobile Real User Monitoring
+Real User Monitoring
 Session Replay
 Synthetic Monitoring
 Mobile App Testing
@@ -1454,6 +1563,112 @@ Bits Code
 Bits Security Analyst
 Datadog for AI
 Agent Observability
+AI Guard
+MCP Server
+Pup CLI
+Platform Capabilities
+Built-in Features
+Alerts
+Dashboards
+Notebooks
+Mobile App
+Fleet Automation
+Access Control
+Governance Console
+Teams
+Extensibility
+OpenTelemetry
+Integrations
+IDE Plugins
+Agent Directory
+API
+Marketplace
+Service Level Objectives
+Observability
+Infrastructure
+Infrastructure Monitoring
+Custom Metrics
+Network Monitoring
+Container Monitoring
+Kubernetes Autoscaling
+Serverless Monitoring
+Cloud Cost Management
+Storage Management
+GPU Monitoring
+Applications
+Application Performance Monitoring
+Universal Service Monitoring
+Continuous Profiler
+Dynamic Instrumentation
+Data
+Database Monitoring
+Data Observability
+Data Streams Monitoring
+Logs
+Log Management
+Audit Trail
+Observability Pipelines
+Error Tracking
+Bring Your Own Cloud Log Management
+Digital Experience
+Digital Experience
+Product Analytics
+Experiments
+Real User Monitoring
+Session Replay
+Synthetic Monitoring
+Mobile App Testing
+Security
+Code Security
+Code Security
+Software Composition Analysis
+Static Code Analysis
+Runtime Code Analysis
+IaC Security
+Secret Scanning
+Cloud Security
+Cloud Security
+Cloud Security Posture Management
+Cloud Infrastructure Entitlement Management
+Vulnerability Management
+Compliance
+Cloud Workload Protection
+App & API Protection
+SIEM
+Cloud SIEM
+AI & Data Security
+AI Guard
+Sensitive Data Scanner
+Software Delivery
+Software Delivery
+Continuous Testing
+Internal Developer Portal (IDP)
+CI Visibility
+Test Optimization
+Feature Flags
+Code Coverage
+DORA Metrics + AI Impact
+Service Management
+Incident Response
+Incident Management
+Work Management
+Actions
+Workflow Automation
+Datadog Apps
+Event Management
+Context Graph
+Software Catalog
+AI
+AI for Datadog
+Bits Investigation
+Bits AI
+Bits Chat
+Bits Agent Builder
+Bits Code
+Bits Security Analyst
+Datadog for AI
+Agent Observability
+AI Guard
 MCP Server
 Pup CLI
 Platform Capabilities
@@ -1476,17 +1691,16 @@ Marketplace
 Service Level Objectives
 Resources
 Pricing
-Documentation
-Support
-Services & Enablement
-Product Preview Program
-Certification
-Open Source
 Events and Webinars
-Security
-Privacy Center
+Product Preview Program
+Documentation
 Knowledge Center
 Learning Resources
+Support
+Services & Enablement
+Certification
+Open Source
+Architecture Center
 Blog
 The Monitor
 Engineering
@@ -1498,11 +1712,12 @@ Partners
 Press
 Leadership
 Careers
-Legal
 Investor Relations
 Analyst Reports
 ESG Report
 Vendor Help
+Legal
+Privacy Center
 Trust Hub
 Download mobile app
 English

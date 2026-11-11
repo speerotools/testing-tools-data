@@ -5,65 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Destination catalog
-Ad Networks
-Attribution
-CDP
-Collaboration
-Customer Engagement
-Data warehouse/data lake
-Amazon Kinesis (Cohort)
-Amazon Kinesis Data Stream
-Amazon Kinesis Firehose
-Amazon RedShift
-Databricks
-Google BigQuery
-Snowflake
-ETL
-Experimentation
-Marketing Analytics
-Marketing Automation
-Messaging
-Other
-Qualitative Feedback
-Sales
-Storage
-On this page
-Considerations
-Prerequisites
-Set up the integration
-Event table schema
-Merged User table schema
-BigQuery deduplication table
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Data
 /
 Destination catalog
@@ -364,7 +309,26 @@ rn
 =
 1
 ;
+Related
+:
+Snowflake
+·
+Snowflake Data Share
+·
+Amplitude SQL: Table schema and field shortcuts
+·
+Data Mutability Features
 Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Considerations
+Prerequisites
+Set up the integration
+Event table schema
+Merged User table schema
+BigQuery deduplication table
 Copy Markdown
 On this page
 Considerations
@@ -373,6 +337,49 @@ Set up the integration
 Event table schema
 Merged User table schema
 BigQuery deduplication table
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Destination catalog
+Ad Networks
+Attribution
+CDP
+Collaboration
+Customer Engagement
+Data warehouse/data lake
+Amazon Kinesis (Cohort)
+Amazon Kinesis Data Stream
+Amazon Kinesis Firehose
+Amazon RedShift
+Databricks
+Google BigQuery
+Snowflake
+ETL
+Experimentation
+Marketing Analytics
+Marketing Automation
+Messaging
+Other
+Qualitative Feedback
+Sales
+Storage
 Platform
 AI Agents
 AI Visibility

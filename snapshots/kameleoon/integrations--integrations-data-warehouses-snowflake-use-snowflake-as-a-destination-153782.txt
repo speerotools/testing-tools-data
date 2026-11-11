@@ -1,5 +1,5 @@
 # https://help.kameleoon.com/integrations/data-warehouses/snowflake/use-snowflake-as-a-destination
-Using Snowflake as a destination - Kameleoon Documentation
+Use Snowflake as a destination - Kameleoon Documentation
 Documentation Index
 Fetch the complete documentation index at:
 /llms.txt
@@ -14,18 +14,22 @@ MCP
 SDKs
 APIs
 Integrations
+Log In
 Kameleoon login
 Kameleoon login
 Search...
 Navigation
 Snowflake
-Using Snowflake as a destination
+Use Snowflake as a destination
 Search...
 ⌘
 K
 Kameleoon Academy
 Slack Community
-Product changelog
+Product updates
+Kameleoon Academy
+Slack Community
+Product updates
 Integrations
 Integrations overview
 As a destination
@@ -37,38 +41,42 @@ Bigquery
 Databricks
 Snowflake
 Setting up Snowflake
-Using Snowflake as a destination
+Use Snowflake as a destination
 Use Snowflake as a source — audience targeting
-Using Snowflake as a source — pulling events for reporting
+Use Snowflake as a source — pulling events for reporting
 Target your imported audiences
 English
-On this page
-Activate Snowflake as a destination
-What “Use Snowflake as a destination” does
 Snowflake
-Using Snowflake as a destination
+Use Snowflake as a destination
 Copy page
 Copy page
 Send Kameleoon experiment exposure events to Snowflake to centralize campaign results and analyze them alongside your existing data.
 Copy page
 Copy page
-Provide the credentials using the
-Key-Pair
-authentication option, not the
-Password
-option.
+Data warehouse integrations are available as a premium add-on for the Web Experimentation and Feature Experimentation module. Contact your Customer Success Manager for more information.
+Kameleoon can write campaign events into a Snowflake database that you own, where you query them with SQL. The integration writes experiment exposure events by default, and it can also write conversion and custom data events, each to its own table in the
+KAMELEOON_EVENTS
+schema that you create in
+Setting up Snowflake
+. Use key-pair authentication for this direction, because the destination doesn’t support password authentication.
 ​
 Activate Snowflake as a destination
 Once you have
 enabled the Snowflake integration for your project
 , you can activate
 Use Snowflake as a destination
-to send the results of your Kameleoon campaigns to Snowflake.
+to start writing Kameleoon events to Snowflake.
 To do so, follow these steps:
-Within the selected project’s configuration, you’ll find a section labeled
+In the selected project’s configuration, click
 Use Snowflake as a destination
-. Click this section.
-Provide the Snowflake project ID associated with your Google Snowflake project
+to expand it.
+Enter the name of the warehouse that you granted to the Kameleoon role in
+Setting up Snowflake
+in the
+Warehouse
+field, then click
+Confirm
+.
 Click
 Validate
 to save and apply your configuration settings.
@@ -76,12 +84,12 @@ to save and apply your configuration settings.
 What “Use Snowflake as a destination” does
 Enabling
 Use Snowflake as a destination
-sends Kameleoon’s selected events to Snowflake.
+starts writing Kameleoon events to Snowflake.
 Kameleoon saves the events in the
 KAMELEOON_EVENTS
 schema of the
 KAMELEOON
-database you created, with write access for the user you created for Kameleoon during setup. Snowflake supports three event types, each stored in its own table.
+database that you created, with table creation rights granted to the Kameleoon role during setup. Each of the three event types has its own table.
 Kameleoon stores experiment exposure events in
 kameleoon_experiment_event
 :
@@ -205,16 +213,21 @@ BOOLEAN
 Kameleoon populates the
 custom_visitor_id
 field from the Cross Device Reconciliation custom data, if you set it.
-Kameleoon enables experiment exposure events by default. Conversion and custom data event collection are a new feature subject to change. They aren’t configurable via the UI. To activate them, contact the Kameleoon support team.
+Kameleoon enables experiment exposure events by default. Conversion and custom data event collection is new and may change. You can’t turn it on in the UI. To activate it, contact the Kameleoon support team.
+​
+Limits of the destination
+Kameleoon only inserts rows into these tables. It doesn’t read changes back from Snowflake, so a correction or deletion in your tables doesn’t change the events that Kameleoon has already written.
+Kameleoon doesn’t monitor the schema of these tables. If you change a column, Kameleoon doesn’t detect the change.
 Was this page helpful?
 Yes
 No
-Setting up Snowflake
-Previous
-Use Snowflake as a source — audience targeting
-Next
 ⌘
 I
+On this page
+Back to top
+Activate Snowflake as a destination
+What “Use Snowflake as a destination” does
+Limits of the destination
 Assistant
 Responses are generated using AI and may contain mistakes.
 Contact support

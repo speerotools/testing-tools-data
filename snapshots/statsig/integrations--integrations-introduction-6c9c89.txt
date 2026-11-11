@@ -10,6 +10,55 @@ Search docs…
 /
 Full width
 Statsig Console
+Management & Integrations
+/
+Integrations Overview
+Integrations Overview
+Overview of Statsig integrations with data warehouses, CDPs, messaging tools, CDNs, and developer tools to fit Statsig into your existing stack.
+For Warehouse Integrations, go to
+Data Warehouse Integrations
+.
+Statsig offers the following data connectors and adds more regularly:
+Warning:
+Statsig only supports a single data connection at a time.
+Events
+Forward any events logged through Statsig APIs or SDKs to the following providers. Statsig doesn't forward events received through inbound integrations. For details, go to
+Event Webhook
+.
+Segment
+Snowflake
+Amplitude
+Bugsnag
+Fivetran
+Google Analytics
+Heap
+Mixpanel
+RevenueCat
+mParticle
+RudderStack
+Webhook
+Google Tag Manager (GTM)
+Braze
+Changelog and alerts
+Notify and update the following places when Feature Gates/Experiments/Dynamic Configs change:
+Datadog
+Discord
+LogDNA
+Microsoft Teams
+PagerDuty
+: page your on-call responders directly from topline alerts
+Slack
+Jira
+: track Statsig gate rollout status and A/B test results from Jira issues
+Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Events
+Changelog and alerts
+Copy Markdown
+On this page
 More
 Product Docs
 Warehouse Native
@@ -49,50 +98,3 @@ Cloudflare Logs
 Domains & IP
 API Proxies
 Reliability
-On this page
-Events
-Changelog and alerts
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
-Management & Integrations
-/
-Integrations Overview
-Integrations Overview
-Overview of Statsig integrations with data warehouses, CDPs, messaging tools, CDNs, and developer tools to fit Statsig into your existing stack.
-For Warehouse Integrations, go to
-Data Warehouse Integrations
-.
-Statsig offers the following data connectors and adds more regularly:
-Warning:
-Statsig only supports a single data connection at a time.
-Events
-Forward any events logged through Statsig APIs or SDKs to the following providers:
-Segment
-Snowflake
-Amplitude
-Bugsnag
-Fivetran
-Google Analytics
-Heap
-Mixpanel
-RevenueCat
-mParticle
-RudderStack
-Webhook
-Google Tag Manager (GTM)
-Braze
-Changelog and alerts
-Notify and update the following places when Feature Gates/Experiments/Dynamic Configs change:
-Datadog
-Discord
-LogDNA
-Microsoft Teams
-PagerDuty
-: page your on-call responders directly from topline alerts
-Slack
-Jira
-: track Statsig gate rollout status and A/B test results from Jira issues
-Was this helpful?
-Copy Markdown
-On this page

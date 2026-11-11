@@ -1,62 +1,256 @@
 # https://docs.developers.optimizely.com/feature-experimentation/changelog
-Changelog
-The availability of features may depend on your plan type. Contact your Customer Success Manager if you have any questions.
-For AI agents: visit https://docs.developers.optimizely.com/feature-experimentation/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI. Append .md to any documentation page URL to get its markdown version.
-Jump to Content
-Dev guide
-API Reference
-Recipes
-Changelog
-User Guide
-Dev guide
-Recipes
-API Reference
-Changelog
-Commerce Connect
-Configured Commerce
-Content Management System
-Content Marketing Platform
-Cross-platform products
-Digital Experience Platform
-Experimentation Data
-Feature Experimentation
-Optimizely Connect Platform
-Optimizely Data Platform
-Performance Edge
-Recommendations
-Web Experimentation
+Optimizely One - Homepage
+Skip to main content
+Documentation
+menu
+Products
+▾
+apps
+Browse all products with descriptions
+new_releases
+Release notes
+APIs and SDKs
+▾
+Developer resources
+Full API reference →
+Content Management (CMS)
+api
+CMS (SaaS) REST API
+cloud_download
+Content Delivery API
+edit_document
+Content Management API
+manage_search
+Content Search API
+Graph and Commerce
+GraphQL API
+hub
+Graph API
+Graph .NET Source SDK
+shopping_cart
+Commerce Service API
+Campaign and DXP
+campaign
+Campaign REST API
+mail
+Campaign SMTP API
+rocket_launch
+Deployment API (DXP)
+dns
+MCP servers
+developer_mode
+Developer Portal
+Resources
+▾
+school
+Academy
+Build skills with structured Optimizely learning paths
+workspace_premium
+Certification
+Validate your Optimizely expertise
+public
+World
+Connect with the Optimizely developer community
+smart_toy
+Documentation for AI agents
+Access Optimizely docs with your AI agents
+Release Notes
+Submit a request
+search
+light_mode
+Find your documentation,
+your way
+Guides, API references, and developer tools. Browse by capability or product.
+Search documentation
+Optimizely One
+Platform
+All products work together as one connected platform. From configuration to optimization, find the right documentation for where you are.
+Learn about Optimizely One
+Explore the documentation
+Organized around what you are building.
+Explore by capability
+Explore by product
+Explore by capability
+Each capability in one place: what it does, who it is for, the products behind it, and where to start.
+AI and Automation
+Cross-platform
+For teams who want to accelerate work with AI across content, analytics, experimentation, and campaigns.
+Generate and adapt content, summarize experiments, build custom AI agents, and ask questions about your data.
+Used by:
+Marketers, Content editors, Data analysts, Agent builders
+Optimizely Mark
+Explore Mark and AI features
+Get started with Mark
+Write effective Mark prompts
+Build a custom AI agent
+Content Management
+Create, manage, and publish content across sites, email, and other channels.
+Used by:
+Content editors, Marketers, Developers, Campaign managers
+CMS (SaaS)
+CMS 13
+CMS 12
 Campaign
-Deprecated Products
-Dev guide
-API Reference
-Recipes
-Changelog
-User Guide
-GitHub
-Dev Community
-Optimizely Academy
-Submit a ticket
-Log In
-Changelog
-GitHub
-Dev Community
-Optimizely Academy
-Submit a ticket
-Log In
+Content Marketing Platform
+Digital Asset Management
+Get started developing CMS (SaaS)
+Plan a campaign in CMP
+Configure email automation
+Experimentation
+Run A/B tests, feature flags, and multivariate experiments.
+Used by:
+Growth, Engineering, Product, CRO specialists
 Feature Experimentation
-Changelog
-May 29th, 2025
-Metrics API updates
-May 7th, 2025
-API updates
-March 18th, 2025
-New endpoints
-February 20th, 2025
-API updates
+Web Experimentation
+Performance Edge
+Run your first web experiment
+Configure feature flags
+Understand experiment results
+Personalization
+Deliver recommendations, targeting, and audience segmentation.
+Used by:
+Marketers, CRO specialists, Ecommerce managers, Data analysts
+Personalization
+Content Recommendations
+Product Recommendations
+Data Platform
+Create your first audience segment
+Add content recommendations
+Configure product recommendations
+Digital Commerce
+Manage catalogs, pricing, checkout, and B2B procurement.
+Used by:
+Ecommerce directors, Merchandisers, .NET developers, B2B operations
+Configured Commerce
+Commerce Connect
+Configure your B2B storefront
+Add commerce to your CMS
+Configure product catalog
+Analytics and Data
+Measure impact and unify customer data across channels.
+Used by:
+Data analysts, Marketing ops, Product managers, Growth teams
+Analytics
+Data Platform
+Connect your data warehouse
+Build an audience segment
+Measure experiment impact
+Integrations and Platform
+Manage identity, access, and custom apps that extend the platform.
+Used by:
+IT admins, Developers, Partner developers
+Opti ID
+Connect Platform
+Configure single sign-on
+Build a connector app
+Configure SCIM provisioning
+All
+Platform
+Content
+Experimentation
+Commerce
+Data
+Personalization
+Developers
+Track changes
+Platform
+key
+Opti ID
+Unified identity and single sign-on across every Optimizely product
+Optimizely Mark
+AI agent orchestration for content, testing, and commerce workflows
+Connect Platform
+Connect third-party apps and sync data across CMS, Graph, and DAM
+Content
+CMS (SaaS)
+Build and deliver headless content at scale
+CMS 13
+Develop composable .NET content solutions
+CMS 12
+Maintain and extend your existing CMS sites
+Content Marketing Platform
+Collaborate on campaigns from brief to publish
+campaign
+Campaign
+Automate email, SMS, and push workflows
+Graph
+Query and deliver content via GraphQL
+DAM
+Store, organize, and serve media assets
+deployed_code
+DXP
+Orchestrate content, commerce, and data together
+Experimentation
+Feature Experimentation
+Deploy feature flags and run server-side tests
+Web Experimentation
+Run visual A/B tests without code deploys
+Performance Edge
+Deliver experiments at the edge, flicker-free
+Exp Strategy
+Plan and prioritize your testing program
+Collaboration
+Coordinate experiment workflows across teams
+Commerce
+Configured Commerce
+Launch B2B storefronts with built-in tooling
+Commerce Connect
+Integrate commerce APIs into your .NET CMS
+Commerce Search v3
+Help buyers find products faster
+PIM
+Centralize and enrich product catalog data
+Payment Service
+Process payments within your storefront
+Data
+Data Platform (ODP)
+Resolve and unify customer profiles at scale
+Analytics
+Measure experiment impact and user behavior
+Personalization
+Content Recs
+Surface relevant content for each visitor
+Product Recs
+Suggest products based on buyer behavior
+Personalization
+Deliver real-time experiences using ODP segments
+Developers
+JS / TS SDK
+JavaScript and TypeScript SDK for Mark tools
+Python SDK
+Python SDK for Feature Experimentation and data integration
+.NET SDK
+.NET SDK for CMS development
+React SDK
+React components and hooks for experimentation and content
+api
+REST APIs
+Full REST API reference across all Optimizely products
+GraphQL API
+Query and explore content via Optimizely Graph
+Track changes
+new_releases
+Product release notes
+Review the latest features and fixes across every product
+Need help?
+menu_book
+Knowledge Base
+Browse how-to guides and support articles
+support_agent
+Submit a Ticket
+Open a request with our support team
+monitor_heart
+System Status
+Check live uptime and incidents
+mail
+Contact Us
+Get in touch with the Optimizely team
 System Status
 Privacy Notice
 Website Terms of Use
 Cookie Settings
 Trust Center
-Third-Party Addons & Platforms
+Third-Party Addons and Platforms
 API, SDK, & MCP Terms
+© 2026 Optimizely. All rights reserved.
+This site and all related sites are Optimizely confidential information. All content in this site and related sites are subject to copyright.

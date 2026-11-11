@@ -78,6 +78,7 @@ Reference
 Contentful CMS Migration
 On this page
 Connect MCP servers
+Copy page
 You can connect third-party MCP servers (Linear, Notion, GitHub, partner CMSs, and so on) so Scout can use their tools from inside Uniform. This lets a single conversation reach into the systems your team already uses without context-switching.
 Connected MCP servers are managed under Settings → Scout AI → MCP servers.
 External MCP servers vs the Uniform MCP server
@@ -154,10 +155,8 @@ Skills
 Next
 Best practices
 →
-Learn and build with our community on Discord
 Check out open sourced examples on GitHub
 Learn about Uniform on YouTube
-Level up your skills in all things headless with Headless Creator
 On this page
 Manage connected servers
 Authentication modes

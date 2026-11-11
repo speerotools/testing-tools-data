@@ -1,5 +1,5 @@
 # https://docs.statsig.com/ai-evals/overview
-AI Experimentation Overview | Statsig Docs
+Agent Experimentation Overview | Statsig Docs
 Docs
 Product Docs
 Warehouse Native
@@ -10,6 +10,205 @@ Search docs…
 /
 Full width
 Statsig Console
+Product Docs
+/
+Agent Experimentation Overview
+Agent Experimentation Overview
+Overview of Statsig Agent Experimentation for evaluating the prompts and models behind AI applications with offline and online graders.
+Statsig Agent Experimentation serves the prompts and models behind your AI app or agent, and grades their output before and after release. Each LLM task's model, prompt messages, and parameters live in an AI Config. Your app fetches the AI Config at runtime, so you can change a prompt or model without deploying code. Graders score output from 0 to 1, on test datasets before a release and on a sample of live traffic after it.
+Use Agent Experimentation to find out whether a new prompt or model gives better answers. To measure whether the change also moves product metrics, such as retention, create an experiment from the AI Config. For details, go to
+Use AI Configs with gates, experiments, and analytics
+.
+The Statsig SDKs and the Console API still call AI Configs "prompts." For example, the Node AI SDK fetches an AI Config with
+getPrompt
+.
+Parts of Agent Experimentation
+Agent Experimentation has these parts:
+Part
+What it does
+AI Configs
+Store the model, prompt messages, and parameters for one LLM task, in versions. Your app serves the Live version.
+Playground
+Runs up to 10 prompts side by side on the same inputs. You can promote the prompts to a new AI Config.
+Datasets
+Hold test cases for evals to grade, such as user questions and expected answers.
+Graders
+Score output from 0 to 1 with an LLM judge, Python code, a string comparison, or a text similarity function. Graders live in one catalog, so every AI Config and eval can reuse them.
+Offline evals
+Run AI Config versions on every dataset row and grade the outputs. Compare versions before you promote one to Live.
+Evals
+Grade outputs that already exist in a dataset, such as answers from your own agent, and track scores across runs.
+Online evals
+Grade a sample of production traffic about one minute after your app sends each span.
+AI Traces
+Lists the LLM spans your app sends, with their messages, model, tokens, cost, and grader scores. You can save spans to a dataset.
+The
+Node AI SDK
+and the
+Python AI SDK
+connect your app to Agent Experimentation. They fetch AI Configs, send model calls to AI Traces as spans, and log grades that your own code computes.
+How the parts fit together
+A typical workflow uses the parts in this order:
+Try prompts and models in the Playground, then promote the best prompts to an AI Config.
+Add a dataset and graders to the AI Config. Run an offline eval of each version, then promote the best version to Live.
+Fetch the AI Config in your app with a Statsig AI SDK, and trace its model calls.
+Add online rules to your graders, and turn on online eval for the AI Config to grade production traffic.
+Review spans in AI Traces. Add spans with poor answers to a dataset, so the next offline eval tests them.
+For a step-by-step walkthrough, go to
+Set up Agent Experimentation
+.
+Offline and online grading
+Offline evals and runs on the
+Evals
+page grade every row of a dataset, so a grader can compare the output with an expected answer from the dataset. Production traffic has no expected answer. Online evals therefore use graders that score each answer on its own, such as LLM judges and Python graders. Each grader's targeting rules decide where the grader runs. For details, go to
+Choose where a grader runs
+.
+Use AI Configs with gates, experiments, and analytics
+AI Configs work with the rest of Statsig:
+Feature gates
+: To release an AI feature to some users first, check a
+feature gate
+in your code before you fetch the AI Config. To serve a different AI Config to users who match a rule, click
+Edit Targeting Rules
+in the AI Config's header.
+Experiments
+: To measure how AI Config versions affect product metrics, click
+Create Experiment
+in the AI Config's header. You need at least two versions that are Live or Candidate. Statsig creates the experiment in the AI Config's layer, gives each version a group, and splits traffic evenly across the groups. Statsig also adds a primary metric for each grader on the AI Config. These grader metrics read only grades that your code logs with
+logEvalGrade
+. For the steps, go to
+Create an experiment from an AI Config
+.
+Analytics
+: Statsig logs online grades and
+logEvalGrade
+grades as
+statsig::eval_result
+events in your project. For the event's fields, go to
+Grade events in your project
+.
+LLM as a judge
+Some checks follow a fixed rule. For example, when an answer must be High, Medium, or Low, a String Comparison grader checks for an exact match. Other checks need judgment. "Your ticket has been escalated" and "This ticket has been escalated" mean the same thing, but an exact match scores them as different.
+An LLM as a Judge grader sends the output and your judge prompt to a model. The model returns a score from 0 to 1 with its reasoning. For example, the prompt can ask the model to score how close the answer is to an ideal answer. A judge can be wrong, but it applies the same prompt to every output and needs no human reviewers. Judges make it practical to compare versions across many outputs.
+A judge can use any provider and model in the grader's
+Evaluation Model
+list, such as OpenAI, Anthropic, or Google models. New graders use OpenAI
+gpt-5-mini
+. To choose a model and write a judge prompt, go to
+Choose the evaluation model
+.
+Credits and API keys
+Agent Experimentation calls model providers to generate and grade output. Each Statsig organization gets $100 of Included Credits for these calls, shared by all of its projects. A project that isn't in an organization gets its own $100. Statsig charges each model call that runs on Statsig's provider keys against the credits, based on the model's token prices.
+Included Credits are for getting started. To keep using Agent Experimentation after they run out, add your own API keys for the model providers you use. Statsig doesn't meter calls that use your own keys.
+What Included Credits cover
+These activities use Included Credits when your project has no API key for the provider they call:
+Activity
+Model calls that use credits
+Previews of AI Config output and grader scores
+The model of the AI Config version or of the judge
+Offline evals from an AI Config, including scheduled runs
+The version's model for each dataset row, and graders that call a provider
+Runs on the Evals page
+Graders that call a provider
+Online evals
+Graders that call a provider
+Playground runs
+The model of each prompt
+Two kinds of grader call a provider. LLM as a Judge graders call the provider in
+Evaluation Model
+. Text Similarity graders that use Cosine call OpenAI for
+text-embedding-3-large
+embeddings. String Comparison, Python, and the other Text Similarity functions run inside Statsig at no cost. AI Config versions with a custom workflow call your own endpoint, so they don't use credits. For a summary by grader type, go to
+Grader costs
+.
+Track Included Credits
+The
+Included Credits
+indicator next to the tabs on each AI Config page shows what percentage of the Included Credits your organization has used. Hover over the indicator to find the
+Add API key
+link. The indicator disappears when your project has an API key for every provider in
+AI Provider API Keys
+: OpenAI, Anthropic, Google, and Meta.
+When a model uses a provider that has no API key, a notice under the model also shows an
+Add API key
+link. The notice appears in the
+Model
+section of an AI Config's
+Setup
+tab and under
+Evaluation Model
+on a grader's
+Setup
+tab.
+Add your own API keys
+API keys belong to a project, and only admins can add them.
+Go to
+Settings > Product Configuration > General
+. Console messages call this page
+Settings > Products
+.
+In the
+AI Provider API Keys
+row, click
+Edit
+.
+In the
+Edit AI Provider API Keys
+dialog, click
+Add API Key
+.
+Choose a
+Provider
+, enter the key in
+API Key
+, and click
+Add API Key
+. Repeat for each provider that your AI Configs, graders, and playgrounds use.
+Click
+Save
+.
+After you save, Statsig uses your key for every call to that provider. The provider bills your account for those calls.
+When Included Credits run out
+When your organization's Included Credits run out, Statsig stops making calls on its own provider keys. Work that doesn't need those keys keeps running: calls on your own API keys, AI Config versions with a custom workflow, and graders that call no provider.
+Offline work
+: Statsig blocks previews, offline evals, Evals-page runs, and Playground runs that call a provider without an API key. The console shows "Included Credits have run out" and names the provider that needs a key. Statsig also skips scheduled runs that need credits.
+Online evals
+: Statsig keeps running graders that use your own API keys and graders that call no provider, such as Python graders. Statsig skips the other graders, and the trace drawer explains that Statsig didn't grade the span.
+Judges that use other providers
+Statsig calls LLM as a Judge graders that use a provider other than OpenAI through Statsig's model gateway. If your project has an API key for that provider, the gateway call uses your key, and Statsig doesn't meter it. Without a key, the call uses Statsig's key and spends Included Credits.
+Data residency
+Statsig processes online-eval traces in the US only. Statsig plans to support EU data residency.
+Was this helpful?
+For AI agents: a documentation index is available at
+/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Parts of Agent Experimentation
+How the parts fit together
+Offline and online grading
+Use AI Configs with gates, experiments, and analytics
+LLM as a judge
+Credits and API keys
+What Included Credits cover
+Track Included Credits
+Add your own API keys
+When Included Credits run out
+Judges that use other providers
+Data residency
+Copy Markdown
+On this page
+Parts of Agent Experimentation
+How the parts fit together
+Offline and online grading
+Use AI Configs with gates, experiments, and analytics
+LLM as a judge
+Credits and API keys
+What Included Credits cover
+Track Included Credits
+Add your own API keys
+When Included Credits run out
+Judges that use other providers
+Data residency
 More
 Product Docs
 Warehouse Native
@@ -22,30 +221,35 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Configure Stats Engine
-End An Experiment
 Read Results
+End An Experiment
+Experiment Types
 Layers
 Holdouts
+Configure Stats Engine
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
+Smart Gate
+Early Access
 Analytics
 Product Analytics
 Infra Analytics
 Alerts
 Web Analytics
-AI Experimentation
+Agent Experimentation
 Overview
-Early Access
 Setup
-Early Access
-Prompts & Graders
+AI Configs
+Graders
+Datasets
+Evals
+Playground
 Offline Evals
 Online Evals
-Early Access
+AI Traces
 Other Features
 Low-Code Experiments
 Session Replay
@@ -62,38 +266,3 @@ Ingesting Open Telemetry Data
 Testing your Gates/Experiments
 Migration Guides
 FAQ
-On this page
-What is AI Experimentation
-Gates, Experiments, and Analytics
-LLM as a judge
-For AI agents: a documentation index is available at
-/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
-Product Docs
-/
-AI Experimentation Overview
-AI Experimentation Overview
-Overview of Statsig AI Experimentation for evaluating prompts and models with offline and online graders, available in Early Access for AI applications.
-Early Access
-This feature is in Early Access. During this time, aspects of the functionality may still be developed, and this documentation may not always be up to date. If you have any questions, contact
-Statsig Support
-.
-Statsig AI Experimentation evaluates the prompts and models behind your LLM applications, both offline against fixed test sets and online against live production traffic. It gives you three parts: prompts to version and serve LLM configs, offline evals to catch regressions before release, and online evals to grade real-world outputs in production. Use it to iterate on prompts and ship LLM changes with measurable quality.
-What is AI Experimentation
-Statsig AI Experimentation has three core components for iterating on and serving LLM apps in production.
-Prompts
-: Prompts represent an LLM prompt and its associated config (model provider, model, temperature, and similar settings). A prompt typically represents a task for the LLM (for example, "Classify this ticket to a triage queue" or "Summarize this text"). You can version prompts, choose which version is live in Statsig, and retrieve prompts in production using the Statsig server SDKs. You can use prompts as the control plane for your LLM apps without using the rest of the Evals product suite.
-Offline Evals
-: Offline evals provide quick, automated grading of model outputs on a fixed test set. They catch wins and regressions before you expose changes to any real users. For example, compare a new support bot's replies to human-curated answers to decide if the bot is ready to ship. You can grade output even without a reference dataset (for example, when using an LLM to validate English-to-French translation).
-Online Evals
-: Online evals let you grade model output in production on real-world use cases. You can run the "live" version of a prompt and also shadow-run "candidate" versions without exposing users to them. Grading works directly on the model output and doesn't require a ground truth to compare against.
-Gates, Experiments, and Analytics
-You can also use the standard Statsig product capabilities with AI Experimentation. For example, you can target an LLM feature at users who meet specific criteria using a Feature Gate, or roll out a new prompt version as an Experiment to understand its impact on metrics.
-LLM as a judge
-Some grading can use heuristics (for example, checking if the AI-generated output matches the ideal answer when the output is as simple as High, Medium, or Low). Other grading can't use heuristics: for example, deciding whether "Your ticket has been escalated" and "This ticket has been escalated" mean the same thing. LLM-as-a-judge lets you evaluate AI outputs at scale without requiring many human reviewers. It mimics how a human assesses quality: not perfect, but fast, consistent, and useful for comparing different versions of your model or prompt. In the example above, you could write an LLM-as-a-judge prompt such as "Score how close this answer is to the ideal one on a scale of 0 to 1.0".
-Was this helpful?
-Copy Markdown
-On this page
-What is AI Experimentation
-Gates, Experiments, and Analytics
-LLM as a judge

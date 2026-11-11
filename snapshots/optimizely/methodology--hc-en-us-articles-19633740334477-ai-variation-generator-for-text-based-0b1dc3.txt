@@ -1,31 +1,54 @@
 # https://support.optimizely.com/hc/en-us/articles/19633740334477-AI-variation-generator-for-text-based-elements
-AI variation generator for text-based elements – Support Help Center
-Skip to main content
-Toggle navigation menu
-AI On
-AI Off
-Developer documentation
-Developer community
-Optimizely Academy
-Submit a request
-Sign in
-Support Help Center
-Web Experimentation
+AI variation generator for text-based elements - Web Experimentation docs
+Search
+K
+Ask AI
+Web Experimentation docs
+Web Experimentation APIs
+Release notes for Web Experimentation
+End user docs
+Get started
+Optimizely Mark
 Build experiments
+Target visitors
+Measure and analyze results
+Advanced strategies
+Governance and strategy
+Troubleshoot
+Tools and utilities
+Web Recommendations
+Developer docs
+Web
+Optimizely Web Experimentation REST API
+INTEGRATE OPTIMIZELY PRODUCTS
+Content delivery networks and Self-hosting
+Server-side rendering
+Data Services
+OAuth 2-0
+Edge Delivery
+Classic REST API - DCP
+Classic
+Integrate other platforms
+Docs powered by
+Archbee
+End user docs
+...
 AI tools
 AI variation generator for text-based elements
-Updated
-March 31, 2026 20:11
+2 min
 Optimizely Web Experimentation
 Optimizely Performance Edge
 Optimizely Personalization
-Optimizely Opal lets you generate AI-powered suggested content in the Visual Editor for any existing copy on a page. This feature applies to any text-based element to test recommended alternatives. To increase conversions, you can fine-tune your web page's brand positioning, product descriptions, or CTAs.
+Mark (Optimizely Agent Platform)
+﻿
+lets you generate AI-powered suggested content in the Visual Editor for any existing copy on a page. This feature applies to any text-based element to test recommended alternatives. To increase conversions, you can fine-tune your web page's brand positioning, product descriptions, or CTAs.
 View a demo
 and learn how to use this feature.
 This feature is supported in multiple languages and can process text of up to 8,000 tokens (approximately 6,000 words).
 Generate text suggestions with AI
 Before generating text,
-Configure Web Experimentation for Opal
+Configure Web Experimentation for Mark
+﻿
 .
 Go to an experiment or campaign.
 Select a variation.
@@ -33,6 +56,7 @@ Select a text-based element.
 Click
 Generate Copy
 . Five suggestions display.
+﻿
 Hover over a suggestion to preview it on the page.
 Click
 Use this copy
@@ -53,18 +77,18 @@ Because the content is powered by AI, some suggestions may be inaccurate. If you
 Thumbs Down
 upon hovering over the suggestion. Additionally, you can
 submit feedback in the portal.
+Note
 If you use Opti ID, administrators can turn off generative AI in the Opti ID Admin Center. See
 Turn generative AI off across Optimizely applications
+﻿
 .
-Article is closed for comments.
-Articles in this section
-AI variation generator for text-based elements
-Optimizely Website
-Support Policy
-Privacy Notice
-Website terms of use
-Cookie settings
-Trust center
-Third-Party Addons & Platforms
-English (United States)
-Deutsch
+Updated
+05 Nov 2026
+PREVIOUS
+Example: Add a timed modal
+NEXT
+Idea builder for Optimizely Web Experimentation
+Docs powered by
+Archbee
+Docs powered by
+Archbee

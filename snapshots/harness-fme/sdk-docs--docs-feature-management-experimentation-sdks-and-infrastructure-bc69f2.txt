@@ -1,5 +1,5 @@
 # https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure
-SDKs and Customer-Deployed Components | Feature Management & Experimentation | Harness
+SDKs and Customer-Deployed Components | Runtime Configuration | Harness
 ⌘
 Ctrl
 k
@@ -39,21 +39,23 @@ Management & Administration
 API Keys
 Audit Logs
 Automated Feature Flag Cleanup
+Dashboards
+LIMITED GA
 Environments
 Groups
 Integrations
 My Work
 Owners
 Permissions
+Pipeline-gated changes
 Pipelines
 Policies
 Projects
 Tags
 Traffic Types
-Users
 Usage Data
 Admin Best Practices
-API Best Practices
+API best practices
 Troubleshooting & Resources
 What's Supported
 Harness FME's approach to statistics
@@ -69,15 +71,20 @@ Markdown
 Copy
 On this page
 Documentation
-Delivery
-Feature Management & Experimentation
+More Products
+Runtime Configuration
 New to FME?
 SDKs and Customer-Deployed Components
 Overview of SDKs and customer-deployed components for feature management and experimentation.
 TRACKING SDK CHANGES
-To find out what's new or updated in any Harness FME SDK release, visit the SDK's GitHub repository. The
+To find out what is new or updated in any Harness FME SDK release, visit the SDK's GitHub repository. The
 CHANGES.txt
 file provides detailed information about updates and the dates they were made.
+What you will learn from this topic
+How FME SDKs synchronize flag data and which SDK type fits your application
+How to block traffic until the SDK is ready, and how to use SDKs in serverless environments
+Which customer-deployed components and agents are available
+Before you begin
 When you integrate FME SDKs, consider the following to make sure that you have the correct set up depending on your use case, customers, security considerations, and architecture.
 Understand Harness FME architecture
 . FME SDKs were built to be scalable, reliable, fast, independent, and secure.
@@ -90,20 +97,20 @@ Determine which API key
 Determine which SDK language
 . FME supports several SDKs across various languages. With Harness FME, you can use multiple SDKs if your product is comprised of applications written in multiple languages.
 Determine if you need to use the Split Synchronizer & Proxy
-. By default, FME SDKs keep segment and feature flag definitions synchronized as users navigate across disparate systems, treatments, and conditions. However, some languages do not have a native capability to keep a shared local cache of this data to properly serve treatments. For these cases, we built the Split Synchronizer. To learn more, refer to the
+. By default, FME SDKs keep segment and feature flag definitions synchronized as users navigate across disparate systems, treatments, and conditions. However, some languages do not have a native capability to keep a shared local cache of this data to properly serve treatments. For these cases, we built the Split Synchronizer. Go to the
 Split Synchronizer guide
-.
-Streaming architecture
+for details.
+SDK streaming architecture
 FME SDKs were built to be scalable, reliable, fast, independent, and secure.
 Scalable
-. Harness FME is currently serving more than 50 billion feature flag evaluations per day. If you've shopped online, purchased an airline ticket, or received a text message from service provider, you've likely experienced Harness FME.
+. Harness FME serves more than 50 billion feature flag evaluations per day. If you have shopped online, purchased an airline ticket, or received a text message from a service provider, you have likely experienced Harness FME.
 Reliable and fast
 . Our scalable and flexible architecture uses a dual-layer CDN to serve feature flags anywhere in the world in less than 200 ms. In most instances, FME rollout plan updates are streamed to FME SDKs, which takes a fraction of a second. In less than 10% of cases, for very large feature flag definitions (or large dynamic configs) or segment updates with a large number of key changes, a notification of the change is streamed and the changes are retrieved by an API fetch request. Our SDKs store the FME rollout plan locally to serve feature flags without a network call and without interruption in the event of a network outage.
 Independent with no Harness FME dependency
 . Harness FME ships the evaluation engine to each SDK creating a weak dependency with Harness FME's backend and increasing both speed and reliability. There are no network calls to Harness FME servers to decide a user's treatment.
 Secure with no PII required
 . No customer data needs to be sent through the cloud to Harness FME. Use customer data in your feature flag evaluations without exposing this data to third parties.
-Streaming versus polling
+Compare streaming and polling
 FME updates can be streamed to FME SDKs sub-second or retrieved on configurable polling intervals.
 When streaming, Harness FME utilizes
 server-sent events (SSE)
@@ -117,7 +124,7 @@ Maintain a lower memory footprint. Each streaming connection is treated as an in
 Support environments with unreliable connectivity such as mobile networks. Mobile environments benefit from a low-frequency polling architecture
 Maintain robust security practices. Maintaining an always-open streaming connection poses risk
 Maintain control over frequency and when to initiate a network call
-STREAMING IS CURRENTLY SUPPORTED FOR THE BELOW SDKS WITH THE MINIMUM VERSION SHOWN BELOW.
+STREAMING IS SUPPORTED FOR THE BELOW SDKS WITH THE MINIMUM VERSION SHOWN BELOW.
 .NET 6.1.0
 Android 2.6.0
 Browser 0.1.0
@@ -139,9 +146,9 @@ Client-side
 Designed to be used by a single traffic type in the browser, mobile device, or mobile application
 Intended to be used in a potentially less secure environment
 This includes Harness FME's JavaScript, iOS, and Android SDKs
-Split’s JavaScript SDK supports popular JavaScript frameworks, including React, Vue, Angular, and more. See the
+Harness FME's JavaScript SDK supports popular JavaScript frameworks, including React, Vue, Angular, and more. Go to the
 JavaScript SDK GitHub repository
-for examples and best practices.
+to view examples and best practices.
 Server-side
 Designed to work for multiple traffic types, like users or customers (many of them per SDK) as opposed to client-side that are bound to one (typically a single user or account in session)
 Intended to be used in a secure environment, such as your infrastructure
@@ -150,12 +157,12 @@ Client- and server-side SDKs have different security considerations:
 Type
 Security Considerations
 Client-side
-These SDKs run on the browser or in a mobile device, they can be compromised by users unpacking a mobile app or use the browser's developer tools to inspect the page
-Client-side SDK APIs are more restricted in regards to what information they can access because it's a less secure environment
+These SDKs run on the browser or in a mobile device, they can be compromised by users unpacking a mobile app or using the browser's developer tools to inspect the page
+Client-side SDK APIs are more restricted in regards to what information they can access because it is a less secure environment
 For example, client-side SDKs uses a specific endpoint (/memberships) which only returns a list of segments in which the key used during instantiation is included. This provides for a much smaller amount of data, allowing for a smaller memory footprint in memory constrained environments of the browser and mobile apps
 Server-side
 These SDKs operate within your own infrastructure making them not accessible by end users
-When targeting by private or sensitive data on the server-side, this information won't leave your infrastructure, keeping your sensitive data under your control
+When targeting by private or sensitive data on the server-side, this information does not leave your infrastructure, keeping your sensitive data under your control
 Block traffic until the SDK is ready
 When the SDK is instantiated, it begins background tasks to update an in-memory cache with data fetched from Harness servers. Depending on the size of the data, this initialization process can take up to a few hundred milliseconds.
 During this intermediate state, if the SDK is asked to evaluate which treatment to show for a specific feature flag, it may not yet have the necessary data to make an accurate evaluation. In such cases, the SDK does not fail, but instead returns the
@@ -164,13 +171,13 @@ treatment.
 To avoid serving the Control treatment prematurely, you can block traffic until the SDK is fully ready. This is best done as part of your application's startup sequence to ensure that feature flag evaluations are accurate before serving users.
 For example:
 This code waits up to 10 seconds for the SDK to initialize. If the SDK is not ready within that time, an exception is raised, allowing you to handle the failure accordingly.
-Using FME SDKs in Serverless environments
+Use FME SDKs in serverless environments
 In serverless environments, data persistence is best handled by externalizing state to avoid the performance impact of "cold starts", or when functions initialize and load data before they can execute. This is especially important for feature flagging SDKs like FME, which rely on cached data to perform evaluations efficiently.
-To achieve optimal performance when using FME within AWS Lambda functions or other serverless platforms, see the
+Go to the
 Serverless Applications Powered by FME Feature Flags blog post
-for practical examples and best practices.
+to view practical examples and best practices for achieving optimal performance when using FME within AWS Lambda functions or other serverless platforms.
 API keys
-Typically, you need one API key per Harness FME environment, and additionally, you may want to issue extra API keys per microservice of your product using Harness FME for better security isolation. You must identify which type of SDK you're using to ensure you select the appropriate API key type.
+Typically, you need one API key per Harness FME environment, and additionally, you may want to issue extra API keys per microservice of your product using Harness FME for better security isolation. You must identify which type of SDK you are using to ensure you select the appropriate API key type.
 In practice, you need only a single client-side and a single server-side SDK API key for each Harness FME environment. When an environment is created, FME automatically creates one key of each type for the new environment.
 There is nothing wrong with having multiple keys of the same type for the same environment, but there is no real reason to do so because FME does not track which API key is used.
 A client-side SDK (like JavaScript, iOS, or Android) should be initialized with a client-side SDK API key. A server-side SDK (like Go, Java, .NET, etc.) should be initialized with a server-side SDK API key. The main difference between the access provided to client-side SDKs using a client-side SDK API key and server-side SDKs using a server-side SDK API key is the way they retrieve information about segments.
@@ -197,36 +204,36 @@ tab in Admin settings
 Client-side
 Configure client-side SDKs to use a client-side API key
 Grants access to fetch feature flags and segments for the provided key within the provided API key's environment
-RUM Agents
+RUM agents
 Harness FME real user monitoring (RUM) agents collect detailed information about your users' experience when they visit your application. This information is used to analyze site impact, measure the degradation of performance metrics in relation to feature flag changes and alert the owner of the feature flag about such degradation.
-For more information, see
-Client-side Agents
-.
+Go to
+Client-side agents
+for details.
 Evaluator service
-For languages with no native SDK support, Harness FME offers the Split Evaluator, a small service capable of evaluating all available features for a given customer via a REST endpoint. This service is available as a Docker container for ease of installation and is compatible with popular framework like Kubernetes when it comes to supporting standard health checks to achieve reliable uptimes. Learn more about the
+For languages with no native SDK support, Harness FME offers the Split Evaluator, a small service capable of evaluating all available features for a given customer via a REST endpoint. This service is available as a Docker container for ease of installation and is compatible with popular framework like Kubernetes when it comes to supporting standard health checks to achieve reliable uptimes. Go to
 Split evaluator
-.
+for details.
 Synchronizer service
-By default, FME SDKs keep segment and feature flag definitions synchronized in an in-memory cache for speed at evaluating feature flags. However, some languages do not have a native capability to keep a shared local cache of this data to properly serve treatments. For these cases, we built Split Synchronizer to maintain an external cache like Redis. To learn more, read about
+By default, FME SDKs keep segment and feature flag definitions synchronized in an in-memory cache for speed at evaluating feature flags. However, some languages do not have a native capability to keep a shared local cache of this data to properly serve treatments. For these cases, we built Split Synchronizer to maintain an external cache like Redis. Go to
 Split Synchronizer
-.
+for details.
 Proxy service
 Split Proxy enables you to deploy a service in your own infrastructure that behaves like Harness servers and is used by both server-side and client-side SDKs to synchronize the flags without directly connecting to Harness FME's backend.
-This tool reduces connection latencies between the SDKs and the Harness server, and can be used when a single connection is required from a private network to the outside for security reasons. To learn more, read about
+This tool reduces connection latencies between the SDKs and the Harness server, and can be used when a single connection is required from a private network to the outside for security reasons. Go to
 Split Proxy
-.
-Using a service for feature flags
+for details.
+Use a service for feature flags
 Harness FME enables you to roll out features and experiment with target groups of customers across the full web stack, from deep backend services to client-facing JavaScript and mobile applications.
-Feature flagging is especially valuable in mobile environments. For instance, when a critical bug appears in a newly released mobile feature, you can’t push an immediate fix due to App Store approval delays, and customers cannot be forced to update their apps promptly.
+Feature flagging is especially valuable in mobile environments. For instance, when a critical bug appears in a newly released mobile feature, you cannot push an immediate fix due to App Store approval delays, and customers cannot be forced to update their apps promptly.
 Many mobile and IoT apps are optimized for resource-constrained devices. A feature flagging solution should minimize any impact on app size or performance.
 Harness FME provides per-language libraries (e.g., .NET, Java, Node, PHP, Python, Ruby, Go) for backend environments, iOS and Android SDKs for mobile, and a JavaScript SDK with first-class support for React and Redux. For unsupported languages, we recommend wrapping one of our server-side SDKs inside a small service hosted on your infrastructure.
-This “phone home” approach—where browser, mobile, or IoT clients query a centralized service at startup to retrieve their feature flag state—offers several benefits, including the following:
+This "phone home" approach, where browser, mobile, or IoT clients query a centralized service at startup to retrieve their feature flag state, offers several benefits, including the following:
 Uniform experience across devices, versions, and platforms
 Ensures consistent feature flag states for users, whether they access your product via mobile apps or the web.
 Update your platform independently from app releases
 By hosting FME server-side, you can upgrade SDK versions centrally without requiring users to update their mobile or IoT apps.
 Leverage richer data for flag evaluation
-Server-side evaluation can incorporate user data not available on the client—such as demographics or model outputs—without exposing sensitive data on devices or browsers.
+Server-side evaluation can incorporate user data not available on the client, such as demographics or model outputs, without exposing sensitive data on devices or browsers.
 No impact on app size or performance
 Hosting the SDK on the server eliminates the need to embed additional libraries in client apps, preserving lightweight and performant clients.
 Best practices for designing the feature flag service
@@ -263,7 +270,7 @@ Manage the Feature Flag Lifecycle
 Next
 Versioning Policy
 Last updated
-14 days ago
+8 days ago
 Was this helpful?
 Resources
 Sign up
@@ -283,19 +290,24 @@ Privacy Policy
 Accessibility
 Do not sell or share my personal information
 Copyright © 2026 Harness Inc.
-Streaming architecture
+What you will learn from this topic
+Before you begin
+SDK streaming architecture
+Compare streaming and polling
 SDK types
+Security considerations
 Block traffic until the SDK is ready
-Using FME SDKs in Serverless environments
+Use FME SDKs in serverless environments
 API keys
-RUM Agents
+RUM agents
 Evaluator service
 Synchronizer service
 Proxy service
-Using a service for feature flags
+Use a service for feature flags
+Best practices for designing the feature flag service
+Response schema
 Was this helpful?
 Copy
-```ruby
 require 'splitclient-rb'
 options = { block_until_ready: 10 }
 begin

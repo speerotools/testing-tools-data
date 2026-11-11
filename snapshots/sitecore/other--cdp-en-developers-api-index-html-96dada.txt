@@ -31,7 +31,9 @@ Sitecore CDP Developer Documentation
 Toggle full width
 Change font size
 Toggle focus mode
+Copy page
 Sitecore CDP for developers
+Copy page
 Sitecore Customer Data Platform (CDP) lets you collect, connect, and activate customer data across all the digital channels of your organization.
 The
 Stream API
@@ -48,6 +50,7 @@ The
 data lake export service
 lets you access all your organization's data from Amazon Simple Storage Service (Amazon S3) and download the data locally or copy it to another Amazon S3 bucket.
 Data models
+Copy page
 This documentation describes Sitecore CDP functionality for two different data models: 2.1 data model and 2.0 data model.
 Where applicable, a
 2.1
@@ -63,26 +66,14 @@ button in a topic that distinguishes between the two data models.
 If you have suggestions for improving this article,
 let us know!
 Feedback
-Copy link
-Open in
-Documentation Assistant
-MCP
-This assistant uses AI to generate responses based on
-Sitecore documentation
-. While it has access to official sources, answers may be incomplete or inaccurate and should not be considered official advice or support.
-How does a developer get started in SitecoreAI?
-How do I create a hierarchy of page elements in SitecoreAI?
-How do I start using the Sitecore Content SDK?
-How do I use AI-assisted visual search in Content Hub?
-Deep Thinking
-Powered by
-k
-kapa.ai
-Protected by reCAPTCHA
 © Copyright
-2026
 , Sitecore A/S or a Sitecore affiliated company.
 All rights reserved.
 Privacy policy
 Sitecore Trust Center
 Terms of use
+Users
+Developers
+Cloud Portal
+Go to the search page
+en

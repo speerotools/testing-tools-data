@@ -5,70 +5,10 @@ Get Started
 Products
 Admin
 Developers
-FAQ
 Search docs…
 ⌘ K
 /
 Full width
-Products
-Data
-Analytics
-Session Replay
-Zoning Insights
-Heatmaps
-Amplitude AI
-Agent Analytics
-Wave
-AI Assistant
-Web Experiment
-Feature Experiment
-Guides and Surveys
-More
-Get Started
-Admin
-FAQ
-Developers
-SDKs
-APIs
-CLI
-Source catalog
-Ad Networks
-Attribution
-CDP
-Collaboration
-Customer Engagement
-Data warehouse/data lake
-BigQuery Data Import
-Databricks
-Google Analytics 4 Import
-Snowflake Data Import
-Experimentation
-Marketing Analytics
-Marketing Automation
-Messaging
-Other
-Privacy
-Qualitative Feedback
-Reverse ETL
-Sales
-Storage
-Subscription Management
-Website
-On this page
-Features
-Limitations
-Configure Databricks
-Find or create an all-purpose compute cluster
-Authentication
-Enable CDF on your tables
-Configure the Amplitude Databricks source
-Connect to Databricks
-Select data to import
-Verify data import
-Troubleshooting
-For AI agents: a documentation index is available at
-/docs/llms.txt
-. Append .md to any page URL for markdown, or send Accept: text/markdown.
 Data
 /
 Source catalog
@@ -578,7 +518,31 @@ Create a new source which starts importing from the latest table version.
 If you want to reuse the same source and skip the table version, contact
 Amplitude Support
 .
+Related
+:
+Databricks
+·
+Amazon S3 Import
+·
+Data Mutability Features
+·
+Import agent conversations from your data warehouse
 Was this helpful?
+For AI agents: a documentation index is available at
+/docs/llms.txt
+. Append .md to any page URL for markdown, or send Accept: text/markdown.
+On this page
+Features
+Limitations
+Configure Databricks
+Find or create an all-purpose compute cluster
+Authentication
+Enable CDF on your tables
+Configure the Amplitude Databricks source
+Connect to Databricks
+Select data to import
+Verify data import
+Troubleshooting
 Copy Markdown
 On this page
 Features
@@ -592,6 +556,49 @@ Connect to Databricks
 Select data to import
 Verify data import
 Troubleshooting
+Products
+Data
+Analytics
+Session Replay
+Zoning Insights
+Heatmaps
+Amplitude AI
+Agent Analytics
+Wave
+AI Assistant
+Web Experiment
+Feature Experiment
+Guides and Surveys
+More
+Get Started
+Admin
+Developers
+SDKs
+APIs
+CLI
+Source catalog
+Ad Networks
+Attribution
+CDP
+Collaboration
+Customer Engagement
+Data warehouse/data lake
+BigQuery Data Import
+Databricks
+Google Analytics 4 Import
+Snowflake Data Import
+Experimentation
+Marketing Analytics
+Marketing Automation
+Messaging
+Other
+Privacy
+Qualitative Feedback
+Reverse ETL
+Sales
+Storage
+Subscription Management
+Website
 Platform
 AI Agents
 AI Visibility

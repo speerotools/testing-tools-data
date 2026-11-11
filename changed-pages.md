@@ -1,3 +1,368 @@
 # Vendor scan: 2026-11-11
 
-Scanned 10 URLs. 0 vendor(s) with real changes, 0 error(s), 0 noisy.
+Scanned 644 URLs. 17 vendor(s) with real changes, 65 error(s), 202 noisy.
+
+## HIGH: pricing changed (5)
+- Croct: https://croct.com/pricing [Pricing]
+- Datadog: https://www.datadoghq.com/pricing/list/ [Pricing]
+- Kameleoon: https://kameleoon.com/plans [Pricing]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-ideate/pbx-ideate-freemium [Pricing]
+- Wingify: https://wingify.com/pricing/ [Pricing]
+
+## CHANGED: needs review (77)
+- AB Tasty: https://github.com/flagship-io/mcp-server [MCP Docs]
+- ABlyft: https://ablyft.com/en/features/ai [Product/Features]
+- ABsmartly: https://docs.absmartly.com/docs/apis-and-sdks/overview/ [API Reference]
+- Croct: https://croct.com/features [Product/Features]
+- Croct: https://croct.com/segmentation [Product/Features]
+- Croct: https://croct.com/case-studies [Solutions/Customers]
+- Datadog: https://docs.datadoghq.com/experiments/mcp_tools/ [MCP Docs]
+- Datadog: https://docs.datadoghq.com/mcp_server/tools/ [MCP Docs]
+- Datadog: https://docs.datadoghq.com/mcp_server/setup/ [MCP Docs]
+- Datadog: https://www.datadoghq.com/legal/hipaa-eligible-services/ [Compliance]
+- Datadog: https://docs.datadoghq.com/experiments/plan_and_launch_experiments/ [Methodology]
+- Datadog: https://docs.datadoghq.com/data_security/hipaa_compliance/ [Compliance]
+- Datadog: https://www.datadoghq.com/blog/experiments/ [Blog/Announcements]
+- Datadog: https://docs.datadoghq.com/experiments/ [Docs Root]
+- Dynamic Yield: https://dy.dev/ [API Reference]
+- GrowthBook: https://github.com/growthbook/growthbook-mcp [Changelog]
+- GrowthBook: https://docs.growthbook.io/app/product-analytics/dashboards [Product/Features]
+- GrowthBook: https://docs.growthbook.io/app/visual [Product/Features]
+- GrowthBook: https://docs.growthbook.io/app/visual/design-import [Product/Features]
+- GrowthBook: https://docs.growthbook.io/app/visual/images [Product/Features]
+- GrowthBook: https://docs.growthbook.io/app/visual/ai-mode [Product/Features]
+- GrowthBook: https://www.growthbook.io/blog/growthbook-version-5-1 [Changelog]
+- GrowthBook: https://www.growthbook.io/events/growthbook-5-1-office-hours [Blog/Announcements]
+- GrowthBook: https://docs.growthbook.io/integrations/llm-tracing [Integrations]
+- GrowthBook: https://github.com/growthbook/growthbook/releases/tag/v5.1.0 [Changelog]
+- GrowthBook: https://docs.growthbook.io/bandits/contextual [Methodology]
+- GrowthBook: https://docs.growthbook.io/app/holdouts [Methodology]
+- GrowthBook: https://www.growthbook.io/platform/mcp-server [Product/Features]
+- Intelligems: https://www.intelligems.io/features/integrations [Integrations]
+- Intelligems: https://www.intelligems.io/ai [Product/Features]
+- Kameleoon: https://docs.kameleoon.com/user-manual/recommendations-and-merchandising/recommendations/manage-recommendation-strategies [Product/Features]
+- Kameleoon: https://www.kameleoon.com/customers [Solutions/Customers]
+- Kameleoon: https://docs.kameleoon.com/mcp/mcp-server [MCP Docs]
+- Kameleoon: https://docs.kameleoon.com/mcp/mcp-airtable-guide [MCP Docs]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/prompt-based-experimentation-faq [Product/Features]
+- Kameleoon: https://help.kameleoon.com/integrations/data-warehouses/snowflake/use-snowflake-as-a-destination [Integrations]
+- Kameleoon: https://docs.kameleoon.com/user-manual/ai-predictive-targeting/enable-ai-predictive-targeting-on-a-goal [Product/Features]
+- Kameleoon: https://www.kameleoon.com/eol-policy [Compliance]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/master-prompts [Product/Features]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/import-designs-from-figma [Product/Features]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-ideate/what-powers-pbx-ideate [Product/Features]
+- Kameleoon: https://kameleoon.com/prompt-based-experimentation [Product/Features]
+- Kameleoon: https://docs.kameleoon.com/mcp/mcp-notion-guide [MCP Docs]
+- Kameleoon: https://docs.kameleoon.com/developer-docs/home/developer-docs-overview [Docs Root]
+- Kameleoon: https://www.kameleoon.com/product-roadmap [Changelog]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/pbx-configure [Product/Features]
+- Kameleoon: https://docs.kameleoon.com/user-manual/integrations/data-warehouses/databricks/setting-up-databricks [Integrations]
+- Kameleoon: https://help.kameleoon.com/integrations/data-warehouses/bigquery/use-bigquery-as-a-destination [Integrations]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experiment-analytics/statistical-methods/winsorization [Methodology]
+- Kameleoon: https://docs.kameleoon.com/user-manual/experimentation/web-experimentation/prompt-based-experiments/pbx-build/create-a-prompt-based-experiment [Product/Features]
+- Kameleoon: https://www.kameleoon.com/pbx-ideate [Product/Features]
+- Kameleoon: https://kameleoon.com/platform/privacy-security [Trust/Security]
+- Omniconvert: https://help.omniconvert.com/kba/server-side-testing [SDK Docs]
+- Optimizely: https://docs.developers.optimizely.com/feature-experimentation/changelog [Changelog]
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/45740092135693-Optimizely-Analytics-MCP-server-overview [MCP Docs]
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/45321466744205-Install-Optimizely-Experimentation-MCP-server [MCP Docs]
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/45320607594893-Optimizely-Experimentation-MCP-server-overview [MCP Docs]
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/19633740334477-AI-variation-generator-for-text-based-elements [Methodology]
+- PostHog: https://posthog.com/blog/posthog-cloud-eu [Blog/Announcements]
+- PostHog: https://posthog.com/self-driving [Product/Features]
+- PostHog: https://posthog.com/docs/privacy/hipaa-compliance [Compliance]
+- PostHog: https://posthog.com/docs/privacy/soc2 [Trust/Security]
+- PostHog: https://posthog.com/docs/privacy/gdpr-compliance [Compliance]
+- PostHog: https://posthog.com/handbook/who-we-build-for [Solutions/Customers]
+- PostHog: https://posthog.com/docs/settings/sso [Compliance]
+- Statsig: https://docs.statsig.com/integrations/introduction [Integrations]
+- Statsig: https://docs.statsig.com/compliance/ai_governance_security_privacy [Compliance]
+- Statsig: https://docs.statsig.com/api-reference/autotune/get-ranked-list-for-contextual-bandit [API Reference]
+- Varify.io: https://varify.io/en/integrations/google-analytics-4 [Integrations]
+- Webtrends Optimize: https://onpremises.webtrends.help/docs/webtrends-android-sdk-330 [SDK Docs]
+- Wingify: https://wingify.com/wingz-ai/ [Product/Features]
+- Wingify: https://developers.wingify.com/v2/docs/fme-mcp-server [MCP Docs]
+- Wingify: https://wingify.com/blog/wingz-ai-layer/ [Blog/Announcements]
+- Wingify: https://wingify.com/experimentation/ [Product/Features]
+- Wingify: https://wingify.com/news/vwo-and-ab-tasty-combine/ [Blog/Announcements]
+- Wingify: https://github.com/wingify/wingify-fme-mcp [MCP Docs]
+- Wingify: https://wingify.com/blog/inside-wingify-digital-experience-optimization/ [Blog/Announcements]
+
+## LOW: marketing copy churn (6)
+- ABlyft: https://ablyft.com/ [Homepage]
+- Croct: https://croct.com/ [Homepage]
+- Datadog: https://www.datadoghq.com/product/experiments/ [Homepage]
+- Kameleoon: https://www.kameleoon.com/ [Homepage]
+- Uniform: https://www.uniform.dev/ [Homepage]
+- Wingify: https://wingify.com/ [Homepage]
+
+## ERRORS (65)
+- Adobe Target: https://business.adobe.com/products/target/adobe-target [Homepage]
+- Adobe Target: https://business.adobe.com/products/target/experimentation-optimization.html [Product/Features]
+- Adobe Target: https://business.adobe.com/blog/adobe-target-announces-redesigned-user-interface-with-generative-ai-features [Blog/Announcements]
+- Adobe Target: https://www.adobe.com/trust/compliance/compliance-list.html [Trust/Security] status 403
+- Adobe Target: https://business.adobe.com/sitemap.xml [Sitemap]
+- Adobe Target: https://business.adobe.com/products/target/personalized-interactions.html [Product/Features]
+- Adobe Target: https://helpx.adobe.com/legal/product-descriptions/adobe-target.html [Pricing] status 403
+- Contentful Personalization: https://www.contentful.com/developers/docs/personalization/optimization-sdk/overview [SDK Docs] status 429
+- Contentful Personalization: https://www.contentful.com/developers/docs/personalization/insights/ [API Reference] status 429
+- Contentful Personalization: https://www.contentful.com/marketplace/app/ninetailed-personalization [Integrations] status 429
+- Contentful Personalization: https://www.contentful.com/blog/remote-mcp-now-generally-available [Blog/Announcements] status 429
+- Contentful Personalization: https://www.contentful.com/sitemap.xml [Sitemap] status 429
+- Contentful Personalization: https://www.contentful.com/blog/introducing-contentful-personalization [Blog/Announcements] status 429
+- Contentful Personalization: https://www.contentful.com/pricing/ [Pricing] status 429
+- Contentful Personalization: https://www.contentful.com/solutions/personalization [Solutions/Customers] status 429
+- Contentful Personalization: https://www.contentful.com/developers/docs/personalization/ [Docs Root] status 429
+- Contentful Personalization: https://www.contentful.com/products/personalization [Product/Features] status 429
+- Contentful Personalization: https://www.contentful.com/blog/welcoming-ninetailed-contentful [Blog/Announcements] status 429
+- Contentful Personalization: https://www.contentful.com/personalization [Homepage] status 429
+- Convert: https://convert.com/features/full-stack [Product/Features] status 403 streak 3
+- Convert: https://www.convert.com/developer [API Reference] status 403
+- Convert: https://www.convert.com/blog/ [Blog/Announcements] status 403 streak 3
+- Convert: https://www.convert.com/blog/ai/ [Blog/Announcements] status 403 streak 3
+- Convert: https://convert.com/blog/ai/ab-testing-without-ui-convert-mcp-claude-code [MCP Docs] status 403
+- Convert: https://convert.com/features [Product/Features] status 403
+- Convert: https://www.convert.com/case-studies [Solutions/Customers] status 403 streak 3
+- Convert: https://convert.com/security [Trust/Security] status 403
+- Convert: https://convert.com/llm-info [Product/Features] status 403
+- Convert: https://convert.com/gdpr/dpa [Compliance] status 403
+- Datadog: https://trust.datadoghq.com/ [Trust/Security] status 403
+- Dynamic Yield: https://dy.dev/changelog [Changelog] status 404
+- Dynamic Yield: https://support.dynamicyield.com/hc/en-us/articles/360014076018-Single-Sign-On-SSO-Integration [Compliance] status 403
+- Dynamic Yield: https://support.dynamicyield.com/ [Docs Root] status 403
+- Dynamic Yield: https://support.dynamicyield.com/hc/en-us/articles/29314031599389-Dynamic-Yield-Mobile-SDKs [SDK Docs] status 403
+- Evolv AI: https://support.evolv.ai/hc/en-us/articles/4403709383955-Integrating-with-Google-Analytics [Integrations]
+- Evolv AI: https://support.evolv.ai/hc/en-us [Docs Root]
+- Evolv AI: https://support.evolv.ai/hc/en-us/articles/4403940019347-Adobe-Analytics-Integration-and-Data-Accuracy [Integrations]
+- Evolv AI: https://evolv.ai/privacy-policy [Compliance]
+- GrowthBook: https://www.youtube.com/watch?v=Mj8siPGMifo [Blog/Announcements] status 429
+- Harness FME: https://developer.harness.io/docs/feature-management-experimentation/api [API Reference] status 404
+- Harness FME: https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features] status 404
+- Harness FME: https://developer.harness.io/docs/feature-management-experimentation/experimentation/experiment-results/analyzing-experiment-results/dimensional-analysis [Methodology] status 404
+- Harness FME: https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation [Solutions/Customers] status 404
+- Harness FME: https://www.harness.io/blog/ai-powered-feature-management-with-harness-mcp-server-and-claude-code [MCP Docs] status 404
+- Kameleoon: https://developers.kameleoon.com/ [Docs Root]
+- Kameleoon: https://developers.kameleoon.com/apis/automation-api-rest/ [API Reference]
+- Kameleoon: https://developers.kameleoon.com/feature-management-and-experimentation/versions/ [SDK Docs]
+- Kameleoon: https://developers.kameleoon.com/developer-tools/mcp-server [MCP Docs]
+- Kameleoon: https://developers.kameleoon.com/feature-management-and-experimentation/overview [Docs Root]
+- LaunchDarkly: https://launchdarkly.com/llms.txt [Sitemap] status 404
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/29328842964109-Contextual-bandits [Methodology] status 404
+- Optimizely: https://www.optimizely.com/en/sitemap.xml [Sitemap] status 502
+- Salesforce Personalization: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/products-supporting-mcp.html [MCP Docs] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/marketing/personalization/guide/ [Docs Root] status 403
+- Salesforce Personalization: https://www.salesforce.com/sitemap.xml [Sitemap] streak 3
+- Salesforce Personalization: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/servers-reference.html [MCP Docs] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html [MCP Docs] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/platform/hosted-mcp-servers/references/reference/data-cloud-sql.html [API Reference] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/marketing/personalization/references/personalization-ios-sdk/integration.html [SDK Docs] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/marketing/personalization/overview [Docs Root] status 403
+- Salesforce Personalization: https://developer.salesforce.com/docs/marketing/personalization/references/personalization-android-sdk/integration.html [SDK Docs] status 403
+- Split: https://developer.harness.io/docs/feature-management-experimentation/release-agent [Product/Features] status 404
+- Split: https://www.harness.io/customers/customers-index?module-name=Feature+Management+%26+Experimentation [Solutions/Customers] status 404
+- Symplify: https://help.symplify.com/ [Docs Root] status 403
+- Webflow Optimize: https://help.webflow.com/hc/en-us/articles/33609390628243-Intro-to-Webflow-Optimize [Docs Root] status 403
+
+## NOISY (likely hash noise) (202)
+- AB Tasty: https://docs.abtasty.com/ [Docs Root] streak 3
+- ABsmartly: https://github.com/absmartly [SDK Docs] streak 4
+- ABsmartly: https://github.com/absmartly/mcp [MCP Docs] streak 4
+- Amplitude: https://amplitude.com/docs/data/destination-catalog/google-bigquery [Integrations] streak 4
+- Amplitude: https://amplitude.com/roadmap [Blog/Announcements] streak 3
+- Amplitude: https://amplitude.com/docs/data/source-catalog/databricks [Integrations] streak 4
+- Amplitude: https://amplitude.com/docs [Docs Root] streak 3
+- Amplitude: https://amplitude.com/docs/llms.txt [Sitemap] streak 3
+- Amplitude: https://amplitude.com/pricing [Pricing] streak 4
+- Amplitude: https://amplitude.com/blog/amplitude-mcp [Blog/Announcements] streak 4
+- Amplitude: https://amplitude.com/blog/ai-agents [Blog/Announcements] streak 4
+- Amplitude: https://amplitude.com/ [Homepage] streak 4
+- Amplitude: https://amplitude.com/docs/sdks [SDK Docs] streak 4
+- Amplitude: https://amplitude.com/docs/apis [API Reference] streak 4
+- Amplitude: https://amplitude.com/docs/admin/single-sign-on/sso [Compliance] streak 4
+- Amplitude: https://amplitude.com/docs/amplitude-ai/amplitude-mcp [MCP Docs] streak 4
+- Amplitude: https://amplitude.com/docs/data/warehouse-native/overview [Methodology] streak 4
+- Amplitude: https://amplitude.com/docs/feature-experiment/overview [Product/Features] streak 4
+- Amplitude: https://amplitude.com/docs/data/source-catalog/snowflake [Integrations] streak 4
+- Amplitude: https://amplitude.com/releases [Changelog] streak 4
+- Amplitude: https://amplitude.com/releases/feed.xml [Changelog] streak 8
+- Compose: https://apps.shopify.com/compose-app [Solutions/Customers] streak 4
+- Conductrics: https://www.conductrics.com/ai-bandits [Product/Features] streak 4
+- Conductrics: https://support.conductrics.com/changelog [Changelog] streak 4
+- Conductrics: https://www.conductrics.com/security-and-compliance [Trust/Security] streak 4
+- Confidence (Spotify): https://confidence.spotify.com/blog/when-ai-writes-the-code [Blog/Announcements] streak 3
+- Confidence (Spotify): https://github.com/spotify/confidence-ai-plugins [Product/Features] streak 4
+- Confidence (Spotify): https://confidence.spotify.com/pricing [Pricing] streak 4
+- Confidence (Spotify): https://github.com/spotify/confidence-resolver [API Reference] streak 4
+- Confidence (Spotify): https://confidence.spotify.com/ [Homepage] streak 3
+- Convert: https://www.convert.com/ [Homepage] streak 3
+- Convert: https://github.com/convertcom/javascript-sdk [SDK Docs] streak 4
+- Croct: https://croct.com/sitemap.xml [Sitemap] streak 4
+- Croct: https://croct.com/personalization [Product/Features] streak 3
+- Croct: https://blog.croct.com [Blog/Announcements] streak 4
+- Croct: https://github.com/croct-tech/plug-next [SDK Docs] streak 4
+- Dynamic Yield: https://www.dynamicyield.com/clients [Solutions/Customers] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/security [Trust/Security] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/experience-apis [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/adaptml [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/experience-os [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/shopping-muse [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/blog/shopping-muse-announcement [Blog/Announcements] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/partners [Integrations] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/ [Homepage] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/blog/transform-search-with-experience-search-ai [Blog/Announcements] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/recommendations [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/element [Product/Features] streak 3
+- Dynamic Yield: https://www.dynamicyield.com/compliance [Trust/Security] streak 3
+- Evolv AI: https://github.com/evolv-ai/react-sdks [SDK Docs] streak 4
+- Evolv AI: https://github.com/evolv-ai/javascript-sdk [SDK Docs] streak 4
+- Evolv AI: https://github.com/evolv-ai/ios-sdk [SDK Docs] streak 4
+- Evolv AI: https://github.com/evolv-ai/android-sdk [SDK Docs] streak 4
+- FigPii: https://apps.shopify.com/figpii [Solutions/Customers] streak 4
+- FigPii: https://kb.figpii.com/category/198-integrations [Integrations] streak 3
+- GrowthBook: https://www.growthbook.io/platform/security [Trust/Security] streak 4
+- GrowthBook: https://www.growthbook.io/sitemap.xml [Sitemap] streak 4
+- GrowthBook: https://www.growthbook.io/platform/ai-native-development [Product/Features] streak 4
+- GrowthBook: https://github.com/growthbook/growthbook/releases [Changelog] streak 4
+- GrowthBook: https://www.growthbook.io/blog/agent-experience [Blog/Announcements] streak 4
+- GrowthBook: https://www.growthbook.io/blog/growthbook-version-5-0 [Changelog] streak 4
+- GrowthBook: https://www.growthbook.io/ [Homepage] streak 4
+- GrowthBook: https://www.growthbook.io/platform/warehouse-native [Product/Features] streak 4
+- GrowthBook: https://docs.growthbook.io/warehouses/clickhouse [Integrations] streak 4
+- GrowthBook: https://docs.growthbook.io/llms.txt [Sitemap] streak 4
+- GrowthBook: https://docs.growthbook.io/integrations/ai [Methodology] streak 4
+- GrowthBook: https://www.growthbook.io/blog/ai-visual-editor-from-idea-to-live-experiment-in-minutes [Blog/Announcements] streak 4
+- GrowthBook: https://docs.growthbook.io/bandits/overview [Methodology] streak 4
+- GrowthBook: https://github.com/growthbook/skills [SDK Docs] streak 6
+- GrowthBook: https://www.growthbook.io/blog [Blog/Announcements] streak 4
+- Harness FME: https://www.harness.io/blog/introducing-harness-ai-devops-agent-for-ai-infused-software-delivery [Blog/Announcements] streak 4
+- Harness FME: https://www.harness.io/products/feature-management-experimentation [Homepage] streak 4
+- Harness FME: https://www.harness.io/blog/introducing-autonomous-worker-agents [Blog/Announcements] streak 4
+- Harness FME: https://developer.harness.io/docs/platform/authentication/single-sign-on-for-harness-mcp [MCP Docs] streak 3
+- Harness FME: https://developer.harness.io/docs/feature-management-experimentation [Docs Root] streak 3
+- Harness FME: https://developer.harness.io/llms.txt [Sitemap] streak 3
+- Harness FME: https://developer.harness.io/docs/platform/harness-ai/harness-mcp-server/ [MCP Docs] streak 3
+- Harness FME: https://www.harness.io/blog/mcp-announcement [Blog/Announcements] streak 4
+- Harness FME: https://developer.harness.io/docs/platform/harness-ai/harness-agents/ [Product/Features] streak 3
+- Harness FME: https://developer.harness.io/docs/feature-management-experimentation/sdks-and-infrastructure [SDK Docs] streak 3
+- Intelligems: https://docs.intelligems.io/developer-resources/javascript-api [SDK Docs] streak 3
+- Intelligems: https://www.intelligems.io/resources/product-updates [Changelog] streak 4
+- Intelligems: https://www.intelligems.io/resources/blog/using-ai-with-intelligems-use-cases-that-are-possible-right-now [Blog/Announcements] streak 3
+- Intelligems: https://www.intelligems.io/resources/customer-stories [Solutions/Customers] streak 3
+- Intelligems: https://docs.intelligems.io/developer-resources/javascript-api [API Reference] streak 3
+- Intelligems: https://docs.intelligems.io/developer-resources/mcp-server [MCP Docs] streak 4
+- Intelligems: https://docs.intelligems.io/llms.txt [Sitemap] streak 3
+- Intelligems: https://www.intelligems.io/sitemap.xml [Sitemap] streak 4
+- Intelligems: https://docs.intelligems.io/ [Docs Root] streak 4
+- Intelligems: https://www.intelligems.io/pricing [Pricing] streak 3
+- Intelligems: https://apps.shopify.com/intelligems [Solutions/Customers] streak 4
+- Kameleoon: https://docs.kameleoon.com/llms.txt [Sitemap] streak 4
+- Kameleoon: https://docs.kameleoon.com/mcp/claude-connector.md [MCP Docs] streak 3
+- Kameleoon: https://kameleoon.com/blog/kameleoon-ai-copilot-changes-how-teams-experiment [Blog/Announcements] streak 3
+- Kameleoon: https://www.kameleoon.com/blog/what-is-an-mcp-server [Blog/Announcements] streak 3
+- Kameleoon: https://www.kameleoon.com/sitemap.xml [Sitemap] streak 3
+- Kameleoon: https://kameleoon.com/blog/pbx-2-0-is-changing-testing-again [Blog/Announcements] streak 3
+- Kameleoon: https://kameleoon.com/blog/kameleoon-predicttm-your-visitors-enjoy-experiences-customized-their-purchase-intention [Blog/Announcements] streak 3
+- Kameleoon: https://kameleoon.com/blog/how-ai-really-influencing-experimentation [Blog/Announcements] streak 3
+- Kameleoon: https://kameleoon.com/blog/announcing-kameleoons-soc-2-compliance [Blog/Announcements] streak 3
+- LaunchDarkly: https://launchdarkly.com/solutions/release-ai-built-code [Product/Features] streak 4
+- LaunchDarkly: https://launchdarkly.com/pricing [Pricing] streak 4
+- LaunchDarkly: https://launchdarkly.com/docs/llms.txt [Sitemap] streak 4
+- LaunchDarkly: https://launchdarkly.com/solutions/run-experiments [Product/Features] streak 4
+- LaunchDarkly: https://launchdarkly.com/docs/home/getting-started/mcp-local [MCP Docs] streak 3
+- LaunchDarkly: https://launchdarkly.com/docs/home/getting-started/mcp-hosted [MCP Docs] streak 4
+- LaunchDarkly: https://launchdarkly.com/docs/home/infrastructure/eu [Compliance] streak 3
+- LaunchDarkly: https://launchdarkly.com/docs/home/experimentation/health-checks [Methodology] streak 3
+- LaunchDarkly: https://launchdarkly.com/docs/home/infrastructure/federal [Compliance] streak 3
+- LaunchDarkly: https://launchdarkly.com/customer-stories [Solutions/Customers] streak 4
+- LaunchDarkly: https://launchdarkly.com/docs/home/getting-started/mcp [MCP Docs] streak 4
+- LaunchDarkly: https://launchdarkly.com/changelog/ [Changelog] streak 4
+- LaunchDarkly: https://launchdarkly.com/ [Homepage] streak 4
+- LaunchDarkly: https://launchdarkly.com/integrations [Integrations] streak 4
+- LaunchDarkly: https://launchdarkly.com/changelog/alerts-anomaly-detection [Blog/Announcements] streak 4
+- LaunchDarkly: https://launchdarkly.com/security [Trust/Security] streak 4
+- Omniconvert: https://www.omniconvert.com/pricing/ [Pricing] streak 3
+- Omniconvert: https://www.omniconvert.com/privacy-security [Trust/Security] streak 3
+- Omniconvert: https://www.omniconvert.com/sitemap.xml [Sitemap] streak 4
+- Omniconvert: https://www.omniconvert.com/ [Homepage] streak 3
+- Omniconvert: https://www.omniconvert.com/nexus [Product/Features] streak 3
+- Optimizely: https://docs.developers.optimizely.com/feature-experimentation/docs/introduction [Docs Root] streak 3
+- Optimizely: https://www.optimizely.com/products/web-experimentation/ [Product/Features] streak 4
+- Optimizely: https://support.optimizely.com/hc/en-us/articles/36354416686477-Optimizely-Opal-overview [Product/Features] streak 3
+- Optimizely: https://www.optimizely.com/products/ai [Product/Features] streak 4
+- Optimizely: https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides [SDK Docs] streak 3
+- Optimizely: https://www.optimizely.com/product-updates/ai [Blog/Announcements] streak 3
+- Optimizely: https://docs.developers.optimizely.com/feature-experimentation/docs/sdk-reference-guides streak 3
+- Optimizely: https://www.optimizely.com/ [Homepage] streak 3
+- Optimizely: https://www.optimizely.com/connectors/ [Integrations] streak 4
+- Optimizely: https://docs.developers.optimizely.com/ [Docs Root] streak 3
+- PostHog: https://posthog.com/docs/model-context-protocol/faq [MCP Docs] streak 3
+- PostHog: https://posthog.com/docs [Docs Root] streak 4
+- PostHog: https://posthog.com/docs/api [API Reference] streak 4
+- PostHog: https://posthog.com/ [Homepage] streak 3
+- PostHog: https://posthog.com/changelog [Changelog] streak 4
+- PostHog: https://posthog.com/docs/posthog-ai [Product/Features] streak 3
+- PostHog: https://posthog.com/docs/model-context-protocol [MCP Docs] streak 4
+- PostHog: https://posthog.com/docs/experiments/surfaces/mcp [MCP Docs] streak 3
+- PostHog: https://posthog.com/docs/cdp/sources/snowflake [Integrations] streak 4
+- PostHog: https://posthog.com/context-warehouse [Product/Features] streak 3
+- PostHog: https://posthog.com/docs/cdp/sources/redshift [Integrations] streak 4
+- PostHog: https://posthog.com/customers [Solutions/Customers] streak 4
+- PostHog: https://posthog.com/docs/data-warehouse/sources [Methodology] streak 4
+- PostHog: https://posthog.com/docs/feature-flags/surfaces/mcp [MCP Docs] streak 3
+- PostHog: https://posthog.com/docs/mcp-analytics [Product/Features] streak 3
+- PostHog: https://posthog.com/docs/cli [Docs Root] streak 3
+- PostHog: https://posthog.com/llms.txt [Sitemap] streak 4
+- PostHog: https://posthog.com/docs/cdp/sources/bigquery [Integrations] streak 4
+- PostHog: https://posthog.com/sitemap/sitemap-0.xml [Sitemap] streak 4
+- PostHog: https://posthog.com/docs/libraries [SDK Docs] streak 4
+- PostHog: https://posthog.com/docs/model-context-protocol/tools [MCP Docs] streak 4
+- PostHog: https://posthog.com/pricing [Pricing] streak 4
+- Shoplift: https://docs.shoplift.ai/test/javascript-api [SDK Docs] streak 4
+- Shoplift: https://docs.shoplift.ai/account/plans-and-billing/updates-to-our-pricing-9-25 [Changelog] streak 4
+- Shoplift: https://www.shoplift.ai/features/campaigns [Product/Features] streak 4
+- Shoplift: https://www.shoplift.ai/sitemap.xml [Sitemap] streak 4
+- Shoplift: https://docs.shoplift.ai/test/javascript-api [API Reference] streak 4
+- Shoplift: https://docs.shoplift.ai/ [Docs Root] streak 3
+- Sitecore: https://www.sitecore.com/sitemap.xml [Sitemap] streak 4
+- Sitecore: https://www.sitecore.com/resources/insights/security-privacy/hipaa-readiness [Compliance] streak 3
+- Sitecore: https://www.sitecore.com/platform/ai-search [Product/Features] streak 3
+- Sitecore: https://www.sitecore.com/platform/ai-innovation-lab [Product/Features] streak 3
+- Sitecore: https://www.sitecore.com/platform/conversion-optimization [Product/Features] streak 3
+- Sitecore: https://doc.sitecore.com/sai/en/users/sitecoreai/integrating-sitecore-with-agentic-platforms.html [Integrations] streak 4
+- Sitecore: https://doc.sitecore.com/sai/en/users/sitecoreai/ai-capabilities-in-sitecoreai.html [Product/Features] streak 4
+- Sitecore: https://doc.sitecore.com/cdp/en/developers/api/index.html streak 3
+- Sitecore: https://www.sitecore.com/legal/compliance-certs [Trust/Security] streak 3
+- Sitecore: https://www.sitecore.com/platform/use-cases/connect-ai-assistants-with-mcp [Product/Features] streak 3
+- Sitecore: https://doc.sitecore.com/cdp/en/developers/api/index.html [API Reference] streak 3
+- Sitecore: https://doc.sitecore.com/sai/en/users/sitecoreai/personalize.html [Docs Root] streak 4
+- Sitecore: https://www.sitecore.com/products/personalize [Homepage] streak 3
+- Split: https://docs.split.io/reference/introduction [API Reference] streak 3
+- Split: https://docs.split.io/ [Docs Root] streak 3
+- Statsig: https://docs.statsig.com/console-api/introduction [API Reference] streak 4
+- Statsig: https://docs.statsig.com/ [Docs Root] streak 3
+- Statsig: https://docs.statsig.com/integrations/mcp/cursor [MCP Docs] streak 3
+- Statsig: https://www.statsig.com/updates [Changelog] streak 4
+- Statsig: https://docs.statsig.com/stats-engine/methodologies/srm-checks [Methodology] streak 3
+- Statsig: https://docs.statsig.com/experiments/advanced-setup/bayesian [Methodology] streak 3
+- Statsig: https://docs.statsig.com/integrations/mcp [MCP Docs] streak 3
+- Statsig: https://docs.statsig.com/experiments/exploring-results/interaction-detection [Methodology] streak 3
+- Statsig: https://docs.statsig.com/experiments/advanced-setup/sequential-testing [Methodology] streak 3
+- Statsig: https://docs.statsig.com/sdks/getting-started [SDK Docs] streak 4
+- Statsig: https://docs.statsig.com/integrations/mcp/manual-setup [MCP Docs] streak 3
+- Statsig: https://docs.statsig.com/experiments/statistical-methods/methodologies/cuped [Methodology] streak 4
+- Statsig: https://docs.statsig.com/llms.txt [Sitemap] streak 3
+- Statsig: https://docs.statsig.com/ai-evals/overview [Product/Features] streak 3
+- Symplify: https://packagist.org/packages/symplify-conversion/sst-sdk-php [SDK Docs] streak 4
+- Uniform: https://docs.uniform.app/sitemap.xml [Sitemap] streak 3
+- Uniform: https://www.uniform.dev/blogs [Blog/Announcements] streak 3
+- Varify.io: https://varify.io/en/functions [Product/Features] streak 4
+- Varify.io: https://varify.io/en/ai-powered-ab-testing-platforms [Product/Features] streak 3
+- Varify.io: https://varify.io/en/ab-testing-flat-rate-pricing [Product/Features] streak 3
+- Varify.io: https://varify.io/en/ [Homepage] streak 4
+- Varify.io: https://varify.io/en/plans/ [Pricing] streak 4
+- Webflow Optimize: https://github.com/webflow/mcp-server [MCP Docs] streak 4
+- Webflow Optimize: https://webflow.com/apps/compliance [Compliance] streak 3
+- Webflow Optimize: https://github.com/webflow/js-webflow-api [SDK Docs] streak 4
+- Webtrends Optimize: https://docs.webtrends-optimize.com/en [Docs Root] streak 3
+- Zoho PageSense: https://www.zoho.com/pagesense/sitemap.xml [Sitemap] streak 3
+- Zoho PageSense: https://www.zoho.com/sitemap.xml [Sitemap] streak 4

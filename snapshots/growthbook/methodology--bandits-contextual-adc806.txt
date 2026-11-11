@@ -1,0 +1,223 @@
+# https://docs.growthbook.io/bandits/contextual
+Contextual Bandits - GrowthBook Documentation
+Documentation Index
+Fetch the complete documentation index at:
+/llms.txt
+Use this file to discover all available pages before exploring further.
+Skip to main content
+New:
+See what we've shipped lately on our
+Product Updates
+page.
+GrowthBook Documentation
+home page
+Docs
+SDKs
+API
+Search...
+⌘
+K
+Product Updates
+Github
+Open App
+GrowthBook Documentation
+home page
+Search or ask...
+Navigation
+Contextual Bandits
+Contextual Bandits
+Overview
+How it works
+Quickstart
+Command Palette
+Feature Flags
+Data & Metrics
+Experimentation
+Creating Experiments
+Experiment Configuration
+Experiment Templates
+Customizable Pre-Launch Checklists
+Power Analysis
+Importing External Experiments
+Delivery Methods
+Feature Flag Experiments
+AI Visual Editor
+URL Redirects
+Analysis & Decisions
+Make Changes to Experiments
+Understanding Experiment Results
+Experiment Time Series
+Experiment Decision Framework
+Experiment Dashboards
+Dimensions
+Advanced & Statistics
+Bandits
+Contextual Bandits
+BETA
+Overview
+Setup
+Via API
+Interleaving
+BETA
+Holdouts
+Insights
+Product Analytics
+NEW
+Self-Hosting
+API
+Webhooks
+Integrations
+Security
+FAQ
+Tutorials
+Knowledge Base
+GrowthBook Guide
+Guides for Agents
+Experimentation
+Contextual Bandits
+Contextual Bandits
+Copy page
+Copy page
+Personalize which variation a user sees based on their context, with a separate set of traffic weights per segment.
+Copy page
+Copy page
+Contextual bandits are in beta for enterprise customers and will evolve with customer feedback.
+​
+What are Contextual Bandits?
+A Contextual Bandit is a
+bandit
+that personalizes which variation a user sees based on their
+context
+— attributes like country, device, or plan. Like a standard multi-armed bandit, traffic weights change while the experiment runs to favor better-performing variations. The difference is that a contextual bandit learns a
+separate
+set of weights for each context, instead of a single global set of weights for all users.
+In other words, a multi-armed bandit asks “which variation is best?” A contextual bandit asks “which variation is best
+for this kind of user
+?” Where a multi-armed bandit converges on one winner for everyone, a contextual bandit can send users in one country to one variation and users in another country to a different one — whatever performs best on the
+Decision Metric
+within each context.
+​
+When should I run a Contextual Bandit?
+Reach for a contextual bandit when you either want (a) a personalization engine that is driven by your warehouse metrics or (b) want the best performance for a short-lived test (such as marketing or promotional copy) and reasonably believe that performance will vary by the context. It’s a good fit when:
+You expect the winner to differ across segments.
+Checkout copy that lands differently by country, a layout that helps on mobile but hurts on desktop, an upsell that converts free-plan users but annoys paying ones. If you already suspect the honest answer is “it depends”, a contextual bandit finds
+and ships
+the per-segment answer in a single run.
+Those segments are defined by a handful of attributes you know at decision time.
+Country, device, plan tier, new vs. returning, acquisition channel. The bandit personalizes on what it knows about the user when it buckets them, not on behavior observed afterwards.
+Each segment carries meaningful traffic.
+Splitting weights by context means each context has to learn from its own data. Segments too small to learn on their own get pooled together and behave like a plain bandit, so a contextual bandit only pays off when the interesting segments are large enough to stand alone.
+You have a single Decision Metric that moves quickly.
+As with multi-armed bandits: one metric, a short conversion window, and a conversion rate that isn’t extremely low or high.
+Shipping the best experience to each segment matters more than clean learnings.
+You’re continuously optimizing a surface like a homepage CTA, a pricing page, or recommendation copy, not making a one-time ship/no-ship decision that needs unbiased effect estimates.
+​
+When should I run something else?
+A
+multi-armed bandit
+when you expect one variation to be best for everyone, or you aren’t sure. Splitting by context spreads your data thinner, so if there’s no real heterogeneity you pay the cost without the payoff. A plain bandit is the safer default.
+A standard experiment
+when you need unbiased estimates, care about several metrics, or your outcome takes a long time to materialize. If your goal is to
+learn
+whether segments respond differently (rather than act on it right away), run a standard experiment and analyze results by
+dimension
+.
+​
+How is it different from a multi-armed bandit?
+Characteristic
+Multi-Armed Bandit
+Contextual Bandit
+Goal
+Find the single best variation for everyone
+Find the best variation for each user context
+Traffic weights
+One global set of weights
+A separate set of weights per context
+Inputs
+Decision Metric only
+Decision Metric
+plus
+context attributes
+Best when
+One variation is best for all users
+The best variation varies across segments, and each segment has enough traffic to learn
+Output
+A winning variation
+A per-segment mapping from context to variation
+​
+GrowthBook’s Contextual Bandit implementation
+Like multi-armed bandits, contextual bandits use
+Thompson sampling
+, a Bayesian algorithm that balances
+exploration
+(trying variations to learn how they perform) and
+exploitation
+(sending more traffic to the variations that look best). The key addition is that GrowthBook fits a decision tree over your context attributes, partitioning users into
+leaves
+— groups that share similar context — and then runs Thompson sampling
+within each leaf
+. This is how the bandit can converge to different winners for different kinds of users.
+As with standard bandits, GrowthBook ensures every variation keeps at least a small share of traffic within each context, so the bandit can keep adapting if user behavior changes over time.
+The statistical details are covered in the
+Contextual Bandit technical reference
+.
+​
+Next steps
+Setting up a Contextual Bandit
+— the prerequisites checklist: compatible SDK, tracking callback changes, the assignment query, and creating and starting the bandit in the app.
+Driving a Contextual Bandit via API
+— the same lifecycle run entirely from the REST API.
+Contextual Bandit technical details
+— how the weights are computed.
+​
+FAQ
+When is a contextual bandit worth it over a multi-armed bandit?
+Only when you have a real reason to believe the best variation differs across user segments. If one variation is best for everyone, a contextual bandit adds complexity (splitting your data across contexts, which needs more traffic per context) without a payoff. A plain multi-armed bandit is the better default.
+Can’t I just run a standard experiment and look at the dimension breakdowns?
+You can, and that’s the right move if your goal is to learn about heterogeneity. But a dimension breakdown tells you
+after the fact
+which segment preferred which variation, and then you still have to build and ship targeting rules by hand. A contextual bandit does that during the run: it shifts traffic within each segment as it learns, and keeps adapting after you would have stopped the experiment.
+Can I run a Contextual Bandit using the frequentist engine?
+No. Like multi-armed bandits, contextual bandits are available only under the Bayesian engine, where Thompson sampling is used.
+What happens if a context has very little traffic?
+GrowthBook controls how finely it splits users using settings like
+maxLeaves
+. A segment without enough traffic to learn on its own isn’t given its own leaf; it’s pooled with similar users and shares their weights.
+Do contextual bandits suffer from the same biases as multi-armed bandits?
+Yes — because traffic weights change adaptively, the same
+adaptive-experimentation biases
+apply, and splitting by context can make them more pronounced in low-traffic segments. If unbiased per-metric effect estimates are your goal, a standard experiment is still the better tool.
+Was this page helpful?
+Yes
+No
+Understanding Bandit Results
+Previous
+Setting up Contextual Bandits
+Next
+⌘
+I
+On this page
+Back to top
+What are Contextual Bandits?
+When should I run a Contextual Bandit?
+When should I run something else?
+How is it different from a multi-armed bandit?
+GrowthBook’s Contextual Bandit implementation
+Next steps
+FAQ
+GrowthBook Documentation
+home page
+x
+linkedin
+github
+slack
+Community
+Join us on Slack
+Open an Issue
+Company
+About
+Blog
+x
+linkedin
+github
+slack

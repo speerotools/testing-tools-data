@@ -1,5 +1,5 @@
 # https://posthog.com/context-warehouse
-Context warehouse - PostHog
+Warehouse – All your data, one warehouse
 Products
 Pricing
 Docs
@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -33,138 +33,272 @@ Company handbook
 Store
 Careers
 Trash
-PostHog context warehouse
+Warehouse
+Product
+Docs
+Learn
 Overview
-Start here
-Is PostHog warehouse native?
-The context gap report
-Data tools
-Managed Warehouse
-PostHog AI
-Data sources & import (ELT)
-CDP
-Data modeling
-SQL editor
-Business intelligence (BI)
-Reverse ETL & export
-Integrations
-Integration library
-Give your agents the
-full context
-Your
-context warehouse
-combines data storage and tooling with no pipelines to maintain, optimized for agents to use.
-Store product and business data
-Transform, query, and model
-Data-driven self-driving development
-Get started
-Built for data engineers, loved by product teams
-Data engineers
-Build complex models and transformations that need your expertise, not plumbing.
-Set up CDC pipelines from Postgres, MySQL, and other sources
-Define and version core metrics so every team is working from the same numbers
-Build and manage reverse ETL syncs to keep downstream tools up to date
-Write transformation logic that enriches events with data from other systems
-Query billions of rows without managing a cluster
-Flexibility to use PostHog's full context warehouse or bring your own tools
-Product engineers
-Your data is already in PostHog. Query it, use it in experiments, and ship against it without waiting on the data team.
-Sync external data sources and query them alongside your product events
-Build experiment cohorts from warehouse data without creating a custom pipeline
-Use PostHog AI to write SQL when you don't want to
-Better data in, better AI out
-Data you trust
-Ask @PostHog
+How do I use it?
+Key features
+AI prompts
+Feature comparison
+Questions?
+Get access
+All your data, one warehouse
+"Show me which features paying customers use the most"
+Contact sales
+Read the docs
+Install with AI in a single prompt
+Paste into your terminal or code editor and make AI do the work.
+npx @posthog/wizard
+Learn more
+MCP
+•
+Watch a demo
+•
+Talk to a human
+What does it do?
+PostHog already syncs Stripe, HubSpot, Postgres, and the rest of your stack, so you can query it next to your events. The Warehouse goes one step further: it's an actual database, with its own hostname, credentials, and storage, holding your product data and business data side by side.
+Point Metabase, a notebook, or a scheduled job at it, build your own tables in it, and run heavy queries without slowing down PostHog. It's the warehouse you'd otherwise set up in Snowflake or BigQuery, without the pipeline to get your product data into it.
+PostHog’s AI features can use it as context, so asking "why did conversion drop?" comes back with the revenue impact, the cohorts affected, and what those users have in common.
+Who is it for?
+Role
+Use cases
+Product Engineers
+Join product events to production tables without building a pipeline, and answer "who's actually using this?" in one query
+Data Engineers
+Get Stripe, CRM, and Postgres data landed and kept in sync with incremental syncs and Postgres CDC
+PMs
+See which features correlate with expansion and churn, and which experiment wins turned into revenue
+Finance & RevOps
+Break MRR, churn, and expansion down by product behavior, plan, and acquisition channel
+Growth & Marketing
+Follow a signup from first touch to CRM deal stage to paid, and see where the funnel leaks
+How do I use it?
+BI & notebooks
+Editor / MCP
 Self-drive
-Better together
-Start with
-data you trust
-AI products don't fail because the model is bad. They fail because the data feeding them is incomplete, inconsistent, or stuck in a tool it can't reach.
-PostHog's context warehouse gives your AI features a foundation that works: clean event data, business context from your other tools, and full data ownership.
-The stack that grows with you, not one you grow out of
-The data you need on day one looks nothing like the data you need at scale. Start with what a small team needs and add capability as you grow into it.
-Just launched
-Getting traction
-Scaling up
-Data in
-Send Events from your product
-Sync Stripe and your CRM
-Custom sources and transformation logic
-Storage
-Data stored by PostHog
-Managed Warehouse, basic queries
-Managed Warehouse, advanced modeling
-Data out
-Use PostHog Product Analytics
-Create Cohorts from combined data
-Reverse ETL to your whole stack
-AI
-Ask PostHog MCP to set up your tools
-Use PostHog AI to query your data
-Get PostHog Code to self-drive your development
-No migration, re-instrumentation, or switching tools because you scaled out of them. If you really want to, we give you the credentials to directly access your data store to bring your own tools or export your data.
-What's in your context warehouse
-Use PostHog as the full context layer for your product, or mix and match with your own tools.
-Data Sources
-Sources & Import (ELT)
-Regularly sync or bulk import data into your warehouse from databases, ad platforms, SaaS tools, and more.
-Managed Warehouse
-Store, query, and join your product and business data in one place without maintaining any infrastructure.
-CDP
-Ingest, transform, and route data between PostHog and the rest of your stack in real time.
-Batch Exports
-Send PostHog data to your existing warehouse or data lake on a schedule you control.
-Data Modeling
-Models
-Define your metrics to keep them consistent across PostHog products, update them on a schedule.
+Point your own tools at it
+Warehouse is a database with its own hostname and credentials. Connect the tools your team already uses to query the Warehouse directly, separate from the queries that power PostHog.
+BI dashboards
+Metabase, Superset, and Tableau connect with their standard Trino connectors.
+Notebooks and code
+Query from Python, JDBC, or any Trino client.
+Scheduled jobs
+Run nightly reports and exports against the Warehouse.
+Your own tables
+Write derived tables next to the synced data, and query them from anywhere.
+Key features
+Sources
+Sync & CDC
+Schema changes
+Query engine
+Managed storage
+Your PostHog data is already here. Add the rest in a click.
+Every source you connect to PostHog syncs into Warehouse too, with no extra setup.
+PostHog data, zero config
+Your events and persons are backfilled. Then, on US Cloud, new events arrive within minutes. Persons update daily.
+Billing and CRM
+Stripe, HubSpot, Salesforce, and more, synced on a schedule you choose.
+Databases and files
+Postgres, MongoDB, ClickHouse, and files in S3.
+Per-table control
+Pick which tables sync, how often, and whether they sync incrementally.
+AI prompts
+Ask PostHog AI any question you want about your data.
+Works in
+PostHog AI
+(in-app chat),
+PostHog Desktop
+(our AI code editor), and in your product editor (using the MCP).
+Click a prompt to copy it, then paste it into your agent.
+Revenue
+“
+Which features do our highest-MRR customers use most?
+”
+“
+Which behaviors in the first 14 days predict a customer upgrading?
+”
+Experiments
+“
+Did the winning variant of last month's pricing experiment increase revenue?
+”
+“
+Why does this variant perform better in Europe than in the US?
+”
+Retention
+“
+Did the users who completed onboarding in September still have an active subscription 60 days later?
+”
+“
+Which accounts have usage dropping and a renewal in the next 30 days?
+”
+Funnels & CRM
+“
+Where does the funnel from signup to closed-won deal lose the most people?
+”
+“
+Which HubSpot lead sources turn into accounts that stick around?
+”
+Works with other PostHog tools
+Use Warehouse with these other PostHog apps to maximize shareholder value.
+Product Analytics
+Break down funnels, trends, and retention by plan, MRR, or deal stage
+Experiments
+Measure experiments on revenue, not just clicks
+Data Pipelines
+Send warehouse-enriched data to the rest of your stack
 Endpoints
-Take any insight or SQL query and expose it as a stable API endpoint.
-Data Tools
-PostHog AI
-Ask questions about your data in plain English. Generates SQL, builds dashboards, and surfaces insights.
-SQL Editor
-Write and run HogQL or standard SQL directly against your data. For when you know exactly what you want and just need to ask for it properly.
-Notebooks
-Combine insights, replays, flags, experiment results, and SQL into a single document. For when your analysis has a story and a dashboard isn't the right way to tell it.
-Reverse ETL
-Send data back to the tools that need it. Keep your CRM, support tools, and marketing platforms in sync.
-Business Intelligence
-Visualize your data with interactive dashboards and ad-hoc analyses right in PostHog.
-Get started
-Your first data source is free to connect. So is your second. By the time you've connected your third, you'll stop thinking about your stack entirely, which is the whole point.
-Get Started
-Not using PostHog?
-Sign up
-FAQ
-Can I use PostHog's context warehouse with my existing warehouse?
-Yes. You can query your existing Snowflake, BigQuery, or Redshift data inside PostHog without moving it. PostHog works alongside your current setup, or replaces parts of it, up to you.
-What if I'm already using Segment or Rudderstack?
-You can migrate to PostHog's pipelines, or run them in parallel while you figure out what to move. The integrations overlap heavily, and switching is less painful than it sounds.
-How does pricing work?
-The data warehouse is free for your first 1M rows/month then from $0.000015/row (historical syncs are always free). Data pipelines are free for 10K events then from $0.0005/event, batch exports free for 1M rows then from $0.000015/row, and PostHog AI gives 500 free credits then $0.01/credit. See a full breakdown at
-posthog.com/pricing
+Turn any warehouse query into an API
+And the rest of PostHog:
+Session Replay
+Error Tracking
+Web Analytics
+Feature Flags
+Surveys
+CDP
+Workflows
+Logs
+AI Observability
+Inbox
+Tracing
+Heatmaps
+Replay Vision
+No-code A/B Testing
+Session Replay
+Error Tracking
+Web Analytics
+Feature Flags
+Surveys
+CDP
+Workflows
+Logs
+AI Observability
+Inbox
+Tracing
+Heatmaps
+Replay Vision
+No-code A/B Testing
+Feature comparison
+BigQuery
+Snowflake
+Redshift
+Setup
+Getting data in and keeping it there
+Product analytics data included
+Events and persons land automatically
+✓
+GA4 export
+✗
+✗
+Events in near real time
+New events land within minutes of capture
+US Cloud
+GA4 streaming export
+✗
+✗
+Serverless compute
+Compute starts on demand, with no cluster to manage
+✓
+✓
+You size warehouses
+Serverless option
+Built-in connectors
+Native sources, without a third-party ELT tool
+Stripe
+✓
+Preview
+✗
+✗
+HubSpot
+✓
+Preview
+✓
+✗
+Salesforce
+✓
+✓
+✓
+✓
+Postgres CDC
+Row-level changes in near real time
+Alpha
+✓
+✓
+✓
+Querying
+Asking questions of your data
+SQL editor
+✓
+✓
+✓
+✓
+Plain-English questions
+Ask in natural language, get SQL back
+✓
+✓
+✓
+✓
+Machine learning in the warehouse
+Train or run models where the data lives
+✗
+✓
+✓
+✓
+In the product
+Using warehouse data without writing SQL
+Filter and break down insights by warehouse data
+For example by Stripe plan or CRM deal stage
+✓
+✗
+✗
+✗
+Experiments measured on warehouse data
+For example revenue from Stripe
+✓
+✗
+✗
+✗
+Show full comparison
+Questions?
+Answers
+There are a few ways you can get answers to specific questions about
+Warehouse
 .
-Is my data leaving PostHog's infrastructure?
-Your PostHog data stays in PostHog Cloud (EU or US region, your choice). When you sync external sources into the warehouse, that data is stored in PostHog's managed infrastructure. Full details in the
-docs
-.
-How does this connect to the rest of PostHog?
-Natively. Warehouse data can power cohorts used in experiments and flags. Pipeline data flows directly into analytics. Trino queries run on the same dataset your dashboards use. There's no separate sync to set up.
-Do I need to know SQL to use the context warehouse?
-No. Ask questions in plain English and
-PostHog AI
-writes the SQL for you against your schema. If you do know SQL, the editor is right there and supports HogQL or standard SQL. Most product engineers start with plain English and drop into SQL when they want precise control.
-Can I set this up myself, or do I need a data engineer?
-You can do it yourself. Connecting a source is a few clicks, and your product events are already in PostHog. Data engineers are great for complex modeling and transformation logic, but you don't need to wait to hire one to sync a source, query it, or use it in a flag.
-How fresh is the data, can I use it in flags and experiments right away?
-Product events are available immediately, no sync step. Synced sources like Stripe or your CRM refresh on a schedule, so there's a short delay on those. Once data is in the warehouse it can power cohorts, feature flags, and experiments natively without a separate pipeline to build to move it into the product.
-Can I join my external data to product events without building a pipeline?
-Yes, sync a source like Stripe or Postgres, and you can join a revenue column to a signup event without moving data between tools or standing up your own ETL. It all lives in one warehouse.
-How do agents access the warehouse?
-Through the
-PostHog MCP
-. Point an agent (PostHog's, Claude Code, Cursor, whatever you're running) at the PostHog MCP and it can query your data directly. Or take any model or SQL query and expose it as a stable API endpoint your product or an agent calls, so the warehouse becomes something agents read from, not just a place dashboards pull from.
-How do I control what agents and PostHog AI can see?
-You set the boundaries. Access follows your
-existing PostHog permissions
-, and when an agent acts on your data, like opening a PR, you can review it before anything ships. Nothing self-drives past a checkpoint you haven't approved.
+Check the docs
+We have an entire
+Wizard & Docs
+Team
+Wizard & Docs
+Team
+dedicated to docs gardening.
+Read the pocket guide
+Follow a guided story that introduces
+Warehouse
+one concept at a time.
+Search the community forums
+With over 100
+discussions about
+Warehouse
+, there's
+a good chance your question is already answered!
+Ask PostHog AI
+It's an incredibly useful AI chat that understands the product, docs, community questions, our codebase, GitHub issues, and industry knowledge.
+Talk to a human
+Dedicated humans are standing by and ready to assist. Best for questions about volume pricing, terms, and sexy legal stuff.
+Recent discussions
+View all questions
+Who builds this?
+Warehouse
+Team
+Live, laugh, LEFT JOIN.
+Get access
+Warehouse is in
+beta
+. Access is set up by our team, so the first step is a conversation about your stack and what you want to query.
+Talk to sales
+Tell us which sources you want to connect and roughly how much data you have. We'll get you into the beta and help with setup.
+Contact sales
+Read the docs first
+See how sources, syncs, and querying work before you talk to us.
+Read the docs

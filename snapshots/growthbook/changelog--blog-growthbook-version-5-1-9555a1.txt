@@ -1,0 +1,199 @@
+# https://www.growthbook.io/blog/growthbook-version-5-1
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits | Growthbook Blog
+GrowthBook 5.2 | Interleaving and Human in the Loop for agents →
+See what's new
+Products
+Product
+Experimentation
+Feature Flags
+Product Analytics
+Platform
+Warehouse Native
+Deployment Options
+Integrations
+AI-Native Development
+Security & Compliance
+MCP Server
+SDKs
+AI Visual Editor
+New
+Explore
+GrowthBook 5.2: Interleaving experiments and Human in the Loop for agents
+Solutions
+By Role
+Engineering
+Product Teams
+Data Teams
+Growth Teams
+By Industry
+Fintech
+Healthtech
+Edtech
+AI Software
+Explore
+Dropbox uses GrowthBook to safely drive AI product development
+Resources
+Resources
+Blog
+Podcast
+Customer Stories
+Guides
+Events
+Product Updates
+New
+Compare
+Why GrowthBook
+GrowthBook vs Others
+ROI Calculator
+Ecosystem
+Community
+Partners
+Explore
+Why migrate from Statsig to GrowthBook
+Pricing
+Docs
+Sign In
+Book a Demo
+Start for Free
+-
+Sign In
+Book a Demo
+Start for Free
+Back to Blog
+Releases
+Featured
+GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
+Jeremy Dorn
+Sep 22, 2026
+0
+min read
+Helping product teams build, ship, and improve at scale, with AI built into every step.
+Every company is trying to do the same thing:
+build a better product and move faster than their competitors.
+The way to do that is to learn faster, so more decisions are made from evidence instead of guesses.
+But learning faster takes more than the ability to run an A/B test.
+Your experimentation platform should help you run experiments quickly and rigorously, capture what you learn, and identify opportunities to apply those learnings to the next decision.
+GrowthBook 5.1 brings the entire learning loop together, with AI across every step. It’s now available to all cloud and self-hosted users. Check out the full
+release notes
+for everything that shipped.
+Scale testing without sacrificing rigor
+GrowthBook 5.1 helps teams scale experimentation, both in volume and in what you can test, like measuring funnel completion or optimizing with contextual bandits. AI-powered workflows remove friction and built-in rigor ensures you can move faster without sacrificing confidence in your results.
+‍
+Contextual bandits
+personalize which variation a user sees at the individual user level, learning which variant performs best based on their context and automatically shifts traffic accordingly. They’re especially useful for time-sensitive campaigns, high-variant tests, or personalization where the best experience varies by user.
+Funnel metrics
+let you measure funnel completion in your experiments and see where users are dropping off. They are especially useful for testing marketing funnels, onboarding flows, and other multi-step experiences.
+AI lets you scale experimentation by turning the workflow into something fully programmable, giving agents the ability to publish flags, create experiments, and more. Our new
+Hosted MCP + OAuth server
+,
+and an expanding
+AI skills library of 30+ skills
+make it faster and easier for teams to build and run experiments.
+‍
+See GrowthBook 5.1 in action
+Join a live demo to see the MCP server, Slack app, and contextual bandits working together in a real experiment workflow.
+Pick a Demo Date
+Nothing you learn gets lost
+Every experiment creates knowledge, even the losses. The challenge is making sure that knowledge doesn’t disappear into static documents, Slack threads, or the heads of the people who ran the experiment.
+GrowthBook 5.1 helps capture what you learn and makes it easier to analyze more data with AI, uncover deeper insights, and share them across your organization.
+Learnings
+gives you a living knowledge library to document everything you’ve discovered through experimentation, so your entire organization can access and build on it. GrowthBook’s agent can automatically scan your past tests to get you started or you can use our new API endpoints and agent skills.
+The
+Slack App (Beta)
+brings your GrowthBook data into the conversations where your team is already working. Tag @growthbook to ask questions about your data or interact with the GrowthBook AI assistant directly from Slack. You can also send rich, customizable notifications and daily or weekly digests to keep your team informed about what’s happening across your projects and organization.
+Product Analytics closes the loop
+GrowthBook’s
+Product Analytics
+became generally available in 5.0, and 5.1 builds on this foundation making it easier to understand how users move through your product, where they encounter friction, and identify opportunities to test. This gives a clearer view of where to focus your experimentation efforts next.
+User Journeys
+help to understand what happens before and after key moments in the user experience. Pick a starting or ending step so you can see the actions users take immediately before and after. Follow users deeper into your product or switch over to Funnel Explorer to do a deeper dive.
+With a clearer view of how users navigate your product, you can spot friction, uncover opportunities, and make more informed decisions about what to test next.
+‍
+AI-powered dashboards
+leverage AI skills to turn plain-language prompts into shareable product analytics or experiment dashboards. Describe the views you need through GrowthBook’s in-app assistant, MCP server, or wherever your agents live, and get the dashboard you need in moments, ready to share org-wide.
+We rebuilt
+SQL Explorer
+to be easier to use for both humans and agents, so you can do richer explorations across your entire data warehouse without needing to predefine metrics. Use GrowthBook’s AI assistant or your preferred agent to query your data directly and ask questions that don’t map to existing metrics. It's another tool in the agent's kit for deeper, more flexible data exploration.
+The full loop with GrowthBook 5.1
+Together, these capabilities turn experimentation from a testing function into a continuous learning loop for the entire company.
+Understand your product. Run more experiments. Learn from every result. Use what you learn to make better decisions. Then do it again.
+See the full
+5.1 release notes
+for everything else that shipped, or
+get started with GrowthBook
+today.
+‍
+Run your next test on 5.1
+Create a free account and bring feature flags, experiments, and product analytics together on your own warehouse data.
+Start Building Free
+Jeremy Dorn
+Co-Founder & CTO, GrowthBook
+Table of Contents
+Example H2
+Share
+Related articles
+See All Articles
+Releases
+Featured
+Product Updates
+GrowthBook 5.2: Interleaving experiments and Human in the Loop for agents
+Feature Flags
+Featured
+Product Updates
+5.0
+Feature flag governance — GrowthBook 5.0
+5.0
+Analytics
+Releases
+GrowthBook 5.0: Product Analytics is now generally available
+Ready to ship faster?
+No credit card required. Start with feature flags, experimentation, and product analytics — free.
+Get Started
+Book a Demo
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 4,000+ companies worldwide.
+Product
+Feature Flags
+Experiments
+Product Analytics
+MCP Server
+Integrations
+Agent-Ready
+AI Visual Editor
+new
+Pricing
+Solutions
+Developers
+Data Analysts
+Product Managers
+Growth Teams
+Fintech
+Healthtech
+Edtech
+AI Software
+Platform
+Warehouse Native
+Self-Hosted
+Security
+Compare
+Why GrowthBook
+Resources
+Docs
+Blog
+Podcast
+Events
+Product Updates
+new
+Slack Community
+Insights
+Customer Stories
+Get Started for Free
+Company
+About
+Careers
+Contact Us
+Swag Shop
+Support
+Legal
+©2026 GrowthBook, Inc.
+Terms of Use
+Privacy Policy

@@ -6,7 +6,7 @@ Blog
 Bootcamp
 Contact us
 Login
-Start free trial
+Start free
 Technology
 June 8, 2026
 /
@@ -113,13 +113,26 @@ over 20 million users and 90% Fortune 100 adoption
 84% of developers
 report using or planning to adopt AI coding tools. Within a few years, every team's build velocity will converge toward the same ceiling. Speed of building will stop being a differentiator.
 What won't converge is the speed of learning: the rate at which an organization converts product hypotheses into validated understanding. That depends on experimentation infrastructure. On whether you can run enough tests, trust the results, catch the regressions, and feed what you learn back into the next round of decisions.
-Spotify has operated at both speeds for years: AI-accelerated building through Honk, validation at scale through Confidence. 10,000+ experiments per year. 42% rolled back after guardrail metrics detected regressions. 64% producing learning that sharpened the next hypothesis.
+Spotify has operated at both speeds for years: AI-accelerated building through Honk, validation at scale through Confidence. 10,000+ experiments per year. 42% rolled back after guardrail metrics detected regressions. 64%
+producing learning
+that sharpened the next hypothesis.
 Every company scaling AI coding tools will face this same gap. The ones that close it will pull ahead. Each experiment sharpens the next hypothesis. Each validated decision improves the product. Over time, that compounds into something your competitors can't copy: an understanding of what your users actually want.
+Read next
+The Judgment Gap
+AI made building cheap. It also made bad decisions cheaper to ship. The distance between execution speed and validation speed is the judgment gap.
+When A/B tests tell you what you want to hear
+A/B testing maturity has a dangerous middle phase: teams test, dislike the answer, and explain it away. How to spot it and learn to trust your data.
+The rise of the product builder
+As AI increases individual leverage across the product development stack, the boundaries between PM, design, analysis, and engineering are blurring.
 Previous
 What experiments actually teach you
 Next
 What Makes a Good Sample Size Calculator?
 Learn more
+Feature flags
+Confidence Loop
+Product Analytics
+Session Recordings
 About Confidence
 Read our blog
 Take the bootcamp
@@ -128,8 +141,17 @@ Glossary
 Why not Bayes?
 RFP guides
 Listen to us
+(opens in a new tab)
 Read our docs
 Status page
+(opens in a new tab)
+Solutions
+Startups
+Scale-ups
+Enterprise
+Engineers
+Data scientists
+Product managers
 Need help
 Contact us
 Legal
@@ -138,6 +160,7 @@ Data Protection Agreement
 Privacy Policy
 Security
 Cookie Settings
+(opens in a new tab when cookie preferences are unavailable)
 ©
 2026
 Spotify

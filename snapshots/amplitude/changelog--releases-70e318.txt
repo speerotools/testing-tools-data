@@ -149,133 +149,8 @@ Event Taxonomy Generator
 Pricing
 Login
 Sign Up
-Changelog
-·
-What we shipped
-Changelog
-Every feature we've shipped to Amplitude, with full release notes and the details you need to put it to work.
-Subscribe via RSS
-Get email updates
-// updated continuously, ordered by ship date
-All areas
-200
-Analytics
-32
-Activation
-13
 Platform
-6
-Guides and Surveys
-44
-Data
-26
-Experiment
-25
-AI
-25
-Session Replay
-23
-Release month
-200
-/
-200
-items
-01
-Zoning Insights access expansion
-Analytics
-Sep 24, 2026
-02
-User properties on survey responses (table + CSV export)
-Guides and Surveys
-Sep 23, 2026
-03
-AI-generated descriptions for events and properties
-Data
-Sep 14, 2026
-04
-MCP: Taxonomy delete and restore
-Data
-Sep 12, 2026
-05
-Even distribution for Guides and Surveys
-Guides and Surveys
-Sep 10, 2026
-06
-Self Service Data Migrations
-Data
-Sep 08, 2026
-07
-Better shadow DOM support for Guides and Surveys
-Guides and Surveys
-Sep 04, 2026
-08
-Schedule experiment stop
-Experiment
-Sep 01, 2026
-09
-Session Replay for React Native
-Session Replay
-Aug 29, 2026
-10
-Guides and Surveys: Project-wide user exclusions
-Guides and Surveys
-Aug 28, 2026
-11
-Web Experiment: Cookie consent management
-Experiment
-Aug 25, 2026
-12
-Amplitude Agent Analytics
-AI
-Aug 20, 2026
-13
-Multiple triggers for Guides and Surveys
-Guides and Surveys
-Aug 18, 2026
-14
-Amplitude Global Agent in Discord
-AI
-Aug 18, 2026
-15
-Consolidated MCP Tools
-Platform
-Aug 17, 2026
-16
-Right Event, First Try
-Analytics
-Aug 14, 2026
-17
-Data Assistant Agent
-Data
-Aug 13, 2026
-18
-Image Upload in Web Experiment
-Experiment
-Aug 10, 2026
-19
-Embedded Guides and Surveys on mobile
-Guides and Surveys
-Aug 05, 2026
-20
-Test users for mobile Guides and Surveys
-Guides and Surveys
-Aug 05, 2026
-Load more
-180
-remaining
-Subscribe via RSS
-amplitude.com/releases/feed.xml
-Pipe every shipped feature into your reader of choice.
-Get an email
-contact@amplitude.com
-Monthly digest highlighting top feature releases.
-Get the latest news
-amplitude.com/blog
-Learn more about the latest news and events
-Stay in the loop
-Get changelog updates every two weeks.
-A short email. What shipped, what changed, what's worth a look. No marketing.
-Platform
+Wave
 AI Agents
 Agent Analytics
 AI Feedback
@@ -288,6 +163,7 @@ Web Experimentation
 Session Replay
 Guides and Surveys
 Activation
+Heatmaps
 Compare us
 Adobe
 Google Analytics
@@ -305,10 +181,11 @@ Blog
 Agent Prompt Library
 Product Updates
 AI Early Access Program
-Amp Champs
-Amplitude Academy
+Integrations
 Events
+Amplitude Academy
 Glossary
+Amp Champs
 Free Chart Maker
 Partners & Support
 Status
@@ -318,7 +195,6 @@ Community
 Developer Docs
 Partner Program
 Partner Directory
-Become an affiliate
 Company
 About Us
 Careers
@@ -347,3 +223,129 @@ Português (Portugal)
 Français
 Deutsch
 © 2026 Amplitude, Inc. All rights reserved. Amplitude is a registered trademark of Amplitude, Inc.
+Changelog
+·
+What we shipped
+Changelog
+Every feature we've shipped to Amplitude, with full release notes and the details you need to put it to work.
+Subscribe via RSS
+Get email updates
+// updated continuously, ordered by ship date
+All areas
+200
+Analytics
+35
+Activation
+13
+Platform
+7
+Guides and Surveys
+43
+Data
+25
+Experiment
+22
+AI
+26
+Session Replay
+23
+Release month
+200
+/
+200
+items
+01
+Metric Explorer is the Chart Default
+Analytics
+Oct 29, 2026
+02
+Headless Guides & Surveys: Manage Guides and Surveys from the Developer API, CLI, and MCP
+Guides and Surveys
+Oct 29, 2026
+03
+Enterprise-Managed Auth for Amplitude MCP
+AI
+Oct 27, 2026
+04
+Session-based Funnel Analysis
+Analytics
+Oct 23, 2026
+05
+React Native Autocapture
+Activation
+Oct 21, 2026
+06
+Advanced Segments
+Analytics
+Oct 21, 2026
+07
+MCP Service Accounts for Automated Workflows
+Platform
+Oct 16, 2026
+08
+Filter Segments by Event Time
+Analytics
+Oct 02, 2026
+09
+Zoning Insights access expansion
+Analytics
+Sep 24, 2026
+10
+User properties on survey responses (table + CSV export)
+Guides and Surveys
+Sep 23, 2026
+11
+AI-generated descriptions for events and properties
+Data
+Sep 14, 2026
+12
+MCP: Taxonomy delete and restore
+Data
+Sep 12, 2026
+13
+Even distribution for Guides and Surveys
+Guides and Surveys
+Sep 10, 2026
+14
+Self Service Data Migrations
+Data
+Sep 08, 2026
+15
+Better shadow DOM support for Guides and Surveys
+Guides and Surveys
+Sep 04, 2026
+16
+Schedule experiment stop
+Experiment
+Sep 01, 2026
+17
+Session Replay for React Native
+Session Replay
+Aug 29, 2026
+18
+Guides and Surveys: Project-wide user exclusions
+Guides and Surveys
+Aug 28, 2026
+19
+Web Experiment: Cookie consent management
+Experiment
+Aug 25, 2026
+20
+Amplitude Agent Analytics
+AI
+Aug 20, 2026
+Load more
+180
+remaining
+Subscribe via RSS
+amplitude.com/releases/feed.xml
+Pipe every shipped feature into your reader of choice.
+Get an email
+contact@amplitude.com
+Monthly digest highlighting top feature releases.
+Get the latest news
+amplitude.com/blog
+Learn more about the latest news and events
+Stay in the loop
+Get changelog updates every two weeks.
+A short email. What shipped, what changed, what's worth a look. No marketing.

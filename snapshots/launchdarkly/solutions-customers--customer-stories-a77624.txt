@@ -1,8 +1,8 @@
 # https://launchdarkly.com/customer-stories
-Customer Stories | LaunchDarkly
-[Virtual event] Automate Your Software Factory - Nov 5
+Customer Stories & Case Studies | LaunchDarkly
+Introducing Release Autopilot: Automated release control for AI-built code
 —
-Save my seat
+Read the announcement
 Skip to:
 Home
 Content
@@ -17,6 +17,7 @@ Book a demo
 How it works
 Platform overview
 Feature flags
+Release Autopilot
 Observability
 Experimentation
 Agent integrations
@@ -39,7 +40,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events & webinars
+Events
 Videos
 Success
 Academy
@@ -75,15 +76,15 @@ See all stories
 #1 in Feature Management for 3 years running.
 Trusted by product teams. Proven in production.
 See why customers love us
-Paramount improves developer productivity
+Hulu performs targeted rollout of major UI launch to 39 million users.
 Read story
-It’s one of the 'three legs of the stool,' as I like to say. One leg is CI/CD, another is automated testing, and the third is LaunchDarkly.
-Dan Skaggs
-Technical Director, Content Engineering
+We were able to use five rules with five segments configured using custom attributes from our servers to target all the rules in the right places at the right time.
+Dominic Hopton
+Client Architect
 ,
-Paramount
-Deployments per day
-6-7
+Hulu
+Customer experiences
+Improved
 Read story
 Savage X Fenty keeps shoppers engaged with rapid, reliable experiments.
 Read story
@@ -157,7 +158,7 @@ Reset filters
 Showing
 12
 of
-37
+36
 results
 Poka goes “flag-first” to transform its release processes and AI innovation.
 3x

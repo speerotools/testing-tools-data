@@ -1,5 +1,5 @@
 # https://posthog.com/self-driving
-PostHog self-driving
+Self-driving – Proactive fixes from product data | PostHog
 Products
 Pricing
 Docs
@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -35,10 +35,10 @@ Careers
 Trash
 What if your product
 built itself?
-You have a new pull request ready for review.
-(Yep, really.)
-While you slept, PostHog dug through your product data, found what was worth fixing, and had agents do the work.
-All you need to do is hit merge.
+You have a new report in your inbox.
+(It already has a pull request.)
+While you slept, PostHog dug through your product data, cut through the noise, and turned what matters into prioritized reports. When the fix is clear, an agent does the work.
+You decide what ships.
 PostHog instruments your codebase, then combines that context with product data like analytics events, errors, and recordings to understand problems and propose fixes.
 Get started
 Sign up via web
@@ -54,13 +54,13 @@ Watch a demo
 •
 Talk to a human
 How PostHog makes your product self-driving
-Signals
+Sources
 Scouts
 Inbox
 Pull requests
 Notable things
 happening in your product
-A signal is a single observation about your product.
+Sources stream your product data into PostHog, and every notable finding becomes evidence for a report.
 Error tracking
 Exceptions and stack traces grouped into issues
 Session replay
@@ -78,7 +78,7 @@ Nothing reaches production until a human clicks merge. Robots don't touch the bi
 PRs
 >
 Issues.
-Raw signals are deduped and clustered into reports. Actionable ones become PRs. You only pay for real work completed.
+Findings from all your sources are deduped and clustered into reports. Actionable ones become PRs. You only pay for real work completed.
 Your secrets are safe.
 Literally, and so is your code. Private repos stay private, and so does your data. (We're training AI models, but
 not on your code
@@ -121,14 +121,10 @@ Group Analytics
 Everything lives in your context warehouse
 Use PostHog as the full context layer for your product, or mix and match with your own tools.
 Data Sources
-Sources & Import (ELT)
-Regularly sync or bulk import data into your warehouse from databases, ad platforms, SaaS tools, and more.
-Managed Warehouse
+Data pipelines
+Sync data in from your tools and databases, transform events as they arrive, and send data to the rest of your stack.
+Warehouse
 Store, query, and join your product and business data in one place without maintaining any infrastructure.
-CDP
-Ingest, transform, and route data between PostHog and the rest of your stack in real time.
-Batch Exports
-Send PostHog data to your existing warehouse or data lake on a schedule you control.
 Data Modeling
 Models
 Define your metrics to keep them consistent across PostHog products, update them on a schedule.
@@ -141,16 +137,12 @@ SQL Editor
 Write and run HogQL or standard SQL directly against your data. For when you know exactly what you want and just need to ask for it properly.
 Notebooks
 Combine insights, replays, flags, experiment results, and SQL into a single document. For when your analysis has a story and a dashboard isn't the right way to tell it.
-Reverse ETL
-Send data back to the tools that need it. Keep your CRM, support tools, and marketing platforms in sync.
 Business Intelligence
 Visualize your data with interactive dashboards and ad-hoc analyses right in PostHog.
 Learn it by use case
 Pocket guide to
 Self-driving
-Vol.
-1
-6
+7
 guides
 The pocket guide to
 Self-driving

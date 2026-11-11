@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -34,9 +34,9 @@ Store
 Careers
 Trash
 Overview
-Beta
 Setup
 Set up self-driving
+Security
 Apps
 Slack
 Web app
@@ -57,19 +57,21 @@ Lovable
 Replit
 v0
 CLI
-Desktop
 Concepts
 The self-improving loop
 Anatomy of a pull request
 Context
+Steering
 Scouts
 Signals
 Reports
 Inbox
-Resources
-Pocket guides
+Learn
+Pocket guide
 New
+Resources
 From our inbox
+Task infrastructure
 Pricing
 FAQ
 Copy page
@@ -119,9 +121,15 @@ Note that some MCP tools use LLMs internally, and usage of these MCP tools may b
 AI data processing is enabled
 in your organization settings – when it's disabled, they're filtered out and not exposed to your MCP client.
 Are there rate limits?
-MCP tool calls execute against the PostHog API, so they're subject to the same
+Yes. The MCP server applies its own limits before a request reaches the PostHog API: 480 requests per minute and 4,800 requests per hour. These limits count per credential, which is the exact OAuth token or personal API key your client connects with, not per team. A request over the limit gets a
+429
+response with a
+Retry-After
+header that tells you how long to wait.
+Every request counts against these limits, not only tool calls. Opening a session, telling the server your client is ready, and listing the available tools each cost one request. A client that opens a new session for every prompt spends part of its budget before it calls a single tool.
+MCP tool calls also run against the PostHog API, so
 API rate limits
-– there's no separate MCP limit layered on top. These limits apply per team, across all users and keys in your organization.
+can apply on top of the MCP limits. Which ones apply depends on how you authenticate and which endpoint the tool calls. The default API limits only count requests made with a personal API key, and they count per key. Requests authenticated with OAuth skip them. Some endpoints set their own limits that count per project or per organization, so everyone shares one budget.
 Some
 AI-powered MCP tools
 (for example, sentiment analysis and trace summarization) have their own additional, lower limits because they run LLMs internally.
@@ -147,7 +155,9 @@ Yes, but add one MCP connection for each. A single connection signs in as one ac
 working with multiple accounts, organizations, or projects
 .
 Can my organization manage MCP access centrally through our IdP?
-Yes. If you're on an enterprise plan, you can use
+Yes. If your organization has the Scale or Enterprise
+platform add-on
+, you can use
 enterprise-managed authorization (ID-JAG)
 to control MCP access through your identity provider (Okta, Entra ID, etc.) instead of per-user OAuth or API keys.
 Where is my data sent?
@@ -423,8 +433,8 @@ workspace
 Organization and project management
 actions
 Action definitions
-activity_logs
-Activity log viewing
+platform_features
+Activity logs, comments, approvals, and organization and role details
 alerts
 Alert management
 annotations
@@ -458,11 +468,15 @@ CDP function management
 hog_function_templates
 CDP function template browsing
 insights
-Analytics insights
-ai_observability
-AI observability evaluations
+Run insight queries
+. Saved insights are in
+product_analytics
+product_analytics
+Saved insights and other product analytics tools
+llm_analytics
+AI observability
+, including evaluations and
 prompts
-LLM prompt management
 logs
 Log querying
 notebooks
@@ -471,10 +485,9 @@ persons
 Person and group management
 reverse_proxy
 Reverse proxy record management
-search
-Entity search across the project
-sdk_doctor
-SDK health diagnostics
+health_issues
+Health checks
+, including outdated SDKs
 sql
 SQL query execution
 surveys

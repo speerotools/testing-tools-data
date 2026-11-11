@@ -8,8 +8,8 @@ Company
 More
 Get started – free
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -21,8 +21,8 @@ Store
 Careers
 Trash
 Home
-Self-driving product
-Context warehouse
+MCP
+Self-driving
 Pricing
 Docs
 Demo
@@ -34,9 +34,9 @@ Store
 Careers
 Trash
 Overview
-Beta
 Setup
 Set up self-driving
+Security
 Apps
 Slack
 Web app
@@ -57,19 +57,21 @@ Lovable
 Replit
 v0
 CLI
-Desktop
 Concepts
 The self-improving loop
 Anatomy of a pull request
 Context
+Steering
 Scouts
 Signals
 Reports
 Inbox
-Resources
-Pocket guides
+Learn
+Pocket guide
 New
+Resources
 From our inbox
+Task infrastructure
 Pricing
 FAQ
 Copy page
@@ -125,7 +127,6 @@ Replit
 v0
 Using something else? Pick your client to set it up manually:
 Code editors
-PostHog Desktop
 Claude Code
 Claude Desktop
 Codex
@@ -160,7 +161,7 @@ Mark this issue as resolved and assign all future TypeErrors to the backend team
 Updates issue status and creates an assignment rule in one go.
 There's a lot more – analytics queries, feature flag and experiment management, SQL, CDP destinations, support ticket triage, and multi-step recipes that chain it all together. You can also run governed metrics from your
 semantic layer
-(beta), so every agent session answers "what's our MRR?" with the same canonical definition.
+, so every agent session answers "what's our MRR?" with the same canonical definition.
 Browse all use cases →
 Go deeper
 Use cases
