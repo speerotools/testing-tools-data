@@ -12,7 +12,7 @@ Run locally:
     AIRTABLE_TOKEN=pat... python sync.py
 
 Environment variables:
-    AIRTABLE_TOKEN          required — PAT with data.records:read + schema.bases:read
+    AIRTABLE_TOKEN          required: PAT with data.records:read + schema.bases:read
     AIRTABLE_BASE_ID        default: appRX3rtuXifUnvD4
     AIRTABLE_DATABASE_TBL   default: tblOx4tapKq2a0sBR
     AIRTABLE_MASTER_TBL     default: tbl6FWyYcBfcIq64T
@@ -109,13 +109,13 @@ F = {
 # Master Variables table field that holds the option name
 MASTER_NAME_FIELD = "fld1EI9BDHrdOF92I"
 
-# Vendor URLs registry — the per-vendor source list shown in "Sources and method".
+# Vendor URLs registry: the per-vendor source list shown in "Sources and method".
 REGISTRY_ID = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
 RF = {
     "url":          "fldDpTQraitVt4yHB",
     "url_type":     "fldwUVSYu5QYi3N0k",
     "fetched":      "fld7cxhRHwQ6bzFAs",  # Last Fetched
-    "status":       "fldi7kXOkskXR0BO8",  # Last Status Code (0/200 ok, 4xx/5xx blocked)
+    "status":       "fldi7kXOkskXR0BO8",  # Last Status Code (2xx ok; 0 = no usable response; 4xx/5xx blocked)
     "hash_changed": "fldjJgczTqipE2Kvn",  # Hash Changed At (drives the Updated badge)
     "active":       "fldFqvuPSinBYvrvk",
     "vendor":       "fldZpeoHlScaEp2yh",  # linked record -> Database record id
@@ -124,7 +124,7 @@ RF = {
 
 def fetch_ok(status) -> bool:
     """A fetch counts as verified only on a 2xx (or an unstamped/None status).
-    A 4xx/5xx means we hit the page but were blocked — attempted, not verified."""
+    A 4xx/5xx means we hit the page but were blocked: attempted, not verified."""
     if status in (None, ""):
         return True
     try:
@@ -309,7 +309,7 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
 
     vendor: dict = {
         "slug":         slug,
-        "name":         name,
+        "name":         no_emdash(name),
         "status":       status,
         "h1":           no_emdash(f.get(F["h1"]) or ""),
         "h2":           no_emdash(f.get(F["h2"]) or ""),
@@ -333,7 +333,7 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
             if m:
                 acquired_by = m.group(1).strip()
         if acquired_by:
-            vendor["acquiredBy"] = acquired_by
+            vendor["acquiredBy"] = no_emdash(acquired_by)
 
     # mcpDetail only when an MCP server is present.
     if mcp_type != "none":
@@ -369,10 +369,10 @@ def transform(record: dict, cache: dict[str, str]) -> dict | None:
         for key, out in (("seo_title", "seoTitle"), ("seo_desc", "seoDesc"), ("seo_h1", "seoH1")):
             val = f.get(F[key])
             if val:
-                vendor[out] = val
+                vendor[out] = no_emdash(str(val))
 
     # OG image: prefer the dedicated field, fall back to Logo. Attachment fields
-    # come back as a list of {url,...}; take the first. (Logo URLs can expire —
+    # come back as a list of {url,...}; take the first. (Logo URLs can expire:
     # a padded 1200x630 asset in OG Image is the durable fix.)
     def first_attachment(field_key):
         v = f.get(F[field_key])
@@ -413,7 +413,7 @@ def main() -> None:
 
     print("Transforming records...")
     vendors: list[dict] = []
-    skipped = 0
+    skipped = errors = 0
     for r in records:
         try:
             v = transform(r, cache)
@@ -422,10 +422,30 @@ def main() -> None:
             else:
                 skipped += 1
         except Exception as e:
-            print(f"  WARN: failed to transform {r.get('id')}: {e}", file=sys.stderr)
-            skipped += 1
+            print(f"  ERROR: failed to transform {r.get('id')}: {e}", file=sys.stderr)
+            errors += 1
 
     print(f"  {len(vendors)} vendors published, {skipped} skipped/unpublished")
+
+    # Guards before anything is written. A silently dropped vendor would be
+    # committed and then hard-deleted from Webflow by webflow_sync.py, so any
+    # transform error, an empty list, or a sudden drop stops the run instead
+    # (a non-zero exit skips the commit and the Webflow step).
+    out_path = OUTPUT_DIR / "testing-tools.json"
+    if errors:
+        print(f"ERROR: {errors} record(s) failed to transform; not writing.", file=sys.stderr)
+        sys.exit(1)
+    if not vendors:
+        print("ERROR: no vendors to publish; not writing.", file=sys.stderr)
+        sys.exit(1)
+    try:
+        before = len(json.loads(out_path.read_text()).get("vendors", []))
+    except (OSError, ValueError):
+        before = 0
+    if before and before - len(vendors) > max(3, before // 10) and os.environ.get("ALLOW_SHRINK") != "true":
+        print(f"ERROR: vendor count fell from {before} to {len(vendors)}. If that is intended "
+              f"(several vendors unpublished at once), rerun with ALLOW_SHRINK=true.", file=sys.stderr)
+        sys.exit(1)
 
     out = {
         "version": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -433,7 +453,6 @@ def main() -> None:
         "vendors": vendors,
     }
 
-    out_path = OUTPUT_DIR / "testing-tools.json"
     out_path.write_text(json.dumps(out, indent=2, ensure_ascii=False))
     size_kb = out_path.stat().st_size / 1024
     print(f"Wrote {out_path} ({size_kb:.1f} KB)")

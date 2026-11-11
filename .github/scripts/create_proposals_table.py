@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-create_proposals_table.py — one-time setup. Creates the fully-typed `Proposals`
+create_proposals_table.py: one-time setup. Creates the fully-typed `Proposals`
 table (brief §5) in the Testing Tools base via Airtable's metadata API, so you
 don't have to build 17 fields and their select options by hand.
 
@@ -14,7 +14,7 @@ developer hub and re-run.
 Note: Airtable requires the primary (first) field to be a text-like type, so the
 primary field is a single-line `Proposal` label; `Proposal ID` (auto number)
 follows it, exactly as the brief lists otherwise. The Pending Review *view*
-(filter Status = Pending) is a manual one-click step afterwards — the API can
+(filter Status = Pending) is a manual one-click step afterwards: the API can
 create views but can't set their filters reliably.
 """
 
@@ -42,7 +42,7 @@ def choices(names):
 
 FIELDS = [
     # Primary must be text-like; also serves as the identifier. (autoNumber and
-    # other computed types can't be created via the metadata API — add an
+    # other computed types can't be created via the metadata API: add an
     # autonumber column in the UI afterwards if you want one.)
     {"name": "Proposal", "type": "singleLineText"},
     {"name": "Vendor", "type": "multipleRecordLinks", "options": {"linkedTableId": DB_TBL}},
@@ -86,7 +86,7 @@ def main() -> None:
         detail = e.read().decode(errors="replace")
         print(f"ERROR {e.code}: {detail}", file=sys.stderr)
         if "INVALID_PERMISSIONS" in detail or e.code in (401, 403):
-            print("The token is missing schema.bases:write — add it in the Airtable developer hub.", file=sys.stderr)
+            print("The token is missing schema.bases:write: add it in the Airtable developer hub.", file=sys.stderr)
         sys.exit(1)
 
 

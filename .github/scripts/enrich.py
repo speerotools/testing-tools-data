@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-enrich.py — Job 1 of the monthly vendor freshness loop: fetch + hash + triage.
+enrich.py: Job 1 of the monthly vendor freshness loop: fetch + hash + triage.
 
 Fetches every Active URL in the Vendor URLs registry with the standard library
 (no Firecrawl), reduces the HTML to stable visible text, hashes it, and diffs
@@ -29,19 +29,21 @@ Invariants (brief §8):
   - uniform.dev/trust is robots-blocked; skipped by design.
 
 Environment variables:
-  AIRTABLE_TOKEN        required — PAT with data.records:read + data.records:write
+  AIRTABLE_TOKEN        required: PAT with data.records:read + data.records:write
   AIRTABLE_BASE_ID      default: appRX3rtuXifUnvD4
   AIRTABLE_REGISTRY_TBL default: tblT1Hqk2bEC9xVcR
   AIRTABLE_DATABASE_TBL default: tblOx4tapKq2a0sBR  (vendor-name lookup only)
-  ENRICH_LIMIT          optional — cap URLs processed (quick test run)
-  FETCH_DELAY           default: 0.5 — seconds between fetches
+  ENRICH_LIMIT          optional: cap URLs processed (quick test run)
+  FETCH_DELAY           default: 0.5: seconds between fetches
   DIFF_OUT              default: changed-pages.md
   SUMMARY_OUT           default: scan-summary.json
 """
 
 from __future__ import annotations
+import gzip
 import hashlib
 import json
+import zlib
 import os
 import re
 import sys
@@ -82,7 +84,7 @@ BROWSER_HEADERS = {
     "User-Agent": USER_AGENT,
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "identity",
+    "Accept-Encoding": "gzip, deflate",  # both decoded in fetch_url; some CDNs ignore "identity"
 }
 
 # Registry read/written by FIELD NAME (use_field_ids=False) so that URL Type
@@ -155,7 +157,7 @@ def _extract_parts(html: str) -> list[str]:
 
 
 def normalize_html(html: str) -> str:
-    """Collapsed single-line visible text — used for the change-detection hash.
+    """Collapsed single-line visible text: used for the change-detection hash.
     Output is unchanged from before, so existing baselines stay valid."""
     text = _strip_volatile(" ".join(_extract_parts(html)))
     return re.sub(r"\s+", " ", text).strip()
@@ -182,10 +184,27 @@ def fetch_url(url: str):
             with urllib.request.urlopen(req, timeout=45) as resp:
                 code = getattr(resp, "status", 200) or 200
                 ctype = resp.headers.get("Content-Type", "")
-                if "html" not in ctype and "xml" not in ctype and ctype:
-                    return hashlib.sha256(resp.read()).hexdigest(), "", code
+                enc = (resp.headers.get("Content-Encoding") or "").strip().lower()
                 charset = resp.headers.get_content_charset() or "utf-8"
-                raw = resp.read().decode(charset, "ignore")
+                body = resp.read()
+            # Some CDNs compress even when asked for identity, and urllib does not
+            # decode it; the compressed bytes would land in the snapshot as garbage.
+            if enc in ("gzip", "x-gzip"):
+                body = gzip.decompress(body)
+            elif enc == "deflate":
+                try:
+                    body = zlib.decompress(body)
+                except zlib.error:
+                    body = zlib.decompress(body, -zlib.MAX_WBITS)
+            elif enc and enc != "identity":
+                print(f"  unsupported Content-Encoding '{enc}' for {url}", file=sys.stderr)
+                return None, "", None
+            if "html" not in ctype and "xml" not in ctype and ctype:
+                return hashlib.sha256(body).hexdigest(), "", code
+            raw = body.decode(charset, "ignore")
+            if "\x00" in raw[:4096]:  # still binary: never write it into a snapshot
+                print(f"  binary response for {url}", file=sys.stderr)
+                return None, "", None
             return normalize_html(raw), snapshot_html(raw), code
         except urllib.error.HTTPError as e:
             if e.code in (429, 500, 502, 503, 504) and attempt < 2:
@@ -228,15 +247,16 @@ def api():
 
 
 def vendor_lookup() -> tuple[dict, dict]:
-    """(record id -> Name, record id -> Slug) for grouping + snapshot paths."""
-    try:
-        rows = api().base(BASE_ID).table(DATABASE_TBL).all(fields=["Name", "Slug"])
-        names = {r["id"]: r["fields"].get("Name", r["id"]) for r in rows}
-        slugs = {r["id"]: (r["fields"].get("Slug") or _slug(r["fields"].get("Name", ""))) for r in rows}
-        return names, slugs
-    except Exception as e:
-        print(f"  WARN vendor lookup failed: {e}", file=sys.stderr)
-        return {}, {}
+    """(record id -> Name, record id -> Slug) for grouping + snapshot paths. A
+    failed lookup is fatal: without slugs every snapshot would land under
+    snapshots/unknown/, match no registry entry, and the run would look healthy."""
+    rows = api().base(BASE_ID).table(DATABASE_TBL).all(fields=["Name", "Slug"])
+    if not rows:
+        print("ERROR: vendor lookup returned no Database rows", file=sys.stderr)
+        sys.exit(1)
+    names = {r["id"]: r["fields"].get("Name", r["id"]) for r in rows}
+    slugs = {r["id"]: (r["fields"].get("Slug") or _slug(r["fields"].get("Name", ""))) for r in rows}
+    return names, slugs
 
 
 def active_rows(table) -> list[dict]:
@@ -311,9 +331,9 @@ def main(baseline: bool) -> None:
         if FETCH_DELAY:
             time.sleep(FETCH_DELAY)
 
-        fields = {FN["fetched"]: today}
-        if status is not None:
-            fields[FN["status"]] = status
+        # Always overwrite the status: 0 = no usable response. Leaving it out kept
+        # last month's 200, so a failed fetch showed as a verified source.
+        fields = {FN["fetched"]: today, FN["status"]: status if status is not None else 0}
 
         if payload is None:
             failures += 1
@@ -361,10 +381,10 @@ def main(baseline: bool) -> None:
 
     # ---- report (brief §5) ----
     order = ["high", "normal", "low", "error", "noisy"]
-    label = {"high": "HIGH — pricing changed", "normal": "CHANGED — needs review",
-             "low": "LOW — marketing copy churn", "error": "ERRORS", "noisy": "NOISY (likely hash noise)"}
+    label = {"high": "HIGH: pricing changed", "normal": "CHANGED: needs review",
+             "low": "LOW: marketing copy churn", "error": "ERRORS", "noisy": "NOISY (likely hash noise)"}
     changed_vendors = {b["vendor"] for s in ("high", "normal", "low") for b in buckets[s]}
-    lines = [f"# Vendor scan — {today}", "",
+    lines = [f"# Vendor scan: {today}", "",
              f"Scanned {len(rows)} URLs. {len(changed_vendors)} vendor(s) with real changes, "
              f"{len(buckets['error'])} error(s), {len(buckets['noisy'])} noisy.", ""]
     for sev in order:
@@ -379,7 +399,7 @@ def main(baseline: bool) -> None:
                 extra = f" [{b['type']}]" if b["type"] else ""
                 st = f" status {b['status']}" if b["status"] and b["status"] >= 300 else ""
                 streak = f" streak {b['streak']}" if b["streak"] >= NOISY_STREAK else ""
-                lines.append(f"- {vendor} — {b['url']}{extra}{st}{streak}")
+                lines.append(f"- {vendor}: {b['url']}{extra}{st}{streak}")
         lines.append("")
     with open(DIFF_OUT, "w") as fh:
         fh.write("\n".join(lines))

@@ -5,6 +5,11 @@ on:
     - cron: '0 */6 * * *'   # Every 6 hours: 00:00, 06:00, 12:00, 18:00 UTC
   workflow_dispatch:          # Manual trigger from the Actions tab
 
+# One sync at a time: two overlapping runs would race on the same push.
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -26,25 +31,42 @@ jobs:
       - name: Run sync
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+          ALLOW_SHRINK: ${{ vars.ALLOW_SHRINK }}   # "true" for one run to allow a big vendor drop
         run: python .github/scripts/sync.py
 
       - name: Commit and push
+        id: commit
         run: |
           git config user.name  "speero-sync-bot"
           git config user.email "sync@speero.com"
           git add testing-tools.json
           if git diff --cached --quiet; then
-            echo "No changes — skipping commit"
+            echo "No changes; skipping commit"
           else
             TIMESTAMP=$(date -u +%Y-%m-%dT%H:%M:%SZ)
             git commit -m "Sync from Airtable [$TIMESTAMP]"
-            git push
+            # The monthly scan may have pushed snapshots meanwhile; rebase onto
+            # them (different files) so the push, and the Webflow + CDN step
+            # after it, never get skipped by a push race.
+            for i in 1 2 3; do
+              git pull --rebase --autostash --quiet origin "${GITHUB_REF_NAME}" && git push && break
+              [ "$i" = 3 ] && { echo "Push failed 3 times"; exit 1; }
+              sleep 5
+            done
           fi
 
-      - name: Reconcile Webflow CMS and purge CDN
+      # Its own step, so a Webflow error can never leave the CDN serving the old
+      # JSON (the hub and every vendor page read it from jsDelivr).
+      - name: Purge jsDelivr cache
+        if: ${{ !cancelled() && steps.commit.outcome == 'success' }}
+        continue-on-error: true   # a CDN hiccup must not block the Webflow step
+        run: curl -fsS --retry 3 "https://purge.jsdelivr.net/gh/speerotools/testing-tools-data@main/testing-tools.json"
+
+      - name: Reconcile Webflow CMS
         env:
           WEBFLOW_TOKEN:   ${{ secrets.WEBFLOW_TOKEN }}
           # Keep publishing OFF until the Webflow template page carries the
           # island.js embed. Once it does, set this repo variable to "true".
           WEBFLOW_PUBLISH: ${{ vars.WEBFLOW_PUBLISH }}
+          JSDELIVR_PURGE: "false"   # purged by the step above
         run: python .github/scripts/webflow_sync.py

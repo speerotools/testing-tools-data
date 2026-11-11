@@ -1,8 +1,12 @@
 name: Enrichment monitor (monthly)
 
 # Separate from the 6-hour data sync (sync.yml). This job re-fetches every
-# active vendor URL, compares content hashes to the stored baseline, and emits
-# a diff of changed pages that routes into targeted re-verification.
+# active vendor URL, writes a snapshot per page, has Claude turn unreviewed
+# snapshot changes into Pending proposals, and posts the Slack digest.
+#
+# git is the review ledger: HEAD holds the last reviewed snapshot of every page.
+# A snapshot is only committed once its page was assessed, so anything not
+# assessed this run (failed, held, dry run) is still a change next run.
 
 on:
   schedule:
@@ -18,12 +22,26 @@ on:
         description: 'Cap URLs processed (blank = all; use a small number to test)'
         type: string
         required: false
+      dry_run:
+        description: 'Dry run: list the pages Claude would assess, call nothing, commit nothing'
+        type: boolean
+        default: false
+      max_assess:
+        description: 'Max pages assessed this run (blank = repo var MAX_ASSESS or 300); overflow is held'
+        type: string
+        required: false
+
+# Shared with apply.yml: the scan and the auto-apply never write Airtable at the
+# same time. A run that arrives while another is going waits instead of overlapping.
+concurrency:
+  group: airtable-writes
+  cancel-in-progress: false
 
 jobs:
   enrich:
     runs-on: ubuntu-latest
     permissions:
-      contents: write          # to commit the changed-pages diff
+      contents: write          # to commit the snapshots
 
     steps:
       - name: Checkout
@@ -35,24 +53,26 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install "pyairtable>=3,<4" anthropic
+        run: pip install "pyairtable>=3,<4" "anthropic>=2.8,<3"
 
       - name: Run enrichment monitor
+        id: enrich
         env:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           ENRICH_LIMIT: ${{ github.event.inputs.limit }}
+          RUN_MODE: ${{ github.event.inputs.mode }}
         run: |
-          if [ "${{ github.event.inputs.mode }}" = "baseline" ]; then
+          if [ "$RUN_MODE" = "baseline" ]; then
             python .github/scripts/enrich.py --baseline
           else
             python .github/scripts/enrich.py
           fi
 
-      # P2: turn snapshot diffs into proposals. Shadow by default (writes
-      # proposals.json, no Airtable rows). Cost-guarded: one Claude call per
-      # changed URL, aborts on a flood (MAX_ASSESS). continue-on-error so a
-      # Claude hiccup never fails the scan itself.
+      # P2: turn unreviewed snapshot changes into proposals with Claude.
+      # continue-on-error so a Claude problem never fails the scan itself; its
+      # outcome gates the snapshot commit and is reported in the digest.
       - name: Assess changes into proposals
+        id: assess
         if: github.event.inputs.mode != 'baseline'
         continue-on-error: true
         env:
@@ -61,13 +81,17 @@ jobs:
           ANTHROPIC_EFFORT: ${{ vars.ANTHROPIC_EFFORT || 'medium' }}
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           SHADOW: ${{ vars.PROPOSALS_SHADOW || 'true' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          MAX_ASSESS: ${{ github.event.inputs.max_assess || vars.MAX_ASSESS || '300' }}
         run: python .github/scripts/assess.py
 
       - name: Post digest to Slack
         if: always() && github.event.inputs.mode != 'baseline'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-          QUEUE_URL: ${{ vars.PROPOSALS_QUEUE_URL }}
+          SLACK_MENTION: ${{ vars.SLACK_MENTION }}
+          ASSESS_OUTCOME: ${{ steps.assess.outcome }}
+          RUN_MODE: ${{ github.event.inputs.mode }}
           REVIEW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: python .github/scripts/notify_slack.py
 
@@ -80,19 +104,58 @@ jobs:
             changed-pages.md
             scan-summary.json
             proposals.json
+            assess-status.json
+            hold-snapshots.txt
           if-no-files-found: ignore
 
+      # Commit only what was reviewed. A cancelled run commits nothing; a
+      # baseline run commits only if the fetch succeeded; a monitor run commits
+      # only if assess succeeded, minus the snapshots it held. Anything not
+      # committed is still a git change, so the next run assesses it.
       - name: Commit diff and snapshots
-        if: always()
+        if: ${{ !cancelled() }}
+        env:
+          ENRICH_OUTCOME: ${{ steps.enrich.outcome }}
+          ASSESS_OUTCOME: ${{ steps.assess.outcome }}
+          RUN_MODE: ${{ github.event.inputs.mode }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
         run: |
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry run: nothing committed, every change stays pending."
+            exit 0
+          fi
+          if [ "$RUN_MODE" = "baseline" ]; then
+            [ "$ENRICH_OUTCOME" = "success" ] || { echo "Baseline fetch did not succeed ($ENRICH_OUTCOME): nothing committed."; exit 0; }
+          elif [ "$ASSESS_OUTCOME" != "success" ]; then
+            echo "Assess did not succeed ($ASSESS_OUTCOME): nothing committed, every change stays pending."
+            exit 0
+          elif [ -f hold-snapshots.txt ]; then
+            held=0
+            while IFS= read -r p; do
+              [ -z "$p" ] && continue
+              # Tracked: back to the last reviewed version. New page: remove it,
+              # so it is still a first sighting next run.
+              { git checkout HEAD -- "$p" 2>/dev/null || rm -f -- "$p"; } && held=$((held + 1))
+            done < hold-snapshots.txt
+            echo "Held $held snapshot(s) for the next run."
+          fi
           git config user.name  "speero-sync-bot"
           git config user.email "sync@speero.com"
-          # snapshots/ is the committed change set (P1): git diff on it is what
-          # assess.py (P2) turns into proposals.
           git add changed-pages.md snapshots 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No changes"
           else
             git commit -m "Enrichment monitor: scan + snapshots [$(date -u +%Y-%m-%d)]"
+            # The scan can outlast a 6-hour sync commit; rebase onto it (they
+            # touch different files) instead of failing the push.
+            git pull --rebase --autostash --quiet origin "${GITHUB_REF_NAME}"
             git push
           fi
+
+      # continue-on-error above keeps the scan going; this makes a failed
+      # assessment show as a red run in Actions instead of a green one.
+      - name: Fail the run if assessment failed
+        if: ${{ !cancelled() && steps.assess.outcome == 'failure' }}
+        run: |
+          echo "Assessment failed: nothing was committed and the digest says so. See the assess step log."
+          exit 1

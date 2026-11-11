@@ -21,7 +21,7 @@ on:
         default: false
 
 concurrency:
-  group: airtable-writes      # never run alongside the scan's Airtable writes
+  group: airtable-writes      # shared with enrich.yml: never runs alongside the scan
   cancel-in-progress: false
 
 jobs:
@@ -38,4 +38,6 @@ jobs:
           AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
           # Scheduled runs auto-apply; manual dispatch uses the input (dry-run default).
           APPLY: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.apply }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_MENTION: ${{ vars.SLACK_MENTION }}
         run: python .github/scripts/apply.py

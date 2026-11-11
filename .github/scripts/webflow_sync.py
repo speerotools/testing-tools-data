@@ -19,7 +19,7 @@ Safety:
     publish empty pages. Once the template is live, set WEBFLOW_PUBLISH=true.
 
 Environment variables:
-  WEBFLOW_TOKEN         required — Webflow API token with CMS write + publish
+  WEBFLOW_TOKEN         required: Webflow API token with CMS write + publish
   WEBFLOW_SITE_ID       default: 5fbb892601063dd93dd166d7
   WEBFLOW_COLLECTION_ID default: 6a7196c634c1d8c34c1b6cc0
   DATA_FILE             default: testing-tools.json
@@ -45,7 +45,7 @@ COLLECTION_ID = os.environ.get("WEBFLOW_COLLECTION_ID", "6a7196c634c1d8c34c1b6cc
 DATA_FILE = os.environ.get("DATA_FILE", "testing-tools.json")
 PUBLISH = os.environ.get("WEBFLOW_PUBLISH", "false").lower() == "true"
 PURGE = os.environ.get("JSDELIVR_PURGE", "true").lower() == "true"
-MAX_DELETE = int(os.environ.get("MAX_DELETE", "10"))
+MAX_DELETE = int(os.environ.get("MAX_DELETE") or "3")
 
 PURGE_URLS = [
     "https://purge.jsdelivr.net/gh/speerotools/testing-tools-data@main/testing-tools.json",
@@ -73,6 +73,10 @@ def req(method: str, url: str, body: dict | None = None) -> dict:
                 continue
             print(f"ERROR {e.code} {method} {url}: {detail}", file=sys.stderr)
             raise
+        except urllib.error.URLError as e:  # DNS / connection reset: transient
+            wait = 2 ** attempt
+            print(f"  network error on {method} {url} ({e.reason}); retrying in {wait}s", file=sys.stderr)
+            time.sleep(wait)
     raise RuntimeError(f"gave up on {method} {url}")
 
 
@@ -147,6 +151,7 @@ def directory_summary(v: dict) -> str:
 
 def native_fields(v: dict) -> dict:
     fd = {
+        "name": v["name"],  # renames in Airtable must reach the CMS item, not just new items
         "seo-h1": seo_h1(v),
         "profile-body": profile_body(v),
         "directory-summary": directory_summary(v),
@@ -184,7 +189,7 @@ def main() -> None:
     desired = {v["slug"]: v["name"] for v in vendors if v.get("slug") and v.get("name")}
 
     if not desired:
-        print("No vendors in JSON — refusing to reconcile (treating as failed sync).", file=sys.stderr)
+        print("No vendors in JSON: refusing to reconcile (treating as failed sync).", file=sys.stderr)
         sys.exit(1)
 
     print(f"Reconciling Webflow CMS: {len(desired)} vendors in data.")
@@ -199,12 +204,21 @@ def main() -> None:
               f"Set MAX_DELETE higher if this is intentional.", file=sys.stderr)
         sys.exit(1)
 
+    # One failing item never stops the rest; failures are listed and fail the
+    # run at the end, after the publish and the purge have still happened.
+    failed: list[str] = []
     for slug, name in to_create:
         print(f"  + create {slug} ({name})")
-        create_item(name, slug)
+        try:
+            create_item(name, slug)
+        except Exception as e:
+            failed.append(f"create {slug}: {e}")
     for slug, iid in to_delete:
         print(f"  - delete {slug}")
-        delete_item(iid)
+        try:
+            delete_item(iid)
+        except Exception as e:
+            failed.append(f"delete {slug}: {e}")
 
     print(f"Created {len(to_create)}, deleted {len(to_delete)}.")
 
@@ -219,18 +233,29 @@ def main() -> None:
         if not iid:
             continue
         path = f"items/{iid}/live" if PUBLISH else f"items/{iid}"
-        req("PATCH", f"{API}/collections/{COLLECTION_ID}/{path}", {"fieldData": native_fields(v)})
-        updated += 1
+        try:
+            req("PATCH", f"{API}/collections/{COLLECTION_ID}/{path}", {"fieldData": native_fields(v)})
+            updated += 1
+        except Exception as e:
+            failed.append(f"update {v.get('slug')}: {e}")
     print(f"Native and SEO fields updated on {updated} items.")
 
     if PUBLISH and (to_create or to_delete or updated):
         print("Publishing site so page changes go live...")
-        publish_site()
+        try:
+            publish_site()
+        except Exception as e:
+            failed.append(f"publish: {e}")
 
     if PURGE:
         print("Purging jsDelivr cache...")
         purge_cdn()
 
+    if failed:
+        print(f"ERROR: {len(failed)} Webflow operation(s) failed:", file=sys.stderr)
+        for line in failed:
+            print(f"  {line}", file=sys.stderr)
+        sys.exit(1)
     print("Done.")
 
 
