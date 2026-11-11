@@ -203,8 +203,13 @@ Get a Demo
 Blog
 Inside Wingify: The Digital Experience Optimization Suite Driven by VWO and AB Tasty
 Stephanie Safdie
-July 15, 2026
+September 18, 2026
 12 Min Read
+Home
+/
+Non classé
+/
+Inside Wingify: The Digital Experience Optimization Suite Driven by VWO and AB Tasty
 Summarize with AI:
 Contents
 Main Takeaways
@@ -330,13 +335,13 @@ What current VWO and AB Tasty customers need to know
 Is Wingify becoming Wingify?
 Yes. Wingify is moving under the shared Wingify brand, and over time, both VWO and AB Tasty are expected to fully converge under that umbrella. This is a branding shift, not a functional one.
 Is Wingify becoming Wingify too?
-Yes, in the same way. Wingify has also moved under the unified Wingify brand: the application moved from app.wingify.com to app.wingify.com (effective June 13, 2026), and Wingify product names are being renamed accordingly (Wingify Insights, for instance, is now Wingify Insights). Your existing plans, features, data, and access are unaffected.
+Yes, in the same way. Wingify has also moved under the unified Wingify brand: the application moved from app.vwo.com to app.wingify.com (effective June 13, 2026), and Wingify product names are being renamed accordingly (Wingify Insights, for instance, is now Wingify Insights). Your existing plans, features, data, and access are unaffected.
 Will the products themselves change?
 Not right away. Your live website campaigns, mobile SDK campaigns, server-side experiments, tracking snippets, feature flags, and data collection keep working normally through the transition; only the dashboard changes. Over the medium term, expect Wingify’s strengths in personalization and AI-driven targeting to be woven more closely with Wingify’s experimentation, analytics, and behavioral insight tools into one shared roadmap.
 What happens to existing contracts?
 Your current contracts, pricing, and service levels carry over unchanged as a result of the merger, and the team supporting you today keeps doing so.
 What happens to logins?
-If you’re a Wingify customer, your account, settings, and credentials transfer over to app.wingify.com, though active sessions end the moment the domain switches, so you’ll need to sign back in at the new address. Single Sign-On (SSO) and SAML setups keep working automatically, since the SSO callback URL redirects to the new domain without any action needed on your side. Passkeys are the exception, since they’re tied to a specific domain for security reasons. A passkey created for app.wingify.com won’t transfer, so you’ll need to create a new one after logging in at the new domain. System emails, password resets, reports, and notifications now come from @wingify.com instead of @wingify.com, so it’s worth having your IT team allowlist that domain to keep them out of spam.
+If you’re a Wingify customer, your account, settings, and credentials transfer over to app.wingify.com, though active sessions end the moment the domain switches, so you’ll need to sign back in at the new address. Single Sign-On (SSO) and SAML setups keep working automatically, since the SSO callback URL redirects to the new domain without any action needed on your side. Passkeys are the exception, since they’re tied to a specific domain for security reasons. A passkey created for app.vwo.com won’t transfer, so you’ll need to create a new one after logging in at the new domain. System emails, password resets, reports, and notifications now come from @wingify.com instead of @vwo.com, so it’s worth having your IT team allowlist that domain to keep them out of spam.
 What happens to integrations?
 Your integrations stay intact. Wingify’s REST APIs are now served on the Wingify domain, and existing integrations keep working with no changes needed. The Wingify SmartCode already installed on your site doesn’t need replacing either. IT teams should whitelist wingify.com and its subdomains in company firewalls to prevent disruption to features like session recording playback that run on those domains.
 What stays exactly the same?
@@ -371,12 +376,12 @@ Related Content
 Guide
 Conversion Rate Optimization →
 You might also love to read these
-12 Min Read
-7 Top A/B Testing Tools with Heatmaps for 2026
-12 Min Read
-Feature Flag Management in Enterprise Experimentation Platforms: Complete Guide
-6 Min Read
-Turn Insights Into Action: How Wingz AI Closes the Loop
+4 Min Read
+Curiosity Meets Clarity: Why We Became Wingify
+8 Min Read
+Pulse vs Hotjar: Which Feedback Tool Is Right for Your Team?
+10 Min Read
+8 Feature Flag Best Practices for Product and Engineering Teams
 The better way to test,
 learn and grow
 Get a Demo
@@ -396,7 +401,6 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
-*
 Follow us:
 EN
 DE
@@ -421,7 +425,7 @@ Why Wingify?
 Program Management
 Integrations
 Data Platform
-For teams
+For Teams
 Marketing
 Product
 Data Analytics
@@ -429,7 +433,7 @@ UX/ UI
 Digital Transformation
 Engineering
 Merchandising
-For industries
+For Industries
 Retail & ecommerce
 Travel & Hospitality
 Financial Services
@@ -463,8 +467,6 @@ Wingify vs Mouseflow
 Wingify vs Contentsquare
 Wingify vs Dynamic Yield
 Wingify vs. Kameleoon
-Wingify vs. Monetate
-Wingify vs Convert
 © 2026 Wingify. All rights reserved.
 Terms
 Security
@@ -487,7 +489,6 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
-*
 Start Now
 We just need a few details
 Business Email
@@ -507,7 +508,6 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
-*
 Create Account
 Curious how it works? Get a 1-on-1 demo
 Skip & Continue to App →
@@ -556,7 +556,6 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
-*
 Submit
 Thank you for writing to us!
 One of our representatives will get in touch with you shortly.
@@ -576,7 +575,6 @@ I agree to Wingify's
 Privacy Policy
 &
 Terms
-*
 Get a Demo
 I'm finding an executive for you
 schedule later →

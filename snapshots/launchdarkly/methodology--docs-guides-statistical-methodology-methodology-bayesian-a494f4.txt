@@ -1,27 +1,24 @@
 # https://launchdarkly.com/docs/guides/statistical-methodology/methodology-bayesian
-Statistical methodology for Bayesian experiments - LaunchDarkly
-Documentation Index
-Fetch the complete documentation index at:
-/docs/llms.txt
-Use this file to discover all available pages before exploring further.
-Skip to main content
-Assistant
-Responses are generated using AI and may contain mistakes.
-LaunchDarkly
-home page
-Search...
-⌘
-K
-Ask Assistant
-⌘
-I
+Statistical methodology for Bayesian experiments | LaunchDarkly | Documentation
+For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+Developer
+Developer
+Search
+/
+Pricing
 Sign in
 Try it free
-Try it free
-Search...
-Navigation
-Statistical methodology
-Statistical methodology for Bayesian experiments
+Docs
+Guides
+SDKs
+Integrations
+API docs
+Tutorials
+Flagship blog
+Developer
+Developer
+Search
+/
 Docs
 Guides
 SDKs
@@ -51,9 +48,115 @@ SDKs
 Integrations
 REST API
 Additional resources
-Developer
+Guides
+Cheatsheets
+Control and govern AI agents in production
+Enable self-healing systems with runtime controls
+Optimize AI performance and cost with AgentControl configs
+Run continuous experiments in production
+Ship AI-built code with AgentControl or CodeControl
+Feature flags
+Best practices for upgrading users to contexts
+Creating flags
+Deciding between flag targeting strategies
+Defining and targeting mobile applications
+Feature flag hierarchy
+Flag conventions
+Improving flag usage in code
+LaunchDarkly CLI dev-server reference guide
+Performing multi-stage migrations with migration flags
+Reducing technical debt from feature flags
+Testing code that uses feature flags
+Using entitlements to manage customer experience
+Using flags on static sites with JavaScript
+Using the LaunchDarkly CLI for local testing
+Using segments and targeting to manage early access programs
+AgentControl
+Getting started with OpenAI and AgentControl
+Getting started with Anthropic Claude and AgentControl
+Getting started with Google Gemini and AgentControl
+Getting started with Amazon Bedrock and AgentControl
+Getting started with LangChain and AgentControl
+Getting started with LangGraph and AgentControl
+Getting started with Strands and AgentControl
+Managing AI model configuration outside of code
+Using targeting to manage AI model usage by tier
+When to use prompt-based vs agent mode
+Building a chatbot with multiple AI providers using AgentControl
+Observability
+Getting started with observability for .NET MAUI
+Getting started with observability for native Android
+When to use session replay, traces, logs, and Vega
+Experimentation
+Building your first experiment
+Creating an A/B experiment using a funnel metric group
+Creating mutually exclusive experiments
+Designing experiments
+Example experiments
+Experimentation best practices
+Bayesian versus frequentist statistics
+Maintaining consistency across user sessions when running experiments
+Measuring Experimentation impact with holdout experiments
+Migrating from Statsig to LaunchDarkly Experimentation
+Proving ROI with data-driven AI agent experiments
+Sample size calculations for frequentist experiments
+Statistical methodology
+Choosing a statistical methodology
+Covariate adjustment and CUPED methodology
+Statistical methodology for Bayesian experiments
+Statistical methodology for frequentist experiments
+Multiple comparisons correction
+Stratified sampling
+Sample ratio mismatch
+Metrics
+Building a metric import and sync integration
+Example metrics
+Understanding LaunchDarkly metrics
+Using metrics from engineering insights
+Infrastructure
+Deployment and release strategies
+Managing flags with Terraform
+Using flags with Cloudflare Workers
+Using LaunchDarkly in serverless environments
+Account management
+LaunchDarkly for large enterprise teams
+Merging LaunchDarkly accounts
+Migrating your existing feature flag solution to LaunchDarkly
+Minimizing LaunchDarkly's access to end user data
+Onboarding to views
+Using LaunchDarkly with Protected Health Information (PHI)
+Using SSO with LaunchDarkly
+Teams and custom roles
+Building teams in LaunchDarkly
+Creating roles
+Onboarding to preset roles
+SDKs
+Use cases for SDK wrappers
+Using LaunchDarkly without a supported SDK
+Using mobile SDKs
+Using the Lua SDK with HAProxy
+Using the Lua SDK with NGINX
+Using the JavaScript SDK in Salesforce Lightning Web Components
+Resilient architecture patterns for LaunchDarkly's SDKs
+Integrations
+About LaunchDarkly integrations
+Integrations use cases
+Data Export usage best practices
+Using flag triggers with Dynatrace
+Building a change history event hook integration
+Building an ephemeral Environments as a Service integration
+Building a synced segments integration
+LaunchDarkly Shopify Pixel
+REST API
+Comparing LaunchDarkly's SDK and REST API
+Using the LaunchDarkly REST API
+REST API migration guide
+Additional resources
+Pricing
+Sign in
+Try it free
+System
 On this page
-Back to top
 Core formulas
 Posterior mean
 Data mean
@@ -68,19 +171,19 @@ Relative differences and their credible intervals
 Probability to be best
 Expected loss
 Conclusion
+Scroll to top
+Guides
 Statistical methodology
 Statistical methodology for Bayesian experiments
-Developer
+Copy page
 This guide includes advanced concepts
 This section includes an explanation of advanced statistical concepts. We provide them for informational purposes, but you do not need to understand these concepts to use Experimentation.
 This guide explains the statistical methodology LaunchDarkly uses to calculate Bayesian experiment variation means, and how these analytics formulas are useful for validating your results.
 For a high-level overview of Bayesian and frequentist statistics, read
 Bayesian versus frequentist statistics
 .
-​
 Core formulas
 The core formulas include the posterior mean, the data mean, and the data weight. We describe these in detail below.
-​
 Posterior mean
 In the Bayesian approach, the main quantity we report is the mean of the posterior distribution calculated by updating the prior distribution with data observed in your experiment.
 At a high level, the posterior means for all experiment variations and for any metric type, including conversion metrics and numeric metrics, can be represented by a convenient formula:
@@ -189,7 +292,6 @@ Weight
 Broadly, the posterior mean is a weighted sum of the mean of the prior distribution and the mean calculated from the data. As more data arrives to the experiment, the weight increases and the posterior mean is influenced relatively more by the observed data and relatively less by the prior distribution. The specific behavior of this differs slightly between the control variation and the treatment variations, but this general principle holds for both.
 When you hover over the “Conversion rate” or “Posterior mean” heading in an experiment’s results table, you can view the conversion rate or posterior mean.
 When you hover over an actual conversion rate or posterior mean value, you can view actual numbers in the formulas instead of descriptions.
-​
 Data mean
 The formula for the data mean differs between conversion metrics and numeric metrics:
 Conversion metrics
@@ -256,8 +358,7 @@ C
 o
 n
 v
-er
-s
+ers
 i
 o
 n
@@ -268,8 +369,7 @@ x
 p
 os
 u
-r
-es
+res
 Numeric metrics
 use the total value divided by the total number of exposures:
 D
@@ -334,8 +434,7 @@ o
 t
 a
 l
-V
-a
+Va
 l
 u
 e
@@ -345,12 +444,10 @@ x
 p
 os
 u
-r
-es
+res
 CUPED may affect the exact computation of these results. To learn more, read
 Covariate adjustment and CUPED methodology
 .
-​
 Data weight
 The precision weight is given by:
 W
@@ -425,8 +522,7 @@ M
 e
 an
 P
-r
-ec
+rec
 i
 s
 i
@@ -438,8 +534,7 @@ r
 i
 or
 P
-r
-ec
+rec
 i
 s
 i
@@ -453,8 +548,7 @@ M
 e
 an
 P
-r
-ec
+rec
 i
 s
 i
@@ -545,8 +639,7 @@ t
 a
 M
 e
-anV
-a
+anVa
 r
 ian
 ce
@@ -556,8 +649,7 @@ P
 r
 i
 or
-V
-a
+Va
 r
 ian
 ce
@@ -568,8 +660,7 @@ t
 a
 M
 e
-anV
-a
+anVa
 r
 ian
 ce
@@ -685,7 +776,6 @@ or
 n
 ​
 ​
-​
 Details of our Bayesian approach
 The Bayesian approach to analysis involves two steps:
 Incorporating a subjective prior belief about parameters of interest, usually means, plus objective data collected during the experiment to create
@@ -705,7 +795,6 @@ After the posterior distribution is created, then it is a relatively simple proc
 Results table data
 .
 Below we dive into detail on how we accomplish these two steps.
-​
 Calculating posterior distributions
 At LaunchDarkly, we use different statistical models for binary data and numeric data. In both cases, we use conjugate distributions, meaning that the family of the prior distribution is the same as the family of the posterior distribution:
 For binary metrics, we start with a Beta distribution for the prior and update that into another Beta distribution for the posterior.
@@ -717,7 +806,6 @@ Use uninformative priors for treatments
 under “Statistical approach and success criteria” when you create the experiment.
 You cannot update the prior distribution setting after you start running the experiment.
 We give some technical details on the exact specification of the priors below, as well as some closed-form expressions for the posterior distributions once data is incorporated.
-​
 Binary data
 Binary metrics are also called “occurrence” metrics in LaunchDarkly. That is, binary metrics result in either a 0 or a 1 recorded for each context in the experiment. For more information, read
 Custom conversion binary metrics
@@ -783,7 +871,6 @@ v
 ​
 )
 units did not convert.
-​
 Numeric data
 Although numeric data can take a variety of forms and be modeled by many different kinds of probability distributions, we can use a simplified approach that leverages the central limit theorem.
 Because the quantity of interest is usually some unknown population mean which is estimated by the sample mean, we can have reasonably high confidence that the normal distribution will be a good fit for the likelihood of the sample mean as we collect more and more data:
@@ -1406,7 +1493,6 @@ v
 =
 α
 v
-​
 ​
 Conversion metrics
 Conversion metrics use binary data. We use a Binomial likelihood function with a Beta prior, which results in another Beta distribution for the posterior.
@@ -2300,10 +2386,8 @@ v
 ) in the column
 Relative difference from Control
 .
-​
 Computing relative differences, probabilities, and expected loss
 Next, we discuss how we compute relative differences, probability to be best, and expected loss.
-​
 Relative differences and their credible intervals
 We estimate the
 relative difference in means
@@ -2579,7 +2663,6 @@ v
 ) in the column
 Relative difference from Control
 .
-​
 Probability to be best
 For both numeric and conversion metrics, LaunchDarkly calculates the
 probability to be best
@@ -2633,7 +2716,6 @@ v
 w
 ​
 is greater than zero.
-​
 Expected loss
 Ideally, shipping a winning variation would carry no risk. In reality, the probability for a treatment variation to beat the control variation is rarely 100%. This means there’s always some chance that a “winning” variation might not be an improvement over the control variation. To manage this risk, we measure it using a quantity called “expected loss.”
 Expected loss represents the average potential downside of shipping a variation, quantifying how much one could expect to lose if it underperforms relative to the control variation. LaunchDarkly calculates this by integrating probability-weighted losses across all scenarios in which a given variation performs worse than control, with loss defined as the absolute difference between them.
@@ -2642,7 +2724,6 @@ For example, if you’re measuring conversion rate and have a winning variation 
 Expected loss does not display for
 percentile metrics
 .
-​
 Conclusion
 This guide explained the statistical methods LaunchDarkly applies to Bayesian experiments. To learn about frequentist statistical methods in LaunchDarkly, read
 Statistical methodology for frequentist experiments
@@ -2652,7 +2733,10 @@ Your 14-day trial begins as soon as you sign up. Get started in minutes using th
 Want to try it out?
 Start a trial
 .
-Covariate adjustment and CUPED methodology
+Was this page helpful?
+Yes
+No
 Previous
 Statistical methodology for frequentist experiments
 Next
+Built with

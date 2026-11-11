@@ -11,7 +11,6 @@ Getting Started
 Getting Started
 Adding Intelligems Script to your Theme
 Tests vs. Personalizations
-Opportunity Audit
 General FAQs
 Billing FAQs
 CONTENT EXPERIENCES
@@ -49,17 +48,6 @@ Scheduling an Experience
 Rolling Out Tests
 Best Practices
 Quick Start Experiences
-Get Inspired
-Set up a Buy X Get Y offer
-Enable tiered volume pricing
-Add a free gift at a spend threshold
-Add trust badges to your checkout
-Test your hero image and headline
-Add trust badges under your add to cart button
-Find your free shipping threshold
-Test a higher price on your best seller
-Compare a discount against a price cut
-Test subscription pricing
 Analytics
 Analytics Overview
 Data Sharing
@@ -84,10 +72,8 @@ Examples & Best Practices
 Creating Live Intelligems Dashboards in Claude
 Troubleshooting
 Claude: Remove Manual Configuration
-MCP Server & External API Changelog
 Theme & Storefront Setup
 Shopify Scripts is sunsetting
-Intelligems and the October 2026 Shopify Checkout Security Incident: Customer FAQ
 Powered by GitBook
 On this page
 For the complete documentation index, see
@@ -121,12 +107,6 @@ Claude (Desktop & Code)
 Google Gemini
 ChatGPT
 Grok
-Built-in skills
-The Intelligems MCP comes with seven built-in skills. They run automatically when you ask a related question, so you don't need a slash command. Each one reads your store's data, recommends what to run, and builds it as a draft for you to review.
-To see what's available on your plan, ask "What can Intelligems do for my store?" Some skills depend on the modules on your plan.
-See the full list on the
-Intelligems MCP page
-.
 Other MCP Clients:
 Refer to your client's documentation for adding OAuth2-authenticated SSE-based or http MCP servers.
 HTTP:
@@ -149,12 +129,11 @@ Automating a CFO-Friendly Incremental Revenue Attribution for CRO
 Next
 Claude
 Last updated
-12 days ago
+27 days ago
 Was this helpful?
 What is MCP?
 Prerequisites
 Installation
 Configuration
-Built-in skills
 Multi-Organization Support
 Was this helpful?

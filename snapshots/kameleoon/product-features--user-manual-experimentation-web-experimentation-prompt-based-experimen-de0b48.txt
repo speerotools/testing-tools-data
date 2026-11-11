@@ -14,7 +14,6 @@ MCP
 SDKs
 APIs
 Integrations
-Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -26,15 +25,14 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product updates
-Kameleoon Academy
-Slack Community
-Product updates
+Product changelog
 Home
 User manual overview
 Get started
-Installation
-Kameleoon homepage
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
 Experimentation
 Web Experimentation
 Prompt-based experiments
@@ -49,6 +47,7 @@ Best practices and safeguards
 Import designs from Figma
 Contentsquare X PBX integration
 PBX Ideate
+Prompt-based experimentation FAQ
 Graphic-based experiments
 Code-based experiments
 Configure and launch
@@ -90,7 +89,6 @@ Security and authentication
 Users and teams
 Organization settings
 Project management
-Create a project
 Manage your projects
 Consent management
 Kai
@@ -99,13 +97,14 @@ AI opportunity detection
 Get started
 Audiences — Key metrics
 Audiences — Segment analysis
-AI Targeting
-AI Targeting
-Enable AI Targeting on a goal
-Use AI Targeting in a segment
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
 English
 On this page
-Back to top
 Access the Figma integration
 Link your Figma account
 Insert a design in the prompt
@@ -182,6 +181,10 @@ The Kameleoon Figma integration follows Figma’s rate limits, which vary by sub
 Was this page helpful?
 Yes
 No
+Best practices and safeguards
+Previous
+Contentsquare X PBX integration
+Next
 ⌘
 I
 Assistant

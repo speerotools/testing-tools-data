@@ -106,9 +106,6 @@ An
 email
 attribute (case insensitive).
 If Amplitude can't find a valid email, the user can't sign in. Most identity providers send the email by default. If yours doesn't, follow the provider-specific guide linked above to map the user's email into the assertion.
-Related
-:
-Access and SSO
 Was this helpful?
 Copy Markdown
 On this page

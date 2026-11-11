@@ -1,26 +1,24 @@
 # https://launchdarkly.com/docs/sdk
-SDKs - LaunchDarkly
-Documentation Index
-Fetch the complete documentation index at:
-/docs/llms.txt
-Use this file to discover all available pages before exploring further.
-Skip to main content
-Assistant
-Responses are generated using AI and may contain mistakes.
-LaunchDarkly
-home page
-Search...
-⌘
-K
-Ask Assistant
-⌘
-I
+SDKs | LaunchDarkly | Documentation
+For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+Developer
+Developer
+Search
+/
+Pricing
 Sign in
 Try it free
-Try it free
-Search...
-Navigation
+Docs
+Guides
 SDKs
+Integrations
+API docs
+Tutorials
+Flagship blog
+Developer
+Developer
+Search
+/
 Docs
 Guides
 SDKs
@@ -38,9 +36,229 @@ Edge SDKs
 OpenFeature providers
 Observability SDKs
 Relay Proxy
-Developer
+SDKs
+SDK concepts
+Getting started with SDKs
+Choosing an SDK type
+Analytics events
+Filtered SDK payloads
+Apple App Store data collection policy
+Contributor's guide
+Domain list
+Evaluation reasons
+Flag evaluation rules in server-side SDKs
+Persistent data stores
+Sample applications
+Server-side SDK bandwidth usage
+Using flag types
+Version notifications
+Versioning policy
+Supported versions
+SDK features
+SDK configuration
+Application metadata configuration
+Migration configuration
+Service endpoint configuration
+Aliasing users
+Anonymous contexts and users
+Automatic environment attributes
+Big segments
+Bootstrapping
+Caching contexts to local storage
+Context configuration
+Customizing AgentControl configs
+Data saving mode
+Experimentation
+Flag variation evaluation
+Flag variation evaluation details
+Flushing events
+Getting all flags
+Hooks
+Identifying and changing contexts
+Inspectors
+Logging configuration
+Migrations
+Monitoring SDK status
+Multiple environments
+Offline mode
+OpenTelemetry in server-side SDKs
+Private attributes
+User feedback
+Reading flags from a file
+Relay Proxy configuration
+Using daemon mode
+Using proxy mode
+Secure mode
+Shutting down
+Storing data
+Consul
+DynamoDB
+Redis
+Subscribing to flag changes
+Test data sources
+Tracking AI metrics
+Tracking custom events
+Web proxy configuration
+Client-side SDKs
+.NET SDK reference
+.NET (client-side) SDK 4.x to 5.0 migration guide
+.NET (client-side) SDK 3.x to 4.0 migration guide
+.NET (client-side) SDK 2.x to 3.0 migration guide
+.NET (client-side) SDK 1.x to 2.0 migration guide
+Android SDK reference
+Android SDK 4.x to 5.0 migration guide
+Android SDK 3.x to 4.0 migration guide
+Android SDK 2.x to 3.0 migration guide
+C++ SDK reference
+C++ (client-side) SDK 2.x to 3.0 migration guide
+C (client-side) SDK 1.x to 2.0 migration guide
+Electron SDK reference
+Flutter SDK reference
+Flutter SDK 3.x to 4.0 migration guide
+Flutter SDK 2.x to 3.0 migration guide
+Flutter SDK 1.x to 2.0 migration guide
+iOS SDK reference
+iOS SDK 8.x to 9.0 migration guide
+iOS SDK 7.x to 8.0 migration guide for Swift
+iOS SDK 7.x to 8.0 migration guide for Objective-C
+iOS SDK 5.x to 6.0 migration guide for Swift
+iOS SDK 5.x to 6.0 migration guide for Objective-C
+JavaScript SDK reference
+Eliminating flicker when using default flag values
+JavaScript SDK 3.x to 4.0 migration guide
+JavaScript SDK 2.x to 3.0 migration guide
+Requirements and polyfills
+Node.js SDK reference
+Node.js (client-side) SDK 3.x to 4.0 migration guide
+Node.js (client-side) SDK 2.x to 3.0 migration guide
+Node.js (client-side) SDK 1.x to 2.0 migration guide
+React SDK reference
+React Web SDK reference
+React Web SDK 3.x to 4.0 migration guide
+React Web SDK 2.x to 3.0 migration guide
+React Native SDK reference
+React Native SDK 9.x to 10.0 migration guide
+React Native SDK 8.x to 9.0 migration guide
+React Native SDK 7.x to 8.0 migration guide
+React Native SDK 6.x to 7.0 migration guide
+Gatsby plugin
+Roku SDK reference
+Roku SDK 1.x to 2.0 migration guide
+Vue SDK reference
+Vue SDK 2.x to 3.0 migration guide
+Vue SDK 1.x to 2.0 migration guide
+Server-side SDKs
+.NET SDK reference
+.NET (server-side) SDK 7.x to 8.0 migration guide
+.NET (server-side) SDK 6.x to 7.0 migration guide
+.NET (server-side) SDK 5.x to 6.0 migration guide
+Apex SDK reference
+C++ SDK reference
+C++ (server-side) SDK 2.x to 3.0 migration guide
+Erlang SDK reference
+Erlang (server-side) SDK 2.x to 3.0 migration guide
+Erlang (server-side) SDK 1.x to 2.0 migration guide
+Go SDK reference
+Go SDK 6.x to 7.0 migration guide
+Go SDK 5.x to 6.0 migration guide
+Go SDK 4.x to 5.0 migration guide
+Haskell SDK reference
+Haskell SDK 3.x to 4.0 migration guide
+Java SDK reference
+Java SDK 6.x to 7.0 migration guide
+Java SDK 5.x to 6.0 migration guide
+Java SDK 4.x to 5.0 migration guide
+Lua SDK reference
+Lua SDK 1.x to 2.0 migration guide
+Node.js SDK reference
+Node.js (server-side) SDK 8.x to 9.0 migration guide
+Node.js (server-side) SDK 7.x to 8.0 migration guide
+Node.js (server-side) SDK 6.x to 7.0 migration guide
+Node.js (server-side) SDK 5.x to 6.0 migration guide
+PHP SDK reference
+PHP SDK 5.x to 6.0 migration guide
+PHP SDK 4.x to 5.0 migration guide
+PHP SDK 3.x to 4.0 migration guide
+Python SDK reference
+Python SDK 8.x to 9.0 migration guide
+Python SDK 7.x to 8.0 migration guide
+Ruby SDK reference
+Ruby SDK 7.x to 8.0 migration guide
+Ruby SDK 6.x to 7.0 migration guide
+Rust SDK reference
+Rust SDK 2.x to 3.0 migration guide
+Rust SDK v1 implementation guide
+AI SDKs
+.NET AI SDK reference
+Go AI SDK reference
+Java AI SDK reference
+Migrate from the legacy AI SDKs
+Node.js (server-side) AI SDK reference
+Node.js (server-side) AI SDK reference (legacy)
+Python AI SDK reference
+Python AI SDK reference (Legacy)
+Ruby AI SDK reference
+Edge SDKs
+Akamai SDK reference
+Cloudflare SDK reference
+Cloudflare SDK 1.x to 2.0 migration guide
+Fastly SDK reference
+Vercel SDK reference
+OpenFeature providers
+.NET (server-side) provider
+Cloudflare provider
+Java provider
+Node.js (server-side) provider
+PHP provider
+Observability SDKs
+SDK features
+Configuration for client-side observability
+Configuration for server-side observability
+Configuration for session replay
+Instrumenting LLM applications
+OpenTelemetry in client-side SDKs
+Recording metrics
+Recording traces
+Sending errors
+Symbolication for stack traces
+Sending logs
+SDK data handling behavior
+Self-hosting an OpenTelemetry Collector
+OpenTelemetry versions and instrumentation support
+.NET (server-side) SDK observability reference
+.NET MAUI SDK observability reference
+Android SDK observability reference
+iOS SDK observability reference
+Flutter SDK observability reference
+Go SDK observability reference
+JavaScript SDK observability reference
+HTMX observability reference
+Salesforce LWC observability reference
+Node.js (server-side) SDK observability reference
+Python SDK observability reference
+Ruby SDK observability reference
+React Native SDK observability reference
+React Web SDK observability reference
+Vue SDK observability reference
+Relay Proxy
+Determining whether to use the Relay Proxy
+Relay Proxy use cases
+Relay Proxy guidelines
+Relay Proxy Enterprise
+Automatic configuration
+Offline mode
+Implementing the Relay Proxy
+Configuring and deploying the Relay Proxy
+Relay Proxy deployment strategies
+Configuring SDKs for the Relay Proxy
+Monitoring the Relay Proxy
+Upgrading the Relay Proxy
+Versioning policy
+Pricing
+Sign in
+Try it free
+System
 On this page
-Back to top
 Getting started with LaunchDarkly SDKs
 Available SDKs
 Client-side and mobile SDKs
@@ -49,13 +267,13 @@ AI SDKs
 Edge SDKs
 OpenFeature providers
 Supported features
+Scroll to top
 SDKs
-Developer
+Copy page
 This topic lists the available LaunchDarkly SDKs.
 You must create a LaunchDarkly account before you set up an SDK for the first time
 A LaunchDarkly account is required to configure any LaunchDarkly SDK. To create an account, sign up for a trial. Your 14-day free trial begins as soon as you sign up.
 Start a trial.
-​
 Getting started with LaunchDarkly SDKs
 The SDK types have different security considerations, as well as behavioral and architectural differences. They handle flag evaluations differently, utilize different kinds of SDK keys, and support different languages. Consider your use case carefully before you decide which SDKs to use.
 To learn more, read
@@ -66,24 +284,55 @@ LaunchDarkly API
 . To learn more about the differences between these offerings, read
 Comparing LaunchDarkly’s REST API and SDK
 .
-​
 Available SDKs
 If you already know which SDKs you want to use, choose from the list of supported SDKs below.
 If the language or framework you use is not listed here, we may provide a
 sample application
 to help you get started. Sample applications demonstrate that an SDK is compatible with a particular language or framework. However, LaunchDarkly only provides full support for those languages or frameworks that have a dedicated SDK.
 We provide the following SDKs:
-​
 Client-side and mobile SDKs
-​
+.NET
+Android
+C++
+Electron
+Flutter
+iOS
+JavaScript
+Node.js
+React
+Roku
+Vue
 Server-side SDKs
-​
+.NET
+Apex
+C++
+Erlang
+Go
+Haskell
+Java
+Lua
+Node.js
+PHP
+Python
+Ruby
+Rust
 AI SDKs
-​
+.NET
+Go
+Node.js
+Python
+Ruby
 Edge SDKs
-​
+Akamai
+Cloudflare
+Fastly
+Vercel
 OpenFeature providers
-​
+.NET
+Cloudflare
+Java
+Node.js
+PHP
 Supported features
 This section includes tables of minimum SDK versions required to support the listed features. Open each section to view minimum version requirements.
 All versions of the server-side, client-side, mobile, and edge SDKs support evaluating feature flags.
@@ -746,5 +995,9 @@ Tracking AI metrics
 0.1
 0.1
 0.1
+Was this page helpful?
+Yes
+No
 SDK concepts
 Next
+Built with

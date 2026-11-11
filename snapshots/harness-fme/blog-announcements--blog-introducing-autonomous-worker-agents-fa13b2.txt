@@ -1,9 +1,6 @@
 # https://www.harness.io/blog/introducing-autonomous-worker-agents
 Introducing Autonomous Worker Agents
 Harness Platform
-For the complete documentation index, see
-llms.txt
-. A Markdown version of this page is available by requesting this URL with the header "Accept: text/markdown".
 Platform
 Harness Autonomous SDLC Platform
 Deliver at machine speed.
@@ -42,9 +39,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 Developer Portal
@@ -79,9 +73,7 @@ Press
 News
 Legal
 Partners
-Government
 Contact Us
-Sign in
 See a Demo
 Start for Free
 Platform
@@ -120,9 +112,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 AI Evals
@@ -161,10 +150,62 @@ Contact Us
 Sign in
 See a Demo
 Start for Free
+Reduce DevOps costs with effective CI/CD pipeline templates
+Navigation Design for an Array of Software Delivery Tools
+Dark - Beyond Traditional Enterprise Themes
+Announcing Harness DevOps Essentials: Your Complete DevOps Platform to Supercharge Your Productivity
+Exciting News: We’ve Merged Harness and Traceable To Create A New Leader In Secure Software Delivery
+How OpenID Connect Eliminates Secrets in CI/CD Pipelines
+10,000 Pull Requests and Counting: How Harness Developer Hub Transformed Documentation into a Product
+Rego 101: Policy Driven DevOps
+Harness the Power of Platform Engineering
+Harness strengthens application security with Qwiet AI acquisition
+Go Memory Leak: How One Line Drained Memory Across 1000+ Goroutines | Harness
+DevOps Meets AI: Evaluating the Performance of Leading LLMs
+Harness has been named to the Inc. Power Partner list for software delivery success
+Harness x AWS re:Invent 2025
+Harness and Amazon Team Up to Bring AI-Powered DevOps to Your IDE
+Secure by Default: Why AI-Driven Delivery Needs a Rethink
+Accelerating Our Mission to Bring AI to Everything After Code
+Building the Next Phase of Harness’s AI Engineering Organization in India
+CTO Predictions for 2026: Special ShipTalk Episode with Nick Durkin
+Move Harness Projects Between Orgs Without Downtime
+The Agent-Native Repo: Why AGENTS.MD is the New Standard
+It's Time to Rethink Untrusted Code in Your Pipeline
+Closing the AI Velocity Paradox: 55 Features Shipped in March 2026
+How Harness Grounds AI Agents in a Knowledge Graph for Deterministic Answers
+Women in Tech: Journeys, Grit, and the Future We’re Building
+Building for the Agentic Era: Engineering Excellence at Harness
+The Agent Loop Is the New OS: Design Philosophy of the Harness MCP Server
+What if your Legal moved as fast as your business? At Harness, ours does!
+Building for Resilience: An Engineering Guide to the Mythos Era
+From PR to Production Without Leaving Your Cursor IDE
+70+ Software Delivery Features We Shipped in April 2026
+Google Cloud Next '26 Recap: AI, Efficiency, and the Rise of Frictionless Delivery
+Get Ship Done: Everything We Shipped in May 2026
+Get Ship Done: Everything We Shipped in June 2026
+Autonomous Worker Agents: AI Agents in Your Pipelines
+We Built the Canary Partner Program for the Federal Software Mission. Today, We're Launching It.
+Identity and Permissions for AI Worker Agents in Harness
+Announcing the Harness CLI: Built for Humans and Agents
+AI Is Writing More Code Than Ever. Your Release Process Hasn't Kept Up.
+Software Release Management: A Practical Guide for Engineering Teams
+Organizing and governing AI Assets
+Introducing AI Agent Deployment in Harness Continuous Delivery
+Introducing Harness AgentTrace: An Observability and Guardrail Framework for AI Agents
+Runtime Control for AI Agents. Introducing Harness AI Configs.
+Introducing Harness Agent DLC: Extending your SDLC to AI Agents
+Securing the Agent DLC
+Join the Conversation: The Harness Community Is Now Live
+Q2 2026 Product Update: Harness Pipeline
+Get Ship Done: Everything We Shipped in July 2026
+Catch AI Regressions Before They Ship with AI Evals in CI/CD
+Internal Developer Portals: Why Native CI/CD Drives Scale
+Developer portal security and governance best practices
 Blog
 →
 Harness Platform
-Autonomous Worker Agents: AI agents in your pipelines
+Autonomous Worker Agents: AI Agents in Your Pipelines
 | Harness Blog
 Harness launches Autonomous Worker Agents: AI that runs as pipeline steps, with the governance enterprises need to trust agents in production
 Harness Platform
@@ -914,7 +955,7 @@ Rohan Gupta
 Director, Product Management
 Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
 rohan-gupta
-The Autonomous SDLC Platform.
+AI for everything after code.
 Platform
 Overview
 Why Harness
@@ -936,7 +977,6 @@ AI SAST
 AI SCA
 Supply Chain Security
 Security Testing Orchestration
-Cosmos Software Factory Agent
 Runtime Protection Agent
 API Posture
 API Advanced Protection
@@ -948,7 +988,7 @@ Engineering Efficiency
 More Products
 Incidents
 Developer Portal
-Resilience Testing
+Resilience Tests
 AI Evals
 Runtime Configuration
 Resources
@@ -966,64 +1006,10 @@ Careers
 Press & News
 Partners
 Contact Us
-Harness for Government
 Legal
 © 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
-Cookies Notice
 Opt Out
 Cookie Settings
-Reduce DevOps costs with effective CI/CD pipeline templates
-Navigation Design for an Array of Software Delivery Tools
-Dark - Beyond Traditional Enterprise Themes
-Announcing Harness DevOps Essentials: Your Complete DevOps Platform to Supercharge Your Productivity
-Exciting News: We’ve Merged Harness and Traceable To Create A New Leader In Secure Software Delivery
-How OpenID Connect Eliminates Secrets in CI/CD Pipelines
-10,000 Pull Requests and Counting: How Harness Developer Hub Transformed Documentation into a Product
-Rego 101: Policy Driven DevOps
-Harness the Power of Platform Engineering
-Harness strengthens application security with Qwiet AI acquisition
-Go Memory Leak: How One Line Drained Memory Across 1000+ Goroutines | Harness
-DevOps Meets AI: Evaluating the Performance of Leading LLMs
-Harness has been named to the Inc. Power Partner list for software delivery success
-Harness x AWS re:Invent 2025
-Harness and Amazon Team Up to Bring AI-Powered DevOps to Your IDE
-Secure by Default: Why AI-Driven Delivery Needs a Rethink
-Accelerating Our Mission to Bring AI to Everything After Code
-Building the Next Phase of Harness’s AI Engineering Organization in India
-CTO Predictions for 2026: Special ShipTalk Episode with Nick Durkin
-Move Harness Projects Between Orgs Without Downtime
-The Agent-Native Repo: Why AGENTS.MD is the New Standard
-It's Time to Rethink Untrusted Code in Your Pipeline
-Closing the AI Velocity Paradox: 55 Features Shipped in March 2026
-How Harness Grounds AI Agents in a Knowledge Graph for Deterministic Answers
-Women in Tech: Journeys, Grit, and the Future We’re Building
-Building for the Agentic Era: Engineering Excellence at Harness
-The Agent Loop Is the New OS: Design Philosophy of the Harness MCP Server
-What if your Legal moved as fast as your business? At Harness, ours does!
-Building for Resilience: An Engineering Guide to the Mythos Era
-From PR to Production Without Leaving Your Cursor IDE
-70+ Software Delivery Features We Shipped in April 2026
-Google Cloud Next '26 Recap: AI, Efficiency, and the Rise of Frictionless Delivery
-Get Ship Done: Everything We Shipped in May 2026
-Get Ship Done: Everything We Shipped in June 2026
-Autonomous Worker Agents: AI agents in your pipelines
-We Built the Canary Partner Program for the Federal Software Mission. Today, We're Launching It.
-Identity and Permissions for AI Worker Agents in Harness
-Announcing the Harness CLI: Built for Humans and Agents
-AI Is Writing More Code Than Ever. Your Release Process Hasn't Kept Up.
-Software Release Management: A Practical Guide for Engineering Teams
-Organizing and governing AI Assets
-Introducing AI Agent Deployment in Harness Continuous Delivery
-Introducing Harness AgentTrace: An Observability and Guardrail Framework for AI Agents
-Runtime Control for AI Agents. Introducing Harness AI Configs.
-Introducing Harness Agent DLC: Extending your SDLC to AI Agents
-Join the Conversation: The Harness Community Is Now Live
-Q2 2026 Product Update: Harness Pipeline
-Get Ship Done: Everything We Shipped in July 2026
-Catch AI Regressions Before They Ship with AI Evals in CI/CD
-Internal Developer Portals: Why Native CI/CD Drives Scale
-Developer portal security and governance best practices
-Announcing SOC 1, FedRAMP 20x Class A, PCI, and HIPAA Milestones At Harness

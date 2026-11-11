@@ -2,9 +2,6 @@
 Meet Harness' Model Context Protocol (MCP) Server
 Continuous Integration
 Continuous Delivery & GitOps
-For the complete documentation index, see
-llms.txt
-. A Markdown version of this page is available by requesting this URL with the header "Accept: text/markdown".
 Platform
 Harness Autonomous SDLC Platform
 Deliver at machine speed.
@@ -43,9 +40,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 Developer Portal
@@ -80,9 +74,7 @@ Press
 News
 Legal
 Partners
-Government
 Contact Us
-Sign in
 See a Demo
 Start for Free
 Platform
@@ -121,9 +113,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 AI Evals
@@ -162,6 +151,107 @@ Contact Us
 Sign in
 See a Demo
 Start for Free
+Harness Acquires CI Pioneer Drone.io and Commits to Open Source
+What is a Kubernetes Container?
+GraphQL: Harness Your Way
+CI/CD Pipeline: Everything You Need to Know
+Automated Test Selection & Risk Scoring in CI/CD Pipelines | Harness
+Your First Harness CI Installation, Build, and Publish
+IT Audits - How Continuous Delivery can Help
+Blue-Green Deployments With Kubernetes and Harness
+Harness Template Library For Continuous Delivery
+6 Actionable GitOps Best Practices to Help You Get Started
+An Introduction to Artificial Intelligence and Machine Learning
+Applying AI/ML to CI/CD Pipelines
+Comparing Helm vs Kustomize
+Continuous Integration Testing: Types, Best Practices, and Tools
+Accelerates AWS Cloud Migration
+What is O11Y? Observability Demystified with Chris Riley from Splunk
+Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
+Tutorial: How to Use the New Vault Agent Integration Method With Harness
+Pipeline Patterns for CI/CD Pipelines
+Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
+4 Best CI/CD Tools for DevOps
+How To Turn Your GitHub Repository Into an Automated Helm Chart Repo
+Harness the Power of AWS EKS-Anywhere
+Test Intelligence™: Move Fast, Don’t Break Things
+What Are Audit Trails & Why You Need Them in CD
+Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
+GitHub Actions Support in Harness CI
+Harness Launches Source Available Continuous Delivery
+Micro-Frontend Architecture in the Harness Software Delivery Platform
+Harness Achieves SOC 2 Compliance
+Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
+How Harness dashboards enhance software delivery performance
+Harness Acquires ChaosNative
+Harness Expands Software Delivery Platform
+The Git Sync Experience in Harness
+Git Branching in Harness
+Source Code Management in DevOps
+Harness Security Testing Orchestration (STO) - Key Capabilities
+Quality vs Reliability
+Build System vs CI System: What's the Difference and Why Does it Matter?
+The Best Open Source CI Tools
+Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
+Benefits of GitOps & Why GitOps Is Important
+Introducing Harness Policy as Code, Powered by OPA
+What Are GitOps Principles?
+GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
+Kubernetes Services Explained
+Harness CI and Harness CD - Your First True CI/CD Pipeline
+Continuous Delivery vs. Continuous Deployment: What’s the Difference?
+How Value Stream Mapping Optimizes Your Software Delivery Process
+How to Build CI Pipelines with GitHub Actions and Deploy to Kubernetes with Harness
+What is PaaS (Platform-as-a-Service)?
+Declarative Continuous Delivery for Kubernetes: A Closer Look at Argo CD
+What Is a CI/CD Platform and Why Should I Care?
+The Dependency and Plugin Hell That is Jenkins
+Build a Canary Deployment in 4 Mins with Harness CD
+Comparing Harness and Jenkins
+Harness Extends Continuous Verification To Dynatrace
+10 Signs You Don't Do Continuous Delivery
+Harness Continuous Delivery for Red Hat OpenShift
+A Time Series Machine Learning Model for Canary Deployments
+JFrog Artifactory & Harness - Don’t Get Bogged Down With Continuous Delivery
+Harness CI/CD Pipelines for .NET and Azure
+Harness For AWS: From Code to Cloud, Smarter and Faster
+ServiceNow for CI/CD Pipelines
+Vulnerability Scanning in your CI/CD Pipeline - Part Two
+The DevOps Tools Lifecycle Mesh for 2021
+Intro to Deployment Strategies: Blue-Green, Canary, and More
+Continuous Verification - Machine Learning to Safeguard Your Deployments
+Discover Azure DevOps Alternatives
+What Is GitOps? Learn About Benefits, Challenges, and More
+The Importance of Continuous Verification
+Best Argo CD Alternatives & Competitors
+Best Spinnaker Alternatives to Consider
+Continuous Delivery Tools to Consider
+How DORA Metrics Improve DevOps Performance
+The Software Development Life Cycle: A Complete Guide to Each Phase
+A Snapshot of DevOps
+What Is Role-Based Access Control (RBAC)?
+How to Prioritize the Developer Experience and Improve Output
+SRE vs. DevOps: Key Differences, Roles, and How They Work Together
+User & Role Management in the Harness Software Delivery Platform
+How We Built Event-Driven Architecture with Redis Streams at Harness
+Service Accounts: A Path to CI/CD Automation
+Harness YAML Editor - Code Away Your CI/CD Pipelines!
+What Is an Artifact Repository?
+Simplify test maintenance with the builder factory pattern
+Modern Software Delivery Best Practices & Software Delivery Management
+Managing the 'Git' in 'GitOps': 4 Ways to Structure Code in Your GitOps Repos
+Top 10 Best Practices for DevSecOps
+What is CircleCI? A Look at Features and Use Cases
+Kubernetes Application Deployment Strategies
+The Basics of GitOps Secrets Management
+The Data is In: Harness CI is up to 4X faster than Other Solutions
+What is ArgoCD?
+Introducing Harness CI/CD Plugin for Backstage
+GitOps Architecture Explained
+Integrating Automated Security and Testing in Your CI/CD Pipeline
+How to Implement CI/CD: Automate Builds, Testing, and Deployments in Minutes
+How to Deploy Helm Charts With Argo CD
+Next
 Blog
 →
 Continuous Integration
@@ -240,7 +330,7 @@ Rohan Gupta
 Director, Product Management
 Rohan is the Product Lead for Harness AI, driving the future of AI-native DevOps.
 rohan-gupta
-The Autonomous SDLC Platform.
+AI for everything after code.
 Platform
 Overview
 Why Harness
@@ -262,7 +352,6 @@ AI SAST
 AI SCA
 Supply Chain Security
 Security Testing Orchestration
-Cosmos Software Factory Agent
 Runtime Protection Agent
 API Posture
 API Advanced Protection
@@ -274,7 +363,7 @@ Engineering Efficiency
 More Products
 Incidents
 Developer Portal
-Resilience Testing
+Resilience Tests
 AI Evals
 Runtime Configuration
 Resources
@@ -292,113 +381,10 @@ Careers
 Press & News
 Partners
 Contact Us
-Harness for Government
 Legal
 © 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
-Cookies Notice
 Opt Out
 Cookie Settings
-Harness Acquires CI Pioneer Drone.io and Commits to Open Source
-What is a Kubernetes Container?
-GraphQL: Harness Your Way
-CI/CD Pipeline: Everything You Need to Know
-Automated Test Selection & Risk Scoring in CI/CD Pipelines | Harness
-Your First Harness CI Installation, Build, and Publish
-IT Audits - How Continuous Delivery can Help
-Blue-Green Deployments With Kubernetes and Harness
-Harness Template Library For Continuous Delivery
-6 Actionable GitOps Best Practices to Help You Get Started
-An Introduction to Artificial Intelligence and Machine Learning
-Applying AI/ML to CI/CD Pipelines
-Comparing Helm vs Kustomize
-Continuous Integration Testing: Types, Best Practices, and Tools
-Accelerates AWS Cloud Migration
-What is O11Y? Observability Demystified with Chris Riley from Splunk
-Kubernetes CI/CD Best Practices for Scalable, Secure Deployments
-Tutorial: How to Use the New Vault Agent Integration Method With Harness
-Pipeline Patterns for CI/CD Pipelines
-Measuring and Improving Developer Productivity: A Practical Guide for DevOps Teams
-4 Best CI/CD Tools for DevOps
-How To Turn Your GitHub Repository Into an Automated Helm Chart Repo
-Harness the Power of AWS EKS-Anywhere
-Test Intelligence™: Move Fast, Don’t Break Things
-What Are Audit Trails & Why You Need Them in CD
-Find and Fix Vulnerabilities in Your Pipeline With Snyk and Harness
-GitHub Actions Support in Harness CI
-Harness Launches Source Available Continuous Delivery
-Micro-Frontend Architecture in the Harness Software Delivery Platform
-Harness Achieves SOC 2 Compliance
-Kubernetes Mistakes: A Beginner’s Guide to Avoiding Common Pitfalls
-How Harness Dashboards Boost Delivery Performance
-Harness Acquires ChaosNative
-Harness Expands Software Delivery Platform
-The Git Sync Experience in Harness
-Git Branching in Harness
-Source Code Management in DevOps
-Harness Security Testing Orchestration (STO) - Key Capabilities
-Quality vs Reliability
-Build System vs CI System: What's the Difference and Why Does it Matter?
-The Best Open Source CI Tools
-Harness Valuation Soars to $3.7 Billion With $230 Million in Series D Funding
-Benefits of GitOps & Why GitOps Is Important
-Introducing Harness Policy as Code, Powered by OPA
-What Are GitOps Principles?
-GitOps Tools for Kubernetes: Best Platforms to Scale Continuous Delivery
-Kubernetes Services Explained
-Harness CI and Harness CD - Your First True CI/CD Pipeline
-Continuous Delivery vs. Continuous Deployment: What’s the Difference?
-How Value Stream Mapping Optimizes Your Software Delivery Process
-How to Build CI Pipelines with GitHub Actions and Deploy to Kubernetes with Harness
-What is PaaS (Platform-as-a-Service)?
-Declarative Continuous Delivery for Kubernetes: A Closer Look at Argo CD
-What Is a CI/CD Platform and Why Should I Care?
-The Dependency and Plugin Hell That is Jenkins
-Build a Canary Deployment in 4 Mins with Harness CD
-Comparing Harness and Jenkins
-Harness Extends Continuous Verification To Dynatrace
-10 Signs You Don't Do Continuous Delivery
-Harness Continuous Delivery for Red Hat OpenShift
-A Time Series Machine Learning Model for Canary Deployments
-JFrog Artifactory & Harness - Don’t Get Bogged Down With Continuous Delivery
-Harness CI/CD Pipelines for .NET and Azure
-Harness For AWS: From Code to Cloud, Smarter and Faster
-ServiceNow for CI/CD Pipelines
-Vulnerability Scanning in your CI/CD Pipeline - Part Two
-The DevOps Tools Lifecycle Mesh for 2021
-Intro to Deployment Strategies: Blue-Green, Canary, and More
-Continuous Verification - Machine Learning to Safeguard Your Deployments
-Discover Azure DevOps Alternatives
-What Is GitOps? Learn About Benefits, Challenges, and More
-The Importance of Continuous Verification
-Best Argo CD Alternatives & Competitors
-Best Spinnaker Alternatives to Consider
-Continuous Delivery Tools to Consider
-How DORA Metrics Improve DevOps Performance
-The Software Development Life Cycle: A Complete Guide to Each Phase
-A Snapshot of DevOps
-What Is Role-Based Access Control (RBAC)?
-How to Prioritize the Developer Experience and Improve Output
-SRE vs. DevOps: Key Differences, Roles, and How They Work Together
-User & Role Management in the Harness Software Delivery Platform
-How We Built Event-Driven Architecture with Redis Streams at Harness
-Service Accounts: A Path to CI/CD Automation
-Harness YAML Editor - Code Away Your CI/CD Pipelines!
-What Is an Artifact Repository?
-Simplify test maintenance with the builder factory pattern
-Modern Software Delivery Best Practices & Software Delivery Management
-Managing the 'Git' in 'GitOps': 4 Ways to Structure Code in Your GitOps Repos
-Top 10 Best Practices for DevSecOps
-What is CircleCI? A Look at Features and Use Cases
-Kubernetes Application Deployment Strategies
-The Basics of GitOps Secrets Management
-The Data is In: Harness CI is up to 4X faster than Other Solutions
-What is ArgoCD?
-Introducing Harness CI/CD Plugin for Backstage
-GitOps Architecture Explained
-Integrating Automated Security and Testing in Your CI/CD Pipeline
-How to Implement CI/CD: Automate Builds, Testing, and Deployments in Minutes
-How to Deploy Helm Charts With Argo CD
-Next

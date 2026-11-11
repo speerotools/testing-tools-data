@@ -12,47 +12,11 @@ home page
 Search...
 ⌘
 K
-Get Started
-Confidence SDKs
-Feature Flags
-Evaluation Context
-Apply Event
-Server SDKs
-Go
-JavaScript (Node.js)
-Next.js
-Java
-Rust
-Python
-Ruby
-.NET
-PHP
-Client SDKs
-iOS (Swift)
-Android (Kotlin)
-JavaScript (Web)
-Flutter
-Unity
-.NET
-Edge Resolvers
-Cloudflare Workers
-Fastly Compute
-Events
-Track Events
-Recordings
-Recordings SDK (Web)
-CLI
-Confidence CLI Reference
+Blog
 Bootcamp
 Support
 Status
 Confidence App
-Log In
-Documentation
-SDKs
-MCP
-API Reference
-Changelog
 Sign up and get started with Confidence today!
 Create your account
 Confidence Documentation
@@ -63,62 +27,28 @@ K
 Ask Assistant
 ⌘
 I
-Bootcamp
 Support
 Status
-Log In
 Confidence App
 Confidence App
 Search...
 Navigation
 Get Started
 Confidence SDKs
-Documentation
-SDKs
-MCP
-API Reference
-Changelog
 Get Started
 Confidence SDKs
 Copy page
 Copy page
-Find the Confidence SDK or tool for each product: feature flags, events, recordings, and MCP servers for AI assistants.
+Confidence provides SDKs for multiple languages and platforms, with the goal of managing and simplifying flag resolving.
 Copy page
 Copy page
-Confidence provides SDKs for several products. Use this table to find the SDK or tool for what you want to do.
-Product
-What you use
-Platforms
-Reference
-Feature flags
-Confidence OpenFeature providers
-Server, client, and edge
-Feature Flag SDKs
-Events
-track
-on the Confidence client SDKs
-JavaScript (Web), iOS, Android, Flutter
-Track Events
-Recordings
-@spotify-confidence/session-recording
-, separate from the flags SDKs
-Web browsers only
-Recordings SDK (Web)
-MCP and AI
-Confidence MCP servers and the Confidence CLI
-AI assistants and terminals
-MCP Servers
-,
-CLI
-​
-Feature Flag SDKs
-The Confidence flag SDKs support the
+All the Confidence SDKs support the
 OpenFeature
-standard, a project from the
+standard, a project from
 Cloud Native Computing Foundation
-(CNCF) that standardizes feature flagging. Your application calls the OpenFeature API, and a Confidence
+(CNCF) that aims to standardize feature flagging. With the OpenFeature integration your application interacts with the OpenFeature API and a
 Provider
-connects it to Confidence. This documentation calls the overall setup the “Confidence SDK”.
+provides the connection to Confidence. This documentation refers to the overall setup as “Confidence SDK” for simplicity.
 ​
 Server SDKs
 Confidence offers
@@ -178,10 +108,6 @@ Context
 Configure evaluation context
 Apply Events
 Track flag assignments
-Track Events
-Send application events
-Recordings SDK (Web)
-Record user sessions in web browsers
 Flags Introduction
 Overview of feature flags
 Was this page helpful?
@@ -193,8 +119,6 @@ twitter
 github
 linkedin
 On this page
-Back to top
-Feature Flag SDKs
 Server SDKs
 Client SDKs
 Edge Resolve

@@ -1,325 +1,106 @@
 # https://docs.ablyft.com/client-side-js-api/get-calls
-ablyft.get() | ABlyft Docs
-Docs
-Search
-⌘
-K
-Open app
-EN
-DE
-Documentation
-API Reference
-Documentation
-Open app
-API Reference
+GET Calls - docs.ablyft.com
+Set Up ABlyft
+Implement the Snippet
+Implement the Snippet via Google Tag Manager
+Settings related to the Cookie Consent Manager
+Projects
+Snippet Settings
+Prerequisites Rules
+Single Page Application (SPA) Testing
+Snippet´s Sequence
+Exclusion Groups (Mutually Exclusive Experiments)
+Experiments
+Redirect Experiments
+Multi-Page (Funnel) Experiments
+ablyftTools / Helper Functions
+Rerun Condition Check (SPA)
+Preview Mode / Perform Quality Assurance
+Force Variation
+Get and Set Bucketing
+Variations
+The Visual Editor
+Environments
 Overview
-Use ABlyft
-Integrate ABlyft
-Integrate ABlyft
-Quickstart
-Installation
-Tracking & events
+Targeting Pages
+URL Targeting
+Target on URL Parameters
+Targeting Audiences
+Target on Visits
+Target on User Attributes
+Target on Cookies
+Goals
+Tracking in Shopify - Overview
+Tracking in Shopify (Webhook)
+Tracking in Shopify (Customer Event)
+Apply Click Goals programmatically
+Troubleshooting
 Integrations
-Application integration
-Reference
-Reference
-JavaScript API
-JavaScript API
-ablyft.push()
-ablyft.get()
-Tools
-Page API
-URL parameters
-REST API
-MCP server
-Consent & security
-Debugging
-ablyft.get()
-Integrate ABlyft
-Reference
-JavaScript API
-ablyft.get()
-Read project data and runtime state from the snippet.
-ablyft.get(type, argument?)
-returns data depending on
-type
-. An unknown type logs
-ABlyft - Unknown API type
-to the console and returns
-undefined
-.
-type
-Returns
-data
-Basic project and snippet information
-activePageIds
-IDs of the currently active pages
+Google Tag Manager + GA4
+Google Analytics 4 Data
+How to build a Custom Integration
+JavaScript Events
+Publication Webhook
+Usercentrics CMP Testing
+Results and Statistics
+Statistic Settings
+Detailed Charts
+Reset Results
+API Access
+Personal Settings
+Notification Settings
+MCP Settings
+Team Settings
+Manage Team Members
+Visitor´s Perspective
+Opt-Out
+Cookies and localStorage
+Client Privacy Statement (GER)
+Client Side (JavaScript) API
+PUSH Calls
+GET Calls
+Feature Experimentation API
+Get started
+Implementation Guide
+The Basics & Best Practices
+Retrieving Variations (Decide)
+Sending Events/Goals (Track)
+Hybrid Experimentation
+Client Side (JavaScript) API
+GET Calls
+tools
+Returns the helper tools object
+ablyft.get('tools')
+experiments
+Returns an array of all available experiments
+ablyft.get('experiments')
+pages
+Returns an array of all available pages
+ablyft.get('pages')
+goals
+Returns an array of all available goals
+ablyft.get('goals')
 activeExperimentIds
-Currently active experiments
-pingedGoals
-Goals recorded while testing in preview or QA mode
-pages
-/
-experiments
-/
-goals
-Raw project data lists
-variationById
-/
-goalById
-A single variation or goal
-trackingConsentEnabled
-Stored consent state
-deviceType
-Device type of the visitor
-bucketing
-Variation assignment of the visitor
-preview_bucketing
-Variations selected via preview mode
-tools
-The tools object
-data
-Copy Anchor Link
-Object with the following values:
-Property
-Meaning
-projectId
-The project the snippet belongs to.
-version
-The snippet version.
-revision
-The publication number. It increases with every
-publication
-. Compare it with
-Snippet revision
-in the snippet settings to see whether you get the latest version.
-goalsEnabled
-false
-means goals are not counted, which is the case in preview mode.
-isPreview
-true
-if preview mode is active.
-optedOut
-true
-if you opted out in this browser.
-storage
-Where the snippet stores data (
-default
-or a custom setting).
-Copy Text
-const
-data
-=
-ablyft.
-get
-(
-'data'
-);
-console.
-log
-(data.projectId, data.version, data.revision);
+Returns and object of experimentID:variationID (key:value) pairs
+ablyft.get('activeExperimentIds')
 activePageIds
-Copy Anchor Link
-Copy Text
-const
-pageIds
-=
-ablyft.
-get
-(
-'activePageIds'
-);
-// e.g. [12345678]
-activeExperimentIds
-Copy Anchor Link
-Copy Text
-const
-experiments
-=
-ablyft.
-get
-(
-'activeExperimentIds'
-);
-console.
-log
-(experiments);
-pingedGoals
-Copy Anchor Link
-Goals that were recorded during the current browser session while you test in preview or QA mode (read from
-sessionStorage
-). In these modes goals are listed but not sent to ABlyft. Returns an empty array if none.
-Copy Text
-const
-goals
-=
-ablyft.
-get
-(
-'pingedGoals'
-);
-console.
-log
-(
-`${
-goals
-.
-length
-} goals recorded in this session`
-);
-pages
-Copy Anchor Link
-Copy Text
-const
-pages
-=
-ablyft.
-get
-(
-'pages'
-);
-experiments
-Copy Anchor Link
-Copy Text
-const
-experiments
-=
-ablyft.
-get
-(
-'experiments'
-);
-goals
-Copy Anchor Link
-Copy Text
-const
-goals
-=
-ablyft.
-get
-(
-'goals'
-);
+Returns an array of all activated pageIDs
+ablyft.get('activePageIds')
 variationById
-Copy Anchor Link
-Requires the variation ID as second argument; without it, nothing is returned.
-Copy Text
-const
-variation
-=
-ablyft.
-get
-(
-'variationById'
-,
-98765432
-);
+Returns a variation object by a given variationID (i.e. "12345678")
+ablyft.get('variationById', 12345678)
 goalById
-Copy Anchor Link
-Requires the goal ID as second argument.
-Copy Text
-const
-goal
-=
-ablyft.
-get
-(
-'goalById'
-,
-55555555
-);
+Returns a goal object by a given goalID (i.e. "12345678")
+ablyft.get('goalById', 12345678)
 trackingConsentEnabled
-Copy Anchor Link
-Returns
-true
-if consent was granted,
-false
-if it was declined, and an empty value (not set) if the visitor has not decided yet. Handy for the consent rules in the project settings, see
-Consent manager
-.
-Copy Text
-if
-(ablyft.
-get
-(
-'trackingConsentEnabled'
-)
-===
-true
-) {
-console.
-log
-(
-'Tracking allowed'
-);
-}
-deviceType
-Copy Anchor Link
-Copy Text
-const
-device
-=
-ablyft.
-get
-(
-'deviceType'
-);
-// device type detected by the snippet
-bucketing
-Copy Anchor Link
-Object mapping experiment IDs to the variation IDs the visitor is assigned to.
-Copy Text
-const
-bucketing
-=
-ablyft.
-get
-(
-'bucketing'
-);
-// { "12345678": 98765432 }
-preview_bucketing
-Copy Anchor Link
-Variations selected through preview mode, as an object mapping experiment ID to variation ID (number). Empty object if preview mode is not used.
-Copy Text
-const
-preview
-=
-ablyft.
-get
-(
-'preview_bucketing'
-);
-tools
-Copy Anchor Link
-Same as
-ablyft.getTools()
-.
-Copy Text
-const
-tools
-=
-ablyft.
-get
-(
-'tools'
-);
-ablyft.push()
-Send goals, page commands, listeners and consent changes to ABlyft.
-Tools
-Helper functions available through ablyft.getTools().
-On this page
+Returns a bool value if the tracking consent was enabled or disable. Null if no state was set.
+ablyft.get('trackingConsentEnabled')
 data
-activePageIds
-activeExperimentIds
-pingedGoals
-pages
-experiments
-goals
-variationById
-goalById
-trackingConsentEnabled
-deviceType
-bucketing
-preview_bucketing
-tools
+Returns an object with data like version of the snippet, the revision etc.
+ablyft.get('data')
+Docs
+Status
+A/B-Testing Platform
+Privacy Notice
+Legal Notice
+©2026 ABlyft® - Conversion Expert GmbH

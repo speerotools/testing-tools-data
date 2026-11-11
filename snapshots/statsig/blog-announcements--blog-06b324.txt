@@ -32,7 +32,6 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
-Startups
 Blog
 Customer Stories
 Partner Program
@@ -70,7 +69,6 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
-Startups
 Blog
 Customer Stories
 Partner Program
@@ -82,42 +80,15 @@ Statsig University
 Statsig Blog
 FEATURED
 STATSIG
-New features, new ways to learn | Color commentary, Sep 2026
+Control, AI, and ease | Color commentary, Aug 2026
 Eric Metelka
-Fri Oct 16 2026
-September's features help increase the rate of your learning as your speed of shipping accelerates. Here's why we shipped what we did.
+Thu Sep 10 2026
+Our themes for August: scaling cross-platform control, building out more AI capabilities, and tackling customer requests. Here's why we shipped what we did.
 All Articles
 Engineering
 Experimentation
 Statsig
 Other
-EXPERIMENTATION
-Sequential testing explained: Benefits, tradeoffs, and practical uses
-Elaine Li
-Wed Oct 28 2026
-Sequential testing can help you make earlier A/B test decisions, but it isn’t right for every experiment. Here’s how it works and how to use it in Statsig.
-AI
-How Statsig MCP v3 expanded capabilities while shrinking context
-Harman Kaur
-Thu Oct 22 2026
-Statsig’s MCP has reached a smaller interface with broader capabilities and finer access controls. Here’s how we got there, and why that’s important.
-EXPERIMENTATION
-Running faster tests: Shift your targets (Part 3)
-Akhil Prakash
-Wed Oct 21 2026
-In Part 3 of our 4-part series, learn techniques to target users that can lead to shorter experiments.
-FEATURED
-STATSIG
-New features, new ways to learn | Color commentary, Sep 2026
-Eric Metelka
-Fri Oct 16 2026
-September's features help increase the rate of your learning as your speed of shipping accelerates. Here's why we shipped what we did.
-STATSIG
-AI
-Introducing Statsig MCP v3
-Madelyn Tarr
-Wed Oct 07 2026
-We’re launching Statsig MCP v3 this week, making your agentic experience stronger, safer, and more efficient. Here's how.
 EXPERIMENTATION
 Multiple comparisons: More comparisons, more problems
 Matthew Rogers
@@ -170,6 +141,31 @@ Statsig MCP: Heading toward headless workflows
 Harman Kaur
 Wed Jul 15 2026
 You've been asking for more headless. Here's how it now works to take a feature gate through its full lifecycle without opening a browser tab.
+STATSIG
+Engineering roundtable: Larry Xu, Shelley Wang, Lew Gordon
+Paul Morrill
+Tue Jul 07 2026
+Meet three new Statsig + Amplitude engineering leaders and find out their takes on the future of shipping fast and safely.
+EXPERIMENTATION
+What’s the point of hypothesizing?
+Paul Morrill
+Thu Jul 02 2026
+Your experiment needs a hypothesis, and not just because the word “hypothesis” is drilled into you from day one of elementary science class. Here's why.
+FEATURED
+Statsig + Amplitude: The drop on Phase 1
+Chris Yu
+Wed Jun 17 2026
+Statsig and Amplitude’s announcement in May was a record-scratch moment for experimentation. The next track starts today.
+ENGINEERING
+Fighting shadow AI with light(er) MCP governance
+Harman Kaur
+Thu Jun 11 2026
+Statsig’s MCP uses the access controls we already have, with a few lightweight knobs on top. Here’s why we went that lighter route, and where we’re taking it next.
+AI
+Statsig's Knowledge Graph: Connecting code, experiments, and metrics
+Pablo Beltran, Emily Hallet
+Wed Jan 28 2026
+Statsig’s Knowledge Graph connects codebase, feature gates, experiments, users and metrics to give teams richer context and faster insights.
 Older Posts
 Show All
 Loved by customers at every stage of growth

@@ -32,7 +32,6 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
-Startups
 Blog
 Customer Stories
 Partner Program
@@ -70,7 +69,6 @@ INDUSTRIES
 Gaming
 B2B Saas
 E-Commerce
-Startups
 Blog
 Customer Stories
 Partner Program
@@ -132,37 +130,36 @@ Please select at least one blog to continue.
 Subscribe
 Recent Posts
 EXPERIMENTATION
-Sequential testing explained: Benefits, tradeoffs, and practical uses
-Elaine Li
-Wed Oct 28 2026
-Sequential testing can help you make earlier A/B test decisions, but it isn’t right for every experiment. Here’s how it works and how to use it in Statsig.
-AI
-How Statsig MCP v3 expanded capabilities while shrinking context
-Harman Kaur
-Thu Oct 22 2026
-Statsig’s MCP has reached a smaller interface with broader capabilities and finer access controls. Here’s how we got there, and why that’s important.
-EXPERIMENTATION
-Running faster tests: Shift your targets (Part 3)
-Akhil Prakash
-Wed Oct 21 2026
-In Part 3 of our 4-part series, learn techniques to target users that can lead to shorter experiments.
-FEATURED
-STATSIG
-New features, new ways to learn | Color commentary, Sep 2026
-Eric Metelka
-Fri Oct 16 2026
-September's features help increase the rate of your learning as your speed of shipping accelerates. Here's why we shipped what we did.
-STATSIG
-AI
-Introducing Statsig MCP v3
-Madelyn Tarr
-Wed Oct 07 2026
-We’re launching Statsig MCP v3 this week, making your agentic experience stronger, safer, and more efficient. Here's how.
-EXPERIMENTATION
 Multiple comparisons: More comparisons, more problems
 Matthew Rogers
 Tue Sep 29 2026
 The multiple comparisons problem is one of the most common pitfalls in A/B testing. Here’s what it is, why it matters, and how to guard against it with Statsig.
+AI
+Our take on AI for experimentation
+Nithya Rajendran
+Wed Sep 23 2026
+With several AI features launching soon and more coming down the line, here's how we're thinking about AI in the Statsig Console.
+EXPERIMENTATION
+Beyond the A/B Test: Experiment designs for your toughest questions
+Pritul Patel
+Tue Sep 15 2026
+A/B tests can't answer every question. Learn how other key experiment designs can help you avoid statistical pitfalls and get better results.
+FEATURED
+STATSIG
+Control, AI, and ease | Color commentary, Aug 2026
+Eric Metelka
+Thu Sep 10 2026
+Our themes for August: scaling cross-platform control, building out more AI capabilities, and tackling customer requests. Here's why we shipped what we did.
+EXPERIMENTATION
+Why is it OK to run a z-test on a non-normal distribution for A/B tests?
+Viv Magida
+Mon Aug 31 2026
+It feels like it should be a problem to run a z-test on a non-normal distribution. But it usually isn’t. Here's why.
+EXPERIMENTATION
+Running faster tests: Modifying metrics (Part 2)
+Akhil Prakash
+Wed Aug 19 2026
+In Part 2 of our 4-part series, learn how to pick and transform metrics for quicker experiments.
 We use cookies to ensure you get the best experience on our website.
 Privacy Policy
 Got it!

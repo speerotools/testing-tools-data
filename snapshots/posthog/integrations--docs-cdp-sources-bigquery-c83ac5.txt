@@ -34,22 +34,799 @@ Store
 Careers
 Trash
 Data pipelines
-Product
-Pricing
-Docs
 Overview
 Setup
 Start here
-Where to use
+Surfaces
 PostHog Web
 PostHog MCP
+PostHog Desktop
 API
 Sources
 Link sources
+Incoming webhooks
+Overview
+Sources
+1Password
+Ably
+AccuLynx
+ActiveCampaign
+Adjust
+Adobe Analytics
+Adobe Commerce (Magento)
+AdRoll
+Adyen
+AfterShip
+AgileCRM
+Aha!
+Aha! Ideas
+Airbrake
+Aircall
+AirOps
+Airtable
+Airwallex
+Aiven
+Alegra
+Algolia
+Alguna
+Alpha Vantage
+Amazon Ads
+Amazon SES
+Amplemarket
+Amplitude
+Anthropic
+Anvil
+Apify Dataset
+Apitally
+Apollo
+Appfigures
+AppFollow
+Apple (App Store Connect)
+Apple Ads
+AppLovin
+AppsFlyer
+AppSignal
+Appstack
+Apptio Cloudability (IBM)
+Argo CD
+Asaas
+Asana
+Ashby
+AskNicely
+AssemblyAI
+Atlassian Bitbucket Cloud
+Attentive
+Attio
+Automox
+Autumn
+Avalara AvaTax
+Aviationstack
+Aviator
+Awin
+AWS Budgets
+AWS Cost Anomaly Detection
+AWS Cost Explorer
+AWS Organizations
+Azure DevOps
+Babelforce
+Back Market (Back Market SAS)
+BambooHR
+Baserow
+Baton
+Beamer
+beehiiv
+Better Stack
+Bettermode
+BigCommerce
+Bigeye
+BigMailer
+BigQuery
+BILL (formerly Bill.com)
+Billomat
+Bing Ads
+Bing Webmaster Tools
+Bitrise
+Bland AI
+Blogger
+Bloomerang
+Bluesky
+BlueTally
+BoldSign
+Braintree
+Braze
+BreezoMeter
+Brevo
+Brex
+Browse AI
+Browser Use
+Browserbase
+BugHerd
+Bugsnag
+BuildBetter
+Buildkite
+Bunny.net
+Buttondown
+Buy Me a Coffee
+Buzzsprout
+Cal.com
+Calendly
+CallRail
+Campaign Monitor
+Campayn
+Campfire
+Canny
+Capsule CRM
+Care Quality Commission
+CAST AI
+CDC Open Data (data.cdc.gov)
+Census (Fivetran)
+Chameleon
+Chargebee
+Chargedesk
+Chargify
+ChartHop
+ChartMogul
+Chatwoot
+Checkmarx (Checkmarx One)
+Checkout.com
+Churnkey
+CIMIS
+CircleCI
+CircleCI Insights
+Cisco Duo
+Clari
+Clay
+Clerk
+Clever
+ClickHouse
+ClickHouse Cloud (ClickHouse, Inc.)
+ClickUp
+Cliniko
+Clockify
+Clockodo
+Close
+Cloudbeds
+Cloudflare
+Cloudinary
+Cloudsmith
+CloudZero
+Coassemble
+Coda
+Codacy
+Codecov (Sentry)
+Codefresh
+Codemagic
+CodeScene
+Cody
+Cohere
+CoinAPI
+CoinGecko
+CoinMarketCap
+commercetools
+Companies House (UK government)
+CompanyCam
+Concord
+Conekta
+ConfigCat
+Confluence
+Confluent Cloud
+ConvertKit
+Convex
+Coolify
+Copper
+Coralogix
+Cortex
+Coupa
+Courier
+Coveralls
+crates.io
+Cronitor
+Crossref
+Crunchbase
+Culture Amp
+Cursor
+Custom REST source
+Customer.io
+Customerly
+Dagster+ (Dagster Cloud)
+Databricks
+Datadog
+DataForSEO
+DataHub
+dbt
+DebugBear
+Decagon
+Deel
+Deepgram
+DeepSource
+Demodesk
+Deno Deploy
+Depot
+Descope
+Devin AI
+DigitalOcean
+DingConnect
+Discourse
+Dixa
+Docker Hub
+DocuSeal
+DocuSign
+Dodo Payments
+DoIt
+Doppler
+Dovetail
+Drata
+Drip
+Dropbox Sign
+Dub
+DynamoDB
+Dynatrace
+e-conomic
+E2B
+easybill
+EasyPost
+Easypromos
+Elastic Email
+Elasticsearch
+Electricity Maps
+ElevenLabs
+EmailOctopus
+env0
+Eppo (Datadog)
+Etsy
+European Central Bank (ECB Data Portal)
+Eventbrite
+Eventee
+Eventzilla
+Everhour
+Exchange Rates API
+Expo (EAS)
+EZOfficeInventory
+Factorial
+Faire
+Fastly
+Featurebase
+Fillout
+Finage
+Financial Modeling Prep
+Finnhub
+Finnworlds
+Fintoc
+Firebase
+Firecrawl
+FireHydrant
+Fireworks AI
+FirstPromoter
+Flagsmith
+Fleetio
+Flexmail
+Float
+Flowlu
+Flutterwave
+Fly.io
+Folk
+Formbricks
+Fourthwall
+Framer
+FRED
+Freshcaller
+Freshchat
+Freshdesk
+Freshsales
+Freshservice
+Frill
+Front
+Fulcrum
+Fullstory
+FusionAuth
+G2 (G2.com, Inc.)
+Gainsight CS
+Gainsight PX
+Gerrit
+Giphy
+GitBook
+Gitea
+GitGuardian
+GitHub
+GitLab
+Givebutter
+Gladly
+GlassFrog
+GLEIF (Global Legal Entity Identifier Foundation)
+GNews
+GoCardless
+Goldcast
+Gong
+Google Ads
+Google Analytics
+Google PageSpeed Insights
+Google Play Console
+Google Search Console
+Google Sheets
+Google Webfonts
+Gorgias
+Grafana
+Grafana Cloud k6
+Granola
+Greenhouse
+Gridly
+Groq
+GrowthBook
+Gumroad
+Guru
+Gusto
+Harvest
+Harvey
+HashiCorp (HCP Terraform / Terraform Cloud)
+Hatchet
+Healthchecks.io
+Height
+Helicone
+Help Scout
+Heroku
+Hetzner Cloud
+Hex
+HeyGen
+HeyReach
+HiBob
+Hightouch
+HitPay
+Honeybadger
+Honeycomb
+Hookdeck
+HoorayHR
+Housecall Pro
+Hub Planner
+Hubspot
+Hugging Face
+Humanitix
+Huntr
+Hyperspell
+Hyros
+IBM Instana Observability
+impact.com
+impact.com Partner
+incident.io
+Infisical
+Inflowinventory
+Inngest
+Insightly
+Instagram
+Instantly
+Instatus
+Instructure Canvas LMS
+Intercom
+Intruder
+Invoice Ninja
+Invoiced
+IP2WHOIS
+Iterable
+Jamf Pro
+Jellyfish
+Jenkins
+JetBrains TeamCity
+JFrog (Artifactory / JFrog Platform)
+Jira
+JobNimbus
+Jotform
+Judge.me Reviews
+JumpCloud
+JustCall
+JustSift
+Kafka
+Kalshi
+Kandji (Iru Endpoint Management)
+kapa.ai
+Katana
+Kernel
+Kickscale
+Klaus
+Klaviyo
+Knock
+KnowBe4
+Kommo
+Kong Inc. (Kong Konnect)
+Koyeb
+Kubecost (IBM / Apptio)
+Kustomer
+Lacework FortiCNAPP (Fortinet)
+Lago
+Lambda
+Langfuse
+LangSmith
+Lattice
+LaunchDarkly
+Leadfeeder
+Leexi
+Lemlist
+Lemon Squeezy
+Less Annoying CRM
+Lever
+Lexware Office (formerly lexoffice), Haufe-Lexware GmbH
+Lightdash
+Lightfield
+Lightspeed Retail
+Linear
+LinearB
+Lingo.dev
+LinkedIn Ads
+Linkrunner
+Linode
+LlamaCloud
+Lob
+Logz.io
+Loop Returns
+Loops
+Lovable
+Luma
+Mailchimp
+MailerLite
+MailerSend
+Mailgun
+Mailjet
+Mailosaur
+Mailtrap
+Marketo
+Marketstack
+Matomo
+Maxio
+Medusa
+Mem0
+Membrain
+Mention
+Mercury
+Meta Ads
+Metabase
+Metaplane by Datadog
+Meteostat
+Metorial
+Metronome
+Microsoft Azure Cost Management
+Microsoft Clarity
+Microsoft Dynamics 365
+Microsoft Dynamics 365 Business Central
+Microsoft SQL Server
+Mighty Networks
+Mistral AI
+Mixmax
+Mixpanel
+MoEngage
+Mollie
+monday.com
+MongoDB
+Monte Carlo
+MotherDuck
+Motion
+Moxie
+Mux
+My Hours
+MySQL
+n8n
+Nager.Date
+Nebius AI
+Neon
+Netlify
+New Relic
+New York Times
+NewsAPI
+NewsData.io
+noCRM.io
+Northflank
+Northpass LMS
+Notion
+npm registry
+NuGet
+Nuntly
+Octolens
+Octopus Deploy
+Okendo
+Okta
+Omni Analytics
+Omnisend
+OnceHub
+OnePageCRM
+Onfleet
+Open Exchange Rates
+Open-Meteo
+OpenAI
+OpenAI Ads
+OpenAlex
+OpenAQ
+OpenCorporates
+openFDA
+OpenRouter
+OpenWeather
+Opinion Stage
+Opn Payments (formerly Omise)
+Opsgenie
+Optimizely
+OPUSWatch
+Orb
+Orca Security
+Ortto
+Oura
+Outbrain
+OwnerRez
+Pabbly Subscription Billing
+Packagist
+Paddle
+PagerDuty
+PandaDoc
+Paperform
+Papersign
+Pardot
+Partnerize
+PartnerStack
+PayFit
+PayMongo
+Paystack
+Pendo
+Perigon
+PersistIq
+Persona
+Personio
+Pexels
+pganalyze
+Phyllo
+Picqer
+Pinecone
+Pingdom
+Pinterest Ads
+Pipedrive
+Pipeliner
+Plaid
+Plain
+PlanetScale MySQL
+PlanetScale Postgres
+Planhat
+Platform.sh
+Plausible
+Plivo
+Plunk
+Pluralsight Flow
+Polar
+Polymarket
+Postgres
+Postmark
+Postscript
+Power BI admin
+Prefect Cloud
+Pretix
+Printify
+Productboard
+Productive
+Profound
+Propertyware (RealPage)
+Pulumi
+Pylon
+PyPI
+Qualaroo
+Qualtrics
+Qualys VMDR
+Quo
+Railway
+Ramp
+Rapid7 InsightVM
+Raygun
+Razorpay
+Recall.ai
+Recharge
+Recreation.gov
+Recruitee
+Recurly
+Reddit Ads
+Redshift
+Render
+RentCast
+Replicate
+Reply.io
+Resend
+Retell AI
+Retently
+RevenueCat
+Reverb
+Revolut Merchant
+Rippling
+RKI COVID-19
+Roark
+Rocketlane
+Rokt Ads
+Rollbar
+Rootly
+RSS.com
+RubyGems.org
+Ruddr
+RunPod
+SafetyCulture
+Sage HR
+Salesflare
+Salesforce
+Salesloft
+SavvyCal
+Scale AI
+Scaleway
+Secoda
+Secureframe
+Segment
+Select Star
+Semgrep
+SendGrid
+Sendowl
+SentinelOne
+Sentry
+Sequenzy
+ServiceM8
+ServiceNow
+sevDesk (sevDesk GmbH)
+SFTP
+Shipmail
+Shippo
+ShipStation
+Shopify
+ShopWired
+Shortcut
+Shortio
+Shutterstock
+Sigma Computing
+SigNoz
+Sim
+SimFin
+Similarweb
+SimpleCast
+Simplesat
+SingleStore, Inc.
+Skio
+Skyvern
+Slack
+Sleekplan
+Smaily
+SmartEngage
+Smartlead
+Smartreach
+Smartsheet
+Smartwaiver
+Snapchat Ads
+Snowflake
+Snowplow Analytics
+Snyk
+SolarWinds Service Desk
+Sonar (SonarSource) - SonarQube Server
+Sonar Cloud
+Sonatype (Nexus Repository)
+Sourcegraph
+Spacelift
+SparkPost
+Split.io
+Splunk AppDynamics (Cisco)
+Splunk Observability Cloud
+Spot by Flexera (Spotinst)
+Spotler CRM
+Sprig
+Squadcast (SolarWinds Incident Response)
+Square
+Squarespace
+Stack Overflow (Prosus/Stack Exchange)
+StatusCake
+Statuspage
+Stigg
+StockData.org
+STRATO
+StreamElements
+Stripe
+Stytch
+Sumo Logic
+Supabase
+SurveyMonkey
+SurveySparrow
+Svix
+Swarmia
+Taboola
+Tailscale
+Tally
+Tavus
+tawk.to
+Teachable
+Teamtailor
+Teamwork
+telli
+Telnyx
+Tempo
+Temporal.io
+Tenable Vulnerability Management
+Tenjin
+TestRail
+The Guardian
+Thinkific
+Thinkific Courses
+Ticket Tailor
+TikTok Ads
+tinyEmail
+TMDb
+Todoist
+Together AI
+Torii
+Transistor.fm
+Travis CI (Idera)
+Trello
+Tremendous
+Trigger.dev
+Trunk.io (Trunk Technologies, Inc.)
+Trustpilot
+Turso
+TVmaze
+Twelve Data
+Twelve Labs
+Twenty
+Twilio
+Tyntec SMS
+Typeform
+Ubidots
+Unleash
+Unstructured
+UpPromote
+Upstash
+UptimeRobot
+US Bureau of Economic Analysis (BEA)
+US Census
+Usersnap
+UserVoice
+Vantage
+Vapi
+Veeqo
+Vellum
+Vendr (OpenPrice API)
+Veracode
+Vercel
+Vitally
+Vultr
+Wasabi
+Watchmode
+Waydev
+Webflow
+Weights & Biases
+Whop
+Wikipedia Pageviews
+Windmill
+Wix
+WooCommerce
+WordPress
+Workable
+Workday
+Workiz
+WorkOS
+World Bank Open Data
+World Health Organization Global Health Observatory (GHO)
+Wrike
+Writesonic
+Wufoo
+Xendit
+xMatters (Everbridge)
+YNAB (You Need A Budget)
+Yoco
+Yousign
+YouTube Analytics
+Zapier (Storage by Zapier)
+ZapSign
+Zendesk
+Zendesk Sell
+Zendesk Sunshine
+Zenduty
+Zenloop
+Zep
+Zero
+Zoho CRM
+Zonka Feedback
+Zoom
+Zuora
+Zylo
+Self-managed
+Azure Blob
+Cloudflare R2
+File upload
+Google Cloud Storage
+S3
 Destinations
 Realtime destinations
-ELT destinations
-Monitoring your syncs
 Batch exports
 File download exports
 Transformations
@@ -100,25 +877,13 @@ Provide a descriptive name (e.g.,
 bigquery-posthog-service-account
 ) and a brief description.
 Assign required permissions:
-Grant these roles to the service account:
-Project-level roles
-(grant on the GCP project):
+For simplicity, you can assign the
+BigQuery Data Editor
+,
 BigQuery Job User
-– allows the service account to run query jobs
+, and
 BigQuery Read Session User
-– allows reading data via the Storage Read API
-Dataset-level roles
-(choose one based on your setup):
-Default setup (temporary tables in synced dataset):
-BigQuery Data Editor
-on the dataset you're syncing – allows PostHog to read your data and create temporary tables in the same dataset
-Separate temporary dataset (optional):
-BigQuery Data Editor
-on the temporary dataset – allows PostHog to create temporary tables
-BigQuery Data Viewer
-on the dataset you're syncing – allows read-only access to your data
-Note:
-The connection check only validates read access. If write permissions are missing, the connection check can pass but the first sync will fail with a write-access error.
+roles if it meets your security requirements.
 Alternatively, create a custom role that includes only these permissions:
 PostHog AI
 bigquery.readsessions.create
@@ -324,23 +1089,18 @@ Typo in dataset or table name
 Permission denied
 If you see an error like:
 BigQuery denied access to the configured dataset or tables.
-This means your service account doesn't have the necessary permissions. Common causes:
-Missing read access
-— Grant the
+This means your service account doesn't have the necessary permissions to read the dataset. To fix this:
+In the
+Google Cloud Console
+, go to
+IAM & Admin > IAM
+.
+Find your service account and ensure it has at least the
 BigQuery Data Viewer
-role (or the
+role on the dataset you're syncing.
+Alternatively, grant the specific
 bigquery.tables.getData
-permission) on the dataset you're syncing.
-Missing write access for temporary tables
-— The connection check can pass with read-only access, but the sync needs write access to create temporary tables. Grant the
-BigQuery Data Editor
-role on the dataset where temporary tables are created (your synced dataset by default, or a separate temporary dataset if configured).
-Missing job or read session permissions
-— Grant the
-BigQuery Job User
-and
-BigQuery Read Session User
-roles on the project.
+permission at the dataset level.
 See the
 Configuring BigQuery
 section for the full list of required permissions.

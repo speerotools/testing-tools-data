@@ -13,7 +13,7 @@ API Reference
 Release Notes
 Roadmap
 University
-Classic Experience
+2.0
 Platform
 New to Harness Platform?
 Overview
@@ -58,7 +58,6 @@ Get Started
 Connect with AI
 Anthropic Model Connector
 OpenAI Model Connector
-Harness LLM Connector
 Anthropic Connector
 OpenAI Connector
 MCP Server
@@ -102,15 +101,12 @@ Markdown
 Copy
 On this page
 Documentation
-Platform
 Harness Platform
-Classic Experience
+2.0
 Use Harness AI
 Connect with AI
-Harness AI
-Mcp
 Harness MCP Server
-Give AI agents full access to the Harness platform through 11 consolidated tools and 142 resource types using the Model Context Protocol (MCP).
+Give AI agents full access to the Harness platform through 11 consolidated tools and 139 resource types using the Model Context Protocol (MCP).
 The Harness MCP Server is an open-source
 Model Context Protocol
 server that gives AI agents full access to the Harness platform. It uses a registry-based dispatch system that routes 11 consolidated tools (
@@ -119,7 +115,7 @@ harness_list
 harness_get
 ,
 harness_create
-, and others) to 142 resource types across 30 toolsets, covering CI/CD, GitOps, Feature Management & Experimentation, Cloud Cost Management, Security Testing, Chaos Engineering, Internal Developer Portal, Software Supply Chain, and more.
+, and others) to 139 resource types across 30 toolsets, covering CI/CD, GitOps, Feature Management & Experimentation, Cloud Cost Management, Security Testing, Chaos Engineering, Internal Developer Portal, Software Supply Chain, and more.
 Unlike MCP servers that map one tool per API endpoint (which degrades LLM tool-selection accuracy as tool count grows), this server keeps the tool count small and the schema footprint minimal. Agents discover organizations and projects dynamically, so multi-project workflows work out of the box without hardcoded environment variables. Twenty-seven pre-built prompt templates cover common workflows such as debugging failed pipelines, reviewing DORA metrics, triaging vulnerabilities, and optimizing cloud costs.
 Source code
 :
@@ -238,7 +234,7 @@ OpenAI Connector
 Next
 Configure AI Clients
 Last updated
-19 days ago
+2 days ago
 Was this helpful?
 Resources
 Sign up

@@ -72,7 +72,6 @@ Reference
 Contentful CMS Migration
 On this page
 AI rules for AI-assisted development
-Copy page
 By default, LLM's knowledge of Uniform will be limited to what was indexed by LLM using public internet and subject to the cutoff date.
 To enhance your prompting with the latest knowledge of Uniform, it is highly recommended to feed Uniform-specific AI rules into your LLM context.
 AI rules library
@@ -133,8 +132,10 @@ Agent skills
 Next
 AI credits
 →
+Learn and build with our community on Discord
 Check out open sourced examples on GitHub
 Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
 On this page
 AI rules library
 Must-have rules

@@ -1,75 +1,21 @@
 # https://support.optimizely.com/hc/en-us/articles/36354416686477-Optimizely-Opal-overview
-Optimizely Mark overview - Mark (Agent Platform) docs
-Search
-K
-Ask AI
-Mark (Agent Platform) docs
-Release notes for Mark (Agent Platform)
+Optimizely Opal overview – Support Help Center
+Skip to main content
+Toggle navigation menu
+AI On
+AI Off
+Developer documentation
+Developer community
+Optimizely Academy
+Submit a request
+Sign in
+Support Help Center
+Agent Platform (previously Opal)
 Get started
-Optimizely Mark overview
-Optimizely Mark and AI features
-Get started with Optimizely Mark for administrators
-Get started with Optimizely Mark for agent builders
-Get started with Optimizely Mark for users
-Personalize Optimizely Mark
-Limitless 1:1 Personalization
-Release notes
-Learn
-Optimizely Mark glossary
-Optimizely Mark credits
-Inference level
-Optimizely Mark prompts
-Supported file types in Optimizely Mark
-Retrieval-Augmented Generation (RAG)
-Configure
-Brand Packs
-Build
-Agents
-Skills
-Tools
-Quality
-Use
-Optimizely Mark chat
-Work with agents
-Artifacts
-Directory
-Personal files and memory
-Work with Virtual Teammates
-Team Messages
-Notifications
-Integrate
-Optimizely Mark in Google Gemini Enterprise
-Optimizely Mark in Microsoft Copilot
-Optimizely Mark in Slack
-Conductor Intelligence in Optimizely Mark
-Connector tools
-Secure
-Get started with Optimizely Mark for administrators
-Enable Optimizely Mark for non-Opti ID users
-Input guardrails
-Troubleshoot
-Agent activity logs
-Specialized agent logs
-Workflow agent logs
-Copy the execution ID of a workflow agent
-Custom tools FAQ
-Input guardrails FAQ
-Docs powered by
-Archbee
-Optimizely Mark overview
-8 min
-Mark (Optimizely Agent Platform)
-﻿
-is an agent orchestration platform that helps you work smarter across Optimizely One. Whether you create content, manage experiments, or analyze data, you can use
-Mark
-﻿
-to automate tasks, surface insights, and guide decision-making.
-Mark
-﻿
-uses a flexible
-Mark credits
-﻿
-system of AI agents. Agents are software components that understand your intent and help you reach your goal.
+Optimizely Opal overview
+Updated
+September 21, 2026 22:40
+Optimizely Opal is an agent orchestration platform that helps you work smarter across Optimizely One. Whether you create content, manage experiments, or analyze data, you can use Opal to automate tasks, surface insights, and guide decision-making. Opal uses a flexible system of AI agents. Agents are software components that understand your intent and help you reach your goal.
 See
 Optimizely Opal Essentials in Optimizely Academy
 for information.
@@ -86,105 +32,45 @@ Specialized agents
 Workflow and autonomous agents
 – Coordinate and perform multi-step processes, often by integrating with other tools. These agents handle tasks across systems and adapt workflows over time.
 These agents improve productivity by reducing manual work, increasing accuracy, and providing tailored experiences. They also support scalability, helping teams achieve more without growing headcount.
-Mark
-Mark
-﻿
-works across Optimizely One, where it responds to natural language questions, generates insights, and helps you complete tasks faster.
-Mark
-﻿
-uses
-Mark credits
-﻿
+Optimizely Opal
+Optimizely Opal is your AI assistant across Optimizely One. It responds to natural language questions, generates insights, and lets you complete tasks faster.
+Optimizely Opal uses
+Opal credits
 .
-What you can do with
-Mark
-﻿
+What you can do with Opal
 Most interactions happen through
-Mark chat
-﻿
+Opal Chat
 , which is available across the Optimizely One platform in the global navigation bar and on
-mark.optimizely.com
+opal.optimizely.com
 .
-﻿
-Whether you are launching a campaign or fine-tuning an experiment,
-Mark
-﻿
-adapts to your role and needs. Use natural language to ask questions, generate content, or request help.
-Mark
-﻿
-responds in real-time and remembers threads so you can pick up where you left off.
-﻿
-The following are some examples of what
-Mark
-﻿
-can help with:
+Ask Opal highlighted in the global navigation bar of Web Experimentation
+Whether you are launching a campaign or fine-tuning an experiment, Opal adapts to your role and needs. Use natural language to ask questions, generate content, or request help. Opal responds in real-time and remembers threads so you can pick up where you left off.
+The following are some examples of what Optimizely Opal can help with:
 Use tools
-– Ask
-Mark
-﻿
-to complete tasks using tools, such as creating a campaign, drafting content, analyzing images, or suggesting flag variations. See
+– Ask Opal to complete tasks using tools, such as creating a campaign, drafting content, analyzing images, or suggesting flag variations. See
 Tools overview
-﻿
 .
 Analyze files
 – Upload a document, image, or spreadsheet and ask questions about it. See
-Mark chat
-﻿
+Optimizely Opal Chat
 .
 Answer questions
-– Ask
-Mark
-﻿
-about Optimizely features, capabilities, or concepts.
-Mark
-﻿
-explains terms, walks you through configuration steps, and points you to relevant documentation.
+– Ask Opal about Optimizely features, capabilities, or concepts. Opal explains terms, walks you through configuration steps, and points you to relevant documentation.
 See
-Mark and AI features
-﻿
-for a list of
-Mark
-﻿
-features.
-How
-Mark
-﻿
-works
-Behind the scenes,
-Mark
-﻿
-follows this sequence each time you send a prompt:
+Optimizely Opal and AI features
+for a list of Opal features.
+How Opal works
+Behind the scenes, Opal follows this sequence each time you send a prompt:
 Your prompt
-– You enter a request in natural language. Your prompt can be a simple question, a complex task, or a creative brief.
-Mark
-﻿
-analyzes your intent, extracting key information to guide its next steps.
+– You enter a request in natural language. Your prompt can be a simple question, a complex task, or a creative brief. Opal analyzes your intent, extracting key information to guide its next steps.
 Skills
-– These foundational guidelines define
-Mark
-﻿
-'s persona, approach, tool usage, evaluation criteria, and response formatting, influencing every step of its operation.
+– These foundational guidelines define Opal's persona, approach, tool usage, evaluation criteria, and response formatting, influencing every step of its operation.
 Contextual intelligence
-–
-Mark
-﻿
-adds context using content knowledge, Optimizely platform data, and your workspace context. This ensures
-Mark
-﻿
-'s responses are informed by your specific environment and goals.
+– Opal adds context using content knowledge, Optimizely platform data, and your workspace context. This ensures Opal's responses are informed by your specific environment and goals.
 Strategic tool selection
-–
-Mark
-﻿
-selects the right tools for your task based on your request and the enriched context. Tools let
-Mark
-﻿
-perform a wide range of tasks from data analysis to content generation.
+– Opal selects the right tools for your task based on your request and the enriched context. Tools let Opal perform a wide range of tasks from data analysis to content generation.
 Agent input generation and validation
-–
-Mark
-﻿
-collects the specific inputs (parameters) it needs to run a tool or agent. For example, a
+– Opal collects the specific inputs (parameters) it needs to run a tool or agent. For example, a
 search_query
 for a web search, a
 start_date
@@ -193,59 +79,21 @@ end_date
 for a report, or
 recipient_email_addresses
 for an email.
-Mark
-﻿
-validates these inputs before continuing:
+Opal validates these inputs before continuing:
 If the input is valid
-–
-Mark
-﻿
-proceeds to the LLM interaction.
+– Opal proceeds to the LLM interaction.
 If the input is invalid
-–
-Mark
-﻿
-goes directly to step 7 (
+– Opal goes directly to step 7 (
 Execute and refine
 ) and asks you for clarification. This prevents unnecessary LLM engagement.
 LLM interaction
-–
-Mark
-﻿
-uses advanced AI models to process complex information, generate creative content, and derive actionable insights. This is where raw data transforms into intelligent solutions.
-Mark
-﻿
-uses foundational LLMs through business accounts. Your data is never used to train the model or shared across customers.
+– Opal uses advanced AI models to process complex information, generate creative content, and derive actionable insights. This is where raw data transforms into intelligent solutions. Opal uses foundational LLMs through business accounts. Your data is never used to train the model or shared across customers.
 Execute and refine
-–
-Mark
-﻿
-executes the planned actions (calling agents and tools as needed), and iterates. If the initial output is not perfect,
-Mark
-﻿
-re-evaluates. This continuous feedback loop ensures optimal results and measurable impact. If clarification is needed,
-Mark
-﻿
-asks you for more information.
+– Opal executes the planned actions (calling agents and tools as needed), and iterates. If the initial output is not perfect, Opal re-evaluates. This continuous feedback loop ensures optimal results and measurable impact. If clarification is needed, Opal asks you for more information.
 Tailored response
-–
-Mark
-﻿
-delivers a clear, concise, and actionable response.
-Mark
-﻿
-often presents the response in a canvas or in the
-Mark
-﻿
-UI, where you can interact with and manage generated content or executed actions.
-﻿
-Benefits of
-Mark
-﻿
-and AI agents
-Mark
-﻿
-helps you with the following:
+– Opal delivers a clear, concise, and actionable response. Opal often presents the response in the Opal Canvas or UI, where you can interact with and manage generated content or executed actions.
+Benefits of Opal and AI agents
+Opal helps you with the following:
 Work faster
 – Eliminate repetitive tasks and reduce manual configuration.
 Scale content and insights
@@ -255,78 +103,59 @@ Improve personalization
 Make informed decisions
 – Use data-backed recommendations without digging through dashboards.
 Simplify complexity
-– Let
-Mark
-﻿
-manage workflows so you can focus on strategy.
+– Let Opal manage workflows so you can focus on strategy.
 See
-Mark and AI features
-﻿
-for a list of all available
-Mark
-﻿
-, generative AI, and machine learning features.
+Optimizely Opal and AI features
+for a list of all available Opal, generative AI, and machine learning features.
 Data residency
-Optimizely hosts
-Mark
-﻿
-in US and EU regions. You select your region on your order form when you contract with Optimizely, and Optimizely provisions your data to the corresponding regional instance.
+Optimizely hosts Opal in US and EU regions. You select your region on your order form when you contract with Optimizely, and Optimizely provisions your data to the corresponding regional instance.
 The app URL is the same for all customers (
-mark.optimizely.com
+opal.optimizely.com
 ). Optimizely routes you to the correct regional instance behind the scenes, so you do not need to configure anything.
 Where is data stored?
 Customer data — both inputs and outputs — is stored long-term in either North America or the EU (Belgium) on Optimizely-managed infrastructure. Customers choose their preferred region at the time of purchase. EU storage covers the region as a whole; country-level selection is not available.
 How does data processing work?
-When a prompt is submitted,
-Mark
-﻿
-routes it to the underlying LLM — such as Gemini or Claude — for processing. This happens through global endpoints for compute availability and performance, so a prompt may be processed in any region. The LLM does not retain your data. The output is returned directly to your Optimizely-managed infrastructure, in the region you selected.
+When a prompt is submitted, Opal routes it to the underlying LLM — such as Gemini or Claude — for processing. This happens through global endpoints for compute availability and performance, so a prompt may be processed in any region. The LLM does not retain your data. The output is returned directly to your Optimizely-managed infrastructure, in the region you selected.
 See
 Default model provider
-﻿
 for information on selecting an LLM for your organization.
 Next steps
-Get started with Mark for administrators
-﻿
-– Manage and configure users, skills, tools, agents, and connected product instances in the
-Mark
-﻿
-app.
-Get started with Mark for agent builders
-﻿
+Get started with Optimizely Opal for Administrators
+– Manage and configure users, skills, tools, agents, and connected product instances in the Optimizely Opal app.
+Get started with Optimizely Opal for agent builders
 – Create skills, build agents, and access the Agent Directory.
-Get started with Mark for users
-﻿
-– Discover how to access and use
-Mark
-﻿
-.
-Mark credits
-﻿
-– Learn how credits work and how
-Mark
-﻿
-calculates usage.
-Mark chat
-﻿
-– See how to interact with
-Mark
-﻿
-, upload files, and return to past threads.
-Mark and AI features
-﻿
-– Review a full list of
-Mark
-﻿
-and included AI features for specific products.
-Note
+Get started with Optimizely Opal for users
+– Discover how to access and use Opal.
+Optimizely Opal credits
+– Learn how credits work and how Opal calculates usage.
+Optimizely Opal Chat
+– See how to interact with Opal, upload files, and return to past threads.
+Optimizely Opal and AI features
+– Review a full list of Optimizely Opal and included AI features for specific products.
 If you use Opti ID, administrators can turn off generative AI in the Opti ID Admin Center. See
 Turn generative AI off across Optimizely applications
-﻿
 .
-Updated
-30 Oct 2026
-Docs powered by
-Archbee
-Docs powered by
-Archbee
+Please
+sign in
+to leave a comment.
+Articles in this section
+Optimizely Opal overview
+Optimizely Opal and AI features
+Get started with Optimizely Opal for administrators
+Get started with Optimizely Opal for agent builders
+Get started with Optimizely Opal for users
+Personalize Opal
+Enable Opal for non-Opti ID users
+Optimizely Opal glossary
+Optimizely Opal credits
+Optimizely Reporting for Opal
+See all 11 articles
+Optimizely Website
+Support Policy
+Privacy Notice
+Website terms of use
+Cookie settings
+Trust center
+Third-Party Addons & Platforms
+English (United States)
+Deutsch

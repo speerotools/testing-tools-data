@@ -37,7 +37,6 @@ Overview
 Beta
 Setup
 Set up self-driving
-Security
 Apps
 Slack
 Web app
@@ -58,21 +57,19 @@ Lovable
 Replit
 v0
 CLI
+Desktop
 Concepts
 The self-improving loop
 Anatomy of a pull request
 Context
-Steering
 Scouts
 Signals
 Reports
 Inbox
-Learn
-Pocket guide
-New
 Resources
+Pocket guides
+New
 From our inbox
-Task infrastructure
 Pricing
 FAQ
 Copy page
@@ -143,33 +140,9 @@ action-update
 Update action
 actions-get-all
 Get all actions
-AI citation tracking
-(
-9
-MCP
-tools
-)
-aeo-prompts-archive
-Archive a tracked AI prompt
-aeo-prompts-checks-list
-List a tracked AI prompt's check history
-aeo-prompts-get
-Get a tracked AI prompt
-aeo-prompts-import
-Import AI prompts to track
-aeo-prompts-list
-List tracked AI prompts
-aeo-prompts-stats-get
-Get a tracked AI prompt's citation stats
-aeo-prompts-topics-list
-List tracked AI prompt topics
-aeo-prompts-update
-Update a tracked AI prompt
-aeo-prompts-versions-list
-List a tracked AI prompt's versions
 AI observability
 (
-95
+79
 MCP
 tools
 )
@@ -269,36 +242,6 @@ llma-evaluation-test-hog
 Test Hog evaluation code
 llma-evaluation-update
 Update evaluation
-llma-offline-experiment-complete
-Complete offline experiment
-llma-offline-experiment-create
-Create offline experiment
-llma-offline-experiment-fail
-Mark offline experiment failed
-llma-offline-experiment-get
-Get offline experiment
-llma-offline-experiment-item-get
-Get offline experiment item
-llma-offline-experiment-item-list
-List offline experiment items
-llma-offline-experiment-item-payload-get
-Read offline item payload
-llma-offline-experiment-item-result-list
-List offline item results
-llma-offline-experiment-list
-List offline experiments
-llma-offline-experiment-result-cells
-Get offline result cells
-llma-offline-experiment-result-payload-get
-Read offline result payload
-llma-offline-experiment-scorer-summary-list
-Summarize offline experiment scores
-llma-offline-experiment-update
-Update offline experiment tags
-llma-offline-experiment-upload
-Upload offline results
-llma-offline-scorer-history
-Read offline scorer history
 llma-parser-recipe-create
 Compiles, validates, and saves a custom parser recipe for an LLM analytics trace event.
 llma-parser-recipe-reference
@@ -339,12 +282,10 @@ llma-score-definition-new-version
 Bump scorer to a new version
 llma-score-definition-update
 Update scorer metadata
-llma-score-definition-version-get
-Get scorer version
-llma-score-definition-version-list
-List scorer versions
 llma-summarization-create
 Summarize trace or generation
+llma-tagger-create
+Create tagger
 llma-tagger-list
 List taggers
 llma-tagger-test-hog
@@ -387,7 +328,7 @@ alerts-list
 List alerts
 Annotations
 (
-6
+5
 MCP
 tools
 )
@@ -401,11 +342,9 @@ annotations-list
 List annotations
 annotations-partial-update
 Update annotation
-change-feed-list
-List recent production changes
 Autoresearch
 (
-24
+20
 MCP
 tools
 )
@@ -419,18 +358,10 @@ autoresearch-models-list
 List models for a pipeline
 autoresearch-models-retrieve
 Get model
-autoresearch-online-performance-retrieve
-Read realized performance history
-autoresearch-partial-update
-Update a pipeline
 autoresearch-resolve-template-create
 Resolve a template
 autoresearch-retrieve
 Get pipeline
-autoresearch-runs-list
-List inference runs
-autoresearch-score-create
-Run inference (score users)
 autoresearch-suggestions-create
 Submit a suggestion
 autoresearch-suggestions-list
@@ -493,9 +424,19 @@ billing-usage-summary-get
 Get usage this billing period
 billing-usage-timeseries-get
 Get usage over time by project
+Billing alerts
+(
+2
+MCP
+tools
+)
+billing-alert-create
+Create billing alert
+billing-alert-update
+Update billing alert
 Business knowledge
 (
-14
+9
 MCP
 tools
 )
@@ -503,16 +444,6 @@ business-knowledge-document-window-retrieve
 Read business knowledge document context
 business-knowledge-documents-search
 Search business knowledge
-business-knowledge-libraries-create
-Create a business knowledge library
-business-knowledge-libraries-destroy
-Delete a business knowledge library
-business-knowledge-libraries-list
-List business knowledge libraries
-business-knowledge-libraries-partial-update
-Update a business knowledge library
-business-knowledge-libraries-retrieve
-Get a business knowledge library
 business-knowledge-repositories-file-retrieve
 Read a file from a selected repository
 business-knowledge-repositories-search
@@ -595,7 +526,7 @@ cohorts-rm-person-from-static-cohort-partial-update
 Remove person from static cohort
 Context wiki
 (
-7
+10
 MCP
 tools
 )
@@ -605,6 +536,12 @@ context-wiki-page-retrieve
 Read a context wiki page
 context-wiki-page-update
 Update a context wiki page
+loop-context-wiki-channel-resolve
+Resolve a loop context wiki page
+loop-context-wiki-page-retrieve
+Read a loop context wiki page
+loop-context-wiki-page-update
+Update a loop context wiki page
 task-context-wiki-channel-resolve
 Resolve this task's channel context page
 task-context-wiki-page-propose
@@ -615,18 +552,14 @@ task-context-wiki-page-update
 Update this task's context wiki page
 Conversations
 (
-13
+11
 MCP
 tools
 )
-conversations-tickets-compose-create
-Start a support ticket by email
 conversations-tickets-list
 List support tickets
 conversations-tickets-messages-retrieve
 Read support ticket messages
-conversations-tickets-notes-create
-Add private note to support ticket
 conversations-tickets-notes-destroy
 Delete private note
 conversations-tickets-notes-partial-update
@@ -647,32 +580,10 @@ conversations-views-update
 Update saved ticket view
 Core
 (
-20
+9
 MCP
 tools
 )
-domains-list
-List organization authentication domains
-identity-provider-configs-create-execute
-Create an identity provider configuration (execute)
-identity-provider-configs-create-prepare
-Create an identity provider configuration (prepare)
-identity-provider-configs-destroy-execute
-Delete an identity provider configuration (execute)
-identity-provider-configs-destroy-prepare
-Delete an identity provider configuration (prepare)
-identity-provider-configs-list
-List identity provider configurations
-identity-provider-configs-partial-update-execute
-Update an identity provider configuration (execute)
-identity-provider-configs-partial-update-prepare
-Update an identity provider configuration (prepare)
-identity-provider-configs-retrieve
-Get an identity provider configuration
-identity-provider-configs-scim-token-create-execute
-Regenerate an identity provider SCIM token (execute)
-identity-provider-configs-scim-token-create-prepare
-Regenerate an identity provider SCIM token (prepare)
 media-image-upload-complete
 Complete image upload
 media-image-upload-start
@@ -691,21 +602,9 @@ user-get
 Get user
 user-settings-update
 Update user settings
-Cross-project dashboards
-(
-3
-MCP
-tools
-)
-cross-project-dashboard-tiles-list
-List the tiles on a cross-project dashboard
-cross-project-dashboards-get
-Get one cross-project dashboard
-cross-project-dashboards-list
-List cross-project dashboards
 Customer analytics
 (
-74
+73
 MCP
 tools
 )
@@ -831,8 +730,6 @@ feature-requests-create
 Create feature request
 feature-requests-history-list
 List feature request history
-feature-requests-link-github-create
-Link feature request to GitHub issue
 feature-requests-list
 List feature requests
 feature-requests-partial-update
@@ -859,7 +756,7 @@ usage-metrics-retrieve
 Get usage metric
 Dashboards
 (
-19
+18
 MCP
 tools
 )
@@ -897,8 +794,6 @@ dashboard-widgets-batch-update
 Update dashboard widget settings
 dashboard-widgets-run
 Run dashboard widgets
-dashboards-bulk-delete
-Delete dashboards in bulk
 dashboards-get-all
 Get all dashboards
 Data catalog
@@ -922,7 +817,7 @@ Approve a catalog metric (execute)
 data-catalog-metric-approve-prepare
 Approve a catalog metric (prepare)
 data-catalog-metric-create
-Create a catalog metric
+Create or refine a catalog metric
 data-catalog-metric-delete-execute
 Delete a catalog metric (execute)
 data-catalog-metric-delete-prepare
@@ -1003,7 +898,7 @@ read-data-schema
 Explore the user's events, actions, properties, and property values.
 Data warehouse
 (
-29
+25
 MCP
 tools
 )
@@ -1019,10 +914,6 @@ managed-warehouse-metric-history-get
 Get managed warehouse metric history
 managed-warehouse-monitoring-get
 Get managed warehouse monitoring
-managed-warehouse-trino-metric-history-get
-Get managed warehouse Trino metric history
-managed-warehouse-trino-monitoring-get
-Get managed warehouse Trino monitoring
 saved-query-column-annotations-create
 Add a view column description
 saved-query-column-annotations-list
@@ -1033,8 +924,6 @@ sql-variables-delete
 Delete SQL variable
 sql-variables-update
 Update SQL variable
-view-check-incremental
-Check incremental refresh
 view-create
 Create saved query
 view-delete
@@ -1045,8 +934,6 @@ view-list
 List saved queries
 view-materialize
 Materialize saved query
-view-resume
-Resume suspended materialization
 view-run
 Run saved query
 view-run-history
@@ -1099,7 +986,7 @@ early-access-feature-retrieve
 Get early access feature
 Endpoints
 (
-12
+14
 MCP
 tools
 )
@@ -1111,8 +998,12 @@ endpoint-get
 Get endpoint
 endpoint-logs
 Get endpoint logs
+endpoint-materialization-conditions
+Get materialization conditions
 endpoint-materialization-status
 Get materialization status
+endpoint-materialization-suggestion
+Suggest materialization fix
 endpoint-openapi-spec
 Get endpoint OpenAPI spec
 endpoint-run
@@ -1235,14 +1126,12 @@ error-tracking-alerts-partial-update
 Update error tracking alert
 Events & properties
 (
-4
+3
 MCP
 tools
 )
 event-definition-create
 Create an event definition.
-event-definition-get
-Get an event definition by name.
 event-definition-update
 Update an event definition's metadata.
 property-definition-update
@@ -1355,7 +1244,7 @@ llma-prompt-update
 Update prompt
 Feature flags
 (
-30
+29
 MCP
 tools
 )
@@ -1377,8 +1266,6 @@ feature-flag-get-definition-by-key
 Get a feature flag by its key.
 feature-flag-roll-out-to-everyone
 Roll feature flag out to everyone
-feature-flag-rules-update
-Replace feature flag rules
 feature-flag-set-release-condition-rollout
 Set feature flag release condition rollout
 feature-flag-unarchive
@@ -1497,17 +1384,15 @@ health-issues-summary
 Summarize health issues
 Insights & analytics
 (
-2
+1
 MCP
-tools
+tool
 )
-explain-chart
-Walk the person through a trends chart, one highlighted moment at a time.
 insight-query
 Run a saved insight's query and return results.
 Integrations
 (
-12
+10
 MCP
 tools
 )
@@ -1517,10 +1402,6 @@ integration-get
 Get integration
 integrations-channels-retrieve
 List integration channels
-integrations-email-status-retrieve
-Get email sending domain status
-integrations-email-verify-create
-Verify email sending domain
 integrations-github-repos-retrieve
 List GitHub integration repositories
 integrations-jira-projects-retrieve
@@ -1537,7 +1418,7 @@ posthog-connection-forward
 Send a raw API request to a connected PostHog project
 Logs
 (
-22
+21
 MCP
 tools
 )
@@ -1573,14 +1454,12 @@ logs-count-ranges
 Count logs by time bucket
 logs-facet-values-create
 Facet log counts
-logs-group-by
-Group logs by attributes
 logs-patterns
 Mine log patterns
 logs-patterns-diff
 Diff log patterns between two windows
 logs-services-create
-List services with health status
+List services with stats
 logs-sparkline-query
 Query logs sparkline
 query-logs
@@ -1597,14 +1476,12 @@ managed-migrations-support-list
 List batch import jobs across all teams (PostHog staff only)
 Marketing analytics
 (
-14
+10
 MCP
 tools
 )
 marketing-analytics-conversion-goals
 List conversion goals
-marketing-analytics-conversion-recommendations
-Read conversion recommendations
 marketing-analytics-create-conversion-goal
 Create conversion goal
 marketing-analytics-data-sources
@@ -1615,10 +1492,6 @@ marketing-analytics-diagnose
 Diagnose marketing analytics setup
 marketing-analytics-explain-conversion-goal
 Explain a conversion goal
-marketing-analytics-setup-plan
-Suggest marketing sources and setup improvements
-marketing-analytics-start-conversion-recommendations
-Analyze conversion candidates
 marketing-analytics-suggest-conversion-goals
 Suggest conversion goal candidates
 marketing-analytics-suggest-utm-mappings
@@ -1627,8 +1500,6 @@ marketing-analytics-update-conversion-goal
 Update conversion goal
 marketing-analytics-utm-audit
 Audit UTM tagging quality
-query-marketing-recommendations
-Get paid and organic search recommendations
 MCP analytics
 (
 16
@@ -1689,51 +1560,31 @@ mcp-connections-list
 List MCP connections
 Messaging
 (
-10
+3
 MCP
 tools
 )
-message-categories-create
-Create a message category
-message-categories-get
-Get a message category
-message-categories-list
-List message categories
-message-categories-update
-Update a message category
 opt-outs-add
 Add recipients to the opt-out list
 opt-outs-list
 List opt-outs
 opt-outs-remove
 Remove a recipient from the opt-out list
-supabase-auth-emails-settings-get
-Get the Supabase auth email settings
-supabase-auth-emails-settings-update
-Update the Supabase auth email settings
-supabase-auth-emails-starter-templates-create
-Create starter templates for the Supabase auth emails
 Metrics
 (
-6
+3
 MCP
 tools
 )
 characterize-metric-anomaly
 Characterize metric anomaly
-metric-attribute-values-list
-List metric attribute values
-metric-attributes-list
-List metric attributes
 metric-names-list
 List metric names
-metrics-dashboard-panels-validate
-Validate dashboard panel queries
 query-metrics
 Query metrics
 Notebooks
 (
-26
+25
 MCP
 tools
 )
@@ -1765,8 +1616,6 @@ notebooks-retrieve
 Get notebook
 notebooks-run
 Run every SQL and Python cell of a notebook in document order.
-notebooks-run-cell
-Run one SQL or Python cell of a notebook.
 notebooks-run-cell-interrupt
 Interrupt notebook cell run
 notebooks-run-cell-result
@@ -1818,7 +1667,7 @@ List persons
 persons-property-delete
 Delete person property
 persons-property-set
-Set person properties
+Set person property
 persons-retrieve
 Get person
 persons-values-retrieve
@@ -1891,23 +1740,9 @@ conversations-list
 List PostHog AI chat threads
 conversations-retrieve
 Get PostHog AI chat thread
-PostHog Review
-(
-4
-MCP
-tools
-)
-review-hog-reviews-get
-Get a code review
-review-hog-reviews-list
-List code reviews
-review-hog-reviews-pr-status
-Get a pull request's review status
-review-hog-reviews-trigger
-Trigger a code review
 Product analytics
 (
-10
+9
 MCP
 tools
 )
@@ -1919,8 +1754,6 @@ insight-delete
 Delete insight
 insight-get
 Get insight
-insight-trust-check
-Check whether an insight's numbers can be trusted.
 insight-update
 Update insight
 insights-activity-retrieve
@@ -1979,7 +1812,7 @@ reminders-list
 List reminders
 Replay vision
 (
-51
+58
 MCP
 tools
 )
@@ -2009,8 +1842,12 @@ vision-observations-label-create
 Rate a scanner observation
 vision-observations-label-delete
 Remove a scanner observation rating
+vision-observations-label-destroy
+Remove a scanner observation rating (deprecated)
 vision-observations-list
 List a session's replay vision observations
+vision-observations-retrieve
+Get a replay vision observation (deprecated)
 vision-observations-retry
 Retry failed observation
 vision-observations-search
@@ -2019,12 +1856,10 @@ vision-observations-signal-reports-list
 List observation's inbox reports
 vision-quota-get
 Get replay vision quota
+vision-quota-retrieve
+Get replay vision quota (deprecated)
 vision-quota-spend-series-get
 Get replay vision daily spend
-vision-requests-create
-Request session scans
-vision-requests-get
-Get a session scan request
 vision-scanners-affected-cohort-create
 Save a scanner's affected users as a cohort
 vision-scanners-backfills-cancel
@@ -2043,8 +1878,6 @@ vision-scanners-counts
 Count replay vision scanners
 vision-scanners-create
 Create replay vision scanner
-vision-scanners-dashboard-create
-Create a dashboard for a scanner
 vision-scanners-delete
 Delete replay vision scanner
 vision-scanners-draft
@@ -2053,14 +1886,18 @@ vision-scanners-duplicate
 Duplicate replay vision scanner
 vision-scanners-estimate
 Estimate replay vision scanner volume
+vision-scanners-estimate-create
+Estimate replay vision scanner volume (deprecated)
 vision-scanners-get
 Get replay vision scanner
-vision-scanners-highlight-feed
-Get ranked recordings to watch
 vision-scanners-impact-get
 Get a scanner's impact counts
+vision-scanners-impact-retrieve
+Get a scanner's impact counts (deprecated)
 vision-scanners-inline-scan
 Scan sessions against a prompt
+vision-scanners-inline-scan-create
+Scan sessions against a prompt (deprecated)
 vision-scanners-list
 List replay vision scanners
 vision-scanners-observations-get
@@ -2069,6 +1906,14 @@ vision-scanners-observations-list
 List scanner observations
 vision-scanners-observations-stats
 Get scanner observation stats
+vision-scanners-prompt-suggestions-apply
+Apply prompt suggestion
+vision-scanners-prompt-suggestions-current
+Get current prompt suggestion
+vision-scanners-prompt-suggestions-dismiss
+Dismiss prompt suggestion
+vision-scanners-prompt-suggestions-generate
+Generate prompt suggestion from ratings
 vision-scanners-scan-session
 Run scanner against a session now
 vision-scanners-scan-sessions
@@ -2081,10 +1926,12 @@ vision-scanners-scouts-create
 Create scout for scanner
 vision-scanners-self-driving-stats
 Get scanner's self-driving outcomes
+vision-scanners-suggest-tags
+Suggest classifier tags
 vision-scanners-update
 Update replay vision scanner
-vision-scanners-variants-list
-Compare an experiment scanner's variants
+vision-scanners-watch-feed
+Get ranked recordings to watch
 Reverse proxy
 (
 6
@@ -2103,9 +1950,21 @@ proxy-list
 List reverse proxies
 proxy-retry
 Retry reverse proxy provisioning
+ReviewHog
+(
+3
+MCP
+tools
+)
+review-hog-reviews-get
+Get a ReviewHog review
+review-hog-reviews-list
+List ReviewHog reviews
+review-hog-reviews-trigger
+Trigger a ReviewHog review
 Session replays
 (
-9
+8
 MCP
 tools
 )
@@ -2113,8 +1972,6 @@ query-session-recordings-list
 List session recordings
 session-recording-bulk-delete
 Bulk delete session recordings
-session-recording-console-logs-list
-List session recording console logs
 session-recording-delete
 Delete session recording
 session-recording-get
@@ -2129,24 +1986,10 @@ session-recording-playlists-list
 List session recording playlists
 Signals
 (
-102
+70
 MCP
 tools
 )
-activity-summary-get
-Get your activity summary
-activity-summary-versions-list
-List your activity summary versions
-anomaly-insight-get
-Get the scored anomaly history of an insight
-anomaly-search
-Search anomalous insight series
-inbox-ranking-outcomes-list
-List inbox ranking outcomes
-inbox-report-actions-list
-List a report's agent run actions
-inbox-report-actions-run
-Run a report action as an agent task
 inbox-report-artefacts-create
 Append an artefact to a report
 inbox-report-artefacts-delete
@@ -2161,56 +2004,32 @@ inbox-report-checks-create
 Write a follow-up check (removed)
 inbox-report-checks-list
 List a report's checks
-inbox-report-checks-replace
-Replace a metric follow-up check
 inbox-report-checks-retrieve
 Get a single check
-inbox-report-reviewers-update
-Update a report's suggested reviewers
 inbox-reports-bulk-set-state
-Resolve, dismiss, or snooze inbox reports in bulk
+Dismiss or snooze signal reports in bulk
 inbox-reports-claim
-Update work on an inbox report
-inbox-reports-feedback-create
-Rate an inbox report
-inbox-reports-for-me
-Get your personal ranked inbox
-inbox-reports-leave-reviewers
-Step off a report's suggested reviewers
+Update work on a signal report
 inbox-reports-list
-List inbox reports
+List signal reports
 inbox-reports-merge
 Merge duplicate reports into one
 inbox-reports-retrieve
-Get inbox report
+Get signal report
 inbox-reports-set-state
-Resolve, dismiss, or snooze an inbox report
+Dismiss or snooze a signal report
 inbox-reports-update
-Edit an inbox report's title or summary
-inbox-reviewer-exclusions-create
-Stay off automatic reviewer selection in an area
-inbox-reviewer-exclusions-get
-Get one of your reviewer exclusions
-inbox-reviewer-exclusions-list
-List your reviewer exclusions
-inbox-reviewer-exclusions-revoke
-Revoke one of your reviewer exclusions
-inbox-reviewer-exclusions-update
-Change one of your reviewer exclusions
+Edit a signal report's title or summary
 inbox-source-configs-create
-Create inbox source config
+Create signal source config
 inbox-source-configs-list
-List inbox source configs
+List signal source configs
 inbox-source-configs-partial-update
-Update inbox source config
+Update signal source config
 inbox-source-configs-retrieve
-Get inbox source config
+Get signal source config
 inbox-source-configs-update
-Replace inbox source config
-inbox-steering-instructions-get
-Get Self-driving steering instructions
-inbox-steering-instructions-update
-Update Self-driving steering instructions
+Replace signal source config
 scout-check-record-result
 Record the verdict on a report check
 scout-config-create
@@ -2219,8 +2038,6 @@ scout-config-delete
 Delete a scout config
 scout-config-list
 List scout configs
-scout-config-precheck-test
-Test a scout pre-check
 scout-config-sync
 Sync scout configs
 scout-config-update
@@ -2239,8 +2056,6 @@ scout-members-list
 List project members for reviewer routing
 scout-metadata-get
 Get scout enrollment, banner, and run limits
-scout-monitoring-result-submit
-Submit a Monitoring check result
 scout-notes-create
 Leave a note for the scouts
 scout-notes-delete
@@ -2259,12 +2074,6 @@ scout-report-check-list
 List a report's follow-up checks
 scout-report-checks-list
 List a report's follow-up checks (deprecated)
-scout-rubric-generate
-Generate scout rubric suggestions
-scout-rubric-get
-Read a scout's rubric and suggestions
-scout-rubric-save
-Save a scout's rubric
 scout-run-now
 Run a scout now
 scout-runs-emission-reports
@@ -2283,22 +2092,6 @@ scout-scratchpad-remember
 Remember a scratchpad entry
 scout-scratchpad-search
 Search the fleet scratchpad
-scout-trial-archive
-Archive or restore a scout trial
-scout-trial-create
-Run one private scout variant without judging
-scout-trial-get
-Read one private scout run's output
-scout-trial-list
-List your scout trials
-scout-trial-report
-Read a scout trial's progress and judge report
-scout-trial-resume
-Resume an interrupted scout trial
-scout-trial-setup
-Inspect scout trial readiness and model choices
-scout-trial-start
-Run and judge scout variants
 signals-scout-config-create
 Create a scout config (deprecated)
 signals-scout-config-delete
@@ -2421,7 +2214,7 @@ stamphog-review-runs-list
 List stamphog review runs
 Streamlit apps
 (
-12
+10
 MCP
 tools
 )
@@ -2429,12 +2222,8 @@ streamlit-apps-create
 Create Streamlit app
 streamlit-apps-delete
 Delete Streamlit app
-streamlit-apps-edit-source
-Edit Streamlit app source
 streamlit-apps-get
 Get Streamlit app
-streamlit-apps-get-source
-Get Streamlit app source
 streamlit-apps-list
 List Streamlit apps
 streamlit-apps-set-source
@@ -2451,7 +2240,7 @@ streamlit-apps-versions
 List Streamlit app versions
 Subscriptions
 (
-9
+8
 MCP
 tools
 )
@@ -2469,8 +2258,6 @@ subscriptions-partial-update
 Update subscription
 subscriptions-retrieve
 Get subscription
-subscriptions-summaries-list
-List AI summaries for an insight or dashboard
 subscriptions-test-delivery-create
 Send test delivery
 Surveys
@@ -2503,7 +2290,7 @@ surveys-summarize-responses-create
 Summarize survey responses (per question, or survey-wide headline).
 Tasks
 (
-23
+33
 MCP
 tools
 )
@@ -2517,14 +2304,36 @@ channel-list
 List channels
 channel-retrieve
 Get a channel
+loop-channel-instructions-retrieve
+Read fallback loop context
+loop-channel-instructions-update
+Update fallback loop context
+loops-create-execute
+Create loop (execute)
+loops-create-prepare
+Create loop (prepare)
+loops-destroy
+Delete loop
+loops-list
+List loops
+loops-partial-update
+Update loop
+loops-preview-create
+Preview a loop fire
+loops-retrieve
+Get loop
+loops-review
+Review a loop with the user before creating it.
+loops-run-create
+Manually run a loop
+loops-runs-retrieve
+List loop runs
 tasks-artifacts-list
 List artifacts for the current task.
 tasks-comments-list
 List comments for the current task.
 tasks-comments-retrieve
 Retrieve one comment conversation from the current task.
-tasks-config-agent-instructions-create
-Set project agent instructions
 tasks-config-create
 Set project task run defaults
 tasks-config-list
@@ -2535,8 +2344,6 @@ tasks-create-and-run
 Create task and start or schedule run
 tasks-list
 Search and list tasks
-tasks-me-config-agent-instructions-create
-Set my agent instructions
 tasks-me-config-create
 Set my task run defaults
 tasks-me-config-list
@@ -2555,7 +2362,7 @@ tasks-runs-session-logs-retrieve
 Get task run session logs
 Tracing
 (
-13
+12
 MCP
 tools
 )
@@ -2565,8 +2372,6 @@ apm-attribute-values-list
 List tracing attribute values
 apm-attributes-list
 List tracing span attributes
-apm-service-health
-Service health against a baseline
 apm-services-list
 List tracing service names
 apm-spans-aggregate
@@ -2585,6 +2390,50 @@ apm-trace-get
 Retrieve trace spans
 query-apm-spans
 Query tracing spans
+User interview topics
+(
+19
+MCP
+tools
+)
+user-interview-topics-add-interviewee
+Add an interviewee to a topic
+user-interview-topics-create
+Create user interview topic
+user-interview-topics-generate-links
+Generate public interview links for a topic
+user-interview-topics-interviewees-bulk-create
+Create many per-interviewee context rows at once
+user-interview-topics-interviewees-create
+Add per-interviewee context to a topic
+user-interview-topics-interviewees-destroy
+Delete a per-interviewee context row
+user-interview-topics-interviewees-list
+List per-interviewee contexts for a topic
+user-interview-topics-interviewees-partial-update
+Update a per-interviewee context row
+user-interview-topics-links-csv
+Export interview links for a topic as CSV
+user-interview-topics-list
+List user interview topics
+user-interview-topics-partial-update
+Update a user interview topic
+user-interview-topics-preview-invite
+Preview the invite email for a targeted interviewee
+user-interview-topics-remove-interviewee
+Remove an interviewee from a topic
+user-interview-topics-retrieve
+Get user interview topic
+user-interview-topics-send-invites
+Email interview invites to every targeted interviewee
+user-interviews-list
+List user interview responses
+user-interviews-partial-update
+Set classifications on an interview response
+user-interviews-retrieve
+Retrieve a user interview response
+user-interviews-search
+Semantic search across interview responses
 Utilities
 (
 1
@@ -2595,7 +2444,7 @@ generate-app-url
 Build a correct PostHog app URL for a page or entity.
 Visual review
 (
-23
+17
 MCP
 tools
 )
@@ -2605,10 +2454,6 @@ visual-review-repos-list
 List visual review repos
 visual-review-repos-partial-update
 Update visual review repo settings
-visual-review-repos-quarantine-create
-Quarantine a visual review snapshot
-visual-review-repos-quarantine-expire-create
-Lift a visual review quarantine
 visual-review-repos-quarantine-list
 List quarantined snapshots
 visual-review-repos-retrieve
@@ -2625,16 +2470,8 @@ visual-review-runs-counts-retrieve
 Visual review run counts
 visual-review-runs-finalize-create
 Finalize a visual review run
-visual-review-runs-lift-on-merge-create
-Lift a visual review quarantine when the pull request merges
 visual-review-runs-list
 List visual review runs
-visual-review-runs-quarantine-lifts-cancel-create
-Cancel a visual review lift on merge
-visual-review-runs-quarantine-lifts-list
-List visual review lifts on merge
-visual-review-runs-recompute-create
-Re-check a visual review run's gate
 visual-review-runs-retrieve
 Get visual review run
 visual-review-runs-snapshot-history-list
@@ -2645,27 +2482,9 @@ visual-review-runs-tolerate-create
 Tolerate visual review snapshot
 visual-review-runs-tolerated-hashes-list
 List tolerated hashes
-Warehouse destinations
-(
-6
-MCP
-tools
-)
-external-data-destinations-add-sources
-Attach sources to a warehouse destination
-external-data-destinations-connect-link
-Get a secure connect link for a destination
-external-data-destinations-create
-Create a warehouse destination
-external-data-destinations-list
-List warehouse destinations
-external-data-destinations-retrieve
-Get a warehouse destination
-external-data-destinations-test-connection
-Test a warehouse destination's connection
 Warehouse sources
 (
-30
+31
 MCP
 tools
 )
@@ -2675,6 +2494,10 @@ data-warehouse-source-setup
 Set up a data warehouse source (one step)
 data-warehouse-stored-credentials-list
 List stored source credentials awaiting setup
+external-data-destinations-list
+List warehouse destinations
+external-data-destinations-retrieve
+Get a warehouse destination
 external-data-schemas-cancel
 Cancel running sync
 external-data-schemas-delete-data
@@ -2707,8 +2530,6 @@ external-data-sources-delete-webhook-create
 Delete a source's webhook
 external-data-sources-destinations-retrieve
 Get a source's destinations
-external-data-sources-destinations-update
-Set a source's destinations
 external-data-sources-destroy
 Delete data warehouse source
 external-data-sources-list
@@ -2729,28 +2550,6 @@ external-data-sources-webhook-info-retrieve
 Get webhook status for a source
 external-data-sources-wizard
 List data warehouse source types you can import
-Warehouse suggestions
-(
-8
-MCP
-tools
-)
-warehouse-suggestions-accept-execute
-Accept a warehouse suggestion (execute)
-warehouse-suggestions-accept-prepare
-Accept a warehouse suggestion (prepare)
-warehouse-suggestions-assign
-Assign a warehouse suggestion
-warehouse-suggestions-dismiss
-Dismiss a warehouse suggestion
-warehouse-suggestions-get
-Get a warehouse suggestion
-warehouse-suggestions-list
-List warehouse suggestions
-warehouse-suggestions-resume
-Resume a dismissed warehouse suggestion
-warehouse-suggestions-status
-Get warehouse suggestions status
 Web analytics
 (
 17
@@ -2791,19 +2590,9 @@ web-analytics-path-cleaning-suggestions-generate
 Generate path-cleaning suggestions
 web-analytics-weekly-digest
 Summarize web analytics
-Wizard
-(
-2
-MCP
-tools
-)
-wizard-install-start
-Start PostHog setup on a GitHub repository
-wizard-install-status
-Get PostHog setup run status
 Workflows
 (
-48
+33
 MCP
 tools
 )
@@ -2813,22 +2602,12 @@ workflows-archive
 Archive workflow
 workflows-blast-radius
 Size workflow audience
-workflows-convert-to-broadcast
-Convert workflow to broadcast
 workflows-create
 Create workflow
 workflows-create-email-template
 Create email template
-workflows-data-suggestions-create
-Create a workflow from a suggestion
-workflows-data-suggestions-get
-Check suggested workflows
-workflows-data-suggestions-list
-List suggested workflows
 workflows-discard-draft
 Discard workflow draft
-workflows-email-drafts-create
-Build email workflows for events
 workflows-enable
 Enable workflow
 workflows-get
@@ -2841,10 +2620,6 @@ workflows-get-revision
 Get workflow revision
 workflows-global-stats
 Workflow stats overview
-workflows-import-customerio
-Import Customer.io automations
-workflows-import-notes
-Get a workflow's import notes
 workflows-list
 List workflows
 workflows-list-batch-jobs
@@ -2857,14 +2632,8 @@ workflows-list-proposals
 List workflow suggestions
 workflows-list-revisions
 List workflow revisions
-workflows-list-versions
-List a workflow's published versions
 workflows-logs
 Get workflow logs
-workflows-make-email-template-transactional-execute
-Make email template transactional (execute)
-workflows-make-email-template-transactional-prepare
-Make email template transactional (prepare)
 workflows-patch-action-email
 Patch a workflow step's email
 workflows-patch-email-template
@@ -2873,20 +2642,12 @@ workflows-patch-graph
 Patch workflow graph
 workflows-publish
 Publish workflow draft
-workflows-reputation-get
-Get email reputation and sending allowance
 workflows-restore-revision
 Restore workflow revision
 workflows-run-batch
 Run batch workflow
 workflows-schedule-create
 Schedule workflow runs
-workflows-sending-rules-get
-Get sending rules
-workflows-sending-rules-update
-Update sending rules
-workflows-setup-status
-Check messaging setup
 workflows-show-email-template
 Show email template
 workflows-stats
@@ -2901,8 +2662,6 @@ workflows-update-email-template
 Update email template
 workflows-update-schedule
 Update workflow schedule
-workflows-version-stats
-Get workflow stats for one version
 CLI mode commands
 In
 CLI mode

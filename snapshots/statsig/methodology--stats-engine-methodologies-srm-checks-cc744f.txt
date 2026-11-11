@@ -22,29 +22,28 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Read Results
-End An Experiment
-Experiment Types
-Layers
-Holdouts
 Configure Stats Engine
-Introduction
-Analysis Methods
+Experiment Types
 Reducing False Positives
-Variance Reduction
 Health Checks
 SRM Checks
-Managing SRM
 Pre-Experiment Bias
-Bot Traffic
-How We Calculate
+Managing SRM
+Variance Reduction
+How we Calculate:
+Stratified Sampling
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
+Layers
+Holdouts
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
-Smart Gate
-Early Access
 Analytics
 Product Analytics
 Infra Analytics

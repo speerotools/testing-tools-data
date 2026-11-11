@@ -609,8 +609,7 @@ Accept-Language
 false
 Language use for the response (user setting can override this)
 Manage my tests
-With this role you will be able to update status of any campaign.
-All known statuses of the campaign:
+With this role you will be able to update status of any campaign. All known statuses of the campaign:
 draft
 ,
 ready_to_launch
@@ -628,8 +627,7 @@ interrupted
 archive
 ,
 ended
-.
-For more information about statuses, please visit
+. For more information about statuses, please visit
 this page
 PATCH /api/v1/accounts/[account_id]/tests/[test_id]
 Request

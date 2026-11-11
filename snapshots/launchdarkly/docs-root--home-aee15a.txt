@@ -1,27 +1,24 @@
 # https://docs.launchdarkly.com/
-Welcome to LaunchDarkly Docs - LaunchDarkly
-Documentation Index
-Fetch the complete documentation index at:
-/docs/llms.txt
-Use this file to discover all available pages before exploring further.
-Skip to main content
-Assistant
-Responses are generated using AI and may contain mistakes.
-LaunchDarkly
-home page
-Search...
-⌘
-K
-Ask Assistant
-⌘
-I
+Overview | LaunchDarkly | Documentation
+For AI agents: a documentation index is available at the root level at /llms.txt. Append /llms.txt to any URL for a page-level index, or .md for the markdown version of any page.
+Developer
+Developer
+Search
+/
+Pricing
 Sign in
 Try it free
-Try it free
-Search...
-Navigation
-Get started
-Welcome to LaunchDarkly Docs
+Docs
+Guides
+SDKs
+Integrations
+API docs
+Tutorials
+Flagship blog
+Developer
+Developer
+Search
+/
 Docs
 Guides
 SDKs
@@ -62,6 +59,7 @@ Guarded rollouts
 Audience-based releases
 Feature monitoring
 Release pipelines
+Engineering insights
 Release management tools
 Applications and app versions
 Change history
@@ -101,7 +99,6 @@ Warehouse native metrics
 Assignment data sources
 Setting up external warehouses
 Creating experiments using warehouse native metrics
-Refreshing warehouse native experiment results
 Infrastructure
 Connect apps and services to LaunchDarkly
 LaunchDarkly in China and Pakistan
@@ -120,7 +117,703 @@ Account security
 Feature previews
 Billing and usage
 Changelog
-Get started
-Welcome to LaunchDarkly Docs
+Overview
 Onboarding
-Next
+Set up .NET (server-side) SDK
+Set up Android SDK
+Set up Go SDK
+Set up iOS SDK
+Set up Java (server-side) SDK
+Set up JavaScript SDK
+Set up Node.js (client-side) SDK
+Set up Node.js (server-side) SDK
+Set up Python SDK
+Set up React Native SDK
+Set up React Web SDK
+Set up Vue SDK
+Get started
+Exploring sample data
+Developer tools
+Vega
+Connecting Vega to GitHub
+Using Vega in Slack
+LaunchDarkly CLI
+LaunchDarkly CLI commands
+LaunchDarkly MCP server
+LaunchDarkly hosted MCP server
+LaunchDarkly local MCP server
+LaunchDarkly developer toolbar
+Setting up the LaunchDarkly developer toolbar
+Using the LaunchDarkly developer toolbar
+LaunchDarkly agent skills
+IDE connectors and agents
+IntelliJ IDEA
+LaunchDarkly extension for GitHub Copilot
+Visual Studio Code (VSCode)
+Flag cleanup custom agent for GitHub Copilot
+Setting up an SDK
+Joining an account
+Logging in with SSO
+Using feature management
+Getting started in different roles
+Launch Insights
+LaunchDarkly architecture
+LaunchDarkly vocabulary
+AgentControl
+Quickstart for AgentControl
+Create configs
+Create and manage config variations
+Create and manage AI model configurations
+Tools
+Prompt snippets
+Playgrounds
+Offline evaluations
+Datasets
+Online evaluations
+Judges
+Run experiments with AgentControl
+Agents
+Agent graphs
+Config targeting
+Monitor config performance
+Understand AI impact with AI Insights
+The trends explorer
+Manually instrument LLM spans
+Agent optimization
+Optimization SDK quickstart
+Performing optimization runs
+Optimization runs without a config
+Expected output mode
+Using tools in agent optimization
+Other framework examples for agent optimization
+OptimizationContext reference
+Manage AgentControl
+Adaptive triggers
+AgentControl and information privacy
+Compare config variation versions
+Configure Amazon Bedrock
+Configure token limits
+Create flags
+Creating new flags
+Flag types
+Turning flags on and off
+Creating flag variations
+Cloning existing flags
+Importing flags
+Flag settings
+Target with flags
+Targeting rules
+Manage targeting rules
+Individual targeting
+Bulk targeting
+Mobile targeting
+Custom rules
+JSON targeting
+Converting rules into segments
+Testing changes to flag targeting
+Adaptive triggers
+Flag templates
+Custom flags
+Release flags
+Kill switch flags
+Experiment flags
+Migration flags
+Creating migration flags
+Targeting with migration flags
+Migration flag metrics
+Manage flags
+The Flags list
+Flag links
+Following flags
+Comparing and copying flag settings
+Viewing flags across environments
+Deprecating flags
+Archiving flags
+Deleting flags
+Flag prerequisites
+The off variation
+The default rule
+Flag statuses and lifecycle stages
+Flag lifecycle settings
+Project-level flag settings
+Vega for flag cleanup
+Code references
+Bitbucket code references
+CircleCI code references
+Custom configuration with ld-find-code-refs
+GitHub code references
+GitLab code references
+Contexts
+An introduction to contexts
+The Contexts list
+Filtering the Contexts list
+The context details page
+Context instances
+Context kinds
+Viewing context kinds
+Creating and editing context kinds
+Archiving context kinds
+Context attributes
+Built-in attributes
+Custom attributes
+Using private context attributes
+Multi-contexts
+Anonymous contexts
+Segments
+Creating segments
+Targeting contexts in rule-based and smaller list-based segments
+Targeting contexts in larger list-based segments
+Targeting segments
+Managing segments
+Segment types
+Segments synced from external tools
+Syncing segments with Amplitude cohorts
+Syncing segments with Fivetran (formerly Census)
+Syncing segments with Heap
+Syncing segments with Hightouch
+Syncing segments with RudderStack Audiences
+Syncing segments with Tealium Audiences
+Syncing segments with Twilio Segment Audiences
+Syncing segments with Zeotap
+SDK and integration configuration for segments
+Releasing features with LaunchDarkly
+Release policies
+Health checks for releases
+Percentage rollouts
+Percentage rollouts by context attribute
+Progressive rollouts
+Creating and managing progressive rollouts
+Guarded rollouts
+Regression detection
+Creating guarded rollouts
+Setting up contexts for guarded rollouts
+Managing guarded rollouts
+Troubleshoot guarded rollout errors
+Audience-based releases
+Creating audience-based releases
+Feature monitoring
+Flag evaluations
+Flag audiences
+Live events
+Collecting user feedback
+Release pipelines
+Creating release pipelines
+Adding and removing flags from release pipelines
+Managing release pipelines
+Deleting release pipelines
+Engineering insights
+Get started with engineering insights
+Send deployment information
+Install the GitHub app
+Set up code references
+Applications in Engineering insights
+Project overview
+Project metrics
+Deployments
+Releases
+Lead time
+Flag health
+Experimentation rate
+Release management tools
+Approvals
+Requesting approvals
+Reviewing approval requests
+Deleting approval requests
+Approval request settings
+Configuring approvals for an environment
+Flag triggers
+Creating flag triggers
+Managing flag triggers
+Required comments
+Required confirmation
+Scheduled flag changes
+Creating scheduled flag changes
+Managing scheduled flag changes
+Workflows
+Creating workflows
+Deleting workflows
+Workflow templates
+Applications and app versions
+Applications
+Application versions
+Change history
+Restoring previous flag versions
+Observability
+Session replay
+Error monitoring
+Logs
+Traces
+Observability metrics
+Metric exemplars
+Product analytics events
+LLM observability
+Alerts
+Dashboards
+Creating custom dashboards
+Services
+Service details
+Vega for auto-remediation
+Search specification
+Observability settings
+Observability integrations
+AWS CloudWatch Metrics
+AWS FireLens
+Azure Monitor
+Datadog Agent ingestion
+Fluent Bit
+Syslog log drain
+Vercel
+Experimentation
+Experimentation prerequisites
+Quickstart for Experimentation
+Experimentation and metric events
+Experiment metric types
+Experiment configuration
+Creating experiments
+Sample size calculations
+Allocating experiment audiences
+Experiment traffic assignment
+Randomization units
+Traffic reshuffling
+Mutually exclusive experiments
+Managing experiments
+Experiment health checks
+Validate experiment exposures
+Starting and stopping experiment iterations
+Editing and archiving experiments
+Experiment sample size and run time
+Analyzing experiments
+Experiment results data
+Bayesian experiment results
+Shipping the winning variation
+Decision making with Bayesian statistics
+Outliers in Bayesian experiments
+Frequentist experiment results
+Filtering experiment results
+Multi-armed bandits
+Creating multi-armed bandits
+Editing and archiving multi-armed bandits
+Multi-armed bandit results
+Holdouts
+Creating holdouts
+Managing holdouts
+Metrics in LaunchDarkly
+Using the Metrics list
+Metric impact
+Metric health checks
+Creating metrics
+Components of a metric
+Metric measurement window
+Metric winsorization
+Choosing a metric type
+Page viewed conversion metrics
+Clicked or tapped conversion metrics
+Custom metrics
+Custom conversion count metrics
+Custom conversion binary metrics
+Custom numeric metrics
+Filtering custom metric events
+Count distinct metrics
+Ratio metrics
+Creating metrics from traces
+Managing metrics
+Metric groups
+Creating metric groups
+Events
+Viewing incoming events
+Previewing event data
+Importing events
+Autogenerated metrics
+AgentControl config metrics
+Observability metrics
+OpenTelemetry metrics
+Warehouse native metrics
+Metric data sources
+Assignment data sources
+Creating and managing assignment data sources
+Setting up external warehouses
+BigQuery native Experimentation
+Databricks native Experimentation
+Redshift native Experimentation
+Snowflake native Experimentation
+Snowflake data requirements
+Setting up the Snowflake integration
+Snowflake common questions
+Warehouse health checks
+Creating experiments using warehouse native metrics
+Connect apps and services to LaunchDarkly
+Custom properties
+OAuth applications
+Webhooks
+The LaunchDarkly API
+LaunchDarkly in China and Pakistan
+LaunchDarkly in the European Union (EU)
+LaunchDarkly in federal environments
+LaunchDarkly in environments requiring FIPS 140-3 validated encryption modules
+Public IP list
+Projects
+Edit projects
+Creating private projects with custom roles
+Views
+Creating views
+Manage views
+Environments
+Create environments
+Edit environment settings
+Delete environments
+Clone environments
+SDK credentials
+Tags
+Teams
+Creating a team
+Managing teams
+Managing team maintainers
+Deleting teams
+Members
+Your member profile
+Using one email for multiple accounts
+Roles
+Member role concepts
+Using actions
+Using resources
+Using role scope
+Using policies
+Using the advanced editor
+Managing role assignments
+Assigning roles to members
+Viewing member roles
+Changing member roles
+Removing member roles
+Assigning roles to teams
+Changing account Owners
+Managing roles
+Organization roles
+Project roles
+Creating roles and policies
+Editing roles
+Deleting roles
+Example roles and policies
+Account security
+Single sign-on
+Configure SAML SSO
+Active Directory Federation Services (ADFS)
+Entra ID
+Google Workspace
+Okta
+OneLogin
+PingIdentity
+Enable SCIM provisioning
+Using the SCIM API
+Enable SSO
+Disable SSO
+Change SSO providers
+Google OAuth
+GitHub OAuth
+API access tokens
+Creating API access tokens
+Cloning and deleting API access tokens
+API access token expiration dates
+Multi-factor authentication
+Domain verification
+IP allowlist
+Managing sessions
+Organization access settings
+Organization announcements
+Support options
+Resetting your password
+Feature previews
+Billing and usage
+Account usage metrics
+The Billing page
+Calculating billing
+LaunchDarkly subscriptions and plans
+Service connections
+Changelog
+Changelog archive
+Pricing
+Sign in
+Try it free
+System
+Get started
+Overview
+Copy page
+Welcome to LaunchDarkly Docs
+LaunchDarkly serves a suite of tools that help you ship your code safer, faster, and more effectively with whatever language and frameworks you use today.
+Try it free →
+Explore the demo project →
+Get started →
+Build a strong foundation with release management
+Streamline releases and ship with confidence thanks to LaunchDarkly’s best practices, governance features, and built-in automation
+Start here
+Get started
+Build an application guarded by feature flags and learn how LaunchDarkly supports every step of the development lifecycle
+SDKs
+Learn how to incorporate the LaunchDarkly SDKs into your application
+Guides
+Best practices to help everyone succeed with LaunchDarkly
+Try the LaunchDarkly sandbox
+You can also use the
+LaunchDarkly demo sandbox
+What’s new
+Date
+Change summary
+Affected topics
+September 30, 2026
+Updates the observability services documentation to describe the new services map view, list view, and service details panel.
+Services
+,
+Service details
+September 24, 2026
+Documents the version 1.0 API changes for the Flutter observability plugin.
+Flutter SDK observability reference
+,
+Configuration for client-side observability
+,
+Configuration for session replay
+,
+Logs
+,
+Tracing
+September 22, 2026
+Publishes topics about using assignment data sources in LaunchDarkly experiments.
+Assignment data sources
+,
+Assignment data source actions
+September 21, 2026
+Publishes a reference topic for the new LaunchDarkly OpenFeature provider for the Cloudflare SDK.
+OpenFeature provider for Cloudflare SDK
+,
+OpenFeature providers
+September 16, 2026
+Documents screen view and tap tracking reported from Dart in the Flutter observability plugin.
+Flutter SDK observability reference
+,
+Product analytics events
+,
+Configuration for session replay
+September 11, 2026
+Publishes a migration guide and updates the reference topic for the new Vue SDK version 3.0.
+Vue SDK 2.x to 3.0 migration guide
+,
+Vue SDK reference
+September 9, 2026
+Publishes a topic on how experiment traffic assignment works for different experiment types.
+Experiment traffic assignment
+September 9, 2026
+Publishes a topic on forwarding errors from third-party observability tools to LaunchDarkly as custom events, including Sentry examples for browser JavaScript, iOS, and Android.
+Sending error events from observability tools
+September 9, 2026
+Publishes a guide on how to connect a .Net Maui application to LaunchDarkly observability features.
+Getting started with observability and session replay for Maui applications
+September 9, 2026
+Publishes a guide on when to use session replay, traces, logs, and Vega.
+When to use session replay, traces, logs, and Vega
+September 1, 2026
+Documents support for observability data ingestion in the LaunchDarkly EU instance, including the EU OpenTelemetry and public ingestion endpoints.
+LaunchDarkly in the European Union (EU)
+,
+Observability SDKs
+,
+Domain list
+September 1, 2026
+Publishes a topic on the in-app sample size calculator for frequentist experiments.
+Sample size calculations
+September 1, 2026
+Updates the Databricks native Experimentation and Databricks Data Export topics to document new authentication methods.
+Databricks native Experimentation
+,
+Databricks Data Export
+August 26, 2026
+Adds new threshold comparisons for constant observability alerts, including
+Above or equal to
+,
+Below or equal to
+,
+Equal to
+, and
+Not equal to
+. You can now choose whether an alert fires at the threshold value, or only when the observed value is strictly above or below it.
+Alerts
+August 26, 2026
+Publishes a topic about filtered SDK payloads using views.
+Filtered SDK payloads
+,
+SDK key actions
+August 25, 2026
+Publishes a topic about configuring Amazon Bedrock as a model provider for the Playground integration.
+Configure Amazon Bedrock
+August 21, 2026
+Updates the Databricks Data Export topic to document OAuth machine-to-machine (M2M) authentication for the service principal.
+Databricks Data Export
+August 21, 2026
+Publishes a topic about using the LaunchDarkly observability and session replay plugins in a Salesforce Lightning Web Components (LWC) application.
+Salesforce LWC observability reference
+August 21, 2026
+Publishes a new guide about managing Data Export usage and export volume.
+Data Export usage best practices
+August 21, 2026
+Updates the metric event filtering topic to document new support for filtering warehouse native metric events from Snowflake data sources.
+Filtering custom metric events
+August 21, 2026
+Updates the Android and iOS observability SDK reference topics to document screen view tracking, session replay masking precedence, and additional plugin configuration options.
+Android SDK observability reference
+,
+iOS SDK observability reference
+August 20, 2026
+Documents Relay Proxy support for multiple concurrent SDK keys and mobile keys per environment when using automatic configuration.
+SDK credentials
+,
+Automatic configuration
+August 20, 2026
+Adds new custom role actions to the Using actions topic.
+Using actions
+August 20, 2026
+Publishes a topic about count distinct metrics, which measure the number of unique values in a warehouse column.
+Count distinct metrics
+August 20, 2026
+Updates docs to include the docs-specific commands in LaunchDarkly MCP server tools.
+AgentControl onboarding prompt
+August 19, 2026
+Documents how to sign in to LaunchDarkly from Vercel after installing the Vercel Marketplace integration.
+Vercel Marketplace
+,
+Single sign-on
+August 18, 2026
+Updates the Warehouse Data Export and Data Export topics to include ClickHouse Data Export.
+Warehouse Data Export
+,
+Data Export
+August 17, 2026
+Publishes topics about adaptive flag triggers and adaptive AgentControl config triggers.
+Adaptive flag triggers
+,
+Adaptive AgentControl triggers
+August 14, 2026
+Adds a migration guide for converting legacy Python and Node.js AI SDK call sites to the current handler-based SDKs.
+Migrate from the legacy AI SDKs
+August 14, 2026
+Publishes the Java AI SDK reference.
+Java AI SDK reference
+August 13, 2026
+Rewrites the Python and Node.js AI SDK reference topics for the new, more opinionated SDK that handles provider routing, client setup, and metrics tracking automatically. Publishes the previous reference as a separate topic for the legacy SDK, which is now in maintenance mode.
+Python AI SDK reference
+,
+Python AI SDK (legacy)
+,
+Node.js AI SDK reference
+,
+Node.js AI SDK reference (legacy)
+August 13, 2026
+Adds information about how LaunchDarkly groups LLM and agent spans into conversations. Corrects the list of standard LLM span attributes to use the normalized LaunchDarkly names.
+LLM observability
+August 13, 2026
+Publishes a topic on instrumenting your application so LLM spans and conversations appear in the LaunchDarkly UI.
+Instrumenting LLM applications
+August 11, 2026
+Updates the BigQuery Data Export topic to document workload identity federation authentication.
+BigQuery Data Export
+August 11, 2026
+Updates the BigQuery native Experimentation topic to document workload identity federation authentication.
+BigQuery native Experimentation
+August 11, 2026
+Adds documentation about installing and use the Vercel Marketplace integration to create a LaunchDarkly account and connect it to your Vercel project.
+Vercel Marketplace
+August 11, 2026
+Publishes a topic about metric exemplars, which link points on an observability metric graph to the traces and sessions that produced them.
+Metric exemplars
+,
+Recording metrics
+August 10, 2026
+Updates the live events documentation for the new events experience, including historical time ranges, event diagnostics, misconfigured flag keys, and setup troubleshooting.
+Live events
+August 10, 2026
+Publishes a tutorial about using LiteLLM with AgentControl.
+Use LaunchDarkly AgentControl to control model administration with LiteLLM
+August 7, 2026
+Adds information about how LaunchDarkly flattens nested track event properties so you can search for each individual value.
+Search by track event properties
+August 6, 2026
+Publishes a topic on how to use symbolication to display human-readable stack traces for errors from mobile applications.
+Symbolication for stack traces
+August 4, 2026
+Adds SQL language examples to help you understand each LaunchDarkly metric type.
+Choosing a metric type
+August 4, 2026
+Adds documentation about exploring sample data added to new trial accounts.
+Exploring sample data
+August 4, 2026
+Publishes a migration guide for the new Node.js (client-side) SDK version.
+Node.js (client-side) SDK 3.x to 4.0 migration guide
+August 3, 2026
+Adds information about performing clustered analysis with Snowflake native experiments by selecting metric analysis units that are different from the experiment randomization unit.
+Randomization units and metric analysis units
+See all updates
+Explore our SDKs
+Use client-side, server-side, or edge SDKs to evaluate flags. Use AI SDKs to customize configs from AgentControl. New to an SDK? Follow a
+step-by-step setup guide
+for your language.
+Client-side and mobile SDKs
+.NET
+Android
+C++
+Electron
+Flutter
+iOS
+JavaScript
+Node.js
+React
+Roku
+Vue
+Server-side SDKs
+.NET
+Apex
+C++
+Erlang
+Go
+Haskell
+Java
+Lua
+Node.js
+PHP
+Python
+Ruby
+Rust
+AI SDKs
+.NET
+Go
+Node.js
+Python
+Ruby
+Edge SDKs
+Akamai
+Cloudflare
+Fastly
+Vercel
+OpenFeature providers
+.NET
+Cloudflare
+Java
+Node.js
+PHP
+Observability SDKs
+.NET
+Android
+iOS
+Go
+JavaScript
+Node.js
+Python
+React Web
+React Native
+Vue
+Additional resources
+Learn how to use LaunchDarkly with these other useful resources.
+LaunchDarkly community
+Join other LaunchDarkly users on Discord.
+LaunchDarkly YouTube
+Watch videos covering integration demos, SDK overviews, a user interface (Ul) tutorial, and more.
+LaunchDarkly Academy
+Learn more about LaunchDarkly with recommended courses, live or self- guided training, webinars, and other activities.
+LaunchDarkly knowledge base
+Find frequently asked questions and ways to contact LaunchDarkly Support.
+Built with

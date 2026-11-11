@@ -1,17 +1,12 @@
 # https://www.harness.io/products/feature-management-experimentation
 Feature Management & Experimentation | AI Powered | Harness
-For the complete documentation index, see
-llms.txt
-. A Markdown version of this page is available by requesting this URL with the header "Accept: text/markdown".
 Feature Management & Experimentation
-®
 Platform
 Why Harness
 Pricing
 Customers
 Resources
 Company
-Sign in
 See a Demo
 Start for Free
 Harness Autonomous SDLC Platform
@@ -51,28 +46,48 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-New
-Take engineering work from ticket to code.
 More products
 Incidents
 AI Evals
 Developer Portal
 Runtime Configuration
 Resilience Testing
-®
 Runtime Configuration
-Agent Overview
+Overview
 AI Configs
 Configs
 Feature Flags
 Experimentation
-Agent Overview
+Overview
 Feature Management & Experimentation
 Release & experiment in production at the speed of AI
 The runtime management platform. Feature flags, configs, and AI configs, all governed, all targeted, all measured, all delivered at scale.
 Start for Free
 See a Demo
+<200ms
+configuration propagation
+without redeploying
+50×
+faster releases
+with feature flags
+95%
+reduction in incidents
+attributed to code changes
+Why teams switch
+Your flag tool isn't a configuration platform.
+Most teams outgrow their feature flag tool before they realize it. Runtime configuration, AI behavior, and experimentation need a foundation, not a bolt-on.
+Runtime Control
+Flags only. Configs and AI parameters remain fragmented, manual, and unmanaged.
+Manage flags, configs, and AI configs without redeploys, under one governance model.
+Governance
+Flags, configs and AI changes lack controls, audits, and approvals.
+Govern every runtime change with RBAC, policies, approvals, and audit trails.
+Experimentation
+Runtime configuration changes ship without measurement or attribution.
+Experiment across flags, configs, and AI configs with one statistical engine.
+feature management and experimentation
+Control every release, govern every config, measure every change.
+Feature flags, release monitoring, and experimentation. All connected in one delivery pipeline.
 Harness AI
 Ask Harness AI...
 Pipeline
@@ -97,20 +112,6 @@ stat-analysis
 p95 · bayesian · 95% sig
 result-report
 +12% lift · ready to ship
-Why teams switch
-Your flag tool isn't a configuration platform.
-Runtime Control
-Manage flags, configs, and AI configs without redeploys, under one governance model.
-Governance
-Govern every runtime change with RBAC, policies, approvals, and audit trails.
-Experimentation
-Experiment across flags, configs, and AI configs with one statistical engine.
-<200ms
-configuration propagation
-50×
-faster releases
-95%
-reduction in incidents
 Agent Development Lifecycle
 NEW
 Update AI behavior at runtime with built-in experimentation
@@ -170,10 +171,11 @@ See the results of flag changes on performance metrics, conversion rates, and bu
 Recommendations.
 AI suggests when to roll out, scale back, or kill a feature based on its actual impact on your key metrics.
 Harness AI
+How can I help you today?
 Explain experiment results
 Why did metrics drop?
 Should I ship this variant?
-Kill switch for payments
+Ask Harness AI...
 Everything in one platform
 The only runtime management platform with governance built in.
 From feature rollouts to code and AI configs, every runtime change governed, targeted, and measured in one place.
@@ -218,14 +220,10 @@ payment-v2
 ○ Disabled
 AI monitoring all active flags in real-time
 Developer Console · new-checkout-flow
->
-Deploy behind flag: new-checkout
-✓
-Deployed to prod (flag disabled)
->
-Enable for internal beta testers
-✓
-Monitoring metrics...
+> Deploy behind flag: new-checkout
+✓ Deployed to prod (flag disabled)
+> Enable for internal beta testers
+✓ Monitoring metrics...
 Deploy status
 ✓ Live (hidden)
 Target segment
@@ -274,7 +272,7 @@ Harness has become a key part of our overall strategy. It increases the velocity
 Andrew Boellstorff
 , Director of Digital Product & Technology
 , Speedway Motors
-Read the Speedway Motors case study
+Read more
 ROI in weeks
 “
 The benefit and the ROI that we have seen has now been 105% according to the proof of value we did with the Harness team.
@@ -283,7 +281,7 @@ The benefit and the ROI that we have seen has now been 105% according to the pro
 Chris Davis
 , VP of Product Development
 , ADP
-Read the ADP case study
+Read more
 Data-driven decisions
 “
 Harness helps us understand how users respond to changes and identify the best path forward.
@@ -292,7 +290,7 @@ Harness helps us understand how users respond to changes and identify the best p
 Jean Steiner
 , VP of Data Science
 , Skillshare
-Read the Skillshare case study
+Read more
 Designed for developers
 We speak your language
 Harness FME is compatible with the toolkits teams use every day.
@@ -344,8 +342,7 @@ Get started with Harness Feature Management & Experimentation
 Governed pipelines. Real-time control. Experiments that measure outcomes. All within the platform your team already uses.
 Start for Free
 See a Demo
-®
-The Autonomous SDLC Platform.
+AI for everything after code.
 Platform
 Overview
 Why Harness
@@ -367,7 +364,6 @@ AI SAST
 AI SCA
 Supply Chain Security
 Security Testing Orchestration
-Cosmos Software Factory Agent
 Runtime Protection Agent
 API Posture
 API Advanced Protection
@@ -396,13 +392,11 @@ About Us
 Careers
 Press & News
 Partners
-Government
 Contact Us
 Legal
 © 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
-Cookies Notice
 Opt Out
 Cookie Settings

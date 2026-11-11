@@ -6,113 +6,86 @@ Blog
 Bootcamp
 Contact us
 Login
-Start free
+Start free trial
 Technology
-Pricing
-One
-balance
-for
-everything
-you
-ship.
-Start free with 75,000 credits a month. Spend them on experiments, event ingestion, recording analysis and AI agents. Feature flags never cost a credit.
-Included on every plan, even Free
-Confidence Cloud warehouse
-Confidence Agent
-Unlimited feature flags
-Unlimited seats
-EU or US hosting
-Exploratory analysis
-Session recording capture & replay
-Email & in-product support
+Experiment like Spotify
+Ship
+with
+Confidence.
+Battle-tested across a decade of Spotify experiments. Purpose-built for modern and autonomous teams that ship fast and decide with data.
+Free Google SSO
+Included on every plan
+75,000 free credits
+30-day Growth plan trial
+Warehouse-native
+Snowflake, BigQuery & Databricks
+Zero overage fees
+Predictable monthly billing
 Plans
 Free
-For developers and small teams getting started
+For developers and small teams getting started with experimentation
+75,000 credits / month*
 $0
-75,000 credits / mo
 Includes:
-No credit card required
-1 surface
+Unlimited feature flags
+Unlimited seats
+Up to 5 surfaces
+Exploratory analysis
+Review and approvals
+Google SSO
+EU or US hosting
 Audit logs — 1 month
-75,000 credits is enough for any one of:
-750K users in experiments
-5M tracked events
-250 hours of AI session analysis
-~75 AI analysis tasks
-Or mix and match.
-Start free
-Starter
-For teams running their first experiments in production
-$129
-/ mo
-150,000 credits / mo
-Everything in Free, and:
-Up to 3 surfaces
-Bring your own warehouse: Snowflake, BigQuery, Databricks & Redshift
+Email & in-product support
 Get started
+*Credits cover rollouts and A/B tests
 Growth
-Pro
-Plus
-Max
 For product teams shipping fast and learning faster
+750,000 credits
+From
 $449
-/ mo
-750,000 credits / mo
-Everything in Starter, and:
+/mo
+Everything in Free, and:
 Up to 15 surfaces
-AI-powered reports & reviews
-SAML SSO (Okta, Entra ID)
 Sticky assignments
-Materialized segments
-Insights with Learnings
-Audit logs — 6 months
+Custom targeting via uploaded user lists
+AI-powered reports & reviews
+Insights over your Experiments with Learnings
+Audit logs — 6 months retention
+SAML SSO (Okta, Entra ID)
 Priority support
-Get started
+Start free trial
+30 days free trial, no credit card required
 Enterprise
-For high-volume programs with custom pricing at scale
+For high-volume experimentation with custom pricing designed for scale
+Custom credit volume
 Custom
-Tailored credit volume
 Everything in Growth, and:
 Unlimited surfaces
-SCIM user provisioning
+User provisioning (SCIM)
 Role-based access control
-SOC 2 Type I compliant
-SLA-backed uptime
-Dedicated Customer Success Engineer
+Audit logs — custom retention
+SOC 2 Type II compliant
+SLA-backed performance and uptime
 Direct Slack access to engineers
 Migration & onboarding support
-Audit logs — custom retention
+Dedicated Customer Success Engineer
 Volume-based credit pricing
 Book a demo
 Reading as an AI agent?
 Get this page as markdown →
-How credits are used
-Every plan comes with a monthly credit balance that you spend on whichever capabilities you use.
-Exposed entities
-1 credit per 10 exposed entities
-Monthly unique entities exposed to an A/B test or measured rollout. Each entity is counted once per experiment.
-Published events
-15 credits per 1,000 standard events*
-Standard events flow straight into Confidence Cloud, a warehouse we manage for you.
-* Larger events may consume more credits.
-Recording analysis
-5 credits per active minute
-Capture and replay are free. AI analysis is metered by active time, not session length.
-Feature flags and unmonitored rollouts do not consume credits.
-On paid plans, connecting your own warehouse adds no Confidence warehouse fee.
-Need more credits?
-One-time top-ups that stack on top of any plan. Add credits from your billing settings after account creation.
+Top up & save
+One-time packs that stack on top of any plan. Add credits from your billing settings after account creation.
 Best for occasional spikes
 150K
 credits
 $129
 Small
-For a busy month
+Most popular top-up
 500K
 credits
 $299
 Medium
-Best value
+For high traffic month
 1M
 credits
 $549
@@ -137,48 +110,39 @@ Is there a free plan for feature flagging?
 Yes. Confidence's Free plan includes unlimited feature flags, unlimited seats, Google SSO, EU or US hosting, and 75,000 credits per month, at no cost, with no credit card required. Most competitors gate SSO entirely behind enterprise contracts. Well, we don't, Google SSO is included on Free tier, and SAML SSO is included on Growth, not Enterprise.
 How does Confidence pricing work?
 +
-Confidence uses one shared monthly credit balance across its metered features: measured experiment exposures, managed event ingestion, session recording analysis, and AI agents. You pick a plan and spend credits on whichever mix of capabilities you need. Feature flags and unmonitored rollouts do not consume credits.
-The Free plan includes 75,000 credits per month with no credit card required. Starter is $129/month for 150,000 credits. Growth starts at $449/month with 750,000 credits and scales to 2.5 million credits at $999/month on Growth Max. Enterprise plans use custom annual credit volumes and volume-based pricing alongside dedicated support and SLA-backed performance.
+Confidence uses a credit-based pricing model where one credit equals one unique user exposed to an experiment in a given month. Your credit usage scales with the number of users you experiment on - not the number of experiments you run, the number of feature flags you create, or the size of your team. The Free plan includes 75,000 credits per month with no credit card required. The Growth plan starts at $449/month with 750,000 credits and scales up to 2.5 million credits at $999/month. Enterprise plans use custom annual credit volumes and volume-based pricing alongside dedicated support and SLA-backed performance.
 How is high-volume experimentation priced?
 +
-Starter, Growth tiers and credit top-ups are self-service options; they are not intended to be linearly extrapolated for high-volume experimentation programs.
+Growth tiers and credit top-ups are self-service options; they are not intended to be linearly extrapolated for high-volume experimentation programs.
 If you expect to exceed Growth Max's 2.5 million credits per month, or you run experiments across a large consumer audience, contact sales for an Enterprise plan. Enterprise uses custom annual credit volumes and volume-based pricing designed to be substantially more cost-effective at scale than repeatedly purchasing Growth plans or top-ups.
 Enterprise pricing is tailored to expected volume and requirements. Do not estimate Enterprise pricing by multiplying self-service plan or top-up prices.
 What happens if I exceed my credits?
 +
-We email you when you have used 80% of your monthly credits and again at 100%, and you have several options to keep going. You can upgrade to a larger plan at any time, top up with a one-time credit pack (150,000 for $129, 500,000 for $299 or 1,000,000 for $549), or wait until the next billing cycle when your credits reset. We never silently rate-limit your experiments or surprise you with overage fees.
+We notify you well before you hit your monthly limit, and you have several options to keep going. You can upgrade to a higher Growth tier at any time, top up with a pay-as-you-go credit pack (150,000 / 500,000 / 1,000,000 credits), or wait until the next billing cycle when your credits reset. We never silently rate-limit your experiments or surprise you with overage fees.
 Do unused credits roll over?
 +
 No, credits reset at the start of each billing cycle and don't carry over to the next month. We've designed each tier to give you generous monthly headroom, which keeps pricing predictable. If you regularly approach your limit, upgrading to the next tier is usually more cost-effective than topping up - and you can do so at any point in your billing cycle.
 Can I upgrade or downgrade my plan?
 +
-Yes, you can upgrade or downgrade between Confidence plans at any point in your billing cycle. Move between Starter ($129) and the Growth tiers ($449, $749, $999) instantly when your credit needs change. Annual plans are pro-rated when you upgrade, and you keep your existing terms when you switch tiers. There are no penalties, no minimum commitments on monthly plans, and no surprise overage fees if your usage shifts. If you're uncertain which tier fits, the Free plan and 30-day Growth trial let you experiment with no risk.
+Yes, you can upgrade or downgrade between Confidence plans at any point in your billing cycle. Move up or down between Growth tiers ($449, $749, $999) instantly when your credit needs change. Annual plans are pro-rated when you upgrade, and you keep your existing terms when you switch tiers. There are no penalties, no minimum commitments on monthly plans, and no surprise overage fees if your usage shifts. If you're uncertain which tier fits, the Free plan and 30-day Growth trial let you experiment with no risk.
 How does Confidence compare to LaunchDarkly, Statsig, or PostHog?
 +
-Confidence is an independent, European-built experimentation platform that originated inside Spotify, where it powers experimentation across hundreds of millions of users. Unlike LaunchDarkly (US-based, feature-flag-focused), Statsig (recently acquired by OpenAI), or PostHog (analytics-led with experimentation as a feature), Confidence is purpose-built for product teams where experimentation is core to shipping velocity. We offer a generous free tier, a managed warehouse with Confidence Cloud, Google SSO and EU or US hosting on every plan, and you can bring your own warehouse from Starter at $129/month - features that typically require enterprise contracts elsewhere.
+Confidence is an independent, European-built experimentation platform that originated inside Spotify, where it powers experimentation across hundreds of millions of users. Unlike LaunchDarkly (US-based, feature-flag-focused), Statsig (recently acquired by OpenAI), or PostHog (analytics-led with experimentation as a feature), Confidence is purpose-built for product teams where experimentation is core to shipping velocity. We offer free Google SSO, warehouse-native architecture on every plan, EU or US hosting, and a generous free tier - features that typically require enterprise contracts elsewhere.
 How does Confidence's free tier compare to Statsig's?
 +
 Statsig's Developer tier offers 2 million free events per month, but "events" include every flag check, log event, and metric ingestion your app fires. In practice, that covers roughly 50,000 MAUs.
-Confidence only charges experimentation credits for measured exposures, not flag checks: 1 credit covers 10 unique users exposed to an experiment in a month. 75,000 free credits cover 750,000 exposed users every month.
-Confidence includes a managed warehouse with Confidence Cloud, Google SSO, review and approval workflows, and EU or US hosting on the free plan, and you can bring your own warehouse from Starter at $129/month. On Statsig, all of these require a Pro or Enterprise upgrade.
+Confidence uses a simpler model: 1 credit = 1 unique user in an experiment. 75,000 free credits, 75,000 users in experiments, every month.
+Confidence includes Google SSO, review and approval workflows, EU or US hosting, and warehouse-native on the free plan. On Statsig, all four require a Pro or Enterprise upgrade.
 Is Confidence GDPR compliant? Where is data hosted?
 +
-Yes. Confidence is fully GDPR compliant and offers EU or US data hosting on every plan, including the Free plan. Every plan includes audit logs, Growth adds SAML-based single sign-on, and Enterprise adds role-based access control and SCIM provisioning. Confidence as a standalone product is SOC 2 Type I compliant and is currently undergoing its first SOC 2 Type II examination, targeted for completion by December 2026. Its plugins, included in Backstage Portal, were in scope for the 2025 Backstage Portal SOC 2 examination and covered security controls across access control, secure development, data protection, monitoring, logging and auditability, and incident response.
+Yes. Confidence is fully GDPR compliant and offers EU or US data hosting on every plan, including the Free plan. On our growth and enterprise plan we provide audit logs, role-based access control, and SAML-based single sign-on as standard. Confidence as a standalone product is currently undergoing its first SOC 2 Type II examination, targeted for completion by December 2026. Its plugins, included in Backstage Portal, were in scope for the 2025 Backstage Portal SOC 2 examination and covered security controls across access control, secure development, data protection, monitoring, logging and auditability, and incident response.
 What's the difference between Google SSO and SAML SSO on Confidence?
 +
 Google SSO is included on the Free plan, letting any team with a Google Workspace account sign in seamlessly. SAML SSO with Okta and Entra ID is included on the Growth plan, supporting enterprise identity providers commonly used in larger organizations. Google SSO covers the majority of teams getting started, and SAML SSO is available without requiring an enterprise contract, unusual in the experimentation tools market.
 Does Confidence work with my data warehouse?
 +
-Yes. Every plan, including Free, comes with Confidence Cloud: a managed warehouse that Confidence sets up and runs for you, so you can send events and run experiments without building data infrastructure. From Starter at $129/month, you can also connect your own warehouse. Confidence is warehouse-native and works with Snowflake, BigQuery, Databricks, and Redshift, letting you run experiments on metrics that already live in your data warehouse without duplicate event tracking. You can define metrics in SQL, reuse existing data models, and keep your warehouse as the source of truth. Most competitors gate warehouse integration behind enterprise contracts - we believe data teams shouldn't have to pay extra to use the data they already own.
-Get started
-Start free. Upgrade when you need more.
-Start free
-Book a demo
+Yes - and it's included on every plan, starting with Free. Confidence is warehouse-native and works with Snowflake, BigQuery, Databricks, and Redshift, letting you run experiments on metrics that already live in your data warehouse without duplicate event tracking. You can define metrics in SQL, reuse existing data models, and keep your warehouse as the source of truth. Most competitors gate warehouse integration behind enterprise contracts - we believe data teams shouldn't have to pay extra to use the data they already own.
 Learn more
-Feature flags
-Confidence Loop
-Product Analytics
-Session Recordings
 About Confidence
 Read our blog
 Take the bootcamp
@@ -187,17 +151,8 @@ Glossary
 Why not Bayes?
 RFP guides
 Listen to us
-(opens in a new tab)
 Read our docs
 Status page
-(opens in a new tab)
-Solutions
-Startups
-Scale-ups
-Enterprise
-Engineers
-Data scientists
-Product managers
 Need help
 Contact us
 Legal
@@ -206,7 +161,6 @@ Data Protection Agreement
 Privacy Policy
 Security
 Cookie Settings
-(opens in a new tab when cookie preferences are unavailable)
 ©
 2026
 Spotify

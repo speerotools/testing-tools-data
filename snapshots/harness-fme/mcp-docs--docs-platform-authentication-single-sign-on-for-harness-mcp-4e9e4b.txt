@@ -13,7 +13,7 @@ API Reference
 Release Notes
 Roadmap
 University
-Classic Experience
+2.0
 Platform
 New to Harness Platform?
 Overview
@@ -94,14 +94,10 @@ Markdown
 Copy
 On this page
 Documentation
-Platform
 Harness Platform
-Classic Experience
+2.0
 Use Harness Platform
 Authentication
-Authentication
-SSO
-Mcp
 Single Sign-On (SSO) for Harness MCP
 Learn how to add an additional ACS URL or redirect URI in your Identity Provider to enable Harness MCP login via SAML or OIDC.
 Manual
@@ -514,7 +510,7 @@ Single Sign-On (SSO) with OpenID Connect (OIDC)
 Next
 Two-factor authentication
 Last updated
-1 month ago
+1 day ago
 Was this helpful?
 Resources
 Sign up

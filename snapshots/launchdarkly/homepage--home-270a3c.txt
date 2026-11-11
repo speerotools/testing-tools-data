@@ -39,7 +39,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events
+Events & webinars
 Videos
 Success
 Academy
@@ -227,7 +227,7 @@ View agent integrations
 Copy, paste, go.
 Drop this prompt into your favorite coding assistant and get up and running with AI in seconds.
 Onboard me to LaunchDarkly.
-Start by installing the onboarding skill: `npx skills add launchdarkly/ai-tooling --skill onboarding -y`. source-launchdarkly
+Start by installing the onboarding skill: `npx skills add launchdarkly/agent-skills --skill onboarding -y`. source-launchdarkly
 Copy to clipboard
 Savage X Fenty keeps shoppers engaged with rapid, reliable experiments.
 Read story
@@ -257,15 +257,15 @@ Dior
 Minutes to release
 < Zero
 Read story
-Hulu performs targeted rollout of major UI launch to 39 million users.
+Paramount improves developer productivity
 Read story
-We were able to use five rules with five segments configured using custom attributes from our servers to target all the rules in the right places at the right time.
-Dominic Hopton
-Client Architect
+It’s one of the 'three legs of the stool,' as I like to say. One leg is CI/CD, another is automated testing, and the third is LaunchDarkly.
+Dan Skaggs
+Technical Director, Content Engineering
 ,
-Hulu
-Customer experiences
-Improved
+Paramount
+Deployments per day
+6-7
 Read story
 Hireology builds safe, scalable AI features.
 Case study

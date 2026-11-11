@@ -3,85 +3,103 @@ GitHub - absmartly/mcp · GitHub
 Skip to content
 Navigation Menu
 Sign in
-Products
+Appearance settings
 Platform
-GitHub
-Repository hosting, code review, and collaboration
-Copilot
-AI coding agent for tasks, projects and automated work
-Build & Ship
+AI CODE CREATION
+GitHub Copilot
+Write better code with AI
+GitHub Copilot app
+Direct agents from issue to merge
+MCP Registry
+Integrate external tools
+DEVELOPER WORKFLOWS
 Actions
-CI/CD and automation
-Code Quality
-Quality analysis, fixes, and enforcement
+Automate any workflow
 Codespaces
-Cloud development environments
-Secure
-Code Security
-Vulnerability detection and remediation
-Secret Protection
-Secret scanning and leak prevention
-All Features
-Developers
-Learn
+Instant dev environments
+Issues
+Plan and track work
+Code Review
+Manage code changes
+Code Quality
+Enforce quality at merge
+APPLICATION SECURITY
+GitHub Advanced Security
+Find and fix vulnerabilities
+Code security
+Secure your code as you build
+Secret protection
+Stop leaks before they start
+EXPLORE
+Why GitHub
 Documentation
-Training
-Certifications
-Build
-Build with Copilot
-Customize Copilot
-Integrations
-Explore
-Trending repos
-GitHub Sponsors
-Events
+Blog
 Changelog
-Changelog
-Your source for the latest features, improvements, and fixes across GitHub products, all in one place.
-Businesses
-By Stage
+Marketplace
+View all features
+Solutions
+BY COMPANY SIZE
 Enterprises
-Team
+Small and medium teams
 Startups
 Nonprofits
-By Industry
+BY USE CASE
+App Modernization
+DevSecOps
+DevOps
+CI/CD
+View all use cases
+BY INDUSTRY
 Healthcare
 Financial services
 Manufacturing
 Government
-See all industries
-Evaluate GitHub
-Why GitHub
-Customer Stories
+View all industries
+View all solutions
+Resources
+EXPLORE BY TOPIC
+AI
+Software Development
+DevOps
+Security
+View all topics
+EXPLORE BY TYPE
+Customer stories
+Events & webinars
+Ebooks & reports
 Business insights
-Trust Center
-Add-ons
+GitHub Skills
+SUPPORT & SERVICES
+Documentation
+Customer support
+Community forum
+Trust center
+Partners
+View all resources
+Open Source
+COMMUNITY
+GitHub Sponsors
+Fund open source developers
+PROGRAMS
+Security Lab
+Maintainer Community
+GitHub Stars
+Archive Program
+REPOSITORIES
+Topics
+Trending
+Collections
+Enterprise
+ENTERPRISE SOLUTIONS
+Enterprise platform
+AI-powered developer platform
+AVAILABLE ADD-ONS
 GitHub Advanced Security
-Enterprise-grade code security
-Copilot for business
+Enterprise-grade security features
+Copilot for Business
 Enterprise-grade AI features
 Premium Support
 Enterprise-grade 24/7 support
-Resources
-Learn & Connect
-Documentation
-Resource center
-Blog
-Events & webinars
-Community Forum
-Customer Stories
-Integrations
-Support
-Customer support
-Training
-GitHub Status
-Company
-About
-Partners
-Changelog
-GitHub Universe
-GitHub Universe
-The event for developers, by developers — talks, workshops, and what’s next for GitHub.
 Pricing
 Search
 /
@@ -99,56 +117,33 @@ Reload
 to refresh your session.
 Dismiss alert
 absmartly
-mcp
-Repository navigation
-Code
-Issues
-2
-(
-2
-)
-Pull requests
-25
-(
-25
-)
-Actions
-Projects
-Security and quality
-Insights
-More
-items
+/
 mcp
 Public
 Notifications
 You must be signed in to change notification settings
 Fork
 1
-(
-1
-)
 Star
 0
-(
+Code
+Issues
+2
+Pull requests
+19
+Actions
+Projects
+Security and quality
 0
-)
-You must be signed in to star a repository
-About
-No description, website, or topics provided.
-Resources
-Readme
-Activity
-Custom properties
-Stars
-0
-stars
-Watchers
-0
-watching
-Forks
-1
-fork
-Report repository
+Insights
+Additional navigation options
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security and quality
+Insights
 main
 Branches
 Tags
@@ -157,8 +152,8 @@ Code
 Open more actions menu
 Latest commit
 History
-81 Commits
-81 Commits
+71 Commits
+71 Commits
 Folders and files
 Name
 Name
@@ -192,8 +187,6 @@ tests
 .env.local.example
 .gitignore
 .gitignore
-CHANGELOG.md
-CHANGELOG.md
 CLAUDE.md
 CLAUDE.md
 DEPLOYMENT_SECRETS.md
@@ -206,8 +199,6 @@ README.md
 README.md
 SETUP_COMPLETE.md
 SETUP_COMPLETE.md
-endpoint-manifest.json
-endpoint-manifest.json
 env.vars.example
 env.vars.example
 icon.png
@@ -1066,56 +1057,6 @@ raw
 (optional) — return full CommandResult with rows/detail/warnings/pagination
 limit
 (optional) — max items for list operations (default: 20)
-Parameter shape.
-Each command documents its params with
-get_command_docs
-. IDs are named after the entity (
-experimentId
-,
-goalId
-,
-keyId
-, ...), and create/update fields go in a
-data
-object using the API's field names (e.g.
-{ "data": { "first_name": "Ada" } }
-). The server translates these to what each
-@absmartly/cli
-core function reads. Some notable shapes:
-Access commands (
-grant/revoke…AccessUser/Team
-on experiments, goals and metrics) take a
-role
-: an asset role ID or name (e.g.
-"Editor"
-). Metrics use
-assetRoleId
-.
-Datasource
-testDatasource
-/
-introspectDatasource
-/
-validateDatasourceQuery
-and
-storageconfigs.testStorageConfig
-take the saved config's ID. The backend uses the stored secrets, so they never pass through MCP.
-testDatasource
-also accepts unsaved edits in
-config
-.
-Insights,
-activity.listActivity
-and
-events.listEvents*
-take their filters as top-level params. A
-params
-object holding the same fields is still accepted but deprecated.
-platformconfig.get/updatePlatformConfig
-take
-configKey
-: the config's ID or name.
-Deprecated params (still accepted, not shown in docs) are kept for callers written against 2.0.x.
 Destructive actions
 (start, stop, archive, delete) require confirmation. The server returns a confirmation prompt; only after the user has explicitly confirmed should you call again with
 confirmed: true
@@ -1329,239 +1270,9 @@ analyze-experiment
 Deep analysis of a specific experiment
 experiment-review
 Review running experiments for issues
-Embedding in a Node server (
-@absmartly/mcp
-package)
-The package has separate entry points, so a Node host does not install or load the Cloudflare Worker stack:
-Import
-What it is
-Formats
-@absmartly/mcp
-(alias
-@absmartly/mcp/node-http
-)
-createStreamableHttpHandler
-,
-FetchHttpClient
-,
-registerServer
-/
-setupTools
-, the command catalog,
-ApiClientLike
-, manifest types
-ESM + CommonJS
-@absmartly/mcp/oauth
-OAuth policy primitives (redirect policy, PKCE, registration, CIMD, consent, endpoint parsing:
-parseAbsmartlyEndpoint
-,
-tryParseAbsmartlyEndpoint
-,
-canonicalizeEndpoint
-;
-normalizeEndpoint
-is deprecated and keeps its 2.0 behaviour)
-ESM + CommonJS
-@absmartly/mcp/endpoint-manifest.json
-Every backend endpoint each tool/command can call
-JSON
-@absmartly/mcp/worker
-The Cloudflare Worker (
-default
-fetch handler,
-ABsmartlyMCP
-Durable Object)
-ESM
-import
-{
-APIClient
-}
-from
-"@absmartly/cli/api-client"
-;
-import
-{
-createStreamableHttpHandler
-,
-FetchHttpClient
-}
-from
-"@absmartly/mcp"
-;
-const
-mcp
-=
-createStreamableHttpHandler
-(
-async
-(
-req
-)
-=>
-(
-{
-apiClient
-:
-new
-APIClient
-(
-new
-FetchHttpClient
-(
-endpoint
-,
-{
-authToken
-,
-authType
-:
-"jwt"
-}
-)
-)
-,
-endpoint
-,
-authType
-:
-"JWT"
-,
-}
-)
-)
-;
-app
-.
-post
-(
-"/mcp"
-,
-(
-req
-,
-res
-,
-next
-)
-=>
-mcp
-.
-post
-(
-req
-,
-res
-,
-req
-.
-body
-)
-.
-catch
-(
-next
-)
-)
-;
-FetchHttpClient
-supports
-authType
-"jwt"
-,
-"api-key"
-, and
-"service-key"
-(with
-impersonatedUserId
-). It rejects absolute URLs to other origins and does not let request headers override the credential.
-Dependencies.
-@absmartly/cli
-is a peer dependency (
->=1.7.0 <2
-). The host's own copy is used, and
-NodeMcpRequestContext.apiClient
-is typed structurally (
-ApiClientLike
-), so an
-APIClient
-from any version in that range type-checks without a cast.
-hono
-,
-@cloudflare/workers-oauth-provider
-and
-agents
-are optional peers that only
-@absmartly/mcp/worker
-needs.
-The Node entries never import them.
-hono
-is still installed as a dependency of
-@modelcontextprotocol/sdk
-.
-Migrating from 1.x.
-2.0.0 is a major release because the dependency and export surface changed:
-@absmartly/cli
-moved from
-dependencies
-to
-peerDependencies
-, so the host must install it.
-The Worker-only packages (
-hono
-,
-@cloudflare/workers-oauth-provider
-,
-agents
-) are no longer installed with the package.
-main
-and
-types
-now point at the core entry.
-workers-mcp
-and
-dotenv
-were removed.
-Existing
-@absmartly/mcp
-,
-@absmartly/mcp/node-http
-and
-@absmartly/mcp/oauth
-imports keep working. They now also resolve under
-require
-.
-Contract testing.
-endpoint-manifest.json
-is generated from the tool definitions and the
-@absmartly/cli
-build (
-npm run manifest
-). Its
-endpoints
-array lists
-{ method, path }
-pairs, such as
-GET /v1/experiments/{id}
-and
-GET /auth/current-user
-. Parameter names are not significant. A host can assert that each pair exists in its OpenAPI spec.
-tools
-,
-resources
-and
-commands
-break the list down per tool, per resource and per
-execute_command
-command.
 Development
 Prerequisites
-Node.js 22.12.0+ (the CommonJS entries
-require()
-the ESM-only
-@absmartly/cli
-, which needs unflagged
-require(esm)
-)
+Node.js 22+
 Cloudflare account (for remote deployment)
 ABsmartly account and API key
 Setup
@@ -1582,44 +1293,14 @@ Unit tests
 npm run typecheck
 #
 TypeScript type checking
-npm run smoke:worker
-#
-Worker starts under wrangler dev and serves /health
-npm run test:e2e
-#
-Gated e2e suite: fresh Worker + test-1 API, no skips allowed
-npm run verify:release
-#
-Everything above; runs automatically on npm publish
-npx tsx scripts/audit-catalog-params.ts
-#
-Compare every catalog command's params with its CLI core function
-tests/unit/cli-catalog-core-params.test.ts
-runs catalog commands through the real
-@absmartly/cli
-core over a fake HTTP client, and fails if the audit finds any catalog/core param mismatch.
-test:e2e
-needs
-ABSMARTLY_API_KEY
-and
-ABSMARTLY_API_ENDPOINT
-(test-1) and fails without them. See
-tests/README.md
-.
-The e2e suites call the Worker through the official MCP SDK client, with no model in the loop. To run one against a Worker you started yourself:
-MCP_WORKER_URL=http://127.0.0.1:8787 npx tsx tests/integration/sdk-tools.test.ts --profile test-1
+Integration tests (require credentials):
+node tests/integration/claude-mcp-tools.test.js --profile test-1 node tests/integration/claude-user-experience.test.js --profile test-1 node tests/integration/claude-tool-discovery.test.js --profile test-1
 CI/CD
 GitHub Actions runs automatically:
 CI
-(every push/PR): typecheck, unit tests, Worker startup smoke test
+(every push/PR): typecheck + unit tests
 Deploy
-(push to main): tests, Worker smoke test, Cloudflare Workers deployment
-Publish to npm
-(push to main with a version bump): gated e2e job, then
-npm publish
-(which runs
-verify:release
-again)
+(push to main): tests + Cloudflare Workers deployment
 Deployment
 npm run deploy
 #
@@ -1628,7 +1309,7 @@ npm run build:dxt
 #
 Build DXT extension
 Project Structure
-src/ ├── core.ts # Node/core package entry (@absmartly/mcp) ├── worker.ts # Worker package entry (@absmartly/mcp/worker) ├── index.ts # Cloudflare Worker (OAuth, auth, resources, prompts) ├── node-http-server.ts # Node Streamable HTTP handler ├── local-server.ts # Standalone stdio server ├── cli-catalog.ts # 230+ commands mapped to CLI core functions ├── tools.ts # Shared MCP tool setup (4 tools) ├── fetch-adapter.ts # HTTP client bridging APIClient to fetch ├── resources.ts # MCP resources (docs + entity data) ├── absmartly-oauth-handler.ts # OAuth flow handler ├── shared.ts # Shared utilities └── types.ts # TypeScript types
+src/ ├── index.ts # Cloudflare Worker (OAuth, auth, resources, prompts) ├── local-server.ts # Standalone stdio server ├── cli-catalog.ts # 230+ commands mapped to CLI core functions ├── tools.ts # Shared MCP tool setup (4 tools) ├── fetch-adapter.ts # HTTP client bridging APIClient to fetch ├── resources.ts # MCP resources (docs + entity data) ├── absmartly-oauth-handler.ts # OAuth flow handler ├── shared.ts # Shared utilities └── types.ts # TypeScript types
 Security
 No server-side secrets
 — credentials provided by the MCP client
@@ -1638,26 +1319,6 @@ OAuth protection
 — API key sessions block OAuth discovery to prevent auth method confusion
 Destructive action confirmation
 — start, stop, archive, and delete operations require explicit confirmation
-Requests stay under the API base
-—
-FetchHttpClient
-only sends requests under the configured base's
-/v1
-(plus the root
-/auth/current-user
-paths), to the configured origin. It rejects dot segments (including
-%2e
-/
-%2E
-and multiply-encoded forms), backslashes, encoded separators (
-%2f
-,
-%5c
-) and control characters before the URL is built, so
-fetch
-never normalises a path like
-/v1/../auth
-out of the prefix. Redirects are not followed.
 API error surfacing
 — validation errors from the API are returned with full detail for correction
 License

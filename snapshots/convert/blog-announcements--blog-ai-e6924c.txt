@@ -89,6 +89,7 @@ Brian Poe
 Brian Skewes
 Bronwynn Dyson
 Bruno Borges
+Burkhard Berger
 Buse Hizarci
 Callum Dreniw
 Carlos Trujillo
@@ -126,11 +127,9 @@ Daphne Tideman
 Dara King
 Darjan Hren
 David Crowther
-David Dias Rodríguez
 David Sanchez del Real
 David Stepien
 Deborah O'Malley
-Delphine Finders-Binje
 Dennis van der Heijden
 Dhruv Mehta
 Dionysia Kontotasiou
@@ -337,15 +336,7 @@ Vivek Patel
 Zander Aycock
 Blog Posts
 AI
-21 Sep, 2026
-Use AI for Statistical Analysis Without Letting It Tamper With the Numbers
-By
-Iqbal Ali
-Are you one of those people using AI for analysis and statistical calculations? I know why you might be doing that. Convenience, right? Reducing friction. But let's consider the story of the data. That hard-earned data you spent time and effort ensuring robustness and accuracy. And then you throw it...
-Read More
-→
-AI
-Updated 27 Aug, 2026
+03 Aug, 2026
 Promote your n8n workflows to MCP tools any AI chat can call
 By
 Iqbal Ali
@@ -361,7 +352,7 @@ Can we create a workflow that reliably writes JavaScript code for our client-sid
 Read More
 →
 AI
-Updated 05 Jul, 2026
+30 Jun, 2026
 We Audited How 14 A/B Testing Tools Use AI. Here’s What We Found
 By
 Ahmed
@@ -379,11 +370,19 @@ Validating claims is important these days. Whether we're writing a LinkedIn post
 Read More
 →
 AI
-Updated 27 Jul, 2026
+11 May, 2026
 Solving the Fragility of Redirect Tests with AI-Driven Regex Automation
 By
 Iqbal Ali
 I’m going to be honest: I’m not a huge fan of redirect tests. It's tough maintaining data integrity in those things. I’m specifically talking about client-side redirect tests, by the way. Server-side redirect tests are fine. Redirect tests are when you have a page (e.g. /my-original-page) and want some of...
+Read More
+→
+AI
+07 May, 2026
+Unrestricted MCP Access is Risky. Here’s How to Turn It into a Secure, Efficient n8n Workflow
+By
+Iqbal Ali
+Part of the Small Models series: This article explores one way to interact with the Convert MCP server. It’s an advanced use case for those who want to experiment with small, cost-efficient, and secure models and alternative tooling.
 Read More
 →
 1
@@ -422,7 +421,6 @@ Multi-page Testing
 Audience Targeting
 A/B Testing Goals
 Full-stack Experimentation
-AI In Convert Experiences
 Integrations
 API Access
 Ecommerce A/B Testing

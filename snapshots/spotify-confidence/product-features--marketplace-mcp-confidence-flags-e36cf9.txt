@@ -33,7 +33,7 @@ Enterprise
 Pricing
 Resources
 →
-x
+Loading…
 Product
 Agents
 Enterprise
@@ -104,18 +104,27 @@ View Source
 /add-plugin confidence
 MCP
 2
+
+
 confidence-flags
+
 confidence-docs
 Skills
 11
+
+
 migrate-eppo
 Migrate feature flags from Eppo to Confidence SDK. Use when the user says /migrate-eppo, asks to migrate Eppo flags, or transform SDK code to Confidence.
+
 migrate-optimizely
 Migrate feature flags from Optimizely to Confidence SDK. Use when the user says /migrate-optimizely, asks to migrate Optimizely flags/rollouts/experiments, or transform Optimizely SDK code to Confidence.
+
 migrate-posthog
 Migrate feature flags from PostHog to Confidence SDK. Use when the user says /migrate-posthog, asks to migrate PostHog flags, or transform SDK code to Confidence.
+
 migrate-statsig
 Migrate feature flags from Statsig to Confidence SDK. Use when the user says /migrate-statsig, asks to migrate Statsig gates/configs/experiments, or transform SDK code to Confidence.
+
 onboard-confidence
 Create Confidence accounts and onboard users. Use when the user asks to create an account, invite users, onboard to Confidence, or check account status.
 View
@@ -123,26 +132,32 @@ View
 more
 Commands
 5
+
+
 migrate-eppo
 Migrate feature flags from Eppo to Confidence
+
 migrate-optimizely
 Migrate feature flags from Optimizely to Confidence
+
 migrate-posthog
 Migrate feature flags from PostHog to Confidence
+
 migrate-statsig
 Migrate feature flags from Statsig to Confidence
+
 onboard-confidence
 Create Confidence accounts and onboard users
 Related plugins
-Adspirer Retail Ads
-Amazon & Walmart retail advertising. Analyze ad performance, track ACoS and ROAS, research keywords, and create and optimize campaigns with your approval.
-VAST DataEngine
-Create VAST DataEngine functions, triggers, and pipelines with the vastde CLI.
-Adaption
-Datasets and fine-tuning workflows powered by Adaption.
-GrowthBook
-Full-lifecycle agent skills for GrowthBook feature flags, experimentation, and product analytics.
 Omni Integrations
 Connect Omni Analytics with external data platforms.
 Fullstory
 Connect Cursor to Fullstory to query behavioral analytics, session replays, and customer experience insights.
+Statsig
+Inspect and manage feature gates, experiments, dynamic configs, and metrics.
+Monid
+Discover and run hundreds of data endpoints — web scraping, people/company enrichment, social media, and search — through one interface. Connects to the hosted Monid MCP server; falls back to the Monid CLI when a shell is available.
+Smartsheet
+Query and update sheets, rows, and workspaces.
+Similarweb
+Analyze website traffic, audiences, and competitors.

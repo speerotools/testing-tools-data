@@ -18,8 +18,8 @@ Login
 Convert Blog: Learn A/B Testing, Optimization & Marketing
 Latest Blog Post on Convert
 AI
-The Easy Way to Benchmark Language Models
-Can a smaller, cheaper, and more power-efficient (and more open) language model beat Anthropic's Fable model? You know, the language model that's so good it's a danger to humanity. According to benchmarks widely used by AI labs, the answer is: of course not. Are you crazy? But what if I told you there was widespread…
+Use AI for Statistical Analysis Without Letting It Tamper With the Numbers
+Are you one of those people using AI for analysis and statistical calculations? I know why you might be doing that. Convenience, right? Reducing friction. But let's consider the story of the data. That hard-earned data you spent time and effort ensuring robustness and accuracy. And then you throw it into a language model and…
 Read the full article
 →
 Our Editorial Promise
@@ -94,6 +94,7 @@ Brian Poe
 Brian Skewes
 Bronwynn Dyson
 Bruno Borges
+Burkhard Berger
 Buse Hizarci
 Callum Dreniw
 Carlos Trujillo
@@ -131,11 +132,9 @@ Daphne Tideman
 Dara King
 Darjan Hren
 David Crowther
-David Dias Rodríguez
 David Sanchez del Real
 David Stepien
 Deborah O'Malley
-Delphine Finders-Binje
 Dennis van der Heijden
 Dhruv Mehta
 Dionysia Kontotasiou
@@ -341,52 +340,52 @@ Vishal Kothari
 Vivek Patel
 Zander Aycock
 Blog Posts
-Optimization
-15 Oct, 2026
-Testing Mind Map Series: How to Think Like a CRO Pro, Part 98 with Delphine Finders-Binje
-By
-Delphine Finders-Binje
-Delphine Finders-Binje is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where judgment sits now that AI has...
-Read More
-→
-Full Stack Experimentation
-12 Oct, 2026
-How to Safely Run Autonomous Experimentation Loops in Convert Experiences
-By
-Uwemedimo Usa
-An autonomous experimentation loop automatically identifies active tests, reads their results, and acts within limits you set in advance. Maintain security by granting the loop least-privilege credentials, such as read-only access, to limit risk. Ensure statistical rigor using sequential testing and enforcing minimum runtimes to prevent acting on random noise....
-Read More
-→
-Full Stack Experimentation
-07 Oct, 2026
-10 Best Feature Flag and Rollout Tools for Developers and Product Teams (2026)
-By
-Uwemedimo Usa
-Feature flags let you deploy code hidden behind a toggle, then turn it on for specific users without a redeploy. Rollouts use the same flag to expand access step by step. Developers use flags for internal testing, percentage-based rollouts, and A/B testing against a control group. Feature flag and rollout...
-Read More
-→
-Optimization
-05 Oct, 2026
-Testing Mind Map Series: How to Think Like a CRO Pro, Part 97 with David Dias Rodríguez
-By
-David Dias Rodríguez
-David Dias Rodríguez, Product Analyst at Sterling, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where judgment...
-Read More
-→
-AI
-21 Sep, 2026
-Use AI for Statistical Analysis Without Letting It Tamper With the Numbers
-By
-Iqbal Ali
-Are you one of those people using AI for analysis and statistical calculations? I know why you might be doing that. Convenience, right? Reducing friction. But let's consider the story of the data. That hard-earned data you spent time and effort ensuring robustness and accuracy. And then you throw it...
-Read More
-→
 A/B Testing
 17 Sep, 2026
 How to Forecast A/B Test Revenue Impact Without Overselling It
 By
 Ryan Thomas
 Forecasting the effect your experiments will have on future revenue is a bit of a controversial topic in the CRO world. The reason for this comes down to the fact that we don't really know for sure if a 10% lift from an experiment will translate into a 10% increase...
+Read More
+→
+Growth Marketing
+14 Sep, 2026
+Why Your Pricing Tests Keep Failing
+By
+Daphne Tideman
+Work the pyramid from the bottom up When you think of first running price tests, what comes to mind? Adjusting your prices up or down? Maybe testing discount levels? That’s what comes to mind for most of us, but it should be the last thing you test. Most subscription apps...
+Read More
+→
+Optimization
+07 Sep, 2026
+Testing Mind Map Series: How to Think Like a CRO Pro, Part 96 with Buse Hizarci
+By
+Buse Hizarci
+Buse Hizarci, Optimisation Manager at Vervaunt, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where judgment sits...
+Read More
+→
+Full Stack Experimentation
+03 Sep, 2026
+Feature Flags vs Rollouts vs Feature Testing: What’s the Difference?
+By
+Uwemedimo Usa
+Feature flags switch functionality on or off at runtime, without a deploy. Rollouts widen an already-approved feature to a growing percentage of users. Feature testing compares variations against a control to find which performs better, using A/B/n testing underneath. All three run on feature flags. Only feature testing holds back...
+Read More
+→
+A/B Testing
+24 Aug, 2026
+Bonferroni Correction: The Multiple Comparisons Problem in A/B Testing
+By
+Althea Storm
+Let’s set the stage. A CRO team runs an A/B/n test with one control and four variations, tracking three success metrics across each layout. One metric on Variant C clocks in with a p-value of 0.04. The team declares a winner, ships the change, and waits for the revenue to...
+Read More
+→
+Optimization
+17 Aug, 2026
+Testing Mind Map Series: How to Think Like a CRO Pro, Part 95 with Craig Kistler
+By
+Craig Kistler
+Craig Kistler, who leads experimentation at Signet Jewelers, is the latest expert to open up their playbook for our Testing Mind Map series. These interviews look past the tidy version of experimentation and into the day-to-day: how evidence fares against conviction, which test wins survive contact with production, and where...
 Read More
 →
 1
@@ -424,7 +423,6 @@ Multi-page Testing
 Audience Targeting
 A/B Testing Goals
 Full-stack Experimentation
-AI In Convert Experiences
 Integrations
 API Access
 Ecommerce A/B Testing

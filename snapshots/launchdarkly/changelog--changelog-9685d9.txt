@@ -39,7 +39,7 @@ Resources
 Learn
 Blog
 Guides & ebooks
-Events
+Events & webinars
 Videos
 Success
 Academy
@@ -71,29 +71,16 @@ Book a demo
 Book a demo
 Product
 Updates
-[ What's launched.
-What's next. ]
-Subscribe for updates.
-Stay up to date with our latest product changes.
-By supplying my contact information, I authorize LaunchDarkly to contact me with personalized marketing communications about our products and services. See our
-Privacy Policy
-for more details, or
-Opt-Out
-at any time.
+[ What's launched
+at LaunchDarkly ]
 Loading...
-Resources to get started.
-Check out the blog.
-Blog
-Read about LaunchDarkly news, product updates, and more.
-Explore our docs.
-Docs
-Learn best practices for getting started with LaunchDarkly.
-Watch on demand.
-Videos
-Check out demos and tutorials to see LaunchDarkly in action.
-Connect at events.
-Events
-Explore ways to connect with us in person and virtually.
+Explore the docs
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Explore the blog
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Join our community
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
+Get product updates straight to your inbox once a month.
 Ready to take control in prod?
 Get a demo
 Free trial
@@ -143,13 +130,12 @@ Control releases, experiments, and AI behavior in prod.
 Free trial
 Sign in
 Filter by topic
-AI Engineering
 Experimentation
+AI Engineering
 Feature Flags
 Guarded Release
 Product Analytics
 Filter by date
-October 2026
 September 2026
 August 2026
 July 2026
@@ -167,42 +153,7 @@ August 2025
 July 2025
 June 2025
 May 2025
-October 30, 2026
-AI Engineering
-Paul Loeb
-Run offline evaluations from code, plus Agent Skills and AI SDK 1.0 are generally available
-Run evaluations from code
-You can now run AgentControl offline evaluations from a script or a CI job, against the same code your application runs in production. A single `run()` call in the Python or Node.js AI SDK sends each row of a dataset through your own handler. That handler calls your model provider and your real tools, the same way your app does. The SDK records every tool call, so a judge can check that your agent called the right tools, in the right order, with the right arguments.
-You can score each output with checks you write in code, LaunchDarkly judges, or both. Each run returns pass or fail, so a regression can fail your build, and the results appear on the Evaluations page in LaunchDarkly. Evaluations from code is included in AgentControl at no extra cost, and model calls use your own provider credentials.
-To get started, click Evaluations, then Run evaluations, then From code. To learn more, read
-https://launchdarkly.com/docs/home/agentcontrol/evaluations-from-code
-.
-Agent Skills is generally available
-Agent Skills is out of beta. You can manage your agents' instruction files in the AgentControl Library, version them, and attach them to config variations without shipping code. To learn more, read
-https://launchdarkly.com/docs/home/agentcontrol/agent-skills
-.
-AI SDK 1.0 for Python and Node.js
-The Python and Node.js AI SDKs have reached 1.0. Evaluations from code and Agent Skills need them, so upgrade to `launchdarkly-ai-server` 1.0.0 or later with Python 3.12 or later, or `@launchdarkly/ai-node` 1.0.0 or later with Node.js 22 or later. To learn more, read
-https://launchdarkly.com/docs/sdk/ai
-.
-For help or feedback, contact your LaunchDarkly account team or email
-product@launchdarkly.com
-.
-Share link copied!
-October 9, 2026
-AI Engineering
-Paul Loeb
-Manage your agent skills in AgentControl
-Agent skills are now available in beta. A skill is a Markdown file that tells an agent how to do a specific job. You can now write, version, and roll out those files from AgentControl instead of keeping them in your codebase and redeploying every time one changes.
-Create a skill in the Library under Agents, attach it to a config variation, and the SDK delivers it to your running application. Because the skill is attached to a config, it picks up the targeting, rollouts, approvals, version history, and audit trail you already use everywhere else in AgentControl. You can see every config that references a skill before you change it, and publishing a new version never changes a running agent until you choose to.
-The SDK can write skills to disk where runtimes such as the Claude Agent SDK expect to find them, hand the content to your own code, or pass the pinned references through to a model provider that hosts skills itself.
-The beta works with the Python and Node.js AI SDKs.
-To get started, read
-https://launchdarkly.com/docs/home/agentcontrol/agent-skills
-and
-https://launchdarkly.com/docs/sdk/features/agent-skills
-.
-Share link copied!
+Subscribe for updates
 September 23, 2026
 Experimentation
 Marlo Abramowitz
@@ -237,8 +188,33 @@ You can now work out how much traffic a frequentist experiment needs, and how lo
 Settling on a sample size up front is what holds your false positive rate to the significance level you chose, and until now it meant a spreadsheet or a separate trip to our website. Estimates assume steady traffic, so an experiment may hit its sample size earlier or later. Available for fixed-horizon frequentist experiments.
 Read Sample size calculations (https://launchdarkly.com/docs/home/experimentation/sample-size-calculator) and Sample size calculations for frequentist experiments (https://launchdarkly.com/docs/guides/experimentation/sample-size-calc) to get started.
 Share link copied!
-Load more
-Explore our docs.
-Docs
-Learn best practices for getting started with LaunchDarkly.
+August 26, 2026
+AI Engineering
+Paul Loeb
+Use AgentControl from your Go and Java applications
+AI SDKs are now available for Go and Java. Your prompts, model settings, and targeting rules live in AgentControl configs instead of your code, so you can change a prompt, swap a model, or roll a variation out to a single customer segment without a deploy. Both SDKs report generation counts, token usage, latency, and errors back to AgentControl so you can watch cost and performance per config, and both run multi-step agent graphs.
+To get started, read the
+Go AI SDK reference
+or the
+Java AI SDK reference
+.
+Our team is happy to help you get set up. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+August 26, 2026
+AI Engineering
+Paul Loeb
+Serve different models to different users through your LiteLLM gateway
+Keep the gateway you already run, and decide the model, prompt, and parameters per request instead of per config file. Give enterprise customers your strongest model and free users a cheaper one. Roll a new model out to five percent of traffic, watch quality and cost, and revert in seconds if it degrades. None of it requires editing YAML, restarting the proxy, or shipping code, and every change is attributed and approval-gated like any feature flag change.
+To get started, read
+Use LaunchDarkly AgentControl to control model administration with LiteLLM
+.
+Our team is happy to help you set this up. To get help or share feedback, contact your LaunchDarkly account team or email
+product@launchdarkly.com
+.
+Share link copied!
+Load more updates
+Explore the docs
+What makes experimentation with LaunchDarkly stand out among other tools on the market?
 Free trial

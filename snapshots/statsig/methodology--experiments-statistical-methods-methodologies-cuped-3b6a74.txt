@@ -22,29 +22,28 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Read Results
-End An Experiment
-Experiment Types
-Layers
-Holdouts
 Configure Stats Engine
-Introduction
-Analysis Methods
+Experiment Types
 Reducing False Positives
+Health Checks
 Variance Reduction
 Variance Reduction
 CUPED
 Winsorization
+How we Calculate:
 Stratified Sampling
-Health Checks
-How We Calculate
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
+Layers
+Holdouts
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
-Smart Gate
-Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -82,8 +81,6 @@ For AI agents: a documentation index is available at
 /llms.txt
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 Product Docs
-/
-Variance Reduction
 /
 CUPED
 CUPED

@@ -3,63 +3,7 @@ Amplitude Changelog
 https://amplitude.com/releases
 Every feature we've shipped to Amplitude, with release notes.
 en-us
-Sun, 01 Nov 2026 12:56:38 GMT
-Metric Explorer is the Chart Default
-https://amplitude.com/releases/metric-explorer-default-for-all-users
-Metric Explorer is the default chart for all users.
-Brian Cooper
-Analytics
-https://amplitude.com/releases/metric-explorer-default-for-all-users
-Thu, 29 Oct 2026 16:22:34 GMT
-Headless Guides & Surveys: Manage Guides and Surveys from the Developer API, CLI, and MCP
-https://amplitude.com/releases/headless-guides-and-surveys-manage-guides-and-surveys-from-the-developer-api-cli-and-mcp
-Guides and surveys are finally fully supported for headless operation. Customers and their AI agents can list, read, create, edit and archive guides and surveys through the Amplitude Developer API, the amp CLI, and Amplitude MCP.
-Thomas Kainrad
-Guides and Surveys
-https://amplitude.com/releases/headless-guides-and-surveys-manage-guides-and-surveys-from-the-developer-api-cli-and-mcp
-Thu, 29 Oct 2026 10:47:31 GMT
-Enterprise-Managed Auth for Amplitude MCP
-https://amplitude.com/releases/mcp-enterprise-managed-auth
-ONew for Amplitude MCP: enterprise admins can manage Claude access through their company’s identity provider instead of asking each user to authorize a separate OAuth connection. People connect using their existing identity, while Amplitude applies their permissions. This makes it easier for IT to govern and revoke AI access without slowing teams down.
-Chanaka Perera
-AI
-https://amplitude.com/releases/mcp-enterprise-managed-auth
-Tue, 27 Oct 2026 19:46:22 GMT
-Session-based Funnel Analysis
-https://amplitude.com/releases/sessions-in-funnels
-Funnel Analysis now supports Sessions as a counting method, along with a session-based completion window.
-Dan Carmel
-Analytics
-https://amplitude.com/releases/sessions-in-funnels
-Fri, 23 Oct 2026 03:25:04 GMT
-React Native Autocapture
-https://amplitude.com/releases/react-native-autocapture
-The React Native analytics SDK now supports autocapture, allowing customers to capture valuable user data such as sessions, app lifecycle events, network tracking, frustration interactions, and element interactions with minimal instrumentation.
-Dan Graham
-Activation
-https://amplitude.com/releases/react-native-autocapture
-Wed, 21 Oct 2026 16:00:13 GMT
-Advanced Segments
-https://amplitude.com/releases/advanced-segments
-Advanced Segments brings user-, session-, and event-scoped conditions into one builder, with AND/OR logic, nested groups, ordered event sequences, and cart-property filtering.
-Zemei Zeng
-Analytics
-https://amplitude.com/releases/advanced-segments
-Wed, 21 Oct 2026 00:20:26 GMT
-MCP Service Accounts for Automated Workflows
-https://amplitude.com/releases/mcp-service-accounts-for-automated-workflows
-Org admins can now create MCP service accounts right in Amplitude Settings. A service account gets its own client ID and secret and uses the OAuth 2.0 client credentials flow, so backend agents, bots, CI jobs and scripts can connect to Amplitude MCP without a person logging in through a browser.
-William Chin
-Platform
-https://amplitude.com/releases/mcp-service-accounts-for-automated-workflows
-Fri, 16 Oct 2026 17:08:13 GMT
-Filter Segments by Event Time
-https://amplitude.com/releases/filter-by-event-time
-A timezone-aware Event Time event property with date and time pickers that works in segment conditions with AND/OR, allowing segments to cover several separate date periods.
-Dan Carmel
-Analytics
-https://amplitude.com/releases/filter-by-event-time
-Fri, 02 Oct 2026 18:12:52 GMT
+Thu, 01 Oct 2026 12:47:32 GMT
 Zoning Insights access expansion
 https://amplitude.com/releases/zoning-insights-access
 Zoning Insights is now included as part of the Growth Analytics and Enterprise Analytics plans.
@@ -1386,3 +1330,59 @@ Brady Shi
 Analytics
 https://amplitude.com/releases/unexpected-unplanned-event-properties-inheriting-shared-metadata
 Thu, 14 Aug 2025 10:57:56 GMT
+Session Replay Saved Filters
+https://amplitude.com/releases/session-replay-saved-filters
+You can now save and share filters in Session Replay! Configure your favorite set of filters once and then reuse or share them with your team!
+Joe Pollock
+Session Replay
+https://amplitude.com/releases/session-replay-saved-filters
+Thu, 14 Aug 2025 10:56:44 GMT
+Custom Icon Sizes for Tooltip and Pin markers
+https://amplitude.com/releases/custon-icon-sizes-for-tooltip-pin-markers
+Easily customize the size of icons and images for a pin
+Matthew Beaty
+Guides and Surveys
+https://amplitude.com/releases/custon-icon-sizes-for-tooltip-pin-markers
+Wed, 13 Aug 2025 10:59:01 GMT
+Currency Conversion for Revenue Analysis
+https://amplitude.com/releases/currency-conversion
+Currency Conversion is now part of the E-Commerce package along with Derived Properties, expanding availability beyond Enterprise customers to Growth, and Scholarship customers.
+Pranjal Joshi
+Analytics
+https://amplitude.com/releases/currency-conversion
+Thu, 07 Aug 2025 23:51:56 GMT
+Group Cohort Targeting for Remote Evaluation
+https://amplitude.com/releases/group-cohort-targeting-remote-evaluation
+We now support targeting Group Cohorts in Feature Flags and Experiments with Remote Evaluation, providing highly performant cohort syncs.
+Sandeep Madugula
+Experiment
+https://amplitude.com/releases/group-cohort-targeting-remote-evaluation
+Thu, 07 Aug 2025 22:49:29 GMT
+Web Experiment - Rearrange Elements in Visual Editor
+https://amplitude.com/releases/web-experiment-rearrange-elements
+Visual editor now supports moving elements to different parts of the page through a click-to-move interface with live preview and drop zone highlighting.
+Stephen Choi
+Experiment
+https://amplitude.com/releases/web-experiment-rearrange-elements
+Thu, 07 Aug 2025 00:00:00 GMT
+Flag Change Alerts
+https://amplitude.com/releases/flag-change-alerts
+Customers want to have an audit log of all the change made to flags in one place, so they can correlate spikes in metrics to changes in flag rollouts. For example, was this P0 caused because we rolled out the flag to 100%?
+Akhil Prakash
+Experiment
+https://amplitude.com/releases/flag-change-alerts
+Wed, 30 Jul 2025 20:53:31 GMT
+Adjustments to Device Categorization Logic
+https://amplitude.com/releases/device-categorization-logic
+Device Category is a new out-of-the-box (OOTB) derived property that automatically classifies user traffic by Desktop, Mobile, Tablet, TV/Console, and Other. This unlocks powerful data to help your team optimize product experiences and meet your users on their device of choice.
+Alan Okada
+Analytics
+https://amplitude.com/releases/device-categorization-logic
+Tue, 29 Jul 2025 01:59:28 GMT
+Event Level Property Deletion
+https://amplitude.com/releases/event-level-property-deletion
+Event-level property deletion now allows users to remove properties from specific events while keeping them active on others.
+Rahul Muthyam
+Data
+https://amplitude.com/releases/event-level-property-deletion
+Fri, 25 Jul 2025 21:59:13 GMT

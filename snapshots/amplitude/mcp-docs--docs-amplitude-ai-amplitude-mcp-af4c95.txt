@@ -52,15 +52,12 @@ Quickstart
 Set up Agent Analytics
 Render agent artifacts
 Analyze agent results
-Evaluators
 Reference
 FAQ and troubleshooting
 Amplitude MCP
 Amplitude MCP Server
-Enterprise-managed auth
-Service accounts
 Common tasks
-Guides and Surveys MCP
+Guides and Surveys MCP tools
 Data warehouse MCP tools
 Clients
 Docs MCP server
@@ -82,11 +79,9 @@ Language
 🇺🇸
 English
 On this page
-Plan availability
 What the MCP is for
 Choose an interface for AI agents
 AI Context and reference files
-Tracking standards
 Tracking plan changes
 Read tools
 Write tools
@@ -145,8 +140,6 @@ MCP quickstart resources
 , and
 Cursor's MCP documentation
 .
-Plan availability
-MCP service account authentication is available on the Enterprise plan.
 What the MCP is for
 Use the Amplitude MCP for these jobs:
 Search and read Amplitude content: charts, dashboards, notebooks, experiments, cohorts, events, and properties.
@@ -214,26 +207,13 @@ AI Context
 and
 AI Controls
 .
-Tracking standards
-Amplitude MCP clients read your tracking standard from two places:
-Naming conventions in
-Data > Settings
-set event and property casing and, for events, word order. Clients read them with
-get_amp_taxonomy
-(
-action: workspace
-). When AI Context text describes a different naming rule, clients follow the settings and tell you about the conflict.
-AI Context text holds the rules the naming settings can't express, such as description wording, categories, required properties, allowed values, and prefixes.
-Set casing in
-Data > Settings
-, and keep the remaining rules in AI Context text instructions rather than an uploaded file.
 Tracking plan changes
 Amplitude MCP exposes tools to read and write your project's tracking plan taxonomy. Create, update, delete, and restore calls require the
 Use MCP (write)
 RBAC action. Changes to events and properties also require the Update Tracking Plan permission in Amplitude Data. Changes to custom events require the Manage Data Enrichments permission instead.
 Read tools
 get_amp_taxonomy
-reads events, properties, the changes on a branch, the activity history of who changed what, and workspace context for a Data project or portfolio: governance settings, environments, and tracking-plan branches.
+reads events, properties, the changes on a branch, and the activity history of who changed what.
 get_transformations
 and
 get_group_types
@@ -398,7 +378,6 @@ AI agent analytics
 How are our AI agents performing? Show quality, cost, and error rates.
 What topics are users asking the AI assistant about?
 Investigate the low-quality AI sessions from yesterday. What went wrong?
-Build a dataset from last week's failed agent sessions and run the refund-policy evaluator against it.
 Taxonomy and tracking plan
 What branches exist in my project?
 Create a branch called "q3-cleanup" for tracking plan changes.
@@ -593,8 +572,6 @@ The MCP server uses your existing Amplitude user permissions and access controls
 You can only access Amplitude projects and data that you already have permission to view in your regular Amplitude account.
 You receive no additional data access beyond your current Amplitude account privileges.
 OAuth authentication ensures secure connection between the MCP server and your Amplitude account.
-Enterprise-managed auth
-connects Claude through your identity provider and skips the consent screen.
 Privacy considerations
 The AI service you're using (for example, Claude or Gemini) processes your Amplitude data. Review your organization's policies regarding AI-powered data analysis tools and consider compliance requirements (General Data Protection Regulation, California Consumer Privacy Act).
 Third parties (for example, Anthropic) develop and maintain the AI models used with this MCP server. Amplitude isn't responsible for model outputs, including hallucinations, inaccuracies, or errors resulting from model behavior, even if such outputs use your Amplitude data.
@@ -683,26 +660,13 @@ feedback form
 .
 Technical specifications
 Transport Type: Streaming HTTP (Remote).
-Authentication: OAuth 2.0 with Amplitude, or
-enterprise-managed auth
-for Claude through your identity provider.
-Related
-:
-Common Amplitude MCP tasks
-·
-MCP service accounts
-·
-Agent Analytics FAQ and troubleshooting
-·
-Global Agent Overview
+Authentication: OAuth 2.0 with Amplitude.
 Was this helpful?
 Copy Markdown
 On this page
-Plan availability
 What the MCP is for
 Choose an interface for AI agents
 AI Context and reference files
-Tracking standards
 Tracking plan changes
 Read tools
 Write tools

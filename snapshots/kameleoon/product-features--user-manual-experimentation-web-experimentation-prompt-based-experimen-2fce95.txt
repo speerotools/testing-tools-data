@@ -14,7 +14,6 @@ MCP
 SDKs
 APIs
 Integrations
-Log In
 Kameleoon login
 Kameleoon login
 Search...
@@ -26,15 +25,14 @@ Search...
 K
 Kameleoon Academy
 Slack Community
-Product updates
-Kameleoon Academy
-Slack Community
-Product updates
+Product changelog
 Home
 User manual overview
 Get started
-Installation
-Kameleoon homepage
+Web Experimentation installation guide
+Feature Experimentation installation guide
+Using the homepage
+Embed a saved view on your homepage
 Experimentation
 Web Experimentation
 Prompt-based experiments
@@ -49,6 +47,7 @@ Best practices and safeguards
 Import designs from Figma
 Contentsquare X PBX integration
 PBX Ideate
+Prompt-based experimentation FAQ
 Graphic-based experiments
 Code-based experiments
 Configure and launch
@@ -90,7 +89,6 @@ Security and authentication
 Users and teams
 Organization settings
 Project management
-Create a project
 Manage your projects
 Consent management
 Kai
@@ -99,13 +97,14 @@ AI opportunity detection
 Get started
 Audiences — Key metrics
 Audiences — Segment analysis
-AI Targeting
-AI Targeting
-Enable AI Targeting on a goal
-Use AI Targeting in a segment
+AI Predictive Targeting
+AI Predictive Targeting
+Enable AI Predictive Targeting on a goal
+Use AI Predictive Targeting in a segment
+FAQ
+FAQ
 English
 On this page
-Back to top
 Access the creation flow
 Configure your experiment
 1. Define your prompt
@@ -126,7 +125,6 @@ Create from sketches
 Preview on different devices
 Share your experiment
 Finalize the experiment
-FAQ
 PBX Build
 Create a prompt-based experiment
 Copy page
@@ -322,7 +320,7 @@ to view and edit the relevant code. Click
 Edit code
 to make changes.
 If you prompt several times and generate multiple versions for a given variant, you can switch between those variants using the dropdown in the top-left of the code panel.
-Once the AI generates content for your experiment, you can refine its output by editing the underlying code. When you save your changes, Kameleoon automatically generates a new version of your variant.
+Once the AI generates content for your experiment, you can refine its output by editing the underlying code.
 To refine a variant using prompts instead of code, see the
 FAQ
 .
@@ -365,79 +363,13 @@ Finalize
 Set your goals, audience targeting, and traffic allocation.
 Launch your experiment.
 You are now ready to experiment faster than ever, with no code, and no delay.
-​
-FAQ
-Can I use the Graphic editor on an AI-generated variant?
-No, you can’t use the Graphic editor on AI-generated variants. Although some edge cases might benefit from it, prompt-based experimentation handles all scenarios that the Graphic editor covers. To prevent conflicts, Kameleoon disables the Graphic editor for AI-generated experiments.
-Can I create multi-page experiments?
-Yes, you can prompt changes across multiple pages. Navigate to your chosen pages and apply prompts directly. Kameleoon automatically combines the code into a single variation.
-However, test the complete experience using Simulation mode to ensure that the code on different pages doesn’t conflict.
-How can I test a variation across several product pages?
-After you create a variation on the first product page, navigate to the next product page. This action re-executes the AI-generated code.
-Alternatively, use Simulation mode to test the experience across all relevant pages and ensure consistent behavior.
-Can I use a design mockup to create a variant?
-Yes. Upload a design or mockup by clicking
-+
->
-Add an image
-, as described in
-Use images and designs
-. However, a mockup alone is usually insufficient. For better results, use your design alongside clear, detailed instructions. Treat PBX like a developer and provide specific details for more accurate output.
-A good prompt with a mockup does the following:
-Attaches your mockup or design file.
-Describes the elements to change.
-Specifies dimensions, colors, and spacing.
-Explains interactive behaviors.
-Notes technical requirements.
-How do SPA settings affect PBX?
-PBX adopts your project’s single-page app (SPA) settings. If you configured these settings (see
-Set up an experiment on a single-page app
-), PBX automatically uses:
-Your custom attributes.
-Your exclusion rules.
-Any other SPA-specific configurations.
-Can I work on other variants while PBX generates a variant?
-No. You must wait for PBX to finish generating a variant before starting work on another.
-Why do I see a white screen in the PBX editor?
-This issue occurs on secure pages, such as logged-in areas, that block loading within an iframe. The PBX editor uses an iframe to safely edit webpages. Your site’s security settings might block the iframe content, resulting in a white screen.
-To fix it, ask your development team to modify the “frame-busting” logic. The code must check if the frame’s name is
-kameleoon-pbx-preview
-. If it matches, the logic should allow the page to load.
-Example code:
-if
-(
-window
-.
-self
-!==
-window
-.
-top
-&&
-window
-.
-frameElement
-?.
-name
-!==
-'kameleoon-pbx-preview'
-) {
-Your
-existing
-redirect
-/
-blocking
-logic
-}
-How reliable is the code that PBX generates?
-PBX generates clean, secure, responsive, and accessible code. It often creates more robust solutions than manual coding, particularly for modern websites and single-page applications (SPAs). PBX follows QA best practices, such as cross-browser testing and visual checks.
-The generated code also respects your project configurations:
-PBX applies SPA settings and custom attributes automatically.
-PBX honors exclusion rules.
-These considerations ensure that generated code integrates smoothly with your setup and adheres to the rules for manually coded experiments.
 Was this page helpful?
 Yes
 No
+Prompt-based experimentation plans
+Previous
+PBX Configure
+Next
 ⌘
 I
 Assistant

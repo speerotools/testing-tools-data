@@ -22,29 +22,25 @@ Support Options
 Experiments
 Overview
 Create & Implement
-Read Results
-End An Experiment
+Configure Stats Engine
 Experiment Types
+Reducing False Positives
+Health Checks
+Variance Reduction
+How we Calculate:
+Stratified Sampling
+Frequentist Sequential Testing
+Bayesian Experiments
+Sequential Probability Ratio Tests
+End An Experiment
+Read Results
 Layers
 Holdouts
-Configure Stats Engine
-Introduction
-Analysis Methods
-Frequentist Sequential Testing
-Sequential Probability Ratio Tests
-Bayesian Experiments
-One-Sided Tests
-Reducing False Positives
-Variance Reduction
-Health Checks
-How We Calculate
 Feature Management
 Feature Flags
 Dynamic Config
 Segments
 Release Pipelines
-Smart Gate
-Early Access
 Analytics
 Product Analytics
 Infra Analytics
@@ -86,8 +82,6 @@ For AI agents: a documentation index is available at
 . Append .md to any page URL for markdown, or send Accept: text/markdown.
 Product Docs
 /
-Analysis Methods
-/
 Bayesian Experiments
 Bayesian Experiments
 Learn about Bayesian A/B testing on Statsig, including informative priors and implementation details.
@@ -105,17 +99,10 @@ Analytics Type
 to
 Bayesian
 under Advanced Settings on the experiment Setup tab. You can't change the analytics type after the experiment starts.
-Selecting Bayesian reveals
-Bayesian Mode Settings
-, where
-Default Chance to Beat Threshold
-sets the probability a variant must reach for Statsig to call it a winner.
 Pulse scorecard results and deep-dive analysis both reflect Bayesian statistics.
 Informative priors
 In Bayesian mode, you can set a prior belief on the relative average treatment effect. Statsig combines the prior distribution with the observed data and displays the prior-adjusted results. To turn on priors, select
-Use Informative Priors
-under
-Bayesian Mode Settings
+Use informative priors
 .
 Deriving a prior from historical data
 When you use informative priors, make sure your organization understands how the prior influences the experiment results, and base the prior on domain knowledge. Two common patterns:

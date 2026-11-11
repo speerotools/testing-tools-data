@@ -1,8 +1,5 @@
 # https://www.harness.io/security
 Security and Trust at Harness | SOC 2 & ISO 27001 Certified
-For the complete documentation index, see
-llms.txt
-. A Markdown version of this page is available by requesting this URL with the header "Accept: text/markdown".
 Platform
 Harness Autonomous SDLC Platform
 Deliver at machine speed.
@@ -41,9 +38,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 Developer Portal
@@ -76,9 +70,7 @@ Security
 Press & News
 Legal
 Partners
-Government
 Contact Us
-Sign in
 See a Demo
 Start for Free
 Platform
@@ -117,9 +109,6 @@ AI Costs
 Cloud Costs
 Engineering Efficiency
 + more
-Cosmos Software Factory Agent
-NEW
-Take engineering work from ticket to code.
 More products
 Incidents
 AI Evals
@@ -163,7 +152,6 @@ Get started
 Contact us
 Report a security bug
 Compliance posture
-SOC 1
 SOC 2
 ISO 27001
 ISO 27017
@@ -203,23 +191,14 @@ Compliance & Certifications
 Independently audited, continuously certified
 We’re SOC 2 compliant and ISO 27001 / 27017 / 27018 certified. Request our latest reports and explore our full security posture and controls in the Harness Trust Center.
 Visit the Trust Center
-SOC 1 Type II
-SOC 2 Type II
+SOC 2
+Service Orgs
 ISO 27001
+Certified
 ISO 27017
+Cloud Security
 ISO 27018
-FedRAMP 20x
-Class A
-↗
-GDPR
-DORA
-NIS2
-HIPAA
-ⓘ
-Only applies to Runtime Protection Agent
-PCI DSS
-ⓘ
-Only applies to Runtime Protection Agent
+PII in Cloud
 03
 Assessments, Audits & Compliance
 Penetration Testing
@@ -256,7 +235,7 @@ security@harness.io
 Interested in our private bug bounty? Reach out with your preferred email address.
 Report a security bug
 We respond within 24 hours
-The Autonomous SDLC Platform.
+AI for everything after code.
 Platform
 Overview
 Why Harness
@@ -278,7 +257,6 @@ AI SAST
 AI SCA
 Supply Chain Security
 Security Testing Orchestration
-Cosmos Software Factory Agent
 Runtime Protection Agent
 API Posture
 API Advanced Protection
@@ -290,7 +268,7 @@ Engineering Efficiency
 More Products
 Incidents
 Developer Portal
-Resilience Testing
+Resilience Tests
 AI Evals
 Runtime Configuration
 Resources
@@ -308,12 +286,10 @@ Careers
 Press & News
 Partners
 Contact Us
-Harness for Government
 Legal
 © 2026 Harness, Inc. All rights reserved.
 Subscription Terms
 Website Terms of Use
 Privacy Statement
-Cookies Notice
 Opt Out
 Cookie Settings

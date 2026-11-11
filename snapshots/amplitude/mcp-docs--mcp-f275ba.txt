@@ -179,18 +179,8 @@ Connect
 Connect
 Connect
 Connect
-Connect
-Connect
-Connect
-Connect
-Connect
-Connect
-Connect
-Connect
 [Coming soon]
 Connect
-Connect
-Build your own
 Build your own
 Got data?
 AI analysis is only as good as the data you feed it.
@@ -218,7 +208,6 @@ You ask in natural language; the client selects the appropriate Amplitude tools 
 How is customer and end-user data handled by Amplitude’s MCP?
 Amplitude MCP uses OAuth and your existing Amplitude permissions and access controls. The connected AI application can access only the projects and data the authenticated user can already view in Amplitude. It does not grant additional access or create a separate permissions model.
 Platform
-Wave
 AI Agents
 Agent Analytics
 AI Feedback
@@ -231,7 +220,6 @@ Web Experimentation
 Session Replay
 Guides and Surveys
 Activation
-Heatmaps
 Compare us
 Adobe
 Google Analytics
@@ -249,11 +237,10 @@ Blog
 Agent Prompt Library
 Product Updates
 AI Early Access Program
-Integrations
-Events
-Amplitude Academy
-Glossary
 Amp Champs
+Amplitude Academy
+Events
+Glossary
 Free Chart Maker
 Partners & Support
 Status
@@ -263,6 +250,7 @@ Community
 Developer Docs
 Partner Program
 Partner Directory
+Become an affiliate
 Company
 About Us
 Careers

@@ -4,7 +4,7 @@ Documentation
 Target
 Target Guide
 How Adobe Target works
-Last update: October 27, 2026
+Last update: September 28, 2026
 Topics:
 Audiences
 Implementation
@@ -128,9 +128,12 @@ Search Engine Optimization (SEO) friendly testing
 concept_C0C865663CAB4251B66A1F250FD25E6A
 Adobe Target aligns with search engine guidelines for testing. Google encourages user testing and states that A/B and Multivariate Testing do not harm organic search engine rankings if certain guidelines are followed.
 Adobe Target aligns with search engine guidelines for testing.
-For more information, refer to
-Google documentation
-.
+For more information, see the following Google resources:
+Website testing and Google Search
+Experiments and Cloaking
+Guidelines were presented in a
+Google Webmaster Central Blog
+post. Although the post dates back to 2012, it remains Google’s most recent statement on the matter, and the guidelines are still relevant.
 No cloaking
 : Cloaking involves showing one set of content to users and a different set to search engine bots by specifically identifying bots and feeding them different content.
 Target is configured to treat search engine bots the same as any user. Consequently, bots can be included in activities if they are randomly selected and “see” the test variations.
@@ -151,8 +154,11 @@ Sample Size Calculator
 to determine when your test has reached this point. Adobe recommends incorporating the hardcoded implementation of winning tests into your testing workflow and allocating the appropriate resources.
 Using Target to “publish” winning tests is not recommended as a permanent solution. If the winning test is published for 100% of users all the time, this approach can be used temporarily while hard-coding the winning test.
 Consider what your test has changed. Minor updates, such as button colors, do not impact organic rankings. However, text changes should be hardcoded.
-Also, consider the accessibility of the page you are testing. If the page is not accessible to search engines and was never intended to rank in organic search, these considerations do not apply. An example is a dedicated landing page for an email campaign.
-Google states that variations in a test often have little or no impact on the search result snippet or ranking of a page.
+Also, consider the accessibility of the page you’re testing. If the page is not accessible to search engines and was never intended to rank in organic search, these considerations do not apply. An example is a dedicated landing page for an email campaign.
+Google states that following these guidelines “should result in your tests having little or no impact on your site in search results.”
+In addition to these guidelines, Google also provides one more guideline in the documentation to their Content Experiments tool:
+“Your variation pages should maintain the spirit of the content on your original pages. Those variations shouldn’t change the meaning of or your user’s general perception of that original content.”
+Google states as an example that “if a site’s original page is loaded with keywords that don’t relate to the combinations being shown to users, we may remove that site from our index.”
 Adobe feels that it would be difficult to unintentionally change the meaning of the original content within test variations. However, Adobe recommends being aware of the keyword themes on a page and maintaining those themes. Changes to page content, especially adding or deleting relevant keywords, can result in ranking changes for the URL in organic search. Adobe recommends that you engage with your SEO partner as part of your testing protocol.
 Bots
 bots

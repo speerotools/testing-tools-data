@@ -23,205 +23,57 @@ Search
 ⌘K
 Data Center Region
 Theme
-Uniform platform documentation
-Learn how to build digital experiences with Uniform
+On this page
+What is Uniform?
+Uniform is built from the ground up as the open, composable digital experience platform (DXP) that lets digital teams connect any content, data, and technology to build winning customer experiences faster and more cost-effectively than ever before.
+High-level architecture
 #
-Uniform is an agentic composable digital experience platform. Your digital team and your AI agents use it to build experiences with content from the systems you already have, and to personalize and test each experience.
-⌘K
-Ask Una, our AI assistant
-What is your role?
+Uniform high-level architecture
+Value of Uniform
 #
-Choose a role to see the docs for your work.
-Developer
-Build and integrate
-Content & marketing
-Create, adapt and test pages
-Architect
-Connect systems and plan
-Administrator
-Control access and security
-Start a project
+Uniform offers value to everyone within a digital team:
+For marketers and merchandisers
 #
-Select a tab
-For humans
-For agents
-For humans
-For agents
-$
-npx @uniformdev/cli@latest new
-Copy
-Copied!
-Scaffolds a new project with all required content and files pre-configured.
-$
-npx skills add uniformdev/agent-skills
-Copy
-Copied!
-Teaches your coding assistant to build with Uniform.
-Or add Uniform to your app
+With Uniform you can enable visual, in-line editing on top of the modern web experiences developers build. This allows non-developers to create and launch new web experiences (landing pages, shopping experiences, mobile screens, emails, etc.) without being overly dependent on developers.
+Uniform Canvas
+is a no-code visual experience builder. The experience optimization tool,
+Uniform Context
+, is fully integrated into a visual experience management, allowing marketers to launch a component-level personalization and A/B testing with a couple of clicks. This means fast delivery of optimized content without compromising Core Web Vitals and leveraging your existing marketing technology investments faster.
+For developers
 #
-Next.js
-App Router
-Next.js
-Page Router
-Nuxt
-Vue
-React
-SDK
-SvelteKit
-Preview
-Component Starter Kit
-Build with AI
-Agent Skills for coding assistants
-Uniform MCP server
-Build experiences with AI
-AI tutorials
-Reference
-SDKs
-Management and Delivery APIs
-Uniform CLI
-Webhooks
-Core tasks
-Model components and content
-Turn on visual editing
-Connect external data
-Route with project maps
-Learn
-Developer tutorials
-Core concepts
-Use cases
-Build your first landing page
-A step-by-step tutorial: build a page with visual editing, then personalize it and test it.
-Work with Scout
-Ask the AI agent in the dashboard to build pages, translate content and set up tests. It changes drafts only.
-Example requests for Scout
+Uniform allows web developers to use their front-end tools of choice and provides SDK to enable the functionality to empower marketers: in-line editing, real-time preview, content-driven routing, personalization, and A/B testing and redirect management.
+Uniform Mesh
+provides a couple of dozen integrations with leading CMS (legacy and Headless) and commerce back-ends, handling the page content aggregation and propagation of any external content directly into front-end components as well as fast global content delivery at the edge. This means developers spend less time on integration plumbing, caching, GraphQL aggregation, etc., and can focus on uniquely interesting front-end engineering problems.
+For enterprise architects
 #
-“Build a webinar landing page from our Hero, Speakers and Form patterns.”
-“Show enterprise visitors the case-study hero instead of the pricing hero.”
-“Create an A/B test for the home page headline with 3 variants.”
-What Scout can do
-→
-Create
-Visual editing
-Patterns
-Assets
-Localization
-Publish
-Releases
-Workflows
-AI guidance for brand voice
-Adapt and test
-Personalization
-A/B testing
-Optimize with AI
-Read results in Insights
-Learn
-Marketer tutorials
-Core concepts
-Keep the stack you have
+Uniform provides the only open composable approach on the market that's also compatible with the existing investments in enterprise CMS and DXP technologies. This ensures two things are in place from a sustainable architecture perspective:
+Incremental approach towards monolith to composable migration, allowing to move at your own pace, component by component and mix and match legacy and modern content sources/APIs.
+Evolutionary architecture with the ability to hot-swap any content source of the composable architecture when needed - CMS or commerce and evolve the front-end and CDN layer independently thanks to the physical de-coupling of the experience layer.
+For IT teams
 #
-Content management
-·
-15
-Contentful, Contentstack, Sitecore
-Commerce & PIM
-·
-10
-SAP, commercetools, Shopify
-Digital assets
-·
-6
-Cloudinary, Bynder, Frontify
-Edge & CDN
-·
-4
-Vercel, Cloudflare, Akamai
-Search & discovery
-·
-4
-Algolia, Coveo
-Analytics & customer data
-·
-3
-Google Analytics, Twilio Segment
-Translation
-·
-3
-Smartling, Phrase
-All 45+ integrations
-→
-Extend Uniform your way
-How Mesh works
-Custom integrations
-Connect external data
-Automate workflows
-Automations
-Webhooks
-Uniform CLI
-Migrate in record time
-Plan a migration
-Migrate from Sitecore
-Lift and shift with Siphon
-Deliver fast and flicker-free
-Edge and CDN
-Regions and data residency
-Search
-US and EU regions
-Keep project data in Virginia or Frankfurt.
-Roles and policies
-Control who can do what, per project.
-Single sign-on
-Sign in with your SAML identity provider.
-Security audit log
-See security events for the past 30 days.
-Change history
-Uniform Pulse shows who changed what, and with which tool.
-Manage the team
-Roles and permissions
-Single sign-on
-Security
-Manage apps
-Apps and add-ons
-Request activation
-Uniform Pulse
-Work with AI
-Three ways to use AI with Uniform
+The "Bring Your Own" aspect at every layer of the stack, including front-end, CDN, CMS, and commerce, allows the IT teams to reuse the existing investments in their infrastructure and assemble the composable digital experience stack with Uniform their way without switching CDN providers, or any disruptive changes to the current systems.
+Navigate the docs
 #
-Editors use Scout in the dashboard. Developers use Agent Skills and the MCP server in their own tools. All three follow your AI guidance.
-Scout
-The AI agent in the Uniform dashboard. It builds and translates content, and sets up tests. It changes drafts only.
-MCP server
-Lets Claude Code, Cursor, GitHub Copilot and other MCP clients read and change your Uniform project.
-Agent Skills
-Open-source skills that teach coding assistants the correct Uniform patterns.
-AI overview
-→
-Browse by capability
-#
-Canvas
-Visual experience builder
-Headless CMS
-Content in every project
-Context
-Personalization and A/B testing
-Mesh
-Integrations and extensions
-Search
-Keyword and semantic search
-Insights
-Test and personalization results
-Asset Library
-Assets and image delivery
-Automations
-Run tasks on events
-All guides
-→
-What's new
-Release notes and product updates
-Tutorials
-Tutorials and core concepts
+Learn more about the core concepts and capabilities that make up Uniform:
+Uniform unifies generative AI, A/B testing, and personalization features, with access to company-wide content, inside a visual experience cloud. With creation and deployment in the hands of the marketing team, engineering resources are freed from avoidable drains to maintain their focus on innovation. Uniform future-proofs existing technology investments and enables technology replacements and upgrades without interrupting the experience or its creation.
+Uniform consists of these key features to provide the tools marketers and developers need to do their best work.
+Get started
+Step-by-step guides to get developers incorporating Uniform into your applications.
+Learn the basics
+Learn the fundamental concepts and capabilities of Uniform.
+Guides
+Guides that cover how to use Uniform features, tools, and APIs.
 Integrations
-45+ connectors for your stack
-Support
-Knowledge base and help
+Learn what you can do with Uniform's pre-built connectors, and how to connect them to your application.
+Learn and build with our community on Discord
 Check out open sourced examples on GitHub
 Learn about Uniform on YouTube
+Level up your skills in all things headless with Headless Creator
+On this page
+High-level architecture
+Value of Uniform
+For marketers and merchandisers
+For developers
+For enterprise architects
+For IT teams
+Navigate the docs
