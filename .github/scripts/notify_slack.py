@@ -101,6 +101,9 @@ def status_lines(st: dict, outcome: str, mode: str) -> tuple[list[str], bool]:
     if st.get("dry_run"):
         out.append(f"Dry run: {st.get('candidates', 0)} changed page(s) would be assessed. "
                    f"Nothing was sent to Claude and nothing was committed.")
+    elif st.get("shadow") and mode != "baseline":
+        out.append("⚠️ *Shadow mode is on* (repo variable PROPOSALS_SHADOW is not \"false\"): nothing was "
+                   "written to Airtable and the assessed pages are held, so they are assessed again once it is off.")
     held = (st.get("deferred") or 0) + (st.get("held_by_caps") or 0)
     if held:
         out.append(f"{held} page(s) over the per-run caps are held for the next run.")
@@ -203,8 +206,12 @@ def build(summary: dict, proposals: list, st: dict, outcome: str = "", mode: str
     head = [(BEN + " " if ping else "") + title]
     if summary:
         c = summary.get("counts", {})
-        head.append(f"Scanned {summary.get('scanned', 0)} URLs: {len(summary.get('changed_vendors', []))} "
-                    f"vendor(s) changed, {c.get('error', 0)} error(s), {c.get('noisy', 0)} noisy.")
+        head.append(f"Scanned {summary.get('scanned', 0)} URLs. Since the last fetch: "
+                    f"{len(summary.get('changed_vendors', []))} vendor(s) changed, {c.get('error', 0)} error(s), "
+                    f"{c.get('noisy', 0)} noisy.")
+    if st and not st.get("dry_run"):
+        pending = (st.get("changed_files") or 0) + (st.get("first_sightings") or 0)
+        head.append(f"Since the last review: {pending} page(s) changed, {st.get('candidates', 0)} worth assessing.")
     head += status
     if not shadow:
         head.append(f"Review + approve: {QUEUE_URL}")

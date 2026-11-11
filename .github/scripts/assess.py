@@ -90,7 +90,9 @@ REG_TBL   = os.environ.get("AIRTABLE_REGISTRY_TBL", "tblT1Hqk2bEC9xVcR")
 PROP_TBL  = os.environ.get("AIRTABLE_PROPOSALS_TBL", "Proposals")
 SUMMARY_IN = os.environ.get("SUMMARY_IN", "scan-summary.json")
 SNAPSHOT_DIR = os.environ.get("SNAPSHOT_DIR", "snapshots")
-SHADOW    = os.environ.get("SHADOW", "true").lower() != "false"
+# Preview unless explicitly "false" (stray spaces or quotes typed into the GitHub
+# variable are ignored, so ' false' or '"false"' still turn it off).
+SHADOW    = os.environ.get("SHADOW", "true").strip().strip("'\"").strip().lower() != "false"
 DRY_RUN   = os.environ.get("DRY_RUN", "false").lower() == "true"
 MAX_ASSESS = int(os.environ.get("MAX_ASSESS") or "300")   # pages per run; overflow is held, not lost
 MAX_PER_PAGE = 4                                             # hard cap per page (schema can't express it)
