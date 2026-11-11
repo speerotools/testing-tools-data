@@ -1,5 +1,7 @@
 # https://www.growthbook.io/pricing
 Predictable Pricing – Free Tiers, Enterprise Plans | GrowthBook
+GrowthBook 5.2 | Interleaving and Human in the Loop for agents →
+See what's new
 Products
 Product
 Experimentation
@@ -16,7 +18,7 @@ SDKs
 AI Visual Editor
 New
 Explore
-GrowthBook 5.1: Learn faster with a new MCP server, Slack app, and contextual bandits
+GrowthBook 5.2: Interleaving experiments and Human in the Loop for agents
 Solutions
 By Role
 Engineering
@@ -37,7 +39,8 @@ Podcast
 Customer Stories
 Guides
 Events
-Product Releases
+Product Updates
+New
 Compare
 Why GrowthBook
 GrowthBook vs Others
@@ -131,8 +134,9 @@ Managed Warehouse
 2M events/mo (then $30/M)
 Custom
 Event Forwarder
--
--
+1M events/mo
+2M events/mo (then $30/M)
+Custom
 AI
 GrowthBook AI
 Limited Included Usage
@@ -153,6 +157,9 @@ AI Visual Editor
 Split URL Tests
 -
 Advanced Experimentation & Statistical Methods
+Interleaving Experiments
+-
+-
 Multi-arm Bandits
 -
 Contextual Bandits
@@ -244,7 +251,7 @@ Fact Table Explorer
 Data Source Explorer
 Custom SQL Explorer
 Advanced Analytics & Reporting
-AI Data Analyst (beta)
+AI Data Analyst
 User Journeys
 Custom Private Dashboards
 -
@@ -298,6 +305,7 @@ Native Integrations
 MCP Server
 Agent Skills
 REST API
+dbt Sync
 Webhooks
 Governance & Security
 Audit & Compliance
@@ -417,6 +425,8 @@ AI Visual Editor
 Split URL Tests
 -
 Advanced Experimentation & Statistical Methods
+Interleaving Experiments
+-
 Multi-arm bandits
 -
 Contextual Bandits
@@ -496,7 +506,7 @@ Fact Table Explorer
 Data Source Explorer
 Custom SQL Explorer
 Advanced Analytics & Reporting
-AI Data Analyst (beta)
+AI Data Analyst
 User Journeys
 Custom Private Dashboards
 -
@@ -542,6 +552,7 @@ Native Integrations
 MCP Server
 Agent Skills
 REST API
+dbt Sync
 Webhooks
 Governance & Security
 Audit & Compliance
@@ -600,7 +611,7 @@ Compare to Optimizely
 GrowthBook vs LaunchDarkly
 Product teams move from LaunchDarkly to GrowthBook when they want to cut their feature flag costs by 5X while adding industry-leading experimentation.
 Compare to LaunchDarkly
-Trusted by 3,000+ companies worldwide
+Trusted by 4,000+ companies worldwide
 Testimonials
 “GrowthBook gave us a modern experimentation and release platform that actually fits how Dropbox works. We can run analytics directly on our data lake, roll features out safely in stages, and support teams across different stacks without duplicating data or tooling.”
 Alex Kalish
@@ -688,7 +699,7 @@ Ready to ship faster?
 No credit card required. Start with feature flags, experimentation, and product analytics — free.
 Get Started
 Book a Demo
-GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 3,000+ companies worldwide.
+GrowthBook is the warehouse-native platform for experimentation, feature flags, and product analytics trusted by AI-native product teams at 4,000+ companies worldwide.
 Product
 Feature Flags
 Experiments
@@ -719,6 +730,8 @@ Docs
 Blog
 Podcast
 Events
+Product Updates
+new
 Slack Community
 Insights
 Customer Stories
