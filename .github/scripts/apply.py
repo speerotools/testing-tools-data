@@ -32,6 +32,7 @@ Environment:
 from __future__ import annotations
 import json
 import os
+import re
 import sys
 import urllib.request
 from datetime import datetime, timezone
@@ -49,7 +50,21 @@ PROP_TBL = os.environ.get("AIRTABLE_PROPOSALS_TBL", "Proposals")
 TOKEN    = os.environ.get("AIRTABLE_TOKEN")
 APPLY    = os.environ.get("APPLY", "false").lower() == "true"
 WEBHOOK  = os.environ.get("SLACK_WEBHOOK_URL")
-MENTION  = os.environ.get("SLACK_MENTION") or "<@U0GP0BBEW>"
+DEFAULT_MENTION = "<@U0GP0BBEW>"   # Ben Labay
+
+
+def mention(raw: str | None) -> str:
+    """Same rule as notify_slack.py: only a real Slack token notifies anyone. A
+    bare member id is wrapped; "@Ben" or a name falls back to the default."""
+    raw = (raw or "").strip()
+    if re.fullmatch(r"<(@[UW][A-Z0-9]+|!subteam\^[A-Z0-9]+|!here|!channel)>", raw):
+        return raw
+    if re.fullmatch(r"[UW][A-Z0-9]{6,}", raw):
+        return f"<@{raw}>"
+    return DEFAULT_MENTION
+
+
+MENTION  = mention(os.environ.get("SLACK_MENTION"))
 QUEUE_URL = "https://airtable.com/appRX3rtuXifUnvD4/tblsqMlhnvDrVbifc/viwgR2TrZowcuEcKc?blocks=hide"
 
 LAST_SCRAPE = "Last Vendor Scrape"

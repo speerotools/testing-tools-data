@@ -80,5 +80,5 @@ Airtable at the same time. Manual `enrich.yml` inputs:
 - Variables:
   - `PROPOSALS_SHADOW`: `false` sends proposals to Airtable; `true` (default) is preview only.
   - `ANTHROPIC_MODEL` (default `claude-opus-5-5`), `ANTHROPIC_EFFORT` (default `medium`), `MAX_ASSESS` (default 300).
-  - `SLACK_MENTION`: who the digest tags (default Ben, `<@U0GP0BBEW>`).
+  - `SLACK_MENTION`: who the digest and apply summary tag, as a Slack member id (for example `U0GP0BBEW`). Optional: unset means Ben Labay (`U0GP0BBEW`).
   - `WEBFLOW_PUBLISH`, `ALLOW_SHRINK`.

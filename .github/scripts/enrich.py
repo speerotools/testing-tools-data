@@ -40,7 +40,6 @@ Environment variables:
 """
 
 from __future__ import annotations
-import gzip
 import hashlib
 import json
 import zlib
@@ -174,6 +173,38 @@ def snapshot_html(html: str) -> str:
     return "\n".join(lines)
 
 
+# Hard cap on a page body, raw and after decompression. A vendor page is a few MB
+# at most; anything bigger (or a tiny gzip that inflates to gigabytes) is treated
+# as a failed fetch, so the last good snapshot stays.
+MAX_BODY = int(os.environ.get("MAX_FETCH_BYTES") or str(15 * 1024 * 1024))
+
+
+def _inflate(data: bytes, wbits: int) -> bytes:
+    """Decompress in bounded steps; raise ValueError past MAX_BODY or on a
+    truncated stream. Handles multi-member gzip."""
+    out = bytearray()
+    while data:
+        d = zlib.decompressobj(wbits)
+        out += d.decompress(data, MAX_BODY + 1 - len(out))  # always >= 1, never 0 (= unlimited)
+        if len(out) > MAX_BODY or d.unconsumed_tail:
+            raise ValueError(f"decompressed body over {MAX_BODY} bytes")
+        if not d.eof:
+            raise ValueError("truncated compressed body")
+        data = d.unused_data if wbits > zlib.MAX_WBITS else b""  # next gzip member, if any
+    return bytes(out)
+
+
+def decode_body(body: bytes, enc: str) -> bytes:
+    if enc in ("gzip", "x-gzip"):
+        return _inflate(body, 16 + zlib.MAX_WBITS)
+    if enc == "deflate":  # zlib-wrapped per the spec, raw deflate in practice too
+        try:
+            return _inflate(body, zlib.MAX_WBITS)
+        except zlib.error:
+            return _inflate(body, -zlib.MAX_WBITS)
+    return body
+
+
 def fetch_url(url: str):
     """Return (hash_text_or_None, snapshot_text, status_code_or_None). The first
     is the collapsed text used for hashing; the second is the line-broken snapshot
@@ -186,19 +217,15 @@ def fetch_url(url: str):
                 ctype = resp.headers.get("Content-Type", "")
                 enc = (resp.headers.get("Content-Encoding") or "").strip().lower()
                 charset = resp.headers.get_content_charset() or "utf-8"
-                body = resp.read()
-            # Some CDNs compress even when asked for identity, and urllib does not
-            # decode it; the compressed bytes would land in the snapshot as garbage.
-            if enc in ("gzip", "x-gzip"):
-                body = gzip.decompress(body)
-            elif enc == "deflate":
-                try:
-                    body = zlib.decompress(body)
-                except zlib.error:
-                    body = zlib.decompress(body, -zlib.MAX_WBITS)
-            elif enc and enc != "identity":
+                body = resp.read(MAX_BODY + 1)
+            if len(body) > MAX_BODY:
+                raise ValueError(f"response over {MAX_BODY} bytes")
+            # urllib does not decode Content-Encoding; undecoded bytes would land in
+            # the snapshot as garbage. Decoding is capped (see _inflate).
+            if enc and enc not in ("identity", "gzip", "x-gzip", "deflate"):
                 print(f"  unsupported Content-Encoding '{enc}' for {url}", file=sys.stderr)
                 return None, "", None
+            body = decode_body(body, enc)
             if "html" not in ctype and "xml" not in ctype and ctype:
                 return hashlib.sha256(body).hexdigest(), "", code
             raw = body.decode(charset, "ignore")
