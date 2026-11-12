@@ -1,6 +1,6 @@
 {
-  "version": "2026-11-12T04:52:46Z",
-  "commit": "187336420c229c410e0f8bdc1034d38a1d7ff5db",
+  "version": "2026-11-12T14:14:19Z",
+  "commit": "6794fb954a59e2a875dd644ca8869539d3880cf6",
   "vendors": [
     {
       "slug": "ablyft",
@@ -15,13 +15,14 @@
         "Server-side / feature-flag-first",
         "Agency-friendly (multi-tenant)"
       ],
-      "mcp": "none",
+      "mcp": "product",
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
         "Variant generation (AI)",
         "in-app ai chat/agent",
-        "mcp-native agent surface"
+        "mcp-native agent surface",
+        "Prompt-based editor"
       ],
       "pricing": [
         "Free",
@@ -45,15 +46,20 @@
       ],
       "url": "https://ablyft.com/",
       "summary": "ABlyft is enterprise A/B testing for developers and experienced marketers, priced below the usual enterprise tier. Privacy-first and GDPR-compliant.\n\nThere's a free plan with no credit card. The Enterprise plan is quoted on request and includes unlimited experiments, customization and priority support.\n\nIntegration is a client-side JavaScript API for GET calls and experiment retrieval. No SDKs are documented for other languages. GA4 works through GTM, with a guide for querying ABlyft variation IDs in GA4 explorations. No Adobe Analytics, Segment or warehouse connectors are documented.\n\nNo MCP server and no AI features. GDPR is the only compliance certification disclosed. Site and docs are active in 2026.",
+      "mcpDetail": {
+        "url": "",
+        "hosted": "",
+        "docs": ""
+      },
       "ax": 69.2,
       "ay": 45.7,
       "axc": 69.2,
       "ayc": 45.7,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "ABlyft review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s ABlyft review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "ABlyft review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/VCXFvRzwy0vRBcTG7Csj5Q/UnsqA-XbrCFpjIp_RhCg-dFnmTZvNP9qgura26_qtEoWWO1isVBJ7CbQLT3KPlbV3rpw091OHXfusRb0U42mk95zHzXnJ3T7v-wtC3xtuWB99TXBxtbOvt8l26qzEiOfUqRfRZYgECD8lnaAgxIGDQ/q-aeuW2Pv3mYrw7JpIF4NGwJ3EU3Y8NBYuvcEvWwCLk",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/eSoCWRyKE5TKyX42kUXbBw/-TkcBc7_Xjmb0Fa9Y1_X8N-eg2Vjus8h3-y7vNuZTEvm9xoyHiqi9JmotKFIcWzfo2q-T5_c8g2V_KRb-c-d63u6IxxKZd3g9j5_q0eF476Wz4JjUZ1ZoNPd2mmbSBcHPjxLBOBGTW8ZWQn_rcNGTg/F0wQaLNeQkncHBgc1LvRGhYHk9t8sM23PVgoMSQ5ehQ",
       "sources": [
         {
           "type": "API Reference",
@@ -194,7 +200,7 @@
       "seoTitle": "Datadog Experiments review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Datadog Experiments review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Datadog Experiments review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Clwx65EqCogNmEAKm5bA4g/AJYAA6pofHGbJTTlvujpsO917CFZpMjw458uW5lszrf2FgkzuhEPy0ecoyMP1okvj1iM7QxXQofYSZEWS3DoilpgMSn3RitCDB20_imlBzmLdF4pjoV6FsVkhwsTLt6X2e2vXKZMZMwIilNufzAZTeLJgklrk6H8gAnkgvpJfGQ/yMhe2wMmKbhMBK4hTgZzbQWkBDe2-KYPpYlm4Ma07KI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/5q_cL6QFx905ofqFKkYF1Q/BlmuUVMKLDOs2JjPdtGmaRui4eQPfK0yMiaHLcBjSb67YN8Uu16Alc11gVmH5PdT2yeLh8Ee_ufLBcCMh-f1DwZtpYDEVwu_MnZE-rNvXuMbQHcWZm3yEH51XumAtj8fvdf4WvJFhb03BxGhgre7NFCaG09WXXB_C9MOEcIv3CA/Uouqvxdw8TgfgrwlvMXCCFkpBC_PYzepB6RL6u3PVjA",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -407,7 +413,8 @@
       "ai": [
         "Hypothesis generation (AI)",
         "Insight summarization (AI)",
-        "AI audience builder"
+        "AI audience builder",
+        "Anomaly detection (AI)"
       ],
       "pricing": [
         "Free",
@@ -443,11 +450,11 @@
       "ay": 31.2,
       "axc": 45.3,
       "ayc": 31.2,
-      "scraped": "2026-08-06",
+      "scraped": "2026-11-12",
       "seoTitle": "Omniconvert review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Omniconvert review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Omniconvert review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Ewi6sZNnQT0EuTglwCmN_w/FaESRCtkDCQYTXAtl9OEWcD5_UcoNUx7Kbjk8BlNyaowiEdweMKcZpQHstxx5uYoX2oWnRy6UmBWLT7OgD5TkrAoOTOv-z6hmL1KDP6lEPt9jV_957Wo_JK628bCMSOPHKYq9X8y_JcltTYhQ6Ib02ul-UlWLxxyHmo0h0eicOY/2bPpdsAosk2ZBtWi9l9aig9YUqM2a5GwaAHUKt7E3g4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/MTrrQfUqwwA0ESJOWp9dlw/fnFvKP8amEO_Hllh1XNI2jRCs-9UIFavJNDPdrvyEoY14qNW_av1PKthombgAqsPkb2O9RwlIkfVTKsvirhdPPkmgcQyl-exlf6M10in3nGiAj9nNFgBYddaSwkCRWvgpAd-31FK6UQsXVjAm9JCs9jyyr3qCQvBf6KLXOOJYYE/pbglfV8FqFkzP9v5Jt7q1aGG_2Dobyt--w77ryxj3Xg",
       "sources": [
         {
           "type": "Homepage",
@@ -538,7 +545,8 @@
       "ai": [
         "Insight summarization (AI)",
         "mcp-native agent surface",
-        "semantic search"
+        "semantic search",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Free",
@@ -565,7 +573,9 @@
         "Edge (Cloudflare/Vercel/Fastly)",
         "REST/HTTP API"
       ],
-      "integrations": [],
+      "integrations": [
+        "Slack"
+      ],
       "warehouse": [
         "Snowflake",
         "BigQuery",
@@ -590,7 +600,7 @@
       "ayc": 31.2,
       "axo": 72.0,
       "ayo": 48.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "Spotify Confidence review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Spotify Confidence review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Spotify Confidence review: features, pricing, and AI capabilities",
@@ -774,7 +784,7 @@
       "seoTitle": "Sitecore review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Sitecore review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Sitecore review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/qzkNt9rf8KXsNadJNca5GQ/nP12AF_ZOBredNN5l_UrHHDUup_PmQkLh7nVwgoJHMTMjxttPhPB454y5NGNFSOfbadJjpcH2Q7PFXNExb6ahQTjQSVfdPFIRppM0BAExK5n54eDAasJnYsyk7xssWsoXBXSuirqcQLJjyDHeRm7zA/2zE_TQrD4asz24DAXSA35DuNO0liVEc8cgLgdqdfxsM",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/LU3sa5yIT00oAnMpxvvUiQ/Pdp7-HWSNpA6kjAYvHbbtdNg1zVGh8Bm9h0lrKetzl6ZTiojqVl2ycC7U1Mi2NkVxAJYwHybonrQPI_CS4MtK8QT_uf3q-JGe3145m7eb-8kJa4hS5udwy9n9pAq6QS4pq5ccwZvngzSEFeilUS3iA/hEJ3nq1FhSjFyldQwqtA-wlamELZ7jdMxMTuZeeriXc",
       "sources": [
         {
           "type": "",
@@ -983,7 +993,7 @@
       "seoTitle": "Shoplift review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Shoplift review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Shoplift review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/WqrUrZ1G2r2xpqK4yEB9lQ/H7R_k8U4ATGKNehZTt6yMmqEGCkbZ0UIAHbblF_JfBnzhb0LkRPKm9KHM2jTBHisbWeLt0nwHcOEfM3K8PVtPhJFpdH33dZsOJ6KpkLxIBeKRKal_Uz1EkIJiywgEIaI5h0UOf8smn0a1Jb2oyX1tnGe5yUcE2d35Nj8dEAzHPU/SdVyrZ54K85-smjBQgvExi57nHTebTto19zrdJ2vQLM",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/K16gL7_MrZpvp5IaI_bD-A/GshASwj05thVwZjSsZRXiQ6ZzNU4KS5UQdvzV_aPaFoGppRxAD74GYocDIKwgaMlEKqh2jATP9MhMaeP45kuvLOsuLtG3NmcIiUuuxE4JfJpW1hufrFSfm3FjwLOPs2ju7hNQl2Fji2Lkz9cJ8DGU-aiFrcVGmPbyzLrmWpfUf4/Zt9jLyGhY1tIfVDx7C1MhEnYjKo-NeZWj9xAgLVVo-I",
       "sources": [
         {
           "type": "API Reference",
@@ -1155,11 +1165,11 @@
       "ayc": 77.5,
       "axo": 85.0,
       "ayo": 72.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "LaunchDarkly review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s LaunchDarkly review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "LaunchDarkly review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/paQ9oKi-ySAhAq2Yv8aBZw/-N8LKRxQvtmAPAR2JQtJBDcbPnVj7BdSCs51orejai3tLyjbicn_G6MIpPxOPIH9eW3eynQa5DMbqHSMEoJp6cOlXHVgdKtAC62avNQEmB1nzdrq-68krnoz0oooexNRYn7cUFrAN4i2VeY1k_o04fJ9CIsFlBc0m_BMTDzGLMs/ogWoVW0baaVH3uVjudye4--u0DWOCtpjEOOseqGtnSI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/GupRvV4STxbbb-JdHy27SQ/mz6Meg9FOJJeKp_LIYUqVkg7zTYzZBueQsseMpLIYXsGH8Vq5WUSsi6SuRjc5QfyXmi3e6YCgbWclRDifesOEG_8AqDM8iFDCAaNBaInPQSAoyn2xi_rvABB9D5Q-twb9KWynuDTxIngHtWHwHDMwS8IoTCciS7Ixp5r7Hhslqs/dvpXHdXV3REg_HagkNvHOsJgmx-p9-LbttiYAb64uz0",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1410,7 +1420,7 @@
       "seoTitle": "Symplify review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Symplify review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Symplify review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/RD2V3McbC4sAPh_Z0ijFcw/Ji2dUFzt6-DCjYyhhNh6gx41zAMSPOSkimw2noDzBfmIbpFBloPWdEi2EFPRk6D2ad2LacIOrVTyRas3aN29yruoYNQqxUGGadrkPavdSG0uXX0T21xDMZ7_wNE5DH94WBB-SmehiJxyGhV8XsVm_A/_3Ia-3FDgupHbIHJLTXChiz-6Q0JEQKQSjRXwRxG4F4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/_hPHUFH0LMCCRWB2tcTlRw/Tk8k8baddlwhryd6p1YhokjMa6CuS47H547P75-wsI88dTJMvRqCpBSGjcR-cfU8ak-BO5ucV996LrWGo5LZ7BWTVVxSlq9Qcs_NmH3LN6nQIL2ieu8dpL_2l33ZPtzMeuL-gqqyIhcUC6Mh6i8cVA/O6A430BiQp_1lMryjXIv_9xYHEEASxy3ta9uD9BKs3E",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1577,7 +1587,7 @@
       "seoTitle": "Wingify review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Wingify review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Wingify review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/wMAUfm7kND2b8uJHyvd5Fg/YOFvee_0aOHgbgzMm7xip9EootgTdbIYonVxm6W8ouk2915Fa3Dj3LDxPP-hHuQkdhfBdqE7u7cedMf5smxNyu4KpsOOKR0MDP2X0XRAwOLvpK_k24yoMHU22PH760iwzc07Dr5GJ0cO58Dc_dOSPybnk4juVeQq4W-aCl8U72g/CnHmdFBICeQoxufAkTdyv2qinris7fINkCJJHoVJytk",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/n1z8mGyArc1bTka5vEzuSA/UaW_5rjdfrH24qMIVs_s5UMYyNKIee0KnQum3ZiCaAYm-3KX4cBiBaYLpPmMb_f3-C5ZOhwle9eMPZMOq4KpjaCdwB7kTWdKgz1SL5P5cf8X7i12HfZPWejzykdhIOPmNprquC59ynUBFUj1c_DhGJYo90ewG2mSCprbfyP6DKU/A52ZlgfgzU3rlrnqlEcDzGCYTCn7oQ9EGQOzXXuG7NE",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -1687,7 +1697,8 @@
         "B2B SaaS / Product-led",
         "DTC ecommerce",
         "Client-side marketing/CRO",
-        "Warehouse-native"
+        "Warehouse-native",
+        "Server-side / feature-flag-first"
       ],
       "mcp": "product",
       "ai": [
@@ -1755,12 +1766,12 @@
       "ayc": 71.7,
       "axo": 88.0,
       "ayo": 72.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "factVerifiedAt": "2026-11-03",
       "seoTitle": "Optimizely review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Optimizely review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Optimizely review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/AmcXnkOrzufKDImqAViB5Q/NxLHqLTO9guf4qgpBO0-5TGSPsXqa5JV3ixtq9fD2jISPgpl5JRbBjyLvw-E5ebUboMVoZ004DlSwpigeA_qCs9u07YHgl16Q-HBA1P8aEFi-hglZMcnAJT_cudelEa971SOt10q1kFpgAm3tkMiwSHDyptdd3daPlM0s0gGt3Q/OhGGIZVZPEVJlFpY6YW4PwFAi8nX4oVnJD07nUMfOCQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/ieVqAd9nDQ3yW3q_9qMz-g/tfUv55JHB-joVPBppbBD40bWnJipz8yDb8eyw4veyjACdjXzXMUvg6Y1LrOaCZkS3rR8GmDVvqMRKJO2UqNrYuoBzQgUoBOabb6YZCNuxu31nOTSQNvrp2c-mK06jTNZieZ56a2Cc87Vmtg96R5j_ckUYal7mOj5xh2qZBfBOUI/mdhWkXWDObBpigntNNkwYezrzdirBYfI6t26vWgajCY",
       "sources": [
         {
           "type": "",
@@ -2008,7 +2019,7 @@
       "seoTitle": "Adobe Target review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Adobe Target review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Adobe Target review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Fx6XT7Rk0v75bd4ltUh-3A/-X40iBWsf3mNDyLRRN6JkeSMgg-p4oCsA7ahf_2yqcVIzLZmWAXwxSRxf044JDaz4lwl3Exh8gs40l-ON7GpHDEnnvQvTC9XLt51V7uM6kGCkRCL1QCRCzG5gHbfgmR-PqFNjlbNfeZffpbrruzMj-uc6dTH-D-g4POYufJFarc/596toUkdSh-aiZrfCW7T6Ln1eWSScSo6o1zjEa8cH-4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/wczgqH5ceMYdGus7SzVnWQ/EFXkC7OMMsO2ttmKxcICwTQRqdPoIcqkv69tbTG-HqOYVpIgIMzcwR7f6c0ErFmrQ_WxwQxuUYS4KlBMkSIMO9lDrwGSArvVBhHMtqF6guvjt4MM7g5hx9JyJoETAmN-7nJYtAMen9v3kAdJ-x5uvisLwsI2Mvz559lfrctex30/FyXjlAstKKtlsFGWk-FBOTM_qL7ZnRFwNjfRkC_VYC8",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -2167,7 +2178,7 @@
       "seoTitle": "Conductrics review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Conductrics review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Conductrics review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/4csfA6BgFop2WI_XPLiesg/Dg5MEhUch_HwaFNIBJrLigSvWXuNJSZbMUtY92bJH3_svOCyS-3sWaO9qZPQJUrqrezfJ3dWvzDjCmCsiZbeZey93WRWzqxm9kzNNHa-kEvoZEQN-Zt1Nk9IRKly8DueukB8ENdQyCgT1XGEmbJUIjT4bJwN7nzyrthavewoihU/6ermibSnjWSt-KiVDA7J1aELVh1I_UoyT-r1Tar6GqA",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/FSSgwi-JE5Gt5PXkEspS2A/ynX9NnI2nUIRCh321HvFi5rMZLfDQyd5IRDm42V4SKLP3B1MKqrQml4GmjDgnkiXkGYcwRbpmpdh40O9Cgvz3I8HfsOhXdr-2v2kw-ag_6veMnS5Ll_UlfrgiQPQJvLQqIT9CfhloyX9dlI0FlCz0qfDg0GoIuNraGjHZCX_bH0/LnNP5PxfOiPBvNJApLUQgTUaKJ5046RkxRB_iZggfuM",
       "sources": [
         {
           "type": "Changelog",
@@ -2321,7 +2332,7 @@
       "seoTitle": "ABsmartly review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s ABsmartly review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "ABsmartly review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/foHAE5Jn2cBPma_BA_OpJg/xvyhC_0KikBQyiZpZyCf8raiqbjNpmiXaIIM5JGS2_ZX_7--XtHJeyEYzjYhiSRDaugXOy-P5emBuDU9gGTPi-w-kgSMTN11nNAAjquidd2pBZDI_ko-xIL-ZzEjIq-Mvhe0VIweWunSdTYYOFiKlnv4n_DeGm4Eo5QlPDR_ytA/aMFWBCOSak8hIEjfKBfkG8pzRhDol8yiAiQhJBW7qig",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/SwxPQs-I5T4QX6zb0xpRwQ/AOjm3FoMvQytfNM_mPtiPYZxzwc_YgPqSutmWiR-TUwLlEAjcKkxLf3NinQsMLsKfNeSXqfPEA0CbSUVv1pmtAbrdrIAOLCrqFSMzS-tTPw7Z1K90L8iE1T4O_1afIT_R_t826uxb8Wt_JsqPbWz5AFY37Tp-NNOeiGQJFr1SvI/LTClbsgSeavi4Y3NFWuFu-wPFTp9FpViJ2NzMajzHTI",
       "sources": [
         {
           "type": "API Reference",
@@ -2467,7 +2478,7 @@
       "seoTitle": "Intelligems review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Intelligems review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Intelligems review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Xo1lIgL_kqCmTNmOT8EIYQ/TtqzBgreZusJAJCbstd1uwzo29rJK-atOC4KmFl7uwAJ6fKAduYbUm9tjc58X22CjieAZy6aFeKmZMRCvJzKCD3woh96zoU05qdKY5ddpLY03n7Ow8f0GL3pAN23obWdrv1ZG8JyeSAfOV7pLWw5-FcxdEacgC5h7SbXDBE_IKk/tMv7iUpUsNMVnXTiYFSQYvaviASGApp2gdMU1XG-uMQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/-yLF-eHS5tMKBKuDjxDbnA/RIKYbAA-4YCH1StH0ClViJ8fwuF-qIynxftsNk-lYLdxne9kFnCJCWjrEfz9qjWkmmRs3cx8wxEiivNFuBmnWJGK50FQRKh_MCn-vVftwR-_1kxPUuf5KvklXvZeOgGG4z5eGzwuLuEyKAZWtiuVJGVRNYQDSttxntgQ7hiQ1Hc/DOKq9EOG6sfyEXE6Hev1VNLZpiU1jwdmmCzBK2G9TDY",
       "sources": [
         {
           "type": "API Reference",
@@ -2666,7 +2677,7 @@
       "seoTitle": "Webtrends Optimize review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Webtrends Optimize review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Webtrends Optimize review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Q-9C0vzUHREqXghY5Qthdg/JzW3T_O4BJm77-NXrV1tes75MRLluKZVzWDOJ9bygkwyKZqeCzUX6sqmWSkcBz9ddC0OkL7LaQQcRMb2ML_4AfYzASwQrrEcrf79M93Y-Q1Z7FVPfhmAUOXYsGLdQCICxgK1TRsVslQnSIubaMS6AqLpnU_6WnW3wbiZu1RqUtc/o_ZErGsg0TVTS1RqrWiT-dkuiAHPjcA6w0np2evksYY",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/TwxXK5jmg7GhoGyLqURszg/BeHPdeTv-w_e0IwP6nYsmR4azlKFlsWX3SfQp-WXvUkTyfra5e7lNQyBykUZt9pWKp5cWR9L9CGRpemlVmV2tYGJvfkJ1Xbxnbhq2j4GDCJ60K1AZl9ZNpGOc7HLpcZvJreerJYkcgmxoqEKn69E1dBIC1cNu7UTEcGSjTrK3D8/3rrTzqSuCiBdiBn4HjePKS7Netyo9_iiK_Ol8-sgamw",
       "sources": [
         {
           "type": "API Reference",
@@ -2769,7 +2780,9 @@
         "Hypothesis generation (AI)",
         "code assistant",
         "Prompt-based editor",
-        "in-app ai chat/agent"
+        "in-app ai chat/agent",
+        "LLM-as-judge evaluation",
+        "AI cost/latency monitoring"
       ],
       "pricing": [
         "Free",
@@ -2837,11 +2850,11 @@
       "ayc": 86.2,
       "axo": 92.0,
       "ayo": 90.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "PostHog review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s PostHog review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "PostHog review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/UTnZlA2F9qHBWIFvh3ARAQ/nvSHWDAqRZBe3aJZZDf8NUzoXTk-ngCdxjoHMrfEYINTkhxAfWwa2u8B1g7vUxhrbsouMIMj8wKJmsOg9Pvof1TxBlL8rxLhXPMSU7CG445zew3HPj_onLaM4KXkjC3xmc30wkOOuCFJdJpqDI_Wiw/dmjYADK2BWK4ufSYyYFj0kiYCKl5tCoP97r-PKvoc4Y",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/xez5Momq4e-XNGy-MhmJLw/708KdJp_ZBYqh6QhlljgM_yKS0V5WScHSbLyr6Nlkbe67AHPoKAGuqt5ZeygUiXzGsNs9jHJP-5mCWnJbysoYqu18L31ERt-wYwuZq8IMkuw3Z9hfNqfmuUinES7Dv20J5y63fdQ4v5jF5vU7_T5Lg/WKlkrm5YMcI_5J53gr29MPDBuK4k0lxhpEhoT6maDIA",
       "sources": [
         {
           "type": "API Reference",
@@ -3096,7 +3109,8 @@
         "Prompt-based editor",
         "semantic search",
         "agentic experimentation",
-        "AI audience builder"
+        "AI audience builder",
+        "in-app ai chat/agent"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -3140,7 +3154,7 @@
       "axo": 82.0,
       "ayo": 58.0,
       "myo": 80.0,
-      "scraped": "2026-08-06",
+      "scraped": "2026-11-12",
       "seoTitle": "Uniform review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Uniform review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Uniform review: features, pricing, and AI capabilities",
@@ -3427,7 +3441,7 @@
       "seoTitle": "Monetate review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Monetate review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Monetate review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/hER213uJ-ygMS4EkTNOrzw/lsZw3BR4PCI1fZS3vGDqqhhqn0VnWJzk69GC9CNQKgllr1MF-JmAvtiPrrrxLwwoEOkd_fLnZbtp_iu0qwBDnbbBIoGbb6ppKa9r94yBSwwjnBHEYyACXdrcuR2DPmX_u4V58CaUNT9OPN4ejJIUIw/WrD5MWJ5P4TZ79oJJ_kDByK0oIYKYOwWHv6v_tS8Rys",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/q1s3dAZ9pMnbcKCTJj9Lrw/kINjieYVvB0I1l73sFBacs4bKXHojKSnn9NNizdxcx6IIp3eitce5z8mw-ax0waakt3scQgR84Btm6ekhOY3Y7tTfH76LdJtqZdRPYpKcIpTFHV5_zK4OCuHEomNmd-M_M5wesMmwsZgkKzHC-bVfA/HCwvaOmzTzaSPsFtYe20H74bbYTsienDqPyiUmjcYkY",
       "sources": [
         {
           "type": "API Reference",
@@ -3542,7 +3556,9 @@
         "Variant generation (AI)",
         "Contextual bandits / AI traffic allocation",
         "Prompt-based editor",
-        "mcp-native agent surface"
+        "mcp-native agent surface",
+        "in-app ai chat/agent",
+        "Hypothesis generation (AI)"
       ],
       "pricing": [
         "Subscription (flat)",
@@ -3590,11 +3606,11 @@
       "axo": 74.0,
       "ayo": 45.0,
       "myo": 42.0,
-      "scraped": "2026-10-03",
+      "scraped": "2026-11-12",
       "seoTitle": "Convert review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Convert review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Convert review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/pNLdrI3kHEErV-3Fv_EI0A/TiiZyea2unM0gQqWkp6Ayb_YgOtnFZnarKgRixD-MjQ6YjeSQ74nONPm97tCjdnbMKu0wZxPfnWpO7HqiN8vCfOQjTQSkSjfKvWUnEbqaE1ymEPTjXxWy9Ao-E-7YfiGyGD1FbAXdR4G87_EK4jvgg/q-hsDWKFjOf2Eh_4WUVjwtSPvRN2eT4ZpWdbwOXciyE",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/V_qQrQ2nKoOtIlhinc5s_Q/dpCDCCc62RLinrfGF7T9hD9wgYIxt0EPe3lj8HZr6H2Ax6S39w5ParEKJH9-0R6ibXN7OEW6Zde7Ro4mIbvXrEdV2D4kRNBMZnKdbSwZ9EK0xMj671s2vt5owtAnC8qLFazfF4Iu1hYhRprFJvx0Jg/xBK0lLhAaH-hqH5vYdjmozCjaOfEUVO7OYgfc9RI4wc",
       "sources": [
         {
           "type": "API Reference",
@@ -3740,7 +3756,8 @@
       "pricing": [
         "Free",
         "Freemium",
-        "Subscription (per MAU or seat)"
+        "Subscription (per MAU or seat)",
+        "Enterprise (custom)"
       ],
       "sdk": [
         ".NET / C#",
@@ -3776,11 +3793,11 @@
       "axo": 25.0,
       "ayo": 32.0,
       "myo": 30.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "Zoho PageSense review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Zoho PageSense review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Zoho PageSense review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/FcC46NuRbqUemBr-rdYjKQ/H4ZrsLBPBj20HPUW4gKoILTKrSRU8tTJ3tdxz8x_lGiceTRBbBNwMaSf25aMV7v0EE6lnuGRLkGcpLIU72Aq-7TjtwLUXat-kvdxT_YJx6e6PloaMR1XJ6JS2Hpy2vJNjUclM1Kf_gmU7t0oUho4yafQBy6Sk0TmWPIowkBuDoY/McyB36ObOa6UcHnphv9cmsjAdOkYYXg4miYe0ql3tzI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/Q6gs5aGRFOSQHkPC6TnZaA/q6-D4PVai-0e-xfgkEIN-lpNDfJNaFDgYrxcOFTHo6CKdWdR7MLM14AO6f8W29r2il4v-OzlZB9Wr2nKIajKhdvxykZBS7YTrtwwNVX8UhK9Ttbx_SHz8Hk2utAJAx1nU1eWrZ6nAjK9uSEZ0JsZJzO1ZRDJwDV_IUlnmOM-Zvs/T2D5lLy3Ne-ec7dopX5DQod3K290QfJlMFztel7DEsk",
       "sources": [
         {
           "type": "Changelog",
@@ -4211,7 +4228,7 @@
       "seoTitle": "Salesforce Personalization review: features & pricing",
       "seoDesc": "Explore Salesforce Personalization with Speero. Compare features, pricing models, AI capabilities, agent access, and experimentation alternatives.",
       "seoH1": "Salesforce Personalization review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/buCT4Nh7A8UMSCNCCcOJDw/iz7BIoQoDh944g-lF5l93NEGK4Crqpuk2JjMWUO3DQUYKGddXrX0fQc0IiE14_QgCDBX_uJ7pdFo7ipJ5tl4nsPp3UKMO4IMQ7dPOfOEs049DwU_rqWPwTpZ7fel796xCGgYYaoPGAy6yvVujTn0MmItGyAVhMv_t-5SmWJp6xOdKoA3wb6ldkfwVZHEDW4R/_DyEix2PrBpwiCgRMnCYt6pNyLFBenHkIdluVO5t11Y",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/_1sqw4uvqEae2-lhBLswcQ/H7jkrcmesXrKDi1rhBa1Fjg0YPZ0La6Wq4FIT9Eae-bjqrEreYj4IEQ07d3mXrOR5LS3-zK5CC2qm0UOzy-cZDse_UlWiHahLqSJdbaN50gajANN9zftutfuHF0rWK4FuPD7ul0MEd5yEg8CqzRaGmUg3si21GUvEDTmE4LwM-qDH0NXpSw5leb5IJoAk48S/ssX_jC0xn2SNQ1EsTgTGth5OVKIB61VlK8KenZNsVPE",
       "sources": [
         {
           "type": "API Reference",
@@ -4396,7 +4413,7 @@
       "seoTitle": "Contentful Personalization review: features & pricing",
       "seoDesc": "Explore Contentful Personalization with Speero. Compare features, pricing models, AI capabilities, agent access, and experimentation alternatives.",
       "seoH1": "Contentful Personalization review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/O7eIX3g_z7SiDrSZd-MD7g/_uRHsqsg-dhz4h04wsWHc2URgeW27MX-1j5ixsEuKeUlRkL2ixGhPWjnRRe7qXV7sQOjT3MevGksjNRVjV3VRyIdwdJ2yoWxOxuB6E2sUw212mmLy1XE7ygxGmwcf8GW1hR6d6erdFfoLEKi9iupGlQpoa-ezw5-cYSg80Bl_rw/sTiDS6AWnYgOvteDkdyXuz3C2MLv8Fk5MtJp-9CEvCI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/K0wU0zkiqknP3HL-Drhajg/8S3utCQ_P4lGCK3FrWOLj9VI45mwcQfdPRJg6or4tMiw8s4FsSQCY10lFruTkQ1amt9iCdAOA2PjfUARx5-MKwB7LI8NW4frSX1sjUxeJrMkJ7oDWSB1c4xiK7IqW8oALeqnc9R9f3qI4W8KPzUFI6IvbuC3MBBkWy_AIxmkYrQ/OqEc3bNhcauds0681Talok2QNL05MSuJTSJDx6I6bVs",
       "sources": [
         {
           "type": "API Reference",
@@ -4529,7 +4546,8 @@
         "BigQuery"
       ],
       "compliance": [
-        "GDPR"
+        "GDPR",
+        "EU data residency"
       ],
       "url": "https://varify.io/en/",
       "summary": "Varify.io is a German A/B testing platform pitched as the simple, affordable, GDPR-ready Google Optimize alternative. It's aimed at marketing teams and agencies who don't want developer overhead.\n\nPricing is flat-rate with unlimited traffic and unlimited tests on every plan: Growth €149/mo, Pro €249/mo (adds BigQuery, advanced segmentation and priority support), Enterprise custom. Cookie-less and EU-hosted in Frankfurt.\n\nAn AI CRO audit and prompt-based features generate optimization ideas and test suggestions, and the AI assistant can write variant code from a short prompt. Visual and code editors come with all plans. GA4 reporting is native and auto-detected. BigQuery export comes with Pro and above. Other integrations: Matomo, Piwik Pro, Snowplow, Microsoft Clarity, Hotjar.\n\nGDPR-compliant by design. SOC 2 and ISO 27001 are inherited from AWS and Cloudflare hosting; Varify itself isn't certified directly and stores no personal data. 2,700+ teams worldwide as of 2026.",
@@ -4542,11 +4560,11 @@
       "ay": 54.3,
       "axc": 63.2,
       "ayc": 54.3,
-      "scraped": "2026-08-06",
+      "scraped": "2026-11-12",
       "seoTitle": "Varify.io review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Varify.io review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Varify.io review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Bu9J8R018yED4z6HHkWlpw/_TBQAUAwXd40Z8PZy8FApRAZqxsUeZaEuSQ1_S9fn37a_0zVgX789LVx6nCldBLC9yOa9WnFinSauYkMz9kWvL3i9-N2i-0AkgVEeehPu0p1OBvWVLw10bxQgRJpkWvm7Pn-En218vf8W-EqaSNhUUeEsncHUAKCELYdcbuIyfI/bHo_xriluvfrt6dwyHIcPHBIhHc0JPyykf453gmkGUI",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/_PaLsnp6aY5E-9IZs_9MWw/hiqE9GVBn0HKk6siFews4_wFXP_xE9i5vFRWa8PfVzF07c9SHfB-unv-pMjumOnTorXqrwiN-nZsF8vS0NfWynVxL_piS0trkHCpDOupqGqf-zWrA-iO_IDZgJhVEwqC9VbP0GbjmUjHs_h6SAuLqFxyHhkbnYLaBtjjqScZxkQ/C962-0W4qYG7ieuh2eJz-B-lm_8hlEbRmY8X8lzCRks",
       "sources": [
         {
           "type": "Compliance",
@@ -4670,7 +4688,7 @@
       "seoTitle": "Croct review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Croct review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Croct review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/F0q2WuuPbDtFQB6XXhI2Ag/Iw1Z96m4uBH4iTVjjNfwtzbE_33bqUGo04prfcPJunXx4sfEWkZhGYq9BVzKbACsrysDhG0_H6CnXOb49X7aRThz7kJkzDCK1ZtHFmX6f-kDatJ7PlcbuRkPziAkj4F6wsOPTgIRcFz_2m_a-Bu-w7-F5B0elmRbJRlPfM3-pko/KL9xBUxbAuzTlAjVP3yb39y5Ja7DZcP2wllh2d1IRuw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/stpNhq-swaHYiJjIqxkosQ/gSQ9-fVbJZoZ8WJgUSILe9dChb1QD060JlXJJKR6vBWS6r0WxbDrVcL0W8WACzT320gLXqyxTGuDbasAvFzZgBGaxfSrWRXfqZRZine2BZz0y0UsZeVEtr5ko1im1ciYF5XGJhx4fSicaJmxDOEY_ner8Uv7kLAUMhZVNNiIKeQ/JTg8IchiZ7awq6jkviljTOLgwLNZz_CCRY2A7jJi09E",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -4772,7 +4790,8 @@
         "B2B SaaS / Product-led",
         "Warehouse-native",
         "Server-side / feature-flag-first",
-        "Enterprise (governance, multi-team)"
+        "Enterprise (governance, multi-team)",
+        "Client-side marketing/CRO"
       ],
       "mcp": "product",
       "ai": [
@@ -4820,7 +4839,8 @@
         "Amplitude",
         "Segment",
         "Slack",
-        "Google Analytics 4"
+        "Google Analytics 4",
+        "Figma"
       ],
       "warehouse": [
         "Snowflake",
@@ -4855,11 +4875,11 @@
       "ayc": 51.4,
       "axo": 84.0,
       "ayo": 58.0,
-      "scraped": "2026-10-06",
+      "scraped": "2026-11-12",
       "seoTitle": "GrowthBook review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s GrowthBook review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "GrowthBook review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/h5THdUa26TQeroK_1yMQLw/VbPGeJT1s4LRdu9Ijmj7uG8gInTuJLSzaRndDpoGaao0EftKlfIjpOiCWmEiKxjyVTXWnbTAhCgSkI9aAGqUiw4kDxWAO3Xl4FZwpYAWmhREl453543uEotQDdU2GHE6RVjatHUrjgROf4Satd2LXrwJVD5Pz_gL5fclnx8dNq8/dMgmu0Xc1Ajftmls4FifSERziHqvkrdzHuSbQZxeKcw",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/onJ9gxOFouYTj1YEb2M2OA/5HGI-WE880Io0fsVy9iCcxf3pN0AQNGVPNN74nvFsHhFCLh_sknFL2ClMttRocmEH-RG4RRW8Qd6K0GYzhDcICGYXPQwyN8jICRKZMX5HPBxCALYZWjib2Xwr6ZqC7Ph5QZ2rNhTlpZPLUO3Y-lTECW56Vmb4Y5sjl6N35UuENE/lLzczasHwJJV8yuG09KdxxNSWBF0O-2UIvppUKyWKbE",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -5276,7 +5296,8 @@
         "ISO 27001",
         "GDPR",
         "CCPA",
-        "HIPAA"
+        "HIPAA",
+        "EU data residency"
       ],
       "url": "https://www.kameleoon.com/",
       "summary": "Kameleoon's AI centres on Prompt-Based Experimentation (PBX), now a five-agent lifecycle. Ideate scans a site and returns prioritised, evidence-based hypotheses, free on a Basic tier for all Web Experimentation customers, with a paid Premium tier for unlimited analyses. Build generates production-grade UI variations on the live site from natural language, with Master Prompts, Figma import and a browser extension. Configure sets targeting, goals and traffic allocation, including bandit methods, from prompts. Analyze surfaces business takeaways through the Takeaways menu. Ship pushes winners into production through the MCP server.\n\nKAI, the in-app AI assistant, answers questions from documentation and experiment data, and acts directly on the account through the same tools.\n\nThe MCP server (https://mcp.kameleoon.com/mcp, OAuth) exposes 37 tools covering the full experiment and flag lifecycle (create, duplicate, start, pause, resume, stop, delete), goals, segments, targeting rules, results and raw variation code, including transpose_winning_experiment for one-call winner rollout. Non-developers can use it as a Claude custom connector, with documented Airtable and Notion export workflows.\n\nAI Predictive Targeting scores each visitor's conversion probability for real-time activation, and AI-generated Takeaways consolidate insights across stopped experiments.",
@@ -5291,11 +5312,11 @@
       "ayc": 71.7,
       "axo": 82.0,
       "ayo": 65.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "Kameleoon review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Kameleoon review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Kameleoon review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/ycB0QFd3lkjnYoD-jYZ17A/Z8vRIxNsN1Pqop3gj1MlrVvVoC7YGnFHZeLqQeWJRdxDr3Zo7m4zDBSWemKATgh1OBaS7AhaeB8j6vciCyJtwt8hk0qVQNby4nbYULsW5UNEfo8h_66kqWGOZMzophegQgBhFyKgPDFefw_Ek1Czl1wsWDtnNf2G7qjiPejRkRU/x5aH0n6IAFWMgf1cHkcFYmff58BN_xhVKTmfrT6q7m0",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/xft6dddjETLgDGujli8zwg/0lou6CtJRq3RXRJbWGq9Ks7ptzIJknusU7ZU20xMMj8uNPFWNeiJFf0k8yXV9WEG3Jr3mnmeQYXIX7N3frKoOa_lZ-_TeRkgkVyraPA0EzZNAJslS5jVTuVD7Ls3RYu9y60VOT5xRgoinFjJS9SVJELQeEhI5jEw0xpalW7uQEw/1HV23cWxh4hjqNjhYkU1211Xmc5ugZVqlbhuGXdbk_E",
       "sources": [
         {
           "type": "API Reference",
@@ -5651,7 +5672,9 @@
         "Hypothesis generation (AI)",
         "semantic search",
         "Insight summarization (AI)",
-        "in-app ai chat/agent"
+        "in-app ai chat/agent",
+        "LLM-as-judge evaluation",
+        "AI cost/latency monitoring"
       ],
       "pricing": [
         "Free",
@@ -5726,11 +5749,11 @@
       "ayc": 63.0,
       "axo": 80.0,
       "ayo": 52.0,
-      "scraped": "2026-08-05",
+      "scraped": "2026-11-12",
       "seoTitle": "Statsig review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Statsig review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Statsig review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/Kn3orCoSiKsqIaB93AUVJQ/6gSrtWzR0O03SKgdczMSrpGY78G77mR_R6TskU6hlNVWwPiw1lIB-Fm4o-OpIHLJ49E_oOI-yubESEh-jUp3gKl_WYT7gACCrarFPCMtDTUJvRW-vQ9Znwio01PQ8QpyyGV_jR9o2g3CBTmk5BO9pca5KJbLAkW5kJfGTXl5CKE/8aZulc9UVRvfBbODTIMLdPK4TuVx5_Y5Lj8fzw1WQfk",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/fpZeM6dRPUrP10UzJAy_zQ/pHML7g0z9NgUbZLy8jL4A5guc0SPlLW4jCBXMrIMka9_UuUK2bEbTl1sXtRiQlJ_ru7S9remHlrGWkSuFGUPg4CZoHBkbqOzZn-UgVlDVMAP7AXhnWtzYgGWHUH-Wv63rP_yZZ-637lezS-NliIaMi_TUcA3gZQ7U5tH5cHOq4s/IvWZK-nOBRow9MBb2cgzE8YOz-Kaq-LtKRXg6MK5GcI",
       "sources": [
         {
           "type": "API Reference",
@@ -6007,7 +6030,7 @@
       "seoTitle": "Webflow Optimize review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Webflow Optimize review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Webflow Optimize review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/tQJa6Gbp1oRGt8Tzus0naw/9zx7LXL2mV3L9TMSMEHmJxobibhaXqZ6VJS1Ru4P1n8JvYvOnGhRteIAkocYfwXW2CeA-004K5RWmPx02y57IITznTT9xTVC1L8KSOGxa3e1EbDCUaapoh1anKKH9ZxuY9HBm5uyPCNTw7cUBRr8e9I1tgYxlU-i5HxMDuhU-PJ8q4nf7T8fd-Msq8LaKoWM/MaThrh0ZSDOpIOlrwnDQO2N-aiOtq2ba5c0rpK4c7EQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/0nTy3crZAZpQFny3YTS5fQ/3AwUBhJsfcHNCYLYS40i1p1E1H5vx2XK1tirIEeLR6idptT2bt1JnH4vzXgeM2_yMdPseiOlehc2a-uzW_DBY7YVONE6MSkp8Z43CKmH6QOorp12gg-unzzBzTgHZQJeWRcWZj1SHqi9iWO2hw29BoWnu5sbRqTX9u2tkQx_OfDckJHYScR4sjO76tjS38F4/0r-x6R4J4CvUJDY54TYV3e8bOv4YixfET_2_G-5Q3yo",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -6181,7 +6204,7 @@
       "seoTitle": "Compose review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Compose review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Compose review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/c9k0qiMuDXMf_dx57Xg4cA/sjBw-PIJfm8_otEhBSJAsWPbObCOIQT9ekVoKtyAXXcaNNMru-aJpu3401DNnwwUoKxBCtvRwWMyY-XYFFmoV-Q4a9VUOadtITDpFeZCRBaRmHT0vfJEdIhUwA_Y71JRKgGy9gPRjNwDtItX8tfLPc0DHr8nnys08aXugcL4B-c/vM7CIj1UWg0-dUzr_rBxOsc3P4hWGFgGpw6F7nypTXo",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/xcQhqnE9FsNrjwwSIF_n8w/DDR5-bxb811PQZB1eeWar70yCh7nK4ObYZHzOlf6oXV4AuteyUHfArvkRvxBlpziq8olgeCrSrwRtpRcjIpOn3aJdlSq2W7N9Dzqq9R-VqiRWJFEAzPKCzp_nyFB5mneTY-s_XNaod3OidAwzlhjd1MpiPoTuCZ1If_kTi_Myhc/pFsJ9bn-v6enC5umof22SVm5gtDtLN-4lLCiD7Zvq2U",
       "sources": [
         {
           "type": "Blog/Announcements",
@@ -6333,7 +6356,8 @@
         "GDPR",
         "EU-U.S. / UK / Swiss Data Privacy Framework",
         "HIPAA",
-        "SSO / SAML"
+        "SSO / SAML",
+        "EU data residency"
       ],
       "url": "https://amplitude.com/web-experimentation",
       "summary": "The MCP server is the main way agents work with Amplitude. It's vendor-hosted and OAuth-authenticated, at https://mcp.amplitude.com/mcp (EU: https://mcp.eu.amplitude.com/mcp). Agents can read charts, dashboards, notebooks, experiments and cohorts, run segmentation, funnel and retention queries, and create or edit most of those same objects, plus feature flags and metrics. Access follows whatever permissions the user already has. Role-based access controls and a Slackbot surface arrived in June 2026.\n\nAmplitude calls the wider story \"Headless Amplitude\" (amplitude.com/headless): the MCP server plus an amp CLI (github.com/amplitude/developer-cli) for scripted, repeatable commands. Service accounts can authenticate with OAuth 2.0 client credentials for jobs with no human in the loop. A separate read-only Docs MCP server serves the public docs, no auth needed.\n\nOn the product side, Custom Agents and Agent Connectors shipped in June 2026, alongside Session Replay Agent v2 and AI Feedback Auto Analysis.",
@@ -6348,11 +6372,11 @@
       "ayc": 63.0,
       "axo": 88.0,
       "ayo": 68.0,
-      "scraped": "2026-10-03",
+      "scraped": "2026-11-12",
       "seoTitle": "Amplitude review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Amplitude review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Amplitude review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/eNpof2eYb7rzEUOQ52TwrQ/vrKpHMeNhePATFPjSey6wycmXIUSMftHv2yV9cvtMwazECzZ2yXiANvkDcKSo9jsekUx0vCqOBdrDDuhvZxlZh_sL7LOMiqyykECMv4_tZyw2UWBXrzlX3igQChJIiUtcPLUulR4JF9GavJQJUwG5eJXiD1GfiuboP0vEDBpVcE/1UiFMvns1rmfLfEItlvr4EaT7HB3zL_OUrA9oLCOwyQ",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/dXBYN4WPyPLhJnGRijhzMQ/NE7GBhtFKlta-c9sl7Mh1YvrS3vUEYOrFPQGiPcHZVUbAeP6oGcPXjVw8PKJtoMJaGuUWLGzGbxmR2xy8XwUfjNMXEcUDolCB22Mxw4aJKrB1yUc02lYK7bFQqNAjSrDFkuw6YYj3VVhrfaT7ZiBL9R0PeQLxnApvUDCSQ9x3-Y/CUCxkXry2ZtkSFhZztEx0RmKdo4keHjrWFyV8oWzqXs",
       "sources": [
         {
           "type": "",
@@ -6659,7 +6683,7 @@
       "seoTitle": "Dynamic Yield review: features, pricing & AI | Speero",
       "seoDesc": "Read Speero’s Dynamic Yield review. Compare features, pricing models, AI capabilities, agent access, and alternatives for your experimentation team.",
       "seoH1": "Dynamic Yield review: features, pricing, and AI capabilities",
-      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794470400000/575Emkvu92XAa4H-9YXK9w/b-gIIbx9ZMN7vYCfcNvlvBKz33JspgovUQyrsECMqUS8rljoo4UPPm5UmT9nDKiipX75mE7eZfMTud6wR7jDX1tx0HCf8aBHlWQka_eJVUsPchHoPch5Ke7g6ZdULobBJif8jxaLyzw3OMF_m7zsGp6fz2zMT1bR10jIcyHSll0/ex6t06akeWNfGt5PWWrGJrre98B6LkYhnfxAWgHSdH4",
+      "ogImage": "https://v5.airtableusercontent.com/v3/u/59/59/1794506400000/JckCC_QsHI1pGUmIz6gPEA/6Nd6B9GG543z_5nXvhQAhZDF77FVIJBGVWs7sv6Gk1ENIDzHWNSkLPyeTXRdXX8JdvA2KtRTQiCWWm4cXQ4smXMtsX3-MEAPIq8Wr5PxIxg0ghwTSEeLMD92eiVrx7wMBp7ddZxo1ec3gjoKpAfeYDMnUSKVNBXhtcPwNqDfS5Q/LJVKiLvr0BwfkthArCyJ9sWyNa2O1QXDFhSDFffZN9U",
       "sources": [
         {
           "type": "API Reference",
